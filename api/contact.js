@@ -15,7 +15,7 @@ export default async function handler(req, res) {
 
     try {
         await resend.emails.send({
-            from: 'AISEO Kontaktformular <onboarding@resend.dev>',
+            from: 'AISEO Kontaktformular <hallo@webseite.hamburg>',
             to: 'vadim.shchepin.it@gmail.com',
             replyTo: undefined,
             subject: `Neue Anfrage von ${name}`,

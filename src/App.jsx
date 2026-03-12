@@ -13,6 +13,12 @@ import SeoPage from './pages/leistungen/SeoPage';
 import AiSeoPage from './pages/leistungen/AiSeoPage';
 import GoogleAdsPage from './pages/leistungen/GoogleAdsPage';
 import WebsiteAuditPage from './pages/leistungen/WebsiteAuditPage';
+import LangsameWebsitesArticle from './pages/wissen/LangsameWebsitesArticle';
+import LokalesSeoHamburgArticle from './pages/wissen/LokalesSeoHamburgArticle';
+import AiSeoArticle from './pages/wissen/AiSeoArticle';
+import GoogleAdsFehlerArticle from './pages/wissen/GoogleAdsFehlerArticle';
+import ConversionOptimierungArticle from './pages/wissen/ConversionOptimierungArticle';
+import WebsiteRelaunchArticle from './pages/wissen/WebsiteRelaunchArticle';
 
 function ScrollToTop() {
     const { pathname } = useLocation();
@@ -65,6 +71,12 @@ function App() {
                     <Route path="/leistungen/google-ads" element={<GoogleAdsPage />} />
                     <Route path="/leistungen/website-audit" element={<WebsiteAuditPage />} />
                     <Route path="/wissen" element={<WissenPage />} />
+                    <Route path="/wissen/warum-langsame-websites-kunden-kosten" element={<LangsameWebsitesArticle />} />
+                    <Route path="/wissen/lokales-seo-hamburg-guide" element={<LokalesSeoHamburgArticle />} />
+                    <Route path="/wissen/ai-seo-was-unternehmen-jetzt-wissen-muessen" element={<AiSeoArticle />} />
+                    <Route path="/wissen/google-ads-fehler-lokale-unternehmen" element={<GoogleAdsFehlerArticle />} />
+                    <Route path="/wissen/website-conversion-optimierung" element={<ConversionOptimierungArticle />} />
+                    <Route path="/wissen/website-relaunch-checkliste" element={<WebsiteRelaunchArticle />} />
                     <Route path="/ueber-uns" element={<UeberUnsPage />} />
                     <Route path="/kontakt" element={<ContactPage />} />
                 </Routes>

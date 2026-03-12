@@ -77,7 +77,7 @@ export default function WissenPage() {
                 <div className="container">
                     <div className="wissen-grid">
                         {articles.map((article, i) => (
-                            <article key={article.slug} className={`wissen-card animate-up delay-${(i % 3) + 1}`}>
+                            <Link key={article.slug} to={`/wissen/${article.slug}`} className={`wissen-card animate-up delay-${(i % 3) + 1}`}>
                                 <div className="wissen-card-meta">
                                     <span className="wissen-card-category">{article.category}</span>
                                     <span className="wissen-card-time">{article.readTime}</span>
@@ -90,7 +90,7 @@ export default function WissenPage() {
                                     Artikel lesen
                                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                                 </span>
-                            </article>
+                            </Link>
                         ))}
                     </div>
                 </div>

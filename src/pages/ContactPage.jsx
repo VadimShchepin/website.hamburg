@@ -8,20 +8,35 @@ export default function ContactPage() {
         message: '',
     });
     const [submitted, setSubmitted] = useState(false);
+    const [sending, setSending] = useState(false);
+    const [error, setError] = useState('');
 
     const handleChange = (e) => {
         setForm({ ...form, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // For now, construct a mailto link with the form data
-        const subject = encodeURIComponent(`Anfrage von ${form.name}`);
-        const body = encodeURIComponent(
-            `Name: ${form.name}\nTelefon: ${form.phone}\nWebsite: ${form.website}\n\nNachricht:\n${form.message}`
-        );
-        window.location.href = `mailto:vadim@webseite.hamburg?subject=${subject}&body=${body}`;
-        setSubmitted(true);
+        setSending(true);
+        setError('');
+
+        try {
+            const res = await fetch('/api/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(form),
+            });
+
+            if (res.ok) {
+                setSubmitted(true);
+            } else {
+                setError('Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie direkt an hallo@webseite.hamburg.');
+            }
+        } catch {
+            setError('Verbindungsfehler. Bitte versuchen Sie es erneut.');
+        } finally {
+            setSending(false);
+        }
     };
 
     return (
@@ -45,7 +60,7 @@ export default function ContactPage() {
                                         <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
                                     </svg>
                                     <h3>Vielen Dank!</h3>
-                                    <p>Ihr E-Mail-Programm sollte sich geoffnet haben. Falls nicht, schreiben Sie mir direkt an <a href="mailto:hallo@webseite.hamburg">hallo@webseite.hamburg</a>.</p>
+                                    <p>Ihre Anfrage ist angekommen. Ich melde mich innerhalb von 24 Stunden bei Ihnen.</p>
                                 </div>
                             ) : (
                                 <form className="contact-form animate-up" onSubmit={handleSubmit}>
@@ -100,8 +115,9 @@ export default function ContactPage() {
                                         />
                                     </div>
 
-                                    <button type="submit" className="button button-primary button-large">
-                                        Analyse anfordern
+                                    {error && <p style={{ color: 'var(--color-accent)', marginBottom: '1rem' }}>{error}</p>}
+                                    <button type="submit" className="button button-primary button-large" disabled={sending}>
+                                        {sending ? 'Wird gesendet...' : 'Analyse anfordern'}
                                     </button>
                                 </form>
                             )}

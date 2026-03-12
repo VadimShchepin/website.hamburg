@@ -22,12 +22,12 @@ export default function Approach() {
                             <p>Ihre Website wird zum Geschaftsinstrument — nicht nur ein Design-Projekt.</p>
                             <div className="frame-stats">
                                 <div className="frame-stat">
-                                    <span className="frame-stat-value">0.8s</span>
-                                    <span className="frame-stat-label">Avg. Ladezeit</span>
+                                    <span className="frame-stat-value">#1</span>
+                                    <span className="frame-stat-label">in ChatGPT & Perplexity</span>
                                 </div>
                                 <div className="frame-stat">
-                                    <span className="frame-stat-value">3x</span>
-                                    <span className="frame-stat-label">Mehr Anfragen</span>
+                                    <span className="frame-stat-value">5K</span>
+                                    <span className="frame-stat-label">Impressionen in 8 Wochen</span>
                                 </div>
                             </div>
                         </div>

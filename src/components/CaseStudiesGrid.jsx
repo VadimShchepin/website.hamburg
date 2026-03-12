@@ -4,39 +4,59 @@ export default function CaseStudiesGrid() {
     const cases = [
         {
             id: 1,
-            image: '/case_study_1.png',
-            tag: 'WEBDESIGN',
-            title: 'Handwerksbetrieb: Neue Website, 3x mehr Anfragen',
+            tag: 'WEBDESIGN + ADS',
+            title: 'Blitz Hamburg: Von Null auf stabile Auftragslage',
+            desc: 'Website, Google Ads und organische Sichtbarkeit fur einen Handwerksbetrieb in Hamburg. Innerhalb weniger Wochen: top Google-Positionen, gewonnene Auktionen und ein stetiger Strom qualifizierter Anfragen.',
+            url: 'https://www.blitz-hamburg.de/',
+            results: ['Top-Positionen in Google', 'Stabile Kundengewinnung', '5.0 Sterne, 24 Bewertungen'],
         },
         {
             id: 2,
-            image: '/case_study_2.png',
-            tag: 'SEO + ADS',
-            title: 'Lokaler Dienstleister: Von Seite 5 auf Platz 1',
+            tag: 'APP + AI SEO',
+            title: 'KinderAlbum: Platz 1 in ChatGPT, Perplexity & Google AI',
+            desc: 'DSGVO-konforme Schulfotos-App mit Hunderten aktiven Nutzern. Durch strukturierte Daten und AI-SEO-Strategie: erste Platze in allen grossen AI-Suchsystemen — ein echtes Praxisbeispiel fur AI-Sichtbarkeit.',
+            url: 'https://dsgvoschulfotos.de/',
+            results: ['#1 in ChatGPT & Perplexity', 'Hunderte aktive Nutzer', 'Echtes Problem gelost'],
         },
         {
             id: 3,
-            image: '/case_study_3.png',
-            tag: 'WEBSITE AUDIT',
-            title: 'E-Commerce: PageSpeed von 23 auf 98 optimiert',
+            tag: 'WEBSITE + SYSTEM',
+            title: 'Solovei Beauty: 5.000 Impressionen in 2 Monaten',
+            desc: 'Website mit integriertem Buchungssystem, Vertragsmanagement, Rollen und Kommunikation fur einen Beauty-Coworking-Space. Ergebnis: voll ausgebuchte Arbeitsplatze in kurzester Zeit.',
+            url: 'https://www.solovei-beauty.com/de',
+            results: ['5.000 Impressionen in 8 Wochen', 'Komplettes Buchungssystem', 'Voll ausgebuchte Platze'],
         },
     ];
 
     return (
         <section id="work" className="case-studies section" style={{ paddingTop: 'var(--space-md)' }}>
             <div className="container">
-                <div className="photo-grid">
+                <div className="section-header text-center">
+                    <p className="section-kicker animate-up">Referenzen</p>
+                    <h2 className="section-title animate-up">Echte Projekte. Echte Ergebnisse.</h2>
+                </div>
+                <div className="cases-grid">
                     {cases.map((item, index) => (
-                        <div
+                        <a
                             key={item.id}
-                            className={`photo-card animate-up delay-${(index % 3) + 1}`}
+                            href={item.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`case-card animate-up delay-${(index % 3) + 1}`}
                         >
-                            <img src={item.image} alt={item.title} className="photo-card-img" loading="lazy" />
-                            <div className="photo-card-overlay">
-                                <span className="photo-card-date">{item.tag}</span>
-                                <h3 className="photo-card-title">{item.title}</h3>
-                            </div>
-                        </div>
+                            <span className="case-tag">{item.tag}</span>
+                            <h3 className="case-title">{item.title}</h3>
+                            <p className="case-desc">{item.desc}</p>
+                            <ul className="case-results">
+                                {item.results.map((r, i) => (
+                                    <li key={i}>{r}</li>
+                                ))}
+                            </ul>
+                            <span className="case-link">
+                                Projekt ansehen
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                            </span>
+                        </a>
                     ))}
                 </div>
             </div>

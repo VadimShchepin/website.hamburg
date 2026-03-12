@@ -962,6 +962,93 @@ img {
 }
 
 /* ==========================================================================
+   Cases Grid (Referenzen)
+   ========================================================================== */
+.cases-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+.case-card {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-md);
+  border: 1px solid var(--color-bg-gray2);
+  background: var(--color-bg-white);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.case-card:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-4px);
+}
+
+.case-tag {
+  font-family: var(--font-heading);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  background: rgba(229, 57, 53, 0.08);
+  padding: 0.2rem 0.6rem;
+  display: inline-block;
+  width: fit-content;
+  margin-bottom: var(--space-sm);
+}
+
+.case-title {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  color: var(--color-primary);
+  line-height: 1.3;
+  margin-bottom: 0.75rem;
+}
+
+.case-desc {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin-bottom: var(--space-sm);
+  flex-grow: 1;
+}
+
+.case-results {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-sm);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.case-results li {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  background: var(--color-bg-lightgray);
+  padding: 0.3rem 0.7rem;
+}
+
+.case-link {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  color: var(--color-primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-top: auto;
+  transition: gap 0.2s ease;
+}
+
+.case-card:hover .case-link {
+  gap: 0.6rem;
+}
+
+/* ==========================================================================
    Service Card Price (Homepage)
    ========================================================================== */
 .service-card-price {
@@ -2424,6 +2511,10 @@ a.service-card {
   }
 
   .social-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cases-grid {
     grid-template-columns: 1fr;
   }
 }

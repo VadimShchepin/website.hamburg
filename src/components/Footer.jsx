@@ -7,7 +7,7 @@ export default function Footer() {
         <footer className="site-footer">
             <div className="container footer-grid">
                 <div className="footer-brand">
-                    <img src="/logo_blue.png" alt="AISEO" width="120" style={{ filter: 'brightness(0) invert(1)', opacity: 0.9 }} />
+                    <img src="/logo_red.png" alt="AISEO" width="80" style={{ opacity: 0.9 }} />
                     <p className="mt-2" style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.9rem', lineHeight: 1.6 }}>
                         Professionelle Websites, SEO und Google Ads fur lokale Unternehmen in Hamburg. Messbar. Transparent. Ergebnisorientiert.
                     </p>

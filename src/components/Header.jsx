@@ -22,7 +22,7 @@ export default function Header() {
         <header className={`site-header${scrolled ? ' header-scrolled' : ''}`}>
             <div className="container header-container">
                 <Link to="/" className="logo" aria-label="AISEO Home">
-                    <img src="/logo_blue.png" alt="AISEO Logo" width="140" height="auto" />
+                    <img src="/logo_blue.png" alt="AISEO Logo" width="100" height="auto" />
                 </Link>
 
                 <button

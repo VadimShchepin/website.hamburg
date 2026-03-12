@@ -2,8 +2,8 @@ export const BUSINESS = {
     '@type': 'ProfessionalService',
     name: 'AISEO',
     url: 'https://website.hamburg',
-    telephone: '+4940123456789',
-    email: 'info@website.hamburg',
+    telephone: '+4917632194754',
+    email: 'hallo@webseite.hamburg',
     founder: {
         '@type': 'Person',
         name: 'Vadim Shchepin',

@@ -25,8 +25,8 @@ export default function Footer() {
                     <Link to="/ueber-uns">Uber uns</Link>
                     <Link to="/wissen">Wissen</Link>
                     <Link to="/kontakt">Kontakt</Link>
-                    <a href="mailto:info@website.hamburg">info@website.hamburg</a>
-                    <a href="tel:+4940123456789">040 / 123 456 789</a>
+                    <a href="mailto:hallo@webseite.hamburg">hallo@webseite.hamburg</a>
+                    <a href="tel:+4917632194754">0176 / 321 94 754</a>
                     <div className="footer-social">
                         {SOCIAL_LINKS.map((link) => (
                             <a key={link.name} href={link.url} target="_blank" rel="noopener noreferrer" aria-label={link.name} className="footer-social-link">

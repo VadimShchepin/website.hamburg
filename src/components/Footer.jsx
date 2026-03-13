@@ -11,6 +11,11 @@ export default function Footer() {
                     <p className="mt-2" style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.9rem', lineHeight: 1.6 }}>
                         Professionelle Websites, SEO und Google Ads fur lokale Unternehmen in Hamburg. Messbar. Transparent. Ergebnisorientiert.
                     </p>
+                    <p className="mt-2" style={{ fontSize: '0.8rem' }}>
+                        <a href="https://aiseo.hamburg/" target="_blank" rel="noopener noreferrer" style={{ color: 'rgba(255,255,255,0.45)' }}>
+                            Auch erreichbar unter aiseo.hamburg
+                        </a>
+                    </p>
                 </div>
                 <div className="footer-links">
                     <h4>Leistungen</h4>

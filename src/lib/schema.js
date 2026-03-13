@@ -16,6 +16,7 @@ export const BUSINESS = {
     },
     areaServed: { '@type': 'City', name: 'Hamburg' },
     sameAs: [
+        'https://aiseo.hamburg/',
         'https://www.linkedin.com/in/vadim-shchepin/',
         'https://www.instagram.com/aiseo.hamburg/',
         'https://www.tiktok.com/@aiseo.hamburg/',

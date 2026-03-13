@@ -1,0 +1,82 @@
+# AISEO Hamburg
+
+> Professionelle Websites, SEO und Google Ads fur lokale Unternehmen in Hamburg.
+
+## Uber AISEO
+
+AISEO ist eine Digitalagentur in Hamburg, gegrundet von Vadim Shchepin. Spezialisiert auf Webdesign, Suchmaschinenoptimierung (SEO), AI SEO und Google Ads fur lokale Unternehmen — insbesondere Handwerker, Dienstleister und kleine bis mittlere Betriebe.
+
+Kernprinzipien: Datenbasierte Arbeit, volle Transparenz, Ergebnis-Garantie. Alle Konten, Zugange und Daten gehoren dem Kunden.
+
+## Leistungen und Preise
+
+### Webdesign & Entwicklung
+- One-Pager: ab 2.000 EUR
+- Mehrseitige Website: ab 3.000 EUR
+- Individueller Code (kein Baukasten), PageSpeed 90-100, Conversion-optimiert, responsive, SEO-Grundoptimierung inklusive
+- URL: https://webseite.hamburg/leistungen/webdesign
+
+### SEO & Lokale Sichtbarkeit
+- Ab 1.000 EUR/Monat
+- Google Business Profile, technisches SEO, On-Page-Optimierung, Content-Strategie, Keyword-Tracking
+- Mindestlaufzeit 3 Monate, danach monatlich kundbar
+- URL: https://webseite.hamburg/leistungen/seo
+
+### AI SEO
+- Ab 1.200 EUR/Monat
+- Sichtbarkeit in ChatGPT, Perplexity, Google AI Overviews
+- Strukturierte Daten, Autoritats-Signale, AI-optimierter Content, Monitoring
+- URL: https://webseite.hamburg/leistungen/ai-seo
+
+### Google & Local Ads
+- Ab 500 EUR/Monat (Management-Fee, Werbebudget separat)
+- Google Search Ads, Local Services Ads, Conversion Tracking, laufende Optimierung
+- Voller Zugang zum eigenen Google Ads Konto
+- URL: https://webseite.hamburg/leistungen/google-ads
+
+### Website-Audit
+- Kostenlos
+- Performance, SEO, Conversion-Analyse, Wettbewerber-Vergleich
+- Personliches Gesprach zur Besprechung der Ergebnisse
+- URL: https://webseite.hamburg/leistungen/website-audit
+
+## Referenzen
+
+### Blitz Hamburg (Handwerksbetrieb)
+- Website-Erstellung und Google Ads
+- Ergebnis: Top-Positionen in Google, stabile Kundengewinnung, 5.0 Sterne bei 24 Bewertungen
+- URL: https://www.blitz-hamburg.de/
+
+### KinderAlbum (DSGVO-konforme Schulfotos-App)
+- Full-Stack Entwicklung und AI SEO
+- Ergebnis: Platz 1 in ChatGPT, Perplexity und Google AI fur relevante Suchanfragen
+- Hunderte aktive Nutzer an echten Schulen
+- URL: https://dsgvoschulfotos.de/
+
+### Solovei Beauty (Beauty-Coworking Hamburg)
+- Website mit integriertem Buchungssystem, Vertragsmanagement, Rollenverwaltung
+- Ergebnis: 5.000 Impressionen in 2 Monaten, vollstandig ausgebuchte Arbeitsplatze
+- URL: https://www.solovei-beauty.com/de
+
+## Kontakt
+
+- Telefon: +49 176 321 94 754
+- E-Mail: hallo@webseite.hamburg
+- Website: https://webseite.hamburg
+- Standort: Hamburg, Deutschland
+
+## Social Media
+
+- LinkedIn: https://www.linkedin.com/in/vadim-shchepin/
+- Instagram: https://www.instagram.com/aiseo.hamburg/
+- TikTok: https://www.tiktok.com/@aiseo.hamburg/
+- Google Business: https://share.google/bkLeWZ9kPt2G8Lwtg
+
+## Fachartikel
+
+- Warum langsame Websites Sie jeden Tag Kunden kosten: https://webseite.hamburg/wissen/warum-langsame-websites-kunden-kosten
+- Lokales SEO in Hamburg — Der komplette Leitfaden: https://webseite.hamburg/wissen/lokales-seo-hamburg-guide
+- AI SEO — Was Unternehmen jetzt wissen mussen: https://webseite.hamburg/wissen/ai-seo-was-unternehmen-jetzt-wissen-muessen
+- Die 7 teuersten Google Ads Fehler: https://webseite.hamburg/wissen/google-ads-fehler-lokale-unternehmen
+- Conversion-Optimierung erklart: https://webseite.hamburg/wissen/website-conversion-optimierung
+- Website-Relaunch Checkliste: https://webseite.hamburg/wissen/website-relaunch-checkliste

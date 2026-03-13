@@ -54,7 +54,7 @@ export default function WissenPage() {
         '@type': 'CollectionPage',
         name: 'Wissen - AISEO Hamburg',
         description: 'Fachartikel zu Webdesign, SEO, AI SEO und Google Ads fur lokale Unternehmen. Praxiswissen, keine Theorie.',
-        url: 'https://website.hamburg/wissen',
+        url: 'https://webseite.hamburg/wissen',
         publisher: BUSINESS,
     };
 

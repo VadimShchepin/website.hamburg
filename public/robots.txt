@@ -2,3 +2,8 @@ User-agent: *
 Allow: /
 
 Sitemap: https://webseite.hamburg/sitemap.xml
+
+# LLM context files
+# https://llmstxt.org/
+# /llms.txt - summary
+# /llms-full.txt - detailed

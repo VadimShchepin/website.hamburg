@@ -22,7 +22,7 @@ export default function GoogleAdsPage() {
         name: 'Google Ads & Local Services Ads Management Hamburg',
         provider: BUSINESS,
         areaServed: { '@type': 'City', name: 'Hamburg' },
-        url: 'https://website.hamburg/leistungen/google-ads',
+        url: 'https://webseite.hamburg/leistungen/google-ads',
         description: 'Professionelles Google Ads Management fur lokale Unternehmen in Hamburg. Search Ads, Local Services Ads, Conversion Tracking, ROI-Optimierung.',
         offers: { '@type': 'Offer', price: '500', priceCurrency: 'EUR', priceSpecification: { '@type': 'UnitPriceSpecification', unitText: 'Monat' } },
     };

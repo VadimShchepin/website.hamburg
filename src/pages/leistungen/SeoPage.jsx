@@ -22,7 +22,7 @@ export default function SeoPage() {
         name: 'SEO & Lokale Suchmaschinenoptimierung Hamburg',
         provider: BUSINESS,
         areaServed: { '@type': 'City', name: 'Hamburg' },
-        url: 'https://website.hamburg/leistungen/seo',
+        url: 'https://webseite.hamburg/leistungen/seo',
         description: 'Professionelle Suchmaschinenoptimierung fur lokale Unternehmen in Hamburg. Google Rankings, lokale Sichtbarkeit, Google Maps Optimierung.',
         offers: { '@type': 'Offer', price: '1000', priceCurrency: 'EUR', priceSpecification: { '@type': 'UnitPriceSpecification', unitText: 'Monat' } },
     };

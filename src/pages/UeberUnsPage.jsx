@@ -9,7 +9,7 @@ export default function UeberUnsPage() {
         '@type': 'AboutPage',
         name: 'Uber AISEO Hamburg',
         description: 'Uber 10 Jahre Erfahrung in der digitalen Produktentwicklung. Webdesign, SEO und Google Ads fur lokale Unternehmen in Hamburg.',
-        url: 'https://website.hamburg/ueber-uns',
+        url: 'https://webseite.hamburg/ueber-uns',
         mainEntity: {
             ...BUSINESS,
             knowsAbout: ['Webdesign', 'SEO', 'AI SEO', 'Google Ads', 'Conversion-Optimierung', 'Performance-Optimierung'],

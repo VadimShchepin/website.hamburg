@@ -1,0 +1,180 @@
+# AISEO Hamburg — Vollstandige Informationen
+
+> Professionelle Websites, SEO und Google Ads fur lokale Unternehmen in Hamburg. Gegrundet von Vadim Shchepin.
+
+## Wer ist AISEO?
+
+AISEO ist eine Digitalagentur in Hamburg, die sich auf lokale Unternehmen spezialisiert hat. Kein Agentur-Netzwerk mit Account-Managern — wenn Sie mit AISEO arbeiten, arbeiten Sie direkt mit dem Grunder Vadim Shchepin. Uber 10 Jahre Erfahrung in Softwareentwicklung, Produktdesign und digitalem Marketing.
+
+Kernprinzipien:
+- Ergebnis-Garantie: Arbeit bis zur Zufriedenheit, ohne Aufpreis
+- Volle Transparenz: Live-Zugang zu allen Daten und Reports
+- Datenbasiert: Jede Entscheidung durch echte Zahlen belegt
+- Ihre Daten gehoren Ihnen: Kein Lock-in, alle Konten und Zugange sind Eigentum des Kunden
+
+## Leistungen im Detail
+
+### Webdesign & Website-Entwicklung
+
+Individuell entwickelte Websites fur lokale Unternehmen. Kein Baukasten, kein Template.
+
+Was enthalten ist:
+- Individuelles Design mit durchdachtem Conversion-Pfad
+- PageSpeed 90-100 (Google Lighthouse Score)
+- Responsive auf allen Geraten
+- SEO-Grundoptimierung inklusive (Meta-Tags, strukturierte Daten, semantisches HTML)
+- CMS-Integration oder statische Seite je nach Bedarf
+- SSL, DSGVO-konform, technisch einwandfrei
+
+Preise:
+- One-Pager (1 Seite, Kontaktformular, SEO-Setup): ab 2.000 EUR einmalig
+- Mehrseitige Website (5+ Seiten, CMS, Blog optional, erweitertes SEO): ab 3.000 EUR einmalig
+
+Typischer Ablauf: Erstgesprach → Konzept & Struktur → Design & Entwicklung → Launch & Optimierung. Dauer: 2-3 Wochen (One-Pager) bis 4-6 Wochen (mehrseitig).
+
+### SEO & Lokale Suchmaschinenoptimierung
+
+Laufende Optimierung fur nachhaltige Sichtbarkeit in Google und Google Maps.
+
+Was enthalten ist:
+- Vollstandige technische SEO-Analyse und Optimierung
+- Lokale SEO: Google Business Profile, Citations, lokale Keywords
+- On-Page-Optimierung aller relevanten Seiten
+- Content-Strategie basierend auf echten Suchanfragen
+- Monatliches Reporting mit allen relevanten KPIs
+- Live-Dashboard mit aktuellen Rankings und Traffic-Daten
+- Wettbewerber-Monitoring
+
+Preis: ab 1.000 EUR/Monat. Mindestlaufzeit 3 Monate, danach monatlich kundbar.
+Erste Ergebnisse typischerweise nach 4-8 Wochen. Volle Wirkung nach 3-6 Monaten.
+
+### AI SEO — Sichtbarkeit in KI-Suchsystemen
+
+Optimierung fur ChatGPT, Perplexity, Google AI Overviews und andere LLM-basierte Suchsysteme.
+
+Was enthalten ist:
+- AI-Sichtbarkeits-Audit: Wie sichtbar ist Ihr Unternehmen in AI-Antworten?
+- Strukturierte Daten (Schema Markup) fur AI-Verstandnis
+- Content-Optimierung fur AI-Zitation und Snippet-Eignung
+- Autoritats-Aufbau: Signale, die AI-Modelle als vertrauenswurdig werten
+- Google AI Overviews Optimierung
+- Monitoring der Sichtbarkeit in AI-Antworten
+
+Preis: ab 1.200 EUR/Monat. Kann als Upgrade zum SEO-Paket oder eigenstehend gebucht werden.
+
+Hintergrund: LLMs wie GPT-4 und Gemini synthetisieren Informationen aus Webquellen. Die Auswahl der zitierten Quellen folgt anderen Regeln als Googles PageRank — Informationsdichte, strukturierte Klarheit, faktische Konsistenz und Autoritat des Autors sind entscheidend.
+
+### Google & Local Ads
+
+Kampagnen die echte Anfragen generieren — messbar, prazise, auf ROI optimiert.
+
+Was enthalten ist:
+- Kampagnen-Setup: Keyword-Recherche, Anzeigentexte, Struktur
+- Google Search Ads fur kaufbereite Suchende
+- Local Services Ads fur lokale Dienstleister
+- Conversion Tracking: Jeder Anruf, jede Anfrage wird gemessen
+- Laufende Optimierung: Budgets, Keywords, Gebote
+- Monatlicher Report mit Kosten pro Lead und ROI
+- Voller Zugang zum eigenen Google Ads Konto
+
+Preis: ab 500 EUR/Monat (Management-Fee). Werbebudget kommt separat dazu (Empfehlung: mindestens 500 EUR/Monat).
+
+Das Werbebudget lauft uber das eigene Google-Konto des Kunden. Volle Kontrolle und Transparenz.
+
+### Kostenlose Website-Analyse
+
+Analyse der aktuellen Website: Performance, SEO, Struktur und Conversion-Potenzial.
+
+Was die Analyse umfasst:
+- Performance-Check: Ladezeiten, Core Web Vitals, Mobile-Tauglichkeit
+- SEO-Analyse: Rankings, technische Fehler, verpasste Chancen
+- Struktur-Bewertung: Ist der Conversion-Pfad klar?
+- Wettbewerber-Vergleich
+- Konkrete Handlungsempfehlungen mit Prioritaten
+- Personliches Gesprach zur Besprechung
+
+Preis: Kostenlos und unverbindlich. Kein Haken, kein Kleingedrucktes.
+
+## Referenzen und Ergebnisse
+
+### Blitz Hamburg — Handwerksbetrieb
+Branche: Sanierung und Entrumpelung in Hamburg
+Leistungen: Website-Erstellung, Google Ads, organische Sichtbarkeit
+Ergebnisse:
+- Top-Positionen in der Google-Suche fur relevante Handwerker-Keywords
+- Stabile Kundengewinnung uber Website und organische Suche
+- 5.0 Sterne bei 24 Google-Bewertungen
+- Von Null auf einen stetigen Strom qualifizierter Anfragen
+Website: https://www.blitz-hamburg.de/
+
+### KinderAlbum — DSGVO-konforme Schulfotos-App
+Branche: EdTech / Datenschutz
+Leistungen: Full-Stack App-Entwicklung, AI SEO Strategie
+Ergebnisse:
+- Platz 1 in ChatGPT fur relevante Suchanfragen
+- Platz 1 in Perplexity fur DSGVO-Schulfotos-Themen
+- Platz 1 in Google AI Overviews
+- Hunderte aktive Nutzer an echten deutschen Schulen
+- Echtes Problem gelost: sicherer, DSGVO-konformer Fotoaustausch
+Website: https://dsgvoschulfotos.de/
+
+### Solovei Beauty — Beauty-Coworking Hamburg
+Branche: Beauty / Coworking
+Leistungen: Website, Buchungssystem, Vertragsmanagement, Rollenverwaltung
+Ergebnisse:
+- 5.000 Google-Impressionen innerhalb von 2 Monaten
+- Komplettes digitales Buchungs- und Verwaltungssystem
+- Vollstandig ausgebuchte Arbeitsplatze in kurzester Zeit
+- Ohne bezahlte Werbung — nur durch Website und organische Sichtbarkeit
+Website: https://www.solovei-beauty.com/de
+
+## Expertise und Hintergrund
+
+Vadim Shchepin:
+- 10+ Jahre Erfahrung in Softwareentwicklung, Produktdesign und digitalem Marketing
+- Hintergrund in Tech-Unternehmen und Startups
+- Technologien: React, Next.js, Node.js, WordPress, Custom CMS
+- SEO-Tools: Google Search Console, Google Analytics, Ahrefs, Screaming Frog
+- Ads: Google Ads, Local Services Ads, Google Tag Manager, Conversion Tracking
+- AI: AI SEO, strukturierte Daten, LLM-Sichtbarkeit, Prompt-Optimierung
+
+## Kontakt
+
+- Telefon: +49 176 321 94 754
+- E-Mail: hallo@webseite.hamburg
+- Website: https://webseite.hamburg
+- Kontaktformular: https://webseite.hamburg/kontakt
+- Standort: Hamburg, Deutschland
+
+## Social Media und Profile
+
+- LinkedIn: https://www.linkedin.com/in/vadim-shchepin/
+- Instagram: https://www.instagram.com/aiseo.hamburg/
+- TikTok: https://www.tiktok.com/@aiseo.hamburg/
+- Google Business: https://share.google/bkLeWZ9kPt2G8Lwtg
+
+## Fachartikel und Ressourcen
+
+1. Warum langsame Websites Sie jeden Tag Kunden kosten
+   Thema: PageSpeed, Core Web Vitals, Ladezeit-Optimierung
+   URL: https://webseite.hamburg/wissen/warum-langsame-websites-kunden-kosten
+
+2. Lokales SEO in Hamburg — Der komplette Leitfaden fur 2026
+   Thema: Google Business Profile, lokale Keywords, NAP-Konsistenz, Citations
+   URL: https://webseite.hamburg/wissen/lokales-seo-hamburg-guide
+
+3. AI SEO — Was Unternehmen jetzt wissen mussen
+   Thema: LLM-Quellenauswahl, strukturierte Daten, E-E-A-T fur AI
+   URL: https://webseite.hamburg/wissen/ai-seo-was-unternehmen-jetzt-wissen-muessen
+
+4. Die 7 teuersten Google Ads Fehler lokaler Unternehmen
+   Thema: Keyword-Fehler, Conversion-Tracking, Quality Score, Budget-Optimierung
+   URL: https://webseite.hamburg/wissen/google-ads-fehler-lokale-unternehmen
+
+5. Mehr Anfragen ohne mehr Traffic — Conversion-Optimierung erklart
+   Thema: Conversion-Rate, CTA-Platzierung, Vertrauenssignale, Formular-Design
+   URL: https://webseite.hamburg/wissen/website-conversion-optimierung
+
+6. Website-Relaunch Checkliste — Was Sie vorher wissen mussen
+   Thema: 301-Redirects, SEO-Migration, Pre/Post-Launch-Checks
+   URL: https://webseite.hamburg/wissen/website-relaunch-checkliste

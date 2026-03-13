@@ -21,7 +21,7 @@ export default function WebsiteAuditPage() {
         name: 'Kostenlose Website-Analyse Hamburg',
         provider: BUSINESS,
         areaServed: { '@type': 'City', name: 'Hamburg' },
-        url: 'https://website.hamburg/leistungen/website-audit',
+        url: 'https://webseite.hamburg/leistungen/website-audit',
         description: 'Kostenlose Website-Analyse: Performance, SEO, Struktur und Conversion-Potenzial. Ehrliche Einschatzung mit konkreten Handlungsempfehlungen.',
         offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
     };

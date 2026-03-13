@@ -22,7 +22,7 @@ export default function WebdesignPage() {
         name: 'Webdesign & Website-Entwicklung Hamburg',
         provider: BUSINESS,
         areaServed: { '@type': 'City', name: 'Hamburg' },
-        url: 'https://website.hamburg/leistungen/webdesign',
+        url: 'https://webseite.hamburg/leistungen/webdesign',
         description: 'Professionelle Website-Entwicklung fur lokale Unternehmen in Hamburg. Individuelles Design, PageSpeed 100/100, Conversion-Optimierung.',
         offers: [
             { '@type': 'Offer', name: 'One-Pager', price: '2000', priceCurrency: 'EUR' },

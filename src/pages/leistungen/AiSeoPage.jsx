@@ -21,7 +21,7 @@ export default function AiSeoPage() {
         name: 'AI SEO - Sichtbarkeit in ChatGPT & Perplexity',
         provider: BUSINESS,
         areaServed: { '@type': 'City', name: 'Hamburg' },
-        url: 'https://website.hamburg/leistungen/ai-seo',
+        url: 'https://webseite.hamburg/leistungen/ai-seo',
         description: 'AI SEO Optimierung fur Sichtbarkeit in ChatGPT, Perplexity und Google AI Overviews. Ihr Unternehmen als vertrauenswurdige Quelle in KI-Antworten.',
         offers: { '@type': 'Offer', price: '1200', priceCurrency: 'EUR', priceSpecification: { '@type': 'UnitPriceSpecification', unitText: 'Monat' } },
     };

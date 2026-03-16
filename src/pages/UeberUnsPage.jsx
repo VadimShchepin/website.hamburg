@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import usePageMeta from '../hooks/usePageMeta';
 import Breadcrumbs from '../components/Breadcrumbs';
 import { BUSINESS, SOCIAL_LINKS } from '../lib/schema';
 
 export default function UeberUnsPage() {
+    usePageMeta('Über AISEO | Webentwickler & SEO-Spezialist Hamburg');
     const jsonLd = {
         '@context': 'https://schema.org',
         '@type': 'AboutPage',

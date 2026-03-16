@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import usePageMeta from '../hooks/usePageMeta';
 
 export default function ContactPage() {
+    usePageMeta('Kontakt | Kostenlose Website-Beratung | Hamburg');
     const [form, setForm] = useState({
         name: '',
         phone: '',

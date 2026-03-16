@@ -1,4 +1,5 @@
 import React from 'react';
+import usePageMeta from '../hooks/usePageMeta';
 import Hero from '../components/Hero';
 import TrustStrip from '../components/TrustStrip';
 import CaseStudiesGrid from '../components/CaseStudiesGrid';
@@ -11,6 +12,7 @@ import Cases from '../components/Cases';
 import Cta from '../components/Cta';
 
 export default function HomePage() {
+    usePageMeta('Webdesign & SEO Hamburg | Websites die Kunden bringen');
     return (
         <>
             <Hero />

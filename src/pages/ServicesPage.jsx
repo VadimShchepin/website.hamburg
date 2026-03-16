@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import usePageMeta from '../hooks/usePageMeta';
 
 function useHashScroll() {
     const { hash } = useLocation();
@@ -15,6 +16,7 @@ function useHashScroll() {
 
 export default function ServicesPage() {
     useHashScroll();
+    usePageMeta('Leistungen & Preise | Webdesign, SEO & Ads | Hamburg');
 
     return (
         <>

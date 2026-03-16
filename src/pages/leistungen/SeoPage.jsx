@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import usePageMeta from '../../hooks/usePageMeta';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import FaqSection from '../../components/FaqSection';
 import RelatedServices from '../../components/RelatedServices';
@@ -16,6 +17,7 @@ const faqItems = [
 ];
 
 export default function SeoPage() {
+    usePageMeta('SEO Hamburg | Lokale Sichtbarkeit & Google Rankings');
     const jsonLd = {
         '@context': 'https://schema.org',
         '@type': 'Service',

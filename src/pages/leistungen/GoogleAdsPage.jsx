@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import usePageMeta from '../../hooks/usePageMeta';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import FaqSection from '../../components/FaqSection';
 import RelatedServices from '../../components/RelatedServices';
@@ -16,6 +17,7 @@ const faqItems = [
 ];
 
 export default function GoogleAdsPage() {
+    usePageMeta('Google Ads Hamburg | Sofort qualifizierte Anfragen');
     const jsonLd = {
         '@context': 'https://schema.org',
         '@type': 'Service',

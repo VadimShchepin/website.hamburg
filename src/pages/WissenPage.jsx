@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import usePageMeta from '../hooks/usePageMeta';
 import Breadcrumbs from '../components/Breadcrumbs';
 import { BUSINESS } from '../lib/schema';
 
@@ -49,6 +50,7 @@ const articles = [
 ];
 
 export default function WissenPage() {
+    usePageMeta('Wissen | Webdesign, SEO & Ads Guides | Hamburg');
     const jsonLd = {
         '@context': 'https://schema.org',
         '@type': 'CollectionPage',

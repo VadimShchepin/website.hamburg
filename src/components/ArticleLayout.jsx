@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import usePageMeta from '../hooks/usePageMeta';
 import Breadcrumbs from './Breadcrumbs';
 import { BUSINESS } from '../lib/schema';
 
 export default function ArticleLayout({ slug, category, title, readTime, publishDate, children }) {
+    usePageMeta(`${title} | Hamburg`);
     const jsonLd = {
         '@context': 'https://schema.org',
         '@type': 'Article',

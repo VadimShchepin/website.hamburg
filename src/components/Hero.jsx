@@ -1,5 +1,7 @@
+'use client';
+
 import React, { useRef } from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 
@@ -102,7 +104,7 @@ export default function Hero() {
                     Findet er Sie — oder Ihren Wettbewerber? Websites, SEO und Ads, die messbar Kunden bringen.
                 </p>
                 <div className="hero-cta">
-                    <Link to="/kontakt" className="button button-primary button-large">
+                    <Link href="/kontakt" className="button button-primary button-large">
                         Kostenlose Website-Analyse
                     </Link>
                 </div>

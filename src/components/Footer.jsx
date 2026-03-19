@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { SOCIAL_LINKS } from '../lib/schema';
 
 export default function Footer() {
@@ -7,7 +7,7 @@ export default function Footer() {
         <footer className="site-footer">
             <div className="container footer-grid">
                 <div className="footer-brand">
-                    <img src="/logo_red.png" alt="AISEO" width="80" style={{ opacity: 0.9 }} />
+                    <img src="/logo_red.webp" alt="AISEO" width="80" height="70" style={{ opacity: 0.9 }} />
                     <p className="mt-2" style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.9rem', lineHeight: 1.6 }}>
                         Professionelle Websites, SEO und Google Ads fur lokale Unternehmen in Hamburg. Messbar. Transparent. Ergebnisorientiert.
                     </p>
@@ -19,17 +19,18 @@ export default function Footer() {
                 </div>
                 <div className="footer-links">
                     <h4>Leistungen</h4>
-                    <Link to="/leistungen/webdesign">Webdesign & Entwicklung</Link>
-                    <Link to="/leistungen/seo">SEO fur lokale Unternehmen</Link>
-                    <Link to="/leistungen/ai-seo">AI SEO</Link>
-                    <Link to="/leistungen/google-ads">Google Ads Management</Link>
-                    <Link to="/leistungen/website-audit">Website-Audit</Link>
+                    <Link href="/leistungen/webdesign">Webdesign & Entwicklung</Link>
+                    <Link href="/leistungen/seo">SEO fur lokale Unternehmen</Link>
+                    <Link href="/leistungen/ai-seo">AI SEO</Link>
+                    <Link href="/leistungen/google-ads">Google Ads Management</Link>
+                    <Link href="/leistungen/website-audit">Website-Audit</Link>
                 </div>
                 <div className="footer-links">
                     <h4>Unternehmen</h4>
-                    <Link to="/ueber-uns">Uber uns</Link>
-                    <Link to="/wissen">Wissen</Link>
-                    <Link to="/kontakt">Kontakt</Link>
+                    <Link href="/ueber-uns">Uber uns</Link>
+                    <Link href="/wissen">Wissen</Link>
+                    <Link href="/kontakt">Kontakt</Link>
+                    <Link href="/faq">FAQ</Link>
                     <a href="mailto:hallo@webseite.hamburg">hallo@webseite.hamburg</a>
                     <a href="tel:+4917632194754">0176 / 321 94 754</a>
                     <div className="footer-social">
@@ -51,8 +52,8 @@ export default function Footer() {
                         ))}
                     </div>
                     <div className="footer-legal">
-                        <a href="/impressum">Impressum</a>
-                        <a href="/datenschutz">Datenschutz</a>
+                        <Link href="/impressum">Impressum</Link>
+                        <Link href="/datenschutz">Datenschutz</Link>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 export default function Services() {
     const services = [
@@ -63,7 +63,7 @@ export default function Services() {
                 </div>
                 <div className="services-grid">
                     {services.map((s, i) => (
-                        <Link key={i} to={`/leistungen/${s.slug}`} className={`service-card market-frame animate-up delay-${(i % 3) + 1}`}>
+                        <Link key={i} href={`/leistungen/${s.slug}`} className={`service-card market-frame animate-up delay-${(i % 3) + 1}`}>
                             <div className="service-icon">{s.icon}</div>
                             <h3>{s.title}</h3>
                             <p>{s.desc}</p>
@@ -77,7 +77,7 @@ export default function Services() {
                     ))}
                 </div>
                 <div className="text-center mt-5 animate-up">
-                    <Link to="/leistungen" className="button">Alle Leistungen & Preise ansehen</Link>
+                    <Link href="/leistungen" className="button">Alle Leistungen & Preise ansehen</Link>
                 </div>
             </div>
         </section>

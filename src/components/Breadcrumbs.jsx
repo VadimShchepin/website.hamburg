@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 export default function Breadcrumbs({ items }) {
     const jsonLd = {
@@ -21,7 +21,7 @@ export default function Breadcrumbs({ items }) {
                     {items.map((item, i) => (
                         <li key={i} className="breadcrumbs-item">
                             {i < items.length - 1 ? (
-                                <Link to={item.href}>{item.label}</Link>
+                                <Link href={item.href}>{item.label}</Link>
                             ) : (
                                 <span aria-current="page">{item.label}</span>
                             )}

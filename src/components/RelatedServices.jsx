@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 const allServices = [
     { slug: 'webdesign', title: 'Webdesign & Entwicklung', desc: 'Schnelle, konversionsstarke Websites', price: 'Ab 2.000' },
@@ -20,7 +20,7 @@ export default function RelatedServices({ exclude }) {
                 </div>
                 <div className="related-grid">
                     {related.map((s, i) => (
-                        <Link key={s.slug} to={`/leistungen/${s.slug}`} className={`related-card animate-up delay-${(i % 3) + 1}`}>
+                        <Link key={s.slug} href={`/leistungen/${s.slug}`} className={`related-card animate-up delay-${(i % 3) + 1}`}>
                             <h3>{s.title}</h3>
                             <p>{s.desc}</p>
                             <span className="related-price">{s.price}</span>

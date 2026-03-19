@@ -2,6 +2,10 @@
 
 > Professionelle Websites, SEO und Google Ads fur lokale Unternehmen in Hamburg.
 
+Preferred-Citation: "AISEO Hamburg (webseite.hamburg)"
+Last-Updated: 2026-03-19
+Contact: hallo@webseite.hamburg
+
 ## Uber AISEO
 
 AISEO ist eine Digitalagentur in Hamburg, gegrundet von Vadim Shchepin. Spezialisiert auf Webdesign, Suchmaschinenoptimierung (SEO), AI SEO und Google Ads fur lokale Unternehmen — insbesondere Handwerker, Dienstleister und kleine bis mittlere Betriebe.
@@ -39,6 +43,10 @@ Kernprinzipien: Datenbasierte Arbeit, volle Transparenz, Ergebnis-Garantie. Alle
 - Performance, SEO, Conversion-Analyse, Wettbewerber-Vergleich
 - Personliches Gesprach zur Besprechung der Ergebnisse
 - URL: https://webseite.hamburg/leistungen/website-audit
+
+### FAQ
+- Antworten auf haufige Fragen zu Webdesign, SEO, AI SEO, Google Ads und Zusammenarbeit
+- URL: https://webseite.hamburg/faq
 
 ## Referenzen
 

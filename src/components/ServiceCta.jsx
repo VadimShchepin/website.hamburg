@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 export default function ServiceCta({ title = 'Bereit fur den nachsten Schritt?', text }) {
     return (
@@ -10,7 +10,7 @@ export default function ServiceCta({ title = 'Bereit fur den nachsten Schritt?',
                     <h2 className="section-title">{title}</h2>
                     <p className="offer-framing">{text || 'Kostenloses Erstgesprach — unverbindlich und konkret. Ich sage Ihnen ehrlich, wo das Potenzial liegt.'}</p>
                     <div className="cta-actions mt-4">
-                        <Link to="/kontakt" className="button button-primary button-large">Jetzt Analyse anfordern</Link>
+                        <Link href="/kontakt" className="button button-primary button-large">Jetzt Analyse anfordern</Link>
                         <a href="tel:+4917632194754" className="cta-phone">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                             0176 / 321 94 754

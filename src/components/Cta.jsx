@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 export default function Cta() {
     return (
@@ -10,7 +10,7 @@ export default function Cta() {
                     <h2 className="section-title">Lassen Sie uns Ihr Wachstum starten.</h2>
                     <p className="offer-framing">Kostenlose Website-Analyse: Wir prufen Geschwindigkeit, SEO, Struktur und Conversion-Potenzial Ihrer aktuellen Website — unverbindlich und konkret.</p>
                     <div className="cta-actions mt-4">
-                        <Link to="/kontakt" className="button button-primary button-large">
+                        <Link href="/kontakt" className="button button-primary button-large">
                             Jetzt Analyse anfordern
                         </Link>
                         <a href="tel:+4917632194754" className="cta-phone">

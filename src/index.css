@@ -16,9 +16,9 @@
   --color-bg-lightgray: #F5F7FA;
   --color-bg-gray2: #E9EEF3;
 
-  /* Typography */
-  --font-heading: 'Goldman', system-ui, sans-serif;
-  --font-body: 'Inter', system-ui, sans-serif;
+  /* Typography - uses CSS variables from next/font */
+  --font-heading: var(--font-goldman), 'Goldman', system-ui, sans-serif;
+  --font-body: var(--font-inter), 'Inter', system-ui, sans-serif;
 
   /* Geometry & Framings */
   --frame-border: 1px solid var(--color-primary);
@@ -2416,6 +2416,61 @@ img {
   color: var(--color-primary);
 }
 
+.article-byline {
+  margin-top: var(--space-xs, 0.5rem);
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+}
+
+.article-byline a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.related-articles {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--color-border, #e5e7eb);
+}
+
+.related-articles h3 {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  color: var(--color-primary);
+  margin-bottom: var(--space-md);
+}
+
+.related-articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-sm);
+}
+
+.related-article-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: var(--space-sm);
+  border: 1px solid var(--color-border, #e5e7eb);
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.related-article-card:hover {
+  border-color: var(--color-accent);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.related-article-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 1.4;
+}
+
 .article-cta {
   margin-top: var(--space-xl);
 }
@@ -2438,6 +2493,75 @@ img {
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* FAQ Hub */
+.faq-hub {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.faq-category-title {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+  padding-bottom: var(--space-xs, 0.5rem);
+  border-bottom: 2px solid var(--color-accent);
+}
+
+.faq-item {
+  border-bottom: 1px solid rgba(10, 25, 47, 0.08);
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: var(--space-sm) 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  gap: var(--space-sm);
+}
+
+.faq-question:hover {
+  color: var(--color-accent);
+}
+
+.faq-icon {
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.faq-open .faq-icon {
+  transform: rotate(45deg);
+}
+
+.faq-icon-v {
+  transition: opacity 0.2s ease;
+}
+
+.faq-open .faq-icon-v {
+  opacity: 0;
+}
+
+.faq-answer {
+  padding-bottom: var(--space-sm);
+}
+
+.faq-answer p {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin: 0;
 }
 
 /* Wissen card as link */

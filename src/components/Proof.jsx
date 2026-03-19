@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useEffect, useRef, useState } from 'react';
 
 function Counter({ target, duration = 2000, suffix = '' }) {

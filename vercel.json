@@ -1,6 +1,11 @@
 {
-  "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/$1" },
-    { "source": "/(.*)", "destination": "/index.html" }
+  "framework": "nextjs",
+  "redirects": [
+    {
+      "source": "/:path(.*)",
+      "has": [{ "type": "host", "value": "www.webseite.hamburg" }],
+      "destination": "https://webseite.hamburg/:path",
+      "permanent": true
+    }
   ]
 }

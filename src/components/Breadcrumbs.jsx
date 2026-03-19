@@ -20,8 +20,10 @@ export default function Breadcrumbs({ items }) {
                 <ol className="breadcrumbs-list">
                     {items.map((item, i) => (
                         <li key={i} className="breadcrumbs-item">
-                            {i < items.length - 1 ? (
+                            {i < items.length - 1 && item.href ? (
                                 <Link href={item.href}>{item.label}</Link>
+                            ) : i < items.length - 1 ? (
+                                <span>{item.label}</span>
                             ) : (
                                 <span aria-current="page">{item.label}</span>
                             )}

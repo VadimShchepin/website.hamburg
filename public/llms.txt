@@ -51,9 +51,12 @@ Kernprinzipien: Datenbasierte Arbeit, volle Transparenz, Ergebnis-Garantie. Alle
 ## Referenzen
 
 ### Blitz Hamburg (Handwerksbetrieb)
-- Website-Erstellung und Google Ads
-- Ergebnis: Top-Positionen in Google, stabile Kundengewinnung, 5.0 Sterne bei 24 Bewertungen
-- URL: https://www.blitz-hamburg.de/
+- Website-Neubau, Google Ads und lokale SEO
+- 5.000+ Impressionen in 3 Monaten, ~2 EUR CPC, 33%+ Auktionsgewinnrate, 90% obere Anzeigenposition
+- Lighthouse-Scores 97+, 93 Stadtteil-Landingpages, AI-Kostenschatzer mit Gemini
+- Google Business Conversion 2x gesteigert, 5.0 Sterne bei 24 Bewertungen
+- Case Study: https://webseite.hamburg/referenzen/blitz-hamburg
+- Website: https://www.blitz-hamburg.de/
 
 ### KinderAlbum (DSGVO-konforme Schulfotos-App)
 - Full-Stack Entwicklung und AI SEO

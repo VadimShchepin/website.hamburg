@@ -29,6 +29,7 @@ export default function Footer() {
                     <h4>Unternehmen</h4>
                     <Link href="/ueber-uns">Uber uns</Link>
                     <Link href="/wissen">Wissen</Link>
+                    <Link href="/referenzen/blitz-hamburg">Referenzen</Link>
                     <Link href="/kontakt">Kontakt</Link>
                     <Link href="/faq">FAQ</Link>
                     <a href="mailto:hallo@webseite.hamburg">hallo@webseite.hamburg</a>

@@ -35,6 +35,12 @@ export const ARTICLES = [
         category: 'WEBDESIGN',
         readTime: '5 Min.',
     },
+    {
+        slug: 'webdesign-kosten',
+        title: 'Webdesign Kosten 2026: Was eine professionelle Website wirklich kostet',
+        category: 'WEBDESIGN',
+        readTime: '10 Min.',
+    },
 ];
 
 export function getRelatedArticles(currentSlug, count = 3) {

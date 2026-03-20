@@ -59,6 +59,13 @@ const articles = [
         excerpt: 'Ein Relaunch kann Ihre Online-Prasenz transformieren — oder Ihre Rankings zerstoren. Die wichtigsten Punkte, die Sie vor, wahrend und nach dem Relaunch beachten mussen.',
         readTime: '10 Min.',
     },
+    {
+        slug: 'webdesign-kosten',
+        category: 'WEBDESIGN',
+        title: 'Webdesign Kosten 2026: Was eine professionelle Website wirklich kostet',
+        excerpt: 'Von 500 bis 50.000 Euro — was bestimmt den Preis einer Website? Ehrlicher Kostenguide mit Preisbeispielen, versteckten Kosten und Tipps fur die richtige Entscheidung.',
+        readTime: '10 Min.',
+    },
 ];
 
 export default function WissenPage() {

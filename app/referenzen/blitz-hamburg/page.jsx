@@ -355,7 +355,7 @@ export default function BlitzHamburgCaseStudy() {
                     </div>
 
                     {/* Timeline */}
-                    <h2 className="animate-up">Der Projektverlauf: 112 Tage</h2>
+                    <h2 className="animate-up">Der Projektverlauf</h2>
                     <div className="cs-timeline animate-up">
                         <TimelineStep
                             num="01"
@@ -403,10 +403,6 @@ export default function BlitzHamburgCaseStudy() {
                         <div className="subpage-stat">
                             <span className="subpage-stat-value">5</span>
                             <span className="subpage-stat-label">SEO-Ratgeber</span>
-                        </div>
-                        <div className="subpage-stat">
-                            <span className="subpage-stat-value">112</span>
-                            <span className="subpage-stat-label">Tage Entwicklung</span>
                         </div>
                     </div>
 

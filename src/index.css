@@ -974,17 +974,75 @@ img {
 .case-card {
   display: flex;
   flex-direction: column;
-  padding: var(--space-md);
   border: 1px solid var(--color-bg-gray2);
   background: var(--color-bg-white);
   text-decoration: none;
   color: inherit;
+  overflow: hidden;
   transition: border-color 0.3s ease, transform 0.3s ease;
 }
 
 .case-card:hover {
   border-color: var(--color-primary);
   transform: translateY(-4px);
+}
+
+.case-image-wrap {
+  position: relative;
+  aspect-ratio: 1200 / 781;
+  overflow: hidden;
+  background: var(--color-bg-lightgray);
+}
+
+.case-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.case-card:hover .case-image {
+  transform: scale(1.03);
+}
+
+.case-image-placeholder {
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(circle at 20% 50%, rgba(229, 57, 53, 0.08) 0%, transparent 50%),
+    linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+}
+
+.case-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-md);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  z-index: 1;
+}
+
+.case-card:hover .case-image-overlay {
+  opacity: 1;
+}
+
+.case-image-overlay p {
+  color: var(--color-text-white);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.case-body {
+  padding: var(--space-sm) var(--space-md) var(--space-md);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .case-tag {
@@ -997,23 +1055,15 @@ img {
   padding: 0.2rem 0.6rem;
   display: inline-block;
   width: fit-content;
-  margin-bottom: var(--space-sm);
+  margin-bottom: 0.6rem;
 }
 
 .case-title {
   font-family: var(--font-heading);
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   color: var(--color-primary);
   line-height: 1.3;
   margin-bottom: 0.75rem;
-}
-
-.case-desc {
-  font-size: 0.9rem;
-  color: var(--color-text-muted);
-  line-height: 1.7;
-  margin-bottom: var(--space-sm);
-  flex-grow: 1;
 }
 
 .case-results {
@@ -1022,15 +1072,15 @@ img {
   margin: 0 0 var(--space-sm);
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.4rem;
 }
 
 .case-results li {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 600;
   color: var(--color-primary);
   background: var(--color-bg-lightgray);
-  padding: 0.3rem 0.7rem;
+  padding: 0.25rem 0.6rem;
 }
 
 .case-link {
@@ -1046,6 +1096,95 @@ img {
 
 .case-card:hover .case-link {
   gap: 0.6rem;
+}
+
+/* Google Reviews */
+.google-reviews {
+  margin-top: var(--space-lg);
+}
+
+.google-reviews-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--space-md);
+}
+
+.google-reviews-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.google-reviews-score {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 1;
+}
+
+.google-reviews-stars {
+  display: flex;
+  gap: 0.1rem;
+}
+
+.google-reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-sm);
+}
+
+.google-review-card {
+  padding: var(--space-sm);
+  border: 1px solid var(--color-bg-gray2);
+  background: var(--color-bg-white);
+}
+
+.google-review-top {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.google-review-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: var(--color-text-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.google-review-name {
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  color: var(--color-primary);
+  display: block;
+  line-height: 1.2;
+}
+
+.google-review-stars {
+  display: flex;
+  gap: 0.05rem;
+  margin-top: 0.15rem;
+}
+
+.google-review-stars svg {
+  width: 14px;
+  height: 14px;
+}
+
+.google-review-text {
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
 }
 
 /* ==========================================================================
@@ -2994,6 +3133,10 @@ a.service-card {
   .cs-ads-results {
     grid-template-columns: 1fr;
   }
+
+  .google-reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
@@ -3057,6 +3200,10 @@ a.service-card {
   }
 
   .cases-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .google-reviews-grid {
     grid-template-columns: 1fr;
   }
 }

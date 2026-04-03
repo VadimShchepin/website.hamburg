@@ -94,6 +94,12 @@ export default function sitemap() {
             changeFrequency: 'monthly',
             priority: 0.7,
         },
+        {
+            url: `${SITE_URL}/referenzen/pest-control-saas`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.7,
+        },
         // Wissen
         {
             url: `${SITE_URL}/wissen`,

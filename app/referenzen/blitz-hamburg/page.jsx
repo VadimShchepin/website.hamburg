@@ -8,14 +8,14 @@ const PAGE_URL = `${SITE_URL}/referenzen/blitz-hamburg`;
 const IMG = '/referenzen/blitz-hamburg';
 
 export const metadata = {
-    title: 'Blitz Hamburg Case Study | Von Null auf stabile Auftragslage in 3 Monaten',
-    description: 'Wie ein Hamburger Handwerksbetrieb durch Website-Neubau, Google Ads und SEO in 3 Monaten 5.000+ Impressionen, Top-Positionen und kontinuierliche Kundenanfragen erreicht hat.',
+    title: 'Blitz Hamburg Case Study | ROI in 7 Wochen, ~40 Kunden pro Monat',
+    description: 'Wie ein Hamburger Handwerksbetrieb durch Website-Neubau, Google Ads und SEO in 7 Wochen den ROI erreicht hat und heute ~40 Kunden pro Monat gewinnt.',
     alternates: {
         canonical: PAGE_URL,
     },
     openGraph: {
-        title: 'Blitz Hamburg Case Study | Von Null auf stabile Auftragslage',
-        description: 'Website-Neubau, Google Ads und lokale SEO fur einen Handwerksbetrieb. 5.000+ Impressionen, 2x Conversion-Steigerung, Lighthouse 99/100/100/100.',
+        title: 'Blitz Hamburg Case Study | ROI in 7 Wochen, ~40 Kunden/Monat',
+        description: 'Website-Neubau, Google Ads und lokale SEO fur einen Handwerksbetrieb. ROI in 7 Wochen, ~40 Kunden/Monat, 72 getrackte Kundeninteraktionen.',
         url: PAGE_URL,
         type: 'article',
     },
@@ -58,11 +58,11 @@ export default function BlitzHamburgCaseStudy() {
     const articleJsonLd = {
         '@context': 'https://schema.org',
         '@type': 'Article',
-        headline: 'Blitz Hamburg: Von Null auf stabile Auftragslage in 3 Monaten',
-        description: 'Case Study: Wie ein Hamburger Handwerksbetrieb durch Website-Neubau, Google Ads und lokale SEO in 3 Monaten messbare Ergebnisse erzielt hat.',
+        headline: 'Blitz Hamburg: ROI in 7 Wochen, ~40 Kunden pro Monat',
+        description: 'Case Study: Wie ein Hamburger Handwerksbetrieb durch Website-Neubau, Google Ads und lokale SEO den ROI in 7 Wochen erreicht hat.',
         url: PAGE_URL,
         datePublished: '2026-03-19',
-        dateModified: '2026-03-19',
+        dateModified: '2026-04-03',
         author: {
             '@type': 'Person',
             name: 'Vadim Shchepin',
@@ -104,10 +104,10 @@ export default function BlitzHamburgCaseStudy() {
                         <span className="wissen-card-time">Webdesign + Google Ads + SEO</span>
                     </div>
                     <h1 className="subpage-title animate-up">
-                        Blitz Hamburg: Von Null auf stabile Auftragslage in 3 Monaten.
+                        Blitz Hamburg: ROI in 7 Wochen, heute ~40 Kunden pro Monat.
                     </h1>
                     <p className="subpage-intro animate-up">
-                        Ein Hamburger Handwerksbetrieb fur Entrumpelung und Sanierung — komplett neue Website, gezielte Google Ads und lokale SEO. Das Ergebnis: Top-Positionen, qualifizierte Anfragen und messbares Wachstum.
+                        Ein Hamburger Handwerksbetrieb fur Entrumpelung und Sanierung — komplett neue Website mit KI-Kostenschatzer, gezielte Google Ads und lokale SEO. Investition in 7 Wochen zuruckgeholt, heute ~40 Kunden pro Monat und 72 getrackte Kundeninteraktionen allein im letzten Monat.
                     </p>
                     <div className="article-byline animate-up">
                         Von <Link href="/ueber-uns">Vadim Shchepin</Link> &middot; 19. Marz 2026
@@ -119,11 +119,11 @@ export default function BlitzHamburgCaseStudy() {
             <section className="section">
                 <div className="container">
                     <div className="cs-metrics-grid animate-up">
-                        <MetricCard value="5.000+" label="Impressionen" detail="in 3 Monaten" />
-                        <MetricCard value="~2 &euro;" label="CPC" detail="Sanierung & Entrumpelung" />
-                        <MetricCard value="33%+" label="Auktionsgewinnrate" detail="Google Ads" />
-                        <MetricCard value="90%" label="Obere Anzeigenposition" detail="Upper Ads Block" />
-                        <MetricCard value="2x" label="Conversion-Steigerung" detail="Google Business Profil" />
+                        <MetricCard value="7 Wochen" label="Return on Investment" detail="Investition zuruckgeholt" />
+                        <MetricCard value="~40" label="Kunden / Monat" detail="Aktuelle Auftragslage" />
+                        <MetricCard value="72" label="Kundeninteraktionen" detail="Getrackt im letzten Monat" />
+                        <MetricCard value="2,57 &euro;" label="CPC" detail="Google Ads" />
+                        <MetricCard value="3,44%" label="CTR" detail="Google Ads" />
                         <MetricCard value="99+" label="Lighthouse Score" detail="Alle Kategorien" />
                     </div>
                 </div>
@@ -255,24 +255,24 @@ export default function BlitzHamburgCaseStudy() {
                     <div className="cs-ads-results animate-up">
                         <div className="cs-ads-stat">
                             <div className="cs-ads-stat-header">
-                                <span className="cs-ads-stat-value">~2 &euro;</span>
-                                <span className="cs-ads-stat-label">Cost per Click</span>
+                                <span className="cs-ads-stat-value">474 Klicks</span>
+                                <span className="cs-ads-stat-label">Google Ads — Marz 2026</span>
                             </div>
-                            <p>Bei einem Markt-CPC von 18-20 &euro; fur die organischen Keywords. Die Ads-Kampagnen erreichen Klicks zu einem Bruchteil der Kosten, weil sie auf Long-Tail-Varianten und spezifische Suchbegriffe zielen.</p>
+                            <p>474 Klicks bei 13.789 Impressionen und 1.219 &euro; Monatsbudget. CPC von 2,57 &euro; — bei einem Markt-CPC von 18-20 &euro; fur die organischen Keywords ein Bruchteil der Kosten.</p>
                         </div>
                         <div className="cs-ads-stat">
                             <div className="cs-ads-stat-header">
-                                <span className="cs-ads-stat-value">33%+</span>
-                                <span className="cs-ads-stat-label">Auktionsgewinnrate</span>
+                                <span className="cs-ads-stat-value">3,44%</span>
+                                <span className="cs-ads-stat-label">Click-Through-Rate</span>
                             </div>
-                            <p>Jede dritte Auktion wird gewonnen — bei gleichzeitig niedrigen Kosten. Das bedeutet: hohe Qualitat der Anzeigen, relevante Landingpages und starke Quality Scores.</p>
+                            <p>Uberdurchschnittliche CTR durch prazise lokale Ausrichtung und spezifische Landingpages fur jede Dienstleistung.</p>
                         </div>
                         <div className="cs-ads-stat">
                             <div className="cs-ads-stat-header">
-                                <span className="cs-ads-stat-value">90%</span>
-                                <span className="cs-ads-stat-label">Obere Anzeigenposition</span>
+                                <span className="cs-ads-stat-value">72</span>
+                                <span className="cs-ads-stat-label">Kundeninteraktionen / Monat</span>
                             </div>
-                            <p>90% aller Anzeigeneinblendungen erscheinen im oberen Ads-Block — dort, wo die hochsten Klickraten sind. Keine &bdquo;unten auf der Seite&ldquo;-Platzierungen.</p>
+                            <p>Getrackt via Umami: 29 Anrufe (40%), 18 WhatsApp-Klicks (25%), 8 E-Mails (11%), 7 Rechner-Nutzungen (10%), 6 Google-Bewertungs-Klicks (8%) — echte Kontakte, echte Auftrage.</p>
                         </div>
                     </div>
 
@@ -317,9 +317,9 @@ export default function BlitzHamburgCaseStudy() {
                     </div>
 
                     {/* Results */}
-                    <h2 className="animate-up">Die Ergebnisse nach 3 Monaten</h2>
+                    <h2 className="animate-up">Die Ergebnisse</h2>
                     <p className="animate-up">
-                        Von einer komplett neuen Domain — ohne Geschichte, ohne Backlinks, ohne bestehende Rankings — zu messbarem Wachstum:
+                        Von einer komplett neuen Domain — ohne Geschichte, ohne Backlinks, ohne bestehende Rankings — zu ~40 Kunden pro Monat. Die Investition war in 7 Wochen zuruckgeholt:
                     </p>
 
                     {/* Events Screenshot */}
@@ -337,20 +337,20 @@ export default function BlitzHamburgCaseStudy() {
 
                     <div className="cs-results-grid animate-up">
                         <div className="cs-result-card">
-                            <h3>5.000+ Impressionen</h3>
-                            <p>Organische Sichtbarkeit in Google innerhalb von 3 Monaten. 3-5% CTR auf relevante Suchanfragen — fur eine komplett neue Domain ein starker Wert.</p>
+                            <h3>ROI in 7 Wochen</h3>
+                            <p>Die gesamte Investition in Website und Ads war in 7 Wochen zuruckgeholt — danach reines Wachstum.</p>
                         </div>
                         <div className="cs-result-card">
-                            <h3>Kontinuierliche Anfragen</h3>
-                            <p>Statt Stagnation: ein stetiger Strom qualifizierter Kundenanfragen uber mehrere Kanale — Anrufe, WhatsApp, E-Mail und Kontaktformular.</p>
+                            <h3>~40 Kunden pro Monat</h3>
+                            <p>Vom Nullpunkt zu einer stabilen Auftragslage von ca. 40 Kunden pro Monat — uber Anrufe, WhatsApp, E-Mail und den KI-Kostenschatzer.</p>
+                        </div>
+                        <div className="cs-result-card">
+                            <h3>29 Anrufe / Monat getrackt</h3>
+                            <p>Allein 29 direkte Telefonanrufe im letzten Monat — dazu 18 WhatsApp-Nachrichten und 8 E-Mails. Echte Kontakte, keine Vanity-Metriken.</p>
                         </div>
                         <div className="cs-result-card">
                             <h3>5.0 Sterne, 24 Bewertungen</h3>
-                            <p>500+ zufriedene Kunden. Die Google-Bewertungen werden aktiv genutzt als Vertrauenssignal auf der Website und in den Ads.</p>
-                        </div>
-                        <div className="cs-result-card">
-                            <h3>Reales Geschaftswachstum</h3>
-                            <p>Das Unternehmen wachst — im Vergleich zur Stagnation davor. Die Kombination aus schneller Website, gezielten Ads und organischer Sichtbarkeit hat ein planbares Wachstumssystem geschaffen.</p>
+                            <p>500+ zufriedene Kunden. Die Google-Bewertungen werden aktiv als Vertrauenssignal auf der Website und in den Ads eingesetzt.</p>
                         </div>
                     </div>
 
@@ -410,7 +410,7 @@ export default function BlitzHamburgCaseStudy() {
                     <div className="cs-takeaway animate-up">
                         <h3>Das Wichtigste</h3>
                         <p>
-                            Eine schnelle, konversionsorientierte Website ist die Grundlage — aber erst die Kombination mit gezielten Ads und systematischer lokaler SEO schafft ein planbares Wachstumssystem. Blitz Hamburg zeigt: Auch ohne bestehende Online-Prasenz kann ein lokaler Handwerksbetrieb in wenigen Monaten eine stabile Auftragslage aufbauen — wenn Technik, Daten und Strategie zusammenspielen.
+                            Eine schnelle, konversionsorientierte Website ist die Grundlage — aber erst die Kombination mit gezielten Ads und systematischer lokaler SEO schafft ein planbares Wachstumssystem. Blitz Hamburg zeigt: Von Null auf ~40 Kunden pro Monat, ROI in 7 Wochen — wenn Technik, Daten und Strategie zusammenspielen.
                         </p>
                     </div>
                 </div>

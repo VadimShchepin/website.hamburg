@@ -40,31 +40,33 @@ export default function CaseStudiesGrid() {
     const cases = [
         {
             id: 1,
-            tag: 'WEBDESIGN + ADS',
-            title: 'Blitz Hamburg: Von Null auf stabile Auftragslage',
-            desc: 'Website, Google Ads und organische Sichtbarkeit fur einen Handwerksbetrieb in Hamburg. Innerhalb weniger Wochen: top Google-Positionen, gewonnene Auktionen und ein stetiger Strom qualifizierter Anfragen.',
-            url: '/referenzen/blitz-hamburg',
+            tag: 'SEO + ADS + REDESIGN',
+            title: 'GL Sommer: 728 lokale Aktionen pro Monat',
+            desc: 'Hamburgs etabliertes GaLaBau-Unternehmen — Website modernisiert, SEO-Audit von 34/100 aufwarts, Google Ads mit 1.113 Klicks und 728 lokalen Aktionen bei nur 529 EUR Monatsbudget.',
+            url: '/referenzen/gl-sommer',
             internal: true,
             image: '/referenzen/previews/Blitz-alternative1-hero-section.webp',
-            results: ['Top-Positionen in Google', 'Stabile Kundengewinnung', '5.0 Sterne, 24 Bewertungen'],
+            results: ['728 lokale Aktionen / Monat', '19 Conversions bei 529 EUR', 'SEO-Score von 34 aufwarts'],
         },
         {
             id: 2,
-            tag: 'APP + AI SEO',
-            title: 'KinderAlbum: Platz 1 in ChatGPT, Perplexity & Google AI',
-            desc: 'DSGVO-konforme Schulfotos-App mit Hunderten aktiven Nutzern. Durch strukturierte Daten und AI-SEO-Strategie: erste Platze in allen grossen AI-Suchsystemen — ein echtes Praxisbeispiel fur AI-Sichtbarkeit.',
-            url: 'https://dsgvoschulfotos.de/',
-            image: '/referenzen/previews/mit-kinder-hero-section.webp',
-            results: ['#1 in ChatGPT & Perplexity', 'Hunderte aktive Nutzer', 'Echtes Problem gelost'],
+            tag: 'E-COMMERCE SEO',
+            title: 'DYBeauty: Organischen Traffic verdoppelt in 90 Tagen',
+            desc: 'K-Beauty Shopify-Shop ohne SEO-Grundlage — 723 Produkte optimiert, Google Merchant Center aufgebaut, Content-Strategie. Ergebnis: Traffic verdoppelt, 78.500 Impressionen.',
+            url: '/referenzen/dybeauty',
+            internal: true,
+            image: '/referenzen/previews/solovei-hero-section.webp',
+            results: ['2x organischer Traffic', '723 Produkte optimiert', '78.500 Impressionen in 90 Tagen'],
         },
         {
             id: 3,
-            tag: 'WEBSITE + BOOKING SYSTEM',
-            title: 'Solovei Beauty: 5.000 Impressionen in 2 Monaten',
-            desc: 'Website mit integriertem Buchungssystem, Vertragsmanagement, Rollen und Kommunikation fur einen Beauty-Coworking-Space. Ergebnis: voll ausgebuchte Arbeitsplatze in kurzester Zeit.',
-            url: 'https://www.solovei-beauty.com/de',
-            image: '/referenzen/previews/solovei-hero-section.webp',
-            results: ['5.000 Impressionen in 8 Wochen', 'Komplettes Buchungssystem', 'Voll ausgebuchte Platze'],
+            tag: 'WEBDESIGN + ADS',
+            title: 'Blitz Hamburg: ROI in 7 Wochen, ~40 Kunden/Monat',
+            desc: 'Handwerksbetrieb ohne Online-Prasenz — neue Website mit KI-Kostenschatzer, Google Ads und lokale SEO. Investition in 7 Wochen zuruckgeholt, heute ~40 Kunden pro Monat.',
+            url: '/referenzen/blitz-hamburg',
+            internal: true,
+            image: '/referenzen/previews/Blitz-alternative1-hero-section.webp',
+            results: ['ROI in 7 Wochen', '~40 Kunden / Monat', '72 getrackte Interaktionen / Monat'],
         },
     ];
 
@@ -128,13 +130,13 @@ export default function CaseStudiesGrid() {
                 {/* Google Reviews */}
                 <div className="google-reviews animate-up">
                     <div className="google-reviews-header">
-                        <div className="google-reviews-badge">
+                        <a href="https://share.google/Ta1IQevSFQFxhXvvn" target="_blank" rel="noopener noreferrer" className="google-reviews-badge" title="Alle Google-Bewertungen ansehen">
                             {GOOGLE_ICON}
                             <span className="google-reviews-score">5.0</span>
                             <span className="google-reviews-stars">
                                 {GOOGLE_STAR}{GOOGLE_STAR}{GOOGLE_STAR}{GOOGLE_STAR}{GOOGLE_STAR}
                             </span>
-                        </div>
+                        </a>
                     </div>
                     <div className="google-reviews-grid">
                         {reviews.map((r, i) => (

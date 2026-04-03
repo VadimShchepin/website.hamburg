@@ -18,12 +18,28 @@ export const metadata = {
 
 const caseStudies = [
     {
+        slug: 'gl-sommer',
+        category: 'SEO + GOOGLE ADS + REDESIGN',
+        title: '728 lokale Aktionen pro Monat',
+        client: 'GL Sommer GmbH',
+        excerpt: 'Hamburgs etabliertes GaLaBau-Unternehmen — Website modernisiert, SEO-Audit von 34/100 aufwarts optimiert, Google Ads gestartet. 1.113 Klicks und 728 lokale Aktionen bei nur 529 EUR Monatsbudget.',
+        metric: '728 lokale Aktionen / Monat bei 529 EUR',
+    },
+    {
+        slug: 'dybeauty',
+        category: 'E-COMMERCE SEO',
+        title: 'Organischen Traffic verdoppelt in 90 Tagen',
+        client: 'DYBeauty',
+        excerpt: 'K-Beauty Shopify-Shop ohne SEO-Grundlage — 723 Produkte optimiert, Google Merchant Center aufgebaut, Content-Strategie implementiert. Ergebnis: Traffic verdoppelt, 78.500 Impressionen.',
+        metric: '2x organischer Traffic in 90 Tagen',
+    },
+    {
         slug: 'blitz-hamburg',
         category: 'WEBDESIGN + GOOGLE ADS + SEO',
-        title: 'Von Null auf stabile Auftragslage',
+        title: 'ROI in 7 Wochen, ~40 Kunden/Monat',
         client: 'Blitz Hamburg',
-        excerpt: 'Ein Hamburger Handwerksbetrieb ohne Online-Prasenz — komplett neue Website, gezielte Google Ads und lokale SEO. Das Ergebnis: Top-Positionen und kontinuierliche Kundenanfragen.',
-        metric: '5.000+ Impressionen in 3 Monaten',
+        excerpt: 'Ein Hamburger Handwerksbetrieb ohne Online-Prasenz — komplett neue Website mit KI-Kostenschatzer, gezielte Google Ads und lokale SEO. Investition in 7 Wochen zuruckgeholt, heute ~40 Kunden pro Monat.',
+        metric: 'ROI in 7 Wochen',
     },
     {
         slug: 'kinderalbum',

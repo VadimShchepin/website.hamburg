@@ -47,9 +47,6 @@ export const metadata = {
         card: 'summary_large_image',
     },
     icons: { icon: '/logo_red.webp' },
-    other: {
-        'google-site-verification': '',
-    },
 };
 
 // Global JSON-LD: WebSite + Organization

@@ -13,12 +13,12 @@ export const metadata = {
     title: 'Webdesign & SEO Hamburg | Websites die Kunden bringen',
     description: 'Professionelles Webdesign, SEO und Google Ads fur lokale Unternehmen in Hamburg. Datenbasiert, transparent, ergebnisorientiert. Kostenlose Erstanalyse.',
     alternates: {
-        canonical: 'https://webseite.hamburg/',
+        canonical: 'https://webseite.hamburg',
     },
     openGraph: {
         title: 'Webdesign & SEO Hamburg | Websites die Kunden bringen',
         description: 'Professionelles Webdesign, SEO und Google Ads fur lokale Unternehmen in Hamburg. Datenbasiert, transparent, ergebnisorientiert.',
-        url: 'https://webseite.hamburg/',
+        url: 'https://webseite.hamburg',
         type: 'website',
     },
 };

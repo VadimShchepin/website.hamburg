@@ -24,12 +24,15 @@ export default function Footer() {
                     <Link href="/leistungen/ai-seo">AI SEO</Link>
                     <Link href="/leistungen/google-ads">Google Ads Management</Link>
                     <Link href="/leistungen/website-audit">Website-Audit</Link>
+                    <Link href="/leistungen/webdesign-handwerker">Webdesign fur Handwerker</Link>
+                    <Link href="/leistungen/webdesign-aerzte">Webdesign fur Arztpraxen</Link>
+                    <Link href="/leistungen/website-erstellen-lassen">Website erstellen lassen</Link>
                 </div>
                 <div className="footer-links">
                     <h4>Unternehmen</h4>
                     <Link href="/ueber-uns">Uber uns</Link>
                     <Link href="/wissen">Wissen</Link>
-                    <Link href="/referenzen/blitz-hamburg">Referenzen</Link>
+                    <Link href="/referenzen">Referenzen</Link>
                     <Link href="/kontakt">Kontakt</Link>
                     <Link href="/faq">FAQ</Link>
                     <a href="mailto:hallo@webseite.hamburg">hallo@webseite.hamburg</a>

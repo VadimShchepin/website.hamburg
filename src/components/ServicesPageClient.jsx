@@ -172,6 +172,15 @@ export default function ServicesPageClient() {
                             <p className="sp-price-note animate-up">Finale Preise nach kostenlosem Erstgesprach. Kein Angebot ohne Ihre Anforderungen zu verstehen.</p>
                         </div>
                     </div>
+
+                    <div className="sp-branch-links animate-up" style={{ marginTop: '2rem' }}>
+                        <h3>Webdesign fur Ihre Branche</h3>
+                        <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '0.75rem' }}>
+                            <Link href="/leistungen/webdesign-handwerker" className="button button-secondary">Webdesign fur Handwerker</Link>
+                            <Link href="/leistungen/webdesign-aerzte" className="button button-secondary">Webdesign fur Arztpraxen</Link>
+                            <Link href="/leistungen/website-erstellen-lassen" className="button button-secondary">Website erstellen lassen</Link>
+                        </div>
+                    </div>
                 </div>
             </section>
 

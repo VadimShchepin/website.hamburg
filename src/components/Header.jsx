@@ -41,6 +41,7 @@ export default function Header() {
 
                 <nav className={`main-nav${menuOpen ? ' nav-open' : ''}`}>
                     <Link href="/leistungen" onClick={closeMenu}>Leistungen</Link>
+                    <Link href="/referenzen" onClick={closeMenu}>Referenzen</Link>
                     <Link href="/wissen" onClick={closeMenu}>Wissen</Link>
                     <Link href="/ueber-uns" onClick={closeMenu}>Uber uns</Link>
                     <Link href="/kontakt" className="button button-sm" onClick={closeMenu}>Kostenlose Analyse</Link>

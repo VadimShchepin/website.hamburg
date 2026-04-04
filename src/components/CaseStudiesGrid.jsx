@@ -127,6 +127,13 @@ export default function CaseStudiesGrid() {
                     })}
                 </div>
 
+                <div className="text-center animate-up" style={{ marginTop: 'var(--space-md)' }}>
+                    <Link href="/referenzen" className="button button-secondary button-large">
+                        Alle 10 Case Studies ansehen
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ marginLeft: '0.5rem' }}><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </Link>
+                </div>
+
                 {/* Google Reviews */}
                 <div className="google-reviews animate-up">
                     <div className="google-reviews-header">

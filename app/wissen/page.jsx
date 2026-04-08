@@ -133,7 +133,7 @@ export default function WissenPage() {
                         <h2 className="section-title">Kostenlose Website-Analyse.</h2>
                         <p className="offer-framing">Statt nur zu lesen — lassen Sie mich Ihre Website analysieren. Performance, SEO, Conversion-Potenzial. Kostenlos und ehrlich.</p>
                         <div className="cta-actions mt-4">
-                            <Link href="/kontakt" className="button button-primary button-large">Jetzt Analyse anfordern</Link>
+                            <Link href="/kontakt" className="button button-primary button-large" data-umami-event="cta-click" data-umami-event-location="wissen-cta">Jetzt Analyse anfordern</Link>
                         </div>
                     </div>
                 </div>

@@ -164,7 +164,7 @@ export default function ReferenzenPage() {
                         <h2 className="section-title">Kostenloses Erstgesprach.</h2>
                         <p className="offer-framing">Lassen Sie uns uber Ihr Projekt sprechen. Ich analysiere Ihre Situation und zeige Ihnen, was konkret moglich ist — kostenlos und unverbindlich.</p>
                         <div className="cta-actions mt-4">
-                            <Link href="/kontakt" className="button button-primary button-large">Jetzt Gesprach vereinbaren</Link>
+                            <Link href="/kontakt" className="button button-primary button-large" data-umami-event="cta-click" data-umami-event-location="referenzen-cta">Jetzt Gesprach vereinbaren</Link>
                         </div>
                     </div>
                 </div>

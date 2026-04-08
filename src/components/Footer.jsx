@@ -35,8 +35,8 @@ export default function Footer() {
                     <Link href="/referenzen">Referenzen</Link>
                     <Link href="/kontakt">Kontakt</Link>
                     <Link href="/faq">FAQ</Link>
-                    <a href="mailto:hallo@webseite.hamburg">hallo@webseite.hamburg</a>
-                    <a href="tel:+4917632194754">0176 / 321 94 754</a>
+                    <a href="mailto:hallo@webseite.hamburg" data-umami-event="email-click" data-umami-event-location="footer">hallo@webseite.hamburg</a>
+                    <a href="tel:+4917632194754" data-umami-event="phone-call" data-umami-event-location="footer">0176 / 321 94 754</a>
                     <div className="footer-social">
                         {SOCIAL_LINKS.map((link) => (
                             <a key={link.name} href={link.url} target="_blank" rel="noopener noreferrer" aria-label={link.name} className="footer-social-link">

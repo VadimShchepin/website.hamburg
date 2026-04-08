@@ -58,7 +58,7 @@ export default function ArticleLayout({ slug, category, title, readTime, publish
                         <div className="cta-box bull-boundary">
                             <h3>Kostenlose Website-Analyse</h3>
                             <p>Wollen Sie wissen, wie Ihre Website abschneidet? Ich analysiere Performance, SEO und Conversion-Potenzial — kostenlos und ehrlich.</p>
-                            <Link href="/kontakt" className="button button-primary">Jetzt Analyse anfordern</Link>
+                            <Link href="/kontakt" className="button button-primary" data-umami-event="cta-click" data-umami-event-location="article-cta">Jetzt Analyse anfordern</Link>
                         </div>
                     </aside>
                 </div>

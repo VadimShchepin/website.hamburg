@@ -44,7 +44,7 @@ export default function Header() {
                     <Link href="/referenzen" onClick={closeMenu}>Referenzen</Link>
                     <Link href="/wissen" onClick={closeMenu}>Wissen</Link>
                     <Link href="/ueber-uns" onClick={closeMenu}>Uber uns</Link>
-                    <Link href="/kontakt" className="button button-sm" onClick={closeMenu}>Kostenlose Analyse</Link>
+                    <Link href="/kontakt" className="button button-sm" onClick={closeMenu} data-umami-event="cta-click" data-umami-event-location="header">Kostenlose Analyse</Link>
                 </nav>
             </div>
 

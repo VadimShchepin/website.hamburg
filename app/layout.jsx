@@ -1,3 +1,4 @@
+import Script from 'next/script';
 import { Goldman, Inter } from 'next/font/google';
 import Header from '../src/components/Header';
 import Footer from '../src/components/Footer';
@@ -107,6 +108,14 @@ const organizationJsonLd = {
 export default function RootLayout({ children }) {
     return (
         <html lang="de" className={`${goldman.variable} ${inter.variable}`}>
+            <head>
+                <Script
+                    defer
+                    src="https://umami.dsgvoschulfotos.de/script.js"
+                    data-website-id="b7fd00a9-d5d0-4d51-86dc-996730ad670d"
+                    strategy="afterInteractive"
+                />
+            </head>
             <body>
                 <script
                     type="application/ld+json"

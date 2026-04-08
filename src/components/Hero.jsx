@@ -28,6 +28,9 @@ export default function Hero() {
         .from('.hero-cta', {
             y: 20, opacity: 0, duration: 0.6
         }, '-=0.3')
+        .from('.hero-availability', {
+            y: 10, opacity: 0, duration: 0.5
+        }, '-=0.1')
         .from('.hero-scroll-hint', {
             opacity: 0, duration: 0.8
         }, '-=0.2');
@@ -108,6 +111,10 @@ export default function Hero() {
                         Kostenlose Website-Analyse
                     </Link>
                 </div>
+                <p className="hero-availability">
+                    <span className="availability-dot" />
+                    Im April noch 2 Projektplatze frei
+                </p>
             </div>
             <div className="hero-scroll-hint">
                 <span className="hero-scroll-line" />

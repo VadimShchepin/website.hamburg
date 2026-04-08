@@ -4,6 +4,7 @@ import Header from '../src/components/Header';
 import Footer from '../src/components/Footer';
 import AnimateOnScroll from '../src/components/AnimateOnScroll';
 import CursorFollowerWrapper from '../src/components/CursorFollowerWrapper';
+import CookieConsent from '../src/components/CookieConsent';
 import '../src/index.css';
 
 const goldman = Goldman({
@@ -130,6 +131,7 @@ export default function RootLayout({ children }) {
                 <Header />
                 <main>{children}</main>
                 <Footer />
+                <CookieConsent />
             </body>
         </html>
     );

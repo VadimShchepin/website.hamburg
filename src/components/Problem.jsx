@@ -35,8 +35,8 @@ export default function Problem() {
                     <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
                 </svg>
             ),
-            title: 'Agenturen ohne Daten',
-            desc: 'Meinungen statt Fakten. Kein Tracking, keine echte Optimierung.'
+            title: 'Agenturen, die nicht liefern',
+            desc: 'Schone Prasentation, keine Ergebnisse. Vertrage statt Verantwortung. Sie zahlen — und warten.'
         },
     ];
 

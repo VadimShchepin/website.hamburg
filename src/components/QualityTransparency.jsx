@@ -11,12 +11,12 @@ export default function QualityTransparency() {
                                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                             </svg>
                         </div>
-                        <h2 className="section-title">Qualitat ohne Kompromisse</h2>
-                        <p className="large-text">Viele Agenturen liefern Mittelma&szlig;. Wir nicht. Jedes Detail zahlt — Struktur, Geschwindigkeit, Klarheit und echte Ergebnisse.</p>
+                        <h2 className="section-title">Wir liefern. Punkt.</h2>
+                        <p className="large-text">Viele Agenturen verkaufen Websites. Wir bauen Maschinen, die Kunden bringen — und horen erst auf, wenn die Ergebnisse stehen.</p>
                         <ul className="check-list mt-4">
-                            <li>Sauberer, moderner Code</li>
-                            <li>Blitzschnelle Ladezeiten</li>
-                            <li>Durchdachte Conversion-Logik</li>
+                            <li>Blitzschnelle Ladezeiten — 100/100 bei jedem Projekt</li>
+                            <li>Durchdachte Conversion-Logik statt hubscher Deko</li>
+                            <li>Ergebnisse in Wochen, nicht in Quartalen</li>
                         </ul>
                     </div>
                     <div className="transparency-block blue-border-left animate-up delay-2">
@@ -26,11 +26,11 @@ export default function QualityTransparency() {
                             </svg>
                         </div>
                         <h2 className="section-title">Sie wissen immer, was passiert</h2>
-                        <p className="large-text">Offene Kommunikation mit echten Daten. Jeder Schritt wird erklart — Sie sehen genau, woher Ihre Ergebnisse kommen.</p>
+                        <p className="large-text">Kein Versteckspiel. Echte Zahlen, direkte Kommunikation, monatliche Reports. Wenn etwas nicht funktioniert, sagen wir es — und fixen es.</p>
                         <ul className="check-list mt-4">
-                            <li>Monatliche Performance-Reports</li>
-                            <li>Klare KPIs und Ziele</li>
-                            <li>Direkte Kommunikation, kein Agentur-Sprech</li>
+                            <li>Monatliche Performance-Reports mit echten KPIs</li>
+                            <li>Direkte Kommunikation — kein Agentur-Sprech</li>
+                            <li>Ihre Daten und Zugange gehoren Ihnen. Immer.</li>
                         </ul>
                     </div>
                 </div>

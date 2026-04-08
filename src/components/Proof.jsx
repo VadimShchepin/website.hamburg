@@ -45,26 +45,26 @@ export default function Proof() {
         <section id="proof" className="proof section dark-blue-bg">
             <div className="container">
                 <div className="section-header text-center">
-                    <p className="section-kicker" style={{ color: 'rgba(255,255,255,0.6)' }}>Zahlen & Fakten</p>
-                    <h2 className="section-title" style={{ color: '#fff' }}>Ergebnisse statt Versprechen.</h2>
+                    <p className="section-kicker" style={{ color: 'rgba(255,255,255,0.6)' }}>Echte Ergebnisse</p>
+                    <h2 className="section-title" style={{ color: '#fff' }}>Andere versprechen. Wir liefern.</h2>
                 </div>
                 <div className="metrics-grid">
                     <div className="metric">
-                        <Counter target={10} suffix="+" />
-                        <span className="metric-label">Jahre Erfahrung</span>
+                        <Counter target={40} suffix="+" />
+                        <span className="metric-label">Kundenanfragen/Monat fur unsere Kunden</span>
                     </div>
                     <div className="metric">
                         <Counter target={100} />
                         <span className="metric-unit">/100</span>
-                        <span className="metric-label">PageSpeed Score</span>
+                        <span className="metric-label">PageSpeed — jedes Projekt</span>
                     </div>
                     <div className="metric">
-                        <span className="metric-value">100%</span>
-                        <span className="metric-label">Transparente Reportings</span>
+                        <span className="metric-value">3x</span>
+                        <span className="metric-label">mehr Sichtbarkeit im Schnitt nach 90 Tagen</span>
                     </div>
                     <div className="metric">
                         <Counter target={50} suffix="+" />
-                        <span className="metric-label">Projekte umgesetzt</span>
+                        <span className="metric-label">Projekte geliefert — nicht nur verkauft</span>
                     </div>
                 </div>
             </div>

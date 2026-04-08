@@ -93,12 +93,11 @@ export default function ContactPageClient() {
                                 </div>
 
                                 <div className="form-group">
-                                    <label htmlFor="website">Ihre Website <span className="form-required">*</span></label>
+                                    <label htmlFor="website">Ihre Website <span className="form-optional">(optional)</span></label>
                                     <input
                                         type="url"
                                         id="website"
                                         name="website"
-                                        required
                                         placeholder="https://ihre-website.de"
                                         value={form.website}
                                         onChange={handleChange}

@@ -9,6 +9,7 @@ export default function Cta() {
                     <p className="section-kicker">Bereit?</p>
                     <h2 className="section-title">Lassen Sie uns Ihr Wachstum starten.</h2>
                     <p className="offer-framing">Kostenlose Website-Analyse: Wir prufen Geschwindigkeit, SEO, Struktur und Conversion-Potenzial Ihrer aktuellen Website — unverbindlich und konkret.</p>
+                    <p className="cta-urgency">Im April noch 2 Projektplatze frei — danach Warteliste.</p>
                     <div className="cta-actions mt-4">
                         <Link href="/kontakt" className="button button-primary button-large" data-umami-event="cta-click" data-umami-event-location="cta-section">
                             Jetzt Analyse anfordern

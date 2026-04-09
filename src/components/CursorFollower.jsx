@@ -11,11 +11,9 @@ export const CursorFollower = () => {
         const follower = followerRef.current;
         if (!follower) return;
 
-        if (window.matchMedia('(pointer: coarse)').matches) {
-            follower.style.display = 'none';
-            return;
-        }
+        if (window.matchMedia('(pointer: coarse)').matches) return;
 
+        follower.style.display = 'block';
         gsap.set(follower, { xPercent: -50, yPercent: -50, scale: 0, opacity: 0 });
 
         const xTo = gsap.quickTo(follower, "x", { duration: 0.2, ease: "power3.out" });
@@ -53,9 +51,10 @@ export const CursorFollower = () => {
                 borderRadius: '50%',
                 pointerEvents: 'none',
                 zIndex: 9999,
-                backgroundColor: 'var(--color-primary)', // Using Deep Bull Blue for the light theme glow
-                boxShadow: '0 0 20px 5px rgba(10, 25, 47, 0.2)', // Soft blue glow
-                mixBlendMode: 'multiply' // Best blend mode for dark objects on light backgrounds
+                backgroundColor: 'var(--color-primary)',
+                boxShadow: '0 0 20px 5px rgba(10, 25, 47, 0.2)',
+                mixBlendMode: 'multiply',
+                display: 'none'
             }}
         />
     );

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Breadcrumbs from '../../src/components/Breadcrumbs';
 import { BUSINESS, SOCIAL_LINKS } from '../../src/lib/schema';
 
@@ -26,6 +27,7 @@ export default function UeberUnsPage() {
         mainEntity: {
             '@type': 'Person',
             name: 'Vadim Shchepin',
+            image: 'https://webseite.hamburg/referenzen/vadim_shchepin_2.webp',
             url: 'https://www.linkedin.com/in/vadim-shchepin/',
             jobTitle: 'Webentwickler & SEO-Spezialist',
             worksFor: BUSINESS,
@@ -67,6 +69,16 @@ export default function UeberUnsPage() {
                 <div className="container">
                     <div className="about-layout">
                         <div className="about-content">
+                            <div className="about-photo animate-up" style={{ marginBottom: 'var(--space-md)' }}>
+                                <Image
+                                    src="/referenzen/vadim_shchepin_2.webp"
+                                    alt="Vadim Shchepin — Webentwickler und SEO-Spezialist in Hamburg"
+                                    width={450}
+                                    height={600}
+                                    quality={85}
+                                    style={{ borderRadius: '12px', width: '200px', height: 'auto' }}
+                                />
+                            </div>
                             <h2 className="animate-up">Der Hintergrund</h2>
                             <p className="large-text animate-up">Uber 10 Jahre Erfahrung in der digitalen Produktentwicklung. Nicht bei einer Marketing-Agentur — sondern in der Praxis: Softwareentwicklung, Produktdesign, Performance-Optimierung.</p>
                             <p className="animate-up">Ich habe gesehen, wie grosse Tech-Unternehmen digitale Produkte bauen — mit Daten, mit Struktur, mit Fokus auf Ergebnisse. Und ich habe gesehen, was die meisten Agenturen lokalen Unternehmen liefern: Templates, Bauchgefuhl und vage Reports.</p>

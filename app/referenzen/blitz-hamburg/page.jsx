@@ -72,7 +72,7 @@ export default function BlitzHamburgCaseStudy() {
             '@type': 'Organization',
             '@id': `${SITE_URL}/#organization`,
         },
-        image: `${SITE_URL}${IMG}/website.webp`,
+        image: `${SITE_URL}/referenzen/Blitz-hero.webp`,
         mainEntityOfPage: PAGE_URL,
     };
 
@@ -134,10 +134,10 @@ export default function BlitzHamburgCaseStudy() {
                 <div className="container">
                     <div className="cs-image-showcase animate-up">
                         <Image
-                            src={`${IMG}/website.webp`}
-                            alt="Blitz Hamburg Website — Startseite mit Hero-Bereich, Kontaktdaten und Leistungsubersicht"
-                            width={1470}
-                            height={956}
+                            src="/referenzen/Blitz-hero.webp"
+                            alt="Blitz Hamburg Website — Startseite mit Hero-Bereich, Sanierung & Entrumpelung in Hamburg"
+                            width={1200}
+                            height={781}
                             quality={85}
                             style={{ width: '100%', height: 'auto', borderRadius: '2px' }}
                         />

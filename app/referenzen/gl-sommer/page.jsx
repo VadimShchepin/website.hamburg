@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import ServiceCta from '../../../src/components/ServiceCta';
 
@@ -58,6 +59,7 @@ export default function GlSommerCaseStudy() {
             '@type': 'Organization',
             '@id': `${SITE_URL}/#organization`,
         },
+        image: `${SITE_URL}/referenzen/Gl-sommer-hero.webp`,
         mainEntityOfPage: PAGE_URL,
     };
 
@@ -114,6 +116,23 @@ export default function GlSommerCaseStudy() {
                 </div>
             </section>
 
+            {/* Website Screenshot */}
+            <section className="section" style={{ paddingTop: 0 }}>
+                <div className="container">
+                    <div className="cs-image-showcase animate-up">
+                        <Image
+                            src="/referenzen/Gl-sommer-hero.webp"
+                            alt="GL Sommer GmbH Website — Hero-Bereich mit Garten- und Landschaftsbau Leistungen in Hamburg"
+                            width={1200}
+                            height={712}
+                            quality={85}
+                            style={{ width: '100%', height: 'auto', borderRadius: '2px' }}
+                        />
+                        <p className="cs-image-caption">Die modernisierte Website: gl-sommer.de — Startseite mit klarem Leistungsangebot und Vertrauenssignalen.</p>
+                    </div>
+                </div>
+            </section>
+
             {/* Content */}
             <section className="subpage-content section light-bg">
                 <div className="container subpage-body">
@@ -148,6 +167,18 @@ export default function GlSommerCaseStudy() {
                         <BeforeAfter label="Alt-Texte" before="24 Bilder ohne Alt-Text" after="Beschreibend, auf Deutsch" />
                         <BeforeAfter label="Datenschutz" before="Falscher Firmenname" after="Korrekt: GL Sommer GmbH" />
                         <BeforeAfter label="Sicherheitsheader" before="Nicht konfiguriert" after="HSTS, X-Frame, Referrer-Policy" />
+                    </div>
+
+                    <div className="cs-image-showcase animate-up" style={{ marginTop: 'var(--space-md)' }}>
+                        <Image
+                            src="/referenzen/Gl-sommer-leistungen.webp"
+                            alt="GL Sommer Leistungen — Gartenpflege und Garten- & Landschaftsbau Ubersicht"
+                            width={1200}
+                            height={781}
+                            quality={85}
+                            style={{ width: '100%', height: 'auto', borderRadius: '2px' }}
+                        />
+                        <p className="cs-image-caption">Die Leistungs-Ubersicht: Klare Kategorien fur Gartenpflege und Landschaftsbau mit direktem Zugang zu Details.</p>
                     </div>
 
                     <h3 className="animate-up" style={{ marginTop: 'var(--space-lg)', fontSize: '1.3rem' }}>

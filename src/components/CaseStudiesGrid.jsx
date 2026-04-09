@@ -45,7 +45,7 @@ export default function CaseStudiesGrid() {
             desc: 'Hamburgs etabliertes GaLaBau-Unternehmen — Website modernisiert, SEO-Audit von 34/100 aufwarts, Google Ads mit 1.113 Klicks und 728 lokalen Aktionen bei nur 529 EUR Monatsbudget.',
             url: '/referenzen/gl-sommer',
             internal: true,
-            image: '/referenzen/previews/Blitz-alternative1-hero-section.webp',
+            image: '/referenzen/Gl-sommer-hero.webp',
             results: ['728 lokale Aktionen / Monat', '19 Conversions bei 529 EUR', 'SEO-Score von 34 aufwarts'],
         },
         {
@@ -65,7 +65,7 @@ export default function CaseStudiesGrid() {
             desc: 'Handwerksbetrieb ohne Online-Prasenz — neue Website mit KI-Kostenschatzer, Google Ads und lokale SEO. Investition in 7 Wochen zuruckgeholt, heute ~40 Kunden pro Monat.',
             url: '/referenzen/blitz-hamburg',
             internal: true,
-            image: '/referenzen/previews/Blitz-alternative1-hero-section.webp',
+            image: '/referenzen/Blitz-hero.webp',
             results: ['ROI in 7 Wochen', '~40 Kunden / Monat', '72 getrackte Interaktionen / Monat'],
         },
     ];

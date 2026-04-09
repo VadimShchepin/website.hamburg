@@ -1549,6 +1549,15 @@ img {
   padding: var(--space-xl) var(--space-lg);
 }
 
+@media (max-width: 480px) {
+  .cta-box .section-title {
+    font-size: 1.5rem;
+  }
+  .cta-box {
+    padding: var(--space-lg) var(--space-sm);
+  }
+}
+
 /* ==========================================================================
    Contact Page
    ========================================================================== */

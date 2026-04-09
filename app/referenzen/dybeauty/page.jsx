@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import ServiceCta from '../../../src/components/ServiceCta';
 
@@ -58,6 +59,7 @@ export default function DybeautyCaseStudy() {
             '@type': 'Organization',
             '@id': `${SITE_URL}/#organization`,
         },
+        image: `${SITE_URL}/referenzen/dybeauty.webp`,
         mainEntityOfPage: PAGE_URL,
     };
 
@@ -110,6 +112,23 @@ export default function DybeautyCaseStudy() {
                         <MetricCard value="11,5" label="Durchschn. Position" detail="Tendenz steigend" />
                         <MetricCard value="723" label="Produkte optimiert" detail="SEO-Titel & Attribute" />
                         <MetricCard value="80/100" label="SEO-Score" detail="Technisches Audit" />
+                    </div>
+                </div>
+            </section>
+
+            {/* Website Screenshot */}
+            <section className="section" style={{ paddingTop: 0 }}>
+                <div className="container">
+                    <div className="cs-image-showcase animate-up">
+                        <Image
+                            src="/referenzen/dybeauty.webp"
+                            alt="DYBeauty K-Beauty Shopify-Shop — Startseite mit Produktkategorien und koreanischer Kosmetik"
+                            width={1200}
+                            height={706}
+                            quality={85}
+                            style={{ width: '100%', height: 'auto', borderRadius: '2px' }}
+                        />
+                        <p className="cs-image-caption">Der DYBeauty Shop: dybeauty.de — koreanische Kosmetik fur den deutschen Markt.</p>
                     </div>
                 </div>
             </section>

@@ -11,7 +11,10 @@ export const CursorFollower = () => {
         const follower = followerRef.current;
         if (!follower) return;
 
-        if (window.matchMedia('(pointer: coarse)').matches) return;
+        if (window.matchMedia('(pointer: coarse)').matches) {
+            follower.style.display = 'none';
+            return;
+        }
 
         gsap.set(follower, { xPercent: -50, yPercent: -50, scale: 0, opacity: 0 });
 

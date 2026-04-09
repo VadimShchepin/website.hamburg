@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import ServiceCta from '../../../src/components/ServiceCta';
 
@@ -38,7 +39,7 @@ export default function KinderAlbumCaseStudy() {
             '@type': 'Organization',
             '@id': `${SITE_URL}/#organization`,
         },
-        image: `${SITE_URL}${IMG}/screenshot.webp`,
+        image: `${SITE_URL}/referenzen/KinderAlbum.webp`,
         mainEntityOfPage: PAGE_URL,
     };
 
@@ -105,6 +106,23 @@ export default function KinderAlbumCaseStudy() {
                             <span className="cs-metric-label">Features</span>
                             <span className="cs-metric-detail">Produktionsbereit</span>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Website Screenshot */}
+            <section className="section" style={{ paddingTop: 0 }}>
+                <div className="container">
+                    <div className="cs-image-showcase animate-up">
+                        <Image
+                            src="/referenzen/KinderAlbum.webp"
+                            alt="KinderAlbum — DSGVO-konforme Schulfotos-Plattform mit Lehrer- und Eltern-Portal"
+                            width={1200}
+                            height={781}
+                            quality={85}
+                            style={{ width: '100%', height: 'auto', borderRadius: '2px' }}
+                        />
+                        <p className="cs-image-caption">KinderAlbum: DSGVO-konforme Schulfotos-Plattform mit Rollen-basiertem Zugang.</p>
                     </div>
                 </div>
             </section>

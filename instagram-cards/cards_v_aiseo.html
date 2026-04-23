@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Instagram Cards — aiseo.hamburg</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FBF9F7;
+    --text:#111111;
+    --muted:#6b6b6b;
+    --dark:#1C1917;
+    --accent:#2ec88e;       /* warm green */
+    --accent-deep:#4FAF8C;
+    --blue:#017eff;
+    --card:#ffffff;
+    --line:#eee6dd;
+    --sans:'Inter', ui-sans-serif, system-ui, sans-serif;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html,body{background:#e9e3dc; font-family:var(--sans); color:var(--text); -webkit-font-smoothing:antialiased;}
+  body{padding:40px 20px;}
+  h1.page-title{text-align:center; margin-bottom:8px; font-size:22px; font-weight:600; letter-spacing:-0.02em; color:var(--text);}
+  .subtle{color:var(--muted); text-align:center; font-size:13px; margin-bottom:32px;}
+  .group-title{text-align:center; margin:48px 0 24px; font-size:12px; letter-spacing:3px; text-transform:uppercase; color:var(--muted); font-weight:600;}
+  .cards{display:flex; flex-wrap:wrap; gap:28px; justify-content:center;}
+
+  /* Story 9:16 — preview 1/3 */
+  .story{
+    width:360px; height:640px;
+    background:var(--bg);
+    color:var(--text);
+    border-radius:28px;
+    overflow:hidden;
+    position:relative;
+    padding:44px 38px;
+    display:flex; flex-direction:column;
+    box-shadow:0 12px 40px rgba(0,0,0,0.12);
+  }
+  .story.dark{ background:var(--dark); color:#fff;}
+  .story.green{ background:var(--accent); color:var(--dark);}
+  .story.blue{ background:var(--blue); color:#fff;}
+
+  /* Carousel 4:5 — preview 1/3 */
+  .carousel{
+    width:360px; height:450px;
+    background:var(--bg);
+    color:var(--text);
+    border-radius:22px;
+    overflow:hidden;
+    position:relative;
+    padding:38px 34px;
+    display:flex; flex-direction:column;
+    box-shadow:0 10px 30px rgba(0,0,0,0.10);
+  }
+  .carousel.dark{ background:var(--dark); color:#fff;}
+  .carousel.green{ background:var(--accent); color:var(--dark);}
+
+  /* Typography */
+  .eyebrow{
+    font-size:11px; letter-spacing:2px; text-transform:uppercase;
+    color:var(--muted); font-weight:600;
+    margin-bottom:18px;
+    display:inline-flex; align-items:center; gap:8px;
+  }
+  .dark .eyebrow, .blue .eyebrow{ color:rgba(255,255,255,0.7);}
+  .green .eyebrow{ color:rgba(0,0,0,0.65);}
+  .eyebrow .dot{ width:6px; height:6px; background:var(--accent); border-radius:50%;}
+  .dark .eyebrow .dot, .blue .eyebrow .dot{background:var(--accent);}
+
+  h2.title{
+    font-size:40px; line-height:1.02; letter-spacing:-0.04em; font-weight:600;
+    margin-bottom:16px;
+  }
+  h2.title.sm{font-size:32px;}
+  h2.title.xl{font-size:52px;}
+  .carousel h2.title{font-size:32px;}
+  .carousel h2.title.lg{font-size:40px;}
+
+  .lead{
+    font-size:15px; line-height:1.5; color:var(--muted); font-weight:500;
+    margin-bottom:22px;
+  }
+  .dark .lead{color:rgba(255,255,255,0.75);}
+  .blue .lead{color:rgba(255,255,255,0.85);}
+  .green .lead{color:rgba(0,0,0,0.7);}
+  .carousel .lead{ font-size:13px; }
+
+  ul.list{ list-style:none; }
+  ul.list li{
+    font-size:14px; line-height:1.5; padding:10px 0 10px 24px;
+    position:relative; font-weight:500;
+    border-bottom:1px solid var(--line);
+  }
+  .dark ul.list li{border-color:rgba(255,255,255,0.08);}
+  .green ul.list li{border-color:rgba(0,0,0,0.1);}
+  ul.list li::before{
+    content:''; position:absolute; left:0; top:16px;
+    width:12px; height:12px; border-radius:50%;
+    background:var(--accent);
+    border:2px solid var(--bg);
+    box-shadow:0 0 0 1px var(--accent);
+  }
+  .dark ul.list li::before{border-color:var(--dark);}
+  .green ul.list li::before{background:var(--dark); box-shadow:0 0 0 1px var(--dark); border-color:var(--accent);}
+
+  .footer-row{
+    margin-top:auto; display:flex; justify-content:space-between; align-items:center;
+    font-size:12px; font-weight:600; letter-spacing:-0.01em;
+    padding-top:20px;
+  }
+  .domain{ color:var(--text); }
+  .dark .domain, .blue .domain{ color:#fff;}
+  .green .domain{ color:var(--dark);}
+  .swipe{ color:var(--muted); display:inline-flex; align-items:center; gap:6px;}
+  .dark .swipe, .blue .swipe{color:rgba(255,255,255,0.7);}
+
+  /* Cover style */
+  .cover{ align-items:flex-start; justify-content:flex-end;}
+  .cover-icon{
+    width:84px; height:84px; border-radius:50%;
+    background:#fff;
+    display:flex; align-items:center; justify-content:center;
+    margin-bottom:auto;
+    box-shadow:0 4px 20px rgba(0,0,0,0.06);
+  }
+  .dark .cover-icon{ background:rgba(255,255,255,0.08);}
+  .green .cover-icon{ background:var(--bg);}
+  .cover h2.title{ font-size:38px; margin-bottom:8px;}
+  .cover .sub{font-size:13px; color:var(--muted); font-weight:500;}
+  .dark .cover .sub{color:rgba(255,255,255,0.65);}
+  .green .cover .sub{color:rgba(0,0,0,0.65);}
+
+  /* Platform chip row */
+  .platforms{
+    display:inline-flex; gap:10px; align-items:center;
+    padding:8px 14px; background:#fff; border-radius:100px;
+    font-size:11px; font-weight:600; letter-spacing:0;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    margin-bottom:20px;
+  }
+  .dark .platforms{background:rgba(255,255,255,0.08); color:#fff;}
+  .platforms .p-dot{ width:8px; height:8px; border-radius:50%;}
+
+  /* Big stat */
+  .stat{
+    font-size:96px; line-height:1; font-weight:600; letter-spacing:-0.05em;
+    color:var(--text); margin-bottom:10px;
+  }
+  .dark .stat{color:#fff;}
+  .green .stat{color:var(--dark);}
+  .stat-sub{font-size:14px; color:var(--muted); font-weight:500; max-width:260px;}
+  .dark .stat-sub{color:rgba(255,255,255,0.7);}
+  .green .stat-sub{color:rgba(0,0,0,0.65);}
+
+  /* Quote card */
+  .quote-card{
+    background:#fff; border-radius:16px; padding:20px;
+    box-shadow:0 8px 24px rgba(0,0,0,0.08);
+    font-size:14px; line-height:1.45; font-weight:500;
+  }
+  .quote-card .q-head{
+    display:flex; align-items:center; gap:8px; margin-bottom:10px;
+    font-size:11px; text-transform:uppercase; letter-spacing:2px; color:var(--muted); font-weight:600;
+  }
+  .quote-card .q-head .tag{background:var(--accent); width:6px; height:6px; border-radius:50%;}
+  .quote-card strong{color:var(--text); font-weight:600;}
+
+  /* CTA */
+  .btn{
+    display:inline-flex; align-items:center; gap:10px;
+    background:var(--dark); color:#fff;
+    padding:14px 22px; border-radius:100px;
+    font-size:14px; font-weight:600; letter-spacing:-0.01em;
+    margin-top:20px;
+  }
+  .green .btn{background:var(--dark); color:#fff;}
+  .dark .btn{background:#fff; color:var(--dark);}
+  .btn .arrow{
+    width:24px; height:24px; border-radius:50%; background:var(--accent);
+    display:inline-flex; align-items:center; justify-content:center; color:var(--dark); font-size:13px;
+  }
+
+  .hint{ color:var(--muted); text-align:center; font-size:12px; margin:10px auto 30px; max-width:700px; line-height:1.5;}
+  .note{
+    background:#fff; color:var(--muted); padding:18px 22px; border-radius:14px;
+    max-width:720px; margin:0 auto 40px; font-size:13px; line-height:1.6;
+    border:1px solid var(--line);
+  }
+  .note strong{color:var(--text);}
+  .note code{background:var(--bg); padding:2px 6px; border-radius:4px; color:var(--text);}
+</style>
+</head>
+<body>
+
+<h1 class="page-title">Instagram Cards · aiseo.hamburg</h1>
+<p class="subtle">Warme, ruhige Variante — General Sans Look, gedeckte Farben, weiche Kanten.</p>
+
+<div class="note">
+<strong>Style-Grundlage:</strong> Cream Background (#FBF9F7), schwarzer Text, weicher Grün-Akzent (#2ec88e), tiefes Schwarz (#1C1917), blauer Proof-Akzent (#017eff). Abgerundete Ecken 22–28px, minimale Schatten, Inter/General Sans mit -0.04em letter-spacing. Ruhig statt laut — passt zum Beratungs-Ton.
+</div>
+
+<!-- ============ HIGHLIGHT COVERS ============ -->
+<h2 class="group-title">Highlight Covers · 1080 × 1920</h2>
+<div class="cards">
+
+  <!-- Cover: Über mich -->
+  <div class="story cover">
+    <div class="cover-icon">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/>
+      </svg>
+    </div>
+    <h2 class="title">Über mich</h2>
+    <div class="sub">Wer ich bin · Hintergrund</div>
+  </div>
+
+  <!-- Cover: Beratung -->
+  <div class="story cover dark">
+    <div class="cover-icon">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 1 4 12.8V18H8v-3.2A7 7 0 0 1 12 2z"/>
+      </svg>
+    </div>
+    <h2 class="title">Beratung</h2>
+    <div class="sub">Strategie · Fahrplan</div>
+  </div>
+
+  <!-- Cover: AEO -->
+  <div class="story cover green">
+    <div class="cover-icon">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#1C1917" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 2l2 5 5 .5-4 3.5 1.5 5L12 13l-4.5 3 1.5-5-4-3.5 5-.5z"/>
+      </svg>
+    </div>
+    <h2 class="title">AEO</h2>
+    <div class="sub">Answer Engine Optimization</div>
+  </div>
+
+  <!-- Cover: AI SEO -->
+  <div class="story cover">
+    <div class="cover-icon">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9 2a4 4 0 0 0-4 4v1a3 3 0 0 0-2 2.8V13a3 3 0 0 0 2 2.8V17a4 4 0 0 0 4 4 3 3 0 0 0 3-3V5a3 3 0 0 0-3-3z"/>
+        <path d="M15 2a4 4 0 0 1 4 4v1a3 3 0 0 1 2 2.8V13a3 3 0 0 1-2 2.8V17a4 4 0 0 1-4 4 3 3 0 0 1-3-3V5a3 3 0 0 1 3-3z"/>
+      </svg>
+    </div>
+    <h2 class="title">AI SEO</h2>
+    <div class="sub">KI-fokussierte Optimierung</div>
+  </div>
+
+  <!-- Cover: Website-Erstellung -->
+  <div class="story cover dark">
+    <div class="cover-icon">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+      </svg>
+    </div>
+    <h2 class="title">Website</h2>
+    <div class="sub">KI-optimierte Erstellung</div>
+  </div>
+
+  <!-- Cover: SEO -->
+  <div class="story cover">
+    <div class="cover-icon">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+    </div>
+    <h2 class="title">SEO</h2>
+    <div class="sub">Klassisch · Lokal Hamburg</div>
+  </div>
+
+  <!-- Cover: Backlinks -->
+  <div class="story cover green">
+    <div class="cover-icon">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#1C1917" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+      </svg>
+    </div>
+    <h2 class="title">Backlinks</h2>
+    <div class="sub">Autorität · Vertrauen</div>
+  </div>
+
+  <!-- Cover: Prozess -->
+  <div class="story cover">
+    <div class="cover-icon">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/>
+        <line x1="7" y1="12" x2="10" y2="12"/><line x1="14" y1="12" x2="17" y2="12"/>
+      </svg>
+    </div>
+    <h2 class="title">Prozess</h2>
+    <div class="sub">So arbeiten wir</div>
+  </div>
+
+  <!-- Cover: Proof -->
+  <div class="story cover dark">
+    <div class="cover-icon">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20 6L9 17l-5-5"/>
+      </svg>
+    </div>
+    <h2 class="title">Proof</h2>
+    <div class="sub">Referenzen · Zitate</div>
+  </div>
+
+  <!-- Cover: FAQ -->
+  <div class="story cover">
+    <div class="cover-icon">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+      </svg>
+    </div>
+    <h2 class="title">FAQ</h2>
+    <div class="sub">Häufige Fragen</div>
+  </div>
+
+  <!-- Cover: Kontakt -->
+  <div class="story cover green">
+    <div class="cover-icon">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#1C1917" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>
+      </svg>
+    </div>
+    <h2 class="title">Kontakt</h2>
+    <div class="sub">Gespräch starten</div>
+  </div>
+
+</div>
+
+
+<!-- ============ STORY CONTENT ============ -->
+<h2 class="group-title">Story-Inhalte · 1080 × 1920</h2>
+<div class="cards">
+
+  <!-- Story: Über mich -->
+  <div class="story">
+    <div class="eyebrow"><span class="dot"></span>Über mich</div>
+    <h2 class="title">Vadim Shchepin.</h2>
+    <p class="lead">Ich helfe Unternehmen, von KI empfohlen zu werden — nicht nur gefunden.</p>
+    <ul class="list">
+      <li>10+ Jahre digitale Produkte</li>
+      <li>Fokus: KI-Sichtbarkeit</li>
+      <li>Hamburg · deutschlandweit</li>
+    </ul>
+    <div class="footer-row">
+      <span class="domain">aiseo.hamburg</span>
+      <span class="swipe">→ swipe</span>
+    </div>
+  </div>
+
+  <!-- Story: Hero message -->
+  <div class="story dark">
+    <div class="eyebrow"><span class="dot"></span>Die Frage</div>
+    <h2 class="title xl">Wirst du genannt, wenn KI gefragt wird?</h2>
+    <p class="lead">KI nennt keine Websites — sie nennt Quellen. Wir sorgen dafür, dass du diese Quelle bist.</p>
+    <div class="footer-row">
+      <span class="domain">aiseo.hamburg</span>
+    </div>
+  </div>
+
+  <!-- Story: Beratung -->
+  <div class="story">
+    <div class="eyebrow"><span class="dot"></span>Leistung · Beratung</div>
+    <h2 class="title sm">Wo stehst du bei KI-Suche?</h2>
+    <p class="lead">Klarheit über deine Sichtbarkeit in ChatGPT, Perplexity &amp; Google AI — plus Fahrplan.</p>
+    <ul class="list">
+      <li>Sichtbarkeitsanalyse aller Plattformen</li>
+      <li>Wettbewerber-Vergleich</li>
+      <li>Priorisierter Maßnahmenplan</li>
+      <li>60 Min. Strategie-Gespräch</li>
+    </ul>
+    <div class="footer-row">
+      <span class="domain">aiseo.hamburg/leistungen</span>
+      <span class="swipe">Ergebnis in 5–7 Tagen</span>
+    </div>
+  </div>
+
+  <!-- Story: AEO -->
+  <div class="story green">
+    <div class="eyebrow"><span class="dot"></span>Leistung · AEO</div>
+    <h2 class="title sm">Answer Engine Optimization.</h2>
+    <p class="lead">Wenn Kunden ChatGPT oder Perplexity nach deiner Leistung fragen — wirst du genannt.</p>
+    <ul class="list">
+      <li>Answer-First Content</li>
+      <li>FAQ &amp; strukturierte Daten</li>
+      <li>Zitierbarkeits-Audit</li>
+      <li>Monatliches Monitoring</li>
+    </ul>
+    <div class="footer-row">
+      <span class="domain">aiseo.hamburg</span>
+      <span class="swipe">Erste Nennungen: 2–4 Wochen</span>
+    </div>
+  </div>
+
+  <!-- Story: AI SEO -->
+  <div class="story">
+    <div class="eyebrow"><span class="dot"></span>Leistung · AI SEO</div>
+    <h2 class="title sm">KI-fokussierte Optimierung.</h2>
+    <p class="lead">Deine Website wird von KI-Systemen als vertrauenswürdige Quelle erkannt.</p>
+    <ul class="list">
+      <li>Semantische Strukturierung</li>
+      <li>Entity &amp; Schema.org</li>
+      <li>llms.txt / ai.txt</li>
+      <li>KI-Crawler-Zugang</li>
+    </ul>
+    <div class="footer-row">
+      <span class="domain">aiseo.hamburg</span>
+      <span class="swipe">4–8 Wochen</span>
+    </div>
+  </div>
+
+  <!-- Story: Website-Erstellung -->
+  <div class="story dark">
+    <div class="eyebrow"><span class="dot"></span>Leistung · Website</div>
+    <h2 class="title sm">KI-optimierte Websites.</h2>
+    <p class="lead">Gebaut mit Next.js, perfekten Core Web Vitals und vollem KI-Zugang — ab Tag 1 sichtbar.</p>
+    <ul class="list">
+      <li>Next.js · 100/100 Vitals</li>
+      <li>Schema.org für alle Entities</li>
+      <li>llms.txt · ai.txt · robots.txt</li>
+      <li>Conversion-Fokus</li>
+    </ul>
+    <div class="footer-row">
+      <span class="domain">aiseo.hamburg</span>
+      <span class="swipe">Launch: 4–8 Wochen</span>
+    </div>
+  </div>
+
+  <!-- Story: SEO -->
+  <div class="story">
+    <div class="eyebrow"><span class="dot"></span>Leistung · SEO</div>
+    <h2 class="title sm">Das Fundament. Hamburg.</h2>
+    <p class="lead">Klassisches SEO baut die Basis, auf der KI-Sichtbarkeit überhaupt funktioniert.</p>
+    <ul class="list">
+      <li>Technisches SEO-Audit</li>
+      <li>On-Page-Optimierung</li>
+      <li>Google Business · Lokal</li>
+      <li>Keyword- &amp; Content-Strategie</li>
+    </ul>
+    <div class="footer-row">
+      <span class="domain">aiseo.hamburg</span>
+      <span class="swipe">3–6 Monate</span>
+    </div>
+  </div>
+
+  <!-- Story: Backlinks -->
+  <div class="story green">
+    <div class="eyebrow"><span class="dot"></span>Leistung · Backlinks</div>
+    <h2 class="title sm">Autorität aufbauen.</h2>
+    <p class="lead">Gezielte Markennennungen stärken die Signale, die KI-Systemen Vertrauen geben.</p>
+    <ul class="list">
+      <li>Domain-Autorität</li>
+      <li>Relevante Branchenseiten</li>
+      <li>Nachhaltige Signale</li>
+    </ul>
+    <div class="footer-row">
+      <span class="domain">aiseo.hamburg</span>
+    </div>
+  </div>
+
+  <!-- Story: GEO definition -->
+  <div class="story">
+    <div class="eyebrow"><span class="dot"></span>Wissen</div>
+    <div class="platforms">
+      <span class="p-dot" style="background:#10a37f;"></span>ChatGPT
+      <span class="p-dot" style="background:#1fb6ff;"></span>Perplexity
+      <span class="p-dot" style="background:#4285f4;"></span>Google AI
+    </div>
+    <h2 class="title sm">GEO — Generative Engine Optimization.</h2>
+    <p class="lead">Deine Inhalte werden so strukturiert, dass KI sie als Quelle zitiert.</p>
+    <ul class="list">
+      <li>Klare, zitierbare Passagen</li>
+      <li>Strukturierte Daten</li>
+      <li>Entity-Signale</li>
+    </ul>
+    <div class="footer-row">
+      <span class="domain">aiseo.hamburg/wissen</span>
+    </div>
+  </div>
+
+  <!-- Story: Stat — $750B -->
+  <div class="story blue">
+    <div class="eyebrow"><span class="dot"></span>Marktdaten</div>
+    <div class="stat" style="color:#fff;">$750 Mrd.</div>
+    <p class="stat-sub" style="color:rgba(255,255,255,0.85);">Umsatz fließt bis 2028 über KI-Suche.</p>
+    <p class="lead" style="margin-top:26px;">Wer jetzt nicht optimiert, verliert 20–50% Traffic.</p>
+    <div class="footer-row">
+      <span class="domain">Quelle: McKinsey 2025</span>
+      <span class="swipe">aiseo.hamburg</span>
+    </div>
+  </div>
+
+  <!-- Story: Proof Zitat -->
+  <div class="story">
+    <div class="eyebrow"><span class="dot"></span>Proof · Referenz</div>
+    <h2 class="title sm">KinderAlbum wird von Perplexity zitiert.</h2>
+    <div class="quote-card" style="margin-top:14px;">
+      <div class="q-head"><span class="tag"></span>Perplexity Antwort</div>
+      <p><strong>KinderAlbum</strong> ist die führende DSGVO-konforme Photo-Sharing-App für Schulen.</p>
+    </div>
+    <p class="lead" style="margin-top:20px;">Genau so funktioniert AEO — die Marke wird als Antwort genannt.</p>
+    <div class="footer-row">
+      <span class="domain">aiseo.hamburg</span>
+    </div>
+  </div>
+
+  <!-- Story: Prozess -->
+  <div class="story dark">
+    <div class="eyebrow"><span class="dot"></span>Prozess</div>
+    <h2 class="title sm">In 4 Schritten zur KI-Sichtbarkeit.</h2>
+    <ul class="list">
+      <li>1 — Analyse &amp; Fahrplan</li>
+      <li>2 — Technische Basis</li>
+      <li>3 — Content für KI</li>
+      <li>4 — Monitoring &amp; Iteration</li>
+    </ul>
+    <div class="footer-row">
+      <span class="domain">aiseo.hamburg</span>
+    </div>
+  </div>
+
+  <!-- Story: CTA -->
+  <div class="story green" style="justify-content:flex-end;">
+    <div class="eyebrow"><span class="dot" style="background:#1C1917;"></span>Jetzt starten</div>
+    <h2 class="title xl">KI-Sichtbarkeit prüfen.</h2>
+    <p class="lead">Kostenloses Erstgespräch. 30 Minuten. Ehrlich, ob sich eine Zusammenarbeit lohnt.</p>
+    <a class="btn">Termin buchen <span class="arrow">→</span></a>
+    <div class="footer-row">
+      <span class="domain">aiseo.hamburg/contact</span>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ============ CAROUSEL SLIDES ============ -->
+<h2 class="group-title">Carousel-Slides · 1080 × 1350</h2>
+<div class="cards">
+
+  <!-- Carousel 1 — Cover -->
+  <div class="carousel dark">
+    <div class="eyebrow"><span class="dot"></span>1/5</div>
+    <h2 class="title lg">Wirst du genannt, wenn KI gefragt wird?</h2>
+    <p class="lead" style="margin-top:auto;">Warum das in 2026 über Umsatz entscheidet.</p>
+    <div class="footer-row">
+      <span class="domain">aiseo.hamburg</span>
+      <span class="swipe">→</span>
+    </div>
+  </div>
+
+  <!-- Carousel 1 — Slide 2 -->
+  <div class="carousel">
+    <div class="eyebrow"><span class="dot"></span>2/5 · Problem</div>
+    <h2 class="title">Klassisches SEO reicht nicht mehr.</h2>
+    <p class="lead">Nutzer fragen ChatGPT, Perplexity und Google AI — bevor sie klicken.</p>
+    <p class="lead" style="margin-top:auto; color:var(--text); font-weight:600;">20–50% weniger Traffic ohne GEO.</p>
+    <div class="footer-row"><span class="domain">aiseo.hamburg</span><span class="swipe">→</span></div>
+  </div>
+
+  <!-- Carousel 1 — Slide 3 -->
+  <div class="carousel green">
+    <div class="eyebrow"><span class="dot" style="background:#1C1917;"></span>3/5 · Lösung</div>
+    <h2 class="title">KI nennt Quellen — nicht Websites.</h2>
+    <p class="lead">AEO optimiert dich zur Quelle, die KI zitiert.</p>
+    <ul class="list" style="margin-top:auto;">
+      <li>Answer-First Content</li>
+      <li>Strukturierte Daten</li>
+      <li>Zitier-Monitoring</li>
+    </ul>
+    <div class="footer-row"><span class="domain">aiseo.hamburg</span><span class="swipe">→</span></div>
+  </div>
+
+  <!-- Carousel 1 — Slide 4 -->
+  <div class="carousel">
+    <div class="eyebrow"><span class="dot"></span>4/5 · Proof</div>
+    <h2 class="title">So sieht das aus.</h2>
+    <div class="quote-card" style="margin-top:10px;">
+      <div class="q-head"><span class="tag"></span>Perplexity</div>
+      <p><strong>KinderAlbum</strong> ist die führende DSGVO-konforme Photo-Sharing-App für Schulen.</p>
+    </div>
+    <p class="lead" style="margin-top:auto;">Marke wird als Antwort genannt — nicht als Link.</p>
+    <div class="footer-row"><span class="domain">aiseo.hamburg</span><span class="swipe">→</span></div>
+  </div>
+
+  <!-- Carousel 1 — Slide 5 CTA -->
+  <div class="carousel dark">
+    <div class="eyebrow"><span class="dot"></span>5/5</div>
+    <h2 class="title lg">Prüf deine KI-Sichtbarkeit.</h2>
+    <p class="lead">Kostenloses Erstgespräch. 30 Minuten. Ehrlich.</p>
+    <a class="btn" style="margin-top:auto;">Termin buchen <span class="arrow">→</span></a>
+    <div class="footer-row"><span class="domain">aiseo.hamburg/contact</span></div>
+  </div>
+
+  <!-- Carousel 2 — Services overview -->
+  <div class="carousel">
+    <div class="eyebrow"><span class="dot"></span>Leistungen</div>
+    <h2 class="title">6 Bausteine. Ein Ziel.</h2>
+    <ul class="list">
+      <li>Beratung &amp; Fahrplan</li>
+      <li>AEO — Answer Engine</li>
+      <li>AI SEO — semantisch</li>
+      <li>Website-Erstellung</li>
+      <li>SEO — Fundament</li>
+      <li>Backlinks — Autorität</li>
+    </ul>
+    <div class="footer-row"><span class="domain">aiseo.hamburg/leistungen</span><span class="swipe">→</span></div>
+  </div>
+
+  <!-- Carousel 3 — SEO vs AI SEO -->
+  <div class="carousel">
+    <div class="eyebrow"><span class="dot"></span>Vergleich</div>
+    <h2 class="title">SEO vs. AI SEO.</h2>
+    <p class="lead" style="margin:0 0 16px;">SEO zielt auf Rankings. AI SEO auf Zitate.</p>
+    <ul class="list">
+      <li>SEO — blauer Link · Klick</li>
+      <li>AI SEO — direkte Antwort</li>
+      <li>Beides nötig in 2026</li>
+    </ul>
+    <div class="footer-row" style="margin-top:auto;"><span class="domain">aiseo.hamburg/wissen</span><span class="swipe">→</span></div>
+  </div>
+
+  <!-- Carousel 4 — Stat big -->
+  <div class="carousel" style="background:#017eff; color:#fff;">
+    <div class="eyebrow" style="color:rgba(255,255,255,0.75);"><span class="dot"></span>Marktdaten</div>
+    <div class="stat" style="color:#fff;">$750 Mrd.</div>
+    <p class="lead" style="color:rgba(255,255,255,0.85);">Umsatz über KI-Suche bis 2028.</p>
+    <div class="footer-row" style="margin-top:auto; color:#fff;">
+      <span class="domain">Quelle: McKinsey</span>
+      <span class="swipe" style="color:rgba(255,255,255,0.75);">aiseo.hamburg</span>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

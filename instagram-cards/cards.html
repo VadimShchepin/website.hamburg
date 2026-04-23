@@ -1,0 +1,701 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Instagram Cards — webseite.hamburg & aiseo.hamburg</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --primary:#0A192F;
+    --primary-light:#172A45;
+    --primary-dark:#020C1B;
+    --accent:#E53935;
+    --bg:#F5F7FA;
+    --bg2:#E9EEF3;
+    --text:#333;
+    --muted:#8A99B0;
+    --white:#fff;
+    --heading:'Goldman', system-ui, sans-serif;
+    --body:'Inter', system-ui, sans-serif;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html,body{background:#2a2a2a; font-family:var(--body); color:var(--text);}
+  body{padding:40px 20px;}
+  h1.page-title{font-family:var(--heading); color:#fff; text-align:center; margin-bottom:30px; font-size:22px; letter-spacing:1px;}
+  .group-title{font-family:var(--heading); color:#9ab; text-align:center; margin:40px 0 20px; font-size:14px; letter-spacing:3px; text-transform:uppercase;}
+  .cards{display:flex; flex-wrap:wrap; gap:30px; justify-content:center;}
+
+  /* Story format 9:16 — scaled down for preview; to export set width:1080px */
+  .story{
+    width:360px; height:640px; /* preview scale: 1/3 of 1080x1920 */
+    background:var(--primary);
+    color:var(--white);
+    position:relative;
+    overflow:hidden;
+    font-family:var(--body);
+    display:flex; flex-direction:column;
+    padding:48px 40px;
+  }
+  .carousel{
+    width:360px; height:450px; /* preview: 1/3 of 1080x1350 */
+    background:var(--white);
+    color:var(--primary);
+    position:relative;
+    overflow:hidden;
+    font-family:var(--body);
+    display:flex; flex-direction:column;
+    padding:40px 36px;
+  }
+
+  /* Market frame corners — brand signature */
+  .frame::before, .frame::after{
+    content:''; position:absolute; width:28px; height:28px;
+    border-color:currentColor;
+  }
+  .frame::before{ top:16px; left:16px; border-top:3px solid; border-left:3px solid; }
+  .frame::after{ bottom:16px; right:16px; border-bottom:3px solid; border-right:3px solid; }
+
+  /* Polygon bull-inspired background accent */
+  .poly{
+    position:absolute; inset:0;
+    background:
+      linear-gradient(135deg, transparent 65%, rgba(229,57,53,0.08) 65%, rgba(229,57,53,0.08) 68%, transparent 68%),
+      linear-gradient(135deg, transparent 72%, rgba(255,255,255,0.04) 72%, rgba(255,255,255,0.04) 74%, transparent 74%);
+    pointer-events:none;
+  }
+  .poly-light{
+    position:absolute; inset:0;
+    background:
+      linear-gradient(135deg, transparent 70%, rgba(10,25,47,0.05) 70%, rgba(10,25,47,0.05) 72%, transparent 72%);
+    pointer-events:none;
+  }
+
+  .brand-tag{
+    font-family:var(--heading);
+    font-size:11px; letter-spacing:3px; text-transform:uppercase;
+    opacity:.75;
+    margin-bottom:auto;
+  }
+  .kicker{
+    font-family:var(--heading);
+    font-size:10px; letter-spacing:3px; text-transform:uppercase;
+    color:var(--accent);
+    margin-bottom:14px;
+  }
+  .story h2{
+    font-family:var(--heading);
+    font-size:42px; line-height:1.05; letter-spacing:-0.5px;
+    margin-bottom:18px;
+  }
+  .story h2.sm{font-size:32px;}
+  .story .lead{
+    font-size:16px; line-height:1.45; opacity:.85; margin-bottom:22px;
+  }
+  .story ul{ list-style:none; }
+  .story ul li{
+    font-size:15px; line-height:1.5; padding:8px 0 8px 22px;
+    border-bottom:1px solid rgba(255,255,255,0.08);
+    position:relative;
+  }
+  .story ul li::before{
+    content:''; position:absolute; left:0; top:16px;
+    width:10px; height:10px;
+    background:var(--accent);
+    clip-path:polygon(0 0, 100% 50%, 0 100%);
+  }
+  .story .footer{
+    margin-top:auto;
+    display:flex; justify-content:space-between; align-items:end;
+    font-size:12px; letter-spacing:1px;
+    padding-top:20px;
+  }
+  .story .domain{font-family:var(--heading); font-size:14px;}
+  .story .badge{
+    display:inline-block; padding:6px 12px; border:1px solid rgba(255,255,255,0.3);
+    font-size:10px; letter-spacing:2px; text-transform:uppercase;
+    margin-bottom:16px;
+  }
+
+  /* Light variant (carousel) */
+  .carousel h2{ font-family:var(--heading); font-size:30px; line-height:1.1; margin-bottom:14px;}
+  .carousel h2.lg{font-size:38px;}
+  .carousel .lead{ font-size:14px; line-height:1.5; color:var(--text); margin-bottom:16px;}
+  .carousel ul{list-style:none;}
+  .carousel ul li{
+    font-size:13px; line-height:1.5; padding:6px 0 6px 20px;
+    position:relative; border-bottom:1px solid #E9EEF3;
+  }
+  .carousel ul li::before{
+    content:''; position:absolute; left:0; top:12px;
+    width:9px; height:9px;
+    background:var(--accent);
+    clip-path:polygon(0 0, 100% 50%, 0 100%);
+  }
+  .carousel .footer{
+    margin-top:auto; display:flex; justify-content:space-between; align-items:end;
+    font-family:var(--heading); font-size:11px; letter-spacing:2px; color:var(--primary);
+    padding-top:16px;
+  }
+
+  /* Cover card — big icon style */
+  .cover{
+    align-items:center; justify-content:center; text-align:center;
+  }
+  .cover .icon{
+    width:140px; height:140px;
+    border:3px solid var(--accent);
+    display:flex; align-items:center; justify-content:center;
+    margin-bottom:28px;
+    transform:rotate(45deg);
+  }
+  .cover .icon svg{ transform:rotate(-45deg); }
+  .cover h2{ font-size:36px; letter-spacing:2px; text-transform:uppercase;}
+
+  /* Stats card */
+  .stat{
+    font-family:var(--heading); font-size:92px; line-height:1; color:var(--accent);
+    margin-bottom:8px;
+  }
+  .stat-label{font-size:14px; letter-spacing:2px; text-transform:uppercase; opacity:.8;}
+
+  /* Price badge */
+  .price{
+    font-family:var(--heading); font-size:28px; color:var(--accent);
+    margin-top:10px;
+  }
+
+  /* CTA card */
+  .cta-big{
+    background:var(--accent); color:#fff; align-items:center; justify-content:center; text-align:center;
+  }
+  .cta-big h2{ font-size:54px; line-height:1.05;}
+  .cta-big .arrow{ font-family:var(--heading); font-size:80px; margin-top:30px;}
+
+  /* Export helpers */
+  @media print { body{background:#fff;} .story,.carousel{break-inside:avoid;} }
+  .hint{ color:#ccc; text-align:center; font-size:12px; margin:10px auto 30px; max-width:700px; line-height:1.5;}
+  .export-note{
+    background:#111; color:#9ab; padding:18px 24px; border-left:3px solid var(--accent);
+    max-width:760px; margin:0 auto 40px; font-size:13px; line-height:1.6;
+  }
+  .export-note code{background:#000; padding:2px 6px; color:#fff;}
+</style>
+</head>
+<body>
+
+<h1 class="page-title">Instagram Cards — Vadim Shchepin</h1>
+<p class="hint">Vorschau in 1/3 Größe. Für Export: in DevTools die Klassen <code>.story</code> (1080×1920) und <code>.carousel</code> (1080×1350) auf volle Größe stellen, oder per Puppeteer rendern. Siehe Hinweis unten.</p>
+
+<div class="export-note">
+<strong>Export als PNG (echte Instagram-Größe):</strong><br>
+1. Öffne diese Datei in Chrome.<br>
+2. Ändere in DevTools die CSS-Variable <code>width</code> auf <code>1080px</code> und <code>height</code> auf <code>1920px</code> (.story) bzw. <code>1350px</code> (.carousel).<br>
+3. Rechtsklick auf Card → „Inspect" → rechte Maustaste auf Element → „Capture node screenshot".<br>
+Oder: <code>npx playwright</code> Script (ich kann eins erstellen, falls gewünscht).
+</div>
+
+<!-- ============ HIGHLIGHT COVERS (9:16) ============ -->
+<h2 class="group-title">Highlight Covers · 1080 × 1920</h2>
+<div class="cards">
+
+  <!-- Cover: Über mich -->
+  <div class="story cover frame">
+    <div class="poly"></div>
+    <div class="icon">
+      <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5">
+        <circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/>
+      </svg>
+    </div>
+    <h2>Über mich</h2>
+    <div class="domain" style="margin-top:30px;">webseite.hamburg</div>
+  </div>
+
+  <!-- Cover: Leistungen -->
+  <div class="story cover frame">
+    <div class="poly"></div>
+    <div class="icon">
+      <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5">
+        <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
+        <rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/>
+      </svg>
+    </div>
+    <h2>Leistungen</h2>
+    <div class="domain" style="margin-top:30px;">Alles aus einer Hand</div>
+  </div>
+
+  <!-- Cover: Webdesign -->
+  <div class="story cover frame">
+    <div class="poly"></div>
+    <div class="icon">
+      <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5">
+        <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+      </svg>
+    </div>
+    <h2>Webdesign</h2>
+    <div class="domain" style="margin-top:30px;">100/100 PageSpeed</div>
+  </div>
+
+  <!-- Cover: SEO Lokal -->
+  <div class="story cover frame">
+    <div class="poly"></div>
+    <div class="icon">
+      <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5">
+        <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+    </div>
+    <h2>SEO Lokal</h2>
+    <div class="domain" style="margin-top:30px;">Google · Maps · Hamburg</div>
+  </div>
+
+  <!-- Cover: AI-Sichtbarkeit -->
+  <div class="story cover frame">
+    <div class="poly"></div>
+    <div class="icon">
+      <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5">
+        <path d="M12 2 L22 8 L22 16 L12 22 L2 16 L2 8 Z"/>
+        <circle cx="12" cy="12" r="3" fill="#E53935" stroke="none"/>
+      </svg>
+    </div>
+    <h2 class="sm">AI-Sichtbarkeit</h2>
+    <div class="domain" style="margin-top:30px;">aiseo.hamburg</div>
+  </div>
+
+  <!-- Cover: Ads -->
+  <div class="story cover frame">
+    <div class="poly"></div>
+    <div class="icon">
+      <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5">
+        <path d="M3 11l18-8v18l-18-8z"/><path d="M3 11v4"/>
+      </svg>
+    </div>
+    <h2>Google Ads</h2>
+    <div class="domain" style="margin-top:30px;">Messbare Leads</div>
+  </div>
+
+  <!-- Cover: Audit -->
+  <div class="story cover frame">
+    <div class="poly"></div>
+    <div class="icon">
+      <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+        <polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/>
+      </svg>
+    </div>
+    <h2>Audit</h2>
+    <div class="domain" style="margin-top:30px;">Kostenlos</div>
+  </div>
+
+  <!-- Cover: Prozess -->
+  <div class="story cover frame">
+    <div class="poly"></div>
+    <div class="icon">
+      <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5">
+        <circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/>
+        <line x1="7" y1="12" x2="10" y2="12"/><line x1="14" y1="12" x2="17" y2="12"/>
+      </svg>
+    </div>
+    <h2>Prozess</h2>
+    <div class="domain" style="margin-top:30px;">4 klare Schritte</div>
+  </div>
+
+  <!-- Cover: Referenzen -->
+  <div class="story cover frame">
+    <div class="poly"></div>
+    <div class="icon">
+      <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5">
+        <polygon points="12 2 15 9 22 10 17 15 18 22 12 18 6 22 7 15 2 10 9 9"/>
+      </svg>
+    </div>
+    <h2>Referenzen</h2>
+    <div class="domain" style="margin-top:30px;">Echte Ergebnisse</div>
+  </div>
+
+  <!-- Cover: Preise -->
+  <div class="story cover frame">
+    <div class="poly"></div>
+    <div class="icon">
+      <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5">
+        <path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+      </svg>
+    </div>
+    <h2>Preise</h2>
+    <div class="domain" style="margin-top:30px;">Transparent</div>
+  </div>
+
+  <!-- Cover: FAQ -->
+  <div class="story cover frame">
+    <div class="poly"></div>
+    <div class="icon">
+      <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5">
+        <circle cx="12" cy="12" r="10"/>
+        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+      </svg>
+    </div>
+    <h2>FAQ</h2>
+    <div class="domain" style="margin-top:30px;">Antworten</div>
+  </div>
+
+  <!-- Cover: Kontakt -->
+  <div class="story cover frame">
+    <div class="poly"></div>
+    <div class="icon">
+      <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>
+      </svg>
+    </div>
+    <h2>Kontakt</h2>
+    <div class="domain" style="margin-top:30px;">Termin sichern</div>
+  </div>
+
+</div>
+
+<!-- ============ STORY CONTENT (9:16) ============ -->
+<h2 class="group-title">Story-Inhalte · 1080 × 1920</h2>
+<div class="cards">
+
+  <!-- Story: Über mich Intro -->
+  <div class="story frame">
+    <div class="poly"></div>
+    <div class="brand-tag">webseite.hamburg</div>
+    <div style="margin-top:40px;">
+      <div class="kicker">Über mich</div>
+      <h2>Vadim Shchepin.<br>Websites, die wirken.</h2>
+      <p class="lead">10+ Jahre Entwicklung digitaler Produkte. Jetzt für lokale Unternehmen in Hamburg.</p>
+    </div>
+    <div class="footer">
+      <span class="domain">webseite.hamburg</span>
+      <span>→ swipe</span>
+    </div>
+  </div>
+
+  <!-- Story: Leistungen Overview -->
+  <div class="story frame">
+    <div class="poly"></div>
+    <div class="brand-tag">Leistungen</div>
+    <div style="margin-top:40px;">
+      <div class="kicker">Alles aus einer Hand</div>
+      <h2 class="sm">Strategie. Design. Entwicklung. Marketing.</h2>
+      <ul>
+        <li>Webdesign &amp; Entwicklung</li>
+        <li>SEO &amp; AI-Sichtbarkeit</li>
+        <li>Google &amp; Local Ads</li>
+        <li>Website-Audit</li>
+      </ul>
+    </div>
+    <div class="footer"><span class="domain">webseite.hamburg</span></div>
+  </div>
+
+  <!-- Story: Webdesign -->
+  <div class="story frame">
+    <div class="poly"></div>
+    <div class="brand-tag">Leistung · 01</div>
+    <div style="margin-top:40px;">
+      <div class="kicker">Webdesign</div>
+      <h2 class="sm">Schnell. Klar. Konversionsstark.</h2>
+      <ul>
+        <li>Responsive Design</li>
+        <li>PageSpeed 100/100</li>
+        <li>Klare Nutzerführung</li>
+        <li>Individuelle Entwicklung</li>
+      </ul>
+      <div class="price">Ab 2.000 €</div>
+    </div>
+    <div class="footer"><span class="domain">webseite.hamburg/leistungen/webdesign</span></div>
+  </div>
+
+  <!-- Story: SEO Local -->
+  <div class="story frame">
+    <div class="poly"></div>
+    <div class="brand-tag">Leistung · 02</div>
+    <div style="margin-top:40px;">
+      <div class="kicker">SEO Lokal</div>
+      <h2 class="sm">Gefunden werden. In Hamburg.</h2>
+      <ul>
+        <li>Lokale SEO-Strategie</li>
+        <li>Google My Business</li>
+        <li>Technisches SEO</li>
+        <li>Content-Optimierung</li>
+      </ul>
+      <div class="price">Ab 1.000 €/Mt.</div>
+    </div>
+    <div class="footer"><span class="domain">webseite.hamburg/leistungen/seo</span></div>
+  </div>
+
+  <!-- Story: AI-Sichtbarkeit -->
+  <div class="story frame">
+    <div class="poly"></div>
+    <div class="brand-tag">aiseo.hamburg</div>
+    <div style="margin-top:40px;">
+      <div class="kicker">AI-Sichtbarkeit</div>
+      <h2 class="sm">Sichtbar in ChatGPT, Perplexity &amp; Google AI.</h2>
+      <ul>
+        <li>GEO — Generative Engine Optimization</li>
+        <li>AEO — Answer Engine Optimization</li>
+        <li>AI SEO — Content für LLMs</li>
+        <li>Zitierbarkeit &amp; llms.txt</li>
+      </ul>
+    </div>
+    <div class="footer"><span class="domain">aiseo.hamburg</span></div>
+  </div>
+
+  <!-- Story: GEO erklärt -->
+  <div class="story frame">
+    <div class="poly"></div>
+    <div class="brand-tag">Wissen</div>
+    <div style="margin-top:40px;">
+      <div class="kicker">Was ist GEO?</div>
+      <h2 class="sm">Generative Engine Optimization.</h2>
+      <p class="lead">GEO optimiert Ihre Inhalte so, dass KI-Suchen wie ChatGPT und Perplexity Sie als Quelle zitieren.</p>
+      <ul>
+        <li>Strukturierte Antworten</li>
+        <li>Klare Passagen</li>
+        <li>Schema &amp; llms.txt</li>
+      </ul>
+    </div>
+    <div class="footer"><span class="domain">aiseo.hamburg</span></div>
+  </div>
+
+  <!-- Story: AEO erklärt -->
+  <div class="story frame">
+    <div class="poly"></div>
+    <div class="brand-tag">Wissen</div>
+    <div style="margin-top:40px;">
+      <div class="kicker">Was ist AEO?</div>
+      <h2 class="sm">Answer Engine Optimization.</h2>
+      <p class="lead">AEO bereitet Ihre Seite so auf, dass sie direkt als Antwort erscheint — nicht nur als Link.</p>
+      <ul>
+        <li>Frage-Antwort-Format</li>
+        <li>Featured Snippet Ready</li>
+        <li>FAQ Schema Markup</li>
+      </ul>
+    </div>
+    <div class="footer"><span class="domain">aiseo.hamburg</span></div>
+  </div>
+
+  <!-- Story: Google Ads -->
+  <div class="story frame">
+    <div class="poly"></div>
+    <div class="brand-tag">Leistung · 03</div>
+    <div style="margin-top:40px;">
+      <div class="kicker">Google &amp; Local Ads</div>
+      <h2 class="sm">Messbare Anfragen. Prazise.</h2>
+      <ul>
+        <li>Google Search Ads</li>
+        <li>Local Services Ads</li>
+        <li>Conversion Tracking</li>
+        <li>Monatliches Reporting</li>
+      </ul>
+      <div class="price">Ab 500 €/Mt.</div>
+    </div>
+    <div class="footer"><span class="domain">webseite.hamburg/leistungen/google-ads</span></div>
+  </div>
+
+  <!-- Story: Audit -->
+  <div class="story frame">
+    <div class="poly"></div>
+    <div class="brand-tag">Leistung · 04</div>
+    <div style="margin-top:40px;">
+      <div class="kicker">Website-Audit</div>
+      <h2 class="sm">Kostenlos. Unverbindlich. Ehrlich.</h2>
+      <ul>
+        <li>Performance-Check</li>
+        <li>SEO-Analyse</li>
+        <li>Conversion-Bewertung</li>
+        <li>Konkrete Empfehlungen</li>
+      </ul>
+      <div class="price">Kostenlos</div>
+    </div>
+    <div class="footer"><span class="domain">webseite.hamburg/leistungen/website-audit</span></div>
+  </div>
+
+  <!-- Story: Prozess -->
+  <div class="story frame">
+    <div class="poly"></div>
+    <div class="brand-tag">Prozess</div>
+    <div style="margin-top:40px;">
+      <div class="kicker">So arbeiten wir</div>
+      <h2 class="sm">4 Schritte. Volle Transparenz.</h2>
+      <ul>
+        <li>1 — Markt &amp; Geschäft verstehen</li>
+        <li>2 — Struktur, die konvertiert</li>
+        <li>3 — Schnelle Website bauen</li>
+        <li>4 — SEO, Ads, Optimierung</li>
+      </ul>
+    </div>
+    <div class="footer"><span class="domain">webseite.hamburg</span></div>
+  </div>
+
+  <!-- Story: Stat 100/100 -->
+  <div class="story frame" style="justify-content:center; align-items:center; text-align:center;">
+    <div class="poly"></div>
+    <div class="brand-tag" style="position:absolute; top:48px; left:40px;">Proof</div>
+    <div class="stat">100<span style="font-size:48px;">/100</span></div>
+    <div class="stat-label">PageSpeed · Google Lighthouse</div>
+    <p class="lead" style="margin-top:30px; max-width:260px; text-align:center;">Jede Website wird auf 100 Punkte getestet — bevor sie live geht.</p>
+    <div class="footer" style="position:absolute; bottom:48px; left:40px; right:40px;">
+      <span class="domain">webseite.hamburg</span>
+    </div>
+  </div>
+
+  <!-- Story: Stat 10+ Jahre -->
+  <div class="story frame" style="justify-content:center; align-items:center; text-align:center;">
+    <div class="poly"></div>
+    <div class="brand-tag" style="position:absolute; top:48px; left:40px;">Erfahrung</div>
+    <div class="stat">10+</div>
+    <div class="stat-label">Jahre digitale Produkte</div>
+    <p class="lead" style="margin-top:30px; max-width:280px; text-align:center;">Senior-Entwicklung. Saubere Architektur. Keine Agentur-Standards.</p>
+    <div class="footer" style="position:absolute; bottom:48px; left:40px; right:40px;">
+      <span class="domain">webseite.hamburg</span>
+    </div>
+  </div>
+
+  <!-- Story: Kontakt CTA -->
+  <div class="story cta-big frame">
+    <div class="poly"></div>
+    <div style="font-family:var(--heading); font-size:12px; letter-spacing:3px; text-transform:uppercase; margin-bottom:30px;">Jetzt starten</div>
+    <h2>Termin sichern.</h2>
+    <div class="arrow">→</div>
+    <div style="margin-top:40px; font-family:var(--heading); font-size:14px; letter-spacing:2px;">webseite.hamburg/kontakt</div>
+  </div>
+
+</div>
+
+
+<!-- ============ CAROUSEL SLIDES (4:5) ============ -->
+<h2 class="group-title">Carousel-Slides · 1080 × 1350</h2>
+<div class="cards">
+
+  <!-- Carousel A — Slide 1 Cover -->
+  <div class="carousel frame" style="background:var(--primary); color:#fff;">
+    <div class="poly"></div>
+    <div class="kicker">Carousel · 1/6</div>
+    <h2 class="lg" style="color:#fff;">Warum Ihre Website keine Kunden bringt.</h2>
+    <p class="lead" style="color:rgba(255,255,255,0.75); margin-top:auto;">5 Gründe — und was Sie dagegen tun.</p>
+    <div class="footer" style="color:#fff;"><span>webseite.hamburg</span><span>→</span></div>
+  </div>
+
+  <!-- Carousel A — Slide 2 -->
+  <div class="carousel frame">
+    <div class="poly-light"></div>
+    <div class="kicker">2/6</div>
+    <h2>1. Zu langsam.</h2>
+    <p class="lead">Besucher warten nicht. Über 3 Sekunden Ladezeit = 53% brechen ab.</p>
+    <p class="lead" style="margin-top:auto; color:var(--accent); font-weight:600;">Lösung: 100/100 PageSpeed.</p>
+    <div class="footer"><span>webseite.hamburg</span><span>→</span></div>
+  </div>
+
+  <!-- Carousel A — Slide 3 -->
+  <div class="carousel frame">
+    <div class="poly-light"></div>
+    <div class="kicker">3/6</div>
+    <h2>2. Keine klare Struktur.</h2>
+    <p class="lead">Der Besucher weiß nicht, was er tun soll. Keine Hierarchie, kein Fokus, kein CTA.</p>
+    <p class="lead" style="margin-top:auto; color:var(--accent); font-weight:600;">Lösung: Conversion-orientierte Struktur.</p>
+    <div class="footer"><span>webseite.hamburg</span><span>→</span></div>
+  </div>
+
+  <!-- Carousel A — Slide 4 -->
+  <div class="carousel frame">
+    <div class="poly-light"></div>
+    <div class="kicker">4/6</div>
+    <h2>3. Unsichtbar in Google.</h2>
+    <p class="lead">Keine lokale SEO-Arbeit. Wer nicht gefunden wird, verliert Kunden an die Konkurrenz.</p>
+    <p class="lead" style="margin-top:auto; color:var(--accent); font-weight:600;">Lösung: Lokale SEO + Maps.</p>
+    <div class="footer"><span>webseite.hamburg</span><span>→</span></div>
+  </div>
+
+  <!-- Carousel A — Slide 5 -->
+  <div class="carousel frame">
+    <div class="poly-light"></div>
+    <div class="kicker">5/6</div>
+    <h2>4. Unsichtbar in KI-Suche.</h2>
+    <p class="lead">ChatGPT &amp; Perplexity beantworten Fragen direkt. Wer nicht zitiert wird, existiert dort nicht.</p>
+    <p class="lead" style="margin-top:auto; color:var(--accent); font-weight:600;">Lösung: GEO &amp; AEO.</p>
+    <div class="footer"><span>aiseo.hamburg</span><span>→</span></div>
+  </div>
+
+  <!-- Carousel A — Slide 6 CTA -->
+  <div class="carousel frame" style="background:var(--accent); color:#fff;">
+    <div class="poly"></div>
+    <div class="kicker" style="color:#fff;">6/6</div>
+    <h2 class="lg" style="color:#fff;">Kostenlosen Audit holen.</h2>
+    <p class="lead" style="color:rgba(255,255,255,0.9);">Wir prüfen Ihre Website in allen 5 Punkten. Ehrlich. Ohne Verkauf.</p>
+    <div class="footer" style="color:#fff; margin-top:auto;"><span>webseite.hamburg/kontakt</span><span>→</span></div>
+  </div>
+
+  <!-- Carousel B — SEO vs AI SEO 1 -->
+  <div class="carousel frame" style="background:var(--primary); color:#fff;">
+    <div class="poly"></div>
+    <div class="kicker">Carousel · 1/4</div>
+    <h2 class="lg" style="color:#fff;">SEO vs. AI SEO.</h2>
+    <p class="lead" style="color:rgba(255,255,255,0.75); margin-top:auto;">Der Unterschied — in 4 Slides.</p>
+    <div class="footer" style="color:#fff;"><span>aiseo.hamburg</span><span>→</span></div>
+  </div>
+
+  <!-- Carousel B — Slide 2 -->
+  <div class="carousel frame">
+    <div class="poly-light"></div>
+    <div class="kicker">2/4 · Klassisches SEO</div>
+    <h2>Ziel: Ranken in Google.</h2>
+    <ul>
+      <li>Keywords &amp; Backlinks</li>
+      <li>Blauer Link auf Platz 1</li>
+      <li>Klick zur Website</li>
+      <li>Traffic-fokussiert</li>
+    </ul>
+    <div class="footer" style="margin-top:auto;"><span>aiseo.hamburg</span><span>→</span></div>
+  </div>
+
+  <!-- Carousel B — Slide 3 -->
+  <div class="carousel frame">
+    <div class="poly-light"></div>
+    <div class="kicker">3/4 · AI SEO</div>
+    <h2>Ziel: Zitiert werden.</h2>
+    <ul>
+      <li>ChatGPT, Perplexity, Gemini</li>
+      <li>Antwort statt Link</li>
+      <li>Marke wird genannt</li>
+      <li>Autoritäts-fokussiert</li>
+    </ul>
+    <div class="footer" style="margin-top:auto;"><span>aiseo.hamburg</span><span>→</span></div>
+  </div>
+
+  <!-- Carousel B — Slide 4 -->
+  <div class="carousel frame" style="background:var(--accent); color:#fff;">
+    <div class="poly"></div>
+    <div class="kicker" style="color:#fff;">4/4</div>
+    <h2 class="lg" style="color:#fff;">Sie brauchen beides.</h2>
+    <p class="lead" style="color:rgba(255,255,255,0.9);">Google bringt heute Traffic. KI-Suchen bringen morgen Autorität.</p>
+    <div class="footer" style="color:#fff; margin-top:auto;"><span>aiseo.hamburg</span><span>→</span></div>
+  </div>
+
+  <!-- Preise Carousel -->
+  <div class="carousel frame">
+    <div class="poly-light"></div>
+    <div class="kicker">Preise · transparent</div>
+    <h2>Was kostet das?</h2>
+    <ul>
+      <li>Webdesign — ab 2.000 €</li>
+      <li>SEO — ab 1.000 €/Mt.</li>
+      <li>Google Ads — ab 500 €/Mt.</li>
+      <li>Website-Audit — kostenlos</li>
+    </ul>
+    <div class="footer" style="margin-top:auto;"><span>webseite.hamburg/leistungen</span><span>→</span></div>
+  </div>
+
+  <!-- Referenz Template -->
+  <div class="carousel frame" style="background:var(--primary); color:#fff;">
+    <div class="poly"></div>
+    <div class="kicker">Referenz</div>
+    <h2 class="lg" style="color:#fff;">+180%</h2>
+    <p class="lead" style="color:rgba(255,255,255,0.8);">Organische Anfragen nach Launch &amp; SEO-Setup.</p>
+    <div style="font-family:var(--heading); font-size:13px; letter-spacing:2px; margin-top:auto; opacity:.7;">HANDWERK · HAMBURG · 2025</div>
+    <div class="footer" style="color:#fff;"><span>webseite.hamburg/referenzen</span><span>→</span></div>
+  </div>
+
+</div>
+
+</body>
+</html>

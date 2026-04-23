@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Instagram Cards v3 — webseite.hamburg (aiseo style)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FBF9F7;
+    --text:#111111;
+    --muted:#6b6b6b;
+    --dark:#1C1917;
+    --accent:#2ec88e;
+    --accent-deep:#4FAF8C;
+    --blue:#017eff;
+    --card:#ffffff;
+    --line:#eee6dd;
+    --sans:'Inter', ui-sans-serif, system-ui, sans-serif;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html,body{background:#e9e3dc; font-family:var(--sans); color:var(--text); -webkit-font-smoothing:antialiased;}
+  body{padding:40px 20px;}
+  h1.page-title{text-align:center; margin-bottom:8px; font-size:22px; font-weight:600; letter-spacing:-0.02em;}
+  .subtle{color:var(--muted); text-align:center; font-size:13px; margin-bottom:32px;}
+  .group-title{text-align:center; margin:48px 0 24px; font-size:12px; letter-spacing:3px; text-transform:uppercase; color:var(--muted); font-weight:600;}
+  .cards{display:flex; flex-wrap:wrap; gap:28px; justify-content:center;}
+
+  .story{
+    width:360px; height:640px;
+    background:var(--bg); color:var(--text);
+    border-radius:28px; overflow:hidden; position:relative;
+    padding:44px 38px; display:flex; flex-direction:column;
+    box-shadow:0 12px 40px rgba(0,0,0,0.12);
+  }
+  .story.dark{ background:var(--dark); color:#fff;}
+  .story.green{ background:var(--accent); color:var(--dark);}
+  .story.blue{ background:var(--blue); color:#fff;}
+
+  .carousel{
+    width:360px; height:450px;
+    background:var(--bg); color:var(--text);
+    border-radius:22px; overflow:hidden; position:relative;
+    padding:38px 34px; display:flex; flex-direction:column;
+    box-shadow:0 10px 30px rgba(0,0,0,0.10);
+  }
+  .carousel.dark{ background:var(--dark); color:#fff;}
+  .carousel.green{ background:var(--accent); color:var(--dark);}
+
+  .eyebrow{
+    font-size:11px; letter-spacing:2px; text-transform:uppercase;
+    color:var(--muted); font-weight:600; margin-bottom:18px;
+    display:inline-flex; align-items:center; gap:8px;
+  }
+  .dark .eyebrow, .blue .eyebrow{ color:rgba(255,255,255,0.7);}
+  .green .eyebrow{ color:rgba(0,0,0,0.65);}
+  .eyebrow .dot{ width:6px; height:6px; background:var(--accent); border-radius:50%;}
+  .dark .eyebrow .dot, .blue .eyebrow .dot{background:var(--accent);}
+
+  h2.title{
+    font-size:40px; line-height:1.02; letter-spacing:-0.04em; font-weight:600;
+    margin-bottom:16px;
+  }
+  h2.title.sm{font-size:32px;}
+  h2.title.xl{font-size:52px;}
+  .carousel h2.title{font-size:32px;}
+  .carousel h2.title.lg{font-size:40px;}
+
+  .lead{
+    font-size:15px; line-height:1.5; color:var(--muted); font-weight:500;
+    margin-bottom:22px;
+  }
+  .dark .lead{color:rgba(255,255,255,0.75);}
+  .blue .lead{color:rgba(255,255,255,0.85);}
+  .green .lead{color:rgba(0,0,0,0.7);}
+  .carousel .lead{ font-size:13px;}
+
+  ul.list{ list-style:none;}
+  ul.list li{
+    font-size:14px; line-height:1.5; padding:10px 0 10px 24px;
+    position:relative; font-weight:500;
+    border-bottom:1px solid var(--line);
+  }
+  .dark ul.list li{border-color:rgba(255,255,255,0.08);}
+  .green ul.list li{border-color:rgba(0,0,0,0.1);}
+  ul.list li::before{
+    content:''; position:absolute; left:0; top:16px;
+    width:12px; height:12px; border-radius:50%;
+    background:var(--accent);
+    border:2px solid var(--bg);
+    box-shadow:0 0 0 1px var(--accent);
+  }
+  .dark ul.list li::before{border-color:var(--dark);}
+  .green ul.list li::before{background:var(--dark); box-shadow:0 0 0 1px var(--dark); border-color:var(--accent);}
+
+  .footer-row{
+    margin-top:auto; display:flex; justify-content:space-between; align-items:center;
+    font-size:12px; font-weight:600; letter-spacing:-0.01em; padding-top:20px;
+  }
+  .domain{ color:var(--text);}
+  .dark .domain, .blue .domain{ color:#fff;}
+  .green .domain{ color:var(--dark);}
+  .swipe{ color:var(--muted); display:inline-flex; align-items:center; gap:6px;}
+  .dark .swipe, .blue .swipe{color:rgba(255,255,255,0.7);}
+
+  .cover{ align-items:flex-start; justify-content:flex-end;}
+  .cover-icon{
+    width:84px; height:84px; border-radius:50%;
+    background:#fff; display:flex; align-items:center; justify-content:center;
+    margin-bottom:auto;
+    box-shadow:0 4px 20px rgba(0,0,0,0.06);
+  }
+  .dark .cover-icon{ background:rgba(255,255,255,0.08);}
+  .green .cover-icon{ background:var(--bg);}
+  .cover h2.title{ font-size:38px; margin-bottom:8px;}
+  .cover .sub{font-size:13px; color:var(--muted); font-weight:500;}
+  .dark .cover .sub{color:rgba(255,255,255,0.65);}
+  .green .cover .sub{color:rgba(0,0,0,0.65);}
+
+  .price-pill{
+    display:inline-flex; align-items:center; gap:8px;
+    background:#fff; color:var(--text); padding:8px 14px; border-radius:100px;
+    font-size:12px; font-weight:600; box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    margin-top:18px;
+  }
+  .dark .price-pill{background:rgba(255,255,255,0.1); color:#fff;}
+  .green .price-pill{background:var(--bg);}
+  .price-pill .eur{color:var(--accent-deep); font-weight:700;}
+  .dark .price-pill .eur{color:var(--accent);}
+
+  .stat{
+    font-size:96px; line-height:1; font-weight:600; letter-spacing:-0.05em;
+    color:var(--text); margin-bottom:10px;
+  }
+  .dark .stat{color:#fff;} .green .stat{color:var(--dark);}
+  .stat-sub{font-size:14px; color:var(--muted); font-weight:500; max-width:260px;}
+  .dark .stat-sub{color:rgba(255,255,255,0.7);} .green .stat-sub{color:rgba(0,0,0,0.65);}
+
+  .btn{
+    display:inline-flex; align-items:center; gap:10px;
+    background:var(--dark); color:#fff;
+    padding:14px 22px; border-radius:100px;
+    font-size:14px; font-weight:600; margin-top:20px;
+  }
+  .dark .btn{background:#fff; color:var(--dark);}
+  .btn .arrow{
+    width:24px; height:24px; border-radius:50%; background:var(--accent);
+    display:inline-flex; align-items:center; justify-content:center; color:var(--dark); font-size:13px;
+  }
+
+  .note{
+    background:#fff; color:var(--muted); padding:18px 22px; border-radius:14px;
+    max-width:720px; margin:0 auto 40px; font-size:13px; line-height:1.6;
+    border:1px solid var(--line);
+  }
+  .note strong{color:var(--text);}
+</style>
+</head>
+<body>
+
+<h1 class="page-title">Instagram Cards v3 · webseite.hamburg</h1>
+<p class="subtle">Inhalte aus Version 1 — im ruhigen aiseo-Stil.</p>
+
+<div class="note">
+<strong>Komplettes Leistungsspektrum:</strong> Webdesign, SEO &amp; AI-Sichtbarkeit, Google &amp; Local Ads, Website-Audit — plus Prozess, Preise, Proof und CTA. Warme Cream-Palette mit grünen &amp; dunklen Akzenten.
+</div>
+
+<!-- ============ HIGHLIGHT COVERS ============ -->
+<h2 class="group-title">Highlight Covers · 1080 × 1920</h2>
+<div class="cards">
+
+  <div class="story cover">
+    <div class="cover-icon">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/>
+      </svg>
+    </div>
+    <h2 class="title">Über mich</h2>
+    <div class="sub">Wer, Hintergrund, Werte</div>
+  </div>
+
+  <div class="story cover dark">
+    <div class="cover-icon">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
+        <rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/>
+      </svg>
+    </div>
+    <h2 class="title">Leistungen</h2>
+    <div class="sub">Alles aus einer Hand</div>
+  </div>
+
+  <div class="story cover green">
+    <div class="cover-icon">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#1C1917" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+      </svg>
+    </div>
+    <h2 class="title">Webdesign</h2>
+    <div class="sub">100/100 PageSpeed</div>
+  </div>
+
+  <div class="story cover">
+    <div class="cover-icon">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+    </div>
+    <h2 class="title">SEO Lokal</h2>
+    <div class="sub">Google · Maps · Hamburg</div>
+  </div>
+
+  <div class="story cover dark">
+    <div class="cover-icon">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 2 L22 8 L22 16 L12 22 L2 16 L2 8 Z"/>
+        <circle cx="12" cy="12" r="3" fill="#2ec88e" stroke="none"/>
+      </svg>
+    </div>
+    <h2 class="title">AI-Sicht.</h2>
+    <div class="sub">ChatGPT · Perplexity · GEO</div>
+  </div>
+
+  <div class="story cover green">
+    <div class="cover-icon">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#1C1917" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 11l18-8v18l-18-8z"/><path d="M3 11v4"/>
+      </svg>
+    </div>
+    <h2 class="title">Google Ads</h2>
+    <div class="sub">Messbare Leads</div>
+  </div>
+
+  <div class="story cover">
+    <div class="cover-icon">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+        <polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/>
+      </svg>
+    </div>
+    <h2 class="title">Audit</h2>
+    <div class="sub">Kostenlos · ehrlich</div>
+  </div>
+
+  <div class="story cover dark">
+    <div class="cover-icon">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/>
+        <line x1="7" y1="12" x2="10" y2="12"/><line x1="14" y1="12" x2="17" y2="12"/>
+      </svg>
+    </div>
+    <h2 class="title">Prozess</h2>
+    <div class="sub">4 klare Schritte</div>
+  </div>
+
+  <div class="story cover">
+    <div class="cover-icon">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <polygon points="12 2 15 9 22 10 17 15 18 22 12 18 6 22 7 15 2 10 9 9"/>
+      </svg>
+    </div>
+    <h2 class="title">Referenzen</h2>
+    <div class="sub">Echte Ergebnisse</div>
+  </div>
+
+  <div class="story cover green">
+    <div class="cover-icon">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#1C1917" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+      </svg>
+    </div>
+    <h2 class="title">Preise</h2>
+    <div class="sub">Transparent</div>
+  </div>
+
+  <div class="story cover">
+    <div class="cover-icon">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+      </svg>
+    </div>
+    <h2 class="title">FAQ</h2>
+    <div class="sub">Antworten</div>
+  </div>
+
+  <div class="story cover dark">
+    <div class="cover-icon">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>
+      </svg>
+    </div>
+    <h2 class="title">Kontakt</h2>
+    <div class="sub">Termin sichern</div>
+  </div>
+
+</div>
+
+
+<!-- ============ STORY CONTENT ============ -->
+<h2 class="group-title">Story-Inhalte · 1080 × 1920</h2>
+<div class="cards">
+
+  <!-- Über mich -->
+  <div class="story">
+    <div class="eyebrow"><span class="dot"></span>Über mich</div>
+    <h2 class="title">Vadim Shchepin.<br>Websites, die wirken.</h2>
+    <p class="lead">10+ Jahre digitale Produkte. Jetzt für lokale Unternehmen in Hamburg.</p>
+    <ul class="list">
+      <li>Senior-Entwicklung</li>
+      <li>Strategie + Umsetzung</li>
+      <li>Klare Struktur, ehrliche Daten</li>
+    </ul>
+    <div class="footer-row">
+      <span class="domain">webseite.hamburg</span>
+      <span class="swipe">→ swipe</span>
+    </div>
+  </div>
+
+  <!-- Leistungen Overview -->
+  <div class="story dark">
+    <div class="eyebrow"><span class="dot"></span>Alles aus einer Hand</div>
+    <h2 class="title">Strategie. Design. Entwicklung. Marketing.</h2>
+    <ul class="list">
+      <li>Webdesign &amp; Entwicklung</li>
+      <li>SEO &amp; AI-Sichtbarkeit</li>
+      <li>Google &amp; Local Ads</li>
+      <li>Website-Audit</li>
+    </ul>
+    <div class="footer-row"><span class="domain">webseite.hamburg</span></div>
+  </div>
+
+  <!-- Webdesign -->
+  <div class="story">
+    <div class="eyebrow"><span class="dot"></span>Leistung · 01</div>
+    <h2 class="title sm">Webdesign &amp; Entwicklung.</h2>
+    <p class="lead">Schnelle, konversionsstarke Websites mit klarer Struktur. Individuell — kein Baukasten.</p>
+    <ul class="list">
+      <li>Responsive Design</li>
+      <li>PageSpeed 100/100</li>
+      <li>Klare Nutzerführung</li>
+      <li>CMS oder Custom</li>
+    </ul>
+    <span class="price-pill">Ab <span class="eur">2.000 €</span></span>
+    <div class="footer-row">
+      <span class="domain">webseite.hamburg/leistungen/webdesign</span>
+    </div>
+  </div>
+
+  <!-- SEO -->
+  <div class="story green">
+    <div class="eyebrow"><span class="dot" style="background:#1C1917;"></span>Leistung · 02</div>
+    <h2 class="title sm">SEO &amp; AI-Sichtbarkeit.</h2>
+    <p class="lead">Gefunden werden, wo Ihre Kunden suchen — Google, Maps, ChatGPT, Perplexity.</p>
+    <ul class="list">
+      <li>Lokale SEO-Strategie</li>
+      <li>Technisches SEO</li>
+      <li>Content-Optimierung</li>
+      <li>AI Search Ready</li>
+    </ul>
+    <span class="price-pill">Ab <span class="eur">1.000 €/Mt.</span></span>
+    <div class="footer-row">
+      <span class="domain">webseite.hamburg/leistungen/seo</span>
+    </div>
+  </div>
+
+  <!-- Google Ads -->
+  <div class="story">
+    <div class="eyebrow"><span class="dot"></span>Leistung · 03</div>
+    <h2 class="title sm">Google &amp; Local Ads.</h2>
+    <p class="lead">Kampagnen, die echte Anfragen generieren. Messbar, präzise, auf ROI optimiert.</p>
+    <ul class="list">
+      <li>Google Search Ads</li>
+      <li>Local Services Ads</li>
+      <li>Conversion Tracking</li>
+      <li>Monatliches Reporting</li>
+    </ul>
+    <span class="price-pill">Ab <span class="eur">500 €/Mt.</span></span>
+    <div class="footer-row">
+      <span class="domain">webseite.hamburg/leistungen/google-ads</span>
+    </div>
+  </div>
+
+  <!-- Audit -->
+  <div class="story dark">
+    <div class="eyebrow"><span class="dot"></span>Leistung · 04</div>
+    <h2 class="title sm">Website-Audit.</h2>
+    <p class="lead">Tiefgehende Analyse Ihrer Website: Geschwindigkeit, SEO, Struktur, Conversion — mit Umsetzungsplan.</p>
+    <ul class="list">
+      <li>Performance-Check</li>
+      <li>SEO-Analyse</li>
+      <li>Conversion-Bewertung</li>
+      <li>Konkrete Empfehlungen</li>
+    </ul>
+    <span class="price-pill">Ab <span class="eur">500 €</span></span>
+    <div class="footer-row">
+      <span class="domain">webseite.hamburg/leistungen/website-audit</span>
+    </div>
+  </div>
+
+  <!-- GEO erklärt -->
+  <div class="story">
+    <div class="eyebrow"><span class="dot"></span>Wissen</div>
+    <h2 class="title sm">Was ist GEO?</h2>
+    <p class="lead">Generative Engine Optimization — optimiert Inhalte so, dass KI wie ChatGPT Sie als Quelle zitiert.</p>
+    <ul class="list">
+      <li>Strukturierte Antworten</li>
+      <li>Klare Passagen</li>
+      <li>Schema &amp; llms.txt</li>
+    </ul>
+    <div class="footer-row"><span class="domain">aiseo.hamburg</span></div>
+  </div>
+
+  <!-- AEO erklärt -->
+  <div class="story green">
+    <div class="eyebrow"><span class="dot" style="background:#1C1917;"></span>Wissen</div>
+    <h2 class="title sm">Was ist AEO?</h2>
+    <p class="lead">Answer Engine Optimization — Ihre Seite erscheint direkt als Antwort, nicht nur als Link.</p>
+    <ul class="list">
+      <li>Frage-Antwort-Format</li>
+      <li>Featured Snippet Ready</li>
+      <li>FAQ Schema Markup</li>
+    </ul>
+    <div class="footer-row"><span class="domain">aiseo.hamburg</span></div>
+  </div>
+
+  <!-- Prozess -->
+  <div class="story">
+    <div class="eyebrow"><span class="dot"></span>Prozess</div>
+    <h2 class="title sm">4 Schritte. Volle Transparenz.</h2>
+    <ul class="list">
+      <li>1 — Markt &amp; Geschäft verstehen</li>
+      <li>2 — Struktur, die konvertiert</li>
+      <li>3 — Schnelle Website bauen</li>
+      <li>4 — SEO, Ads, Optimierung</li>
+    </ul>
+    <div class="footer-row"><span class="domain">webseite.hamburg</span></div>
+  </div>
+
+  <!-- Stat 100/100 -->
+  <div class="story">
+    <div class="eyebrow"><span class="dot"></span>Proof</div>
+    <div class="stat">100<span style="font-size:52px; color:var(--muted);">/100</span></div>
+    <p class="stat-sub">PageSpeed · Google Lighthouse</p>
+    <p class="lead" style="margin-top:26px;">Jede Website wird auf 100 Punkte getestet — bevor sie live geht.</p>
+    <div class="footer-row"><span class="domain">webseite.hamburg</span></div>
+  </div>
+
+  <!-- Stat 10+ Jahre -->
+  <div class="story dark">
+    <div class="eyebrow"><span class="dot"></span>Erfahrung</div>
+    <div class="stat">10+</div>
+    <p class="stat-sub">Jahre digitale Produkte</p>
+    <p class="lead" style="margin-top:26px;">Senior-Entwicklung. Saubere Architektur. Keine Agentur-Standards.</p>
+    <div class="footer-row"><span class="domain">webseite.hamburg</span></div>
+  </div>
+
+  <!-- Kontakt CTA -->
+  <div class="story green" style="justify-content:flex-end;">
+    <div class="eyebrow"><span class="dot" style="background:#1C1917;"></span>Jetzt starten</div>
+    <h2 class="title xl">Termin sichern.</h2>
+    <p class="lead">Kostenloses Erstgespräch. 30 Minuten. Ehrlich, ob ich helfen kann.</p>
+    <a class="btn">Termin buchen <span class="arrow">→</span></a>
+    <div class="footer-row"><span class="domain">webseite.hamburg/kontakt</span></div>
+  </div>
+
+</div>
+
+
+<!-- ============ CAROUSEL SLIDES ============ -->
+<h2 class="group-title">Carousel-Slides · 1080 × 1350</h2>
+<div class="cards">
+
+  <!-- Carousel A: Warum Websites keine Kunden bringen -->
+  <div class="carousel dark">
+    <div class="eyebrow"><span class="dot"></span>Carousel · 1/6</div>
+    <h2 class="title lg">Warum Ihre Website keine Kunden bringt.</h2>
+    <p class="lead" style="margin-top:auto;">5 Gründe — und was Sie dagegen tun.</p>
+    <div class="footer-row"><span class="domain">webseite.hamburg</span><span class="swipe">→</span></div>
+  </div>
+
+  <div class="carousel">
+    <div class="eyebrow"><span class="dot"></span>2/6</div>
+    <h2 class="title">1. Zu langsam.</h2>
+    <p class="lead">Besucher warten nicht. Über 3 Sekunden Ladezeit = 53% brechen ab.</p>
+    <p class="lead" style="margin-top:auto; color:var(--text); font-weight:600;">→ 100/100 PageSpeed.</p>
+    <div class="footer-row"><span class="domain">webseite.hamburg</span><span class="swipe">→</span></div>
+  </div>
+
+  <div class="carousel">
+    <div class="eyebrow"><span class="dot"></span>3/6</div>
+    <h2 class="title">2. Keine klare Struktur.</h2>
+    <p class="lead">Der Besucher weiß nicht, was er tun soll. Keine Hierarchie, keine CTA.</p>
+    <p class="lead" style="margin-top:auto; color:var(--text); font-weight:600;">→ Conversion-Struktur.</p>
+    <div class="footer-row"><span class="domain">webseite.hamburg</span><span class="swipe">→</span></div>
+  </div>
+
+  <div class="carousel green">
+    <div class="eyebrow"><span class="dot" style="background:#1C1917;"></span>4/6</div>
+    <h2 class="title">3. Unsichtbar in Google.</h2>
+    <p class="lead">Keine lokale SEO-Arbeit. Wer nicht gefunden wird, verliert an die Konkurrenz.</p>
+    <p class="lead" style="margin-top:auto; color:var(--dark); font-weight:600;">→ Lokale SEO + Maps.</p>
+    <div class="footer-row"><span class="domain">webseite.hamburg</span><span class="swipe">→</span></div>
+  </div>
+
+  <div class="carousel">
+    <div class="eyebrow"><span class="dot"></span>5/6</div>
+    <h2 class="title">4. Unsichtbar in KI-Suche.</h2>
+    <p class="lead">ChatGPT &amp; Perplexity antworten direkt. Wer nicht zitiert wird, existiert dort nicht.</p>
+    <p class="lead" style="margin-top:auto; color:var(--text); font-weight:600;">→ GEO &amp; AEO.</p>
+    <div class="footer-row"><span class="domain">aiseo.hamburg</span><span class="swipe">→</span></div>
+  </div>
+
+  <div class="carousel dark">
+    <div class="eyebrow"><span class="dot"></span>6/6</div>
+    <h2 class="title lg">Kostenlosen Audit holen.</h2>
+    <p class="lead">Wir prüfen Ihre Website in allen 5 Punkten. Ehrlich. Ohne Verkauf.</p>
+    <a class="btn" style="margin-top:auto;">Termin buchen <span class="arrow">→</span></a>
+    <div class="footer-row"><span class="domain">webseite.hamburg/kontakt</span></div>
+  </div>
+
+  <!-- Carousel B: SEO vs AI SEO -->
+  <div class="carousel dark">
+    <div class="eyebrow"><span class="dot"></span>Carousel · 1/4</div>
+    <h2 class="title lg">SEO vs. AI SEO.</h2>
+    <p class="lead" style="margin-top:auto;">Der Unterschied — in 4 Slides.</p>
+    <div class="footer-row"><span class="domain">aiseo.hamburg</span><span class="swipe">→</span></div>
+  </div>
+
+  <div class="carousel">
+    <div class="eyebrow"><span class="dot"></span>2/4 · Klassisches SEO</div>
+    <h2 class="title">Ziel: Ranken in Google.</h2>
+    <ul class="list">
+      <li>Keywords &amp; Backlinks</li>
+      <li>Blauer Link auf Platz 1</li>
+      <li>Klick zur Website</li>
+      <li>Traffic-fokussiert</li>
+    </ul>
+    <div class="footer-row" style="margin-top:auto;"><span class="domain">aiseo.hamburg</span><span class="swipe">→</span></div>
+  </div>
+
+  <div class="carousel green">
+    <div class="eyebrow"><span class="dot" style="background:#1C1917;"></span>3/4 · AI SEO</div>
+    <h2 class="title">Ziel: Zitiert werden.</h2>
+    <ul class="list">
+      <li>ChatGPT, Perplexity, Gemini</li>
+      <li>Antwort statt Link</li>
+      <li>Marke wird genannt</li>
+      <li>Autoritäts-fokussiert</li>
+    </ul>
+    <div class="footer-row" style="margin-top:auto;"><span class="domain">aiseo.hamburg</span><span class="swipe">→</span></div>
+  </div>
+
+  <div class="carousel dark">
+    <div class="eyebrow"><span class="dot"></span>4/4</div>
+    <h2 class="title lg">Sie brauchen beides.</h2>
+    <p class="lead">Google bringt heute Traffic. KI-Suchen bringen morgen Autorität.</p>
+    <div class="footer-row" style="margin-top:auto;"><span class="domain">aiseo.hamburg</span><span class="swipe">→</span></div>
+  </div>
+
+  <!-- Preise -->
+  <div class="carousel">
+    <div class="eyebrow"><span class="dot"></span>Preise · transparent</div>
+    <h2 class="title">Was kostet das?</h2>
+    <ul class="list">
+      <li>Webdesign — ab 2.000 €</li>
+      <li>SEO — ab 1.000 €/Mt.</li>
+      <li>Google Ads — ab 500 €/Mt.</li>
+      <li>Website-Audit — ab 500 €</li>
+    </ul>
+    <div class="footer-row" style="margin-top:auto;"><span class="domain">webseite.hamburg/leistungen</span><span class="swipe">→</span></div>
+  </div>
+
+  <!-- Referenz generic -->
+  <div class="carousel dark">
+    <div class="eyebrow"><span class="dot"></span>Referenz</div>
+    <div class="stat" style="color:#fff;">+180%</div>
+    <p class="lead">Organische Anfragen nach Launch &amp; SEO-Setup.</p>
+    <p class="lead" style="margin-top:auto; font-size:11px; letter-spacing:2px; text-transform:uppercase;">Handwerk · Hamburg · 2025</p>
+    <div class="footer-row"><span class="domain">webseite.hamburg/referenzen</span><span class="swipe">→</span></div>
+  </div>
+
+</div>
+
+
+<!-- ============ REFERENZEN / CASE STUDIES ============ -->
+<h2 class="group-title">Referenzen · Story-Format 1080 × 1920</h2>
+<div class="cards">
+
+  <!-- GL Sommer -->
+  <div class="story">
+    <div class="eyebrow"><span class="dot"></span>Referenz · GL Sommer</div>
+    <h2 class="title sm">728 lokale Aktionen pro Monat.</h2>
+    <p class="lead">Hamburgs GaLaBau-Unternehmen: Website modernisiert, SEO von 34/100 hochgezogen, Google Ads gestartet.</p>
+    <ul class="list">
+      <li>1.113 Klicks / Monat</li>
+      <li>728 lokale Aktionen</li>
+      <li>Nur 529 € Monatsbudget</li>
+    </ul>
+    <span class="price-pill" style="margin-top:auto;">SEO · Ads · Redesign</span>
+    <div class="footer-row"><span class="domain">webseite.hamburg/referenzen/gl-sommer</span></div>
+  </div>
+
+  <!-- DYBeauty -->
+  <div class="story dark">
+    <div class="eyebrow"><span class="dot"></span>Referenz · DYBeauty</div>
+    <div class="stat" style="color:#fff;">2×</div>
+    <p class="stat-sub">Organischer Traffic in 90 Tagen</p>
+    <p class="lead" style="margin-top:22px;">K-Beauty Shopify-Shop: 723 Produkte optimiert, Merchant Center aufgebaut, Content-Strategie live.</p>
+    <ul class="list">
+      <li>78.500 Impressionen</li>
+      <li>723 Produkte SEO-ready</li>
+    </ul>
+    <div class="footer-row"><span class="domain">webseite.hamburg/referenzen/dybeauty</span></div>
+  </div>
+
+  <!-- Blitz Hamburg -->
+  <div class="story green">
+    <div class="eyebrow"><span class="dot" style="background:#1C1917;"></span>Referenz · Blitz Hamburg</div>
+    <h2 class="title sm">ROI in 7 Wochen.</h2>
+    <p class="lead">Handwerksbetrieb ohne Online-Präsenz → neue Website mit KI-Kostenschätzer, Ads &amp; lokales SEO.</p>
+    <ul class="list">
+      <li>Investition in 7 Wochen zurück</li>
+      <li>~40 Kunden / Monat</li>
+      <li>KI-Kostenschätzer als Lead-Tool</li>
+    </ul>
+    <div class="footer-row"><span class="domain">webseite.hamburg/referenzen/blitz-hamburg</span></div>
+  </div>
+
+  <!-- KinderAlbum -->
+  <div class="story">
+    <div class="eyebrow"><span class="dot"></span>Referenz · KinderAlbum</div>
+    <h2 class="title sm">#1 in ChatGPT &amp; Perplexity.</h2>
+    <p class="lead">DSGVO-konforme Schulfoto-Plattform mit echten Nutzern, zeitversionierter Einwilligung, Fotografen-Workflow.</p>
+    <ul class="list">
+      <li>76 RLS-Policies</li>
+      <li>Als KI-Antwort zitiert</li>
+      <li>Echte Schulnutzer</li>
+    </ul>
+    <span class="price-pill" style="margin-top:auto;">SaaS · AI SEO</span>
+    <div class="footer-row"><span class="domain">webseite.hamburg/referenzen/kinderalbum</span></div>
+  </div>
+
+  <!-- Pest Control SaaS -->
+  <div class="story dark">
+    <div class="eyebrow"><span class="dot"></span>Referenz · Pest Control SaaS</div>
+    <h2 class="title sm">Enterprise-Architektur für Schädlingsbekämpfung.</h2>
+    <p class="lead">Multi-Tenant SaaS: Hexagonal + DDD, Offline-PWA für Techniker, EU-Biozid-Compliance.</p>
+    <ul class="list">
+      <li>6 Bounded Contexts</li>
+      <li>27 API-Routen</li>
+      <li>0 Architektur-Verletzungen</li>
+    </ul>
+    <div class="footer-row"><span class="domain">webseite.hamburg/referenzen/pest-control-saas</span></div>
+  </div>
+
+  <!-- Solovei Beauty -->
+  <div class="story">
+    <div class="eyebrow"><span class="dot"></span>Referenz · Solovei Beauty</div>
+    <h2 class="title sm">3 Sprachen, null Entwickler-Abhängigkeit.</h2>
+    <p class="lead">Beauty-Coworking Hamburg: dreisprachige Site mit Payload CMS &amp; CI/CD — alles selbst pflegbar.</p>
+    <ul class="list">
+      <li>5.000 Impressionen in 8 Wochen</li>
+      <li>DE · EN · RU</li>
+      <li>CMS-gesteuert</li>
+    </ul>
+    <div class="footer-row"><span class="domain">webseite.hamburg/referenzen/solovei-beauty</span></div>
+  </div>
+
+  <!-- Manetec -->
+  <div class="story green">
+    <div class="eyebrow"><span class="dot" style="background:#1C1917;"></span>Referenz · Manetec</div>
+    <h2 class="title sm">KI-Risikoanalyse als Lead-Tool.</h2>
+    <p class="lead">Professionelle Schädlingsbekämpfung in Hotels &amp; Gastro — mit Gemini-gestützter Risikobewertung.</p>
+    <ul class="list">
+      <li>HACCP-konform</li>
+      <li>Gemini API Integration</li>
+      <li>Industrielle Ästhetik</li>
+    </ul>
+    <div class="footer-row"><span class="domain">webseite.hamburg/referenzen/manetec</span></div>
+  </div>
+
+  <!-- TypeExplore AI -->
+  <div class="story">
+    <div class="eyebrow"><span class="dot"></span>Referenz · TypeExplore AI</div>
+    <h2 class="title sm">Tippen lernen mit KI.</h2>
+    <p class="lead">Gemini-generierte Lektionen zu jedem Thema, Echtzeit-WPM-Tracking, sichere Backend-Proxy-Architektur.</p>
+    <ul class="list">
+      <li>Gemini 2.5-flash</li>
+      <li>Backend-Proxy · kein Key-Leak</li>
+      <li>Konfetti-Moment</li>
+    </ul>
+    <div class="footer-row"><span class="domain">webseite.hamburg/referenzen/typeexplore-ai</span></div>
+  </div>
+
+  <!-- mit-kinder -->
+  <div class="story dark">
+    <div class="eyebrow"><span class="dot"></span>Referenz · mit-kinder.de</div>
+    <h2 class="title sm">KI-Chatbot für Familien-Aktivitäten.</h2>
+    <p class="lead">Hexagonale Architektur, standort- &amp; zeitbewusster Gemini-Bot, interaktive Karte.</p>
+    <ul class="list">
+      <li>Hexagonal + DDD</li>
+      <li>75 Tests</li>
+      <li>Gemini Chatbot</li>
+    </ul>
+    <div class="footer-row"><span class="domain">webseite.hamburg/referenzen/mit-kinder</span></div>
+  </div>
+
+  <!-- Glücksmomente -->
+  <div class="story">
+    <div class="eyebrow"><span class="dot"></span>Referenz · Glücksmomente</div>
+    <h2 class="title sm">Aquarell-Ästhetik für Eventplanerin.</h2>
+    <p class="lead">Event-Website Josy Eberlein: React + GSAP Scroll-Animationen, Aquarell-Design, handverlesene Schriften.</p>
+    <ul class="list">
+      <li>GSAP Scroll-Animationen</li>
+      <li>Aquarell-Design</li>
+      <li>3 Schriften, abgestimmt</li>
+    </ul>
+    <div class="footer-row"><span class="domain">webseite.hamburg/referenzen/glucksmomente-events</span></div>
+  </div>
+
+</div>
+
+
+<!-- ============ REFERENZEN CAROUSEL (4:5) ============ -->
+<h2 class="group-title">Referenzen · Carousel-Slides 1080 × 1350</h2>
+<div class="cards">
+
+  <div class="carousel dark">
+    <div class="eyebrow"><span class="dot"></span>Carousel · 1/6</div>
+    <h2 class="title lg">Echte Projekte. Echte Zahlen.</h2>
+    <p class="lead" style="margin-top:auto;">6 Ergebnisse aus Hamburg.</p>
+    <div class="footer-row"><span class="domain">webseite.hamburg/referenzen</span><span class="swipe">→</span></div>
+  </div>
+
+  <div class="carousel">
+    <div class="eyebrow"><span class="dot"></span>2/6 · GL Sommer</div>
+    <div class="stat">728</div>
+    <p class="stat-sub">lokale Aktionen / Monat bei 529 € Budget</p>
+    <p class="lead" style="margin-top:auto;">SEO · Ads · Redesign</p>
+    <div class="footer-row"><span class="domain">webseite.hamburg/referenzen</span><span class="swipe">→</span></div>
+  </div>
+
+  <div class="carousel green">
+    <div class="eyebrow"><span class="dot" style="background:#1C1917;"></span>3/6 · DYBeauty</div>
+    <div class="stat" style="color:var(--dark);">2×</div>
+    <p class="stat-sub" style="color:rgba(0,0,0,0.7);">Organischer Traffic in 90 Tagen</p>
+    <p class="lead" style="margin-top:auto; color:rgba(0,0,0,0.7);">E-Commerce SEO</p>
+    <div class="footer-row"><span class="domain">webseite.hamburg/referenzen</span><span class="swipe">→</span></div>
+  </div>
+
+  <div class="carousel">
+    <div class="eyebrow"><span class="dot"></span>4/6 · Blitz Hamburg</div>
+    <div class="stat">7</div>
+    <p class="stat-sub">Wochen bis ROI · ~40 Kunden/Monat</p>
+    <p class="lead" style="margin-top:auto;">Webdesign · Ads · SEO</p>
+    <div class="footer-row"><span class="domain">webseite.hamburg/referenzen</span><span class="swipe">→</span></div>
+  </div>
+
+  <div class="carousel dark">
+    <div class="eyebrow"><span class="dot"></span>5/6 · KinderAlbum</div>
+    <div class="stat" style="color:#fff;">#1</div>
+    <p class="stat-sub">in ChatGPT &amp; Perplexity</p>
+    <p class="lead" style="margin-top:auto;">SaaS · AI SEO</p>
+    <div class="footer-row"><span class="domain">webseite.hamburg/referenzen</span><span class="swipe">→</span></div>
+  </div>
+
+  <div class="carousel">
+    <div class="eyebrow"><span class="dot"></span>6/6 · Solovei Beauty</div>
+    <div class="stat">5k</div>
+    <p class="stat-sub">Impressionen in 8 Wochen · 3 Sprachen</p>
+    <a class="btn" style="margin-top:auto;">Alle ansehen <span class="arrow">→</span></a>
+    <div class="footer-row"><span class="domain">webseite.hamburg/referenzen</span></div>
+  </div>
+
+</div>
+
+
+<!-- ============ BLOG / WISSEN TEASER ============ -->
+<h2 class="group-title">Wissen · Story-Format 1080 × 1920</h2>
+<div class="cards">
+
+  <div class="story">
+    <div class="eyebrow"><span class="dot"></span>Neu im Blog</div>
+    <h2 class="title sm">AI SEO: Was Unternehmen jetzt wissen müssen.</h2>
+    <p class="lead">ChatGPT, Perplexity, Google AI Overviews verändern die Suche. Wie Ihr Unternehmen als Quelle erscheint.</p>
+    <ul class="list">
+      <li>Was ist AI SEO?</li>
+      <li>Wie KI Quellen auswählt</li>
+      <li>Konkrete erste Schritte</li>
+    </ul>
+    <div class="footer-row"><span class="domain">webseite.hamburg/wissen</span><span class="swipe">Jetzt lesen →</span></div>
+  </div>
+
+  <div class="story dark">
+    <div class="eyebrow"><span class="dot"></span>Blog · Lokales SEO</div>
+    <h2 class="title sm">Lokales SEO Hamburg — Leitfaden 2026.</h2>
+    <p class="lead">Von Google Business Profile bis lokale Keywords — Schritt-für-Schritt zur Top-Position in Hamburg.</p>
+    <div class="footer-row" style="margin-top:auto;"><span class="domain">webseite.hamburg/wissen</span><span class="swipe">→</span></div>
+  </div>
+
+  <div class="story green">
+    <div class="eyebrow"><span class="dot" style="background:#1C1917;"></span>Blog · Google Ads</div>
+    <h2 class="title sm">7 teuerste Google-Ads-Fehler.</h2>
+    <p class="lead">Falsche Keywords, fehlendes Conversion-Tracking — diese Fehler verbrennen Ihr Budget.</p>
+    <ul class="list">
+      <li>Broad Match Falle</li>
+      <li>Kein Conversion-Tracking</li>
+      <li>Falsche Geo-Targeting</li>
+      <li>Und 4 weitere</li>
+    </ul>
+    <div class="footer-row"><span class="domain">webseite.hamburg/wissen</span></div>
+  </div>
+
+  <div class="story">
+    <div class="eyebrow"><span class="dot"></span>Blog · Performance</div>
+    <h2 class="title sm">Jede Sekunde Ladezeit = 7% weniger Conversion.</h2>
+    <p class="lead">Warum langsame Websites Sie jeden Tag Kunden kosten — und wie Sie das messen.</p>
+    <div class="footer-row" style="margin-top:auto;"><span class="domain">webseite.hamburg/wissen</span><span class="swipe">→</span></div>
+  </div>
+
+  <div class="story dark">
+    <div class="eyebrow"><span class="dot"></span>Blog · Preise</div>
+    <h2 class="title sm">Was kostet eine Website 2026?</h2>
+    <p class="lead">Von 500 bis 50.000 € — was bestimmt den Preis? Ehrlicher Kostenguide ohne versteckte Posten.</p>
+    <div class="footer-row" style="margin-top:auto;"><span class="domain">webseite.hamburg/wissen</span><span class="swipe">→</span></div>
+  </div>
+
+</div>
+
+</body>
+</html>

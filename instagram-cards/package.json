@@ -1,0 +1,15 @@
+{
+  "name": "instagram-cards-export",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "export": "node export.mjs",
+    "export:aiseo": "node export.mjs cards_v_aiseo.html",
+    "export:webseite": "node export.mjs cards.html",
+    "setup": "npm i && npx playwright install chromium"
+  },
+  "devDependencies": {
+    "playwright": "^1.48.0"
+  }
+}

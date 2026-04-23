@@ -1,0 +1,1095 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Instagram Cards · Services — webseite.hamburg</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FBF9F7;
+    --text:#111111;
+    --muted:#4a4a4a;
+    --dark:#1C1917;
+    --accent:#2ec88e;
+    --accent-deep:#4FAF8C;
+    --blue:#017eff;
+    --bull:#0A192F;
+    --rose:#E5536B;
+    --card:#ffffff;
+    --line:#eee6dd;
+    --sans:'Inter', ui-sans-serif, system-ui, sans-serif;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html,body{background:#e9e3dc; font-family:var(--sans); color:var(--text); -webkit-font-smoothing:antialiased;}
+  body{padding:40px 20px;}
+  h1.page-title{text-align:center; margin-bottom:8px; font-size:22px; font-weight:600; letter-spacing:-0.02em;}
+  .subtle{color:var(--muted); text-align:center; font-size:13px; margin-bottom:32px;}
+  .group-title{text-align:center; margin:56px 0 24px; font-size:12px; letter-spacing:3px; text-transform:uppercase; color:var(--muted); font-weight:600;}
+  .cards{display:flex; flex-wrap:wrap; gap:28px; justify-content:center;}
+
+  /* story — 1080×1920 (displayed at 360×640) */
+  .story{
+    width:360px; height:640px;
+    background:var(--bg); color:var(--text);
+    border-radius:28px; overflow:hidden; position:relative;
+    padding:44px 38px; display:flex; flex-direction:column;
+    box-shadow:0 12px 40px rgba(0,0,0,0.12);
+  }
+  .story.dark{ background:var(--dark); color:#fff;}
+  .story.green{ background:var(--accent); color:var(--dark);}
+  .story.cream{ background:#F2ECE3; color:var(--text);}
+  .story.bull{ background:var(--bull); color:#fff;}
+
+  /* carousel — 1080×1350 */
+  .carousel{
+    width:360px; height:450px;
+    background:var(--bg); color:var(--text);
+    border-radius:22px; overflow:hidden; position:relative;
+    padding:38px 34px; display:flex; flex-direction:column;
+    box-shadow:0 10px 30px rgba(0,0,0,0.10);
+  }
+  .carousel.dark{ background:var(--dark); color:#fff;}
+  .carousel.green{ background:var(--accent); color:var(--dark);}
+
+  .eyebrow{
+    font-size:11px; letter-spacing:2px; text-transform:uppercase;
+    color:var(--muted); font-weight:600; margin-bottom:18px;
+    display:inline-flex; align-items:center; gap:8px;
+  }
+  .dark .eyebrow, .bull .eyebrow{ color:var(--rose);}
+  .green .eyebrow{ color:rgba(0,0,0,0.65);}
+  .eyebrow .dot{ width:6px; height:6px; background:var(--accent); border-radius:50%;}
+  .dark .eyebrow .dot, .bull .eyebrow .dot{ background:var(--accent);}
+  .green .eyebrow .dot{ background:var(--dark);}
+
+  h2.title{
+    font-size:40px; line-height:1.02; letter-spacing:-0.04em; font-weight:600;
+    margin-bottom:16px;
+  }
+  h2.title.sm{font-size:32px;}
+  h2.title.lg{font-size:46px;}
+  h2.title.xl{font-size:56px; font-weight:700;}
+  .carousel h2.title{font-size:32px;}
+
+  .lead{
+    font-size:15px; line-height:1.5; color:var(--muted); font-weight:500;
+    margin-bottom:22px;
+  }
+  .dark .lead, .bull .lead{color:#ffffff;}
+  .green .lead{color:rgba(0,0,0,0.8);}
+
+  ul.list{ list-style:none;}
+  ul.list li{
+    font-size:14px; line-height:1.5; padding:10px 0 10px 24px;
+    position:relative; font-weight:500;
+    border-bottom:1px solid var(--line);
+  }
+  .dark ul.list li, .bull ul.list li{border-color:rgba(255,255,255,0.1);}
+  .green ul.list li{border-color:rgba(0,0,0,0.1);}
+  ul.list li::before{
+    content:''; position:absolute; left:0; top:16px;
+    width:12px; height:12px; border-radius:50%;
+    background:var(--accent);
+    border:2px solid var(--bg);
+    box-shadow:0 0 0 1px var(--accent);
+  }
+  .dark ul.list li::before{border-color:var(--dark);}
+  .bull ul.list li::before{border-color:var(--bull);}
+  .green ul.list li::before{background:var(--dark); box-shadow:0 0 0 1px var(--dark); border-color:var(--accent);}
+
+  .footer-row{
+    margin-top:auto; display:flex; justify-content:space-between; align-items:center;
+    font-size:12px; font-weight:600; letter-spacing:-0.01em; padding-top:20px;
+  }
+  .domain{ color:var(--text);}
+  .dark .domain, .bull .domain{ color:#fff;}
+  .green .domain{ color:var(--dark);}
+  .swipe{ color:var(--muted); display:inline-flex; align-items:center; gap:6px;}
+  .dark .swipe, .bull .swipe{color:var(--rose);}
+
+  .price-pill{
+    display:inline-flex; align-items:center; gap:8px;
+    background:#fff; color:var(--text); padding:8px 14px; border-radius:100px;
+    font-size:12px; font-weight:600; box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    margin-top:18px; align-self:flex-start;
+  }
+  .dark .price-pill, .bull .price-pill{background:rgba(255,255,255,0.12); color:#fff;}
+  .green .price-pill{background:var(--bg);}
+  .price-pill .eur{color:var(--accent-deep); font-weight:700;}
+  .dark .price-pill .eur, .bull .price-pill .eur{color:var(--accent);}
+  .green .price-pill .eur{color:var(--dark);}
+
+  /* ====== INTRO / PORTRAIT ====== */
+  .story.portrait{ padding:0; position:relative; color:#fff;}
+  .portrait .photo{
+    position:absolute; inset:0;
+    background-image:url('self_photo.jpeg');
+    background-size:cover; background-position:center 22%;
+  }
+  .portrait .shade{
+    position:absolute; inset:0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.15) 40%, rgba(0,0,0,0.75) 100%);
+  }
+  .portrait .inner{
+    position:relative; z-index:2; padding:44px 38px; height:100%;
+    display:flex; flex-direction:column; justify-content:flex-end;
+  }
+  .portrait .name{ font-size:38px; font-weight:700; letter-spacing:-0.04em; line-height:1.05;}
+  .portrait .role{ font-size:14px; color:rgba(255,255,255,0.85); font-weight:500; margin-top:8px;}
+  .portrait .tag{
+    position:absolute; top:38px; left:38px;
+    background:rgba(255,255,255,0.18); backdrop-filter:blur(6px);
+    color:#fff; padding:8px 14px; border-radius:100px;
+    font-size:11px; letter-spacing:2px; text-transform:uppercase; font-weight:600;
+  }
+
+  /* ====== BRAND CARDS ====== */
+  .brand{ align-items:flex-start; justify-content:space-between;}
+  .brand .logo-wrap{
+    background:#fff; border-radius:22px;
+    padding:22px 26px; display:inline-flex; align-items:center; justify-content:center;
+    box-shadow:0 6px 22px rgba(0,0,0,0.08);
+    margin-bottom:auto; height:120px; min-width:180px;
+  }
+  .dark .brand .logo-wrap, .bull .brand .logo-wrap{ background:rgba(255,255,255,0.08);}
+  .brand .logo-wrap img{ max-height:78px; max-width:220px; object-fit:contain;}
+  .brand .url{
+    font-size:13px; font-weight:600; letter-spacing:-0.01em;
+    color:var(--muted); margin-top:auto;
+  }
+  .dark .brand .url, .bull .brand .url{ color:var(--rose);}
+
+  .two-logos{
+    display:flex; gap:14px; flex-wrap:wrap;
+    margin-bottom:auto;
+  }
+  .two-logos .logo-wrap{ flex:1 1 140px; height:120px; padding:18px;}
+
+  /* ====== DIVIDER CARDS ====== */
+  .divider{ align-items:flex-start;}
+  .divider .chapter{
+    font-size:13px; font-weight:700; letter-spacing:4px; text-transform:uppercase;
+    color:var(--accent); margin-bottom:auto;
+  }
+  .green .divider .chapter, .divider.green .chapter{ color:var(--dark);}
+  .divider .num{
+    font-size:140px; line-height:0.9; font-weight:700; letter-spacing:-0.06em;
+    color:var(--text); margin-bottom:6px;
+  }
+  .dark .divider .num, .bull .divider .num{color:#fff;}
+  .green .divider .num{color:var(--dark);}
+  .divider h2.title{ font-size:52px; margin-bottom:10px;}
+  .divider .tagline{ font-size:14px; color:var(--text); font-weight:500; max-width:260px; opacity:0.78;}
+  .dark .divider .tagline, .bull .divider .tagline{color:#ffffff;}
+  .green .divider .tagline{color:rgba(0,0,0,0.7);}
+
+  .kbd{
+    display:inline-flex; align-items:center; gap:8px;
+    background:rgba(255,255,255,0.15); backdrop-filter:blur(6px);
+    color:#fff; padding:6px 12px; border-radius:100px;
+    font-size:11px; letter-spacing:2px; text-transform:uppercase; font-weight:600;
+    align-self:flex-start;
+  }
+  .story:not(.dark):not(.bull):not(.green) .kbd{ background:rgba(0,0,0,0.06); color:var(--text);}
+  .green .kbd{background:rgba(0,0,0,0.12); color:var(--dark);}
+
+  .note{
+    background:#fff; color:var(--muted); padding:18px 22px; border-radius:14px;
+    max-width:720px; margin:0 auto 40px; font-size:13px; line-height:1.6;
+    border:1px solid var(--line);
+  }
+  .note strong{color:var(--text);}
+
+  .mini-brand{
+    position:absolute; bottom:20px; right:22px;
+    font-size:10px; letter-spacing:2px; text-transform:uppercase; font-weight:600;
+    color:var(--muted);
+  }
+  .dark .mini-brand, .bull .mini-brand{color:var(--rose);}
+
+  /* ====== OVERVIEW CARDS ====== */
+  .overview .ov-row{
+    display:flex; justify-content:space-between; align-items:baseline;
+    padding:14px 0; border-bottom:1px solid var(--line);
+    gap:12px;
+  }
+  .dark .overview .ov-row{ border-color:rgba(255,255,255,0.1);}
+  .overview .ov-row:last-child{border-bottom:none;}
+  .overview .ov-num{
+    font-size:13px; font-weight:700; color:var(--accent-deep);
+    width:26px; flex-shrink:0; letter-spacing:-0.01em;
+  }
+  .dark .overview .ov-num{color:var(--accent);}
+  .overview .ov-name{
+    font-size:17px; font-weight:600; letter-spacing:-0.02em; flex:1;
+  }
+  .overview .ov-price{
+    font-size:12px; font-weight:600; color:var(--muted); white-space:nowrap;
+  }
+  .dark .overview .ov-price{color:var(--rose);}
+
+  /* compact teaser card (before each service) */
+  .teaser{ justify-content:space-between;}
+  .teaser .t-label{
+    font-size:11px; font-weight:700; letter-spacing:3px; text-transform:uppercase;
+    color:var(--muted);
+  }
+  .dark .teaser .t-label, .bull .teaser .t-label{color:var(--rose);}
+  .teaser h2.title{ font-size:48px; margin:auto 0;}
+  .teaser .t-desc{
+    font-size:15px; line-height:1.5; color:var(--text); font-weight:500; max-width:270px;
+    margin-bottom:14px;
+  }
+  .dark .teaser .t-desc, .bull .teaser .t-desc{color:#ffffff;}
+  .green .teaser .t-desc{color:rgba(0,0,0,0.78);}
+  .teaser .t-meta{
+    font-size:12px; font-weight:600; letter-spacing:-0.01em; color:var(--accent-deep);
+    display:flex; align-items:center; gap:8px;
+  }
+  .dark .teaser .t-meta, .bull .teaser .t-meta{color:var(--accent);}
+  .green .teaser .t-meta{color:var(--dark);}
+
+  /* ====== COVER / TITLE CARDS ====== */
+  .cover{ justify-content:space-between;}
+  .cover .c-top{display:flex; justify-content:space-between; align-items:flex-start; gap:12px;}
+  .cover .c-eyebrow{
+    font-size:11px; font-weight:700; letter-spacing:3px; text-transform:uppercase;
+    color:var(--muted);
+  }
+  .dark .cover .c-eyebrow, .bull .cover .c-eyebrow{color:var(--rose);}
+  .green .cover .c-eyebrow{color:rgba(0,0,0,0.7);}
+  .cover .c-num{
+    font-size:64px; font-weight:700; line-height:1; letter-spacing:-0.05em;
+    color:var(--accent-deep);
+  }
+  .dark .cover .c-num, .bull .cover .c-num{color:var(--accent);}
+  .green .cover .c-num{color:var(--dark);}
+  .cover .c-title{
+    font-size:56px; line-height:0.98; letter-spacing:-0.045em; font-weight:700;
+    margin:22px 0 16px;
+  }
+  .cover .c-title.sm{font-size:42px;}
+  .cover .c-title.md{font-size:48px;}
+  .cover .c-sub{
+    font-size:15px; line-height:1.5; font-weight:500; max-width:280px;
+    color:#1f1f1f; margin-bottom:18px;
+  }
+  .dark .cover .c-sub, .bull .cover .c-sub{color:#ffffff;}
+  .green .cover .c-sub{color:rgba(0,0,0,0.85);}
+  .cover .c-foot{
+    display:flex; justify-content:space-between; align-items:center;
+    font-size:12px; font-weight:600; letter-spacing:-0.01em;
+    padding-top:18px; border-top:1px solid var(--line);
+  }
+  .dark .cover .c-foot, .bull .cover .c-foot{border-color:rgba(255,255,255,0.15);}
+  .green .cover .c-foot{border-color:rgba(0,0,0,0.15);}
+  .cover .c-foot .right{color:var(--muted);}
+  .dark .cover .c-foot .right, .bull .cover .c-foot .right{color:var(--rose);}
+  .green .cover .c-foot .right{color:rgba(0,0,0,0.6);}
+
+  /* ====== HIGHLIGHT THUMBNAILS — 1080×1080 square (renders 360×360) ====== */
+  .thumb{
+    width:360px; height:360px;
+    background:var(--bg); color:var(--text);
+    border-radius:28px; overflow:hidden; position:relative;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    box-shadow:0 8px 26px rgba(0,0,0,0.10);
+    text-align:center;
+    padding:40px;
+  }
+  .thumb.circle{border-radius:50%;}
+  .thumb.dark{ background:var(--dark); color:#fff;}
+  .thumb.green{ background:var(--accent); color:var(--dark);}
+  .thumb.cream{ background:#F2ECE3; color:var(--text);}
+  .thumb.bull{ background:var(--bull); color:#fff;}
+  .thumb .t-num{
+    font-size:82px; line-height:1; font-weight:700; letter-spacing:-0.06em;
+    color:var(--accent-deep); margin-bottom:6px;
+  }
+  .thumb.dark .t-num, .thumb.bull .t-num{color:var(--accent);}
+  .thumb.green .t-num{color:var(--dark);}
+  .thumb .t-name{
+    font-size:22px; line-height:1.1; font-weight:700; letter-spacing:-0.03em;
+  }
+  .thumb .t-name.sm{font-size:18px;}
+  .thumb .t-name.lg{font-size:26px;}
+  .thumb .t-dot{
+    width:8px; height:8px; border-radius:50%;
+    background:var(--accent); margin-bottom:14px;
+  }
+  .thumb.green .t-dot{background:var(--dark);}
+  .thumb.dark .t-dot, .thumb.bull .t-dot{background:var(--accent);}
+  .thumb-grid{display:flex; flex-wrap:wrap; gap:20px; justify-content:center;}
+</style>
+</head>
+<body>
+
+<h1 class="page-title">Instagram Cards · Services</h1>
+<p class="subtle">Klar gegliederte Service-Karten · webseite.hamburg</p>
+
+<div class="note">
+<strong>Struktur:</strong> Intro (Foto + Marke) → 6 Service-Blöcke, je mit Divider-Cover + Inhaltskarten → Kontakt. Einheitlicher Cream/Grün-Stil, farbige Divider trennen die Themen visuell. AI-Sichtbarkeit läuft unter webseite.hamburg; aiseo.hamburg ist die Spezial-Seite für vertiefende Inhalte.
+</div>
+
+<!-- ============ SECTION COVERS ============ -->
+<h2 class="group-title">Cover / Titel · 1080 × 1920</h2>
+<div class="cards">
+
+  <div class="story cover cream">
+    <div class="c-top">
+      <span class="c-eyebrow">webseite.hamburg</span>
+      <span class="c-eyebrow">2026</span>
+    </div>
+    <div>
+      <h2 class="c-title">Meine<br>Services.</h2>
+      <p class="c-sub">Webdesign, SEO, Google Ads &amp; AI-Sichtbarkeit — alles aus einer Hand in Hamburg.</p>
+    </div>
+    <div class="c-foot">
+      <span>Vadim Shchepin</span>
+      <span class="right">01 — Übersicht</span>
+    </div>
+  </div>
+
+  <div class="story cover bull">
+    <div class="c-top">
+      <span class="c-eyebrow">Kapitel</span>
+      <span class="c-eyebrow">Intro</span>
+    </div>
+    <div>
+      <div class="c-num">00</div>
+      <h2 class="c-title md">Über<br>mich.</h2>
+      <p class="c-sub">Wer ich bin, wofür ich stehe und was Sie von mir erwarten können.</p>
+    </div>
+    <div class="c-foot">
+      <span>webseite.hamburg</span>
+      <span class="right">→ swipe</span>
+    </div>
+  </div>
+
+  <div class="story cover dark">
+    <div class="c-top">
+      <span class="c-eyebrow">Kapitel</span>
+      <span class="c-eyebrow">Leistungen</span>
+    </div>
+    <div>
+      <h2 class="c-title sm">Alle<br>Leistungen<br>im Überblick.</h2>
+      <p class="c-sub">6 Services, ein Ansprechpartner — von der ersten Zeile Code bis zur KI-Sichtbarkeit.</p>
+    </div>
+    <div class="c-foot">
+      <span>webseite.hamburg</span>
+      <span class="right">→ swipe</span>
+    </div>
+  </div>
+
+  <div class="story cover bull">
+    <div class="c-top">
+      <span class="c-eyebrow">Service</span>
+      <span class="c-eyebrow">Ab 1.900 €</span>
+    </div>
+    <div>
+      <div class="c-num">01</div>
+      <h2 class="c-title">Web­design.</h2>
+      <p class="c-sub">Websites, die schnell laden, gut aussehen und ab Tag 1 gefunden werden.</p>
+    </div>
+    <div class="c-foot">
+      <span>webseite.hamburg</span>
+      <span class="right">→ swipe</span>
+    </div>
+  </div>
+
+  <div class="story cover cream">
+    <div class="c-top">
+      <span class="c-eyebrow">Service</span>
+      <span class="c-eyebrow">Ab 490 € / Mon</span>
+    </div>
+    <div>
+      <div class="c-num">02</div>
+      <h2 class="c-title md">SEO<br>Lokal.</h2>
+      <p class="c-sub">Bei Google &amp; Maps in Hamburg ganz oben — mit ehrlichen Methoden.</p>
+    </div>
+    <div class="c-foot">
+      <span>webseite.hamburg</span>
+      <span class="right">→ swipe</span>
+    </div>
+  </div>
+
+  <div class="story cover dark">
+    <div class="c-top">
+      <span class="c-eyebrow">Service</span>
+      <span class="c-eyebrow">GEO · AEO</span>
+    </div>
+    <div>
+      <div class="c-num">03</div>
+      <h2 class="c-title sm">AI-<br>Sichtbar­keit.</h2>
+      <p class="c-sub">Sichtbar in ChatGPT, Perplexity &amp; Gemini. Nicht nur Google — KI-Suchen verändern alles.</p>
+    </div>
+    <div class="c-foot">
+      <span>webseite.hamburg</span>
+      <span class="right">→ swipe</span>
+    </div>
+  </div>
+
+  <div class="story cover cream">
+    <div class="c-top">
+      <span class="c-eyebrow">Service</span>
+      <span class="c-eyebrow" style="color:var(--rose)">Ab 390 € / Mon</span>
+    </div>
+    <div>
+      <div class="c-num" style="color:var(--rose)">04</div>
+      <h2 class="c-title">Google<br>Ads.</h2>
+      <p class="c-sub">Kunden ab Tag 1 — mit sauberem Tracking und ehrlicher Betreuung.</p>
+    </div>
+    <div class="c-foot">
+      <span>webseite.hamburg</span>
+      <span class="right">→ swipe</span>
+    </div>
+  </div>
+
+  <div class="story cover green">
+    <div class="c-top">
+      <span class="c-eyebrow">Service</span>
+      <span class="c-eyebrow">Ab 500 €</span>
+    </div>
+    <div>
+      <div class="c-num">05</div>
+      <h2 class="c-title md">Website-<br>Audit.</h2>
+      <p class="c-sub">Ehrliche Analyse: Technik, SEO, AI-Sichtbarkeit &amp; Conversion — mit umsetzbarer Roadmap.</p>
+    </div>
+    <div class="c-foot">
+      <span>webseite.hamburg</span>
+      <span class="right">→ swipe</span>
+    </div>
+  </div>
+
+  <div class="story cover cream">
+    <div class="c-top">
+      <span class="c-eyebrow">Service</span>
+      <span class="c-eyebrow">Ab 290 €</span>
+    </div>
+    <div>
+      <div class="c-num" style="color:var(--blue)">06</div>
+      <h2 class="c-title md" style="color:var(--blue)">AI-<br>Beratung.</h2>
+      <p class="c-sub">1-zu-1 Sparring zu KI-Strategie, Sichtbarkeit und Workflow-Automatisierung.</p>
+    </div>
+    <div class="c-foot">
+      <span>webseite.hamburg</span>
+      <span class="right">→ swipe</span>
+    </div>
+  </div>
+
+  <div class="story cover green">
+    <div class="c-top">
+      <span class="c-eyebrow">Kapitel</span>
+      <span class="c-eyebrow">Kontakt</span>
+    </div>
+    <div>
+      <h2 class="c-title sm">Lassen<br>Sie uns<br>reden.</h2>
+      <p class="c-sub">Kostenloses 20-Minuten-Kennenlernen. Unverbindlich, ehrlich, ohne Verkaufs-Masche.</p>
+    </div>
+    <div class="c-foot">
+      <span>webseite.hamburg</span>
+      <span class="right">→ buchen</span>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ============ HIGHLIGHT THUMBNAILS ============ -->
+<h2 class="group-title">Highlight-Thumbnails · 1080 × 1080</h2>
+<p class="subtle">Kleine, typografische Cover — als Highlight-Thumbnails auf dem Profil. Instagram crop't automatisch zum Kreis.</p>
+<div class="thumb-grid">
+
+  <div class="thumb cream">
+    <div class="t-dot"></div>
+    <div class="t-num" style="font-size:32px; font-weight:700; letter-spacing:-0.02em; color:var(--text)">webseite<br>.hamburg</div>
+  </div>
+
+  <div class="thumb bull">
+    <div class="t-dot"></div>
+    <div class="t-num">00</div>
+    <div class="t-name">Über mich</div>
+  </div>
+
+  <div class="thumb dark">
+    <div class="t-dot"></div>
+    <div class="t-num" style="font-size:34px">Alle<br>Services</div>
+    <div class="t-name sm" style="margin-top:8px; color:var(--rose)">6 Leistungen</div>
+  </div>
+
+  <div class="thumb bull">
+    <div class="t-dot"></div>
+    <div class="t-num">01</div>
+    <div class="t-name">Web­design</div>
+  </div>
+
+  <div class="thumb cream">
+    <div class="t-dot"></div>
+    <div class="t-num">02</div>
+    <div class="t-name">SEO Lokal</div>
+  </div>
+
+  <div class="thumb dark">
+    <div class="t-dot"></div>
+    <div class="t-num">03</div>
+    <div class="t-name">AI-Sicht­barkeit</div>
+  </div>
+
+  <div class="thumb cream">
+    <div class="t-dot" style="background:var(--rose)"></div>
+    <div class="t-num" style="color:var(--rose)">04</div>
+    <div class="t-name">Google Ads</div>
+  </div>
+
+  <div class="thumb green">
+    <div class="t-dot"></div>
+    <div class="t-num">05</div>
+    <div class="t-name">Audit</div>
+  </div>
+
+  <div class="thumb cream">
+    <div class="t-dot" style="background:var(--blue)"></div>
+    <div class="t-num" style="color:var(--blue)">06</div>
+    <div class="t-name">AI-Beratung</div>
+  </div>
+
+  <div class="thumb green">
+    <div class="t-dot"></div>
+    <div class="t-num" style="font-size:34px">Kontakt</div>
+    <div class="t-name sm" style="margin-top:8px">→ reden</div>
+  </div>
+
+  <div class="thumb cream">
+    <div class="t-dot"></div>
+    <div class="t-num" style="font-size:34px">Refe­renzen</div>
+    <div class="t-name sm" style="margin-top:8px; color:var(--muted)">Cases</div>
+  </div>
+
+  <div class="thumb dark">
+    <div class="t-dot"></div>
+    <div class="t-num" style="font-size:34px; color:var(--accent)">aiseo<br>.hamburg</div>
+    <div class="t-name sm" style="margin-top:8px; color:var(--rose)">Wissen</div>
+  </div>
+
+</div>
+
+
+<!-- ============ INTRO ============ -->
+<h2 class="group-title">Intro · 1080 × 1920</h2>
+<div class="cards">
+
+  <div class="story portrait">
+    <div class="photo"></div>
+    <div class="shade"></div>
+    <div class="tag">Hallo · Moin</div>
+    <div class="inner">
+      <div class="name">Vadim<br>Shchepin</div>
+      <div class="role">Webdesigner &amp; SEO-Experte · Hamburg</div>
+    </div>
+  </div>
+
+  <div class="story">
+    <span class="eyebrow"><span class="dot"></span>Über mich</span>
+    <h2 class="title">Eine Adresse<br>für Ihre<br>Sichtbarkeit.</h2>
+    <p class="lead">Ich baue Websites, die nicht nur schön sind, sondern gefunden werden — bei Google und jetzt auch in ChatGPT, Perplexity &amp; Co.</p>
+    <ul class="list">
+      <li>10+ Jahre Web &amp; SEO</li>
+      <li>Hamburg · remote · weltweit</li>
+      <li>Code, Design, Strategie aus einer Hand</li>
+    </ul>
+    <div class="footer-row">
+      <span class="domain">webseite.hamburg</span>
+      <span class="swipe">→ folgen</span>
+    </div>
+  </div>
+
+  <div class="story bull brand">
+    <div class="logo-wrap"><img src="webseite_logo_blue.png" alt="webseite.hamburg"></div>
+    <h2 class="title">webseite.<br>hamburg</h2>
+    <p class="lead">Webdesign, lokales SEO, Google Ads, Audits &amp; AI-Sichtbarkeit — alles aus einer Hand, für Hamburger Unternehmen.</p>
+    <div class="footer-row">
+      <span class="domain">webseite.hamburg</span>
+      <span class="swipe">→ besuchen</span>
+    </div>
+  </div>
+
+  <div class="story cream">
+    <span class="eyebrow"><span class="dot"></span>Neu · Spezial-Seite</span>
+    <h2 class="title sm">Plus:<br>aiseo.hamburg.</h2>
+    <p class="lead">Eine separate Wissens-Seite rund um AI-Sichtbarkeit — Guides, Audits &amp; Deep Dives zu GEO, AEO und KI-Suchen.</p>
+    <p class="lead" style="margin-bottom:0"><strong style="color:var(--text)">Alle Services laufen über webseite.hamburg.</strong> aiseo.hamburg ist das Fach-Magazin dazu.</p>
+    <div class="footer-row">
+      <span class="domain">webseite.hamburg</span>
+      <span class="swipe">→ aiseo.hamburg</span>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ============ LEISTUNGEN IM ÜBERBLICK ============ -->
+<h2 class="group-title">Leistungen im Überblick</h2>
+<div class="cards">
+
+  <div class="story overview cream">
+    <span class="eyebrow"><span class="dot"></span>Alle Services</span>
+    <h2 class="title sm" style="margin-bottom:20px">6 Leistungen,<br>ein Ansprechpartner.</h2>
+    <div>
+      <div class="ov-row"><span class="ov-num">01</span><span class="ov-name">Webdesign</span><span class="ov-price">Ab 1.900 €</span></div>
+      <div class="ov-row"><span class="ov-num">02</span><span class="ov-name">SEO Lokal</span><span class="ov-price">490 € / Mon</span></div>
+      <div class="ov-row"><span class="ov-num">03</span><span class="ov-name">AI-Sichtbarkeit</span><span class="ov-price">auf Anfrage</span></div>
+      <div class="ov-row"><span class="ov-num">04</span><span class="ov-name">Google Ads</span><span class="ov-price">390 € / Mon</span></div>
+      <div class="ov-row"><span class="ov-num">05</span><span class="ov-name">Website-Audit</span><span class="ov-price">Ab 500 €</span></div>
+      <div class="ov-row"><span class="ov-num">06</span><span class="ov-name">AI-Beratung</span><span class="ov-price">Ab 290 €</span></div>
+    </div>
+    <div class="footer-row">
+      <span class="domain">webseite.hamburg</span>
+    </div>
+  </div>
+
+  <div class="story overview dark">
+    <span class="eyebrow"><span class="dot"></span>Kurz erklärt</span>
+    <h2 class="title sm" style="margin-bottom:20px">Was ich<br>für Sie mache.</h2>
+    <div>
+      <div class="ov-row"><span class="ov-num">01</span><span class="ov-name">Bauen</span><span class="ov-price">Websites</span></div>
+      <div class="ov-row"><span class="ov-num">02</span><span class="ov-name">Optimieren</span><span class="ov-price">Google</span></div>
+      <div class="ov-row"><span class="ov-num">03</span><span class="ov-name">Sichtbar machen</span><span class="ov-price">KI-Suchen</span></div>
+      <div class="ov-row"><span class="ov-num">04</span><span class="ov-name">Bewerben</span><span class="ov-price">Ads</span></div>
+      <div class="ov-row"><span class="ov-num">05</span><span class="ov-name">Prüfen</span><span class="ov-price">Audit</span></div>
+      <div class="ov-row"><span class="ov-num">06</span><span class="ov-name">Beraten</span><span class="ov-price">Strategie</span></div>
+    </div>
+    <div class="footer-row">
+      <span class="domain">alles aus einer Hand</span>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ============ 01 · WEBDESIGN ============ -->
+<h2 class="group-title">01 · Webdesign</h2>
+<div class="cards">
+
+  <div class="story teaser cream">
+    <span class="t-label">Service 01</span>
+    <h2 class="title">Webdesign.</h2>
+    <div>
+      <p class="t-desc">Websites, die schnell laden, gut aussehen und von Anfang an gefunden werden.</p>
+      <div class="t-meta">Ab 1.900 € · 4–6 Wochen</div>
+    </div>
+  </div>
+
+  <div class="story divider bull">
+    <span class="kbd">Service</span>
+    <div>
+      <div class="num">01</div>
+      <div class="chapter">Webdesign</div>
+    </div>
+    <h2 class="title">Websites,<br>die performen.</h2>
+    <div class="tagline">Handgebaut. Schnell. SEO-bereit ab Tag 1.</div>
+    <div class="mini-brand">webseite.hamburg</div>
+  </div>
+
+  <div class="story">
+    <span class="eyebrow"><span class="dot"></span>Was Sie bekommen</span>
+    <h2 class="title sm">Individuelle<br>Entwicklung — kein Baukasten.</h2>
+    <ul class="list">
+      <li>Next.js / React — sauberer Code</li>
+      <li>100/100 PageSpeed als Ziel</li>
+      <li>Barrierefrei &amp; mobil-optimiert</li>
+      <li>CMS oder statisch — Sie wählen</li>
+    </ul>
+    <div class="footer-row">
+      <span class="domain">webseite.hamburg</span>
+      <span class="swipe">→ mehr</span>
+    </div>
+  </div>
+
+  <div class="story green">
+    <span class="eyebrow"><span class="dot"></span>Für wen</span>
+    <h2 class="title">Handwerk,<br>Kanzleien,<br>Dienstleister.</h2>
+    <p class="lead">Lokal in Hamburg oder bundesweit — wer online ernst genommen werden will, braucht mehr als eine hübsche Startseite.</p>
+    <div class="price-pill">Ab <span class="eur">1.900 €</span></div>
+    <div class="footer-row">
+      <span class="domain">webseite.hamburg</span>
+    </div>
+  </div>
+
+  <div class="story dark">
+    <span class="eyebrow"><span class="dot"></span>Prozess</span>
+    <h2 class="title sm">4 Schritte,<br>4–6 Wochen.</h2>
+    <ul class="list">
+      <li>Briefing &amp; Strategie</li>
+      <li>Design &amp; Copy</li>
+      <li>Entwicklung &amp; Tests</li>
+      <li>Launch &amp; Support</li>
+    </ul>
+    <div class="footer-row">
+      <span class="domain">webseite.hamburg</span>
+      <span class="swipe">→ Termin</span>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ============ 02 · SEO LOKAL ============ -->
+<h2 class="group-title">02 · SEO Lokal</h2>
+<div class="cards">
+
+  <div class="story teaser cream">
+    <span class="t-label">Service 02</span>
+    <h2 class="title">SEO Lokal.</h2>
+    <div>
+      <p class="t-desc">Bei Google &amp; Maps in Hamburg ganz oben — mit ehrlichen Methoden.</p>
+      <div class="t-meta">Ab 490 € / Monat · 3–6 Monate bis Top 3</div>
+    </div>
+  </div>
+
+  <div class="story divider">
+    <span class="kbd">Service</span>
+    <div>
+      <div class="num" style="color:var(--accent-deep)">02</div>
+      <div class="chapter">SEO Hamburg</div>
+    </div>
+    <h2 class="title">Lokal<br>gefunden<br>werden.</h2>
+    <div class="tagline">Google, Maps &amp; Branchenverzeichnisse — aus einer Hand.</div>
+    <div class="mini-brand">webseite.hamburg</div>
+  </div>
+
+  <div class="story cream">
+    <span class="eyebrow"><span class="dot"></span>Leistungen</span>
+    <h2 class="title sm">Komplettes<br>SEO-Paket.</h2>
+    <ul class="list">
+      <li>Keyword-Recherche Hamburg</li>
+      <li>OnPage-Optimierung</li>
+      <li>Google Business Profil</li>
+      <li>Technisches SEO &amp; Core Vitals</li>
+    </ul>
+    <div class="footer-row">
+      <span class="domain">webseite.hamburg/seo</span>
+    </div>
+  </div>
+
+  <div class="story green">
+    <span class="eyebrow"><span class="dot"></span>Referenz</span>
+    <h2 class="title xl">728</h2>
+    <p class="lead" style="color:rgba(0,0,0,0.75)">lokale Interaktionen in 30 Tagen — mit 529 € Werbe­budget für GL Sommer.</p>
+    <div class="footer-row">
+      <span class="domain">webseite.hamburg</span>
+      <span class="swipe">→ Case Study</span>
+    </div>
+  </div>
+
+  <div class="story">
+    <span class="eyebrow"><span class="dot"></span>Ergebnis</span>
+    <h2 class="title sm">Sichtbar<br>in 3–6<br>Monaten.</h2>
+    <p class="lead">Realistische Roadmap statt Hockeystick-Versprechen. Monatliches Reporting, klare KPIs.</p>
+    <div class="price-pill">Ab <span class="eur">490 €</span> / Monat</div>
+    <div class="footer-row">
+      <span class="domain">webseite.hamburg</span>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ============ 03 · AI SICHTBARKEIT ============ -->
+<h2 class="group-title">03 · AI-Sichtbarkeit (GEO · AEO)</h2>
+<div class="cards">
+
+  <div class="story teaser cream">
+    <span class="t-label">Service 03</span>
+    <h2 class="title">AI-Sichtbarkeit.</h2>
+    <div>
+      <p class="t-desc">Damit ChatGPT, Perplexity &amp; Gemini Ihre Marke kennen und zitieren.</p>
+      <div class="t-meta">Audit + Strategie · webseite.hamburg</div>
+    </div>
+  </div>
+
+  <div class="story divider dark">
+    <span class="kbd">Service</span>
+    <div>
+      <div class="num">03</div>
+      <div class="chapter" style="color:var(--accent)">AI SEO</div>
+    </div>
+    <h2 class="title">Sichtbar<br>in ChatGPT<br>&amp; Perplexity.</h2>
+    <div class="tagline">Nicht nur Google — KI-Suchen verändern alles.</div>
+    <div class="mini-brand">webseite.hamburg</div>
+  </div>
+
+  <div class="story">
+    <span class="eyebrow"><span class="dot"></span>Warum jetzt</span>
+    <h2 class="title sm">KI-Suchen<br>wachsen<br>rasant.</h2>
+    <p class="lead">Immer mehr Nutzer fragen ChatGPT, Perplexity oder Gemini — nicht mehr Google. Werden Sie dort zitiert?</p>
+    <ul class="list">
+      <li>GEO — Generative Engine Optimization</li>
+      <li>AEO — Answer Engine Optimization</li>
+      <li>llms.txt &amp; strukturierte Daten</li>
+    </ul>
+    <div class="footer-row">
+      <span class="domain">webseite.hamburg</span>
+      <span class="swipe">→ Deep Dive: aiseo.hamburg</span>
+    </div>
+  </div>
+
+  <div class="story green">
+    <span class="eyebrow"><span class="dot"></span>Was wir tun</span>
+    <h2 class="title sm">Audit →<br>Content →<br>Zitation.</h2>
+    <ul class="list">
+      <li>AI-Visibility-Audit</li>
+      <li>Passage-Level-Content</li>
+      <li>Schema, Entities, E-E-A-T</li>
+      <li>Monitoring über KI-Modelle</li>
+    </ul>
+    <div class="footer-row">
+      <span class="domain">webseite.hamburg</span>
+      <span class="swipe">→ starten</span>
+    </div>
+  </div>
+
+  <div class="story dark">
+    <span class="eyebrow"><span class="dot"></span>Referenz</span>
+    <h2 class="title xl" style="color:var(--accent)">#1</h2>
+    <p class="lead">KinderAlbum wird in ChatGPT als Top-Empfehlung genannt — deutschlandweit, für die Zielsuche.</p>
+    <div class="footer-row">
+      <span class="domain">webseite.hamburg</span>
+      <span class="swipe">→ Case</span>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ============ 04 · GOOGLE ADS ============ -->
+<h2 class="group-title">04 · Google Ads</h2>
+<div class="cards">
+
+  <div class="story teaser cream">
+    <span class="t-label">Service 04</span>
+    <h2 class="title">Google Ads.</h2>
+    <div>
+      <p class="t-desc">Kunden ab Tag 1 — mit sauberem Tracking und ehrlicher Betreuung.</p>
+      <div class="t-meta">Ab 390 € / Monat · messbare Leads</div>
+    </div>
+  </div>
+
+  <div class="story divider">
+    <span class="kbd">Service</span>
+    <div>
+      <div class="num" style="color:var(--rose)">04</div>
+      <div class="chapter" style="color:var(--rose)">Google Ads</div>
+    </div>
+    <h2 class="title">Sofortige<br>Sichtbarkeit,<br>messbare Leads.</h2>
+    <div class="tagline">Search, Display, Performance Max — strategisch gesteuert.</div>
+    <div class="mini-brand">webseite.hamburg</div>
+  </div>
+
+  <div class="story">
+    <span class="eyebrow"><span class="dot"></span>Für wen</span>
+    <h2 class="title sm">Wenn SEO<br>zu langsam ist.</h2>
+    <p class="lead">Ads bringen Ihnen Kunden ab Tag 1 — aber nur, wenn Kampagnen-Struktur und Landingpage stimmen.</p>
+    <ul class="list">
+      <li>Kampagnen-Setup &amp; Tracking</li>
+      <li>Keyword- &amp; Gebots-Strategie</li>
+      <li>Landingpage-Optimierung</li>
+    </ul>
+    <div class="footer-row">
+      <span class="domain">webseite.hamburg/ads</span>
+    </div>
+  </div>
+
+  <div class="story cream">
+    <span class="eyebrow"><span class="dot"></span>Referenz</span>
+    <h2 class="title xl">7<span style="font-size:46px; color:var(--muted)"> Wochen</span></h2>
+    <p class="lead">Break-Even für Blitz Hamburg — 40 qualifizierte Kundenanfragen pro Monat seitdem.</p>
+    <div class="footer-row">
+      <span class="domain">webseite.hamburg</span>
+      <span class="swipe">→ Case</span>
+    </div>
+  </div>
+
+  <div class="story dark">
+    <span class="eyebrow"><span class="dot"></span>Modell</span>
+    <h2 class="title sm">Transparente<br>Betreuung.</h2>
+    <ul class="list">
+      <li>Monatliche Optimierung</li>
+      <li>Klares Reporting</li>
+      <li>Keine versteckten Margen</li>
+    </ul>
+    <div class="price-pill">Ab <span class="eur">390 €</span> / Monat</div>
+    <div class="footer-row">
+      <span class="domain">webseite.hamburg</span>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ============ 05 · AUDIT ============ -->
+<h2 class="group-title">05 · Website-Audit</h2>
+<div class="cards">
+
+  <div class="story teaser cream">
+    <span class="t-label">Service 05</span>
+    <h2 class="title">Website-Audit.</h2>
+    <div>
+      <p class="t-desc">Ehrliche Analyse von Technik, SEO, AI-Sichtbarkeit und Conversion.</p>
+      <div class="t-meta">Ab 500 € · umsetzbare Roadmap</div>
+    </div>
+  </div>
+
+  <div class="story divider green">
+    <span class="kbd">Service</span>
+    <div>
+      <div class="num">05</div>
+      <div class="chapter">Website-Audit</div>
+    </div>
+    <h2 class="title">Wo steht<br>Ihre Website<br>wirklich?</h2>
+    <div class="tagline">Ehrliche Analyse — Technik, SEO, AI-Sichtbarkeit, Conversion.</div>
+    <div class="mini-brand">webseite.hamburg</div>
+  </div>
+
+  <div class="story">
+    <span class="eyebrow"><span class="dot"></span>Enthalten</span>
+    <h2 class="title sm">Was Sie<br>bekommen.</h2>
+    <ul class="list">
+      <li>Technisches SEO &amp; Core Vitals</li>
+      <li>Content &amp; Keyword-Lücken</li>
+      <li>AI-Visibility-Check</li>
+      <li>Conversion-Schwachstellen</li>
+      <li>Maßnahmen-Roadmap</li>
+    </ul>
+    <div class="price-pill">Ab <span class="eur">500 €</span></div>
+    <div class="footer-row">
+      <span class="domain">webseite.hamburg</span>
+    </div>
+  </div>
+
+  <div class="story dark">
+    <span class="eyebrow"><span class="dot"></span>Versprechen</span>
+    <h2 class="title sm">Ehrlich.<br>Konkret.<br>Umsetzbar.</h2>
+    <p class="lead">Kein Copy-Paste-PDF. 20–30 Seiten konkrete Maßnahmen, priorisiert nach Wirkung &amp; Aufwand.</p>
+    <div class="footer-row">
+      <span class="domain">webseite.hamburg</span>
+      <span class="swipe">→ buchen</span>
+    </div>
+  </div>
+
+  <div class="story cream">
+    <span class="eyebrow"><span class="dot"></span>Danach</span>
+    <h2 class="title sm">Umsetzung<br>optional.</h2>
+    <p class="lead">Sie entscheiden: Ich setze die Roadmap für Sie um — oder Sie geben sie Ihrem Team. Kein Druck.</p>
+    <div class="footer-row">
+      <span class="domain">webseite.hamburg</span>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ============ 06 · BERATUNG ============ -->
+<h2 class="group-title">06 · AI-Beratung</h2>
+<div class="cards">
+
+  <div class="story teaser cream">
+    <span class="t-label">Service 06</span>
+    <h2 class="title">AI-Beratung.</h2>
+    <div>
+      <p class="t-desc">1-zu-1 Sparring zu KI-Strategie, Sichtbarkeit und Automatisierung.</p>
+      <div class="t-meta">Ab 290 € · 90 Min. Session</div>
+    </div>
+  </div>
+
+  <div class="story divider">
+    <span class="kbd">Service</span>
+    <div>
+      <div class="num" style="color:var(--blue)">06</div>
+      <div class="chapter" style="color:var(--blue)">Beratung</div>
+    </div>
+    <h2 class="title">KI-Strategie<br>für Ihr<br>Unternehmen.</h2>
+    <div class="tagline">1-zu-1 Sparring — von Sichtbarkeit bis Prozess-Automatisierung.</div>
+    <div class="mini-brand">webseite.hamburg</div>
+  </div>
+
+  <div class="story cream">
+    <span class="eyebrow"><span class="dot"></span>Themen</span>
+    <h2 class="title sm">Wo KI<br>wirklich hilft.</h2>
+    <ul class="list">
+      <li>AI-Sichtbarkeit &amp; Content</li>
+      <li>Workflow-Automatisierung</li>
+      <li>Claude / ChatGPT im Team</li>
+      <li>Datenschutz &amp; DSGVO</li>
+    </ul>
+    <div class="footer-row">
+      <span class="domain">webseite.hamburg</span>
+    </div>
+  </div>
+
+  <div class="story green">
+    <span class="eyebrow"><span class="dot"></span>Format</span>
+    <h2 class="title sm">90 Min.<br>Strategie-<br>Session.</h2>
+    <p class="lead">Konkrete Fragen, konkrete Antworten. Schriftliche Zusammen­fassung &amp; Next-Steps inklusive.</p>
+    <div class="price-pill">Ab <span class="eur">290 €</span></div>
+    <div class="footer-row">
+      <span class="domain">webseite.hamburg</span>
+    </div>
+  </div>
+
+  <div class="story dark">
+    <span class="eyebrow"><span class="dot"></span>Für wen</span>
+    <h2 class="title sm">Gründer,<br>Marketer,<br>Agenturen.</h2>
+    <p class="lead">Sie wissen, dass KI Ihre Branche verändert — wir klären gemeinsam, wo Sie anpacken.</p>
+    <div class="footer-row">
+      <span class="domain">webseite.hamburg</span>
+      <span class="swipe">→ Termin</span>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ============ KONTAKT / CTA ============ -->
+<h2 class="group-title">Kontakt · Abschluss</h2>
+<div class="cards">
+
+  <div class="story">
+    <span class="eyebrow"><span class="dot"></span>Nächster Schritt</span>
+    <h2 class="title">Lassen Sie<br>uns reden.</h2>
+    <p class="lead">Kostenloses 20-Minuten-Kennenlernen. Keine Verkaufs-Masche — einfach schauen, ob wir passen.</p>
+    <ul class="list">
+      <li>Per Telefon oder Video</li>
+      <li>Unverbindlich &amp; kostenlos</li>
+      <li>Antwort innerhalb 24 h</li>
+    </ul>
+    <div class="footer-row">
+      <span class="domain">webseite.hamburg</span>
+      <span class="swipe">→ buchen</span>
+    </div>
+  </div>
+
+  <div class="story green">
+    <span class="eyebrow"><span class="dot"></span>Folgen</span>
+    <h2 class="title">@vadim.<br>shchepin</h2>
+    <p class="lead" style="color:rgba(0,0,0,0.75)">Mehr Tipps zu Web, SEO &amp; KI-Sichtbarkeit — zweimal pro Woche.</p>
+    <div class="footer-row">
+      <span class="domain">webseite.hamburg</span>
+    </div>
+  </div>
+
+  <div class="story portrait">
+    <div class="photo"></div>
+    <div class="shade"></div>
+    <div class="tag">Danke</div>
+    <div class="inner">
+      <div class="name">Bis bald.</div>
+      <div class="role">Vadim · Hamburg</div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

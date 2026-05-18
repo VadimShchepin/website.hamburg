@@ -19,9 +19,13 @@ npm run lint
 
 ## Deployment — CRITICAL
 
-**Never add `Co-Authored-By` trailers to commits.** The Vercel project is on a Hobby plan tied to a different email account. Vercel treats any co-author as an unauthorized contributor and blocks the deployment with: *"The deployment was blocked because the commit author did not have contributing access."*
+**Never add `Co-Authored-By` trailers to commits.** The Vercel project is on a Hobby plan. Vercel Hobby blocks deployments when a co-author email doesn't match the connected account — it treats it as an unauthorized collaborator.
 
-Deployment flow: push to `main` on GitHub → Vercel auto-deploys. No manual `vercel --prod` needed (and it would deploy to the wrong Vercel project anyway — there are two: one in `vadimshchepins-projects` created by mistake, and the real one in `vadimshchepinit-gmailcoms-projects`).
+**Keep the GitHub repo public.** The Vercel project is connected to a different email account (`vadimshchepinit-gmailcoms-projects`) than the GitHub push account (`VadimShchepin` / `vadimshch21@gmail.com`). On Hobby plan, private repos only deploy for the exact owner. Making the repo public removes this restriction. The repo contains no secrets — API keys are in `.env` (gitignored).
+
+**Never run `npx vercel --prod` from this directory.** It creates a duplicate Vercel project under the wrong team (`vadimshchepins-projects`) and causes double-deployment failures.
+
+Deployment flow: push to `main` on GitHub → Vercel auto-deploys via the `vadimshchepinit-gmailcoms-projects` project.
 
 ## Project Structure
 

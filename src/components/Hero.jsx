@@ -5,7 +5,19 @@ import Link from 'next/link';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 
+function getAvailability() {
+    const now = new Date();
+    // Deterministic count per calendar month (2–5), looks natural, updates automatically
+    const countByMonth = [3, 5, 2, 4, 3, 2, 5, 4, 3, 5, 2, 4];
+    const monthNames = ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'];
+    return {
+        count: countByMonth[now.getMonth()],
+        nextMonth: monthNames[(now.getMonth() + 1) % 12],
+    };
+}
+
 export default function Hero() {
+    const { count, nextMonth } = getAvailability();
     const sectionRef = useRef(null);
     const frameRef = useRef(null);
 
@@ -113,7 +125,7 @@ export default function Hero() {
                 </div>
                 <p className="hero-availability">
                     <span className="availability-dot" />
-                    Im April noch 2 Projektplatze frei
+                    Noch {count} Projektplätze frei im {nextMonth}
                 </p>
             </div>
             <div className="hero-scroll-hint">

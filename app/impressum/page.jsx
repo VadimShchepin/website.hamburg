@@ -39,6 +39,12 @@ export default function ImpressumPage() {
                         E-Mail: <a href="mailto:hallo@webseite.hamburg">hallo@webseite.hamburg</a>
                     </p>
 
+                    <h2 style={{ marginTop: '2rem' }}>Umsatzsteuer-ID</h2>
+                    <p>Umsatzsteuer-Identifikationsnummer gem&auml;&szlig; &sect; 27 a Umsatzsteuergesetz:<br />DE360369743</p>
+
+                    <h2 style={{ marginTop: '2rem' }}>Steuernummer</h2>
+                    <p>41/229/05131</p>
+
                     <h2 style={{ marginTop: '2rem' }}>Verantwortlich fur den Inhalt nach &sect; 18 Abs. 2 MStV</h2>
                     <p>Vadim Shchepin<br />Hamburg, Deutschland</p>
 

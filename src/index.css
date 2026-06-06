@@ -3334,3 +3334,88 @@ a.service-card {
     padding: 0 1rem;
   }
 }
+
+/* ── AI-citability elements (byline, key-answer, comparison table, sources) ── */
+.subpage-byline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.75rem;
+  align-items: center;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-top: var(--space-sm);
+}
+.subpage-byline strong {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+.subpage-byline a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+.subpage-byline a:hover { text-decoration: underline; }
+.subpage-byline .byline-sep { color: var(--color-bg-gray2); }
+
+.subpage-takeaway {
+  background: var(--color-bg-lightgray);
+  border-left: 3px solid var(--color-accent);
+  padding: var(--space-md);
+  margin: var(--space-md) 0 var(--space-lg);
+  border-radius: 2px;
+}
+.subpage-takeaway p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--color-text-main);
+  margin-bottom: 0;
+}
+.subpage-takeaway p + p { margin-top: var(--space-sm); }
+.subpage-takeaway strong { color: var(--color-primary); }
+
+.subpage-table-wrap { overflow-x: auto; margin: var(--space-lg) 0; }
+.subpage-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  min-width: 480px;
+}
+.subpage-table th,
+.subpage-table td {
+  text-align: left;
+  padding: 0.75rem var(--space-sm);
+  border-bottom: 1px solid var(--color-bg-gray2);
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  vertical-align: top;
+}
+.subpage-table thead th {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  color: var(--color-primary);
+  background: var(--color-bg-lightgray);
+}
+.subpage-table tbody th {
+  font-weight: 600;
+  color: var(--color-text-main);
+}
+
+.subpage-sources {
+  margin-top: var(--space-lg);
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--color-bg-gray2);
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+.subpage-sources h2 {
+  font-size: 0.95rem !important;
+  margin-top: 0 !important;
+  margin-bottom: var(--space-xs) !important;
+}
+.subpage-sources ol { margin: 0; padding-left: 1.2rem; }
+.subpage-sources li { margin-bottom: 0.35rem; line-height: 1.5; }
+.subpage-sources a { color: var(--color-text-muted); }
+
+@media (max-width: 768px) {
+  .subpage-table { min-width: 0; font-size: 0.85rem; }
+  .subpage-table th, .subpage-table td { padding: 0.6rem 0.5rem; }
+}

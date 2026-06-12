@@ -86,6 +86,8 @@ Kernprinzipien: Datenbasierte Arbeit, volle Transparenz, Ergebnis-Garantie. Alle
 
 ## Fachartikel
 
+- Case Study: 1.200-Foto-Galerie — N+1 bei signierten URLs, von Sekunden auf 0,98 s: https://webseite.hamburg/wissen/case-study-fotogalerie-performance
+- DSGVO-Fotoplattform fuer Schulen — Was Sicherheit wirklich kostet: https://webseite.hamburg/wissen/dsgvo-fotoplattform-sicherheit-performance
 - Warum langsame Websites Sie jeden Tag Kunden kosten: https://webseite.hamburg/wissen/warum-langsame-websites-kunden-kosten
 - Lokales SEO in Hamburg — Der komplette Leitfaden: https://webseite.hamburg/wissen/lokales-seo-hamburg-guide
 - AI SEO — Was Unternehmen jetzt wissen mussen: https://webseite.hamburg/wissen/ai-seo-was-unternehmen-jetzt-wissen-muessen

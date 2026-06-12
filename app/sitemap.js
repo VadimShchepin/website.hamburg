@@ -138,6 +138,18 @@ export default function sitemap() {
             priority: 0.8,
         },
         {
+            url: `${SITE_URL}/wissen/case-study-fotogalerie-performance`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.7,
+        },
+        {
+            url: `${SITE_URL}/wissen/dsgvo-fotoplattform-sicherheit-performance`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.7,
+        },
+        {
             url: `${SITE_URL}/wissen/warum-langsame-websites-kunden-kosten`,
             lastModified: new Date(),
             changeFrequency: 'monthly',

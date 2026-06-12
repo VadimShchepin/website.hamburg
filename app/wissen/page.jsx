@@ -18,6 +18,20 @@ export const metadata = {
 
 const articles = [
     {
+        slug: 'case-study-fotogalerie-performance',
+        category: 'PERFORMANCE',
+        title: 'Case Study: 1.200 Fotos pro Album — wie 2.408 versteckte Requests eine Galerie ausbremsten',
+        excerpt: 'Echte Produktionszahlen: Ein N+1-Problem bei signierten URLs erzeugte 2.408 HTTP-Requests pro Seitenaufruf. Nach Batch-Signierung: ~12 Requests und 0,98 s Antwortzeit.',
+        readTime: '9 Min.',
+    },
+    {
+        slug: 'dsgvo-fotoplattform-sicherheit-performance',
+        category: 'SICHERHEIT',
+        title: 'DSGVO-Fotoplattform für Schulen: Was Sicherheit wirklich kostet',
+        excerpt: 'QR-Code + PIN statt Accounts, Row Level Security, signierte URLs — und der Preis: 723 Bildfehler in 72 Stunden, bis vorgenerierte WebP-Varianten kamen. Eine ehrliche Architektur-Case-Study.',
+        readTime: '8 Min.',
+    },
+    {
         slug: 'warum-langsame-websites-kunden-kosten',
         category: 'WEBDESIGN',
         title: 'Warum langsame Websites Sie jeden Tag Kunden kosten',

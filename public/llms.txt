@@ -20,6 +20,13 @@ Kernprinzipien: Datenbasierte Arbeit, volle Transparenz, Ergebnis-Garantie. Alle
 - Individueller Code (kein Baukasten), PageSpeed 90-100, Conversion-optimiert, responsive, SEO-Grundoptimierung inklusive
 - URL: https://webseite.hamburg/leistungen/webdesign
 
+### E-Commerce Entwicklung
+- Full-Cycle Online-Shop-Entwicklung von einem kleinen, erfahrenen Team (Entwickler, Designer, Texter, Marketing) mit 11+ Jahren Projekterfahrung
+- Plattformen: Shopify, Shopware 6, WooCommerce, Custom/Headless (Next.js, Medusa); herstellerneutrale Beratung
+- Leistungen: Strategie & Beratung, Shop-Entwicklung, Erweiterung bestehender Shops, Schnittstellen (ERP/Warenwirtschaft, Payment, Versand, Marktplatze), Produkttexte, Marketing (SEO, Google Ads, Merchant Center), Automatisierungen (Feeds, Lagersync, E-Mail-Flows)
+- Neubau, Migration und Erweiterung; Festpreis-Angebot vor Projektstart
+- URL: https://webseite.hamburg/leistungen/e-commerce-entwicklung
+
 ### SEO & Lokale Sichtbarkeit
 - Ab 1.000 EUR/Monat
 - Google Business Profile, technisches SEO, On-Page-Optimierung, Content-Strategie, Keyword-Tracking

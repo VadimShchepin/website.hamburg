@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Connected e-commerce ecosystem</title>
+  <desc id="desc">A central online storefront connected to payment, delivery, analytics, automation, and search modules.</desc>
+  <defs>
+    <style>
+      .line{fill:none;stroke:#0A192F;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+      .fine{fill:none;stroke:#172A45;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+      .dash{fill:none;stroke:#172A45;stroke-width:2;stroke-linecap:round;stroke-dasharray:3 11}
+      .navy{fill:#0A192F}.mid{fill:#172A45}.dark{fill:#020C1B}.paper{fill:#F5F7FA}.white{fill:#FFFFFF}.red{fill:#E53935}
+    </style>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0A192F" flood-opacity=".1"/>
+    </filter>
+  </defs>
+
+  <!-- ecosystem connections -->
+  <g class="dash" opacity=".6">
+    <path d="M381 280C302 241 272 195 237 158"/>
+    <path d="M356 371C270 379 225 405 176 447"/>
+    <path d="M435 515C388 566 345 586 295 601"/>
+    <path d="M819 280C894 235 925 193 963 155"/>
+    <path d="M844 371C933 379 974 411 1022 451"/>
+  </g>
+  <g class="navy">
+    <circle cx="381" cy="280" r="4"/><circle cx="356" cy="371" r="4"/><circle cx="435" cy="515" r="4"/>
+    <circle cx="819" cy="280" r="4"/><circle cx="844" cy="371" r="4"/>
+  </g>
+
+  <!-- payment module -->
+  <g transform="translate(142 78)" filter="url(#shadow)">
+    <path class="white" d="M22 0h150a22 22 0 0 1 22 22v116a22 22 0 0 1-22 22H22A22 22 0 0 1 0 138V22A22 22 0 0 1 22 0z"/>
+    <path class="fine" d="M22 0h150a22 22 0 0 1 22 22v116a22 22 0 0 1-22 22H22A22 22 0 0 1 0 138V22A22 22 0 0 1 22 0z"/>
+    <rect class="line" x="43" y="46" width="108" height="70" rx="8"/>
+    <path class="line" d="M43 68h108"/>
+    <path class="red" d="M57 91h28v8H57z"/>
+    <path class="mid" d="M116 91h21v8h-21z"/>
+  </g>
+
+  <!-- delivery module -->
+  <g transform="translate(59 369)" filter="url(#shadow)">
+    <path class="white" d="M22 0h150a22 22 0 0 1 22 22v116a22 22 0 0 1-22 22H22A22 22 0 0 1 0 138V22A22 22 0 0 1 22 0z"/>
+    <path class="fine" d="M22 0h150a22 22 0 0 1 22 22v116a22 22 0 0 1-22 22H22A22 22 0 0 1 0 138V22A22 22 0 0 1 22 0z"/>
+    <path class="paper" d="m97 35 48 24v53l-48 25-48-25V59z"/>
+    <path class="line" d="m97 35 48 24v53l-48 25-48-25V59zm-48 24 48 25 48-25M97 84v53m-24-90 49 25"/>
+  </g>
+
+  <!-- analytics module -->
+  <g transform="translate(210 536)" filter="url(#shadow)">
+    <path class="white" d="M22 0h150a22 22 0 0 1 22 22v116a22 22 0 0 1-22 22H22A22 22 0 0 1 0 138V22A22 22 0 0 1 22 0z"/>
+    <path class="fine" d="M22 0h150a22 22 0 0 1 22 22v116a22 22 0 0 1-22 22H22A22 22 0 0 1 0 138V22A22 22 0 0 1 22 0z"/>
+    <path class="fine" d="M46 119h105"/>
+    <path class="mid" d="M52 88h18v31H52zM82 69h18v50H82zM112 45h18v74h-18z"/>
+    <path class="red" d="M142 32h18v87h-18z"/>
+  </g>
+
+  <!-- search module -->
+  <g transform="translate(864 74)" filter="url(#shadow)">
+    <path class="white" d="M22 0h150a22 22 0 0 1 22 22v116a22 22 0 0 1-22 22H22A22 22 0 0 1 0 138V22A22 22 0 0 1 22 0z"/>
+    <path class="fine" d="M22 0h150a22 22 0 0 1 22 22v116a22 22 0 0 1-22 22H22A22 22 0 0 1 0 138V22A22 22 0 0 1 22 0z"/>
+    <circle class="line" cx="88" cy="72" r="31"/>
+    <path class="line" d="m111 95 31 31"/>
+    <circle class="red" cx="88" cy="72" r="7"/>
+  </g>
+
+  <!-- automation module -->
+  <g transform="translate(947 374)" filter="url(#shadow)">
+    <path class="red" d="M22 0h150a22 22 0 0 1 22 22v116a22 22 0 0 1-22 22H22A22 22 0 0 1 0 138V22A22 22 0 0 1 22 0z"/>
+    <path d="M97 34v12m0 68v12M51 80H39m116 0h-12M64 47l9 9m48 48 9 9m0-66-9 9m-48 48-9 9" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+    <path d="m104 51-34 39h25l-6 23 35-42H99z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/>
+    <circle cx="97" cy="80" r="48" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-dasharray="5 8"/>
+  </g>
+
+  <!-- central browser storefront -->
+  <g filter="url(#shadow)">
+    <rect class="white" x="356" y="188" width="488" height="348" rx="18"/>
+    <rect class="fine" x="356" y="188" width="488" height="348" rx="18"/>
+    <path class="paper" d="M374 188h452a18 18 0 0 1 18 18v42H356v-42a18 18 0 0 1 18-18z"/>
+    <path class="fine" d="M356 248h488"/>
+    <circle class="red" cx="382" cy="218" r="5"/>
+    <circle class="mid" cx="401" cy="218" r="5"/>
+    <circle class="mid" cx="420" cy="218" r="5"/>
+    <rect class="white" x="462" y="204" width="246" height="28" rx="14"/>
+    <path class="fine" d="M484 218h130"/>
+    <circle class="fine" cx="806" cy="218" r="8"/>
+    <path class="fine" d="m812 224 8 8"/>
+
+    <!-- storefront header -->
+    <path class="navy" d="M386 278h102v10H386zM386 298h65v6h-65z"/>
+    <path class="line" d="M771 279h16l6 30h27l7-20h-31"/>
+    <circle class="navy" cx="798" cy="316" r="4"/><circle class="navy" cx="818" cy="316" r="4"/>
+    <circle class="red" cx="824" cy="278" r="11"/>
+
+    <!-- product cards -->
+    <g>
+      <rect class="paper" x="386" y="338" width="128" height="157" rx="10"/>
+      <path class="fine" d="M386 438h128"/>
+      <path class="white" d="m425 365 25-13 25 13v41l-25 13-25-13z"/>
+      <path class="fine" d="m425 365 25 13 25-13m-25 13v41"/>
+      <path class="navy" d="M405 455h62v7h-62z"/>
+      <path class="mid" d="M405 474h39v5h-39z"/>
+      <circle class="red" cx="489" cy="468" r="12"/>
+      <path d="M484 468h10m-5-5v10" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+    </g>
+    <g>
+      <rect class="paper" x="536" y="338" width="128" height="157" rx="10"/>
+      <path class="fine" d="M536 438h128"/>
+      <circle class="white" cx="600" cy="385" r="35"/>
+      <path class="line" d="M578 394c11-32 29-32 44 0m-39-18h34"/>
+      <path class="navy" d="M555 455h62v7h-62z"/>
+      <path class="mid" d="M555 474h39v5h-39z"/>
+      <circle class="navy" cx="639" cy="468" r="12"/>
+      <path d="M634 468h10m-5-5v10" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+    </g>
+    <g>
+      <rect class="paper" x="686" y="338" width="128" height="157" rx="10"/>
+      <path class="fine" d="M686 438h128"/>
+      <path class="white" d="M721 360h58v58h-58z"/>
+      <path class="line" d="M721 360h58v58h-58zm15 0c0-18 28-18 28 0"/>
+      <path class="navy" d="M705 455h62v7h-62z"/>
+      <path class="mid" d="M705 474h39v5h-39z"/>
+      <circle class="navy" cx="789" cy="468" r="12"/>
+      <path d="M784 468h10m-5-5v10" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- small ambient data marks -->
+  <g class="fine" opacity=".45">
+    <path d="M79 284h72m-36-36v72M1084 277h58m-29-29v58"/>
+    <circle cx="282" cy="291" r="7"/><circle cx="914" cy="590" r="7"/>
+    <path d="M493 626h84m46 0h38"/>
+  </g>
+</svg>

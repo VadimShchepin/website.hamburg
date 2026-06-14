@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 const allServices = [
     { slug: 'webdesign', title: 'Webdesign & Entwicklung', desc: 'Schnelle, konversionsstarke Websites', price: 'Ab 2.000' },
+    { slug: 'e-commerce-entwicklung', title: 'E-Commerce Entwicklung', desc: 'Shops fur Shopify, Shopware & WooCommerce', price: 'Auf Anfrage' },
     { slug: 'seo', title: 'SEO & Lokale Sichtbarkeit', desc: 'Gefunden werden bei Google & Maps', price: 'Ab 1.000/Mt.' },
     { slug: 'ai-seo', title: 'AI SEO', desc: 'Sichtbar in ChatGPT & Perplexity', price: 'Ab 1.200/Mt.' },
     { slug: 'google-ads', title: 'Google & Local Ads', desc: 'Sofort Anfragen uber bezahlte Suche', price: 'Ab 500/Mt.' },

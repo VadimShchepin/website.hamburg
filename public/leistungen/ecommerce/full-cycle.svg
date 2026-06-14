@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
+  <title id="title">Full-cycle e-commerce workflow</title>
+  <desc id="desc">Six connected stages for strategy, design, development, content, marketing, and automation.</desc>
+  <defs>
+    <style>
+      .flow{fill:none;stroke:#172A45;stroke-width:3;stroke-linecap:round}
+      .accent{stroke:#E53935}
+      .tile{fill:#F5F7FA;stroke:#172A45;stroke-width:2}
+      .icon{fill:none;stroke:#0A192F;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+      .soft{fill:none;stroke:#172A45;stroke-width:2;stroke-linecap:round}
+      .red{fill:none;stroke:#E53935;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M1 1l7 4-7 4" fill="none" stroke="#172A45" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M1 1l7 4-7 4" fill="none" stroke="#E53935" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- Connected full-cycle flow -->
+  <path class="flow" marker-end="url(#arrow)" d="M320 130C380 78 421 72 477 72"/>
+  <path class="flow" marker-end="url(#arrow)" d="M635 72c58 0 103 8 160 58"/>
+  <path class="flow accent" marker-end="url(#arrow-red)" d="M920 205c28 50 28 135 0 185"/>
+  <path class="flow" marker-end="url(#arrow)" d="M795 470c-56 50-103 58-160 58"/>
+  <path class="flow" marker-end="url(#arrow)" d="M477 528c-58 0-103-8-157-58"/>
+  <path class="flow" marker-end="url(#arrow)" d="M195 390c-29-51-29-134 0-185"/>
+
+  <!-- Center cycle motif -->
+  <circle cx="557" cy="300" r="73" fill="#F5F7FA" stroke="#172A45" stroke-width="2"/>
+  <path class="icon" d="M515 301a43 43 0 0 1 73-31" marker-end="url(#arrow)"/>
+  <path class="red" d="M599 299a43 43 0 0 1-73 31" marker-end="url(#arrow-red)"/>
+  <circle cx="557" cy="300" r="13" fill="#0A192F"/>
+  <circle cx="557" cy="300" r="5" fill="#F5F7FA"/>
+
+  <!-- Strategy -->
+  <rect class="tile" x="170" y="75" width="150" height="130" rx="22"/>
+  <path class="soft" d="M194 101h31"/>
+  <circle cx="199" cy="101" r="3" fill="#E53935"/>
+  <circle class="icon" cx="245" cy="140" r="31"/>
+  <circle cx="245" cy="140" r="4" fill="#E53935"/>
+  <path class="icon" d="M258 126l-8 19-19 8 8-19 19-8Z"/>
+  <path class="soft" d="M245 102v7m0 62v7m-38-38h7m62 0h7"/>
+
+  <!-- Design -->
+  <rect class="tile" x="477" y="20" width="158" height="130" rx="22"/>
+  <path class="soft" d="M501 46h31"/>
+  <circle cx="506" cy="46" r="3" fill="#E53935"/>
+  <path class="icon" d="M520 118l8-25 38-38 16 16-38 38-24 9Zm8-25 16 16m22-54 16 16"/>
+  <path class="red" d="M520 118l15-4-11-11-4 15Z"/>
+  <path class="icon" d="M581 96h16v22h-52"/>
+  <path class="soft" d="M588 101h9m-9 8h9"/>
+
+  <!-- Development -->
+  <rect class="tile" x="795" y="75" width="150" height="130" rx="22"/>
+  <path class="soft" d="M819 101h31"/>
+  <circle cx="824" cy="101" r="3" fill="#E53935"/>
+  <path class="icon" d="M847 122l-19 18 19 18m46-36 19 18-19 18m-16-47-14 58"/>
+  <path class="red" d="M861 169h16"/>
+
+  <!-- Automation -->
+  <rect class="tile" x="795" y="390" width="150" height="130" rx="22"/>
+  <path class="soft" d="M819 416h31"/>
+  <circle cx="824" cy="416" r="3" fill="#E53935"/>
+  <path class="icon" d="M870 434v-9m0 69v-9m26-51 6-6m-55 55 6-6m43 0 6 6m-55-55 6 6m51 26h9m-86 0h9"/>
+  <path class="icon" d="M895 460a25 25 0 1 1-50 0 25 25 0 0 1 50 0Z"/>
+  <path class="red" d="M874 442l-14 21h11l-5 16 15-22h-11l4-15Z"/>
+
+  <!-- Marketing -->
+  <rect class="tile" x="477" y="450" width="158" height="130" rx="22"/>
+  <path class="soft" d="M501 476h31"/>
+  <circle cx="506" cy="476" r="3" fill="#E53935"/>
+  <path class="icon" d="M518 526h13l37-17v42l-37-17h-13v-8Zm13 8 7 22h15l-8-16"/>
+  <path class="red" d="M579 518l12-10m-12 43 12 10m-8-27h16"/>
+
+  <!-- Content -->
+  <rect class="tile" x="170" y="390" width="150" height="130" rx="22"/>
+  <path class="soft" d="M194 416h31"/>
+  <circle cx="199" cy="416" r="3" fill="#E53935"/>
+  <path class="icon" d="M216 438h43l16 16v43h-59v-59Zm43 0v16h16"/>
+  <path class="soft" d="M229 466h33m-33 11h33m-33 11h21"/>
+  <path class="red" d="M275 477l13-13 8 8-13 13-10 2 2-10Z"/>
+</svg>

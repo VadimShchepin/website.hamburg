@@ -22,6 +22,12 @@ export default function sitemap() {
             priority: 0.8,
         },
         {
+            url: `${SITE_URL}/leistungen/e-commerce-entwicklung`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.8,
+        },
+        {
             url: `${SITE_URL}/leistungen/seo`,
             lastModified: new Date(),
             changeFrequency: 'monthly',

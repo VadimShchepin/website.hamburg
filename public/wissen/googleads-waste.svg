@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Verschwendetes Google Ads Budget</title>
+  <desc id="desc">Ein Budgetbehaelter mit Euro-Muenzen verliert Geld durch vier typische Google-Ads-Fehler, waehrend ein Teil als Anfrage oder Lead ankommt.</desc>
+  <defs>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M1 1l8 4-8 4z" fill="#E53935"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M1 1l8 4-8 4z" fill="#2E9E6B"/>
+    </marker>
+    <style>
+      .navy{fill:#0A192F}.panel{fill:#172A45}.paper{fill:#F5F7FA}.white{fill:#fff}.red{fill:#E53935}.green{fill:#2E9E6B}
+      .line{fill:none;stroke:#0A192F;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}
+      .thin{fill:none;stroke:#0A192F;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .redline{fill:none;stroke:#E53935;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}
+      .greenline{fill:none;stroke:#2E9E6B;stroke-width:10;stroke-linecap:round;stroke-linejoin:round}
+      .label{font:600 17px sans-serif;fill:#0A192F;text-anchor:middle}.small{font:700 15px sans-serif;fill:#fff;text-anchor:middle}
+    </style>
+  </defs>
+
+  <!-- Google Ads budget wallet -->
+  <path class="paper" stroke="#0A192F" stroke-width="8" stroke-linejoin="round" d="M387 135h426a38 38 0 0 1 38 38v205a38 38 0 0 1-38 38H387a38 38 0 0 1-38-38V173a38 38 0 0 1 38-38z"/>
+  <path class="panel" d="M353 178h494v66H353z"/>
+  <path class="line" d="M353 244h494"/>
+  <path class="paper" stroke="#0A192F" stroke-width="8" d="M658 263h193v86H658a43 43 0 0 1 0-86z"/>
+  <circle class="navy" cx="680" cy="306" r="10"/>
+  <text x="600" y="218" class="small" font-size="20">GOOGLE ADS BUDGET</text>
+
+  <!-- Coins inside wallet -->
+  <g stroke="#0A192F" stroke-width="5">
+    <g><circle class="white" cx="424" cy="302" r="28"/><text x="424" y="312" class="label" font-size="27">€</text></g>
+    <g><circle class="white" cx="486" cy="334" r="28"/><text x="486" y="344" class="label" font-size="27">€</text></g>
+    <g><circle class="white" cx="548" cy="294" r="28"/><text x="548" y="304" class="label" font-size="27">€</text></g>
+    <g><circle class="white" cx="588" cy="355" r="28"/><text x="588" y="365" class="label" font-size="27">€</text></g>
+    <g><circle class="white" cx="765" cy="372" r="28"/><text x="765" y="382" class="label" font-size="27">€</text></g>
+  </g>
+
+  <!-- Four leak holes -->
+  <g fill="#E53935" stroke="#0A192F" stroke-width="6">
+    <ellipse cx="384" cy="405" rx="24" ry="12"/>
+    <ellipse cx="500" cy="412" rx="24" ry="12"/>
+    <ellipse cx="700" cy="412" rx="24" ry="12"/>
+    <ellipse cx="816" cy="405" rx="24" ry="12"/>
+  </g>
+
+  <!-- Waste paths and leaking coins -->
+  <path class="redline" marker-end="url(#arrow-red)" d="M384 421c-12 36-70 37-113 63"/>
+  <path class="redline" marker-end="url(#arrow-red)" d="M500 428c-2 31-23 39-34 66"/>
+  <path class="redline" marker-end="url(#arrow-red)" d="M700 428c2 31 23 39 34 66"/>
+  <path class="redline" marker-end="url(#arrow-red)" d="M816 421c12 36 70 37 113 63"/>
+  <g class="red" stroke="#0A192F" stroke-width="4">
+    <circle cx="339" cy="452" r="17"/><circle cx="478" cy="459" r="17"/><circle cx="722" cy="459" r="17"/><circle cx="861" cy="452" r="17"/>
+  </g>
+  <g fill="#fff" font-family="sans-serif" font-size="17" font-weight="700" text-anchor="middle">
+    <text x="339" y="458">€</text><text x="478" y="465">€</text><text x="722" y="465">€</text><text x="861" y="458">€</text>
+  </g>
+
+  <!-- Mistake cards -->
+  <g>
+    <rect class="paper" stroke="#0A192F" stroke-width="6" x="58" y="482" width="238" height="142" rx="24"/>
+    <circle class="white" stroke="#E53935" stroke-width="6" cx="177" cy="529" r="31"/>
+    <path class="redline" stroke-width="5" d="M177 548v-34m0 0l-12 12m12-12l12 12m-10 13l-18 8m22-8l18 8"/>
+    <text class="label" x="177" y="586">Unkontrollierter</text><text class="label" x="177" y="607">Match Type</text>
+
+    <rect class="paper" stroke="#0A192F" stroke-width="6" x="325" y="494" width="238" height="142" rx="24"/>
+    <circle class="white" stroke="#E53935" stroke-width="6" cx="444" cy="541" r="31"/>
+    <path class="redline" stroke-width="6" d="M425 541h38"/>
+    <path class="redline" stroke-width="5" d="M422 519l44 44"/>
+    <text class="label" x="444" y="598">Fehlende negative</text><text class="label" x="444" y="619">Keywords</text>
+
+    <rect class="paper" stroke="#0A192F" stroke-width="6" x="637" y="494" width="238" height="142" rx="24"/>
+    <path class="white" stroke="#E53935" stroke-width="6" stroke-linejoin="round" d="M735 512h41l22 22v48h-63z"/>
+    <path class="redline" stroke-width="5" d="M776 512v22h22m-46 18h2m24 0h2m-25 17c9-10 18-10 27 0"/>
+    <text class="label" x="756" y="608">Schwache Landingpage</text>
+
+    <rect class="paper" stroke="#0A192F" stroke-width="6" x="904" y="482" width="238" height="142" rx="24"/>
+    <circle class="white" stroke="#E53935" stroke-width="6" cx="1023" cy="529" r="31"/>
+    <path class="redline" stroke-width="5" d="M1003 540a23 23 0 0 1 40 0m-20 0l-13-10"/>
+    <circle class="red" cx="1023" cy="540" r="5"/>
+    <text class="label" x="1023" y="586">Niedriger</text><text class="label" x="1023" y="607">Quality Score</text>
+  </g>
+
+  <!-- Successful lead flow -->
+  <path class="greenline" marker-end="url(#arrow-green)" d="M600 416v91"/>
+  <g stroke="#0A192F" stroke-width="5">
+    <circle class="green" cx="600" cy="456" r="20"/>
+    <text x="600" y="463" fill="#fff" font-family="sans-serif" font-size="19" font-weight="700" text-anchor="middle">€</text>
+  </g>
+  <rect class="green" stroke="#0A192F" stroke-width="7" x="494" y="525" width="212" height="92" rx="46"/>
+  <circle fill="none" stroke="#fff" stroke-width="6" cx="542" cy="571" r="19"/>
+  <path fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" d="M530 571l8 8 17-19"/>
+  <text x="624" y="579" fill="#fff" font-family="sans-serif" font-size="22" font-weight="700" text-anchor="middle">ANFRAGE / LEAD</text>
+</svg>

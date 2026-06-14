@@ -53,7 +53,7 @@ export default function ContactPageClient() {
                             Kostenlose Website-Analyse anfordern.
                         </h1>
                         <p className="large-text animate-up">
-                            Erzahlen Sie mir kurz von Ihrem Unternehmen. Ich melde mich innerhalb von 24 Stunden mit einer ersten Einschatzung.
+                            Erzählen Sie mir kurz von Ihrem Unternehmen. Ich melde mich innerhalb von 24 Stunden mit einer ersten Einschätzung.
                         </p>
 
                         {submitted ? (
@@ -149,14 +149,25 @@ export default function ContactPageClient() {
                             <ul className="check-list">
                                 <li>Antwort innerhalb von 24 Stunden</li>
                                 <li>Kostenlose Erstanalyse Ihrer Website</li>
-                                <li>Ehrliche Einschatzung — kein Verkaufsgesprach</li>
-                                <li>Konkrete Empfehlungen, die Sie auch alleine umsetzen konnen</li>
+                                <li>Ehrliche Einschätzung, kein Verkaufsgespräch</li>
+                                <li>Konkrete Empfehlungen, die Sie auch allein umsetzen können</li>
                             </ul>
                         </div>
 
                         <div className="contact-promise animate-up delay-2">
                             <h3>Kein Risiko</h3>
-                            <p className="large-text">Das Erstgesprach ist kostenlos und unverbindlich. Sie erhalten eine ehrliche Analyse und entscheiden selbst, ob und wie es weitergeht.</p>
+                            <p className="large-text">Das Erstgespräch ist kostenlos und unverbindlich. Sie erhalten eine ehrliche Analyse und entscheiden selbst, ob und wie es weitergeht.</p>
+                        </div>
+
+                        <div className="contact-promise animate-up delay-3">
+                            <h3>Womit ich helfe</h3>
+                            <ul className="check-list">
+                                <li><a href="/leistungen/webdesign">Webdesign &amp; Entwicklung</a> für schnelle, konversionsstarke Websites</li>
+                                <li><a href="/leistungen/e-commerce-entwicklung">E-Commerce-Entwicklung</a> für Shopify, Shopware &amp; WooCommerce</li>
+                                <li><a href="/leistungen/seo">SEO &amp; lokale Sichtbarkeit</a> in Hamburg</li>
+                                <li><a href="/leistungen/google-ads">Google Ads</a> ohne verbranntes Budget</li>
+                                <li>Frische Tipps im <a href="/wissen">Wissen-Bereich</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>

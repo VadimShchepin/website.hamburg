@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Google Local Map Pack diagram</title>
+  <desc id="desc">Search bar, map with three numbered pins, three local business results, and a 42 percent click share callout.</desc>
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0A192F" flood-opacity=".12"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadow)">
+    <rect x="160" y="70" width="820" height="535" rx="28" fill="#fff" stroke="#172A45" stroke-width="3"/>
+  </g>
+
+  <!-- Search bar -->
+  <rect x="200" y="105" width="740" height="66" rx="33" fill="#F5F7FA" stroke="#172A45" stroke-width="2"/>
+  <circle cx="240" cy="138" r="12" fill="none" stroke="#0A192F" stroke-width="4"/>
+  <path d="m249 147 12 12" fill="none" stroke="#0A192F" stroke-width="4" stroke-linecap="round"/>
+  <path d="M290 129h250M290 146h170" fill="none" stroke="#172A45" stroke-width="6" stroke-linecap="round" opacity=".28"/>
+  <circle cx="895" cy="138" r="4" fill="#172A45"/>
+  <circle cx="910" cy="138" r="4" fill="#172A45"/>
+
+  <!-- Map -->
+  <rect x="200" y="198" width="360" height="367" rx="16" fill="#F5F7FA" stroke="#172A45" stroke-width="2"/>
+  <path d="M200 300 300 245l83 46 92-65 85 41M200 457l102-70 83 34 92-76 83 38M270 198l19 367M429 198l-8 367" fill="none" stroke="#172A45" stroke-width="12" opacity=".12"/>
+  <path d="M200 345h360M350 198l-4 367" fill="none" stroke="#fff" stroke-width="18"/>
+  <path d="M200 345h360M350 198l-4 367" fill="none" stroke="#172A45" stroke-width="2" stroke-dasharray="8 10" opacity=".3"/>
+
+  <!-- Pins -->
+  <g>
+    <path d="M312 265c0-25 20-45 45-45s45 20 45 45c0 34-45 75-45 75s-45-41-45-75Z" fill="#E53935" stroke="#0A192F" stroke-width="3"/>
+    <circle cx="357" cy="265" r="19" fill="#fff"/>
+    <text x="357" y="272" fill="#E53935" font-family="sans-serif" font-size="22" font-weight="700" text-anchor="middle">1</text>
+  </g>
+  <g>
+    <path d="M432 385c0-21 17-38 38-38s38 17 38 38c0 29-38 64-38 64s-38-35-38-64Z" fill="#172A45" stroke="#0A192F" stroke-width="3"/>
+    <circle cx="470" cy="385" r="16" fill="#fff"/>
+    <text x="470" y="391" fill="#172A45" font-family="sans-serif" font-size="18" font-weight="700" text-anchor="middle">2</text>
+  </g>
+  <g>
+    <path d="M255 455c0-19 15-34 34-34s34 15 34 34c0 26-34 57-34 57s-34-31-34-57Z" fill="#172A45" stroke="#0A192F" stroke-width="3"/>
+    <circle cx="289" cy="455" r="14" fill="#fff"/>
+    <text x="289" y="461" fill="#172A45" font-family="sans-serif" font-size="17" font-weight="700" text-anchor="middle">3</text>
+  </g>
+
+  <!-- Results -->
+  <g>
+    <rect x="590" y="198" width="350" height="105" rx="14" fill="#F5F7FA" stroke="#E53935" stroke-width="3"/>
+    <circle cx="628" cy="235" r="20" fill="#E53935"/>
+    <text x="628" y="242" fill="#fff" font-family="sans-serif" font-size="20" font-weight="700" text-anchor="middle">1</text>
+    <path d="M668 225h150M668 245h105M668 273h174" fill="none" stroke="#172A45" stroke-width="7" stroke-linecap="round" opacity=".3"/>
+    <g fill="#2E9E6B">
+      <path d="m668 263 4 8 9 1-7 6 2 9-8-5-8 5 2-9-7-6 9-1Z"/>
+      <path d="m690 263 4 8 9 1-7 6 2 9-8-5-8 5 2-9-7-6 9-1Z"/>
+      <path d="m712 263 4 8 9 1-7 6 2 9-8-5-8 5 2-9-7-6 9-1Z"/>
+      <path d="m734 263 4 8 9 1-7 6 2 9-8-5-8 5 2-9-7-6 9-1Z"/>
+      <path d="m756 263 4 8 9 1-7 6 2 9-8-5-8 5 2-9-7-6 9-1Z"/>
+    </g>
+  </g>
+  <g>
+    <rect x="590" y="329" width="350" height="105" rx="14" fill="#fff" stroke="#172A45" stroke-width="2"/>
+    <circle cx="628" cy="366" r="20" fill="#172A45"/>
+    <text x="628" y="373" fill="#fff" font-family="sans-serif" font-size="20" font-weight="700" text-anchor="middle">2</text>
+    <path d="M668 356h135M668 376h92M668 404h174" fill="none" stroke="#172A45" stroke-width="7" stroke-linecap="round" opacity=".3"/>
+    <g fill="#2E9E6B">
+      <path d="m668 394 4 8 9 1-7 6 2 9-8-5-8 5 2-9-7-6 9-1Z"/>
+      <path d="m690 394 4 8 9 1-7 6 2 9-8-5-8 5 2-9-7-6 9-1Z"/>
+      <path d="m712 394 4 8 9 1-7 6 2 9-8-5-8 5 2-9-7-6 9-1Z"/>
+      <path d="m734 394 4 8 9 1-7 6 2 9-8-5-8 5 2-9-7-6 9-1Z"/>
+    </g>
+  </g>
+  <g>
+    <rect x="590" y="460" width="350" height="105" rx="14" fill="#fff" stroke="#172A45" stroke-width="2"/>
+    <circle cx="628" cy="497" r="20" fill="#172A45"/>
+    <text x="628" y="504" fill="#fff" font-family="sans-serif" font-size="20" font-weight="700" text-anchor="middle">3</text>
+    <path d="M668 487h145M668 507h112M668 535h174" fill="none" stroke="#172A45" stroke-width="7" stroke-linecap="round" opacity=".3"/>
+    <g fill="#2E9E6B">
+      <path d="m668 525 4 8 9 1-7 6 2 9-8-5-8 5 2-9-7-6 9-1Z"/>
+      <path d="m690 525 4 8 9 1-7 6 2 9-8-5-8 5 2-9-7-6 9-1Z"/>
+      <path d="m712 525 4 8 9 1-7 6 2 9-8-5-8 5 2-9-7-6 9-1Z"/>
+      <path d="m734 525 4 8 9 1-7 6 2 9-8-5-8 5 2-9-7-6 9-1Z"/>
+    </g>
+  </g>
+
+  <!-- Click share callout -->
+  <path d="M1032 278c-28-7-52-5-79 9" fill="none" stroke="#E53935" stroke-width="4" stroke-linecap="round"/>
+  <path d="m965 274-13 13 18 4" fill="none" stroke="#E53935" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="1070" cy="263" r="64" fill="#E53935"/>
+  <circle cx="1070" cy="263" r="54" fill="none" stroke="#fff" stroke-width="2" opacity=".55"/>
+  <text x="1070" y="275" fill="#fff" font-family="sans-serif" font-size="37" font-weight="700" text-anchor="middle">~42%</text>
+</svg>

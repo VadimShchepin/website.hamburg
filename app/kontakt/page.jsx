@@ -2,13 +2,13 @@ import ContactPageClient from '../../src/components/ContactPageClient';
 
 export const metadata = {
     title: 'Kontakt | Kostenlose Website-Beratung',
-    description: 'Kostenlose Website-Analyse anfordern. Ich melde mich innerhalb von 24 Stunden mit einer ersten Einschatzung. Kein Verkaufsgesprach, nur ehrliche Beratung.',
+    description: 'Kostenlose Website-Analyse anfordern. Ich melde mich innerhalb von 24 Stunden mit einer ersten Einschätzung. Kein Verkaufsgespräch, nur ehrliche Beratung.',
     alternates: {
         canonical: 'https://webseite.hamburg/kontakt',
     },
     openGraph: {
         title: 'Kontakt | Kostenlose Website-Beratung',
-        description: 'Kostenlose Website-Analyse anfordern. Ich melde mich innerhalb von 24 Stunden mit einer ersten Einschatzung.',
+        description: 'Kostenlose Website-Analyse anfordern. Ich melde mich innerhalb von 24 Stunden mit einer ersten Einschätzung.',
         url: 'https://webseite.hamburg/kontakt',
         type: 'website',
     },

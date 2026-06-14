@@ -77,7 +77,7 @@ export default function GoogleAdsPage() {
 
                     <h2 className="animate-up">Warum Google Ads für lokale Unternehmen funktionieren</h2>
                     <p className="animate-up">Google Ads sind kein Glücksspiel, sondern präzise Kundenakquise. Wer „Elektriker Hamburg Notdienst" oder „Steuerberater Hamburg Neustadt" sucht, hat unmittelbare Kaufabsicht. Die Anzeige platziert Ihr Unternehmen genau vor diesen Suchenden.</p>
-                    <p className="animate-up">Der Unterschied zwischen professionellem und schlechtem Ads-Management ist groß: Bei schlechter Verwaltung verbrennt Budget für irrelevante Klicks. Gut gesteuert zahlen Sie für Klicks, die zu Anfragen führen.</p>
+                    <p className="animate-up">Der Unterschied zwischen professionellem und schlechtem Ads-Management ist groß: Bei schlechter Verwaltung verbrennt Budget für irrelevante Klicks. Gut gesteuert zahlen Sie für Klicks, die zu Anfragen führen. Welche Fehler dabei am teuersten sind, habe ich in den <a href="/wissen/google-ads-fehler-lokale-unternehmen">7 teuersten Google-Ads-Fehlern lokaler Unternehmen</a> gesammelt.</p>
 
                     <div className="subpage-stats animate-up">
                         <div className="subpage-stat">

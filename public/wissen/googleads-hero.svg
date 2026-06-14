@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Teure Fehler bei Google Ads</title>
+  <desc id="desc">Eine Suchergebnisseite mit zwei Anzeigen, einem Klick auf die oberste Anzeige und einer Euro-Münze als Symbol für Klickkosten.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#020C1B" flood-opacity=".12"/>
+    </filter>
+    <clipPath id="screen">
+      <rect x="284" y="153" width="960" height="602" rx="24"/>
+    </clipPath>
+  </defs>
+
+  <!-- Supporting geometry -->
+  <path d="M128 240h92m-46-46v92M1380 207h76m-38-38v76" fill="none" stroke="#172A45" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="219" cy="671" r="8" fill="#E53935"/>
+  <circle cx="1378" cy="686" r="8" fill="#E53935"/>
+  <path d="M114 723h124M141 754h70M1354 308h132M1381 339h78" fill="none" stroke="#172A45" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Search results browser -->
+  <g filter="url(#shadow)">
+    <rect x="254" y="123" width="1020" height="662" rx="38" fill="#F5F7FA" stroke="#0A192F" stroke-width="7"/>
+  </g>
+  <g clip-path="url(#screen)">
+    <rect x="284" y="153" width="960" height="602" fill="#FFFFFF"/>
+    <rect x="284" y="153" width="960" height="82" fill="#F5F7FA"/>
+    <path d="M284 235h960" fill="none" stroke="#0A192F" stroke-width="6"/>
+
+    <!-- Browser controls and search field -->
+    <circle cx="329" cy="194" r="8" fill="#E53935"/>
+    <circle cx="361" cy="194" r="8" fill="#172A45"/>
+    <circle cx="393" cy="194" r="8" fill="#172A45"/>
+    <rect x="448" y="174" width="646" height="40" rx="20" fill="#FFFFFF" stroke="#172A45" stroke-width="4"/>
+    <circle cx="480" cy="194" r="9" fill="none" stroke="#172A45" stroke-width="4"/>
+    <path d="m487 201 10 10M520 194h248" fill="none" stroke="#172A45" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="1168" cy="194" r="6" fill="#172A45"/>
+    <circle cx="1191" cy="194" r="6" fill="#172A45"/>
+
+    <!-- Search query -->
+    <path d="M352 279h358" fill="none" stroke="#0A192F" stroke-width="9" stroke-linecap="round"/>
+    <path d="M352 305h175" fill="none" stroke="#172A45" stroke-width="5" stroke-linecap="round"/>
+    <path d="M352 330h778" fill="none" stroke="#F5F7FA" stroke-width="4"/>
+
+    <!-- Top ad -->
+    <g>
+      <rect x="334" y="352" width="824" height="126" rx="18" fill="#F5F7FA" stroke="#E53935" stroke-width="5"/>
+      <rect x="360" y="374" width="72" height="24" rx="12" fill="#E53935"/>
+      <circle cx="378" cy="386" r="4" fill="#FFFFFF"/>
+      <circle cx="394" cy="386" r="4" fill="#FFFFFF"/>
+      <circle cx="410" cy="386" r="4" fill="#FFFFFF"/>
+      <path d="M451 386h183" fill="none" stroke="#172A45" stroke-width="5" stroke-linecap="round"/>
+      <path d="M360 425h424" fill="none" stroke="#0A192F" stroke-width="8" stroke-linecap="round"/>
+      <path d="M360 452h698M1090 452h38" fill="none" stroke="#172A45" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="1123" cy="383" r="13" fill="#FFFFFF" stroke="#E53935" stroke-width="4"/>
+      <path d="M1123 377v8l6 4" fill="none" stroke="#E53935" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Second ad -->
+    <g>
+      <rect x="334" y="498" width="824" height="126" rx="18" fill="#FFFFFF" stroke="#172A45" stroke-width="4"/>
+      <rect x="360" y="520" width="72" height="24" rx="12" fill="#E53935"/>
+      <circle cx="378" cy="532" r="4" fill="#FFFFFF"/>
+      <circle cx="394" cy="532" r="4" fill="#FFFFFF"/>
+      <circle cx="410" cy="532" r="4" fill="#FFFFFF"/>
+      <path d="M451 532h160" fill="none" stroke="#172A45" stroke-width="5" stroke-linecap="round"/>
+      <path d="M360 571h366" fill="none" stroke="#0A192F" stroke-width="8" stroke-linecap="round"/>
+      <path d="M360 598h698M1090 598h38" fill="none" stroke="#172A45" stroke-width="4" stroke-linecap="round"/>
+    </g>
+
+    <!-- Organic result -->
+    <g opacity=".72">
+      <circle cx="375" cy="672" r="17" fill="#F5F7FA" stroke="#172A45" stroke-width="4"/>
+      <path d="M410 664h184M410 687h492M410 710h384" fill="none" stroke="#172A45" stroke-width="5" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Click target and cursor -->
+  <circle cx="850" cy="425" r="42" fill="none" stroke="#E53935" stroke-width="4" opacity=".22"/>
+  <circle cx="850" cy="425" r="25" fill="none" stroke="#E53935" stroke-width="4" opacity=".5"/>
+  <circle cx="850" cy="425" r="8" fill="#E53935"/>
+  <path d="m861 432 35 91 18-34 37 37 19-19-37-37 34-18Z" fill="#FFFFFF" stroke="#020C1B" stroke-width="6" stroke-linejoin="round"/>
+
+  <!-- Cost path -->
+  <path d="M975 535c84 30 126 79 151 130" fill="none" stroke="#E53935" stroke-width="5" stroke-linecap="round" stroke-dasharray="7 16"/>
+  <path d="m1112 650 17 19 5-25" fill="none" stroke="#E53935" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Euro coin -->
+  <g transform="translate(1190 650)">
+    <circle cx="0" cy="0" r="112" fill="#FFFFFF" stroke="#0A192F" stroke-width="7"/>
+    <circle cx="0" cy="0" r="88" fill="#F5F7FA" stroke="#E53935" stroke-width="5"/>
+    <path d="M35-48c-13-10-28-15-45-15-34 0-60 23-69 57m114 54c-13 10-28 15-45 15-34 0-60-23-69-57M-93-17h88M-93 18h78" fill="none" stroke="#0A192F" stroke-width="11" stroke-linecap="round"/>
+    <circle cx="-64" cy="-72" r="5" fill="#E53935"/>
+    <circle cx="64" cy="72" r="5" fill="#E53935"/>
+  </g>
+
+  <!-- Cost emphasis -->
+  <path d="M1314 590h96M1362 542v96" fill="none" stroke="#E53935" stroke-width="5" stroke-linecap="round"/>
+  <path d="M1285 797h146M1320 826h76" fill="none" stroke="#172A45" stroke-width="5" stroke-linecap="round"/>
+</svg>

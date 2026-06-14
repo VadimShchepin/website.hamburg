@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Schnelle Website lädt im Browser</title>
+  <desc id="desc">Ein Browserfenster mit Ladebalken und einem Tachometer, dessen Zeiger in den schnellen grünen Bereich zeigt.</desc>
+  <defs>
+    <clipPath id="screen">
+      <rect x="327" y="218" width="946" height="478" rx="18"/>
+    </clipPath>
+    <g id="spark" fill="#2E9E6B">
+      <path d="M0-16 5-5 16 0 5 5 0 16-5 5-16 0-5-5Z"/>
+    </g>
+  </defs>
+
+  <!-- Speed lines and supporting geometry -->
+  <g fill="none" stroke="#172A45" stroke-linecap="round">
+    <path d="M105 294h145M151 334h92M77 374h130" stroke-width="6"/>
+    <path d="M1360 279h132M1398 319h93M1362 359h174" stroke-width="6"/>
+    <path d="M190 682h104M233 718h91M1310 689h115M1348 725h69" stroke-width="5"/>
+  </g>
+  <circle cx="101" cy="436" r="8" fill="#E53935"/>
+  <circle cx="1481" cy="423" r="8" fill="#2E9E6B"/>
+  <use href="#spark" transform="translate(224 205) scale(.7)"/>
+  <use href="#spark" transform="translate(1408 205) scale(.55)"/>
+
+  <!-- Browser window -->
+  <rect x="294" y="180" width="1012" height="554" rx="34" fill="#F5F7FA" stroke="#0A192F" stroke-width="8"/>
+  <path d="M298 276h1004" fill="none" stroke="#0A192F" stroke-width="8"/>
+  <circle cx="345" cy="228" r="9" fill="#E53935"/>
+  <circle cx="380" cy="228" r="9" fill="#172A45"/>
+  <circle cx="415" cy="228" r="9" fill="#172A45"/>
+  <rect x="477" y="208" width="697" height="40" rx="20" fill="#FFFFFF" stroke="#172A45" stroke-width="4"/>
+  <path d="M507 228h207" fill="none" stroke="#172A45" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="1139" cy="228" r="7" fill="#2E9E6B"/>
+
+  <g clip-path="url(#screen)">
+    <rect x="327" y="276" width="946" height="420" fill="#FFFFFF"/>
+
+    <!-- Subtle dashboard structure -->
+    <rect x="376" y="321" width="191" height="15" rx="7.5" fill="#172A45"/>
+    <rect x="376" y="352" width="122" height="9" rx="4.5" fill="#F5F7FA" stroke="#172A45" stroke-width="3"/>
+    <path d="M1031 325h172M1070 354h133" fill="none" stroke="#172A45" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="1000" cy="326" r="8" fill="#2E9E6B"/>
+
+    <!-- Gauge shadow/base -->
+    <path d="M503 596a297 297 0 0 1 594 0" fill="none" stroke="#F5F7FA" stroke-width="76" stroke-linecap="round"/>
+    <path d="M503 596a297 297 0 0 1 54-171" fill="none" stroke="#E53935" stroke-width="42" stroke-linecap="round"/>
+    <path d="M568 411a297 297 0 0 1 367-64" fill="none" stroke="#172A45" stroke-width="42" stroke-linecap="round"/>
+    <path d="M959 358a297 297 0 0 1 138 238" fill="none" stroke="#2E9E6B" stroke-width="42" stroke-linecap="round"/>
+
+    <!-- Gauge ticks -->
+    <g fill="none" stroke="#0A192F" stroke-width="6" stroke-linecap="round">
+      <path d="M521 557l-31-7"/>
+      <path d="M555 462l-27-17"/>
+      <path d="M626 392l-18-27"/>
+      <path d="M721 357l-7-31"/>
+      <path d="M822 357l7-31"/>
+      <path d="M917 392l18-27"/>
+      <path d="M988 462l27-17"/>
+      <path d="M1022 557l31-7"/>
+    </g>
+
+    <!-- Gauge needle -->
+    <path d="M800 588 1007 430 824 616Z" fill="#0A192F"/>
+    <circle cx="800" cy="596" r="43" fill="#FFFFFF" stroke="#0A192F" stroke-width="9"/>
+    <circle cx="800" cy="596" r="15" fill="#2E9E6B"/>
+
+    <!-- Loading progress -->
+    <rect x="542" y="652" width="516" height="28" rx="14" fill="#F5F7FA" stroke="#172A45" stroke-width="4"/>
+    <rect x="549" y="659" width="466" height="14" rx="7" fill="#2E9E6B"/>
+    <circle cx="1015" cy="666" r="11" fill="#2E9E6B"/>
+  </g>
+
+  <!-- Fast response indicator -->
+  <g transform="translate(1194 577)">
+    <circle cx="86" cy="86" r="82" fill="#FFFFFF" stroke="#0A192F" stroke-width="7"/>
+    <circle cx="86" cy="86" r="62" fill="#F5F7FA"/>
+    <path d="m52 88 24 24 48-55" fill="none" stroke="#2E9E6B" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Forward motion accent -->
+  <g fill="none" stroke="#E53935" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M1184 770h148"/>
+    <path d="m1308 748 24 22-24 22"/>
+  </g>
+  <path d="M342 770h123" fill="none" stroke="#172A45" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="489" cy="770" r="8" fill="#2E9E6B"/>
+</svg>

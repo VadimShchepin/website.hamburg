@@ -115,11 +115,11 @@ export default function WebdesignHandwerkerPage() {
                         </div>
                         <div className="subpage-feature">
                             <h3>Google Maps & lokale Sichtbarkeit</h3>
-                            <p>Ihre Website wird für lokale Suchergebnisse optimiert. Zusammen mit Ihrem Google Business Profile erscheinen Sie in der Google-Suche und auf Google Maps, wo Kunden suchen.</p>
+                            <p>Ihre Website wird für <a href="/wissen/lokales-seo-hamburg-guide">lokale Suchergebnisse</a> optimiert. Zusammen mit Ihrem Google Business Profile erscheinen Sie in der Google-Suche und auf Google Maps, wo Kunden suchen.</p>
                         </div>
                         <div className="subpage-feature">
                             <h3>Schnelle Ladezeit</h3>
-                            <p>Ladezeit unter einer Sekunde, Lighthouse 90–100. Kein Warten, kein Absprung. Google belohnt schnelle Seiten mit besseren Rankings, und Ihre Kunden bleiben.</p>
+                            <p>Ladezeit unter einer Sekunde, Lighthouse 90–100. Kein Warten, kein Absprung. <a href="/wissen/warum-langsame-websites-kunden-kosten">Google belohnt schnelle Seiten</a> mit besseren Rankings, und Ihre Kunden bleiben.</p>
                         </div>
                     </div>
 

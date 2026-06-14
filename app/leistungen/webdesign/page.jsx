@@ -84,7 +84,7 @@ export default function WebdesignPage() {
                     </div>
 
                     <h2 className="animate-up">Warum viele Firmenwebsites Kunden verlieren</h2>
-                    <p className="animate-up">Eine langsame, unstrukturierte Website kostet täglich Anfragen, ohne dass Sie es merken. Google fand bereits 2016: 53 % der mobilen Nutzer verlassen eine Seite, die länger als 3 Sekunden lädt. Gleichzeitig entscheidet das Design in Millisekunden über Vertrauen oder Absprung.</p>
+                    <p className="animate-up">Eine <a href="/wissen/warum-langsame-websites-kunden-kosten">langsame, unstrukturierte Website kostet täglich Anfragen</a>, ohne dass Sie es merken. Google fand bereits 2016: 53 % der mobilen Nutzer verlassen eine Seite, die länger als 3 Sekunden lädt. Gleichzeitig entscheidet das Design in Millisekunden über Vertrauen oder Absprung.</p>
                     <p className="animate-up">Die häufigsten Probleme, die ich bei Unternehmen in Hamburg sehe:</p>
                     <ul className="check-list animate-up">
                         <li>Ladezeiten von 5–10 Sekunden statt unter 1 Sekunde</li>
@@ -110,7 +110,7 @@ export default function WebdesignPage() {
                     </div>
 
                     <h2 className="animate-up">Mein Ansatz: Website als Geschäftsinstrument</h2>
-                    <p className="animate-up">Ich verkaufe kein hübsches Design, sondern ein Werkzeug, das messbar Kunden bringt. Jede Designentscheidung folgt Daten und bewährten Conversion-Prinzipien statt Geschmack.</p>
+                    <p className="animate-up">Ich verkaufe kein hübsches Design, sondern ein Werkzeug, das messbar Kunden bringt. Jede Designentscheidung folgt Daten und bewährten <a href="/wissen/website-conversion-optimierung">Conversion-Prinzipien</a> statt Geschmack. Wer einen Online-Shop braucht, findet das passende Angebot unter <a href="/leistungen/e-commerce-entwicklung">E-Commerce-Entwicklung</a>, für laufende Sichtbarkeit gibt es die <a href="/leistungen/seo">SEO-Betreuung</a>.</p>
 
                     <div className="subpage-features-grid animate-up">
                         <div className="subpage-feature">

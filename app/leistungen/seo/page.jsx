@@ -77,7 +77,7 @@ export default function SeoPage() {
                     </div>
 
                     <h2 className="animate-up">Warum lokale Sichtbarkeit über Aufträge entscheidet</h2>
-                    <p className="animate-up">Jeden Tag suchen Menschen in Hamburg nach Leistungen wie Ihrer: "Elektriker Hamburg", "Steuerberater in der Nähe", "Webdesigner Hamburg". Diese Suchanfragen haben hohe Kaufabsicht — der Suchende braucht jetzt eine Lösung. Wer dann nicht sichtbar ist, verliert die Anfrage an den Wettbewerber, der oben steht.</p>
+                    <p className="animate-up">Jeden Tag suchen Menschen in Hamburg nach Leistungen wie Ihrer: "Elektriker Hamburg", "Steuerberater in der Nähe", "Webdesigner Hamburg". Diese Suchanfragen haben hohe Kaufabsicht — der Suchende braucht jetzt eine Lösung. Wer dann nicht sichtbar ist, verliert die Anfrage an den Wettbewerber, der oben steht. Wie lokale Rankings konkret funktionieren, steht im <a href="/wissen/lokales-seo-hamburg-guide">Leitfaden zu lokalem SEO in Hamburg</a>.</p>
 
                     <div className="subpage-stats animate-up">
                         <div className="subpage-stat">

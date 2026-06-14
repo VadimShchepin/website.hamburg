@@ -2,16 +2,17 @@ import ArticleLayout from '../../../src/components/ArticleLayout';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'Mehr Anfragen ohne mehr Traffic: Conversion-Optimierung erklart | Hamburg',
-    description: 'Warum mehr Besucher nicht die Losung ist. Wie Sie mit der gleichen Besucherzahl deutlich mehr Anfragen generieren — durch bessere Struktur und klarere Nutzerfuhrung.',
+    title: 'Mehr Anfragen ohne mehr Traffic: Conversion-Optimierung erklärt | Hamburg',
+    description: 'Warum mehr Besucher selten die Lösung ist. Wie Sie mit der gleichen Besucherzahl deutlich mehr Anfragen bekommen, durch klare Struktur, schnelle Ladezeit und eine bessere Nutzerführung.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/website-conversion-optimierung',
     },
     openGraph: {
-        title: 'Mehr Anfragen ohne mehr Traffic: Conversion-Optimierung erklart',
-        description: 'Warum mehr Besucher nicht die Losung ist. Wie Sie mit der gleichen Besucherzahl deutlich mehr Anfragen generieren.',
+        title: 'Mehr Anfragen ohne mehr Traffic: Conversion-Optimierung erklärt',
+        description: 'Warum mehr Besucher selten die Lösung ist. Wie Sie mit der gleichen Besucherzahl deutlich mehr Anfragen bekommen.',
         url: 'https://webseite.hamburg/wissen/website-conversion-optimierung',
         type: 'article',
+        images: ['https://webseite.hamburg/wissen/conversion-hero.svg'],
     },
 };
 
@@ -19,13 +20,14 @@ export default function ConversionOptimierungArticlePage() {
     const articleJsonLd = {
         '@context': 'https://schema.org',
         '@type': 'Article',
-        headline: 'Mehr Anfragen ohne mehr Traffic: Conversion-Optimierung erklart',
+        headline: 'Mehr Anfragen ohne mehr Traffic: Conversion-Optimierung erklärt',
         author: { '@type': 'Person', name: 'Vadim Shchepin', url: 'https://www.linkedin.com/in/vadim-shchepin/' },
         publisher: BUSINESS,
         datePublished: '2026-01-10',
-        dateModified: '2026-01-10',
+        dateModified: '2026-06-14',
         url: 'https://webseite.hamburg/wissen/website-conversion-optimierung',
         inLanguage: 'de',
+        image: 'https://webseite.hamburg/wissen/conversion-hero.svg',
         mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://webseite.hamburg/wissen/website-conversion-optimierung' },
     };
 
@@ -46,111 +48,136 @@ export default function ConversionOptimierungArticlePage() {
             <ArticleLayout
                 slug="website-conversion-optimierung"
                 category="CONVERSION"
-                title="Mehr Anfragen ohne mehr Traffic: Conversion-Optimierung erklart"
-                readTime="9 Min."
+                title="Mehr Anfragen ohne mehr Traffic: Conversion-Optimierung erklärt"
+                readTime="10 Min."
                 publishDate="2026-01-10"
             >
                 <p>
-                    Die meisten Unternehmen in Hamburg reagieren auf stagnierende Anfragen mit dem gleichen Reflex: mehr Werbung schalten, mehr Budget in <a href="/wissen/google-ads-fehler-lokale-unternehmen">Google Ads</a> stecken, mehr Social-Media-Posts. Das ist teuer und oft wirkungslos. Der eigentliche Hebel liegt woanders — auf der eigenen Website.
+                    Wenn die Anfragen stagnieren, ist der erste Reflex fast immer derselbe: mehr Werbung schalten, mehr Budget in <a href="/wissen/google-ads-fehler-lokale-unternehmen">Google Ads</a> stecken, mehr posten. Das ist teuer und wirkt oft kaum. Der größere Hebel liegt meistens woanders, nämlich auf der eigenen Website. Sie haben die Besucher schon. Die Frage ist, wie viele davon am Ende anrufen oder ein Formular absenden.
                 </p>
 
-                <h2>Was Conversion-Rate bedeutet und warum sie entscheidend ist</h2>
+                <figure className="article-figure">
+                    <img src="/wissen/conversion-hero.svg" alt="Illustration: Viele Website-Besucher strömen in einen Trichter, nur ein Teil wird zu echten Anfragen über Kontaktformular und Telefon" width="1600" height="900" />
+                    <figcaption>Conversion-Optimierung sorgt dafür, dass aus den vorhandenen Besuchern mehr echte Anfragen werden.</figcaption>
+                </figure>
+
+                <h2>Was die Conversion-Rate bedeutet und warum sie zählt</h2>
                 <p>
-                    Die Conversion-Rate beschreibt den Anteil der Website-Besucher, die eine gewunschte Aktion ausfuhren: ein Formular absenden, anrufen, einen Termin buchen. Eine typische Website fur lokale Dienstleister liegt bei 1-3%. Das klingt wenig, aber die Mathematik dahinter ist machtig.
+                    Die Conversion-Rate ist der Anteil der Besucher, die das tun, was Sie sich wünschen: ein Formular absenden, anrufen, einen Termin buchen. Websites lokaler Dienstleister liegen oft bei 1 bis 3 Prozent. Zum Vergleich: Über alle Branchen hinweg liegt die mittlere Conversion-Rate von Landingpages laut dem <a href="https://unbounce.com/conversion-benchmark-report/" target="_blank" rel="noopener noreferrer">Unbounce Conversion Benchmark Report</a> bei etwa 6,6 Prozent, bei Dienstleistern um die 4,6 Prozent. Nach oben ist also Luft.
                 </p>
                 <p>
-                    Ein Rechenbeispiel: Ihre Website hat 1.000 Besucher im Monat und eine Conversion-Rate von 1%. Das sind 10 Anfragen. Steigern Sie die Rate auf 2%, haben Sie 20 Anfragen — doppelt so viele, ohne einen einzigen zusatzlichen Besucher. Sie haben Ihren Umsatz verdoppelt, ohne einen Euro mehr fur Werbung auszugeben. Kein zusatzliches Ads-Budget, keine neuen Kampagnen. Nur eine bessere Website.
+                    Warum das so wichtig ist, zeigt eine einfache Rechnung. Angenommen, Ihre Website hat 1.000 Besucher im Monat und eine Conversion-Rate von 1 Prozent. Das sind 10 Anfragen. Heben Sie die Rate auf 2 Prozent, sind es 20 Anfragen. Doppelt so viele, bei exakt gleicher Besucherzahl. Kein zusätzliches Werbebudget, keine neue Kampagne, nur eine Website, die ihren Job besser macht.
                 </p>
 
-                <h2>Die grossten Conversion-Killer lokaler Unternehmen</h2>
+                <figure className="article-figure">
+                    <img src="/wissen/conversion-math.svg" alt="Infografik: 1.000 Besucher bei 1 Prozent ergeben 10 Anfragen, bei 2 Prozent 20 Anfragen, also doppelt so viele bei gleicher Besucherzahl" width="1200" height="675" loading="lazy" />
+                    <figcaption>Von 1 auf 2 Prozent: dieselben Besucher, doppelt so viele Anfragen.</figcaption>
+                </figure>
+
+                <h2>Die häufigsten Conversion-Killer lokaler Unternehmen</h2>
                 <p>
-                    Bevor Sie optimieren, mussen Sie verstehen, was Besucher davon abhalt, zu konvertieren. Nach unserer Erfahrung mit Hamburger Unternehmen sind es immer wieder dieselben Probleme.
+                    Bevor Sie optimieren, sollten Sie wissen, was Besucher abspringen lässt. Aus der Arbeit mit Hamburger Unternehmen sind es immer wieder dieselben Stellen, an denen der Trichter leckt.
                 </p>
+
+                <figure className="article-figure">
+                    <img src="/wissen/conversion-leaks.svg" alt="Diagramm: Ein Conversion-Trichter verliert Besucher an verschiedenen Stellen durch verwirrende Navigation, versteckte Kontaktdaten, zu lange Formulare, langsame Ladezeit und fehlende Vertrauenssignale" width="1200" height="675" loading="lazy" />
+                    <figcaption>An jeder dieser Stellen verlieren Sie Anfragen, oft ohne es zu merken.</figcaption>
+                </figure>
 
                 <h3>Verwirrende Navigation</h3>
                 <p>
-                    Wenn ein Besucher nicht innerhalb von 3 Sekunden versteht, was Sie anbieten und wie er Sie kontaktieren kann, ist er weg. Eine <a href="https://www.nngroup.com/articles/how-long-do-users-stay-on-web-pages/" target="_blank" rel="noopener noreferrer">Studie der Nielsen Norman Group</a> zeigt, dass die meisten Nutzer eine Seite in unter 20 Sekunden wieder verlassen. Das bedeutet: Ihre Navigation muss sofort klar sein. Keine verschachtelten Menus, keine kreativen Bezeichnungen. &quot;Leistungen&quot;, &quot;Uber uns&quot;, &quot;Kontakt&quot; — fertig.
+                    Wenn ein Besucher nicht in wenigen Sekunden versteht, was Sie anbieten und wie er Sie erreicht, ist er wieder weg. Die <a href="https://www.nngroup.com/articles/how-long-do-users-stay-on-web-pages/" target="_blank" rel="noopener noreferrer">Nielsen Norman Group</a> hat gezeigt, dass viele Nutzer eine Seite schon in den ersten 10 bis 20 Sekunden verlassen. Ihre Navigation muss also sofort verständlich sein. Keine verschachtelten Menüs, keine kreativen Wortspiele als Menüpunkte. „Leistungen", „Über uns", „Kontakt" reicht völlig.
                 </p>
 
                 <h3>Versteckte Kontaktdaten</h3>
                 <p>
-                    Es klingt banal, aber wir sehen es standig: Die Telefonnummer steht nur im Impressum. Die E-Mail-Adresse ist ein Bild statt ein klickbarer Link. Der Kontakt-Button ist im Footer versteckt. Wer es Besuchern schwer macht, Sie zu erreichen, verliert Anfragen. Jeden Tag.
+                    Es klingt banal, kommt aber ständig vor: Die Telefonnummer steht nur im Impressum. Die E-Mail-Adresse ist ein Bild statt ein klickbarer Link. Der Kontakt-Button versteckt sich im Footer. Wer es Besuchern schwer macht, verliert Anfragen. Jeden Tag.
                 </p>
 
                 <h3>Zu viele Formularfelder</h3>
                 <p>
-                    Jedes zusatzliche Feld in Ihrem Kontaktformular kostet Conversions. Das <a href="https://baymard.com/blog/checkout-usability" target="_blank" rel="noopener noreferrer">Baymard Institute</a> hat in umfangreichen Usability-Studien gezeigt, dass uberladene Formulare einer der haufigsten Grunde fur Abbruche sind. Fragen Sie sich bei jedem Feld: Brauche ich diese Information wirklich vor dem Erstgesprach? Name, E-Mail oder Telefon, Anliegen — mehr braucht ein Kontaktformular in den meisten Fallen nicht.
+                    Jedes zusätzliche Feld kostet Conversions. Das <a href="https://baymard.com/blog/checkout-usability" target="_blank" rel="noopener noreferrer">Baymard Institute</a> führt überladene Formulare in seinen Usability-Studien regelmäßig als einen der häufigsten Abbruchgründe. Auch eine Auswertung von HubSpot über mehr als 40.000 Formulare deutet in dieselbe Richtung: Weniger Felder bedeuten in der Regel mehr Abschlüsse. Fragen Sie sich bei jedem Feld ehrlich, ob Sie diese Information wirklich schon vor dem ersten Gespräch brauchen. Name, eine Kontaktmöglichkeit und das Anliegen genügen meistens.
                 </p>
 
-                <h2>CTA-Platzierung und Klarheit</h2>
+                <h2>CTA: Platzierung und Klarheit</h2>
                 <p>
-                    CTA steht fur &quot;Call to Action&quot; — die Handlungsaufforderung auf Ihrer Website. &quot;Jetzt Termin vereinbaren&quot;, &quot;Kostenlos beraten lassen&quot;, &quot;Angebot anfordern&quot;. Viele Websites haben entweder gar keinen klaren CTA oder verstecken ihn am Ende der Seite.
+                    CTA steht für „Call to Action", also die Handlungsaufforderung auf Ihrer Seite. „Jetzt Termin vereinbaren", „Kostenlos beraten lassen", „Angebot anfordern". Viele Websites haben entweder gar keinen klaren CTA oder verstecken ihn ganz unten.
                 </p>
                 <ul>
-                    <li>Der primare CTA gehort in den sichtbaren Bereich — ohne Scrollen erreichbar.</li>
-                    <li>Wiederholen Sie den CTA nach jedem inhaltlichen Abschnitt.</li>
-                    <li>Verwenden Sie konkrete Formulierungen statt &quot;Mehr erfahren&quot;. Sagen Sie, was passiert: &quot;Kostenloses Erstgesprach buchen&quot;.</li>
-                    <li>Ein CTA pro Seite als Hauptziel. Nicht drei verschiedene Aktionen gleichzeitig anbieten.</li>
+                    <li>Der wichtigste CTA gehört in den sichtbaren Bereich, erreichbar ohne Scrollen.</li>
+                    <li>Wiederholen Sie ihn nach jedem inhaltlichen Abschnitt.</li>
+                    <li>Schreiben Sie konkret, was passiert. „Kostenloses Erstgespräch buchen" ist besser als „Mehr erfahren".</li>
+                    <li>Ein Hauptziel pro Seite. Drei gleichwertige Aktionen nebeneinander lähmen die Entscheidung.</li>
                 </ul>
 
                 <h2>Vertrauen aufbauen: Trust Signals</h2>
                 <p>
-                    Besucher, die Sie nicht kennen, brauchen Grunde, Ihnen zu vertrauen. Besonders bei lokalen Dienstleistern entscheiden Vertrauenssignale uber Anfrage oder Absprung.
+                    Besucher, die Sie nicht kennen, brauchen Gründe, Ihnen zu vertrauen. Gerade bei lokalen Dienstleistern entscheidet das oft über Anfrage oder Absprung. Wie stark Bewertungen wiegen, zeigt der <a href="https://www.brightlocal.com/research/local-consumer-review-survey/" target="_blank" rel="noopener noreferrer">Local Consumer Review Survey von BrightLocal</a>: Fast alle Verbraucher lesen Online-Bewertungen über lokale Unternehmen, und eine große Mehrheit erwartet mindestens vier Sterne, bevor sie überhaupt Kontakt aufnimmt.
                 </p>
                 <ul>
-                    <li>Google-Bewertungen sichtbar auf der Website einbinden — nicht nur ein Link zum Profil.</li>
-                    <li>Echte Kundenstimmen mit Namen und idealerweise Foto.</li>
+                    <li>Google-Bewertungen direkt auf der Website einbinden, nicht nur als Link zum Profil.</li>
+                    <li>Echte Kundenstimmen mit Namen, gern mit Foto.</li>
                     <li>Referenzen oder Logos bekannter Kunden.</li>
                     <li>Zertifizierungen, Partnerschaften, Mitgliedschaften.</li>
-                    <li>Ein echtes Foto von Ihnen oder Ihrem Team. Stock-Fotos zerstoren Vertrauen.</li>
+                    <li>Ein echtes Foto von Ihnen oder Ihrem Team. Stockfotos wirken oft eher misstrauisch.</li>
                 </ul>
                 <p>
-                    Platzieren Sie Trust Signals dort, wo Besucher Entscheidungen treffen: neben dem Kontaktformular, neben der Preisangabe, neben dem CTA.
+                    Platzieren Sie diese Signale dort, wo Besucher entscheiden: neben dem Kontaktformular, neben der Preisangabe, neben dem CTA. Mehr dazu in unseren <a href="/referenzen">Referenzen</a>, wo echte Ergebnisse aus Hamburger Projekten stehen.
                 </p>
 
-                <h2>Mobile Experience: Kein Luxus, sondern Pflicht</h2>
+                <h2>Mobil: kein Luxus, sondern Pflicht</h2>
                 <p>
-                    Uber 60% der lokalen Suchanfragen kommen von Mobilgeraten. Wenn Ihre Website auf dem Smartphone schlecht funktioniert, verlieren Sie die Mehrheit Ihrer potenziellen Kunden. Mobile Optimierung bedeutet nicht nur, dass die Seite &quot;irgendwie passt&quot;. Es bedeutet:
+                    Der größere Teil der lokalen Suchanfragen kommt heute vom Smartphone. Gleichzeitig konvertieren mobile Besucher laut <a href="https://www.statista.com/statistics/439579/global-conversion-rate-by-device/" target="_blank" rel="noopener noreferrer">Statista</a> im Schnitt schlechter als Desktop-Besucher, oft nur halb so gut. Genau deshalb ist die mobile Erfahrung so wichtig: Hier ist am meisten zu verlieren. Mobile Optimierung heißt nicht, dass die Seite „irgendwie passt". Sie heißt konkret:
                 </p>
                 <ul>
-                    <li>Buttons gross genug zum Antippen — mindestens 48x48 Pixel.</li>
-                    <li>Telefonnummer als klickbarer Link (tel:-Attribut).</li>
-                    <li>Formulare, die auf kleinen Bildschirmen bedienbar sind.</li>
+                    <li>Buttons groß genug zum Antippen, mindestens etwa 48 mal 48 Pixel.</li>
+                    <li>Telefonnummer als klickbarer Link mit tel:-Attribut.</li>
+                    <li>Formulare, die sich auf kleinen Bildschirmen bequem ausfüllen lassen.</li>
                     <li>Kein horizontales Scrollen.</li>
-                    <li>Ladezeiten unter 3 Sekunden auch bei mobiler Verbindung.</li>
+                    <li>Schnelle Ladezeit auch im Mobilfunknetz.</li>
                 </ul>
 
-                <h2>Ladegeschwindigkeit als Conversion-Faktor</h2>
+                <h2>Ladegeschwindigkeit ist ein Conversion-Faktor</h2>
                 <p>
-                    Page Speed ist nicht nur ein SEO-Ranking-Faktor. Es ist ein direkter Conversion-Faktor. Laut <a href="https://web.dev/vitals/" target="_blank" rel="noopener noreferrer">Google Web Vitals</a> fuhrt jede Sekunde zusatzlicher Ladezeit zu messbaren Einbussen bei der Conversion-Rate. Eine Seite, die 5 Sekunden ladt, verliert die Halfte ihrer Besucher, bevor sie uberhaupt Inhalte sehen.
+                    Page Speed ist nicht nur ein SEO-Thema, sondern wirkt direkt auf die Conversion. Eine vielzitierte Auswertung von <a href="https://www.portent.com/blog/design-dev/site-speed-is-still-impacting-your-conversion-rate.htm" target="_blank" rel="noopener noreferrer">Portent</a> fand, dass die Conversion-Rate mit jeder zusätzlichen Sekunde Ladezeit im Bereich von 0 bis 5 Sekunden im Schnitt um rund 4,4 Prozent sinkt. Eine Seite, die in einer Sekunde lädt, konvertiert demnach etwa zweieinhalbmal so gut wie eine, die fünf Sekunden braucht.
                 </p>
                 <p>
-                    Die haufigsten Ursachen fur langsame Websites: unkomprimierte Bilder, zu viele Plugins, billiges Hosting, nicht optimierter Code. Mehr dazu in unserem Artikel <a href="/wissen/warum-langsame-websites-kunden-kosten">Warum langsame Websites Kunden kosten</a>. Testen Sie Ihre Seite mit Google PageSpeed Insights — der Test ist kostenlos und zeigt konkrete Probleme.
+                    Die üblichen Ursachen für langsame Seiten: unkomprimierte Bilder, zu viele Plugins, billiges Hosting und nicht optimierter Code. Wir gehen dem im Artikel <a href="/wissen/warum-langsame-websites-kunden-kosten">Warum langsame Websites Kunden kosten</a> genauer nach. Testen können Sie Ihre Seite kostenlos mit Google PageSpeed Insights. Wer von Grund auf schnell bauen will, findet das in unserem <a href="/leistungen/webdesign">Webdesign</a> wieder, und für Shops im Detail unter <a href="/leistungen/e-commerce-entwicklung">E-Commerce-Entwicklung</a>.
                 </p>
 
-                <h2>Praxisbeispiel aus Hamburg</h2>
+                <h2>Ein Beispiel aus Hamburg</h2>
                 <blockquote>
-                    Fur einen Beauty-Coworking-Space in Hamburg haben wir die bestehende Website um ein Buchungssystem erweitert und die Nutzerfuhrung komplett uberarbeitet. Innerhalb von 2 Monaten: 5.000 Impressionen und vollstandig ausgebuchte Arbeitsplatze — ohne einen Euro in Werbung zu investieren.
+                    Für einen Beauty-Coworking-Space in Hamburg haben wir die bestehende Website um ein Buchungssystem erweitert und die Nutzerführung neu aufgebaut. Innerhalb von zwei Monaten: rund 5.000 Impressionen und voll ausgebuchte Arbeitsplätze, ohne einen Euro Werbung.
                 </blockquote>
                 <p>
-                    Keine Magie. Kein grosses Budget. Nur eine Website, die es Besuchern leicht macht, die gewunschte Aktion auszufuhren. Klare Navigation, sichtbare Buchungsmoglichkeit, schnelle Ladezeiten, Vertrauen durch echte Bilder und Bewertungen.
+                    Da steckt keine Magie dahinter. Es war einfach eine Website, die es Besuchern leicht macht: klare Navigation, eine sichtbare Buchungsmöglichkeit, schnelle Ladezeiten und echtes Vertrauen durch Bilder und Bewertungen.
                 </p>
 
-                <h2>Wo anfangen: Die wichtigsten Schritte</h2>
+                <h2>Wo Sie anfangen</h2>
                 <p>
-                    Conversion-Optimierung ist kein einmaliges Projekt, sondern ein fortlaufender Prozess. Aber es gibt klare Prioritaten:
+                    Conversion-Optimierung ist kein einmaliges Projekt, sondern läuft mit. Die Reihenfolge ist aber klar:
                 </p>
                 <ul>
-                    <li>Kontaktmoglichkeit auf jeder Seite sichtbar machen — Telefon, Formular, beides.</li>
-                    <li>Formulare auf das Minimum reduzieren.</li>
+                    <li>Kontaktmöglichkeit auf jeder Seite sichtbar machen, Telefon und Formular.</li>
+                    <li>Formulare auf das Nötigste kürzen.</li>
                     <li>Einen klaren, wiederholten CTA pro Seite setzen.</li>
-                    <li>Ladezeit unter 3 Sekunden bringen.</li>
-                    <li>Mobile Darstellung auf echten Geraten testen, nicht nur im Browser-Tool.</li>
-                    <li>Trust Signals neben Entscheidungspunkten platzieren.</li>
+                    <li>Ladezeit unter drei Sekunden bringen.</li>
+                    <li>Die mobile Darstellung auf echten Geräten testen, nicht nur im Browser-Tool.</li>
+                    <li>Trust Signals dorthin setzen, wo entschieden wird.</li>
                 </ul>
                 <p>
-                    Messen Sie vorher und nachher. Ohne Daten ist Optimierung Raten. Google Analytics und die Google Search Console liefern Ihnen die Grundlage — kostenlos.
+                    Messen Sie vorher und nachher. Ohne Daten ist Optimierung nur Raten. Google Analytics und die Google Search Console liefern die Grundlage kostenlos. Wenn Sie wollen, schaue ich mir Ihre Seite an und sage Ihnen ehrlich, wo die größten Lecks sind: <a href="/kontakt">kostenlose Website-Analyse</a>.
                 </p>
+
+                <h2>Quellen</h2>
+                <ol>
+                    <li>Unbounce, Conversion Benchmark Report: mittlere Landingpage-Conversion ~6,6 %, Dienstleister ~4,6 %. <a href="https://unbounce.com/conversion-benchmark-report/" target="_blank" rel="nofollow noopener noreferrer">unbounce.com</a></li>
+                    <li>Portent, „Site Speed Is Still Impacting Your Conversion Rate" (2022): ~4,4 % weniger Conversion pro zusätzlicher Sekunde (0–5 s); 1 s lädt ~2,5× besser als 5 s. <a href="https://www.portent.com/blog/design-dev/site-speed-is-still-impacting-your-conversion-rate.htm" target="_blank" rel="nofollow noopener noreferrer">portent.com</a></li>
+                    <li>Nielsen Norman Group, „How Long Do Users Stay on Web Pages?": Großteil der Absprünge in den ersten 10–20 Sekunden. <a href="https://www.nngroup.com/articles/how-long-do-users-stay-on-web-pages/" target="_blank" rel="nofollow noopener noreferrer">nngroup.com</a></li>
+                    <li>Baymard Institute, Checkout- und Form-Usability: zu viele Felder als häufiger Abbruchgrund. <a href="https://baymard.com/blog/checkout-usability" target="_blank" rel="nofollow noopener noreferrer">baymard.com</a></li>
+                    <li>BrightLocal, Local Consumer Review Survey: Bewertungen als zentrales Vertrauenssignal, Mehrheit erwartet ≥ 4 Sterne. <a href="https://www.brightlocal.com/research/local-consumer-review-survey/" target="_blank" rel="nofollow noopener noreferrer">brightlocal.com</a></li>
+                    <li>Statista, Conversion Rate by Device: Desktop konvertiert im Schnitt deutlich besser als mobil. <a href="https://www.statista.com/statistics/439579/global-conversion-rate-by-device/" target="_blank" rel="nofollow noopener noreferrer">statista.com</a></li>
+                </ol>
             </ArticleLayout>
         </>
     );

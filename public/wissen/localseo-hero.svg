@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Lokale Suche in Hamburg</title>
+  <desc id="desc">Ein Smartphone mit lokalen Suchergebnissen steht vor einem stilisierten Stadtplan mit hervorgehobener Standortmarkierung.</desc>
+  <defs>
+    <g id="pin">
+      <path d="M0-34c-24 0-43 19-43 43 0 33 43 77 43 77S43 42 43 9C43-15 24-34 0-34Z" fill="#FFFFFF" stroke="#172A45" stroke-width="6" stroke-linejoin="round"/>
+      <circle cy="8" r="14" fill="#F5F7FA" stroke="#172A45" stroke-width="5"/>
+    </g>
+    <g id="smallPin">
+      <path d="M0-18c-13 0-23 10-23 23 0 18 23 42 23 42S23 23 23 5C23-8 13-18 0-18Z" fill="#FFFFFF" stroke="#172A45" stroke-width="4" stroke-linejoin="round"/>
+      <circle cy="5" r="7" fill="#172A45"/>
+    </g>
+  </defs>
+
+  <!-- Abstract Hamburg city map -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M93 176 317 89l181 59 204-72 211 93 191-62 243 99-38 230 71 189-165 159-238-41-197 91-206-76-221 62-185-137 41-216Z" fill="#F5F7FA" stroke="#0A192F" stroke-width="7"/>
+    <path d="m109 319 235-54 184 32 177-62 205 61 211-42 215 87M132 513l181-51 192 47 194-65 193 46 218-67 218 62M212 713l111-128 204 41 174-65 191 64 198-76 182 85" stroke="#FFFFFF" stroke-width="46"/>
+    <path d="m109 319 235-54 184 32 177-62 205 61 211-42 215 87M132 513l181-51 192 47 194-65 193 46 218-67 218 62M212 713l111-128 204 41 174-65 191 64 198-76 182 85" stroke="#172A45" stroke-width="5"/>
+    <path d="M302 109 344 265l-31 197 10 123M498 148l30 149-23 212 22 117M702 76l3 159-6 209 2 117M913 169l-3 127-18 194v135M1104 107l17 147-11 169-20 126M1267 174l-146 80-211 42-205-61-177 62-184-32-135-78M168 683l145-221 31-197 154-117M353 820l-40-235 10-123M574 758l-47-132-22-117M780 834l-79-273-2-117M977 743l-85-118V490M1215 784l-125-235 20-126" stroke="#172A45" stroke-width="5"/>
+    <path d="M129 397c151-12 245 28 360 13 127-17 178-86 304-62 144 27 205 124 370 95 80-14 126-51 177-96" stroke="#172A45" stroke-width="3" stroke-dasharray="5 15"/>
+    <path d="M236 741c83-58 164-80 258-66 110 17 188 75 297 61 97-13 160-77 259-87 94-10 165 25 218 68" stroke="#172A45" stroke-width="3" stroke-dasharray="5 15"/>
+  </g>
+
+  <!-- Map blocks -->
+  <g fill="#FFFFFF" stroke="#172A45" stroke-width="4" stroke-linejoin="round">
+    <path d="m376 337 92-13-8 102-105 8Z"/>
+    <path d="m555 344 93-25 7 94-105 31Z"/>
+    <path d="m745 282 107 31-11 95-99-23Z"/>
+    <path d="m950 329 111-22-13 93-103 28Z"/>
+    <path d="m371 504 91 23-17 76-92-18Z"/>
+    <path d="m555 528 98-34 4 80-84 31Z"/>
+    <path d="m742 469 103 26-8 81-96-23Z"/>
+    <path d="m936 507 113-35-8 84-92 32Z"/>
+    <path d="m1139 463 112-33 24 86-112 32Z"/>
+  </g>
+
+  <!-- Nearby locations -->
+  <use href="#pin" transform="translate(322 202) scale(.72)"/>
+  <use href="#pin" transform="translate(476 575) scale(.62)"/>
+  <use href="#pin" transform="translate(823 194) scale(.67)"/>
+  <use href="#pin" transform="translate(1080 335) scale(.62)"/>
+  <use href="#pin" transform="translate(1190 648) scale(.68)"/>
+
+  <!-- Highlighted local business -->
+  <g transform="translate(674 382)">
+    <circle cy="16" r="87" fill="#FFFFFF" opacity=".82"/>
+    <circle cy="16" r="70" fill="none" stroke="#E53935" stroke-width="4" stroke-dasharray="7 14"/>
+    <path d="M0-55c-34 0-61 27-61 61 0 47 61 109 61 109S61 53 61 6C61-28 34-55 0-55Z" fill="#E53935" stroke="#0A192F" stroke-width="7" stroke-linejoin="round"/>
+    <circle cy="5" r="20" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Connection from highlighted location to phone -->
+  <path d="M742 438c102 35 163 82 217 160" fill="none" stroke="#E53935" stroke-width="5" stroke-linecap="round" stroke-dasharray="7 17"/>
+  <circle cx="748" cy="440" r="7" fill="#E53935"/>
+
+  <!-- Smartphone -->
+  <g transform="translate(927 113)">
+    <rect width="462" height="704" rx="55" fill="#020C1B"/>
+    <rect x="17" y="17" width="428" height="670" rx="42" fill="#FFFFFF"/>
+    <path d="M176 35h110" stroke="#172A45" stroke-width="10" stroke-linecap="round"/>
+
+    <!-- Search field -->
+    <rect x="45" y="76" width="372" height="58" rx="29" fill="#F5F7FA" stroke="#172A45" stroke-width="4"/>
+    <circle cx="79" cy="105" r="11" fill="none" stroke="#172A45" stroke-width="4"/>
+    <path d="m87 113 10 10M121 105h192" stroke="#172A45" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="380" cy="105" r="7" fill="#E53935"/>
+
+    <!-- Small map -->
+    <g transform="translate(45 158)">
+      <rect width="372" height="174" rx="20" fill="#F5F7FA" stroke="#172A45" stroke-width="4"/>
+      <path d="M17 53 112 17l81 29 85-27 77 39M17 125l90-31 84 27 89-35 75 25M111 17l-4 77 5 63M193 46l-2 75-5 36M278 19l2 67-5 71" fill="none" stroke="#FFFFFF" stroke-width="18" stroke-linecap="round"/>
+      <path d="M17 53 112 17l81 29 85-27 77 39M17 125l90-31 84 27 89-35 75 25M111 17l-4 77 5 63M193 46l-2 75-5 36M278 19l2 67-5 71" fill="none" stroke="#172A45" stroke-width="3" stroke-linecap="round"/>
+      <use href="#smallPin" transform="translate(92 76) scale(.7)"/>
+      <use href="#smallPin" transform="translate(294 106) scale(.7)"/>
+      <g transform="translate(201 84)">
+        <path d="M0-25c-18 0-32 14-32 32 0 25 32 57 32 57S32 32 32 7C32-11 18-25 0-25Z" fill="#E53935" stroke="#0A192F" stroke-width="4" stroke-linejoin="round"/>
+        <circle cy="6" r="10" fill="#FFFFFF"/>
+      </g>
+    </g>
+
+    <!-- Local result cards -->
+    <g transform="translate(45 354)">
+      <rect width="372" height="104" rx="18" fill="#F5F7FA" stroke="#E53935" stroke-width="4"/>
+      <rect x="17" y="17" width="70" height="70" rx="14" fill="#E53935"/>
+      <path d="M36 70V43l16-12 16 12v27M31 70h42M45 70V55h14v15" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M111 29h150M111 52h211M111 75h120" fill="none" stroke="#172A45" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="341" cy="76" r="8" fill="#E53935"/>
+    </g>
+    <g transform="translate(45 476)" fill="#FFFFFF" stroke="#172A45" stroke-width="4">
+      <rect width="372" height="82" rx="18"/>
+      <circle cx="42" cy="41" r="23" fill="#F5F7FA"/>
+      <path d="M82 27h173M82 47h236M82 65h125" fill="none" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(45 576)" fill="#FFFFFF" stroke="#172A45" stroke-width="4">
+      <rect width="372" height="82" rx="18"/>
+      <circle cx="42" cy="41" r="23" fill="#F5F7FA"/>
+      <path d="M82 27h147M82 47h236M82 65h103" fill="none" stroke-linecap="round"/>
+    </g>
+    <path d="M193 674h76" stroke="#172A45" stroke-width="7" stroke-linecap="round"/>
+  </g>
+
+  <!-- Supporting geometry -->
+  <g fill="none" stroke="#172A45" stroke-linecap="round">
+    <path d="M125 113h88M169 69v88M1362 213h91M1408 168v90" stroke-width="5"/>
+    <path d="M1392 696h91M1417 727h42" stroke-width="5"/>
+  </g>
+  <circle cx="1397" cy="276" r="8" fill="#E53935"/>
+  <circle cx="176" cy="779" r="8" fill="#172A45"/>
+</svg>

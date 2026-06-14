@@ -4,14 +4,14 @@ import Breadcrumbs from '../../src/components/Breadcrumbs';
 import { BUSINESS, SOCIAL_LINKS } from '../../src/lib/schema';
 
 export const metadata = {
-    title: 'Uber AISEO | Webentwickler & SEO-Spezialist Hamburg',
-    description: 'Uber 10 Jahre Erfahrung in der digitalen Produktentwicklung. Webdesign, SEO und Google Ads fur lokale Unternehmen in Hamburg. Direkte Zusammenarbeit ohne Agentur-Overhead.',
+    title: 'Über AISEO | Webentwickler & SEO-Spezialist Hamburg',
+    description: 'Über 10 Jahre Erfahrung in der digitalen Produktentwicklung. Webdesign, SEO und Google Ads für lokale Unternehmen in Hamburg. Direkte Zusammenarbeit ohne Agentur-Overhead.',
     alternates: {
         canonical: 'https://webseite.hamburg/ueber-uns',
     },
     openGraph: {
-        title: 'Uber AISEO | Webentwickler & SEO-Spezialist Hamburg',
-        description: 'Uber 10 Jahre Erfahrung in der digitalen Produktentwicklung. Webdesign, SEO und Google Ads fur lokale Unternehmen in Hamburg.',
+        title: 'Über AISEO | Webentwickler & SEO-Spezialist Hamburg',
+        description: 'Über 10 Jahre Erfahrung in der digitalen Produktentwicklung. Webdesign, SEO und Google Ads für lokale Unternehmen in Hamburg.',
         url: 'https://webseite.hamburg/ueber-uns',
         type: 'profile',
     },
@@ -21,8 +21,8 @@ export default function UeberUnsPage() {
     const profileJsonLd = {
         '@context': 'https://schema.org',
         '@type': 'ProfilePage',
-        name: 'Uber AISEO Hamburg',
-        description: 'Uber 10 Jahre Erfahrung in der digitalen Produktentwicklung. Webdesign, SEO und Google Ads fur lokale Unternehmen in Hamburg.',
+        name: 'Über AISEO Hamburg',
+        description: 'Über 10 Jahre Erfahrung in der digitalen Produktentwicklung. Webdesign, SEO und Google Ads für lokale Unternehmen in Hamburg.',
         url: 'https://webseite.hamburg/ueber-uns',
         mainEntity: {
             '@type': 'Person',
@@ -45,7 +45,7 @@ export default function UeberUnsPage() {
         '@type': 'BreadcrumbList',
         itemListElement: [
             { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://webseite.hamburg/' },
-            { '@type': 'ListItem', position: 2, name: 'Uber uns', item: 'https://webseite.hamburg/ueber-uns' },
+            { '@type': 'ListItem', position: 2, name: 'Über uns', item: 'https://webseite.hamburg/ueber-uns' },
         ],
     };
 
@@ -56,11 +56,11 @@ export default function UeberUnsPage() {
 
             <section className="subpage-hero section">
                 <div className="container">
-                    <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Uber uns' }]} />
-                    <p className="section-kicker animate-up">Uber AISEO</p>
+                    <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Über uns' }]} />
+                    <p className="section-kicker animate-up">Über AISEO</p>
                     <h1 className="subpage-title animate-up">Ergebnisse statt Versprechen.</h1>
                     <p className="subpage-intro animate-up">
-                        Ich bin kein Agentur-Netzwerk mit Account-Managern und Projektleitern zwischen Ihnen und der Arbeit. Wenn Sie mit AISEO arbeiten, arbeiten Sie direkt mit mir — dem Menschen, der Ihre Website baut, Ihr SEO macht und Ihre Ads schaltet.
+                        Ich bin kein Agentur-Netzwerk mit Account-Managern und Projektleitern zwischen Ihnen und der Arbeit. Wenn Sie mit AISEO arbeiten, arbeiten Sie direkt mit mir, dem Menschen, der Ihre <Link href="/leistungen/webdesign">Website baut</Link>, Ihr <Link href="/leistungen/seo">SEO</Link> macht und Ihre <Link href="/leistungen/google-ads">Ads</Link> schaltet.
                     </p>
                 </div>
             </section>
@@ -72,7 +72,7 @@ export default function UeberUnsPage() {
                             <div className="about-photo animate-up" style={{ marginBottom: 'var(--space-md)' }}>
                                 <Image
                                     src="/referenzen/vadim_shchepin_2.webp"
-                                    alt="Vadim Shchepin — Webentwickler und SEO-Spezialist in Hamburg"
+                                    alt="Vadim Shchepin, Webentwickler und SEO-Spezialist in Hamburg"
                                     width={450}
                                     height={600}
                                     quality={85}
@@ -80,13 +80,13 @@ export default function UeberUnsPage() {
                                 />
                             </div>
                             <h2 className="animate-up">Der Hintergrund</h2>
-                            <p className="large-text animate-up">Uber 10 Jahre Erfahrung in der digitalen Produktentwicklung. Nicht bei einer Marketing-Agentur — sondern in der Praxis: Softwareentwicklung, Produktdesign, Performance-Optimierung.</p>
-                            <p className="animate-up">Ich habe gesehen, wie grosse Tech-Unternehmen digitale Produkte bauen — mit Daten, mit Struktur, mit Fokus auf Ergebnisse. Und ich habe gesehen, was die meisten Agenturen lokalen Unternehmen liefern: Templates, Bauchgefuhl und vage Reports.</p>
-                            <p className="animate-up">AISEO verbindet beides: Die Prazision und den technischen Anspruch der Tech-Welt — angewandt auf die konkreten Bedurfnisse lokaler Unternehmen in Hamburg.</p>
+                            <p className="large-text animate-up">Über 10 Jahre Erfahrung in der digitalen Produktentwicklung. Nicht bei einer Marketing-Agentur, sondern in der Praxis: Softwareentwicklung, Produktdesign und Performance-Optimierung.</p>
+                            <p className="animate-up">Ich habe gesehen, wie große Tech-Unternehmen digitale Produkte bauen, mit Daten, mit Struktur und mit Fokus auf Ergebnisse. Und ich habe gesehen, was die meisten Agenturen lokalen Unternehmen liefern: Templates, Bauchgefühl und vage Reports.</p>
+                            <p className="animate-up">AISEO verbindet beides. Die Präzision und den technischen Anspruch aus der Tech-Welt, angewandt auf die konkreten Bedürfnisse lokaler Unternehmen in Hamburg. Wie das in der Praxis aussieht, zeigen die <Link href="/referenzen">Referenzen</Link>.</p>
 
                             <h2 className="animate-up">Was mich antreibt</h2>
-                            <p className="animate-up">Ich glaube, dass jedes Unternehmen eine Website verdient, die tatsachlich funktioniert. Nicht eine, die hubsch aussieht und dann in einer Schublade verschwindet. Sondern eine, die messbar Kunden bringt — und bei der Sie jederzeit sehen konnen, was passiert.</p>
-                            <p className="animate-up">Deshalb arbeite ich datenbasiert. Deshalb zeige ich Ihnen alles. Deshalb hoere ich nicht auf zu optimieren, bis das Ergebnis stimmt.</p>
+                            <p className="animate-up">Ich glaube, dass jedes Unternehmen eine Website verdient, die wirklich funktioniert. Nicht eine, die hübsch aussieht und dann in einer Schublade verschwindet, sondern eine, die messbar Kunden bringt und bei der Sie jederzeit sehen, was passiert.</p>
+                            <p className="animate-up">Deshalb arbeite ich datenbasiert, deshalb zeige ich Ihnen alles, und deshalb höre ich nicht auf zu optimieren, bis das Ergebnis stimmt. Wie ich aus Besuchern Anfragen mache, habe ich im Leitfaden zur <Link href="/wissen/website-conversion-optimierung">Conversion-Optimierung</Link> aufgeschrieben.</p>
                         </div>
 
                         <div className="about-sidebar">
@@ -94,19 +94,19 @@ export default function UeberUnsPage() {
                                 <h3>Meine Prinzipien</h3>
                                 <div className="about-value">
                                     <strong>Ergebnis vor Stunden</strong>
-                                    <p>Ich werde nicht fur Zeit bezahlt, sondern fur Resultate. Wenn das Ergebnis nicht stimmt, arbeite ich weiter.</p>
+                                    <p>Ich werde nicht für Zeit bezahlt, sondern für Resultate. Wenn das Ergebnis nicht stimmt, arbeite ich weiter.</p>
                                 </div>
                                 <div className="about-value">
                                     <strong>Transparenz ist nicht optional</strong>
-                                    <p>Sie sehen alles: Daten, Reports, Kosten, Ergebnisse. Jederzeit. Ohne Nachfragen zu mussen.</p>
+                                    <p>Sie sehen alles: Daten, Reports, Kosten, Ergebnisse. Jederzeit, ohne nachfragen zu müssen.</p>
                                 </div>
                                 <div className="about-value">
-                                    <strong>Ihre Daten gehoren Ihnen</strong>
-                                    <p>Alle Konten, Zugange und Daten sind Ihr Eigentum. Kein Lock-in, kein Kleingedrucktes.</p>
+                                    <strong>Ihre Daten gehören Ihnen</strong>
+                                    <p>Alle Konten, Zugänge und Daten sind Ihr Eigentum. Kein Lock-in, kein Kleingedrucktes.</p>
                                 </div>
                                 <div className="about-value">
                                     <strong>Ehrlichkeit vor Umsatz</strong>
-                                    <p>Wenn etwas fur Sie keinen Sinn macht, sage ich es. Auch wenn das bedeutet, dass ich weniger verdiene.</p>
+                                    <p>Wenn etwas für Sie keinen Sinn ergibt, sage ich es. Auch wenn ich dadurch weniger verdiene.</p>
                                 </div>
                             </div>
                         </div>
@@ -129,12 +129,12 @@ export default function UeberUnsPage() {
                         <div className="about-expertise-item animate-up delay-1">
                             <span className="about-expertise-num">50+</span>
                             <h3>Projekte</h3>
-                            <p>Websites, Web-Applikationen, SEO-Kampagnen und Ads-Setups. Fur Handwerker bis Tech-Unternehmen.</p>
+                            <p>Websites, Web-Applikationen, SEO-Kampagnen und Ads-Setups. Vom Handwerker bis zum Tech-Unternehmen.</p>
                         </div>
                         <div className="about-expertise-item animate-up delay-2">
                             <span className="about-expertise-num">100</span>
                             <h3>PageSpeed Score</h3>
-                            <p>Mein technischer Anspruch. Jede Website wird fur maximale Geschwindigkeit und Performance optimiert.</p>
+                            <p>Mein technischer Anspruch. Jede Website wird auf maximale Geschwindigkeit optimiert, denn <Link href="/wissen/warum-langsame-websites-kunden-kosten">langsame Seiten kosten Kunden</Link>.</p>
                         </div>
                         <div className="about-expertise-item animate-up delay-1">
                             <span className="about-expertise-num">100%</span>
@@ -154,7 +154,7 @@ export default function UeberUnsPage() {
                     <div className="about-tech-grid animate-up">
                         <div className="about-tech-area">
                             <h3>Entwicklung</h3>
-                            <p>React, Next.js, Node.js, WordPress, Custom CMS. Moderne Frameworks fur maximale Performance und Flexibilitat.</p>
+                            <p>React, Next.js, Node.js, WordPress, Custom CMS. Moderne Frameworks für maximale Performance und Flexibilität, von der <Link href="/leistungen/webdesign">Website</Link> bis zum <Link href="/leistungen/e-commerce-entwicklung">Online-Shop</Link>.</p>
                         </div>
                         <div className="about-tech-area">
                             <h3>SEO & Analytics</h3>
@@ -166,7 +166,7 @@ export default function UeberUnsPage() {
                         </div>
                         <div className="about-tech-area">
                             <h3>AI & Zukunft</h3>
-                            <p>AI SEO, strukturierte Daten, Prompt-Optimierung, LLM-Sichtbarkeit. Die nachste Generation der Suchmaschinenoptimierung.</p>
+                            <p>AI SEO, strukturierte Daten, Prompt-Optimierung, Sichtbarkeit in LLMs. Die nächste Generation der Suchmaschinenoptimierung.</p>
                         </div>
                     </div>
                 </div>
@@ -208,9 +208,9 @@ export default function UeberUnsPage() {
             <section className="sp-cta section">
                 <div className="container">
                     <div className="cta-box bull-boundary animate-up">
-                        <p className="section-kicker">Uberzeugt?</p>
+                        <p className="section-kicker">Überzeugt?</p>
                         <h2 className="section-title">Lassen Sie uns sprechen.</h2>
-                        <p className="offer-framing">Kostenloses Erstgesprach — lernen Sie mich und meine Arbeitsweise kennen. Ich sage Ihnen ehrlich, ob und wie ich Ihnen helfen kann.</p>
+                        <p className="offer-framing">Kostenloses Erstgespräch: Lernen Sie mich und meine Arbeitsweise kennen. Ich sage Ihnen ehrlich, ob und wie ich Ihnen helfen kann.</p>
                         <div className="cta-actions mt-4">
                             <Link href="/kontakt" className="button button-primary button-large" data-umami-event="cta-click" data-umami-event-location="about-cta">Jetzt Kontakt aufnehmen</Link>
                             <a href="tel:+4917632194754" className="cta-phone" data-umami-event="phone-call" data-umami-event-location="about-cta">

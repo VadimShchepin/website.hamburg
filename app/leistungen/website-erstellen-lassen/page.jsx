@@ -169,7 +169,7 @@ export default function WebsiteErstellenLassenPage() {
                         <li><strong>Referenzen mit messbaren Ergebnissen</strong> — fragen Sie nach Ladezeiten, Rankings und Anfragen, nicht nur nach Screenshots. Wie das aussieht, zeigt <Link href="/referenzen/blitz-hamburg">die Case Study Blitz Hamburg</Link>.</li>
                         <li><strong>Eigentümerschaft prüfen</strong> — Sie sollten Domain, Hosting-Zugang und den Quellcode erhalten. Manche Anbieter halten Kunden über proprietäre Systeme gefangen.</li>
                         <li><strong>Performance der Agentur-Website testen</strong> — tragen Sie die Agentur-URL in <a href="https://pagespeed.web.dev/" target="_blank" rel="noopener noreferrer">Google PageSpeed Insights</a> ein. Wer die eigene Seite nicht optimiert, optimiert Ihre auch nicht.</li>
-                        <li><strong>Konkreter Zeitplan</strong> — ein professionelles Angebot enthält Meilensteine und einen realistischen Liefertermin. Ohne Deadline kein Ergebnis.</li>
+                        <li><strong>Konkreter Zeitplan</strong> — ein professionelles Angebot enthält Meilensteine und einen realistischen Liefertermin. Ein Angebot ohne Liefertermin ist kein verlässliches Angebot.</li>
                     </ul>
                     <p className="animate-up">Eine ausführlichere Übersicht aller Kostenfaktoren — inkl. versteckter Folgekosten für Hosting, Wartung und Updates — finden Sie im Artikel <Link href="/wissen/webdesign-kosten">Webdesign Kosten 2026</Link>.</p>
 

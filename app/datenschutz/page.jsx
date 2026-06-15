@@ -6,7 +6,7 @@ export const metadata = {
     title: 'Datenschutz',
     description: 'Datenschutzerklarung von AISEO Hamburg.',
     alternates: { canonical: `${SITE_URL}/datenschutz` },
-    robots: { index: true, follow: true },
+    robots: { index: false, follow: true },
 };
 
 const breadcrumbJsonLd = {

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Hero from '../src/components/Hero';
 import TrustStrip from '../src/components/TrustStrip';
 import CaseStudiesGrid from '../src/components/CaseStudiesGrid';
@@ -96,6 +97,37 @@ export default function HomePage() {
             <Proof />
             <QualityTransparency />
             <Cases />
+            <section className="section light-bg">
+                <div className="container">
+                    <div className="section-header text-center" style={{ marginBottom: 'var(--space-xl)' }}>
+                        <p className="section-kicker animate-up">Wissen</p>
+                        <h2 className="section-title animate-up">Guides fur Unternehmer in Hamburg.</h2>
+                    </div>
+                    <div className="wissen-grid">
+                        <Link href="/wissen/warum-langsame-websites-kunden-kosten" className="wissen-card animate-up delay-1">
+                            <div className="wissen-card-meta"><span className="wissen-card-category">WEBDESIGN</span></div>
+                            <h3 className="wissen-card-title"><span>Warum langsame Websites Sie jeden Tag Kunden kosten</span></h3>
+                            <p className="wissen-card-excerpt">Jede Sekunde Ladezeit kostet 7 % Conversion-Rate. Wie Sie die Geschwindigkeit messen und konkret verbessern.</p>
+                            <span className="wissen-card-link">Artikel lesen <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+                        </Link>
+                        <Link href="/wissen/lokales-seo-hamburg-guide" className="wissen-card animate-up delay-2">
+                            <div className="wissen-card-meta"><span className="wissen-card-category">SEO</span></div>
+                            <h3 className="wissen-card-title"><span>Lokales SEO in Hamburg: Der komplette Leitfaden fur 2026</span></h3>
+                            <p className="wissen-card-excerpt">Google Business Profile, lokale Keywords, NAP-Konsistenz — alles, was Sie brauchen, um in Hamburg gefunden zu werden.</p>
+                            <span className="wissen-card-link">Artikel lesen <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+                        </Link>
+                        <Link href="/wissen/website-conversion-optimierung" className="wissen-card animate-up delay-3">
+                            <div className="wissen-card-meta"><span className="wissen-card-category">CONVERSION</span></div>
+                            <h3 className="wissen-card-title"><span>Mehr Anfragen ohne mehr Traffic: Conversion-Optimierung erklart</span></h3>
+                            <p className="wissen-card-excerpt">Warum mehr Besucher selten die Losung ist — und wie Sie mit gleicher Besucherzahl doppelt so viele Anfragen bekommen.</p>
+                            <span className="wissen-card-link">Artikel lesen <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+                        </Link>
+                    </div>
+                    <div className="text-center" style={{ marginTop: 'var(--space-xl)' }}>
+                        <Link href="/wissen" className="button">Alle Artikel ansehen</Link>
+                    </div>
+                </div>
+            </section>
             <Cta />
         </>
     );

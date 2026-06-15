@@ -406,6 +406,45 @@ export default function ServicesPageClient() {
                 </div>
             </section>
 
+            {/* Wissen */}
+            <section className="section light-bg">
+                <div className="container">
+                    <div className="section-header text-center" style={{ marginBottom: 'var(--space-xl)' }}>
+                        <p className="section-kicker animate-up">Wissen</p>
+                        <h2 className="section-title animate-up">Artikel & Guides</h2>
+                    </div>
+                    <div className="wissen-grid animate-up">
+                        <Link href="/wissen/webdesign-kosten" className="wissen-card">
+                            <div className="wissen-card-meta"><span className="wissen-card-category">WEBDESIGN</span></div>
+                            <h3 className="wissen-card-title"><span>Webdesign Kosten 2026: Was eine professionelle Website wirklich kostet</span></h3>
+                            <p className="wissen-card-excerpt">Von 500 bis 50.000 Euro — was bestimmt den Preis? Kostenguide mit Preisbeispielen und versteckten Kosten.</p>
+                            <span className="wissen-card-link">Artikel lesen <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+                        </Link>
+                        <Link href="/wissen/lokales-seo-hamburg-guide" className="wissen-card">
+                            <div className="wissen-card-meta"><span className="wissen-card-category">SEO</span></div>
+                            <h3 className="wissen-card-title"><span>Lokales SEO in Hamburg: Der komplette Leitfaden fur 2026</span></h3>
+                            <p className="wissen-card-excerpt">Von Google Business Profile bis lokale Keywords — alles, was Sie wissen mussen, um in Hamburg gefunden zu werden.</p>
+                            <span className="wissen-card-link">Artikel lesen <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+                        </Link>
+                        <Link href="/wissen/google-ads-fehler-lokale-unternehmen" className="wissen-card">
+                            <div className="wissen-card-meta"><span className="wissen-card-category">GOOGLE ADS</span></div>
+                            <h3 className="wissen-card-title"><span>Die 7 teuersten Google Ads Fehler lokaler Unternehmen</span></h3>
+                            <p className="wissen-card-excerpt">Von falschen Keywords bis fehlendem Conversion-Tracking — diese Fehler verbrennen Ihr Werbebudget.</p>
+                            <span className="wissen-card-link">Artikel lesen <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+                        </Link>
+                        <Link href="/wissen/ai-seo-was-unternehmen-jetzt-wissen-muessen" className="wissen-card">
+                            <div className="wissen-card-meta"><span className="wissen-card-category">AI SEO</span></div>
+                            <h3 className="wissen-card-title"><span>AI SEO: Was Unternehmen jetzt wissen mussen</span></h3>
+                            <p className="wissen-card-excerpt">ChatGPT, Perplexity, Google AI Overviews verandern die Suche. Wie Sie sicherstellen, dass Ihr Unternehmen als Quelle erscheint.</p>
+                            <span className="wissen-card-link">Artikel lesen <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+                        </Link>
+                    </div>
+                    <div className="text-center" style={{ marginTop: 'var(--space-xl)' }}>
+                        <Link href="/wissen" className="button">Alle Artikel ansehen</Link>
+                    </div>
+                </div>
+            </section>
+
             {/* FAQ */}
             <section className="sp-faq section light-bg">
                 <div className="container">

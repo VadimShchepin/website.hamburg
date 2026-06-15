@@ -6,7 +6,7 @@ export const metadata = {
     title: 'Impressum',
     description: 'Impressum von AISEO Hamburg - Vadim Shchepin, Webdesign & SEO.',
     alternates: { canonical: `${SITE_URL}/impressum` },
-    robots: { index: true, follow: true },
+    robots: { index: false, follow: true },
 };
 
 const breadcrumbJsonLd = {

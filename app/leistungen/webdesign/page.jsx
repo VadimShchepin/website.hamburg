@@ -109,8 +109,8 @@ export default function WebdesignPage() {
                         </div>
                     </div>
 
-                    <h2 className="animate-up">Mein Ansatz: Website als Geschäftsinstrument</h2>
-                    <p className="animate-up">Ich verkaufe kein hübsches Design, sondern ein Werkzeug, das messbar Kunden bringt. Jede Designentscheidung folgt Daten und bewährten <a href="/wissen/website-conversion-optimierung">Conversion-Prinzipien</a> statt Geschmack. Wer einen Online-Shop braucht, findet das passende Angebot unter <a href="/leistungen/e-commerce-entwicklung">E-Commerce-Entwicklung</a>, für laufende Sichtbarkeit gibt es die <a href="/leistungen/seo">SEO-Betreuung</a>.</p>
+                    <h2 className="animate-up">Was hinter jeder Designentscheidung steckt</h2>
+                    <p className="animate-up">Jede Designentscheidung folgt Daten und bewährten <a href="/wissen/website-conversion-optimierung">Conversion-Prinzipien</a> — nicht Geschmack. Wer einen Online-Shop braucht, findet das passende Angebot unter <a href="/leistungen/e-commerce-entwicklung">E-Commerce-Entwicklung</a>, für laufende Sichtbarkeit gibt es die <a href="/leistungen/seo">SEO-Betreuung</a>.</p>
 
                     <div className="subpage-features-grid animate-up">
                         <div className="subpage-feature">
@@ -167,7 +167,7 @@ export default function WebdesignPage() {
                     <div className="subpage-process animate-up">
                         <div className="sp-step"><span className="sp-step-num">1</span><div><strong>Erstgespräch & Analyse</strong><p>Wir besprechen Ziele, Zielgruppe und Wettbewerber. Ich analysiere Ihren Markt und zeige Chancen auf. Kostenlos und unverbindlich.</p></div></div>
                         <div className="sp-step"><span className="sp-step-num">2</span><div><strong>Konzept & Wireframe</strong><p>Auf Basis der Analyse erstelle ich Seitenstruktur und Conversion-Pfad. Sie sehen den Aufbau, bevor das Design beginnt.</p></div></div>
-                        <div className="sp-step"><span className="sp-step-num">3</span><div><strong>Design & Entwicklung</strong><p>Pixel-genaue Umsetzung mit Fokus auf Performance und Nutzererlebnis. Sie erhalten regelmäßige Updates und geben jederzeit Feedback.</p></div></div>
+                        <div className="sp-step"><span className="sp-step-num">3</span><div><strong>Design & Entwicklung</strong><p>Saubere Umsetzung mit Fokus auf Performance und Nutzererlebnis. Sie erhalten regelmäßige Updates und geben jederzeit Feedback.</p></div></div>
                         <div className="sp-step"><span className="sp-step-num">4</span><div><strong>Testing & Launch</strong><p>Tests auf allen Geräten und Browsern, Tracking-Setup, Go-live und Übergabe mit Dokumentation.</p></div></div>
                     </div>
 

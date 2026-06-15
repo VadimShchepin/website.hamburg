@@ -83,7 +83,7 @@ export default function WebdesignAerztePage() {
                     </div>
 
                     <h2 className="animate-up">Warum Arztpraxen eine moderne Website brauchen</h2>
-                    <p className="animate-up">Das Patientenverhalten hat sich verschoben. Laut Bitkom (2024) hat die Hälfte der Deutschen schon mindestens einmal online einen Arzttermin vereinbart — 2019 waren es erst 26 %. Mehr noch: 27 % suchen ihre Praxis gezielt danach aus, ob sie eine Online-Terminvereinbarung anbietet. Plattformen wie Doctolib und Jameda werden dabei immer dominanter in den Suchergebnissen.</p>
+                    <p className="animate-up">Laut Bitkom (2024) hat die Hälfte der Deutschen schon mindestens einmal online einen Arzttermin vereinbart — 2019 waren es erst 26 %. 27 % wählen ihre Praxis gezielt danach aus, ob Online-Terminbuchung angeboten wird. Plattformen wie Doctolib und Jameda dominieren die Suchergebnisse zunehmend.</p>
                     <p className="animate-up">Die häufigsten Probleme, die ich bei Praxis-Websites in Hamburg sehe:</p>
                     <ul className="check-list animate-up">
                         <li>Keine oder schlechte Google-Sichtbarkeit — Patienten finden die Praxis nicht</li>
@@ -143,7 +143,7 @@ export default function WebdesignAerztePage() {
                         </div>
                         <div className="subpage-feature">
                             <h3>Bewertungen-Integration</h3>
-                            <p>Positive Bewertungen von Jameda, Google und anderen Plattformen direkt einbinden. 57 % der Patienten messen Bewertungen bei der Arztwahl große Bedeutung bei (Bitkom) — Vertrauen entsteht vor dem ersten Besuch.</p>
+                            <p>Positive Bewertungen von Jameda, Google und anderen Plattformen direkt einbinden. 57 % der Patienten messen Bewertungen bei der Arztwahl große Bedeutung bei (Bitkom).</p>
                         </div>
                     </div>
 

@@ -53,7 +53,7 @@ export default function ConversionOptimierungArticlePage() {
                 publishDate="2026-01-10"
             >
                 <p>
-                    Wenn die Anfragen stagnieren, ist der erste Reflex fast immer derselbe: mehr Werbung schalten, mehr Budget in <a href="/wissen/google-ads-fehler-lokale-unternehmen">Google Ads</a> stecken, mehr posten. Das ist teuer und wirkt oft kaum. Der größere Hebel liegt meistens woanders, nämlich auf der eigenen Website. Sie haben die Besucher schon. Die Frage ist, wie viele davon am Ende anrufen oder ein Formular absenden.
+                    Wenn die Anfragen stagnieren, ist der erste Reflex fast immer derselbe: mehr Werbung schalten, mehr Budget in <a href="/wissen/google-ads-fehler-lokale-unternehmen">Google Ads</a> stecken, mehr posten. Das kostet und bringt oft weniger als erwartet. Dabei liegt der Engpass meistens schon auf der eigenen Website. Die Besucher sind da — aber zu viele gehen wieder, ohne etwas zu tun.
                 </p>
 
                 <figure className="article-figure">
@@ -112,7 +112,7 @@ export default function ConversionOptimierungArticlePage() {
 
                 <h2>Vertrauen aufbauen: Trust Signals</h2>
                 <p>
-                    Besucher, die Sie nicht kennen, brauchen Gründe, Ihnen zu vertrauen. Gerade bei lokalen Dienstleistern entscheidet das oft über Anfrage oder Absprung. Wie stark Bewertungen wiegen, zeigt der <a href="https://www.brightlocal.com/research/local-consumer-review-survey/" target="_blank" rel="noopener noreferrer">Local Consumer Review Survey von BrightLocal</a>: Fast alle Verbraucher lesen Online-Bewertungen über lokale Unternehmen, und eine große Mehrheit erwartet mindestens vier Sterne, bevor sie überhaupt Kontakt aufnimmt.
+                    Besucher, die Sie nicht kennen, brauchen Gründe, Ihnen zu vertrauen. Gerade bei lokalen Dienstleistern entscheidet das oft über Anfrage oder Absprung. Laut dem <a href="https://www.brightlocal.com/research/local-consumer-review-survey/" target="_blank" rel="noopener noreferrer">Local Consumer Review Survey von BrightLocal</a> lesen 98 Prozent der Verbraucher Online-Bewertungen über lokale Unternehmen, und die Mehrheit erwartet mindestens vier Sterne, bevor sie Kontakt aufnimmt.
                 </p>
                 <ul>
                     <li>Google-Bewertungen direkt auf der Website einbinden, nicht nur als Link zum Profil.</li>
@@ -147,10 +147,10 @@ export default function ConversionOptimierungArticlePage() {
 
                 <h2>Ein Beispiel aus Hamburg</h2>
                 <blockquote>
-                    Für einen Beauty-Coworking-Space in Hamburg haben wir die bestehende Website um ein Buchungssystem erweitert und die Nutzerführung neu aufgebaut. Innerhalb von zwei Monaten: rund 5.000 Impressionen und voll ausgebuchte Arbeitsplätze, ohne einen Euro Werbung.
+                    Für einen Beauty-Coworking-Space in Hamburg haben wir die Nutzerführung neu aufgebaut und ein Buchungssystem integriert. Zwei Monate später: rund 5.000 Impressionen und ausgebuchte Arbeitsplätze — kein Werbebudget eingesetzt.
                 </blockquote>
                 <p>
-                    Da steckt keine Magie dahinter. Es war einfach eine Website, die es Besuchern leicht macht: klare Navigation, eine sichtbare Buchungsmöglichkeit, schnelle Ladezeiten und echtes Vertrauen durch Bilder und Bewertungen.
+                    Keine Magie. Nur eine Website, die Besuchern nicht im Weg steht: klare Navigation, sichtbare Buchungsmöglichkeit, schnelle Ladezeiten und echtes Vertrauen durch Bilder und Bewertungen.
                 </p>
 
                 <h2>Wo Sie anfangen</h2>

@@ -113,7 +113,7 @@ export default function LokalesSeoHamburgArticlePage() {
                     NAP steht für Name, Address, Phone. Diese drei Angaben müssen überall im Netz identisch sein, Zeichen für Zeichen. Nicht „Straße" auf der eigenen Website und „Str." bei Google. Nicht „040-123456" hier und „+49 40 123456" dort.
                 </p>
                 <blockquote>
-                    Ein Sanitärbetrieb in Hamburg hatte drei verschiedene Adressen in verschiedenen Verzeichnissen. Nach der Bereinigung ging es in sechs Wochen von Seite 3 auf Position 4.
+                    Ein Sanitärbetrieb in Hamburg hatte leicht abweichende Adressvarianten in verschiedenen Verzeichnissen — mal ausgeschriebene Straße, mal „Str.", mal andere Hausnummer. Nach der Bereinigung verbesserte sich das Local-Pack-Ranking innerhalb von zwei Monaten spürbar.
                 </blockquote>
                 <p>
                     Das ist kein Einzelfall. Widersprüchliche NAP-Daten gehören zu den häufigsten Gründen, warum lokale Unternehmen schlechter ranken als erwartet. Google verliert das Vertrauen, wenn es sich widersprechende Informationen findet. Prüfen Sie mindestens diese Plattformen auf einheitliche Einträge:
@@ -139,7 +139,7 @@ export default function LokalesSeoHamburgArticlePage() {
                     <li>Regionale Portale wie hamburg-magazin.de.</li>
                 </ul>
                 <p>
-                    Qualität schlägt Quantität. Zwanzig hochwertige, gepflegte Einträge bringen mehr als 200 automatisch erzeugte Listings mit veralteten Daten.
+                    Zwanzig hochwertige, gepflegte Einträge bringen mehr als 200 automatisch erzeugte Listings mit veralteten Daten.
                 </p>
 
                 <h2>Bewertungen: Wie viele braucht man und wie bekommt man sie?</h2>

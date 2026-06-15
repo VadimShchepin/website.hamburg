@@ -89,9 +89,8 @@ export default function WebdesignKostenArticlePage() {
                         Dazu kommen Fotografie oder Stockfotos, Grafiken und eventuell Videoproduktion.
                     </li>
                     <li>
-                        <strong>SEO-Optimierung:</strong> Eine Website ohne Suchmaschinenoptimierung ist wie ein
-                        Laden ohne Schild. Technisches SEO, Keyword-Recherche, Meta-Daten und strukturierte Daten
-                        sollten von Anfang an eingeplant werden — nicht als nachtr&auml;gliches Add-on.
+                        <strong>SEO-Optimierung:</strong> Ohne Suchmaschinenoptimierung zeigt Google Ihre Seite weit hinten oder gar nicht. Technisches SEO, Keyword-Recherche, Meta-Daten und strukturierte Daten
+                        geh&ouml;ren von Anfang an ins Projekt, nicht als nachtr&auml;gliches Add-on.
                     </li>
                     <li>
                         <strong>Responsiveness und Performance:</strong> &Uuml;ber 60 Prozent aller Suchanfragen
@@ -201,9 +200,9 @@ export default function WebdesignKostenArticlePage() {
 
                 <h2>Wann lohnt sich eine g&uuml;nstige und wann eine teure Website?</h2>
                 <p>
-                    Die ehrliche Antwort: Es kommt darauf an, was die Website f&uuml;r Ihr Gesch&auml;ft
-                    leisten soll. Nicht jedes Unternehmen braucht eine ma&szlig;geschneiderte Website f&uuml;r
-                    10.000 Euro. Aber auch nicht jedes kommt mit einem Baukasten aus.
+                    Es kommt darauf an, was die Website f&uuml;r Ihr Gesch&auml;ft leisten soll. Nicht jedes
+                    Unternehmen braucht eine ma&szlig;geschneiderte Website f&uuml;r 10.000 Euro. Aber auch
+                    nicht jedes kommt mit einem Baukasten aus.
                 </p>
                 <p>
                     <strong>Ein Baukasten reicht, wenn:</strong> Sie ein Hobby-Projekt oder einen
@@ -217,8 +216,7 @@ export default function WebdesignKostenArticlePage() {
                     Erscheinungsbild professionell und vertrauensw&uuml;rdig sein muss.
                 </p>
                 <p>
-                    Der entscheidende Punkt: Eine Website ist keine Ausgabe, sondern eine Investition. Wenn
-                    ein Handwerksbetrieb &uuml;ber seine Website monatlich 5 neue Auftr&auml;ge mit
+                    Wenn ein Handwerksbetrieb &uuml;ber seine Website monatlich 5 neue Auftr&auml;ge mit
                     durchschnittlich 2.000 Euro Umsatz gewinnt, hat sich eine 8.000-Euro-Website in weniger
                     als einem Monat amortisiert. Laut einer Studie von <a href="https://www.standoutdigitalmarketing.com/" target="_blank" rel="noopener noreferrer">StandOut Digital Marketing</a> generieren
                     professionell optimierte Websites bis zu 3x mehr Anfragen als Standard-Templates. Mehr zu den

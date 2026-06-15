@@ -142,11 +142,11 @@ export default function ReferenzenPage() {
                                 <div className="wissen-card-meta">
                                     <span className="wissen-card-category">{study.category}</span>
                                 </div>
+                                <p style={{ fontWeight: 700, color: 'var(--color-accent, #2563eb)', fontSize: '0.8rem', letterSpacing: '0.06em', textTransform: 'uppercase', margin: '0 0 var(--space-xs)' }}>{study.metric}</p>
                                 <h2 className="wissen-card-title">
-                                    <span>{study.client}: {study.title}</span>
+                                    <span>{study.client}</span>
                                 </h2>
                                 <p className="wissen-card-excerpt">{study.excerpt}</p>
-                                <p className="wissen-card-excerpt" style={{ fontWeight: 600, marginTop: 'var(--space-xs)' }}>{study.metric}</p>
                                 <span className="wissen-card-link">
                                     Case Study lesen
                                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>

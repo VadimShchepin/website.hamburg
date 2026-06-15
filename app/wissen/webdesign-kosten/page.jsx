@@ -106,6 +106,50 @@ export default function WebdesignKostenArticlePage() {
                     von Website zu Ihrem Unternehmen und Ihren Zielen passt.
                 </p>
 
+                <div className="subpage-table-wrap">
+                    <table className="subpage-table">
+                        <thead>
+                            <tr>
+                                <th>Option</th>
+                                <th>Einmalige Kosten</th>
+                                <th>Laufend / Monat</th>
+                                <th>Performance</th>
+                                <th>Geeignet f&uuml;r</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Baukasten</strong> (Wix, Squarespace)</td>
+                                <td>0 &euro;</td>
+                                <td>15&ndash;50 &euro;</td>
+                                <td>mittel</td>
+                                <td>Hobby, Vereine, schneller Einstieg</td>
+                            </tr>
+                            <tr>
+                                <td><strong>WordPress-Theme</strong></td>
+                                <td>500&ndash;2.000 &euro;</td>
+                                <td>20&ndash;80 &euro;</td>
+                                <td>mittel, pflegeabh&auml;ngig</td>
+                                <td>Standard-Websites, Content-Seiten</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Individuelle Website</strong></td>
+                                <td>2.000&ndash;10.000 &euro;</td>
+                                <td>10&ndash;50 &euro;</td>
+                                <td>sehr hoch (Lighthouse 90&ndash;100)</td>
+                                <td>Lokale Unternehmen, Dienstleister</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Komplexe Unternehmenswebsite</strong></td>
+                                <td>10.000&ndash;50.000+ &euro;</td>
+                                <td>100&ndash;500 &euro;</td>
+                                <td>hoch (abh&auml;ngig vom Anbieter)</td>
+                                <td>Gro&szlig;unternehmen, komplexe Prozesse</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
                 <h3>Baukasten-Website (Wix, Squarespace, Jimdo)</h3>
                 <p><strong>Kosten:</strong> 0 bis 50 Euro pro Monat</p>
                 <p>

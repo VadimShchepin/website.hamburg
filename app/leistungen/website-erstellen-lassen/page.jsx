@@ -68,9 +68,9 @@ export default function WebsiteErstellenLassenPage() {
                         { label: 'Website erstellen lassen' },
                     ]} />
                     <p className="section-kicker animate-up">Website erstellen lassen</p>
-                    <h1 className="subpage-title animate-up">Website erstellen lassen in Hamburg — professionell, schnell, messbar.</h1>
+                    <h1 className="subpage-title animate-up">Website erstellen lassen in Hamburg — so treffen Sie die richtige Entscheidung.</h1>
                     <p className="subpage-intro animate-up">
-                        Die Auswahl ist unübersichtlich: Agenturen mit unklaren Preisen, Freelancer mit wochenlanger Funkstille, Baukästen ohne Individualität. Bei mir bekommen Sie eine individuell programmierte Website mit Festpreis, klarem Zeitplan und messbaren Ergebnissen.
+                        Wer noch nie eine Website beauftragt hat, steht vor echten Fragen: Baukasten oder Agentur? Was ist ein realistischer Preis? Woran erkenne ich einen seriösen Anbieter? Diese Seite beantwortet das ehrlich — und zeigt, wie ich arbeite.
                     </p>
                     <ServiceMeta />
                 </div>
@@ -158,17 +158,30 @@ export default function WebsiteErstellenLassenPage() {
                     <div className="subpage-process animate-up">
                         <div className="sp-step"><span className="sp-step-num">1</span><div><strong>Erstgespräch & Analyse</strong><p>Wir besprechen Ihre Ziele, Zielgruppe und den Wettbewerb. Ich analysiere Ihre aktuelle Situation und zeige konkret, was möglich ist. Kostenlos und unverbindlich.</p></div></div>
                         <div className="sp-step"><span className="sp-step-num">2</span><div><strong>Konzept & Struktur</strong><p>Auf Basis der Analyse erstelle ich Seitenstruktur, Conversion-Pfad und ein Wireframe. Sie sehen den Aufbau, bevor das Design beginnt.</p></div></div>
-                        <div className="sp-step"><span className="sp-step-num">3</span><div><strong>Design & Entwicklung</strong><p>Pixel-genaue Umsetzung mit Fokus auf Performance und Nutzererlebnis. Regelmäßige Updates und Feedback-Runden — Sie sind jederzeit eingebunden.</p></div></div>
+                        <div className="sp-step"><span className="sp-step-num">3</span><div><strong>Design & Entwicklung</strong><p>Saubere Umsetzung mit Fokus auf Performance und Nutzererlebnis. Regelmäßige Updates und Feedback-Runden — Sie sind jederzeit eingebunden.</p></div></div>
                         <div className="sp-step"><span className="sp-step-num">4</span><div><strong>Testing & Launch</strong><p>Tests auf allen Geräten und Browsern. Tracking-Setup, Performance-Optimierung, Go-live und Übergabe mit Einweisung.</p></div></div>
                     </div>
 
-                    <h2 className="animate-up">Warum Unternehmen in Hamburg mir vertrauen</h2>
-                    <p className="animate-up">Ich arbeite seit über 10 Jahren mit Unternehmen in Hamburg und liefere Ergebnisse, die messbar sind. Kein Agentur-Overhead, klare Ansprache, nachvollziehbare Resultate.</p>
+                    <h2 className="animate-up">Worauf Sie bei der Anbieterauswahl achten sollten</h2>
+                    <p className="animate-up">Der häufigste Fehler: Preis als einziges Kriterium. Eine Agentur, die 1.500 Euro weniger verlangt, aber eine langsame Website ohne SEO liefert, kostet Sie am Ende mehr — nämlich entgangene Anfragen. Achten Sie auf diese Punkte:</p>
                     <ul className="check-list animate-up">
-                        <li>Lighthouse 90–100 — nachweisbar bei jedem Projekt</li>
-                        <li>Über 10 Jahre Erfahrung in Webentwicklung und Conversion-Optimierung</li>
-                        <li>Transparente Festpreise — Sie wissen vorher, was es kostet</li>
-                        <li>Referenzprojekt <Link href="/referenzen/blitz-hamburg">Blitz Hamburg</Link>: komplette Website mit messbaren Conversion-Steigerungen</li>
+                        <li><strong>Klare Preise vor Projektstart</strong> — seriöse Anbieter nennen Festpreise oder realistische Spannen. Wer im Erstgespräch keine Hausnummer nennt, ist kein gutes Zeichen.</li>
+                        <li><strong>Referenzen mit messbaren Ergebnissen</strong> — fragen Sie nach Ladezeiten, Rankings und Anfragen, nicht nur nach Screenshots. Wie das aussieht, zeigt <Link href="/referenzen/blitz-hamburg">die Case Study Blitz Hamburg</Link>.</li>
+                        <li><strong>Eigentümerschaft prüfen</strong> — Sie sollten Domain, Hosting-Zugang und den Quellcode erhalten. Manche Anbieter halten Kunden über proprietäre Systeme gefangen.</li>
+                        <li><strong>Performance der Agentur-Website testen</strong> — tragen Sie die Agentur-URL in <a href="https://pagespeed.web.dev/" target="_blank" rel="noopener noreferrer">Google PageSpeed Insights</a> ein. Wer die eigene Seite nicht optimiert, optimiert Ihre auch nicht.</li>
+                        <li><strong>Konkreter Zeitplan</strong> — ein professionelles Angebot enthält Meilensteine und einen realistischen Liefertermin. Ohne Deadline kein Ergebnis.</li>
+                    </ul>
+                    <p className="animate-up">Eine ausführlichere Übersicht aller Kostenfaktoren — inkl. versteckter Folgekosten für Hosting, Wartung und Updates — finden Sie im Artikel <Link href="/wissen/webdesign-kosten">Webdesign Kosten 2026</Link>.</p>
+
+                    <h2 className="animate-up">Checkliste: Was Sie vor dem Erstgespräch vorbereiten sollten</h2>
+                    <p className="animate-up">Je besser Sie vorbereitet sind, desto schneller kommen wir zu einem konkreten Angebot. Diese Punkte helfen:</p>
+                    <ul className="check-list animate-up">
+                        <li>Ziel der Website: Anfragen generieren, online verkaufen, Praxis vorstellen, Produkt launchen?</li>
+                        <li>Zielgruppe: Wer soll die Website finden und was soll er als nächstes tun?</li>
+                        <li>Wettbewerber: Zwei bis drei Websites, die Ihnen gefallen — und zwei, die nicht funktionieren.</li>
+                        <li>Content: Haben Sie Texte, Fotos und Logo bereits? Oder muss das alles noch entstehen?</li>
+                        <li>Budget: Grober Rahmen (ab 2.000 € für einen One-Pager, ab 3.000 € für mehrseitig).</li>
+                        <li>Zeitplan: Gibt es einen konkreten Launch-Termin (Messe, Eröffnung, Kampagne)?</li>
                     </ul>
 
                     <div className="subpage-sources animate-up">

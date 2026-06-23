@@ -21,10 +21,10 @@ export const metadata = {
 };
 
 const faqItems = [
-    { q: 'Was kostet eine professionelle Website?', a: 'Ein One-Pager startet ab 2.000 €, eine mehrseitige Website ab 3.000 €. Sie erhalten vor Projektstart ein verbindliches Festpreis-Angebot — keine versteckten Kosten. Der finale Preis hängt vom Umfang ab (Seitenzahl, CMS, Shop, Sonderfunktionen).' },
+    { q: 'Was kostet eine professionelle Website?', a: 'Ein One-Pager startet ab 2.000 €, eine mehrseitige Website ab 3.000 €. Sie erhalten vor Projektstart ein verbindliches Festpreis-Angebot, keine versteckten Kosten. Der finale Preis hängt vom Umfang ab (Seitenzahl, CMS, Shop, Sonderfunktionen).' },
     { q: 'Wie lange dauert die Erstellung einer Website?', a: 'Ein One-Pager ist in 2–3 Wochen fertig, eine mehrseitige Website in 4–6 Wochen. Komplexere Projekte mit Shop oder Mitgliederbereich dauern 6–10 Wochen. Der genaue Zeitrahmen hängt vom Umfang und Ihrem Feedback-Tempo ab.' },
     { q: 'Nutzen Sie Baukastensysteme wie Wix oder Squarespace?', a: 'Nein. Jede Website wird individuell programmiert. Das garantiert maximale Performance, volle gestalterische Freiheit und Unabhängigkeit von Plattform-Einschränkungen. Wenn Sie Inhalte selbst pflegen wollen, binde ich ein CMS wie WordPress oder einen Headless-Ansatz ein.' },
-    { q: 'Was bedeutet ein Lighthouse-Score von 90–100?', a: 'Lighthouse ist Googles Werkzeug zur Bewertung von Performance, SEO und Zugänglichkeit, auf einer Skala von 0–100 (sichtbar in den Chrome DevTools und in PageSpeed Insights). Viele Agentur-Websites erreichen nur 30–60 Punkte. Meine Seiten liegen regelmäßig bei 90–100 — das bedeutet schnelles Laden, bessere Rankings und höhere Conversion.' },
+    { q: 'Was bedeutet ein Lighthouse-Score von 90–100?', a: 'Lighthouse ist Googles Werkzeug zur Bewertung von Performance, SEO und Zugänglichkeit, auf einer Skala von 0–100 (sichtbar in den Chrome DevTools und in PageSpeed Insights). Viele Agentur-Websites erreichen nur 30–60 Punkte. Meine Seiten liegen regelmäßig bei 90–100, und das bedeutet schnelles Laden, bessere Rankings und höhere Conversion.' },
     { q: 'Was sind Core Web Vitals?', a: 'Core Web Vitals sind Googles offizielle Kennzahlen für Nutzererlebnis: LCP (Ladezeit des größten Elements, gut: unter 2,5 s), INP (Reaktionszeit auf Eingaben, gut: unter 200 ms) und CLS (Layout-Stabilität, gut: unter 0,1). Sie fließen in das Google-Ranking ein. Jede Website baue ich so, dass sie alle drei Werte im grünen Bereich erreicht.' },
     { q: 'Ist die Website SEO-optimiert?', a: 'Ja. Jede Website enthält eine SEO-Grundoptimierung: saubere URL-Struktur, Meta-Tags, strukturierte Daten (Schema.org), semantisches HTML, Bildoptimierung und Mobile-First-Entwicklung. Für laufende Betreuung gibt es das separate SEO-Paket.' },
     { q: 'Kann ich die Website später selbst bearbeiten?', a: 'Ja, wenn Sie das wünschen. Ich richte ein CMS ein und schule Sie in der Bedienung. Sie können Texte, Bilder und Seiten eigenständig anpassen, ohne technische Kenntnisse.' },
@@ -80,7 +80,7 @@ export default function WebdesignPage() {
                 <div className="container subpage-body">
                     <h2 className="animate-up">Was kostet professionelles Webdesign?</h2>
                     <div className="subpage-takeaway animate-up">
-                        <p>Eine professionelle Website kostet bei mir <strong>ab 2.000 €</strong> (One-Pager) bzw. <strong>ab 3.000 €</strong> (mehrseitig), jeweils zum Festpreis. Sie wird individuell programmiert — kein Baukasten, kein gekauftes WordPress-Theme — und erreicht Lighthouse-Werte von 90–100 sowie gute Core Web Vitals. Ein One-Pager ist in 2–3 Wochen fertig, eine mehrseitige Website in 4–6 Wochen.</p>
+                        <p>Eine professionelle Website kostet bei mir <strong>ab 2.000 €</strong> (One-Pager) bzw. <strong>ab 3.000 €</strong> (mehrseitig), jeweils zum Festpreis. Sie wird individuell programmiert, ohne Baukasten und ohne gekauftes WordPress-Theme, und erreicht Lighthouse-Werte von 90–100 sowie gute Core Web Vitals. Ein One-Pager ist in 2–3 Wochen fertig, eine mehrseitige Website in 4–6 Wochen.</p>
                     </div>
 
                     <h2 className="animate-up">Warum viele Firmenwebsites Kunden verlieren</h2>
@@ -88,10 +88,10 @@ export default function WebdesignPage() {
                     <p className="animate-up">Die häufigsten Probleme, die ich bei Unternehmen in Hamburg sehe:</p>
                     <ul className="check-list animate-up">
                         <li>Ladezeiten von 5–10 Sekunden statt unter 1 Sekunde</li>
-                        <li>Keine klare Handlungsaufforderung — Besucher wissen nicht, was sie tun sollen</li>
+                        <li>Keine klare Handlungsaufforderung, sodass Besucher nicht wissen, was sie tun sollen</li>
                         <li>Nicht mobiloptimiert, obwohl ein Großteil der Zugriffe über Smartphones kommt</li>
                         <li>Veraltetes Design, das Vertrauen zerstört statt aufbaut</li>
-                        <li>Kein Tracking — niemand weiß, ob die Website überhaupt funktioniert</li>
+                        <li>Kein Tracking, sodass niemand weiß, ob die Website überhaupt funktioniert</li>
                     </ul>
 
                     <div className="subpage-stats animate-up">
@@ -101,7 +101,7 @@ export default function WebdesignPage() {
                         </div>
                         <div className="subpage-stat">
                             <span className="subpage-stat-value">90–100</span>
-                            <span className="subpage-stat-label">Lighthouse-Score meiner Websites — viele Agentur-Seiten liegen bei 30–60</span>
+                            <span className="subpage-stat-label">Lighthouse-Score meiner Websites; viele Agentur-Seiten liegen bei 30–60</span>
                         </div>
                         <div className="subpage-stat">
                             <span className="subpage-stat-value">&lt; 2,5 s</span>
@@ -110,12 +110,12 @@ export default function WebdesignPage() {
                     </div>
 
                     <h2 className="animate-up">Was hinter jeder Designentscheidung steckt</h2>
-                    <p className="animate-up">Jede Designentscheidung folgt Daten und bewährten <a href="/wissen/website-conversion-optimierung">Conversion-Prinzipien</a> — nicht Geschmack. Wer einen Online-Shop braucht, findet das passende Angebot unter <a href="/leistungen/e-commerce-entwicklung">E-Commerce-Entwicklung</a>, für laufende Sichtbarkeit gibt es die <a href="/leistungen/seo">SEO-Betreuung</a>.</p>
+                    <p className="animate-up">Jede Designentscheidung folgt Daten und bewährten <a href="/wissen/website-conversion-optimierung">Conversion-Prinzipien</a>, nicht dem Geschmack. Wer einen Online-Shop braucht, findet das passende Angebot unter <a href="/leistungen/e-commerce-entwicklung">E-Commerce-Entwicklung</a>, für laufende Sichtbarkeit gibt es die <a href="/leistungen/seo">SEO-Betreuung</a>.</p>
 
                     <div className="subpage-features-grid animate-up">
                         <div className="subpage-feature">
                             <h3>Performance-First</h3>
-                            <p>Jede Website wird auf Geschwindigkeit gebaut. Lighthouse-Werte von 90–100 und grüne Core Web Vitals (LCP, INP, CLS) sind Standard, nicht Ausnahme — das senkt Absprünge und verbessert das Ranking.</p>
+                            <p>Jede Website wird auf Geschwindigkeit gebaut. Lighthouse-Werte von 90–100 und grüne Core Web Vitals (LCP, INP, CLS) sind Standard, nicht Ausnahme. Das senkt Absprünge und verbessert das Ranking.</p>
                         </div>
                         <div className="subpage-feature">
                             <h3>Conversion-Architektur</h3>
@@ -123,7 +123,7 @@ export default function WebdesignPage() {
                         </div>
                         <div className="subpage-feature">
                             <h3>Individueller Code</h3>
-                            <p>Kein WordPress-Theme, kein Baukasten. Individuell programmierter Code gibt volle Kontrolle über Performance, Design und Funktionalität — ohne Plattform-Abhängigkeit.</p>
+                            <p>Kein WordPress-Theme, kein Baukasten. Individuell programmierter Code gibt volle Kontrolle über Performance, Design und Funktionalität, ganz ohne Plattform-Abhängigkeit.</p>
                         </div>
                         <div className="subpage-feature">
                             <h3>SEO-Fundament</h3>
@@ -175,7 +175,7 @@ export default function WebdesignPage() {
                         <h2>Quellen</h2>
                         <ol>
                             <li>Google, „The Need for Mobile Speed" (2016): 53 % Abbruch bei Ladezeit über 3 s. <a href="https://www.thinkwithgoogle.com/" rel="nofollow noopener" target="_blank">thinkwithgoogle.com</a></li>
-                            <li>Google, Core Web Vitals — Schwellenwerte für LCP, INP, CLS. <a href="https://web.dev/articles/vitals" rel="nofollow noopener" target="_blank">web.dev/articles/vitals</a></li>
+                            <li>Google, Core Web Vitals: Schwellenwerte für LCP, INP, CLS. <a href="https://web.dev/articles/vitals" rel="nofollow noopener" target="_blank">web.dev/articles/vitals</a></li>
                         </ol>
                     </div>
                 </div>
@@ -183,7 +183,7 @@ export default function WebdesignPage() {
 
             <FaqSection title="Fragen zu Webdesign & Entwicklung" items={faqItems} />
             <RelatedServices exclude="webdesign" />
-            <ServiceCta text="Lassen Sie uns über Ihre neue Website sprechen. Kostenloses Erstgespräch — ich analysiere Ihre aktuelle Situation und zeige Ihnen konkret, was möglich ist." />
+            <ServiceCta text="Lassen Sie uns über Ihre neue Website sprechen. Im kostenlosen Erstgespräch analysiere ich Ihre aktuelle Situation und zeige Ihnen konkret, was möglich ist." />
         </>
     );
 }

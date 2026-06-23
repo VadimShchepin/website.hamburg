@@ -71,7 +71,7 @@ export default function ManetecCaseStudy() {
                         Manetec: Wenn Schadlingsbekampfung auf kunstliche Intelligenz trifft. Klingt absurd. Funktioniert hervorragend.
                     </h1>
                     <p className="subpage-intro animate-up">
-                        Eine Website fur professionelle Schadlingsbekampfung in Hamburger Hotels und Restaurants — mit KI-gestutzter Risikoanalyse, HACCP-Compliance und einem Design, das so ernst und prazise ist wie die Arbeit selbst. Weil auch Schadlingsbekampfer eine Website verdienen, die nicht nach 2008 aussieht.
+                        Eine Website fur professionelle Schadlingsbekampfung in Hamburger Hotels und Restaurants, mit KI-gestutzter Risikoanalyse, HACCP-Compliance und einem Design, das so ernst und prazise ist wie die Arbeit selbst. Weil auch Schadlingsbekampfer eine Website verdienen, die nicht nach 2008 aussieht.
                     </p>
                     <div className="article-byline animate-up">
                         Von <Link href="/ueber-uns">Vadim Shchepin</Link> &middot; 3. April 2026
@@ -105,7 +105,7 @@ export default function ManetecCaseStudy() {
                     <div className="subpage-features-grid animate-up">
                         <div className="subpage-feature">
                             <h3>KI-Risikoanalyse</h3>
-                            <p>Das Herzstuck: Ein KI-Assistent, der den Betriebstyp, die Grosse und spezifische Faktoren abfragt und dann eine professionelle Risikoeinschatzung generiert. Risikostufe (niedrig/mittel/hoch/kritisch), Zusammenfassung und konkrete Empfehlungen — alles via Gemini 2.5-flash mit JSON-Schema-Validierung.</p>
+                            <p>Das Herzstuck: Ein KI-Assistent, der den Betriebstyp, die Grosse und spezifische Faktoren abfragt und dann eine professionelle Risikoeinschatzung generiert. Risikostufe (niedrig/mittel/hoch/kritisch), Zusammenfassung und konkrete Empfehlungen, alles via Gemini 2.5-flash mit JSON-Schema-Validierung.</p>
                         </div>
                         <div className="subpage-feature">
                             <h3>Industrielle Asthetik</h3>
@@ -117,13 +117,13 @@ export default function ManetecCaseStudy() {
                         </div>
                         <div className="subpage-feature">
                             <h3>Framer Motion Animationen</h3>
-                            <p>Subtile, professionelle Entrance-Animationen. Nichts Flashiges — das ware der Branche unangemessen. Aber genug Bewegung, um die Seite lebendig wirken zu lassen.</p>
+                            <p>Subtile, professionelle Entrance-Animationen. Nichts Flashiges, das ware der Branche unangemessen. Aber genug Bewegung, um die Seite lebendig wirken zu lassen.</p>
                         </div>
                     </div>
 
                     <h2 className="animate-up">Warum KI hier Sinn macht</h2>
                     <p className="animate-up">
-                        Man konnte argumentieren: Braucht ein Schadlingsbekampfer wirklich KI auf der Website? Die Antwort: Ja. Und zwar nicht als Gimmick, sondern als Lead-Qualifizierung. Ein Hotelmanager, der den KI-Assistenten nutzt und &bdquo;hohes Risiko&ldquo; angezeigt bekommt, hat plotzlich echte Dringlichkeit — und greift zum Telefon. Das ist kein Chatbot-Widget. Das ist ein Verkaufsinstrument, das sich als nutzliches Tool tarnt.
+                        Man konnte argumentieren: Braucht ein Schadlingsbekampfer wirklich KI auf der Website? Die Antwort: Ja. Und zwar nicht als Gimmick, sondern als Lead-Qualifizierung. Ein Hotelmanager, der den KI-Assistenten nutzt und &bdquo;hohes Risiko&ldquo; angezeigt bekommt, hat plotzlich echte Dringlichkeit und greift zum Telefon. Das ist kein Chatbot-Widget. Das ist ein Verkaufsinstrument, das sich als nutzliches Tool tarnt.
                     </p>
                     <p className="animate-up">
                         Die strukturierte JSON-Ausgabe (mit Schema-Validierung durch Gemini) stellt sicher, dass die Antworten immer im richtigen Format ankommen: Risikostufe als Enum, Zusammenfassung als Fliesstext, Empfehlungen als Liste. Keine halluzinierten Tabellen, keine kaputten Layouts. Vorhersagbar, zuverlassig, professionell.
@@ -132,7 +132,7 @@ export default function ManetecCaseStudy() {
                     <div className="cs-takeaway animate-up">
                         <h3>Das Wichtigste</h3>
                         <p>
-                            KI ist kein Feature, das man auf jede Website kleben sollte. Aber wenn sie ein echtes Problem lost — in diesem Fall: &bdquo;Wie dringend brauche ich Schadlingsbekampfung?&ldquo; — dann ist sie mehr als ein Gimmick. Sie ist ein Wettbewerbsvorteil. Manetec zeigt: Auch in &bdquo;traditionellen&ldquo; Branchen kann KI den Unterschied machen. Man muss sie nur richtig einsetzen.
+                            KI ist kein Feature, das man auf jede Website kleben sollte. Aber wenn sie ein echtes Problem lost, in diesem Fall: &bdquo;Wie dringend brauche ich Schadlingsbekampfung?&ldquo;, dann ist sie mehr als ein Gimmick. Sie ist ein Wettbewerbsvorteil. Manetec zeigt: Auch in &bdquo;traditionellen&ldquo; Branchen kann KI den Unterschied machen. Man muss sie nur richtig einsetzen.
                         </p>
                     </div>
                 </div>
@@ -147,7 +147,7 @@ export default function ManetecCaseStudy() {
                     <div className="subpage-features-grid animate-up">
                         <Link href="/leistungen/webdesign" className="subpage-feature" style={{ textDecoration: 'none' }}>
                             <h3>Webdesign & Entwicklung</h3>
-                            <p>Individuelle Websites mit KI-Integration — fur jede Branche.</p>
+                            <p>Individuelle Websites mit KI-Integration, fur jede Branche.</p>
                         </Link>
                         <Link href="/leistungen/google-ads" className="subpage-feature" style={{ textDecoration: 'none' }}>
                             <h3>Google Ads</h3>
@@ -157,7 +157,7 @@ export default function ManetecCaseStudy() {
                 </div>
             </section>
 
-            <ServiceCta text="Website fur Ihr Unternehmen? Auch wenn Ihre Branche nicht &bdquo;sexy&ldquo; klingt — gerade dann macht professionelles Webdesign den grossten Unterschied. Sprechen wir daruber." />
+            <ServiceCta text="Website fur Ihr Unternehmen? Auch wenn Ihre Branche nicht &bdquo;sexy&ldquo; klingt: gerade dann macht professionelles Webdesign den grossten Unterschied. Sprechen wir daruber." />
         </>
     );
 }

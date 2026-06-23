@@ -1,7 +1,7 @@
 export const ARTICLES = [
     {
         slug: 'case-study-fotogalerie-performance',
-        title: 'Case Study: 1.200 Fotos pro Album — wie 2.408 versteckte Requests eine Galerie ausbremsten',
+        title: 'Case Study: 1.200 Fotos pro Album und wie 2.408 versteckte Requests eine Galerie ausbremsten',
         category: 'PERFORMANCE',
         readTime: '9 Min.',
     },
@@ -19,7 +19,7 @@ export const ARTICLES = [
     },
     {
         slug: 'lokales-seo-hamburg-guide',
-        title: 'Lokales SEO in Hamburg — Der komplette Leitfaden',
+        title: 'Lokales SEO in Hamburg: Der komplette Leitfaden',
         category: 'SEO',
         readTime: '8 Min.',
     },
@@ -37,7 +37,7 @@ export const ARTICLES = [
     },
     {
         slug: 'website-conversion-optimierung',
-        title: 'Mehr Anfragen ohne mehr Traffic — Conversion-Optimierung',
+        title: 'Mehr Anfragen ohne mehr Traffic: Conversion-Optimierung',
         category: 'CONVERSION',
         readTime: '6 Min.',
     },

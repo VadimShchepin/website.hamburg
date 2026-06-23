@@ -52,7 +52,7 @@ export default function ServicesPageClient() {
                         Klare Leistungen. Faire Preise. Echte Ergebnisse.
                     </h1>
                     <p className="large-text animate-up" style={{ maxWidth: 680 }}>
-                        Keine versteckten Kosten, keine vagen Versprechen. Sie wissen genau, was Sie bekommen — und konnen die Ergebnisse jederzeit einsehen. Ich arbeite datenbasiert, kommuniziere transparent und optimiere, bis das Ergebnis stimmt.
+                        Keine versteckten Kosten, keine vagen Versprechen. Sie wissen genau, was Sie bekommen, und konnen die Ergebnisse jederzeit einsehen. Ich arbeite datenbasiert, kommuniziere transparent und optimiere, bis das Ergebnis stimmt.
                     </p>
                 </div>
             </section>
@@ -92,20 +92,20 @@ export default function ServicesPageClient() {
                     <div className="sp-service-layout">
                         <div className="sp-service-content">
                             <p className="section-kicker animate-up">Webdesign & Entwicklung</p>
-                            <h2 className="section-title animate-up">Eine Website, die fur Sie arbeitet — nicht nur existiert.</h2>
+                            <h2 className="section-title animate-up">Eine Website, die fur Sie arbeitet, nicht nur existiert.</h2>
                             <p className="large-text animate-up">
-                                Ihre Website ist Ihr wichtigster Vertriebsmitarbeiter. Sie arbeitet 24/7, empfangt jeden Besucher und entscheidet in Sekunden, ob aus Interesse eine Anfrage wird. Ich baue Websites, die genau das tun — schnell, klar strukturiert und auf Conversion optimiert.
+                                Ihre Website ist Ihr wichtigster Vertriebsmitarbeiter. Sie arbeitet 24/7, empfangt jeden Besucher und entscheidet in Sekunden, ob aus Interesse eine Anfrage wird. Ich baue Websites, die genau das tun: schnell, klar strukturiert und auf Conversion optimiert.
                             </p>
 
                             <div className="sp-what-you-get animate-up">
                                 <h3>Was Sie bekommen</h3>
                                 <ul className="check-list">
-                                    <li>Individuelles Design — kein Template, kein Baukasten</li>
+                                    <li>Individuelles Design, kein Template, kein Baukasten</li>
                                     <li>Blitzschnelle Ladezeiten (PageSpeed 90-100)</li>
                                     <li>Klare Nutzerfuhrung mit durchdachtem Conversion-Pfad</li>
                                     <li>Responsive auf allen Geraten</li>
                                     <li>SEO-Grundoptimierung inklusive</li>
-                                    <li>CMS-Integration oder statische Seite — je nach Bedarf</li>
+                                    <li>CMS-Integration oder statische Seite, je nach Bedarf</li>
                                     <li>SSL, DSGVO-konform, technisch einwandfrei</li>
                                 </ul>
                             </div>
@@ -212,7 +212,7 @@ export default function ServicesPageClient() {
 
                             <div className="sp-transparency-box animate-up">
                                 <h3>So sehen Sie Ihre Ergebnisse</h3>
-                                <p>Sie erhalten Zugang zu einem Live-Dashboard. Dort sehen Sie jederzeit: aktuelle Rankings, organischen Traffic, Sichtbarkeits-Entwicklung und konkrete Leads, die uber die Suche kommen. Kein Raten — nur Fakten.</p>
+                                <p>Sie erhalten Zugang zu einem Live-Dashboard. Dort sehen Sie jederzeit: aktuelle Rankings, organischen Traffic, Sichtbarkeits-Entwicklung und konkrete Leads, die uber die Suche kommen. Kein Raten, nur Fakten.</p>
                             </div>
                         </div>
 
@@ -220,7 +220,7 @@ export default function ServicesPageClient() {
                             <div className="sp-price-card bull-boundary animate-up">
                                 <p className="sp-price-label">SEO Monatlich</p>
                                 <div className="sp-price-value">ab 1.000 &euro;/Mt.</div>
-                                <p className="sp-price-desc">Laufende Optimierung fur nachhaltige Sichtbarkeit. Mindestlaufzeit 3 Monate — danach monatlich kundbar.</p>
+                                <p className="sp-price-desc">Laufende Optimierung fur nachhaltige Sichtbarkeit. Mindestlaufzeit 3 Monate, danach monatlich kundbar.</p>
                                 <ul className="sp-price-includes">
                                     <li>Technisches SEO</li>
                                     <li>On-Page-Optimierung</li>
@@ -230,7 +230,7 @@ export default function ServicesPageClient() {
                                     <li>Live-Dashboard-Zugang</li>
                                 </ul>
                             </div>
-                            <p className="sp-price-note animate-up">Erste Ergebnisse typischerweise nach 4-8 Wochen. Volle Wirkung nach 3-6 Monaten. Wenn die Ergebnisse nicht stimmen, arbeite ich weiter — ohne Aufpreis.</p>
+                            <p className="sp-price-note animate-up">Erste Ergebnisse typischerweise nach 4-8 Wochen. Volle Wirkung nach 3-6 Monaten. Wenn die Ergebnisse nicht stimmen, arbeite ich weiter, ohne Aufpreis.</p>
                         </div>
                     </div>
                 </div>
@@ -263,7 +263,7 @@ export default function ServicesPageClient() {
 
                             <div className="sp-transparency-box animate-up">
                                 <h3>Warum das jetzt relevant ist</h3>
-                                <p>AI-Suche wachst monatlich. Unternehmen, die heute ihre Inhalte fur AI optimieren, sichern sich einen Vorsprung, der spater schwer einzuholen ist. Es ist das SEO von morgen — und es beginnt jetzt.</p>
+                                <p>AI-Suche wachst monatlich. Unternehmen, die heute ihre Inhalte fur AI optimieren, sichern sich einen Vorsprung, der spater schwer einzuholen ist. Es ist das SEO von morgen, und es beginnt jetzt.</p>
                             </div>
                         </div>
 
@@ -296,7 +296,7 @@ export default function ServicesPageClient() {
                             <p className="section-kicker animate-up">Google & Local Ads</p>
                             <h2 className="section-title animate-up">Sofort sichtbar. Sofort Anfragen.</h2>
                             <p className="large-text animate-up">
-                                SEO braucht Zeit. Ads liefern sofort. Ich schalte Google Ads und Local Services Ads, die genau die Menschen erreichen, die gerade aktiv nach Ihrer Dienstleistung suchen. Jeder Euro wird getrackt — Sie sehen genau, was er bringt.
+                                SEO braucht Zeit. Ads liefern sofort. Ich schalte Google Ads und Local Services Ads, die genau die Menschen erreichen, die gerade aktiv nach Ihrer Dienstleistung suchen. Jeder Euro wird getrackt. Sie sehen genau, was er bringt.
                             </p>
 
                             <div className="sp-what-you-get animate-up">
@@ -308,13 +308,13 @@ export default function ServicesPageClient() {
                                     <li>Conversion Tracking: Jeder Anruf, jede Anfrage wird gemessen</li>
                                     <li>Laufende Optimierung: Budgets, Keywords, Gebote</li>
                                     <li>Monatlicher Report mit Kosten pro Lead und ROI</li>
-                                    <li>Voller Zugang zu Ihrem Google Ads Konto — es gehort Ihnen</li>
+                                    <li>Voller Zugang zu Ihrem Google Ads Konto, es gehort Ihnen</li>
                                 </ul>
                             </div>
 
                             <div className="sp-transparency-box animate-up">
                                 <h3>Ihr Geld, Ihre Kontrolle</h3>
-                                <p>Ihr Werbebudget lauft uber Ihr eigenes Google-Konto. Sie sehen jeden Cent, jede Kampagne, jedes Ergebnis. Ich verstecke nichts. Wenn eine Kampagne nicht performt, sage ich es Ihnen — und optimiere, bis es stimmt.</p>
+                                <p>Ihr Werbebudget lauft uber Ihr eigenes Google-Konto. Sie sehen jeden Cent, jede Kampagne, jedes Ergebnis. Ich verstecke nichts. Wenn eine Kampagne nicht performt, sage ich es Ihnen und optimiere, bis es stimmt.</p>
                             </div>
                         </div>
 
@@ -332,7 +332,7 @@ export default function ServicesPageClient() {
                                     <li>Monatlicher Performance-Report</li>
                                 </ul>
                             </div>
-                            <p className="sp-price-note animate-up">Empfohlenes Mindest-Werbebudget: 500 &euro;/Mt. Je nach Branche und Region konnen auch kleinere Budgets sinnvoll sein — das klaren wir im Erstgesprach.</p>
+                            <p className="sp-price-note animate-up">Empfohlenes Mindest-Werbebudget: 500 &euro;/Mt. Je nach Branche und Region konnen auch kleinere Budgets sinnvoll sein. Das klaren wir im Erstgesprach.</p>
                         </div>
                     </div>
                 </div>
@@ -346,9 +346,9 @@ export default function ServicesPageClient() {
                     <div className="sp-service-layout">
                         <div className="sp-service-content">
                             <p className="section-kicker animate-up">Website-Audit</p>
-                            <h2 className="section-title animate-up">Wissen, wo Sie stehen — bevor Sie investieren.</h2>
+                            <h2 className="section-title animate-up">Wissen, wo Sie stehen, bevor Sie investieren.</h2>
                             <p className="large-text animate-up">
-                                Bevor wir uber Losungen sprechen, analysiere ich Ihre aktuelle Situation. Was funktioniert? Was kostet Sie Kunden? Wo liegt das grosste Potenzial? Das Audit ist kostenlos, ehrlich und konkret — mit klaren Handlungsempfehlungen, die Sie auch ohne mich umsetzen konnen.
+                                Bevor wir uber Losungen sprechen, analysiere ich Ihre aktuelle Situation. Was funktioniert? Was kostet Sie Kunden? Wo liegt das grosste Potenzial? Das Audit ist kostenlos, ehrlich und konkret, mit klaren Handlungsempfehlungen, die Sie auch ohne mich umsetzen konnen.
                             </p>
 
                             <div className="sp-what-you-get animate-up">
@@ -390,7 +390,7 @@ export default function ServicesPageClient() {
                         <div className="sp-commitment-item animate-up">
                             <div className="sp-commitment-num">01</div>
                             <h3>Ergebnis zahlt</h3>
-                            <p>Ich arbeite fur Ergebnisse, nicht fur Stunden. Wenn das Ergebnis nicht stimmt, optimiere ich weiter — ohne Aufpreis, bis Sie zufrieden sind.</p>
+                            <p>Ich arbeite fur Ergebnisse, nicht fur Stunden. Wenn das Ergebnis nicht stimmt, optimiere ich weiter, ohne Aufpreis, bis Sie zufrieden sind.</p>
                         </div>
                         <div className="sp-commitment-item animate-up delay-1">
                             <div className="sp-commitment-num">02</div>
@@ -417,19 +417,19 @@ export default function ServicesPageClient() {
                         <Link href="/wissen/webdesign-kosten" className="wissen-card">
                             <div className="wissen-card-meta"><span className="wissen-card-category">WEBDESIGN</span></div>
                             <h3 className="wissen-card-title"><span>Webdesign Kosten 2026: Was eine professionelle Website wirklich kostet</span></h3>
-                            <p className="wissen-card-excerpt">Von 500 bis 50.000 Euro — was bestimmt den Preis? Kostenguide mit Preisbeispielen und versteckten Kosten.</p>
+                            <p className="wissen-card-excerpt">Von 500 bis 50.000 Euro: Was bestimmt den Preis? Kostenguide mit Preisbeispielen und versteckten Kosten.</p>
                             <span className="wissen-card-link">Artikel lesen <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
                         </Link>
                         <Link href="/wissen/lokales-seo-hamburg-guide" className="wissen-card">
                             <div className="wissen-card-meta"><span className="wissen-card-category">SEO</span></div>
                             <h3 className="wissen-card-title"><span>Lokales SEO in Hamburg: Der komplette Leitfaden fur 2026</span></h3>
-                            <p className="wissen-card-excerpt">Von Google Business Profile bis lokale Keywords — alles, was Sie wissen mussen, um in Hamburg gefunden zu werden.</p>
+                            <p className="wissen-card-excerpt">Von Google Business Profile bis lokale Keywords: alles, was Sie wissen mussen, um in Hamburg gefunden zu werden.</p>
                             <span className="wissen-card-link">Artikel lesen <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
                         </Link>
                         <Link href="/wissen/google-ads-fehler-lokale-unternehmen" className="wissen-card">
                             <div className="wissen-card-meta"><span className="wissen-card-category">GOOGLE ADS</span></div>
                             <h3 className="wissen-card-title"><span>Die 7 teuersten Google Ads Fehler lokaler Unternehmen</span></h3>
-                            <p className="wissen-card-excerpt">Von falschen Keywords bis fehlendem Conversion-Tracking — diese Fehler verbrennen Ihr Werbebudget.</p>
+                            <p className="wissen-card-excerpt">Von falschen Keywords bis fehlendem Conversion-Tracking: diese Fehler verbrennen Ihr Werbebudget.</p>
                             <span className="wissen-card-link">Artikel lesen <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
                         </Link>
                         <Link href="/wissen/ai-seo-was-unternehmen-jetzt-wissen-muessen" className="wissen-card">
@@ -463,11 +463,11 @@ export default function ServicesPageClient() {
                         />
                         <FaqItem
                             q="Was passiert, wenn die Ergebnisse nicht stimmen?"
-                            a="Dann arbeite ich weiter. Ich bin nicht zufrieden, wenn Sie es nicht sind. Das bedeutet: Analyse, Anpassung, Optimierung — bis das Ergebnis stimmt. Das ist keine Floskel, das ist mein Geschaftsmodell."
+                            a="Dann arbeite ich weiter. Ich bin nicht zufrieden, wenn Sie es nicht sind. Das bedeutet: Analyse, Anpassung, Optimierung, bis das Ergebnis stimmt. Das ist keine Floskel, das ist mein Geschaftsmodell."
                         />
                         <FaqItem
                             q="Brauche ich SEO und Ads gleichzeitig?"
-                            a="Nicht unbedingt. Ads liefern sofort Ergebnisse, SEO baut langfristig organischen Traffic auf. Ideal ist eine Kombination — aber wir finden im Gesprach heraus, was fur Ihre Situation am sinnvollsten ist."
+                            a="Nicht unbedingt. Ads liefern sofort Ergebnisse, SEO baut langfristig organischen Traffic auf. Ideal ist eine Kombination, aber wir finden im Gesprach heraus, was fur Ihre Situation am sinnvollsten ist."
                         />
                         <FaqItem
                             q="Was ist der Unterschied zwischen SEO und AI SEO?"
@@ -475,11 +475,11 @@ export default function ServicesPageClient() {
                         />
                         <FaqItem
                             q="Kann ich die Ergebnisse wirklich jederzeit einsehen?"
-                            a="Ja. Sie bekommen Zugang zu Live-Dashboards fur SEO-Rankings, Traffic und Ads-Performance. Dazu monatliche Reports mit Zusammenfassung. Kein Warten auf Updates — die Daten sind immer da."
+                            a="Ja. Sie bekommen Zugang zu Live-Dashboards fur SEO-Rankings, Traffic und Ads-Performance. Dazu monatliche Reports mit Zusammenfassung. Kein Warten auf Updates, die Daten sind immer da."
                         />
                         <FaqItem
                             q="Warum sollte ich nicht einfach eine gunstigere Agentur nehmen?"
-                            a="Konnen Sie. Aber fragen Sie vorher: Bekommen Sie Zugang zu allen Daten? Arbeiten die weiter, wenn Ergebnisse ausbleiben? Ist der Code individuell oder ein Template? Sie zahlen bei mir nicht fur Overhead — sondern fur Ergebnisse und direkte Kommunikation ohne Umwege."
+                            a="Konnen Sie. Aber fragen Sie vorher: Bekommen Sie Zugang zu allen Daten? Arbeiten die weiter, wenn Ergebnisse ausbleiben? Ist der Code individuell oder ein Template? Sie zahlen bei mir nicht fur Overhead, sondern fur Ergebnisse und direkte Kommunikation ohne Umwege."
                         />
                     </div>
                 </div>
@@ -492,7 +492,7 @@ export default function ServicesPageClient() {
                         <p className="section-kicker">Bereit?</p>
                         <h2 className="section-title">Lassen Sie uns sprechen.</h2>
                         <p className="offer-framing">
-                            Kostenloses Erstgesprach oder Website-Audit — Sie entscheiden. Erzahlen Sie mir von Ihrem Unternehmen und ich sage Ihnen ehrlich, wo das Potenzial liegt.
+                            Kostenloses Erstgesprach oder Website-Audit, Sie entscheiden. Erzahlen Sie mir von Ihrem Unternehmen und ich sage Ihnen ehrlich, wo das Potenzial liegt.
                         </p>
                         <div className="cta-actions mt-4">
                             <Link href="/kontakt" className="button button-primary button-large" data-umami-event="cta-click" data-umami-event-location="services-cta">

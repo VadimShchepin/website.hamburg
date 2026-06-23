@@ -53,7 +53,7 @@ export default function ConversionOptimierungArticlePage() {
                 publishDate="2026-01-10"
             >
                 <p>
-                    Wenn die Anfragen stagnieren, ist der erste Reflex fast immer derselbe: mehr Werbung schalten, mehr Budget in <a href="/wissen/google-ads-fehler-lokale-unternehmen">Google Ads</a> stecken, mehr posten. Das kostet und bringt oft weniger als erwartet. Dabei liegt der Engpass meistens schon auf der eigenen Website. Die Besucher sind da — aber zu viele gehen wieder, ohne etwas zu tun.
+                    Wenn die Anfragen stagnieren, ist der erste Reflex fast immer derselbe: mehr Werbung schalten, mehr Budget in <a href="/wissen/google-ads-fehler-lokale-unternehmen">Google Ads</a> stecken, mehr posten. Das kostet und bringt oft weniger als erwartet. Dabei liegt der Engpass meistens schon auf der eigenen Website. Die Besucher sind da, aber zu viele gehen wieder, ohne etwas zu tun.
                 </p>
 
                 <figure className="article-figure">
@@ -147,7 +147,7 @@ export default function ConversionOptimierungArticlePage() {
 
                 <h2>Ein Beispiel aus Hamburg</h2>
                 <blockquote>
-                    Für einen Beauty-Coworking-Space in Hamburg haben wir die Nutzerführung neu aufgebaut und ein Buchungssystem integriert. Zwei Monate später: rund 5.000 Impressionen und ausgebuchte Arbeitsplätze — kein Werbebudget eingesetzt.
+                    Für einen Beauty-Coworking-Space in Hamburg haben wir die Nutzerführung neu aufgebaut und ein Buchungssystem integriert. Zwei Monate später: rund 5.000 Impressionen und ausgebuchte Arbeitsplätze, ganz ohne Werbebudget.
                 </blockquote>
                 <p>
                     Keine Magie. Nur eine Website, die Besuchern nicht im Weg steht: klare Navigation, sichtbare Buchungsmöglichkeit, schnelle Ladezeiten und echtes Vertrauen durch Bilder und Bewertungen.

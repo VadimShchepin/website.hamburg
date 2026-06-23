@@ -107,7 +107,7 @@ export default function BlitzHamburgCaseStudy() {
                         Blitz Hamburg: ROI in 7 Wochen, heute ~40 Kunden pro Monat.
                     </h1>
                     <p className="subpage-intro animate-up">
-                        Ein Hamburger Handwerksbetrieb fur Entrumpelung und Sanierung — komplett neue Website mit KI-Kostenschatzer, gezielte Google Ads und lokale SEO. Investition in 7 Wochen zuruckgeholt, heute ~40 Kunden pro Monat und 72 getrackte Kundeninteraktionen allein im letzten Monat.
+                        Ein Hamburger Handwerksbetrieb fur Entrumpelung und Sanierung. Komplett neue Website mit KI-Kostenschatzer, gezielte Google Ads und lokale SEO. Investition in 7 Wochen zuruckgeholt, heute ~40 Kunden pro Monat und 72 getrackte Kundeninteraktionen allein im letzten Monat.
                     </p>
                     <div className="article-byline animate-up">
                         Von <Link href="/ueber-uns">Vadim Shchepin</Link> &middot; 19. Marz 2026
@@ -135,13 +135,13 @@ export default function BlitzHamburgCaseStudy() {
                     <div className="cs-image-showcase animate-up">
                         <Image
                             src="/referenzen/Blitz-hero.webp"
-                            alt="Blitz Hamburg Website — Startseite mit Hero-Bereich, Sanierung & Entrumpelung in Hamburg"
+                            alt="Blitz Hamburg Website: Startseite mit Hero-Bereich, Sanierung & Entrumpelung in Hamburg"
                             width={1200}
                             height={781}
                             quality={85}
                             style={{ width: '100%', height: 'auto', borderRadius: '2px' }}
                         />
-                        <p className="cs-image-caption">Die fertige Website: blitz-hamburg.de — schnell, mobiloptimiert, konversionsorientiert.</p>
+                        <p className="cs-image-caption">Die fertige Website: blitz-hamburg.de, schnell, mobiloptimiert, konversionsorientiert.</p>
                     </div>
                 </div>
             </section>
@@ -154,12 +154,12 @@ export default function BlitzHamburgCaseStudy() {
                         Blitz Hamburg ist ein Handwerksbetrieb, der Entrumpelung, Haushaltsauflosung, Sanierung und Bodenverlegung in Hamburg anbietet. Vor dem Projekt: keine professionelle Website, keine Online-Sichtbarkeit, Stagnation bei der Kundengewinnung. Der gesamte Markt wurde von Wettbewerbern dominiert, die seit Jahren etablierte Online-Prasenz hatten.
                     </p>
                     <p className="animate-up">
-                        Die Herausforderung: In einem wettbewerbsintensiven lokalen Markt — mit Keywords wie <strong>&bdquo;Entrumpelung Hamburg&ldquo;</strong> (2.400 monatliche Suchen, CPC 18,41 &euro;) und <strong>&bdquo;Haushaltsauflosung Hamburg&ldquo;</strong> (1.600 monatliche Suchen, CPC 20,25 &euro;) — von Null auf eine stabile Auftragslage zu kommen. Und zwar schnell.
+                        Die Herausforderung: In einem wettbewerbsintensiven lokalen Markt, mit Keywords wie <strong>&bdquo;Entrumpelung Hamburg&ldquo;</strong> (2.400 monatliche Suchen, CPC 18,41 &euro;) und <strong>&bdquo;Haushaltsauflosung Hamburg&ldquo;</strong> (1.600 monatliche Suchen, CPC 20,25 &euro;), von Null auf eine stabile Auftragslage zu kommen. Und zwar schnell.
                     </p>
 
                     <h2 className="animate-up">Die Losung: Drei Saulen</h2>
                     <p className="animate-up">
-                        Statt isolierter Massnahmen haben wir ein integriertes System aufgebaut: eine technisch uberlegene Website, prazise Google Ads-Kampagnen und strategische lokale SEO — alles aufeinander abgestimmt.
+                        Statt isolierter Massnahmen haben wir ein integriertes System aufgebaut: eine technisch uberlegene Website, prazise Google Ads-Kampagnen und strategische lokale SEO, alles aufeinander abgestimmt.
                     </p>
 
                     {/* Pillar 1: Website */}
@@ -167,25 +167,25 @@ export default function BlitzHamburgCaseStudy() {
                         1. High-Performance Website von Grund auf
                     </h3>
                     <p className="animate-up">
-                        Die Website wurde komplett neu entwickelt — keine Templates, kein WordPress. Individueller Code, optimiert fur maximale Geschwindigkeit und Conversion. Uber 18 Seiten, jede auf eine konkrete Suchabsicht ausgerichtet: 4 Leistungsseiten (Entrumpelung, Haushaltsauflosung, Sanierung, Bodenverlegung), eine Einsatzgebiete-Seite mit Stadtteil-Ubersicht, eine Projekt-Galerie mit Vorher/Nachher-Fotos, 5 SEO-Ratgeber-Artikel und mehr.
+                        Die Website wurde komplett neu entwickelt, keine Templates, kein WordPress. Individueller Code, optimiert fur maximale Geschwindigkeit und Conversion. Uber 18 Seiten, jede auf eine konkrete Suchabsicht ausgerichtet: 4 Leistungsseiten (Entrumpelung, Haushaltsauflosung, Sanierung, Bodenverlegung), eine Einsatzgebiete-Seite mit Stadtteil-Ubersicht, eine Projekt-Galerie mit Vorher/Nachher-Fotos, 5 SEO-Ratgeber-Artikel und mehr.
                     </p>
 
                     <div className="subpage-features-grid animate-up">
                         <div className="subpage-feature">
                             <h3>18+ optimierte Seiten</h3>
-                            <p>Leistungsseiten, Einsatzgebiete, Projekt-Galerie, Preise, FAQ, Ratgeber-Artikel — jede Seite zielt auf ein spezifisches Keyword und eine konkrete Nutzerabsicht.</p>
+                            <p>Leistungsseiten, Einsatzgebiete, Projekt-Galerie, Preise, FAQ, Ratgeber-Artikel: jede Seite zielt auf ein spezifisches Keyword und eine konkrete Nutzerabsicht.</p>
                         </div>
                         <div className="subpage-feature">
                             <h3>104 Stadtteil-Bilder</h3>
-                            <p>KI-generierte, stadtteilspezifische Bilder fur alle 104 Hamburger Stadtteile. Jedes Bild zeigt den echten Charakter des Viertels — ein einzigartiges visuelles Signal auf der Einsatzgebiete-Seite.</p>
+                            <p>KI-generierte, stadtteilspezifische Bilder fur alle 104 Hamburger Stadtteile. Jedes Bild zeigt den echten Charakter des Viertels, ein einzigartiges visuelles Signal auf der Einsatzgebiete-Seite.</p>
                         </div>
                         <div className="subpage-feature">
                             <h3>AI-Kostenschatzer (Blitz-Check)</h3>
-                            <p>Ein Gemini-basiertes Tool, das Kunden sofort eine Preisschatzung gibt — inklusive Fotoupload. Senkt die Hemmschwelle fur Anfragen und qualifiziert Leads vor dem Erstgesprach.</p>
+                            <p>Ein Gemini-basiertes Tool, das Kunden sofort eine Preisschatzung gibt, inklusive Fotoupload. Senkt die Hemmschwelle fur Anfragen und qualifiziert Leads vor dem Erstgesprach.</p>
                         </div>
                         <div className="subpage-feature">
                             <h3>5 SEO-Ratgeber</h3>
-                            <p>Informationsseiten zu Entrumpelung Kosten, Haushaltsauflosung Kosten, Wohnungsauflosung, Kellerentrumpelung und Entrumpelungsfirma finden — reiner organischer Traffic.</p>
+                            <p>Informationsseiten zu Entrumpelung Kosten, Haushaltsauflosung Kosten, Wohnungsauflosung, Kellerentrumpelung und Entrumpelungsfirma finden: reiner organischer Traffic.</p>
                         </div>
                     </div>
 
@@ -199,7 +199,7 @@ export default function BlitzHamburgCaseStudy() {
                             quality={85}
                             style={{ width: '100%', height: 'auto', borderRadius: '2px' }}
                         />
-                        <p className="cs-image-caption">Der Blitz-Check: Kunden beschreiben ihr Projekt und laden ein Foto hoch — die KI schatzt sofort den Preis.</p>
+                        <p className="cs-image-caption">Der Blitz-Check: Kunden beschreiben ihr Projekt und laden ein Foto hoch, die KI schatzt sofort den Preis.</p>
                     </div>
 
                     {/* Trust & Conversion Architecture */}
@@ -207,10 +207,10 @@ export default function BlitzHamburgCaseStudy() {
                         Gebaut fur Vertrauen und Conversion
                     </h3>
                     <p className="animate-up">
-                        Jede Seite ist strategisch aufgebaut: Der Besucher sieht sofort, was Blitz Hamburg macht, warum sie die richtige Wahl sind und wie er Kontakt aufnehmen kann. Die Seitenstruktur folgt einem klaren Conversion-Pfad — vom Problem uber den Beweis zur Anfrage.
+                        Jede Seite ist strategisch aufgebaut: Der Besucher sieht sofort, was Blitz Hamburg macht, warum sie die richtige Wahl sind und wie er Kontakt aufnehmen kann. Die Seitenstruktur folgt einem klaren Conversion-Pfad, vom Problem uber den Beweis zur Anfrage.
                     </p>
                     <p className="animate-up">
-                        Vertrauenssignale sind uberall prasent: echte Vorher/Nachher-Fotos, Google-Bewertungen direkt auf den Seiten, Festpreis-Garantie, transparente Preise und ein sofortiger Kontakt uber Telefon, WhatsApp oder Formular. Das Ergebnis: Besucher, die auf einer Blitz-Hamburg-Seite landen, wissen innerhalb von Sekunden, dass sie hier richtig sind — und handeln entsprechend. Die Seiten sind nicht einfach schon, sie sind strategisch durchdacht und liefern messbare Ergebnisse.
+                        Vertrauenssignale sind uberall prasent: echte Vorher/Nachher-Fotos, Google-Bewertungen direkt auf den Seiten, Festpreis-Garantie, transparente Preise und ein sofortiger Kontakt uber Telefon, WhatsApp oder Formular. Das Ergebnis: Besucher, die auf einer Blitz-Hamburg-Seite landen, wissen innerhalb von Sekunden, dass sie hier richtig sind, und handeln entsprechend. Die Seiten sind nicht einfach schon, sie sind strategisch durchdacht und liefern messbare Ergebnisse.
                     </p>
 
                     {/* Lighthouse Screenshot */}
@@ -218,7 +218,7 @@ export default function BlitzHamburgCaseStudy() {
                         Lighthouse: 99 / 100 / 100 / 100
                     </h3>
                     <p className="animate-up">
-                        Alle vier Lighthouse-Kategorien im grunen Bereich — Performance 99, Accessibility 100, Best Practices 100, SEO 100. Erreicht durch Pre-Rendering, WebP-Bilder, WOFF2-Fonts und optimiertes JavaScript.
+                        Alle vier Lighthouse-Kategorien im grunen Bereich: Performance 99, Accessibility 100, Best Practices 100, SEO 100. Erreicht durch Pre-Rendering, WebP-Bilder, WOFF2-Fonts und optimiertes JavaScript.
                     </p>
                     <div className="cs-image-showcase animate-up" style={{ maxWidth: '500px' }}>
                         <Image
@@ -249,16 +249,16 @@ export default function BlitzHamburgCaseStudy() {
                         2. Prazise Google Ads-Kampagnen
                     </h3>
                     <p className="animate-up">
-                        Wahrend die organische Sichtbarkeit aufgebaut wird, liefern Google Ads sofortige, qualifizierte Anfragen. Die Kampagnen sind hochspezifisch auf lokale Suchabsichten ausgerichtet — nicht breite Keywords, sondern exakte Dienstleistungen in Hamburg mit gezielten Landingpages fur jede Kampagne.
+                        Wahrend die organische Sichtbarkeit aufgebaut wird, liefern Google Ads sofortige, qualifizierte Anfragen. Die Kampagnen sind hochspezifisch auf lokale Suchabsichten ausgerichtet: nicht breite Keywords, sondern exakte Dienstleistungen in Hamburg mit gezielten Landingpages fur jede Kampagne.
                     </p>
 
                     <div className="cs-ads-results animate-up">
                         <div className="cs-ads-stat">
                             <div className="cs-ads-stat-header">
                                 <span className="cs-ads-stat-value">474 Klicks</span>
-                                <span className="cs-ads-stat-label">Google Ads — Marz 2026</span>
+                                <span className="cs-ads-stat-label">Google Ads, Marz 2026</span>
                             </div>
-                            <p>474 Klicks bei 13.789 Impressionen und 1.219 &euro; Monatsbudget. CPC von 2,57 &euro; — bei einem Markt-CPC von 18-20 &euro; fur die organischen Keywords ein Bruchteil der Kosten.</p>
+                            <p>474 Klicks bei 13.789 Impressionen und 1.219 &euro; Monatsbudget. CPC von 2,57 &euro;, bei einem Markt-CPC von 18-20 &euro; fur die organischen Keywords ein Bruchteil der Kosten.</p>
                         </div>
                         <div className="cs-ads-stat">
                             <div className="cs-ads-stat-header">
@@ -272,7 +272,7 @@ export default function BlitzHamburgCaseStudy() {
                                 <span className="cs-ads-stat-value">72</span>
                                 <span className="cs-ads-stat-label">Kundeninteraktionen / Monat</span>
                             </div>
-                            <p>Getrackt via Umami: 29 Anrufe (40%), 18 WhatsApp-Klicks (25%), 8 E-Mails (11%), 7 Rechner-Nutzungen (10%), 6 Google-Bewertungs-Klicks (8%) — echte Kontakte, echte Auftrage.</p>
+                            <p>Getrackt via Umami: 29 Anrufe (40%), 18 WhatsApp-Klicks (25%), 8 E-Mails (11%), 7 Rechner-Nutzungen (10%), 6 Google-Bewertungs-Klicks (8%). Echte Kontakte, echte Auftrage.</p>
                         </div>
                     </div>
 
@@ -288,13 +288,13 @@ export default function BlitzHamburgCaseStudy() {
                     <div className="cs-image-showcase animate-up" style={{ marginTop: 'var(--space-md)' }}>
                         <Image
                             src={`${IMG}/before-after.webp`}
-                            alt="Vorher/Nachher-Galerie: Sanierungsprojekt mit Wandsanierung — vorher beschadigte Wande, nachher frisch renoviert"
+                            alt="Vorher/Nachher-Galerie: Sanierungsprojekt mit Wandsanierung, vorher beschadigte Wande, nachher frisch renoviert"
                             width={1164}
                             height={838}
                             quality={85}
                             style={{ width: '100%', height: 'auto', borderRadius: '2px' }}
                         />
-                        <p className="cs-image-caption">Die Projekt-Galerie zeigt echte Vorher/Nachher-Fotos — Vertrauen durch Transparenz.</p>
+                        <p className="cs-image-caption">Die Projekt-Galerie zeigt echte Vorher/Nachher-Fotos: Vertrauen durch Transparenz.</p>
                     </div>
 
                     <div className="subpage-features-grid animate-up">
@@ -312,14 +312,14 @@ export default function BlitzHamburgCaseStudy() {
                         </div>
                         <div className="subpage-feature">
                             <h3>Keyword-Daten als Basis</h3>
-                            <p>Jede Seite basiert auf echten Suchdaten: Suchvolumen, CPC, Wettbewerbsdichte. Keine Vermutungen — nur datenbasierte Entscheidungen.</p>
+                            <p>Jede Seite basiert auf echten Suchdaten: Suchvolumen, CPC, Wettbewerbsdichte. Keine Vermutungen, nur datenbasierte Entscheidungen.</p>
                         </div>
                     </div>
 
                     {/* Results */}
                     <h2 className="animate-up">Die Ergebnisse</h2>
                     <p className="animate-up">
-                        Von einer komplett neuen Domain — ohne Geschichte, ohne Backlinks, ohne bestehende Rankings — zu ~40 Kunden pro Monat. Die Investition war in 7 Wochen zuruckgeholt:
+                        Von einer komplett neuen Domain, ohne Geschichte, ohne Backlinks, ohne bestehende Rankings, zu ~40 Kunden pro Monat. Die Investition war in 7 Wochen zuruckgeholt:
                     </p>
 
                     {/* Events Screenshot */}
@@ -332,21 +332,21 @@ export default function BlitzHamburgCaseStudy() {
                             quality={85}
                             style={{ width: '100%', height: 'auto', borderRadius: '2px' }}
                         />
-                        <p className="cs-image-caption">Conversion-Events der letzten 30 Tage: Anrufe, E-Mails, WhatsApp, Formulare, Google-Bewertungen und Rechner-Nutzungen — alles getrackt.</p>
+                        <p className="cs-image-caption">Conversion-Events der letzten 30 Tage: Anrufe, E-Mails, WhatsApp, Formulare, Google-Bewertungen und Rechner-Nutzungen, alles getrackt.</p>
                     </div>
 
                     <div className="cs-results-grid animate-up">
                         <div className="cs-result-card">
                             <h3>ROI in 7 Wochen</h3>
-                            <p>Die gesamte Investition in Website und Ads war in 7 Wochen zuruckgeholt — danach reines Wachstum.</p>
+                            <p>Die gesamte Investition in Website und Ads war in 7 Wochen zuruckgeholt, danach reines Wachstum.</p>
                         </div>
                         <div className="cs-result-card">
                             <h3>~40 Kunden pro Monat</h3>
-                            <p>Vom Nullpunkt zu einer stabilen Auftragslage von ca. 40 Kunden pro Monat — uber Anrufe, WhatsApp, E-Mail und den KI-Kostenschatzer.</p>
+                            <p>Vom Nullpunkt zu einer stabilen Auftragslage von ca. 40 Kunden pro Monat, uber Anrufe, WhatsApp, E-Mail und den KI-Kostenschatzer.</p>
                         </div>
                         <div className="cs-result-card">
                             <h3>29 Anrufe / Monat getrackt</h3>
-                            <p>Allein 29 direkte Telefonanrufe im letzten Monat — dazu 18 WhatsApp-Nachrichten und 8 E-Mails. Echte Kontakte, keine Vanity-Metriken.</p>
+                            <p>Allein 29 direkte Telefonanrufe im letzten Monat, dazu 18 WhatsApp-Nachrichten und 8 E-Mails. Echte Kontakte, keine Vanity-Metriken.</p>
                         </div>
                         <div className="cs-result-card">
                             <h3>5.0 Sterne, 24 Bewertungen</h3>
@@ -410,7 +410,7 @@ export default function BlitzHamburgCaseStudy() {
                     <div className="cs-takeaway animate-up">
                         <h3>Das Wichtigste</h3>
                         <p>
-                            Eine schnelle, konversionsorientierte Website ist die Grundlage — aber erst die Kombination mit gezielten Ads und systematischer lokaler SEO schafft ein planbares Wachstumssystem. Blitz Hamburg zeigt: Von Null auf ~40 Kunden pro Monat, ROI in 7 Wochen — wenn Technik, Daten und Strategie zusammenspielen.
+                            Eine schnelle, konversionsorientierte Website ist die Grundlage, aber erst die Kombination mit gezielten Ads und systematischer lokaler SEO schafft ein planbares Wachstumssystem. Blitz Hamburg zeigt: Von Null auf ~40 Kunden pro Monat, ROI in 7 Wochen, wenn Technik, Daten und Strategie zusammenspielen.
                         </p>
                     </div>
                 </div>
@@ -444,7 +444,7 @@ export default function BlitzHamburgCaseStudy() {
                 </div>
             </section>
 
-            <ServiceCta text="Ahnliche Ergebnisse fur Ihr Unternehmen? Kostenloses Erstgesprach — ich analysiere Ihre Situation und zeige Ihnen, was konkret moglich ist." />
+            <ServiceCta text="Ahnliche Ergebnisse fur Ihr Unternehmen? Kostenloses Erstgesprach. Ich analysiere Ihre Situation und zeige Ihnen, was konkret moglich ist." />
         </>
     );
 }

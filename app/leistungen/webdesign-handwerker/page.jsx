@@ -23,10 +23,10 @@ export const metadata = {
 const faqItems = [
     { q: 'Was kostet eine Website für einen Handwerksbetrieb?', a: 'Ein One-Pager mit allen wichtigen Informationen, Kontaktdaten und Google-Optimierung gibt es ab 2.000 €. Eine mehrseitige Website mit Leistungsseiten, Referenzen und CMS ab 3.000 €. Sie erhalten ein konkretes Festpreis-Angebot nach dem kostenlosen Erstgespräch.' },
     { q: 'Brauche ich als Handwerker wirklich eine eigene Website?', a: 'Ja. Ihre Kunden suchen „Elektriker Hamburg" oder „Maler in der Nähe" und erwarten eine professionelle Website. Laut Think with Google besuchen 76 % der Menschen, die lokal mit dem Smartphone suchen, innerhalb eines Tages ein Geschäft. Ohne eigene Website verlieren Sie diese Anfragen an die Konkurrenz, die online sichtbar ist.' },
-    { q: 'Wie lange dauert die Erstellung?', a: 'Ein One-Pager ist in 2–3 Wochen fertig, eine mehrseitige Website in 4–6 Wochen. Ich weiß, dass Sie als Handwerker wenig Zeit haben — deshalb halte ich den Abstimmungsaufwand so gering wie möglich.' },
+    { q: 'Wie lange dauert die Erstellung?', a: 'Ein One-Pager ist in 2–3 Wochen fertig, eine mehrseitige Website in 4–6 Wochen. Ich weiß, dass Sie als Handwerker wenig Zeit haben, deshalb halte ich den Abstimmungsaufwand so gering wie möglich.' },
     { q: 'Kann ich die Website selbst aktualisieren?', a: 'Ja, wenn Sie das wünschen. Ich richte ein einfaches CMS ein und zeige Ihnen in rund 30 Minuten, wie Sie Texte, Bilder und Referenzfotos selbst anpassen. Keine technischen Vorkenntnisse nötig.' },
     { q: 'Hilft die Website auch bei Google Maps?', a: 'Ja. Ich optimiere Ihre Website für lokale Suchergebnisse und helfe bei der Einrichtung bzw. Optimierung Ihres Google Business Profile. So erscheinen Sie sowohl in der Google-Suche als auch auf Google Maps, wenn Kunden in Ihrer Nähe suchen.' },
-    { q: 'Was passiert nach dem Launch?', a: 'Nach dem Go-live richte ich Tracking ein, damit Sie sehen, wie viele Anfragen über die Website kommen. Auf Wunsch betreue ich Ihre Website langfristig mit Updates und Optimierungen — Sie konzentrieren sich auf Ihre Aufträge.' },
+    { q: 'Was passiert nach dem Launch?', a: 'Nach dem Go-live richte ich Tracking ein, damit Sie sehen, wie viele Anfragen über die Website kommen. Auf Wunsch betreue ich Ihre Website langfristig mit Updates und Optimierungen, während Sie sich auf Ihre Aufträge konzentrieren.' },
 ];
 
 export default function WebdesignHandwerkerPage() {
@@ -67,7 +67,7 @@ export default function WebdesignHandwerkerPage() {
                         { label: 'Webdesign für Handwerker' },
                     ]} />
                     <p className="section-kicker animate-up">Webdesign für Handwerker</p>
-                    <h1 className="subpage-title animate-up">Websites für Handwerksbetriebe in Hamburg — mehr Aufträge, weniger Aufwand.</h1>
+                    <h1 className="subpage-title animate-up">Websites für Handwerksbetriebe in Hamburg: mehr Aufträge, weniger Aufwand.</h1>
                     <p className="subpage-intro animate-up">
                         Sie sind Handwerker, kein Webdesigner. Ihre Zeit steckt in Baustellen und Kunden, nicht in Websites. Aber Ihre nächsten Kunden suchen gerade „Elektriker Hamburg" oder „Maler in der Nähe". Ich sorge dafür, dass diese Anfragen bei Ihnen landen.
                     </p>
@@ -79,12 +79,12 @@ export default function WebdesignHandwerkerPage() {
                 <div className="container subpage-body">
                     <h2 className="animate-up">Was kostet eine Handwerker-Website?</h2>
                     <div className="subpage-takeaway animate-up">
-                        <p>Eine Handwerker-Website kostet bei mir <strong>ab 2.000 €</strong> (One-Pager) bzw. <strong>ab 3.000 €</strong> (mehrseitig) zum Festpreis. Sie ist mobile-first, in rund einer Sekunde geladen und für lokale Suchen wie „Elektriker Hamburg" optimiert — mit Telefon- und WhatsApp-Button direkt im Blickfeld. Laut Think with Google besuchen 76 % der Menschen, die lokal mit dem Smartphone suchen, innerhalb eines Tages ein Geschäft.</p>
+                        <p>Eine Handwerker-Website kostet bei mir <strong>ab 2.000 €</strong> (One-Pager) bzw. <strong>ab 3.000 €</strong> (mehrseitig) zum Festpreis. Sie ist mobile-first, in rund einer Sekunde geladen und für lokale Suchen wie „Elektriker Hamburg" optimiert, mit Telefon- und WhatsApp-Button direkt im Blickfeld. Laut Think with Google besuchen 76 % der Menschen, die lokal mit dem Smartphone suchen, innerhalb eines Tages ein Geschäft.</p>
                     </div>
 
                     <h2 className="animate-up">Warum Handwerker eine professionelle Website brauchen</h2>
-                    <p className="animate-up">Mundpropaganda ist gut, reicht aber nicht mehr. Wer einen Handwerker braucht, sucht heute zuerst bei Google — oft vom Smartphone. Laut Think with Google besuchen 76 % der Menschen, die lokal suchen, innerhalb eines Tages ein Geschäft, und 28 % der „in der Nähe"-Suchen enden mit einem Kauf.</p>
-                    <p className="animate-up">Das heißt: Ihre zukünftigen Kunden suchen jetzt gerade nach einem Handwerker wie Ihnen. Wenn Sie online nicht sichtbar sind, existieren Sie für diese Kunden nicht — und der Auftrag geht an den Wettbewerber mit Website, selbst wenn Ihre Arbeit besser ist.</p>
+                    <p className="animate-up">Mundpropaganda ist gut, reicht aber nicht mehr. Wer einen Handwerker braucht, sucht heute zuerst bei Google, oft vom Smartphone. Laut Think with Google besuchen 76 % der Menschen, die lokal suchen, innerhalb eines Tages ein Geschäft, und 28 % der „in der Nähe"-Suchen enden mit einem Kauf.</p>
+                    <p className="animate-up">Das heißt: Ihre zukünftigen Kunden suchen jetzt gerade nach einem Handwerker wie Ihnen. Wenn Sie online nicht sichtbar sind, existieren Sie für diese Kunden nicht, und der Auftrag geht an den Wettbewerber mit Website, selbst wenn Ihre Arbeit besser ist.</p>
 
                     <div className="subpage-stats animate-up">
                         <div className="subpage-stat">
@@ -102,12 +102,12 @@ export default function WebdesignHandwerkerPage() {
                     </div>
 
                     <h2 className="animate-up">Was eine Handwerker-Website können muss</h2>
-                    <p className="animate-up">Handwerker brauchen keine Website mit 50 Seiten, sondern eine, die funktioniert: schnell, mobil, auffindbar — mit einem Ziel, dass der Kunde anruft.</p>
+                    <p className="animate-up">Handwerker brauchen keine Website mit 50 Seiten, sondern eine, die funktioniert: schnell, mobil und auffindbar, mit einem Ziel, dass der Kunde anruft.</p>
 
                     <div className="subpage-features-grid animate-up">
                         <div className="subpage-feature">
                             <h3>Sofort sichtbare Kontaktdaten</h3>
-                            <p>Telefonnummer und WhatsApp-Button direkt im Blickfeld. Kein Suchen, kein Scrollen — auf dem Handy wird die Nummer zum Anruf-Button mit einem Tipp.</p>
+                            <p>Telefonnummer und WhatsApp-Button direkt im Blickfeld. Kein Suchen, kein Scrollen, und auf dem Handy wird die Nummer mit einem Tipp zum Anruf-Button.</p>
                         </div>
                         <div className="subpage-feature">
                             <h3>Mobile-First</h3>
@@ -187,7 +187,7 @@ export default function WebdesignHandwerkerPage() {
 
             <FaqSection title="Häufige Fragen von Handwerkern" items={faqItems} />
             <RelatedServices exclude="webdesign" />
-            <ServiceCta text="Sie sind Handwerker in Hamburg und wollen mehr Aufträge über Ihre Website? Lassen Sie uns sprechen — kostenlos und unverbindlich. Ich zeige Ihnen, was für Ihren Betrieb möglich ist." />
+            <ServiceCta text="Sie sind Handwerker in Hamburg und wollen mehr Aufträge über Ihre Website? Lassen Sie uns sprechen, kostenlos und unverbindlich. Ich zeige Ihnen, was für Ihren Betrieb möglich ist." />
         </>
     );
 }

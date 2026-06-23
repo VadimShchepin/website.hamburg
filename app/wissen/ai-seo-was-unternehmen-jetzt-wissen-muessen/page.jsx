@@ -52,14 +52,14 @@ export default function AiSeoArticlePage() {
             >
                 <p>
                     Suchmaschinen liefern zunehmend direkte Antworten statt Linklisten. Google AI Overviews, ChatGPT mit Browsing-Funktion,
-                    Perplexity — diese Systeme entscheiden in Millisekunden, welche Quelle zitiert wird und welche nicht. Die Mechanik dahinter
+                    Perplexity: diese Systeme entscheiden in Millisekunden, welche Quelle zitiert wird und welche nicht. Die Mechanik dahinter
                     unterscheidet sich grundlegend von klassischem SEO. Wer sie versteht, kann gezielt Sichtbarkeit in LLM-generierten Antworten aufbauen.
                 </p>
 
                 <h2>Wie LLMs Quellen auswahlen</h2>
                 <p>
                     Ein Large Language Model wie GPT-4 oder Gemini generiert Antworten nicht, indem es eine Rangliste von Webseiten erstellt.
-                    Es synthetisiert Informationen aus seinem Trainingskorpus und — bei Retrieval-Augmented Generation (RAG) — aus
+                    Es synthetisiert Informationen aus seinem Trainingskorpus und, bei Retrieval-Augmented Generation (RAG), aus
                     live abgerufenen Dokumenten. Die Auswahl der zitierten Quellen folgt dabei anderen Regeln als Googles PageRank:
                 </p>
                 <ul>
@@ -76,7 +76,7 @@ export default function AiSeoArticlePage() {
                         aus anderen Quellen kennt, steigt die Wahrscheinlichkeit einer Zitation. Widerspruche fuhren zu Ausschluss.
                     </li>
                     <li>
-                        <strong>Autoritat des Autors:</strong> Named entities — also identifizierbare Autoren mit nachweisbarer Expertise —
+                        <strong>Autoritat des Autors:</strong> Named entities, also identifizierbare Autoren mit nachweisbarer Expertise,
                         werden bevorzugt. Anonyme Inhalte auf generischen Domains haben einen systematischen Nachteil.
                     </li>
                 </ul>
@@ -84,12 +84,12 @@ export default function AiSeoArticlePage() {
                     Edward Sturm hat diese Dynamik in seiner Arbeit zu{' '}
                     <a href="https://edwardsturm.com/ai-seo/" target="_blank" rel="noopener noreferrer">AI SEO und LLM-Optimierung</a>{' '}
                     detailliert dokumentiert. Sein zentraler Punkt: Klassisches SEO optimiert fur Crawler. AI SEO optimiert fur Sprachmodelle,
-                    die Inhalte lesen, verstehen und bewerten — nicht nur indexieren.
+                    die Inhalte lesen, verstehen und bewerten, nicht nur indexieren.
                 </p>
 
                 <h2>Der konkrete Unterschied: Traditionelles SEO vs. AI SEO</h2>
                 <p>
-                    Traditionelles SEO dreht sich um Keywords, Backlinks, Core Web Vitals und technische Crawlbarkeit — wie es beispielsweise in unserem <a href="/wissen/lokales-seo-hamburg-guide">Leitfaden zu lokalem SEO in Hamburg</a> beschrieben wird. Das Ziel:
+                    Traditionelles SEO dreht sich um Keywords, Backlinks, Core Web Vitals und technische Crawlbarkeit, wie es beispielsweise in unserem <a href="/wissen/lokales-seo-hamburg-guide">Leitfaden zu lokalem SEO in Hamburg</a> beschrieben wird. Das Ziel:
                     Position 1-3 in den organischen Suchergebnissen. AI SEO hat ein anderes Ziel: die Quelle sein, die ein
                     Sprachmodell zitiert.
                 </p>
@@ -107,12 +107,12 @@ export default function AiSeoArticlePage() {
                     </li>
                     <li>
                         <strong>Structured Data wird kritisch.</strong> <a href="https://schema.org/" target="_blank" rel="noopener noreferrer">Schema.org-Markup</a> hilft
-                        nicht nur Google, sondern auch LLMs, den Kontext einer Seite zu verstehen — Autor, Thema, Aktualitat,
+                        nicht nur Google, sondern auch LLMs, den Kontext einer Seite zu verstehen: Autor, Thema, Aktualitat,
                         Organisationszugehorigkeit.
                     </li>
                     <li>
                         <strong>E-E-A-T wird maschinenlesbar.</strong> Googles Konzept von Experience, Expertise, Authoritativeness
-                        und Trustworthiness ist fur AI SEO nicht optional. LLMs nutzen diese Signale direkt — etwa uber{' '}
+                        und Trustworthiness ist fur AI SEO nicht optional. LLMs nutzen diese Signale direkt, etwa uber{' '}
                         <a href="https://developers.google.com/search/docs/appearance/ai-overviews" target="_blank" rel="noopener noreferrer">Googles AI Overviews</a>,
                         die explizit auf vertrauenswurdige Quellen setzen.
                     </li>
@@ -125,7 +125,7 @@ export default function AiSeoArticlePage() {
                 <h3>Direkte Antworten auf spezifische Fragen</h3>
                 <p>
                     LLMs suchen nach Passagen, die eine Nutzerfrage in 2-4 Satzen beantworten. Seiten, die eine Frage als H2 formulieren
-                    und direkt darunter die Antwort liefern, werden uberproportional haufig zitiert. Das ist kein Zufall — es entspricht
+                    und direkt darunter die Antwort liefern, werden uberproportional haufig zitiert. Das ist kein Zufall, sondern entspricht
                     dem Retrieval-Mechanismus von RAG-Pipelines.
                 </p>
                 <h3>Originare Daten und Fallstudien</h3>
@@ -144,13 +144,13 @@ export default function AiSeoArticlePage() {
                 <h2>Praxisbeispiel: DSGVO-konforme Schulfotos-App</h2>
                 <blockquote>
                     Fur eine DSGVO-konforme Schulfotos-App haben wir die Inhalte so strukturiert, dass sie in ChatGPT und Perplexity
-                    auf Platz 1 erscheinen — fur hochkompetitive Suchanfragen.
+                    auf Platz 1 erscheinen, und das fur hochkompetitive Suchanfragen.
                 </blockquote>
                 <p>
                     Was haben wir konkret gemacht? Die Produktseite wurde mit vollstandigem FAQ-Schema ausgezeichnet,
                     jede Frage als eigenstandiger Absatz mit H2-Uberschrift strukturiert, und die Antworten auf 2-3 Satze
                     reduziert. Dazu kamen Author-Markup, Organization-Schema und eine dedizierte Expertise-Seite fur den
-                    Grundungsteam. Das Ergebnis: Sowohl ChatGPT als auch Perplexity zitieren die Seite als primare Quelle —
+                    Grundungsteam. Das Ergebnis: Sowohl ChatGPT als auch Perplexity zitieren die Seite als primare Quelle,
                     trotz Wettbewerbern mit deutlich hoheren Domain-Autoritaten.
                 </p>
 
@@ -170,7 +170,7 @@ export default function AiSeoArticlePage() {
                     Laut einer{' '}
                     <a href="https://searchengineland.com/ai-overviews-seo-strategy-guide-451263" target="_blank" rel="noopener noreferrer">Analyse von Search Engine Land</a>{' '}
                     verandert sich die Klickverteilung bereits messbar: Seiten, die in AI Overviews zitiert werden,
-                    verzeichnen bis zu 30% mehr organischen Traffic — wahrend nicht-zitierte Seiten verlieren.
+                    verzeichnen bis zu 30% mehr organischen Traffic, wahrend nicht-zitierte Seiten verlieren.
                 </p>
 
                 <h2>Konkrete nachste Schritte</h2>
@@ -180,11 +180,11 @@ export default function AiSeoArticlePage() {
                     <li>Strukturieren Sie Inhalte in Frage-Antwort-Formate mit klaren H2/H3-Hierarchien.</li>
                     <li>Erstellen Sie dedizierte Autorenseiten mit nachweisbarer Expertise und verlinkten Profilen.</li>
                     <li>Reduzieren Sie Fulltext zugunsten von prazisen, faktisch belegbaren Aussagen.</li>
-                    <li>Optimieren Sie Ihre Inhalte gleichzeitig fuer <a href="/wissen/website-conversion-optimierung">bessere Conversion-Raten</a> — denn Sichtbarkeit allein bringt keine Kunden.</li>
+                    <li>Optimieren Sie Ihre Inhalte gleichzeitig fuer <a href="/wissen/website-conversion-optimierung">bessere Conversion-Raten</a>, denn Sichtbarkeit allein bringt keine Kunden.</li>
                 </ul>
                 <p>
                     AI SEO ist kein Trend, sondern eine infrastrukturelle Verschiebung in der Art, wie Informationen
-                    gefunden und konsumiert werden. Die Frage ist nicht, ob Ihr Unternehmen davon betroffen ist —
+                    gefunden und konsumiert werden. Die Frage ist nicht, ob Ihr Unternehmen davon betroffen ist,
                     sondern ob Sie auf der Seite der zitierten oder der ignorierten Quellen stehen.
                 </p>
             </ArticleLayout>

@@ -10,7 +10,7 @@ export const metadata = {
     description: 'EdTech-App: Tippen lernen mit KI-generierten Lektionen zu jedem Thema. React + Express + Gemini API. Sichere Architektur, Echtzeit-Feedback.',
     alternates: { canonical: PAGE_URL },
     openGraph: {
-        title: 'TypeExplore AI | KI-Tipptrainer — Lernen beim Tippen',
+        title: 'TypeExplore AI | KI-Tipptrainer: Lernen beim Tippen',
         description: 'React + Gemini API: KI generiert Tipp-Lektionen zu jedem Thema. Sichere Backend-Proxy-Architektur.',
         url: PAGE_URL,
         type: 'article',
@@ -71,7 +71,7 @@ export default function TypeExploreCaseStudy() {
                         TypeExplore AI: Tippen lernen uber Quantenphysik. Oder Borschtsch. Die KI ist flexibel.
                     </h1>
                     <p className="subpage-intro animate-up">
-                        Ein Tipptrainer, der nicht langweilig ist — weil die KI Lektionen uber jedes Thema generiert, das Sie sich vorstellen konnen. Sie tippen, Sie lernen, und am Ende sind Sie schneller als vorher. In jeder Hinsicht.
+                        Ein Tipptrainer, der nicht langweilig ist, weil die KI Lektionen uber jedes Thema generiert, das Sie sich vorstellen konnen. Sie tippen, Sie lernen, und am Ende sind Sie schneller als vorher. In jeder Hinsicht.
                     </p>
                     <div className="article-byline animate-up">
                         Von <Link href="/ueber-uns">Vadim Shchepin</Link> &middot; 3. April 2026
@@ -97,7 +97,7 @@ export default function TypeExploreCaseStudy() {
                         Tipptrainer sind seit 1995 nicht weiterentwickelt worden. Man tippt &bdquo;asdf jklo&ldquo; hundert Mal und fragt sich, warum man das nicht einfach lassen kann. Die Motivation halt genau so lange, bis der erste Satz &bdquo;Der schnelle braune Fuchs&ldquo; erscheint. Dann schliesst man das Fenster und macht etwas Sinnvolles.
                     </p>
                     <p className="animate-up">
-                        Die Idee war simpel: Was, wenn man stattdessen uber Themen tippt, die einen tatsachlich interessieren? Astronomie, Kochen, Geschichte, Programmierung — egal was. Die KI generiert den Text, Sie tippen ihn ab, und am Ende haben Sie nicht nur schneller getippt, sondern auch etwas gelernt.
+                        Die Idee war simpel: Was, wenn man stattdessen uber Themen tippt, die einen tatsachlich interessieren? Astronomie, Kochen, Geschichte, Programmierung, egal was. Die KI generiert den Text, Sie tippen ihn ab, und am Ende haben Sie nicht nur schneller getippt, sondern auch etwas gelernt.
                     </p>
 
                     <h2 className="animate-up">Die Losung</h2>
@@ -105,7 +105,7 @@ export default function TypeExploreCaseStudy() {
                     <div className="subpage-features-grid animate-up">
                         <div className="subpage-feature">
                             <h3>KI-generierte Lektionen</h3>
-                            <p>Geben Sie ein Thema ein — &bdquo;Japanische Teezubereitung&ldquo;, &bdquo;Warum der Himmel blau ist&ldquo;, &bdquo;Die Geschichte der Schreibmaschine&ldquo; — und Gemini 2.5-flash erzeugt einen perfekt formatierten Ubungstext. Kein Thema zu absurd.</p>
+                            <p>Geben Sie ein Thema ein, etwa &bdquo;Japanische Teezubereitung&ldquo;, &bdquo;Warum der Himmel blau ist&ldquo; oder &bdquo;Die Geschichte der Schreibmaschine&ldquo;, und Gemini 2.5-flash erzeugt einen perfekt formatierten Ubungstext. Kein Thema zu absurd.</p>
                         </div>
                         <div className="subpage-feature">
                             <h3>Sichere API-Architektur</h3>
@@ -117,7 +117,7 @@ export default function TypeExploreCaseStudy() {
                         </div>
                         <div className="subpage-feature">
                             <h3>Konfetti als Belohnung</h3>
-                            <p>Lektion abgeschlossen? Drei-Burst-Konfetti-Animation. Weil positive Verstarkung funktioniert — fragen Sie jeden Psychologen. Oder jeden Hund.</p>
+                            <p>Lektion abgeschlossen? Drei-Burst-Konfetti-Animation. Weil positive Verstarkung funktioniert. Fragen Sie jeden Psychologen. Oder jeden Hund.</p>
                         </div>
                     </div>
 
@@ -134,7 +134,7 @@ export default function TypeExploreCaseStudy() {
                     <div className="cs-takeaway animate-up">
                         <h3>Das Wichtigste</h3>
                         <p>
-                            Die beste Technologie ist die, die man nicht bemerkt. Der Nutzer tippt, lernt und hat Spass. Dass im Hintergrund ein Express-Proxy den API-Key schutzt, Gemini den Text normalisiert und localStorage die Lektionen cached — das muss niemand wissen. Ausser Sie lesen gerade diese Case Study. Dann wissen Sie es jetzt.
+                            Die beste Technologie ist die, die man nicht bemerkt. Der Nutzer tippt, lernt und hat Spass. Dass im Hintergrund ein Express-Proxy den API-Key schutzt, Gemini den Text normalisiert und localStorage die Lektionen cached: das muss niemand wissen. Ausser Sie lesen gerade diese Case Study. Dann wissen Sie es jetzt.
                         </p>
                     </div>
                 </div>
@@ -149,7 +149,7 @@ export default function TypeExploreCaseStudy() {
                     <div className="subpage-features-grid animate-up">
                         <Link href="/leistungen/webdesign" className="subpage-feature" style={{ textDecoration: 'none' }}>
                             <h3>Webdesign & Entwicklung</h3>
-                            <p>Von der Idee zum fertigen Produkt — KI-Integration inklusive.</p>
+                            <p>Von der Idee zum fertigen Produkt, KI-Integration inklusive.</p>
                         </Link>
                         <Link href="/leistungen/ai-seo" className="subpage-feature" style={{ textDecoration: 'none' }}>
                             <h3>AI SEO</h3>
@@ -159,7 +159,7 @@ export default function TypeExploreCaseStudy() {
                 </div>
             </section>
 
-            <ServiceCta text="KI-Produkt geplant? Ich baue Anwendungen mit Gemini, Claude und anderen LLMs — von der API-Architektur bis zum fertigen Produkt. Und ja, es gibt Konfetti." />
+            <ServiceCta text="KI-Produkt geplant? Ich baue Anwendungen mit Gemini, Claude und anderen LLMs, von der API-Architektur bis zum fertigen Produkt. Und ja, es gibt Konfetti." />
         </>
     );
 }

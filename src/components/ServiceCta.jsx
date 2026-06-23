@@ -8,7 +8,7 @@ export default function ServiceCta({ title = 'Bereit fur den nachsten Schritt?',
                 <div className="cta-box bull-boundary animate-up">
                     <p className="section-kicker">Bereit?</p>
                     <h2 className="section-title">{title}</h2>
-                    <p className="offer-framing">{text || 'Kostenloses Erstgesprach — unverbindlich und konkret. Ich sage Ihnen ehrlich, wo das Potenzial liegt.'}</p>
+                    <p className="offer-framing">{text || 'Kostenloses Erstgesprach, unverbindlich und konkret. Ich sage Ihnen ehrlich, wo das Potenzial liegt.'}</p>
                     <div className="cta-actions mt-4">
                         <Link href="/kontakt" className="button button-primary button-large" data-umami-event="cta-click" data-umami-event-location="service-cta">Jetzt Analyse anfordern</Link>
                         <a href="tel:+4917632194754" className="cta-phone" data-umami-event="phone-call" data-umami-event-location="service-cta">

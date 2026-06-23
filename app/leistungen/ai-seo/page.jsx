@@ -21,19 +21,19 @@ export const metadata = {
 };
 
 const faqItems = [
-    { q: 'Was ist AI SEO bzw. GEO?', a: 'AI SEO — auch GEO (Generative Engine Optimization) oder AEO (Answer Engine Optimization) — optimiert Ihre Inhalte so, dass KI-Systeme wie ChatGPT, Perplexity, Google AI Overviews und Microsoft Copilot Ihr Unternehmen als Quelle zitieren. Statt um Platz 1 in der Linkliste geht es darum, in der generierten Antwort genannt zu werden.' },
-    { q: 'Ersetzt AI SEO klassisches SEO?', a: 'Nein, es baut darauf auf. Eine technisch saubere, indexierte Website ist die Voraussetzung — Google AI Overviews ziehen Quellen direkt aus den organischen Rankings. AI SEO ergänzt zwei Ebenen: zitierfähige Inhalte (klare Definitionen, belegte Zahlen) und die Erreichbarkeit für KI-Crawler.' },
+    { q: 'Was ist AI SEO bzw. GEO?', a: 'AI SEO, auch GEO (Generative Engine Optimization) oder AEO (Answer Engine Optimization) genannt, optimiert Ihre Inhalte so, dass KI-Systeme wie ChatGPT, Perplexity, Google AI Overviews und Microsoft Copilot Ihr Unternehmen als Quelle zitieren. Statt um Platz 1 in der Linkliste geht es darum, in der generierten Antwort genannt zu werden.' },
+    { q: 'Ersetzt AI SEO klassisches SEO?', a: 'Nein, es baut darauf auf. Eine technisch saubere, indexierte Website ist die Voraussetzung, denn Google AI Overviews ziehen Quellen direkt aus den organischen Rankings. AI SEO ergänzt zwei Ebenen: zitierfähige Inhalte (klare Definitionen, belegte Zahlen) und die Erreichbarkeit für KI-Crawler.' },
     { q: 'Welche Crawler muss ich für KI-Sichtbarkeit erlauben?', a: 'In der robots.txt sollten GPTBot und ChatGPT-User (OpenAI), PerplexityBot (Perplexity), ClaudeBot (Anthropic), Google-Extended (Gemini, AI Overviews) und Bingbot (Copilot) zugelassen sein. Ist ein Bot blockiert, kann die jeweilige Plattform Sie nicht zitieren. Auf webseite.hamburg sind alle erlaubt.' },
     { q: 'Wie messe ich KI-Sichtbarkeit?', a: 'Über drei Wege: die Bing Webmaster Tools zeigen unter „AI Search Queries" die Grounding-Queries und Zitationen für Copilot; Tools wie Peec AI oder Otterly tracken Erwähnungen in ChatGPT, Perplexity und Gemini; und manuelle Test-Prompts in den Engines zeigen, ob und wie Sie genannt werden. Dazu kommen klassische Metriken aus der Google Search Console.' },
-    { q: 'Welche Inhalte werden von KI am häufigsten zitiert?', a: 'Vergleichsartikel (rund ein Drittel aller Zitationen), umfassende Ratgeber und eigene Daten oder Statistiken. Die Princeton-GEO-Studie (KDD 2024) zeigt: Quellenangaben erhöhen die Zitationswahrscheinlichkeit um rund 40 %, konkrete Statistiken um rund 37 % — Keyword-Überfüllung senkt sie um rund 10 %.' },
-    { q: 'Für wen lohnt sich AI SEO?', a: 'Für jedes Unternehmen, das in seinem Bereich als Experte wahrgenommen werden will — besonders für Dienstleister, Berater, spezialisierte Handwerker und erklärungsbedürftige Leistungen. Der AI-Suchmarkt ist noch jung: frühe Investition bedeutet frühen Vorsprung.' },
+    { q: 'Welche Inhalte werden von KI am häufigsten zitiert?', a: 'Vergleichsartikel (rund ein Drittel aller Zitationen), umfassende Ratgeber und eigene Daten oder Statistiken. Die Princeton-GEO-Studie (KDD 2024) zeigt: Quellenangaben erhöhen die Zitationswahrscheinlichkeit um rund 40 %, konkrete Statistiken um rund 37 %, während Keyword-Überfüllung sie um rund 10 % senkt.' },
+    { q: 'Für wen lohnt sich AI SEO?', a: 'Für jedes Unternehmen, das in seinem Bereich als Experte wahrgenommen werden will, besonders für Dienstleister, Berater, spezialisierte Handwerker und erklärungsbedürftige Leistungen. Der AI-Suchmarkt ist noch jung: frühe Investition bedeutet frühen Vorsprung.' },
 ];
 
 export default function AiSeoPage() {
     const serviceJsonLd = {
         '@context': 'https://schema.org',
         '@type': 'Service',
-        name: 'AI SEO / GEO — Sichtbarkeit in ChatGPT, Perplexity & Copilot',
+        name: 'AI SEO / GEO: Sichtbarkeit in ChatGPT, Perplexity & Copilot',
         provider: BUSINESS,
         areaServed: { '@type': 'City', name: 'Hamburg' },
         url: 'https://webseite.hamburg/leistungen/ai-seo',
@@ -62,7 +62,7 @@ export default function AiSeoPage() {
                     <p className="section-kicker animate-up">AI SEO / GEO</p>
                     <h1 className="subpage-title animate-up">Sichtbar in ChatGPT, Perplexity und Google AI Overviews.</h1>
                     <p className="subpage-intro animate-up">
-                        Immer mehr Menschen suchen mit ChatGPT, Perplexity oder Google AI Overviews statt mit der klassischen Linkliste. Wenn diese Systeme nach Experten in Ihrem Bereich gefragt werden — taucht dann Ihr Unternehmen in der Antwort auf?
+                        Immer mehr Menschen suchen mit ChatGPT, Perplexity oder Google AI Overviews statt mit der klassischen Linkliste. Wenn diese Systeme nach Experten in Ihrem Bereich gefragt werden, taucht dann Ihr Unternehmen in der Antwort auf?
                     </p>
                     <ServiceMeta />
                 </div>
@@ -72,12 +72,12 @@ export default function AiSeoPage() {
                 <div className="container subpage-body">
                     <h2 className="animate-up">Was ist AI SEO (GEO)?</h2>
                     <div className="subpage-takeaway animate-up">
-                        <p><strong>AI SEO</strong> — auch <strong>GEO</strong> (Generative Engine Optimization) oder <strong>AEO</strong> (Answer Engine Optimization) — optimiert Inhalte so, dass KI-Systeme wie ChatGPT, Perplexity, Google AI Overviews und Microsoft Copilot ein Unternehmen als Quelle zitieren. Anders als klassisches SEO zielt es nicht auf Platz 1, sondern auf die Nennung in der generierten Antwort. Die wichtigsten Hebel sind klare Definitionen, belegte Statistiken, strukturierte Daten (Schema.org) und für KI-Crawler zugängliche Inhalte.</p>
+                        <p><strong>AI SEO</strong>, auch <strong>GEO</strong> (Generative Engine Optimization) oder <strong>AEO</strong> (Answer Engine Optimization) genannt, optimiert Inhalte so, dass KI-Systeme wie ChatGPT, Perplexity, Google AI Overviews und Microsoft Copilot ein Unternehmen als Quelle zitieren. Anders als klassisches SEO zielt es nicht auf Platz 1, sondern auf die Nennung in der generierten Antwort. Die wichtigsten Hebel sind klare Definitionen, belegte Statistiken, strukturierte Daten (Schema.org) und für KI-Crawler zugängliche Inhalte.</p>
                     </div>
 
                     <h2 className="animate-up">Die Suche verändert sich gerade grundlegend</h2>
                     <p className="animate-up">Google ist nicht mehr der einzige Weg zur Antwort. ChatGPT erreichte im Oktober 2025 über 800 Millionen wöchentliche Nutzer. Perplexity zitiert in jeder Antwort seine Quellen. Und Google selbst blendet zunehmend AI Overviews über den klassischen Treffern ein.</p>
-                    <p className="animate-up">Diese Systeme arbeiten anders als eine klassische Suchmaschine. Sie lesen das Web, fassen es zusammen und präsentieren eine direkte Antwort mit Quellenverweisen. Wird Ihre Website dabei nicht als vertrauenswürdige Quelle erkannt, fallen Sie aus diesem Kanal heraus — egal wie gut Ihre Leistung ist.</p>
+                    <p className="animate-up">Diese Systeme arbeiten anders als eine klassische Suchmaschine. Sie lesen das Web, fassen es zusammen und präsentieren eine direkte Antwort mit Quellenverweisen. Wird Ihre Website dabei nicht als vertrauenswürdige Quelle erkannt, fallen Sie aus diesem Kanal heraus, egal wie gut Ihre Leistung ist.</p>
 
                     <div className="subpage-stats animate-up">
                         <div className="subpage-stat">
@@ -126,7 +126,7 @@ export default function AiSeoPage() {
                         </div>
                         <div className="subpage-feature">
                             <h3>Monitoring & Anpassung</h3>
-                            <p>Laufendes Tracking über Bing Webmaster Tools (AI Search Queries), Tools wie Peec AI oder Otterly und manuelle Test-Prompts. Die Modelle ändern sich — die Strategie wird kontinuierlich nachgeschärft.</p>
+                            <p>Laufendes Tracking über Bing Webmaster Tools (AI Search Queries), Tools wie Peec AI oder Otterly und manuelle Test-Prompts. Die Modelle ändern sich, also wird die Strategie kontinuierlich nachgeschärft.</p>
                         </div>
                     </div>
 
@@ -147,13 +147,13 @@ export default function AiSeoPage() {
                     </div>
 
                     <h2 className="animate-up">Warum jetzt der richtige Zeitpunkt ist</h2>
-                    <p className="animate-up">AI-Suche ist noch ein junger Markt. Die meisten Wettbewerber optimieren noch nicht dafür. Wer jetzt investiert, baut einen Vorsprung auf, den man später schwer einholt. In zwei bis drei Jahren wird AI SEO so selbstverständlich sein wie klassisches SEO heute — aber die zitierten Plätze sind dann längst vergeben.</p>
+                    <p className="animate-up">AI-Suche ist noch ein junger Markt. Die meisten Wettbewerber optimieren noch nicht dafür. Wer jetzt investiert, baut einen Vorsprung auf, den man später schwer einholt. In zwei bis drei Jahren wird AI SEO so selbstverständlich sein wie klassisches SEO heute. Die zitierten Plätze sind dann aber längst vergeben.</p>
 
                     <div className="subpage-sources animate-up">
                         <h2>Quellen</h2>
                         <ol>
                             <li>OpenAI / Sam Altman, DevDay 2025: 800 Mio. wöchentliche ChatGPT-Nutzer (Oktober 2025). <a href="https://techcrunch.com/2025/10/06/sam-altman-says-chatgpt-has-hit-800m-weekly-active-users/" rel="nofollow noopener" target="_blank">techcrunch.com</a></li>
-                            <li>Semrush AI Overviews Study 2025; Ahrefs — Anteil der Suchen mit AI Overviews (~16–20 %). <a href="https://www.semrush.com/blog/semrush-ai-overviews-study/" rel="nofollow noopener" target="_blank">semrush.com</a></li>
+                            <li>Semrush AI Overviews Study 2025; Ahrefs, Anteil der Suchen mit AI Overviews (~16–20 %). <a href="https://www.semrush.com/blog/semrush-ai-overviews-study/" rel="nofollow noopener" target="_blank">semrush.com</a></li>
                             <li>Aggarwal et al., „GEO: Generative Engine Optimization", KDD 2024. <a href="https://arxiv.org/abs/2311.09735" rel="nofollow noopener" target="_blank">arxiv.org/abs/2311.09735</a></li>
                         </ol>
                     </div>
@@ -162,7 +162,7 @@ export default function AiSeoPage() {
 
             <FaqSection title="Fragen zu AI SEO" items={faqItems} />
             <RelatedServices exclude="ai-seo" />
-            <ServiceCta text="Lassen Sie mich prüfen, wie sichtbar Ihr Unternehmen in KI-Antworten ist. Kostenlose Erstanalyse — unverbindlich und konkret." />
+            <ServiceCta text="Lassen Sie mich prüfen, wie sichtbar Ihr Unternehmen in KI-Antworten ist. Kostenlose Erstanalyse, unverbindlich und konkret." />
         </>
     );
 }

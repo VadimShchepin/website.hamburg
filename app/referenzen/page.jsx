@@ -4,13 +4,13 @@ import { BUSINESS } from '../../src/lib/schema';
 
 export const metadata = {
     title: 'Referenzen & Case Studies | AISEO Hamburg',
-    description: 'Echte Ergebnisse fur echte Unternehmen. Case Studies aus Hamburg: Webdesign, SEO, Google Ads und AI SEO — mit messbaren Ergebnissen.',
+    description: 'Echte Ergebnisse fur echte Unternehmen. Case Studies aus Hamburg: Webdesign, SEO, Google Ads und AI SEO, alle mit messbaren Ergebnissen.',
     alternates: {
         canonical: 'https://webseite.hamburg/referenzen',
     },
     openGraph: {
         title: 'Referenzen & Case Studies | AISEO Hamburg',
-        description: 'Echte Ergebnisse fur echte Unternehmen. Case Studies aus Hamburg: Webdesign, SEO, Google Ads und AI SEO — mit messbaren Ergebnissen.',
+        description: 'Echte Ergebnisse fur echte Unternehmen. Case Studies aus Hamburg: Webdesign, SEO, Google Ads und AI SEO, alle mit messbaren Ergebnissen.',
         url: 'https://webseite.hamburg/referenzen',
         type: 'website',
     },
@@ -22,7 +22,7 @@ const caseStudies = [
         category: 'SEO + GOOGLE ADS + REDESIGN',
         title: '728 lokale Aktionen pro Monat',
         client: 'GL Sommer GmbH',
-        excerpt: 'Hamburgs etabliertes GaLaBau-Unternehmen — Website modernisiert, SEO-Audit von 34/100 aufwarts optimiert, Google Ads gestartet. 1.113 Klicks und 728 lokale Aktionen bei nur 529 EUR Monatsbudget.',
+        excerpt: 'Hamburgs etabliertes GaLaBau-Unternehmen. Website modernisiert, SEO-Audit von 34/100 aufwarts optimiert, Google Ads gestartet. 1.113 Klicks und 728 lokale Aktionen bei nur 529 EUR Monatsbudget.',
         metric: '728 lokale Aktionen / Monat bei 529 EUR',
     },
     {
@@ -30,7 +30,7 @@ const caseStudies = [
         category: 'E-COMMERCE SEO',
         title: 'Organischen Traffic verdoppelt in 90 Tagen',
         client: 'DYBeauty',
-        excerpt: 'K-Beauty Shopify-Shop ohne SEO-Grundlage — 723 Produkte optimiert, Google Merchant Center aufgebaut, Content-Strategie implementiert. Ergebnis: Traffic verdoppelt, 78.500 Impressionen.',
+        excerpt: 'K-Beauty Shopify-Shop ohne SEO-Grundlage. 723 Produkte optimiert, Google Merchant Center aufgebaut, Content-Strategie implementiert. Ergebnis: Traffic verdoppelt, 78.500 Impressionen.',
         metric: '2x organischer Traffic in 90 Tagen',
     },
     {
@@ -38,7 +38,7 @@ const caseStudies = [
         category: 'WEBDESIGN + GOOGLE ADS + SEO',
         title: 'ROI in 7 Wochen, ~40 Kunden/Monat',
         client: 'Blitz Hamburg',
-        excerpt: 'Ein Hamburger Handwerksbetrieb ohne Online-Prasenz — komplett neue Website mit KI-Kostenschatzer, gezielte Google Ads und lokale SEO. Investition in 7 Wochen zuruckgeholt, heute ~40 Kunden pro Monat.',
+        excerpt: 'Ein Hamburger Handwerksbetrieb ohne Online-Prasenz. Komplett neue Website mit KI-Kostenschatzer, gezielte Google Ads und lokale SEO. Investition in 7 Wochen zuruckgeholt, heute ~40 Kunden pro Monat.',
         metric: 'ROI in 7 Wochen',
     },
     {
@@ -52,7 +52,7 @@ const caseStudies = [
     {
         slug: 'kinderalbum',
         category: 'SAAS-PRODUKT + AI SEO',
-        title: 'DSGVO-Schulfotos-Plattform — #1 in ChatGPT',
+        title: 'DSGVO-Schulfotos-Plattform: #1 in ChatGPT',
         client: 'KinderAlbum',
         excerpt: 'Vollstandige DSGVO-konforme Plattform fur Schulfotos mit echten Nutzern, 76 RLS-Policies, zeitversionierter Einwilligung und Fotografen-Workflow. #1 in ChatGPT und Perplexity.',
         metric: '#1 in KI-Suchmaschinen + echte Nutzer',
@@ -62,7 +62,7 @@ const caseStudies = [
         category: 'WEBDESIGN + CMS',
         title: '3 Sprachen, null Abhangigkeit vom Entwickler',
         client: 'Solovei Beauty',
-        excerpt: 'Beauty-Coworking in Hamburg — dreisprachige Website mit Payload CMS, CI/CD Pipeline und der Freiheit, alles selbst zu pflegen. 5.000 Impressionen in 8 Wochen.',
+        excerpt: 'Beauty-Coworking in Hamburg. Dreisprachige Website mit Payload CMS, CI/CD Pipeline und der Freiheit, alles selbst zu pflegen. 5.000 Impressionen in 8 Wochen.',
         metric: '5.000 Impressionen in 8 Wochen',
     },
     {
@@ -70,13 +70,13 @@ const caseStudies = [
         category: 'WEBDESIGN + KI',
         title: 'Schadlingsbekampfung trifft KI-Risikoanalyse',
         client: 'Manetec Hamburg',
-        excerpt: 'Website fur professionelle Schadlingsbekampfung in Hotels und Gastronomie — mit KI-gestutzter Risikoanalyse via Gemini, HACCP-Compliance und industrieller Asthetik.',
+        excerpt: 'Website fur professionelle Schadlingsbekampfung in Hotels und Gastronomie, mit KI-gestutzter Risikoanalyse via Gemini, HACCP-Compliance und industrieller Asthetik.',
         metric: 'KI-Risikoanalyse als Lead-Tool',
     },
     {
         slug: 'typeexplore-ai',
         category: 'KI-PRODUKT',
-        title: 'KI-Tipptrainer — Lernen beim Tippen',
+        title: 'KI-Tipptrainer: Lernen beim Tippen',
         client: 'TypeExplore AI',
         excerpt: 'Tippen lernen mit KI-generierten Lektionen zu jedem Thema. Gemini API, sichere Backend-Proxy-Architektur, Echtzeit-WPM-Tracking. Und Konfetti.',
         metric: 'Gemini 2.5-flash + Konfetti',
@@ -94,7 +94,7 @@ const caseStudies = [
         category: 'WEBDESIGN',
         title: 'Aquarell-Asthetik fur Eventplanerin',
         client: 'Glucksmomente Events',
-        excerpt: 'Individuelle Event-Website fur Josy Eberlein in Hamburg — React + GSAP Scroll-Animationen, Aquarell-Design, drei handverlesene Schriftarten. Warmherzig und professionell.',
+        excerpt: 'Individuelle Event-Website fur Josy Eberlein in Hamburg: React + GSAP Scroll-Animationen, Aquarell-Design, drei handverlesene Schriftarten. Warmherzig und professionell.',
         metric: 'GSAP-Animationen + Aquarell-Design',
     },
 ];
@@ -104,7 +104,7 @@ export default function ReferenzenPage() {
         '@context': 'https://schema.org',
         '@type': 'CollectionPage',
         name: 'Referenzen & Case Studies - AISEO Hamburg',
-        description: 'Echte Ergebnisse fur echte Unternehmen. Case Studies aus Hamburg: Webdesign, SEO, Google Ads und AI SEO — mit messbaren Ergebnissen.',
+        description: 'Echte Ergebnisse fur echte Unternehmen. Case Studies aus Hamburg: Webdesign, SEO, Google Ads und AI SEO, alle mit messbaren Ergebnissen.',
         url: 'https://webseite.hamburg/referenzen',
         publisher: BUSINESS,
     };
@@ -129,7 +129,7 @@ export default function ReferenzenPage() {
                     <p className="section-kicker animate-up">Referenzen</p>
                     <h1 className="subpage-title animate-up">Echte Projekte. Echte Ergebnisse.</h1>
                     <p className="subpage-intro animate-up">
-                        Keine Stockfotos, keine erfundenen Zahlen. Hier sehen Sie, was ich fur Unternehmen in Hamburg konkret erreicht habe — mit messbaren Ergebnissen und echten Daten.
+                        Keine Stockfotos, keine erfundenen Zahlen. Hier sehen Sie, was ich fur Unternehmen in Hamburg konkret erreicht habe, mit messbaren Ergebnissen und echten Daten.
                     </p>
                 </div>
             </section>
@@ -162,7 +162,7 @@ export default function ReferenzenPage() {
                     <div className="cta-box bull-boundary animate-up">
                         <p className="section-kicker">Ahnliche Ergebnisse gewunscht?</p>
                         <h2 className="section-title">Kostenloses Erstgesprach.</h2>
-                        <p className="offer-framing">Lassen Sie uns uber Ihr Projekt sprechen. Ich analysiere Ihre Situation und zeige Ihnen, was konkret moglich ist — kostenlos und unverbindlich.</p>
+                        <p className="offer-framing">Lassen Sie uns uber Ihr Projekt sprechen. Ich analysiere Ihre Situation und zeige Ihnen, was konkret moglich ist. Kostenlos und unverbindlich.</p>
                         <div className="cta-actions mt-4">
                             <Link href="/kontakt" className="button button-primary button-large" data-umami-event="cta-click" data-umami-event-location="referenzen-cta">Jetzt Gesprach vereinbaren</Link>
                         </div>

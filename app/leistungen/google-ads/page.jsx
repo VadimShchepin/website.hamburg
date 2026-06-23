@@ -21,11 +21,11 @@ export const metadata = {
 };
 
 const faqItems = [
-    { q: 'Was kosten Google Ads pro Monat?', a: 'Zwei getrennte Posten: die Management-Fee ab 500 € pro Monat für Aufbau und laufende Optimierung, plus Ihr Werbebudget, das direkt an Google geht und über Ihr eigenes Konto läuft. Das Werbebudget bestimmen Sie — mindestens rund 500 € pro Monat sind sinnvoll, damit genug Daten zum Optimieren entstehen.' },
-    { q: 'Wie schnell kommen die ersten Anfragen?', a: 'Oft innerhalb der ersten Woche nach Kampagnenstart — Google Ads sind der schnellste Weg zu qualifizierten Anfragen. Die ersten 2–4 Wochen dienen der Datensammlung; danach sinkt der Preis pro Anfrage, weil die Kampagne aus den Conversion-Daten lernt.' },
-    { q: 'Was bedeuten CPC, CPA und ROAS?', a: 'CPC (Cost-per-Click) ist der Preis pro Klick auf Ihre Anzeige. CPA (Cost-per-Acquisition) ist der Preis pro Anfrage oder Abschluss. ROAS (Return on Ad Spend) ist der Umsatz pro investiertem Werbe-Euro. Diese drei Kennzahlen entscheiden, ob eine Kampagne profitabel ist — und stehen in jedem Report.' },
-    { q: 'Was sind Local Services Ads?', a: 'Local Services Ads erscheinen ganz oben in der Google-Suche für lokale Dienstleister, noch über den normalen Google Ads, oft mit dem „Google Garantie"-Siegel. Sie zahlen pro Anfrage (Anruf oder Nachricht), nicht pro Klick. Verfügbarkeit und Branchen sind in Deutschland begrenzt — im Erstgespräch prüfe ich, ob es für Sie infrage kommt.' },
-    { q: 'Gehört das Google Ads Konto mir?', a: 'Ja, zu 100 %. Ich arbeite in Ihrem eigenen Google Ads Konto. Sie haben vollen Zugang zu allen Kampagnen, Kosten und Daten. Wenn Sie morgen wechseln, nehmen Sie alles mit — inklusive der gesamten Historie.' },
+    { q: 'Was kosten Google Ads pro Monat?', a: 'Zwei getrennte Posten: die Management-Fee ab 500 € pro Monat für Aufbau und laufende Optimierung, plus Ihr Werbebudget, das direkt an Google geht und über Ihr eigenes Konto läuft. Das Werbebudget bestimmen Sie selbst; mindestens rund 500 € pro Monat sind sinnvoll, damit genug Daten zum Optimieren entstehen.' },
+    { q: 'Wie schnell kommen die ersten Anfragen?', a: 'Oft innerhalb der ersten Woche nach Kampagnenstart, denn Google Ads sind der schnellste Weg zu qualifizierten Anfragen. Die ersten 2–4 Wochen dienen der Datensammlung; danach sinkt der Preis pro Anfrage, weil die Kampagne aus den Conversion-Daten lernt.' },
+    { q: 'Was bedeuten CPC, CPA und ROAS?', a: 'CPC (Cost-per-Click) ist der Preis pro Klick auf Ihre Anzeige. CPA (Cost-per-Acquisition) ist der Preis pro Anfrage oder Abschluss. ROAS (Return on Ad Spend) ist der Umsatz pro investiertem Werbe-Euro. Diese drei Kennzahlen entscheiden, ob eine Kampagne profitabel ist, und stehen in jedem Report.' },
+    { q: 'Was sind Local Services Ads?', a: 'Local Services Ads erscheinen ganz oben in der Google-Suche für lokale Dienstleister, noch über den normalen Google Ads, oft mit dem „Google Garantie"-Siegel. Sie zahlen pro Anfrage (Anruf oder Nachricht), nicht pro Klick. Verfügbarkeit und Branchen sind in Deutschland begrenzt. Im Erstgespräch prüfe ich, ob es für Sie infrage kommt.' },
+    { q: 'Gehört das Google Ads Konto mir?', a: 'Ja, zu 100 %. Ich arbeite in Ihrem eigenen Google Ads Konto. Sie haben vollen Zugang zu allen Kampagnen, Kosten und Daten. Wenn Sie morgen wechseln, nehmen Sie alles mit, inklusive der gesamten Historie.' },
     { q: 'Wie messen Sie den Erfolg der Kampagnen?', a: 'Jeder Anruf, jedes Formular und jeder Kauf wird per Conversion-Tracking (GA4 und Google Ads) einem Keyword zugeordnet. Sie sehen genau: Was kostet ein Lead? Welche Keywords bringen die besten Kunden? Welcher ROAS kommt heraus? Dazu monatlicher Report plus Live-Zugang.' },
 ];
 
@@ -62,7 +62,7 @@ export default function GoogleAdsPage() {
                     <p className="section-kicker animate-up">Google & Local Ads</p>
                     <h1 className="subpage-title animate-up">Google Ads für lokale Unternehmen in Hamburg.</h1>
                     <p className="subpage-intro animate-up">
-                        Während SEO langfristig wirkt, liefern Google Ads sofort Ergebnisse. Ihre Anzeige erscheint genau dann, wenn jemand nach Ihrer Leistung sucht — noch heute. Jeder Euro wird getrackt, jeder Lead gemessen.
+                        Während SEO langfristig wirkt, liefern Google Ads sofort Ergebnisse. Ihre Anzeige erscheint genau dann, wenn jemand nach Ihrer Leistung sucht, und das schon heute. Jeder Euro wird getrackt, jeder Lead gemessen.
                     </p>
                     <ServiceMeta />
                 </div>
@@ -90,7 +90,7 @@ export default function GoogleAdsPage() {
                         </div>
                         <div className="subpage-stat">
                             <span className="subpage-stat-value">100%</span>
-                            <span className="subpage-stat-label">Ihr Konto, Ihre Daten — voller Zugang, jederzeit mitnehmbar</span>
+                            <span className="subpage-stat-label">Ihr Konto, Ihre Daten: voller Zugang, jederzeit mitnehmbar</span>
                         </div>
                     </div>
 
@@ -116,7 +116,7 @@ export default function GoogleAdsPage() {
                         </div>
                         <div className="subpage-feature">
                             <h3>Local Services Ads</h3>
-                            <p>Der Premium-Platz ganz oben, abgerechnet pro Anfrage statt pro Klick. Ideal für Handwerker und Dienstleister — sofern die Branche in Deutschland freigeschaltet ist.</p>
+                            <p>Der Premium-Platz ganz oben, abgerechnet pro Anfrage statt pro Klick. Ideal für Handwerker und Dienstleister, sofern die Branche in Deutschland freigeschaltet ist.</p>
                         </div>
                         <div className="subpage-feature">
                             <h3>Conversion-Tracking</h3>
@@ -131,7 +131,7 @@ export default function GoogleAdsPage() {
                     <h2 className="animate-up">Preise und Leistungen</h2>
                     <div className="subpage-single-price animate-up">
                         <div className="sp-price-value">ab 500 &euro;/Monat</div>
-                        <p>Management-Fee für Kampagnenerstellung und laufende Optimierung. Ihr Werbebudget läuft über Ihr eigenes Google-Konto — Sie bestimmen die Höhe und behalten die volle Kontrolle.</p>
+                        <p>Management-Fee für Kampagnenerstellung und laufende Optimierung. Ihr Werbebudget läuft über Ihr eigenes Google-Konto. Sie bestimmen die Höhe und behalten die volle Kontrolle.</p>
                         <ul className="sp-price-includes">
                             <li>Kampagnen-Setup & Struktur</li>
                             <li>Keyword-Recherche & Wettbewerbsanalyse</li>
@@ -140,11 +140,11 @@ export default function GoogleAdsPage() {
                             <li>Landingpage-Empfehlungen</li>
                             <li>Wöchentliche Optimierung</li>
                             <li>Monatlicher Performance-Report (CPC, CPA, ROAS)</li>
-                            <li>Ihr Konto, Ihre Daten — voller Zugang</li>
+                            <li>Ihr Konto, Ihre Daten: voller Zugang</li>
                         </ul>
                     </div>
 
-                    <h2 className="animate-up">Ihr Geld, Ihre Kontrolle — kein Versteckspiel</h2>
+                    <h2 className="animate-up">Ihr Geld, Ihre Kontrolle. Kein Versteckspiel.</h2>
                     <p className="animate-up">Viele Agenturen lassen das Werbebudget über ihr eigenes Konto laufen. Sie sehen dann nicht, was wirklich ausgegeben wird. Bei mir läuft alles über Ihr eigenes Google Ads Konto: jeder Cent, jede Kampagne, jedes Ergebnis in Echtzeit.</p>
                     <p className="animate-up">Im monatlichen Report zeige ich klar, was ausgegeben wurde, wie viele Anfragen kamen, was ein Lead kostet und was ich für den nächsten Monat empfehle. Wenn eine Kampagne nicht funktioniert, sage ich es Ihnen und optimiere, bis es stimmt.</p>
 

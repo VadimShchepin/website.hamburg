@@ -4,13 +4,13 @@ import Link from 'next/link';
 
 export const metadata = {
     title: 'Webdesign Kosten 2026: Was eine professionelle Website wirklich kostet',
-    description: 'Von 500 bis 50.000 Euro — was bestimmt den Preis einer Website? Ehrlicher Kostenguide mit Preisbeispielen, versteckten Kosten und Tipps fur die richtige Entscheidung.',
+    description: 'Von 500 bis 50.000 Euro: was bestimmt den Preis einer Website? Ehrlicher Kostenguide mit Preisbeispielen, versteckten Kosten und Tipps fur die richtige Entscheidung.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/webdesign-kosten',
     },
     openGraph: {
         title: 'Webdesign Kosten 2026: Was eine professionelle Website wirklich kostet',
-        description: 'Von 500 bis 50.000 Euro — was bestimmt den Preis einer Website? Ehrlicher Kostenguide mit Preisbeispielen und versteckten Kosten.',
+        description: 'Von 500 bis 50.000 Euro: was bestimmt den Preis einer Website? Ehrlicher Kostenguide mit Preisbeispielen und versteckten Kosten.',
         url: 'https://webseite.hamburg/wissen/webdesign-kosten',
         type: 'article',
     },
@@ -73,7 +73,7 @@ export default function WebdesignKostenArticlePage() {
                         Content-Erstellung.
                     </li>
                     <li>
-                        <strong>Design — Template oder individuell:</strong> Ein fertig gekauftes Template
+                        <strong>Design, Template oder individuell:</strong> Ein fertig gekauftes Template
                         kostet 50 bis 200 Euro. Ein individuelles Design, das exakt auf Ihre Marke zugeschnitten
                         ist, beginnt bei 1.500 Euro. Der Unterschied: Ein Template sieht aus wie tausend andere
                         Websites. Ein individuelles Design kommuniziert Ihre Alleinstellung vom ersten Pixel an.
@@ -102,7 +102,7 @@ export default function WebdesignKostenArticlePage() {
 
                 <h2>Was kostet eine Website? Preisvergleich nach Typ</h2>
                 <p>
-                    Die Preisspanne ist enorm — von kostenlos bis sechsstellig. Entscheidend ist, welche Art
+                    Die Preisspanne ist enorm, von kostenlos bis sechsstellig. Entscheidend ist, welche Art
                     von Website zu Ihrem Unternehmen und Ihren Zielen passt.
                 </p>
 
@@ -176,7 +176,7 @@ export default function WebdesignKostenArticlePage() {
                 <h3>Individuelle Website</h3>
                 <p><strong>Kosten:</strong> 2.000 bis 10.000 Euro</p>
                 <p>
-                    Hier wird Ihre Website von Grund auf entwickelt — oder auf Basis eines schlanken
+                    Hier wird Ihre Website von Grund auf entwickelt oder auf Basis eines schlanken
                     Frameworks ma&szlig;geschneidert. Design, Struktur und Funktionen werden exakt auf Ihre
                     Anforderungen zugeschnitten.
                 </p>
@@ -216,7 +216,7 @@ export default function WebdesignKostenArticlePage() {
                     </li>
                     <li>
                         <strong>SSL-Zertifikat:</strong> Heutzutage bei den meisten Hostern kostenlos
-                        (Let&apos;s Encrypt). Ohne SSL zeigt der Browser eine Warnung — das vergrault
+                        (Let&apos;s Encrypt). Ohne SSL zeigt der Browser eine Warnung, und das vergrault
                         Besucher sofort.
                     </li>
                     <li>
@@ -228,12 +228,12 @@ export default function WebdesignKostenArticlePage() {
                     <li>
                         <strong>Content-Erstellung:</strong> Professionelle Webtexte kosten zwischen 2.000
                         und 5.000 Euro f&uuml;r eine komplette Website. Professionelle Fotos liegen bei
-                        500 bis 2.000 Euro f&uuml;r ein Shooting. Viele Agenturen kalkulieren Content separat —
-                        fragen Sie explizit danach.
+                        500 bis 2.000 Euro f&uuml;r ein Shooting. Viele Agenturen kalkulieren Content separat,
+                        fragen Sie also explizit danach.
                     </li>
                     <li>
                         <strong>Tools und Lizenzen:</strong> Premium-Plugins, Schriftlizenzen, Stockfotos,
-                        Analytics-Tools — diese Kosten summieren sich auf 100 bis 500 Euro pro Jahr.
+                        Analytics-Tools: diese Kosten summieren sich auf 100 bis 500 Euro pro Jahr.
                     </li>
                 </ul>
                 <p>
@@ -270,7 +270,7 @@ export default function WebdesignKostenArticlePage() {
 
                 <h2>Webdesign Kosten in Hamburg: Was Agenturen berechnen</h2>
                 <p>
-                    Hamburg ist einer der teuersten Standorte Deutschlands — auch f&uuml;r Webdesign. Die
+                    Hamburg ist einer der teuersten Standorte Deutschlands, auch f&uuml;r Webdesign. Die
                     Stundens&auml;tze der Hamburger Agenturen liegen zwischen 80 und 180 Euro netto. Daraus
                     ergeben sich typische Projektpreise:
                 </p>
@@ -281,14 +281,14 @@ export default function WebdesignKostenArticlePage() {
                     <li>Komplette Corporate Website mit mehreren Sprachen: 15.000 bis 50.000+ Euro</li>
                 </ul>
                 <p>
-                    Die meisten lokalen Unternehmen — Handwerker, Praxen, Restaurants, Dienstleister — bewegen
+                    Die meisten lokalen Unternehmen, etwa Handwerker, Praxen, Restaurants und Dienstleister, bewegen
                     sich im Bereich von 3.000 bis 10.000 Euro. In diesem Segment ist der Markt stark
                     fragmentiert: Gro&szlig;e Agenturen mit 20 Mitarbeitern konkurrieren mit Freelancern und
                     spezialisierten Boutique-Agenturen.
                 </p>
                 <p>
                     Bei AISEO Hamburg verfolgen wir einen transparenten Ansatz: One-Pager starten ab 2.000
-                    Euro, mehrseitige Websites ab 3.000 Euro — inklusive SEO-Grundoptimierung und
+                    Euro, mehrseitige Websites ab 3.000 Euro, jeweils inklusive SEO-Grundoptimierung und
                     Performance-Optimierung. Kein Kleingedrucktes, keine &Uuml;berraschungen nach
                     Projektstart. Was im Angebot steht, ist der Preis. Unsere Referenzen zeigen, was
                     dabei herauskommt: Die <Link href="/referenzen/blitz-hamburg">Website f&uuml;r Blitz Hamburg</Link> erzielte
@@ -299,7 +299,7 @@ export default function WebdesignKostenArticlePage() {
                 <h2>Worauf Sie bei der Agenturwahl achten sollten</h2>
                 <p>
                     Der Preis allein ist kein Qualit&auml;tsmerkmal. Eine Agentur, die 2.000 Euro weniger
-                    verlangt, aber eine langsame Website ohne SEO liefert, kostet Sie am Ende mehr — n&auml;mlich
+                    verlangt, aber eine langsame Website ohne SEO liefert, kostet Sie am Ende mehr, n&auml;mlich
                     entgangene Kunden. Achten Sie auf diese f&uuml;nf Punkte:
                 </p>
                 <ul>
@@ -340,7 +340,7 @@ export default function WebdesignKostenArticlePage() {
                     <li><strong>Hosting:</strong> 10 bis 50 Euro pro Monat, je nach Anforderung.</li>
                     <li><strong>Domain-Verl&auml;ngerung:</strong> Circa 1 Euro pro Monat (j&auml;hrlich abgerechnet).</li>
                     <li><strong>Technische Wartung:</strong> 50 bis 150 Euro pro Monat f&uuml;r Updates, Backups, Sicherheits&uuml;berwachung und Fehlerbehebung.</li>
-                    <li><strong>Content-Pflege:</strong> 100 bis 500 Euro pro Monat, wenn Sie regelm&auml;&szlig;ig neue Inhalte ver&ouml;ffentlichen wollen — Blog-Artikel, Referenzen, Neuigkeiten.</li>
+                    <li><strong>Content-Pflege:</strong> 100 bis 500 Euro pro Monat, wenn Sie regelm&auml;&szlig;ig neue Inhalte ver&ouml;ffentlichen wollen: Blog-Artikel, Referenzen, Neuigkeiten.</li>
                     <li><strong>SEO-Betreuung:</strong> 300 bis 1.500 Euro pro Monat f&uuml;r laufende Optimierung, Keyword-Monitoring und Wettbewerbsanalyse.</li>
                     <li><strong>Kleine &Auml;nderungen:</strong> 50 bis 100 Euro pro Stunde f&uuml;r einzelne Anpassungen au&szlig;erhalb eines Wartungsvertrags.</li>
                 </ul>
@@ -348,7 +348,7 @@ export default function WebdesignKostenArticlePage() {
                     In Summe sollten Sie f&uuml;r eine professionelle Website mit Wartung und minimaler
                     Content-Pflege zwischen 100 und 400 Euro pro Monat einplanen. Klingt viel? Vergleichen
                     Sie es mit der Miete f&uuml;r ein Ladengesch&auml;ft: Ihre Website ist 24 Stunden am
-                    Tag ge&ouml;ffnet, 365 Tage im Jahr — und erreicht jeden potenziellen Kunden in Ihrer
+                    Tag ge&ouml;ffnet, 365 Tage im Jahr, und sie erreicht jeden potenziellen Kunden in Ihrer
                     Stadt, der nach Ihrer Dienstleistung sucht.
                 </p>
                 <p>
@@ -361,7 +361,7 @@ export default function WebdesignKostenArticlePage() {
 
                 <p>
                     Wollen Sie wissen, was eine Website f&uuml;r Ihr Unternehmen konkret kosten w&uuml;rde?
-                    Ich analysiere Ihre Anforderungen und gebe Ihnen einen ehrlichen Kostenrahmen — kostenlos
+                    Ich analysiere Ihre Anforderungen und gebe Ihnen einen ehrlichen Kostenrahmen, kostenlos
                     und unverbindlich. <Link href="/kontakt">Schreiben Sie mir</Link>, und Sie erhalten innerhalb
                     von 48 Stunden eine erste Einsch&auml;tzung mit konkreten Zahlen statt vager Versprechen.
                 </p>

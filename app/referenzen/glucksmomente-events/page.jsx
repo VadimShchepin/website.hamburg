@@ -61,7 +61,7 @@ export default function GlucksmomenteCaseStudy() {
                         Glucksmomente Events: Eine Website, die so warmherzig ist wie die Frau dahinter.
                     </h1>
                     <p className="subpage-intro animate-up">
-                        Josy plant Hochzeiten, Geburtstage und Events in Hamburg. Ihre Website musste genau das ausstrahlen: Warme, Kreativitat und Professionalitat. Kein Template von der Stange. Eine Website, die nach Aquarell riecht — wenn Websites riechen konnten.
+                        Josy plant Hochzeiten, Geburtstage und Events in Hamburg. Ihre Website musste genau das ausstrahlen: Warme, Kreativitat und Professionalitat. Kein Template von der Stange. Eine Website, die nach Aquarell riecht, wenn Websites riechen konnten.
                     </p>
                     <div className="article-byline animate-up">
                         Von <Link href="/ueber-uns">Vadim Shchepin</Link> &middot; 3. April 2026
@@ -88,11 +88,11 @@ export default function GlucksmomenteCaseStudy() {
                         </div>
                         <div className="subpage-feature">
                             <h3>GSAP Scroll-Animationen</h3>
-                            <p>Jede Sektion erscheint beim Scrollen — sanft, nicht aufdringlich. ScrollTrigger-gesteuerte Reveal-Effekte, die die Geschichte erzahlen, wahrend der Besucher scrollt. Wie ein guter Gastgeber, der den Abend Stuck fur Stuck entfaltet.</p>
+                            <p>Jede Sektion erscheint beim Scrollen, sanft, nicht aufdringlich. ScrollTrigger-gesteuerte Reveal-Effekte, die die Geschichte erzahlen, wahrend der Besucher scrollt. Wie ein guter Gastgeber, der den Abend Stuck fur Stuck entfaltet.</p>
                         </div>
                         <div className="subpage-feature">
                             <h3>Single-Page, aber mit Tiefe</h3>
-                            <p>Smooth Scrolling zwischen den Sektionen. Navigation, die mitwandert. Alle Informationen auf einer Seite — Services, Uber mich, Portfolio, Kontakt — ohne das Gefuhl von Enge.</p>
+                            <p>Smooth Scrolling zwischen den Sektionen. Navigation, die mitwandert. Alle Informationen auf einer Seite: Services, Uber mich, Portfolio, Kontakt, ohne das Gefuhl von Enge.</p>
                         </div>
                         <div className="subpage-feature">
                             <h3>Mobile-First</h3>
@@ -102,7 +102,7 @@ export default function GlucksmomenteCaseStudy() {
 
                     <h2 className="animate-up">Warum kein WordPress</h2>
                     <p className="animate-up">
-                        Josy brauchte keine Blog-Maschine mit 47 Plugins. Sie brauchte eine schnelle, schone, einzigartige Website, die genau das tut, was sie soll — und nichts anderes. React + Vite + GSAP liefern genau das: eine leichte, performante Seite ohne den Ballast eines CMS. Kein Update-Popup, kein Plugin-Konflikt, kein &bdquo;Ihre Website wurde gehackt&ldquo;-E-Mail um 3 Uhr morgens.
+                        Josy brauchte keine Blog-Maschine mit 47 Plugins. Sie brauchte eine schnelle, schone, einzigartige Website, die genau das tut, was sie soll, und nichts anderes. React + Vite + GSAP liefern genau das: eine leichte, performante Seite ohne den Ballast eines CMS. Kein Update-Popup, kein Plugin-Konflikt, kein &bdquo;Ihre Website wurde gehackt&ldquo;-E-Mail um 3 Uhr morgens.
                     </p>
                     <p className="animate-up">
                         Wenn Josy den Text andern will, schreibt sie mir. Ich andere es in 5 Minuten. Das ist schneller als jedes WordPress-Backend. Und sicherer.
@@ -136,7 +136,7 @@ export default function GlucksmomenteCaseStudy() {
                 </div>
             </section>
 
-            <ServiceCta text="Individuelle Website gewunscht? Keine Templates, keine Stock-Fotos. Ich baue Websites, die nach Ihnen aussehen — nicht nach allen anderen. Und ja, es darf Aquarell sein." />
+            <ServiceCta text="Individuelle Website gewunscht? Keine Templates, keine Stock-Fotos. Ich baue Websites, die nach Ihnen aussehen, nicht nach allen anderen. Und ja, es darf Aquarell sein." />
         </>
     );
 }

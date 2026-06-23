@@ -23,10 +23,10 @@ export const metadata = {
 const faqItems = [
     { q: 'Was kostet eine Praxis-Website?', a: 'Eine kompakte Praxis-Website mit den wichtigsten Informationen beginnt ab 2.000 €. Eine umfangreiche Website mit Online-Terminbuchung, Team-Vorstellung und Leistungsseiten liegt ab 3.500 €. Den genauen Preis als Festpreis besprechen wir im kostenlosen Erstgespräch.' },
     { q: 'Ist die Website DSGVO-konform?', a: 'Ja. Gerade für Arztpraxen ist DSGVO-Konformität Pflicht. Ich setze datenschutzkonforme Kontaktformulare, ein rechtssicheres Cookie-Management und eine korrekte Datenschutzerklärung um. Alle übertragenen Daten werden per SSL verschlüsselt. Auf Wunsch binde ich Ihren Datenschutzbeauftragten ein.' },
-    { q: 'Kann ich eine Online-Terminbuchung integrieren?', a: 'Ja. Ich integriere gängige Systeme wie Doctolib, Jameda oder Clickdoc direkt in Ihre Website. Patienten buchen rund um die Uhr — das entlastet Ihr Team und reduziert Telefonanfragen. Laut Bitkom hatte 2024 bereits jede zweite Person in Deutschland schon einmal online einen Arzttermin vereinbart.' },
+    { q: 'Kann ich eine Online-Terminbuchung integrieren?', a: 'Ja. Ich integriere gängige Systeme wie Doctolib, Jameda oder Clickdoc direkt in Ihre Website. Patienten buchen rund um die Uhr, das entlastet Ihr Team und reduziert Telefonanfragen. Laut Bitkom hatte 2024 bereits jede zweite Person in Deutschland schon einmal online einen Arzttermin vereinbart.' },
     { q: 'Wie finden Patienten meine Praxis bei Google?', a: 'Durch lokale SEO, Google-Maps-Integration und strukturierte Daten erscheint Ihre Praxis bei Suchen wie „Zahnarzt Hamburg Eimsbüttel" oder „Hausarzt in der Nähe". Ich optimiere Ihr Google Business Profile und sorge für konsistente NAP-Daten (Name, Adresse, Telefon).' },
-    { q: 'Kann ich Sprechzeiten und Team-Infos selbst aktualisieren?', a: 'Ja. Ich richte ein benutzerfreundliches CMS ein, mit dem Sie Sprechzeiten, Urlaubszeiten, Team-Mitglieder und Leistungen selbst anpassen — ohne technische Kenntnisse. Ich schule Sie und Ihr Praxisteam in der Bedienung.' },
-    { q: 'Wie lange dauert die Erstellung?', a: 'Eine Praxis-Website ist in der Regel in 3–5 Wochen fertig. Der genaue Zeitrahmen hängt vom Umfang ab — etwa ob Sie Online-Terminbuchung, Teamfotos oder Leistungsseiten benötigen. Nach dem Erstgespräch erhalten Sie einen konkreten Zeitplan.' },
+    { q: 'Kann ich Sprechzeiten und Team-Infos selbst aktualisieren?', a: 'Ja. Ich richte ein benutzerfreundliches CMS ein, mit dem Sie Sprechzeiten, Urlaubszeiten, Team-Mitglieder und Leistungen selbst anpassen, ganz ohne technische Kenntnisse. Ich schule Sie und Ihr Praxisteam in der Bedienung.' },
+    { q: 'Wie lange dauert die Erstellung?', a: 'Eine Praxis-Website ist in der Regel in 3–5 Wochen fertig. Der genaue Zeitrahmen hängt vom Umfang ab, etwa ob Sie Online-Terminbuchung, Teamfotos oder Leistungsseiten benötigen. Nach dem Erstgespräch erhalten Sie einen konkreten Zeitplan.' },
 ];
 
 export default function WebdesignAerztePage() {
@@ -79,16 +79,16 @@ export default function WebdesignAerztePage() {
                 <div className="container subpage-body">
                     <h2 className="animate-up">Was kostet eine Praxis-Website?</h2>
                     <div className="subpage-takeaway animate-up">
-                        <p>Eine professionelle Praxis-Website kostet bei mir <strong>ab 2.000 €</strong> (kompakt) bzw. <strong>ab 3.500 €</strong> (Premium mit Online-Terminbuchung). Sie ist DSGVO-konform, mobiloptimiert und lokal für Google sichtbar. Laut Bitkom hat 2024 bereits jede zweite Person in Deutschland (50 %) schon online einen Arzttermin gebucht — eine veraltete oder fehlende Website kostet Sie genau diese Patienten.</p>
+                        <p>Eine professionelle Praxis-Website kostet bei mir <strong>ab 2.000 €</strong> (kompakt) bzw. <strong>ab 3.500 €</strong> (Premium mit Online-Terminbuchung). Sie ist DSGVO-konform, mobiloptimiert und lokal für Google sichtbar. Laut Bitkom hat 2024 bereits jede zweite Person in Deutschland (50 %) schon online einen Arzttermin gebucht. Eine veraltete oder fehlende Website kostet Sie genau diese Patienten.</p>
                     </div>
 
                     <h2 className="animate-up">Warum Arztpraxen eine moderne Website brauchen</h2>
-                    <p className="animate-up">Laut Bitkom (2024) hat die Hälfte der Deutschen schon mindestens einmal online einen Arzttermin vereinbart — 2019 waren es erst 26 %. 27 % wählen ihre Praxis gezielt danach aus, ob Online-Terminbuchung angeboten wird. Plattformen wie Doctolib und Jameda dominieren die Suchergebnisse zunehmend.</p>
+                    <p className="animate-up">Laut Bitkom (2024) hat die Hälfte der Deutschen schon mindestens einmal online einen Arzttermin vereinbart, 2019 waren es erst 26 %. 27 % wählen ihre Praxis gezielt danach aus, ob Online-Terminbuchung angeboten wird. Plattformen wie Doctolib und Jameda dominieren die Suchergebnisse zunehmend.</p>
                     <p className="animate-up">Die häufigsten Probleme, die ich bei Praxis-Websites in Hamburg sehe:</p>
                     <ul className="check-list animate-up">
-                        <li>Keine oder schlechte Google-Sichtbarkeit — Patienten finden die Praxis nicht</li>
+                        <li>Keine oder schlechte Google-Sichtbarkeit, sodass Patienten die Praxis nicht finden</li>
                         <li>Veraltetes Design, das kein Vertrauen aufbaut</li>
-                        <li>Keine Online-Terminbuchung — Patienten wechseln zu Praxen mit Doctolib</li>
+                        <li>Keine Online-Terminbuchung, sodass Patienten zu Praxen mit Doctolib wechseln</li>
                         <li>DSGVO-Verstöße durch unsichere Formulare oder fehlende Cookie-Einwilligung</li>
                         <li>Nicht mobiloptimiert, obwohl die meisten Patienten mit dem Smartphone suchen</li>
                     </ul>
@@ -112,11 +112,11 @@ export default function WebdesignAerztePage() {
                     <div className="subpage-features-grid animate-up">
                         <div className="subpage-feature">
                             <h3>DSGVO-Konformität</h3>
-                            <p>Datenschutz ist für Arztpraxen besonders kritisch. Sichere Kontaktformulare, rechtskonformes Cookie-Management und SSL-verschlüsselte Datenübertragung sind Pflicht — und bei mir Standard.</p>
+                            <p>Datenschutz ist für Arztpraxen besonders kritisch. Sichere Kontaktformulare, rechtskonformes Cookie-Management und SSL-verschlüsselte Datenübertragung sind Pflicht und bei mir Standard.</p>
                         </div>
                         <div className="subpage-feature">
                             <h3>Online-Terminbuchung</h3>
-                            <p>Integration von Doctolib, Jameda, Clickdoc oder individuellen Buchungssystemen direkt auf Ihrer Website. Patienten buchen rund um die Uhr — Ihr Praxisteam wird spürbar entlastet.</p>
+                            <p>Integration von Doctolib, Jameda, Clickdoc oder individuellen Buchungssystemen direkt auf Ihrer Website. Patienten buchen rund um die Uhr, und Ihr Praxisteam wird spürbar entlastet.</p>
                         </div>
                         <div className="subpage-feature">
                             <h3>Sprechzeiten & Notfallinfos</h3>
@@ -124,7 +124,7 @@ export default function WebdesignAerztePage() {
                         </div>
                         <div className="subpage-feature">
                             <h3>Mobiloptimierung</h3>
-                            <p>Die meisten Patienten suchen unterwegs mit dem Smartphone. Ihre Praxis-Website funktioniert auf dem Handy genauso wie am Desktop — mit schnellen Ladezeiten und einfacher Navigation.</p>
+                            <p>Die meisten Patienten suchen unterwegs mit dem Smartphone. Ihre Praxis-Website funktioniert auf dem Handy genauso wie am Desktop, mit schnellen Ladezeiten und einfacher Navigation.</p>
                         </div>
                     </div>
 
@@ -194,8 +194,8 @@ export default function WebdesignAerztePage() {
                     <div className="subpage-sources animate-up">
                         <h2>Quellen</h2>
                         <ol>
-                            <li>Bitkom e. V., „Die Hälfte der Deutschen vereinbart Arzttermine online" (2024) — 50 % (2019: 26 %), 27 % wählen Praxis nach Online-Buchung. <a href="https://www.bitkom.org/Presse/Presseinformation/Haelfte-vereinbart-Arzttermine-online" rel="nofollow noopener" target="_blank">bitkom.org</a></li>
-                            <li>Bitkom e. V., „Mehr als die Hälfte liest Arzt-Bewertungen im Internet" — Bewertungen bei der Arztwahl. <a href="https://www.bitkom.org/Presse/Presseinformation/Haelfte-liest-Arzt-Bewertungen-Internet" rel="nofollow noopener" target="_blank">bitkom.org</a></li>
+                            <li>Bitkom e. V., „Die Hälfte der Deutschen vereinbart Arzttermine online" (2024): 50 % (2019: 26 %), 27 % wählen Praxis nach Online-Buchung. <a href="https://www.bitkom.org/Presse/Presseinformation/Haelfte-vereinbart-Arzttermine-online" rel="nofollow noopener" target="_blank">bitkom.org</a></li>
+                            <li>Bitkom e. V., „Mehr als die Hälfte liest Arzt-Bewertungen im Internet": Bewertungen bei der Arztwahl. <a href="https://www.bitkom.org/Presse/Presseinformation/Haelfte-liest-Arzt-Bewertungen-Internet" rel="nofollow noopener" target="_blank">bitkom.org</a></li>
                         </ol>
                     </div>
                 </div>
@@ -203,7 +203,7 @@ export default function WebdesignAerztePage() {
 
             <FaqSection title="Häufige Fragen zu Praxis-Websites" items={faqItems} />
             <RelatedServices exclude="webdesign" />
-            <ServiceCta text="Lassen Sie uns über Ihre Praxis-Website sprechen. Kostenloses Erstgespräch — ich analysiere Ihre Online-Präsenz und zeige Ihnen, wie Sie mehr Patienten über Google gewinnen. DSGVO-konform und professionell." />
+            <ServiceCta text="Lassen Sie uns über Ihre Praxis-Website sprechen. Im kostenlosen Erstgespräch analysiere ich Ihre Online-Präsenz und zeige Ihnen, wie Sie mehr Patienten über Google gewinnen. DSGVO-konform und professionell." />
         </>
     );
 }

@@ -7,7 +7,7 @@ export default function Approach() {
                 <div className="two-col-layout items-center">
                     <div className="text-col">
                         <p className="section-kicker animate-up">Unser Ansatz</p>
-                        <h2 className="section-title animate-up">Websites die arbeiten — nicht nur existieren.</h2>
+                        <h2 className="section-title animate-up">Websites, die arbeiten statt nur zu existieren.</h2>
                         <p className="large-text animate-up">Wir verkaufen kein Design. Wir bauen ein System, das Kunden bringt. Jede Entscheidung basiert auf Daten, nicht auf Geschmack.</p>
                         <ul className="check-list mt-4 animate-up">
                             <li><strong>Marktanalyse:</strong> Verstehen, was Ihre Kunden wirklich suchen.</li>
@@ -19,7 +19,7 @@ export default function Approach() {
                     <div className="visual-col">
                         <div className="market-frame content-frame animate-up">
                             <h3>Strategie + Umsetzung</h3>
-                            <p>Ihre Website wird zum Geschaftsinstrument — nicht nur ein Design-Projekt.</p>
+                            <p>Ihre Website wird zum Geschaftsinstrument, nicht nur zu einem Design-Projekt.</p>
                             <div className="frame-stats">
                                 <div className="frame-stat">
                                     <span className="frame-stat-value">#1</span>

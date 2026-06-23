@@ -12,9 +12,9 @@ export default function QualityTransparency() {
                             </svg>
                         </div>
                         <h2 className="section-title">Wir liefern. Punkt.</h2>
-                        <p className="large-text">Viele Agenturen verkaufen Websites. Wir bauen Maschinen, die Kunden bringen — und horen erst auf, wenn die Ergebnisse stehen.</p>
+                        <p className="large-text">Viele Agenturen verkaufen Websites. Wir bauen Maschinen, die Kunden bringen, und horen erst auf, wenn die Ergebnisse stehen.</p>
                         <ul className="check-list mt-4">
-                            <li>Blitzschnelle Ladezeiten — 100/100 bei jedem Projekt</li>
+                            <li>Blitzschnelle Ladezeiten, 100/100 bei jedem Projekt</li>
                             <li>Durchdachte Conversion-Logik statt hubscher Deko</li>
                             <li>Ergebnisse in Wochen, nicht in Quartalen</li>
                         </ul>
@@ -26,10 +26,10 @@ export default function QualityTransparency() {
                             </svg>
                         </div>
                         <h2 className="section-title">Sie wissen immer, was passiert</h2>
-                        <p className="large-text">Kein Versteckspiel. Echte Zahlen, direkte Kommunikation, monatliche Reports. Wenn etwas nicht funktioniert, sagen wir es — und fixen es.</p>
+                        <p className="large-text">Kein Versteckspiel. Echte Zahlen, direkte Kommunikation, monatliche Reports. Wenn etwas nicht funktioniert, sagen wir es und bringen es in Ordnung.</p>
                         <ul className="check-list mt-4">
                             <li>Monatliche Performance-Reports mit echten KPIs</li>
-                            <li>Direkte Kommunikation — kein Agentur-Sprech</li>
+                            <li>Direkte Kommunikation ohne Agentur-Sprech</li>
                             <li>Ihre Daten und Zugange gehoren Ihnen. Immer.</li>
                         </ul>
                     </div>

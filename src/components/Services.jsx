@@ -6,7 +6,7 @@ export default function Services() {
         {
             slug: 'webdesign',
             title: 'Webdesign & Entwicklung',
-            desc: 'Schnelle, konversionsstarke Websites mit klarer Struktur. Kein Baukasten — individuell entwickelt fur Ihr Geschaft.',
+            desc: 'Schnelle, konversionsstarke Websites mit klarer Struktur. Kein Baukasten, sondern individuell entwickelt fur Ihr Geschaft.',
             points: ['Responsive Design', 'PageSpeed 100/100', 'Klare Nutzerfuhrung', 'CMS oder Custom'],
             price: 'Ab 2.000',
             icon: (
@@ -59,7 +59,7 @@ export default function Services() {
                 <div className="section-header text-center">
                     <p className="section-kicker animate-up">Leistungen</p>
                     <h2 className="section-title animate-up">Alles aus einer Hand.</h2>
-                    <p className="section-desc animate-up">Strategie, Design, Entwicklung und Marketing — aufeinander abgestimmt.</p>
+                    <p className="section-desc animate-up">Strategie, Design, Entwicklung und Marketing, alles aufeinander abgestimmt.</p>
                 </div>
                 <div className="services-grid">
                     {services.map((s, i) => (

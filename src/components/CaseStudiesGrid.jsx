@@ -42,7 +42,7 @@ export default function CaseStudiesGrid() {
             id: 1,
             tag: 'SEO + ADS + REDESIGN',
             title: 'GL Sommer: 728 lokale Aktionen pro Monat',
-            desc: 'Hamburgs etabliertes GaLaBau-Unternehmen — Website modernisiert, SEO-Audit von 34/100 aufwarts, Google Ads mit 1.113 Klicks und 728 lokalen Aktionen bei nur 529 EUR Monatsbudget.',
+            desc: 'Hamburgs etabliertes GaLaBau-Unternehmen. Website modernisiert, SEO-Audit von 34/100 aufwarts, Google Ads mit 1.113 Klicks und 728 lokalen Aktionen bei nur 529 EUR Monatsbudget.',
             url: '/referenzen/gl-sommer',
             internal: true,
             image: '/referenzen/Gl-sommer-hero.webp',
@@ -52,7 +52,7 @@ export default function CaseStudiesGrid() {
             id: 2,
             tag: 'E-COMMERCE SEO',
             title: 'DYBeauty: Organischen Traffic verdoppelt in 90 Tagen',
-            desc: 'K-Beauty Shopify-Shop ohne SEO-Grundlage — 723 Produkte optimiert, Google Merchant Center aufgebaut, Content-Strategie. Ergebnis: Traffic verdoppelt, 78.500 Impressionen.',
+            desc: 'K-Beauty Shopify-Shop ohne SEO-Grundlage. 723 Produkte optimiert, Google Merchant Center aufgebaut, Content-Strategie. Ergebnis: Traffic verdoppelt, 78.500 Impressionen.',
             url: '/referenzen/dybeauty',
             internal: true,
             image: '/referenzen/previews/solovei-hero-section.webp',
@@ -62,7 +62,7 @@ export default function CaseStudiesGrid() {
             id: 3,
             tag: 'WEBDESIGN + ADS',
             title: 'Blitz Hamburg: ROI in 7 Wochen, ~40 Kunden/Monat',
-            desc: 'Handwerksbetrieb ohne Online-Prasenz — neue Website mit KI-Kostenschatzer, Google Ads und lokale SEO. Investition in 7 Wochen zuruckgeholt, heute ~40 Kunden pro Monat.',
+            desc: 'Handwerksbetrieb ohne Online-Prasenz. Neue Website mit KI-Kostenschatzer, Google Ads und lokale SEO. Investition in 7 Wochen zuruckgeholt, heute ~40 Kunden pro Monat.',
             url: '/referenzen/blitz-hamburg',
             internal: true,
             image: '/referenzen/Blitz-hero.webp',
@@ -86,7 +86,7 @@ export default function CaseStudiesGrid() {
                                     {item.image ? (
                                         <Image
                                             src={item.image}
-                                            alt={`${item.title} — Website Screenshot`}
+                                            alt={`${item.title}: Website Screenshot`}
                                             width={1200}
                                             height={781}
                                             quality={80}

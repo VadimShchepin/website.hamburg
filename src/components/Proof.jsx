@@ -56,7 +56,7 @@ export default function Proof() {
                     <div className="metric">
                         <Counter target={100} />
                         <span className="metric-unit">/100</span>
-                        <span className="metric-label">PageSpeed — jedes Projekt</span>
+                        <span className="metric-label">PageSpeed bei jedem Projekt</span>
                     </div>
                     <div className="metric">
                         <span className="metric-value">3x</span>
@@ -64,7 +64,7 @@ export default function Proof() {
                     </div>
                     <div className="metric">
                         <Counter target={50} suffix="+" />
-                        <span className="metric-label">Projekte geliefert — nicht nur verkauft</span>
+                        <span className="metric-label">Projekte geliefert, nicht nur verkauft</span>
                     </div>
                 </div>
             </div>

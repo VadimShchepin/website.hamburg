@@ -27,7 +27,7 @@ export default function Problem() {
                 </svg>
             ),
             title: 'Keine Conversion-Strategie',
-            desc: 'Besucher kommen — aber es gibt keinen klaren Weg zur Anfrage.'
+            desc: 'Besucher kommen, aber es gibt keinen klaren Weg zur Anfrage.'
         },
         {
             icon: (
@@ -36,7 +36,7 @@ export default function Problem() {
                 </svg>
             ),
             title: 'Agenturen, die nicht liefern',
-            desc: 'Schone Prasentation, keine Ergebnisse. Vertrage statt Verantwortung. Sie zahlen — und warten.'
+            desc: 'Schone Prasentation, keine Ergebnisse. Vertrage statt Verantwortung. Sie zahlen und warten.'
         },
     ];
 

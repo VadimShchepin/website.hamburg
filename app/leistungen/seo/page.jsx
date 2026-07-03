@@ -8,20 +8,20 @@ import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
     title: 'SEO Hamburg | Lokale Sichtbarkeit & Google Rankings',
-    description: 'Lokale Suchmaschinenoptimierung für Unternehmen in Hamburg: Google Business Profile, Google Maps, technisches SEO und Content. Live-Dashboard, monatliche Reports. Ab 1.000 €/Monat.',
+    description: 'Lokale Suchmaschinenoptimierung für Unternehmen in Hamburg: Google Business Profile, Google Maps, technisches SEO und Content. Live-Dashboard, monatliche Reports. Ab 2.000 €/Monat.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/seo',
     },
     openGraph: {
         title: 'SEO Hamburg | Lokale Sichtbarkeit & Google Rankings',
-        description: 'Lokale Suchmaschinenoptimierung für Unternehmen in Hamburg: Google Business Profile, Google Maps, technisches SEO und Content. Ab 1.000 €/Monat.',
+        description: 'Lokale Suchmaschinenoptimierung für Unternehmen in Hamburg: Google Business Profile, Google Maps, technisches SEO und Content. Ab 2.000 €/Monat.',
         url: 'https://webseite.hamburg/leistungen/seo',
         type: 'website',
     },
 };
 
 const faqItems = [
-    { q: 'Was kostet lokale SEO in Hamburg?', a: 'Ab 1.000 € pro Monat. Der genaue Betrag hängt vom Wettbewerb in Ihrer Branche und Region ab: ein Steuerberater in der Innenstadt hat ein anderes Wettbewerbsumfeld als ein Maler im Umland. Mindestlaufzeit sind 3 Monate, danach ist der Vertrag monatlich kündbar. Im Erstgespräch sage ich Ihnen ehrlich, ob SEO für Ihre Situation sinnvoll ist und welches Budget realistisch ist.' },
+    { q: 'Was kostet lokale SEO in Hamburg?', a: 'Ab 2.000 € pro Monat. Der genaue Betrag hängt vom Wettbewerb in Ihrer Branche und Region ab: ein Steuerberater in der Innenstadt hat ein anderes Wettbewerbsumfeld als ein Maler im Umland. Mindestlaufzeit sind 3 Monate, danach ist der Vertrag monatlich kündbar. Im Erstgespräch sage ich Ihnen ehrlich, ob SEO für Ihre Situation sinnvoll ist und welches Budget realistisch ist.' },
     { q: 'Wie schnell sehe ich SEO-Ergebnisse?', a: 'Erste messbare Verbesserungen typischerweise nach 4–8 Wochen, deutliche Ranking-Veränderungen nach 3–6 Monaten. SEO ist eine Investition in dauerhaften, klickkostenfreien Traffic: Anders als bei Google Ads hört der Besucherstrom nicht auf, wenn das Budget stoppt.' },
     { q: 'Lohnt sich SEO oder Google Ads mehr für mein Unternehmen?', a: 'Beides hat seinen Platz. Google Ads liefern ab Tag 1 Anfragen, kosten aber pro Klick und stoppen, sobald das Budget endet. Lokale SEO braucht 3–6 Monate, bringt danach aber dauerhaft Besucher ohne Klickkosten. Für die meisten Hamburger Unternehmen ist die Kombination am stärksten: Ads für den Sofort-Effekt, SEO für den langfristigen Aufbau.' },
     { q: 'Was ist der Unterschied zwischen lokalem SEO und normalem SEO?', a: 'Lokales SEO fokussiert auf Sichtbarkeit in Ihrer Region: Google Maps, das lokale 3er-Pack, lokale Suchergebnisse und Ihr Google Business Profile. Klassisches (organisches) SEO zielt auf bundesweite oder thematische Suchbegriffe ohne Ortsbezug. Wenn Ihre Kunden in Hamburg oder Umgebung suchen, ist lokales SEO der direkteste Kanal.' },
@@ -39,7 +39,7 @@ export default function SeoPage() {
         areaServed: { '@type': 'City', name: 'Hamburg' },
         url: 'https://webseite.hamburg/leistungen/seo',
         description: 'Lokale Suchmaschinenoptimierung für Unternehmen in Hamburg: Google Business Profile, Google Maps, technisches SEO und Content-Optimierung.',
-        offers: { '@type': 'Offer', price: '1000', priceCurrency: 'EUR', priceSpecification: { '@type': 'UnitPriceSpecification', unitText: 'Monat' } },
+        offers: { '@type': 'Offer', price: '2000', priceCurrency: 'EUR', priceSpecification: { '@type': 'UnitPriceSpecification', unitText: 'Monat' } },
     };
 
     const breadcrumbJsonLd = {
@@ -73,7 +73,7 @@ export default function SeoPage() {
                 <div className="container subpage-body">
                     <h2 className="animate-up">Was ist lokale SEO?</h2>
                     <div className="subpage-takeaway animate-up">
-                        <p><strong>Lokale SEO</strong> (lokale Suchmaschinenoptimierung) sorgt dafür, dass ein Unternehmen in der regionalen Google-Suche, in Google Maps und im lokalen 3er-Pack erscheint, wenn Menschen in der Nähe nach einer Leistung suchen. Sie umfasst vier Bausteine: Optimierung des Google Business Profile, technisches SEO, lokale Inhalte und den Aufbau von Citations. In Hamburg liegt die Investition bei ab 1.000 € pro Monat.</p>
+                        <p><strong>Lokale SEO</strong> (lokale Suchmaschinenoptimierung) sorgt dafür, dass ein Unternehmen in der regionalen Google-Suche, in Google Maps und im lokalen 3er-Pack erscheint, wenn Menschen in der Nähe nach einer Leistung suchen. Sie umfasst vier Bausteine: Optimierung des Google Business Profile, technisches SEO, lokale Inhalte und den Aufbau von Citations. In Hamburg liegt die Investition bei ab 2.000 € pro Monat.</p>
                     </div>
 
                     <h2 className="animate-up">Warum lokale Sichtbarkeit über Aufträge entscheidet</h2>
@@ -126,14 +126,14 @@ export default function SeoPage() {
                                 <tr><th>Kosten pro Klick</th><td>0 € (organisch)</td><td>bezahlt pro Klick / Anfrage</td></tr>
                                 <tr><th>Nach Budgetstopp</th><td>Sichtbarkeit bleibt</td><td>Anzeigen verschwinden sofort</td></tr>
                                 <tr><th>Stärke</th><td>nachhaltiger Aufbau</td><td>schnelle Anfragen, Tests</td></tr>
-                                <tr><th>Einstieg</th><td>ab 1.000 €/Monat</td><td>ab 500 €/Monat + Werbebudget</td></tr>
+                                <tr><th>Einstieg</th><td>ab 2.000 €/Monat</td><td>ab 1.000 €/Monat + Werbebudget</td></tr>
                             </tbody>
                         </table>
                     </div>
 
                     <h2 className="animate-up">Was im SEO-Paket enthalten ist</h2>
                     <div className="subpage-single-price animate-up">
-                        <div className="sp-price-value">ab 1.000 &euro;/Monat</div>
+                        <div className="sp-price-value">ab 2.000 &euro;/Monat</div>
                         <p>Mindestlaufzeit 3 Monate, danach monatlich kündbar. Keine versteckten Kosten.</p>
                         <ul className="sp-price-includes">
                             <li>Initiales SEO-Audit und Strategie</li>

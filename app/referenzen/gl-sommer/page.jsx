@@ -280,11 +280,11 @@ export default function GlSommerCaseStudy() {
                     <div className="subpage-features-grid animate-up">
                         <Link href="/leistungen/seo" className="subpage-feature" style={{ textDecoration: 'none' }}>
                             <h3>SEO fur lokale Unternehmen</h3>
-                            <p>Langfristige organische Sichtbarkeit durch technische und inhaltliche Optimierung. Ab 1.000 &euro;/Mt.</p>
+                            <p>Langfristige organische Sichtbarkeit durch technische und inhaltliche Optimierung. Ab 2.000 &euro;/Mt.</p>
                         </Link>
                         <Link href="/leistungen/google-ads" className="subpage-feature" style={{ textDecoration: 'none' }}>
                             <h3>Google Ads Management</h3>
-                            <p>Gezielte Kampagnen fur lokale Unternehmen. Maximale Sichtbarkeit bei minimierten Kosten. Ab 500 &euro;/Mt.</p>
+                            <p>Gezielte Kampagnen fur lokale Unternehmen. Maximale Sichtbarkeit bei minimierten Kosten. Ab 1.000 &euro;/Mt.</p>
                         </Link>
                         <Link href="/leistungen/website-audit" className="subpage-feature" style={{ textDecoration: 'none' }}>
                             <h3>Website-Audit</h3>
@@ -292,7 +292,7 @@ export default function GlSommerCaseStudy() {
                         </Link>
                         <Link href="/leistungen/webdesign" className="subpage-feature" style={{ textDecoration: 'none' }}>
                             <h3>Webdesign & Entwicklung</h3>
-                            <p>Individuelle Websites, die schnell laden und Besucher zu Kunden machen. Ab 2.000 &euro;.</p>
+                            <p>Individuelle Websites, die schnell laden und Besucher zu Kunden machen. Ab 4.000 &euro;.</p>
                         </Link>
                     </div>
                 </div>

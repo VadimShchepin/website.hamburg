@@ -65,7 +65,7 @@ export default function HomePage() {
             {
                 '@type': 'Question',
                 name: 'Was kostet eine professionelle Website?',
-                acceptedAnswer: { '@type': 'Answer', text: 'Ein One-Pager beginnt ab 2.000 Euro, eine mehrseitige Website ab 3.000 Euro. Finale Preise nach kostenlosem Erstgesprach.' },
+                acceptedAnswer: { '@type': 'Answer', text: 'Ein One-Pager beginnt ab 4.000 Euro, eine mehrseitige Website ab 6.000 Euro. Finale Preise nach kostenlosem Erstgesprach.' },
             },
             {
                 '@type': 'Question',

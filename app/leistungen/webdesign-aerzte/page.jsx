@@ -8,7 +8,7 @@ import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
     title: 'Webdesign für Arztpraxen Hamburg | DSGVO-konforme Praxis-Websites',
-    description: 'Websites für Arztpraxen und Zahnärzte in Hamburg: DSGVO-konform, Online-Terminbuchung (Doctolib, Jameda), Google-Maps-Sichtbarkeit. Mehr Patienten. Ab 2.000 €.',
+    description: 'Websites für Arztpraxen und Zahnärzte in Hamburg: DSGVO-konform, Online-Terminbuchung (Doctolib, Jameda), Google-Maps-Sichtbarkeit. Mehr Patienten. Ab 4.000 €.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/webdesign-aerzte',
     },
@@ -21,7 +21,7 @@ export const metadata = {
 };
 
 const faqItems = [
-    { q: 'Was kostet eine Praxis-Website?', a: 'Eine kompakte Praxis-Website mit den wichtigsten Informationen beginnt ab 2.000 €. Eine umfangreiche Website mit Online-Terminbuchung, Team-Vorstellung und Leistungsseiten liegt ab 3.500 €. Den genauen Preis als Festpreis besprechen wir im kostenlosen Erstgespräch.' },
+    { q: 'Was kostet eine Praxis-Website?', a: 'Eine kompakte Praxis-Website mit den wichtigsten Informationen beginnt ab 4.000 €. Eine umfangreiche Website mit Online-Terminbuchung, Team-Vorstellung und Leistungsseiten liegt ab 7.000 €. Den genauen Preis als Festpreis besprechen wir im kostenlosen Erstgespräch.' },
     { q: 'Ist die Website DSGVO-konform?', a: 'Ja. Gerade für Arztpraxen ist DSGVO-Konformität Pflicht. Ich setze datenschutzkonforme Kontaktformulare, ein rechtssicheres Cookie-Management und eine korrekte Datenschutzerklärung um. Alle übertragenen Daten werden per SSL verschlüsselt. Auf Wunsch binde ich Ihren Datenschutzbeauftragten ein.' },
     { q: 'Kann ich eine Online-Terminbuchung integrieren?', a: 'Ja. Ich integriere gängige Systeme wie Doctolib, Jameda oder Clickdoc direkt in Ihre Website. Patienten buchen rund um die Uhr, das entlastet Ihr Team und reduziert Telefonanfragen. Laut Bitkom hatte 2024 bereits jede zweite Person in Deutschland schon einmal online einen Arzttermin vereinbart.' },
     { q: 'Wie finden Patienten meine Praxis bei Google?', a: 'Durch lokale SEO, Google-Maps-Integration und strukturierte Daten erscheint Ihre Praxis bei Suchen wie „Zahnarzt Hamburg Eimsbüttel" oder „Hausarzt in der Nähe". Ich optimiere Ihr Google Business Profile und sorge für konsistente NAP-Daten (Name, Adresse, Telefon).' },
@@ -39,8 +39,8 @@ export default function WebdesignAerztePage() {
         url: 'https://webseite.hamburg/leistungen/webdesign-aerzte',
         description: 'DSGVO-konforme Websites für Arztpraxen und Zahnärzte in Hamburg mit Online-Terminbuchung und Google-Maps-Sichtbarkeit.',
         offers: [
-            { '@type': 'Offer', name: 'Praxis-Website Kompakt', price: '2000', priceCurrency: 'EUR' },
-            { '@type': 'Offer', name: 'Praxis-Website Premium', price: '3500', priceCurrency: 'EUR' },
+            { '@type': 'Offer', name: 'Praxis-Website Kompakt', price: '4000', priceCurrency: 'EUR' },
+            { '@type': 'Offer', name: 'Praxis-Website Premium', price: '7000', priceCurrency: 'EUR' },
         ],
     };
 
@@ -79,7 +79,7 @@ export default function WebdesignAerztePage() {
                 <div className="container subpage-body">
                     <h2 className="animate-up">Was kostet eine Praxis-Website?</h2>
                     <div className="subpage-takeaway animate-up">
-                        <p>Eine professionelle Praxis-Website kostet bei mir <strong>ab 2.000 €</strong> (kompakt) bzw. <strong>ab 3.500 €</strong> (Premium mit Online-Terminbuchung). Sie ist DSGVO-konform, mobiloptimiert und lokal für Google sichtbar. Laut Bitkom hat 2024 bereits jede zweite Person in Deutschland (50 %) schon online einen Arzttermin gebucht. Eine veraltete oder fehlende Website kostet Sie genau diese Patienten.</p>
+                        <p>Eine professionelle Praxis-Website kostet bei mir <strong>ab 4.000 €</strong> (kompakt) bzw. <strong>ab 7.000 €</strong> (Premium mit Online-Terminbuchung). Sie ist DSGVO-konform, mobiloptimiert und lokal für Google sichtbar. Laut Bitkom hat 2024 bereits jede zweite Person in Deutschland (50 %) schon online einen Arzttermin gebucht. Eine veraltete oder fehlende Website kostet Sie genau diese Patienten.</p>
                     </div>
 
                     <h2 className="animate-up">Warum Arztpraxen eine moderne Website brauchen</h2>
@@ -151,7 +151,7 @@ export default function WebdesignAerztePage() {
                     <div className="subpage-pricing-compare animate-up">
                         <div className="subpage-price-col">
                             <h3>Praxis-Website Kompakt</h3>
-                            <div className="sp-price-value">ab 2.000 &euro;</div>
+                            <div className="sp-price-value">ab 4.000 &euro;</div>
                             <p>Professionelle Praxis-Website mit allen wichtigen Informationen. Ideal für Einzelpraxen und den Einstieg.</p>
                             <ul className="sp-price-includes">
                                 <li>Responsives Praxis-Design</li>
@@ -166,7 +166,7 @@ export default function WebdesignAerztePage() {
                         </div>
                         <div className="subpage-price-col subpage-price-featured">
                             <h3>Praxis-Website Premium</h3>
-                            <div className="sp-price-value">ab 3.500 &euro;</div>
+                            <div className="sp-price-value">ab 7.000 &euro;</div>
                             <p>Umfangreiche Praxis-Website mit Terminbuchung und Team-Vorstellung. Für Gemeinschaftspraxen und Facharztzentren.</p>
                             <ul className="sp-price-includes">
                                 <li>Mehrseitige Website (5+ Seiten)</li>

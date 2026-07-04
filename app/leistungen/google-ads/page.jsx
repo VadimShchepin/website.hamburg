@@ -8,20 +8,20 @@ import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
     title: 'Google Ads Hamburg | Sofort qualifizierte Anfragen',
-    description: 'Google Ads Management für lokale Unternehmen in Hamburg: Search Ads, Local Services Ads, Conversion-Tracking, ROAS-Optimierung. Ihr Konto, Ihre Daten. Ab 1.000 €/Monat.',
+    description: 'Google Ads Management für lokale Unternehmen in Hamburg: Search Ads, Local Services Ads, Conversion-Tracking, ROAS-Optimierung. Ihr Konto, Ihre Daten. Ab 500 €/Monat.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/google-ads',
     },
     openGraph: {
         title: 'Google Ads Hamburg | Sofort qualifizierte Anfragen',
-        description: 'Google Ads Management für lokale Unternehmen in Hamburg: Search Ads, Local Services Ads, Conversion-Tracking, ROAS-Optimierung. Ab 1.000 €/Monat.',
+        description: 'Google Ads Management für lokale Unternehmen in Hamburg: Search Ads, Local Services Ads, Conversion-Tracking, ROAS-Optimierung. Ab 500 €/Monat.',
         url: 'https://webseite.hamburg/leistungen/google-ads',
         type: 'website',
     },
 };
 
 const faqItems = [
-    { q: 'Was kosten Google Ads pro Monat?', a: 'Zwei getrennte Posten: die Management-Fee ab 1.000 € pro Monat für Aufbau und laufende Optimierung, plus Ihr Werbebudget, das direkt an Google geht und über Ihr eigenes Konto läuft. Das Werbebudget bestimmen Sie selbst; mindestens rund 500 € pro Monat sind sinnvoll, damit genug Daten zum Optimieren entstehen.' },
+    { q: 'Was kosten Google Ads pro Monat?', a: 'Zwei getrennte Posten: die Management-Fee ab 500 € pro Monat für Aufbau und laufende Optimierung, plus Ihr Werbebudget, das direkt an Google geht und über Ihr eigenes Konto läuft. Das Werbebudget bestimmen Sie selbst; mindestens rund 500 € pro Monat sind sinnvoll, damit genug Daten zum Optimieren entstehen.' },
     { q: 'Wie schnell kommen die ersten Anfragen?', a: 'Oft innerhalb der ersten Woche nach Kampagnenstart, denn Google Ads sind der schnellste Weg zu qualifizierten Anfragen. Die ersten 2–4 Wochen dienen der Datensammlung; danach sinkt der Preis pro Anfrage, weil die Kampagne aus den Conversion-Daten lernt.' },
     { q: 'Was bedeuten CPC, CPA und ROAS?', a: 'CPC (Cost-per-Click) ist der Preis pro Klick auf Ihre Anzeige. CPA (Cost-per-Acquisition) ist der Preis pro Anfrage oder Abschluss. ROAS (Return on Ad Spend) ist der Umsatz pro investiertem Werbe-Euro. Diese drei Kennzahlen entscheiden, ob eine Kampagne profitabel ist, und stehen in jedem Report.' },
     { q: 'Was sind Local Services Ads?', a: 'Local Services Ads erscheinen ganz oben in der Google-Suche für lokale Dienstleister, noch über den normalen Google Ads, oft mit dem „Google Garantie"-Siegel. Sie zahlen pro Anfrage (Anruf oder Nachricht), nicht pro Klick. Verfügbarkeit und Branchen sind in Deutschland begrenzt. Im Erstgespräch prüfe ich, ob es für Sie infrage kommt.' },
@@ -38,7 +38,7 @@ export default function GoogleAdsPage() {
         areaServed: { '@type': 'City', name: 'Hamburg' },
         url: 'https://webseite.hamburg/leistungen/google-ads',
         description: 'Google Ads Management für lokale Unternehmen in Hamburg: Search Ads, Local Services Ads, Conversion-Tracking, ROAS-Optimierung.',
-        offers: { '@type': 'Offer', price: '1000', priceCurrency: 'EUR', priceSpecification: { '@type': 'UnitPriceSpecification', unitText: 'Monat' } },
+        offers: { '@type': 'Offer', price: '500', priceCurrency: 'EUR', priceSpecification: { '@type': 'UnitPriceSpecification', unitText: 'Monat' } },
     };
 
     const breadcrumbJsonLd = {
@@ -72,7 +72,7 @@ export default function GoogleAdsPage() {
                 <div className="container subpage-body">
                     <h2 className="animate-up">Was sind Google Ads?</h2>
                     <div className="subpage-takeaway animate-up">
-                        <p><strong>Google Ads</strong> sind bezahlte Anzeigen, die in den Google-Suchergebnissen erscheinen, sobald jemand nach einer passenden Leistung sucht. Abgerechnet wird meist pro Klick (CPC). <strong>Local Services Ads</strong> stehen ganz oben und werden pro Anfrage statt pro Klick bezahlt. Das Management kostet ab 1.000 € pro Monat; das Werbebudget läuft separat über Ihr eigenes Google-Konto, sodass Sie jeden Cent sehen.</p>
+                        <p><strong>Google Ads</strong> sind bezahlte Anzeigen, die in den Google-Suchergebnissen erscheinen, sobald jemand nach einer passenden Leistung sucht. Abgerechnet wird meist pro Klick (CPC). <strong>Local Services Ads</strong> stehen ganz oben und werden pro Anfrage statt pro Klick bezahlt. Das Management kostet ab 500 € pro Monat; das Werbebudget läuft separat über Ihr eigenes Google-Konto, sodass Sie jeden Cent sehen.</p>
                     </div>
 
                     <h2 className="animate-up">Warum Google Ads für lokale Unternehmen funktionieren</h2>
@@ -81,7 +81,7 @@ export default function GoogleAdsPage() {
 
                     <div className="subpage-stats animate-up">
                         <div className="subpage-stat">
-                            <span className="subpage-stat-value">ab 1.000 €</span>
+                            <span className="subpage-stat-value">ab 500 €</span>
                             <span className="subpage-stat-label">Management-Fee pro Monat, Werbebudget separat über Ihr Konto</span>
                         </div>
                         <div className="subpage-stat">
@@ -130,7 +130,7 @@ export default function GoogleAdsPage() {
 
                     <h2 className="animate-up">Preise und Leistungen</h2>
                     <div className="subpage-single-price animate-up">
-                        <div className="sp-price-value">ab 1.000 &euro;/Monat</div>
+                        <div className="sp-price-value">ab 500 &euro;/Monat</div>
                         <p>Management-Fee für Kampagnenerstellung und laufende Optimierung. Ihr Werbebudget läuft über Ihr eigenes Google-Konto. Sie bestimmen die Höhe und behalten die volle Kontrolle.</p>
                         <ul className="sp-price-includes">
                             <li>Kampagnen-Setup & Struktur</li>

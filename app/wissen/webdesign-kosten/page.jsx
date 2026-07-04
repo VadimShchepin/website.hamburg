@@ -287,8 +287,8 @@ export default function WebdesignKostenArticlePage() {
                     spezialisierten Boutique-Agenturen.
                 </p>
                 <p>
-                    Bei AISEO Hamburg verfolgen wir einen transparenten Ansatz: One-Pager starten ab 4.000
-                    Euro, mehrseitige Websites ab 6.000 Euro, jeweils inklusive SEO-Grundoptimierung und
+                    Bei AISEO Hamburg verfolgen wir einen transparenten Ansatz: One-Pager starten ab 2.000
+                    Euro, mehrseitige Websites ab 3.000 Euro, jeweils inklusive SEO-Grundoptimierung und
                     Performance-Optimierung. Kein Kleingedrucktes, keine &Uuml;berraschungen nach
                     Projektstart. Was im Angebot steht, ist der Preis. Unsere Referenzen zeigen, was
                     dabei herauskommt: Die <Link href="/referenzen/blitz-hamburg">Website f&uuml;r Blitz Hamburg</Link> erzielte

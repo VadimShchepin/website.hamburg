@@ -8,7 +8,7 @@ import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
     title: 'AI SEO Hamburg | Sichtbar in ChatGPT, Perplexity & Copilot',
-    description: 'AI SEO (GEO) für Sichtbarkeit in ChatGPT, Perplexity, Google AI Overviews und Microsoft Copilot. Ihr Unternehmen als zitierte Quelle in KI-Antworten. Ab 2.400 €/Monat.',
+    description: 'AI SEO (GEO) für Sichtbarkeit in ChatGPT, Perplexity, Google AI Overviews und Microsoft Copilot. Ihr Unternehmen als zitierte Quelle in KI-Antworten. Ab 1.200 €/Monat.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/ai-seo',
     },
@@ -38,7 +38,7 @@ export default function AiSeoPage() {
         areaServed: { '@type': 'City', name: 'Hamburg' },
         url: 'https://webseite.hamburg/leistungen/ai-seo',
         description: 'AI SEO (Generative Engine Optimization) für Sichtbarkeit in ChatGPT, Perplexity, Google AI Overviews und Microsoft Copilot.',
-        offers: { '@type': 'Offer', price: '2400', priceCurrency: 'EUR', priceSpecification: { '@type': 'UnitPriceSpecification', unitText: 'Monat' } },
+        offers: { '@type': 'Offer', price: '1200', priceCurrency: 'EUR', priceSpecification: { '@type': 'UnitPriceSpecification', unitText: 'Monat' } },
     };
 
     const breadcrumbJsonLd = {
@@ -132,7 +132,7 @@ export default function AiSeoPage() {
 
                     <h2 className="animate-up">Preise und Umfang</h2>
                     <div className="subpage-single-price animate-up">
-                        <div className="sp-price-value">ab 2.400 &euro;/Monat</div>
+                        <div className="sp-price-value">ab 1.200 &euro;/Monat</div>
                         <p>Enthält alle Leistungen aus dem <Link href="/leistungen/seo">SEO-Paket</Link> plus gezielte KI-Sichtbarkeits-Optimierung. Als Upgrade zum bestehenden SEO oder eigenständig buchbar.</p>
                         <ul className="sp-price-includes">
                             <li>Alle klassischen SEO-Leistungen inklusive</li>

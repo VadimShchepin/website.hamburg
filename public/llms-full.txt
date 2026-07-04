@@ -31,8 +31,8 @@ Was enthalten ist:
 - SSL, DSGVO-konform, technisch einwandfrei
 
 Preise:
-- One-Pager (1 Seite, Kontaktformular, SEO-Setup): ab 4.000 EUR einmalig
-- Mehrseitige Website (5+ Seiten, CMS, Blog optional, erweitertes SEO): ab 6.000 EUR einmalig
+- One-Pager (1 Seite, Kontaktformular, SEO-Setup): ab 2.000 EUR einmalig
+- Mehrseitige Website (5+ Seiten, CMS, Blog optional, erweitertes SEO): ab 3.000 EUR einmalig
 
 Typischer Ablauf: Erstgesprach → Konzept & Struktur → Design & Entwicklung → Launch & Optimierung. Dauer: 2-3 Wochen (One-Pager) bis 4-6 Wochen (mehrseitig).
 
@@ -49,7 +49,7 @@ Was enthalten ist:
 - Live-Dashboard mit aktuellen Rankings und Traffic-Daten
 - Wettbewerber-Monitoring
 
-Preis: ab 2.000 EUR/Monat. Mindestlaufzeit 3 Monate, danach monatlich kundbar.
+Preis: ab 1.000 EUR/Monat. Mindestlaufzeit 3 Monate, danach monatlich kundbar.
 Erste Ergebnisse typischerweise nach 4-8 Wochen. Volle Wirkung nach 3-6 Monaten.
 
 ### AI SEO — Sichtbarkeit in KI-Suchsystemen
@@ -64,7 +64,7 @@ Was enthalten ist:
 - Google AI Overviews Optimierung
 - Monitoring der Sichtbarkeit in AI-Antworten
 
-Preis: ab 2.400 EUR/Monat. Kann als Upgrade zum SEO-Paket oder eigenstehend gebucht werden.
+Preis: ab 1.200 EUR/Monat. Kann als Upgrade zum SEO-Paket oder eigenstehend gebucht werden.
 
 Hintergrund: LLMs wie GPT-4 und Gemini synthetisieren Informationen aus Webquellen. Die Auswahl der zitierten Quellen folgt anderen Regeln als Googles PageRank — Informationsdichte, strukturierte Klarheit, faktische Konsistenz und Autoritat des Autors sind entscheidend.
 
@@ -81,7 +81,7 @@ Was enthalten ist:
 - Monatlicher Report mit Kosten pro Lead und ROI
 - Voller Zugang zum eigenen Google Ads Konto
 
-Preis: ab 1.000 EUR/Monat (Management-Fee). Werbebudget kommt separat dazu (Empfehlung: mindestens 500 EUR/Monat).
+Preis: ab 500 EUR/Monat (Management-Fee). Werbebudget kommt separat dazu (Empfehlung: mindestens 500 EUR/Monat).
 
 Das Werbebudget lauft uber das eigene Google-Konto des Kunden. Volle Kontrolle und Transparenz.
 

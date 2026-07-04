@@ -8,7 +8,7 @@ export default function Services() {
             title: 'Webdesign & Entwicklung',
             desc: 'Schnelle, konversionsstarke Websites mit klarer Struktur. Kein Baukasten, sondern individuell entwickelt fur Ihr Geschaft.',
             points: ['Responsive Design', 'PageSpeed 100/100', 'Klare Nutzerfuhrung', 'CMS oder Custom'],
-            price: 'Ab 4.000',
+            price: 'Ab 2.000',
             icon: (
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                     <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
@@ -20,7 +20,7 @@ export default function Services() {
             title: 'SEO & AI-Sichtbarkeit',
             desc: 'Sichtbar werden, wo Ihre Kunden suchen: Google, Google Maps, ChatGPT und Perplexity.',
             points: ['Lokale SEO-Strategie', 'Technisches SEO', 'Content-Optimierung', 'AI Search Ready'],
-            price: 'Ab 2.000/Mt.',
+            price: 'Ab 1.000/Mt.',
             icon: (
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                     <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
@@ -32,7 +32,7 @@ export default function Services() {
             title: 'Google & Local Ads',
             desc: 'Kampagnen die echte Anfragen generieren. Messbar, prazise, auf ROI optimiert.',
             points: ['Google Search Ads', 'Local Services Ads', 'Conversion Tracking', 'Monatliches Reporting'],
-            price: 'Ab 1.000/Mt.',
+            price: 'Ab 500/Mt.',
             icon: (
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                     <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>

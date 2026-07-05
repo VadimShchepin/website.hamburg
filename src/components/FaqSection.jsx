@@ -37,7 +37,7 @@ export default function FaqSection({ title = 'Haufige Fragen', items }) {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
             <div className="container">
                 <div className="section-header text-center">
-                    <p className="section-kicker animate-up">Haufige Fragen</p>
+                    <p className="section-kicker animate-up">Häufige Fragen</p>
                     <h2 className="section-title animate-up">{title}</h2>
                 </div>
                 <div className="sp-faq-list">

@@ -1,34 +1,24 @@
 import React from 'react';
 
+const results = [
+    { metric: '~40 Kunden/Monat', client: 'Blitz Hamburg' },
+    { metric: '728 lokale Aktionen/Mt.', client: 'GL Sommer' },
+    { metric: '2× organischer Traffic', client: 'DYBeauty' },
+    { metric: '50+ Projekte', client: 'in 10+ Jahren geliefert' },
+];
+
 export default function TrustStrip() {
     return (
         <section className="trust-strip">
             <div className="container">
+                <p className="trust-strip-label">Messbare Ergebnisse für Hamburger Unternehmen</p>
                 <div className="trust-items">
-                    <div className="trust-item">
-                        <span className="trust-icon">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                        </span>
-                        <span>Google Ads Experte</span>
-                    </div>
-                    <div className="trust-item">
-                        <span className="trust-icon">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-                        </span>
-                        <span>100/100 PageSpeed</span>
-                    </div>
-                    <div className="trust-item">
-                        <span className="trust-icon">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                        </span>
-                        <span>10+ Jahre Erfahrung</span>
-                    </div>
-                    <div className="trust-item">
-                        <span className="trust-icon">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-                        </span>
-                        <span>Datenbasierte Strategie</span>
-                    </div>
+                    {results.map((r, i) => (
+                        <div key={i} className="trust-item trust-item-result">
+                            <span className="trust-metric">{r.metric}</span>
+                            <span className="trust-client">{r.client}</span>
+                        </div>
+                    ))}
                 </div>
             </div>
         </section>

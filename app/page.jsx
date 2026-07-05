@@ -8,7 +8,36 @@ import Approach from '../src/components/Approach';
 import Proof from '../src/components/Proof';
 import QualityTransparency from '../src/components/QualityTransparency';
 import Cases from '../src/components/Cases';
+import Founder from '../src/components/Founder';
+import FaqSection from '../src/components/FaqSection';
 import Cta from '../src/components/Cta';
+
+const faqItems = [
+    {
+        q: 'Was kostet eine professionelle Website?',
+        a: 'Ein One-Pager beginnt ab 2.000 Euro, eine mehrseitige Website ab 3.000 Euro. Den finalen Preis erhalten Sie nach dem kostenlosen Erstgespräch, schriftlich und ohne versteckte Kosten.',
+    },
+    {
+        q: 'Wie lange dauert die Erstellung einer Website?',
+        a: 'Ein One-Pager ist typischerweise in 2 bis 3 Wochen fertig, eine mehrseitige Website in 4 bis 6 Wochen. Abhängig von Umfang und Ihrem Feedback-Tempo.',
+    },
+    {
+        q: 'Was passiert in der kostenlosen Website-Analyse?',
+        a: 'Wir prüfen Ladezeit, SEO, Struktur und Conversion-Potenzial Ihrer aktuellen Website und senden Ihnen innerhalb von 48 Stunden drei konkrete Verbesserungsvorschläge. Unverbindlich und ohne Verkaufsgespräch.',
+    },
+    {
+        q: 'Wie schnell sehe ich SEO-Ergebnisse?',
+        a: 'Erste messbare Verbesserungen typischerweise nach 4 bis 8 Wochen. Volle Wirkung nach 3 bis 6 Monaten. Sie erhalten monatliche Reports mit echten Zahlen.',
+    },
+    {
+        q: 'Gibt es lange Vertragslaufzeiten?',
+        a: 'Nein. Websites sind Festpreisprojekte, SEO- und Ads-Betreuung ist monatlich kündbar. Ihre Daten, Zugänge und Ihre Website gehören Ihnen. Immer.',
+    },
+    {
+        q: 'Arbeiten Sie nur mit Unternehmen aus Hamburg?',
+        a: 'Der Schwerpunkt liegt auf Hamburg und Umgebung, dort kennen wir den Markt am besten. Projekte in ganz Deutschland setzen wir remote um, mit denselben Standards.',
+    },
+];
 
 export const metadata = {
     title: 'Webdesign & SEO Hamburg | Websites die Kunden bringen',
@@ -53,28 +82,6 @@ export default function HomePage() {
         description: 'Professionelles Webdesign, SEO und Google Ads fur lokale Unternehmen in Hamburg. Datenbasiert, transparent, ergebnisorientiert.',
     };
 
-    const faqJsonLd = {
-        '@context': 'https://schema.org',
-        '@type': 'FAQPage',
-        mainEntity: [
-            {
-                '@type': 'Question',
-                name: 'Wie lange dauert die Erstellung einer Website?',
-                acceptedAnswer: { '@type': 'Answer', text: 'Ein One-Pager ist typischerweise in 2-3 Wochen fertig. Eine mehrseitige Website in 4-6 Wochen. Abhangig von Umfang und Ihrem Feedback-Tempo.' },
-            },
-            {
-                '@type': 'Question',
-                name: 'Was kostet eine professionelle Website?',
-                acceptedAnswer: { '@type': 'Answer', text: 'Ein One-Pager beginnt ab 2.000 Euro, eine mehrseitige Website ab 3.000 Euro. Finale Preise nach kostenlosem Erstgesprach.' },
-            },
-            {
-                '@type': 'Question',
-                name: 'Wie schnell sehe ich SEO-Ergebnisse?',
-                acceptedAnswer: { '@type': 'Answer', text: 'Erste messbare Verbesserungen typischerweise nach 4-8 Wochen. Volle Wirkung nach 3-6 Monaten.' },
-            },
-        ],
-    };
-
     const breadcrumbJsonLd = {
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
@@ -86,7 +93,6 @@ export default function HomePage() {
     return (
         <>
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceJsonLd) }} />
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
             <Hero />
             <TrustStrip />
@@ -94,9 +100,11 @@ export default function HomePage() {
             <Problem />
             <Services />
             <Approach />
+            <Founder />
             <Proof />
             <QualityTransparency />
             <Cases />
+            <FaqSection title="Was Unternehmer uns am häufigsten fragen" items={faqItems} />
             <section className="section light-bg">
                 <div className="container">
                     <div className="section-header text-center" style={{ marginBottom: 'var(--space-xl)' }}>

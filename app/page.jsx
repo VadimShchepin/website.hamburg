@@ -2,11 +2,10 @@ import Link from 'next/link';
 import Hero from '../src/components/Hero';
 import TrustStrip from '../src/components/TrustStrip';
 import CaseStudiesGrid from '../src/components/CaseStudiesGrid';
-import Problem from '../src/components/Problem';
+import ProblemSolution from '../src/components/ProblemSolution';
+import WebsiteCheck from '../src/components/WebsiteCheck';
 import Services from '../src/components/Services';
-import Approach from '../src/components/Approach';
 import Proof from '../src/components/Proof';
-import QualityTransparency from '../src/components/QualityTransparency';
 import Cases from '../src/components/Cases';
 import Founder from '../src/components/Founder';
 import FaqSection from '../src/components/FaqSection';
@@ -97,12 +96,11 @@ export default function HomePage() {
             <Hero />
             <TrustStrip />
             <CaseStudiesGrid />
-            <Problem />
+            <ProblemSolution />
+            <WebsiteCheck />
             <Services />
-            <Approach />
             <Founder />
             <Proof />
-            <QualityTransparency />
             <Cases />
             <FaqSection title="Was Unternehmer uns am häufigsten fragen" items={faqItems} />
             <section className="section light-bg">

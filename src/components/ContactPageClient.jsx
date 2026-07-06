@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 export default function ContactPageClient() {
     const [form, setForm] = useState({
@@ -9,6 +9,11 @@ export default function ContactPageClient() {
         website: '',
         message: '',
     });
+
+    useEffect(() => {
+        const website = new URLSearchParams(window.location.search).get('website');
+        if (website) setForm((f) => ({ ...f, website }));
+    }, []);
     const [submitted, setSubmitted] = useState(false);
     const [sending, setSending] = useState(false);
     const [error, setError] = useState('');

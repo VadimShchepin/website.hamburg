@@ -6,8 +6,8 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 export async function POST(request) {
     const { name, phone, website, message } = await request.json();
 
-    if (!name || !phone || !website) {
-        return NextResponse.json({ error: 'Name, Telefon und Website sind Pflichtfelder.' }, { status: 400 });
+    if (!name || !phone) {
+        return NextResponse.json({ error: 'Name und Telefon sind Pflichtfelder.' }, { status: 400 });
     }
 
     try {
@@ -19,7 +19,7 @@ export async function POST(request) {
                 <table style="border-collapse:collapse;width:100%;max-width:500px;">
                     <tr><td style="padding:8px 12px;font-weight:bold;border-bottom:1px solid #eee;">Name</td><td style="padding:8px 12px;border-bottom:1px solid #eee;">${escapeHtml(name)}</td></tr>
                     <tr><td style="padding:8px 12px;font-weight:bold;border-bottom:1px solid #eee;">Telefon</td><td style="padding:8px 12px;border-bottom:1px solid #eee;"><a href="tel:${escapeHtml(phone)}">${escapeHtml(phone)}</a></td></tr>
-                    <tr><td style="padding:8px 12px;font-weight:bold;border-bottom:1px solid #eee;">Website</td><td style="padding:8px 12px;border-bottom:1px solid #eee;"><a href="${escapeHtml(website)}">${escapeHtml(website)}</a></td></tr>
+                    ${website ? `<tr><td style="padding:8px 12px;font-weight:bold;border-bottom:1px solid #eee;">Website</td><td style="padding:8px 12px;border-bottom:1px solid #eee;"><a href="${escapeHtml(website)}">${escapeHtml(website)}</a></td></tr>` : ''}
                     ${message ? `<tr><td style="padding:8px 12px;font-weight:bold;border-bottom:1px solid #eee;">Nachricht</td><td style="padding:8px 12px;border-bottom:1px solid #eee;">${escapeHtml(message)}</td></tr>` : ''}
                 </table>`,
         });

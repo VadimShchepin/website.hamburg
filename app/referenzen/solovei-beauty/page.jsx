@@ -150,7 +150,7 @@ export default function SoloveiCaseStudy() {
                     <div className="subpage-features-grid animate-up">
                         <Link href="/leistungen/webdesign" className="subpage-feature" style={{ textDecoration: 'none' }}>
                             <h3>Webdesign & Entwicklung</h3>
-                            <p>Individuelle Websites mit CMS-Integration. Ab 2.000 &euro;.</p>
+                            <p>Individuelle Websites mit CMS-Integration. Ab 4.000 &euro;.</p>
                         </Link>
                         <Link href="/leistungen/seo" className="subpage-feature" style={{ textDecoration: 'none' }}>
                             <h3>SEO fur lokale Unternehmen</h3>

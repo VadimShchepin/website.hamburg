@@ -148,7 +148,7 @@ export default function ServicesPageClient() {
                         <div className="sp-service-sidebar">
                             <div className="sp-price-card bull-boundary animate-up">
                                 <p className="sp-price-label">One-Pager</p>
-                                <div className="sp-price-value">ab 2.000 &euro;</div>
+                                <div className="sp-price-value">ab 4.000 &euro;</div>
                                 <p className="sp-price-desc">Kompakte, schnelle Landingpage mit klarem Conversion-Ziel. Ideal fur einzelne Dienstleistungen oder Kampagnen.</p>
                                 <ul className="sp-price-includes">
                                     <li>1 Seite, responsiv</li>
@@ -159,7 +159,7 @@ export default function ServicesPageClient() {
                             </div>
                             <div className="sp-price-card bull-boundary animate-up delay-1">
                                 <p className="sp-price-label">Mehrseitige Website</p>
-                                <div className="sp-price-value">ab 3.000 &euro;</div>
+                                <div className="sp-price-value">ab 6.000 &euro;</div>
                                 <p className="sp-price-desc">Vollstandige Unternehmenswebsite mit mehreren Seiten, CMS und erweiterter Funktionalitat.</p>
                                 <ul className="sp-price-includes">
                                     <li>5+ Seiten</li>
@@ -219,7 +219,7 @@ export default function ServicesPageClient() {
                         <div className="sp-service-sidebar">
                             <div className="sp-price-card bull-boundary animate-up">
                                 <p className="sp-price-label">SEO Monatlich</p>
-                                <div className="sp-price-value">ab 1.000 &euro;/Mt.</div>
+                                <div className="sp-price-value">ab 2.000 &euro;/Mt.</div>
                                 <p className="sp-price-desc">Laufende Optimierung fur nachhaltige Sichtbarkeit. Mindestlaufzeit 3 Monate, danach monatlich kundbar.</p>
                                 <ul className="sp-price-includes">
                                     <li>Technisches SEO</li>
@@ -270,7 +270,7 @@ export default function ServicesPageClient() {
                         <div className="sp-service-sidebar">
                             <div className="sp-price-card bull-boundary animate-up">
                                 <p className="sp-price-label">AI SEO Monatlich</p>
-                                <div className="sp-price-value">ab 1.200 &euro;/Mt.</div>
+                                <div className="sp-price-value">ab 2.400 &euro;/Mt.</div>
                                 <p className="sp-price-desc">Alles aus dem SEO-Paket plus gezielte AI-Sichtbarkeits-Optimierung. Ideal als Erweiterung oder eigenstehend.</p>
                                 <ul className="sp-price-includes">
                                     <li>Alles aus SEO inklusive</li>
@@ -321,7 +321,7 @@ export default function ServicesPageClient() {
                         <div className="sp-service-sidebar">
                             <div className="sp-price-card bull-boundary animate-up">
                                 <p className="sp-price-label">Ads Management</p>
-                                <div className="sp-price-value">ab 500 &euro;/Mt.</div>
+                                <div className="sp-price-value">ab 1.000 &euro;/Mt.</div>
                                 <p className="sp-price-desc">Management-Fee fur Kampagnenerstellung und laufende Optimierung. Werbebudget kommt separat dazu (Sie bestimmen die Hohe).</p>
                                 <ul className="sp-price-includes">
                                     <li>Kampagnen-Setup & Struktur</li>

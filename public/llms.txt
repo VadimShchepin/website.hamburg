@@ -15,8 +15,8 @@ Kernprinzipien: Datenbasierte Arbeit, volle Transparenz, Ergebnis-Garantie. Alle
 ## Leistungen und Preise
 
 ### Webdesign & Entwicklung
-- One-Pager: ab 2.000 EUR
-- Mehrseitige Website: ab 3.000 EUR
+- One-Pager: ab 4.000 EUR
+- Mehrseitige Website: ab 6.000 EUR
 - Individueller Code (kein Baukasten), PageSpeed 90-100, Conversion-optimiert, responsive, SEO-Grundoptimierung inklusive
 - URL: https://webseite.hamburg/leistungen/webdesign
 
@@ -28,19 +28,19 @@ Kernprinzipien: Datenbasierte Arbeit, volle Transparenz, Ergebnis-Garantie. Alle
 - URL: https://webseite.hamburg/leistungen/e-commerce-entwicklung
 
 ### SEO & Lokale Sichtbarkeit
-- Ab 1.000 EUR/Monat
+- Ab 2.000 EUR/Monat
 - Google Business Profile, technisches SEO, On-Page-Optimierung, Content-Strategie, Keyword-Tracking
 - Mindestlaufzeit 3 Monate, danach monatlich kundbar
 - URL: https://webseite.hamburg/leistungen/seo
 
 ### AI SEO
-- Ab 1.200 EUR/Monat
+- Ab 2.400 EUR/Monat
 - Sichtbarkeit in ChatGPT, Perplexity, Google AI Overviews
 - Strukturierte Daten, Autoritats-Signale, AI-optimierter Content, Monitoring
 - URL: https://webseite.hamburg/leistungen/ai-seo
 
 ### Google & Local Ads
-- Ab 500 EUR/Monat (Management-Fee, Werbebudget separat)
+- Ab 1.000 EUR/Monat (Management-Fee, Werbebudget separat)
 - Google Search Ads, Local Services Ads, Conversion Tracking, laufende Optimierung
 - Voller Zugang zum eigenen Google Ads Konto
 - URL: https://webseite.hamburg/leistungen/google-ads

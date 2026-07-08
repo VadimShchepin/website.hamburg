@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<title>Glissmann Spedition Hamburg | Transporte, Import/Export, eigener Fuhrpark seit 1912</title>
+<meta name="description" content="Hinrich Glissmann GmbH & Co. KG: Hamburger Spedition seit 1912. Nationale Transporte, Import/Export-Abwicklung aus einer Hand, Spezialist für Rundhölzer, Schnitthölzer und Furniere. Eigener Fuhrpark, eigenes Umschlaglager.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700;800&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#005273;
+  --blue-deep:#00405a;
+  --blue-dark:#00344a;
+  --blue-night:#00293a;
+  --line-blue:#1a6787;
+  --bg:#f7f9fa;
+  --tint:#eef4f7;
+  --card:#ffffff;
+  --line:#dbe4e9;
+  --ink:#1b2a33;
+  --muted:#5c707c;
+  --mist:#b8d0dc;
+  --red:#c62020;
+  --red-2:#d92e2e;
+  --red-soft:#ffb0aa;
+  --red-glow:#ff8177;
+  --disp:"Big Shoulders Display",sans-serif;
+  --body:"Archivo",sans-serif;
+  --mono:"IBM Plex Mono",monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--body);
+  background:var(--bg);
+  color:var(--ink);
+  font-size:16px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+body::after{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:9999;opacity:.035;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+.wrap{width:min(1200px,100% - 3rem);margin-inline:auto}
+.mono{font-family:var(--mono)}
+
+/* ---------- top signal stripe ---------- */
+.topstripe{height:5px;background:repeating-linear-gradient(90deg,var(--blue) 0 64px,var(--red) 64px 96px,var(--line) 96px 128px);position:relative;z-index:60}
+
+/* ---------- nav ---------- */
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(255,255,255,.9);
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+  transition:box-shadow .3s;
+}
+header.scrolled{box-shadow:0 8px 30px rgba(11,40,55,.12)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:.85rem 0;gap:1rem}
+.logo{display:flex;align-items:center;gap:.8rem}
+.logo-img{height:44px;width:auto;display:block}
+.nav-links{display:flex;gap:2rem;align-items:center}
+.nav-links a{
+  font-family:var(--mono);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--muted);position:relative;padding:.3rem 0;transition:color .2s;
+}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--red);transition:width .25s}
+.nav-links a:hover{color:var(--blue)}
+.nav-links a:hover::after{width:100%}
+.nav-cta{
+  font-family:var(--mono);font-size:.8rem;letter-spacing:.06em;
+  border:1px solid var(--red);color:var(--red);background:transparent;
+  padding:.55rem 1.1rem;transition:background .2s,color .2s;white-space:nowrap;
+}
+.nav-cta:hover{background:var(--red);color:#fff}
+.burger{display:none;background:none;border:1px solid var(--line);color:var(--ink);width:44px;height:40px;cursor:pointer;font-size:1.05rem}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:min(92vh,880px);display:flex;align-items:flex-end;isolation:isolate}
+.hero-bg{position:absolute;inset:0;z-index:-2}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 60%}
+.hero::before{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(0,43,61,.55) 0%,rgba(0,43,61,.25) 40%,rgba(0,43,61,.9) 88%,var(--blue-dark) 100%);
+}
+.hero .wrap{padding:9rem 0 4.5rem;width:min(1200px,100% - 3rem)}
+.hero-kicker{
+  font-family:var(--mono);font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--mist);display:flex;align-items:center;gap:.9rem;margin-bottom:1.4rem;
+}
+.hero-kicker::before{content:"";width:48px;height:2px;background:var(--red)}
+h1{
+  font-family:var(--disp);font-weight:800;line-height:.92;letter-spacing:.01em;
+  font-size:clamp(3.2rem,9.5vw,7.5rem);text-transform:uppercase;color:#fff;
+  max-width:14ch;text-wrap:balance;
+}
+h1 .accent{color:var(--red-glow)}
+.hero-sub{
+  max-width:56ch;color:#d7e4ec;font-size:clamp(1rem,1.4vw,1.15rem);
+  margin:1.6rem 0 2.2rem;
+}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
+.btn{
+  display:inline-flex;align-items:center;gap:.7rem;
+  font-family:var(--mono);font-size:.86rem;letter-spacing:.06em;
+  padding:.95rem 1.6rem;border:1px solid transparent;transition:.2s;
+}
+.btn-solid{background:var(--red);color:#fff}
+.btn-solid:hover{background:var(--red-2)}
+.btn-ghost{border-color:rgba(255,255,255,.4);color:#fff}
+.btn-ghost:hover{border-color:var(--red-glow);color:var(--red-soft)}
+.hero-badge{
+  position:absolute;right:clamp(1rem,6vw,6rem);top:clamp(6.5rem,14vh,9rem);
+  width:clamp(120px,14vw,170px);height:clamp(120px,14vw,170px);z-index:2;
+}
+.hero-badge svg{width:100%;height:100%;animation:spin 28s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hero-badge .badge-core{
+  position:absolute;inset:0;display:grid;place-items:center;
+  font-family:var(--disp);font-weight:800;font-size:clamp(1.6rem,2.4vw,2.2rem);color:#fff;
+}
+.hero-facts{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-blue);
+  border:1px solid var(--line-blue);margin-top:3.5rem;
+}
+.fact{background:rgba(0,52,74,.85);padding:1.3rem 1.4rem;backdrop-filter:blur(4px)}
+.fact b{font-family:var(--disp);font-weight:700;font-size:2rem;color:#fff;display:block;line-height:1}
+.fact b i{font-style:normal;color:var(--red-glow)}
+.fact span{font-family:var(--mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mist)}
+
+/* ---------- marquee ---------- */
+.marquee{
+  background:var(--red);color:#fff;overflow:hidden;white-space:nowrap;
+  border-block:1px solid rgba(0,0,0,.12);padding:.65rem 0;
+}
+.marquee-track{display:inline-flex;gap:0;animation:slide 30s linear infinite}
+.marquee span{
+  font-family:var(--disp);font-weight:700;font-size:1.05rem;letter-spacing:.12em;text-transform:uppercase;
+  padding-inline:1.4rem;display:inline-flex;align-items:center;gap:2.8rem;
+}
+.marquee span::after{content:"";width:8px;height:8px;background:#fff;transform:rotate(45deg)}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* ---------- shared section bits ---------- */
+section{position:relative}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:2rem;margin-bottom:3rem;flex-wrap:wrap}
+.sec-label{
+  font-family:var(--mono);font-size:.75rem;letter-spacing:.24em;text-transform:uppercase;color:var(--red);
+  display:flex;align-items:center;gap:.8rem;margin-bottom:1rem;
+}
+.sec-label::before{content:"";width:34px;height:2px;background:var(--red)}
+.timber-body .sec-label,.heritage .sec-label,.contact .sec-label{color:var(--red-soft)}
+.timber-body .sec-label::before,.heritage .sec-label::before,.contact .sec-label::before{background:var(--red-soft)}
+h2{
+  font-family:var(--disp);font-weight:700;text-transform:uppercase;line-height:.95;
+  font-size:clamp(2.4rem,5vw,4rem);letter-spacing:.01em;color:var(--blue);
+}
+.sec-note{font-family:var(--mono);font-size:.78rem;color:var(--muted);max-width:34ch}
+
+/* ---------- services (light band) ---------- */
+.services{background:var(--bg);padding:6rem 0 5rem}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.svc{
+  background:var(--card);border:1px solid var(--line);padding:2rem 1.8rem 1.8rem;position:relative;
+  display:flex;flex-direction:column;gap:.9rem;transition:transform .25s,box-shadow .25s;
+}
+.svc:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(0,52,74,.14)}
+.svc::before{content:"";position:absolute;top:0;left:0;width:100%;height:4px;background:var(--blue)}
+.svc:hover::before{background:var(--red)}
+.svc-idx{font-family:var(--mono);font-size:.72rem;letter-spacing:.18em;color:var(--red)}
+.svc h3{font-family:var(--disp);font-weight:700;font-size:1.7rem;text-transform:uppercase;line-height:1;color:var(--blue)}
+.svc p{font-size:.95rem;color:#46606d}
+.svc-tags{margin-top:auto;display:flex;flex-wrap:wrap;gap:.4rem;padding-top:.6rem}
+.svc-tags li{
+  font-family:var(--mono);font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;
+  border:1px solid #cfdde4;padding:.25rem .55rem;color:var(--muted);background:var(--tint);
+}
+
+/* ---------- timber feature ---------- */
+.timber{background:var(--bg);padding:0 0 6rem}
+.timber-card{
+  display:grid;grid-template-columns:1.05fr .95fr;background:var(--blue);color:#fff;
+  min-height:460px;overflow:hidden;
+}
+.timber-media{position:relative;min-height:320px}
+.timber-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.timber-media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 60%,var(--blue) 100%)}
+.timber-body{padding:clamp(2rem,4vw,3.5rem);display:flex;flex-direction:column;justify-content:center;gap:1.1rem;position:relative}
+.timber-body::before{
+  content:"HOLZ";position:absolute;right:-.5rem;top:-1.2rem;
+  font-family:var(--disp);font-weight:800;font-size:9rem;line-height:1;
+  color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.1);pointer-events:none;
+}
+.timber-body h2{color:#fff;font-size:clamp(2rem,3.6vw,3rem)}
+.timber-body p{color:#cfe2ea;max-width:52ch}
+.timber-list{display:grid;gap:.55rem;margin-top:.4rem}
+.timber-list li{
+  font-family:var(--mono);font-size:.82rem;color:#eaf3f7;
+  display:flex;gap:.8rem;align-items:baseline;
+}
+.timber-list li::before{content:"//";color:var(--red-soft)}
+
+/* ---------- fleet (light band) ---------- */
+.fleet{background:var(--tint);padding:6.5rem 0;position:relative}
+.fleet::before{
+  content:"";position:absolute;inset:0 0 auto 0;height:100%;pointer-events:none;opacity:.5;
+  background:repeating-linear-gradient(90deg,transparent 0 78px,rgba(0,82,115,.04) 78px 80px);
+}
+.fleet-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.4rem}
+.unit{
+  background:var(--card);border:1px solid var(--line);padding:1.9rem 1.9rem 1.6rem;
+  position:relative;transition:border-color .25s,transform .25s;
+}
+.unit:hover{border-color:var(--red);transform:translateY(-4px)}
+.unit-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem;gap:1rem}
+.unit h3{font-family:var(--disp);font-weight:700;font-size:1.9rem;text-transform:uppercase;line-height:1;color:var(--blue)}
+.unit-code{font-family:var(--mono);font-size:.72rem;letter-spacing:.2em;color:var(--red)}
+.unit p{font-size:.9rem;color:var(--muted);margin-bottom:1.1rem}
+.spec{border-top:1px solid var(--line)}
+.spec li{
+  display:flex;justify-content:space-between;gap:1.2rem;
+  font-family:var(--mono);font-size:.78rem;padding:.55rem 0;border-bottom:1px solid var(--line);
+}
+.spec li span:first-child{color:var(--muted);letter-spacing:.04em}
+.spec li span:last-child{color:var(--ink);text-align:right}
+
+/* ---------- heritage (blue band) ---------- */
+.heritage{background:var(--blue);padding:6.5rem 0;overflow:hidden;position:relative}
+.heritage::before{
+  content:"1912";position:absolute;left:-2rem;bottom:-4rem;
+  font-family:var(--disp);font-weight:800;font-size:clamp(12rem,28vw,26rem);line-height:1;
+  color:transparent;-webkit-text-stroke:1.5px rgba(255,255,255,.1);pointer-events:none;
+}
+.her-grid{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:center}
+.her-media{position:relative}
+.her-media img{width:100%;height:100%;min-height:380px;object-fit:cover}
+.her-media::after{
+  content:"BILLSTRASSE · HAMBURG";position:absolute;left:0;bottom:0;
+  font-family:var(--mono);font-size:.66rem;letter-spacing:.3em;color:#fff;
+  background:var(--red);padding:.5rem .9rem;
+}
+.her-body h2{color:#fff;margin-bottom:1.4rem}
+.her-body>p{color:#cfe2ea;max-width:56ch;margin-bottom:1rem}
+.timeline{margin-top:2.2rem;border-left:2px solid var(--line-blue);display:grid;gap:1.8rem;padding-left:1.6rem}
+.tl{position:relative}
+.tl::before{
+  content:"";position:absolute;left:calc(-1.6rem - 6px);top:.45rem;
+  width:10px;height:10px;background:var(--red-glow);transform:rotate(45deg);
+}
+.tl b{font-family:var(--disp);font-weight:700;font-size:1.5rem;letter-spacing:.03em;color:#fff;display:block;text-transform:uppercase}
+.tl p{font-size:.92rem;color:var(--mist);max-width:48ch}
+
+/* ---------- trust strip ---------- */
+.trust{background:var(--bg);padding:5.5rem 0}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.trust-item{background:var(--card);padding:2rem 1.6rem;position:relative}
+.trust-item:hover{background:var(--tint)}
+.trust-item svg{width:34px;height:34px;stroke:var(--red);margin-bottom:1rem}
+.trust-item b{font-family:var(--disp);font-weight:700;font-size:1.35rem;text-transform:uppercase;line-height:1.05;display:block;margin-bottom:.5rem;color:var(--blue)}
+.trust-item p{font-size:.88rem;color:#46606d}
+
+/* ---------- contact (blue band) ---------- */
+.contact{background:var(--blue-dark);padding:6.5rem 0}
+.contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:3.5rem}
+.contact h2{color:#fff;margin-bottom:1.2rem}
+.contact-lede{color:var(--mist);max-width:48ch;margin-bottom:2.4rem}
+.tel-big{
+  font-family:var(--disp);font-weight:800;font-size:clamp(2.6rem,6vw,4.5rem);
+  color:#fff;line-height:1;display:inline-block;text-transform:uppercase;
+}
+.tel-big:hover{color:var(--red-soft)}
+.tel-label{font-family:var(--mono);font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--red-soft);display:block;margin-bottom:.6rem}
+.contact-card{
+  background:var(--blue-deep);border:1px solid var(--line-blue);padding:2.4rem;
+  display:grid;gap:1.4rem;align-content:start;
+}
+.c-row{display:grid;grid-template-columns:110px 1fr;gap:1rem;border-bottom:1px solid var(--line-blue);padding-bottom:1.2rem}
+.c-row:last-child{border-bottom:0;padding-bottom:0}
+.c-row span{font-family:var(--mono);font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:#8fb2c2;padding-top:.25rem}
+.c-row div{color:#eaf3f7;font-size:.98rem}
+.c-row a{color:var(--red-soft)}
+.c-row a:hover{text-decoration:underline}
+
+/* ---------- footer ---------- */
+footer{background:var(--blue-night);border-top:1px solid var(--line-blue);padding:3.5rem 0 2rem}
+footer .logo-chip{background:#fff;padding:.6rem .9rem;display:inline-block}
+footer .logo-img{height:38px}
+.foot-grid{display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap;align-items:flex-start}
+.foot-links{display:flex;gap:1.8rem;flex-wrap:wrap}
+.foot-links a{font-family:var(--mono);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:#9dbecd}
+.foot-links a:hover{color:var(--red-soft)}
+.foot-bottom{
+  margin-top:2.4rem;padding-top:1.4rem;border-top:1px solid #12455c;
+  display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;
+  font-family:var(--mono);font-size:.7rem;color:#6b93a6;letter-spacing:.06em;
+}
+
+/* ---------- reveal (hidden state only when JS is active) ---------- */
+html.js .rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+html.js .rv.in{opacity:1;transform:none}
+.rv-d1{transition-delay:.08s}.rv-d2{transition-delay:.16s}.rv-d3{transition-delay:.24s}.rv-d4{transition-delay:.32s}
+
+/* ---------- responsive ---------- */
+@media(max-width:980px){
+  .svc-grid{grid-template-columns:1fr 1fr}
+  .fleet-grid{grid-template-columns:1fr}
+  .her-grid,.contact-grid,.timber-card{grid-template-columns:1fr}
+  .trust-grid{grid-template-columns:1fr 1fr}
+  .hero-facts{grid-template-columns:1fr 1fr}
+  .hero-badge{top:auto;bottom:38%;right:1.2rem;display:none}
+}
+@media(max-width:720px){
+  .nav-links{
+    display:none;position:absolute;top:100%;left:0;right:0;
+    flex-direction:column;align-items:flex-start;gap:0;
+    background:#fff;border-bottom:1px solid var(--line);padding:.6rem 1.5rem 1.2rem;
+  }
+  .nav-links.open{display:flex}
+  .nav-links a{padding:.8rem 0;width:100%;border-bottom:1px solid var(--line)}
+  .burger{display:block}
+  .nav-cta{display:none}
+  .svc-grid{grid-template-columns:1fr}
+  .trust-grid{grid-template-columns:1fr}
+  .hero .wrap{padding-top:6.5rem}
+}
+@media(prefers-reduced-motion:reduce){
+  .hero-badge svg,.marquee-track{animation:none}
+  .rv{opacity:1;transform:none;transition:none}
+}
+</style>
+</head>
+<body>
+
+<div class="topstripe" aria-hidden="true"></div>
+
+<header id="top">
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="Glissmann Spedition, zur Startseite">
+      <img class="logo-img" src="/redesign/glissmann/assets/logo.gif" alt="Glissmann Spedition" width="305" height="83">
+    </a>
+    <nav class="nav-links" id="navlinks" aria-label="Hauptnavigation">
+      <a href="#leistungen">Leistungen</a>
+      <a href="#holz">Holz & Furniere</a>
+      <a href="#fuhrpark">Fuhrpark</a>
+      <a href="#geschichte">Seit 1912</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <a class="nav-cta" href="tel:+4940785535">040 - 78 55 35</a>
+    <button class="burger" id="burger" aria-label="Menü öffnen" aria-expanded="false">&#9776;</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-bg"><img src="/redesign/glissmann/assets/hero.webp" alt="Lkw mit Schiebeplanen-Auflieger vor Containerbrücken im Hamburger Hafen bei Tagesanbruch" fetchpriority="high"></div>
+
+  <div class="hero-badge" aria-hidden="true">
+    <svg viewBox="0 0 100 100">
+      <defs><path id="circ" d="M 50,50 m -38,0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0"/></defs>
+      <circle cx="50" cy="50" r="49" fill="rgba(0,43,61,.55)" stroke="rgba(255,255,255,.35)" stroke-width="1"/>
+      <circle cx="50" cy="50" r="27" fill="none" stroke="#c62020" stroke-width="1"/>
+      <text style="font-family:'IBM Plex Mono',monospace;font-size:8.5px;letter-spacing:2.5px;fill:#fff">
+        <textPath href="#circ">SEIT 1912 · HAMBURG · SPEDITION · GLISSMANN ·</textPath>
+      </text>
+    </svg>
+    <span class="badge-core">1912</span>
+  </div>
+
+  <div class="wrap">
+    <p class="hero-kicker rv in">Hinrich Glissmann GmbH & Co. KG · Billstraße 107, Hamburg</p>
+    <h1 class="rv in rv-d1">Spedition mit Tradition. <span class="accent">Seit 1912.</span></h1>
+    <p class="hero-sub rv in rv-d2">Nationale Transporte und Import/Export-Abwicklung aus einer Hand: Komplettladungen, Teilladungen, Stückgut. Mit eigenem Fuhrpark und eigenem Umschlaglager, seit über 110 Jahren an der Billstraße in Hamburg.</p>
+    <div class="hero-actions rv in rv-d3">
+      <a class="btn btn-solid" href="mailto:info@glissmann-spedition.de">Anfrage senden</a>
+      <a class="btn btn-ghost" href="tel:+4940785535">040 - 78 55 35</a>
+    </div>
+    <div class="hero-facts rv in rv-d4">
+      <div class="fact"><b>1912</b><span>Gegründet in Hamburg</span></div>
+      <div class="fact"><b>110<i>+</i></b><span>Jahre Erfahrung</span></div>
+      <div class="fact"><b>36</b><span>Palettenstellplätze je Gliederzug</span></div>
+      <div class="fact"><b>20'<i>/</i>40'</b><span>Container-Chassis DC + HC</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Hamburg</span><span>Bielefeld</span><span>Hamm</span><span>Osnabrück</span><span>Münster</span><span>Rheine</span><span>Import</span><span>Export</span><span>Stückgut</span>
+    <span>Hamburg</span><span>Bielefeld</span><span>Hamm</span><span>Osnabrück</span><span>Münster</span><span>Rheine</span><span>Import</span><span>Export</span><span>Stückgut</span>
+  </div>
+</div>
+
+<section class="services" id="leistungen">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div>
+        <p class="sec-label">01 / Leistungen</p>
+        <h2>Aus einer Hand.<br>Vom Hafen bis zur Rampe.</h2>
+      </div>
+      <p class="sec-note">Drei Bereiche, ein Ansprechpartner. Disposition, Umschlag und Transport laufen bei uns im eigenen Haus.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc rv rv-d1">
+        <span class="svc-idx">L 01</span>
+        <h3>Nationale Transporte</h3>
+        <p>Komplettladungen, Teilladungen und Stückgut, gefahren mit eigenem Fuhrpark. Regelmäßige Verkehre verbinden Hamburg unter anderem mit Bielefeld, Hamm, Osnabrück, Münster und Rheine.</p>
+        <ul class="svc-tags"><li>Komplettladung</li><li>Teilladung</li><li>Stückgut</li></ul>
+      </article>
+      <article class="svc rv rv-d2">
+        <span class="svc-idx">L 02</span>
+        <h3>Import / Export</h3>
+        <p>Die komplette Abwicklung aus einer Hand: Ihr Container kommt im Hamburger Hafen an, wir übernehmen Umschlag, Lagerung und den Lauf bis zur Rampe Ihres Empfängers. Beim Export in umgekehrter Richtung.</p>
+        <ul class="svc-tags"><li>Überseecontainer</li><li>Abwicklung</li><li>Hamburg</li></ul>
+      </article>
+      <article class="svc rv rv-d3">
+        <span class="svc-idx">L 03</span>
+        <h3>Containerumschlag</h3>
+        <p>Be- und Entladen von Überseecontainern in unserem eigenen Umschlaglager. Für schwere Güter stehen Schwergutstapler bereit. Wir schlagen selbstverständlich auch alle anderen Güter aus und in Container um.</p>
+        <ul class="svc-tags"><li>Eigenes Umschlaglager</li><li>Schwergutstapler</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="timber" id="holz">
+  <div class="wrap">
+    <div class="timber-card rv">
+      <div class="timber-media">
+        <img src="/redesign/glissmann/assets/holz.webp" alt="Gestapelte Schnitthölzer und Furnierpakete in einem offenen Überseecontainer" loading="lazy">
+      </div>
+      <div class="timber-body">
+        <p class="sec-label">02 / Spezialgebiet</p>
+        <h2>Rundhölzer. Schnitthölzer. Furniere.</h2>
+        <p>Damit hat 1912 alles angefangen, und dabei sind wir geblieben: Wir sind die Spezialisten für den Transport und das Be- und Entladen von Rundhölzern, Schnitthölzern und Furnieren aus und in Überseecontainern.</p>
+        <ul class="timber-list">
+          <li>Be- und Entladen direkt am eigenen Umschlaglager</li>
+          <li>Schwergutstapler für schwere Pakete und Stämme</li>
+          <li>Transport aus dem und in den Überseecontainer</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="fleet" id="fuhrpark">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div>
+        <p class="sec-label">03 / Fuhrpark</p>
+        <h2>Eigenes Gerät.<br>Klare Daten.</h2>
+      </div>
+      <p class="sec-note">Kein Zukauf, keine Ausreden: Diese Fahrzeuge stehen an der Billstraße und fahren für Sie.</p>
+    </div>
+    <div class="fleet-grid">
+      <article class="unit rv rv-d1">
+        <div class="unit-top"><h3>Gliederzüge</h3><span class="unit-code">GL / WB 7.45</span></div>
+        <p>Gliederzüge mit Wechselbrücken, flexibel für Palettenware und Container.</p>
+        <ul class="spec">
+          <li><span>Wechselbrücken</span><span>7,45 + 7,45</span></li>
+          <li><span>Palettenstellplätze</span><span>36</span></li>
+          <li><span>Aufbau</span><span>Schiebeplane, Edscha-Verdeck</span></li>
+          <li><span>Containeraufnahme</span><span>20'</span></li>
+        </ul>
+      </article>
+      <article class="unit rv rv-d2">
+        <div class="unit-top"><h3>Sattelzüge</h3><span class="unit-code">SZ / PLANE</span></div>
+        <p>Sattelzüge für Komplett- und Teilladungen im nationalen Verkehr.</p>
+        <ul class="spec">
+          <li><span>Aufbau</span><span>Schiebeplane</span></li>
+          <li><span>Verdeck</span><span>Edscha-Verdeck</span></li>
+          <li><span>Einsatz</span><span>Komplett- und Teilladungen</span></li>
+        </ul>
+      </article>
+      <article class="unit rv rv-d3">
+        <div class="unit-top"><h3>Verteilerfahrzeuge</h3><span class="unit-code">VF / HB</span></div>
+        <p>Für die Feinverteilung und Anlieferungen ohne Rampe.</p>
+        <ul class="spec">
+          <li><span>Aufbau</span><span>Schiebeplane, Edscha-Verdeck</span></li>
+          <li><span>Ausstattung</span><span>Hebebühne</span></li>
+          <li><span>Einsatz</span><span>Verteilerverkehr, Stückgut</span></li>
+        </ul>
+      </article>
+      <article class="unit rv rv-d4">
+        <div class="unit-top"><h3>Container-Chassis</h3><span class="unit-code">CC / 20-40</span></div>
+        <p>Chassis für den Containertransport zwischen Hafen, Lager und Empfänger.</p>
+        <ul class="spec">
+          <li><span>20 Fuß</span><span>20' Container</span></li>
+          <li><span>40 Fuß</span><span>40' DC + HC Container</span></li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="heritage" id="geschichte">
+  <div class="wrap">
+    <div class="her-grid">
+      <div class="her-media rv">
+        <img src="/redesign/glissmann/assets/lager.webp" alt="Schwergutstapler mit Rundhölzern im Umschlaglager" loading="lazy">
+      </div>
+      <div class="her-body rv rv-d1">
+        <p class="sec-label">04 / Geschichte</p>
+        <h2>Über 110 Jahre.<br>Eine Straße.</h2>
+        <p>Am 01.10.1912 gründete Hinrich Glissmann in der Billstraße 16 seinen Fuhrbetrieb. Mit Pferd und Wagen wurden Rundhölzer aus tropischen Ländern im Hamburger Freihafen geladen und bei den Furniermessereien angeliefert.</p>
+        <p>Heute steht die Hinrich Glissmann GmbH & Co. KG ein paar Hausnummern weiter, in der Billstraße 107. Die Pferde sind Gliederzügen, Sattelzügen und Schwergutstaplern gewichen. Das Geschäft ist dasselbe geblieben: Holz, Container, Hamburg.</p>
+        <div class="timeline">
+          <div class="tl">
+            <b>01.10.1912</b>
+            <p>Hinrich Glissmann gründet den Fuhrbetrieb in der Billstraße 16. Rundholztransporte aus dem Freihafen zu den Furniermessereien.</p>
+          </div>
+          <div class="tl">
+            <b>Heute</b>
+            <p>Familiengeführte Spedition unter Peter Glissmann: eigener Fuhrpark, eigenes Umschlaglager, nationale Transporte und Import/Export-Abwicklung.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="trust">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div>
+        <p class="sec-label">05 / Warum Glissmann</p>
+        <h2>Vier Gründe,<br>uns anzurufen.</h2>
+      </div>
+    </div>
+    <div class="trust-grid">
+      <div class="trust-item rv rv-d1">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        <b>110+ Jahre Erfahrung</b>
+        <p>Seit 1912 im Geschäft. Wer so lange fährt, kennt den Hafen, die Strecken und die Fallstricke.</p>
+      </div>
+      <div class="trust-item rv rv-d2">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M2 16V8h11v8"/><path d="M13 10h5l3 3v3h-8"/><circle cx="6.5" cy="17.5" r="1.8"/><circle cx="17.5" cy="17.5" r="1.8"/></svg>
+        <b>Eigener Fuhrpark</b>
+        <p>Gliederzüge, Sattelzüge, Verteilerfahrzeuge und Container-Chassis. Wir fahren selbst, wir planen selbst.</p>
+      </div>
+      <div class="trust-item rv rv-d3">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M3 20V9l9-5 9 5v11"/><path d="M8 20v-6h8v6"/></svg>
+        <b>Eigenes Umschlaglager</b>
+        <p>Container werden bei uns im Haus be- und entladen, mit Schwergutstaplern auch für schwere Güter.</p>
+      </div>
+      <div class="trust-item rv rv-d4">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M4 20c4-1 6-3 6-7V5"/><path d="M20 20c-4-1-6-3-6-7V5"/><path d="M7 8h10"/></svg>
+        <b>Spezialist Holz + Furniere</b>
+        <p>Rundhölzer, Schnitthölzer und Furniere aus und in Überseecontainern, seit der ersten Fuhre 1912.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="kontakt">
+  <div class="wrap contact-grid">
+    <div class="rv">
+      <p class="sec-label">06 / Kontakt</p>
+      <h2>Sagen Sie uns,<br>was fahren soll.</h2>
+      <p class="contact-lede">Rufen Sie an oder schreiben Sie uns kurz, worum es geht: Ladung, Relation, Termin. Sie bekommen eine klare Antwort, keine Warteschleife.</p>
+      <span class="tel-label">Direkt durchrufen</span>
+      <a class="tel-big" href="tel:+4940785535">040 - 78 55 35</a>
+    </div>
+    <div class="contact-card rv rv-d2">
+      <div class="c-row"><span>Firma</span><div>Hinrich Glissmann GmbH & Co. KG</div></div>
+      <div class="c-row"><span>Anschrift</span><div>Billstraße 107<br>20539 Hamburg</div></div>
+      <div class="c-row"><span>Telefon</span><div><a href="tel:+4940785535">040 - 78 55 35</a></div></div>
+      <div class="c-row"><span>Telefax</span><div>040 - 780 720 20</div></div>
+      <div class="c-row"><span>E-Mail</span><div><a href="mailto:info@glissmann-spedition.de">info@glissmann-spedition.de</a></div></div>
+      <div class="c-row"><span>Geschäftsführung</span><div>Peter Glissmann</div></div>
+      <div class="c-row"><span>Registernummer</span><div>HRA 86664</div></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <a class="logo logo-chip" href="#top" aria-label="Glissmann Spedition, nach oben">
+        <img class="logo-img" src="/redesign/glissmann/assets/logo.gif" alt="Glissmann Spedition" width="305" height="83">
+      </a>
+      <nav class="foot-links" aria-label="Fußzeile">
+        <a href="#leistungen">Leistungen</a>
+        <a href="#fuhrpark">Fuhrpark</a>
+        <a href="#geschichte">Geschichte</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="#" title="Platzhalter">Impressum</a>
+        <a href="#" title="Platzhalter">Datenschutz</a>
+      </nav>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 Hinrich Glissmann GmbH & Co. KG, Hamburg</span>
+      <span>Transporte · Import/Export · Fuhrpark · seit 1912</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  if(!location.search.match(/\bstatic\b/)){document.documentElement.classList.add("js")}
+
+  var header=document.querySelector("header");
+  addEventListener("scroll",function(){header.classList.toggle("scrolled",scrollY>10)},{passive:true});
+
+  var burger=document.getElementById("burger"),links=document.getElementById("navlinks");
+  burger.addEventListener("click",function(){
+    var open=links.classList.toggle("open");
+    burger.setAttribute("aria-expanded",open);
+  });
+  links.addEventListener("click",function(e){
+    if(e.target.tagName==="A"){links.classList.remove("open");burger.setAttribute("aria-expanded","false")}
+  });
+
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add("in");io.unobserve(en.target)}});
+  },{threshold:.12});
+  document.querySelectorAll(".rv:not(.in)").forEach(function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>

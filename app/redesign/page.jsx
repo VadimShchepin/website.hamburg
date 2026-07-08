@@ -1,0 +1,144 @@
+import Link from 'next/link';
+import Breadcrumbs from '../../src/components/Breadcrumbs';
+
+export const metadata = {
+    title: 'Redesign-Konzepte | AISEO Hamburg',
+    description: 'Fertige Redesign-Entwuerfe fuer echte Unternehmen: Startseiten-Konzepte mit echten Inhalten, gebaut vor dem ersten Gespraech.',
+    robots: {
+        index: false,
+        follow: false,
+    },
+};
+
+const redesigns = [
+    {
+        slug: 'zieler',
+        firm: 'ZIELER & CO. GmbH',
+        sector: 'TROCKENFRUECHTE-HANDELSHAUS · HAMBURG · SEIT 1907',
+        description: 'Warmes Kaufmannshaus-Erbe aus Creme, Espresso und Gold, mit Serifen-Typografie und rotierendem Hanse-Stempel. Komplett aus der eigenen Produktfotografie des Hauses gebaut, kein einziges generiertes Bild.',
+    },
+    {
+        slug: 'glissmann',
+        firm: 'Hinrich Glissmann GmbH & Co. KG',
+        sector: 'SPEDITION · HAMBURG · SEIT 1912',
+        description: 'Heller hanseatischer Hafen-Look in den Original-Markenfarben: rotes Laufband, blaues Heritage-Band, kondensierte Display-Typografie und Flotten-Spezifikationen wie im Frachtbrief.',
+    },
+    {
+        slug: 'fraembs-dach',
+        firm: 'Fraembs Dachdeckerei',
+        sector: 'DACHDECKER-MEISTERBETRIEB · HAMBURG',
+        description: 'Dunkler, editorialer Look mit warmem Akzent, grossformatiger Projektgalerie und klaren Leistungsmodulen von Steildach bis Photovoltaik.',
+    },
+    {
+        slug: 'tiemann-co',
+        firm: 'Tiemann & Co. KG',
+        sector: 'HAUSVERWALTUNG & IMMOBILIEN · HAMBURG · SEIT 1948',
+        description: 'Ruhiger Immobilien-Auftritt mit Objektgalerie, nummeriertem Leistungsindex von Verkauf bis WEG-Verwaltung und klassischer Typografie.',
+    },
+    {
+        slug: 'clean-service-nord',
+        firm: 'Clean Service Nord GmbH',
+        sector: 'GEBAEUDEREINIGUNG · HAMBURG & BREMEN · SEIT 1991',
+        description: 'Klarer, moderner Auftritt in Petrol mit Fokus auf Hotel- und Gebaeudereinigung, inklusive komplett neu geschriebener Website-Texte.',
+    },
+    {
+        slug: 'knueppel',
+        firm: 'Knueppel & Partner mbB',
+        sector: 'WIRTSCHAFTSPRUEFER & STEUERBERATER · WEDEL / ELMSHORN',
+        description: 'Ruhige Premium-Beratung: warmes Papier, tiefes Logo-Blau, redaktionelle Serifen und eine Kanzlei-Vorstellung im Kontobuch-Stil. Mit dem echten Logo der Kanzlei.',
+    },
+    {
+        slug: 'sieck',
+        firm: 'Erwin Sieck Druckerei GmbH',
+        sector: 'DRUCKEREI & STEMPEL · HAMBURG · SEIT 1959',
+        description: 'Typografisches Print-Design in Papierweiss, Tiefschwarz und Zinnober: Schnittmarken, Schriftmuster-Hero und ein 24-Stunden-Stempel-Band.',
+    },
+    {
+        slug: 'boege',
+        firm: 'gebr. boege Metallveredelungs GmbH',
+        sector: 'GALVANIK & METALLVEREDELUNG · HAMBURG · 80+ JAHRE',
+        description: 'Praezisions-Design in Graphit mit Chrom-Verlaeufen, technischen Mono-Labels und einer grossen 80+ als Anker. Gebaut fuer eine Branche, die man selten schoen zeigt.',
+    },
+    {
+        slug: 'billinger',
+        firm: 'Bettenfabrikation Billinger',
+        sector: 'BETTEN & MATRATZEN · SESSLACH (OBERFRANKEN)',
+        description: 'Nacht-und-Leinen-Stimmung: Creme, Nachtblau und Honiggold, ein dezenter Sternenhimmel als Gruss an die alte Website und gesteppte Bildrahmen wie eine Matratzennaht.',
+    },
+];
+
+export default function RedesignPage() {
+    return (
+        <>
+            <section className="subpage-hero section">
+                <div className="container">
+                    <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Redesign' }]} />
+                    <p className="section-kicker animate-up">Redesign</p>
+                    <h1 className="subpage-title animate-up">Erst der Entwurf. Dann das Gespraech.</h1>
+                    <p className="subpage-intro animate-up">
+                        Jedes Konzept hier ist eine fertig gebaute Startseite fuer ein echtes Unternehmen: mit den Original-Inhalten
+                        und Fakten der Firma, einem Design, das zur Branche passt, und funktionierender Mobilansicht. Kein Moodboard,
+                        keine Skizze, sondern eine Seite, die man anklicken kann.
+                    </p>
+                </div>
+            </section>
+
+            <section className="wissen-grid-section section light-bg">
+                <div className="container">
+                    <div className="wissen-grid">
+                        {redesigns.map((r, i) => (
+                            <a
+                                key={r.slug}
+                                href={`/redesign/${r.slug}`}
+                                target="_blank"
+                                rel="noopener"
+                                className={`wissen-card animate-up delay-${(i % 3) + 1}`}
+                                data-umami-event="redesign-open"
+                                data-umami-event-slug={r.slug}
+                            >
+                                <img
+                                    src={`/redesign/${r.slug}/preview.webp`}
+                                    alt={`Redesign-Konzept fuer ${r.firm}`}
+                                    loading={i < 3 ? 'eager' : 'lazy'}
+                                    style={{
+                                        width: '100%',
+                                        aspectRatio: '1200 / 760',
+                                        objectFit: 'cover',
+                                        borderRadius: '8px',
+                                        border: '1px solid rgba(0,0,0,0.08)',
+                                        marginBottom: 'var(--space-sm, 1rem)',
+                                        display: 'block',
+                                    }}
+                                />
+                                <div className="wissen-card-meta">
+                                    <span className="wissen-card-category">{r.sector}</span>
+                                </div>
+                                <h2 className="wissen-card-title">
+                                    <span>{r.firm}</span>
+                                </h2>
+                                <p className="wissen-card-excerpt">{r.description}</p>
+                                <span className="wissen-card-link">
+                                    Redesign ansehen
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
+                                </span>
+                            </a>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            <section className="sp-cta section">
+                <div className="container">
+                    <div className="cta-box bull-boundary animate-up">
+                        <p className="section-kicker">So koennte Ihre Website aussehen</p>
+                        <h2 className="section-title">Ihr Redesign, bevor Sie sich entscheiden.</h2>
+                        <p className="offer-framing">Schicken Sie mir Ihre aktuelle Website. Sie bekommen einen fertigen Entwurf mit Ihren echten Inhalten, bevor Sie einen Cent ausgeben. Gefaellt er Ihnen nicht, war es das Risiko von genau null Euro.</p>
+                        <div className="cta-actions mt-4">
+                            <Link href="/kontakt" className="button button-primary button-large" data-umami-event="cta-click" data-umami-event-location="redesign-cta">Kostenlosen Entwurf anfragen</Link>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </>
+    );
+}

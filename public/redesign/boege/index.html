@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>gebr. böge Metallveredelungs GmbH : Galvanik und Oberflächentechnik in Hamburg-Bergedorf</title>
+<meta name="description" content="Galvanische Beschichtung und Oberflächenveredelung für Präzisionsteile. Handwerksbetrieb in Hamburg-Bergedorf, seit über 80 Jahren.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0b0d;
+  --bg2:#0e1013;
+  --panel:#121418;
+  --line:rgba(214,222,232,.10);
+  --line-strong:rgba(214,222,232,.22);
+  --txt:#e9ecf0;
+  --mut:#9aa2ac;
+  --dim:#6b7280;
+  --chrome-a:#f2f5f8;
+  --chrome-b:#8d97a3;
+  --accent:#b9c4d0;
+  --mono:'IBM Plex Mono',ui-monospace,monospace;
+  --sans:'Archivo',system-ui,sans-serif;
+  --pad:clamp(20px,5vw,72px);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  color:var(--txt);
+  font-family:var(--sans);
+  font-size:17px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+body::before{
+  content:"";position:fixed;inset:0;z-index:9;pointer-events:none;opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+}
+::selection{background:#c8d2dc;color:#0a0b0d}
+
+.chrome{
+  background:linear-gradient(105deg,var(--chrome-a) 0%,var(--chrome-b) 38%,#fdfeff 52%,#77808c 70%,#d7dde4 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.mono{font-family:var(--mono);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--dim)}
+.wrap{max-width:1280px;margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
+
+/* ---------- nav ---------- */
+header{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  border-bottom:1px solid transparent;
+  transition:background .35s,border-color .35s;
+}
+header.scrolled{background:rgba(10,11,13,.86);backdrop-filter:blur(14px);border-color:var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px;max-width:1280px;margin:0 auto;padding:0 var(--pad)}
+.brand{display:flex;flex-direction:column;line-height:1.05;text-decoration:none;color:var(--txt)}
+.brand b{font-weight:800;font-size:1.28rem;letter-spacing:-.02em;font-stretch:110%}
+.brand span{font-family:var(--mono);font-size:.56rem;letter-spacing:.3em;color:var(--mut);margin-top:3px}
+.nav-links{display:flex;gap:2.4rem;align-items:center;list-style:none}
+.nav-links a{color:var(--mut);text-decoration:none;font-size:.86rem;font-weight:500;letter-spacing:.03em;transition:color .2s}
+.nav-links a:hover{color:var(--txt)}
+.nav-cta{
+  font-family:var(--mono);font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;
+  color:#0a0b0d!important;background:linear-gradient(120deg,#eef1f4,#aeb8c2);
+  padding:.72em 1.5em;border-radius:2px;font-weight:500;
+}
+.nav-cta:hover{background:#fff}
+.burger{display:none;background:none;border:1px solid var(--line-strong);width:44px;height:40px;border-radius:2px;cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:6px}
+.burger i{display:block;width:18px;height:1px;background:var(--txt)}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
+.hero-img{position:absolute;inset:0;z-index:0}
+.hero-img img{width:100%;height:100%;object-fit:cover;object-position:center;filter:saturate(.82) contrast(1.06) brightness(.8)}
+.hero-img::after{
+  content:"";position:absolute;inset:0;
+  background:
+    linear-gradient(180deg,rgba(10,11,13,.55) 0%,rgba(10,11,13,.15) 34%,rgba(10,11,13,.72) 74%,var(--bg) 100%),
+    linear-gradient(90deg,rgba(10,11,13,.6) 0%,rgba(10,11,13,0) 55%);
+}
+.hero-grid{
+  position:absolute;inset:0;z-index:1;pointer-events:none;opacity:.5;
+  background:
+    repeating-linear-gradient(90deg,rgba(214,222,232,.045) 0 1px,transparent 1px calc(100%/6));
+}
+.hero-inner{position:relative;z-index:2;width:100%;max-width:1280px;margin:0 auto;padding:0 var(--pad) clamp(48px,8vh,96px)}
+.hero-tag{display:flex;align-items:center;gap:14px;margin-bottom:1.6rem}
+.hero-tag::before{content:"";width:42px;height:1px;background:var(--line-strong)}
+.hero h1{
+  font-weight:750;font-stretch:112%;letter-spacing:-.03em;line-height:.98;
+  font-size:clamp(2.6rem,7.2vw,5.6rem);
+  max-width:14ch;text-wrap:balance;
+}
+.hero p{max-width:46ch;color:var(--mut);margin-top:1.6rem;font-size:clamp(1rem,1.4vw,1.15rem)}
+.hero-actions{display:flex;gap:1rem;margin-top:2.4rem;flex-wrap:wrap}
+.btn{
+  display:inline-block;text-decoration:none;border-radius:2px;
+  font-family:var(--mono);font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;
+  padding:1em 1.9em;transition:.25s;
+}
+.btn-solid{background:linear-gradient(120deg,#f0f3f6,#a9b3bd);color:#0a0b0d;font-weight:500}
+.btn-solid:hover{background:#fff;transform:translateY(-1px)}
+.btn-ghost{border:1px solid var(--line-strong);color:var(--txt)}
+.btn-ghost:hover{border-color:var(--accent);background:rgba(214,222,232,.05)}
+.hero-meta{
+  position:relative;z-index:2;border-top:1px solid var(--line);
+  display:grid;grid-template-columns:repeat(3,1fr);
+  max-width:1280px;margin:0 auto;width:100%;
+}
+.hero-meta>div{padding:1.15rem var(--pad) 1.3rem;border-left:1px solid var(--line)}
+.hero-meta>div:first-child{border-left:none}
+.hero-meta b{display:block;font-size:1.35rem;font-weight:700;font-stretch:108%;letter-spacing:-.01em}
+.hero-meta span{font-family:var(--mono);font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dim)}
+.hero-side{
+  position:absolute;right:calc(var(--pad)/2);top:50%;transform:translateY(-50%) rotate(180deg);z-index:2;
+  writing-mode:vertical-rl;font-family:var(--mono);font-size:.62rem;letter-spacing:.34em;
+  text-transform:uppercase;color:rgba(233,236,240,.4);
+}
+
+/* ---------- ticker ---------- */
+.ticker{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;background:var(--bg2)}
+.ticker-track{display:flex;width:max-content;animation:tick 46s linear infinite;padding:.85rem 0}
+.ticker span{font-family:var(--mono);font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;color:var(--dim);padding:0 2.2rem;white-space:nowrap}
+.ticker span::after{content:"·";margin-left:4.4rem;color:var(--line-strong)}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* ---------- sections ---------- */
+section{padding:clamp(72px,11vh,132px) 0;position:relative}
+.sec-head{display:flex;align-items:baseline;gap:1.4rem;margin-bottom:clamp(2.4rem,5vh,4rem)}
+.sec-head .idx{font-family:var(--mono);font-size:.72rem;color:var(--dim);letter-spacing:.15em}
+.sec-head h2{font-weight:750;font-stretch:110%;letter-spacing:-.025em;line-height:1.04;font-size:clamp(1.9rem,4vw,3.1rem);text-wrap:balance}
+.sec-head .rule{flex:1;height:1px;background:var(--line);align-self:center;min-width:40px}
+
+/* services */
+#leistungen{background:var(--bg)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.svc{
+  background:var(--bg);padding:2.2rem 1.9rem 2.5rem;position:relative;
+  transition:background .3s;
+}
+.svc:hover{background:var(--panel)}
+.svc::before{
+  content:"";position:absolute;top:0;left:0;width:34px;height:1px;
+  background:linear-gradient(90deg,#e9ecf0,transparent);opacity:0;transition:opacity .3s;
+}
+.svc:hover::before{opacity:1}
+.svc .num{font-family:var(--mono);font-size:.68rem;color:var(--dim);letter-spacing:.2em}
+.svc h3{font-weight:700;font-stretch:108%;font-size:1.32rem;letter-spacing:-.015em;margin:1.4rem 0 .8rem;line-height:1.2}
+.svc p{color:var(--mut);font-size:.95rem}
+.svc ul{list-style:none;margin-top:1.4rem;border-top:1px solid var(--line)}
+.svc li{
+  font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--mut);padding:.7em 0;border-bottom:1px solid var(--line);
+  display:flex;align-items:center;gap:.8em;
+}
+.svc li::before{content:"";width:5px;height:5px;border:1px solid var(--accent);transform:rotate(45deg);flex:none}
+
+/* image band */
+.band{padding:0}
+.band-inner{display:grid;grid-template-columns:1.15fr .85fr;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.band-img{position:relative;min-height:420px;overflow:hidden}
+.band-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.85) contrast(1.05) brightness(.88);transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.band-img:hover img{transform:scale(1.03)}
+.band-img figcaption{
+  position:absolute;left:1.2rem;bottom:1.1rem;z-index:2;
+  font-family:var(--mono);font-size:.62rem;letter-spacing:.24em;text-transform:uppercase;
+  color:rgba(233,236,240,.75);background:rgba(10,11,13,.6);padding:.55em 1em;backdrop-filter:blur(6px);
+}
+.band-txt{background:var(--bg2);padding:clamp(2.4rem,5vw,4.2rem);display:flex;flex-direction:column;justify-content:center;border-left:1px solid var(--line)}
+.band-txt h3{font-weight:720;font-stretch:110%;font-size:clamp(1.5rem,2.6vw,2.1rem);letter-spacing:-.02em;line-height:1.12;margin:1.1rem 0 1rem;text-wrap:balance}
+.band-txt p{color:var(--mut);max-width:44ch}
+
+/* industries */
+#branchen .lead{color:var(--mut);max-width:56ch;margin-bottom:clamp(2.2rem,4vh,3.4rem)}
+.ind-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line-strong)}
+.ind{
+  border-bottom:1px solid var(--line);border-right:1px solid var(--line);
+  padding:1.9rem 1.5rem 2.2rem;position:relative;transition:background .3s;
+}
+.ind:nth-child(4n+1){border-left:1px solid var(--line)}
+.ind:hover{background:var(--panel)}
+.ind .num{font-family:var(--mono);font-size:.66rem;color:var(--dim);letter-spacing:.2em}
+.ind h3{font-weight:700;font-stretch:106%;font-size:1.08rem;letter-spacing:-.01em;margin:2.6rem 0 .55rem;line-height:1.25}
+.ind p{color:var(--mut);font-size:.86rem;line-height:1.55}
+.ind::after{
+  content:"";position:absolute;top:1.6rem;right:1.4rem;width:8px;height:8px;
+  border-top:1px solid var(--accent);border-right:1px solid var(--accent);
+  opacity:.35;transition:.3s;
+}
+.ind:hover::after{opacity:1;transform:translate(2px,-2px)}
+
+/* heritage */
+#unternehmen{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.her-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2.4rem,6vw,5.5rem);align-items:start}
+.her-big{position:sticky;top:110px}
+.her-big .huge{
+  font-weight:800;font-stretch:115%;letter-spacing:-.04em;line-height:.86;
+  font-size:clamp(5.2rem,13vw,10.5rem);display:block;
+}
+.her-big .huge-sub{
+  display:block;font-weight:720;font-stretch:110%;letter-spacing:-.02em;
+  font-size:clamp(1.5rem,3vw,2.3rem);margin-top:.5rem;
+}
+.her-big p{color:var(--mut);margin-top:1.6rem;max-width:38ch}
+.her-photo{position:relative;margin-top:2.6rem;border:1px solid var(--line)}
+.her-photo img{display:block;width:100%;height:auto;filter:saturate(.85) contrast(1.05) brightness(.9)}
+.her-copy p{color:var(--mut);margin-bottom:1.2rem;max-width:56ch}
+.her-copy p b{color:var(--txt);font-weight:600}
+.gf-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:2.4rem 0}
+.gf{background:var(--bg2);padding:1.6rem 1.4rem 1.8rem;transition:background .3s}
+.gf:hover{background:var(--panel)}
+.gf .mono-init{
+  font-family:var(--mono);font-size:.78rem;letter-spacing:.1em;color:var(--dim);
+  border:1px solid var(--line-strong);width:44px;height:44px;display:flex;
+  align-items:center;justify-content:center;border-radius:2px;margin-bottom:1.2rem;
+}
+.gf b{display:block;font-weight:700;font-stretch:106%;font-size:1.02rem;letter-spacing:-.01em}
+.gf span{font-family:var(--mono);font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dim)}
+.sister{
+  border:1px solid var(--line);border-left:2px solid var(--accent);
+  padding:1.3rem 1.6rem;display:flex;gap:1.2rem;align-items:baseline;flex-wrap:wrap;
+  background:rgba(214,222,232,.02);
+}
+.sister p{margin:0;color:var(--mut);font-size:.92rem}
+.sister a{color:var(--txt);text-decoration:none;border-bottom:1px solid var(--line-strong);font-weight:500}
+.sister a:hover{border-color:var(--txt)}
+
+/* contact */
+#kontakt .kon-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:1px;background:var(--line);border:1px solid var(--line)}
+.kon-l{background:var(--bg);padding:clamp(2.2rem,4.5vw,3.8rem)}
+.kon-l h2{font-weight:750;font-stretch:110%;letter-spacing:-.025em;font-size:clamp(1.9rem,3.6vw,2.9rem);line-height:1.05;margin:.9rem 0 1.1rem;text-wrap:balance}
+.kon-l>p{color:var(--mut);max-width:44ch;margin-bottom:2.2rem}
+.kon-rows{border-top:1px solid var(--line)}
+.kon-row{display:grid;grid-template-columns:130px 1fr;gap:1rem;padding:1.05rem 0;border-bottom:1px solid var(--line);align-items:baseline}
+.kon-row .k{font-family:var(--mono);font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;color:var(--dim)}
+.kon-row .v{font-size:1rem}
+.kon-row .v a{color:var(--txt);text-decoration:none;border-bottom:1px solid var(--line-strong)}
+.kon-row .v a:hover{border-color:var(--txt)}
+.kon-r{position:relative;background:var(--panel);min-height:420px;overflow:hidden}
+.kon-r img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.8) contrast(1.05) brightness(.75)}
+.kon-r::after{content:"";position:absolute;inset:0;background:linear-gradient(160deg,rgba(10,11,13,.15),rgba(10,11,13,.68))}
+.kon-coord{
+  position:absolute;z-index:2;left:1.6rem;bottom:1.5rem;right:1.6rem;
+  font-family:var(--mono);font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;
+  color:rgba(233,236,240,.8);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;
+  border-top:1px solid rgba(233,236,240,.25);padding-top:1rem;
+}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding:2.6rem 0 2.2rem;background:var(--bg)}
+.foot{display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap;align-items:flex-start}
+.foot-brand b{font-weight:800;font-stretch:110%;font-size:1.1rem;letter-spacing:-.02em}
+.foot-brand div{font-family:var(--mono);font-size:.58rem;letter-spacing:.28em;color:var(--dim);text-transform:uppercase;margin-top:4px}
+.foot-links{display:flex;gap:1.8rem;list-style:none;flex-wrap:wrap}
+.foot-links a{color:var(--mut);text-decoration:none;font-size:.84rem}
+.foot-links a:hover{color:var(--txt)}
+.foot-meta{width:100%;margin-top:2rem;padding-top:1.4rem;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.foot-meta span{font-family:var(--mono);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--dim)}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv-d1{transition-delay:.08s}.rv-d2{transition-delay:.16s}.rv-d3{transition-delay:.24s}.rv-d4{transition-delay:.32s}
+@media (prefers-reduced-motion:reduce){
+  .rv{opacity:1;transform:none;transition:none}
+  .ticker-track{animation:none}
+  html{scroll-behavior:auto}
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:1020px){
+  .svc-grid{grid-template-columns:1fr}
+  .ind-grid{grid-template-columns:repeat(2,1fr)}
+  .ind:nth-child(2n+1){border-left:1px solid var(--line)}
+  .ind:nth-child(4n+1){border-left:1px solid var(--line)}
+  .her-grid{grid-template-columns:1fr}
+  .her-big{position:static}
+  .band-inner{grid-template-columns:1fr}
+  .band-txt{border-left:none;border-top:1px solid var(--line)}
+  #kontakt .kon-grid{grid-template-columns:1fr}
+  .kon-r{min-height:320px}
+}
+@media (max-width:760px){
+  .nav-links{
+    position:fixed;inset:72px 0 auto 0;background:rgba(10,11,13,.97);
+    flex-direction:column;align-items:flex-start;gap:0;padding:0 var(--pad) 1.4rem;
+    border-bottom:1px solid var(--line);display:none;
+  }
+  .nav-links.open{display:flex}
+  .nav-links li{width:100%;border-top:1px solid var(--line)}
+  .nav-links a{display:block;padding:1rem 0;font-size:1rem}
+  .nav-links .nav-cta{margin-top:1rem;text-align:center;padding:1em}
+  .burger{display:flex}
+  .hero-img::after{
+    background:
+      linear-gradient(180deg,rgba(10,11,13,.66) 0%,rgba(10,11,13,.38) 34%,rgba(10,11,13,.82) 74%,var(--bg) 100%),
+      linear-gradient(90deg,rgba(10,11,13,.55) 0%,rgba(10,11,13,.15) 60%);
+  }
+  .hero-meta{grid-template-columns:1fr}
+  .hero-meta>div{border-left:none;border-top:1px solid var(--line);padding:.9rem var(--pad) 1rem}
+  .hero-side{display:none}
+  .ind-grid{grid-template-columns:1fr}
+  .gf-grid{grid-template-columns:1fr}
+  .kon-row{grid-template-columns:1fr;gap:.2rem}
+}
+</style>
+</head>
+<body>
+
+<header id="hd">
+  <nav class="nav" aria-label="Hauptnavigation">
+    <a class="brand" href="#top">
+      <b>gebr. böge</b>
+      <span>Metallveredelungs GmbH</span>
+    </a>
+    <button class="burger" id="burger" aria-label="Menü öffnen" aria-expanded="false"><i></i><i></i><i></i></button>
+    <ul class="nav-links" id="menu">
+      <li><a href="#leistungen">Leistungen</a></li>
+      <li><a href="#branchen">Branchen</a></li>
+      <li><a href="#unternehmen">Unternehmen</a></li>
+      <li><a class="nav-cta" href="#kontakt">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" style="padding:0">
+    <div class="hero-img"><img src="/redesign/boege/assets/hero.png" alt="Galvanisch veredelte Präzisionsteile mit spiegelnder Oberfläche"></div>
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-side" aria-hidden="true">Galvanik · Hamburg-Bergedorf</div>
+    <div class="hero-inner">
+      <div class="hero-tag mono rv in">Galvanik · Oberflächentechnik · Metallveredelung</div>
+      <h1 class="rv in rv-d1">Die <span class="chrome">Oberfläche</span> entscheidet.</h1>
+      <p class="rv in rv-d2">Galvanische Beschichtung und Oberflächenveredelung für Präzisionsteile. Handwerk aus Hamburg-Bergedorf, seit über 80 Jahren in Familienhand.</p>
+      <div class="hero-actions rv in rv-d3">
+        <a class="btn btn-solid" href="#kontakt">Anfrage stellen</a>
+        <a class="btn btn-ghost" href="#leistungen">Leistungen ansehen</a>
+      </div>
+    </div>
+    <div class="hero-meta rv in rv-d4">
+      <div><b>80+</b><span>Jahre Handwerk</span></div>
+      <div><b>Familienbetrieb</b><span>Inhabergeführt</span></div>
+      <div><b>Bergedorf</b><span>Standort Hamburg</span></div>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>Galvanik</span><span>Oberflächentechnik</span><span>Metallveredelung</span><span>Hamburg-Bergedorf</span><span>Seit über 80 Jahren</span><span>Handwerksbetrieb</span>
+      <span>Galvanik</span><span>Oberflächentechnik</span><span>Metallveredelung</span><span>Hamburg-Bergedorf</span><span>Seit über 80 Jahren</span><span>Handwerksbetrieb</span>
+    </div>
+  </div>
+
+  <!-- LEISTUNGEN -->
+  <section id="leistungen">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="idx">/ 01</span>
+        <h2>Veredelung für Teile, die funktionieren müssen</h2>
+        <span class="rule"></span>
+      </div>
+      <div class="svc-grid">
+        <article class="svc rv">
+          <span class="num">A.01</span>
+          <h3>Galvanische Beschichtung</h3>
+          <p>Metallische Schichten, elektrochemisch aufgebracht. Für Korrosionsschutz, Funktion und ein sauberes Erscheinungsbild, abgestimmt auf das Bauteil und seinen Einsatz.</p>
+          <ul>
+            <li>Korrosionsschutz</li>
+            <li>Funktionale Schichten</li>
+            <li>Dekorative Oberflächen</li>
+          </ul>
+        </article>
+        <article class="svc rv rv-d1">
+          <span class="num">A.02</span>
+          <h3>Oberflächenveredelung für Präzisionsteile</h3>
+          <p>Bauteile aus dem Maschinen- und Gerätebau stellen hohe Anforderungen an die Oberfläche. Wir behandeln jedes Teil so, wie es die Anwendung verlangt.</p>
+          <ul>
+            <li>Präzisionsbauteile</li>
+            <li>Sorgfältige Handhabung</li>
+            <li>Kontrolliertes Finish</li>
+          </ul>
+        </article>
+        <article class="svc rv rv-d2">
+          <span class="num">A.03</span>
+          <h3>Persönliche Abwicklung</h3>
+          <p>Kurze Wege, direkte Ansprechpartner, Entscheidungen im Haus. Sie sprechen mit Menschen, die Ihre Teile kennen und den Betrieb selbst führen.</p>
+          <ul>
+            <li>Direkter Kontakt</li>
+            <li>Beratung vor Ort</li>
+            <li>Verlässliche Absprachen</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMAGE BAND -->
+  <section class="band">
+    <div class="band-inner">
+      <figure class="band-img rv">
+        <img src="/redesign/boege/assets/galvanik.png" alt="Galvanikbäder mit Warenträgern in der Fertigung">
+        <figcaption>Fertigung · Galvanik</figcaption>
+      </figure>
+      <div class="band-txt rv rv-d1">
+        <span class="mono">Anspruch</span>
+        <h3>Jedes Teil verlässt das Haus geprüft.</h3>
+        <p>Metallveredelung ist Handarbeit mit Verfahren, die Erfahrung verlangen. Bei uns wird jedes Bauteil vor der Auslieferung in Augenschein genommen. Was nicht überzeugt, geht nicht raus.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRANCHEN -->
+  <section id="branchen">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="idx">/ 02</span>
+        <h2>Branchen, die uns vertrauen</h2>
+        <span class="rule"></span>
+      </div>
+      <p class="lead rv">Unsere Kunden fertigen Maschinen und Geräte, bei denen jedes Bauteil passen muss. Entsprechend behandeln wir ihre Teile.</p>
+      <div class="ind-grid">
+        <article class="ind rv">
+          <span class="num">B.01</span>
+          <h3>Werkzeug&shy;maschinenbau</h3>
+          <p>Oberflächen für Komponenten, die täglich unter Last arbeiten.</p>
+        </article>
+        <article class="ind rv rv-d1">
+          <span class="num">B.02</span>
+          <h3>Präzisions&shy;maschinenbau</h3>
+          <p>Veredelung für Bauteile mit hohen Anforderungen an Maß und Finish.</p>
+        </article>
+        <article class="ind rv rv-d2">
+          <span class="num">B.03</span>
+          <h3>Medizinischer Gerätebau</h3>
+          <p>Saubere, kontrollierte Oberflächen für den Gerätebau in der Medizintechnik.</p>
+        </article>
+        <article class="ind rv rv-d3">
+          <span class="num">B.04</span>
+          <h3>Luft- und Raumfahrt&shy;technik</h3>
+          <p>Beschichtungen für eine Branche, in der Sorgfalt keine Option ist, sondern Pflicht.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- UNTERNEHMEN -->
+  <section id="unternehmen">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="idx">/ 03</span>
+        <h2>Ein Handwerksbetrieb, eine Familie</h2>
+        <span class="rule"></span>
+      </div>
+      <div class="her-grid">
+        <div class="her-big rv">
+          <span class="huge chrome">80+</span>
+          <span class="huge-sub">Jahre Metallveredelung in Hamburg</span>
+          <p>Seit über 80 Jahren veredeln wir Metalloberflächen in Hamburg-Bergedorf. Als Handwerksbetrieb, in Familienhand, mit dem Anspruch, den dieses Gewerk verlangt.</p>
+          <figure class="her-photo">
+            <img src="/redesign/boege/assets/inspection.png" alt="Sichtprüfung eines veredelten Bauteils unter Prüflicht">
+          </figure>
+        </div>
+        <div class="her-copy rv rv-d1">
+          <p><b>Geführt wird das Unternehmen von der Familie Böge.</b> Drei Geschäftsführer, ein Standort, kurze Entscheidungswege: Wenn Sie anrufen, sprechen Sie mit Menschen, die den Betrieb kennen und Verantwortung tragen.</p>
+          <div class="gf-grid">
+            <div class="gf"><span class="mono-init">MB</span><b>Manfred Böge</b><span>Geschäftsführung</span></div>
+            <div class="gf"><span class="mono-init">MB</span><b>Martina Böge</b><span>Geschäftsführung</span></div>
+            <div class="gf"><span class="mono-init">TB</span><b>Timo Böge</b><span>Geschäftsführung</span></div>
+          </div>
+          <p>Unser Standort an der Kurt-A.-Körber-Chaussee in Bergedorf ist seit Jahrzehnten unsere Basis. Von hier aus arbeiten wir für Kunden aus dem Werkzeugmaschinenbau, dem Präzisionsmaschinenbau, dem medizinischen Gerätebau und der Luft- und Raumfahrttechnik.</p>
+          <div class="sister rv rv-d2">
+            <span class="mono" style="color:var(--accent)">Schwester</span>
+            <p>Zur Familie gehört auch die Böge Metallveredelung GmbH: <a href="https://www.boege-metall.de" target="_blank" rel="noopener">www.boege-metall.de</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section id="kontakt">
+    <div class="wrap">
+      <div class="kon-grid rv">
+        <div class="kon-l">
+          <span class="mono">/ 04 · Kontakt</span>
+          <h2>Sprechen Sie mit uns über Ihre Teile.</h2>
+          <p>Schicken Sie uns eine Anfrage oder rufen Sie an. Sie erreichen uns direkt am Standort Bergedorf.</p>
+          <div class="kon-rows">
+            <div class="kon-row"><span class="k">Anschrift</span><span class="v">Kurt-A.-Körber-Chaussee 27-31<br>21033 Hamburg-Bergedorf</span></div>
+            <div class="kon-row"><span class="k">Telefon</span><span class="v"><a href="tel:+494072416010">+49 40 724160-10</a></span></div>
+            <div class="kon-row"><span class="k">E-Mail</span><span class="v"><a href="mailto:info@boege-hamburg.de">info@boege-hamburg.de</a></span></div>
+            <div class="kon-row"><span class="k">Firma</span><span class="v">gebr. böge Metallveredelungs GmbH<br><span style="color:var(--mut);font-size:.88rem">Amtsgericht Hamburg, HRB 23031</span></span></div>
+          </div>
+          <div class="hero-actions" style="margin-top:2.2rem">
+            <a class="btn btn-solid" href="mailto:info@boege-hamburg.de">E-Mail schreiben</a>
+            <a class="btn btn-ghost" href="tel:+494072416010">Anrufen</a>
+          </div>
+        </div>
+        <div class="kon-r">
+          <img src="/redesign/boege/assets/hero.png" alt="" aria-hidden="true">
+          <div class="kon-coord">
+            <span>53.49 N / 10.21 E</span>
+            <span>Hamburg-Bergedorf</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="foot-brand">
+        <b>gebr. böge</b>
+        <div>Metallveredelungs GmbH</div>
+      </div>
+      <ul class="foot-links">
+        <li><a href="#leistungen">Leistungen</a></li>
+        <li><a href="#branchen">Branchen</a></li>
+        <li><a href="#unternehmen">Unternehmen</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+        <li><a href="#">Impressum</a></li>
+        <li><a href="#">Datenschutz</a></li>
+      </ul>
+    </div>
+    <div class="foot-meta">
+      <span>gebr. böge Metallveredelungs GmbH · HRB 23031</span>
+      <span>Kurt-A.-Körber-Chaussee 27-31 · 21033 Hamburg</span>
+      <span>Geschäftsführung: M. Böge, M. Böge, T. Böge</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var hd=document.getElementById('hd');
+  var onScroll=function(){hd.classList.toggle('scrolled',window.scrollY>24)};
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+  var burger=document.getElementById('burger'),menu=document.getElementById('menu');
+  burger.addEventListener('click',function(){
+    var open=menu.classList.toggle('open');
+    burger.setAttribute('aria-expanded',open?'true':'false');
+  });
+  menu.addEventListener('click',function(e){
+    if(e.target.tagName==='A'){menu.classList.remove('open');burger.setAttribute('aria-expanded','false');}
+  });
+
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+    },{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+    document.querySelectorAll('.rv:not(.in)').forEach(function(el){io.observe(el)});
+  }else{
+    document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in')});
+  }
+})();
+</script>
+</body>
+</html>

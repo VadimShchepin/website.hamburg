@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Erwin Sieck Druckerei GmbH | Druckerei und Stempelfertigung in Hamburg seit 1959</title>
+<meta name="description" content="Offset- und Digitaldruck, Stahlstichprägedruck und Stempel aus eigener Produktion. Sorbenstraße 48, Hamburg Hammerbrook. Stempel innerhalb von 24 Stunden.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Libre+Franklin:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f6f3ec;
+  --paper-deep:#efeadf;
+  --ink:#161311;
+  --ink-soft:#4a443e;
+  --red:#d93a1c;
+  --red-deep:#b52d12;
+  --line:rgba(22,19,17,.16);
+  --line-strong:rgba(22,19,17,.55);
+  --serif:"Fraunces",Georgia,serif;
+  --sans:"Libre Franklin",Helvetica,Arial,sans-serif;
+  --mono:"IBM Plex Mono",Menlo,monospace;
+  --gutter:clamp(1.25rem,4vw,4rem);
+  --maxw:82rem;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  font-family:var(--sans);
+  background:var(--paper);
+  color:var(--ink);
+  font-size:1.0625rem;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+/* faint print-sheet baseline grid over the whole page */
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:
+    repeating-linear-gradient(to bottom,transparent 0,transparent 7px,rgba(22,19,17,.022) 7px,rgba(22,19,17,.022) 8px);
+}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+::selection{background:var(--red);color:var(--paper)}
+.wrap{max-width:var(--maxw);margin:0 auto;padding-left:var(--gutter);padding-right:var(--gutter);position:relative;z-index:1}
+.mono{font-family:var(--mono)}
+
+/* ---------- kicker / labels ---------- */
+.kicker{
+  font-family:var(--mono);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--ink-soft);display:flex;align-items:center;gap:.75rem;
+}
+.kicker::before{content:"";width:2.25rem;height:1px;background:var(--red);flex:none}
+
+/* ---------- registration mark ---------- */
+.regmark{width:1.05rem;height:1.05rem;flex:none}
+.regmark circle,.regmark line{stroke:currentColor;stroke-width:1.2;fill:none}
+
+/* ---------- header ---------- */
+header{
+  position:sticky;top:0;z-index:50;
+  background:color-mix(in srgb,var(--paper) 92%,transparent);
+  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.nav{
+  max-width:var(--maxw);margin:0 auto;padding:.8rem var(--gutter);
+  display:flex;align-items:center;gap:1.5rem;
+}
+.brand{display:flex;align-items:baseline;gap:.65rem;text-decoration:none}
+.brand strong{
+  font-family:var(--serif);font-weight:900;font-size:1.5rem;letter-spacing:.02em;line-height:1;
+  font-variation-settings:"opsz" 144;
+}
+.brand strong i{font-style:normal;color:var(--red)}
+.brand span{font-family:var(--mono);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft)}
+.nav-links{display:flex;gap:1.75rem;margin-left:auto;align-items:center}
+.nav-links a{
+  text-decoration:none;font-size:.86rem;font-weight:600;letter-spacing:.03em;
+  padding:.2rem 0;border-bottom:2px solid transparent;transition:border-color .2s,color .2s;
+}
+.nav-links a:hover{border-bottom-color:var(--red);color:var(--red-deep)}
+.nav-tel{
+  margin-left:1rem;text-decoration:none;font-family:var(--mono);font-size:.82rem;
+  background:var(--ink);color:var(--paper);padding:.55rem .95rem;
+  transition:background .2s;white-space:nowrap;
+}
+.nav-tel:hover{background:var(--red)}
+.burger{display:none;margin-left:auto;background:none;border:1px solid var(--line-strong);padding:.5rem .7rem;font-family:var(--mono);font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;color:var(--ink)}
+@media(max-width:860px){
+  .nav-links{
+    display:none;position:absolute;top:100%;left:0;right:0;
+    background:var(--paper);border-bottom:1px solid var(--line-strong);
+    flex-direction:column;gap:0;padding:.5rem 0;
+  }
+  .nav-links.open{display:flex}
+  .nav-links a{padding:.85rem var(--gutter);width:100%;border-bottom:1px solid var(--line);font-size:1rem}
+  .nav-tel{display:none}
+  .burger{display:block}
+}
+
+/* ---------- hero ---------- */
+.hero{position:relative;border-bottom:1px solid var(--line);overflow:hidden}
+.hero .wrap{padding-top:clamp(3rem,8vw,6.5rem);padding-bottom:clamp(3rem,7vw,5.5rem)}
+/* crop marks */
+.crop{position:absolute;width:1.6rem;height:1.6rem;opacity:.55;pointer-events:none}
+.crop::before,.crop::after{content:"";position:absolute;background:var(--ink)}
+.crop::before{width:100%;height:1px}
+.crop::after{width:1px;height:100%}
+.crop.tl{top:.9rem;left:.9rem}.crop.tl::before{top:0;left:.45rem}.crop.tl::after{left:0;top:.45rem}
+.crop.tr{top:.9rem;right:.9rem}.crop.tr::before{top:0;right:.45rem}.crop.tr::after{right:0;top:.45rem}
+.crop.bl{bottom:.9rem;left:.9rem}.crop.bl::before{bottom:0;left:.45rem}.crop.bl::after{left:0;bottom:.45rem}
+.crop.br{bottom:.9rem;right:.9rem}.crop.br::before{bottom:0;right:.45rem}.crop.br::after{right:0;bottom:.45rem}
+.hero h1{
+  font-family:var(--serif);font-weight:900;font-variation-settings:"opsz" 144;
+  font-size:clamp(3rem,10.5vw,8.5rem);line-height:.96;letter-spacing:-.015em;
+  margin:1.4rem 0 0;text-wrap:balance;
+}
+.hero h1 .outline{
+  color:transparent;-webkit-text-stroke:2px var(--ink);
+}
+.hero h1 .red{color:var(--red)}
+.hero h1 em{font-style:italic;font-weight:600}
+.hero-sub{
+  max-width:38rem;margin-top:2rem;font-size:clamp(1.05rem,1.6vw,1.25rem);color:var(--ink-soft);
+}
+.hero-cta{display:flex;flex-wrap:wrap;gap:1rem;margin-top:2.4rem;align-items:center}
+.btn{
+  text-decoration:none;font-weight:700;font-size:.95rem;letter-spacing:.02em;
+  padding:.95rem 1.7rem;display:inline-flex;align-items:center;gap:.6rem;transition:transform .15s,background .2s,color .2s;
+}
+.btn-ink{background:var(--ink);color:var(--paper)}
+.btn-ink:hover{background:var(--red)}
+.btn-line{border:1.5px solid var(--ink);color:var(--ink);font-family:var(--mono);font-weight:500}
+.btn-line:hover{background:var(--ink);color:var(--paper)}
+.btn:active{transform:translateY(1px)}
+.hero-meta{
+  margin-top:3.2rem;display:flex;flex-wrap:wrap;gap:1.2rem 2.6rem;
+  font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);
+}
+.hero-meta span{display:flex;align-items:center;gap:.6rem}
+.hero-meta .dot{width:.42rem;height:.42rem;background:var(--red);border-radius:50%;flex:none}
+/* giant background year */
+.hero-year{
+  position:absolute;right:-.04em;bottom:-.18em;z-index:0;pointer-events:none;user-select:none;
+  font-family:var(--serif);font-weight:900;font-variation-settings:"opsz" 144;
+  font-size:clamp(9rem,26vw,24rem);line-height:1;color:transparent;
+  -webkit-text-stroke:1px rgba(22,19,17,.14);
+}
+@media(max-width:640px){.hero-year{display:none}}
+
+/* ---------- marquee ---------- */
+.marquee{
+  border-bottom:1px solid var(--line);background:var(--ink);color:var(--paper);
+  overflow:hidden;padding:.75rem 0;position:relative;z-index:1;
+}
+.marquee-track{display:flex;gap:0;width:max-content;animation:slide 42s linear infinite}
+.marquee-track ul{display:flex;list-style:none;gap:0}
+.marquee-track li{
+  font-family:var(--mono);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;
+  padding:0 1.4rem;display:flex;align-items:center;gap:2.8rem;white-space:nowrap;
+}
+.marquee-track li::after{content:"";width:.5rem;height:.5rem;background:var(--red);flex:none;border-radius:50%}
+@keyframes slide{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.marquee-track{animation:none}}
+
+/* ---------- section shell ---------- */
+section{position:relative}
+.sec-head{
+  display:flex;align-items:flex-end;justify-content:space-between;gap:2rem;flex-wrap:wrap;
+  padding-top:clamp(3.5rem,7vw,6rem);margin-bottom:clamp(2rem,4vw,3.5rem);
+}
+.sec-head h2{
+  font-family:var(--serif);font-weight:900;font-variation-settings:"opsz" 144;
+  font-size:clamp(2.2rem,5.5vw,4.2rem);line-height:1.02;letter-spacing:-.01em;margin-top:1rem;
+}
+.sec-head .idx{
+  font-family:var(--mono);font-size:.78rem;color:var(--ink-soft);letter-spacing:.14em;
+  display:flex;align-items:center;gap:.7rem;padding-bottom:.6rem;
+}
+
+/* ---------- pillars ---------- */
+.pillars{border-bottom:1px solid var(--line)}
+.pillar-grid{
+  display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line-strong);
+}
+.pillar{
+  padding:clamp(1.8rem,3.5vw,3.2rem) 0 clamp(2.5rem,4vw,4rem);
+}
+.pillar:first-child{border-right:1px solid var(--line);padding-right:clamp(1.8rem,4vw,4rem)}
+.pillar:last-child{padding-left:clamp(1.8rem,4vw,4rem)}
+@media(max-width:860px){
+  .pillar-grid{grid-template-columns:1fr}
+  .pillar:first-child{border-right:none;border-bottom:1px solid var(--line);padding-right:0}
+  .pillar:last-child{padding-left:0}
+}
+.pillar .num{
+  font-family:var(--serif);font-weight:300;font-style:italic;font-size:1.1rem;color:var(--red);
+  display:flex;align-items:center;gap:.8rem;
+}
+.pillar .num::after{content:"";height:1px;flex:1;background:var(--line)}
+.pillar h3{
+  font-family:var(--serif);font-weight:800;font-variation-settings:"opsz" 100;
+  font-size:clamp(1.9rem,3.4vw,2.9rem);line-height:1.05;margin:.9rem 0 1rem;
+}
+.pillar p.lead{color:var(--ink-soft);max-width:32rem}
+.pillar figure{margin:1.6rem 0;position:relative}
+.pillar figure img{width:100%;aspect-ratio:3/2;object-fit:cover;filter:saturate(.92)}
+.pillar figcaption{
+  font-family:var(--mono);font-size:.68rem;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink-soft);margin-top:.55rem;display:flex;justify-content:space-between;gap:1rem;
+}
+.speclist{list-style:none;margin-top:1.4rem}
+.speclist li{
+  display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+  padding:.62rem 0;border-bottom:1px solid var(--line);
+  font-weight:600;font-size:.98rem;
+}
+.speclist li:first-child{border-top:1px solid var(--line)}
+.speclist li span{
+  font-family:var(--mono);font-weight:400;font-size:.68rem;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--ink-soft);text-align:right;
+}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+@media(max-width:560px){.duo{grid-template-columns:1fr}}
+.duo figure{margin:1.6rem 0 0}
+.duo figure img{aspect-ratio:4/3}
+
+/* ---------- 24h band ---------- */
+.band{
+  background:var(--red);color:var(--paper);overflow:hidden;position:relative;
+  border-top:1px solid var(--line-strong);border-bottom:1px solid var(--line-strong);
+}
+.band::after{
+  content:"";position:absolute;inset:0;pointer-events:none;opacity:.35;
+  background:repeating-linear-gradient(to bottom,transparent 0,transparent 7px,rgba(0,0,0,.05) 7px,rgba(0,0,0,.05) 8px);
+}
+.band .wrap{
+  display:grid;grid-template-columns:auto 1fr;gap:clamp(1.5rem,5vw,5rem);align-items:center;
+  padding-top:clamp(3rem,6vw,5rem);padding-bottom:clamp(3rem,6vw,5rem);
+}
+.band .big24{
+  font-family:var(--serif);font-weight:900;font-variation-settings:"opsz" 144;
+  font-size:clamp(7rem,22vw,17rem);line-height:.8;letter-spacing:-.03em;position:relative;z-index:1;
+}
+.band .big24 small{
+  display:block;font-family:var(--mono);font-weight:500;font-size:clamp(.8rem,1.6vw,1.05rem);
+  letter-spacing:.34em;text-transform:uppercase;margin-top:1.1rem;
+}
+.band-copy{position:relative;z-index:1;max-width:34rem}
+.band-copy h2{
+  font-family:var(--serif);font-weight:800;font-size:clamp(1.7rem,3.6vw,2.7rem);line-height:1.08;
+}
+.band-copy p{margin-top:1.1rem;font-size:1.05rem;opacity:.92}
+.band-copy .btn{margin-top:1.8rem;background:var(--paper);color:var(--ink)}
+.band-copy .btn:hover{background:var(--ink);color:var(--paper)}
+@media(max-width:720px){.band .wrap{grid-template-columns:1fr}}
+
+/* ---------- heritage ---------- */
+.heritage{border-bottom:1px solid var(--line);background:var(--paper-deep)}
+.her-grid{
+  display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,5rem);
+  padding-bottom:clamp(3.5rem,7vw,6rem);align-items:start;
+}
+@media(max-width:860px){.her-grid{grid-template-columns:1fr}}
+.her-grid .lead{font-size:clamp(1.05rem,1.5vw,1.2rem);color:var(--ink-soft);max-width:34rem}
+.her-grid .lead strong{color:var(--ink)}
+.facts{list-style:none;margin-top:2.2rem;border-top:1px solid var(--line-strong)}
+.facts li{
+  display:grid;grid-template-columns:auto 1fr;gap:1.4rem;align-items:baseline;
+  padding:1.05rem 0;border-bottom:1px solid var(--line);
+}
+.facts .val{
+  font-family:var(--serif);font-weight:900;font-size:1.9rem;line-height:1;color:var(--red);
+  min-width:5.2rem;font-variation-settings:"opsz" 144;
+}
+.facts .val.txt{font-size:1.15rem;font-style:italic;font-weight:600;color:var(--ink)}
+.facts p{font-size:.95rem;color:var(--ink-soft)}
+.facts p b{color:var(--ink)}
+.her-photo{position:relative}
+.her-photo img{width:100%;aspect-ratio:4/3;object-fit:cover;filter:saturate(.92)}
+.her-photo .plate{
+  position:absolute;left:-1px;bottom:-1px;background:var(--paper-deep);
+  padding:.6rem 1rem .1rem 0;font-family:var(--mono);font-size:.68rem;
+  letter-spacing:.13em;text-transform:uppercase;color:var(--ink-soft);
+}
+
+/* ---------- contact ---------- */
+.contact{border-bottom:1px solid var(--line)}
+.contact-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,5rem);
+  padding-bottom:clamp(3.5rem,7vw,6rem);
+}
+@media(max-width:860px){.contact-grid{grid-template-columns:1fr}}
+.contact-card{
+  border:1.5px solid var(--ink);padding:clamp(1.5rem,3vw,2.5rem);position:relative;background:var(--paper);
+}
+.contact-card::before{
+  content:"ANFAHRT + KONTAKT";position:absolute;top:-.62rem;left:1.4rem;background:var(--paper);
+  padding:0 .6rem;font-family:var(--mono);font-size:.66rem;letter-spacing:.2em;color:var(--red-deep);
+}
+.contact-card address{font-style:normal;line-height:1.75}
+.contact-card address strong{font-family:var(--serif);font-weight:800;font-size:1.35rem;display:block;margin-bottom:.5rem}
+.contact-rows{list-style:none;margin-top:1.6rem;border-top:1px solid var(--line)}
+.contact-rows li{
+  display:grid;grid-template-columns:5.5rem 1fr;gap:1rem;padding:.7rem 0;border-bottom:1px solid var(--line);
+  align-items:baseline;
+}
+.contact-rows .lbl{font-family:var(--mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+.contact-rows a{font-weight:700;text-decoration:none;border-bottom:2px solid var(--red)}
+.contact-rows a:hover{color:var(--red-deep)}
+.contact-side p{color:var(--ink-soft);max-width:30rem;margin-top:1rem}
+.contact-side .btn{margin-top:1.8rem}
+.contact-side h2{
+  font-family:var(--serif);font-weight:900;font-size:clamp(2rem,4.5vw,3.2rem);line-height:1.04;
+  font-variation-settings:"opsz" 144;
+}
+.contact-side h2 .red{color:var(--red)}
+
+/* ---------- footer ---------- */
+footer{background:var(--ink);color:var(--paper);position:relative;z-index:1}
+.foot{
+  max-width:var(--maxw);margin:0 auto;padding:2.4rem var(--gutter);
+  display:flex;flex-wrap:wrap;gap:1.2rem 3rem;align-items:center;justify-content:space-between;
+}
+.foot .fbrand{font-family:var(--serif);font-weight:900;font-size:1.25rem}
+.foot .fbrand i{font-style:normal;color:var(--red)}
+.foot small{font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;opacity:.75;line-height:1.9;display:block}
+.foot nav{display:flex;gap:1.6rem}
+.foot nav a{font-family:var(--mono);font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;opacity:.85}
+.foot nav a:hover{color:var(--red);opacity:1}
+
+/* ---------- reveal ---------- */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav" aria-label="Hauptnavigation">
+    <a class="brand" href="#top">
+      <strong>SIECK<i>.</i></strong>
+      <span>Druckerei · Hamburg · seit 1959</span>
+    </a>
+    <button class="burger" aria-expanded="false" aria-controls="menu">Menü</button>
+    <div class="nav-links" id="menu">
+      <a href="#druck">Druck</a>
+      <a href="#stempel">Stempel</a>
+      <a href="#stunden">24 Stunden</a>
+      <a href="#werkstatt">Werkstatt</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
+    <a class="nav-tel" href="tel:+49402202395">040. 220 23 95</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <span class="crop tl" aria-hidden="true"></span>
+    <span class="crop tr" aria-hidden="true"></span>
+    <span class="crop bl" aria-hidden="true"></span>
+    <span class="crop br" aria-hidden="true"></span>
+    <div class="hero-year" aria-hidden="true">1959</div>
+    <div class="wrap">
+      <p class="kicker">Druckerei und Stempelfertigung · Hamburg Hammerbrook</p>
+      <h1>
+        Schwarz auf <span class="outline">Weiß</span>.<br>
+        <em>Seit</em> <span class="red">1959</span>.
+      </h1>
+      <p class="hero-sub">Offset- und Digitaldruck, Stahlstichprägedruck und Stanzung aus einem Haus. Stempel fertigen wir in eigener Produktion, auf Wunsch innerhalb von 24 Stunden. Ihr Partner vor Ort in Hamburg.</p>
+      <div class="hero-cta">
+        <a class="btn btn-ink" href="mailto:info@druckerei-hamburg.eu">Anfrage senden</a>
+        <a class="btn btn-line" href="tel:+49402202395">040. 220 23 95</a>
+      </div>
+      <div class="hero-meta">
+        <span><svg class="regmark" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="6"/><line x1="10" y1="0" x2="10" y2="20"/><line x1="0" y1="10" x2="20" y2="10"/></svg> Offset · Digital · Prägung</span>
+        <span><span class="dot"></span> Stempel in 24 Stunden</span>
+        <span><span class="dot"></span> Sorbenstraße 48, 20537 Hamburg</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <ul>
+        <li>Visitenkarten</li><li>Briefpapier</li><li>Durchschreibesätze</li><li>Flyer</li><li>Prospekte</li><li>Unternehmensbroschüren</li><li>Poster</li><li>Plakate</li><li>Großformatdrucke</li><li>Holzstempel</li><li>Selbstfärbestempel</li><li>Datumstempel</li><li>Behördenstempel</li>
+      </ul>
+      <ul>
+        <li>Visitenkarten</li><li>Briefpapier</li><li>Durchschreibesätze</li><li>Flyer</li><li>Prospekte</li><li>Unternehmensbroschüren</li><li>Poster</li><li>Plakate</li><li>Großformatdrucke</li><li>Holzstempel</li><li>Selbstfärbestempel</li><li>Datumstempel</li><li>Behördenstempel</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PILLARS -->
+  <section class="pillars" id="druck">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <div>
+          <p class="kicker">Zwei Werkstätten, ein Haus</p>
+          <h2>Was wir fertigen.</h2>
+        </div>
+        <p class="idx"><svg class="regmark" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="6"/><line x1="10" y1="0" x2="10" y2="20"/><line x1="0" y1="10" x2="20" y2="10"/></svg> Bogen 01 / 02</p>
+      </div>
+      <div class="pillar-grid">
+        <article class="pillar rv">
+          <p class="num">No. 01</p>
+          <h3>Druck</h3>
+          <p class="lead">Firmendrucksachen, Geschäftsdrucksachen und Privatdrucksachen. Im Offset- und Digitaldruck, mit Stahlstichprägedruck und Stanzung, wenn es fühlbar werden soll.</p>
+          <div class="duo">
+            <figure>
+              <img src="/redesign/sieck/assets/visitenkarten.png" alt="Frisch geschnittene Visitenkarten in Stapeln" loading="lazy" width="1536" height="1024">
+              <figcaption><span>Fig. 1a</span><span>Schneiderei</span></figcaption>
+            </figure>
+            <figure>
+              <img src="/redesign/sieck/assets/praegung.png" alt="Stahlstichprägung auf Briefpapier im Streiflicht" loading="lazy" width="1536" height="1024">
+              <figcaption><span>Fig. 1b</span><span>Stahlstichprägedruck</span></figcaption>
+            </figure>
+          </div>
+          <ul class="speclist">
+            <li>Visitenkarten <span>Offset / Digital</span></li>
+            <li>Briefpapier <span>auch geprägt</span></li>
+            <li>Durchschreibesätze <span>SD-Papier</span></li>
+            <li>Flyer und Prospekte <span>Auflagen frei</span></li>
+            <li>Unternehmensbroschüren <span>gebunden</span></li>
+            <li>Poster und Plakate <span>Großformat</span></li>
+            <li>Großformatdrucke <span>Digitaldruck</span></li>
+          </ul>
+        </article>
+        <article class="pillar rv" id="stempel">
+          <p class="num">No. 02</p>
+          <h3>Stempel</h3>
+          <p class="lead">Stempel aus eigener Produktion, umweltfreundlich hergestellt. Von der Stempelplatte bis zum fertigen Stempel entsteht alles bei uns im Haus.</p>
+          <figure>
+            <img src="/redesign/sieck/assets/stempel.png" alt="Holzstempel und Selbstfärbestempel auf der Werkbank" loading="lazy" width="1536" height="1024">
+            <figcaption><span>Fig. 2</span><span>Eigene Stempelfertigung</span></figcaption>
+          </figure>
+          <ul class="speclist">
+            <li>Holzstempel <span>klassisch</span></li>
+            <li>Selbstfärbestempel <span>Trodat</span></li>
+            <li>Datumstempel <span>verstellbar</span></li>
+            <li>Nummernstempel <span>fortlaufend</span></li>
+            <li>Elektrostempel <span>für Serien</span></li>
+            <li>Behördenstempel <span>nach Vorgabe</span></li>
+            <li>Stempelplatten <span>Ersatz + Neu</span></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 24H BAND -->
+  <section class="band" id="stunden">
+    <div class="wrap">
+      <div class="big24 rv">24<small>Stunden</small></div>
+      <div class="band-copy rv">
+        <h2>Ihr Stempel. Innerhalb von 24 Stunden.</h2>
+        <p>Weil wir Stempel selbst fertigen, warten Sie nicht auf einen Zulieferer. Sie geben Ihre Vorlage ab, wir produzieren im Haus. Am nächsten Tag ist Ihr Stempel fertig.</p>
+        <a class="btn" href="tel:+49402202395">Jetzt anrufen: 040. 220 23 95</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HERITAGE -->
+  <section class="heritage" id="werkstatt">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <div>
+          <p class="kicker">Handwerk und Technik</p>
+          <h2>Eine Hamburger<br>Werkstatt seit 1959.</h2>
+        </div>
+        <p class="idx"><svg class="regmark" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="6"/><line x1="10" y1="0" x2="10" y2="20"/><line x1="0" y1="10" x2="20" y2="10"/></svg> Sorbenstraße 48</p>
+      </div>
+      <div class="her-grid">
+        <div class="rv">
+          <p class="lead">Seit 1959 drucken wir in Hamburg. Aus der handwerklichen Tradition ist ein Betrieb geworden, der beides kann: <strong>Prägung und Stanzung aus der Werkstatt, Offset- und Digitaldruck mit moderner Technik.</strong> Sie sprechen bei uns direkt mit den Leuten, die Ihre Sachen machen.</p>
+          <ul class="facts">
+            <li class="rv"><span class="val">65+</span><p><b>Jahre handwerkliche Tradition.</b> Gegründet 1959, bis heute in Hammerbrook.</p></li>
+            <li class="rv"><span class="val txt">Eigene Produktion</span><p><b>Stempel entstehen im Haus.</b> Deshalb schaffen wir die 24 Stunden.</p></li>
+            <li class="rv"><span class="val txt">Umweltfreundlich</span><p><b>Stempel umweltfreundlich hergestellt.</b> Kurze Wege, Fertigung vor Ort.</p></li>
+          </ul>
+        </div>
+        <figure class="her-photo rv">
+          <img src="/redesign/sieck/assets/hero.png" alt="Offsetdruckmaschine mit frisch gedruckten Bogen in der Werkstatt" loading="lazy" width="1536" height="1024">
+          <span class="plate">Druckerei Sorbenstraße · Offsetdruck</span>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="kontakt">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <div>
+          <p class="kicker">Vor Ort in Hammerbrook</p>
+          <h2>Kommen Sie vorbei.</h2>
+        </div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card rv">
+          <address>
+            <strong>Erwin Sieck Druckerei GmbH</strong>
+            Sorbenstraße 48<br>
+            20537 Hamburg, Hammerbrook
+          </address>
+          <ul class="contact-rows">
+            <li><span class="lbl">Telefon</span><a href="tel:+49402202395">040. 220 23 95</a></li>
+            <li><span class="lbl">Fax</span><span>040. 227 82 16</span></li>
+            <li><span class="lbl">E-Mail</span><a href="mailto:info@druckerei-hamburg.eu">info@druckerei-hamburg.eu</a></li>
+          </ul>
+        </div>
+        <div class="contact-side rv">
+          <h2>Sagen Sie uns, was gedruckt <span class="red">oder gestempelt</span> werden soll.</h2>
+          <p>Schicken Sie uns Ihre Vorlage oder rufen Sie kurz an. Sie bekommen eine klare Auskunft zu Ausführung, Termin und Preis.</p>
+          <a class="btn btn-ink" href="mailto:info@druckerei-hamburg.eu">info@druckerei-hamburg.eu</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="foot">
+    <div>
+      <p class="fbrand">SIECK<i>.</i></p>
+      <small>Erwin Sieck Druckerei GmbH · Sorbenstraße 48 · 20537 Hamburg<br>
+      Amtsgericht Hamburg HRB 25284 · Geschäftsführer: Ingmar Schmidt</small>
+    </div>
+    <nav aria-label="Rechtliches">
+      <a href="#">Impressum</a>
+      <a href="#">Datenschutz</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var burger=document.querySelector(".burger"),menu=document.getElementById("menu");
+  burger.addEventListener("click",function(){
+    var open=menu.classList.toggle("open");
+    burger.setAttribute("aria-expanded",open?"true":"false");
+  });
+  menu.addEventListener("click",function(e){
+    if(e.target.tagName==="A"){menu.classList.remove("open");burger.setAttribute("aria-expanded","false");}
+  });
+  if("IntersectionObserver" in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}});
+    },{threshold:.12});
+    document.querySelectorAll(".rv").forEach(function(el){io.observe(el);});
+  }else{
+    document.querySelectorAll(".rv").forEach(function(el){el.classList.add("in");});
+  }
+})();
+</script>
+</body>
+</html>

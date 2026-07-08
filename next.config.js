@@ -10,6 +10,13 @@ const nextConfig = {
                 ],
             },
             {
+                // Redesign mockups: never index, they are pitch previews
+                source: '/redesign/:path*',
+                headers: [
+                    { key: 'X-Robots-Tag', value: 'noindex, nofollow' },
+                ],
+            },
+            {
                 source: '/(.*)',
                 headers: [
                     { key: 'X-Content-Type-Options', value: 'nosniff' },
@@ -17,6 +24,15 @@ const nextConfig = {
                     { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
                     { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
                 ],
+            },
+        ];
+    },
+    async rewrites() {
+        return [
+            // Serve static redesign mockup bundles from public/redesign/<slug>/
+            {
+                source: '/redesign/:slug',
+                destination: '/redesign/:slug/index.html',
             },
         ];
     },

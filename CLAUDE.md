@@ -75,6 +75,18 @@ webdesign · seo · ai-seo · google-ads · website-audit · website-erstellen-l
 
 blitz-hamburg · dybeauty · gl-sommer · glucksmomente-events · kinderalbum · manetec · mit-kinder · pest-control-saas · solovei-beauty · typeexplore-ai
 
+## Redesign Mockups (/redesign)
+
+Pitch previews for redesign leads. Hub page at `app/redesign/page.jsx`, one **static bundle** per firm in `public/redesign/<slug>/` (self-contained `index.html` + assets, all asset paths absolute `/redesign/<slug>/...`). Served at `/redesign/<slug>` via a rewrite in `next.config.js` (`/redesign/:slug` → `/redesign/:slug/index.html`).
+
+Rules:
+- **Never indexable:** noindex meta in every bundle HTML + `X-Robots-Tag` header for `/redesign/:path*` + `robots.txt` Disallow. Never add to sitemap, never link from site nav. These are unsolicited concepts using the firms' logos/photos — pitch use only.
+- Each bundle needs a `preview.webp` (1200px wide, top crop ~760px) for the hub card, plus an entry in the `redesigns` array in `app/redesign/page.jsx`.
+- Copy rules: German, Sie form, no em/en dashes, no curly quotes, only real firm facts (nothing invented, no certifications they do not show themselves).
+- Framework-built mockups (Next.js/Astro) are static-exported with basePath/base = `/redesign/<slug>` and post-processed (prefix stray absolute paths, neutralize dead links to `#`, inject noindex).
+- Mockup sources live in `redesign-sources/` (gitignored — repo is public, originals contain third-party assets).
+- New redesigns: use the `redesign` skill (workspace-level, `~/projects/.claude/skills/redesign/`).
+
 ## Schema & SEO
 
 - JSON-LD in `app/page.jsx`: `ProfessionalService`, `FAQPage`, `BreadcrumbList`

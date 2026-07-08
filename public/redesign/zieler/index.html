@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZIELER &amp; CO. | Trockenfrüchte und Nüsse im Großhandel, Hamburg seit 1907</title>
+<meta name="description" content="ZIELER &amp; CO. GmbH, Hamburger Familienunternehmen seit 1907. Import, Export und Großhandel: Trockenfrüchte, Nüsse, Saaten und Getreide. Eigene Lagerhaltung in Hamburg-Billbrook.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f7f1e3;
+  --paper-deep:#efe5cf;
+  --ink:#2b1c10;
+  --espresso:#33220f;
+  --espresso-deep:#241706;
+  --gold:#a97e2f;
+  --gold-bright:#c9a253;
+  --green:#1c5b38;
+  --line:rgba(43,28,16,.16);
+  --serif:"Fraunces",Georgia,serif;
+  --sans:"Alegreya Sans",Helvetica,Arial,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--sans);
+  font-size:1.075rem;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+/* paper grain over everything */
+body::after{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:60;opacity:.5;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+
+.wrap{width:min(1180px,92vw);margin-inline:auto}
+.eyebrow{
+  font-family:var(--sans);font-weight:700;font-size:.72rem;
+  letter-spacing:.28em;text-transform:uppercase;color:var(--gold);
+}
+h1,h2,h3{font-family:var(--serif);font-weight:390;line-height:1.06;letter-spacing:-.01em}
+h2{font-size:clamp(2rem,4.6vw,3.4rem)}
+.gold-i{font-style:italic;color:var(--gold);font-weight:340}
+
+/* reveal on scroll */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .rv{opacity:1;transform:none;transition:none}
+  .stamp svg,.marquee-track{animation:none!important}
+}
+
+/* ============ NAV ============ */
+header{
+  position:sticky;top:0;z-index:50;
+  background:color-mix(in srgb,var(--paper) 92%,transparent);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+  transition:box-shadow .3s ease;
+}
+header.scrolled{box-shadow:0 8px 30px rgba(43,28,16,.10)}
+.nav{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:.7rem 0;gap:1rem;
+}
+.brand{display:flex;align-items:center;gap:.8rem;min-width:0}
+.brand img{height:52px;width:auto;mix-blend-mode:multiply}
+.brand-name{font-family:var(--serif);font-weight:500;font-size:1.18rem;letter-spacing:.02em;white-space:nowrap}
+.brand-name small{
+  display:block;font-family:var(--sans);font-weight:700;font-size:.6rem;
+  letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-top:.1rem;
+}
+.nav-links{display:flex;align-items:center;gap:2rem}
+.nav-links a{
+  font-weight:500;font-size:.95rem;letter-spacing:.04em;position:relative;padding:.3rem 0;
+}
+.nav-links a::after{
+  content:"";position:absolute;left:0;bottom:0;height:1px;width:0;
+  background:var(--gold);transition:width .3s ease;
+}
+.nav-links a:hover::after{width:100%}
+.nav-phone{
+  font-family:var(--serif);font-style:italic;font-size:.95rem;
+  border:1px solid var(--line);border-radius:999px;padding:.45rem 1.1rem;
+  transition:background .3s,color .3s,border-color .3s;
+}
+.nav-phone:hover{background:var(--espresso);color:var(--paper);border-color:var(--espresso)}
+.burger{display:none;background:none;border:1px solid var(--line);border-radius:8px;padding:.5rem .6rem;cursor:pointer}
+.burger span{display:block;width:20px;height:2px;background:var(--ink);margin:4px 0;transition:.3s}
+
+/* ============ HERO ============ */
+.hero{
+  position:relative;isolation:isolate;color:var(--paper);
+  min-height:min(88vh,760px);display:flex;align-items:flex-end;
+  overflow:hidden;
+}
+.hero::before{
+  content:"";position:absolute;inset:0;z-index:-2;
+  background:url("/redesign/zieler/assets/fruchtmix2.jpg") center/cover no-repeat;
+  transform:scale(1.04);animation:heroDrift 22s ease-in-out infinite alternate;
+}
+@keyframes heroDrift{from{transform:scale(1.04) translateX(0)}to{transform:scale(1.04) translateX(-1.6%)}}
+.hero::after{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:
+    linear-gradient(180deg,rgba(36,23,6,.42) 0%,rgba(36,23,6,.18) 35%,rgba(36,23,6,.78) 100%),
+    linear-gradient(100deg,rgba(36,23,6,.55) 0%,rgba(36,23,6,0) 55%);
+}
+.hero-inner{padding:9rem 0 4.5rem}
+.hero .eyebrow{color:var(--gold-bright)}
+.hero h1{
+  font-size:clamp(2.5rem,6.4vw,5rem);
+  max-width:15ch;margin:.9rem 0 1.4rem;
+  text-shadow:0 2px 30px rgba(36,23,6,.45);
+}
+.hero h1 em{font-style:italic;font-weight:330;color:var(--gold-bright)}
+.hero p{max-width:52ch;font-size:1.12rem;color:rgba(247,241,227,.9)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:1rem;margin-top:2.2rem}
+.btn{
+  display:inline-block;font-weight:700;font-size:.82rem;letter-spacing:.16em;text-transform:uppercase;
+  padding:1rem 2rem;border-radius:2px;transition:.3s;
+}
+.btn-gold{background:var(--gold);color:#fff}
+.btn-gold:hover{background:var(--gold-bright)}
+.btn-ghost{border:1px solid rgba(247,241,227,.55);color:var(--paper)}
+.btn-ghost:hover{background:var(--paper);color:var(--ink)}
+
+/* rotating stamp */
+.stamp{
+  position:absolute;right:clamp(1rem,6vw,5rem);top:7.5rem;z-index:2;
+  width:clamp(120px,14vw,168px);aspect-ratio:1;
+}
+.stamp svg{width:100%;height:100%;animation:spin 36s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.stamp .stamp-center{
+  position:absolute;inset:0;display:grid;place-items:center;
+  font-family:var(--serif);font-style:italic;font-size:clamp(1.6rem,2.4vw,2.1rem);
+  color:var(--gold-bright);
+}
+
+/* ============ MARQUEE ============ */
+.marquee{
+  background:var(--espresso-deep);color:var(--gold-bright);
+  overflow:hidden;padding:.85rem 0;border-block:1px solid rgba(201,162,83,.35);
+}
+.marquee-track{display:flex;width:max-content;animation:scroll 42s linear infinite}
+@keyframes scroll{to{transform:translateX(-50%)}}
+.marquee-track span{
+  font-family:var(--serif);font-style:italic;font-size:1.02rem;letter-spacing:.06em;
+  white-space:nowrap;padding-right:.9rem;
+}
+.marquee-track span::after{content:"·";padding-left:.9rem;color:var(--gold)}
+
+/* ============ HERITAGE ============ */
+.heritage{padding:clamp(4.5rem,9vw,8rem) 0 0}
+.heritage-grid{
+  display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);
+  gap:clamp(2rem,6vw,5.5rem);align-items:start;
+}
+.year-block{position:relative}
+.year-big{
+  font-family:var(--serif);font-weight:300;font-style:italic;
+  font-size:clamp(6rem,13vw,11rem);line-height:.9;color:var(--espresso);
+}
+.year-sub{
+  margin-top:.6rem;font-family:var(--serif);font-size:1.25rem;font-style:italic;color:var(--gold);
+}
+.heritage-copy h2{margin:.7rem 0 1.3rem}
+.heritage-copy p{margin-bottom:1.1rem;max-width:58ch}
+.heritage-copy p strong{font-weight:700}
+.gf-line{
+  margin-top:1.6rem;padding-top:1.3rem;border-top:1px solid var(--line);
+  display:flex;flex-wrap:wrap;gap:.4rem 2.4rem;
+}
+.gf-line div{font-size:.95rem}
+.gf-line b{display:block;font-family:var(--serif);font-weight:500;font-size:1.1rem;letter-spacing:.01em}
+.gf-line span{color:var(--gold);font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase}
+
+.site-photo{margin-top:clamp(3rem,6vw,5rem);position:relative}
+.site-photo img{width:100%;height:clamp(260px,38vw,480px);object-fit:cover;filter:saturate(1.05)}
+.site-caption{
+  position:absolute;left:clamp(1rem,4vw,3rem);bottom:clamp(1rem,3vw,2rem);
+  background:var(--paper);padding:1rem 1.4rem;max-width:340px;
+  border-left:3px solid var(--gold);box-shadow:0 14px 40px rgba(36,23,6,.25);
+}
+.site-caption .eyebrow{display:block;margin-bottom:.3rem}
+.site-caption p{font-size:.95rem;line-height:1.45}
+
+/* stats band */
+.stats{
+  border-block:1px solid var(--line);margin-top:clamp(3rem,6vw,5rem);
+  display:grid;grid-template-columns:repeat(4,1fr);
+}
+.stat{padding:2rem 1.5rem;text-align:center;border-left:1px solid var(--line)}
+.stat:first-child{border-left:none}
+.stat b{
+  display:block;font-family:var(--serif);font-weight:340;font-size:clamp(1.9rem,3.4vw,2.7rem);
+  font-style:italic;color:var(--espresso);
+}
+.stat span{font-size:.78rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+
+/* ============ SORTIMENT ============ */
+.sortiment{padding:clamp(4.5rem,9vw,8rem) 0}
+.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:2rem;margin-bottom:clamp(2rem,4vw,3.4rem)}
+.section-head p{max-width:44ch;color:rgba(43,28,16,.78)}
+.cat-grid{
+  display:grid;grid-template-columns:repeat(12,1fr);gap:1.1rem;
+}
+.cat{
+  position:relative;overflow:hidden;background:var(--espresso);
+  min-height:300px;display:flex;align-items:flex-end;color:var(--paper);
+  isolation:isolate;
+}
+.cat img{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;
+  transition:transform .9s cubic-bezier(.2,.7,.2,1),filter .9s;
+}
+.cat::after{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(36,23,6,0) 30%,rgba(36,23,6,.82) 100%);
+  transition:background .5s;
+}
+.cat:hover img{transform:scale(1.05)}
+.cat-body{padding:1.5rem 1.6rem;width:100%}
+.cat-num{
+  font-family:var(--serif);font-style:italic;font-size:.95rem;color:var(--gold-bright);
+  display:block;margin-bottom:.3rem;
+}
+.cat h3{font-size:clamp(1.4rem,2.4vw,1.9rem);font-weight:420}
+.cat-items{
+  font-size:.9rem;color:rgba(247,241,227,.85);margin-top:.45rem;
+  max-height:0;opacity:0;overflow:hidden;transition:max-height .5s ease,opacity .5s ease;
+}
+.cat:hover .cat-items,.cat:focus-within .cat-items{max-height:5em;opacity:1}
+.span8{grid-column:span 8}
+.span4{grid-column:span 4}
+.span6{grid-column:span 6}
+.cat-more{
+  background:var(--paper-deep);color:var(--ink);border:1px solid var(--line);
+  display:flex;flex-direction:column;justify-content:space-between;padding:1.6rem;
+}
+.cat-more h3{font-weight:420;font-size:1.6rem;margin-bottom:.8rem}
+.cat-more h3 em{color:var(--gold);font-weight:340}
+.cat-more ul{font-size:.95rem;line-height:1.9}
+.cat-more ul li::before{content:"·";color:var(--gold);font-weight:700;padding-right:.55rem}
+.cat-more a{
+  margin-top:1.2rem;font-weight:700;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);
+}
+.cat-more a:hover{color:var(--espresso)}
+@media (max-width:900px){
+  .span8,.span4,.span6{grid-column:span 12}
+  .cat{min-height:240px}
+  .cat-items{max-height:none;opacity:1}
+}
+
+/* ============ QUALITY (dark) ============ */
+.quality{
+  background:var(--espresso-deep);color:var(--paper);
+  padding:clamp(4.5rem,9vw,8rem) 0;position:relative;overflow:hidden;
+}
+.quality::before{
+  content:"Z";position:absolute;right:-4rem;top:50%;transform:translateY(-50%);
+  font-family:var(--serif);font-style:italic;font-weight:300;
+  font-size:clamp(20rem,42vw,36rem);color:rgba(201,162,83,.06);line-height:1;pointer-events:none;
+}
+.quality .eyebrow{color:var(--gold-bright)}
+.quality-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(2.5rem,6vw,5rem);align-items:center}
+.quality h2{color:var(--paper);margin:.7rem 0 1.3rem}
+.quality p{color:rgba(247,241,227,.82);margin-bottom:1.1rem;max-width:56ch}
+.quality-points{margin-top:1.8rem;display:grid;gap:1rem}
+.quality-points li{
+  display:flex;gap:1rem;align-items:baseline;
+  border-top:1px solid rgba(201,162,83,.25);padding-top:1rem;
+}
+.quality-points li i{
+  font-family:var(--serif);font-style:italic;color:var(--gold-bright);font-size:1.05rem;flex:0 0 2.4rem;
+}
+.quality-points li div b{display:block;font-family:var(--serif);font-weight:450;font-size:1.15rem;margin-bottom:.15rem}
+.quality-points li div{font-size:.98rem;color:rgba(247,241,227,.82)}
+.cert-card{
+  background:#fdfbf5;border-radius:4px;padding:2rem;
+  box-shadow:0 30px 70px rgba(0,0,0,.4);
+  transform:rotate(1.4deg);
+}
+.cert-card img{width:100%;height:auto}
+.cert-card figcaption{
+  color:var(--ink);text-align:center;font-family:var(--serif);font-style:italic;
+  font-size:1rem;margin-top:1rem;
+}
+
+/* ============ B2B SERVICE ============ */
+.service{padding:clamp(4.5rem,9vw,8rem) 0}
+.service-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(2rem,6vw,5rem)}
+.service-intro{position:sticky;top:110px;align-self:start}
+.service-intro h2{margin:.7rem 0 1.2rem}
+.service-intro p{max-width:40ch;color:rgba(43,28,16,.8)}
+.ledger{border-top:1px solid var(--line)}
+.ledger li{
+  display:grid;grid-template-columns:4.2rem 1fr;gap:1.4rem;
+  padding:1.6rem 0;border-bottom:1px solid var(--line);align-items:baseline;
+  transition:background .3s,padding-left .3s;
+}
+.ledger li:hover{background:var(--paper-deep);padding-left:.8rem}
+.ledger .no{
+  font-family:var(--serif);font-style:italic;font-size:1.5rem;color:var(--gold);
+}
+.ledger b{display:block;font-family:var(--serif);font-weight:480;font-size:1.35rem;margin-bottom:.25rem;letter-spacing:.005em}
+.ledger p{font-size:1rem;color:rgba(43,28,16,.8);max-width:56ch}
+
+/* ============ CONTACT ============ */
+.contact{
+  background:var(--paper-deep);border-block:1px solid var(--line);
+  padding:clamp(4.5rem,9vw,7.5rem) 0;
+}
+.contact-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(2.5rem,6vw,5rem)}
+.contact h2{margin:.7rem 0 1.4rem}
+.contact-lede{max-width:46ch;color:rgba(43,28,16,.8)}
+.contact-mail{
+  display:inline-block;margin-top:2rem;font-family:var(--serif);font-style:italic;
+  font-size:clamp(1.5rem,3.4vw,2.3rem);color:var(--espresso);
+  border-bottom:2px solid var(--gold);padding-bottom:.2rem;transition:color .3s;
+}
+.contact-mail:hover{color:var(--gold)}
+.contact-card{border-left:1px solid var(--line);padding-left:clamp(1.5rem,4vw,3rem)}
+.contact-card dl{display:grid;gap:1.3rem}
+.contact-card dt{font-size:.72rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-bottom:.25rem}
+.contact-card dd{font-size:1.05rem;line-height:1.55}
+.contact-card dd a{border-bottom:1px solid var(--line);transition:border-color .3s}
+.contact-card dd a:hover{border-color:var(--gold)}
+
+/* ============ FOOTER ============ */
+footer{background:var(--espresso-deep);color:rgba(247,241,227,.75);padding:3rem 0 2.2rem}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1.5rem;align-items:center}
+.foot-brand{font-family:var(--serif);font-size:1.15rem;color:var(--paper)}
+.foot-brand i{display:block;font-size:.85rem;color:var(--gold-bright);margin-top:.15rem}
+.foot-links{display:flex;flex-wrap:wrap;gap:1.6rem;font-size:.9rem}
+.foot-links a:hover{color:var(--gold-bright)}
+.foot-legal{width:100%;border-top:1px solid rgba(201,162,83,.2);margin-top:1.6rem;padding-top:1.4rem;font-size:.82rem;color:rgba(247,241,227,.5)}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width:980px){
+  .heritage-grid,.quality-grid,.service-grid,.contact-grid{grid-template-columns:1fr}
+  .service-intro{position:static}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .stat:nth-child(3){border-left:none}
+  .stat{border-top:1px solid var(--line)}
+  .stat:nth-child(-n+2){border-top:none}
+  .cert-card{max-width:420px}
+}
+@media (max-width:760px){
+  .nav-links{
+    display:none;position:absolute;top:100%;left:0;right:0;
+    background:var(--paper);border-bottom:1px solid var(--line);
+    flex-direction:column;align-items:flex-start;padding:1.2rem 4vw 1.6rem;gap:1.1rem;
+    box-shadow:0 20px 40px rgba(43,28,16,.12);
+  }
+  .nav-links.open{display:flex}
+  .burger{display:block}
+  .brand img{height:44px}
+  .stamp{display:none}
+  .hero-inner{padding-top:7rem}
+  .section-head{flex-direction:column;align-items:flex-start;gap:.8rem}
+  .stats{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<header id="top">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="ZIELER und CO. Startseite">
+      <img src="/redesign/zieler/assets/zieler-logo.jpg" alt="ZIELER Logo, Qualität aus Tradition seit 1907" width="70" height="52">
+      <span class="brand-name">ZIELER &amp; CO.<small>Hamburg · seit 1907</small></span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="Hauptnavigation">
+      <a href="#sortiment">Sortiment</a>
+      <a href="#qualitaet">Qualität</a>
+      <a href="#unternehmen">Unternehmen</a>
+      <a href="#service">Großhandel</a>
+      <a href="#kontakt">Kontakt</a>
+      <a class="nav-phone" href="tel:+494041928680">+49 40 4192868-0</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="stamp" aria-hidden="true">
+      <svg viewBox="0 0 100 100">
+        <defs><path id="circ" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0"/></defs>
+        <text fill="#c9a253" font-size="8.4" font-family="Alegreya Sans,sans-serif" font-weight="700" letter-spacing="1.9">
+          <textPath href="#circ">HAMBURGER HANDELSHAUS · SEIT 1907 · </textPath>
+        </text>
+      </svg>
+      <span class="stamp-center">Z&amp;Co.</span>
+    </div>
+    <div class="wrap hero-inner">
+      <p class="eyebrow">Import · Export · Großhandel</p>
+      <h1>Trockenfrüchte und Nüsse aus aller Welt. <em>Gehandelt in Hamburg, seit 1907.</em></h1>
+      <p>ZIELER &amp; CO. beliefert Lebensmittelindustrie, Handel und Feinkost mit erlesenen Trockenfrüchten, Nüssen, Saaten und Getreide. Aus eigener Lagerhaltung in Hamburg-Billbrook, in geprüfter Qualität.</p>
+      <div class="hero-cta">
+        <a class="btn btn-gold" href="#sortiment">Sortiment ansehen</a>
+        <a class="btn btn-ghost" href="#kontakt">Kontakt aufnehmen</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Cranberries</span><span>Datteln</span><span>Mandelkerne</span><span>Goji Beeren</span><span>Feigen</span><span>Cashewkerne</span><span>Mango</span><span>Sultanas</span><span>Walnusskerne</span><span>Aprikosen</span><span>Quinoa</span><span>Ananas</span><span>Pistazien</span><span>Maulbeeren</span><span>Chia</span><span>Papaya</span><span>Pflaumen</span><span>Macadamia</span>
+      <span>Cranberries</span><span>Datteln</span><span>Mandelkerne</span><span>Goji Beeren</span><span>Feigen</span><span>Cashewkerne</span><span>Mango</span><span>Sultanas</span><span>Walnusskerne</span><span>Aprikosen</span><span>Quinoa</span><span>Ananas</span><span>Pistazien</span><span>Maulbeeren</span><span>Chia</span><span>Papaya</span><span>Pflaumen</span><span>Macadamia</span>
+    </div>
+  </div>
+
+  <!-- HERITAGE -->
+  <section class="heritage" id="unternehmen">
+    <div class="wrap">
+      <div class="heritage-grid">
+        <div class="year-block rv">
+          <div class="year-big">1907</div>
+          <div class="year-sub">118 Jahre Handelstradition</div>
+        </div>
+        <div class="heritage-copy rv">
+          <p class="eyebrow">Das Handelshaus</p>
+          <h2>Ein Hamburger <span class="gold-i">Familienunternehmen.</span></h2>
+          <p>ZIELER &amp; CO. ist seit 1907 auf den Import von erlesenen Trockenfrüchten und Nüssen aus aller Welt spezialisiert. Über ein Jahrhundert Erfahrung im Import, Export und Großhandel, weltweite Kontakte und strenge Qualitätskontrollen begründen den Ruf unserer Produkte.</p>
+          <p>Heute wird das Haus in vierter Generation familiengeführt. Vom Standort <strong>Rote Brücke 29 in Hamburg-Billbrook</strong> aus, mit eigener Lagerhaltung, beliefern wir Gewerbebetriebe in ganz Deutschland und darüber hinaus.</p>
+          <div class="gf-line">
+            <div><span>Geschäftsführung</span><b>Arne Brink</b></div>
+            <div><span>Geschäftsführung</span><b>Steffen Brink</b></div>
+            <div><span>Geschäftsführung</span><b>Eva Brink</b></div>
+          </div>
+        </div>
+      </div>
+
+      <figure class="site-photo rv">
+        <img src="/redesign/zieler/assets/dji_0429_b.jpg" alt="Luftaufnahme des ZIELER Firmensitzes mit Lagerhallen in Hamburg-Billbrook" loading="lazy">
+        <figcaption class="site-caption">
+          <span class="eyebrow">Eigene Lagerhaltung</span>
+          <p>Rote Brücke 29, 22113 Hamburg-Billbrook. Firmensitz, Lager und Logistik unter einem Dach.</p>
+        </figcaption>
+      </figure>
+
+      <div class="stats rv">
+        <div class="stat"><b>1907</b><span>gegründet</span></div>
+        <div class="stat"><b>118</b><span>Jahre Tradition</span></div>
+        <div class="stat"><b>4.</b><span>Generation</span></div>
+        <div class="stat"><b>Billbrook</b><span>eigenes Lager</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SORTIMENT -->
+  <section class="sortiment" id="sortiment">
+    <div class="wrap">
+      <div class="section-head rv">
+        <div>
+          <p class="eyebrow">Das Sortiment</p>
+          <h2>Aus aller Welt, <span class="gold-i">am Lager in Hamburg.</span></h2>
+        </div>
+        <p>Eine Auswahl aus unserem Programm: Trockenfrüchte, Nüsse, Saaten, Getreide und Mischungen. Viele Artikel auch in Bio-Qualität.</p>
+      </div>
+
+      <div class="cat-grid">
+        <a class="cat span8 rv" href="#kontakt">
+          <img src="/redesign/zieler/assets/edelnussmix_2.jpg" alt="Edelnussmischung mit Mandeln, Cashewkernen, Walnüssen und Haselnüssen" loading="lazy">
+          <div class="cat-body">
+            <span class="cat-num">No. 1</span>
+            <h3>Nüsse und Nusskerne</h3>
+            <p class="cat-items">Mandeln, Cashewkerne, Walnüsse, Haselnüsse, Macadamia, Pistazien, Pecannüsse, geröstete Kerne</p>
+          </div>
+        </a>
+        <a class="cat span4 rv" href="#kontakt">
+          <img src="/redesign/zieler/assets/erdbeerscheiben-gefriergetrocknet1.jpg" alt="Gefriergetrocknete Erdbeerscheiben" loading="lazy">
+          <div class="cat-body">
+            <span class="cat-num">No. 2</span>
+            <h3>Beerenfrüchte</h3>
+            <p class="cat-items">Cranberries, Goji Beeren, Maulbeeren, Sultanas, Erdbeeren, Korinthen</p>
+          </div>
+        </a>
+        <a class="cat span4 rv" href="#kontakt">
+          <img src="/redesign/zieler/assets/ananasringe-bio-peru.jpg" alt="Getrocknete Ananasringe Bio aus Peru" loading="lazy">
+          <div class="cat-body">
+            <span class="cat-num">No. 3</span>
+            <h3>Tropische Früchte</h3>
+            <p class="cat-items">Mango, Ananas, Papaya, Bananen, Kiwi, Passionsfrucht</p>
+          </div>
+        </a>
+        <a class="cat span4 rv" href="#kontakt">
+          <img src="/redesign/zieler/assets/bananenscheiben-bio-coins.jpg" alt="Bananenscheiben Bio, sogenannte Coins" loading="lazy">
+          <div class="cat-body">
+            <span class="cat-num">No. 4</span>
+            <h3>Bio-Qualitäten</h3>
+            <p class="cat-items">Ananasringe Bio Peru, Bananenscheiben Bio und viele weitere Artikel aus kontrolliert biologischem Anbau</p>
+          </div>
+        </a>
+        <a class="cat span4 rv" href="#kontakt">
+          <img src="/redesign/zieler/assets/bohnen_erbsen_mix.jpg" alt="Bohnen-Erbsen-Mix mit gerösteten Saubohnen, Edamame und schwarzen Sojabohnen" loading="lazy">
+          <div class="cat-body">
+            <span class="cat-num">No. 5</span>
+            <h3>Saaten und Hülsenfrüchte</h3>
+            <p class="cat-items">Chia, Quinoa, Sesam, Leinsaat, Edamame, Kichererbsen, Bohnen-Erbsen-Mix</p>
+          </div>
+        </a>
+        <a class="cat span8 rv" href="#kontakt">
+          <img src="/redesign/zieler/assets/studentenfutter.jpg" alt="Studentenfutter mit Walnüssen, Paranüssen und Rosinen" loading="lazy">
+          <div class="cat-body">
+            <span class="cat-num">No. 6</span>
+            <h3>Mischungen</h3>
+            <p class="cat-items">Studentenfutter, Nussmischungen, Fruchtmischungen, individuelle Mischungen nach Kundenwunsch</p>
+          </div>
+        </a>
+        <div class="cat-more span6 rv">
+          <div>
+            <h3>Und das ist <em>nicht alles.</em></h3>
+            <ul>
+              <li>Trockenobst: Datteln, Feigen, Aprikosen, Pflaumen</li>
+              <li>Trockengemüse und Gemüsechips</li>
+              <li>Getreide und Nährmittel</li>
+              <li>Trockenfrüchte, gehackt</li>
+            </ul>
+          </div>
+          <a href="#kontakt">Vollständiges Programm anfragen</a>
+        </div>
+        <a class="cat span6 rv" href="#kontakt">
+          <img src="/redesign/zieler/assets/fruchtmix2.jpg" alt="Fruchtmischung mit Feigen, Pflaumen, Goji Beeren und Bananenchips" loading="lazy">
+          <div class="cat-body">
+            <span class="cat-num">No. 7</span>
+            <h3>Trockenobst</h3>
+            <p class="cat-items">Datteln, Feigen, Aprikosen, Pflaumen, Äpfel, Birnen, Kirschen</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUALITY -->
+  <section class="quality" id="qualitaet">
+    <div class="wrap quality-grid">
+      <div class="rv">
+        <p class="eyebrow">Qualität</p>
+        <h2>Zertifizierte Qualität, <span class="gold-i">geprüft und dokumentiert.</span></h2>
+        <p>Strenge Qualitätskontrollen begleiten jede Partie: vom Einkauf im Ursprung über den Wareneingang bis zur Auslieferung. Seit Jahrzehnten liefern wir auch Erzeugnisse aus kontrolliert biologischem Anbau.</p>
+        <ul class="quality-points">
+          <li><i>I.</i><div><b>Qualitätssicherung</b>Laufende Kontrollen und lückenlose Dokumentation für jede Charge.</div></li>
+          <li><i>II.</i><div><b>Biologischer Anbau</b>Bio-Qualitäten unter ständiger Kontrolle anerkannter Ökokontrollstellen.</div></li>
+          <li><i>III.</i><div><b>Moderne Lagertechnik</b>Eigene Lagerhaltung in Billbrook sichert Frische und Verfügbarkeit.</div></li>
+        </ul>
+      </div>
+      <figure class="cert-card rv">
+        <img src="/redesign/zieler/assets/zertifiziert.jpg" alt="Zertifizierungen von ZIELER und CO.">
+        <figcaption>Unsere Zertifizierungen. Gültige Nachweise stellen wir Ihnen gern zur Verfügung.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- B2B SERVICE -->
+  <section class="service" id="service">
+    <div class="wrap service-grid">
+      <div class="service-intro rv">
+        <p class="eyebrow">Für Gewerbekunden</p>
+        <h2>Großhandel, wie Sie ihn <span class="gold-i">brauchen.</span></h2>
+        <p>Sie haben einen Gewerbebetrieb und suchen einen zuverlässigen Partner? Das bietet Ihnen ZIELER &amp; CO.</p>
+      </div>
+      <ol class="ledger rv">
+        <li><span class="no">01</span><div><b>Import und Export</b><p>Weltweite Kontakte zu Erzeugern und über ein Jahrhundert Erfahrung im internationalen Handel.</p></div></li>
+        <li><span class="no">02</span><div><b>Eigene Lagerhaltung</b><p>Ware am Lager in Hamburg-Billbrook, mit moderner Lagertechnik und kurzen Wegen.</p></div></li>
+        <li><span class="no">03</span><div><b>Flexible Abnahmemengen</b><p>Ganze Paletten, einzelne Gebinde oder Abfüllung in kleine Einheiten.</p></div></li>
+        <li><span class="no">04</span><div><b>Individuelle Mischungen</b><p>Individuelle Mischungen und Abfüllungen als Private Label für Ihr Sortiment.</p></div></li>
+        <li><span class="no">05</span><div><b>Termindienste und Fixtermine</b><p>Schnelle, unkomplizierte Abwicklung Ihrer Aufträge, verlässlich geplant.</p></div></li>
+        <li><span class="no">06</span><div><b>Persönliche Beratung</b><p>Langjährig erfahrene Mitarbeiter beraten Sie individuell zu Ware und Herkunft.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="kontakt">
+    <div class="wrap contact-grid">
+      <div class="rv">
+        <p class="eyebrow">Kontakt</p>
+        <h2>Sprechen wir über <span class="gold-i">Ihre Ware.</span></h2>
+        <p class="contact-lede">Gern beraten wir Sie persönlich. Rufen Sie uns während unserer Geschäftszeiten an oder schreiben Sie uns. Sie erhalten eine klare Antwort von jemandem, der die Ware kennt.</p>
+        <a class="contact-mail" href="mailto:info@zieler.de">info@zieler.de</a>
+      </div>
+      <div class="contact-card rv">
+        <dl>
+          <div><dt>Anschrift</dt><dd>ZIELER &amp; CO. GmbH<br>Rote Brücke 29<br>22113 Hamburg-Billbrook</dd></div>
+          <div><dt>Telefon</dt><dd><a href="tel:+494041928680">+49 40 4192868-0</a></dd></div>
+          <div><dt>Geschäftszeiten</dt><dd>Montag bis Freitag<br>08:00 bis 16:30 Uhr</dd></div>
+          <div><dt>Geschäftsführung</dt><dd>Arne Brink, Steffen Brink, Eva Brink</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div class="foot-brand">ZIELER &amp; CO. GmbH<i>Qualität aus Tradition, seit 1907</i></div>
+    <nav class="foot-links" aria-label="Rechtliches">
+      <a href="#">Impressum</a>
+      <a href="#">Datenschutz</a>
+      <a href="#">Verkaufsbedingungen</a>
+      <a href="#">Anfahrt</a>
+      <a href="#">English Website</a>
+    </nav>
+    <p class="foot-legal">ZIELER &amp; CO. GmbH · Rote Brücke 29 · 22113 Hamburg · Tel. +49 40 4192868-0 · info@zieler.de · Amtsgericht Hamburg, HRB 42561. Unverbindlicher Design-Entwurf.</p>
+  </div>
+</footer>
+
+<script>
+// sticky nav shadow
+const header=document.querySelector('header');
+addEventListener('scroll',()=>{header.classList.toggle('scrolled',scrollY>10)},{passive:true});
+
+// mobile menu
+const burger=document.getElementById('burger'),links=document.getElementById('navLinks');
+burger.addEventListener('click',()=>{
+  const open=links.classList.toggle('open');
+  burger.setAttribute('aria-expanded',open);
+});
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+  links.classList.remove('open');burger.setAttribute('aria-expanded','false');
+}));
+
+// reveal on scroll (with fallback: no IO support or ?reveal=all shows everything)
+const rvs=document.querySelectorAll('.rv');
+if(!('IntersectionObserver' in window)||location.search.includes('reveal=all')){
+  rvs.forEach(el=>el.classList.add('in'));
+}else{
+  const io=new IntersectionObserver(es=>es.forEach(e=>{
+    if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}
+  }),{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  rvs.forEach(el=>io.observe(el));
+}
+</script>
+</body>
+</html>

@@ -12,6 +12,12 @@ export const metadata = {
 
 const redesigns = [
     {
+        slug: 'denis-fahrschule',
+        firm: 'Denis Fahrschule',
+        sector: 'FAHRSCHULE · HAMBURG · BERLINER TOR',
+        description: 'Zweisprachiger Auftritt auf Deutsch und Russisch mit echten Fotos vom Geschaeftsfuehrer und Theorieraum, transparenter Preistabelle Klasse B und rotem Markenakzent. Ersatz fuer die zuvor gehackte Joomla-Seite.',
+    },
+    {
         slug: 'zieler',
         firm: 'ZIELER & CO. GmbH',
         sector: 'TROCKENFRUECHTE-HANDELSHAUS · HAMBURG · SEIT 1907',

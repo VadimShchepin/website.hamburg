@@ -61,6 +61,11 @@
   .topbar a{color:#fff;font-weight:500}
   .topbar .r{display:flex;gap:22px;align-items:center}
   .topbar .lang b{color:#fff}.topbar .lang{color:#7e8aa2}
+  .langsw{display:inline-flex;align-items:center;gap:4px}
+  .langsw button{background:none;border:0;font:inherit;font-weight:600;color:#7e8aa2;cursor:pointer;padding:2px 6px;border-radius:5px;transition:.2s}
+  .langsw button:hover{color:#fff}
+  .langsw button.active{color:#fff;background:var(--blue)}
+  .langsw .sep{color:#3f4a60}
   @media(max-width:620px){.topbar .loc{display:none}}
 
   /* header */
@@ -85,7 +90,7 @@
 
   /* hero */
   .hero{padding:70px 0 90px;position:relative}
-  .hero::before{content:"";position:absolute;top:-120px;right:-140px;width:520px;height:520px;background:radial-gradient(circle,rgba(26,86,219,.10),transparent 66%);z-index:0}
+  .hero::before{content:"";position:absolute;top:-120px;right:-140px;width:520px;height:520px;background:radial-gradient(circle,rgba(26,86,219,.10),transparent 66%);z-index:0;pointer-events:none}
   .hero .wrap{position:relative;z-index:1}
   .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:60px;align-items:center}
   .hero h1{font-size:clamp(2.6rem,5.2vw,4.3rem);font-weight:800}
@@ -282,11 +287,11 @@
 
 <!-- topbar -->
 <div class="topbar"><div class="wrap">
-  <div class="loc">Filiale Berliner Tor, Beim Berliner Tor 2, Hamburg</div>
+  <div class="loc" data-i18n="tb.loc">Filiale Berliner Tor, Beim Berliner Tor 2, Hamburg</div>
   <div class="r">
-    <span>Mo bis Fr, 10.30 bis 18.30 Uhr</span>
+    <span data-i18n="tb.hours">Mo bis Fr, 10.30 bis 18.30 Uhr</span>
     <a href="tel:+4940243400">040 24 34 00</a>
-    <span class="lang"><b>DE</b> / RU</span>
+    <span class="langsw"><button type="button" data-lang="de">DE</button><span class="sep">/</span><button type="button" data-lang="ru">RU</button></span>
   </div>
 </div></div>
 
@@ -294,18 +299,18 @@
 <header id="hdr"><div class="wrap">
   <a href="#top" class="brand">
     <span class="logo"><img src="/redesign/denis-fahrschule/assets/logo.png" alt="Denis Fahrschule Logo"></span>
-    <span><b>Denis Fahrschule</b><small>Hamburg, Berliner Tor</small></span>
+    <span><b>Denis Fahrschule</b><small data-i18n="brand.sub">Hamburg, Berliner Tor</small></span>
   </a>
   <nav class="main">
-    <a href="#ablauf">Ablauf</a>
-    <a href="#leistungen">Ausbildung</a>
-    <a href="#preise">Preise</a>
-    <a href="#team">Team</a>
-    <a href="#kontakt">Kontakt</a>
+    <a href="#ablauf" data-i18n="nav.ablauf">Ablauf</a>
+    <a href="#leistungen" data-i18n="nav.ausbildung">Ausbildung</a>
+    <a href="#preise" data-i18n="nav.preise">Preise</a>
+    <a href="#team" data-i18n="nav.team">Team</a>
+    <a href="#kontakt" data-i18n="nav.kontakt">Kontakt</a>
   </nav>
   <div class="hd-r">
     <a href="tel:+4940243400" class="hd-phone">040 24 34 00</a>
-    <a href="#kontakt" class="btn btn-blue">Termin anfragen
+    <a href="#kontakt" class="btn btn-blue"><span data-i18n="cta.termin">Termin anfragen</span>
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
     </a>
   </div>
@@ -314,19 +319,19 @@
 <!-- hero -->
 <section class="hero" id="top"><div class="wrap"><div class="hero-grid">
   <div class="hero-copy">
-    <span class="eyebrow reveal"><i>D</i>Fahrschule am Berliner Tor</span>
-    <h1 class="reveal" data-d="1">Sicher ans <em>Ziel</em>. Ihr Führerschein in Hamburg.</h1>
-    <p class="lead reveal" data-d="2">Theorie und Praxis für die Klasse B, auf Deutsch und Russisch. Mit einem Plan, der zu Ihrem Alltag passt, vom ersten Termin bis zur bestandenen Prüfung.</p>
+    <span class="eyebrow reveal" data-i18n="hero.eyebrow"><i>D</i>Fahrschule am Berliner Tor</span>
+    <h1 class="reveal" data-d="1" data-i18n="hero.h1">Sicher ans <em>Ziel</em>. Ihr Führerschein in Hamburg.</h1>
+    <p class="lead reveal" data-d="2" data-i18n="hero.lead">Theorie und Praxis für die Klasse B, auf Deutsch und Russisch. Mit einem Plan, der zu Ihrem Alltag passt, vom ersten Termin bis zur bestandenen Prüfung.</p>
     <div class="hero-actions reveal" data-d="3">
-      <a href="#kontakt" class="btn btn-blue">Termin anfragen
+      <a href="#kontakt" class="btn btn-blue"><span data-i18n="cta.termin">Termin anfragen</span>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </a>
       <a href="tel:+4940243400" class="btn btn-line">040 24 34 00</a>
     </div>
     <div class="hero-meta reveal" data-d="4">
-      <div class="m"><b>ab <i>499</i></b><span>Grundbetrag Klasse B</span></div>
-      <div class="m"><b>2 <i>Sprachen</i></b><span>Deutsch und Russisch</span></div>
-      <div class="m"><b>Berliner <i>Tor</i></b><span>U-Bahn und S-Bahn</span></div>
+      <div class="m"><b>ab <i>499</i></b><span data-i18n="hero.m1">Grundbetrag Klasse B</span></div>
+      <div class="m"><b>2 <i data-i18n="hero.m2i">Sprachen</i></b><span data-i18n="hero.m2">Deutsch und Russisch</span></div>
+      <div class="m"><b>Berliner <i>Tor</i></b><span data-i18n="hero.m3">U-Bahn und S-Bahn</span></div>
     </div>
   </div>
   <div class="hero-visual reveal" id="heroVis">
@@ -335,43 +340,43 @@
     <div class="blob"></div>
     <div class="hero-card">
       <span class="dot"></span>
-      <div><b>Jetzt Termine frei</b><span>Anmeldung am Berliner Tor</span></div>
+      <div><b data-i18n="hero.card.b">Jetzt Termine frei</b><span data-i18n="hero.card.s">Anmeldung am Berliner Tor</span></div>
     </div>
   </div>
 </div></div></section>
 
 <!-- marquee -->
 <div class="marquee"><div class="mq">
-  <span>Klasse B<span class="s">&#9670;</span></span><span>Automatik und Schaltung<span class="s">&#9670;</span></span><span>Deutsch und Russisch<span class="s">&#9670;</span></span><span>Theorie inklusive<span class="s">&#9670;</span></span><span>Zentral am Berliner Tor<span class="s">&#9670;</span></span><span>Individueller Plan<span class="s">&#9670;</span></span>
-  <span>Klasse B<span class="s">&#9670;</span></span><span>Automatik und Schaltung<span class="s">&#9670;</span></span><span>Deutsch und Russisch<span class="s">&#9670;</span></span><span>Theorie inklusive<span class="s">&#9670;</span></span><span>Zentral am Berliner Tor<span class="s">&#9670;</span></span><span>Individueller Plan<span class="s">&#9670;</span></span>
+  <span><span data-i18n="mq1">Klasse B</span><span class="s">&#9670;</span></span><span><span data-i18n="mq2">Automatik und Schaltung</span><span class="s">&#9670;</span></span><span><span data-i18n="mq3">Deutsch und Russisch</span><span class="s">&#9670;</span></span><span><span data-i18n="mq4">Theorie inklusive</span><span class="s">&#9670;</span></span><span><span data-i18n="mq5">Zentral am Berliner Tor</span><span class="s">&#9670;</span></span><span><span data-i18n="mq6">Individueller Plan</span><span class="s">&#9670;</span></span>
+  <span><span data-i18n="mq1">Klasse B</span><span class="s">&#9670;</span></span><span><span data-i18n="mq2">Automatik und Schaltung</span><span class="s">&#9670;</span></span><span><span data-i18n="mq3">Deutsch und Russisch</span><span class="s">&#9670;</span></span><span><span data-i18n="mq4">Theorie inklusive</span><span class="s">&#9670;</span></span><span><span data-i18n="mq5">Zentral am Berliner Tor</span><span class="s">&#9670;</span></span><span><span data-i18n="mq6">Individueller Plan</span><span class="s">&#9670;</span></span>
 </div></div>
 
 <!-- usp -->
 <section class="pad"><div class="wrap">
   <div class="head reveal">
-    <span class="eyebrow"><i>D</i>Warum die Fahrschule Denis</span>
-    <h2>Lernen in Ihrem Tempo, in Ihrer Sprache</h2>
+    <span class="eyebrow" data-i18n="usp.eyebrow"><i>D</i>Warum die Fahrschule Denis</span>
+    <h2 data-i18n="usp.h2">Lernen in Ihrem Tempo, in Ihrer Sprache</h2>
   </div>
   <div class="usp-grid">
     <div class="usp-card reveal" data-d="1"><span class="gh">01</span>
       <div class="wheel"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v6M4.2 18l5.3-4M19.8 18l-5.3-4"/></svg></div>
-      <h3>Klasse B</h3>
-      <p>Automatik oder Schaltung, auf Wunsch mit Anhänger (B und BE). Sie wählen, was zu Ihnen passt.</p>
+      <h3 data-i18n="usp1.h3">Klasse B</h3>
+      <p data-i18n="usp1.p">Automatik oder Schaltung, auf Wunsch mit Anhänger (B und BE). Sie wählen, was zu Ihnen passt.</p>
     </div>
     <div class="usp-card reveal" data-d="2"><span class="gh">02</span>
       <div class="wheel"><svg viewBox="0 0 24 24"><path d="M7 8h4a3 3 0 0 1 3 3v6"/><circle cx="6" cy="8" r="2"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="6" r="2"/><path d="M18 8v3a3 3 0 0 1-3 3"/></svg></div>
-      <h3>Zweisprachig</h3>
-      <p>Unterricht und Beratung auf Deutsch und Russisch. Fragen klären wir so, dass Sie alles verstehen.</p>
+      <h3 data-i18n="usp2.h3">Zweisprachig</h3>
+      <p data-i18n="usp2.p">Unterricht und Beratung auf Deutsch und Russisch. Fragen klären wir so, dass Sie alles verstehen.</p>
     </div>
     <div class="usp-card reveal" data-d="3"><span class="gh">03</span>
       <div class="wheel"><svg viewBox="0 0 24 24"><path d="M4 19V6a1 1 0 0 1 1-1h6v14M20 19V6a1 1 0 0 0-1-1h-6"/><path d="M3 19h18"/></svg></div>
-      <h3>Theorie inklusive</h3>
-      <p>Alle nötigen Theoriestunden sind im Grundbetrag enthalten, mit verständlichen Lernmitteln.</p>
+      <h3 data-i18n="usp3.h3">Theorie inklusive</h3>
+      <p data-i18n="usp3.p">Alle nötigen Theoriestunden sind im Grundbetrag enthalten, mit verständlichen Lernmitteln.</p>
     </div>
     <div class="usp-card reveal" data-d="4"><span class="gh">04</span>
       <div class="wheel"><svg viewBox="0 0 24 24"><path d="M12 21s-7-5.2-7-11a7 7 0 0 1 14 0c0 5.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.4"/></svg></div>
-      <h3>Zentrale Lage</h3>
-      <p>Direkt am Berliner Tor, an U-Bahn und S-Bahn. Gut erreichbar aus ganz Hamburg.</p>
+      <h3 data-i18n="usp4.h3">Zentrale Lage</h3>
+      <p data-i18n="usp4.p">Direkt am Berliner Tor, an U-Bahn und S-Bahn. Gut erreichbar aus ganz Hamburg.</p>
     </div>
   </div>
 </div></section>
@@ -379,17 +384,17 @@
 <!-- about -->
 <section class="pad about"><div class="wrap"><div class="about-grid">
   <div class="about-media reveal">
-    <span class="tag">Unser Theorieraum</span>
+    <span class="tag" data-i18n="about.tag">Unser Theorieraum</span>
     <img src="/redesign/denis-fahrschule/assets/classroom.webp" alt="Theorieraum der Fahrschule Denis am Berliner Tor in Hamburg">
   </div>
   <div class="about-copy reveal" data-d="1">
-    <span class="eyebrow"><i>D</i>Willkommen</span>
-    <h2 style="font-size:clamp(1.9rem,3.4vw,2.7rem);margin:16px 0 24px">Bei uns lernen Sie sicher fahren</h2>
-    <p>Mobil zu sein gehört heute einfach dazu. Ein Auto sicher zu führen ist für viele eine Notwendigkeit, im Beruf wie im Alltag. Wenn Sie den Führerschein machen möchten, begleiten wir Sie vom ersten Termin bis zur bestandenen Prüfung.</p>
-    <p>Unsere erfahrenen Fahrlehrer bringen Ihnen bei, ein Auto sicher zu fahren und Situationen im Verkehr richtig einzuschätzen. Theorie und Praxis greifen ineinander, mit klaren Lernmitteln und viel Übung. Den Unterrichtsplan stellen Sie gemeinsam mit Ihrem Fahrlehrer zusammen.</p>
+    <span class="eyebrow" data-i18n="about.eyebrow"><i>D</i>Willkommen</span>
+    <h2 style="font-size:clamp(1.9rem,3.4vw,2.7rem);margin:16px 0 24px" data-i18n="about.h2">Bei uns lernen Sie sicher fahren</h2>
+    <p data-i18n="about.p1">Mobil zu sein gehört heute einfach dazu. Ein Auto sicher zu führen ist für viele eine Notwendigkeit, im Beruf wie im Alltag. Wenn Sie den Führerschein machen möchten, begleiten wir Sie vom ersten Termin bis zur bestandenen Prüfung.</p>
+    <p data-i18n="about.p2">Unsere erfahrenen Fahrlehrer bringen Ihnen bei, ein Auto sicher zu fahren und Situationen im Verkehr richtig einzuschätzen. Theorie und Praxis greifen ineinander, mit klaren Lernmitteln und viel Übung. Den Unterrichtsplan stellen Sie gemeinsam mit Ihrem Fahrlehrer zusammen.</p>
     <div class="motto">
-      <p>Individuelle Betreuung und eine gute Haltung zu jedem Schüler.</p>
-      <div class="by">Unser Anspruch an jede Ausbildung</div>
+      <p data-i18n="about.motto">Individuelle Betreuung und eine gute Haltung zu jedem Schüler.</p>
+      <div class="by" data-i18n="about.by">Unser Anspruch an jede Ausbildung</div>
     </div>
   </div>
 </div></div></section>
@@ -397,63 +402,63 @@
 <!-- ablauf / road-lane path -->
 <section class="pad" id="ablauf"><div class="wrap">
   <div class="head center reveal">
-    <span class="eyebrow"><i>D</i>Ihr Weg zum Führerschein</span>
-    <h2>So läuft Ihre Ausbildung</h2>
+    <span class="eyebrow" data-i18n="ablauf.eyebrow"><i>D</i>Ihr Weg zum Führerschein</span>
+    <h2 data-i18n="ablauf.h2">So läuft Ihre Ausbildung</h2>
   </div>
   <div class="steps">
     <div class="step-line"></div>
-    <div class="step reveal" data-d="1"><div class="no">01</div><h3>Anmeldung und Beratung</h3><p>Wir besprechen Ihre Ziele, Klasse B oder B und BE, Automatik oder Schaltung, und planen den Start.</p></div>
-    <div class="step reveal" data-d="2"><div class="no">02</div><h3>Theorie</h3><p>Die Grundlagen im Unterricht, verständlich erklärt auf Deutsch oder Russisch, alle Pflichtstunden inklusive.</p></div>
-    <div class="step reveal" data-d="3"><div class="no">03</div><h3>Praxis</h3><p>Fahrstunden in Ihrem Tempo, dazu die Sonderfahrten auf Land, Autobahn und bei Dunkelheit.</p></div>
-    <div class="step reveal" data-d="4"><div class="no">04</div><h3>Prüfung</h3><p>Wir bereiten Sie gezielt auf Theorie und Praxis vor, damit Sie sicher in die Prüfung gehen.</p></div>
+    <div class="step reveal" data-d="1"><div class="no">01</div><h3 data-i18n="step1.h3">Anmeldung und Beratung</h3><p data-i18n="step1.p">Wir besprechen Ihre Ziele, Klasse B oder B und BE, Automatik oder Schaltung, und planen den Start.</p></div>
+    <div class="step reveal" data-d="2"><div class="no">02</div><h3 data-i18n="step2.h3">Theorie</h3><p data-i18n="step2.p">Die Grundlagen im Unterricht, verständlich erklärt auf Deutsch oder Russisch, alle Pflichtstunden inklusive.</p></div>
+    <div class="step reveal" data-d="3"><div class="no">03</div><h3 data-i18n="step3.h3">Praxis</h3><p data-i18n="step3.p">Fahrstunden in Ihrem Tempo, dazu die Sonderfahrten auf Land, Autobahn und bei Dunkelheit.</p></div>
+    <div class="step reveal" data-d="4"><div class="no">04</div><h3 data-i18n="step4.h3">Prüfung</h3><p data-i18n="step4.p">Wir bereiten Sie gezielt auf Theorie und Praxis vor, damit Sie sicher in die Prüfung gehen.</p></div>
   </div>
 </div></section>
 
 <!-- leistungen -->
 <section class="pad lst" id="leistungen"><div class="wrap">
   <div class="head reveal">
-    <span class="eyebrow"><i>D</i>Ausbildung</span>
-    <h2>Alles für den Führerschein Klasse B</h2>
+    <span class="eyebrow" data-i18n="leist.eyebrow"><i>D</i>Ausbildung</span>
+    <h2 data-i18n="leist.h2">Alles für den Führerschein Klasse B</h2>
   </div>
   <div class="list-rows">
-    <div class="lrow reveal"><div class="no">01</div><div><h3>Klasse B und B plus BE</h3><p>Grundausbildung für den Pkw, auf Wunsch inklusive Anhänger. Bei gemeinsamer Anmeldung fällt der Grundbetrag nur einmal an.</p></div><div class="ar"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div>
-    <div class="lrow reveal"><div class="no">02</div><div><h3>Automatik oder Schaltung</h3><p>Sie lernen auf dem Getriebe, das zu Ihnen passt. Beide Varianten sind bei uns möglich.</p></div><div class="ar"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div>
-    <div class="lrow reveal"><div class="no">03</div><div><h3>Theorie inklusive</h3><p>Alle nötigen Theoriestunden sind bereits im Grundbetrag enthalten, mit verständlichen Lernmitteln.</p></div><div class="ar"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div>
-    <div class="lrow reveal"><div class="no">04</div><div><h3>Deutsch und Russisch</h3><p>Fragen klären wir in der Sprache, in der Sie sich wohlfühlen. Unser Team spricht beides.</p></div><div class="ar"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div>
+    <div class="lrow reveal"><div class="no">01</div><div><h3 data-i18n="lrow1.h3">Klasse B und B plus BE</h3><p data-i18n="lrow1.p">Grundausbildung für den Pkw, auf Wunsch inklusive Anhänger. Bei gemeinsamer Anmeldung fällt der Grundbetrag nur einmal an.</p></div><div class="ar"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div>
+    <div class="lrow reveal"><div class="no">02</div><div><h3 data-i18n="lrow2.h3">Automatik oder Schaltung</h3><p data-i18n="lrow2.p">Sie lernen auf dem Getriebe, das zu Ihnen passt. Beide Varianten sind bei uns möglich.</p></div><div class="ar"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div>
+    <div class="lrow reveal"><div class="no">03</div><div><h3 data-i18n="lrow3.h3">Theorie inklusive</h3><p data-i18n="lrow3.p">Alle nötigen Theoriestunden sind bereits im Grundbetrag enthalten, mit verständlichen Lernmitteln.</p></div><div class="ar"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div>
+    <div class="lrow reveal"><div class="no">04</div><div><h3 data-i18n="lrow4.h3">Deutsch und Russisch</h3><p data-i18n="lrow4.p">Fragen klären wir in der Sprache, in der Sie sich wohlfühlen. Unser Team spricht beides.</p></div><div class="ar"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></div>
   </div>
 </div></section>
 
 <!-- preise -->
 <section class="pad" id="preise"><div class="wrap">
   <div class="head reveal">
-    <span class="eyebrow"><i>D</i>Preise</span>
-    <h2>Transparent, ohne Überraschungen</h2>
+    <span class="eyebrow" data-i18n="preise.eyebrow"><i>D</i>Preise</span>
+    <h2 data-i18n="preise.h2">Transparent, ohne Überraschungen</h2>
   </div>
   <div class="price-grid">
     <div class="price-hi reveal">
-      <div class="big"><i>ab</i> 499 <i>Euro</i></div>
-      <h3>Grundbetrag Klasse B</h3>
-      <p>Gilt auch für die Klassenkombination B und BE. Bei gleichzeitiger Anmeldung fällt der Grundbetrag nur einmal an und enthält alle nötigen Theoriestunden.</p>
-      <a href="#kontakt" class="btn">Termin anfragen
+      <div class="big"><i data-i18n="price.ab">ab</i> 499 <i>&euro;</i></div>
+      <h3 data-i18n="price.h3">Grundbetrag Klasse B</h3>
+      <p data-i18n="price.p">Gilt auch für die Klassenkombination B und BE. Bei gleichzeitiger Anmeldung fällt der Grundbetrag nur einmal an und enthält alle nötigen Theoriestunden.</p>
+      <a href="#kontakt" class="btn"><span data-i18n="cta.termin">Termin anfragen</span>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </a>
     </div>
     <div class="reveal" data-d="1">
       <table class="price">
-        <thead><tr><th>Leistung</th><th style="text-align:right">Preis</th></tr></thead>
+        <thead><tr><th data-i18n="price.th1">Leistung</th><th style="text-align:right" data-i18n="price.th2">Preis</th></tr></thead>
         <tbody>
-          <tr><td>Grundbetrag Klasse B (inkl. Theorie)</td><td class="amt">499 Euro</td></tr>
-          <tr><td>Vorstellung zur theoretischen Prüfung</td><td class="amt">80 Euro</td></tr>
-          <tr><td>Vorstellung zur praktischen Prüfung</td><td class="amt">250 Euro</td></tr>
-          <tr><td>Fahrstunde, Übungsfahrt (45 Min.)</td><td class="amt">70 Euro</td></tr>
-          <tr><td>Fahrstunde Automatik (45 Min.)</td><td class="amt">70 Euro</td></tr>
-          <tr><td>Sonderfahrt Automatik (45 Min.)</td><td class="amt">75 Euro</td></tr>
-          <tr><td>Sonderfahrt auf Bundes- oder Landstraße</td><td class="amt">75 Euro</td></tr>
-          <tr><td>Sonderfahrt auf der Autobahn</td><td class="amt">75 Euro</td></tr>
-          <tr><td>Sonderfahrt bei Dämmerung und Dunkelheit</td><td class="amt">75 Euro</td></tr>
+          <tr><td data-i18n="prow1">Grundbetrag Klasse B (inkl. Theorie)</td><td class="amt">499 &euro;</td></tr>
+          <tr><td data-i18n="prow2">Vorstellung zur theoretischen Prüfung</td><td class="amt">80 &euro;</td></tr>
+          <tr><td data-i18n="prow3">Vorstellung zur praktischen Prüfung</td><td class="amt">250 &euro;</td></tr>
+          <tr><td data-i18n="prow4">Fahrstunde, Übungsfahrt (45 Min.)</td><td class="amt">70 &euro;</td></tr>
+          <tr><td data-i18n="prow5">Fahrstunde Automatik (45 Min.)</td><td class="amt">70 &euro;</td></tr>
+          <tr><td data-i18n="prow6">Sonderfahrt Automatik (45 Min.)</td><td class="amt">75 &euro;</td></tr>
+          <tr><td data-i18n="prow7">Sonderfahrt auf Bundes- oder Landstraße</td><td class="amt">75 &euro;</td></tr>
+          <tr><td data-i18n="prow8">Sonderfahrt auf der Autobahn</td><td class="amt">75 &euro;</td></tr>
+          <tr><td data-i18n="prow9">Sonderfahrt bei Dämmerung und Dunkelheit</td><td class="amt">75 &euro;</td></tr>
         </tbody>
       </table>
-      <p class="price-note">Alle Preise in Euro. Fuer eine persönliche Beratung rufen Sie uns gern an.</p>
+      <p class="price-note" data-i18n="price.note">Alle Preise in Euro. Für eine persönliche Beratung rufen Sie uns gern an.</p>
     </div>
   </div>
 </div></section>
@@ -462,13 +467,13 @@
 <section class="pad about" id="fahrzeuge"><div class="wrap"><div class="veh-grid">
   <div class="reveal"><img src="/redesign/denis-fahrschule/assets/car.webp" alt="Modernes Fahrschulauto auf einer Hamburger Straße"></div>
   <div class="reveal" data-d="1">
-    <span class="eyebrow"><i>D</i>Fahrzeuge</span>
-    <h2 style="font-size:clamp(1.9rem,3.4vw,2.7rem);margin:16px 0 18px">Sie üben auf modernen Fahrzeugen</h2>
-    <p style="color:var(--ink-soft);font-size:1.05rem">Gepflegte, aktuelle Autos in Automatik und Schaltung. So sitzen Sie von der ersten Stunde an in einem Fahrzeug, das sich gut und sicher fahren lässt, mitten in Hamburg.</p>
+    <span class="eyebrow" data-i18n="veh.eyebrow"><i>D</i>Fahrzeuge</span>
+    <h2 style="font-size:clamp(1.9rem,3.4vw,2.7rem);margin:16px 0 18px" data-i18n="veh.h2">Sie üben auf modernen Fahrzeugen</h2>
+    <p style="color:var(--ink-soft);font-size:1.05rem" data-i18n="veh.p">Gepflegte, aktuelle Autos in Automatik und Schaltung. So sitzen Sie von der ersten Stunde an in einem Fahrzeug, das sich gut und sicher fahren lässt, mitten in Hamburg.</p>
     <div class="veh-chips">
-      <span class="vchip"><span class="d"></span>Automatik und Schaltung</span>
-      <span class="vchip"><span class="d"></span>Regelmäßig gewartet</span>
-      <span class="vchip"><span class="d"></span>Übung im Stadtverkehr</span>
+      <span class="vchip"><span class="d"></span><span data-i18n="vchip1">Automatik und Schaltung</span></span>
+      <span class="vchip"><span class="d"></span><span data-i18n="vchip2">Regelmäßig gewartet</span></span>
+      <span class="vchip"><span class="d"></span><span data-i18n="vchip3">Übung im Stadtverkehr</span></span>
     </div>
   </div>
 </div></div></section>
@@ -476,21 +481,21 @@
 <!-- team -->
 <section class="pad" id="team"><div class="wrap">
   <div class="head reveal">
-    <span class="eyebrow"><i>D</i>Team</span>
-    <h2>Ihr Führerschein ist unser Ziel</h2>
+    <span class="eyebrow" data-i18n="team.eyebrow"><i>D</i>Team</span>
+    <h2 data-i18n="team.h2">Ihr Führerschein ist unser Ziel</h2>
   </div>
   <div class="team">
     <div class="member reveal">
       <div class="ph"><img src="/redesign/denis-fahrschule/assets/owner.webp" alt="Denys Deryagin, Geschäftsführer der Fahrschule Denis"></div>
-      <div class="info"><h3>Denys Deryagin</h3><div class="role">Geschäftsführer</div><div class="lg"><span class="d"></span>Deutsch, Russisch</div></div>
+      <div class="info"><h3>Denys Deryagin</h3><div class="role" data-i18n="role.gf">Geschäftsführer</div><div class="lg"><span class="d"></span><span data-i18n="team.lang">Deutsch, Russisch</span></div></div>
     </div>
     <div class="member reveal" data-d="1">
       <div class="ph"><img src="/redesign/denis-fahrschule/assets/svetlana.webp" alt="Svetlana Kobzak, Erste Hilfe und Büro der Fahrschule Denis am Berliner Tor"></div>
-      <div class="info"><h3>Svetlana Kobzak</h3><div class="role">Erste Hilfe, Büro Berliner Tor</div><div class="lg"><span class="d"></span>Deutsch, Russisch</div></div>
+      <div class="info"><h3>Svetlana Kobzak</h3><div class="role" data-i18n="role.eh">Erste Hilfe, Büro Berliner Tor</div><div class="lg"><span class="d"></span><span data-i18n="team.lang">Deutsch, Russisch</span></div></div>
     </div>
     <div class="member reveal" data-d="2">
       <div class="ph"><img src="/redesign/denis-fahrschule/assets/natalia.webp" alt="Natalia Henning, Fahrlehrerin der Fahrschule Denis"></div>
-      <div class="info"><h3>Natalia Henning</h3><div class="role">Fahrlehrerin</div><div class="lg"><span class="d"></span>Deutsch, Russisch</div></div>
+      <div class="info"><h3>Natalia Henning</h3><div class="role" data-i18n="role.fl">Fahrlehrerin</div><div class="lg"><span class="d"></span><span data-i18n="team.lang">Deutsch, Russisch</span></div></div>
     </div>
   </div>
 </div></section>
@@ -498,39 +503,39 @@
 <!-- reviews -->
 <section class="pad rev-wrap" id="bewertungen"><div class="wrap">
   <div class="head reveal">
-    <span class="eyebrow"><i>D</i>Bewertungen</span>
-    <h2>Das sagen unsere Fahrschüler</h2>
+    <span class="eyebrow" data-i18n="rev.eyebrow"><i>D</i>Bewertungen</span>
+    <h2 data-i18n="rev.h2">Das sagen unsere Fahrschüler</h2>
   </div>
   <div class="rev-grid">
     <div class="rev reveal">
       <div class="top"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="g">Google</span></div>
       <p>Top Fahrschule! Die Ausbildung ist erstklassig und findet auf höchstem Niveau statt. Man wird perfekt auf die Theorie- und Praxisprüfung vorbereitet.</p>
-      <div class="who"><span class="av">IB</span><span><b>Igor Bokov</b><span>Bewertung bei Google</span></span><span class="lang">DE</span></div>
+      <div class="who"><span class="av">IB</span><span><b>Igor Bokov</b><span data-i18n="rev.src">Bewertung bei Google</span></span><span class="lang">DE</span></div>
     </div>
     <div class="rev reveal" data-d="1">
       <div class="top"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="g">Google</span></div>
       <p>Ausgezeichnete Fahrschule! Verständliche Theorie, tolle Fahrlehrer und eine freundliche Atmosphäre.</p>
-      <div class="who"><span class="av">OV</span><span><b>Olesea Virlan</b><span>Bewertung bei Google</span></span><span class="lang">DE</span></div>
+      <div class="who"><span class="av">OV</span><span><b>Olesea Virlan</b><span data-i18n="rev.src">Bewertung bei Google</span></span><span class="lang">DE</span></div>
     </div>
     <div class="rev reveal" data-d="2">
       <div class="top"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="g">Google</span></div>
       <p>If you need to get a driver's license or exchange existing ones, this is without a doubt the best school in Hamburg!</p>
-      <div class="who"><span class="av">VY</span><span><b>Veronika Yaskevich</b><span>Bewertung bei Google</span></span><span class="lang">EN</span></div>
+      <div class="who"><span class="av">VY</span><span><b>Veronika Yaskevich</b><span data-i18n="rev.src">Bewertung bei Google</span></span><span class="lang">EN</span></div>
     </div>
     <div class="rev reveal">
       <div class="top"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="g">Google</span></div>
       <p>Very grateful for Natalia's driving lessons, she was patient and to the point! I have successfully exchanged my foreign driving license after 5 lessons.</p>
-      <div class="who"><span class="av">MD</span><span><b>Maria Dorofeikova</b><span>Bewertung bei Google</span></span><span class="lang">EN</span></div>
+      <div class="who"><span class="av">MD</span><span><b>Maria Dorofeikova</b><span data-i18n="rev.src">Bewertung bei Google</span></span><span class="lang">EN</span></div>
     </div>
     <div class="rev reveal" data-d="1">
       <div class="top"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="g">Google</span></div>
       <p>Всё было замечательно, очень хорошие преподаватели, как на механику, так и на автомате.</p>
-      <div class="who"><span class="av">ДП</span><span><b>Danil Panchenko</b><span>Bewertung bei Google</span></span><span class="lang">RU</span></div>
+      <div class="who"><span class="av">ДП</span><span><b>Danil Panchenko</b><span data-i18n="rev.src">Bewertung bei Google</span></span><span class="lang">RU</span></div>
     </div>
     <div class="rev reveal" data-d="2">
       <div class="top"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="g">Google</span></div>
       <p>Проходил обучение в Denis Fahrschule и остался очень доволен. Отличная автошкола с грамотным подходом к обучению.</p>
-      <div class="who"><span class="av">ВГ</span><span><b>Valentin Grechishnikov</b><span>Bewertung bei Google</span></span><span class="lang">RU</span></div>
+      <div class="who"><span class="av">ВГ</span><span><b>Valentin Grechishnikov</b><span data-i18n="rev.src">Bewertung bei Google</span></span><span class="lang">RU</span></div>
     </div>
   </div>
 </div></section>
@@ -540,9 +545,9 @@
   <div class="cta reveal">
     <img src="/redesign/denis-fahrschule/assets/success.webp" alt="Bestandene Fahrprüfung, Fahrschüler mit Führerschein">
     <div class="cta-in">
-      <h2>Starten Sie Ihre Ausbildung am Berliner Tor</h2>
-      <p>Rufen Sie an oder kommen Sie vorbei. Wir beraten Sie gern auf Deutsch oder Russisch und finden einen Termin, der passt.</p>
-      <a href="tel:+4940243400" class="btn btn-blue">Jetzt anrufen: 040 24 34 00
+      <h2 data-i18n="cta.h2">Starten Sie Ihre Ausbildung am Berliner Tor</h2>
+      <p data-i18n="cta.p">Rufen Sie an oder kommen Sie vorbei. Wir beraten Sie gern auf Deutsch oder Russisch und finden einen Termin, der passt.</p>
+      <a href="tel:+4940243400" class="btn btn-blue"><span data-i18n="cta.call">Jetzt anrufen: 040 24 34 00</span>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </a>
     </div>
@@ -552,23 +557,23 @@
 <!-- kontakt -->
 <section class="pad about" id="kontakt" style="padding-top:0;background:transparent"><div class="wrap">
   <div class="head reveal">
-    <span class="eyebrow"><i>D</i>Kontakt</span>
-    <h2>Kommen Sie am Berliner Tor vorbei</h2>
+    <span class="eyebrow" data-i18n="kontakt.eyebrow"><i>D</i>Kontakt</span>
+    <h2 data-i18n="kontakt.h2">Kommen Sie am Berliner Tor vorbei</h2>
   </div>
   <div class="k-grid">
     <div class="k-card reveal">
-      <div class="krow"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 21s-7-5.2-7-11a7 7 0 0 1 14 0c0 5.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.4"/></svg></div><div><div class="lbl">Adresse</div><div class="val">Beim Berliner Tor 2, 20099 Hamburg</div></div></div>
-      <div class="krow"><div class="ico"><svg viewBox="0 0 24 24"><path d="M6 4h3l2 5-2 1.5a12 12 0 0 0 5 5L21 15v3a2 2 0 0 1-2 2A16 16 0 0 1 4 6a2 2 0 0 1 2-2Z"/></svg></div><div><div class="lbl">Telefon</div><div class="val"><a href="tel:+4940243400">040 24 34 00</a></div></div></div>
-      <div class="krow"><div class="ico"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 9h16M8 4v3M16 4v3"/></svg></div><div><div class="lbl">Bürozeiten</div><div class="val">Mo bis Fr, 10.30 bis 18.30 Uhr</div></div></div>
-      <div class="krow"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div><div class="lbl">Fax</div><div class="val">040 46631026</div></div></div>
-      <div style="padding:22px 0 26px"><a href="tel:+4940243400" class="btn btn-blue">Jetzt anrufen
+      <div class="krow"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 21s-7-5.2-7-11a7 7 0 0 1 14 0c0 5.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.4"/></svg></div><div><div class="lbl" data-i18n="k.addr">Adresse</div><div class="val">Beim Berliner Tor 2, 20099 Hamburg</div></div></div>
+      <div class="krow"><div class="ico"><svg viewBox="0 0 24 24"><path d="M6 4h3l2 5-2 1.5a12 12 0 0 0 5 5L21 15v3a2 2 0 0 1-2 2A16 16 0 0 1 4 6a2 2 0 0 1 2-2Z"/></svg></div><div><div class="lbl" data-i18n="k.tel">Telefon</div><div class="val"><a href="tel:+4940243400">040 24 34 00</a></div></div></div>
+      <div class="krow"><div class="ico"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 9h16M8 4v3M16 4v3"/></svg></div><div><div class="lbl" data-i18n="k.hours">Bürozeiten</div><div class="val" data-i18n="tb.hours">Mo bis Fr, 10.30 bis 18.30 Uhr</div></div></div>
+      <div class="krow"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div><div class="lbl" data-i18n="k.fax">Fax</div><div class="val">040 46631026</div></div></div>
+      <div style="padding:22px 0 26px"><a href="tel:+4940243400" class="btn btn-blue"><span data-i18n="k.call">Jetzt anrufen</span>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </a></div>
     </div>
     <div class="k-map reveal" data-d="1">
       <div class="pin"><svg viewBox="0 0 24 24"><path d="M12 21s-7-5.2-7-11a7 7 0 0 1 14 0c0 5.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.4"/></svg></div>
-      <h3>Filiale Berliner Tor</h3>
-      <p>Beim Berliner Tor 2, 20099 Hamburg. Direkt an den Stationen Berliner Tor, U-Bahn und S-Bahn, zentral und gut erreichbar.</p>
+      <h3 data-i18n="kmap.h3">Filiale Berliner Tor</h3>
+      <p data-i18n="kmap.p">Beim Berliner Tor 2, 20099 Hamburg. Direkt an den Stationen Berliner Tor, U-Bahn und S-Bahn, zentral und gut erreichbar.</p>
     </div>
   </div>
 </div></section>
@@ -578,15 +583,15 @@
   <div class="f-grid">
     <div>
       <div class="f-brand"><span class="logo"><img src="/redesign/denis-fahrschule/assets/logo.png" alt="Denis Fahrschule Logo"></span><b>Denis Fahrschule</b></div>
-      <p>Fahrschule am Berliner Tor in Hamburg. Führerschein Klasse B auf Deutsch und Russisch, mit persönlicher Betreuung.</p>
+      <p data-i18n="footer.p">Fahrschule am Berliner Tor in Hamburg. Führerschein Klasse B auf Deutsch und Russisch, mit persönlicher Betreuung.</p>
     </div>
     <div>
-      <h4>Kontakt</h4>
-      <div class="fl">Beim Berliner Tor 2<br>20099 Hamburg<br><a href="tel:+4940243400">040 24 34 00</a><br>Mo bis Fr, 10.30 bis 18.30 Uhr</div>
+      <h4 data-i18n="nav.kontakt">Kontakt</h4>
+      <div class="fl">Beim Berliner Tor 2<br>20099 Hamburg<br><a href="tel:+4940243400">040 24 34 00</a><br><span data-i18n="tb.hours">Mo bis Fr, 10.30 bis 18.30 Uhr</span></div>
     </div>
     <div>
-      <h4>Seiten</h4>
-      <div class="fl"><a href="#ablauf">Ablauf</a><br><a href="#leistungen">Ausbildung</a><br><a href="#preise">Preise</a><br><a href="#team">Team</a></div>
+      <h4 data-i18n="footer.pages">Seiten</h4>
+      <div class="fl"><a href="#ablauf" data-i18n="nav.ablauf">Ablauf</a><br><a href="#leistungen" data-i18n="nav.ausbildung">Ausbildung</a><br><a href="#preise" data-i18n="nav.preise">Preise</a><br><a href="#team" data-i18n="nav.team">Team</a></div>
     </div>
   </div>
   <div class="f-bot">
@@ -605,6 +610,78 @@
   var hdr = document.getElementById('hdr');
   var onScroll = function(){ if(window.scrollY > 12){ hdr.classList.add('scrolled'); } else { hdr.classList.remove('scrolled'); } };
   window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  // language switch (DE default, RU overrides; reviews stay verbatim)
+  var RU = {
+    'tb.loc':'Филиал Berliner Tor, Beim Berliner Tor 2, Гамбург',
+    'tb.hours':'Пн до Пт, 10.30 до 18.30',
+    'brand.sub':'Гамбург, Berliner Tor',
+    'nav.ablauf':'Этапы','nav.ausbildung':'Обучение','nav.preise':'Цены','nav.team':'Команда','nav.kontakt':'Контакты',
+    'cta.termin':'Записаться',
+    'hero.eyebrow':'<i>D</i>Автошкола у Berliner Tor',
+    'hero.h1':'Уверенно <em>к цели</em>. Ваши права в Гамбурге.',
+    'hero.lead':'Теория и практика для категории B, на немецком и русском. С планом, который подходит вашему графику, от первого занятия до сданного экзамена.',
+    'hero.m1':'Базовая цена, категория B','hero.m2i':'языка','hero.m2':'немецкий и русский','hero.m3':'метро и электричка',
+    'hero.card.b':'Есть свободные места','hero.card.s':'Запись у Berliner Tor',
+    'mq1':'Категория B','mq2':'Автомат и механика','mq3':'Немецкий и русский','mq4':'Теория включена','mq5':'Центр, Berliner Tor','mq6':'Индивидуальный план',
+    'usp.eyebrow':'<i>D</i>Почему Denis Fahrschule','usp.h2':'Учитесь в своём темпе и на своём языке',
+    'usp1.h3':'Категория B','usp1.p':'Автомат или механика, при желании с прицепом (B и BE). Вы выбираете, что вам подходит.',
+    'usp2.h3':'Два языка','usp2.p':'Занятия и консультации на немецком и русском. Вопросы разбираем так, чтобы вам всё было понятно.',
+    'usp3.h3':'Теория включена','usp3.p':'Все необходимые часы теории входят в базовую цену, с понятными учебными материалами.',
+    'usp4.h3':'Удобное расположение','usp4.p':'Прямо у Berliner Tor, рядом метро и электричка. Удобно добираться со всего Гамбурга.',
+    'about.tag':'Наш класс теории','about.eyebrow':'<i>D</i>Добро пожаловать','about.h2':'У нас вы научитесь уверенно водить',
+    'about.p1':'Быть мобильным сегодня просто необходимо. Уверенно водить машину нужно многим, и в работе, и в повседневной жизни. Если вы хотите получить права, мы сопровождаем вас от первого занятия до сданного экзамена.',
+    'about.p2':'Наши опытные инструкторы учат вас уверенно водить и правильно оценивать ситуацию на дороге. Теория и практика идут рука об руку, с понятными материалами и большой практикой. План занятий вы составляете вместе со своим инструктором.',
+    'about.motto':'Индивидуальный подход и доброе отношение к каждому ученику.','about.by':'Наш принцип в каждом обучении',
+    'ablauf.eyebrow':'<i>D</i>Ваш путь к правам','ablauf.h2':'Как проходит обучение',
+    'step1.h3':'Запись и консультация','step1.p':'Обсуждаем ваши цели, категорию B или B и BE, автомат или механику, и планируем старт.',
+    'step2.h3':'Теория','step2.p':'Основы на занятиях, понятно объясняем на немецком или русском, все обязательные часы включены.',
+    'step3.h3':'Практика','step3.p':'Уроки вождения в вашем темпе, а также особые поездки по загороду, автобану и в тёмное время.',
+    'step4.h3':'Экзамен','step4.p':'Целенаправленно готовим вас к теории и практике, чтобы вы шли на экзамен уверенно.',
+    'leist.eyebrow':'<i>D</i>Обучение','leist.h2':'Всё для прав категории B',
+    'lrow1.h3':'Категория B и B плюс BE','lrow1.p':'Базовое обучение на легковой автомобиль, при желании с прицепом. При совместной записи базовая цена оплачивается только один раз.',
+    'lrow2.h3':'Автомат или механика','lrow2.p':'Вы учитесь на той коробке передач, которая вам подходит. У нас доступны оба варианта.',
+    'lrow3.h3':'Теория включена','lrow3.p':'Все необходимые часы теории уже входят в базовую цену, с понятными материалами.',
+    'lrow4.h3':'Немецкий и русский','lrow4.p':'Вопросы разбираем на том языке, на котором вам комфортно. Наша команда говорит на обоих.',
+    'preise.eyebrow':'<i>D</i>Цены','preise.h2':'Прозрачно, без сюрпризов','price.ab':'от',
+    'price.h3':'Базовая цена, категория B','price.p':'Действует также для комбинации B и BE. При одновременной записи базовая цена оплачивается один раз и включает все необходимые часы теории.',
+    'price.th1':'Услуга','price.th2':'Цена',
+    'prow1':'Базовая цена, категория B (теория включена)','prow2':'Допуск к теоретическому экзамену','prow3':'Допуск к практическому экзамену','prow4':'Урок вождения, учебная поездка (45 мин.)','prow5':'Урок вождения на автомате (45 мин.)','prow6':'Особая поездка на автомате (45 мин.)','prow7':'Особая поездка по трассе или загородной дороге','prow8':'Особая поездка по автобану','prow9':'Особая поездка в сумерках и темноте',
+    'price.note':'Все цены в евро. Для личной консультации звоните нам.',
+    'veh.eyebrow':'<i>D</i>Автомобили','veh.h2':'Вы тренируетесь на современных автомобилях',
+    'veh.p':'Ухоженные, современные машины на автомате и механике. С первого урока вы за рулём автомобиля, которым легко и безопасно управлять, прямо в центре Гамбурга.',
+    'vchip1':'Автомат и механика','vchip2':'Регулярное обслуживание','vchip3':'Практика в городе',
+    'team.eyebrow':'<i>D</i>Команда','team.h2':'Ваши права, наша цель',
+    'role.gf':'Руководитель','role.eh':'Первая помощь, офис Berliner Tor','role.fl':'Инструктор','team.lang':'Немецкий, русский',
+    'rev.eyebrow':'<i>D</i>Отзывы','rev.h2':'Что говорят наши ученики','rev.src':'Отзыв в Google',
+    'cta.h2':'Начните обучение у Berliner Tor','cta.p':'Позвоните или заходите к нам. Мы с радостью проконсультируем на немецком или русском и найдём удобное время.','cta.call':'Позвонить: 040 24 34 00',
+    'kontakt.eyebrow':'<i>D</i>Контакты','kontakt.h2':'Заходите к нам у Berliner Tor',
+    'k.addr':'Адрес','k.tel':'Телефон','k.hours':'Часы работы','k.fax':'Факс','k.call':'Позвонить',
+    'kmap.h3':'Филиал Berliner Tor','kmap.p':'Beim Berliner Tor 2, 20099 Гамбург. Прямо у станций Berliner Tor, метро и электричка, в центре и удобно добираться.',
+    'footer.p':'Автошкола у Berliner Tor в Гамбурге. Права категории B на немецком и русском, с индивидуальным подходом.','footer.pages':'Разделы',
+    '__title__':'Denis Fahrschule Гамбург | Права категории B, немецкий и русский'
+  };
+  var nodes = document.querySelectorAll('[data-i18n]');
+  var DE = {}, DE_TITLE = document.title;
+  nodes.forEach(function(el){ var k = el.getAttribute('data-i18n'); if(DE[k]==null) DE[k] = el.innerHTML; });
+  function setLang(l){
+    var ru = (l === 'ru');
+    nodes.forEach(function(el){
+      var k = el.getAttribute('data-i18n');
+      var v = ru ? (RU[k] != null ? RU[k] : DE[k]) : DE[k];
+      if(v != null) el.innerHTML = v;
+    });
+    document.title = ru ? (RU.__title__ || DE_TITLE) : DE_TITLE;
+    document.documentElement.lang = l;
+    document.querySelectorAll('.langsw button').forEach(function(b){ b.classList.toggle('active', b.getAttribute('data-lang') === l); });
+    try { localStorage.setItem('denis_lang', l); } catch(e){}
+  }
+  document.querySelectorAll('.langsw button').forEach(function(b){
+    b.addEventListener('click', function(){ setLang(b.getAttribute('data-lang')); });
+  });
+  var saved = 'de';
+  try { saved = localStorage.getItem('denis_lang') || 'de'; } catch(e){}
+  setLang(saved);
 </script>
 </body>
 </html>

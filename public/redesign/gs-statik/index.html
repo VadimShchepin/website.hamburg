@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GS-Ingenieure Germer &amp; Petersen | Tragwerksplanung in Bad Oldesloe</title>
+<meta name="description" content="GS-Ingenieure Germer & Petersen: Tragwerksplanung, Statik und Nachweise fuer Neubau und Bestand. Seit 1986 aus Bad Oldesloe, taetig in Schleswig-Holstein, Hamburg, Niedersachsen und Mecklenburg-Vorpommern.">
+<link rel="icon" href="/redesign/gs-statik/assets/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --rot:#8c1513;
+  --rot-dunkel:#5c0e0d;
+  --grau:#676d71;
+  --grau-hell:#9a9fa2;
+  --tinte:#26282a;
+  --hintergrund:#f7f6f5;
+  --karte:#ffffff;
+  --linie:#e4e1de;
+  --schatten:0 24px 50px -22px rgba(38,40,42,.28);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Source Sans 3",-apple-system,"Segoe UI",sans-serif;
+  background:var(--hintergrund);
+  color:var(--tinte);
+  font-size:17px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:"Archivo",Georgia,sans-serif;font-weight:600;line-height:1.16;letter-spacing:-.01em}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:12.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--rot)}
+.kicker::before{content:"";width:26px;height:2px;background:var(--rot)}
+
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 30px;border-radius:6px;font-weight:600;font-size:15.5px;transition:transform .2s ease}
+.btn-rot{background:var(--rot);color:#fff;box-shadow:0 16px 30px -10px rgba(140,21,19,.42)}
+.btn-rot:hover{transform:translateY(-2px)}
+.btn-outline{border:1.5px solid var(--tinte);color:var(--tinte)}
+.btn-outline:hover{background:rgba(38,40,42,.05)}
+
+header{position:sticky;top:0;z-index:50;background:rgba(247,246,245,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--linie)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;padding:14px 28px}
+header img.logo{height:38px;width:auto}
+.nav-links{display:flex;gap:32px}
+.nav-links a{font-size:14.5px;font-weight:500;color:var(--grau)}
+.nav-links a:hover{color:var(--rot)}
+.header-phone{font-weight:700;color:var(--rot)}
+@media (max-width:860px){.nav-links{display:none}}
+@media (max-width:600px){.header-phone{display:none}}
+
+.hero{padding:70px 0 40px}
+.hero-top{max-width:720px;margin-bottom:40px}
+.hero h1{font-size:clamp(2.1rem,3.8vw,3rem);margin:18px 0 20px}
+.hero p.lead{font-size:18px;color:var(--grau);margin-bottom:30px}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap}
+.hero-visual{border-radius:16px;overflow:hidden;box-shadow:var(--schatten);border:1px solid var(--linie)}
+.hero-visual img{width:100%}
+.hero-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px}
+.hero-strip img{border-radius:10px;aspect-ratio:16/9;object-fit:cover;border:1px solid var(--linie)}
+
+.zahlen{background:var(--tinte);color:#fff;padding:46px 0}
+.zahlen-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;text-align:center}
+.zahlen .num{font-family:"Archivo",sans-serif;font-size:clamp(2rem,3.6vw,2.7rem);color:#e8b4a9}
+.zahlen .label{font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-top:8px}
+@media (max-width:760px){.zahlen-grid{grid-template-columns:repeat(2,1fr)}}
+
+section{padding:92px 0}
+.section-head{max-width:640px;margin-bottom:48px}
+.section-head h2{font-size:clamp(1.6rem,2.8vw,2.2rem);margin-top:14px}
+.section-head p{color:var(--grau);margin-top:14px;font-size:16.5px}
+
+.leistungen-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.leistung-card{background:var(--karte);border-radius:12px;padding:28px;border:1px solid var(--linie)}
+.leistung-card .num{font-family:"Archivo",sans-serif;color:var(--rot);font-size:14px;margin-bottom:12px}
+.leistung-card h3{font-size:17.5px;margin-bottom:8px}
+.leistung-card p{font-size:14px;color:var(--grau)}
+@media (max-width:900px){.leistungen-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.leistungen-grid{grid-template-columns:1fr}}
+
+.projekte{background:var(--karte);border-top:1px solid var(--linie);border-bottom:1px solid var(--linie)}
+.projekte-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.projekt-card{border-radius:12px;overflow:hidden;border:1px solid var(--linie);background:#fff}
+.projekt-card img{width:100%;aspect-ratio:4/3;object-fit:cover;background:#eee}
+.projekt-card .cap{padding:16px 18px}
+.projekt-card .cap .tag{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--rot);font-weight:700}
+.projekt-card .cap h3{font-size:15px;margin-top:6px;font-family:"Source Sans 3",sans-serif;font-weight:600}
+.projekt-card .cap p{font-size:13px;color:var(--grau);margin-top:4px}
+@media (max-width:900px){.projekte-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.projekte-grid{grid-template-columns:1fr}}
+
+.historie{display:flex;flex-wrap:wrap;gap:0;border-top:2px solid var(--linie);margin-top:10px}
+.historie .jahr{flex:1;min-width:160px;padding:26px 20px 26px 0;border-left:2px solid var(--rot);padding-left:20px;margin-left:-2px}
+.historie .jahr .y{font-family:"Archivo",sans-serif;color:var(--rot);font-size:22px}
+.historie .jahr .t{font-size:14px;color:var(--grau);margin-top:6px}
+
+.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.team-card{text-align:left}
+.team-card img{border-radius:10px;aspect-ratio:1/1;object-fit:cover;margin-bottom:12px;border:1px solid var(--linie)}
+.team-card strong{display:block;font-size:15px}
+.team-card span{font-size:13px;color:var(--grau)}
+@media (max-width:860px){.team-grid{grid-template-columns:repeat(2,1fr)}}
+
+.gebiet{background:var(--tinte);color:#fff}
+.gebiet-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.gebiet .content ul{margin-top:20px;display:grid;gap:12px}
+.gebiet .content li{display:flex;gap:10px;font-size:15.5px}
+.gebiet .content li::before{content:"";flex:none;width:7px;height:7px;background:#e8b4a9;border-radius:2px;margin-top:8px}
+.gebiet .kicker{color:#e8b4a9}
+.gebiet .kicker::before{background:#e8b4a9}
+@media (max-width:860px){.gebiet-grid{grid-template-columns:1fr}}
+
+.cta{background:linear-gradient(135deg,var(--rot),var(--rot-dunkel));color:#fff;border-radius:24px;padding:64px;text-align:center}
+.cta h2{font-size:clamp(1.7rem,3vw,2.3rem);max-width:600px;margin:0 auto 16px}
+.cta p{color:rgba(255,255,255,.88);max-width:520px;margin:0 auto 30px;font-size:16.5px}
+.cta-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--tinte);color:rgba(255,255,255,.72);padding:60px 0 32px;font-size:14.5px}
+.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px}
+.footer-grid h3{color:#fff;font-size:14px;margin-bottom:16px;letter-spacing:.05em;text-transform:uppercase}
+.footer-grid ul{display:grid;gap:9px}
+.footer-grid a:hover{color:#fff}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:44px;padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px;color:rgba(255,255,255,.42)}
+.footer-bottom a{color:rgba(255,255,255,.42)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="#"><img class="logo" src="/redesign/gs-statik/assets/logo.png" alt="GS-Ingenieure Germer und Petersen Logo"></a>
+    <div class="nav-links">
+      <a href="#leistungen">Leistungen</a>
+      <a href="#projekte">Projekte</a>
+      <a href="#team">Team</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
+    <div class="header-phone">04531 88 55 55</div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-top">
+      <span class="kicker">Tragwerksplanung, seit 1986 in Bad Oldesloe</span>
+      <h1>Statik, die haelt, was die Architektur verspricht.</h1>
+      <p class="lead">GS-Ingenieure Germer &amp; Petersen plant Tragwerke fuer Neubau und Bestand, von der Statik bis zum Schall- und Brandschutznachweis. Pruefbefreite und beratende Ingenieure, taetig in Schleswig-Holstein, Hamburg, Niedersachsen und Mecklenburg-Vorpommern.</p>
+      <div class="hero-actions">
+        <a href="#kontakt" class="btn btn-rot">Projekt anfragen</a>
+        <a href="#projekte" class="btn btn-outline">Projekte ansehen</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <img src="/redesign/gs-statik/assets/images/hero-slider-0.webp" alt="Tragwerksplanung Einfamilienhaus mit Bewehrungsplan, Architekt Prof. Moths Architekten">
+    </div>
+    <div class="hero-strip">
+      <img src="/redesign/gs-statik/assets/images/hero-slider-1.webp" alt="SAGA Siedlungs-Aktiengesellschaft, 24 Wohneinheiten und eine Gewerbeeinheit">
+      <img src="/redesign/gs-statik/assets/images/hero-slider-2.webp" alt="Neubau IBA-Pavillon Weimarer Platz, Architekten Kunst und Herbert">
+      <img src="/redesign/gs-statik/assets/images/hero-slider-3.webp" alt="Neubau von drei Stadtvillen in Ahrensburg, Architekt Volker Schultz-Meistering">
+    </div>
+  </div>
+</section>
+
+<div class="zahlen">
+  <div class="wrap zahlen-grid">
+    <div><div class="num">1986</div><div class="label">Buerogruendung</div></div>
+    <div><div class="num">40</div><div class="label">Jahre Tragwerksplanung</div></div>
+    <div><div class="num">8</div><div class="label">Ingenieure &amp; Bauzeichner</div></div>
+    <div><div class="num">4</div><div class="label">Bundeslaender im Einsatzgebiet</div></div>
+  </div>
+</div>
+
+<section id="leistungen">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Leistungen</span>
+      <h2>Von der Statik bis zum Bestand.</h2>
+      <p>Als pruefbefreite und beratende Ingenieure begleiten wir Bauvorhaben von der ersten Berechnung bis zur Abnahme.</p>
+    </div>
+    <div class="leistungen-grid">
+      <div class="leistung-card"><div class="num">01</div><h3>Statische Berechnung</h3><p>Tragwerksplanung fuer Neubau, Anbau, Umbau und Aufstockung.</p></div>
+      <div class="leistung-card"><div class="num">02</div><h3>Energieeinsparnachweise</h3><p>Nachweise nach GEG fuer Wohn- und Gewerbebauten.</p></div>
+      <div class="leistung-card"><div class="num">03</div><h3>Schallschutznachweise</h3><p>Bauakustische Nachweise fuer Wohnungsbau und Bestand.</p></div>
+      <div class="leistung-card"><div class="num">04</div><h3>Baulicher Brandschutz</h3><p>Brandschutznachweise fuer Neubau und Bauen im Bestand.</p></div>
+      <div class="leistung-card"><div class="num">05</div><h3>Schal- &amp; Bewehrungsplaene</h3><p>Ausfuehrungsplaene fuer den Rohbau, praxisnah fuer die Baustelle.</p></div>
+      <div class="leistung-card"><div class="num">06</div><h3>Bauen im Bestand</h3><p>Umbau, Instandsetzung und Nachgruendung bestehender Gebaeude.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="projekte" id="projekte">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Projekte</span>
+      <h2>Ein Ausschnitt aus 40 Jahren Tragwerksplanung.</h2>
+      <p>Zusammen mit Architekturbueros aus der Region geplant, von der Kita bis zur Seniorenwohnanlage.</p>
+    </div>
+    <div class="projekte-grid">
+      <div class="projekt-card"><img src="/redesign/gs-statik/assets/projects/gewerbebau-1.webp" alt="Gewerbebau, Architekt Prof. Moths Architekten"><div class="cap"><span class="tag">Gewerbebau</span><h3>Neubau Gewerbehalle</h3><p>Architekt: Prof. Moths Architekten</p></div></div>
+      <div class="projekt-card"><img src="/redesign/gs-statik/assets/projects/gewerbebau-2.webp" alt="Neubau Gaestekate Johannes Hospiz Elmshorn"><div class="cap"><span class="tag">Gewerbebau</span><h3>Gaestekate, Johannes Hospiz Elmshorn</h3><p>Architekt: PlanWerk deg</p></div></div>
+      <div class="projekt-card"><img src="/redesign/gs-statik/assets/projects/kita-barmstedt.webp" alt="Neubau Kindertagesstaette Barmstedt"><div class="cap"><span class="tag">Kommunal</span><h3>Kindertagesstaette, Barmstedt</h3><p>Planung: BKSA Hamburg GmbH</p></div></div>
+      <div class="projekt-card"><img src="/redesign/gs-statik/assets/projects/bauspielplatz-hexenberg.webp" alt="Neubau Bauspielplatz Hexenberg, Massivholzbauweise"><div class="cap"><span class="tag">Holzbau</span><h3>Bauspielplatz Hexenberg</h3><p>Architekt: Dipl.-Ing. (FH) Jan Hormann</p></div></div>
+      <div class="projekt-card"><img src="/redesign/gs-statik/assets/projects/seniorenwohnanlage.webp" alt="Neubau Seniorenwohnanlage, 139 Wohneinheiten in Hamburg"><div class="cap"><span class="tag">Wohnungsbau</span><h3>Seniorenwohnanlage, 139 Einheiten</h3><p>Hamburg, Leistungsphasen 1-6</p></div></div>
+      <div class="projekt-card"><img src="/redesign/gs-statik/assets/projects/doppelhaeuser-bad-oldesloe.webp" alt="Neubau von 6 Doppelhaeusern in Bad Oldesloe"><div class="cap"><span class="tag">Wohnungsbau</span><h3>6 Doppelhaeuser, Bad Oldesloe</h3><p>Architektin: Dipl.-Ing. Brigitte Schulz</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Geschichte</span>
+      <h2>Ein Buero, dreimal weitergegeben.</h2>
+    </div>
+    <div class="historie">
+      <div class="jahr"><div class="y">1986</div><div class="t">Buerogruendung durch Kay Gladigau</div></div>
+      <div class="jahr"><div class="y">1990</div><div class="t">Partnerschaft mit Wolfgang Schmahlfeldt</div></div>
+      <div class="jahr"><div class="y">2014</div><div class="t">Nachfolge durch Bernd Germer, Firmierung als GS-Ingenieure</div></div>
+      <div class="jahr"><div class="y">2017</div><div class="t">Andre Petersen wird Partner</div></div>
+      <div class="jahr"><div class="y">2020</div><div class="t">Umstellung auf 3D-Gebaeudemodelle als BIM-Vorbereitung</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="team" style="background:var(--karte);border-top:1px solid var(--linie);border-bottom:1px solid var(--linie)">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Team</span>
+      <h2>Acht Fachleute, ein Buero in Bad Oldesloe.</h2>
+    </div>
+    <div class="team-grid">
+      <div class="team-card"><img src="/redesign/gs-statik/assets/team/bernd_germer.webp" alt="Bernd Germer"><strong>Bernd Germer</strong><span>Dipl.-Ing. (FH), Partner, pruefbefreiter Ingenieur</span></div>
+      <div class="team-card"><img src="/redesign/gs-statik/assets/team/andre_petersen.webp" alt="Andre Petersen"><strong>Andre Petersen</strong><span>Master of Engineering, Partner, pruefbefreiter Ingenieur</span></div>
+      <div class="team-card"><img src="/redesign/gs-statik/assets/team/kay_gladigau.webp" alt="Kay Gladigau"><strong>Kay Gladigau</strong><span>Dipl.-Ing., leitender Angestellter, pruefbefreiter Ingenieur</span></div>
+      <div class="team-card"><img src="/redesign/gs-statik/assets/team/britta_schaefer.webp" alt="Britta Schaefer"><strong>Britta Schaefer</strong><span>Bauzeichnerin</span></div>
+      <div class="team-card"><img src="/redesign/gs-statik/assets/team/susanne_dietz.webp" alt="Susanne Dietz"><strong>Susanne Dietz</strong><span>Bauzeichnerin</span></div>
+      <div class="team-card"><img src="/redesign/gs-statik/assets/team/ewa_maletzki.webp" alt="Ewa Maletzki"><strong>Ewa Maletzki</strong><span>Tragwerksplanerin, Master of Engineering</span></div>
+      <div class="team-card"><img src="/redesign/gs-statik/assets/team/jana_wagner.webp" alt="Jana Wagner"><strong>Jana Wagner</strong><span>Tragwerksplanerin, Bachelor of Engineering</span></div>
+      <div class="team-card"><img src="/redesign/gs-statik/assets/team/jaquelin_sader_gs_statik_bad_oldesloe.webp" alt="Jaqueline Sader"><strong>Jaqueline Sader</strong><span>Studentische Mitarbeiterin Tragwerksplanung</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="gebiet">
+  <div class="wrap gebiet-grid">
+    <div class="content">
+      <span class="kicker">Einsatzgebiet</span>
+      <h2>Vier Bundeslaender, ein Ansprechpartner.</h2>
+      <p style="color:rgba(255,255,255,.8);margin-top:14px">Von Bad Oldesloe aus planen wir Tragwerke fuer Architekturbueros und Bautraeger in vier Bundeslaendern.</p>
+      <ul>
+        <li>Schleswig-Holstein</li>
+        <li>Hamburg</li>
+        <li>Niedersachsen</li>
+        <li>Mecklenburg-Vorpommern</li>
+      </ul>
+    </div>
+    <div>
+      <div class="hero-visual" style="border:1px solid rgba(255,255,255,.15)">
+        <img src="/redesign/gs-statik/assets/images/hero-slider-2.webp" alt="Neubau IBA-Pavillon, Weimarer Platz">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta">
+      <h2>Planen Sie einen Neubau, eine Aufstockung oder einen Umbau im Bestand?</h2>
+      <p>Schicken Sie uns Ihre Planungsunterlagen, wir melden uns mit einer Einschaetzung zu Statik, Nachweisen und Ablauf.</p>
+      <div class="cta-actions">
+        <a href="tel:+494531885555" class="btn" style="background:#fff;color:var(--rot-dunkel)">04531 88 55 55 anrufen</a>
+        <a href="mailto:info@gs-statik.de" class="btn btn-outline" style="border-color:rgba(255,255,255,.4);color:#fff">info@gs-statik.de</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="kontakt">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h3>GS-Ingenieure Germer &amp; Petersen</h3>
+        <p style="max-width:280px">Ingenieurpartnerschaft fuer das Bauwesen mbB. Tragwerksplanung seit 1986 aus Bad Oldesloe.</p>
+      </div>
+      <div>
+        <h3>Kontakt</h3>
+        <ul>
+          <li>Hagenstrasse 16</li>
+          <li>23843 Bad Oldesloe</li>
+          <li><a href="tel:+494531885555">Tel. 04531 88 55 55</a></li>
+          <li><a href="mailto:info@gs-statik.de">info@gs-statik.de</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Buero</h3>
+        <ul>
+          <li>Mo.-Do. 8:00-12:30 und 13:00-16:00</li>
+          <li>Fr. 8:00-13:00</li>
+          <li>Partnerregister Amtsgericht Kiel, PR 320 KI</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; GS-Ingenieure Germer &amp; Petersen mbB</span>
+      <div style="display:flex;gap:22px">
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

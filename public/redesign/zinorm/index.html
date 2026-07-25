@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zinorm | Technischer Grosshandel fuer Norm- und Verbindungstechnik, Ahrensburg</title>
+<meta name="description" content="Zimmermann Norm- und Verbindungstechnik GmbH: technischer Grosshandel fuer Verschluesse, Normteile, Gasdruckfedern und mehr. In dritter Generation seit 1952 in Ahrensburg, DIN EN ISO 9001:2015 zertifiziert.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="/redesign/zinorm/assets/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --graphit:#221f1f;
+  --graphit-2:#332f2f;
+  --rot:#d52c39;
+  --rot-hell:#e8535e;
+  --rot-dunkel:#a3202b;
+  --grau-dunkel:#4f4c4c;
+  --grau:#666666;
+  --grau-hell:#999999;
+  --linie:#e2e2e2;
+  --hintergrund:#f5f4f2;
+  --karte:#ffffff;
+  --schatten:0 24px 50px -20px rgba(34,31,31,.28);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Space Grotesk",-apple-system,"Segoe UI",sans-serif;
+  background:var(--hintergrund);
+  color:var(--graphit);
+  font-size:17px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-weight:600;letter-spacing:-.01em;line-height:1.14}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.mono{font-family:"IBM Plex Mono",monospace}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+
+.kicker{
+  display:inline-flex;align-items:center;gap:10px;
+  font-family:"IBM Plex Mono",monospace;
+  font-size:12.5px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--rot);
+}
+.kicker::before{content:"";width:26px;height:2px;background:var(--rot)}
+
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:15px 30px;border-radius:6px;
+  font-weight:600;font-size:15.5px;letter-spacing:.01em;
+  transition:transform .2s ease, box-shadow .2s ease, background .2s ease;
+  border:1px solid transparent;
+}
+.btn-rot{background:var(--rot);color:#fff;box-shadow:0 14px 28px -10px rgba(213,44,57,.45)}
+.btn-rot:hover{background:var(--rot-dunkel);transform:translateY(-2px)}
+.btn-outline{border-color:rgba(255,255,255,.35);color:#fff}
+.btn-outline:hover{background:rgba(255,255,255,.08)}
+.btn-outline-dunkel{border-color:rgba(34,31,31,.25);color:var(--graphit)}
+.btn-outline-dunkel:hover{background:rgba(34,31,31,.05)}
+
+/* Header */
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(34,31,31,.94);backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+header .wrap{display:flex;align-items:center;justify-content:space-between;padding:16px 28px}
+.logo-box{background:#fff;padding:8px 14px;border-radius:6px}
+.logo-box img{height:26px;width:auto}
+nav{display:flex;align-items:center;gap:34px}
+nav a{color:rgba(255,255,255,.78);font-size:14.5px;font-weight:500}
+nav a:hover{color:#fff}
+.nav-links{display:flex;gap:34px}
+.header-phone{color:#fff;font-family:"IBM Plex Mono",monospace;font-size:14px;display:flex;align-items:center;gap:8px}
+.header-phone strong{color:var(--rot-hell)}
+@media (max-width:860px){.nav-links{display:none}}
+@media (max-width:640px){.header-phone{display:none}}
+
+/* Hero */
+.hero{
+  position:relative;color:#fff;
+  background:linear-gradient(180deg,rgba(20,18,18,.55),rgba(20,18,18,.82)),var(--graphit) url('assets/hero-warehouse.webp') center/cover no-repeat;
+  padding:120px 0 100px;
+}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:end}
+.hero h1{font-size:clamp(2.4rem,4.4vw,3.6rem);margin:20px 0 22px}
+.hero p.lead{font-size:19px;color:rgba(255,255,255,.82);max-width:560px;margin-bottom:34px}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap}
+.hero-facts{
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);
+  border-radius:14px;padding:30px;backdrop-filter:blur(6px);
+}
+.hero-facts .fact{display:flex;justify-content:space-between;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.12);font-size:14.5px}
+.hero-facts .fact:last-child{border-bottom:none}
+.hero-facts .fact strong{font-family:"IBM Plex Mono",monospace;color:var(--rot-hell);font-weight:500}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr}}
+
+/* Numeral band */
+.zahlen{background:var(--graphit-2);color:#fff;padding:50px 0}
+.zahlen-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;text-align:center}
+.zahlen .num{font-size:clamp(2.2rem,4vw,3.1rem);color:var(--rot-hell);font-weight:600;line-height:1}
+.zahlen .label{font-family:"IBM Plex Mono",monospace;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.65);margin-top:10px}
+@media (max-width:760px){.zahlen-grid{grid-template-columns:repeat(2,1fr)}}
+
+/* Sections */
+section{padding:96px 0}
+.section-head{max-width:640px;margin-bottom:52px}
+.section-head h2{font-size:clamp(1.7rem,3vw,2.3rem);margin-top:16px}
+.section-head p{color:var(--grau);margin-top:16px;font-size:16.5px}
+
+/* Product grid */
+.produkte-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.produkt-card{
+  background:var(--karte);border-radius:12px;overflow:hidden;border:1px solid var(--linie);
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+.produkt-card:hover{transform:translateY(-4px);box-shadow:var(--schatten)}
+.produkt-card img{width:100%;aspect-ratio:1/1;object-fit:cover;background:#eee}
+.produkt-card .cap{padding:16px 18px}
+.produkt-card .cap .tag{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--rot);letter-spacing:.08em}
+.produkt-card .cap h3{font-size:16px;margin-top:6px}
+@media (max-width:900px){.produkte-grid{grid-template-columns:repeat(2,1fr)}}
+
+/* Lieferprogramm split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.split img{border-radius:14px;box-shadow:var(--schatten)}
+.split .content ul{margin-top:24px;display:grid;gap:14px}
+.split .content li{display:flex;gap:12px;font-size:15.5px;color:var(--graphit)}
+.split .content li::before{content:"";flex:none;width:8px;height:8px;background:var(--rot);border-radius:2px;margin-top:7px}
+@media (max-width:900px){.split{grid-template-columns:1fr}}
+
+/* Anwendungen */
+.anwendungen-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.anwendung-card{border-radius:14px;overflow:hidden;position:relative;box-shadow:var(--schatten)}
+.anwendung-card img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.anwendung-card .label{
+  position:absolute;left:0;right:0;bottom:0;padding:20px 22px;
+  background:linear-gradient(0deg,rgba(20,18,18,.88),transparent);color:#fff;
+}
+.anwendung-card .label span{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--rot-hell);letter-spacing:.08em}
+.anwendung-card .label h3{font-size:16.5px;margin-top:6px}
+@media (max-width:760px){.anwendungen-grid{grid-template-columns:1fr}}
+
+/* Team band */
+.team-band{background:var(--graphit);color:#fff}
+.team-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.team-grid img{border-radius:14px}
+.team-grid blockquote{font-size:22px;line-height:1.5;font-weight:500}
+.team-grid .attrib{margin-top:22px;color:rgba(255,255,255,.6);font-family:"IBM Plex Mono",monospace;font-size:13.5px}
+.usp-list{margin-top:30px;display:grid;gap:12px}
+.usp-list li{display:flex;gap:10px;font-size:15px;color:rgba(255,255,255,.85)}
+.usp-list li::before{content:"";flex:none;width:7px;height:7px;background:var(--rot-hell);border-radius:2px;margin-top:7px}
+@media (max-width:900px){.team-grid{grid-template-columns:1fr}}
+
+/* Trust band */
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.trust-card{background:var(--karte);border:1px solid var(--linie);border-radius:12px;padding:28px;display:flex;gap:18px;align-items:flex-start}
+.trust-card img{width:52px;height:auto;flex:none}
+.trust-card h3{font-size:15.5px;margin-bottom:8px}
+.trust-card p{font-size:14px;color:var(--grau)}
+@media (max-width:860px){.trust{grid-template-columns:1fr}}
+
+/* CTA */
+.cta{background:linear-gradient(135deg,var(--rot),var(--rot-dunkel));color:#fff;border-radius:24px;padding:64px;text-align:center}
+.cta h2{font-size:clamp(1.8rem,3.2vw,2.5rem);max-width:640px;margin:0 auto 18px}
+.cta p{color:rgba(255,255,255,.88);max-width:560px;margin:0 auto 32px;font-size:16.5px}
+.cta-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+/* Footer */
+footer{background:var(--graphit);color:rgba(255,255,255,.7);padding:64px 0 34px;font-size:14.5px}
+.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:40px}
+.footer-grid h3{color:#fff;font-size:14px;margin-bottom:16px;font-family:"IBM Plex Mono",monospace;letter-spacing:.06em}
+.footer-grid ul{display:grid;gap:9px}
+.footer-grid a:hover{color:#fff}
+.footer-logo{background:#fff;display:inline-block;padding:8px 14px;border-radius:6px;margin-bottom:16px}
+.footer-logo img{height:22px}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:48px;padding-top:26px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;font-size:13px;color:rgba(255,255,255,.45)}
+.footer-bottom a{color:rgba(255,255,255,.45)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="#" class="logo-box"><img src="/redesign/zinorm/assets/logo.png" alt="Zinorm Logo"></a>
+    <nav>
+      <div class="nav-links">
+        <a href="#produkte">Produkte</a>
+        <a href="#anwendungen">Anwendungen</a>
+        <a href="#team">Ueber uns</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+    </nav>
+    <div class="header-phone">Tel. <strong>04102 677 12 0</strong></div>
+  </div>
+</header>
+
+<section class="hero" style="padding-top:110px">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker">Technischer Grosshandel, seit 1952</span>
+      <h1>Norm- und Verbindungstechnik aus einem Lager, das wirklich liefert.</h1>
+      <p class="lead">Zinorm versorgt Konstrukteure und Einkaeufer in ganz Deutschland mit Verschluessen, Normteilen, Gasdruckfedern und Sonderteilen, direkt aus dem eigenen Lager in Ahrensburg. Gefuehrt in dritter Generation von Niels und Lars Zimmermann.</p>
+      <div class="hero-actions">
+        <a href="#kontakt" class="btn btn-rot">Ansprechpartner finden</a>
+        <a href="#produkte" class="btn btn-outline">Sortiment ansehen</a>
+      </div>
+    </div>
+    <div class="hero-facts">
+      <div class="fact"><span>Gegruendet</span><strong>1952</strong></div>
+      <div class="fact"><span>Fuehrung</span><strong>3. Generation</strong></div>
+      <div class="fact"><span>Zertifizierung</span><strong>DIN EN ISO 9001:2015</strong></div>
+      <div class="fact"><span>Sitz</span><strong>Ahrensburg</strong></div>
+      <div class="fact"><span>Bestellung</span><strong>Rund um die Uhr online</strong></div>
+    </div>
+  </div>
+</section>
+
+<div class="zahlen">
+  <div class="wrap zahlen-grid">
+    <div><div class="num">1952</div><div class="label">Gruendungsjahr</div></div>
+    <div><div class="num">3.</div><div class="label">Generation Zimmermann</div></div>
+    <div><div class="num">9001</div><div class="label">DIN EN ISO 2015</div></div>
+    <div><div class="num">24/7</div><div class="label">Online bestellbar</div></div>
+  </div>
+</div>
+
+<section id="produkte">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Sortiment</span>
+      <h2>Sieben Produktwelten, ein Ansprechpartner.</h2>
+      <p>Vom Verschluss bis zur Gasdruckfeder: Zinorm fuehrt Markenprodukte von Southco, Ganter, Accuride und Destaco direkt ab Lager in Ahrensburg.</p>
+    </div>
+    <div class="produkte-grid">
+      <div class="produkt-card">
+        <img src="/redesign/zinorm/assets/product-oeffnen.webp" alt="Verschluesse und Scharniere zum Oeffnen und Schliessen" loading="lazy">
+        <div class="cap"><span class="tag">Southco</span><h3>Oeffnen &amp; Schliessen</h3></div>
+      </div>
+      <div class="produkt-card">
+        <img src="/redesign/zinorm/assets/product-verbinden.webp" alt="Normteile zum Verbinden" loading="lazy">
+        <div class="cap"><span class="tag">Ganter</span><h3>Verbinden</h3></div>
+      </div>
+      <div class="produkt-card">
+        <img src="/redesign/zinorm/assets/product-bedienen.webp" alt="Bedienelemente" loading="lazy">
+        <div class="cap"><span class="tag">Ganter</span><h3>Bedienen</h3></div>
+      </div>
+      <div class="produkt-card">
+        <img src="/redesign/zinorm/assets/product-fixieren.webp" alt="Gummipuffer zum Fixieren" loading="lazy">
+        <div class="cap"><span class="tag">Ab Lager</span><h3>Fixieren</h3></div>
+      </div>
+      <div class="produkt-card">
+        <img src="/redesign/zinorm/assets/product-daempfen.webp" alt="Gasdruckfedern zum Daempfen" loading="lazy">
+        <div class="cap"><span class="tag">Eigene Abfuellung</span><h3>Daempfen</h3></div>
+      </div>
+      <div class="produkt-card">
+        <img src="/redesign/zinorm/assets/product-filtern.webp" alt="Sinterfilter" loading="lazy">
+        <div class="cap"><span class="tag">Sinterfilter</span><h3>Filtern</h3></div>
+      </div>
+      <div class="produkt-card">
+        <img src="/redesign/zinorm/assets/product-weitere.webp" alt="Weitere Produkte, Rollen, Leuchten, Schilder" loading="lazy">
+        <div class="cap"><span class="tag">Sortiment</span><h3>Weitere Produkte</h3></div>
+      </div>
+      <div class="produkt-card" style="display:flex;align-items:center;justify-content:center;background:var(--graphit)">
+        <div class="cap" style="text-align:center">
+          <span class="tag" style="color:var(--rot-hell)">Gesamtes Sortiment</span>
+          <h3 style="color:#fff;margin-top:10px">Lieferprogramm anfragen</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--karte);border-top:1px solid var(--linie);border-bottom:1px solid var(--linie)">
+  <div class="wrap split">
+    <img src="/redesign/zinorm/assets/lieferprogramm.webp" alt="Lieferprogramm Uebersicht Zinorm">
+    <div class="content">
+      <span class="kicker">Lager</span>
+      <h2>Ein Lagerbestand, auf den sich Einkaeufer verlassen.</h2>
+      <p style="color:var(--grau);margin-top:14px">Zinorm haelt einen breiten Bestand an Norm- und Verbindungsteilen selbst vor, inklusive Gasdruckfedern, die in Kleinserien im eigenen Haus befuellt werden.</p>
+      <ul>
+        <li>Grosse Lagerbestaende direkt ab Ahrensburg</li>
+        <li>Gasdruckfedern in Kleinserien selbst gelagert und befuellt</li>
+        <li>Technische Beratung zu Sonder- und Zeichnungsteilen</li>
+        <li>Bestellung rund um die Uhr online, mit Preisen in Echtzeit</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="anwendungen">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Anwendungen</span>
+      <h2>Im Einsatz, nicht nur im Katalog.</h2>
+      <p>Ob Bootsbau oder Maschinenbau: zwei Beispiele, wie Kunden die Teile aus dem Zinorm-Lager tatsaechlich verbauen.</p>
+    </div>
+    <div class="anwendungen-grid">
+      <div class="anwendung-card">
+        <img src="/redesign/zinorm/assets/anwendung-boot.webp" alt="Bedienpanel im Bootsbau mit Zinorm-Bauteilen">
+        <div class="label"><span>Anwendung</span><h3>Bedienpanel im Bootsbau</h3></div>
+      </div>
+      <div class="anwendung-card">
+        <img src="/redesign/zinorm/assets/anwendung-amatur.webp" alt="Armatur mit Zinorm-Verschlusstechnik">
+        <div class="label"><span>Anwendung</span><h3>Armaturen- und Geraetebau</h3></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="team-band" id="team">
+  <div class="wrap team-grid">
+    <img src="/redesign/zinorm/assets/team.webp" alt="Das Team von Zinorm vor dem Firmensitz in Ahrensburg">
+    <div>
+      <span class="kicker">Unser Team</span>
+      <blockquote>&quot;Unser eingespieltes Team.&quot;</blockquote>
+      <p class="attrib">So beschreibt Zinorm die eigene Mannschaft, in dritter Generation gefuehrt von Niels und Lars Zimmermann.</p>
+      <ul class="usp-list">
+        <li>Unterstuetzung bei der Suche nach dem passenden Bauteil</li>
+        <li>Direkte Antworten auf technische Fragen am Telefon</li>
+        <li>Feste Ansprechpartner im Aussendienst, regional organisiert</li>
+        <li>Ideen und Alternativen statt nur Katalogware</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Qualitaet</span>
+      <h2>Zertifiziert, seit Generationen gepflegt.</h2>
+    </div>
+    <div class="trust">
+      <div class="trust-card">
+        <img src="/redesign/zinorm/assets/iso-zertifikat-badge.jpg" alt="DIN EN ISO 9001:2015 Zertifikat Badge">
+        <div>
+          <h3>DIN EN ISO 9001:2015</h3>
+          <p>Zertifiziertes Qualitaetsmanagement fuer Handel und Lagerhaltung.</p>
+        </div>
+      </div>
+      <div class="trust-card">
+        <img src="/redesign/zinorm/assets/parts-closeup.webp" alt="Praezisionsbauteile aus dem Zinorm-Sortiment" style="width:64px;height:64px;object-fit:cover;border-radius:8px">
+        <div>
+          <h3>Markenprodukte</h3>
+          <p>Southco, Ganter, Accuride und Destaco direkt aus einer Hand.</p>
+        </div>
+      </div>
+      <div class="trust-card">
+        <img src="/redesign/zinorm/assets/logo.png" alt="Zinorm Logo" style="width:64px;height:auto">
+        <div>
+          <h3>3. Generation Zimmermann</h3>
+          <p>Familiengefuehrt seit 1952, heute von Niels und Lars Zimmermann geleitet.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta">
+      <h2>Suchen Sie das passende Bauteil oder einen Ansprechpartner vor Ort?</h2>
+      <p>Rufen Sie uns an oder schreiben Sie uns. Das Zinorm-Team antwortet direkt mit einer konkreten Loesung.</p>
+      <div class="cta-actions">
+        <a href="tel:+494102677120" class="btn" style="background:#fff;color:var(--rot-dunkel)">04102 677 12 0 anrufen</a>
+        <a href="mailto:info@zinorm.de" class="btn btn-outline">info@zinorm.de</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="kontakt">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><img src="/redesign/zinorm/assets/logo.png" alt="Zinorm Logo"></div>
+        <p style="max-width:280px">Zimmermann Norm- und Verbindungstechnik GmbH. Technischer Grosshandel in dritter Generation, seit 1952 in Ahrensburg.</p>
+      </div>
+      <div>
+        <h3>Kontakt</h3>
+        <ul>
+          <li>Carl-Backhaus-Str. 11</li>
+          <li>22926 Ahrensburg</li>
+          <li><a href="tel:+494102677120">Tel. 04102 677 12 0</a></li>
+          <li><a href="mailto:info@zinorm.de">info@zinorm.de</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Unternehmen</h3>
+        <ul>
+          <li><a href="#produkte">Sortiment</a></li>
+          <li><a href="#team">Ueber uns</a></li>
+          <li><a href="#">Karriere</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Geschaeftsfuehrung</h3>
+        <ul>
+          <li>Niels Zimmermann</li>
+          <li>Lars Zimmermann</li>
+          <li>Amtsgericht Reinbek, HRB 2118 RE</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; Zimmermann Norm- und Verbindungstechnik GmbH</span>
+      <div style="display:flex;gap:22px">
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

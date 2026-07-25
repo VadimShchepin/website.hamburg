@@ -71,6 +71,36 @@ const redesigns = [
         sector: 'BETTEN & MATRATZEN · SESSLACH (OBERFRANKEN)',
         description: 'Nacht-und-Leinen-Stimmung: Creme, Nachtblau und Honiggold, ein dezenter Sternenhimmel als Gruss an die alte Website und gesteppte Bildrahmen wie eine Matratzennaht.',
     },
+    {
+        slug: 'zinorm',
+        firm: 'Zimmermann Norm- und Verbindungstechnik GmbH',
+        sector: 'TECHNISCHER GROSSHANDEL · AHRENSBURG · SEIT 1952',
+        description: 'Technische Praezision in Graphit und Rot, mit Katalogfotografie auf weissen Karten und einer grossen 1952 als Anker. Gebaut aus der eigenen Produktfotografie des Hauses.',
+    },
+    {
+        slug: 'meier-holzbau',
+        firm: 'Johann Meier Holzbau GmbH',
+        sector: 'ZIMMEREI · AHLERSTEDT · SEIT 1991',
+        description: 'Warmes Holzbau-Design in Creme und dunklem Holzton, mit einer Projektgalerie aus echten Baustellenfotos vom Dachstuhl bis zur Fachwerkscheune.',
+    },
+    {
+        slug: 'samad',
+        firm: 'SAMAD Export Import GmbH',
+        sector: 'TEPPICHIMPORT · HAMBURGER SPEICHERSTADT · SEIT UEBER 40 JAHREN',
+        description: 'Warme Bordeaux- und Goldtoene fuer ein Kontorhaus voller Orientteppiche, mit einer Handweberin am Webstuhl als Herkunftsgeschichte. Komplett aus der eigenen Fotografie gebaut.',
+    },
+    {
+        slug: 'gs-statik',
+        firm: 'GS-Ingenieure Germer & Petersen',
+        sector: 'TRAGWERKSPLANUNG · BAD OLDESLOE · SEIT 1986',
+        description: 'Technisches Design in Graphit und Rot, mit Architekturfotos samt echten Bewehrungsplan-Overlays als Hero und einem Team-Raster aus acht echten Portraits.',
+    },
+    {
+        slug: 'roennfeld',
+        firm: 'Rönnfeld Rollladen und Markisen GmbH',
+        sector: 'ROLLLADENBAU & SONNENSCHUTZ · QUICKBORN · SEIT 1991',
+        description: 'Klares Gelb-Anthrazit-Design nach dem eigenen Sonnenstrahlen-Logo, mit dem ganzen Team samt Fuhrpark als Hero-Foto vor dem eigenen Laden.',
+    },
 ];
 
 export default function RedesignPage() {

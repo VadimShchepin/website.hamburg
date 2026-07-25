@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rönnfeld Rollladen und Markisen GmbH | Meisterbetrieb in Quickborn</title>
+<meta name="description" content="Rönnfeld Rollladen und Markisen GmbH: Rollläden, Markisen, Sonnenschutz und Terrassenüberdachungen aus Quickborn. Meisterbetrieb seit 1991, Somfy Expert, eigene Montage und Service.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --gelb:#f5b400;
+  --gelb-dunkel:#c98f00;
+  --anthrazit:#1e2124;
+  --anthrazit-2:#2a2e32;
+  --grau:#666b6f;
+  --hintergrund:#faf9f6;
+  --karte:#ffffff;
+  --linie:#e7e5df;
+  --schatten:0 26px 54px -22px rgba(30,33,36,.3);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Manrope",-apple-system,"Segoe UI",sans-serif;
+  background:var(--hintergrund);
+  color:var(--anthrazit);
+  font-size:17px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-weight:800;line-height:1.14;letter-spacing:-.01em}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:12.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gelb-dunkel)}
+.kicker::before{content:"";width:26px;height:2px;background:var(--gelb-dunkel)}
+
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 30px;border-radius:8px;font-weight:700;font-size:15.5px;transition:transform .2s ease}
+.btn-gelb{background:var(--gelb);color:var(--anthrazit);box-shadow:0 16px 30px -10px rgba(245,180,0,.5)}
+.btn-gelb:hover{transform:translateY(-2px)}
+.btn-outline{border:1.5px solid var(--anthrazit);color:var(--anthrazit)}
+.btn-outline:hover{background:rgba(30,33,36,.05)}
+
+header{position:sticky;top:0;z-index:50;background:rgba(250,249,246,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--linie)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;padding:12px 28px}
+header img.logo{height:46px;width:auto}
+.nav-links{display:flex;gap:32px}
+.nav-links a{font-size:14.5px;font-weight:600;color:var(--grau)}
+.nav-links a:hover{color:var(--anthrazit)}
+.header-phone{font-weight:800;color:var(--anthrazit)}
+@media (max-width:860px){.nav-links{display:none}}
+@media (max-width:600px){.header-phone{display:none}}
+
+.hero{position:relative;color:#fff;background:linear-gradient(180deg,rgba(20,22,24,.45),rgba(20,22,24,.85)),var(--anthrazit) url('assets/images/hero-team-fleet.webp') center/cover no-repeat;padding:130px 0 100px}
+.hero .kicker{color:var(--gelb)}
+.hero .kicker::before{background:var(--gelb)}
+.hero h1{font-size:clamp(2.3rem,4.4vw,3.6rem);margin:20px 0 22px;max-width:780px}
+.hero p.lead{font-size:19px;color:rgba(255,255,255,.85);max-width:580px;margin-bottom:34px}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap}
+
+.zahlen{background:var(--anthrazit-2);color:#fff;padding:46px 0}
+.zahlen-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;text-align:center}
+.zahlen .num{font-size:clamp(2rem,3.6vw,2.7rem);color:var(--gelb);font-weight:800}
+.zahlen .label{font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.62);margin-top:8px}
+@media (max-width:760px){.zahlen-grid{grid-template-columns:repeat(2,1fr)}}
+
+section{padding:96px 0}
+.section-head{max-width:640px;margin-bottom:48px}
+.section-head h2{font-size:clamp(1.7rem,3vw,2.3rem);margin-top:14px}
+.section-head p{color:var(--grau);margin-top:14px;font-size:16.5px}
+
+.leistungen-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.leistung-card{background:var(--karte);border-radius:14px;padding:26px;border:1px solid var(--linie);transition:transform .2s ease, box-shadow .2s ease}
+.leistung-card:hover{transform:translateY(-3px);box-shadow:var(--schatten)}
+.leistung-card .dot{width:10px;height:10px;border-radius:3px;background:var(--gelb);margin-bottom:16px}
+.leistung-card h3{font-size:16.5px;margin-bottom:8px;font-weight:700}
+.leistung-card p{font-size:13.5px;color:var(--grau)}
+@media (max-width:900px){.leistungen-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.leistungen-grid{grid-template-columns:1fr}}
+
+.galerie{background:var(--karte);border-top:1px solid var(--linie);border-bottom:1px solid var(--linie)}
+.galerie-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.galerie-grid figure{border-radius:14px;overflow:hidden;position:relative;box-shadow:0 10px 24px -16px rgba(30,33,36,.3)}
+.galerie-grid img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.galerie-grid figcaption{position:absolute;left:0;right:0;bottom:0;padding:16px 18px;background:linear-gradient(0deg,rgba(20,22,24,.85),transparent);color:#fff;font-size:13.5px;font-weight:600}
+@media (max-width:900px){.galerie-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.galerie-grid{grid-template-columns:1fr}}
+
+.split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.split img{border-radius:16px;box-shadow:var(--schatten)}
+.split .content ul{margin-top:22px;display:grid;gap:12px}
+.split .content li{display:flex;gap:10px;font-size:15.5px}
+.split .content li::before{content:"";flex:none;width:7px;height:7px;background:var(--gelb-dunkel);border-radius:2px;margin-top:8px}
+@media (max-width:900px){.split{grid-template-columns:1fr}}
+
+.partner-band{background:var(--anthrazit);color:#fff}
+.partner-grid{display:flex;align-items:center;justify-content:center;gap:60px;flex-wrap:wrap}
+.partner-grid .badge{background:#fff;border-radius:10px;padding:14px 18px;display:flex;align-items:center;justify-content:center}
+.partner-grid .badge img{height:44px;width:auto}
+.partner-grid .label{font-size:13px;color:rgba(255,255,255,.6);letter-spacing:.06em;text-transform:uppercase}
+
+.cta{background:linear-gradient(135deg,var(--gelb),var(--gelb-dunkel));color:var(--anthrazit);border-radius:26px;padding:64px;text-align:center}
+.cta h2{font-size:clamp(1.8rem,3.2vw,2.4rem);max-width:620px;margin:0 auto 16px}
+.cta p{color:rgba(30,33,36,.78);max-width:540px;margin:0 auto 30px;font-size:16.5px}
+.cta-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--anthrazit);color:rgba(255,255,255,.72);padding:60px 0 32px;font-size:14.5px}
+.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px}
+.footer-grid h3{color:#fff;font-size:14px;margin-bottom:16px;letter-spacing:.05em;text-transform:uppercase}
+.footer-grid ul{display:grid;gap:9px}
+.footer-grid a:hover{color:#fff}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:44px;padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px;color:rgba(255,255,255,.42)}
+.footer-bottom a{color:rgba(255,255,255,.42)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="#"><img class="logo" src="/redesign/roennfeld/assets/logo.jpg" alt="Rönnfeld Rollladen und Markisen Logo"></a>
+    <div class="nav-links">
+      <a href="#leistungen">Leistungen</a>
+      <a href="#referenzen">Referenzen</a>
+      <a href="#ueber-uns">Ueber uns</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
+    <div class="header-phone">04106-99 770-20</div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="kicker">Meisterbetrieb, seit 1991 in Quickborn</span>
+    <h1>Rollläden, Markisen und Sonnenschutz aus einer Hand, von Planung bis Montage.</h1>
+    <p class="lead">Rönnfeld Rollladen und Markisen begleitet Sie von der ersten Beratung ueber das Aufmass bis zur Montage durch eigene Facharbeiter, inklusive umfassendem After-Sales-Service. Somfy Expert und Schattendealer-Partner aus Quickborn.</p>
+    <div class="hero-actions">
+      <a href="#kontakt" class="btn btn-gelb">Beratungstermin vereinbaren</a>
+      <a href="#leistungen" class="btn btn-outline" style="border-color:rgba(255,255,255,.4);color:#fff">Leistungen ansehen</a>
+    </div>
+  </div>
+</section>
+
+<div class="zahlen">
+  <div class="wrap zahlen-grid">
+    <div><div class="num">1991</div><div class="label">Gruendungsjahr</div></div>
+    <div><div class="num">220</div><div class="label">qm Ausstellungsflaeche</div></div>
+    <div><div class="num">7</div><div class="label">Produktbereiche</div></div>
+    <div><div class="num">1</div><div class="label">Meisterbetrieb, eine Montage</div></div>
+  </div>
+</div>
+
+<section id="leistungen">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Leistungen</span>
+      <h2>Alles fuer Fenster, Terrasse und Fassade.</h2>
+      <p>Von der Planung ueber das Aufmass bis zur Montage durch eigene Facharbeiter, mit umfassendem After-Sales-Service.</p>
+    </div>
+    <div class="leistungen-grid">
+      <div class="leistung-card"><div class="dot"></div><h3>Rollläden</h3><p>Roma Rollladensysteme fuer Neubau und Nachruestung.</p></div>
+      <div class="leistung-card"><div class="dot"></div><h3>Markisen</h3><p>markilux Markisen und Pergola-Markisen fuer Terrasse und Balkon.</p></div>
+      <div class="leistung-card"><div class="dot"></div><h3>Sonnenschutz</h3><p>Sonnenschirme, Sonnensegel, Raffstoren und Textilscreens.</p></div>
+      <div class="leistung-card"><div class="dot"></div><h3>Insektenschutz</h3><p>Neher Gitter und Rollos fuer Fenster und Tueren.</p></div>
+      <div class="leistung-card"><div class="dot"></div><h3>Ueberdachungen</h3><p>Haustuer-Vordaecher und Terrassenueberdachungen von Erhardt.</p></div>
+      <div class="leistung-card"><div class="dot"></div><h3>Tore &amp; Gitter</h3><p>Sektionaltore, Rolltore und Scherengitter fuer mehr Sicherheit.</p></div>
+      <div class="leistung-card"><div class="dot"></div><h3>Steuerungen &amp; Motoren</h3><p>Somfy und Leiner Antriebe fuer alle Produktbereiche.</p></div>
+      <div class="leistung-card"><div class="dot"></div><h3>Service</h3><p>Reparaturen und Wartung aus Meisterhand, auch nach Jahren.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="galerie" id="referenzen">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Referenzen</span>
+      <h2>Aus dem 220-qm-Showroom auf die Baustelle.</h2>
+      <p>Ein Ausschnitt aus echten Projekten und unserer Ausstellung in Quickborn.</p>
+    </div>
+    <div class="galerie-grid">
+      <figure><img src="/redesign/roennfeld/assets/images/showroom.webp" alt="220 qm grosse Ausstellungsflaeche in Quickborn"><figcaption>Unser Showroom, 220 qm</figcaption></figure>
+      <figure><img src="/redesign/roennfeld/assets/images/markise-install.webp" alt="Markilux Markise an einem Wohnhaus montiert"><figcaption>Markilux Markise, montiert</figcaption></figure>
+      <figure><img src="/redesign/roennfeld/assets/images/rollladen-install.webp" alt="Roma Rollladen an einem modernen Wohnhaus"><figcaption>Roma Rollladen, modernes Wohnhaus</figcaption></figure>
+      <figure><img src="/redesign/roennfeld/assets/images/terrassenueberdachung.webp" alt="Terrassenueberdachung von Erhardt"><figcaption>Terrassenueberdachung, Erhardt</figcaption></figure>
+      <figure><img src="/redesign/roennfeld/assets/images/sonnenschirme.webp" alt="Grossschirme von May auf einer Terrasse"><figcaption>Sonnenschirme, May</figcaption></figure>
+      <figure><img src="/redesign/roennfeld/assets/images/insektenschutz.webp" alt="Insektenschutz und Rollladen kombiniert"><figcaption>Rollladen &amp; Insektenschutz</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="ueber-uns">
+  <div class="wrap split">
+    <img src="/redesign/roennfeld/assets/images/team-monteure.webp" alt="Sieben Monteure des Roennfeld-Teams in Arbeitskleidung">
+    <div class="content">
+      <span class="kicker">Ueber uns</span>
+      <h2>Ein eingespieltes Team, seit 1991.</h2>
+      <p style="color:var(--grau);margin-top:14px">Frank Rönnfeld fuehrt den Meisterbetrieb gemeinsam mit einem festen Team aus Monteuren und Aussendienst, familiaer organisiert und mit direktem Kundenkontakt.</p>
+      <ul>
+        <li>Frank Rönnfeld, Inhaber und Meisterbetrieb seit 1991</li>
+        <li>Kim Callsen-Bruhn, Aussendienst und Verkauf</li>
+        <li>Eigene Facharbeiter fuer Montage und Service, keine Fremdvergabe</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="partner-band">
+  <div class="wrap">
+    <div class="section-head" style="margin:0 auto 36px;text-align:center;max-width:none">
+      <span class="kicker" style="color:var(--gelb)">Partner &amp; Marken</span>
+    </div>
+    <div class="partner-grid">
+      <div class="badge"><img src="/redesign/roennfeld/assets/images/somfy-badge.webp" alt="Somfy Expert Zertifizierung"></div>
+      <div class="badge"><img src="/redesign/roennfeld/assets/images/schattendealer-badge.webp" alt="Schattendealer Partner-Badge"></div>
+      <span class="label">markilux &middot; Roma &middot; Erhardt &middot; Neher &middot; Belutec</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta">
+      <h2>Planen Sie neue Rollläden, eine Markise oder eine Terrassenüberdachung?</h2>
+      <p>Vereinbaren Sie einen Beratungstermin oder besuchen Sie unsere 220 qm grosse Ausstellung in Quickborn.</p>
+      <div class="cta-actions">
+        <a href="tel:+494106997720" class="btn" style="background:var(--anthrazit);color:#fff">04106-99 770-20 anrufen</a>
+        <a href="mailto:info@roennfeld-rolladenbau.de" class="btn btn-outline">info@roennfeld-rolladenbau.de</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="kontakt">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h3>Rönnfeld Rollladen und Markisen</h3>
+        <p style="max-width:280px">Meisterbetrieb fuer Rollläden, Markisen und Sonnenschutz. Seit 1991 in Quickborn.</p>
+      </div>
+      <div>
+        <h3>Kontakt</h3>
+        <ul>
+          <li>Kieler Strasse 9</li>
+          <li>25451 Quickborn</li>
+          <li><a href="tel:+494106997720">Tel. 04106-99 770-20</a></li>
+          <li><a href="mailto:info@roennfeld-rolladenbau.de">info@roennfeld-rolladenbau.de</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Oeffnungszeiten</h3>
+        <ul>
+          <li>Mo. - Fr.: 9:00 - 12:30 und 13:30 - 17:00</li>
+          <li>Sa.: 9:30 - 14:00</li>
+          <li>Amtsgericht Pinneberg, HRB 13126 PI</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; Rönnfeld Rollladen und Markisen GmbH</span>
+      <div style="display:flex;gap:22px">
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

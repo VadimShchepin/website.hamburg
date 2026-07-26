@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conditorei Muench | Konditorei &amp; Cafe in Hamburg-Barmbek seit 1988</title>
+<meta name="description" content="Conditorei Muench in Hamburg-Barmbek: Torten, Motivtorten, Hochzeitstorten und Cafe seit 1988. Handgemacht von Meisterhand, nach Ihren Wuenschen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --rose:#c96b7c;
+  --rose-dunkel:#8f3f4e;
+  --schoko:#3d2b26;
+  --creme:#fdf6ee;
+  --karte:#ffffff;
+  --linie:#ecdfd6;
+  --grau:#6b5d55;
+  --schatten:0 26px 54px -22px rgba(61,43,38,.24);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Work Sans",-apple-system,"Segoe UI",sans-serif;
+  background:var(--creme);
+  color:var(--schoko);
+  font-size:17px;
+  line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:600;line-height:1.14;letter-spacing:-.005em}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 28px}
+
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--rose-dunkel)}
+.kicker::before{content:"";width:28px;height:2px;background:var(--rose-dunkel)}
+
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 30px;border-radius:8px;font-weight:600;font-size:15.5px;transition:transform .2s ease}
+.btn-rose{background:var(--rose-dunkel);color:#fff;box-shadow:0 16px 30px -10px rgba(143,63,78,.4)}
+.btn-rose:hover{transform:translateY(-2px)}
+.btn-outline{border:1.5px solid var(--schoko);color:var(--schoko)}
+.btn-outline:hover{background:rgba(61,43,38,.05)}
+
+header{position:sticky;top:0;z-index:50;background:rgba(253,246,238,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--linie)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;padding:16px 28px}
+.wordmark{font-family:"Fraunces",serif;font-size:25px;font-weight:600;color:var(--rose-dunkel)}
+.nav-links{display:flex;gap:32px}
+.nav-links a{font-size:14.5px;font-weight:500;color:var(--grau)}
+.nav-links a:hover{color:var(--rose-dunkel)}
+.header-phone{font-weight:700;color:var(--rose-dunkel)}
+@media (max-width:860px){.nav-links{display:none}}
+@media (max-width:600px){.header-phone{display:none}}
+
+.hero{padding:100px 0}
+.hero-grid{display:grid;grid-template-columns:1fr .95fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(2.2rem,4.2vw,3.4rem);margin:20px 0 22px}
+.hero p.lead{font-size:18.5px;color:var(--grau);margin-bottom:34px;max-width:520px}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap}
+.hero-photo{position:relative;border-radius:20px;overflow:hidden;box-shadow:var(--schatten)}
+.hero-photo img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+.hero-photo .cap{position:absolute;left:0;right:0;bottom:0;padding:16px 20px;background:linear-gradient(0deg,rgba(61,43,38,.72),transparent);color:#fff;font-size:13.5px}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr}}
+
+.zahlen{background:var(--schoko);color:#fff;padding:46px 0}
+.zahlen-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;text-align:center}
+.zahlen .num{font-family:"Fraunces",serif;font-size:clamp(2rem,3.6vw,2.7rem);color:#e8b3bd}
+.zahlen .label{font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.62);margin-top:8px}
+@media (max-width:760px){.zahlen-grid{grid-template-columns:repeat(2,1fr)}}
+
+section{padding:96px 0}
+.section-head{max-width:640px;margin-bottom:48px}
+.section-head h2{font-size:clamp(1.7rem,3vw,2.3rem);margin-top:14px}
+.section-head p{color:var(--grau);margin-top:14px;font-size:16.5px}
+
+.leistungen-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.leistung-card{background:var(--karte);border:1px solid var(--linie);border-radius:14px;padding:28px 24px}
+.leistung-card h3{font-size:19px;margin-bottom:10px;color:var(--rose-dunkel)}
+.leistung-card p{font-size:14.5px;color:var(--grau)}
+@media (max-width:900px){.leistungen-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.leistungen-grid{grid-template-columns:1fr}}
+
+.galerie{background:var(--karte);border-top:1px solid var(--linie);border-bottom:1px solid var(--linie)}
+.galerie-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.galerie-grid figure{border-radius:14px;overflow:hidden;box-shadow:var(--schatten);position:relative}
+.galerie-grid img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;transition:transform .3s ease}
+.galerie-grid figure:hover img{transform:scale(1.05)}
+.galerie-grid figcaption{position:absolute;left:0;right:0;bottom:0;padding:10px 14px;background:linear-gradient(0deg,rgba(61,43,38,.7),transparent);color:#fff;font-size:12.5px}
+@media (max-width:760px){.galerie-grid{grid-template-columns:repeat(2,1fr)}}
+
+.team{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.team blockquote{font-family:"Fraunces",serif;font-size:20px;font-style:italic;color:var(--schoko);line-height:1.5;border-left:3px solid var(--rose-dunkel);padding-left:22px}
+.team blockquote footer{margin-top:14px;font-family:"Work Sans",sans-serif;font-style:normal;font-size:14px;color:var(--grau)}
+.team-list{display:grid;gap:14px}
+.team-list .row{display:flex;justify-content:space-between;gap:14px;padding:14px 0;border-bottom:1px solid var(--linie);font-size:15px}
+.team-list .row span:first-child{font-weight:600}
+.team-list .row span:last-child{color:var(--grau);text-align:right}
+@media (max-width:900px){.team{grid-template-columns:1fr}}
+
+.cafe{background:linear-gradient(135deg,var(--rose-dunkel),var(--rose));color:#fff;border-radius:24px;padding:56px}
+.cafe-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+.cafe h2{font-size:clamp(1.6rem,3vw,2.1rem);margin-bottom:16px}
+.cafe p{color:rgba(255,255,255,.9);font-size:16px}
+.cafe ul{margin-top:18px;display:grid;gap:10px}
+.cafe li{display:flex;gap:10px;font-size:15px}
+.cafe li::before{content:"";flex:none;width:7px;height:7px;background:#fff;border-radius:2px;margin-top:8px}
+.hours-card{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28);border-radius:16px;padding:26px}
+.hours-card h3{font-size:16px;margin-bottom:14px;font-family:"Fraunces",serif}
+.hours-card .row{display:flex;justify-content:space-between;font-size:14.5px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.18)}
+@media (max-width:860px){.cafe-grid{grid-template-columns:1fr}.cafe{padding:36px}}
+
+.cta{text-align:center}
+.cta h2{font-size:clamp(1.8rem,3.2vw,2.4rem);max-width:600px;margin:0 auto 16px}
+.cta p{color:var(--grau);max-width:520px;margin:0 auto 30px;font-size:16.5px}
+.cta-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--schoko);color:rgba(255,255,255,.72);padding:60px 0 32px;font-size:14.5px}
+.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px}
+@media (max-width:700px){.footer-grid{grid-template-columns:1fr;gap:28px}}
+.footer-grid h3{color:#fff;font-size:14px;margin-bottom:16px;letter-spacing:.05em;text-transform:uppercase}
+.footer-grid ul{display:grid;gap:9px}
+.footer-grid a:hover{color:#fff}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:44px;padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px;color:rgba(255,255,255,.42)}
+.footer-bottom a{color:rgba(255,255,255,.42)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="#" class="wordmark">Muench</a>
+    <div class="nav-links">
+      <a href="#leistungen">Torten</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#team">Ueber uns</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
+    <div class="header-phone">040 299 50 39</div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker">Konditorei &amp; Cafe, Barmbek-Sued seit 1988</span>
+      <h1>Handgemachte Torten aus der Meisterbackstube.</h1>
+      <p class="lead">Ihre Konditorei und Cafe Ulrich Muench und Team backen seit 1988 in Hamburg-Barmbek Torten, Kuchen und Motivtorten nach Ihren Wuenschen, zu fairen Preisen und in kreativer Handarbeit.</p>
+      <div class="hero-actions">
+        <a href="tel:+49402995039" class="btn btn-rose">Torte anfragen</a>
+        <a href="#galerie" class="btn btn-outline">Galerie ansehen</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="/redesign/conditorei-muench/assets/photos/torten-1.webp" alt="Runde Fruchttorte mit Mango, Kiwi und Erdbeeren von Conditorei Muench" width="800" height="600">
+      <div class="cap">Fruchttorte aus unserer Konditorei</div>
+    </div>
+  </div>
+</section>
+
+<div class="zahlen">
+  <div class="wrap zahlen-grid">
+    <div><div class="num">1988</div><div class="label">Gegruendet</div></div>
+    <div><div class="num">23</div><div class="label">Jahre Kay-Thomas Sanden im Team</div></div>
+    <div><div class="num">15</div><div class="label">Sitzplaetze im Cafe</div></div>
+    <div><div class="num">7</div><div class="label">Koepfe im Konditorei-Team</div></div>
+  </div>
+</div>
+
+<section id="leistungen">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Leistungen</span>
+      <h2>Torten und Feingebaeck fuer jeden Anlass.</h2>
+      <p>Von der klassischen Sahnetorte bis zur mehrstoeckigen Hochzeitstorte, alles handgemacht in unserer eigenen Backstube.</p>
+    </div>
+    <div class="leistungen-grid">
+      <div class="leistung-card">
+        <h3>Torten &amp; Hochzeitstorten</h3>
+        <p>Torten in jeder Auswahl, Form und Geschmacksrichtung, dazu mehrstoeckige oder herzfoermige Hochzeitstorten. Vereinbaren Sie rechtzeitig einen Termin.</p>
+      </div>
+      <div class="leistung-card">
+        <h3>Motivtorten &amp; Marzipanfiguren</h3>
+        <p>Kreative Extraanfertigungen nach Ihren Vorstellungen, von Marzipanfiguren bis zur individuellen Motivtorte zu Geburtstag oder Jubilaeum.</p>
+      </div>
+      <div class="leistung-card">
+        <h3>Petit Four &amp; Cup Cakes</h3>
+        <p>Feines Kleingebaeck fuer Feiern und Anlaesse aller Art, dazu Cup Cakes und verschiedene schwedische Kuchen aus hauseigenen Rezepten.</p>
+      </div>
+      <div class="leistung-card">
+        <h3>Cafe &amp; Fingerfood</h3>
+        <p>Belegte Broetchen nach Wunsch, Canapees und Fingerfood fuer Ihre Feier, dazu Fruehstueck und Kaffeetrinken bei uns im Cafe oder im Gartencafe.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="galerie" id="galerie">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Galerie</span>
+      <h2>Aus unserer Backstube.</h2>
+      <p>Eine kleine Auswahl echter Arbeiten aus unserer Konditorei, von der Fruchttorte bis zur Marzipanfigur.</p>
+    </div>
+    <div class="galerie-grid">
+      <figure>
+        <img src="/redesign/conditorei-muench/assets/photos/torten-2.webp" alt="Herzfoermige Fruchttorte" width="800" height="600">
+        <figcaption>Herzfoermige Fruchttorte</figcaption>
+      </figure>
+      <figure>
+        <img src="/redesign/conditorei-muench/assets/photos/torten-3.webp" alt="Herzfoermige Fruchttorte mit Beeren" width="800" height="600">
+        <figcaption>Fruchttorte mit Beeren</figcaption>
+      </figure>
+      <figure>
+        <img src="/redesign/conditorei-muench/assets/photos/motivtorte-stpauli.webp" alt="Motivtorte mit St. Pauli Totenkopf" width="800" height="600">
+        <figcaption>Motivtorte, St. Pauli</figcaption>
+      </figure>
+      <figure>
+        <img src="/redesign/conditorei-muench/assets/photos/petit-four-1.webp" alt="Petit Four mit Blumendekor" width="800" height="600">
+        <figcaption>Petit Four, Bluetendekor</figcaption>
+      </figure>
+      <figure>
+        <img src="/redesign/conditorei-muench/assets/photos/petit-four-2.webp" alt="Petit Four mit Rosendekor" width="800" height="600">
+        <figcaption>Petit Four, Rosendekor</figcaption>
+      </figure>
+      <figure>
+        <img src="/redesign/conditorei-muench/assets/photos/marzipan-eule.webp" alt="Marzipanfigur in Eulenform" width="800" height="600">
+        <figcaption>Marzipanfigur, Eule</figcaption>
+      </figure>
+      <figure>
+        <img src="/redesign/conditorei-muench/assets/photos/marzipan-clown.webp" alt="Marzipanfigur in Clownform" width="800" height="600">
+        <figcaption>Marzipanfigur, Clown</figcaption>
+      </figure>
+      <figure>
+        <img src="/redesign/conditorei-muench/assets/photos/fruchttoertchen.webp" alt="Fruchttoertchen mit frischem Obst" width="800" height="600">
+        <figcaption>Fruchttoertchen</figcaption>
+      </figure>
+      <figure>
+        <img src="/redesign/conditorei-muench/assets/photos/cupcakes-schoko.webp" alt="Schoko Cup Cakes mit Erdbeere" width="600" height="800">
+        <figcaption>Cup Cakes, Schokolade</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="team">
+  <div class="wrap team">
+    <blockquote>
+      "1987 habe ich meine Meisterpruefung in Wolfenbuettel mit Bestnoten bestanden und im darauf folgendem Jahr die Konditorei vom Ehepaar Walter und Miriam Ulrich uebernommen. Von den Erfahrungen meiner Vorgaenger, die weltweit auf Kreuzfahrtschiffen und in Tophotels in Schweden und der Schweiz taetig waren, sind viele hauseigene Rezepte entstanden."
+      <footer>Ulrich Muench, Konditormeister</footer>
+    </blockquote>
+    <div class="team-list">
+      <div class="row"><span>Kay-Thomas Sanden</span><span>Konditormeister, Landesmeister, seit 23 Jahren</span></div>
+      <div class="row"><span>Christin Diener</span><span>Konditorin, seit 2015, ex-5-Sterne-Hotelpatisserie</span></div>
+      <div class="row"><span>Isabell Ahrend</span><span>Verkauf, seit 18 Jahren</span></div>
+      <div class="row"><span>Nicole Windmueller</span><span>Konditorin &amp; Fachverkaeuferin, seit 5 Jahren</span></div>
+      <div class="row"><span>Sabine Greve</span><span>Verkauf, seit 3 Jahren</span></div>
+      <div class="row"><span>Janette</span><span>Verkauf am Wochenende, seit 2 Jahren</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cafe">
+      <div class="cafe-grid">
+        <div>
+          <h2>Unser Cafe: 15 Plaetze und ein Gartencafe im Sommer.</h2>
+          <p>Geniessen Sie in geselliger Runde ein ausgiebiges Fruehstueck oder gemuetliches Kaffeetrinken mit leckerem Naschwerk in familiaerer Atmosphaere. Bei schoenem Wetter steht Ihnen ausserdem unser Gartencafe als gruene Oase zur Verfuegung.</p>
+          <ul>
+            <li>Platz fuer 15 Personen im Cafe</li>
+            <li>Reservierungen fuer kleine Familienfeiern moeglich</li>
+            <li>Gartencafe bei schoenem Wetter</li>
+          </ul>
+        </div>
+        <div class="hours-card">
+          <h3>Oeffnungszeiten</h3>
+          <div class="row"><span>Montag</span><span>geschlossen</span></div>
+          <div class="row"><span>Dienstag</span><span>08:00-18:00</span></div>
+          <div class="row"><span>Mittwoch</span><span>07:30-18:00</span></div>
+          <div class="row"><span>Donnerstag</span><span>07:30-18:00</span></div>
+          <div class="row"><span>Freitag</span><span>07:30-18:00</span></div>
+          <div class="row"><span>Samstag</span><span>07:30-16:00</span></div>
+          <div class="row" style="border-bottom:none"><span>Sonntag</span><span>08:00-17:00</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2>Torte anfragen oder auf ein Stueck Kuchen vorbeikommen?</h2>
+    <p>Rufen Sie an oder besuchen Sie uns in der Weidestrasse 26 in Hamburg-Barmbek.</p>
+    <div class="cta-actions">
+      <a href="tel:+49402995039" class="btn btn-rose">040 299 50 39 anrufen</a>
+      <a href="mailto:conditorei-muench@t-online.de" class="btn btn-outline">conditorei-muench@t-online.de</a>
+    </div>
+  </div>
+</section>
+
+<footer id="kontakt">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h3>Conditorei Muench</h3>
+        <p style="max-width:280px">Konditorei &amp; Cafe. Seit 1988 in Hamburg-Barmbek, handgemachte Torten und Feingebaeck nach Ihren Wuenschen.</p>
+      </div>
+      <div>
+        <h3>Kontakt</h3>
+        <ul>
+          <li>Weidestrasse 26</li>
+          <li>22083 Hamburg</li>
+          <li><a href="tel:+49402995039">Tel. 040 299 50 39</a></li>
+          <li><a href="mailto:conditorei-muench@t-online.de">conditorei-muench@t-online.de</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Unternehmen</h3>
+        <ul>
+          <li>Conditorei Ulrich Muench</li>
+          <li>Inhaber: Kay-Thomas Sanden</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; Conditorei Muench</span>
+      <div style="display:flex;gap:22px">
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

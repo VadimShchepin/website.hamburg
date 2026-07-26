@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adolf Dwenger Bestattungen | Bargteheide, seit 1907</title>
+<meta name="description" content="Beerdigungsinstitut Adolf Dwenger in Bargteheide: Erd-, Feuer-, Baum- und Seebestattungen, Vorsorge und persoenliche Beratung. Familienunternehmen seit 1907, 4. Generation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --tinte:#262b28;
+  --gold:#a3854f;
+  --creme:#f6f3ec;
+  --karte:#ffffff;
+  --linie:#e6e1d3;
+  --grau:#5b625c;
+  --schatten:0 26px 54px -22px rgba(38,43,40,.22);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Inter",-apple-system,"Segoe UI",sans-serif;
+  background:var(--creme);
+  color:var(--tinte);
+  font-size:17px;
+  line-height:1.66;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:"Crimson Pro",Georgia,serif;font-weight:600;line-height:1.2;letter-spacing:-.005em}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1140px;margin:0 auto;padding:0 28px}
+
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.kicker::before{content:"";width:28px;height:1.5px;background:var(--gold)}
+
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 30px;border-radius:6px;font-weight:600;font-size:15.5px;transition:transform .2s ease}
+.btn-gold{background:var(--tinte);color:#fff}
+.btn-gold:hover{transform:translateY(-2px)}
+.btn-outline{border:1.5px solid var(--tinte);color:var(--tinte)}
+.btn-outline:hover{background:rgba(38,43,40,.05)}
+
+header{position:sticky;top:0;z-index:50;background:rgba(246,243,236,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--linie)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;padding:18px 28px}
+.wordmark{font-family:"Crimson Pro",serif;font-size:24px;font-weight:600;color:var(--tinte);letter-spacing:.02em}
+.nav-links{display:flex;gap:30px}
+.nav-links a{font-size:14.5px;font-weight:500;color:var(--grau)}
+.nav-links a:hover{color:var(--tinte)}
+.header-phone{font-weight:600;color:var(--tinte)}
+@media (max-width:900px){.nav-links{display:none}}
+@media (max-width:600px){.header-phone{display:none}}
+
+.hero{padding:100px 0}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(2.1rem,4vw,3.1rem);margin:20px 0 22px}
+.hero p.lead{font-size:18px;color:var(--grau);margin-bottom:34px;max-width:500px}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap}
+.hero-photo{border-radius:8px;overflow:hidden;box-shadow:var(--schatten)}
+.hero-photo img{width:100%;height:auto;aspect-ratio:6/5;object-fit:cover}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr}}
+
+.zahlen{background:var(--tinte);color:#fff;padding:44px 0}
+.zahlen-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;text-align:center}
+.zahlen .num{font-family:"Crimson Pro",serif;font-size:clamp(1.5rem,3vw,2.2rem);color:#ccb27f}
+.zahlen .label{font-size:12.5px;letter-spacing:.04em;color:rgba(255,255,255,.62);margin-top:8px}
+@media (max-width:760px){.zahlen-grid{grid-template-columns:repeat(2,1fr)}}
+
+section{padding:92px 0}
+.section-head{max-width:640px;margin-bottom:44px}
+.section-head h2{font-size:clamp(1.6rem,3vw,2.2rem);margin-top:14px}
+.section-head p{color:var(--grau);margin-top:14px;font-size:16.5px}
+
+.chronik{background:var(--karte);border-top:1px solid var(--linie);border-bottom:1px solid var(--linie)}
+.chronik-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:56px;align-items:center}
+.chronik-grid img{border-radius:8px;box-shadow:var(--schatten);aspect-ratio:6/5;object-fit:cover;width:100%;height:auto}
+.chronik-grid .content p{margin-top:14px;color:var(--grau);font-size:15.5px}
+.chronik-grid .content p:first-of-type{margin-top:0}
+@media (max-width:900px){.chronik-grid{grid-template-columns:1fr}.chronik-grid img{order:-1}}
+
+.arten-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.art-card{background:var(--karte);border:1px solid var(--linie);border-radius:10px;padding:28px 24px}
+.art-card h3{font-size:19px;margin-bottom:10px;color:var(--tinte)}
+.art-card p{font-size:14.5px;color:var(--grau)}
+@media (max-width:900px){.arten-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.arten-grid{grid-template-columns:1fr}}
+
+.leistungen{background:var(--karte);border-top:1px solid var(--linie);border-bottom:1px solid var(--linie)}
+.leistungen-list{display:grid;grid-template-columns:1fr 1fr;gap:14px 40px}
+.leistungen-list li{display:flex;gap:12px;font-size:15.5px;color:var(--grau);padding:12px 0;border-bottom:1px solid var(--linie)}
+.leistungen-list li::before{content:"";flex:none;width:6px;height:6px;background:var(--gold);border-radius:50%;margin-top:9px}
+@media (max-width:760px){.leistungen-list{grid-template-columns:1fr}}
+
+.vorsorge-grid{display:grid;grid-template-columns:1fr .8fr;gap:56px;align-items:center}
+.vorsorge-grid img{border-radius:8px;box-shadow:var(--schatten);aspect-ratio:6/5;object-fit:cover;width:100%;height:auto}
+.vorsorge-grid ul{margin-top:20px;display:grid;gap:12px}
+.vorsorge-grid li{display:flex;gap:10px;font-size:15px;color:var(--grau)}
+.vorsorge-grid li::before{content:"";flex:none;width:6px;height:6px;background:var(--gold);border-radius:50%;margin-top:8px}
+@media (max-width:900px){.vorsorge-grid{grid-template-columns:1fr}.vorsorge-grid img{order:-1}}
+
+.team{background:var(--tinte);color:#fff;border-radius:20px;padding:52px}
+.team-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.team-grid img{border-radius:8px;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}
+.team h2{color:#fff;font-size:clamp(1.5rem,3vw,2rem);margin-bottom:14px}
+.team p{color:rgba(255,255,255,.78);font-size:15.5px}
+@media (max-width:860px){.team-grid{grid-template-columns:1fr}.team{padding:32px}}
+
+.cta{text-align:center}
+.cta h2{font-size:clamp(1.7rem,3vw,2.3rem);max-width:600px;margin:0 auto 16px}
+.cta p{color:var(--grau);max-width:520px;margin:0 auto 30px;font-size:16.5px}
+.cta-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--tinte);color:rgba(255,255,255,.72);padding:56px 0 32px;font-size:14.5px}
+.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px}
+@media (max-width:700px){.footer-grid{grid-template-columns:1fr;gap:28px}}
+.footer-grid h3{color:#fff;font-size:14px;margin-bottom:16px;letter-spacing:.05em;text-transform:uppercase}
+.footer-grid ul{display:grid;gap:9px}
+.footer-grid a:hover{color:#fff}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:40px;padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px;color:rgba(255,255,255,.42)}
+.footer-bottom a{color:rgba(255,255,255,.42)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="#" class="wordmark">Dwenger</a>
+    <div class="nav-links">
+      <a href="#chronik">Firmenchronik</a>
+      <a href="#bestattungsarten">Bestattungsarten</a>
+      <a href="#leistungen">Leistungen</a>
+      <a href="#vorsorge">Vorsorge</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
+    <div class="header-phone">04532 1752</div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker">Bestattungen in Bargteheide, seit 1907</span>
+      <h1>Wuerdevolle Begleitung in schweren Stunden.</h1>
+      <p class="lead">Adolf Dwenger Bestattungen begleitet Familien in Bargteheide und Umgebung seit 1907, heute in der 4. Generation. Erd-, Feuer-, Baum- und Seebestattungen, Ueberfuehrungen und die Erledigung aller Formalitaeten, in einem persoenlichen Gespraech in unserem Buero oder bei Ihnen zu Hause.</p>
+      <div class="hero-actions">
+        <a href="tel:+4945321752" class="btn btn-gold">04532 1752 anrufen</a>
+        <a href="#leistungen" class="btn btn-outline">Leistungen ansehen</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="/redesign/dwenger/assets/photos/friedhofsweg.webp" alt="Friedhofsweg mit Gedenkkreuz und Baenken" width="600" height="500">
+    </div>
+  </div>
+</section>
+
+<div class="zahlen">
+  <div class="wrap zahlen-grid">
+    <div><div class="num">1907</div><div class="label">Gegruendet</div></div>
+    <div><div class="num">4.</div><div class="label">Generation in Familienhand</div></div>
+    <div><div class="num">4</div><div class="label">Bestattungsarten im Angebot</div></div>
+    <div><div class="num">HWK</div><div class="label">Fachgeprueft, Kammer Luebeck</div></div>
+  </div>
+</div>
+
+<section class="chronik" id="chronik">
+  <div class="wrap chronik-grid">
+    <img src="/redesign/dwenger/assets/photos/kutsche-1907.webp" alt="Historische Begraebniskutsche der Firma Dwenger" width="640" height="500">
+    <div class="content">
+      <span class="kicker">Firmenchronik</span>
+      <h2>Vier Generationen in Bargteheide.</h2>
+      <p>Am 1. Oktober 1907 gruendete der Tischlermeister Adolf Dwenger den Betrieb in der Alten Landstrasse. Neben Fenstern, Tueren und Moebeln fertigte er auch Saerge und fuehrte Bestattungen durch, die Ueberfuehrung der Verstorbenen erfolgte in der eigenen Begraebniskutsche.</p>
+      <p>Nach dem Fall der 2. Generation im 2. Weltkrieg uebernahm der Firmengruender die Leitung erneut. Sein Enkel, ebenfalls Adolf Dwenger, bestand 1954 seine Meisterpruefung und fuehrte den Betrieb bis zu seinem Tod 1993. Danach baute seine Frau Herta Dwenger den Bereich Bestattungen weiter aus und nahm 1997 ihren Sohn Stefan Dwenger als 4. Generation in die Geschaeftsfuehrung auf. Seit ihrem Tod 2013 ist er alleiniger Inhaber.</p>
+    </div>
+  </div>
+</section>
+
+<section id="bestattungsarten">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Bestattungsarten</span>
+      <h2>Die passende Form des Abschieds.</h2>
+      <p>Wir beraten Sie persoenlich zu jeder Bestattungsart und ihren Moeglichkeiten.</p>
+    </div>
+    <div class="arten-grid">
+      <div class="art-card">
+        <h3>Erdbestattung</h3>
+        <p>Die klassische Form des Abschieds, Beisetzung im Massivholzsarg als Wahl- oder Reihengrab, je nach Friedhof auch als pflegeleichtes Grab.</p>
+      </div>
+      <div class="art-card">
+        <h3>Feuerbestattung</h3>
+        <p>Einaescherung im Krematorium, Beisetzung der Urne im Familien-, Wahl- oder Reihengrab, anonym auf einem Friedhof oder in einem Begraebniswald.</p>
+      </div>
+      <div class="art-card">
+        <h3>Baumbestattung</h3>
+        <p>Beisetzung der Asche an einem gekennzeichneten Baum in einem dafuer vorgesehenen Waldstueck, etwa im Waldfrieden am Barockpark.</p>
+      </div>
+      <div class="art-card">
+        <h3>Seebestattung</h3>
+        <p>Beisetzung in Spezialseeurnen durch erfahrene Seebestattungs-Reedereien, in Nord- oder Ostsee, Atlantik oder Pazifik, ganz nach Ihren Wuenschen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="leistungen" id="leistungen">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Unsere Dienstleistungen</span>
+      <h2>Alles aus einer Hand.</h2>
+      <p>Ein kleiner Ausschnitt aus unserem Leistungsbereich, den wir Ihnen gerne in der Zeit Ihrer Trauer abnehmen.</p>
+    </div>
+    <ul class="leistungen-list">
+      <li>Persoenliches Beratungsgespraech im Buero oder bei Ihnen zu Hause</li>
+      <li>Ueberfuehrungen im gesamten In- und Ausland</li>
+      <li>Erstversorgung, Einkleiden und Einbetten, Aufbahrung im Haus, auf dem Friedhof oder bei uns</li>
+      <li>Abholung der Todesbescheinigung und Besorgung der Sterbeurkunden</li>
+      <li>Abmeldung bei Krankenkasse und Beantragung des Ueberbrueckungsgeldes</li>
+      <li>Direkte Abrechnung mit Lebens- und Sterbegeldversicherungen</li>
+      <li>Terminabsprache mit Kirchen, Rednern, Friedhofsverwaltungen und Musikern</li>
+      <li>Traueranzeigen, Danksagungen und der Druck von Trauerbriefen</li>
+      <li>Beratung zu Sarg- und Urnendekoration, Kraenzen und Blumenschmuck</li>
+      <li>Kapellendekoration mit Leuchtern, Kerzen und Gruenpflanzen</li>
+    </ul>
+  </div>
+</section>
+
+<section id="vorsorge">
+  <div class="wrap vorsorge-grid">
+    <div>
+      <span class="kicker">Vorsorge</span>
+      <h2>Heute schon an morgen denken.</h2>
+      <p style="color:var(--grau);margin-top:14px">Die Bestattungsvorsorge bietet Ihnen die Moeglichkeit, zu Lebzeiten alle wichtigen Entscheidungen selbst zu regeln und Angehoerige zu entlasten.</p>
+      <ul>
+        <li>Bestattungsart, Grabart und Gestaltung der Trauerfeier selbst festlegen</li>
+        <li>Persoenliche Wuensche und Personenstandspapiere bei uns hinterlegen</li>
+        <li>Treuhandkonto ueber die Deutsche Bestattungsvorsorge Treuhand AG</li>
+        <li>Sterbegeldversicherung ueber die Nuernberger Lebensversicherung AG</li>
+      </ul>
+    </div>
+    <img src="/redesign/dwenger/assets/photos/engel.webp" alt="Engelsstatue auf einem Friedhof" width="600" height="500">
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="team">
+      <div class="team-grid">
+        <img src="/redesign/dwenger/assets/photos/fahrzeug-inhaber.webp" alt="Stefan Dwenger vor dem Firmensitz mit dem Fahrzeug" width="640" height="427">
+        <div>
+          <h2>Ihr Ansprechpartner vor Ort.</h2>
+          <p>Stefan Dwenger fuehrt den Familienbetrieb in der 4. Generation, als fachgepruefter Bestatter vor der Handwerkskammer Luebeck und Mitglied der Bestatterinnung Schleswig-Holstein. Sie erreichen ihn und sein Team in der Alten Landstrasse 32 in Bargteheide.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2>Wir sind fuer Sie da.</h2>
+    <p>Rufen Sie uns an oder schreiben Sie uns, wir melden uns umgehend bei Ihnen.</p>
+    <div class="cta-actions">
+      <a href="tel:+4945321752" class="btn btn-gold">04532 1752 anrufen</a>
+      <a href="mailto:info@beerdigungen-dwenger.de" class="btn btn-outline">info@beerdigungen-dwenger.de</a>
+    </div>
+  </div>
+</section>
+
+<footer id="kontakt">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h3>Adolf Dwenger Bestattungen</h3>
+        <p style="max-width:280px">Familienunternehmen seit 1907, heute in der 4. Generation, in der Alten Landstrasse in Bargteheide.</p>
+      </div>
+      <div>
+        <h3>Kontakt</h3>
+        <ul>
+          <li>Alte Landstrasse 32</li>
+          <li>22941 Bargteheide</li>
+          <li><a href="tel:+4945321752">Tel. 04532 1752</a></li>
+          <li><a href="mailto:info@beerdigungen-dwenger.de">info@beerdigungen-dwenger.de</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Unternehmen</h3>
+        <ul>
+          <li>Inhaber: Stefan Dwenger</li>
+          <li>Fachgeprueft, HWK Luebeck</li>
+          <li>Mitglied Bestatterinnung SH</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; Adolf Dwenger Bestattungen</span>
+      <div style="display:flex;gap:22px">
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

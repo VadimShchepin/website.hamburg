@@ -161,6 +161,18 @@ const redesigns = [
         sector: 'UHREN & SCHMUCK · GLINDE · SEIT 1967',
         description: 'Klares Blau-Silber-Design um die echte Skelettuhr-Nahaufnahme, mit Markengrid und direktem Goldankauf-Baustein.',
     },
+    {
+        slug: 'conditorei-muench',
+        firm: 'Conditorei Muench',
+        sector: 'KONDITOREI & CAFE · HAMBURG-BARMBEK · SEIT 1988',
+        description: 'Warmes Rose-Schoko-Design mit echter Backstubenfotografie, von der Fruchttorte bis zur Marzipanfigur.',
+    },
+    {
+        slug: 'dwenger',
+        firm: 'Adolf Dwenger Bestattungen',
+        sector: 'BESTATTUNGEN · BARGTEHEIDE · SEIT 1907',
+        description: 'Ruhiges Anthrazit-Gold-Design mit der echten Firmenchronik seit 1907, von der historischen Kutsche bis zum aktuellen Inhaber.',
+    },
 ];
 
 export default function RedesignPage() {

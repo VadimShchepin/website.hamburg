@@ -173,6 +173,12 @@ const redesigns = [
         sector: 'BESTATTUNGEN · BARGTEHEIDE · SEIT 1907',
         description: 'Ruhiges Anthrazit-Gold-Design mit der echten Firmenchronik seit 1907, von der historischen Kutsche bis zum aktuellen Inhaber.',
     },
+    {
+        slug: 'moebelmacher',
+        firm: 'Die Moebelmacher',
+        sector: 'MOEBELTISCHLEREI · HAMBURG-WANDSBEK · SEIT 1996',
+        description: 'Warmes Holz-Anthrazit-Design mit echter Werkstattfotografie, von der Firmenchronik bis zum restaurierten Treppengelaender.',
+    },
 ];
 
 export default function RedesignPage() {

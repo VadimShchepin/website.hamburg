@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Die Moebelmacher | Moebeltischlerei Hamburg-Wandsbek seit 1996</title>
+<meta name="description" content="Die Moebelmacher Ltd. & Co. KG: Moebeltischlerei fuer den gehobenen Anspruch in Hamburg-Wandsbek. Massivholzmoebel, Einbauschraenke, Restaurierung und Bautischlerei, seit 1996.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --holz:#a8763f;
+  --holz-dunkel:#7c5730;
+  --tinte:#2a2520;
+  --creme:#f7f3ec;
+  --karte:#ffffff;
+  --linie:#e5ddd0;
+  --grau:#6b6154;
+  --schatten:0 26px 54px -22px rgba(42,37,32,.26);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Manrope",-apple-system,"Segoe UI",sans-serif;
+  background:var(--creme);
+  color:var(--tinte);
+  font-size:17px;
+  line-height:1.64;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:"Spectral",Georgia,serif;font-weight:600;line-height:1.16;letter-spacing:-.005em}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 28px}
+
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--holz-dunkel)}
+.kicker::before{content:"";width:28px;height:2px;background:var(--holz-dunkel)}
+
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 30px;border-radius:6px;font-weight:600;font-size:15.5px;transition:transform .2s ease}
+.btn-holz{background:var(--tinte);color:#fff}
+.btn-holz:hover{transform:translateY(-2px)}
+.btn-outline{border:1.5px solid var(--tinte);color:var(--tinte)}
+.btn-outline:hover{background:rgba(42,37,32,.05)}
+
+header{position:sticky;top:0;z-index:50;background:rgba(247,243,236,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--linie)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;padding:16px 28px}
+.wordmark{font-family:"Spectral",serif;font-size:24px;font-weight:600;color:var(--tinte)}
+.nav-links{display:flex;gap:30px}
+.nav-links a{font-size:14.5px;font-weight:500;color:var(--grau)}
+.nav-links a:hover{color:var(--tinte)}
+.header-phone{font-weight:700;color:var(--holz-dunkel)}
+@media (max-width:900px){.nav-links{display:none}}
+@media (max-width:600px){.header-phone{display:none}}
+
+.hero{padding:100px 0}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(2.1rem,4vw,3.2rem);margin:20px 0 22px}
+.hero p.lead{font-size:18px;color:var(--grau);margin-bottom:34px;max-width:520px}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap}
+.hero-photo{border-radius:10px;overflow:hidden;box-shadow:var(--schatten)}
+.hero-photo img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr}}
+
+.zahlen{background:var(--tinte);color:#fff;padding:44px 0}
+.zahlen-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;text-align:center}
+.zahlen .num{font-family:"Spectral",serif;font-size:clamp(1.5rem,3vw,2.2rem);color:#d8ac6f}
+.zahlen .label{font-size:12.5px;letter-spacing:.04em;color:rgba(255,255,255,.62);margin-top:8px}
+@media (max-width:760px){.zahlen-grid{grid-template-columns:repeat(2,1fr)}}
+
+section{padding:92px 0}
+.section-head{max-width:640px;margin-bottom:44px}
+.section-head h2{font-size:clamp(1.6rem,3vw,2.2rem);margin-top:14px}
+.section-head p{color:var(--grau);margin-top:14px;font-size:16.5px}
+
+.chronik{background:var(--karte);border-top:1px solid var(--linie);border-bottom:1px solid var(--linie)}
+.chronik-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:center}
+.chronik-grid .portrait{width:180px;height:180px;border-radius:50%;overflow:hidden;box-shadow:var(--schatten);margin-bottom:18px}
+.chronik-grid .portrait img{width:100%;height:100%;object-fit:cover}
+.chronik-grid .signatur{font-family:"Spectral",serif;font-style:italic;font-size:17px;color:var(--grau)}
+.timeline{display:grid;gap:14px}
+.timeline .row{display:flex;gap:20px;font-size:15px;padding:12px 0;border-bottom:1px solid var(--linie)}
+.timeline .row .jahr{flex:none;width:64px;font-weight:700;color:var(--holz-dunkel)}
+.timeline .row .txt{color:var(--grau)}
+@media (max-width:900px){.chronik-grid{grid-template-columns:1fr}}
+
+.galerie{border-top:1px solid var(--linie);border-bottom:1px solid var(--linie);background:var(--karte)}
+.galerie-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.galerie-grid figure{border-radius:10px;overflow:hidden;box-shadow:var(--schatten);position:relative;background:#eee}
+.galerie-grid img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+.galerie-grid figcaption{padding:12px 14px;font-size:13px;color:var(--grau);background:var(--karte)}
+@media (max-width:900px){.galerie-grid{grid-template-columns:repeat(2,1fr)}}
+
+.restaurierung-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+.rest-card{background:var(--karte);border:1px solid var(--linie);border-radius:12px;overflow:hidden;box-shadow:var(--schatten)}
+.rest-card img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+.rest-card .txt{padding:22px 24px}
+.rest-card h3{font-size:18px;margin-bottom:8px}
+.rest-card p{font-size:14.5px;color:var(--grau)}
+@media (max-width:760px){.restaurierung-grid{grid-template-columns:1fr}}
+
+.leistungen{background:var(--tinte);color:#fff;border-radius:20px;padding:52px}
+.leistungen h2{color:#fff}
+.leistungen-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;margin-top:30px}
+.leistungen-cols h3{font-size:15px;color:#d8ac6f;text-transform:uppercase;letter-spacing:.05em;margin-bottom:14px}
+.leistungen-cols ul{display:grid;gap:9px}
+.leistungen-cols li{font-size:14.5px;color:rgba(255,255,255,.8)}
+@media (max-width:860px){.leistungen{padding:34px}.leistungen-cols{grid-template-columns:1fr;gap:24px}}
+
+.cta{text-align:center}
+.cta h2{font-size:clamp(1.7rem,3vw,2.3rem);max-width:600px;margin:0 auto 16px}
+.cta p{color:var(--grau);max-width:520px;margin:0 auto 30px;font-size:16.5px}
+.cta-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--tinte);color:rgba(255,255,255,.72);padding:56px 0 32px;font-size:14.5px}
+.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px}
+@media (max-width:700px){.footer-grid{grid-template-columns:1fr;gap:28px}}
+.footer-grid h3{color:#fff;font-size:14px;margin-bottom:16px;letter-spacing:.05em;text-transform:uppercase}
+.footer-grid ul{display:grid;gap:9px}
+.footer-grid a:hover{color:#fff}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:40px;padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px;color:rgba(255,255,255,.42)}
+.footer-bottom a{color:rgba(255,255,255,.42)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="#" class="wordmark">Moebelmacher</a>
+    <div class="nav-links">
+      <a href="#chronik">Chronik</a>
+      <a href="#galerie">Arbeiten</a>
+      <a href="#restaurierung">Restaurierung</a>
+      <a href="#leistungen">Leistungen</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
+    <div class="header-phone">040 / 69 64 04 24</div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker">Moebeltischlerei, Hamburg-Wandsbek seit 1996</span>
+      <h1>Handwerkskunst fuer den gehobenen Anspruch im Moebelbau.</h1>
+      <p class="lead">Von traditionellen Handwerkstechniken mit massiven Hoelzern bis zu computergefertigten Praezisionsteilen bieten wir alte Handwerkskunst mit jungem Charme, fuer Privatkunden, Architekten und Planer.</p>
+      <div class="hero-actions">
+        <a href="tel:+494069640424" class="btn btn-holz">040 / 69 64 04 24 anrufen</a>
+        <a href="#galerie" class="btn btn-outline">Arbeiten ansehen</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="/redesign/moebelmacher/assets/photos/ahorn-esstisch.webp" alt="Esstisch aus massivem Ahorn, gefertigt von Die Moebelmacher" width="305" height="320">
+    </div>
+  </div>
+</section>
+
+<div class="zahlen">
+  <div class="wrap zahlen-grid">
+    <div><div class="num">1996</div><div class="label">Gegruendet</div></div>
+    <div><div class="num">500 m&sup2;</div><div class="label">Werkstattflaeche</div></div>
+    <div><div class="num">1998</div><div class="label">Jueng. Tischlermeister Hamburgs</div></div>
+    <div><div class="num">2005</div><div class="label">Ltd. &amp; Co. KG</div></div>
+  </div>
+</div>
+
+<section class="chronik" id="chronik">
+  <div class="wrap chronik-grid">
+    <div>
+      <div class="portrait"><img src="/redesign/moebelmacher/assets/photos/steven-portrait.webp" alt="Steven Scheer, Tischlermeister und Gruender von Die Moebelmacher" width="240" height="240"></div>
+      <p class="signatur">Steven Scheer, Tischlermeister</p>
+    </div>
+    <div>
+      <span class="kicker">Firmenchronik</span>
+      <h2>Von 21 auf 500 Quadratmeter.</h2>
+      <div class="timeline" style="margin-top:22px">
+        <div class="row"><span class="jahr">1996</span><span class="txt">Gegruendet als Einzelfirma auf 21 qm in der Osterfeldstrasse, Hamburg-Eppendorf, durch Steven Scheer im Alter von 22 Jahren.</span></div>
+        <div class="row"><span class="jahr">1997</span><span class="txt">Umzug in eine 150 qm Werkstatt in der Walddoerferstrasse 332, Hamburg-Wandsbek.</span></div>
+        <div class="row"><span class="jahr">1998</span><span class="txt">Meisterpruefung im Tischlerhandwerk bestanden, laut eigener Chronik Hamburgs juengster Tischlermeister zu dieser Zeit.</span></div>
+        <div class="row"><span class="jahr">2001</span><span class="txt">Erweiterung der Werkstatt auf 500 qm, Ausbau der Moebellinie und Markenschutz fuer DIE MOEBELMACHER.</span></div>
+        <div class="row"><span class="jahr">2004</span><span class="txt">Auszeichnung als TOP-Unternehmen durch Hamburgs groessten Holzhaendler, Andresen und Jochimsen.</span></div>
+        <div class="row" style="border-bottom:none"><span class="jahr">2005</span><span class="txt">Umwandlung der Gesellschaftsform in eine Ltd. &amp; Co. KG.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="galerie" id="galerie">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Moebeltischlerei</span>
+      <h2>Formschoene Unikate, modern und klassisch.</h2>
+      <p>Eine kleine Auswahl echter Arbeiten aus unserer Werkstatt in Hamburg-Wandsbek.</p>
+    </div>
+    <div class="galerie-grid">
+      <figure>
+        <img src="/redesign/moebelmacher/assets/photos/empfangstresen.webp" alt="Empfangstresen in europaeischem Ahorn, in einer Lobby installiert" width="335" height="226">
+        <figcaption>Empfangstresen, europ. Ahorn</figcaption>
+      </figure>
+      <figure>
+        <img src="/redesign/moebelmacher/assets/photos/tresen-werkstatt.webp" alt="Runder Tresen mit Ahorn-Furnier und Stahlleisten in der Werkstatt" width="345" height="226">
+        <figcaption>Tresen, Ahorn furniert</figcaption>
+      </figure>
+      <figure>
+        <img src="/redesign/moebelmacher/assets/photos/wandschrank-tv.webp" alt="Eingebauter Wandschrank cremeweiss lackiert mit offenen Regalfaechern" width="294" height="400">
+        <figcaption>Wandschrank, cremeweiss lackiert</figcaption>
+      </figure>
+      <figure>
+        <img src="/redesign/moebelmacher/assets/photos/sideboard-gitter.webp" alt="Sideboard mit Gitterfronten und blauen Fliesenakzenten" width="350" height="236">
+        <figcaption>Sideboard mit Gitterfronten</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="restaurierung">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Restaurierung &amp; Bautischlerei</span>
+      <h2>Wo altes Handwerk gefragt ist.</h2>
+      <p>Von der Instandsetzung historischer Stuecke bis zur maszgefertigten Haustuer.</p>
+    </div>
+    <div class="restaurierung-grid">
+      <div class="rest-card">
+        <img src="/redesign/moebelmacher/assets/photos/treppengelaender.webp" alt="Restauriertes Treppengelaender aus Eiche mit ornamentalen Balustern" width="350" height="249">
+        <div class="txt">
+          <h3>Treppengelaender aus Eiche</h3>
+          <p>Rekonstruktion eines vorhandenen Treppenhausgelaenders mit Hohlkehlprofilierung und geschnitztem Rankwerk am Mittelpfosten, Handlauf in Eiche natur lackiert.</p>
+        </div>
+      </div>
+      <div class="rest-card">
+        <img src="/redesign/moebelmacher/assets/photos/salontuer.webp" alt="Zweifluegelige Salontuer mit geaetzter Ornamentverglasung" width="294" height="400">
+        <div class="txt">
+          <h3>Zweifluegelige Salontuer</h3>
+          <p>Aus Whitewood-Massivholz in klassischer Rahmenbauweise mit abgeplatteten Fuellungen und geaetzter Ornamentverglasung, seidenmatt lackiert.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="leistungen" id="leistungen">
+      <h2>Und das bieten wir Ihnen.</h2>
+      <div class="leistungen-cols">
+        <div>
+          <h3>Moebeltischlerei</h3>
+          <ul>
+            <li>Exklusiver Innenausbau</li>
+            <li>Einbauschraenke</li>
+            <li>Massivholzmoebel</li>
+            <li>Sonderanfertigungen</li>
+            <li>Ladenbau</li>
+            <li>Boots- &amp; Yachtinnenausbau</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Bautischlerei</h3>
+          <ul>
+            <li>Reparaturdienst</li>
+            <li>Fenster &amp; Tueren</li>
+            <li>Parkett- &amp; Laminatboeden</li>
+            <li>Einbruchschutz</li>
+            <li>Sanierungen</li>
+            <li>Restaurierung</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Besondere Techniken</h3>
+          <ul>
+            <li>Vergolden &amp; Versilbern</li>
+            <li>Drechselarbeiten</li>
+            <li>Kerbschnitzarbeiten</li>
+            <li>Intarsien- &amp; Marketeriearbeiten</li>
+            <li>Glasarbeiten</li>
+            <li>Hochdruck-Spritztechniken</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2>Ihr Projekt, in unserer Werkstatt gefertigt.</h2>
+    <p>Rufen Sie an oder schreiben Sie uns, wir beraten Sie gerne persoenlich in unserer Werkstatt in Hamburg-Wandsbek.</p>
+    <div class="cta-actions">
+      <a href="tel:+494069640424" class="btn btn-holz">040 / 69 64 04 24 anrufen</a>
+      <a href="mailto:info@diemoebelmacher.de" class="btn btn-outline">info@diemoebelmacher.de</a>
+    </div>
+  </div>
+</section>
+
+<footer id="kontakt">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h3>Die Moebelmacher</h3>
+        <p style="max-width:280px">Moebeltischlerei fuer den gehobenen Anspruch, seit 1996 in Hamburg-Wandsbek.</p>
+      </div>
+      <div>
+        <h3>Kontakt</h3>
+        <ul>
+          <li>Walddoerferstrasse 332</li>
+          <li>22047 Hamburg-Wandsbek</li>
+          <li><a href="tel:+494069640424">Tel. 040 / 69 64 04 24</a></li>
+          <li><a href="mailto:info@diemoebelmacher.de">info@diemoebelmacher.de</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Unternehmen</h3>
+        <ul>
+          <li>DIE MOEBELMACHER Ltd. &amp; Co. KG</li>
+          <li>Tischlermeister Steven Scheer</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; Die Moebelmacher</span>
+      <div style="display:flex;gap:22px">
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

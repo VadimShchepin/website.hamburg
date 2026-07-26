@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hidde Meyer &amp; Söhne GmbH | Schlosserei &amp; Metallbau in Hamburg-Rahlstedt</title>
+<meta name="description" content="Hidde Meyer & Söhne GmbH: Kunstschlosserei, Metallbau und Stahlbau aus Hamburg-Rahlstedt. Familienunternehmen in dritter Generation, seit fast 60 Jahren in der Branche.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --stahl:#1c2024;
+  --stahl-2:#282d32;
+  --chrom:#c7ccd1;
+  --akzent:#e8542c;
+  --akzent-dunkel:#b83f1e;
+  --hintergrund:#f4f3f1;
+  --karte:#ffffff;
+  --grau:#5c6167;
+  --linie:#e2e0dc;
+  --schatten:0 26px 54px -22px rgba(28,32,36,.32);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Inter",-apple-system,"Segoe UI",sans-serif;
+  background:var(--hintergrund);
+  color:var(--stahl);
+  font-size:17px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:"Barlow Condensed",sans-serif;font-weight:700;line-height:1.1;letter-spacing:.005em;text-transform:uppercase}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:12.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--akzent)}
+.kicker::before{content:"";width:26px;height:2px;background:var(--akzent)}
+
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 30px;border-radius:4px;font-weight:700;font-size:15px;letter-spacing:.02em;transition:transform .2s ease}
+.btn-akzent{background:var(--akzent);color:#fff;box-shadow:0 16px 30px -10px rgba(232,84,44,.5)}
+.btn-akzent:hover{transform:translateY(-2px)}
+.btn-outline{border:1.5px solid var(--stahl);color:var(--stahl)}
+.btn-outline:hover{background:rgba(28,32,36,.05)}
+
+header{position:sticky;top:0;z-index:50;background:rgba(244,243,241,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--linie)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;padding:18px 28px}
+.wordmark{font-family:"Barlow Condensed",sans-serif;font-size:24px;font-weight:700;text-transform:uppercase;letter-spacing:.02em}
+.wordmark span{color:var(--akzent)}
+.nav-links{display:flex;gap:32px}
+.nav-links a{font-size:14px;font-weight:600;color:var(--grau);text-transform:uppercase;letter-spacing:.03em}
+.nav-links a:hover{color:var(--stahl)}
+.header-phone{font-weight:700;color:var(--stahl)}
+@media (max-width:860px){.nav-links{display:none}}
+@media (max-width:600px){.header-phone{display:none}}
+
+.hero{position:relative;color:#fff;background:linear-gradient(180deg,rgba(20,22,24,.5),rgba(20,22,24,.88)),var(--stahl) url('assets/photos/hero-1.webp') center/cover no-repeat;padding:130px 0 100px}
+.hero .kicker{color:#f0a184}
+.hero .kicker::before{background:#f0a184}
+.hero h1{font-size:clamp(2.4rem,5vw,4rem);margin:20px 0 22px;max-width:780px}
+.hero p.lead{font-family:"Inter",sans-serif;font-size:19px;color:rgba(255,255,255,.82);max-width:560px;margin-bottom:34px;text-transform:none}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap}
+
+.zahlen{background:var(--stahl-2);color:#fff;padding:46px 0}
+.zahlen-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;text-align:center}
+.zahlen .num{font-family:"Barlow Condensed",sans-serif;font-size:clamp(2.2rem,4vw,3rem);color:var(--akzent);font-weight:700}
+.zahlen .label{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-top:6px}
+@media (max-width:760px){.zahlen-grid{grid-template-columns:repeat(2,1fr)}}
+
+section{padding:96px 0}
+.section-head{max-width:640px;margin-bottom:48px}
+.section-head h2{font-size:clamp(1.9rem,3.4vw,2.6rem);margin-top:12px}
+.section-head p{font-family:"Inter",sans-serif;color:var(--grau);margin-top:14px;font-size:16.5px;text-transform:none}
+
+.leistungen-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.leistung-card{border-radius:10px;overflow:hidden;position:relative;box-shadow:0 10px 24px -16px rgba(28,32,36,.3)}
+.leistung-card img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.leistung-card .label{position:absolute;left:0;right:0;bottom:0;padding:14px 16px;background:linear-gradient(0deg,rgba(20,22,24,.88),transparent);color:#fff;font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:15.5px;letter-spacing:.02em;text-transform:uppercase}
+@media (max-width:900px){.leistungen-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.leistungen-grid{grid-template-columns:1fr}}
+
+.split{background:var(--karte);border-top:1px solid var(--linie);border-bottom:1px solid var(--linie)}
+.split-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.split-grid img{border-radius:12px;box-shadow:var(--schatten);aspect-ratio:4/5;object-fit:cover}
+.split-grid .content ul{margin-top:22px;display:grid;gap:12px}
+.split-grid .content li{display:flex;gap:10px;font-size:15.5px;font-family:"Inter",sans-serif}
+.split-grid .content li::before{content:"";flex:none;width:7px;height:7px;background:var(--akzent);border-radius:2px;margin-top:8px}
+@media (max-width:900px){.split-grid{grid-template-columns:1fr}}
+
+.cta{background:linear-gradient(135deg,var(--akzent),var(--akzent-dunkel));color:#fff;border-radius:20px;padding:64px;text-align:center}
+.cta h2{font-size:clamp(2rem,3.6vw,2.8rem);max-width:640px;margin:0 auto 16px}
+.cta p{font-family:"Inter",sans-serif;color:rgba(255,255,255,.9);max-width:520px;margin:0 auto 30px;font-size:16.5px;text-transform:none}
+.cta-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--stahl);color:rgba(255,255,255,.7);padding:60px 0 32px;font-size:14.5px}
+.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px}
+.footer-grid h3{color:#fff;font-size:14px;margin-bottom:16px;letter-spacing:.05em}
+.footer-grid ul{display:grid;gap:9px}
+.footer-grid a:hover{color:#fff}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:44px;padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px;color:rgba(255,255,255,.42)}
+.footer-bottom a{color:rgba(255,255,255,.42)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="#" class="wordmark">HIDDE MEYER<span> &amp; SÖHNE</span></a>
+    <div class="nav-links">
+      <a href="#leistungen">Leistungen</a>
+      <a href="#ueber-uns">Ueber uns</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
+    <div class="header-phone">040 69 45 89 4-0</div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="kicker">Kunstschlosserei &amp; Metallbau, Hamburg-Rahlstedt</span>
+    <h1>Solide Metallarbeit, seit fast 60 Jahren aus Hamburg.</h1>
+    <p class="lead">Hidde Meyer &amp; Söhne fertigt Gelaender, Ueberdachungen, Zaunanlagen und Kunstschlosserei fuer Bauherren in Hamburg und Umgebung. Ein Familienunternehmen in dritter Generation, mit eigenen Facharbeitern und modernem Maschinenpark.</p>
+    <div class="hero-actions">
+      <a href="#kontakt" class="btn btn-akzent">Anfrage stellen</a>
+      <a href="#leistungen" class="btn btn-outline" style="border-color:rgba(255,255,255,.4);color:#fff">Leistungen ansehen</a>
+    </div>
+  </div>
+</section>
+
+<div class="zahlen">
+  <div class="wrap zahlen-grid">
+    <div><div class="num">60</div><div class="label">Jahre Metallbau</div></div>
+    <div><div class="num">3.</div><div class="label">Generation Meyer</div></div>
+    <div><div class="num">19</div><div class="label">Leistungsbereiche</div></div>
+    <div><div class="num">1</div><div class="label">Meisterbetrieb, eigene Fertigung</div></div>
+  </div>
+</div>
+
+<section id="leistungen">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Leistungen</span>
+      <h2>Vom Balkongelaender bis zur Kunstschlosserei.</h2>
+      <p>Ein breites Leistungsspektrum, gefertigt mit eigenen Facharbeitern in Hamburg-Rahlstedt.</p>
+    </div>
+    <div class="leistungen-grid">
+      <div class="leistung-card"><img src="/redesign/hidde-meyer/assets/photos/balkongelaender.webp" alt="Balkongelaender aus Metall"><div class="label">Balkongelaender</div></div>
+      <div class="leistung-card"><img src="/redesign/hidde-meyer/assets/photos/treppengelaender.webp" alt="Treppengelaender"><div class="label">Treppengelaender</div></div>
+      <div class="leistung-card"><img src="/redesign/hidde-meyer/assets/photos/edelstahlgelaender.webp" alt="Edelstahlgelaender mit Glas"><div class="label">Edelstahlgelaender</div></div>
+      <div class="leistung-card"><img src="/redesign/hidde-meyer/assets/photos/glaskonstruktionen.webp" alt="Glaskonstruktionen"><div class="label">Glaskonstruktionen</div></div>
+      <div class="leistung-card"><img src="/redesign/hidde-meyer/assets/photos/carportanlagen.webp" alt="Carportanlagen aus Metall"><div class="label">Carportanlagen</div></div>
+      <div class="leistung-card"><img src="/redesign/hidde-meyer/assets/photos/zaunanlagen.webp" alt="Zaunanlagen"><div class="label">Zaunanlagen</div></div>
+      <div class="leistung-card"><img src="/redesign/hidde-meyer/assets/photos/tg-toranlagen.webp" alt="Tiefgaragen-Toranlagen"><div class="label">TG-Toranlagen</div></div>
+      <div class="leistung-card"><img src="/redesign/hidde-meyer/assets/photos/kunstschlosserei.webp" alt="Kunstschlosserei"><div class="label">Kunstschlosserei</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="split" id="ueber-uns">
+  <div class="wrap split-grid">
+    <img src="/redesign/hidde-meyer/assets/photos/hero-2.webp" alt="Architektonische Metall- und Glasdetails aus der Fertigung von Hidde Meyer">
+    <div class="content">
+      <span class="kicker">Ueber uns</span>
+      <h2>Ein alteingesessenes Familienunternehmen.</h2>
+      <p style="font-family:'Inter',sans-serif;color:var(--grau);margin-top:14px;text-transform:none">Seit fast 60 Jahren in der Schlosserei- und Metallbaubranche taetig, heute in dritter Generation gefuehrt von Geschaeftsfuehrer Torsten Meyer.</p>
+      <ul>
+        <li>Meisterbetrieb mit qualifizierten Facharbeitern</li>
+        <li>Solide handwerkliche Arbeiten von langer Lebensdauer</li>
+        <li>Moderner, hochleistungsfaehiger Maschinenpark</li>
+        <li>Fertigung nach Kundenvorgabe, von der Planung bis zur Montage</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta">
+      <h2>Planen Sie ein Gelaender, eine Ueberdachung oder eine Zaunanlage?</h2>
+      <p>Schicken Sie uns Ihre Anfrage, Hidde Meyer &amp; Soehne meldet sich mit einem Angebot aus eigener Fertigung.</p>
+      <div class="cta-actions">
+        <a href="tel:+494069458940" class="btn" style="background:var(--stahl);color:#fff">040 69 45 89 4-0 anrufen</a>
+        <a href="mailto:info@hiddemeyer.com" class="btn btn-outline" style="border-color:rgba(255,255,255,.4);color:#fff">info@hiddemeyer.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="kontakt">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h3>HIDDE MEYER &amp; SÖHNE</h3>
+        <p style="max-width:280px;font-family:'Inter',sans-serif">Kunstschlosserei und Metallbau. Seit fast 60 Jahren in Hamburg, heute in dritter Generation.</p>
+      </div>
+      <div>
+        <h3>KONTAKT</h3>
+        <ul>
+          <li>Bei der Neuen Muenze 5-7</li>
+          <li>22145 Hamburg</li>
+          <li><a href="tel:+494069458940">Tel. 040 69 45 89 4-0</a></li>
+          <li><a href="mailto:info@hiddemeyer.com">info@hiddemeyer.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>UNTERNEHMEN</h3>
+        <ul>
+          <li>Geschaeftsfuehrer Torsten Meyer</li>
+          <li>Amtsgericht Hamburg, HRB 33923</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; Hidde Meyer &amp; Soehne GmbH</span>
+      <div style="display:flex;gap:22px">
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

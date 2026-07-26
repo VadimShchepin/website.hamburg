@@ -101,6 +101,36 @@ const redesigns = [
         sector: 'ROLLLADENBAU & SONNENSCHUTZ · QUICKBORN · SEIT 1991',
         description: 'Klares Gelb-Anthrazit-Design nach dem eigenen Sonnenstrahlen-Logo, mit dem ganzen Team samt Fuhrpark als Hero-Foto vor dem eigenen Laden.',
     },
+    {
+        slug: 'hidde-meyer',
+        firm: 'Hidde Meyer & Söhne GmbH',
+        sector: 'KUNSTSCHLOSSEREI & METALLBAU · HAMBURG-RAHLSTEDT · SEIT FAST 60 JAHREN',
+        description: 'Industrielles Design in Stahlgrau und Orange, mit einem Raster aus 8 echten Projektfotos vom Balkongelaender bis zur Kunstschlosserei.',
+    },
+    {
+        slug: 'kp-elektrotechnik',
+        firm: 'KP Elektrotechnik Kay Petersen e.K.',
+        sector: 'ELEKTROTECHNIK & SMART-HOME · HAMBURG-WANDSBEK · SEIT 1997',
+        description: 'Klares Blau-Gelb-Design mit dem echten Firmenfahrzeug als Hero-Foto und einem Leistungsraster fuer Elektroinstallation bis KNX Smart-Home.',
+    },
+    {
+        slug: 'niehusen',
+        firm: 'Karl Niehusen GmbH & Co. KG',
+        sector: 'FISCHFEINKOST · HAMBURG-ALTONA · SEIT 1961',
+        description: 'Warmes Rot-Creme-Design mit echter Produktfotografie und einer Zeitleiste von St. Pauli bis zur Grossen Elbstrasse.',
+    },
+    {
+        slug: 'naval-technica',
+        firm: 'Naval Technica Export GmbH',
+        sector: 'SCHIFFBAUMATERIAL-EXPORT · HAMBURG-WINTERHUDE · SEIT 35 JAHREN',
+        description: 'Marineblau mit Tau-Gold-Akzent, echtem Hafenfoto als Hero und einem Team-Raster mit sechs echten Portraits.',
+    },
+    {
+        slug: 'hartmann-popp',
+        firm: 'Hartmann & Popp GmbH & Co. KG',
+        sector: 'OELSAATEN & GEWUERZE · HAMBURG-WALTERSHOF · SEIT 1958',
+        description: 'Erdiges Senfgelb-Gruen-Design mit Koehlbrandbruecken-Hero und einer Zeitleiste ueber drei Generationen der Familie Popp.',
+    },
 ];
 
 export default function RedesignPage() {

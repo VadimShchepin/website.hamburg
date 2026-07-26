@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hartmann &amp; Popp GmbH &amp; Co. KG | Oelsaaten, Gewuerze und Muehle in Hamburg-Waltershof</title>
+<meta name="description" content="Hartmann & Popp: Grosshandel und eigene Muehle fuer Oelsaaten, Gewuerze, Huelsenfruechte und Backsaaten. Seit 1958 in Hamburg-Waltershof, DE-OEKO-001 zertifiziert.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --senf:#a9762c;
+  --senf-dunkel:#7a5620;
+  --gruen:#3c4a2f;
+  --gruen-dunkel:#242e1c;
+  --creme:#faf5ea;
+  --creme-2:#f0e6d2;
+  --tinte:#2a251c;
+  --grau:#665f52;
+  --karte:#ffffff;
+  --schatten:0 26px 54px -22px rgba(42,37,28,.3);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Karla",-apple-system,"Segoe UI",sans-serif;
+  background:var(--creme);
+  color:var(--tinte);
+  font-size:17px;
+  line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:600;line-height:1.14;letter-spacing:-.005em}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 28px}
+svg.icon{width:28px;height:28px;stroke:var(--senf);fill:none;stroke-width:1.6}
+
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--senf)}
+.kicker::before{content:"";width:28px;height:2px;background:var(--senf)}
+.kicker.dark{color:var(--gruen)}
+.kicker.dark::before{background:var(--gruen)}
+
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 30px;border-radius:8px;font-weight:700;font-size:15.5px;transition:transform .2s ease}
+.btn-senf{background:var(--senf);color:#fff;box-shadow:0 16px 30px -10px rgba(169,118,44,.45)}
+.btn-senf:hover{transform:translateY(-2px)}
+.btn-outline{border:1.5px solid var(--tinte);color:var(--tinte)}
+.btn-outline:hover{background:rgba(42,37,28,.05)}
+
+header{position:sticky;top:0;z-index:50;background:rgba(250,245,234,.94);backdrop-filter:blur(8px);border-bottom:1px solid rgba(42,37,28,.08)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;padding:18px 28px}
+.wordmark{font-family:"Fraunces",serif;font-size:21px;font-weight:600;color:var(--gruen-dunkel)}
+.wordmark span{color:var(--senf)}
+.nav-links{display:flex;gap:32px}
+.nav-links a{font-size:14.5px;font-weight:500;color:var(--grau)}
+.nav-links a:hover{color:var(--senf)}
+.header-phone{font-weight:700;color:var(--senf)}
+@media (max-width:860px){.nav-links{display:none}}
+@media (max-width:600px){.header-phone{display:none}}
+
+.hero{position:relative;color:#fff;background:linear-gradient(180deg,rgba(28,24,16,.55),rgba(28,24,16,.88)),var(--gruen-dunkel) url(/redesign/hartmann-popp/assets/photos/hero.webp') center/cover no-repeat;padding:130px 0 100px}
+.hero .kicker{color:#e3c98a}
+.hero .kicker::before{background:#e3c98a}
+.hero h1{font-size:clamp(2.2rem,4.2vw,3.4rem);margin:20px 0 22px;max-width:760px}
+.hero p.lead{font-size:19px;color:rgba(255,255,255,.85);max-width:580px;margin-bottom:34px}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap}
+
+.zahlen{background:var(--gruen-dunkel);color:#fff;padding:46px 0}
+.zahlen-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;text-align:center}
+.zahlen .num{font-family:"Fraunces",serif;font-size:clamp(2rem,3.6vw,2.7rem);color:#e3c98a}
+.zahlen .label{font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.62);margin-top:8px}
+@media (max-width:760px){.zahlen-grid{grid-template-columns:repeat(2,1fr)}}
+
+section{padding:96px 0}
+.section-head{max-width:640px;margin-bottom:48px}
+.section-head h2{font-size:clamp(1.7rem,3vw,2.3rem);margin-top:14px}
+.section-head p{color:var(--grau);margin-top:14px;font-size:16.5px}
+
+.leistungen-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.leistung-card{background:var(--karte);border-radius:14px;padding:28px;border:1px solid rgba(42,37,28,.1)}
+.leistung-card .icon-wrap{width:50px;height:50px;border-radius:10px;background:rgba(169,118,44,.1);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.leistung-card h3{font-size:17px;margin-bottom:8px}
+.leistung-card p{font-size:14px;color:var(--grau)}
+@media (max-width:900px){.leistungen-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.leistungen-grid{grid-template-columns:1fr}}
+
+.geschichte{background:var(--creme-2)}
+.timeline{border-left:2px solid rgba(169,118,44,.3);margin-top:10px;padding-left:30px}
+.timeline .jahr{padding-bottom:30px;position:relative}
+.timeline .jahr:last-child{padding-bottom:0}
+.timeline .jahr::before{content:"";position:absolute;left:-37px;top:4px;width:12px;height:12px;border-radius:50%;background:var(--senf)}
+.timeline .jahr .y{font-family:"Fraunces",serif;color:var(--senf-dunkel);font-size:21px}
+.timeline .jahr .t{font-size:15px;color:var(--grau);margin-top:6px;max-width:640px}
+
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.trust-card{background:var(--karte);border:1px solid rgba(42,37,28,.1);border-radius:14px;padding:30px;display:flex;gap:18px;align-items:center}
+.trust-card img{width:52px;height:auto;flex:none}
+.trust-card h3{font-size:16px;margin-bottom:6px}
+.trust-card p{font-size:13.5px;color:var(--grau)}
+@media (max-width:860px){.trust{grid-template-columns:1fr}}
+
+.cta{background:linear-gradient(135deg,var(--senf),var(--senf-dunkel));color:#fff;border-radius:24px;padding:64px;text-align:center}
+.cta h2{font-size:clamp(1.8rem,3.2vw,2.4rem);max-width:620px;margin:0 auto 16px}
+.cta p{color:rgba(255,255,255,.9);max-width:520px;margin:0 auto 30px;font-size:16.5px}
+.cta-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--gruen-dunkel);color:rgba(255,255,255,.72);padding:60px 0 32px;font-size:14.5px}
+.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px}
+.footer-grid h3{color:#fff;font-size:14px;margin-bottom:16px;letter-spacing:.05em;text-transform:uppercase}
+.footer-grid ul{display:grid;gap:9px}
+.footer-grid a:hover{color:#fff}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:44px;padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px;color:rgba(255,255,255,.42)}
+.footer-bottom a{color:rgba(255,255,255,.42)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="#" class="wordmark">Hartmann<span> &amp; Popp</span></a>
+    <div class="nav-links">
+      <a href="#sortiment">Sortiment</a>
+      <a href="#geschichte">Geschichte</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
+    <div class="header-phone">040 380 88 85-0</div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="kicker">Grosshandel &amp; Muehle, seit 1958 in Hamburg-Waltershof</span>
+    <h1>Oelsaaten, Gewuerze und Huelsenfruechte aus eigener Reinigung und Muehle.</h1>
+    <p class="lead">Hartmann &amp; Popp handelt mit Lebensmittelrohstoffen und betreibt am eigenen Standort in Waltershof diverse Muehlen und Oelpressen. Schwerpunkte im Gewuerzsegment sind Senfsaat und Bockshornkleesaat, DE-OEKO-001 zertifiziert.</p>
+    <div class="hero-actions">
+      <a href="#kontakt" class="btn btn-senf">Anfrage stellen</a>
+      <a href="#sortiment" class="btn btn-outline" style="border-color:rgba(255,255,255,.4);color:#fff">Sortiment ansehen</a>
+    </div>
+  </div>
+</section>
+
+<div class="zahlen">
+  <div class="wrap zahlen-grid">
+    <div><div class="num">1958</div><div class="label">Gruendungsjahr</div></div>
+    <div><div class="num">60+</div><div class="label">Jahre Erfahrung</div></div>
+    <div><div class="num">6</div><div class="label">Produktkategorien</div></div>
+    <div><div class="num">1</div><div class="label">Standort mit eigener Muehle</div></div>
+  </div>
+</div>
+
+<section id="sortiment">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker dark">Sortiment</span>
+      <h2>Von der Saatenreinigung bis zum Mehl.</h2>
+      <p>Neben eigener Reinigung, Abpackung und Lagerei betreiben wir diverse Muehlen und Oelpressen am selben Ort in Waltershof.</p>
+    </div>
+    <div class="leistungen-grid">
+      <div class="leistung-card">
+        <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <h3>Oelsaaten</h3>
+        <p>Handel und Verarbeitung von Oelsaaten fuer die Lebensmittelindustrie.</p>
+      </div>
+      <div class="leistung-card">
+        <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><path d="M12 3c3 3 5 6 5 9a5 5 0 0 1-10 0c0-3 2-6 5-9z"/></svg></div>
+        <h3>Gewuerze</h3>
+        <p>Schwerpunkte auf Senfsaat und Bockshornkleesaat und daraus hergestellte Produkte.</p>
+      </div>
+      <div class="leistung-card">
+        <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><circle cx="8" cy="9" r="2.4"/><circle cx="16" cy="9" r="2.4"/><circle cx="12" cy="16" r="2.4"/></svg></div>
+        <h3>Huelsenfruechte</h3>
+        <p>Grosshandel mit Huelsenfruechten in verschiedenen Qualitaeten.</p>
+      </div>
+      <div class="leistung-card">
+        <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 10h16M10 10v10"/></svg></div>
+        <h3>Backsaaten</h3>
+        <p>Saaten fuer die Backwarenindustrie, gereinigt und abgepackt.</p>
+      </div>
+      <div class="leistung-card">
+        <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><path d="M4 20 20 4M4 4h6M4 4v6M20 20h-6M20 20v-6"/></svg></div>
+        <h3>Mehle &amp; Schrote</h3>
+        <p>Halbfertigprodukte aus Oelsaaten und Huelsenfruechten aus eigener Muehle.</p>
+      </div>
+      <div class="leistung-card">
+        <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><path d="M4 4h16v6H4zM4 14h16v6H4z"/></svg></div>
+        <h3>Saatenreinigung</h3>
+        <p>Eigene Reinigung, Abpackung und Lagerei am Standort Waltershof.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="geschichte" id="geschichte">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker dark">Geschichte</span>
+      <h2>Seit 1958, ueber drei Generationen.</h2>
+      <p>Vom Saatengrosshandel zum Betrieb mit eigener Muehle und Oelpresse.</p>
+    </div>
+    <div class="timeline">
+      <div class="jahr"><div class="y">1958</div><div class="t">Werner Popp und Helmut Hartmann gruenden die Firma Hartmann und Popp als Saatengrosshandel in Hamburg.</div></div>
+      <div class="jahr"><div class="y">1975</div><div class="t">Zukauf der Firma Ernst Brennicke Saatenreinigung und Oelmuehle samt Firmengelaende in Hamburg-Waltershof, dem heutigen Standort.</div></div>
+      <div class="jahr"><div class="y">1980</div><div class="t">Helmut Hartmann scheidet krankheitsbedingt aus. Werner Popp wird Alleininhaber.</div></div>
+      <div class="jahr"><div class="y">1997</div><div class="t">Norbert Popp tritt nach dem Tod von Werner Popp als Geschaeftsfuehrender Gesellschafter ein.</div></div>
+      <div class="jahr"><div class="y">2009</div><div class="t">Sabine Popp, Kauffrau und Molekularbiologin, tritt in die Geschaeftsfuehrung ein und leitet das Unternehmen bis heute.</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker dark">Qualitaet</span>
+      <h2>Zertifiziert, aus eigener Produktion.</h2>
+    </div>
+    <div class="trust">
+      <div class="trust-card">
+        <img src="/redesign/hartmann-popp/assets/photos/biologo.webp" alt="DE-OEKO-001 Bio-Zertifizierung">
+        <div><h3>DE-OEKO-001</h3><p>Zertifizierte Bio-Kontrollstelle fuer oekologische Rohstoffe.</p></div>
+      </div>
+      <div class="trust-card">
+        <div class="icon-wrap" style="width:52px;height:52px;border-radius:10px;background:rgba(169,118,44,.1);display:flex;align-items:center;justify-content:center;flex:none"><svg class="icon" viewBox="0 0 24 24"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg></div>
+        <div><h3>Eigener Standort seit 1975</h3><p>Muehlen und Oelpressen am selben Firmengelaende in Waltershof.</p></div>
+      </div>
+      <div class="trust-card">
+        <div class="icon-wrap" style="width:52px;height:52px;border-radius:10px;background:rgba(169,118,44,.1);display:flex;align-items:center;justify-content:center;flex:none"><svg class="icon" viewBox="0 0 24 24"><path d="M12 3v18M5 8l7-5 7 5M5 16l7 5 7-5"/></svg></div>
+        <div><h3>Drei Generationen Popp</h3><p>Familiengefuehrt seit 1958, heute von Sabine Popp geleitet.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta">
+      <h2>Suchen Sie einen verlaesslichen Partner fuer Oelsaaten oder Gewuerze?</h2>
+      <p>Rufen Sie an oder schreiben Sie uns, Hartmann &amp; Popp meldet sich mit einem Angebot aus eigener Reinigung und Muehle.</p>
+      <div class="cta-actions">
+        <a href="tel:+494038088850" class="btn" style="background:#fff;color:var(--senf-dunkel)">040 380 88 85-0 anrufen</a>
+        <a href="mailto:info@hartmann-popp.de" class="btn btn-outline" style="border-color:rgba(255,255,255,.4);color:#fff">info@hartmann-popp.de</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="kontakt">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h3>Hartmann &amp; Popp GmbH &amp; Co. KG</h3>
+        <p style="max-width:280px">Grosshandel und Muehle fuer Oelsaaten, Gewuerze und Huelsenfruechte. Seit 1958 in Hamburg-Waltershof.</p>
+      </div>
+      <div>
+        <h3>Kontakt</h3>
+        <ul>
+          <li>Altenwerder Damm 59</li>
+          <li>21129 Hamburg</li>
+          <li><a href="tel:+494038088850">Tel. 040 380 88 85-0</a></li>
+          <li><a href="mailto:info@hartmann-popp.de">info@hartmann-popp.de</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Unternehmen</h3>
+        <ul>
+          <li>Geschaeftsfuehrerin Sabine Popp</li>
+          <li>Amtsgericht Hamburg, HRA 100594</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; Hartmann &amp; Popp GmbH &amp; Co. KG</span>
+      <div style="display:flex;gap:22px">
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

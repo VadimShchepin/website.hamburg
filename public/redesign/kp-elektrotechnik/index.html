@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KP Elektrotechnik Kay Petersen e.K. | Elektriker in Hamburg-Wandsbek</title>
+<meta name="description" content="KP Elektrotechnik Kay Petersen e.K.: Meisterbetrieb fuer Elektroinstallation, Datennetzwerktechnik, KNX Smart-Home und Videoueberwachung in Hamburg-Wandsbek.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blau:#0d5cab;
+  --blau-dunkel:#083f79;
+  --gelb:#f2b705;
+  --tinte:#171c22;
+  --grau:#5c6570;
+  --hintergrund:#f5f7f9;
+  --karte:#ffffff;
+  --linie:#e2e6ea;
+  --schatten:0 24px 50px -22px rgba(13,28,45,.28);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Inter",-apple-system,"Segoe UI",sans-serif;
+  background:var(--hintergrund);
+  color:var(--tinte);
+  font-size:17px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:"Sora",sans-serif;font-weight:700;line-height:1.16;letter-spacing:-.01em}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+svg.icon{width:30px;height:30px;stroke:var(--blau);fill:none;stroke-width:1.7}
+
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:12.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gelb)}
+.kicker::before{content:"";width:26px;height:2px;background:var(--gelb)}
+.kicker.dark{color:var(--blau)}
+.kicker.dark::before{background:var(--blau)}
+
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 30px;border-radius:8px;font-weight:700;font-size:15.5px;transition:transform .2s ease}
+.btn-blau{background:var(--blau);color:#fff;box-shadow:0 16px 30px -10px rgba(13,92,171,.45)}
+.btn-blau:hover{transform:translateY(-2px)}
+.btn-outline{border:1.5px solid var(--tinte);color:var(--tinte)}
+.btn-outline:hover{background:rgba(23,28,34,.05)}
+
+header{position:sticky;top:0;z-index:50;background:rgba(245,247,249,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--linie)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;padding:16px 28px}
+.wordmark{font-family:"Sora",sans-serif;font-size:21px;font-weight:800}
+.wordmark span{color:var(--blau)}
+.nav-links{display:flex;gap:32px}
+.nav-links a{font-size:14.5px;font-weight:600;color:var(--grau)}
+.nav-links a:hover{color:var(--tinte)}
+.header-phone{font-weight:700;color:var(--blau)}
+@media (max-width:860px){.nav-links{display:none}}
+@media (max-width:600px){.header-phone{display:none}}
+
+.hero{position:relative;color:#fff;background:linear-gradient(180deg,rgba(8,20,35,.6),rgba(8,20,35,.9)),var(--blau-dunkel) url(/redesign/kp-elektrotechnik/assets/photos/hero-van.webp') center/cover no-repeat;padding:130px 0 100px}
+.hero h1{font-size:clamp(2.3rem,4.4vw,3.6rem);margin:20px 0 22px;max-width:760px}
+.hero p.lead{font-size:19px;color:rgba(255,255,255,.85);max-width:560px;margin-bottom:34px}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap}
+
+.zahlen{background:var(--tinte);color:#fff;padding:46px 0}
+.zahlen-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;text-align:center}
+.zahlen .num{font-family:"Sora",sans-serif;font-size:clamp(2rem,3.6vw,2.7rem);color:var(--gelb)}
+.zahlen .label{font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.62);margin-top:8px}
+@media (max-width:760px){.zahlen-grid{grid-template-columns:repeat(2,1fr)}}
+
+section{padding:96px 0}
+.section-head{max-width:640px;margin-bottom:48px}
+.section-head h2{font-size:clamp(1.7rem,3vw,2.3rem);margin-top:14px}
+.section-head p{color:var(--grau);margin-top:14px;font-size:16.5px}
+
+.leistungen-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.leistung-card{background:var(--karte);border-radius:14px;padding:28px;border:1px solid var(--linie);transition:transform .2s ease, box-shadow .2s ease}
+.leistung-card:hover{transform:translateY(-3px);box-shadow:var(--schatten)}
+.leistung-card .icon-wrap{width:52px;height:52px;border-radius:10px;background:rgba(13,92,171,.08);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.leistung-card h3{font-size:17px;margin-bottom:8px}
+.leistung-card p{font-size:14px;color:var(--grau)}
+@media (max-width:900px){.leistungen-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.leistungen-grid{grid-template-columns:1fr}}
+
+.split{background:var(--karte);border-top:1px solid var(--linie);border-bottom:1px solid var(--linie)}
+.split-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.split-grid img{border-radius:14px;box-shadow:var(--schatten);aspect-ratio:4/3;object-fit:cover}
+.split-grid .content ul{margin-top:22px;display:grid;gap:12px}
+.split-grid .content li{display:flex;gap:10px;font-size:15.5px}
+.split-grid .content li::before{content:"";flex:none;width:7px;height:7px;background:var(--blau);border-radius:2px;margin-top:8px}
+@media (max-width:900px){.split-grid{grid-template-columns:1fr}}
+
+.cta{background:linear-gradient(135deg,var(--blau),var(--blau-dunkel));color:#fff;border-radius:24px;padding:64px;text-align:center}
+.cta h2{font-size:clamp(1.8rem,3.2vw,2.4rem);max-width:600px;margin:0 auto 16px}
+.cta p{color:rgba(255,255,255,.88);max-width:520px;margin:0 auto 30px;font-size:16.5px}
+.cta-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--tinte);color:rgba(255,255,255,.72);padding:60px 0 32px;font-size:14.5px}
+.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px}
+.footer-grid h3{color:#fff;font-size:14px;margin-bottom:16px;letter-spacing:.05em;text-transform:uppercase}
+.footer-grid ul{display:grid;gap:9px}
+.footer-grid a:hover{color:#fff}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:44px;padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px;color:rgba(255,255,255,.42)}
+.footer-bottom a{color:rgba(255,255,255,.42)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="#" class="wordmark">KP<span> Elektrotechnik</span></a>
+    <div class="nav-links">
+      <a href="#leistungen">Leistungen</a>
+      <a href="#ueber-uns">Ueber uns</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
+    <div class="header-phone">040 555 99 117</div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="kicker">Meisterbetrieb, Hamburg-Wandsbek</span>
+    <h1>Elektrotechnik, Netzwerk und Smart-Home aus einer Hand.</h1>
+    <p class="lead">KP Elektrotechnik Kay Petersen plant, installiert und wartet Elektroanlagen, Datennetzwerke und KNX Smart-Home-Systeme fuer private, gewerbliche und industrielle Kunden in Hamburg-Wandsbek und Umgebung.</p>
+    <div class="hero-actions">
+      <a href="#kontakt" class="btn btn-blau">Anfrage stellen</a>
+      <a href="#leistungen" class="btn btn-outline" style="border-color:rgba(255,255,255,.4);color:#fff">Leistungen ansehen</a>
+    </div>
+  </div>
+</section>
+
+<div class="zahlen">
+  <div class="wrap zahlen-grid">
+    <div><div class="num">1997</div><div class="label">Gruendungsjahr</div></div>
+    <div><div class="num">7</div><div class="label">Leistungsbereiche</div></div>
+    <div><div class="num">1</div><div class="label">Meisterbetrieb, ein Ansprechpartner</div></div>
+    <div><div class="num">KNX</div><div class="label">Partnerbetrieb</div></div>
+  </div>
+</div>
+
+<section id="leistungen">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker dark">Leistungen</span>
+      <h2>Von der Steckdose bis zum Smart-Home.</h2>
+      <p>Geprueft nach DIN VDE 0100 und DGUV-V3, geplant und installiert aus einer Hand.</p>
+    </div>
+    <div class="leistungen-grid">
+      <div class="leistung-card">
+        <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z" stroke-linejoin="round"/></svg></div>
+        <h3>Elektroinstallation</h3>
+        <p>Planung, Installation, Erweiterung und Wartung Ihrer Elektroanlage, inklusive Pruefung nach DIN VDE 0100.</p>
+      </div>
+      <div class="leistung-card">
+        <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="M5 8v4h14V8M12 12v4"/></svg></div>
+        <h3>Datennetzwerktechnik</h3>
+        <p>Strukturierte Netzwerke, WLAN und Powerline, geplant und konfiguriert nach Ihrem Bedarf.</p>
+      </div>
+      <div class="leistung-card">
+        <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><rect x="6" y="3" width="12" height="18" rx="1.5"/><path d="M9 7h6M9 11h6M9 15h3"/></svg></div>
+        <h3>Verteiler- &amp; Schaltschrankbau</h3>
+        <p>Unterverteilungen, Zaehlerschraenke und Steuerschraenke, individuell fuer Ihr Objekt.</p>
+      </div>
+      <div class="leistung-card">
+        <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><path d="M4 6h16v10H4z"/><path d="M9 20h6M12 16v4"/></svg></div>
+        <h3>Internet &amp; IP-Telefonie</h3>
+        <p>Von der DSL-Router-Telefonie bis zur programmierbaren IP-Anlage ueber SIP-Trunk.</p>
+      </div>
+      <div class="leistung-card">
+        <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="10" r="6"/><path d="M9 20h6M10 22h4M12 4V2"/></svg></div>
+        <h3>Beleuchtungsanlagen</h3>
+        <p>Leuchten, Lampen und LED-Umruestung mit Licht- und Helligkeitssteuerung.</p>
+      </div>
+      <div class="leistung-card">
+        <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><path d="M4 11 12 4l8 7v9H4z"/><path d="M9 20v-6h6v6"/></svg></div>
+        <h3>KNX Smart-Home</h3>
+        <p>Steuerung von Beleuchtung, Rollladen, Heizung und Videoueberwachung, auch per App.</p>
+      </div>
+    </div>
+    <div class="leistungen-grid" style="margin-top:20px">
+      <div class="leistung-card" style="grid-column:1/-1">
+        <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="7" width="14" height="11" rx="1.5"/><path d="M17 10.5 21 8v9l-4-2.5"/></svg></div>
+        <h3>Videoueberwachung &amp; Steuerungstechnik</h3>
+        <p>IP-Kameratechnik mit DVR/NAS-Aufnahme sowie programmierbare Steuerungs- und Regelungstechnik fuer Torsteuerungen, Pumpen und mehr.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="split" id="ueber-uns">
+  <div class="wrap split-grid">
+    <img src="/redesign/kp-elektrotechnik/assets/photos/hero-van.webp" alt="Firmenfahrzeug von KP Elektrotechnik Kay Petersen mit KNX-Partner-Aufkleber">
+    <div class="content">
+      <span class="kicker dark">Ueber uns</span>
+      <h2>Ein Meisterbetrieb aus Hamburg-Wandsbek.</h2>
+      <p style="color:var(--grau);margin-top:14px">Kay Petersen fuehrt KP Elektrotechnik seit 1997 als Meisterbetrieb des Elektrohandwerks, mit eigenem Fuhrpark und KNX-Partnerstatus fuer Smart-Home-Projekte.</p>
+      <ul>
+        <li>Meisterbetrieb des Elektrohandwerks seit 1997</li>
+        <li>KNX Partner fuer Smart-Home und Smart-Living</li>
+        <li>Pruefung nach DIN VDE 0100 und DGUV-V3</li>
+        <li>Fuer Privat-, Gewerbe- und Industriekunden in Hamburg-Wandsbek</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta">
+      <h2>Planen Sie eine neue Elektroanlage oder ein Smart-Home-Projekt?</h2>
+      <p>Schicken Sie uns Ihre Anfrage, KP Elektrotechnik meldet sich mit einer Einschaetzung zu Planung, Technik und Ablauf.</p>
+      <div class="cta-actions">
+        <a href="tel:+494055599117" class="btn" style="background:#fff;color:var(--blau-dunkel)">040 555 99 117 anrufen</a>
+        <a href="mailto:info@kpet.de" class="btn btn-outline" style="border-color:rgba(255,255,255,.4);color:#fff">info@kpet.de</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="kontakt">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h3>KP Elektrotechnik</h3>
+        <p style="max-width:280px">Meisterbetrieb fuer Elektroinstallation, Netzwerktechnik und KNX Smart-Home. Seit 1997 in Hamburg-Wandsbek.</p>
+      </div>
+      <div>
+        <h3>Kontakt</h3>
+        <ul>
+          <li>Neumann-Reichardt-Str. 27-33</li>
+          <li>22041 Hamburg</li>
+          <li><a href="tel:+494055599117">Tel. 040 555 99 117</a></li>
+          <li><a href="mailto:info@kpet.de">info@kpet.de</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Unternehmen</h3>
+        <ul>
+          <li>Inhaber Kay Petersen</li>
+          <li>Registergericht Hamburg, HRA 106595</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; KP Elektrotechnik Kay Petersen e.K.</span>
+      <div style="display:flex;gap:22px">
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

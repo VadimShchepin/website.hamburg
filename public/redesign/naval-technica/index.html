@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Naval Technica Export GmbH | Schiffbaumaterial-Export nach Suedamerika</title>
+<meta name="description" content="Naval Technica Export GmbH: Einkauf und Export von Schiffbaumaterialien, Anlagen und Ersatzteilen aus Hamburg nach Chile, Kolumbien, Peru, Ecuador und Mexico. Seit 35 Jahren.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --marine:#0b2a43;
+  --marine-dunkel:#071b2c;
+  --tau:#c8a06a;
+  --tau-hell:#e0c294;
+  --hintergrund:#f4f6f7;
+  --tinte:#151c22;
+  --grau:#5b6670;
+  --karte:#ffffff;
+  --linie:#e0e4e7;
+  --schatten:0 26px 54px -22px rgba(11,42,67,.3);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Inter",-apple-system,"Segoe UI",sans-serif;
+  background:var(--hintergrund);
+  color:var(--tinte);
+  font-size:17px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:"Space Grotesk",sans-serif;font-weight:600;line-height:1.16;letter-spacing:-.01em}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 28px}
+
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:12.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--tau)}
+.kicker::before{content:"";width:26px;height:2px;background:var(--tau)}
+.kicker.dark{color:var(--marine)}
+.kicker.dark::before{background:var(--marine)}
+
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 30px;border-radius:6px;font-weight:600;font-size:15.5px;transition:transform .2s ease}
+.btn-tau{background:var(--tau);color:var(--marine-dunkel);box-shadow:0 16px 30px -10px rgba(200,160,106,.5)}
+.btn-tau:hover{transform:translateY(-2px)}
+.btn-outline{border:1.5px solid var(--tinte);color:var(--tinte)}
+.btn-outline:hover{background:rgba(21,28,34,.05)}
+
+header{position:sticky;top:0;z-index:50;background:rgba(244,246,247,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--linie)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;padding:16px 28px}
+header img.logo{height:26px;width:auto}
+.nav-links{display:flex;gap:32px}
+.nav-links a{font-size:14.5px;font-weight:500;color:var(--grau)}
+.nav-links a:hover{color:var(--marine)}
+.header-phone{font-weight:700;color:var(--marine)}
+@media (max-width:860px){.nav-links{display:none}}
+@media (max-width:600px){.header-phone{display:none}}
+
+.hero{position:relative;color:#fff;background:linear-gradient(180deg,rgba(7,27,44,.55),rgba(7,27,44,.88)),var(--marine-dunkel) url(/redesign/naval-technica/assets/photos/hero.webp') center/cover no-repeat;padding:130px 0 100px}
+.hero h1{font-size:clamp(2.3rem,4.4vw,3.6rem);margin:20px 0 22px;max-width:760px}
+.hero p.lead{font-size:19px;color:rgba(255,255,255,.85);max-width:580px;margin-bottom:34px}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap}
+
+.zahlen{background:var(--marine-dunkel);color:#fff;padding:46px 0}
+.zahlen-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;text-align:center}
+.zahlen .num{font-family:"Space Grotesk",sans-serif;font-size:clamp(2rem,3.6vw,2.7rem);color:var(--tau-hell)}
+.zahlen .label{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-top:8px}
+@media (max-width:760px){.zahlen-grid{grid-template-columns:repeat(2,1fr)}}
+
+section{padding:96px 0}
+.section-head{max-width:640px;margin-bottom:48px}
+.section-head h2{font-size:clamp(1.7rem,3vw,2.3rem);margin-top:14px}
+.section-head p{color:var(--grau);margin-top:14px;font-size:16.5px}
+
+.leistungen-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.leistung-card{background:var(--karte);border-radius:14px;padding:30px;border:1px solid var(--linie)}
+.leistung-card .num{font-family:"Space Grotesk",sans-serif;color:var(--tau);font-size:15px;margin-bottom:14px}
+.leistung-card h3{font-size:19px;margin-bottom:10px}
+.leistung-card p{font-size:14.5px;color:var(--grau)}
+@media (max-width:900px){.leistungen-grid{grid-template-columns:1fr}}
+
+.maerkte{background:var(--marine);color:#fff}
+.maerkte-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.maerkte .content ul{margin-top:22px;display:grid;gap:12px}
+.maerkte .content li{display:flex;gap:10px;font-size:15.5px}
+.maerkte .content li::before{content:"";flex:none;width:7px;height:7px;background:var(--tau);border-radius:2px;margin-top:8px}
+.laender-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.land-chip{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:18px;text-align:center;font-weight:600;font-size:15px}
+@media (max-width:860px){.maerkte-grid{grid-template-columns:1fr}}
+
+.team-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:20px}
+.team-card{text-align:left}
+.team-card img{border-radius:10px;aspect-ratio:1/1;object-fit:cover;margin-bottom:10px;border:1px solid var(--linie)}
+.team-card strong{display:block;font-size:14px}
+@media (max-width:900px){.team-grid{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:560px){.team-grid{grid-template-columns:repeat(2,1fr)}}
+
+.cta{background:linear-gradient(135deg,var(--marine),var(--marine-dunkel));color:#fff;border-radius:24px;padding:64px;text-align:center}
+.cta h2{font-size:clamp(1.8rem,3.2vw,2.4rem);max-width:620px;margin:0 auto 16px}
+.cta p{color:rgba(255,255,255,.88);max-width:520px;margin:0 auto 30px;font-size:16.5px}
+.cta-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--marine-dunkel);color:rgba(255,255,255,.72);padding:60px 0 32px;font-size:14.5px}
+.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px}
+.footer-grid h3{color:#fff;font-size:14px;margin-bottom:16px;letter-spacing:.05em;text-transform:uppercase}
+.footer-grid ul{display:grid;gap:9px}
+.footer-grid a:hover{color:#fff}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:44px;padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px;color:rgba(255,255,255,.42)}
+.footer-bottom a{color:rgba(255,255,255,.42)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="#"><img class="logo" src="/redesign/naval-technica/assets/photos/logo.webp" alt="Naval Technica Export GmbH Logo"></a>
+    <div class="nav-links">
+      <a href="#leistungen">Leistungen</a>
+      <a href="#maerkte">Maerkte</a>
+      <a href="#team">Team</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
+    <div class="header-phone">+49 40 320 856 0</div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="kicker">Schiffbaumaterial-Export, seit 35 Jahren aus Hamburg</span>
+    <h1>Ihr Partner fuer Schiffbaumaterial und Logistik nach Suedamerika.</h1>
+    <p class="lead">Naval Technica Export beschafft Schiffbaumaterialien, Anlagen und Ersatzteile von namhaften Herstellern und exportiert sie zuverlaessig an Werften und Reedereien in Chile, Kolumbien, Peru, Ecuador und Mexico.</p>
+    <div class="hero-actions">
+      <a href="#kontakt" class="btn btn-tau">Anfrage stellen</a>
+      <a href="#leistungen" class="btn btn-outline" style="border-color:rgba(255,255,255,.4);color:#fff">Leistungen ansehen</a>
+    </div>
+  </div>
+</section>
+
+<div class="zahlen">
+  <div class="wrap zahlen-grid">
+    <div><div class="num">35</div><div class="label">Jahre Schiffbau-Export</div></div>
+    <div><div class="num">200+</div><div class="label">Neubauten beliefert</div></div>
+    <div><div class="num">5</div><div class="label">Laender in Suedamerika</div></div>
+    <div><div class="num">3</div><div class="label">Sprachen im Team</div></div>
+  </div>
+</div>
+
+<section id="leistungen">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker dark">Leistungen</span>
+      <h2>Vom Einkauf bis zur Anlieferung.</h2>
+      <p>Drei Leistungsbereiche, die Werften und Reedereien in Suedamerika zuverlaessig versorgen.</p>
+    </div>
+    <div class="leistungen-grid">
+      <div class="leistung-card">
+        <div class="num">01</div>
+        <h3>Schiffbau</h3>
+        <p>Einkauf und Versand von Schiffbauanlagen, Materialien und Systemen fuer den Bau kompletter Schiffe, meist mit mehreren Alternativen.</p>
+      </div>
+      <div class="leistung-card">
+        <div class="num">02</div>
+        <h3>Export-Know-how</h3>
+        <p>Exportkenntnisse und Logistikkanaele fuer See- und Luftfracht, um Schiffbauteile schnell und zuverlaessig nach Suedamerika zu befoerdern.</p>
+      </div>
+      <div class="leistung-card">
+        <div class="num">03</div>
+        <h3>Lager &amp; Sammelstelle</h3>
+        <p>Eigene Lagermoeglichkeit in Hamburg zum Sammeln, Verpacken und Stauen, etwa woechentlich per Container nach Chile oder Kolumbien.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="maerkte" id="maerkte">
+  <div class="wrap maerkte-grid">
+    <div class="content">
+      <span class="kicker">Maerkte</span>
+      <h2>Stammkunden: Werften in Chile und Kolumbien.</h2>
+      <p style="color:rgba(255,255,255,.8);margin-top:14px">Materialien und Anlagen fuer ueber 200 Neubauten geliefert, plus Schiffsausruestungen fuer Hafen-Logistik, Offshore, Tourismus, Fischfang und Lachszucht.</p>
+      <ul>
+        <li>Direkte Beziehungen zu deutschen und europaeischen Lieferanten</li>
+        <li>Erweitert um Stromversorgung und erneuerbare Energien in Chile</li>
+        <li>Team spricht Spanisch, Englisch und Deutsch</li>
+      </ul>
+    </div>
+    <div class="laender-grid">
+      <div class="land-chip">Chile</div>
+      <div class="land-chip">Kolumbien</div>
+      <div class="land-chip">Peru</div>
+      <div class="land-chip">Ecuador</div>
+      <div class="land-chip">Mexico</div>
+      <div class="land-chip">Weitere Laender</div>
+    </div>
+  </div>
+</section>
+
+<section id="team" style="background:var(--karte);border-top:1px solid var(--linie);border-bottom:1px solid var(--linie)">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker dark">Team</span>
+      <h2>Sechs Fachleute, ein Ansprechpartner.</h2>
+    </div>
+    <div class="team-grid">
+      <div class="team-card"><img src="/redesign/naval-technica/assets/photos/sievers.webp" alt="Joaquin Sievers"><strong>Joaquin Sievers</strong></div>
+      <div class="team-card"><img src="/redesign/naval-technica/assets/photos/andrea.webp" alt="Andrea Vasquez"><strong>Andrea Vasquez</strong></div>
+      <div class="team-card"><img src="/redesign/naval-technica/assets/photos/bianca.webp" alt="Bianca Fleth"><strong>Bianca Fleth</strong></div>
+      <div class="team-card"><img src="/redesign/naval-technica/assets/photos/elibeth.webp" alt="Elibeth Gonzalez Vinoles"><strong>Elibeth Gonzalez</strong></div>
+      <div class="team-card"><img src="/redesign/naval-technica/assets/photos/janeth.webp" alt="Janeth Ziermann"><strong>Janeth Ziermann</strong></div>
+      <div class="team-card"><img src="/redesign/naval-technica/assets/photos/tania.webp" alt="Tania Gaekel"><strong>Tania Gaekel</strong></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta">
+      <h2>Suchen Sie Schiffbaumaterial fuer Ihre Werft oder Reederei?</h2>
+      <p>Schreiben Sie uns Ihre Anfrage, Naval Technica Export prueft die Beschaffung und Logistik nach Suedamerika.</p>
+      <div class="cta-actions">
+        <a href="tel:+49403208560" class="btn" style="background:#fff;color:var(--marine-dunkel)">+49 40 320 856 0 anrufen</a>
+        <a href="mailto:info@naval-tec.de" class="btn btn-outline" style="border-color:rgba(255,255,255,.4);color:#fff">info@naval-tec.de</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="kontakt">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h3>Naval Technica Export</h3>
+        <p style="max-width:280px">Schiffbaumaterial-Export nach Suedamerika. Seit 35 Jahren aus Hamburg.</p>
+      </div>
+      <div>
+        <h3>Kontakt</h3>
+        <ul>
+          <li>Winterhuder Weg 42</li>
+          <li>22085 Hamburg</li>
+          <li><a href="tel:+49403208560">Tel. +49 40 320 856 0</a></li>
+          <li><a href="mailto:info@naval-tec.de">info@naval-tec.de</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Unternehmen</h3>
+        <ul>
+          <li>Geschaeftsfuehrer Joaquin Sievers</li>
+          <li>Amtsgericht Hamburg, HRB 36101</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; Naval Technica Export GmbH</span>
+      <div style="display:flex;gap:22px">
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

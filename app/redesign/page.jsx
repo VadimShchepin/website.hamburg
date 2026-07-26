@@ -185,6 +185,12 @@ const redesigns = [
         sector: 'AUGENOPTIK · GEESTHACHT · SEIT 1965',
         description: 'Warmes Rose-Holz-Design mit echter Ladenfotografie und einem originalen Zeitungsartikel aus dem Gruendungsjahr 1965.',
     },
+    {
+        slug: 'getraenke-spezi',
+        firm: 'Getraenke Spezi',
+        sector: 'GETRAENKEHANDEL · HAMBURG-WANDSBEK · SEIT 1954',
+        description: 'Bernstein-Tanne-Design mit echten Event- und Ausschankfotos, der Firmenchronik seit 1954 und einem Markenpartner-Grid.',
+    },
 ];
 
 export default function RedesignPage() {

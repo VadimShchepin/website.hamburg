@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Getraenke Spezi | Getraenkefach-Gross- und Einzelhandel Hamburg-Wandsbek seit 1954</title>
+<meta name="description" content="Getraenke Spezi, Joachim Kirchner & Team: Getraenke-Grosshandel, Gastro-Service und Leihservice fuer Feste und Events in Hamburg-Wandsbek, seit 1954 im Familienbesitz.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;600;700&family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bernstein:#c98a2e;
+  --bernstein-dunkel:#96631c;
+  --tanne:#1f3a2e;
+  --creme:#f7f4ec;
+  --karte:#ffffff;
+  --linie:#e7e0d0;
+  --grau:#655e52;
+  --schatten:0 26px 54px -22px rgba(31,58,46,.26);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Nunito Sans",-apple-system,"Segoe UI",sans-serif;
+  background:var(--creme);
+  color:var(--tanne);
+  font-size:17px;
+  line-height:1.64;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:"Bitter",Georgia,serif;font-weight:600;line-height:1.18;letter-spacing:-.005em}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 28px}
+
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--bernstein-dunkel)}
+.kicker::before{content:"";width:28px;height:2px;background:var(--bernstein-dunkel)}
+
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 30px;border-radius:8px;font-weight:700;font-size:15.5px;transition:transform .2s ease}
+.btn-bernstein{background:var(--tanne);color:#fff}
+.btn-bernstein:hover{transform:translateY(-2px)}
+.btn-outline{border:1.5px solid var(--tanne);color:var(--tanne)}
+.btn-outline:hover{background:rgba(31,58,46,.05)}
+
+header{position:sticky;top:0;z-index:50;background:rgba(247,244,236,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--linie)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;padding:16px 28px}
+.wordmark{font-family:"Bitter",serif;font-size:24px;font-weight:700;color:var(--tanne)}
+.nav-links{display:flex;gap:30px}
+.nav-links a{font-size:14.5px;font-weight:500;color:var(--grau)}
+.nav-links a:hover{color:var(--tanne)}
+.header-phone{font-weight:700;color:var(--bernstein-dunkel)}
+@media (max-width:900px){.nav-links{display:none}}
+@media (max-width:600px){.header-phone{display:none}}
+
+.hero{padding:100px 0}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(2.1rem,4vw,3.2rem);margin:20px 0 22px}
+.hero p.lead{font-size:18px;color:var(--grau);margin-bottom:34px;max-width:520px}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap}
+.hero-photo{border-radius:10px;overflow:hidden;box-shadow:var(--schatten)}
+.hero-photo img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr}}
+
+.zahlen{background:var(--tanne);color:#fff;padding:44px 0}
+.zahlen-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;text-align:center}
+.zahlen .num{font-family:"Bitter",serif;font-size:clamp(1.5rem,3vw,2.2rem);color:#e0b567}
+.zahlen .label{font-size:12.5px;letter-spacing:.04em;color:rgba(255,255,255,.62);margin-top:8px}
+@media (max-width:760px){.zahlen-grid{grid-template-columns:repeat(2,1fr)}}
+
+section{padding:92px 0}
+.section-head{max-width:640px;margin-bottom:44px}
+.section-head h2{font-size:clamp(1.6rem,3vw,2.2rem);margin-top:14px}
+.section-head p{color:var(--grau);margin-top:14px;font-size:16.5px}
+
+.chronik{background:var(--karte);border-top:1px solid var(--linie);border-bottom:1px solid var(--linie)}
+.timeline{display:grid;gap:14px}
+.timeline .row{display:flex;gap:20px;font-size:15px;padding:12px 0;border-bottom:1px solid var(--linie)}
+.timeline .row .jahr{flex:none;width:82px;font-weight:700;color:var(--bernstein-dunkel)}
+.timeline .row .txt{color:var(--grau)}
+
+.marken-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.marken-chip{background:var(--karte);border:1px solid var(--linie);border-radius:8px;padding:16px 10px;text-align:center;font-weight:600;font-size:14px;color:var(--tanne)}
+@media (max-width:900px){.marken-grid{grid-template-columns:repeat(4,1fr)}}
+@media (max-width:560px){.marken-grid{grid-template-columns:repeat(3,1fr)}}
+
+.galerie{background:var(--karte);border-top:1px solid var(--linie);border-bottom:1px solid var(--linie)}
+.galerie-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:18px}
+.galerie-grid .stack{display:grid;gap:18px}
+.galerie-grid figure{border-radius:10px;overflow:hidden;box-shadow:var(--schatten);position:relative}
+.galerie-grid img{width:100%;height:auto;object-fit:cover}
+.galerie-grid .big img{aspect-ratio:4/3;height:auto}
+.galerie-grid .small img{aspect-ratio:4/5;height:auto}
+.galerie-grid figcaption{padding:12px 14px;font-size:13px;color:var(--grau);background:var(--karte)}
+@media (max-width:860px){.galerie-grid{grid-template-columns:1fr}}
+
+.leih-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.leih-card{background:var(--karte);border:1px solid var(--linie);border-radius:12px;padding:26px 24px}
+.leih-card h3{font-size:17px;margin-bottom:10px;color:var(--bernstein-dunkel)}
+.leih-card p{font-size:14.5px;color:var(--grau)}
+@media (max-width:900px){.leih-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.leih-grid{grid-template-columns:1fr}}
+
+.lieferservice{background:var(--tanne);color:#fff;border-radius:20px;padding:52px}
+.lieferservice h2{color:#fff}
+.liefer-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;margin-top:26px}
+.liefer-grid ul{display:grid;gap:10px}
+.liefer-grid li{font-size:14.5px;color:rgba(255,255,255,.82)}
+@media (max-width:860px){.lieferservice{padding:34px}.liefer-grid{grid-template-columns:1fr}}
+
+.cta{text-align:center}
+.cta h2{font-size:clamp(1.7rem,3vw,2.3rem);max-width:600px;margin:0 auto 16px}
+.cta p{color:var(--grau);max-width:520px;margin:0 auto 30px;font-size:16.5px}
+.cta-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--tanne);color:rgba(255,255,255,.72);padding:56px 0 32px;font-size:14.5px}
+.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px}
+@media (max-width:700px){.footer-grid{grid-template-columns:1fr;gap:28px}}
+.footer-grid h3{color:#fff;font-size:14px;margin-bottom:16px;letter-spacing:.05em;text-transform:uppercase}
+.footer-grid ul{display:grid;gap:9px}
+.footer-grid a:hover{color:#fff}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:40px;padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px;color:rgba(255,255,255,.42)}
+.footer-bottom a{color:rgba(255,255,255,.42)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="#" class="wordmark">Spezi</a>
+    <div class="nav-links">
+      <a href="#historie">Historie</a>
+      <a href="#gastro">Gastro-Service</a>
+      <a href="#leihservice">Leihservice</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
+    <div class="header-phone">040 - 656 03 31</div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker">Getraenkefach-Gross- &amp; Einzelhandel, seit 1954</span>
+      <h1>Ihr Getraenke-Partner in Hamburg-Wandsbek.</h1>
+      <p class="lead">Joachim Kirchner &amp; Team beliefern Gastronomie, Firmen und Privatkunden in ganz Hamburg, mit eigenem Fuhrpark, individueller Beratung und ueber 40 Jahren Erfahrung. Vom Kasten Bier bis zur Grossveranstaltung fuer 5000 Gaeste.</p>
+      <div class="hero-actions">
+        <a href="tel:+49406560331" class="btn btn-bernstein">040 - 656 03 31 anrufen</a>
+        <a href="#leihservice" class="btn btn-outline">Leihservice ansehen</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="/redesign/getraenke-spezi/assets/photos/eventaufbau.webp" alt="Aufbau fuer eine Veranstaltung mit Biertischgarnituren und Sonnenschirmen" width="1400" height="1050">
+    </div>
+  </div>
+</section>
+
+<div class="zahlen">
+  <div class="wrap zahlen-grid">
+    <div><div class="num">1954</div><div class="label">Gegruendet</div></div>
+    <div><div class="num">1978</div><div class="label">Zurueck in Familienhand</div></div>
+    <div><div class="num">4</div><div class="label">Eigene LKW</div></div>
+    <div><div class="num">5000</div><div class="label">Gaeste, groesste Events</div></div>
+  </div>
+</div>
+
+<section class="chronik" id="historie">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Firmenchronik</span>
+      <h2>Seit 1954 in Wandsbek, seit 1978 wieder in Familienhand.</h2>
+      <p>In den eigenen Worten von Joachim Kirchner, so wie sie seit Jahrzehnten auf unserer Seite steht.</p>
+    </div>
+    <div class="timeline">
+      <div class="row"><span class="jahr">1954</span><span class="txt">Mein Vater gruendet einen Getraenkehandel in der Baerenallee 16 in Hamburg-Wandsbek, beliefert von der Koenigsbacher Brauerei aus Koblenz.</span></div>
+      <div class="row"><span class="jahr">1968/69</span><span class="txt">Umzug in einen ehemaligen Edeka-Laden in der Gustav-Adolf-Strasse 45, unser Standort bis heute. Der Handel wird zu einem der ersten Getraenkeabholmaerkte.</span></div>
+      <div class="row"><span class="jahr">1971-72</span><span class="txt">Ich, Joachim Kirchner, werde zur Bundeswehr eingezogen. Mein Vater verkauft den Betrieb Ende 1972.</span></div>
+      <div class="row"><span class="jahr">1977</span><span class="txt">Im November erhalte ich unverhofft einen Anruf mit der Anfrage, das Geschaeft als Nachfolger zu uebernehmen.</span></div>
+      <div class="row" style="border-bottom:none"><span class="jahr">1978</span><span class="txt">Am 1. Januar kaufe ich die Firma, womit sie wieder im Besitz der Familie zurueckkommt. Gestartet mit einem VW Bus und einer Halbtagskraft.</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="gastro">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Gastro-Service</span>
+      <h2>Vertriebspartner fast aller bekannten Marken.</h2>
+      <p>Wir fuehren Fassbiere, Flaschenbiere, Premix, Saefte, Selter und Limonaden, Spirituosen, Sekt und Wein sowie Kohlensaeure und Mischgas.</p>
+    </div>
+    <div class="marken-grid">
+      <div class="marken-chip">Astra</div>
+      <div class="marken-chip">Beck's</div>
+      <div class="marken-chip">Bitburger</div>
+      <div class="marken-chip">Carlsberg</div>
+      <div class="marken-chip">Holsten</div>
+      <div class="marken-chip">Jever</div>
+      <div class="marken-chip">Koenig Pilsener</div>
+      <div class="marken-chip">Krombacher</div>
+      <div class="marken-chip">Paulaner</div>
+      <div class="marken-chip">Radeberger</div>
+      <div class="marken-chip">Veltins</div>
+      <div class="marken-chip">Warsteiner</div>
+    </div>
+  </div>
+</section>
+
+<section class="galerie" id="leihservice">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Leihservice &amp; Veranstaltungen</span>
+      <h2>Fuer Feste und Events, von 50 bis 5000 Gaesten.</h2>
+      <p>Mietmoebel und Ausschankgeraete berechnen wir nach Wochenenden, nicht nach Tagen.</p>
+    </div>
+    <div class="galerie-grid">
+      <figure class="big">
+        <img src="/redesign/getraenke-spezi/assets/photos/bierwagen-fest.webp" alt="Bierschankwagen im Einsatz auf einem Strassenfest" width="1400" height="1050">
+        <figcaption>Bierschankwagen im Einsatz auf einem Strassenfest</figcaption>
+      </figure>
+      <div class="stack">
+        <figure class="small">
+          <img src="/redesign/getraenke-spezi/assets/photos/koenig-glaeser.webp" alt="Markenglaeser fuer den Ausschank" width="900" height="855">
+          <figcaption>Markenglaeser fuer den Ausschank</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="leih-grid" style="margin-top:36px">
+      <div class="leih-card">
+        <h3>Biertischgarnituren &amp; Tresen</h3>
+        <p>Biertischgarnituren aus Holz mit Tischdecke und Sitzpolstern, dazu Klapptresen aus Kunststoff und Metall.</p>
+      </div>
+      <div class="leih-card">
+        <h3>Bierschankwagen</h3>
+        <p>Von Koenig Pilsener, mit 4 Zapfsaeulen, bis hin zum VIP-Exclusivwagen mit Kuehlzelle fuer 32 Fass. Fruehzeitige Reservierung noetig.</p>
+      </div>
+      <div class="leih-card">
+        <h3>Kuehltechnik &amp; Zubehoer</h3>
+        <p>Bierzapfanlagen, Kuehlschraenke, Kuehlanhaenger, Schirme, Stehtische und Zelte in verschiedenen Groessen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="lieferservice">
+      <h2>Lieferservice fuer Hamburg.</h2>
+      <div class="liefer-grid">
+        <ul>
+          <li>Lieferung Montag bis Freitag in Hamburg, fuer Veranstaltungen nach Absprache auch samstags</li>
+          <li>Bestellung per Telefon, Fax oder Mail</li>
+          <li>In der Regel reicht eine Vorlaufzeit von 36 Stunden</li>
+        </ul>
+        <ul>
+          <li>Telefonisch erreichbar Mo-Fr 8:00-17:00 Uhr, Sa 9:00-13:00 Uhr</li>
+          <li>Anlieferung Mo-Fr zwischen 9:00 und 17:00 Uhr</li>
+          <li>Wir laden Ihnen die Getraenke direkt in den Kofferraum</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2>Preise auf Anfrage, individuelle Beratung.</h2>
+    <p>Rufen Sie an oder besuchen Sie uns in der Gustav-Adolf-Strasse 45 in Hamburg-Wandsbek.</p>
+    <div class="cta-actions">
+      <a href="tel:+49406560331" class="btn btn-bernstein">040 - 656 03 31 anrufen</a>
+      <a href="mailto:info@getraenke-spezi.de" class="btn btn-outline">info@getraenke-spezi.de</a>
+    </div>
+  </div>
+</section>
+
+<footer id="kontakt">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h3>Getraenke Spezi</h3>
+        <p style="max-width:280px">Joachim Kirchner &amp; Team, Getraenkefach-Gross- und Einzelhandel, seit 1954 in Hamburg-Wandsbek.</p>
+      </div>
+      <div>
+        <h3>Kontakt</h3>
+        <ul>
+          <li>Gustav-Adolf-Strasse 45</li>
+          <li>22043 Hamburg</li>
+          <li><a href="tel:+49406560331">Tel. 040 - 656 03 31</a></li>
+          <li><a href="mailto:info@getraenke-spezi.de">info@getraenke-spezi.de</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Oeffnungszeiten</h3>
+        <ul>
+          <li>Mo-Fr 8:00-17:00 Uhr</li>
+          <li>Sa 9:00-13:00 Uhr</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; Getraenke Spezi</span>
+      <div style="display:flex;gap:22px">
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

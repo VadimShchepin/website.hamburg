@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Juwelier Gustke | Uhren &amp; Schmuck in Glinde seit 1967</title>
+<meta name="description" content="Juwelier Gustke: Uhren und Schmuck in Glinde, seit 1967 fuer Sie da. Markenuhren, Goldschmiedearbeiten und Goldankauf mit sofortiger Bargeldzahlung.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blau:#1a5fa8;
+  --blau-dunkel:#0f3d70;
+  --silber:#9aa3ab;
+  --creme:#f6f7f9;
+  --tinte:#1e242b;
+  --grau:#5c6570;
+  --karte:#ffffff;
+  --linie:#e2e5e9;
+  --schatten:0 26px 54px -22px rgba(30,36,43,.28);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Karla",-apple-system,"Segoe UI",sans-serif;
+  background:var(--creme);
+  color:var(--tinte);
+  font-size:17px;
+  line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.14;letter-spacing:-.005em}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 28px}
+
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--blau)}
+.kicker::before{content:"";width:28px;height:2px;background:var(--blau)}
+
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 30px;border-radius:8px;font-weight:700;font-size:15.5px;transition:transform .2s ease}
+.btn-blau{background:var(--blau);color:#fff;box-shadow:0 16px 30px -10px rgba(26,95,168,.45)}
+.btn-blau:hover{transform:translateY(-2px)}
+.btn-outline{border:1.5px solid var(--tinte);color:var(--tinte)}
+.btn-outline:hover{background:rgba(30,36,43,.05)}
+
+header{position:sticky;top:0;z-index:50;background:rgba(246,247,249,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--linie)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;padding:16px 28px}
+.wordmark{font-family:"Cormorant Garamond",serif;font-size:26px;font-weight:700;color:var(--blau-dunkel);letter-spacing:.04em}
+.nav-links{display:flex;gap:32px}
+.nav-links a{font-size:14.5px;font-weight:500;color:var(--grau)}
+.nav-links a:hover{color:var(--blau)}
+.header-phone{font-weight:700;color:var(--blau)}
+@media (max-width:860px){.nav-links{display:none}}
+@media (max-width:600px){.header-phone{display:none}}
+
+.hero{position:relative;color:#fff;background:linear-gradient(120deg,var(--blau-dunkel),var(--blau));padding:120px 0}
+.hero .kicker{color:#c7ddf3}
+.hero .kicker::before{background:#c7ddf3}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(2.2rem,4.2vw,3.5rem);margin:20px 0 22px}
+.hero p.lead{font-size:19px;color:rgba(255,255,255,.88);margin-bottom:34px}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap}
+.hero-photo{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);border-radius:20px;padding:14px;box-shadow:var(--schatten)}
+.hero-photo img{border-radius:12px;width:100%}
+.hero-photo p{font-size:13px;color:rgba(255,255,255,.68);margin-top:12px;text-align:center}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr}.hero-photo{max-width:360px;margin:0 auto}}
+
+.zahlen{background:var(--tinte);color:#fff;padding:46px 0}
+.zahlen-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;text-align:center}
+.zahlen .num{font-family:"Cormorant Garamond",serif;font-size:clamp(2rem,3.6vw,2.7rem);color:#8fbde8}
+.zahlen .label{font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.62);margin-top:8px}
+@media (max-width:760px){.zahlen-grid{grid-template-columns:repeat(2,1fr)}}
+
+section{padding:96px 0}
+.section-head{max-width:640px;margin-bottom:48px}
+.section-head h2{font-size:clamp(1.7rem,3vw,2.3rem);margin-top:14px}
+.section-head p{color:var(--grau);margin-top:14px;font-size:16.5px}
+
+.marken-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.marken-chip{background:var(--karte);border:1px solid var(--linie);border-radius:10px;padding:20px 14px;text-align:center;font-family:"Cormorant Garamond",serif;font-size:16px;font-weight:600;color:var(--blau-dunkel)}
+@media (max-width:900px){.marken-grid{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:560px){.marken-grid{grid-template-columns:repeat(2,1fr)}}
+
+.split{background:var(--karte);border-top:1px solid var(--linie);border-bottom:1px solid var(--linie)}
+.split-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.split-grid .content ul{margin-top:22px;display:grid;gap:12px}
+.split-grid .content li{display:flex;gap:10px;font-size:15.5px}
+.split-grid .content li::before{content:"";flex:none;width:7px;height:7px;background:var(--blau);border-radius:2px;margin-top:8px}
+.gold-card{background:linear-gradient(135deg,#f7e7c1,#d9b45c);border-radius:16px;padding:44px;color:var(--tinte);box-shadow:var(--schatten)}
+.gold-card h3{font-size:26px;margin-bottom:10px}
+.gold-card p{font-weight:600;font-family:"Karla",sans-serif}
+@media (max-width:900px){.split-grid{grid-template-columns:1fr}}
+
+.cta{background:linear-gradient(135deg,var(--blau),var(--blau-dunkel));color:#fff;border-radius:24px;padding:64px;text-align:center}
+.cta h2{font-size:clamp(1.8rem,3.2vw,2.4rem);max-width:600px;margin:0 auto 16px}
+.cta p{color:rgba(255,255,255,.88);max-width:520px;margin:0 auto 30px;font-size:16.5px}
+.cta-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--tinte);color:rgba(255,255,255,.72);padding:60px 0 32px;font-size:14.5px}
+.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px}
+@media (max-width:700px){.footer-grid{grid-template-columns:1fr;gap:28px}}
+.footer-grid h3{color:#fff;font-size:14px;margin-bottom:16px;letter-spacing:.05em;text-transform:uppercase}
+.footer-grid ul{display:grid;gap:9px}
+.footer-grid a:hover{color:#fff}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:44px;padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px;color:rgba(255,255,255,.42)}
+.footer-bottom a{color:rgba(255,255,255,.42)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="#" class="wordmark">Gustke</a>
+    <div class="nav-links">
+      <a href="#marken">Marken</a>
+      <a href="#goldankauf">Goldankauf</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
+    <div class="header-phone">(0 40) 710 62 22</div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker">Uhren &amp; Schmuck, seit 1967 in Glinde</span>
+      <h1>Juwelier Gustke, seit 1967 fuer Sie da.</h1>
+      <p class="lead">Wir fuehren fuer Sie in Glinde Uhren- und Schmuckmarken von preiswert in Silber und Edelstahl bis kostbar in Gold. Seit 1974 am Markt 15 in Glinde.</p>
+      <div class="hero-actions">
+        <a href="#kontakt" class="btn btn-blau">Termin vereinbaren</a>
+        <a href="#marken" class="btn btn-outline" style="border-color:rgba(255,255,255,.4);color:#fff">Marken ansehen</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="/redesign/juwelier-gustke/assets/photos/watch-macro.webp" alt="Skelettwerk einer Automatikuhr aus dem Sortiment von Juwelier Gustke" width="500" height="154">
+      <p>Feinmechanik aus unserem Uhrensortiment</p>
+    </div>
+  </div>
+</section>
+
+<div class="zahlen">
+  <div class="wrap zahlen-grid">
+    <div><div class="num">1967</div><div class="label">Gruendungsjahr</div></div>
+    <div><div class="num">1974</div><div class="label">Am Markt 15 in Glinde</div></div>
+    <div><div class="num">10</div><div class="label">Gefuehrte Uhren- &amp; Schmuckmarken</div></div>
+    <div><div class="num">1</div><div class="label">Inhabergefuehrtes Fachgeschaeft</div></div>
+  </div>
+</div>
+
+<section id="marken">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Marken</span>
+      <h2>Vertretene Uhren- und Schmuckmarken.</h2>
+      <p>Von preiswert in Silber und Edelstahl bis kostbar in Gold, mit einer Auswahl namhafter Marken.</p>
+    </div>
+    <div class="marken-grid">
+      <div class="marken-chip">Myns</div>
+      <div class="marken-chip">Xenox</div>
+      <div class="marken-chip">Zeppelin</div>
+      <div class="marken-chip">Casio Edifice</div>
+      <div class="marken-chip">Muehle Glashuette</div>
+      <div class="marken-chip">Casio</div>
+      <div class="marken-chip">Claude Pascal</div>
+      <div class="marken-chip">Trollbeads</div>
+      <div class="marken-chip">Bruno Soehnle</div>
+      <div class="marken-chip">Junkers</div>
+    </div>
+  </div>
+</section>
+
+<section class="split" id="goldankauf">
+  <div class="wrap split-grid">
+    <div class="gold-card">
+      <h3>Goldankauf</h3>
+      <p>Bargeld sofort. Kein Postweg. Kein Risiko.</p>
+    </div>
+    <div class="content">
+      <span class="kicker">Goldankauf</span>
+      <h2>Ihr Gold, sofort in Bargeld.</h2>
+      <p style="color:var(--grau);margin-top:14px">Verkaufen Sie Ihr altes Gold direkt vor Ort bei Juwelier Gustke, ohne Postweg und ohne Risiko.</p>
+      <ul>
+        <li>Bargeld sofort bei Ankauf</li>
+        <li>Kein Versand, kein Risiko unterwegs</li>
+        <li>Persoenliche Beratung im Fachgeschaeft am Markt 15</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta">
+      <h2>Suchen Sie eine neue Uhr oder moechten Sie Gold verkaufen?</h2>
+      <p>Rufen Sie an oder besuchen Sie uns am Markt 15 in Glinde.</p>
+      <div class="cta-actions">
+        <a href="tel:+49407106222" class="btn" style="background:#fff;color:var(--blau-dunkel)">(0 40) 710 62 22 anrufen</a>
+        <a href="mailto:juwelier.gustke@googlemail.com" class="btn btn-outline" style="border-color:rgba(255,255,255,.4);color:#fff">juwelier.gustke@googlemail.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="kontakt">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h3>Juwelier Gustke</h3>
+        <p style="max-width:280px">Uhren &amp; Schmuck. Seit 1967 fuer Sie da, seit 1974 am Markt 15 in Glinde.</p>
+      </div>
+      <div>
+        <h3>Kontakt</h3>
+        <ul>
+          <li>Markt 15</li>
+          <li>21509 Glinde</li>
+          <li><a href="tel:+49407106222">Tel. (0 40) 710 62 22</a></li>
+          <li><a href="mailto:juwelier.gustke@googlemail.com">juwelier.gustke@googlemail.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Unternehmen</h3>
+        <ul>
+          <li>Inhaber Andreas Gustke</li>
+          <li>IHK Schleswig-Holstein (Luebeck)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; Juwelier Gustke</span>
+      <div style="display:flex;gap:22px">
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

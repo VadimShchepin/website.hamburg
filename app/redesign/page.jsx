@@ -149,6 +149,18 @@ const redesigns = [
         sector: 'BUCHBINDEREI · HAMBURG-NIENSTEDTEN · SEIT 1996',
         description: 'Editoriales Gold-Anthrazit-Design, komplett aus der eigenen Werkstattfotografie gebaut, vom Goldschnitt bis zur Papermoles-Lederlinie.',
     },
+    {
+        slug: 'antiquariat-pabel',
+        firm: 'Antiquariat Reinhold Pabel',
+        sector: 'ANTIQUARIAT · HAMBURG-NEUSTADT · SEIT 1948',
+        description: 'Pergament-Tinte-Design mit echter Ladenfotografie am Michel und einer Firmengeschichte von Chicago bis zum Krameramt.',
+    },
+    {
+        slug: 'juwelier-gustke',
+        firm: 'Juwelier Gustke',
+        sector: 'UHREN & SCHMUCK · GLINDE · SEIT 1967',
+        description: 'Klares Blau-Silber-Design um die echte Skelettuhr-Nahaufnahme, mit Markengrid und direktem Goldankauf-Baustein.',
+    },
 ];
 
 export default function RedesignPage() {

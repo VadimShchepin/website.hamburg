@@ -179,6 +179,12 @@ const redesigns = [
         sector: 'MOEBELTISCHLEREI · HAMBURG-WANDSBEK · SEIT 1996',
         description: 'Warmes Holz-Anthrazit-Design mit echter Werkstattfotografie, von der Firmenchronik bis zum restaurierten Treppengelaender.',
     },
+    {
+        slug: 'optiker-jacob',
+        firm: 'Optiker Jacob',
+        sector: 'AUGENOPTIK · GEESTHACHT · SEIT 1965',
+        description: 'Warmes Rose-Holz-Design mit echter Ladenfotografie und einem originalen Zeitungsartikel aus dem Gruendungsjahr 1965.',
+    },
 ];
 
 export default function RedesignPage() {

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fleischerei Lüssenhop | Fleisch, Wurst und Partyservice in Buxtehude-Neukloster</title>
+<meta name="description" content="Fleischerei Lüssenhop: Fleisch-, Wurst- und Kaesespezialitaeten sowie Partyservice in Buxtehude-Neukloster. Seit 1860 in fuenfter Generation, gefuehrt von Stefan Luessenhop.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --rot:#c41f2e;
+  --rot-dunkel:#8f1420;
+  --creme:#faf6ee;
+  --creme-2:#f0e6d4;
+  --tinte:#241c16;
+  --grau:#665f52;
+  --karte:#ffffff;
+  --schatten:0 26px 54px -22px rgba(36,28,22,.3);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Karla",-apple-system,"Segoe UI",sans-serif;
+  background:var(--creme);
+  color:var(--tinte);
+  font-size:17px;
+  line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:600;line-height:1.14;letter-spacing:-.005em}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 28px}
+svg.icon{width:28px;height:28px;stroke:var(--rot);fill:none;stroke-width:1.6}
+
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--rot)}
+.kicker::before{content:"";width:28px;height:2px;background:var(--rot)}
+
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 30px;border-radius:8px;font-weight:700;font-size:15.5px;transition:transform .2s ease}
+.btn-rot{background:var(--rot);color:#fff;box-shadow:0 16px 30px -10px rgba(196,31,46,.45)}
+.btn-rot:hover{transform:translateY(-2px)}
+.btn-outline{border:1.5px solid var(--tinte);color:var(--tinte)}
+.btn-outline:hover{background:rgba(36,28,22,.05)}
+
+header{position:sticky;top:0;z-index:50;background:rgba(250,246,238,.94);backdrop-filter:blur(8px);border-bottom:1px solid rgba(36,28,22,.08)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;padding:12px 28px}
+header img.logo{height:44px;width:auto}
+.nav-links{display:flex;gap:32px}
+.nav-links a{font-size:14.5px;font-weight:500;color:var(--grau)}
+.nav-links a:hover{color:var(--rot)}
+.header-phone{font-weight:700;color:var(--rot)}
+@media (max-width:860px){.nav-links{display:none}}
+@media (max-width:600px){.header-phone{display:none}}
+
+.hero{padding:76px 0 90px}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(2.2rem,4.2vw,3.4rem);margin:20px 0 22px}
+.hero p.lead{font-size:18.5px;color:var(--grau);margin-bottom:30px}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap}
+.hero-photo{position:relative}
+.hero-photo .frame{border-radius:18px;overflow:hidden;box-shadow:var(--schatten);border:6px solid #fff}
+.hero-photo .frame img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.hero-photo .badge{position:absolute;bottom:-20px;left:-20px;background:var(--rot);color:#fff;border-radius:14px;padding:16px 22px;box-shadow:var(--schatten)}
+.hero-photo .badge .n{font-family:"Fraunces",serif;font-size:26px;font-weight:600}
+.hero-photo .badge .l{font-size:11px;letter-spacing:.1em;text-transform:uppercase;opacity:.85}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr}.hero-photo{margin-top:20px}}
+
+.zahlen{background:var(--tinte);color:#fff;padding:46px 0}
+.zahlen-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;text-align:center}
+.zahlen .num{font-family:"Fraunces",serif;font-size:clamp(2rem,3.6vw,2.7rem);color:#f0a8ac}
+.zahlen .label{font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.62);margin-top:8px}
+@media (max-width:760px){.zahlen-grid{grid-template-columns:repeat(2,1fr)}}
+
+section{padding:96px 0}
+.section-head{max-width:640px;margin-bottom:48px}
+.section-head h2{font-size:clamp(1.7rem,3vw,2.3rem);margin-top:14px}
+.section-head p{color:var(--grau);margin-top:14px;font-size:16.5px}
+
+.leistungen-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.leistung-card{background:var(--karte);border-radius:14px;padding:28px;border:1px solid rgba(36,28,22,.1)}
+.leistung-card .icon-wrap{width:50px;height:50px;border-radius:10px;background:rgba(196,31,46,.08);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.leistung-card h3{font-size:17px;margin-bottom:8px}
+.leistung-card p{font-size:14px;color:var(--grau)}
+@media (max-width:900px){.leistungen-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.leistungen-grid{grid-template-columns:1fr}}
+
+.quote-band{background:var(--rot);color:#fff;text-align:center}
+.quote-band blockquote{font-family:"Fraunces",serif;font-size:clamp(1.4rem,2.4vw,1.9rem);font-weight:500;max-width:760px;margin:0 auto;line-height:1.4}
+.quote-band .attrib{margin-top:20px;color:#f6c9cc;font-size:14.5px;letter-spacing:.06em;text-transform:uppercase}
+
+.cta{background:linear-gradient(135deg,var(--rot),var(--rot-dunkel));color:#fff;border-radius:24px;padding:64px;text-align:center}
+.cta h2{font-size:clamp(1.8rem,3.2vw,2.4rem);max-width:600px;margin:0 auto 16px}
+.cta p{color:rgba(255,255,255,.88);max-width:520px;margin:0 auto 30px;font-size:16.5px}
+.cta-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--tinte);color:rgba(255,255,255,.72);padding:60px 0 32px;font-size:14.5px}
+.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px}
+@media (max-width:700px){.footer-grid{grid-template-columns:1fr;gap:28px}}
+.footer-grid h3{color:#fff;font-size:14px;margin-bottom:16px;letter-spacing:.05em;text-transform:uppercase}
+.footer-grid ul{display:grid;gap:9px}
+.footer-grid a:hover{color:#fff}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:44px;padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px;color:rgba(255,255,255,.42)}
+.footer-bottom a{color:rgba(255,255,255,.42)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="#"><img class="logo" src="/redesign/luessenhop/assets/photos/logo.webp" alt="Fleischerei Luessenhop Logo"></a>
+    <div class="nav-links">
+      <a href="#leistungen">Sortiment</a>
+      <a href="#partyservice">Partyservice</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
+    <div class="header-phone">04161 82884</div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker">Fleischerei &amp; Partyservice, seit 1860</span>
+      <h1>Fleisch, Wurst und Kaese aus der Region fuer die Region.</h1>
+      <p class="lead">Die Fleischerei Luessenhop wird in fuenfter Generation von Stefan Luessenhop gefuehrt. Neben dem Ladengeschaeft in Buxtehude-Neukloster bereitet unser Partyservice Menues und Buffets fuer Ihre Veranstaltung vor.</p>
+      <div class="hero-actions">
+        <a href="#kontakt" class="btn btn-rot">Partyservice anfragen</a>
+        <a href="#leistungen" class="btn btn-outline">Sortiment ansehen</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <div class="frame"><img src="/redesign/luessenhop/assets/photos/team.webp" alt="Das Team der Fleischerei Luessenhop vor dem Ladengeschaeft"></div>
+      <div class="badge"><div class="n">1860</div><div class="l">Gruendungsjahr</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="zahlen">
+  <div class="wrap zahlen-grid">
+    <div><div class="num">1860</div><div class="label">Gruendungsjahr</div></div>
+    <div><div class="num">5.</div><div class="label">Generation Luessenhop</div></div>
+    <div><div class="num">166</div><div class="label">Jahre Familientradition</div></div>
+    <div><div class="num">1</div><div class="label">Laden, ein Partyservice</div></div>
+  </div>
+</div>
+
+<section id="leistungen">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Sortiment</span>
+      <h2>Fleisch-, Wurst- und Kaesespezialitaeten.</h2>
+      <p>Ein reichhaltiges Angebot aus der Region fuer die Region, dazu persoenliche Beratung im Ladengeschaeft.</p>
+    </div>
+    <div class="leistungen-grid">
+      <div class="leistung-card">
+        <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><path d="M6 4h12l-1 8H7z"/><path d="M8 12v3a4 4 0 0 0 8 0v-3"/></svg></div>
+        <h3>Fleischspezialitaeten</h3>
+        <p>Frisches Fleisch aus der Region, persoenlich ausgewaehlt und zugeschnitten.</p>
+      </div>
+      <div class="leistung-card">
+        <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><rect x="5" y="9" width="14" height="6" rx="3"/><path d="M8 9V7a4 4 0 0 1 8 0v2"/></svg></div>
+        <h3>Wurstspezialitaeten</h3>
+        <p>Hausgemachte Wurstwaren nach traditionellen Rezepten der Familie Luessenhop.</p>
+      </div>
+      <div class="leistung-card">
+        <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><path d="M4 10 12 4l8 6-2 10H6z"/></svg></div>
+        <h3>Kaesespezialitaeten</h3>
+        <p>Ausgewaehlte Kaesesorten, empfohlen und beraten von unserem Team.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="quote-band">
+  <div class="wrap">
+    <blockquote>&quot;Wir sind Ihr Fleischer des Vertrauens und des Geschmacks.&quot;</blockquote>
+    <div class="attrib">Ihr Luessenhop Team</div>
+  </div>
+</section>
+
+<section id="partyservice" style="background:var(--creme-2)">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Partyservice</span>
+      <h2>Fuer Firmenevent, Geburtstag und Jubilaeum.</h2>
+      <p>Individuelle Menues und Buffets, vorbestellt und puenktlich geliefert.</p>
+    </div>
+    <div class="leistungen-grid">
+      <div class="leistung-card">
+        <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><path d="M4 8h16v3H4zM6 11v9h12v-9"/></svg></div>
+        <h3>Buffets &amp; Menues</h3>
+        <p>Individuell zusammengestellt fuer Firmenevents, Geburtstage und Jubilaeen.</p>
+      </div>
+      <div class="leistung-card">
+        <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg></div>
+        <h3>Spanferkel</h3>
+        <p>Auf Bestellung fuer groessere Feiern und Veranstaltungen.</p>
+      </div>
+      <div class="leistung-card">
+        <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><rect x="4" y="6" width="16" height="12" rx="2"/><path d="M4 10h16"/></svg></div>
+        <h3>Platten &amp; Fingerfood</h3>
+        <p>Belegte Platten, Canapes und Fingerfood, auch als PDF-Menue zum Vorbestellen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta">
+      <h2>Planen Sie ein Firmenevent oder eine Feier?</h2>
+      <p>Rufen Sie uns an oder schauen Sie im Ladengeschaeft in Buxtehude-Neukloster vorbei, wir freuen uns auf Sie.</p>
+      <div class="cta-actions">
+        <a href="tel:+49416182884" class="btn" style="background:#fff;color:var(--rot-dunkel)">04161 82884 anrufen</a>
+        <a href="mailto:info@fleischerei-luessenhop.de" class="btn btn-outline" style="border-color:rgba(255,255,255,.4);color:#fff">info@fleischerei-luessenhop.de</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="kontakt">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h3>Fleischerei Luessenhop</h3>
+        <p style="max-width:280px">Fleisch, Wurst und Partyservice. Seit 1860 in Buxtehude-Neukloster, heute in fuenfter Generation.</p>
+      </div>
+      <div>
+        <h3>Kontakt</h3>
+        <ul>
+          <li>Cuxhavener Strasse 144</li>
+          <li>21614 Buxtehude-Neukloster</li>
+          <li><a href="tel:+49416182884">Tel. 04161 82884</a></li>
+          <li><a href="mailto:info@fleischerei-luessenhop.de">info@fleischerei-luessenhop.de</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Unternehmen</h3>
+        <ul>
+          <li>Inhaber Stefan Luessenhop</li>
+          <li>Fax 04161 78562</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; Fleischerei Luessenhop</span>
+      <div style="display:flex;gap:22px">
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

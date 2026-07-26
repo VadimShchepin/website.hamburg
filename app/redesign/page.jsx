@@ -131,6 +131,24 @@ const redesigns = [
         sector: 'OELSAATEN & GEWUERZE · HAMBURG-WALTERSHOF · SEIT 1958',
         description: 'Erdiges Senfgelb-Gruen-Design mit Koehlbrandbruecken-Hero und einer Zeitleiste ueber drei Generationen der Familie Popp.',
     },
+    {
+        slug: 'luessenhop',
+        firm: 'Fleischerei Lüssenhop',
+        sector: 'FLEISCHEREI & PARTYSERVICE · BUXTEHUDE-NEUKLOSTER · SEIT 1860',
+        description: 'Warmes Rot-Design mit dem echten Team-Foto vor dem Ladengeschaeft als Hero, in fuenfter Generation gefuehrt.',
+    },
+    {
+        slug: 'dirala',
+        firm: 'Dirala. Blankeneser Werkstätten GmbH',
+        sector: 'RAUMAUSSTATTUNG · HAMBURG-BLANKENESE · SEIT 1884',
+        description: 'Elegantes Bordeaux-Design mit dem echten Logo und einer Referenzliste aus echten Botschaften, Museen und Institutionen.',
+    },
+    {
+        slug: 'buchbinderei-erdmann',
+        firm: 'Buchbinderei Erdmann & Papermoles GmbH',
+        sector: 'BUCHBINDEREI · HAMBURG-NIENSTEDTEN · SEIT 1996',
+        description: 'Editoriales Gold-Anthrazit-Design, komplett aus der eigenen Werkstattfotografie gebaut, vom Goldschnitt bis zur Papermoles-Lederlinie.',
+    },
 ];
 
 export default function RedesignPage() {

@@ -5,10 +5,10 @@
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Antiquariat Reinhold Pabel | Alte &amp; seltene Bücher in Hamburg-Neustadt</title>
-<meta name="description" content="Antiquariat Reinhold Pabel: An- und Verkauf alter und seltener Buecher in Hamburg-Neustadt, direkt am Michel. Seit 1948 in Chicago gegruendet, seit 1974 in Hamburg.">
+<meta name="description" content="Antiquariat Reinhold Pabel: An- und Verkauf alter und seltener Bücher in Hamburg-Neustadt, direkt am Michel. Seit 1948 in Chicago gegründet, seit 1974 in Hamburg.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,600italic&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500&family=Red+Hat+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
   --ink:#2b2620;
@@ -24,14 +24,14 @@
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
-  font-family:"Karla",-apple-system,"Segoe UI",sans-serif;
+  font-family:"Red Hat Text",-apple-system,"Segoe UI",sans-serif;
   background:var(--creme);
   color:var(--ink);
   font-size:17px;
   line-height:1.62;
   -webkit-font-smoothing:antialiased;
 }
-h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:600;line-height:1.14;letter-spacing:-.005em}
+h1,h2,h3{font-family:"Newsreader",Georgia,serif;font-weight:600;line-height:1.14;letter-spacing:-.005em}
 img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
 .wrap{max-width:1160px;margin:0 auto;padding:0 28px}
@@ -47,7 +47,7 @@ a{color:inherit;text-decoration:none}
 
 header{position:sticky;top:0;z-index:50;background:rgba(248,243,232,.94);backdrop-filter:blur(8px);border-bottom:1px solid rgba(43,38,32,.08)}
 header .wrap{display:flex;align-items:center;justify-content:space-between;padding:18px 28px}
-.wordmark{font-family:"Fraunces",serif;font-size:20px;font-weight:600;font-style:italic}
+.wordmark{font-family:"Newsreader",serif;font-size:20px;font-weight:600;font-style:italic}
 .wordmark span{color:var(--gold);font-style:normal}
 .nav-links{display:flex;gap:32px}
 .nav-links a{font-size:14.5px;font-weight:500;color:var(--grau)}
@@ -56,16 +56,26 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;paddi
 @media (max-width:860px){.nav-links{display:none}}
 @media (max-width:600px){.header-phone{display:none}}
 
-.hero{position:relative;color:#fff;background:linear-gradient(180deg,rgba(30,26,20,.5),rgba(30,26,20,.88)),var(--ink) url('/redesign/antiquariat-pabel/assets/photos/storefront.webp') center/cover no-repeat;padding:130px 0 100px}
-.hero .kicker{color:var(--gold-hell)}
-.hero .kicker::before{background:var(--gold-hell)}
-.hero h1{font-size:clamp(2.2rem,4.2vw,3.5rem);margin:20px 0 22px;max-width:760px}
-.hero p.lead{font-size:19px;color:rgba(255,255,255,.85);max-width:580px;margin-bottom:34px}
+/* The storefront file is 550px wide. Stretched full-bleed it went soft, and an
+   88% scrim hid the shop's own signage. It now runs at roughly 1:1 in a plate,
+   on a ground made from the antiquariat's own page-edge texture. */
+.hero{position:relative;background:var(--creme);color:var(--ink);padding:76px 0 72px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:url('/redesign/antiquariat-pabel/assets/photos/pages-texture.webp') center/cover no-repeat;opacity:.16;mix-blend-mode:multiply}
+.hero .wrap{position:relative}
+.hero-grid{display:grid;grid-template-columns:1.06fr .94fr;gap:52px;align-items:center}
+.hero .kicker{color:var(--gold)}
+.hero .kicker::before{background:var(--gold)}
+.hero h1{font-size:clamp(2.1rem,3.9vw,3.2rem);margin:18px 0 20px}
+.hero p.lead{font-size:17.5px;color:var(--grau);margin-bottom:30px}
+.hero-plate{background:var(--karte);padding:13px 13px 0;border:1px solid rgba(140,106,47,.35);box-shadow:0 24px 52px -26px rgba(43,38,32,.5)}
+.hero-plate img{width:100%;height:auto;aspect-ratio:550/368;object-fit:cover}
+.hero-plate figcaption{padding:13px 4px 15px;font-family:"Newsreader",serif;font-style:italic;font-size:14.5px;color:var(--grau)}
+@media (max-width:920px){.hero-grid{grid-template-columns:1fr;gap:34px}}
 .hero-actions{display:flex;gap:16px;flex-wrap:wrap}
 
 .zahlen{background:var(--ink-2);color:#fff;padding:46px 0}
 .zahlen-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;text-align:center}
-.zahlen .num{font-family:"Fraunces",serif;font-size:clamp(2rem,3.6vw,2.7rem);color:var(--gold-hell)}
+.zahlen .num{font-family:"Newsreader",serif;font-size:clamp(2rem,3.6vw,2.7rem);color:var(--gold-hell)}
 .zahlen .label{font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.62);margin-top:8px}
 @media (max-width:760px){.zahlen-grid{grid-template-columns:repeat(2,1fr)}}
 
@@ -78,7 +88,7 @@ section{padding:96px 0}
 .timeline .jahr{padding-bottom:30px;position:relative}
 .timeline .jahr:last-child{padding-bottom:0}
 .timeline .jahr::before{content:"";position:absolute;left:-37px;top:4px;width:12px;height:12px;border-radius:50%;background:var(--gold)}
-.timeline .jahr .y{font-family:"Fraunces",serif;color:var(--gold);font-size:21px}
+.timeline .jahr .y{font-family:"Newsreader",serif;color:var(--gold);font-size:21px}
 .timeline .jahr .t{font-size:15px;color:var(--grau);margin-top:6px;max-width:640px}
 
 .galerie{background:var(--karte);border-top:1px solid rgba(43,38,32,.08);border-bottom:1px solid rgba(43,38,32,.08)}
@@ -91,7 +101,7 @@ section{padding:96px 0}
 @media (max-width:560px){.galerie-grid{grid-template-columns:1fr}}
 
 .quote-band{background:var(--ink);color:#fff;text-align:center}
-.quote-band blockquote{font-family:"Fraunces",serif;font-style:italic;font-size:clamp(1.4rem,2.4vw,1.9rem);font-weight:500;max-width:780px;margin:0 auto;line-height:1.4}
+.quote-band blockquote{font-family:"Newsreader",serif;font-style:italic;font-size:clamp(1.4rem,2.4vw,1.9rem);font-weight:500;max-width:780px;margin:0 auto;line-height:1.4}
 .quote-band .attrib{margin-top:20px;color:var(--gold-hell);font-size:14.5px;letter-spacing:.06em;text-transform:uppercase;font-style:normal}
 
 .info-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
@@ -130,23 +140,29 @@ footer{background:var(--ink);color:rgba(255,255,255,.72);padding:60px 0 32px;fon
 </header>
 
 <section class="hero">
-  <div class="wrap">
-    <span class="kicker">Antiquariat, seit 1948</span>
-    <h1>Alte und seltene Buecher, direkt am Michel.</h1>
-    <p class="lead">Zwei Ladengeschaefte im Zentrum Hamburgs, an der Englischen Planke und am Krayenkamp: An- und Verkauf erlesener Buecher seit 1948, in Hamburg seit 1974, heute in zweiter Generation gefuehrt.</p>
-    <div class="hero-actions">
-      <a href="#kontakt" class="btn btn-gold">Anfahrt &amp; Kontakt</a>
-      <a href="#geschichte" class="btn btn-outline" style="border-color:rgba(255,255,255,.4);color:#fff">Geschichte lesen</a>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker">Antiquariat, seit 1948</span>
+      <h1>Alte und seltene Bücher, direkt am Michel.</h1>
+      <p class="lead">Zwei Ladengeschäfte im Zentrum Hamburgs, an der Englischen Planke und am Krayenkamp: An- und Verkauf erlesener Bücher seit 1948, in Hamburg seit 1974, heute in zweiter Generation geführt.</p>
+      <div class="hero-actions">
+        <a href="#kontakt" class="btn btn-gold">Anfahrt &amp; Kontakt</a>
+        <a href="#geschichte" class="btn btn-outline">Geschichte lesen</a>
+      </div>
     </div>
+    <figure class="hero-plate">
+      <img src="/redesign/antiquariat-pabel/assets/photos/storefront.webp" alt="Ladengeschäft des Antiquariats Reinhold Pabel an der Englischen Planke in Hamburg">
+      <figcaption>Das Ladengeschäft an der Englischen Planke, wenige Schritte vom Michel</figcaption>
+    </figure>
   </div>
 </section>
 
 <div class="zahlen">
   <div class="wrap zahlen-grid">
-    <div><div class="num">1948</div><div class="label">Gruendungsjahr, Chicago</div></div>
+    <div><div class="num">1948</div><div class="label">Gründungsjahr, Chicago</div></div>
     <div><div class="num">1974</div><div class="label">Umzug nach Hamburg</div></div>
     <div><div class="num">2.</div><div class="label">Generation seit 1991</div></div>
-    <div><div class="num">2</div><div class="label">Ladengeschaefte am Michel</div></div>
+    <div><div class="num">2</div><div class="label">Ladengeschäfte am Michel</div></div>
   </div>
 </div>
 
@@ -155,14 +171,14 @@ footer{background:var(--ink);color:rgba(255,255,255,.72);padding:60px 0 32px;fon
     <div class="section-head">
       <span class="kicker">Geschichte</span>
       <h2>Von Chicago an den Krameramt.</h2>
-      <p>Eine ungewoehnliche Firmengeschichte, die 1948 in den USA begann.</p>
+      <p>Eine ungewöhnliche Firmengeschichte, die 1948 in den USA begann.</p>
     </div>
     <div class="timeline">
-      <div class="jahr"><div class="y">1948</div><div class="t">Reinhold Pabel gruendet das Antiquariat in Chicago unter dem Namen "Chicago Book Mart" als Laden- und Versandantiquariat.</div></div>
-      <div class="jahr"><div class="y">1965</div><div class="t">Rueckkehr nach Deutschland, gefolgt von einer achtjaehrigen Zwischenstation in Bonn.</div></div>
-      <div class="jahr"><div class="y">1974</div><div class="t">Umzug des Hauptgeschaefts nach Hamburg, in die historischen Gebaeude des Krameramts, dem aeltesten noch erhaltenen Wohnhof der Hansestadt.</div></div>
-      <div class="jahr"><div class="y">1982</div><div class="t">Eroeffnung einer zweiten Filiale an der Englischen Planke, am Fuss der Hauptkirche St. Michaelis.</div></div>
-      <div class="jahr"><div class="y">1991</div><div class="t">Das Familienunternehmen wird seither in zweiter Generation gefuehrt.</div></div>
+      <div class="jahr"><div class="y">1948</div><div class="t">Reinhold Pabel gründet das Antiquariat in Chicago unter dem Namen "Chicago Book Mart" als Laden- und Versandantiquariat.</div></div>
+      <div class="jahr"><div class="y">1965</div><div class="t">Rückkehr nach Deutschland, gefolgt von einer achtjährigen Zwischenstation in Bonn.</div></div>
+      <div class="jahr"><div class="y">1974</div><div class="t">Umzug des Hauptgeschäfts nach Hamburg, in die historischen Gebäude des Krameramts, dem ältesten noch erhaltenen Wohnhof der Hansestadt.</div></div>
+      <div class="jahr"><div class="y">1982</div><div class="t">Eröffnung einer zweiten Filiale an der Englischen Planke, am Fuß der Hauptkirche St. Michaelis.</div></div>
+      <div class="jahr"><div class="y">1991</div><div class="t">Das Familienunternehmen wird seither in zweiter Generation geführt.</div></div>
     </div>
   </div>
 </section>
@@ -171,12 +187,12 @@ footer{background:var(--ink);color:rgba(255,255,255,.72);padding:60px 0 32px;fon
   <div class="wrap">
     <div class="section-head">
       <span class="kicker">Sortiment</span>
-      <h2>An- und Verkauf erlesener Buecher.</h2>
-      <p>Von seltenen Einbaenden bis zu antiquarischen Raritaeten, ausgestellt in beiden Ladengeschaeften.</p>
+      <h2>An- und Verkauf erlesener Bücher.</h2>
+      <p>Von seltenen Einbänden bis zu antiquarischen Raritäten, ausgestellt in beiden Ladengeschäften.</p>
     </div>
     <div class="galerie-grid">
       <figure class="wide"><img src="/redesign/antiquariat-pabel/assets/photos/window-display.webp" alt="Schaufenster des Antiquariat Pabel mit Buchauslage"><figcaption>Schaufenster am Michel</figcaption></figure>
-      <figure><img src="/redesign/antiquariat-pabel/assets/photos/rarebook-2.webp" alt="Antiker Bucheinband mit Goldpraegung"><figcaption>Antiker Einband</figcaption></figure>
+      <figure><img src="/redesign/antiquariat-pabel/assets/photos/rarebook-2.webp" alt="Antiker Bucheinband mit Goldprägung"><figcaption>Antiker Einband</figcaption></figure>
       <figure><img src="/redesign/antiquariat-pabel/assets/photos/rarebook-1.webp" alt="Marmorierter antiker Bucheinband"><figcaption>Marmorierter Einband</figcaption></figure>
     </div>
   </div>
@@ -184,7 +200,7 @@ footer{background:var(--ink);color:rgba(255,255,255,.72);padding:60px 0 32px;fon
 
 <section class="quote-band">
   <div class="wrap">
-    <blockquote>&quot;An- und Verkauf erlesener Buecher.&quot;</blockquote>
+    <blockquote>&quot;An- und Verkauf erlesener Bücher.&quot;</blockquote>
     <div class="attrib">Antiquariat Reinhold Pabel</div>
   </div>
 </section>
@@ -193,17 +209,17 @@ footer{background:var(--ink);color:rgba(255,255,255,.72);padding:60px 0 32px;fon
   <div class="wrap">
     <div class="section-head">
       <span class="kicker">Auszeichnung</span>
-      <h2>Mitbegruender der Antiquariatsmesse quod libet.</h2>
-      <p>Antiquariat Reinhold Pabel war Mitbegruender und Organisator der angesehenen internationalen Antiquariatsmesse quod libet in Hamburg.</p>
+      <h2>Mitbegründer der Antiquariatsmesse quod libet.</h2>
+      <p>Antiquariat Reinhold Pabel war Mitbegründer und Organisator der angesehenen internationalen Antiquariatsmesse quod libet in Hamburg.</p>
     </div>
     <div class="info-grid">
       <div class="info-card">
         <h3>Zwei Standorte am Michel</h3>
-        <p>Englische Planke 6, direkt gegenueber St. Michaelis, und Krayenkamp 10, direkt hinter der Kirche im historischen Krameramt.</p>
+        <p>Englische Planke 6, direkt gegenüber St. Michaelis, und Krayenkamp 10, direkt hinter der Kirche im historischen Krameramt.</p>
       </div>
       <div class="info-card">
         <h3>Internationale Geschichte</h3>
-        <p>Gegruendet 1948 in Chicago, seit 1974 in Hamburg. Eine Firmengeschichte, die Reinhold Pabel selbst in seinen Erinnerungen "Enemies are Human" (1955) schilderte.</p>
+        <p>Gegründet 1948 in Chicago, seit 1974 in Hamburg. Eine Firmengeschichte, die Reinhold Pabel selbst in seinen Erinnerungen "Enemies are Human" (1955) schilderte.</p>
       </div>
     </div>
   </div>
@@ -212,8 +228,8 @@ footer{background:var(--ink);color:rgba(255,255,255,.72);padding:60px 0 32px;fon
 <section>
   <div class="wrap">
     <div class="cta">
-      <h2>Suchen Sie ein bestimmtes Buch oder moechten Sie eine Sammlung verkaufen?</h2>
-      <p>Rufen Sie an oder besuchen Sie eines unserer beiden Ladengeschaefte am Michel.</p>
+      <h2>Suchen Sie ein bestimmtes Buch oder möchten Sie eine Sammlung verkaufen?</h2>
+      <p>Rufen Sie an oder besuchen Sie eines unserer beiden Ladengeschäfte am Michel.</p>
       <div class="cta-actions">
         <a href="tel:+4940364889" class="btn" style="background:#fff;color:var(--ink)">040 36 48 89 anrufen</a>
         <a href="mailto:post@antiquariat-pabel.de" class="btn btn-outline" style="border-color:rgba(255,255,255,.4);color:#fff">post@antiquariat-pabel.de</a>
@@ -227,7 +243,7 @@ footer{background:var(--ink);color:rgba(255,255,255,.72);padding:60px 0 32px;fon
     <div class="footer-grid">
       <div>
         <h3>Antiquariat Reinhold Pabel</h3>
-        <p style="max-width:280px">An- und Verkauf alter und seltener Buecher. Seit 1948 gegruendet, seit 1974 in Hamburg.</p>
+        <p style="max-width:280px">An- und Verkauf alter und seltener Bücher. Seit 1948 gegründet, seit 1974 in Hamburg.</p>
       </div>
       <div>
         <h3>Standorte</h3>
@@ -239,7 +255,7 @@ footer{background:var(--ink);color:rgba(255,255,255,.72);padding:60px 0 32px;fon
         </ul>
       </div>
       <div>
-        <h3>Oeffnungszeiten</h3>
+        <h3>Öffnungszeiten</h3>
         <ul>
           <li>Mo. - Fr.: 10:00 - 18:00</li>
           <li>Sa.: 10:00 - 13:00</li>

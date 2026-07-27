@@ -9,7 +9,7 @@
 <link rel="icon" href="/redesign/meier-holzbau/assets/logo/favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@500;600&family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
   --holz:#5b3a24;
@@ -27,14 +27,14 @@
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
-  font-family:"Karla",-apple-system,"Segoe UI",sans-serif;
+  font-family:"Cabin",-apple-system,"Segoe UI",sans-serif;
   background:var(--creme);
   color:var(--tinte);
   font-size:17px;
   line-height:1.62;
   -webkit-font-smoothing:antialiased;
 }
-h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:600;line-height:1.14;letter-spacing:-.005em}
+h1,h2,h3{font-family:"Vollkorn",Georgia,serif;font-weight:600;line-height:1.14;letter-spacing:-.005em}
 img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
 .wrap{max-width:1160px;margin:0 auto;padding:0 28px}
@@ -50,7 +50,9 @@ a{color:inherit;text-decoration:none}
 
 header{position:sticky;top:0;z-index:50;background:rgba(247,241,230,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(43,33,23,.08)}
 header .wrap{display:flex;align-items:center;justify-content:space-between;padding:14px 28px}
-header img.logo{height:44px;width:auto}
+/* multiply dissolves the logo file's own white plate into the cream header
+   instead of leaving a pasted white rectangle */
+header img.logo{height:46px;width:auto;mix-blend-mode:multiply}
 .nav-links{display:flex;gap:32px}
 .nav-links a{font-size:14.5px;font-weight:500;color:var(--grau)}
 .nav-links a:hover{color:var(--holz)}
@@ -71,13 +73,13 @@ header img.logo{height:44px;width:auto}
   position:absolute;bottom:-22px;left:-22px;background:var(--holz);color:#fff;
   border-radius:16px;padding:18px 24px;box-shadow:var(--schatten);
 }
-.hero-photo .badge .n{font-family:"Fraunces",serif;font-size:28px;font-weight:600}
+.hero-photo .badge .n{font-family:"Vollkorn",serif;font-size:28px;font-weight:600}
 .hero-photo .badge .l{font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;opacity:.8}
 @media (max-width:900px){.hero-grid{grid-template-columns:1fr}.hero-photo{margin-top:20px}}
 
 .zahlen{background:var(--holz-dunkel);color:#fff;padding:46px 0}
-.zahlen-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;text-align:center}
-.zahlen .num{font-family:"Fraunces",serif;font-size:clamp(2rem,3.6vw,2.7rem);color:#f2c94c}
+.zahlen-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;text-align:center}
+.zahlen .num{font-family:"Vollkorn",serif;font-size:clamp(2rem,3.6vw,2.7rem);color:#f2c94c}
 .zahlen .label{font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.65);margin-top:8px}
 @media (max-width:760px){.zahlen-grid{grid-template-columns:repeat(2,1fr)}}
 
@@ -88,7 +90,7 @@ section{padding:92px 0}
 
 .leistungen-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .leistung-card{background:var(--karte);border-radius:14px;padding:30px;border:1px solid rgba(43,33,23,.08)}
-.leistung-card .num{font-family:"Fraunces",serif;color:var(--holz-hell);font-size:15px;margin-bottom:14px}
+.leistung-card .num{font-family:"Vollkorn",serif;color:var(--holz-hell);font-size:15px;margin-bottom:14px}
 .leistung-card h3{font-size:19px;margin-bottom:10px}
 .leistung-card p{font-size:14.5px;color:var(--grau)}
 @media (max-width:900px){.leistungen-grid{grid-template-columns:repeat(2,1fr)}}
@@ -113,7 +115,7 @@ section{padding:92px 0}
 .team-band{background:var(--karte);border-top:1px solid rgba(43,33,23,.08);border-bottom:1px solid rgba(43,33,23,.08)}
 .team-grid{display:grid;grid-template-columns:.6fr 1.4fr;gap:48px;align-items:center}
 .team-portrait{border-radius:16px;overflow:hidden;box-shadow:var(--schatten);max-width:220px}
-.team-grid blockquote{font-family:"Fraunces",serif;font-size:24px;font-weight:600;color:var(--holz-dunkel);margin-bottom:18px}
+.team-grid blockquote{font-family:"Vollkorn",serif;font-size:24px;font-weight:600;color:var(--holz-dunkel);margin-bottom:18px}
 .team-grid .people{display:grid;gap:18px;margin-top:20px}
 .team-grid .person{display:flex;gap:14px;align-items:flex-start}
 .team-grid .person strong{display:block;font-size:15.5px}
@@ -139,7 +141,7 @@ footer{background:var(--holz-dunkel);color:rgba(255,255,255,.72);padding:60px 0 
 
 <header>
   <div class="wrap">
-    <a href="#"><img class="logo" src="/redesign/meier-holzbau/assets/logo/logo-full-original.jpg" alt="Johann Meier Holzbau Logo"></a>
+    <a href="#"><img class="logo" src="/redesign/meier-holzbau/assets/logo/logo-mark.webp" alt="Johann Meier Holzbau Logo"></a>
     <div class="nav-links">
       <a href="#leistungen">Leistungen</a>
       <a href="#galerie">Projekte</a>
@@ -173,7 +175,6 @@ footer{background:var(--holz-dunkel);color:rgba(255,255,255,.72);padding:60px 0 
     <div><div class="num">35</div><div class="label">Jahre Meistererfahrung</div></div>
     <div><div class="num">5</div><div class="label">Mitarbeiter im Team</div></div>
     <div><div class="num">5</div><div class="label">Jahre Gewährleistung</div></div>
-    <div><div class="num">2</div><div class="label">Fachleute: Meister &amp; Architektin</div></div>
   </div>
 </div>
 
@@ -247,7 +248,7 @@ footer{background:var(--holz-dunkel);color:rgba(255,255,255,.72);padding:60px 0 
       <h2>Gemeindezentrum St. Michael, Harsefeld.</h2>
       <p style="color:var(--grau);margin-top:14px">Ein kommunales Projekt, bei dem der Prüfstatiker das Dach ohne Beanstandungen abgenommen hat, wie bei den meisten Arbeiten aus der Werkhalle Ahlerstedt.</p>
       <ul>
-        <li>Aufmass und Planung durch Zimmerermeister Johann Meier</li>
+        <li>Aufmaß und Planung durch Zimmerermeister Johann Meier</li>
         <li>Bauablauf begleitet von Architektin Silke Meier-Ohl</li>
         <li>Fünf Jahre Gewährleistung auf die Ausführung</li>
       </ul>

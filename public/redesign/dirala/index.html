@@ -5,10 +5,10 @@
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Dirala. Blankeneser Werkstätten GmbH | Raumausstatter in Hamburg-Blankenese seit 1884</title>
-<meta name="description" content="Dirala. Blankeneser Werkstaetten GmbH: Inneneinrichtungen, Polster- und Bezugsarbeiten, Gardinen und Wandbespannungen in Hamburg-Blankenese. Seit 1884 an der Elbchaussee.">
+<meta name="description" content="Dirala. Blankeneser Werkstätten GmbH: Inneneinrichtungen, Polster- und Bezugsarbeiten, Gardinen und Wandbespannungen in Hamburg-Blankenese. Seit 1884 an der Elbchaussee.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,600italic&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
   --bordeaux:#930016;
@@ -23,14 +23,14 @@
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
-  font-family:"Karla",-apple-system,"Segoe UI",sans-serif;
+  font-family:"DM Sans",-apple-system,"Segoe UI",sans-serif;
   background:var(--creme);
   color:var(--tinte);
   font-size:17px;
   line-height:1.62;
   -webkit-font-smoothing:antialiased;
 }
-h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:600;line-height:1.14;letter-spacing:-.005em}
+h1,h2,h3{font-family:"EB Garamond",Georgia,serif;font-weight:600;line-height:1.14;letter-spacing:-.005em}
 img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
 .wrap{max-width:1160px;margin:0 auto;padding:0 28px}
@@ -47,7 +47,8 @@ svg.icon{width:28px;height:28px;stroke:var(--bordeaux);fill:none;stroke-width:1.
 
 header{position:sticky;top:0;z-index:50;background:rgba(250,247,242,.94);backdrop-filter:blur(8px);border-bottom:1px solid rgba(42,35,32,.08)}
 header .wrap{display:flex;align-items:center;justify-content:space-between;padding:10px 28px}
-header img.logo{height:52px;width:auto}
+/* multiply dissolves the logo file's white background into the cream header */
+header img.logo{height:40px;width:auto;mix-blend-mode:multiply}
 .nav-links{display:flex;gap:32px}
 .nav-links a{font-size:14.5px;font-weight:500;color:var(--grau)}
 .nav-links a:hover{color:var(--bordeaux)}
@@ -55,15 +56,27 @@ header img.logo{height:52px;width:auto}
 @media (max-width:860px){.nav-links{display:none}}
 @media (max-width:600px){.header-phone{display:none}}
 
-.hero{padding:80px 0 90px;background:var(--creme-2)}
+/* Dirala publishes no usable photography, so the hero stays typographic and the
+   empty right half is filled with the firm's actual trade areas instead of
+   stock imagery. */
+.hero{padding:80px 0 84px;background:var(--creme-2)}
 .hero-inner{max-width:760px}
+.hero-bereiche{margin-top:44px;padding-top:26px;border-top:1px solid rgba(122,20,38,.18);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px 30px;max-width:860px}
+.hero-bereiche div{display:flex;align-items:center;gap:11px;font-size:14.5px;color:var(--tinte)}
+.hero-bereiche i{flex:none;width:16px;height:16px;border-radius:3px;background:var(--bordeaux);opacity:.85}
+.hero-bereiche div:nth-child(2) i{background:#8d5b4c}
+.hero-bereiche div:nth-child(3) i{background:#b08a5e}
+.hero-bereiche div:nth-child(4) i{background:#5f5a4a}
+.hero-bereiche div:nth-child(5) i{background:#7d8471}
+.hero-bereiche div:nth-child(6) i{background:#2a2320}
+@media (max-width:760px){.hero-bereiche{grid-template-columns:1fr 1fr;gap:14px 20px}}
 .hero h1{font-size:clamp(2.2rem,4.2vw,3.4rem);margin:20px 0 22px}
-.hero p.lead{font-size:19px;color:var(--grau);max-width:600px;margin-bottom:34px;font-style:italic;font-family:"Fraunces",serif}
+.hero p.lead{font-size:19px;color:var(--grau);max-width:600px;margin-bottom:34px;font-style:italic;font-family:"EB Garamond",serif}
 .hero-actions{display:flex;gap:16px;flex-wrap:wrap}
 
 .zahlen{background:var(--tinte);color:#fff;padding:46px 0}
-.zahlen-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;text-align:center}
-.zahlen .num{font-family:"Fraunces",serif;font-size:clamp(2rem,3.6vw,2.7rem);color:#e5a3ac}
+.zahlen-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;text-align:center}
+.zahlen .num{font-family:"EB Garamond",serif;font-size:clamp(2rem,3.6vw,2.7rem);color:#e5a3ac}
 .zahlen .label{font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.62);margin-top:8px}
 @media (max-width:760px){.zahlen-grid{grid-template-columns:repeat(2,1fr)}}
 
@@ -83,14 +96,14 @@ section{padding:96px 0}
 .referenzen{background:var(--tinte);color:#fff}
 .referenzen .section-head p{color:rgba(255,255,255,.72)}
 .ref-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
-.ref-card h3{font-family:"Karla",sans-serif;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#e5a3ac;margin-bottom:14px}
+.ref-card h3{font-family:"DM Sans",sans-serif;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#e5a3ac;margin-bottom:14px}
 .ref-card ul{display:grid;gap:9px}
 .ref-card li{font-size:15px;color:rgba(255,255,255,.85)}
 @media (max-width:860px){.ref-grid{grid-template-columns:1fr}}
 
 .team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
 .team-card{background:var(--karte);border:1px solid rgba(42,35,32,.1);border-radius:14px;padding:24px}
-.team-card strong{display:block;font-family:"Fraunces",serif;font-size:17px;margin-bottom:6px}
+.team-card strong{display:block;font-family:"EB Garamond",serif;font-size:17px;margin-bottom:6px}
 .team-card span{font-size:13.5px;color:var(--grau)}
 @media (max-width:860px){.team-grid{grid-template-columns:1fr 1fr}}
 @media (max-width:560px){.team-grid{grid-template-columns:1fr}}
@@ -114,7 +127,7 @@ footer{background:var(--tinte);color:rgba(255,255,255,.72);padding:60px 0 32px;f
 
 <header>
   <div class="wrap">
-    <a href="#"><img class="logo" src="/redesign/dirala/assets/photos/logo.webp" alt="Dirala. Blankeneser Werkstaetten GmbH Logo"></a>
+    <a href="#"><img class="logo" src="/redesign/dirala/assets/photos/logo.webp" alt="Dirala. Blankeneser Werkstätten GmbH Logo"></a>
     <div class="nav-links">
       <a href="#leistungen">Leistungen</a>
       <a href="#referenzen">Referenzen</a>
@@ -128,21 +141,30 @@ footer{background:var(--tinte);color:rgba(255,255,255,.72);padding:60px 0 32px;f
 <section class="hero">
   <div class="wrap hero-inner">
     <span class="kicker">Raumausstatter, seit 1884 an der Elbchaussee</span>
-    <h1>Inneneinrichtungen fuer Menschen, die auf Details Wert legen.</h1>
+    <h1>Inneneinrichtungen für Menschen, die auf Details Wert legen.</h1>
     <p class="lead">Seit vielen Jahrzehnten verbindet uns eine leidenschaftliche Liebe zur textilen Raumausstattung.</p>
     <div class="hero-actions">
       <a href="#kontakt" class="btn btn-bordeaux">Beratungstermin vereinbaren</a>
       <a href="#leistungen" class="btn btn-outline">Leistungen ansehen</a>
     </div>
   </div>
+  <div class="wrap">
+    <div class="hero-bereiche">
+      <div><i></i>Fenster- &amp; Raumdekoration</div>
+      <div><i></i>Sicht- &amp; Sonnenschutz</div>
+      <div><i></i>Polster- &amp; Bezugsarbeiten</div>
+      <div><i></i>Boden- &amp; Treppenbeläge</div>
+      <div><i></i>Wand- &amp; Deckenbekleidung</div>
+      <div><i></i>Stoffe &amp; Beratung</div>
+    </div>
+  </div>
 </section>
 
 <div class="zahlen">
   <div class="wrap zahlen-grid">
-    <div><div class="num">1884</div><div class="label">Gruendungsjahr</div></div>
-    <div><div class="num">140+</div><div class="label">Jahre an der Elbchaussee</div></div>
+    <div><div class="num">1884</div><div class="label">Gründungsjahr</div></div>
     <div><div class="num">5</div><div class="label">Leistungsbereiche</div></div>
-    <div><div class="num">1</div><div class="label">Standort in Blankenese</div></div>
+    <div><div class="num">Blankenese</div><div class="label">Werkstatt und Ausstellung</div></div>
   </div>
 </div>
 
@@ -151,38 +173,38 @@ footer{background:var(--tinte);color:rgba(255,255,255,.72);padding:60px 0 32px;f
     <div class="section-head">
       <span class="kicker">Leistungen</span>
       <h2>Von der Gardine bis zur Wandbespannung.</h2>
-      <p>Inneneinrichtungen, Polster- und Bezugsarbeiten, Gardinen und Vorhaenge, Wandbespannungen, Tapeten, Teppiche und Stoffe fuer die Raumgestaltung.</p>
+      <p>Inneneinrichtungen, Polster- und Bezugsarbeiten, Gardinen und Vorhänge, Wandbespannungen, Tapeten, Teppiche und Stoffe für die Raumgestaltung.</p>
     </div>
     <div class="leistungen-grid">
       <div class="leistung-card">
         <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><path d="M4 4h16M6 4v16M18 4v16M6 8c4 2 8 2 12 0M6 14c4-2 8-2 12 0"/></svg></div>
         <h3>Fenster- &amp; Raumdekoration</h3>
-        <p>Gardinen, Vorhaenge und Dekorationen, individuell nach Mass gefertigt.</p>
+        <p>Gardinen, Vorhänge und Dekorationen, individuell nach Maß gefertigt.</p>
       </div>
       <div class="leistung-card">
         <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="8" rx="2"/><path d="M6 10V8a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2"/></svg></div>
         <h3>Sicht- &amp; Sonnenschutz</h3>
-        <p>Loesungen fuer Fenster und Raeume, die Licht und Privatsphaere ausbalancieren.</p>
+        <p>Lösungen für Fenster und Räume, die Licht und Privatsphäre ausbalancieren.</p>
       </div>
       <div class="leistung-card">
         <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><path d="M6 18c-2-4-2-8 0-12M18 18c2-4 2-8 0-12M9 6h6v12H9z"/></svg></div>
         <h3>Polster- &amp; Bezugsarbeiten</h3>
-        <p>Neubezug und Polsterarbeiten fuer Moebel jeder Art, aus eigener Werkstatt.</p>
+        <p>Neubezug und Polsterarbeiten für Möbel jeder Art, aus eigener Werkstatt.</p>
       </div>
       <div class="leistung-card">
         <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><path d="M4 20 12 4l8 16z"/><path d="M8 14h8"/></svg></div>
-        <h3>Boden- &amp; Treppenbelaege</h3>
-        <p>Teppiche und Bodenbelaege, beraten und verlegt nach Ihren Wuenschen.</p>
+        <h3>Boden- &amp; Treppenbeläge</h3>
+        <p>Teppiche und Bodenbeläge, beraten und verlegt nach Ihren Wünschen.</p>
       </div>
       <div class="leistung-card">
         <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 9h16M9 4v16"/></svg></div>
         <h3>Wand- &amp; Deckenbekleidung</h3>
-        <p>Wandbespannungen und Tapeten, fachgerecht geplant und ausgefuehrt.</p>
+        <p>Wandbespannungen und Tapeten, fachgerecht geplant und ausgeführt.</p>
       </div>
       <div class="leistung-card">
         <div class="icon-wrap"><svg class="icon" viewBox="0 0 24 24"><path d="M12 3v18M5 8l7-5 7 5M5 16l7 5 7-5"/></svg></div>
         <h3>Stoffe &amp; Beratung</h3>
-        <p>Stoffauswahl und Raumgestaltung, persoenlich beraten in Blankenese.</p>
+        <p>Stoffauswahl und Raumgestaltung, persönlich beraten in Blankenese.</p>
       </div>
     </div>
   </div>
@@ -192,8 +214,8 @@ footer{background:var(--tinte);color:rgba(255,255,255,.72);padding:60px 0 32px;f
   <div class="wrap">
     <div class="section-head">
       <span class="kicker" style="color:#e5a3ac">Referenzen</span>
-      <h2>Ausgewaehlte gewerbliche Projekte.</h2>
-      <p>Ein Ausschnitt aus ueber 140 Jahren Auftraegen fuer anspruchsvolle Institutionen.</p>
+      <h2>Ausgewählte gewerbliche Projekte.</h2>
+      <p>Ein Ausschnitt aus über 140 Jahren Aufträgen für anspruchsvolle Institutionen.</p>
     </div>
     <div class="ref-grid">
       <div class="ref-card">
@@ -210,8 +232,8 @@ footer{background:var(--tinte);color:rgba(255,255,255,.72);padding:60px 0 32px;f
       <div class="ref-card">
         <h3>Bildung &amp; Wissenschaft</h3>
         <ul>
-          <li>Eidgenoessische Technische Hochschule (ETH Zuerich)</li>
-          <li>Fuehrungsakademie der Bundeswehr</li>
+          <li>Eidgenössische Technische Hochschule (ETH Zürich)</li>
+          <li>Führungsakademie der Bundeswehr</li>
           <li>Staatsbibliothek zu Berlin</li>
           <li>Gymnasium Blankenese</li>
         </ul>
@@ -221,8 +243,8 @@ footer{background:var(--tinte);color:rgba(255,255,255,.72);padding:60px 0 32px;f
         <ul>
           <li>Deutsches Historisches Museum</li>
           <li>Hamburger Kunsthalle</li>
-          <li>Museum fuer Kunst und Gewerbe Hamburg</li>
-          <li>Museum fuer Voelkerkunde Hamburg</li>
+          <li>Museum für Kunst und Gewerbe Hamburg</li>
+          <li>Museum für Völkerkunde Hamburg</li>
         </ul>
       </div>
     </div>
@@ -236,10 +258,10 @@ footer{background:var(--tinte);color:rgba(255,255,255,.72);padding:60px 0 32px;f
       <h2>Ihre Ansprechpartner in Blankenese.</h2>
     </div>
     <div class="team-grid">
-      <div class="team-card"><strong>Diego Dirala</strong><span>Geschaeftsfuehrung / B2B</span></div>
+      <div class="team-card"><strong>Diego Dirala</strong><span>Geschäftsführung / B2B</span></div>
       <div class="team-card"><strong>Anthea Dirala</strong><span>Verkauf / Zentrale</span></div>
-      <div class="team-card"><strong>Thomas Asmussen</strong><span>Fachberater / Aussendienst</span></div>
-      <div class="team-card"><strong>Karin Kessler</strong><span>Fachberaterin / Aussendienst</span></div>
+      <div class="team-card"><strong>Thomas Asmussen</strong><span>Fachberater / Außendienst</span></div>
+      <div class="team-card"><strong>Karin Kessler</strong><span>Fachberaterin / Außendienst</span></div>
     </div>
   </div>
 </section>
@@ -248,7 +270,7 @@ footer{background:var(--tinte);color:rgba(255,255,255,.72);padding:60px 0 32px;f
   <div class="wrap">
     <div class="cta">
       <h2>Planen Sie eine Raumausstattung oder Polsterarbeit?</h2>
-      <p>Rufen Sie an oder schreiben Sie uns, das Dirala-Team beraet Sie persoenlich in Blankenese.</p>
+      <p>Rufen Sie an oder schreiben Sie uns, das Dirala-Team berät Sie persönlich in Blankenese.</p>
       <div class="cta-actions">
         <a href="tel:+49408663031" class="btn" style="background:#fff;color:var(--bordeaux-dunkel)">040 866 30 31 anrufen</a>
         <a href="mailto:info@dirala.de" class="btn btn-outline" style="border-color:rgba(255,255,255,.4);color:#fff">info@dirala.de</a>
@@ -261,7 +283,7 @@ footer{background:var(--tinte);color:rgba(255,255,255,.72);padding:60px 0 32px;f
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <h3>Dirala. Blankeneser Werkstaetten</h3>
+        <h3>Dirala. Blankeneser Werkstätten</h3>
         <p style="max-width:280px">Inneneinrichtungen seit 1884. Polster-, Gardinen- und Wandbespannungsarbeiten in Hamburg-Blankenese.</p>
       </div>
       <div>
@@ -276,13 +298,13 @@ footer{background:var(--tinte);color:rgba(255,255,255,.72);padding:60px 0 32px;f
       <div>
         <h3>Unternehmen</h3>
         <ul>
-          <li>Geschaeftsfuehrer Diego Dirala</li>
+          <li>Geschäftsführer Diego Dirala</li>
           <li>Amtsgericht Hamburg, HRB 28502</li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; Dirala. Blankeneser Werkstaetten GmbH</span>
+      <span>&copy; Dirala. Blankeneser Werkstätten GmbH</span>
       <div style="display:flex;gap:22px">
         <a href="#">Impressum</a>
         <a href="#">Datenschutz</a>

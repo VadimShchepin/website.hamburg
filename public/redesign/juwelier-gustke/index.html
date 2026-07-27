@@ -5,7 +5,7 @@
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Juwelier Gustke | Uhren &amp; Schmuck in Glinde seit 1967</title>
-<meta name="description" content="Juwelier Gustke: Uhren und Schmuck in Glinde, seit 1967 fuer Sie da. Markenuhren, Goldschmiedearbeiten und Goldankauf mit sofortiger Bargeldzahlung.">
+<meta name="description" content="Juwelier Gustke: Uhren und Schmuck in Glinde, seit 1967 für Sie da. Markenuhren, Goldschmiedearbeiten und Goldankauf mit sofortiger Bargeldzahlung.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -55,7 +55,10 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;paddi
 @media (max-width:860px){.nav-links{display:none}}
 @media (max-width:600px){.header-phone{display:none}}
 
-.hero{position:relative;color:#fff;background:linear-gradient(120deg,var(--blau-dunkel),var(--blau));padding:120px 0}
+/* Was a flat two-stop gradient with a small photo adrift in dead space. The
+   only photo on file is 500x154, so it stays near 1:1 and the column is filled
+   with real shop facts rather than by upscaling it. */
+.hero{position:relative;color:#fff;background:radial-gradient(900px 520px at 74% 12%,#2470c4 0%,var(--blau) 34%,var(--blau-dunkel) 78%,#0a2c52 100%);padding:104px 0 96px}
 .hero .kicker{color:#c7ddf3}
 .hero .kicker::before{background:#c7ddf3}
 .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
@@ -63,8 +66,13 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;paddi
 .hero p.lead{font-size:19px;color:rgba(255,255,255,.88);margin-bottom:34px}
 .hero-actions{display:flex;gap:16px;flex-wrap:wrap}
 .hero-photo{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);border-radius:20px;padding:14px;box-shadow:var(--schatten)}
-.hero-photo img{border-radius:12px;width:100%}
+.hero-photo img{border-radius:12px;width:100%;height:auto;aspect-ratio:500/154;object-fit:cover}
 .hero-photo p{font-size:13px;color:rgba(255,255,255,.68);margin-top:12px;text-align:center}
+.hero-fakten{margin-top:14px;border-top:1px solid rgba(255,255,255,.16);padding-top:6px}
+.hero-fakten div{display:flex;justify-content:space-between;gap:16px;padding:9px 4px;font-size:14px;border-bottom:1px solid rgba(255,255,255,.1)}
+.hero-fakten div:last-child{border-bottom:none}
+.hero-fakten span{color:rgba(255,255,255,.66)}
+.hero-fakten strong{font-weight:600;color:#e8d5a8}
 @media (max-width:860px){.hero-grid{grid-template-columns:1fr}.hero-photo{max-width:360px;margin:0 auto}}
 
 .zahlen{background:var(--tinte);color:#fff;padding:46px 0}
@@ -126,28 +134,28 @@ footer{background:var(--tinte);color:rgba(255,255,255,.72);padding:60px 0 32px;f
   <div class="wrap hero-grid">
     <div>
       <span class="kicker">Uhren &amp; Schmuck, seit 1967 in Glinde</span>
-      <h1>Juwelier Gustke, seit 1967 fuer Sie da.</h1>
-      <p class="lead">Wir fuehren fuer Sie in Glinde Uhren- und Schmuckmarken von preiswert in Silber und Edelstahl bis kostbar in Gold. Seit 1974 am Markt 15 in Glinde.</p>
+      <h1>Juwelier Gustke, seit 1967 für Sie da.</h1>
+      <p class="lead">Wir führen für Sie in Glinde Uhren- und Schmuckmarken von preiswert in Silber und Edelstahl bis kostbar in Gold. Seit 1974 am Markt 15 in Glinde.</p>
       <div class="hero-actions">
         <a href="#kontakt" class="btn btn-blau">Termin vereinbaren</a>
         <a href="#marken" class="btn btn-outline" style="border-color:rgba(255,255,255,.4);color:#fff">Marken ansehen</a>
       </div>
     </div>
     <div class="hero-photo">
-      <img src="/redesign/juwelier-gustke/assets/photos/watch-macro.webp" alt="Skelettwerk einer Automatikuhr aus dem Sortiment von Juwelier Gustke" width="500" height="154">
+      <img src="/redesign/juwelier-gustke/assets/photos/watch-macro.webp" alt="Skelettwerk einer Automatikuhr aus dem Sortiment von Juwelier Gustke">
       <p>Feinmechanik aus unserem Uhrensortiment</p>
+      <div class="hero-fakten">
+        <div><span>Gegründet</span><strong>1967</strong></div>
+        <div><span>Am Markt 15 in Glinde</span><strong>seit 1974</strong></div>
+        <div><span>Uhren- und Schmuckmarken</span><strong>10</strong></div>
+        <div><span>Goldankauf</span><strong>im Haus</strong></div>
+      </div>
     </div>
   </div>
 </section>
 
-<div class="zahlen">
-  <div class="wrap zahlen-grid">
-    <div><div class="num">1967</div><div class="label">Gruendungsjahr</div></div>
-    <div><div class="num">1974</div><div class="label">Am Markt 15 in Glinde</div></div>
-    <div><div class="num">10</div><div class="label">Gefuehrte Uhren- &amp; Schmuckmarken</div></div>
-    <div><div class="num">1</div><div class="label">Inhabergefuehrtes Fachgeschaeft</div></div>
-  </div>
-</div>
+<!-- The stats band said exactly what the hero facts panel now says (1967, 1974,
+     10 Marken) plus a meaningless roman "I", so it is gone rather than repeated. -->
 
 <section id="marken">
   <div class="wrap">
@@ -161,11 +169,11 @@ footer{background:var(--tinte);color:rgba(255,255,255,.72);padding:60px 0 32px;f
       <div class="marken-chip">Xenox</div>
       <div class="marken-chip">Zeppelin</div>
       <div class="marken-chip">Casio Edifice</div>
-      <div class="marken-chip">Muehle Glashuette</div>
+      <div class="marken-chip">Mühle Glashütte</div>
       <div class="marken-chip">Casio</div>
       <div class="marken-chip">Claude Pascal</div>
       <div class="marken-chip">Trollbeads</div>
-      <div class="marken-chip">Bruno Soehnle</div>
+      <div class="marken-chip">Bruno Söhnle</div>
       <div class="marken-chip">Junkers</div>
     </div>
   </div>
@@ -184,7 +192,7 @@ footer{background:var(--tinte);color:rgba(255,255,255,.72);padding:60px 0 32px;f
       <ul>
         <li>Bargeld sofort bei Ankauf</li>
         <li>Kein Versand, kein Risiko unterwegs</li>
-        <li>Persoenliche Beratung im Fachgeschaeft am Markt 15</li>
+        <li>Persönliche Beratung im Fachgeschäft am Markt 15</li>
       </ul>
     </div>
   </div>
@@ -193,7 +201,7 @@ footer{background:var(--tinte);color:rgba(255,255,255,.72);padding:60px 0 32px;f
 <section>
   <div class="wrap">
     <div class="cta">
-      <h2>Suchen Sie eine neue Uhr oder moechten Sie Gold verkaufen?</h2>
+      <h2>Suchen Sie eine neue Uhr oder möchten Sie Gold verkaufen?</h2>
       <p>Rufen Sie an oder besuchen Sie uns am Markt 15 in Glinde.</p>
       <div class="cta-actions">
         <a href="tel:+49407106222" class="btn" style="background:#fff;color:var(--blau-dunkel)">(0 40) 710 62 22 anrufen</a>
@@ -208,7 +216,7 @@ footer{background:var(--tinte);color:rgba(255,255,255,.72);padding:60px 0 32px;f
     <div class="footer-grid">
       <div>
         <h3>Juwelier Gustke</h3>
-        <p style="max-width:280px">Uhren &amp; Schmuck. Seit 1967 fuer Sie da, seit 1974 am Markt 15 in Glinde.</p>
+        <p style="max-width:280px">Uhren &amp; Schmuck. Seit 1967 für Sie da, seit 1974 am Markt 15 in Glinde.</p>
       </div>
       <div>
         <h3>Kontakt</h3>
@@ -223,7 +231,7 @@ footer{background:var(--tinte);color:rgba(255,255,255,.72);padding:60px 0 32px;f
         <h3>Unternehmen</h3>
         <ul>
           <li>Inhaber Andreas Gustke</li>
-          <li>IHK Schleswig-Holstein (Luebeck)</li>
+          <li>IHK Schleswig-Holstein (Lübeck)</li>
         </ul>
       </div>
     </div>

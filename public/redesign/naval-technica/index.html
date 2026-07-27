@@ -5,7 +5,7 @@
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Naval Technica Export GmbH | Schiffbaumaterial-Export nach Südamerika</title>
-<meta name="description" content="Naval Technica Export GmbH: Einkauf und Export von Schiffbaumaterialien, Anlagen und Ersatzteilen aus Hamburg nach Chile, Kolumbien, Peru, Ecuador und Mexico. Seit 35 Jahren.">
+<meta name="description" content="Naval Technica Export GmbH: Einkauf und Export von Schiffbaumaterialien, Anlagen und Ersatzteilen aus Hamburg nach Chile, Kolumbien, Peru, Ecuador und Mexiko. Seit 35 Jahren.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -58,7 +58,16 @@ header img.logo{height:26px;width:auto}
 @media (max-width:860px){.nav-links{display:none}}
 @media (max-width:600px){.header-phone{display:none}}
 
-.hero{position:relative;color:#fff;background:linear-gradient(180deg,rgba(7,27,44,.55),rgba(7,27,44,.88)),var(--marine-dunkel) url('/redesign/naval-technica/assets/photos/hero.webp') center/cover no-repeat;padding:130px 0 100px}
+/* Photo runs at full brightness; legibility comes from a solid card rather
+   than an 88% scrim over the whole frame. */
+.hero{position:relative;color:#fff;background:var(--marine-dunkel);padding:0}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 42%}
+.hero .wrap{position:relative;padding-top:96px;padding-bottom:96px}
+.hero-card{background:var(--marine);border-left:4px solid var(--tau);border-radius:0 14px 14px 0;padding:44px 46px;max-width:640px;box-shadow:0 34px 70px -30px rgba(4,14,24,.75)}
+.hero-card h1{margin:18px 0 18px}
+.hero-laender{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:28px}
+.hero-laender span{font-size:11.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;padding:6px 11px;border-radius:4px;background:rgba(200,160,106,.15);color:var(--tau-hell);border:1px solid rgba(200,160,106,.3)}
+@media (max-width:760px){.hero-card{padding:34px 26px;border-radius:0}}
 .hero h1{font-size:clamp(2.3rem,4.4vw,3.6rem);margin:20px 0 22px;max-width:760px}
 .hero p.lead{font-size:19px;color:rgba(255,255,255,.85);max-width:580px;margin-bottom:34px}
 .hero-actions{display:flex;gap:16px;flex-wrap:wrap}
@@ -128,13 +137,19 @@ footer{background:var(--marine-dunkel);color:rgba(255,255,255,.72);padding:60px 
 </header>
 
 <section class="hero">
+  <img class="hero-bg" src="/redesign/naval-technica/assets/photos/hero.webp" alt="Festmacherleine an einem Poller im Hamburger Hafen">
   <div class="wrap">
-    <span class="kicker">Schiffbaumaterial-Export, seit 35 Jahren aus Hamburg</span>
-    <h1>Ihr Partner für Schiffbaumaterial und Logistik nach Südamerika.</h1>
-    <p class="lead">Naval Technica Export beschafft Schiffbaumaterialien, Anlagen und Ersatzteile von namhaften Herstellern und exportiert sie zuverlässig an Werften und Reedereien in Chile, Kolumbien, Peru, Ecuador und Mexico.</p>
-    <div class="hero-actions">
-      <a href="#kontakt" class="btn btn-tau">Anfrage stellen</a>
-      <a href="#leistungen" class="btn btn-outline" style="border-color:rgba(255,255,255,.4);color:#fff">Leistungen ansehen</a>
+    <div class="hero-card">
+      <span class="kicker">Schiffbaumaterial-Export, seit 35 Jahren aus Hamburg</span>
+      <h1>Ihr Partner für Schiffbaumaterial und Logistik nach Südamerika.</h1>
+      <p class="lead">Naval Technica Export beschafft Schiffbaumaterialien, Anlagen und Ersatzteile von namhaften Herstellern und exportiert sie zuverlässig an Werften und Reedereien in Südamerika.</p>
+      <div class="hero-laender">
+        <span>Chile</span><span>Kolumbien</span><span>Peru</span><span>Ecuador</span><span>Mexiko</span>
+      </div>
+      <div class="hero-actions">
+        <a href="#kontakt" class="btn btn-tau">Anfrage stellen</a>
+        <a href="#leistungen" class="btn btn-outline" style="border-color:rgba(255,255,255,.4);color:#fff">Leistungen ansehen</a>
+      </div>
     </div>
   </div>
 </section>
@@ -192,7 +207,7 @@ footer{background:var(--marine-dunkel);color:rgba(255,255,255,.72);padding:60px 
       <div class="land-chip">Kolumbien</div>
       <div class="land-chip">Peru</div>
       <div class="land-chip">Ecuador</div>
-      <div class="land-chip">Mexico</div>
+      <div class="land-chip">Mexiko</div>
       <div class="land-chip">Weitere Länder</div>
     </div>
   </div>

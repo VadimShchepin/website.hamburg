@@ -8,7 +8,7 @@
 <meta name="description" content="Buchbinderei Erdmann & Papermoles GmbH: Maßanfertigungen, Veredelungen und Reparaturen für Bücher, Alben und Präsentationseinbände. Seit 1996 in Hamburg-Nienstedten.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,600&family=Overpass:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
   --gold:#b6883a;
@@ -24,14 +24,14 @@
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
-  font-family:"Karla",-apple-system,"Segoe UI",sans-serif;
+  font-family:"Overpass",-apple-system,"Segoe UI",sans-serif;
   background:var(--creme);
   color:var(--tinte);
   font-size:17px;
   line-height:1.62;
   -webkit-font-smoothing:antialiased;
 }
-h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:600;line-height:1.14;letter-spacing:-.005em}
+h1,h2,h3{font-family:"Literata",Georgia,serif;font-weight:600;line-height:1.14;letter-spacing:-.005em}
 img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
 .wrap{max-width:1160px;margin:0 auto;padding:0 28px}
@@ -55,7 +55,10 @@ header img.logo{height:50px;width:auto}
 @media (max-width:860px){.nav-links{display:none}}
 @media (max-width:600px){.header-phone{display:none}}
 
-.hero{position:relative;color:#fff;background:linear-gradient(180deg,rgba(20,16,13,.5),rgba(20,16,13,.88)),var(--tinte) url('/redesign/buchbinderei-erdmann/assets/photos/start01.webp') center 20%/cover no-repeat;padding:130px 0 100px}
+/* The gilt-edge shot is already near-black on the left, so the copy only needs
+   a light left-weighted wash. The master's portrait was the previous hero and
+   was being dimmed to 88%; it now runs bright in the gallery instead. */
+.hero{position:relative;color:#fff;background:linear-gradient(95deg,rgba(16,12,9,.88) 0%,rgba(16,12,9,.7) 44%,rgba(16,12,9,.22) 76%,rgba(16,12,9,.05) 100%),var(--tinte) url('/redesign/buchbinderei-erdmann/assets/photos/start08.webp') center 45%/cover no-repeat;padding:124px 0 104px}
 .hero .kicker{color:var(--gold-hell)}
 .hero .kicker::before{background:var(--gold-hell)}
 .hero h1{font-size:clamp(2.2rem,4.2vw,3.5rem);margin:20px 0 22px;max-width:760px}
@@ -63,8 +66,8 @@ header img.logo{height:50px;width:auto}
 .hero-actions{display:flex;gap:16px;flex-wrap:wrap}
 
 .zahlen{background:var(--tinte-2);color:#fff;padding:46px 0}
-.zahlen-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;text-align:center}
-.zahlen .num{font-family:"Fraunces",serif;font-size:clamp(2rem,3.6vw,2.7rem);color:var(--gold-hell)}
+.zahlen-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;text-align:center}
+.zahlen .num{font-family:"Literata",serif;font-size:clamp(2rem,3.6vw,2.7rem);color:var(--gold-hell)}
 .zahlen .label{font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.62);margin-top:8px}
 @media (max-width:760px){.zahlen-grid{grid-template-columns:repeat(2,1fr)}}
 
@@ -90,7 +93,7 @@ section{padding:96px 0}
 @media (max-width:900px){.split-grid{grid-template-columns:1fr}}
 
 .quote-band{background:var(--tinte);color:#fff;text-align:center}
-.quote-band blockquote{font-family:"Fraunces",serif;font-size:clamp(1.4rem,2.4vw,1.9rem);font-weight:500;max-width:780px;margin:0 auto;line-height:1.4}
+.quote-band blockquote{font-family:"Literata",serif;font-size:clamp(1.4rem,2.4vw,1.9rem);font-weight:500;max-width:780px;margin:0 auto;line-height:1.4}
 .quote-band .attrib{margin-top:20px;color:var(--gold-hell);font-size:14.5px;letter-spacing:.06em;text-transform:uppercase}
 
 .cta{background:linear-gradient(135deg,var(--gold),#8a6427);color:#fff;border-radius:20px;padding:64px;text-align:center}
@@ -139,7 +142,6 @@ footer{background:var(--tinte);color:rgba(255,255,255,.72);padding:60px 0 32px;f
     <div><div class="num">1996</div><div class="label">Gründungsjahr</div></div>
     <div><div class="num">2010</div><div class="label">Erweiterte Manufaktur</div></div>
     <div><div class="num">2</div><div class="label">Meister &amp; Gesellin</div></div>
-    <div><div class="num">1</div><div class="label">Ausbildender Meisterbetrieb</div></div>
   </div>
 </div>
 
@@ -153,9 +155,9 @@ footer{background:var(--tinte);color:rgba(255,255,255,.72);padding:60px 0 32px;f
     <div class="galerie-grid">
       <figure class="g-a"><img src="/redesign/buchbinderei-erdmann/assets/photos/start01.webp" alt="Thomas Erdmann in der Werkstatt"><figcaption>Meister Thomas Erdmann</figcaption></figure>
       <figure><img src="/redesign/buchbinderei-erdmann/assets/photos/start08.webp" alt="Goldschnitt-Veredelung im Detail"><figcaption>Goldschnitt</figcaption></figure>
-      <figure><img src="/redesign/buchbinderei-erdmann/assets/photos/start07.webp" alt="Praegung eines Einbands"><figcaption>Prägung</figcaption></figure>
+      <figure><img src="/redesign/buchbinderei-erdmann/assets/photos/start07.webp" alt="Prägung eines Einbands"><figcaption>Prägung</figcaption></figure>
       <figure><img src="/redesign/buchbinderei-erdmann/assets/photos/start02.webp" alt="Lederrollen für die Buchbinderei"><figcaption>Lederrollen</figcaption></figure>
-      <figure><img src="/redesign/buchbinderei-erdmann/assets/photos/start05.webp" alt="Praeziser Zuschnitt"><figcaption>Zuschnitt</figcaption></figure>
+      <figure><img src="/redesign/buchbinderei-erdmann/assets/photos/start05.webp" alt="Präziser Zuschnitt"><figcaption>Zuschnitt</figcaption></figure>
       <figure><img src="/redesign/buchbinderei-erdmann/assets/photos/start06.webp" alt="Reparatur eines Buchs"><figcaption>Reparaturen</figcaption></figure>
       <figure><img src="/redesign/buchbinderei-erdmann/assets/photos/start10.webp" alt="Prägefolie für Einbände"><figcaption>Prägefolie</figcaption></figure>
       <figure><img src="/redesign/buchbinderei-erdmann/assets/photos/start11.webp" alt="Werkzeug der Buchbinderei"><figcaption>Werkzeug</figcaption></figure>
@@ -195,7 +197,7 @@ footer{background:var(--tinte);color:rgba(255,255,255,.72);padding:60px 0 32px;f
     </div>
     <div class="split-grid" style="grid-template-columns:1fr 1fr">
       <img src="/redesign/buchbinderei-erdmann/assets/photos/start09.webp" alt="Papermoles Lederprodukte">
-      <img src="/redesign/buchbinderei-erdmann/assets/photos/start03.webp" alt="Massanfertigung in Arbeit">
+      <img src="/redesign/buchbinderei-erdmann/assets/photos/start03.webp" alt="Maßanfertigung in Arbeit">
     </div>
   </div>
 </section>

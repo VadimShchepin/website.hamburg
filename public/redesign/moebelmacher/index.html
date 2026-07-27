@@ -59,8 +59,12 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;paddi
 .hero h1{font-size:clamp(2.1rem,4vw,3.2rem);margin:20px 0 22px}
 .hero p.lead{font-size:18px;color:var(--grau);margin-bottom:34px;max-width:520px}
 .hero-actions{display:flex;gap:16px;flex-wrap:wrap}
-.hero-photo{border-radius:10px;overflow:hidden;box-shadow:var(--schatten)}
-.hero-photo img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+/* Every photo on file is under 350px, so the hero shows one at close to its
+   native size in a portrait frame rather than upscaling a bland 4:3 crop. */
+.hero-photo{max-width:330px;margin:0 auto}
+.hero-photo .frame{border-radius:10px;overflow:hidden;box-shadow:var(--schatten);border:8px solid #fff}
+.hero-photo img{width:100%;height:auto;aspect-ratio:294/400;object-fit:cover}
+.hero-photo figcaption{margin-top:14px;font-size:13.5px;color:var(--grau);text-align:center}
 @media (max-width:860px){.hero-grid{grid-template-columns:1fr}}
 
 .zahlen{background:var(--tinte);color:#fff;padding:44px 0}
@@ -150,9 +154,12 @@ footer{background:var(--tinte);color:rgba(255,255,255,.72);padding:56px 0 32px;f
         <a href="#galerie" class="btn btn-outline">Arbeiten ansehen</a>
       </div>
     </div>
-    <div class="hero-photo">
-      <img src="/redesign/moebelmacher/assets/photos/ahorn-esstisch.webp" alt="Esstisch aus massivem Ahorn, gefertigt von Die Möbelmacher" width="305" height="320">
-    </div>
+    <figure class="hero-photo">
+      <div class="frame">
+        <img src="/redesign/moebelmacher/assets/photos/salontuer.webp" alt="Zweiflügelige Salontür mit geätzten Glasfüllungen, gefertigt von Die Möbelmacher">
+      </div>
+      <figcaption>Zweiflügelige Salontür mit geätzten Glasfüllungen</figcaption>
+    </figure>
   </div>
 </section>
 

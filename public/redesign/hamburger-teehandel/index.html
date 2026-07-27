@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HTH Hamburger Teehandel | Teegrosshandel seit 1989</title>
+<meta name="description" content="HTH Hamburger Teehandel GmbH: internationaler Teegrosshandel aus der Hamburger Speicherstadt, seit 1989 in Familienhand, IFS- und Bio-zertifiziert.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --tee:#39603f;
+  --tee-dunkel:#254129;
+  --gold:#c99a3e;
+  --creme:#f7f4ec;
+  --karte:#ffffff;
+  --linie:#e4ded0;
+  --grau:#655e54;
+  --schatten:0 26px 54px -22px rgba(37,65,41,.24);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Source Sans 3",-apple-system,"Segoe UI",sans-serif;
+  background:var(--creme);
+  color:var(--tee-dunkel);
+  font-size:17px;
+  line-height:1.64;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:"Zilla Slab",Georgia,serif;font-weight:600;line-height:1.18;letter-spacing:-.005em}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 28px}
+
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.kicker::before{content:"";width:28px;height:2px;background:var(--gold)}
+
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 30px;border-radius:8px;font-weight:600;font-size:15.5px;transition:transform .2s ease}
+.btn-tee{background:var(--tee-dunkel);color:#fff}
+.btn-tee:hover{transform:translateY(-2px)}
+.btn-outline{border:1.5px solid var(--tee-dunkel);color:var(--tee-dunkel)}
+.btn-outline:hover{background:rgba(37,65,41,.05)}
+
+header{position:sticky;top:0;z-index:50;background:rgba(247,244,236,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--linie)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;padding:16px 28px}
+.wordmark{font-family:"Zilla Slab",serif;font-size:24px;font-weight:700;color:var(--tee-dunkel)}
+.nav-links{display:flex;gap:30px}
+.nav-links a{font-size:14.5px;font-weight:500;color:var(--grau)}
+.nav-links a:hover{color:var(--tee-dunkel)}
+.header-phone{font-weight:700;color:var(--tee-dunkel)}
+@media (max-width:900px){.nav-links{display:none}}
+@media (max-width:600px){.header-phone{display:none}}
+
+.hero{padding:100px 0}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(2.1rem,4vw,3.2rem);margin:20px 0 22px}
+.hero p.lead{font-size:18px;color:var(--grau);margin-bottom:34px;max-width:520px}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap}
+.hero-photo{border-radius:10px;overflow:hidden;box-shadow:var(--schatten)}
+.hero-photo img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr}}
+
+.badges{background:var(--karte);border-top:1px solid var(--linie);border-bottom:1px solid var(--linie);padding:36px 0}
+.badges-grid{display:flex;align-items:center;justify-content:center;gap:40px;flex-wrap:wrap}
+.badges-grid img{height:56px;width:auto;filter:grayscale(.15)}
+
+.zahlen{background:var(--tee-dunkel);color:#fff;padding:44px 0}
+.zahlen-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;text-align:center}
+.zahlen .num{font-family:"Zilla Slab",serif;font-size:clamp(1.5rem,3vw,2.2rem);color:#e0bc73}
+.zahlen .label{font-size:12.5px;letter-spacing:.04em;color:rgba(255,255,255,.62);margin-top:8px}
+@media (max-width:760px){.zahlen-grid{grid-template-columns:repeat(2,1fr)}}
+
+section{padding:92px 0}
+.section-head{max-width:640px;margin-bottom:44px}
+.section-head h2{font-size:clamp(1.6rem,3vw,2.2rem);margin-top:14px}
+.section-head p{color:var(--grau);margin-top:14px;font-size:16.5px}
+
+.timeline{display:grid;gap:14px}
+.timeline .row{display:flex;gap:20px;font-size:15px;padding:12px 0;border-bottom:1px solid var(--linie)}
+.timeline .row .jahr{flex:none;width:56px;font-weight:700;color:var(--gold)}
+.timeline .row .txt{color:var(--grau)}
+
+.team{background:var(--karte);border-top:1px solid var(--linie);border-bottom:1px solid var(--linie)}
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px 32px}
+.team-grid .row{display:flex;justify-content:space-between;gap:14px;padding:12px 0;border-bottom:1px solid var(--linie);font-size:14.5px}
+.team-grid .row span:first-child{font-weight:600}
+.team-grid .row span:last-child{color:var(--grau);text-align:right}
+@media (max-width:860px){.team-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.team-grid{grid-template-columns:1fr}}
+
+.herkunft-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.herkunft-grid p{color:var(--grau);margin-top:14px;font-size:15.5px}
+@media (max-width:900px){.herkunft-grid{grid-template-columns:1fr}}
+
+.zert-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.zert-card{background:var(--karte);border:1px solid var(--linie);border-radius:12px;padding:24px}
+.zert-card h3{font-size:16px;margin-bottom:8px;color:var(--tee-dunkel)}
+.zert-card p{font-size:14px;color:var(--grau)}
+@media (max-width:900px){.zert-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.zert-grid{grid-template-columns:1fr}}
+
+.cta{text-align:center}
+.cta h2{font-size:clamp(1.7rem,3vw,2.3rem);max-width:600px;margin:0 auto 16px}
+.cta p{color:var(--grau);max-width:520px;margin:0 auto 30px;font-size:16.5px}
+.cta-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--tee-dunkel);color:rgba(255,255,255,.72);padding:56px 0 32px;font-size:14.5px}
+.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px}
+@media (max-width:700px){.footer-grid{grid-template-columns:1fr;gap:28px}}
+.footer-grid h3{color:#fff;font-size:14px;margin-bottom:16px;letter-spacing:.05em;text-transform:uppercase}
+.footer-grid ul{display:grid;gap:9px}
+.footer-grid a:hover{color:#fff}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:40px;padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px;color:rgba(255,255,255,.42)}
+.footer-bottom a{color:rgba(255,255,255,.42)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="#" class="wordmark">HTH</a>
+    <div class="nav-links">
+      <a href="#historie">Historie</a>
+      <a href="#team">Team</a>
+      <a href="#qualitaet">Qualitaet</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
+    <div class="header-phone">+49 (0)40 334 738-0</div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker">Teegrosshandel, Hamburger Speicherstadt seit 1989</span>
+      <h1>Ihr Partner im internationalen Teehandel.</h1>
+      <p class="lead">Die HTH Hamburger Teehandel GmbH wurde 1989 in der Hamburger Speicherstadt gegruendet und wird heute in zweiter Generation als Familienunternehmen gefuehrt. Langjaehrige Erfahrung im internationalen Teegrosshandel und ausgewiesene Expertise im Tea Tasting bilden die Grundlage unseres Geschaefts.</p>
+      <div class="hero-actions">
+        <a href="tel:+49403347380" class="btn btn-tee">+49 (0)40 334 738-0 anrufen</a>
+        <a href="#qualitaet" class="btn btn-outline">Zertifizierungen ansehen</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="/redesign/hamburger-teehandel/assets/photos/teeplantage.webp" alt="Teeplantage in einem Anbaugebiet" width="424" height="318">
+    </div>
+  </div>
+</section>
+
+<div class="badges">
+  <div class="wrap badges-grid">
+    <img src="/redesign/hamburger-teehandel/assets/logos/ifs.webp" alt="IFS Zertifikat" width="90" height="53">
+    <img src="/redesign/hamburger-teehandel/assets/logos/biosiegel.webp" alt="EU Bio Siegel" width="68" height="56">
+    <img src="/redesign/hamburger-teehandel/assets/logos/fairtrade.webp" alt="Fairtrade Zertifikat" width="55" height="56">
+    <img src="/redesign/hamburger-teehandel/assets/logos/usda.webp" alt="USDA Organic Zertifikat" width="56" height="56">
+    <img src="/redesign/hamburger-teehandel/assets/logos/spi.webp" alt="SPI Zertifikat" width="113" height="56">
+    <img src="/redesign/hamburger-teehandel/assets/logos/dtkv.webp" alt="DTKV Zertifikat" width="76" height="56">
+  </div>
+</div>
+
+<div class="zahlen">
+  <div class="wrap zahlen-grid">
+    <div><div class="num">1989</div><div class="label">Gegruendet</div></div>
+    <div><div class="num">2.</div><div class="label">Generation Familienunternehmen</div></div>
+    <div><div class="num">15</div><div class="label">Koepfe im Team</div></div>
+    <div><div class="num">Speicherstadt</div><div class="label">Standort seit Gruendung</div></div>
+  </div>
+</div>
+
+<section id="historie">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Firmenchronik</span>
+      <h2>Drei Generationen Teehandel.</h2>
+      <p>Die Wurzeln reichen bis zur Ausbildung von Bernd Wulf bei Haelssen &amp; Lyon in den 1950er Jahren zurueck.</p>
+    </div>
+    <div class="timeline">
+      <div class="row"><span class="jahr">1952</span><span class="txt">Bernd Wulf beginnt seine Ausbildung bei der traditionsreichen Hamburger Firma Haelssen &amp; Lyon, wo er spaeter Chefeinkaeufer wird.</span></div>
+      <div class="row"><span class="jahr">1982</span><span class="txt">Erste Reise von Marcus Wulf nach Asien, zwei Monate nach Kolkata und Darjeeling.</span></div>
+      <div class="row"><span class="jahr">1989</span><span class="txt">Gruendung der HTH Hamburger Teehandel GmbH durch die Familie Wulf in der Hamburger Speicherstadt.</span></div>
+      <div class="row"><span class="jahr">1994</span><span class="txt">Marcus Wulf wird alleiniger geschaeftsfuehrender Gesellschafter.</span></div>
+      <div class="row"><span class="jahr">1998</span><span class="txt">Bernd Wulf verstirbt. Seiner letzten Wunsch gemaess wird seine Asche in Darjeeling verstreut, dort wo Marcus Wulf 1982 seine erste Teereise hinfuehrte.</span></div>
+      <div class="row"><span class="jahr">2005</span><span class="txt">Umzug in neue Raeumlichkeiten am Pickhuben 6 in der Hamburger Speicherstadt, unser Standort bis heute.</span></div>
+      <div class="row" style="border-bottom:none"><span class="jahr">2012</span><span class="txt">Tammo de Buhr, seit 2004 im Unternehmen, wird Mitgesellschafter.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="team" id="team">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Unser Team</span>
+      <h2>Familienunternehmen mit Erfahrung.</h2>
+      <p>Ein eingespieltes Team aus Handel, Qualitaetssicherung und Verwaltung, mehrere Generationen der Familie Wulf inklusive.</p>
+    </div>
+    <div class="team-grid">
+      <div class="row"><span>Marcus Wulf</span><span>Managing Director</span></div>
+      <div class="row"><span>Sibylle Wulf</span><span>General Administration</span></div>
+      <div class="row"><span>Miguel Wulf</span><span>Trading</span></div>
+      <div class="row"><span>May Lina Wulf</span><span>Trading / Back Office</span></div>
+      <div class="row"><span>Isabel Wulf</span><span>General Administration</span></div>
+      <div class="row"><span>Tammo de Buhr</span><span>Trading, Mitgesellschafter</span></div>
+      <div class="row"><span>Mette Ditzer</span><span>Quality Department</span></div>
+      <div class="row"><span>Jan Ricken</span><span>Trading</span></div>
+      <div class="row"><span>Sabine Loewe</span><span>Back Office</span></div>
+      <div class="row"><span>Gesa Frick</span><span>Accounting</span></div>
+      <div class="row"><span>Meraj Turkmany</span><span>Trading</span></div>
+      <div class="row" style="border-bottom:none"><span>Jack Rolland</span><span>Trading</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="qualitaet">
+  <div class="wrap">
+    <div class="herkunft-grid">
+      <div>
+        <span class="kicker">Herkunft &amp; Qualitaet</span>
+        <h2>Aus allen Anbaugebieten der Welt.</h2>
+        <p>Wir verfuegen ueber ein weit reichendes Netzwerk zuverlaessiger Produzenten und importieren Tee aus allen existierenden Anbaugebieten. Damit sind wir ein bewaehrter Partner fuer unsere weltweiten Kunden in den Bereichen Grosshandel, Teepackerei, Versandhandel und etabliertem Einzelhandel.</p>
+        <p>Unsere Tea Taster wissen nicht nur, was guten Tee ausmacht, sondern auch, wo man ihn bekommt.</p>
+      </div>
+      <div class="zert-grid">
+        <div class="zert-card">
+          <h3>IFS Broker</h3>
+          <p>International Featured Standard fuer Handelsunternehmen.</p>
+        </div>
+        <div class="zert-card">
+          <h3>EU Bio &amp; USDA Organic</h3>
+          <p>Zertifiziert durch Kiwa BCS Oeko-Garantie GmbH, Kontrollstelle DE-OEKO-001.</p>
+        </div>
+        <div class="zert-card">
+          <h3>Fairtrade &amp; Kosher</h3>
+          <p>FLO Fairtrade, Fair Trade USA, Rainforest Alliance und Kosher zertifiziert.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2>Muster anfragen oder direkt sprechen.</h2>
+    <p>Wir arbeiten auf Musterbasis, ohne festen Katalog. Rufen Sie an oder schreiben Sie uns fuer eine 20g Teeprobe.</p>
+    <div class="cta-actions">
+      <a href="tel:+49403347380" class="btn btn-tee">+49 (0)40 334 738-0 anrufen</a>
+      <a href="mailto:trade@hamburg-tea.com" class="btn btn-outline">trade@hamburg-tea.com</a>
+    </div>
+  </div>
+</section>
+
+<footer id="kontakt">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h3>HTH Hamburger Teehandel</h3>
+        <p style="max-width:280px">Teegrosshandel Im- &amp; Export, seit 1989 in der Hamburger Speicherstadt.</p>
+      </div>
+      <div>
+        <h3>Kontakt</h3>
+        <ul>
+          <li>Ludwig-Erhard-Strasse 14 (5. Stock)</li>
+          <li>20459 Hamburg</li>
+          <li><a href="tel:+49403347380">Tel. +49 (0)40 334 738-0</a></li>
+          <li><a href="mailto:trade@hamburg-tea.com">trade@hamburg-tea.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Unternehmen</h3>
+        <ul>
+          <li>HTH Hamburger Teehandel GmbH</li>
+          <li>Geschaeftsfuehrer: Marcus Wulf</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; HTH Hamburger Teehandel</span>
+      <div style="display:flex;gap:22px">
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

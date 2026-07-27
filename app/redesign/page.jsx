@@ -191,6 +191,12 @@ const redesigns = [
         sector: 'GETRAENKEHANDEL · HAMBURG-WANDSBEK · SEIT 1954',
         description: 'Bernstein-Tanne-Design mit echten Event- und Ausschankfotos, der Firmenchronik seit 1954 und einem Markenpartner-Grid.',
     },
+    {
+        slug: 'hamburger-teehandel',
+        firm: 'HTH Hamburger Teehandel',
+        sector: 'TEEGROSSHANDEL · HAMBURGER SPEICHERSTADT · SEIT 1989',
+        description: 'Tee-Gold-Design mit echten Zertifizierungslogos, der dreigenerationigen Firmenchronik und dem echten Team der Familie Wulf.',
+    },
 ];
 
 export default function RedesignPage() {

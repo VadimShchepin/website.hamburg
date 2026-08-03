@@ -8,7 +8,7 @@ import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
     title: 'Website erstellen lassen Hamburg | Professionell ab 2.900 €',
-    description: 'Website erstellen lassen in Hamburg: individuell programmiert, Lighthouse 90–100, Festpreis ab 2.900 €. Keine Baukästen, keine versteckten Kosten, fertig in 2–6 Wochen.',
+    description: 'Website erstellen lassen in Hamburg: individuell programmiert, Lighthouse 90–100, Festpreis ab 2.900 €. Fertig in 2–6 Wochen.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/website-erstellen-lassen',
     },

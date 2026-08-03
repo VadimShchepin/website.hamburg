@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export const metadata = {
     title: 'Webdesign Kosten 2026: Was eine professionelle Website wirklich kostet',
-    description: 'Von 500 bis 50.000 Euro: was bestimmt den Preis einer Website? Ehrlicher Kostenguide mit Preisbeispielen, versteckten Kosten und Tipps fur die richtige Entscheidung.',
+    description: 'Von 500 bis 50.000 Euro: was bestimmt den Preis einer Website? Ehrlicher Kostenguide mit Preisbeispielen und versteckten Kosten.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/webdesign-kosten',
     },
@@ -194,7 +194,7 @@ export default function WebdesignKostenArticlePage() {
                 </p>
                 <ul>
                     <li><strong>Vorteile:</strong> Maximale Flexibilit&auml;t, komplexe Gesch&auml;ftsprozesse abbildbar, Enterprise-Niveau an Sicherheit und Skalierbarkeit.</li>
-                    <li><strong>Nachteile:</strong> Hohe Investition, lange Projektlaufzeiten (3 bis 12 Monate), erfordert klare Anforderungsdokumentation und Projektmanagement.</li>
+                    <li><strong>Nachteile:</strong> Höhe Investition, lange Projektlaufzeiten (3 bis 12 Monate), erfordert klare Anforderungsdokumentation und Projektmanagement.</li>
                 </ul>
 
                 <h2>Welche versteckten Kosten kommen dazu?</h2>

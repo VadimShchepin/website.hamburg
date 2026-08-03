@@ -45,7 +45,7 @@ export default function ImpressumPage() {
                     <h2 style={{ marginTop: '2rem' }}>Steuernummer</h2>
                     <p>41/229/05131</p>
 
-                    <h2 style={{ marginTop: '2rem' }}>Verantwortlich fur den Inhalt nach &sect; 18 Abs. 2 MStV</h2>
+                    <h2 style={{ marginTop: '2rem' }}>Verantwortlich für den Inhalt nach &sect; 18 Abs. 2 MStV</h2>
                     <p>Vadim Shchepin<br />Hamburg, Deutschland</p>
 
                     <h2 style={{ marginTop: '2rem' }}>EU-Streitschlichtung</h2>

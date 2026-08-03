@@ -8,7 +8,7 @@ import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
     title: 'Google Ads Hamburg | Sofort qualifizierte Anfragen',
-    description: 'Google Ads Management für lokale Unternehmen in Hamburg: Search Ads, Local Services Ads, Conversion-Tracking, ROAS-Optimierung. Ihr Konto, Ihre Daten. Setup ab 700 €, Betreuung ab 500 €/Monat.',
+    description: 'Google Ads für lokale Unternehmen in Hamburg: Search Ads, Local Services Ads, Conversion-Tracking. Ihr Konto. Setup ab 700 €, dann ab 500 €/Monat.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/google-ads',
     },

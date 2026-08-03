@@ -4,13 +4,13 @@ import { BUSINESS } from '../../src/lib/schema';
 
 export const metadata = {
     title: 'Wissen | Webdesign, SEO & Ads Guides',
-    description: 'Fachartikel zu Webdesign, SEO, AI SEO und Google Ads fur lokale Unternehmen. Praxiswissen, keine Theorie, geschrieben fur Unternehmer in Hamburg.',
+    description: 'Fachartikel zu Webdesign, SEO, AI SEO und Google Ads für lokale Unternehmen. Praxiswissen, keine Theorie, geschrieben für Unternehmer in Hamburg.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen',
     },
     openGraph: {
         title: 'Wissen | Webdesign, SEO & Ads Guides',
-        description: 'Fachartikel zu Webdesign, SEO, AI SEO und Google Ads fur lokale Unternehmen. Praxiswissen, keine Theorie.',
+        description: 'Fachartikel zu Webdesign, SEO, AI SEO und Google Ads für lokale Unternehmen. Praxiswissen, keine Theorie.',
         url: 'https://webseite.hamburg/wissen',
         type: 'website',
     },
@@ -35,21 +35,21 @@ const articles = [
         slug: 'warum-langsame-websites-kunden-kosten',
         category: 'WEBDESIGN',
         title: 'Warum langsame Websites Sie jeden Tag Kunden kosten',
-        excerpt: 'Jede Sekunde Ladezeit kostet Sie 7% Conversion-Rate. Erfahren Sie, wie Sie die Geschwindigkeit Ihrer Website messen und mit konkreten Massnahmen verbessern konnen.',
+        excerpt: 'Jede Sekunde Ladezeit kostet Sie 7% Conversion-Rate. Erfahren Sie, wie Sie die Geschwindigkeit Ihrer Website messen und mit konkreten Maßnahmen verbessern können.',
         readTime: '6 Min.',
     },
     {
         slug: 'lokales-seo-hamburg-guide',
         category: 'SEO',
-        title: 'Lokales SEO in Hamburg: Der komplette Leitfaden fur 2026',
-        excerpt: 'Von Google Business Profile bis lokale Keywords: alles, was Sie wissen mussen, um in Hamburg bei Google gefunden zu werden. Mit Schritt-fur-Schritt-Anleitung.',
+        title: 'Lokales SEO in Hamburg: Der komplette Leitfaden für 2026',
+        excerpt: 'Von Google Business Profile bis lokale Keywords: alles, was Sie wissen müssen, um in Hamburg bei Google gefunden zu werden. Mit Schritt-für-Schritt-Anleitung.',
         readTime: '12 Min.',
     },
     {
         slug: 'ai-seo-was-unternehmen-jetzt-wissen-muessen',
         category: 'AI SEO',
-        title: 'AI SEO: Was Unternehmen jetzt wissen mussen',
-        excerpt: 'ChatGPT, Perplexity, Google AI Overviews verandern die Suche. Wie Sie sicherstellen, dass Ihr Unternehmen in KI-Antworten als Quelle erscheint.',
+        title: 'AI SEO: Was Unternehmen jetzt wissen müssen',
+        excerpt: 'ChatGPT, Perplexity, Google AI Overviews verändern die Suche. Wie Sie sicherstellen, dass Ihr Unternehmen in KI-Antworten als Quelle erscheint.',
         readTime: '8 Min.',
     },
     {
@@ -62,22 +62,22 @@ const articles = [
     {
         slug: 'website-conversion-optimierung',
         category: 'CONVERSION',
-        title: 'Mehr Anfragen ohne mehr Traffic: Conversion-Optimierung erklart',
-        excerpt: 'Warum mehr Besucher nicht die Losung ist. Wie Sie mit der gleichen Besucherzahl durch bessere Struktur und klarere Nutzerfuhrung deutlich mehr Anfragen generieren.',
+        title: 'Mehr Anfragen ohne mehr Traffic: Conversion-Optimierung erklärt',
+        excerpt: 'Warum mehr Besucher nicht die Lösung ist. Wie Sie mit der gleichen Besucherzahl durch bessere Struktur und klarere Nutzerführung deutlich mehr Anfragen generieren.',
         readTime: '9 Min.',
     },
     {
         slug: 'website-relaunch-checkliste',
         category: 'WEBDESIGN',
-        title: 'Website-Relaunch Checkliste: Was Sie vorher wissen mussen',
-        excerpt: 'Ein Relaunch kann Ihre Online-Prasenz transformieren oder Ihre Rankings zerstoren. Die wichtigsten Punkte, die Sie vor, wahrend und nach dem Relaunch beachten mussen.',
+        title: 'Website-Relaunch Checkliste: Was Sie vorher wissen müssen',
+        excerpt: 'Ein Relaunch kann Ihre Online-Präsenz transformieren oder Ihre Rankings zerstören. Die wichtigsten Punkte, die Sie vor, während und nach dem Relaunch beachten müssen.',
         readTime: '10 Min.',
     },
     {
         slug: 'webdesign-kosten',
         category: 'WEBDESIGN',
         title: 'Webdesign Kosten 2026: Was eine professionelle Website wirklich kostet',
-        excerpt: 'Von 500 bis 50.000 Euro: was bestimmt den Preis einer Website? Ehrlicher Kostenguide mit Preisbeispielen, versteckten Kosten und Tipps fur die richtige Entscheidung.',
+        excerpt: 'Von 500 bis 50.000 Euro: was bestimmt den Preis einer Website? Ehrlicher Kostenguide mit Preisbeispielen, versteckten Kosten und Tipps für die richtige Entscheidung.',
         readTime: '10 Min.',
     },
 ];
@@ -87,7 +87,7 @@ export default function WissenPage() {
         '@context': 'https://schema.org',
         '@type': 'CollectionPage',
         name: 'Wissen - AISEO Hamburg',
-        description: 'Fachartikel zu Webdesign, SEO, AI SEO und Google Ads fur lokale Unternehmen. Praxiswissen, keine Theorie.',
+        description: 'Fachartikel zu Webdesign, SEO, AI SEO und Google Ads für lokale Unternehmen. Praxiswissen, keine Theorie.',
         url: 'https://webseite.hamburg/wissen',
         publisher: BUSINESS,
     };
@@ -110,9 +110,9 @@ export default function WissenPage() {
                 <div className="container">
                     <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Wissen' }]} />
                     <p className="section-kicker animate-up">Wissen</p>
-                    <h1 className="subpage-title animate-up">Praxiswissen fur Ihr Online-Wachstum.</h1>
+                    <h1 className="subpage-title animate-up">Praxiswissen für Ihr Online-Wachstum.</h1>
                     <p className="subpage-intro animate-up">
-                        Keine Theorie, keine Floskeln. Hier finden Sie konkrete Anleitungen, Analysen und Einblicke zu Webdesign, SEO, AI SEO und Google Ads, geschrieben fur Unternehmer, die verstehen wollen, was wirklich funktioniert.
+                        Keine Theorie, keine Floskeln. Hier finden Sie konkrete Anleitungen, Analysen und Einblicke zu Webdesign, SEO, AI SEO und Google Ads, geschrieben für Unternehmer, die verstehen wollen, was wirklich funktioniert.
                     </p>
                 </div>
             </section>

@@ -6,14 +6,14 @@ const SITE_URL = 'https://webseite.hamburg';
 const PAGE_URL = `${SITE_URL}/referenzen/pest-control-saas`;
 
 export const metadata = {
-    title: 'Pest Control SaaS Case Study | Enterprise-Architektur fur Schadlingsbekampfung',
-    description: 'Multi-Tenant SaaS fur Schadlingsbekampfer: Hexagonale Architektur, DDD, Offline-PWA, EU-Biozid-Verordnung-Compliance. Laravel 12 + Next.js 16 + PostgreSQL.',
+    title: 'Pest Control SaaS Case Study | Enterprise-Architektur für Schädlingsbekämpfung',
+    description: 'Multi-Tenant SaaS für Schädlingsbekämpfer: Hexagonale Architektur, DDD, Offline-PWA, EU-Biozid-Verordnung-Compliance. Laravel 12 + Next.js 16 + PostgreSQL.',
     alternates: {
         canonical: PAGE_URL,
     },
     openGraph: {
         title: 'Pest Control SaaS | Enterprise-Architektur mit DDD & Offline-PWA',
-        description: 'Multi-Tenant SaaS: Hexagonale Architektur, 6 Bounded Contexts, Offline-PWA fur Techniker, EU-Biozid-Compliance. Case Study.',
+        description: 'Multi-Tenant SaaS: Hexagonale Architektur, 6 Bounded Contexts, Offline-PWA für Techniker, EU-Biozid-Compliance. Case Study.',
         url: PAGE_URL,
         type: 'article',
     },
@@ -33,7 +33,7 @@ export default function PestControlCaseStudy() {
     const articleJsonLd = {
         '@context': 'https://schema.org',
         '@type': 'Article',
-        headline: 'Pest Control SaaS: Enterprise-Architektur fur die Schadlingsbekampfungsbranche',
+        headline: 'Pest Control SaaS: Enterprise-Architektur für die Schädlingsbekämpfungsbranche',
         description: 'Case Study: Multi-Tenant SaaS mit Hexagonaler Architektur, DDD, Offline-PWA und EU-Biozid-Verordnung-Compliance.',
         url: PAGE_URL,
         datePublished: '2026-04-03',
@@ -41,7 +41,7 @@ export default function PestControlCaseStudy() {
         author: {
             '@type': 'Person',
             name: 'Vadim Shchepin',
-            url: `${SITE_URL}/ueber-uns`,
+            url: `${SITE_URL}/über-uns`,
         },
         publisher: {
             '@type': 'Organization',
@@ -78,10 +78,10 @@ export default function PestControlCaseStudy() {
                         <span className="wissen-card-time">SaaS-Produktentwicklung</span>
                     </div>
                     <h1 className="subpage-title animate-up">
-                        Pest Control SaaS: Enterprise-Architektur fur die Schadlingsbekampfungsbranche.
+                        Pest Control SaaS: Enterprise-Architektur für die Schädlingsbekämpfungsbranche.
                     </h1>
                     <p className="subpage-intro animate-up">
-                        Ein Multi-Tenant SaaS-System, das Kundenverwaltung, Einsatzplanung, Vor-Ort-Dokumentation und rechtskonforme Berichterstattung in einer Plattform vereint. Gebaut mit Hexagonaler Architektur, Domain-Driven Design und einer Offline-fahigen PWA fur Techniker im Feld.
+                        Ein Multi-Tenant SaaS-System, das Kundenverwaltung, Einsatzplanung, Vor-Ort-Dokumentation und rechtskonforme Berichterstattung in einer Plattform vereint. Gebaut mit Hexagonaler Architektur, Domain-Driven Design und einer Offline-fahigen PWA für Techniker im Feld.
                     </p>
                     <div className="article-byline animate-up">
                         Von <Link href="/ueber-uns">Vadim Shchepin</Link> &middot; 3. April 2026
@@ -94,7 +94,7 @@ export default function PestControlCaseStudy() {
                 <div className="container">
                     <div className="cs-metrics-grid animate-up">
                         <MetricCard value="6" label="Bounded Contexts" detail="Domain-Driven Design" />
-                        <MetricCard value="27" label="API-Routen" detail="Vollstandige REST-API" />
+                        <MetricCard value="27" label="API-Routen" detail="Vollständige REST-API" />
                         <MetricCard value="0" label="Architektur-Verletzungen" detail="Deptrac-enforced" />
                         <MetricCard value="100%" label="Architektur-Compliance" detail="Hexagonal + DDD" />
                         <MetricCard value="PWA" label="Offline-fahig" detail="IndexedDB + Service Worker" />
@@ -108,13 +108,13 @@ export default function PestControlCaseStudy() {
                 <div className="container subpage-body">
                     <h2 className="animate-up">Das Problem</h2>
                     <p className="animate-up">
-                        Schadlingsbekampfer in Deutschland arbeiten mit einem Flickwerk aus Tools: Kundendaten in Excel, Einsatzplane per WhatsApp, Fotos auf dem Handy, Berichte in Word-Vorlagen. Jeder Einsatz erzeugt Papierkram, der manuell zusammengefuhrt werden muss: zeitaufwandig, fehleranfallig und nicht rechtskonform.
+                        Schädlingsbekämpfer in Deutschland arbeiten mit einem Flickwerk aus Tools: Kundendaten in Excel, Einsatzplane per WhatsApp, Fotos auf dem Handy, Berichte in Word-Vorlagen. Jeder Einsatz erzeugt Papierkram, der manuell zusammengefuhrt werden muss: zeitaufwandig, fehleranfallig und nicht rechtskonform.
                     </p>
                     <p className="animate-up">
-                        Die EU-Biozid-Verordnung (528/2012) schreibt vor, dass bei jedem Einsatz detailliert dokumentiert wird: Auftraggeber, Einsatzort, Datum und Uhrzeit, Schadlingsart, Befallsgrad, Massnahmen, eingesetzte Mittel und Unterschrift. Ein vergessenes Feld kann rechtliche Konsequenzen haben.
+                        Die EU-Biozid-Verordnung (528/2012) schreibt vor, dass bei jedem Einsatz detailliert dokumentiert wird: Auftraggeber, Einsatzort, Datum und Uhrzeit, Schädlingsart, Befallsgrad, Maßnahmen, eingesetzte Mittel und Unterschrift. Ein vergessenes Feld kann rechtliche Konsequenzen haben.
                     </p>
 
-                    <h2 className="animate-up">Die Losung: Ein System fur alles</h2>
+                    <h2 className="animate-up">Die Lösung: Ein System für alles</h2>
 
                     <h3 className="animate-up" style={{ marginTop: 'var(--space-lg)', fontSize: '1.3rem' }}>
                         Architektur: Hexagonal + Domain-Driven Design
@@ -138,7 +138,7 @@ export default function PestControlCaseStudy() {
                         </div>
                         <div className="subpage-feature">
                             <h3>Deptrac Enforcement</h3>
-                            <p>Schichtgrenzen werden durch Deptrac automatisch gepruft. Eine Verletzung = Build bricht ab. 0 Verletzungen in der gesamten Codebasis.</p>
+                            <p>Schichtgrenzen werden durch Deptrac automatisch geprüft. Eine Verletzung = Build bricht ab. 0 Verletzungen in der gesamten Codebasis.</p>
                         </div>
                     </div>
 
@@ -155,7 +155,7 @@ export default function PestControlCaseStudy() {
                         </div>
                         <div className="subpage-feature">
                             <h3>CRM</h3>
-                            <p>Kunden, Kontakte, Standorte. Soft Delete fur Audit-Trail. Vollstandiges CRUD mit Pagination.</p>
+                            <p>Kunden, Kontakte, Standorte. Soft Delete für Audit-Trail. Vollständiges CRUD mit Pagination.</p>
                         </div>
                         <div className="subpage-feature">
                             <h3>Scheduling</h3>
@@ -171,7 +171,7 @@ export default function PestControlCaseStudy() {
                         </div>
                         <div className="subpage-feature">
                             <h3>Messaging</h3>
-                            <p>E-Mail-Versand uber AWS SES. Queued, nie direkt vom Client. Vollstandiges E-Mail-Log.</p>
+                            <p>E-Mail-Versand über AWS SES. Queued, nie direkt vom Client. Vollständiges E-Mail-Log.</p>
                         </div>
                     </div>
 
@@ -179,11 +179,11 @@ export default function PestControlCaseStudy() {
                         Multi-Tenancy & Datenisolierung
                     </h3>
                     <p className="animate-up">
-                        Jede Entitat tragt eine <code>tenant_id</code>. Der Tenant wird aus der authentifizierten Benutzersitzung aufgelost. Alle Repository-Methoden filtern automatisch nach Tenant, mit globalen Eloquent Scopes als letzte Sicherheitsschicht. Tests prufen die Tenant-Isolierung explizit.
+                        Jede Entitat trägt eine <code>tenant_id</code>. Der Tenant wird aus der authentifizierten Benutzersitzung aufgelost. Alle Repository-Methoden filtern automatisch nach Tenant, mit globalen Eloquent Scopes als letzte Sicherheitsschicht. Tests prüfen die Tenant-Isolierung explizit.
                     </p>
 
                     <h3 className="animate-up" style={{ marginTop: 'var(--space-lg)', fontSize: '1.3rem' }}>
-                        Offline-PWA fur Techniker
+                        Offline-PWA für Techniker
                     </h3>
                     <p className="animate-up">
                         Techniker arbeiten in Kellern, Lagerhallen und Aussenanlagen, oft ohne stabiles Internet. Die Progressive Web App speichert Einsatzdaten lokal in IndexedDB und synchronisiert automatisch, sobald die Verbindung wiederhergestellt wird. Ein Sync-Status-Indikator zeigt dem Techniker jederzeit den aktuellen Zustand.
@@ -209,11 +209,11 @@ export default function PestControlCaseStudy() {
                         </div>
                         <div className="subpage-feature">
                             <h3>Infrastruktur</h3>
-                            <p>Docker Compose, AWS SES (E-Mail-Queue), lokaler Speicher (MVP) mit S3-Option fur V1+.</p>
+                            <p>Docker Compose, AWS SES (E-Mail-Queue), lokaler Speicher (MVP) mit S3-Option für V1+.</p>
                         </div>
                         <div className="subpage-feature">
-                            <h3>Qualitat</h3>
-                            <p>PHPUnit mit In-Memory SQLite. Deptrac fur Architektur-Compliance. 100% Schicht-Konformitat.</p>
+                            <h3>Qualität</h3>
+                            <p>PHPUnit mit In-Memory SQLite. Deptrac für Architektur-Compliance. 100% Schicht-Konformität.</p>
                         </div>
                     </div>
 
@@ -221,7 +221,7 @@ export default function PestControlCaseStudy() {
                     <div className="cs-takeaway animate-up">
                         <h3>Das Wichtigste</h3>
                         <p>
-                            Enterprise-Architektur ist kein Overhead, sondern eine Investition. Hexagonales Design mit DDD bedeutet: klare Fachmodule, testbare Geschaftslogik, einfache Erweiterbarkeit. Der Beweis: 0 Architektur-Verletzungen in der gesamten Codebasis, automatisch gepruft vor jedem Commit. Dieses System wachst mit dem Geschaft, nicht dagegen.
+                            Enterprise-Architektur ist kein Overhead, sondern eine Investition. Hexagonales Design mit DDD bedeutet: klare Fachmodule, testbare Geschaftslogik, einfache Erweiterbarkeit. Der Beweis: 0 Architektur-Verletzungen in der gesamten Codebasis, automatisch geprüft vor jedem Commit. Dieses System wachst mit dem Geschäft, nicht dagegen.
                         </p>
                     </div>
                 </div>

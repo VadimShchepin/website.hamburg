@@ -1,14 +1,14 @@
 import React from 'react';
 import Link from 'next/link';
 
-export default function ServiceCta({ title = 'Bereit fur den nachsten Schritt?', text }) {
+export default function ServiceCta({ title = 'Bereit für den nächsten Schritt?', text }) {
     return (
         <section className="sp-cta section">
             <div className="container">
                 <div className="cta-box bull-boundary animate-up">
                     <p className="section-kicker">Bereit?</p>
                     <h2 className="section-title">{title}</h2>
-                    <p className="offer-framing">{text || 'Kostenloses Erstgesprach, unverbindlich und konkret. Ich sage Ihnen ehrlich, wo das Potenzial liegt.'}</p>
+                    <p className="offer-framing">{text || 'Kostenloses Erstgespräch, unverbindlich und konkret. Ich sage Ihnen ehrlich, wo das Potenzial liegt.'}</p>
                     <div className="cta-actions mt-4">
                         <Link href="/kontakt" className="button button-primary button-large" data-umami-event="cta-click" data-umami-event-location="service-cta">Jetzt Analyse anfordern</Link>
                         <a href="tel:+4917632194754" className="cta-phone" data-umami-event="phone-call" data-umami-event-location="service-cta">

@@ -51,7 +51,7 @@ export default function Proof() {
                 <div className="metrics-grid">
                     <div className="metric">
                         <Counter target={40} suffix="+" />
-                        <span className="metric-label">Kundenanfragen/Monat fur meine Kunden</span>
+                        <span className="metric-label">Kundenanfragen/Monat für meine Kunden</span>
                     </div>
                     <div className="metric">
                         <Counter target={100} />

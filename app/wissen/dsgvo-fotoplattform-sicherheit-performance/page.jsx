@@ -3,7 +3,7 @@ import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
     title: 'DSGVO-Fotoplattform für Schulen: Was Sicherheit wirklich kostet | Case Study',
-    description: 'Architektur-Case-Study von dsgvoschulfotos.de: QR-Code + PIN statt Accounts, Row Level Security, signierte URLs. Der Performance-Preis: 723 imgproxy-Fehler in 72 Stunden, bis vorgenerierte WebP-Varianten kamen.',
+    description: 'Architektur-Case-Study: QR-Code plus PIN statt Accounts, Row Level Security, signierte URLs, und was das an Performance gekostet hat.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/dsgvo-fotoplattform-sicherheit-performance',
     },

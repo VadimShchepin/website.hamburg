@@ -3,7 +3,7 @@ import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
     title: 'Case Study: 1.200-Foto-Galerie von Sekunden auf 0,98 s | N+1 bei signierten URLs',
-    description: 'Echte Produktionszahlen: Wie 2.408 versteckte HTTP-Requests eine Fotogalerie mit 1.204 Fotos ausbremsten, und wie Batch-Signierung, WebP-Thumbnails und content-visibility das Problem lösten.',
+    description: 'Echte Produktionszahlen: wie 2.408 versteckte HTTP-Requests eine Galerie mit 1.204 Fotos ausbremsten und was sie auf 0,98 s brachte.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/case-study-fotogalerie-performance',
     },

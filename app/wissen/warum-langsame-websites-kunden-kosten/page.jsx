@@ -3,7 +3,7 @@ import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
     title: 'Warum langsame Websites Sie jeden Tag Kunden kosten | Hamburg',
-    description: 'Jede zusätzliche Sekunde Ladezeit senkt die Conversion-Rate um rund 4 Prozent. Wie Sie die Geschwindigkeit Ihrer Website messen und verbessern, mit konkreten Maßnahmen.',
+    description: 'Jede zusätzliche Sekunde Ladezeit senkt die Conversion-Rate um rund 4 Prozent. Wie Sie das messen und verbessern.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/warum-langsame-websites-kunden-kosten',
     },

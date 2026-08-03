@@ -7,7 +7,7 @@ const PAGE_URL = `${SITE_URL}/referenzen/solovei-beauty`;
 
 export const metadata = {
     title: 'Solovei Beauty Case Study | Dreisprachige Coworking-Plattform mit CMS',
-    description: 'Next.js 16 + Payload CMS + PostgreSQL: Dreisprachige Website fur Beauty-Coworking in Hamburg. Deutsch, Englisch, Russisch, mit CI/CD und Docker-Deployment.',
+    description: 'Next.js 16 + Payload CMS + PostgreSQL: Dreisprachige Website für Beauty-Coworking in Hamburg. Deutsch, Englisch, Russisch, mit CI/CD und Docker-Deployment.',
     alternates: { canonical: PAGE_URL },
     openGraph: {
         title: 'Solovei Beauty | Dreisprachige Coworking-Plattform',
@@ -36,7 +36,7 @@ export default function SoloveiCaseStudy() {
         url: PAGE_URL,
         datePublished: '2026-04-03',
         dateModified: '2026-04-03',
-        author: { '@type': 'Person', name: 'Vadim Shchepin', url: `${SITE_URL}/ueber-uns` },
+        author: { '@type': 'Person', name: 'Vadim Shchepin', url: `${SITE_URL}/über-uns` },
         publisher: { '@type': 'Organization', '@id': `${SITE_URL}/#organization` },
         mainEntityOfPage: PAGE_URL,
     };
@@ -68,7 +68,7 @@ export default function SoloveiCaseStudy() {
                         <span className="wissen-card-time">Webdesign + CMS</span>
                     </div>
                     <h1 className="subpage-title animate-up">
-                        Solovei Beauty: Eine Website, drei Sprachen, null Abhangigkeit vom Entwickler.
+                        Solovei Beauty: Eine Website, drei Sprachen, null Abhängigkeit vom Entwickler.
                     </h1>
                     <p className="subpage-intro animate-up">
                         Ein Beauty-Coworking-Space in Hamburg brauchte eine Website, die auf Deutsch, Englisch und Russisch funktioniert, und die die Inhaberin selbst pflegen kann, ohne jedes Mal anzurufen. Also haben wir Payload CMS eingebaut. Jetzt ruft sie trotzdem an. Aber aus Freude, nicht aus Verzweiflung.
@@ -94,15 +94,15 @@ export default function SoloveiCaseStudy() {
                 <div className="container subpage-body">
                     <h2 className="animate-up">Die Ausgangssituation</h2>
                     <p className="animate-up">
-                        Solovei Beauty ist ein Coworking-Space fur Kosmetikerinnen, Friseurinnen und Beauty-Profis in Hamburg. Die Zielgruppe ist international: deutsche Kundinnen, englischsprachige Expats und die russischsprachige Community. Eine Website nur auf Deutsch? Das ware so, als wurde man in einem russischen Restaurant nur die Speisekarte auf Deutsch anbieten. Technisch moglich, aber man verliert die Halfte der Gaste.
+                        Solovei Beauty ist ein Coworking-Space für Kosmetikerinnen, Friseurinnen und Beauty-Profis in Hamburg. Die Zielgruppe ist international: deutsche Kundinnen, englischsprachige Expats und die russischsprachige Community. Eine Website nur auf Deutsch? Das wäre so, als wurde man in einem russischen Restaurant nur die Speisekarte auf Deutsch anbieten. Technisch möglich, aber man verliert die Hälfte der Gaste.
                     </p>
                     <p className="animate-up">
-                        Die Anforderung war klar: Eine professionelle Website in drei Sprachen, mit der Moglichkeit, Raume, Preise und Inhalte selbst zu verwalten, ohne fur jede Textanderung einen Entwickler zu brauchen. Und naturlich sollte sie schnell sein, auf dem Handy gut aussehen und bei Google gefunden werden.
+                        Die Anforderung war klar: Eine professionelle Website in drei Sprachen, mit der Möglichkeit, Raume, Preise und Inhalte selbst zu verwalten, ohne für jede Textanderung einen Entwickler zu brauchen. Und natürlich sollte sie schnell sein, auf dem Handy gut aussehen und bei Google gefunden werden.
                     </p>
 
-                    <h2 className="animate-up">Die Losung: Next.js + Payload CMS</h2>
+                    <h2 className="animate-up">Die Lösung: Next.js + Payload CMS</h2>
                     <p className="animate-up">
-                        Warum Payload CMS und nicht WordPress? Weil WordPress ein Schweizer Taschenmesser ist: es kann alles ein bisschen, aber nichts richtig gut. Payload CMS ist direkt in die Next.js-Anwendung integriert. Kein separater Server, keine REST-API-Umwege, keine Plugin-Holle. Die Inhaberin offnet das Admin-Panel, andert einen Text, und er ist live. In drei Sprachen gleichzeitig.
+                        Warum Payload CMS und nicht WordPress? Weil WordPress ein Schweizer Taschenmesser ist: es kann alles ein bisschen, aber nichts richtig gut. Payload CMS ist direkt in die Next.js-Anwendung integriert. Kein separater Server, keine REST-API-Umwege, keine Plugin-Holle. Die Inhaberin offnet das Admin-Panel, ändert einen Text, und er ist live. In drei Sprachen gleichzeitig.
                     </p>
 
                     <div className="subpage-features-grid animate-up">
@@ -112,7 +112,7 @@ export default function SoloveiCaseStudy() {
                         </div>
                         <div className="subpage-feature">
                             <h3>CMS-verwaltete Raume</h3>
-                            <p>Jeder Raum mit Beschreibung, Fotos, Preiskarten, Verfugbarkeit und Buchungsmethode. Neue Raume anlegen? Zwei Minuten im Admin-Panel.</p>
+                            <p>Jeder Raum mit Beschreibung, Fotos, Preiskarten, Verfügbarkeit und Buchungsmethode. Neue Raume anlegen? Zwei Minuten im Admin-Panel.</p>
                         </div>
                         <div className="subpage-feature">
                             <h3>CI/CD Pipeline</h3>
@@ -126,7 +126,7 @@ export default function SoloveiCaseStudy() {
 
                     <h2 className="animate-up">Die Ergebnisse</h2>
                     <p className="animate-up">
-                        5.000 Impressionen in den ersten 8 Wochen: fur ein lokales Beauty-Coworking in Hamburg ein starker Start. Die Website lauft stabil, die Inhaberin verwaltet ihre Inhalte selbst, und die dreisprachige Zielgruppe wird endlich vollstandig angesprochen.
+                        5.000 Impressionen in den ersten 8 Wochen: für ein lokales Beauty-Coworking in Hamburg ein starker Start. Die Website läuft stabil, die Inhaberin verwaltet ihre Inhalte selbst, und die dreisprachige Zielgruppe wird endlich vollständig angesprochen.
                     </p>
                     <p className="animate-up">
                         Das Beste daran: Wenn sie nachts um 2 Uhr einen neuen Raum hinzufugen will, kann sie das tun. Ohne Ticket, ohne Wartezeit, ohne mich. Das ist Freiheit. Oder wie wir auf Russisch sagen: &laquo;Сделай и забудь&raquo;, bau es einmal richtig, und vergiss es.
@@ -135,7 +135,7 @@ export default function SoloveiCaseStudy() {
                     <div className="cs-takeaway animate-up">
                         <h3>Das Wichtigste</h3>
                         <p>
-                            Ein gutes CMS macht den Entwickler nicht uberflussig, es macht den Kunden unabhangig. Payload CMS in Next.js bedeutet: null Kompromisse bei Performance, volle Kontrolle uber Content, und ein System, das mit dem Geschaft wachst. Drei Sprachen, ein Admin-Panel, keine Kopfschmerzen.
+                            Ein gutes CMS macht den Entwickler nicht uberflussig, es macht den Kunden unabhangig. Payload CMS in Next.js bedeutet: null Kompromisse bei Performance, volle Kontrolle über Content, und ein System, das mit dem Geschäft wachst. Drei Sprachen, ein Admin-Panel, keine Kopfschmerzen.
                         </p>
                     </div>
                 </div>
@@ -153,14 +153,14 @@ export default function SoloveiCaseStudy() {
                             <p>Individuelle Websites mit CMS-Integration. Ab 2.900 &euro;.</p>
                         </Link>
                         <Link href="/leistungen/seo" className="subpage-feature" style={{ textDecoration: 'none' }}>
-                            <h3>SEO fur lokale Unternehmen</h3>
-                            <p>Organische Sichtbarkeit fur Ihr lokales Business.</p>
+                            <h3>SEO für lokale Unternehmen</h3>
+                            <p>Organische Sichtbarkeit für Ihr lokales Business.</p>
                         </Link>
                     </div>
                 </div>
             </section>
 
-            <ServiceCta text="Mehrsprachige Website mit CMS? Ich baue Systeme, die Sie selbst pflegen konnen, ohne standig den Entwickler anrufen zu mussen. Obwohl ich mich uber Anrufe naturlich immer freue." />
+            <ServiceCta text="Mehrsprachige Website mit CMS? Ich baue Systeme, die Sie selbst pflegen können, ohne ständig den Entwickler anrufen zu müssen. Obwohl ich mich über Anrufe natürlich immer freue." />
         </>
     );
 }

@@ -8,7 +8,7 @@ const PAGE_URL = `${SITE_URL}/referenzen/dybeauty`;
 
 export const metadata = {
     title: 'DYBeauty Case Study | Organischen Traffic verdoppelt in 90 Tagen',
-    description: 'Wie ein K-Beauty Shopify-Shop durch SEO-Audit, 723 Produktoptimierungen, Google Merchant Center und Content-Strategie den organischen Traffic in 3 Monaten verdoppelt hat.',
+    description: 'Wie ein K-Beauty Shopify-Shop durch SEO-Audit, 723 Produktoptimierungen und Merchant Center seinen Traffic in 3 Monaten verdoppelt hat.',
     alternates: {
         canonical: PAGE_URL,
     },
@@ -53,7 +53,7 @@ export default function DybeautyCaseStudy() {
         author: {
             '@type': 'Person',
             name: 'Vadim Shchepin',
-            url: `${SITE_URL}/ueber-uns`,
+            url: `${SITE_URL}/über-uns`,
         },
         publisher: {
             '@type': 'Organization',
@@ -94,7 +94,7 @@ export default function DybeautyCaseStudy() {
                         DYBeauty: Organischen Traffic verdoppelt in 90 Tagen.
                     </h1>
                     <p className="subpage-intro animate-up">
-                        Ein K-Beauty Shopify-Shop, der fast ausschliesslich uber Instagram lief: ohne SEO-Grundlage, ohne deutsche Rechtstexte, ohne Google Merchant Center. 723 Produkte optimiert, Content-Strategie aufgebaut, organischen Traffic verdoppelt.
+                        Ein K-Beauty Shopify-Shop, der fast ausschließlich über Instagram lief: ohne SEO-Grundlage, ohne deutsche Rechtstexte, ohne Google Merchant Center. 723 Produkte optimiert, Content-Strategie aufgebaut, organischen Traffic verdoppelt.
                     </p>
                     <div className="article-byline animate-up">
                         Von <Link href="/ueber-uns">Vadim Shchepin</Link> &middot; 3. April 2026
@@ -128,7 +128,7 @@ export default function DybeautyCaseStudy() {
                             quality={85}
                             style={{ width: '100%', height: 'auto', borderRadius: '2px' }}
                         />
-                        <p className="cs-image-caption">Der DYBeauty Shop: dybeauty.de, koreanische Kosmetik fur den deutschen Markt.</p>
+                        <p className="cs-image-caption">Der DYBeauty Shop: dybeauty.de, koreanische Kosmetik für den deutschen Markt.</p>
                     </div>
                 </div>
             </section>
@@ -141,31 +141,31 @@ export default function DybeautyCaseStudy() {
                         DYBeauty verkauft koreanische Kosmetik in Deutschland, eine wachsende Nische mit echtem Wettbewerb. Der Shop hatte treue Instagram-Kunden, aber Google kannte ihn praktisch nicht.
                     </p>
                     <p className="animate-up">
-                        Das erste Audit zeigte fundamentale Probleme: Produktbeschreibungen waren ChatGPT-generierter Fulltext ohne Suchintention. Kein einziger SEO-Titel war optimiert. Produktdaten waren unvollstandig: fehlende EANs, Grossen, Inhaltsstoffe. Kein Google Merchant Center. Und rechtlich war der Shop fur den deutschen Markt nicht betriebsbereit: kein Impressum, keine Datenschutzerklarung, kein Widerrufsrecht. Der Shop war nicht einmal auf Deutsch als Standardsprache konfiguriert.
+                        Das erste Audit zeigte fundamentale Probleme: Produktbeschreibungen waren ChatGPT-generierter Fulltext ohne Suchintention. Kein einziger SEO-Titel war optimiert. Produktdaten waren unvollständig: fehlende EANs, Größen, Inhaltsstoffe. Kein Google Merchant Center. Und rechtlich war der Shop für den deutschen Markt nicht betriebsbereit: kein Impressum, keine Datenschutzerklärung, kein Widerrufsrecht. Der Shop war nicht einmal auf Deutsch als Standardsprache konfiguriert.
                     </p>
                     <p className="animate-up">
                         Gute Produkte. Keine Infrastruktur.
                     </p>
 
-                    <h2 className="animate-up">Die Losung: Systematischer Aufbau</h2>
+                    <h2 className="animate-up">Die Lösung: Systematischer Aufbau</h2>
 
                     <h3 className="animate-up" style={{ marginTop: 'var(--space-lg)', fontSize: '1.3rem' }}>
                         1. Rechtliche Grundlage & Technisches Fundament
                     </h3>
                     <p className="animate-up">
-                        Bevor SEO-Massnahmen greifen konnten, musste der Shop ein legitimer deutscher Online-Handel sein. Alle gesetzlich vorgeschriebenen Seiten wurden erstellt: Impressum, Datenschutzerklarung, Widerrufsbelehrung. Deutsch wurde als Standard-Shopsprache konfiguriert. Ein vollstandiges technisches SEO-Audit identifizierte samtliche strukturellen Lucken.
+                        Bevor SEO-Maßnahmen greifen konnten, musste der Shop ein legitimer deutscher Online-Handel sein. Alle gesetzlich vorgeschriebenen Seiten wurden erstellt: Impressum, Datenschutzerklärung, Widerrufsbelehrung. Deutsch wurde als Standard-Shopsprache konfiguriert. Ein vollständiges technisches SEO-Audit identifizierte samtliche strukturellen Lucken.
                     </p>
 
                     <h3 className="animate-up" style={{ marginTop: 'var(--space-lg)', fontSize: '1.3rem' }}>
                         2. 723 Produkte. 40 Collections. Jeder Titel neu geschrieben.
                     </h3>
                     <p className="animate-up">
-                        Nicht per Template. Nicht per KI generiert. Jeder SEO-Titel basiert auf echtem Suchvolumen und Wettbewerbsanalyse fur den deutschen K-Beauty-Markt. Produktattribute wie EANs, Grossen, Varianten und Inhaltsstoffe wurden uber den gesamten Katalog erganzt. Das machte die Produkte fur Google Shopping qualifizierbar und verbesserte die Katalogqualitatssignale site-weit.
+                        Nicht per Template. Nicht per KI generiert. Jeder SEO-Titel basiert auf echtem Suchvolumen und Wettbewerbsanalyse für den deutschen K-Beauty-Markt. Produktattribute wie EANs, Größen, Varianten und Inhaltsstoffe wurden über den gesamten Katalog ergänzt. Das machte die Produkte für Google Shopping qualifizierbar und verbesserte die Katalogqualitatssignale site-weit.
                     </p>
 
                     <div className="cs-before-after animate-up" style={{ marginTop: 'var(--space-md)' }}>
                         <BeforeAfter label="SEO-Titel" before="Generisch / ChatGPT" after="Keyword-optimiert pro Produkt" />
-                        <BeforeAfter label="Produktdaten" before="Unvollstandig" after="EANs, Grossen, Varianten" />
+                        <BeforeAfter label="Produktdaten" before="Unvollständig" after="EANs, Größen, Varianten" />
                         <BeforeAfter label="Rechtstexte" before="Nicht vorhanden" after="Impressum, DSGVO, Widerruf" />
                         <BeforeAfter label="Shopsprache" before="Nicht konfiguriert" after="Deutsch als Standard" />
                         <BeforeAfter label="Google Merchant" before="Nicht vorhanden" after="Feed live & aktiv" />
@@ -176,30 +176,30 @@ export default function DybeautyCaseStudy() {
                         3. Google Merchant Center, von Null aufgebaut
                     </h3>
                     <p className="animate-up">
-                        Der Produkt-Feed wurde erstmalig eingerichtet, verifiziert und bei Google Merchant Center eingereicht. Damit wurde der Shopping-Kanal geooffnet, der vorher schlicht nicht existierte: ein komplett neuer Akquisitionsweg fur organischen und bezahlten Traffic.
+                        Der Produkt-Feed wurde erstmalig eingerichtet, verifiziert und bei Google Merchant Center eingereicht. Damit wurde der Shopping-Kanal geooffnet, der vorher schlicht nicht existierte: ein komplett neuer Akquisitionsweg für organischen und bezahlten Traffic.
                     </p>
 
                     <h3 className="animate-up" style={{ marginTop: 'var(--space-lg)', fontSize: '1.3rem' }}>
                         4. Content-Strategie & Ubersetzungen
                     </h3>
                     <p className="animate-up">
-                        Neue Blog-Artikel auf Basis von Keyword-Recherche und Content-Gap-Analyse gegen deutsche K-Beauty-Wettbewerber. Automatisierte, hochwertige deutsche Ubersetzungen fur den gesamten zweisprachigen Katalog, als Ersatz fur die bisherigen inkonsistenten maschinellen Ubersetzungen, die Vertrauenssignale beschadigt hatten.
+                        Neue Blog-Artikel auf Basis von Keyword-Recherche und Content-Gap-Analyse gegen deutsche K-Beauty-Wettbewerber. Automatisierte, hochwertige deutsche Ubersetzungen für den gesamten zweisprachigen Katalog, als Ersatz für die bisherigen inkonsistenten maschinellen Ubersetzungen, die Vertrauenssignale beschadigt hatten.
                     </p>
 
                     {/* Results */}
                     <h2 className="animate-up">Die Ergebnisse nach 3 Monaten</h2>
                     <p className="animate-up">
-                        Der organische Traffic hat sich verdoppelt. Die Impressionen zeigen eine klare Beschleunigung ab Mitte Marz 2026, dem Punkt, an dem technische Fixes, Produktdaten-Optimierung und Content gleichzeitig greifen.
+                        Der organische Traffic hat sich verdoppelt. Die Impressionen zeigen eine klare Beschleunigung ab Mitte März 2026, dem Punkt, an dem technische Fixes, Produktdaten-Optimierung und Content gleichzeitig greifen.
                     </p>
 
                     <div className="cs-results-grid animate-up">
                         <div className="cs-result-card">
                             <h3>1.860 organische Klicks</h3>
-                            <p>Verdoppelt gegenuber dem Vorzeitraum. Von einer Domain, die vorher praktisch keine Google-Sichtbarkeit hatte.</p>
+                            <p>Verdoppelt gegenüber dem Vorzeitraum. Von einer Domain, die vorher praktisch keine Google-Sichtbarkeit hatte.</p>
                         </div>
                         <div className="cs-result-card">
                             <h3>78.500 Impressionen</h3>
-                            <p>Google zeigt den Shop fur Tausende relevanter Suchanfragen: das Fundament fur weiteres Wachstum.</p>
+                            <p>Google zeigt den Shop für Tausende relevanter Suchanfragen: das Fundament für weiteres Wachstum.</p>
                         </div>
                         <div className="cs-result-card">
                             <h3>Position 11,5, Tendenz steigend</h3>
@@ -215,7 +215,7 @@ export default function DybeautyCaseStudy() {
                     <div className="cs-takeaway animate-up">
                         <h3>Das Wichtigste</h3>
                         <p>
-                            Ein Instagram-getriebener Shop kann nicht auf SEO umschalten, ohne die Grundlagen zu legen. Rechtstexte, Produktdaten, technisches SEO und Content-Strategie mussen zusammenspielen. DYBeauty zeigt: Wenn die Infrastruktur stimmt, kommt der Traffic, und er wachst exponentiell.
+                            Ein Instagram-getriebener Shop kann nicht auf SEO umschalten, ohne die Grundlagen zu legen. Rechtstexte, Produktdaten, technisches SEO und Content-Strategie müssen zusammenspielen. DYBeauty zeigt: Wenn die Infrastruktur stimmt, kommt der Traffic, und er wachst exponentiell.
                         </p>
                     </div>
                 </div>
@@ -230,8 +230,8 @@ export default function DybeautyCaseStudy() {
                     </div>
                     <div className="subpage-features-grid animate-up">
                         <Link href="/leistungen/seo" className="subpage-feature" style={{ textDecoration: 'none' }}>
-                            <h3>SEO fur E-Commerce</h3>
-                            <p>Technisches SEO, Produktoptimierung und Content-Strategie fur Online-Shops. Ab 1.000 &euro;/Mt.</p>
+                            <h3>SEO für E-Commerce</h3>
+                            <p>Technisches SEO, Produktoptimierung und Content-Strategie für Online-Shops. Ab 1.000 &euro;/Mt.</p>
                         </Link>
                         <Link href="/leistungen/website-audit" className="subpage-feature" style={{ textDecoration: 'none' }}>
                             <h3>Website-Audit</h3>
@@ -245,7 +245,7 @@ export default function DybeautyCaseStudy() {
                 </div>
             </section>
 
-            <ServiceCta text="E-Commerce SEO fur Ihren Shop? Ich analysiere Ihren Shop und zeige Ihnen, wo das grosste Wachstumspotenzial liegt. Kostenlos und unverbindlich." />
+            <ServiceCta text="E-Commerce SEO für Ihren Shop? Ich analysiere Ihren Shop und zeige Ihnen, wo das größte Wachstumspotenzial liegt. Kostenlos und unverbindlich." />
         </>
     );
 }

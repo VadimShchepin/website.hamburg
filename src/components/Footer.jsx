@@ -9,7 +9,7 @@ export default function Footer() {
                 <div className="footer-brand">
                     <img src="/logo_red.webp" alt="AISEO" width="80" height="70" style={{ opacity: 0.9 }} />
                     <p className="mt-2" style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.9rem', lineHeight: 1.6 }}>
-                        Professionelle Websites, SEO und Google Ads fur lokale Unternehmen in Hamburg. Messbar. Transparent. Ergebnisorientiert.
+                        Professionelle Websites, SEO und Google Ads für lokale Unternehmen in Hamburg. Messbar. Transparent. Ergebnisorientiert.
                     </p>
                     <p className="mt-2" style={{ fontSize: '0.8rem' }}>
                         <a href="https://aiseo.hamburg/" target="_blank" rel="noopener noreferrer" style={{ color: 'rgba(255,255,255,0.45)' }}>
@@ -20,17 +20,17 @@ export default function Footer() {
                 <div className="footer-links">
                     <h4>Leistungen</h4>
                     <Link href="/leistungen/webdesign">Webdesign & Entwicklung</Link>
-                    <Link href="/leistungen/seo">SEO fur lokale Unternehmen</Link>
+                    <Link href="/leistungen/seo">SEO für lokale Unternehmen</Link>
                     <Link href="/leistungen/ai-seo">AI SEO</Link>
                     <Link href="/leistungen/google-ads">Google Ads Management</Link>
                     <Link href="/leistungen/website-audit">Website-Audit</Link>
-                    <Link href="/leistungen/webdesign-handwerker">Webdesign fur Handwerker</Link>
-                    <Link href="/leistungen/webdesign-aerzte">Webdesign fur Arztpraxen</Link>
+                    <Link href="/leistungen/webdesign-handwerker">Webdesign für Handwerker</Link>
+                    <Link href="/leistungen/webdesign-aerzte">Webdesign für Arztpraxen</Link>
                     <Link href="/leistungen/website-erstellen-lassen">Website erstellen lassen</Link>
                 </div>
                 <div className="footer-links">
                     <h4>Unternehmen</h4>
-                    <Link href="/ueber-uns">Uber uns</Link>
+                    <Link href="/ueber-uns">Über uns</Link>
                     <Link href="/wissen">Wissen</Link>
                     <Link href="/referenzen">Referenzen</Link>
                     <Link href="/kontakt">Kontakt</Link>

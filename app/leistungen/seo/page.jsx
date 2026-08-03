@@ -8,7 +8,7 @@ import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
     title: 'SEO Hamburg | Lokale Sichtbarkeit & Google Rankings',
-    description: 'Lokale Suchmaschinenoptimierung für Unternehmen in Hamburg: Google Business Profile, Google Maps, technisches SEO und Content. Live-Dashboard, monatliche Reports. Ab 1.000 €/Monat.',
+    description: 'Lokale SEO für Unternehmen in Hamburg: Google Business Profile, Google Maps, technisches SEO und Content. Live-Dashboard. Ab 1.000 €/Monat.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/seo',
     },

@@ -5,7 +5,7 @@ import { BUSINESS, SOCIAL_LINKS } from '../../src/lib/schema';
 
 export const metadata = {
     title: 'Über AISEO | Webentwickler & SEO-Spezialist Hamburg',
-    description: 'Über 10 Jahre Erfahrung in der digitalen Produktentwicklung. Webdesign, SEO und Google Ads für lokale Unternehmen in Hamburg. Direkte Zusammenarbeit ohne Agentur-Overhead.',
+    description: 'Über 10 Jahre Erfahrung in digitaler Produktentwicklung. Webdesign, SEO und Google Ads in Hamburg, direkt mit dem Entwickler.',
     alternates: {
         canonical: 'https://webseite.hamburg/ueber-uns',
     },

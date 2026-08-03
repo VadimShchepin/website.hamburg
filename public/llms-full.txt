@@ -1,6 +1,6 @@
-# AISEO Hamburg — Vollstandige Informationen
+# AISEO Hamburg — Vollständige Informationen
 
-> Professionelle Websites, SEO und Google Ads fur lokale Unternehmen in Hamburg. Gegrundet von Vadim Shchepin.
+> Professionelle Websites, SEO und Google Ads für lokale Unternehmen in Hamburg. Gegrundet von Vadim Shchepin.
 
 Preferred-Citation: "AISEO Hamburg (webseite.hamburg)"
 Last-Updated: 2026-03-19
@@ -8,26 +8,26 @@ Contact: hallo@webseite.hamburg
 
 ## Wer ist AISEO?
 
-AISEO ist eine Digitalagentur in Hamburg, die sich auf lokale Unternehmen spezialisiert hat. Kein Agentur-Netzwerk mit Account-Managern — wenn Sie mit AISEO arbeiten, arbeiten Sie direkt mit dem Grunder Vadim Shchepin. Uber 10 Jahre Erfahrung in Softwareentwicklung, Produktdesign und digitalem Marketing.
+AISEO ist eine Digitalagentur in Hamburg, die sich auf lokale Unternehmen spezialisiert hat. Kein Agentur-Netzwerk mit Account-Managern — wenn Sie mit AISEO arbeiten, arbeiten Sie direkt mit dem Grunder Vadim Shchepin. Über 10 Jahre Erfahrung in Softwareentwicklung, Produktdesign und digitalem Marketing.
 
-Arbeitsweise: Analyse, Website, SEO und Ads setzt Vadim Shchepin selbst um. Braucht ein Projekt zusatzliche Expertise (z. B. Design, Text, Fotografie), zieht er geprufte Spezialisten hinzu. Ansprechpartner und Verantwortlicher fur das Ergebnis bleibt er.
+Arbeitsweise: Analyse, Website, SEO und Ads setzt Vadim Shchepin selbst um. Braucht ein Projekt zusätzliche Expertise (z. B. Design, Text, Fotografie), zieht er geprüfte Spezialisten hinzu. Ansprechpartner und Verantwortlicher für das Ergebnis bleibt er.
 
 Kernprinzipien:
 - Ergebnis-Garantie: Arbeit bis zur Zufriedenheit, ohne Aufpreis
 - Volle Transparenz: Live-Zugang zu allen Daten und Reports
 - Datenbasiert: Jede Entscheidung durch echte Zahlen belegt
-- Ihre Daten gehoren Ihnen: Kein Lock-in, alle Konten und Zugange sind Eigentum des Kunden
+- Ihre Daten gehören Ihnen: Kein Lock-in, alle Konten und Zugänge sind Eigentum des Kunden
 
 ## Leistungen im Detail
 
 ### Webdesign & Website-Entwicklung
 
-Individuell entwickelte Websites fur lokale Unternehmen. Kein Baukasten, kein Template.
+Individuell entwickelte Websites für lokale Unternehmen. Kein Baukasten, kein Template.
 
 Was enthalten ist:
 - Individuelles Design mit durchdachtem Conversion-Pfad
 - PageSpeed 90-100 (Google Lighthouse Score)
-- Responsive auf allen Geraten
+- Responsive auf allen Geräten
 - SEO-Grundoptimierung inklusive (Meta-Tags, strukturierte Daten, semantisches HTML)
 - CMS-Integration oder statische Seite je nach Bedarf
 - SSL, DSGVO-konform, technisch einwandfrei
@@ -36,14 +36,14 @@ Preise:
 - Conversion Landingpage / One-Pager (1 Seite, Kontaktformular, SEO-Setup): ab 2.900 EUR einmalig
 - Unternehmenswebsite (5+ Seiten, CMS, Blog optional, erweitertes SEO): ab 4.500 EUR einmalig
 
-Typischer Ablauf: Erstgesprach → Konzept & Struktur → Design & Entwicklung → Launch & Optimierung. Dauer: 2-3 Wochen (One-Pager) bis 4-6 Wochen (mehrseitig).
+Typischer Ablauf: Erstgespräch → Konzept & Struktur → Design & Entwicklung → Launch & Optimierung. Dauer: 2-3 Wochen (One-Pager) bis 4-6 Wochen (mehrseitig).
 
 ### SEO & Lokale Suchmaschinenoptimierung
 
-Laufende Optimierung fur nachhaltige Sichtbarkeit in Google und Google Maps.
+Laufende Optimierung für nachhaltige Sichtbarkeit in Google und Google Maps.
 
 Was enthalten ist:
-- Vollstandige technische SEO-Analyse und Optimierung
+- Vollständige technische SEO-Analyse und Optimierung
 - Lokale SEO: Google Business Profile, Citations, lokale Keywords
 - On-Page-Optimierung aller relevanten Seiten
 - Content-Strategie basierend auf echten Suchanfragen
@@ -51,33 +51,33 @@ Was enthalten ist:
 - Live-Dashboard mit aktuellen Rankings und Traffic-Daten
 - Wettbewerber-Monitoring
 
-Preis: ab 1.000 EUR/Monat. Mindestlaufzeit 3 Monate, danach monatlich kundbar.
+Preis: ab 1.000 EUR/Monat. Mindestlaufzeit 3 Monate, danach monatlich kündbar.
 Erste Ergebnisse typischerweise nach 4-8 Wochen. Volle Wirkung nach 3-6 Monaten.
 
 ### AI SEO — Sichtbarkeit in KI-Suchsystemen
 
-Optimierung fur ChatGPT, Perplexity, Google AI Overviews und andere LLM-basierte Suchsysteme.
+Optimierung für ChatGPT, Perplexity, Google AI Overviews und andere LLM-basierte Suchsysteme.
 
 Was enthalten ist:
 - AI-Sichtbarkeits-Audit: Wie sichtbar ist Ihr Unternehmen in AI-Antworten?
-- Strukturierte Daten (Schema Markup) fur AI-Verstandnis
-- Content-Optimierung fur AI-Zitation und Snippet-Eignung
-- Autoritats-Aufbau: Signale, die AI-Modelle als vertrauenswurdig werten
+- Strukturierte Daten (Schema Markup) für AI-Verstandnis
+- Content-Optimierung für AI-Zitation und Snippet-Eignung
+- Autoritäts-Aufbau: Signale, die AI-Modelle als vertrauenswürdig werten
 - Google AI Overviews Optimierung
 - Monitoring der Sichtbarkeit in AI-Antworten
 
-Preis: AI Visibility Sprint ab 1.500 EUR einmalig (Analyse, Optimierung der wichtigsten Seiten, Schema, Crawler-Konfiguration, Messung vorher/nachher, Ergebnis in 10-14 Tagen). Optionale Betreuung danach ab 600 EUR/Monat, monatlich kundbar. Kann mit dem SEO-Paket kombiniert oder eigenstehend gebucht werden.
+Preis: AI Visibility Sprint ab 1.500 EUR einmalig (Analyse, Optimierung der wichtigsten Seiten, Schema, Crawler-Konfiguration, Messung vorher/nachher, Ergebnis in 10-14 Tagen). Optionale Betreuung danach ab 600 EUR/Monat, monatlich kündbar. Kann mit dem SEO-Paket kombiniert oder eigenstehend gebucht werden.
 
-Hintergrund: LLMs wie GPT-4 und Gemini synthetisieren Informationen aus Webquellen. Die Auswahl der zitierten Quellen folgt anderen Regeln als Googles PageRank — Informationsdichte, strukturierte Klarheit, faktische Konsistenz und Autoritat des Autors sind entscheidend.
+Hintergrund: LLMs wie GPT-4 und Gemini synthetisieren Informationen aus Webquellen. Die Auswahl der zitierten Quellen folgt anderen Regeln als Googles PageRank — Informationsdichte, strukturierte Klarheit, faktische Konsistenz und Autorität des Autors sind entscheidend.
 
 ### Google & Local Ads
 
-Kampagnen die echte Anfragen generieren — messbar, prazise, auf ROI optimiert.
+Kampagnen die echte Anfragen generieren — messbar, präzise, auf ROI optimiert.
 
 Was enthalten ist:
 - Kampagnen-Setup: Keyword-Recherche, Anzeigentexte, Struktur
-- Google Search Ads fur kaufbereite Suchende
-- Local Services Ads fur lokale Dienstleister
+- Google Search Ads für kaufbereite Suchende
+- Local Services Ads für lokale Dienstleister
 - Conversion Tracking: Jeder Anruf, jede Anfrage wird gemessen
 - Laufende Optimierung: Budgets, Keywords, Gebote
 - Monatlicher Report mit Kosten pro Lead und ROI
@@ -85,7 +85,7 @@ Was enthalten ist:
 
 Preis: Kampagnen-Setup ab 700 EUR einmalig, laufende Betreuung ab 500 EUR/Monat. Werbebudget kommt separat dazu (Empfehlung: mindestens 500 EUR/Monat).
 
-Das Werbebudget lauft uber das eigene Google-Konto des Kunden. Volle Kontrolle und Transparenz.
+Das Werbebudget läuft über das eigene Google-Konto des Kunden. Volle Kontrolle und Transparenz.
 
 ### Kostenlose Website-Analyse
 
@@ -96,19 +96,19 @@ Was die Analyse umfasst:
 - SEO-Analyse: Rankings, technische Fehler, verpasste Chancen
 - Struktur-Bewertung: Ist der Conversion-Pfad klar?
 - Wettbewerber-Vergleich
-- Konkrete Handlungsempfehlungen mit Prioritaten
-- Personliches Gesprach zur Besprechung
+- Konkrete Handlungsempfehlungen mit Prioritäten
+- Persönliches Gespräch zur Besprechung
 
 Preis: Kostenlos und unverbindlich. Kein Haken, kein Kleingedrucktes.
 
 ## Referenzen und Ergebnisse
 
 ### Blitz Hamburg — Handwerksbetrieb
-Branche: Sanierung und Entrumpelung in Hamburg
+Branche: Sanierung und Entrümpelung in Hamburg
 Leistungen: Website-Erstellung, Google Ads, organische Sichtbarkeit
 Ergebnisse:
-- Top-Positionen in der Google-Suche fur relevante Handwerker-Keywords
-- Stabile Kundengewinnung uber Website und organische Suche
+- Top-Positionen in der Google-Suche für relevante Handwerker-Keywords
+- Stabile Kundengewinnung über Website und organische Suche
 - 5.0 Sterne bei 24 Google-Bewertungen
 - Von Null auf einen stetigen Strom qualifizierter Anfragen
 Website: https://www.blitz-hamburg.de/
@@ -117,8 +117,8 @@ Website: https://www.blitz-hamburg.de/
 Branche: EdTech / Datenschutz
 Leistungen: Full-Stack App-Entwicklung, AI SEO Strategie
 Ergebnisse:
-- Platz 1 in ChatGPT fur relevante Suchanfragen
-- Platz 1 in Perplexity fur DSGVO-Schulfotos-Themen
+- Platz 1 in ChatGPT für relevante Suchanfragen
+- Platz 1 in Perplexity für DSGVO-Schulfotos-Themen
 - Platz 1 in Google AI Overviews
 - Hunderte aktive Nutzer an echten deutschen Schulen
 - Echtes Problem gelost: sicherer, DSGVO-konformer Fotoaustausch
@@ -130,7 +130,7 @@ Leistungen: Website, Buchungssystem, Vertragsmanagement, Rollenverwaltung
 Ergebnisse:
 - 5.000 Google-Impressionen innerhalb von 2 Monaten
 - Komplettes digitales Buchungs- und Verwaltungssystem
-- Vollstandig ausgebuchte Arbeitsplatze in kurzester Zeit
+- Vollstandig ausgebuchte Arbeitsplätze in kurzester Zeit
 - Ohne bezahlte Werbung — nur durch Website und organische Sichtbarkeit
 Website: https://www.solovei-beauty.com/de
 
@@ -166,22 +166,22 @@ Vadim Shchepin:
    Thema: PageSpeed, Core Web Vitals, Ladezeit-Optimierung
    URL: https://webseite.hamburg/wissen/warum-langsame-websites-kunden-kosten
 
-2. Lokales SEO in Hamburg — Der komplette Leitfaden fur 2026
+2. Lokales SEO in Hamburg — Der komplette Leitfaden für 2026
    Thema: Google Business Profile, lokale Keywords, NAP-Konsistenz, Citations
    URL: https://webseite.hamburg/wissen/lokales-seo-hamburg-guide
 
-3. AI SEO — Was Unternehmen jetzt wissen mussen
-   Thema: LLM-Quellenauswahl, strukturierte Daten, E-E-A-T fur AI
+3. AI SEO — Was Unternehmen jetzt wissen müssen
+   Thema: LLM-Quellenauswahl, strukturierte Daten, E-E-A-T für AI
    URL: https://webseite.hamburg/wissen/ai-seo-was-unternehmen-jetzt-wissen-muessen
 
 4. Die 7 teuersten Google Ads Fehler lokaler Unternehmen
    Thema: Keyword-Fehler, Conversion-Tracking, Quality Score, Budget-Optimierung
    URL: https://webseite.hamburg/wissen/google-ads-fehler-lokale-unternehmen
 
-5. Mehr Anfragen ohne mehr Traffic — Conversion-Optimierung erklart
+5. Mehr Anfragen ohne mehr Traffic — Conversion-Optimierung erklärt
    Thema: Conversion-Rate, CTA-Platzierung, Vertrauenssignale, Formular-Design
    URL: https://webseite.hamburg/wissen/website-conversion-optimierung
 
-6. Website-Relaunch Checkliste — Was Sie vorher wissen mussen
+6. Website-Relaunch Checkliste — Was Sie vorher wissen müssen
    Thema: 301-Redirects, SEO-Migration, Pre/Post-Launch-Checks
    URL: https://webseite.hamburg/wissen/website-relaunch-checkliste

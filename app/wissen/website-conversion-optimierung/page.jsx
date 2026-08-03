@@ -3,7 +3,7 @@ import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
     title: 'Mehr Anfragen ohne mehr Traffic: Conversion-Optimierung erklärt | Hamburg',
-    description: 'Warum mehr Besucher selten die Lösung ist. Wie Sie mit der gleichen Besucherzahl deutlich mehr Anfragen bekommen, durch klare Struktur, schnelle Ladezeit und eine bessere Nutzerführung.',
+    description: 'Warum mehr Besucher selten die Lösung ist: wie Sie mit derselben Besucherzahl mehr Anfragen bekommen.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/website-conversion-optimierung',
     },

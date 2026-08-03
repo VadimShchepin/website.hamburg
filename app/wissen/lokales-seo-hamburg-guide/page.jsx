@@ -3,7 +3,7 @@ import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
     title: 'Lokales SEO in Hamburg: Der komplette Leitfaden für 2026',
-    description: 'Von Google Business Profile bis lokale Keywords: alles, was Sie wissen müssen, um in Hamburg bei Google gefunden zu werden. Mit Schritt-für-Schritt-Anleitung und Quellen.',
+    description: 'Von Google Business Profile bis lokale Keywords: alles, was Sie brauchen, um in Hamburg bei Google gefunden zu werden.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/lokales-seo-hamburg-guide',
     },

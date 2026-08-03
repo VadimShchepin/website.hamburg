@@ -20,7 +20,7 @@ const GOOGLE_ICON = (
 const reviews = [
     {
         name: 'ZumaXX',
-        text: 'Ausgezeichneter Webentwickler! Er hat die Arbeit qualitativ hochwertig und termingerecht erledigt. Er hat fur uns eine Website erstellt, die unseren Erwartungen vollstandig entspricht. Sehr zu empfehlen!',
+        text: 'Ausgezeichneter Webentwickler! Er hat die Arbeit qualitativ hochwertig und termingerecht erledigt. Er hat für uns eine Website erstellt, die unseren Erwartungen vollständig entspricht. Sehr zu empfehlen!',
     },
     {
         name: 'Alexey Karasev',
@@ -28,11 +28,11 @@ const reviews = [
     },
     {
         name: 'J. Landon',
-        text: 'Wir waren sehr zufrieden. Vielen Dank fur die tolle Unterstutzung.',
+        text: 'Wir waren sehr zufrieden. Vielen Dank für die tolle Unterstutzung.',
     },
     {
         name: 'steiko',
-        text: 'Herr Shchepin hat meinem Unternehmen gut mit der Webseite und Aktualisierung unseres internen Tool fur Datenpflege geholfen. Schnelle Umsetzung und Kompetente Kundenorientierte Beratung! Kann ich nur empfehlen!',
+        text: 'Herr Shchepin hat meinem Unternehmen gut mit der Webseite und Aktualisierung unseres internen Tool für Datenpflege geholfen. Schnelle Umsetzung und Kompetente Kundenorientierte Beratung! Kann ich nur empfehlen!',
     },
 ];
 
@@ -62,7 +62,7 @@ export default function CaseStudiesGrid() {
             id: 3,
             tag: 'WEBDESIGN + ADS',
             title: 'Blitz Hamburg: ROI in 7 Wochen, ~40 Kunden/Monat',
-            desc: 'Handwerksbetrieb ohne Online-Prasenz. Neue Website mit KI-Kostenschatzer, Google Ads und lokale SEO. Investition in 7 Wochen zuruckgeholt, heute ~40 Kunden pro Monat.',
+            desc: 'Handwerksbetrieb ohne Online-Präsenz. Neue Website mit KI-Kostenschatzer, Google Ads und lokale SEO. Investition in 7 Wochen zurückgeholt, heute ~40 Kunden pro Monat.',
             url: '/referenzen/blitz-hamburg',
             internal: true,
             image: '/referenzen/Blitz-hero.webp',

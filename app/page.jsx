@@ -40,13 +40,13 @@ const faqItems = [
 
 export const metadata = {
     title: 'Webdesign & SEO Hamburg | Websites die Kunden bringen',
-    description: 'Professionelles Webdesign, SEO und Google Ads fur lokale Unternehmen in Hamburg. Datenbasiert, transparent, ergebnisorientiert. Kostenlose Erstanalyse.',
+    description: 'Professionelles Webdesign, SEO und Google Ads für lokale Unternehmen in Hamburg. Datenbasiert, transparent, ergebnisorientiert. Kostenlose Erstanalyse.',
     alternates: {
         canonical: 'https://webseite.hamburg',
     },
     openGraph: {
         title: 'Webdesign & SEO Hamburg | Websites die Kunden bringen',
-        description: 'Professionelles Webdesign, SEO und Google Ads fur lokale Unternehmen in Hamburg. Datenbasiert, transparent, ergebnisorientiert.',
+        description: 'Professionelles Webdesign, SEO und Google Ads für lokale Unternehmen in Hamburg. Datenbasiert, transparent, ergebnisorientiert.',
         url: 'https://webseite.hamburg',
         type: 'website',
     },
@@ -78,7 +78,7 @@ export default function HomePage() {
             'https://www.tiktok.com/@aiseo.hamburg/',
         ],
         serviceType: ['Webdesign', 'SEO', 'AI SEO', 'Google Ads'],
-        description: 'Professionelles Webdesign, SEO und Google Ads fur lokale Unternehmen in Hamburg. Datenbasiert, transparent, ergebnisorientiert.',
+        description: 'Professionelles Webdesign, SEO und Google Ads für lokale Unternehmen in Hamburg. Datenbasiert, transparent, ergebnisorientiert.',
     };
 
     const breadcrumbJsonLd = {
@@ -107,7 +107,7 @@ export default function HomePage() {
                 <div className="container">
                     <div className="section-header text-center" style={{ marginBottom: 'var(--space-xl)' }}>
                         <p className="section-kicker animate-up">Wissen</p>
-                        <h2 className="section-title animate-up">Guides fur Unternehmer in Hamburg.</h2>
+                        <h2 className="section-title animate-up">Guides für Unternehmer in Hamburg.</h2>
                     </div>
                     <div className="wissen-grid">
                         <Link href="/wissen/warum-langsame-websites-kunden-kosten" className="wissen-card animate-up delay-1">
@@ -118,14 +118,14 @@ export default function HomePage() {
                         </Link>
                         <Link href="/wissen/lokales-seo-hamburg-guide" className="wissen-card animate-up delay-2">
                             <div className="wissen-card-meta"><span className="wissen-card-category">SEO</span></div>
-                            <h3 className="wissen-card-title"><span>Lokales SEO in Hamburg: Der komplette Leitfaden fur 2026</span></h3>
+                            <h3 className="wissen-card-title"><span>Lokales SEO in Hamburg: Der komplette Leitfaden für 2026</span></h3>
                             <p className="wissen-card-excerpt">Google Business Profile, lokale Keywords und NAP-Konsistenz: alles, was Sie brauchen, um in Hamburg gefunden zu werden.</p>
                             <span className="wissen-card-link">Artikel lesen <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
                         </Link>
                         <Link href="/wissen/website-conversion-optimierung" className="wissen-card animate-up delay-3">
                             <div className="wissen-card-meta"><span className="wissen-card-category">CONVERSION</span></div>
-                            <h3 className="wissen-card-title"><span>Mehr Anfragen ohne mehr Traffic: Conversion-Optimierung erklart</span></h3>
-                            <p className="wissen-card-excerpt">Warum mehr Besucher selten die Losung sind und wie Sie mit gleicher Besucherzahl doppelt so viele Anfragen bekommen.</p>
+                            <h3 className="wissen-card-title"><span>Mehr Anfragen ohne mehr Traffic: Conversion-Optimierung erklärt</span></h3>
+                            <p className="wissen-card-excerpt">Warum mehr Besucher selten die Lösung sind und wie Sie mit gleicher Besucherzahl doppelt so viele Anfragen bekommen.</p>
                             <span className="wissen-card-link">Artikel lesen <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
                         </Link>
                     </div>

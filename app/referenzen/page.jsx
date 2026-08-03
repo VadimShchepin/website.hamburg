@@ -4,13 +4,13 @@ import { BUSINESS } from '../../src/lib/schema';
 
 export const metadata = {
     title: 'Referenzen & Case Studies | AISEO Hamburg',
-    description: 'Echte Ergebnisse fur echte Unternehmen. Case Studies aus Hamburg: Webdesign, SEO, Google Ads und AI SEO, alle mit messbaren Ergebnissen.',
+    description: 'Echte Ergebnisse für echte Unternehmen. Case Studies aus Hamburg: Webdesign, SEO, Google Ads und AI SEO, alle mit messbaren Ergebnissen.',
     alternates: {
         canonical: 'https://webseite.hamburg/referenzen',
     },
     openGraph: {
         title: 'Referenzen & Case Studies | AISEO Hamburg',
-        description: 'Echte Ergebnisse fur echte Unternehmen. Case Studies aus Hamburg: Webdesign, SEO, Google Ads und AI SEO, alle mit messbaren Ergebnissen.',
+        description: 'Echte Ergebnisse für echte Unternehmen. Case Studies aus Hamburg: Webdesign, SEO, Google Ads und AI SEO, alle mit messbaren Ergebnissen.',
         url: 'https://webseite.hamburg/referenzen',
         type: 'website',
     },
@@ -38,15 +38,15 @@ const caseStudies = [
         category: 'WEBDESIGN + GOOGLE ADS + SEO',
         title: 'ROI in 7 Wochen, ~40 Kunden/Monat',
         client: 'Blitz Hamburg',
-        excerpt: 'Ein Hamburger Handwerksbetrieb ohne Online-Prasenz. Komplett neue Website mit KI-Kostenschatzer, gezielte Google Ads und lokale SEO. Investition in 7 Wochen zuruckgeholt, heute ~40 Kunden pro Monat.',
+        excerpt: 'Ein Hamburger Handwerksbetrieb ohne Online-Präsenz. Komplett neue Website mit KI-Kostenschatzer, gezielte Google Ads und lokale SEO. Investition in 7 Wochen zurückgeholt, heute ~40 Kunden pro Monat.',
         metric: 'ROI in 7 Wochen',
     },
     {
         slug: 'pest-control-saas',
         category: 'SAAS-PRODUKTENTWICKLUNG',
-        title: 'Enterprise-Architektur fur Schadlingsbekampfung',
+        title: 'Enterprise-Architektur für Schädlingsbekämpfung',
         client: 'Pest Control SaaS',
-        excerpt: 'Multi-Tenant SaaS mit Hexagonaler Architektur, DDD, Offline-PWA fur Techniker und EU-Biozid-Verordnung-Compliance. 6 Bounded Contexts, 27 API-Routen, 0 Architektur-Verletzungen.',
+        excerpt: 'Multi-Tenant SaaS mit Hexagonaler Architektur, DDD, Offline-PWA für Techniker und EU-Biozid-Verordnung-Compliance. 6 Bounded Contexts, 27 API-Routen, 0 Architektur-Verletzungen.',
         metric: '6 DDD-Module, 0 Architektur-Verletzungen',
     },
     {
@@ -54,13 +54,13 @@ const caseStudies = [
         category: 'SAAS-PRODUKT + AI SEO',
         title: 'DSGVO-Schulfotos-Plattform: #1 in ChatGPT',
         client: 'KinderAlbum',
-        excerpt: 'Vollstandige DSGVO-konforme Plattform fur Schulfotos mit echten Nutzern, 76 RLS-Policies, zeitversionierter Einwilligung und Fotografen-Workflow. #1 in ChatGPT und Perplexity.',
+        excerpt: 'Vollständige DSGVO-konforme Plattform für Schulfotos mit echten Nutzern, 76 RLS-Policies, zeitversionierter Einwilligung und Fotografen-Workflow. #1 in ChatGPT und Perplexity.',
         metric: '#1 in KI-Suchmaschinen + echte Nutzer',
     },
     {
         slug: 'solovei-beauty',
         category: 'WEBDESIGN + CMS',
-        title: '3 Sprachen, null Abhangigkeit vom Entwickler',
+        title: '3 Sprachen, null Abhängigkeit vom Entwickler',
         client: 'Solovei Beauty',
         excerpt: 'Beauty-Coworking in Hamburg. Dreisprachige Website mit Payload CMS, CI/CD Pipeline und der Freiheit, alles selbst zu pflegen. 5.000 Impressionen in 8 Wochen.',
         metric: '5.000 Impressionen in 8 Wochen',
@@ -68,9 +68,9 @@ const caseStudies = [
     {
         slug: 'manetec',
         category: 'WEBDESIGN + KI',
-        title: 'Schadlingsbekampfung trifft KI-Risikoanalyse',
+        title: 'Schädlingsbekämpfung trifft KI-Risikoanalyse',
         client: 'Manetec Hamburg',
-        excerpt: 'Website fur professionelle Schadlingsbekampfung in Hotels und Gastronomie, mit KI-gestutzter Risikoanalyse via Gemini, HACCP-Compliance und industrieller Asthetik.',
+        excerpt: 'Website für professionelle Schädlingsbekämpfung in Hotels und Gastronomie, mit KI-gestutzter Risikoanalyse via Gemini, HACCP-Compliance und industrieller Asthetik.',
         metric: 'KI-Risikoanalyse als Lead-Tool',
     },
     {
@@ -84,17 +84,17 @@ const caseStudies = [
     {
         slug: 'mit-kinder',
         category: 'KI-PLATTFORM',
-        title: 'Aktivitatsplattform fur Familien mit KI-Chatbot',
+        title: 'Aktivitatsplattform für Familien mit KI-Chatbot',
         client: 'mit-kinder.de',
-        excerpt: 'Hexagonale Architektur, Gemini-Chatbot mit Standort- und Zeitbewusstsein, interaktive Karte. Fur Eltern, die samstags um 14 Uhr nicht wissen, was sie mit den Kindern machen sollen.',
+        excerpt: 'Hexagonale Architektur, Gemini-Chatbot mit Standort- und Zeitbewusstsein, interaktive Karte. Für Eltern, die samstags um 14 Uhr nicht wissen, was sie mit den Kindern machen sollen.',
         metric: 'Hexagonal + Gemini + 75 Tests',
     },
     {
         slug: 'glucksmomente-events',
         category: 'WEBDESIGN',
-        title: 'Aquarell-Asthetik fur Eventplanerin',
+        title: 'Aquarell-Asthetik für Eventplanerin',
         client: 'Glucksmomente Events',
-        excerpt: 'Individuelle Event-Website fur Josy Eberlein in Hamburg: React + GSAP Scroll-Animationen, Aquarell-Design, drei handverlesene Schriftarten. Warmherzig und professionell.',
+        excerpt: 'Individuelle Event-Website für Josy Eberlein in Hamburg: React + GSAP Scroll-Animationen, Aquarell-Design, drei handverlesene Schriftarten. Warmherzig und professionell.',
         metric: 'GSAP-Animationen + Aquarell-Design',
     },
 ];
@@ -104,7 +104,7 @@ export default function ReferenzenPage() {
         '@context': 'https://schema.org',
         '@type': 'CollectionPage',
         name: 'Referenzen & Case Studies - AISEO Hamburg',
-        description: 'Echte Ergebnisse fur echte Unternehmen. Case Studies aus Hamburg: Webdesign, SEO, Google Ads und AI SEO, alle mit messbaren Ergebnissen.',
+        description: 'Echte Ergebnisse für echte Unternehmen. Case Studies aus Hamburg: Webdesign, SEO, Google Ads und AI SEO, alle mit messbaren Ergebnissen.',
         url: 'https://webseite.hamburg/referenzen',
         publisher: BUSINESS,
     };
@@ -129,7 +129,7 @@ export default function ReferenzenPage() {
                     <p className="section-kicker animate-up">Referenzen</p>
                     <h1 className="subpage-title animate-up">Echte Projekte. Echte Ergebnisse.</h1>
                     <p className="subpage-intro animate-up">
-                        Keine Stockfotos, keine erfundenen Zahlen. Hier sehen Sie, was ich fur Unternehmen in Hamburg konkret erreicht habe, mit messbaren Ergebnissen und echten Daten.
+                        Keine Stockfotos, keine erfundenen Zahlen. Hier sehen Sie, was ich für Unternehmen in Hamburg konkret erreicht habe, mit messbaren Ergebnissen und echten Daten.
                     </p>
                 </div>
             </section>
@@ -161,10 +161,10 @@ export default function ReferenzenPage() {
                 <div className="container">
                     <div className="cta-box bull-boundary animate-up">
                         <p className="section-kicker">Ahnliche Ergebnisse gewunscht?</p>
-                        <h2 className="section-title">Kostenloses Erstgesprach.</h2>
-                        <p className="offer-framing">Lassen Sie uns uber Ihr Projekt sprechen. Ich analysiere Ihre Situation und zeige Ihnen, was konkret moglich ist. Kostenlos und unverbindlich.</p>
+                        <h2 className="section-title">Kostenloses Erstgespräch.</h2>
+                        <p className="offer-framing">Lassen Sie uns über Ihr Projekt sprechen. Ich analysiere Ihre Situation und zeige Ihnen, was konkret möglich ist. Kostenlos und unverbindlich.</p>
                         <div className="cta-actions mt-4">
-                            <Link href="/kontakt" className="button button-primary button-large" data-umami-event="cta-click" data-umami-event-location="referenzen-cta">Jetzt Gesprach vereinbaren</Link>
+                            <Link href="/kontakt" className="button button-primary button-large" data-umami-event="cta-click" data-umami-event-location="referenzen-cta">Jetzt Gespräch vereinbaren</Link>
                         </div>
                     </div>
                 </div>

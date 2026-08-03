@@ -36,7 +36,7 @@ export default function TypeExploreCaseStudy() {
         url: PAGE_URL,
         datePublished: '2026-04-03',
         dateModified: '2026-04-03',
-        author: { '@type': 'Person', name: 'Vadim Shchepin', url: `${SITE_URL}/ueber-uns` },
+        author: { '@type': 'Person', name: 'Vadim Shchepin', url: `${SITE_URL}/über-uns` },
         publisher: { '@type': 'Organization', '@id': `${SITE_URL}/#organization` },
         mainEntityOfPage: PAGE_URL,
     };
@@ -68,10 +68,10 @@ export default function TypeExploreCaseStudy() {
                         <span className="wissen-card-time">KI-Produkt</span>
                     </div>
                     <h1 className="subpage-title animate-up">
-                        TypeExplore AI: Tippen lernen uber Quantenphysik. Oder Borschtsch. Die KI ist flexibel.
+                        TypeExplore AI: Tippen lernen über Quantenphysik. Oder Borschtsch. Die KI ist flexibel.
                     </h1>
                     <p className="subpage-intro animate-up">
-                        Ein Tipptrainer, der nicht langweilig ist, weil die KI Lektionen uber jedes Thema generiert, das Sie sich vorstellen konnen. Sie tippen, Sie lernen, und am Ende sind Sie schneller als vorher. In jeder Hinsicht.
+                        Ein Tipptrainer, der nicht langweilig ist, weil die KI Lektionen über jedes Thema generiert, das Sie sich vorstellen können. Sie tippen, Sie lernen, und am Ende sind Sie schneller als vorher. In jeder Hinsicht.
                     </p>
                     <div className="article-byline animate-up">
                         Von <Link href="/ueber-uns">Vadim Shchepin</Link> &middot; 3. April 2026
@@ -97,10 +97,10 @@ export default function TypeExploreCaseStudy() {
                         Tipptrainer sind seit 1995 nicht weiterentwickelt worden. Man tippt &bdquo;asdf jklo&ldquo; hundert Mal und fragt sich, warum man das nicht einfach lassen kann. Die Motivation halt genau so lange, bis der erste Satz &bdquo;Der schnelle braune Fuchs&ldquo; erscheint. Dann schliesst man das Fenster und macht etwas Sinnvolles.
                     </p>
                     <p className="animate-up">
-                        Die Idee war simpel: Was, wenn man stattdessen uber Themen tippt, die einen tatsachlich interessieren? Astronomie, Kochen, Geschichte, Programmierung, egal was. Die KI generiert den Text, Sie tippen ihn ab, und am Ende haben Sie nicht nur schneller getippt, sondern auch etwas gelernt.
+                        Die Idee war simpel: Was, wenn man stattdessen über Themen tippt, die einen tatsächlich interessieren? Astronomie, Kochen, Geschichte, Programmierung, egal was. Die KI generiert den Text, Sie tippen ihn ab, und am Ende haben Sie nicht nur schneller getippt, sondern auch etwas gelernt.
                     </p>
 
-                    <h2 className="animate-up">Die Losung</h2>
+                    <h2 className="animate-up">Die Lösung</h2>
 
                     <div className="subpage-features-grid animate-up">
                         <div className="subpage-feature">
@@ -109,11 +109,11 @@ export default function TypeExploreCaseStudy() {
                         </div>
                         <div className="subpage-feature">
                             <h3>Sichere API-Architektur</h3>
-                            <p>Der Gemini API-Key liegt auf dem Express-Backend. Das Frontend sieht ihn nie. Klingt selbstverstandlich? Sie wurden staunen, wie viele Apps ihren API-Key im Browser-JavaScript haben. Bei uns: null.</p>
+                            <p>Der Gemini API-Key liegt auf dem Express-Backend. Das Frontend sieht ihn nie. Klingt selbstverständlich? Sie wurden staunen, wie viele Apps ihren API-Key im Browser-JavaScript haben. Bei uns: null.</p>
                         </div>
                         <div className="subpage-feature">
                             <h3>Virtuelle Tastatur</h3>
-                            <p>Farbcodiert nach Fingerzonen fur Touch-Typing-Visualisierung. Der nachste zu tippende Buchstabe wird hervorgehoben. Fehler werden sofort markiert. Man sieht in Echtzeit, wo die Finger sein sollten.</p>
+                            <p>Farbcodiert nach Fingerzonen für Touch-Typing-Visualisierung. Der nächste zu tippende Buchstabe wird hervorgehoben. Fehler werden sofort markiert. Man sieht in Echtzeit, wo die Finger sein sollten.</p>
                         </div>
                         <div className="subpage-feature">
                             <h3>Konfetti als Belohnung</h3>
@@ -125,10 +125,10 @@ export default function TypeExploreCaseStudy() {
                         Technische Details, die niemand sieht (aber die wichtig sind)
                     </h3>
                     <p className="animate-up">
-                        Text-Normalisierung fur KI-Output (smarte Anfuhrungszeichen und Gedankenstriche von Gemini mussen in Standard-Zeichen konvertiert werden, sonst stimmt die Fehlererkennung nicht). LocalStorage-Caching, damit dieselbe Lektion nicht zweimal generiert wird. Rate-Limiting: 2 Gratis-Lektionen, dann E-Mail-Registrierung. Mobile-Erkennung: Auf dem Handy macht eine virtuelle Tastatur-Anzeige keinen Sinn, also wird sie ausgeblendet.
+                        Text-Normalisierung für KI-Output (smarte Anfuhrungszeichen und Gedankenstriche von Gemini müssen in Standard-Zeichen konvertiert werden, sonst stimmt die Fehlererkennung nicht). LocalStorage-Caching, damit dieselbe Lektion nicht zweimal generiert wird. Rate-Limiting: 2 Gratis-Lektionen, dann E-Mail-Registrierung. Mobile-Erkennung: Auf dem Handy macht eine virtuelle Tastatur-Anzeige keinen Sinn, also wird sie ausgeblendet.
                     </p>
                     <p className="animate-up">
-                        Das sind die Details, die den Unterschied machen zwischen &bdquo;funktioniert technisch&ldquo; und &bdquo;funktioniert fur echte Menschen&ldquo;.
+                        Das sind die Details, die den Unterschied machen zwischen &bdquo;funktioniert technisch&ldquo; und &bdquo;funktioniert für echte Menschen&ldquo;.
                     </p>
 
                     <div className="cs-takeaway animate-up">

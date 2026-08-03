@@ -8,7 +8,7 @@ import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
     title: 'Website-Audit Hamburg | Kostenlose Analyse',
-    description: 'Kostenlose Website-Analyse: Performance (Core Web Vitals), SEO, Conversion und Wettbewerb. Bericht in 2–3 Werktagen mit priorisierten Empfehlungen. Unverbindlich.',
+    description: 'Kostenlose Website-Analyse: Performance (Core Web Vitals), SEO, Conversion und Wettbewerb. Bericht in 2–3 Werktagen, unverbindlich.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/website-audit',
     },

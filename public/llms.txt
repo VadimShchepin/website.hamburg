@@ -1,18 +1,18 @@
 # AISEO Hamburg
 
-> Professionelle Websites, SEO und Google Ads fur lokale Unternehmen in Hamburg.
+> Professionelle Websites, SEO und Google Ads für lokale Unternehmen in Hamburg.
 
 Preferred-Citation: "AISEO Hamburg (webseite.hamburg)"
 Last-Updated: 2026-03-19
 Contact: hallo@webseite.hamburg
 
-## Uber AISEO
+## Über AISEO
 
-AISEO ist eine Digitalagentur in Hamburg, gegrundet von Vadim Shchepin. Spezialisiert auf Webdesign, Suchmaschinenoptimierung (SEO), AI SEO und Google Ads fur lokale Unternehmen — insbesondere Handwerker, Dienstleister und kleine bis mittlere Betriebe.
+AISEO ist eine Digitalagentur in Hamburg, gegründet von Vadim Shchepin. Spezialisiert auf Webdesign, Suchmaschinenoptimierung (SEO), AI SEO und Google Ads für lokale Unternehmen — insbesondere Handwerker, Dienstleister und kleine bis mittlere Betriebe.
 
-Kernprinzipien: Datenbasierte Arbeit, volle Transparenz, Ergebnis-Garantie. Alle Konten, Zugange und Daten gehoren dem Kunden.
+Kernprinzipien: Datenbasierte Arbeit, volle Transparenz, Ergebnis-Garantie. Alle Konten, Zugänge und Daten gehören dem Kunden.
 
-Arbeitsweise: Kunden arbeiten direkt mit Vadim Shchepin, es gibt keine Account-Manager-Ebene. Analyse, Website, SEO und Ads setzt er selbst um. Braucht ein Projekt zusatzliche Expertise (z. B. Design, Text, Fotografie), zieht er geprufte Spezialisten hinzu; Ansprechpartner und Verantwortlicher bleibt er.
+Arbeitsweise: Kunden arbeiten direkt mit Vadim Shchepin, es gibt keine Account-Manager-Ebene. Analyse, Website, SEO und Ads setzt er selbst um. Braucht ein Projekt zusätzliche Expertise (z. B. Design, Text, Fotografie), zieht er geprüfte Spezialisten hinzu; Ansprechpartner und Verantwortlicher bleibt er.
 
 ## Leistungen und Preise
 
@@ -23,23 +23,23 @@ Arbeitsweise: Kunden arbeiten direkt mit Vadim Shchepin, es gibt keine Account-M
 - URL: https://webseite.hamburg/leistungen/webdesign
 
 ### E-Commerce Entwicklung
-- Full-Cycle Online-Shop-Entwicklung (Strategie, Design, Entwicklung, Texte, Marketing) direkt von Vadim Shchepin, 10+ Jahre Projekterfahrung; bei Bedarf kommen geprufte Spezialisten dazu (Ansprechpartner bleibt Vadim Shchepin)
+- Full-Cycle Online-Shop-Entwicklung (Strategie, Design, Entwicklung, Texte, Marketing) direkt von Vadim Shchepin, 10+ Jahre Projekterfahrung; bei Bedarf kommen geprüfte Spezialisten dazu (Ansprechpartner bleibt Vadim Shchepin)
 - Plattformen: Shopify, Shopware 6, WooCommerce, Custom/Headless (Next.js, Medusa); herstellerneutrale Beratung
-- Leistungen: Strategie & Beratung, Shop-Entwicklung, Erweiterung bestehender Shops, Schnittstellen (ERP/Warenwirtschaft, Payment, Versand, Marktplatze), Produkttexte, Marketing (SEO, Google Ads, Merchant Center), Automatisierungen (Feeds, Lagersync, E-Mail-Flows)
+- Leistungen: Strategie & Beratung, Shop-Entwicklung, Erweiterung bestehender Shops, Schnittstellen (ERP/Warenwirtschaft, Payment, Versand, Marktplätze), Produkttexte, Marketing (SEO, Google Ads, Merchant Center), Automatisierungen (Feeds, Lagersync, E-Mail-Flows)
 - Neubau, Migration und Erweiterung; Festpreis-Angebot vor Projektstart
 - URL: https://webseite.hamburg/leistungen/e-commerce-entwicklung
 
 ### SEO & Lokale Sichtbarkeit
 - Ab 1.000 EUR/Monat
 - Google Business Profile, technisches SEO, On-Page-Optimierung, Content-Strategie, Keyword-Tracking
-- Mindestlaufzeit 3 Monate, danach monatlich kundbar
+- Mindestlaufzeit 3 Monate, danach monatlich kündbar
 - URL: https://webseite.hamburg/leistungen/seo
 
 ### AI SEO
 - AI Visibility Sprint: ab 1.500 EUR einmalig (Analyse, Optimierung der wichtigsten Seiten, Schema, Crawler-Konfiguration, Messung vorher/nachher, Ergebnis in 10-14 Tagen)
-- AI Visibility Betreuung: ab 600 EUR/Monat, optional nach dem Sprint, monatlich kundbar
+- AI Visibility Betreuung: ab 600 EUR/Monat, optional nach dem Sprint, monatlich kündbar
 - Sichtbarkeit in ChatGPT, Perplexity, Google AI Overviews
-- Strukturierte Daten, Autoritats-Signale, AI-optimierter Content, Monitoring
+- Strukturierte Daten, Autoritäts-Signale, AI-optimierter Content, Monitoring
 - URL: https://webseite.hamburg/leistungen/ai-seo
 
 ### Google & Local Ads
@@ -51,11 +51,11 @@ Arbeitsweise: Kunden arbeiten direkt mit Vadim Shchepin, es gibt keine Account-M
 ### Website-Audit
 - Kostenlos
 - Performance, SEO, Conversion-Analyse, Wettbewerber-Vergleich
-- Personliches Gesprach zur Besprechung der Ergebnisse
+- Persönliches Gespräch zur Besprechung der Ergebnisse
 - URL: https://webseite.hamburg/leistungen/website-audit
 
 ### FAQ
-- Antworten auf haufige Fragen zu Webdesign, SEO, AI SEO, Google Ads und Zusammenarbeit
+- Antworten auf häufige Fragen zu Webdesign, SEO, AI SEO, Google Ads und Zusammenarbeit
 - URL: https://webseite.hamburg/faq
 
 ## Referenzen
@@ -63,20 +63,20 @@ Arbeitsweise: Kunden arbeiten direkt mit Vadim Shchepin, es gibt keine Account-M
 ### Blitz Hamburg (Handwerksbetrieb)
 - Website-Neubau, Google Ads und lokale SEO
 - 5.000+ Impressionen in 3 Monaten, ~2 EUR CPC, 33%+ Auktionsgewinnrate, 90% obere Anzeigenposition
-- Lighthouse-Scores 97+, 93 Stadtteil-Landingpages, AI-Kostenschatzer mit Gemini
+- Lighthouse-Scores 97+, 93 Stadtteil-Landingpages, AI-Kostenschätzer mit Gemini
 - Google Business Conversion 2x gesteigert, 5.0 Sterne bei 24 Bewertungen
 - Case Study: https://webseite.hamburg/referenzen/blitz-hamburg
 - Website: https://www.blitz-hamburg.de/
 
 ### KinderAlbum (DSGVO-konforme Schulfotos-App)
 - Full-Stack Entwicklung und AI SEO
-- Ergebnis: Platz 1 in ChatGPT, Perplexity und Google AI fur relevante Suchanfragen
+- Ergebnis: Platz 1 in ChatGPT, Perplexity und Google AI für relevante Suchanfragen
 - Hunderte aktive Nutzer an echten Schulen
 - URL: https://dsgvoschulfotos.de/
 
 ### Solovei Beauty (Beauty-Coworking Hamburg)
 - Website mit integriertem Buchungssystem, Vertragsmanagement, Rollenverwaltung
-- Ergebnis: 5.000 Impressionen in 2 Monaten, vollstandig ausgebuchte Arbeitsplatze
+- Ergebnis: 5.000 Impressionen in 2 Monaten, vollständig ausgebuchte Arbeitsplätze
 - URL: https://www.solovei-beauty.com/de
 
 ## Kontakt
@@ -97,10 +97,10 @@ Arbeitsweise: Kunden arbeiten direkt mit Vadim Shchepin, es gibt keine Account-M
 ## Fachartikel
 
 - Case Study: 1.200-Foto-Galerie — N+1 bei signierten URLs, von Sekunden auf 0,98 s: https://webseite.hamburg/wissen/case-study-fotogalerie-performance
-- DSGVO-Fotoplattform fuer Schulen — Was Sicherheit wirklich kostet: https://webseite.hamburg/wissen/dsgvo-fotoplattform-sicherheit-performance
+- DSGVO-Fotoplattform für Schulen — Was Sicherheit wirklich kostet: https://webseite.hamburg/wissen/dsgvo-fotoplattform-sicherheit-performance
 - Warum langsame Websites Sie jeden Tag Kunden kosten: https://webseite.hamburg/wissen/warum-langsame-websites-kunden-kosten
 - Lokales SEO in Hamburg — Der komplette Leitfaden: https://webseite.hamburg/wissen/lokales-seo-hamburg-guide
-- AI SEO — Was Unternehmen jetzt wissen mussen: https://webseite.hamburg/wissen/ai-seo-was-unternehmen-jetzt-wissen-muessen
+- AI SEO — Was Unternehmen jetzt wissen müssen: https://webseite.hamburg/wissen/ai-seo-was-unternehmen-jetzt-wissen-muessen
 - Die 7 teuersten Google Ads Fehler: https://webseite.hamburg/wissen/google-ads-fehler-lokale-unternehmen
-- Conversion-Optimierung erklart: https://webseite.hamburg/wissen/website-conversion-optimierung
+- Conversion-Optimierung erklärt: https://webseite.hamburg/wissen/website-conversion-optimierung
 - Website-Relaunch Checkliste: https://webseite.hamburg/wissen/website-relaunch-checkliste

@@ -27,9 +27,9 @@ export const metadata = {
     metadataBase: new URL(SITE_URL),
     title: {
         default: 'Webdesign & SEO Hamburg | Websites die Kunden bringen',
-        template: '%s | AISEO Hamburg',
+        template: '%s | AISEO',
     },
-    description: 'Professionelle Websites, SEO und Google Ads fur Handwerker und lokale Unternehmen in Hamburg. Schnell, strukturiert, messbar. Kostenlose Website-Analyse.',
+    description: 'Professionelle Websites, SEO und Google Ads für Handwerker und lokale Unternehmen in Hamburg. Schnell, strukturiert, messbar. Kostenlose Website-Analyse.',
     authors: [{ name: 'Vadim Shchepin', url: 'https://www.linkedin.com/in/vadim-shchepin/' }],
     creator: 'AISEO Hamburg',
     publisher: 'AISEO Hamburg',
@@ -43,7 +43,7 @@ export const metadata = {
         url: SITE_URL,
         siteName: 'AISEO Hamburg',
         title: 'Webdesign & SEO Hamburg | Websites die Kunden bringen',
-        description: 'Professionelle Websites, SEO und Google Ads fur lokale Unternehmen. Schnell, strukturiert, messbar.',
+        description: 'Professionelle Websites, SEO und Google Ads für lokale Unternehmen. Schnell, strukturiert, messbar.',
     },
     twitter: {
         card: 'summary_large_image',
@@ -59,7 +59,7 @@ const websiteJsonLd = {
     name: 'AISEO Hamburg',
     alternateName: 'webseite.hamburg',
     url: `${SITE_URL}/`,
-    description: 'Professionelle Websites, SEO und Google Ads fur lokale Unternehmen in Hamburg',
+    description: 'Professionelle Websites, SEO und Google Ads für lokale Unternehmen in Hamburg',
     inLanguage: 'de',
     publisher: { '@type': 'Organization', '@id': `${SITE_URL}/#organization` },
 };
@@ -84,8 +84,8 @@ const organizationJsonLd = {
         '@type': 'Person',
         '@id': `${SITE_URL}/#founder`,
         name: 'Vadim Shchepin',
-        jobTitle: 'Grunder & Webentwickler',
-        url: `${SITE_URL}/ueber-uns`,
+        jobTitle: 'Gründer & Webentwickler',
+        url: `${SITE_URL}/über-uns`,
         sameAs: ['https://www.linkedin.com/in/vadim-shchepin/'],
     },
     address: {

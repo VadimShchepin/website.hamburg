@@ -44,6 +44,12 @@ const nextConfig = {
                 destination: '/:path+',
                 permanent: true,
             },
+            // Prices live on the services page; /preise is what people type
+            {
+                source: '/preise',
+                destination: '/leistungen',
+                permanent: true,
+            },
         ];
     },
 };

@@ -8,7 +8,7 @@ import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
     title: 'Webdesign Hamburg | Schnelle Websites ab 2.900 €',
-    description: 'Individuelles Webdesign für Unternehmen in Hamburg: programmiert statt Baukasten, Lighthouse 90–100, gute Core Web Vitals, Conversion-Optimierung. Conversion Landingpage ab 2.900 €.',
+    description: 'Individuelles Webdesign für Unternehmen in Hamburg: programmiert statt Baukasten, Lighthouse 90–100, conversion-optimiert. Ab 2.900 €.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/webdesign',
     },

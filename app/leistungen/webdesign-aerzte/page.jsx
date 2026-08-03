@@ -8,7 +8,7 @@ import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
     title: 'Webdesign für Arztpraxen Hamburg | DSGVO-konforme Praxis-Websites',
-    description: 'Websites für Arztpraxen und Zahnärzte in Hamburg: DSGVO-konform, Online-Terminbuchung (Doctolib, Jameda), Google-Maps-Sichtbarkeit. Mehr Patienten. Ab 2.900 €.',
+    description: 'Websites für Arztpraxen und Zahnärzte in Hamburg: DSGVO-konform, Online-Terminbuchung (Doctolib, Jameda), Google Maps. Ab 2.900 €.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/webdesign-aerzte',
     },

@@ -7,8 +7,8 @@ const SITE_URL = 'https://webseite.hamburg';
 const PAGE_URL = `${SITE_URL}/referenzen/gl-sommer`;
 
 export const metadata = {
-    title: 'GL Sommer Case Study | SEO-Audit, Google Ads & Redesign fur GaLaBau Hamburg',
-    description: 'Wie GL Sommer GmbH durch Website-Modernisierung, SEO-Audit und Google Ads 728 lokale Aktionen und 1.113 Klicks pro Monat bei nur 529 EUR Werbebudget erreicht hat.',
+    title: 'GL Sommer Case Study | SEO-Audit, Google Ads & Redesign für GaLaBau Hamburg',
+    description: 'Wie GL Sommer durch Website-Modernisierung, SEO-Audit und Google Ads 728 lokale Aktionen und 1.113 Klicks pro Monat erreicht hat.',
     alternates: {
         canonical: PAGE_URL,
     },
@@ -45,7 +45,7 @@ export default function GlSommerCaseStudy() {
     const articleJsonLd = {
         '@context': 'https://schema.org',
         '@type': 'Article',
-        headline: 'GL Sommer GmbH: SEO-Audit, Redesign und Google Ads fur GaLaBau Hamburg',
+        headline: 'GL Sommer GmbH: SEO-Audit, Redesign und Google Ads für GaLaBau Hamburg',
         description: 'Wie ein etabliertes Garten- und Landschaftsbau-Unternehmen durch Website-Modernisierung, SEO-Optimierung und Google Ads messbar mehr Kundenanfragen generiert.',
         url: PAGE_URL,
         datePublished: '2026-04-03',
@@ -53,7 +53,7 @@ export default function GlSommerCaseStudy() {
         author: {
             '@type': 'Person',
             name: 'Vadim Shchepin',
-            url: `${SITE_URL}/ueber-uns`,
+            url: `${SITE_URL}/über-uns`,
         },
         publisher: {
             '@type': 'Organization',
@@ -91,10 +91,10 @@ export default function GlSommerCaseStudy() {
                         <span className="wissen-card-time">SEO + Google Ads + Redesign</span>
                     </div>
                     <h1 className="subpage-title animate-up">
-                        GL Sommer GmbH: 728 lokale Aktionen pro Monat fur Hamburgs GaLaBau-Unternehmen.
+                        GL Sommer GmbH: 728 lokale Aktionen pro Monat für Hamburgs GaLaBau-Unternehmen.
                     </h1>
                     <p className="subpage-intro animate-up">
-                        Ein etabliertes Garten- und Landschaftsbau-Unternehmen mit uber 1.650 Projekten seit 2010. Website modernisiert, SEO-Audit von 34/100 aufwarts optimiert, Google Ads gestartet. Das Ergebnis: 728 lokale Aktionen und 19 Conversions pro Monat bei nur 529 &euro; Werbebudget.
+                        Ein etabliertes Garten- und Landschaftsbau-Unternehmen mit über 1.650 Projekten seit 2010. Website modernisiert, SEO-Audit von 34/100 aufwarts optimiert, Google Ads gestartet. Das Ergebnis: 728 lokale Aktionen und 19 Conversions pro Monat bei nur 529 &euro; Werbebudget.
                     </p>
                     <div className="article-byline animate-up">
                         Von <Link href="/ueber-uns">Vadim Shchepin</Link> &middot; 3. April 2026
@@ -138,26 +138,26 @@ export default function GlSommerCaseStudy() {
                 <div className="container subpage-body">
                     <h2 className="animate-up">Die Ausgangssituation</h2>
                     <p className="animate-up">
-                        GL Sommer GmbH ist seit 2010 im Garten- und Landschaftsbau in Hamburg tatig: Terrassenverlegung, Pflasterarbeiten, Zaunbau, Gartenpflege. Uber 1.650 abgeschlossene Projekte und ausgezeichnete Google-Bewertungen. Ein Unternehmen mit echtem Ruf und echter Expertise.
+                        GL Sommer GmbH ist seit 2010 im Garten- und Landschaftsbau in Hamburg tätig: Terrassenverlegung, Pflasterarbeiten, Zaunbau, Gartenpflege. Über 1.650 abgeschlossene Projekte und ausgezeichnete Google-Bewertungen. Ein Unternehmen mit echtem Ruf und echter Expertise.
                     </p>
                     <p className="animate-up">
-                        Aber die digitale Prasenz hielt nicht Schritt. Die bestehende WordPress-Elementor-Website hatte strukturelle SEO-Probleme, veraltete Inhalte und keine aktive Strategie zur Kundengewinnung uber Google. Das SEO-Audit ergab einen Score von <strong>34 von 100</strong>, mit kritischen Lucken bei Title Tags, Meta Descriptions, H1-Struktur, Alt-Texten und Sicherheitsheadern.
+                        Aber die digitale Präsenz hielt nicht Schritt. Die bestehende WordPress-Elementor-Website hatte strukturelle SEO-Probleme, veraltete Inhalte und keine aktive Strategie zur Kundengewinnung über Google. Das SEO-Audit ergab einen Score von <strong>34 von 100</strong>, mit kritischen Lucken bei Title Tags, Meta Descriptions, H1-Struktur, Alt-Texten und Sicherheitsheadern.
                     </p>
 
-                    <h2 className="animate-up">Die Losung: Modernisierung + SEO + Ads</h2>
+                    <h2 className="animate-up">Die Lösung: Modernisierung + SEO + Ads</h2>
 
                     <h3 className="animate-up" style={{ marginTop: 'var(--space-lg)', fontSize: '1.3rem' }}>
                         1. Website-Modernisierung
                     </h3>
                     <p className="animate-up">
-                        Kein kompletter Neubau, sondern gezielte Modernisierung. Das bestehende Design wurde beibehalten, aber grundlegend verbessert: klarere Seitenstruktur, bessere Mobile-Experience, schnellere Ladezeiten. Neue <strong>Referenz-Seiten</strong> wurden erstellt, um abgeschlossene Projekte professionell zu prasentieren, das wichtigste Vertrauenssignal im B2B-Gartenbau.
+                        Kein kompletter Neubau, sondern gezielte Modernisierung. Das bestehende Design wurde beibehalten, aber grundlegend verbessert: klarere Seitenstruktur, bessere Mobile-Experience, schnellere Ladezeiten. Neue <strong>Referenz-Seiten</strong> wurden erstellt, um abgeschlossene Projekte professionell zu präsentieren, das wichtigste Vertrauenssignal im B2B-Gartenbau.
                     </p>
 
                     <h3 className="animate-up" style={{ marginTop: 'var(--space-lg)', fontSize: '1.3rem' }}>
-                        2. Vollstandiges SEO-Audit & Optimierung
+                        2. Vollständiges SEO-Audit & Optimierung
                     </h3>
                     <p className="animate-up">
-                        Das technische Audit deckte systematische Probleme auf, die Seite fur Seite behoben wurden:
+                        Das technische Audit deckte systematische Probleme auf, die Seite für Seite behoben wurden:
                     </p>
 
                     <div className="cs-before-after animate-up" style={{ marginTop: 'var(--space-md)' }}>
@@ -172,20 +172,20 @@ export default function GlSommerCaseStudy() {
                     <div className="cs-image-showcase animate-up" style={{ marginTop: 'var(--space-md)' }}>
                         <Image
                             src="/referenzen/Gl-sommer-leistungen.webp"
-                            alt="GL Sommer Leistungen: Gartenpflege und Garten- & Landschaftsbau Ubersicht"
+                            alt="GL Sommer Leistungen: Gartenpflege und Garten- & Landschaftsbau Übersicht"
                             width={1200}
                             height={781}
                             quality={85}
                             style={{ width: '100%', height: 'auto', borderRadius: '2px' }}
                         />
-                        <p className="cs-image-caption">Die Leistungs-Ubersicht: Klare Kategorien fur Gartenpflege und Landschaftsbau mit direktem Zugang zu Details.</p>
+                        <p className="cs-image-caption">Die Leistungs-Übersicht: Klare Kategorien für Gartenpflege und Landschaftsbau mit direktem Zugang zu Details.</p>
                     </div>
 
                     <h3 className="animate-up" style={{ marginTop: 'var(--space-lg)', fontSize: '1.3rem' }}>
                         3. Content-Strategie aus echten Suchdaten
                     </h3>
                     <p className="animate-up">
-                        Die GSC-Daten zeigten, wo GL Sommer bereits stark war und wo die Lucken lagen. <strong>&bdquo;Pflasterarbeiten Hamburg&ldquo;</strong> war bereits auf Position 2,78. Aber zentrale B2B-Begriffe wie &bdquo;Garten und Landschaftsbau Hamburg&ldquo; standen noch auf Seite 2. Gezielte Service-Landingpages und Referenz-Inhalte wurden erstellt, um diese Lucken zu schliessen.
+                        Die GSC-Daten zeigten, wo GL Sommer bereits stark war und wo die Lucken lagen. <strong>&bdquo;Pflasterarbeiten Hamburg&ldquo;</strong> war bereits auf Position 2,78. Aber zentrale B2B-Begriffe wie &bdquo;Garten und Landschaftsbau Hamburg&ldquo; standen noch auf Seite 2. Gezielte Service-Landingpages und Referenz-Inhalte wurden erstellt, um diese Lucken zu schließen.
                     </p>
 
                     <div className="subpage-features-grid animate-up">
@@ -199,7 +199,7 @@ export default function GlSommerCaseStudy() {
                         </div>
                         <div className="subpage-feature">
                             <h3>Lokale SEO-Signale</h3>
-                            <p>Google Business Profil optimiert, konsistente NAP-Daten, lokale Schema-Markup-Integration fur Hamburg und Umgebung.</p>
+                            <p>Google Business Profil optimiert, konsistente NAP-Daten, lokale Schema-Markup-Integration für Hamburg und Umgebung.</p>
                         </div>
                         <div className="subpage-feature">
                             <h3>Keyword-Cluster</h3>
@@ -227,19 +227,19 @@ export default function GlSommerCaseStudy() {
                                 <span className="cs-ads-stat-value">~0,73 &euro;</span>
                                 <span className="cs-ads-stat-label">Kosten pro lokaler Aktion</span>
                             </div>
-                            <p>Bei 529 &euro; Monatsbudget und 728 lokalen Aktionen eine extrem effiziente Akquise fur einen lokalen Handwerksbetrieb.</p>
+                            <p>Bei 529 &euro; Monatsbudget und 728 lokalen Aktionen eine extrem effiziente Akquise für einen lokalen Handwerksbetrieb.</p>
                         </div>
                         <div className="cs-ads-stat">
                             <div className="cs-ads-stat-header">
                                 <span className="cs-ads-stat-value">19</span>
                                 <span className="cs-ads-stat-label">Conversions / Monat</span>
                             </div>
-                            <p>Direkte Anfragen und Kontaktaufnahmen uber die Ads-Kampagne, bei einem Kosten-pro-Conversion von ca. 27,80 &euro;.</p>
+                            <p>Direkte Anfragen und Kontaktaufnahmen über die Ads-Kampagne, bei einem Kosten-pro-Conversion von ca. 27,80 &euro;.</p>
                         </div>
                     </div>
 
                     {/* Results */}
-                    <h2 className="animate-up">Die Ergebnisse: Marz 2026</h2>
+                    <h2 className="animate-up">Die Ergebnisse: März 2026</h2>
 
                     <div className="cs-results-grid animate-up">
                         <div className="cs-result-card">
@@ -248,11 +248,11 @@ export default function GlSommerCaseStudy() {
                         </div>
                         <div className="cs-result-card">
                             <h3>1.113 Klicks</h3>
-                            <p>Uber 1.100 qualifizierte Besucher pro Monat uber Google Ads, Nutzer mit konkreter Gartenpflege- oder Landschaftsbau-Suchabsicht.</p>
+                            <p>Über 1.100 qualifizierte Besucher pro Monat über Google Ads, Nutzer mit konkreter Gartenpflege- oder Landschaftsbau-Suchabsicht.</p>
                         </div>
                         <div className="cs-result-card">
                             <h3>20 Anrufklicks</h3>
-                            <p>Direkte Anrufe aus den Anzeigen: die starkste Conversion-Art fur einen lokalen Dienstleister.</p>
+                            <p>Direkte Anrufe aus den Anzeigen: die starkste Conversion-Art für einen lokalen Dienstleister.</p>
                         </div>
                         <div className="cs-result-card">
                             <h3>SEO-Audit: 34/100 &rarr; aufwarts</h3>
@@ -264,7 +264,7 @@ export default function GlSommerCaseStudy() {
                     <div className="cs-takeaway animate-up">
                         <h3>Das Wichtigste</h3>
                         <p>
-                            Ein etabliertes Unternehmen muss seine Website nicht komplett neu bauen, aber die digitale Prasenz muss zum Geschaft passen. GL Sommer zeigt: Gezielte Modernisierung, systematische SEO-Optimierung und effiziente Google Ads konnen aus einer bestehenden Website eine echte Akquise-Maschine machen. 728 lokale Aktionen pro Monat fur 529 &euro;: das ist planbare, skalierbare Kundengewinnung.
+                            Ein etabliertes Unternehmen muss seine Website nicht komplett neu bauen, aber die digitale Präsenz muss zum Geschäft passen. GL Sommer zeigt: Gezielte Modernisierung, systematische SEO-Optimierung und effiziente Google Ads können aus einer bestehenden Website eine echte Akquise-Maschine machen. 728 lokale Aktionen pro Monat für 529 &euro;: das ist planbare, skalierbare Kundengewinnung.
                         </p>
                     </div>
                 </div>
@@ -279,12 +279,12 @@ export default function GlSommerCaseStudy() {
                     </div>
                     <div className="subpage-features-grid animate-up">
                         <Link href="/leistungen/seo" className="subpage-feature" style={{ textDecoration: 'none' }}>
-                            <h3>SEO fur lokale Unternehmen</h3>
+                            <h3>SEO für lokale Unternehmen</h3>
                             <p>Langfristige organische Sichtbarkeit durch technische und inhaltliche Optimierung. Ab 1.000 &euro;/Mt.</p>
                         </Link>
                         <Link href="/leistungen/google-ads" className="subpage-feature" style={{ textDecoration: 'none' }}>
                             <h3>Google Ads Management</h3>
-                            <p>Gezielte Kampagnen fur lokale Unternehmen. Maximale Sichtbarkeit bei minimierten Kosten. Ab 500 &euro;/Mt.</p>
+                            <p>Gezielte Kampagnen für lokale Unternehmen. Maximale Sichtbarkeit bei minimierten Kosten. Ab 500 &euro;/Mt.</p>
                         </Link>
                         <Link href="/leistungen/website-audit" className="subpage-feature" style={{ textDecoration: 'none' }}>
                             <h3>Website-Audit</h3>
@@ -298,7 +298,7 @@ export default function GlSommerCaseStudy() {
                 </div>
             </section>
 
-            <ServiceCta text="Ahnliche Ergebnisse fur Ihr Unternehmen? Kostenloses Erstgesprach. Ich analysiere Ihre aktuelle Website und zeige Ihnen, wo das Potenzial liegt." />
+            <ServiceCta text="Ahnliche Ergebnisse für Ihr Unternehmen? Kostenloses Erstgespräch. Ich analysiere Ihre aktuelle Website und zeige Ihnen, wo das Potenzial liegt." />
         </>
     );
 }

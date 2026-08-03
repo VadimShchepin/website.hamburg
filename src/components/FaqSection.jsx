@@ -21,7 +21,7 @@ export function FaqItem({ q, a }) {
     );
 }
 
-export default function FaqSection({ title = 'Haufige Fragen', items }) {
+export default function FaqSection({ title = 'Häufige Fragen', items }) {
     const jsonLd = {
         '@context': 'https://schema.org',
         '@type': 'FAQPage',

@@ -3,7 +3,7 @@ import Breadcrumbs from '../../src/components/Breadcrumbs';
 
 export const metadata = {
     title: 'Redesign-Konzepte | AISEO Hamburg',
-    description: 'Fertige Redesign-Entwuerfe fuer echte Unternehmen: Startseiten-Konzepte mit echten Inhalten, gebaut vor dem ersten Gespraech.',
+    description: 'Fertige Redesign-Entwuerfe für echte Unternehmen: Startseiten-Konzepte mit echten Inhalten, gebaut vor dem ersten Gespräch.',
     robots: {
         index: false,
         follow: false,
@@ -15,7 +15,7 @@ const redesigns = [
         slug: 'denis-fahrschule',
         firm: 'Denis Fahrschule',
         sector: 'FAHRSCHULE · HAMBURG · BERLINER TOR',
-        description: 'Zweisprachiger Auftritt auf Deutsch und Russisch mit echten Fotos vom Geschaeftsfuehrer und Theorieraum, transparenter Preistabelle Klasse B und rotem Markenakzent. Ersatz fuer die zuvor gehackte Joomla-Seite.',
+        description: 'Zweisprachiger Auftritt auf Deutsch und Russisch mit echten Fotos vom Geschaeftsfuehrer und Theorieraum, transparenter Preistabelle Klasse B und rotem Markenakzent. Ersatz für die zuvor gehackte Joomla-Seite.',
     },
     {
         slug: 'zieler',
@@ -63,7 +63,7 @@ const redesigns = [
         slug: 'boege',
         firm: 'gebr. boege Metallveredelungs GmbH',
         sector: 'GALVANIK & METALLVEREDELUNG · HAMBURG · 80+ JAHRE',
-        description: 'Praezisions-Design in Graphit mit Chrom-Verlaeufen, technischen Mono-Labels und einer grossen 80+ als Anker. Gebaut fuer eine Branche, die man selten schoen zeigt.',
+        description: 'Praezisions-Design in Graphit mit Chrom-Verlaeufen, technischen Mono-Labels und einer großen 80+ als Anker. Gebaut für eine Branche, die man selten schoen zeigt.',
     },
     {
         slug: 'billinger',
@@ -75,7 +75,7 @@ const redesigns = [
         slug: 'zinorm',
         firm: 'Zimmermann Norm- und Verbindungstechnik GmbH',
         sector: 'TECHNISCHER GROSSHANDEL · AHRENSBURG · SEIT 1952',
-        description: 'Technische Praezision in Graphit und Rot, mit Katalogfotografie auf weissen Karten und einer grossen 1952 als Anker. Gebaut aus der eigenen Produktfotografie des Hauses.',
+        description: 'Technische Präzision in Graphit und Rot, mit Katalogfotografie auf weissen Karten und einer großen 1952 als Anker. Gebaut aus der eigenen Produktfotografie des Hauses.',
     },
     {
         slug: 'meier-holzbau',
@@ -86,8 +86,8 @@ const redesigns = [
     {
         slug: 'samad',
         firm: 'SAMAD Export Import GmbH',
-        sector: 'TEPPICHIMPORT · HAMBURGER SPEICHERSTADT · SEIT UEBER 40 JAHREN',
-        description: 'Warme Bordeaux- und Goldtoene fuer ein Kontorhaus voller Orientteppiche, mit einer Handweberin am Webstuhl als Herkunftsgeschichte. Komplett aus der eigenen Fotografie gebaut.',
+        sector: 'TEPPICHIMPORT · HAMBURGER SPEICHERSTADT · SEIT ÜBER 40 JAHREN',
+        description: 'Warme Bordeaux- und Goldtoene für ein Kontorhaus voller Orientteppiche, mit einer Handweberin am Webstuhl als Herkunftsgeschichte. Komplett aus der eigenen Fotografie gebaut.',
     },
     {
         slug: 'gs-statik',
@@ -111,13 +111,13 @@ const redesigns = [
         slug: 'kp-elektrotechnik',
         firm: 'KP Elektrotechnik Kay Petersen e.K.',
         sector: 'ELEKTROTECHNIK & SMART-HOME · HAMBURG-WANDSBEK · SEIT 1997',
-        description: 'Klares Blau-Gelb-Design mit dem echten Firmenfahrzeug als Hero-Foto und einem Leistungsraster fuer Elektroinstallation bis KNX Smart-Home.',
+        description: 'Klares Blau-Gelb-Design mit dem echten Firmenfahrzeug als Hero-Foto und einem Leistungsraster für Elektroinstallation bis KNX Smart-Home.',
     },
     {
         slug: 'niehusen',
         firm: 'Karl Niehusen GmbH & Co. KG',
         sector: 'FISCHFEINKOST · HAMBURG-ALTONA · SEIT 1961',
-        description: 'Warmes Rot-Creme-Design mit echter Produktfotografie und einer Zeitleiste von St. Pauli bis zur Grossen Elbstrasse.',
+        description: 'Warmes Rot-Creme-Design mit echter Produktfotografie und einer Zeitleiste von St. Pauli bis zur Großen Elbstraße.',
     },
     {
         slug: 'naval-technica',
@@ -129,7 +129,7 @@ const redesigns = [
         slug: 'hartmann-popp',
         firm: 'Hartmann & Popp GmbH & Co. KG',
         sector: 'OELSAATEN & GEWUERZE · HAMBURG-WALTERSHOF · SEIT 1958',
-        description: 'Erdiges Senfgelb-Gruen-Design mit Koehlbrandbruecken-Hero und einer Zeitleiste ueber drei Generationen der Familie Popp.',
+        description: 'Erdiges Senfgelb-Gruen-Design mit Koehlbrandbruecken-Hero und einer Zeitleiste über drei Generationen der Familie Popp.',
     },
     {
         slug: 'luessenhop',
@@ -206,9 +206,9 @@ export default function RedesignPage() {
                 <div className="container">
                     <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Redesign' }]} />
                     <p className="section-kicker animate-up">Redesign</p>
-                    <h1 className="subpage-title animate-up">Erst der Entwurf. Dann das Gespraech.</h1>
+                    <h1 className="subpage-title animate-up">Erst der Entwurf. Dann das Gespräch.</h1>
                     <p className="subpage-intro animate-up">
-                        Jedes Konzept hier ist eine fertig gebaute Startseite fuer ein echtes Unternehmen: mit den Original-Inhalten
+                        Jedes Konzept hier ist eine fertig gebaute Startseite für ein echtes Unternehmen: mit den Original-Inhalten
                         und Fakten der Firma, einem Design, das zur Branche passt, und funktionierender Mobilansicht. Kein Moodboard,
                         keine Skizze, sondern eine Seite, die man anklicken kann.
                     </p>
@@ -230,7 +230,7 @@ export default function RedesignPage() {
                             >
                                 <img
                                     src={`/redesign/${r.slug}/preview.webp`}
-                                    alt={`Redesign-Konzept fuer ${r.firm}`}
+                                    alt={`Redesign-Konzept für ${r.firm}`}
                                     loading={i < 3 ? 'eager' : 'lazy'}
                                     style={{
                                         width: '100%',
@@ -262,7 +262,7 @@ export default function RedesignPage() {
             <section className="sp-cta section">
                 <div className="container">
                     <div className="cta-box bull-boundary animate-up">
-                        <p className="section-kicker">So koennte Ihre Website aussehen</p>
+                        <p className="section-kicker">So könnte Ihre Website aussehen</p>
                         <h2 className="section-title">Ihr Redesign, bevor Sie sich entscheiden.</h2>
                         <p className="offer-framing">Schicken Sie mir Ihre aktuelle Website. Sie bekommen einen fertigen Entwurf mit Ihren echten Inhalten, bevor Sie einen Cent ausgeben. Gefaellt er Ihnen nicht, war es das Risiko von genau null Euro.</p>
                         <div className="cta-actions mt-4">

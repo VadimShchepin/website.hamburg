@@ -6,8 +6,8 @@ export default function Services() {
         {
             slug: 'webdesign',
             title: 'Webdesign & Entwicklung',
-            desc: 'Schnelle, konversionsstarke Websites mit klarer Struktur. Kein Baukasten, sondern individuell entwickelt fur Ihr Geschaft.',
-            points: ['Responsive Design', 'PageSpeed 100/100', 'Klare Nutzerfuhrung', 'CMS oder Custom'],
+            desc: 'Schnelle, konversionsstarke Websites mit klarer Struktur. Kein Baukasten, sondern individuell entwickelt für Ihr Geschäft.',
+            points: ['Responsive Design', 'PageSpeed 100/100', 'Klare Nutzerführung', 'CMS oder Custom'],
             price: 'Ab 2.900',
             icon: (
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -30,7 +30,7 @@ export default function Services() {
         {
             slug: 'google-ads',
             title: 'Google & Local Ads',
-            desc: 'Kampagnen die echte Anfragen generieren. Messbar, prazise, auf ROI optimiert.',
+            desc: 'Kampagnen die echte Anfragen generieren. Messbar, präzise, auf ROI optimiert.',
             points: ['Google Search Ads', 'Local Services Ads', 'Conversion Tracking', 'Monatliches Reporting'],
             price: 'Ab 500/Mt.',
             icon: (

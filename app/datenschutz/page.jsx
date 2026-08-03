@@ -4,7 +4,7 @@ const SITE_URL = 'https://webseite.hamburg';
 
 export const metadata = {
     title: 'Datenschutz',
-    description: 'Datenschutzerklarung von AISEO Hamburg.',
+    description: 'Datenschutzerklärung von AISEO Hamburg.',
     alternates: { canonical: `${SITE_URL}/datenschutz` },
     robots: { index: false, follow: true },
 };
@@ -25,14 +25,14 @@ export default function DatenschutzPage() {
             <section className="subpage-hero section">
                 <div className="container">
                     <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Datenschutz' }]} />
-                    <h1 className="subpage-title">Datenschutzerklarung</h1>
+                    <h1 className="subpage-title">Datenschutzerklärung</h1>
                 </div>
             </section>
             <section className="section">
                 <div className="container" style={{ maxWidth: 720 }}>
                     <h2>1. Datenschutz auf einen Blick</h2>
                     <h3>Allgemeine Hinweise</h3>
-                    <p>Die folgenden Hinweise geben einen einfachen Uberblick daruber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie personlich identifiziert werden konnen.</p>
+                    <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie personlich identifiziert werden können.</p>
 
                     <h2 style={{ marginTop: '2rem' }}>2. Verantwortliche Stelle</h2>
                     <p>Vadim Shchepin<br />AISEO<br />Hamburg, Deutschland<br />E-Mail: hallo@webseite.hamburg<br />Telefon: +49 176 321 94 754</p>

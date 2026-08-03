@@ -8,20 +8,20 @@ import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
     title: 'Google Ads Hamburg | Sofort qualifizierte Anfragen',
-    description: 'Google Ads Management für lokale Unternehmen in Hamburg: Search Ads, Local Services Ads, Conversion-Tracking, ROAS-Optimierung. Ihr Konto, Ihre Daten. Ab 1.000 €/Monat.',
+    description: 'Google Ads Management für lokale Unternehmen in Hamburg: Search Ads, Local Services Ads, Conversion-Tracking, ROAS-Optimierung. Ihr Konto, Ihre Daten. Setup ab 700 €, Betreuung ab 500 €/Monat.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/google-ads',
     },
     openGraph: {
         title: 'Google Ads Hamburg | Sofort qualifizierte Anfragen',
-        description: 'Google Ads Management für lokale Unternehmen in Hamburg: Search Ads, Local Services Ads, Conversion-Tracking, ROAS-Optimierung. Ab 1.000 €/Monat.',
+        description: 'Google Ads Management für lokale Unternehmen in Hamburg: Search Ads, Local Services Ads, Conversion-Tracking, ROAS-Optimierung. Setup ab 700 €, Betreuung ab 500 €/Monat.',
         url: 'https://webseite.hamburg/leistungen/google-ads',
         type: 'website',
     },
 };
 
 const faqItems = [
-    { q: 'Was kosten Google Ads pro Monat?', a: 'Zwei getrennte Posten: die Management-Fee ab 1.000 € pro Monat für Aufbau und laufende Optimierung, plus Ihr Werbebudget, das direkt an Google geht und über Ihr eigenes Konto läuft. Das Werbebudget bestimmen Sie selbst; mindestens rund 500 € pro Monat sind sinnvoll, damit genug Daten zum Optimieren entstehen.' },
+    { q: 'Was kosten Google Ads pro Monat?', a: 'Drei getrennte Posten: das Kampagnen-Setup ab 700 € einmalig, die laufende Betreuung ab 500 € pro Monat und Ihr Werbebudget, das direkt an Google geht und über Ihr eigenes Konto läuft. Das Werbebudget bestimmen Sie selbst; mindestens rund 500 € pro Monat sind sinnvoll, damit genug Daten zum Optimieren entstehen.' },
     { q: 'Wie schnell kommen die ersten Anfragen?', a: 'Oft innerhalb der ersten Woche nach Kampagnenstart, denn Google Ads sind der schnellste Weg zu qualifizierten Anfragen. Die ersten 2–4 Wochen dienen der Datensammlung; danach sinkt der Preis pro Anfrage, weil die Kampagne aus den Conversion-Daten lernt.' },
     { q: 'Was bedeuten CPC, CPA und ROAS?', a: 'CPC (Cost-per-Click) ist der Preis pro Klick auf Ihre Anzeige. CPA (Cost-per-Acquisition) ist der Preis pro Anfrage oder Abschluss. ROAS (Return on Ad Spend) ist der Umsatz pro investiertem Werbe-Euro. Diese drei Kennzahlen entscheiden, ob eine Kampagne profitabel ist, und stehen in jedem Report.' },
     { q: 'Was sind Local Services Ads?', a: 'Local Services Ads erscheinen ganz oben in der Google-Suche für lokale Dienstleister, noch über den normalen Google Ads, oft mit dem „Google Garantie"-Siegel. Sie zahlen pro Anfrage (Anruf oder Nachricht), nicht pro Klick. Verfügbarkeit und Branchen sind in Deutschland begrenzt. Im Erstgespräch prüfe ich, ob es für Sie infrage kommt.' },
@@ -38,7 +38,10 @@ export default function GoogleAdsPage() {
         areaServed: { '@type': 'City', name: 'Hamburg' },
         url: 'https://webseite.hamburg/leistungen/google-ads',
         description: 'Google Ads Management für lokale Unternehmen in Hamburg: Search Ads, Local Services Ads, Conversion-Tracking, ROAS-Optimierung.',
-        offers: { '@type': 'Offer', price: '1000', priceCurrency: 'EUR', priceSpecification: { '@type': 'UnitPriceSpecification', unitText: 'Monat' } },
+        offers: [
+            { '@type': 'Offer', name: 'Kampagnen-Setup', price: '700', priceCurrency: 'EUR' },
+            { '@type': 'Offer', name: 'Laufende Betreuung', price: '500', priceCurrency: 'EUR', priceSpecification: { '@type': 'UnitPriceSpecification', unitText: 'Monat' } },
+        ],
     };
 
     const breadcrumbJsonLd = {
@@ -72,7 +75,7 @@ export default function GoogleAdsPage() {
                 <div className="container subpage-body">
                     <h2 className="animate-up">Was sind Google Ads?</h2>
                     <div className="subpage-takeaway animate-up">
-                        <p><strong>Google Ads</strong> sind bezahlte Anzeigen, die in den Google-Suchergebnissen erscheinen, sobald jemand nach einer passenden Leistung sucht. Abgerechnet wird meist pro Klick (CPC). <strong>Local Services Ads</strong> stehen ganz oben und werden pro Anfrage statt pro Klick bezahlt. Das Management kostet ab 1.000 € pro Monat; das Werbebudget läuft separat über Ihr eigenes Google-Konto, sodass Sie jeden Cent sehen.</p>
+                        <p><strong>Google Ads</strong> sind bezahlte Anzeigen, die in den Google-Suchergebnissen erscheinen, sobald jemand nach einer passenden Leistung sucht. Abgerechnet wird meist pro Klick (CPC). <strong>Local Services Ads</strong> stehen ganz oben und werden pro Anfrage statt pro Klick bezahlt. Das Kampagnen-Setup kostet ab 700 € einmalig, die laufende Betreuung ab 500 € pro Monat; das Werbebudget läuft separat über Ihr eigenes Google-Konto, sodass Sie jeden Cent sehen.</p>
                     </div>
 
                     <h2 className="animate-up">Warum Google Ads für lokale Unternehmen funktionieren</h2>
@@ -81,8 +84,8 @@ export default function GoogleAdsPage() {
 
                     <div className="subpage-stats animate-up">
                         <div className="subpage-stat">
-                            <span className="subpage-stat-value">ab 1.000 €</span>
-                            <span className="subpage-stat-label">Management-Fee pro Monat, Werbebudget separat über Ihr Konto</span>
+                            <span className="subpage-stat-value">ab 500 €</span>
+                            <span className="subpage-stat-label">Betreuung pro Monat, Setup ab 700 € einmalig, Werbebudget separat über Ihr Konto</span>
                         </div>
                         <div className="subpage-stat">
                             <span className="subpage-stat-value">pro Lead</span>
@@ -129,20 +132,33 @@ export default function GoogleAdsPage() {
                     </div>
 
                     <h2 className="animate-up">Preise und Leistungen</h2>
-                    <div className="subpage-single-price animate-up">
-                        <div className="sp-price-value">ab 1.000 &euro;/Monat</div>
-                        <p>Management-Fee für Kampagnenerstellung und laufende Optimierung. Ihr Werbebudget läuft über Ihr eigenes Google-Konto. Sie bestimmen die Höhe und behalten die volle Kontrolle.</p>
-                        <ul className="sp-price-includes">
-                            <li>Kampagnen-Setup & Struktur</li>
-                            <li>Keyword-Recherche & Wettbewerbsanalyse</li>
-                            <li>Anzeigentexte & Erweiterungen</li>
-                            <li>Conversion-Tracking (Anrufe, Formulare, GA4)</li>
-                            <li>Landingpage-Empfehlungen</li>
-                            <li>Wöchentliche Optimierung</li>
-                            <li>Monatlicher Performance-Report (CPC, CPA, ROAS)</li>
-                            <li>Ihr Konto, Ihre Daten: voller Zugang</li>
-                        </ul>
+                    <p className="animate-up">Der Aufbau wird einmalig abgerechnet, die laufende Betreuung monatlich. So zahlen Sie die Einrichtung nicht jeden Monat mit.</p>
+                    <div className="subpage-pricing-compare animate-up">
+                        <div className="subpage-price-col">
+                            <h3>Kampagnen-Setup</h3>
+                            <div className="sp-price-value">ab 700 &euro;</div>
+                            <p>Einmalig. Das Konto steht sauber aufgesetzt und messbar da, auch wenn Sie danach selbst weitermachen wollen.</p>
+                            <ul className="sp-price-includes">
+                                <li>Kampagnen-Struktur & Kontoaufbau</li>
+                                <li>Keyword-Recherche & Wettbewerbsanalyse</li>
+                                <li>Anzeigentexte & Erweiterungen</li>
+                                <li>Conversion-Tracking (Anrufe, Formulare, GA4)</li>
+                                <li>Landingpage-Empfehlungen</li>
+                            </ul>
+                        </div>
+                        <div className="subpage-price-col subpage-price-featured">
+                            <h3>Laufende Betreuung</h3>
+                            <div className="sp-price-value">ab 500 &euro;/Monat</div>
+                            <p>Monatlich kündbar. Ihr Werbebudget kommt separat dazu und läuft über Ihr eigenes Google-Konto. Sie bestimmen die Höhe.</p>
+                            <ul className="sp-price-includes">
+                                <li>Wöchentliche Optimierung von Keywords, Geboten und Budgets</li>
+                                <li>Laufende Anzeigen- und Landingpage-Tests</li>
+                                <li>Monatlicher Performance-Report (CPC, CPA, ROAS)</li>
+                                <li>Ihr Konto, Ihre Daten: voller Zugang</li>
+                            </ul>
+                        </div>
                     </div>
+                    <p className="animate-up">Empfohlenes Mindest-Werbebudget: 500 € pro Monat. Es geht direkt an Google, nicht an mich.</p>
 
                     <h2 className="animate-up">Ihr Geld, Ihre Kontrolle. Kein Versteckspiel.</h2>
                     <p className="animate-up">Viele Agenturen lassen das Werbebudget über ihr eigenes Konto laufen. Sie sehen dann nicht, was wirklich ausgegeben wird. Bei mir läuft alles über Ihr eigenes Google Ads Konto: jeder Cent, jede Kampagne, jedes Ergebnis in Echtzeit.</p>

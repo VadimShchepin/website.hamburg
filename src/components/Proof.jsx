@@ -46,12 +46,12 @@ export default function Proof() {
             <div className="container">
                 <div className="section-header text-center">
                     <p className="section-kicker" style={{ color: 'rgba(255,255,255,0.6)' }}>Echte Ergebnisse</p>
-                    <h2 className="section-title" style={{ color: '#fff' }}>Andere versprechen. Wir liefern.</h2>
+                    <h2 className="section-title" style={{ color: '#fff' }}>Andere versprechen. Ich liefere.</h2>
                 </div>
                 <div className="metrics-grid">
                     <div className="metric">
                         <Counter target={40} suffix="+" />
-                        <span className="metric-label">Kundenanfragen/Monat fur unsere Kunden</span>
+                        <span className="metric-label">Kundenanfragen/Monat fur meine Kunden</span>
                     </div>
                     <div className="metric">
                         <Counter target={100} />

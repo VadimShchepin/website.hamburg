@@ -129,7 +129,7 @@ export default function LangsameWebsitesArticlePage() {
 
                 <h2>Was bringt eine Performance-Optimierung in der Praxis?</h2>
                 <blockquote>
-                    Bei einem Hamburger Handwerksbetrieb haben wir die Ladezeit von 6 auf 1,2 Sekunden gedrückt. Die Anfragen verdreifachten sich, der PageSpeed-Score stieg von 34 auf 98. Die Website war dieselbe, nur ohne den Ballast.
+                    Bei einem Hamburger Handwerksbetrieb habe ich die Ladezeit von 6 auf 1,2 Sekunden gedrückt. Die Anfragen verdreifachten sich, der PageSpeed-Score stieg von 34 auf 98. Die Website war dieselbe, nur ohne den Ballast.
                 </blockquote>
                 <p>
                     Die Maßnahmen waren keine Hexerei: Bilder in WebP umgewandelt, ungenutztes CSS entfernt, kritisches CSS inline geladen, JavaScript auf Lazy Loading umgestellt und Server-Caching aktiviert. Zusammen hat das zwei Tage gedauert.

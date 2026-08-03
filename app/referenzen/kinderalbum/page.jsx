@@ -268,11 +268,11 @@ export default function KinderAlbumCaseStudy() {
                         </Link>
                         <Link href="/leistungen/seo" className="subpage-feature" style={{ textDecoration: 'none' }}>
                             <h3>SEO fur lokale Unternehmen</h3>
-                            <p>Langfristige organische Sichtbarkeit durch technische und inhaltliche Optimierung. Ab 2.000 &euro;/Mt.</p>
+                            <p>Langfristige organische Sichtbarkeit durch technische und inhaltliche Optimierung. Ab 1.000 &euro;/Mt.</p>
                         </Link>
                         <Link href="/leistungen/webdesign" className="subpage-feature" style={{ textDecoration: 'none' }}>
                             <h3>Webdesign & Entwicklung</h3>
-                            <p>Individuelle Websites, die schnell laden und Besucher zu Kunden machen. Ab 4.000 &euro;.</p>
+                            <p>Individuelle Websites, die schnell laden und Besucher zu Kunden machen. Ab 2.900 &euro;.</p>
                         </Link>
                     </div>
                 </div>

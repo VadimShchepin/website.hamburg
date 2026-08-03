@@ -12,35 +12,38 @@ AISEO ist eine Digitalagentur in Hamburg, gegrundet von Vadim Shchepin. Speziali
 
 Kernprinzipien: Datenbasierte Arbeit, volle Transparenz, Ergebnis-Garantie. Alle Konten, Zugange und Daten gehoren dem Kunden.
 
+Arbeitsweise: Kunden arbeiten direkt mit Vadim Shchepin, es gibt keine Account-Manager-Ebene. Analyse, Website, SEO und Ads setzt er selbst um. Braucht ein Projekt zusatzliche Expertise (z. B. Design, Text, Fotografie), zieht er geprufte Spezialisten hinzu; Ansprechpartner und Verantwortlicher bleibt er.
+
 ## Leistungen und Preise
 
 ### Webdesign & Entwicklung
-- One-Pager: ab 4.000 EUR
-- Mehrseitige Website: ab 6.000 EUR
+- Conversion Landingpage (One-Pager): ab 2.900 EUR
+- Unternehmenswebsite (mehrseitig): ab 4.500 EUR
 - Individueller Code (kein Baukasten), PageSpeed 90-100, Conversion-optimiert, responsive, SEO-Grundoptimierung inklusive
 - URL: https://webseite.hamburg/leistungen/webdesign
 
 ### E-Commerce Entwicklung
-- Full-Cycle Online-Shop-Entwicklung von einem kleinen, erfahrenen Team (Entwickler, Designer, Texter, Marketing) mit 11+ Jahren Projekterfahrung
+- Full-Cycle Online-Shop-Entwicklung (Strategie, Design, Entwicklung, Texte, Marketing) direkt von Vadim Shchepin, 10+ Jahre Projekterfahrung; bei Bedarf kommen geprufte Spezialisten dazu (Ansprechpartner bleibt Vadim Shchepin)
 - Plattformen: Shopify, Shopware 6, WooCommerce, Custom/Headless (Next.js, Medusa); herstellerneutrale Beratung
 - Leistungen: Strategie & Beratung, Shop-Entwicklung, Erweiterung bestehender Shops, Schnittstellen (ERP/Warenwirtschaft, Payment, Versand, Marktplatze), Produkttexte, Marketing (SEO, Google Ads, Merchant Center), Automatisierungen (Feeds, Lagersync, E-Mail-Flows)
 - Neubau, Migration und Erweiterung; Festpreis-Angebot vor Projektstart
 - URL: https://webseite.hamburg/leistungen/e-commerce-entwicklung
 
 ### SEO & Lokale Sichtbarkeit
-- Ab 2.000 EUR/Monat
+- Ab 1.000 EUR/Monat
 - Google Business Profile, technisches SEO, On-Page-Optimierung, Content-Strategie, Keyword-Tracking
 - Mindestlaufzeit 3 Monate, danach monatlich kundbar
 - URL: https://webseite.hamburg/leistungen/seo
 
 ### AI SEO
-- Ab 2.400 EUR/Monat
+- AI Visibility Sprint: ab 1.500 EUR einmalig (Analyse, Optimierung der wichtigsten Seiten, Schema, Crawler-Konfiguration, Messung vorher/nachher, Ergebnis in 10-14 Tagen)
+- AI Visibility Betreuung: ab 600 EUR/Monat, optional nach dem Sprint, monatlich kundbar
 - Sichtbarkeit in ChatGPT, Perplexity, Google AI Overviews
 - Strukturierte Daten, Autoritats-Signale, AI-optimierter Content, Monitoring
 - URL: https://webseite.hamburg/leistungen/ai-seo
 
 ### Google & Local Ads
-- Ab 1.000 EUR/Monat (Management-Fee, Werbebudget separat)
+- Kampagnen-Setup: ab 700 EUR einmalig; laufende Betreuung: ab 500 EUR/Monat; Werbebudget separat (Empfehlung mindestens 500 EUR/Monat)
 - Google Search Ads, Local Services Ads, Conversion Tracking, laufende Optimierung
 - Voller Zugang zum eigenen Google Ads Konto
 - URL: https://webseite.hamburg/leistungen/google-ads

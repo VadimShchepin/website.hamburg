@@ -272,7 +272,7 @@ contain-intrinsic-size: auto 250px;`}</code></pre>
                 <p>
                     Wie es zu den 10-Sekunden-Thumbnail-Timeouts kam, und welche Sicherheitsarchitektur dahintersteckt,
                     steht im zweiten Teil dieser Serie: <a href="/wissen/dsgvo-fotoplattform-sicherheit-performance">DSGVO-Fotoplattform für Schulen: Was Sicherheit wirklich kostet</a>.
-                    Warum Ladezeit generell über Anfragen entscheidet, erklärt unser Artikel{' '}
+                    Warum Ladezeit generell über Anfragen entscheidet, erklärt der Artikel{' '}
                     <a href="/wissen/warum-langsame-websites-kunden-kosten">Warum langsame Websites Kunden kosten</a>.
                 </p>
 

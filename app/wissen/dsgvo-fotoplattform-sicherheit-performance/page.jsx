@@ -247,7 +247,7 @@ export default function DsgvoFotoplattformArticlePage() {
                     <li><strong>Ehrlich dokumentieren, was offen ist.</strong> Eine bekannte, dokumentierte Schwäche ist handhabbar, eine unbekannte meldet sich als Kundenbeschwerde.</li>
                 </ul>
                 <p>
-                    Wie sich Ladezeit direkt auf Anfragen und Umsatz auswirkt, zeigt unser Grundlagen-Artikel{' '}
+                    Wie sich Ladezeit direkt auf Anfragen und Umsatz auswirkt, zeigt der Grundlagen-Artikel{' '}
                     <a href="/wissen/warum-langsame-websites-kunden-kosten">Warum langsame Websites Sie jeden Tag Kunden kosten</a>.
                 </p>
 

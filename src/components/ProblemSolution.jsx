@@ -20,7 +20,7 @@ export default function ProblemSolution() {
                         </ul>
                     </div>
                     <div className="ps-col ps-col-solution blue-border-left animate-up delay-2">
-                        <h3>Was wir anders machen</h3>
+                        <h3>Was ich anders mache</h3>
                         <ul className="check-list">
                             <li><strong>Marktanalyse:</strong> Verstehen, was Ihre Kunden wirklich suchen.</li>
                             <li><strong>Klarer Conversion-Pfad</strong> von der ersten Sekunde bis zur Anfrage.</li>

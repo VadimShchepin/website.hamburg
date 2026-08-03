@@ -147,9 +147,9 @@ export default function ServicesPageClient() {
 
                         <div className="sp-service-sidebar">
                             <div className="sp-price-card bull-boundary animate-up">
-                                <p className="sp-price-label">One-Pager</p>
-                                <div className="sp-price-value">ab 2.000 &euro;</div>
-                                <p className="sp-price-desc">Kompakte, schnelle Landingpage mit klarem Conversion-Ziel. Ideal fur einzelne Dienstleistungen oder Kampagnen.</p>
+                                <p className="sp-price-label">Conversion Landingpage</p>
+                                <div className="sp-price-value">ab 2.900 &euro;</div>
+                                <p className="sp-price-desc">Fur eine konkrete Dienstleistung oder Kampagne. Inklusive Struktur, Design, Entwicklung, Tracking und SEO-Grundlage.</p>
                                 <ul className="sp-price-includes">
                                     <li>1 Seite, responsiv</li>
                                     <li>Kontaktformular</li>
@@ -158,9 +158,9 @@ export default function ServicesPageClient() {
                                 </ul>
                             </div>
                             <div className="sp-price-card bull-boundary animate-up delay-1">
-                                <p className="sp-price-label">Mehrseitige Website</p>
-                                <div className="sp-price-value">ab 3.000 &euro;</div>
-                                <p className="sp-price-desc">Vollstandige Unternehmenswebsite mit mehreren Seiten, CMS und erweiterter Funktionalitat.</p>
+                                <p className="sp-price-label">Unternehmenswebsite</p>
+                                <div className="sp-price-value">ab 4.500 &euro;</div>
+                                <p className="sp-price-desc">Mehrseitige Website mit Leistungsseiten, Referenzen, CMS und Conversion-Tracking.</p>
                                 <ul className="sp-price-includes">
                                     <li>5+ Seiten</li>
                                     <li>CMS (Inhalte selbst pflegen)</li>
@@ -269,18 +269,29 @@ export default function ServicesPageClient() {
 
                         <div className="sp-service-sidebar">
                             <div className="sp-price-card bull-boundary animate-up">
-                                <p className="sp-price-label">AI SEO Monatlich</p>
-                                <div className="sp-price-value">ab 1.200 &euro;/Mt.</div>
-                                <p className="sp-price-desc">Alles aus dem SEO-Paket plus gezielte AI-Sichtbarkeits-Optimierung. Ideal als Erweiterung oder eigenstehend.</p>
+                                <p className="sp-price-label">AI Visibility Sprint</p>
+                                <div className="sp-price-value">ab 1.500 &euro;</div>
+                                <p className="sp-price-desc">Einmalig. Ihre wichtigsten Seiten werden fur AI-Antworten aufbereitet, mit Messung vorher und nachher. Ergebnis in 10 bis 14 Tagen.</p>
                                 <ul className="sp-price-includes">
-                                    <li>Alles aus SEO inklusive</li>
-                                    <li>AI-Sichtbarkeits-Audit</li>
+                                    <li>AI-Sichtbarkeits-Analyse</li>
+                                    <li>Optimierung der wichtigsten Seiten</li>
                                     <li>Schema Markup / Structured Data</li>
-                                    <li>AI-optimierte Content-Strategie</li>
-                                    <li>AI-Antwort-Monitoring</li>
+                                    <li>Crawler-Konfiguration und Indexierung</li>
+                                    <li>Messung vorher und nachher</li>
                                 </ul>
                             </div>
-                            <p className="sp-price-note animate-up">Kann als Upgrade zum SEO-Paket oder als eigenstehende Leistung gebucht werden.</p>
+                            <div className="sp-price-card bull-boundary animate-up delay-1">
+                                <p className="sp-price-label">AI Visibility Betreuung</p>
+                                <div className="sp-price-value">ab 600 &euro;/Mt.</div>
+                                <p className="sp-price-desc">Optional nach dem Sprint, monatlich kundbar. Fur Unternehmen, die ihre Position halten und ausbauen wollen.</p>
+                                <ul className="sp-price-includes">
+                                    <li>Laufendes AI-Antwort-Monitoring</li>
+                                    <li>Neue zitierfahige Inhalte</li>
+                                    <li>Autoritats- und Vertrauensaufbau</li>
+                                    <li>Monatlicher Report</li>
+                                </ul>
+                            </div>
+                            <p className="sp-price-note animate-up">Kein teurer Vertrag, bevor Sie wissen, was der Kanal bringt. Erst der Sprint, dann entscheiden Sie.</p>
                         </div>
                     </div>
                 </div>
@@ -320,19 +331,27 @@ export default function ServicesPageClient() {
 
                         <div className="sp-service-sidebar">
                             <div className="sp-price-card bull-boundary animate-up">
-                                <p className="sp-price-label">Ads Management</p>
-                                <div className="sp-price-value">ab 500 &euro;/Mt.</div>
-                                <p className="sp-price-desc">Management-Fee fur Kampagnenerstellung und laufende Optimierung. Werbebudget kommt separat dazu (Sie bestimmen die Hohe).</p>
+                                <p className="sp-price-label">Kampagnen-Setup</p>
+                                <div className="sp-price-value">ab 700 &euro;</div>
+                                <p className="sp-price-desc">Einmalig. Das Konto steht sauber aufgesetzt und messbar da, auch wenn Sie danach selbst weitermachen wollen.</p>
                                 <ul className="sp-price-includes">
-                                    <li>Kampagnen-Setup & Struktur</li>
+                                    <li>Kampagnen-Struktur & Kontoaufbau</li>
                                     <li>Keyword-Recherche</li>
                                     <li>Anzeigentexte & Erweiterungen</li>
                                     <li>Conversion Tracking</li>
-                                    <li>Laufende Optimierung</li>
+                                </ul>
+                            </div>
+                            <div className="sp-price-card bull-boundary animate-up delay-1">
+                                <p className="sp-price-label">Laufende Betreuung</p>
+                                <div className="sp-price-value">ab 500 &euro;/Mt.</div>
+                                <p className="sp-price-desc">Monatlich kundbar. Werbebudget kommt separat dazu (Sie bestimmen die Hohe).</p>
+                                <ul className="sp-price-includes">
+                                    <li>Wochentliche Optimierung</li>
+                                    <li>Anzeigen- und Landingpage-Tests</li>
                                     <li>Monatlicher Performance-Report</li>
                                 </ul>
                             </div>
-                            <p className="sp-price-note animate-up">Empfohlenes Mindest-Werbebudget: 500 &euro;/Mt. Je nach Branche und Region konnen auch kleinere Budgets sinnvoll sein. Das klaren wir im Erstgesprach.</p>
+                            <p className="sp-price-note animate-up">Dazu kommt Ihr Werbebudget, empfohlen sind mindestens 500 &euro;/Mt. Es lauft uber Ihr eigenes Google-Konto, ich verdiene daran nichts. Den passenden Rahmen klaren wir im Erstgesprach.</p>
                         </div>
                     </div>
                 </div>
@@ -476,6 +495,10 @@ export default function ServicesPageClient() {
                         <FaqItem
                             q="Kann ich die Ergebnisse wirklich jederzeit einsehen?"
                             a="Ja. Sie bekommen Zugang zu Live-Dashboards fur SEO-Rankings, Traffic und Ads-Performance. Dazu monatliche Reports mit Zusammenfassung. Kein Warten auf Updates, die Daten sind immer da."
+                        />
+                        <FaqItem
+                            q="Arbeiten Sie allein oder mit einem Team?"
+                            a="Sie arbeiten direkt mit mir. Analyse, Website, SEO und Ads mache ich selbst, es gibt keinen Account-Manager dazwischen. Wenn ein Projekt zusatzliche Expertise braucht, etwa bei Design, Text oder Fotografie, hole ich Spezialisten dazu, mit denen ich regelmassig arbeite. Ihr Ansprechpartner und verantwortlich fur das Ergebnis bleibe ich."
                         />
                         <FaqItem
                             q="Warum sollte ich nicht einfach eine gunstigere Agentur nehmen?"

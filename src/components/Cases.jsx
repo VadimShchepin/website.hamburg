@@ -5,7 +5,7 @@ export default function Cases() {
         <section id="cases" className="cases section section-divider-top section-divider-bottom">
             <div className="container">
                 <div className="section-header text-center">
-                    <p className="section-kicker animate-up">So arbeiten wir</p>
+                    <p className="section-kicker animate-up">So arbeite ich</p>
                     <h2 className="section-title animate-up">Vom Erstgesprach zum Ergebnis.</h2>
                 </div>
 

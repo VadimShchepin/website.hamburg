@@ -60,7 +60,7 @@ export default function UeberUnsPage() {
                     <p className="section-kicker animate-up">Über AISEO</p>
                     <h1 className="subpage-title animate-up">Ergebnisse statt Versprechen.</h1>
                     <p className="subpage-intro animate-up">
-                        Ich bin kein Agentur-Netzwerk mit Account-Managern und Projektleitern zwischen Ihnen und der Arbeit. Wenn Sie mit AISEO arbeiten, arbeiten Sie direkt mit mir, dem Menschen, der Ihre <Link href="/leistungen/webdesign">Website baut</Link>, Ihr <Link href="/leistungen/seo">SEO</Link> macht und Ihre <Link href="/leistungen/google-ads">Ads</Link> schaltet.
+                        Ich bin kein Agentur-Netzwerk mit Account-Managern und Projektleitern zwischen Ihnen und der Arbeit. Wenn Sie mit AISEO arbeiten, arbeiten Sie direkt mit mir, dem Menschen, der Ihre <Link href="/leistungen/webdesign">Website baut</Link>, Ihr <Link href="/leistungen/seo">SEO</Link> macht und Ihre <Link href="/leistungen/google-ads">Ads</Link> schaltet. Braucht ein Projekt zusätzliche Expertise, etwa bei Design, Text oder Fotografie, hole ich geprüfte Spezialisten dazu. Ihr Ansprechpartner und der Verantwortliche für das Ergebnis bleibe ich.
                     </p>
                 </div>
             </section>

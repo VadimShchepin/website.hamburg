@@ -30,7 +30,7 @@ export default function CookieConsent() {
         <div className="cookie-banner" role="dialog" aria-label="Cookie-Hinweis">
             <div className="cookie-banner-inner">
                 <p>
-                    Wir nutzen datenschutzfreundliche Analyse-Tools, um unsere Website zu verbessern. Keine personenbezogenen Daten, keine Cookies.{' '}
+                    Ich nutze datenschutzfreundliche Analyse-Tools, um diese Website zu verbessern. Keine personenbezogenen Daten, keine Cookies.{' '}
                     <Link href="/datenschutz">Mehr erfahren</Link>
                 </p>
                 <div className="cookie-actions">

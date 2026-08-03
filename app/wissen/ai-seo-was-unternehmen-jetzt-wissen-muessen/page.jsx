@@ -89,7 +89,7 @@ export default function AiSeoArticlePage() {
 
                 <h2>Der konkrete Unterschied: Traditionelles SEO vs. AI SEO</h2>
                 <p>
-                    Traditionelles SEO dreht sich um Keywords, Backlinks, Core Web Vitals und technische Crawlbarkeit, wie es beispielsweise in unserem <a href="/wissen/lokales-seo-hamburg-guide">Leitfaden zu lokalem SEO in Hamburg</a> beschrieben wird. Das Ziel:
+                    Traditionelles SEO dreht sich um Keywords, Backlinks, Core Web Vitals und technische Crawlbarkeit, wie es beispielsweise im <a href="/wissen/lokales-seo-hamburg-guide">Leitfaden zu lokalem SEO in Hamburg</a> beschrieben wird. Das Ziel:
                     Position 1-3 in den organischen Suchergebnissen. AI SEO hat ein anderes Ziel: die Quelle sein, die ein
                     Sprachmodell zitiert.
                 </p>
@@ -143,11 +143,11 @@ export default function AiSeoArticlePage() {
 
                 <h2>Praxisbeispiel: DSGVO-konforme Schulfotos-App</h2>
                 <blockquote>
-                    Fur eine DSGVO-konforme Schulfotos-App haben wir die Inhalte so strukturiert, dass sie in ChatGPT und Perplexity
+                    Fur eine DSGVO-konforme Schulfotos-App habe ich die Inhalte so strukturiert, dass sie in ChatGPT und Perplexity
                     auf Platz 1 erscheinen, und das fur hochkompetitive Suchanfragen.
                 </blockquote>
                 <p>
-                    Was haben wir konkret gemacht? Die Produktseite wurde mit vollstandigem FAQ-Schema ausgezeichnet,
+                    Was habe ich konkret gemacht? Die Produktseite wurde mit vollstandigem FAQ-Schema ausgezeichnet,
                     jede Frage als eigenstandiger Absatz mit H2-Uberschrift strukturiert, und die Antworten auf 2-3 Satze
                     reduziert. Dazu kamen Author-Markup, Organization-Schema und eine dedizierte Expertise-Seite fur den
                     Grundungsteam. Das Ergebnis: Sowohl ChatGPT als auch Perplexity zitieren die Seite als primare Quelle,

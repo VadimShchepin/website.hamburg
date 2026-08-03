@@ -14,7 +14,7 @@ import Cta from '../src/components/Cta';
 const faqItems = [
     {
         q: 'Was kostet eine professionelle Website?',
-        a: 'Ein One-Pager beginnt ab 4.000 Euro, eine mehrseitige Website ab 6.000 Euro. Den finalen Preis erhalten Sie nach dem kostenlosen Erstgespräch, schriftlich und ohne versteckte Kosten.',
+        a: 'Eine Conversion Landingpage beginnt ab 2.900 Euro, eine mehrseitige Unternehmenswebsite ab 4.500 Euro. Den finalen Preis erhalten Sie nach dem kostenlosen Erstgespräch, schriftlich und ohne versteckte Kosten.',
     },
     {
         q: 'Wie lange dauert die Erstellung einer Website?',
@@ -22,7 +22,7 @@ const faqItems = [
     },
     {
         q: 'Was passiert in der kostenlosen Website-Analyse?',
-        a: 'Wir prüfen Ladezeit, SEO, Struktur und Conversion-Potenzial Ihrer aktuellen Website und senden Ihnen innerhalb von 48 Stunden drei konkrete Verbesserungsvorschläge. Unverbindlich und ohne Verkaufsgespräch.',
+        a: 'Ich prüfe Ladezeit, SEO, Struktur und Conversion-Potenzial Ihrer aktuellen Website und sende Ihnen innerhalb von 48 Stunden drei konkrete Verbesserungsvorschläge. Unverbindlich und ohne Verkaufsgespräch.',
     },
     {
         q: 'Wie schnell sehe ich SEO-Ergebnisse?',
@@ -34,7 +34,7 @@ const faqItems = [
     },
     {
         q: 'Arbeiten Sie nur mit Unternehmen aus Hamburg?',
-        a: 'Der Schwerpunkt liegt auf Hamburg und Umgebung, dort kennen wir den Markt am besten. Projekte in ganz Deutschland setzen wir remote um, mit denselben Standards.',
+        a: 'Der Schwerpunkt liegt auf Hamburg und Umgebung, dort kenne ich den Markt am besten. Projekte in ganz Deutschland setze ich remote um, mit denselben Standards.',
     },
 ];
 
@@ -102,7 +102,7 @@ export default function HomePage() {
             <Founder />
             <Proof />
             <Cases />
-            <FaqSection title="Was Unternehmer uns am häufigsten fragen" items={faqItems} />
+            <FaqSection title="Was Unternehmer mich am häufigsten fragen" items={faqItems} />
             <section className="section light-bg">
                 <div className="container">
                     <div className="section-header text-center" style={{ marginBottom: 'var(--space-xl)' }}>

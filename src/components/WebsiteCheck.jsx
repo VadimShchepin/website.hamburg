@@ -187,7 +187,7 @@ export default function WebsiteCheck() {
 
                 {phase === 'error' && (
                     <div className="wc-error">
-                        Diese Adresse konnten wir nicht erreichen. Prüfen Sie die Schreibweise (z.&nbsp;B. <strong>ihre-website.de</strong>) und versuchen Sie es erneut.
+                        Diese Adresse war nicht erreichbar. Prüfen Sie die Schreibweise (z.&nbsp;B. <strong>ihre-website.de</strong>) und versuchen Sie es erneut.
                     </div>
                 )}
 
@@ -195,7 +195,7 @@ export default function WebsiteCheck() {
                     <div className="wc-results">
                         <div className="wc-scores">
                             {psiFailed ? (
-                                <p className="wc-psi-note">Der Google-PageSpeed-Test ist gerade ausgelastet. Hier sind Ihre SEO-Grundlagen – die volle Messung liefern wir in der kostenlosen Analyse nach.</p>
+                                <p className="wc-psi-note">Der Google-PageSpeed-Test ist gerade ausgelastet. Hier sind Ihre SEO-Grundlagen – die volle Messung liefere ich in der kostenlosen Analyse nach.</p>
                             ) : (
                                 <>
                                     <ScoreRing score={psi?.performance ?? null} label="Performance (Mobil)" />

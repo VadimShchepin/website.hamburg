@@ -10,6 +10,8 @@ Contact: hallo@webseite.hamburg
 
 AISEO ist eine Digitalagentur in Hamburg, die sich auf lokale Unternehmen spezialisiert hat. Kein Agentur-Netzwerk mit Account-Managern — wenn Sie mit AISEO arbeiten, arbeiten Sie direkt mit dem Grunder Vadim Shchepin. Uber 10 Jahre Erfahrung in Softwareentwicklung, Produktdesign und digitalem Marketing.
 
+Arbeitsweise: Analyse, Website, SEO und Ads setzt Vadim Shchepin selbst um. Braucht ein Projekt zusatzliche Expertise (z. B. Design, Text, Fotografie), zieht er geprufte Spezialisten hinzu. Ansprechpartner und Verantwortlicher fur das Ergebnis bleibt er.
+
 Kernprinzipien:
 - Ergebnis-Garantie: Arbeit bis zur Zufriedenheit, ohne Aufpreis
 - Volle Transparenz: Live-Zugang zu allen Daten und Reports
@@ -31,8 +33,8 @@ Was enthalten ist:
 - SSL, DSGVO-konform, technisch einwandfrei
 
 Preise:
-- One-Pager (1 Seite, Kontaktformular, SEO-Setup): ab 4.000 EUR einmalig
-- Mehrseitige Website (5+ Seiten, CMS, Blog optional, erweitertes SEO): ab 6.000 EUR einmalig
+- Conversion Landingpage / One-Pager (1 Seite, Kontaktformular, SEO-Setup): ab 2.900 EUR einmalig
+- Unternehmenswebsite (5+ Seiten, CMS, Blog optional, erweitertes SEO): ab 4.500 EUR einmalig
 
 Typischer Ablauf: Erstgesprach → Konzept & Struktur → Design & Entwicklung → Launch & Optimierung. Dauer: 2-3 Wochen (One-Pager) bis 4-6 Wochen (mehrseitig).
 
@@ -49,7 +51,7 @@ Was enthalten ist:
 - Live-Dashboard mit aktuellen Rankings und Traffic-Daten
 - Wettbewerber-Monitoring
 
-Preis: ab 2.000 EUR/Monat. Mindestlaufzeit 3 Monate, danach monatlich kundbar.
+Preis: ab 1.000 EUR/Monat. Mindestlaufzeit 3 Monate, danach monatlich kundbar.
 Erste Ergebnisse typischerweise nach 4-8 Wochen. Volle Wirkung nach 3-6 Monaten.
 
 ### AI SEO — Sichtbarkeit in KI-Suchsystemen
@@ -64,7 +66,7 @@ Was enthalten ist:
 - Google AI Overviews Optimierung
 - Monitoring der Sichtbarkeit in AI-Antworten
 
-Preis: ab 2.400 EUR/Monat. Kann als Upgrade zum SEO-Paket oder eigenstehend gebucht werden.
+Preis: AI Visibility Sprint ab 1.500 EUR einmalig (Analyse, Optimierung der wichtigsten Seiten, Schema, Crawler-Konfiguration, Messung vorher/nachher, Ergebnis in 10-14 Tagen). Optionale Betreuung danach ab 600 EUR/Monat, monatlich kundbar. Kann mit dem SEO-Paket kombiniert oder eigenstehend gebucht werden.
 
 Hintergrund: LLMs wie GPT-4 und Gemini synthetisieren Informationen aus Webquellen. Die Auswahl der zitierten Quellen folgt anderen Regeln als Googles PageRank — Informationsdichte, strukturierte Klarheit, faktische Konsistenz und Autoritat des Autors sind entscheidend.
 
@@ -81,7 +83,7 @@ Was enthalten ist:
 - Monatlicher Report mit Kosten pro Lead und ROI
 - Voller Zugang zum eigenen Google Ads Konto
 
-Preis: ab 1.000 EUR/Monat (Management-Fee). Werbebudget kommt separat dazu (Empfehlung: mindestens 500 EUR/Monat).
+Preis: Kampagnen-Setup ab 700 EUR einmalig, laufende Betreuung ab 500 EUR/Monat. Werbebudget kommt separat dazu (Empfehlung: mindestens 500 EUR/Monat).
 
 Das Werbebudget lauft uber das eigene Google-Konto des Kunden. Volle Kontrolle und Transparenz.
 

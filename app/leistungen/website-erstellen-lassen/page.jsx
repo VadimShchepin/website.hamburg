@@ -7,22 +7,22 @@ import ServiceMeta from '../../../src/components/ServiceMeta';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'Website erstellen lassen Hamburg | Professionell ab 4.000 €',
-    description: 'Website erstellen lassen in Hamburg: individuell programmiert, Lighthouse 90–100, Festpreis ab 4.000 €. Keine Baukästen, keine versteckten Kosten, fertig in 2–6 Wochen.',
+    title: 'Website erstellen lassen Hamburg | Professionell ab 2.900 €',
+    description: 'Website erstellen lassen in Hamburg: individuell programmiert, Lighthouse 90–100, Festpreis ab 2.900 €. Keine Baukästen, keine versteckten Kosten, fertig in 2–6 Wochen.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/website-erstellen-lassen',
     },
     openGraph: {
-        title: 'Website erstellen lassen Hamburg | Professionell ab 4.000 €',
-        description: 'Website erstellen lassen in Hamburg: individuell programmiert, Lighthouse 90–100, Festpreis ab 4.000 €. Keine Baukästen, keine versteckten Kosten.',
+        title: 'Website erstellen lassen Hamburg | Professionell ab 2.900 €',
+        description: 'Website erstellen lassen in Hamburg: individuell programmiert, Lighthouse 90–100, Festpreis ab 2.900 €. Keine Baukästen, keine versteckten Kosten.',
         url: 'https://webseite.hamburg/leistungen/website-erstellen-lassen',
         type: 'website',
     },
 };
 
 const faqItems = [
-    { q: 'Was kostet es, eine Website erstellen zu lassen?', a: 'Ein One-Pager startet ab 4.000 €, eine mehrseitige Website ab 6.000 €. Der finale Preis hängt vom Umfang ab, aber Sie erhalten vor Projektstart ein verbindliches Festpreis-Angebot. Keine versteckten Kosten, keine Überraschungen.' },
-    { q: 'Wie lange dauert die Erstellung?', a: 'Ein One-Pager ist in 2–3 Wochen fertig, eine mehrseitige Website in 4–6 Wochen. Der genaue Zeitrahmen hängt vom Umfang und Ihrem Feedback-Tempo ab. Den konkreten Zeitplan besprechen wir im Erstgespräch.' },
+    { q: 'Was kostet es, eine Website erstellen zu lassen?', a: 'Eine Conversion Landingpage (One-Pager) startet ab 2.900 €, eine mehrseitige Unternehmenswebsite ab 4.500 €. Der finale Preis hängt vom Umfang ab, aber Sie erhalten vor Projektstart ein verbindliches Festpreis-Angebot. Keine versteckten Kosten, keine Überraschungen.' },
+    { q: 'Wie lange dauert die Erstellung?', a: 'Eine Landingpage ist in 2–3 Wochen fertig, eine mehrseitige Website in 4–6 Wochen. Der genaue Zeitrahmen hängt vom Umfang und Ihrem Feedback-Tempo ab. Den konkreten Zeitplan besprechen wir im Erstgespräch.' },
     { q: 'Baukasten, WordPress oder individuell programmiert: was ist besser?', a: 'Baukästen wie Wix oder Squarespace sind günstig im Start, aber durch Templates begrenzt und oft langsam. WordPress-Themes sind flexibler, brauchen aber Pflege und Plugins. Individuell programmierter Code liefert die beste Performance (Lighthouse 90–100), volle Gestaltungsfreiheit und keine Plattform-Abhängigkeit, also die richtige Wahl für Unternehmen mit Anspruch. Genau das baue ich.' },
     { q: 'Nutzen Sie WordPress oder Baukastensysteme?', a: 'Standardmäßig nein, jede Website wird individuell programmiert. Das garantiert maximale Performance, volle Flexibilität und Unabhängigkeit von Plattform-Einschränkungen. Wenn Sie Inhalte selbst pflegen wollen, binde ich ein CMS ein.' },
     { q: 'Ist die Website SEO-optimiert?', a: 'Ja. Jede Website enthält eine SEO-Grundoptimierung: saubere URL-Struktur, Meta-Tags, strukturierte Daten (Schema.org), semantisches HTML, Bildoptimierung und Mobile-First-Entwicklung. Für laufende SEO-Betreuung gibt es separate Pakete.' },
@@ -38,10 +38,10 @@ export default function WebsiteErstellenLassenPage() {
         provider: BUSINESS,
         areaServed: { '@type': 'City', name: 'Hamburg' },
         url: 'https://webseite.hamburg/leistungen/website-erstellen-lassen',
-        description: 'Professionelle Website erstellen lassen in Hamburg. Individuell programmiert, Lighthouse 90–100, Festpreis ab 4.000 €.',
+        description: 'Professionelle Website erstellen lassen in Hamburg. Individuell programmiert, Lighthouse 90–100, Festpreis ab 2.900 €.',
         offers: [
-            { '@type': 'Offer', name: 'One-Pager', price: '4000', priceCurrency: 'EUR' },
-            { '@type': 'Offer', name: 'Mehrseitige Website', price: '6000', priceCurrency: 'EUR' },
+            { '@type': 'Offer', name: 'Conversion Landingpage', price: '2900', priceCurrency: 'EUR' },
+            { '@type': 'Offer', name: 'Unternehmenswebsite', price: '4500', priceCurrency: 'EUR' },
         ],
     };
 
@@ -80,15 +80,15 @@ export default function WebsiteErstellenLassenPage() {
                 <div className="container subpage-body">
                     <h2 className="animate-up">Was kostet es, eine Website erstellen zu lassen?</h2>
                     <div className="subpage-takeaway animate-up">
-                        <p>Eine Website erstellen zu lassen kostet bei mir <strong>ab 4.000 €</strong> (One-Pager) bzw. <strong>ab 6.000 €</strong> (mehrseitig), jeweils als verbindlicher Festpreis vor Projektstart. Sie wird individuell programmiert, ohne Baukasten und ohne gekauftes Theme, und erreicht Lighthouse-Werte von 90–100. Ein One-Pager ist in 2–3 Wochen fertig, eine mehrseitige Website in 4–6 Wochen.</p>
+                        <p>Eine Website erstellen zu lassen kostet bei mir <strong>ab 2.900 €</strong> (Conversion Landingpage) bzw. <strong>ab 4.500 €</strong> (mehrseitige Unternehmenswebsite), jeweils als verbindlicher Festpreis vor Projektstart. Sie wird individuell programmiert, ohne Baukasten und ohne gekauftes Theme, und erreicht Lighthouse-Werte von 90–100. Ein One-Pager ist in 2–3 Wochen fertig, eine mehrseitige Website in 4–6 Wochen.</p>
                     </div>
 
                     <p className="animate-up">Transparente Preise statt vager Schätzungen. Sie wissen vor Projektstart genau, was Sie investieren und was Sie dafür bekommen.</p>
                     <div className="subpage-pricing-compare animate-up">
                         <div className="subpage-price-col">
-                            <h3>One-Pager</h3>
-                            <div className="sp-price-value">ab 4.000 &euro;</div>
-                            <p>Kompakte Landingpage mit einem klaren Ziel. Ideal für Dienstleister, Kampagnen oder als Einstieg.</p>
+                            <h3>Conversion Landingpage</h3>
+                            <div className="sp-price-value">ab 2.900 &euro;</div>
+                            <p>Für eine konkrete Dienstleistung oder Kampagne. Inklusive Struktur, Design, Entwicklung, Tracking und SEO-Grundlage.</p>
                             <ul className="sp-price-includes">
                                 <li>1 Seite, vollständig responsiv</li>
                                 <li>Individuelles Design</li>
@@ -100,9 +100,9 @@ export default function WebsiteErstellenLassenPage() {
                             </ul>
                         </div>
                         <div className="subpage-price-col subpage-price-featured">
-                            <h3>Mehrseitige Website</h3>
-                            <div className="sp-price-value">ab 6.000 &euro;</div>
-                            <p>Vollständige Unternehmenswebsite mit Struktur für Wachstum. CMS optional.</p>
+                            <h3>Unternehmenswebsite</h3>
+                            <div className="sp-price-value">ab 4.500 &euro;</div>
+                            <p>Mehrseitige Website mit Leistungsseiten, Referenzen, CMS und Conversion-Tracking.</p>
                             <ul className="sp-price-includes">
                                 <li>5+ Seiten</li>
                                 <li>Individuelles Design & Konzept</li>
@@ -180,7 +180,7 @@ export default function WebsiteErstellenLassenPage() {
                         <li>Zielgruppe: Wer soll die Website finden und was soll er als nächstes tun?</li>
                         <li>Wettbewerber: Zwei bis drei Websites, die Ihnen gefallen, und zwei, die nicht funktionieren.</li>
                         <li>Content: Haben Sie Texte, Fotos und Logo bereits? Oder muss das alles noch entstehen?</li>
-                        <li>Budget: Grober Rahmen (ab 4.000 € für einen One-Pager, ab 6.000 € für mehrseitig).</li>
+                        <li>Budget: Grober Rahmen (ab 2.900 € für eine Landingpage, ab 4.500 € für eine mehrseitige Website).</li>
                         <li>Zeitplan: Gibt es einen konkreten Launch-Termin (Messe, Eröffnung, Kampagne)?</li>
                     </ul>
 

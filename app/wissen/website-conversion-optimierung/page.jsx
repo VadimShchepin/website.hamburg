@@ -122,7 +122,7 @@ export default function ConversionOptimierungArticlePage() {
                     <li>Ein echtes Foto von Ihnen oder Ihrem Team. Stockfotos wirken oft eher misstrauisch.</li>
                 </ul>
                 <p>
-                    Platzieren Sie diese Signale dort, wo Besucher entscheiden: neben dem Kontaktformular, neben der Preisangabe, neben dem CTA. Mehr dazu in unseren <a href="/referenzen">Referenzen</a>, wo echte Ergebnisse aus Hamburger Projekten stehen.
+                    Platzieren Sie diese Signale dort, wo Besucher entscheiden: neben dem Kontaktformular, neben der Preisangabe, neben dem CTA. Mehr dazu in den <a href="/referenzen">Referenzen</a>, wo echte Ergebnisse aus Hamburger Projekten stehen.
                 </p>
 
                 <h2>Mobil: kein Luxus, sondern Pflicht</h2>
@@ -142,12 +142,12 @@ export default function ConversionOptimierungArticlePage() {
                     Page Speed ist nicht nur ein SEO-Thema, sondern wirkt direkt auf die Conversion. Eine vielzitierte Auswertung von <a href="https://www.portent.com/blog/design-dev/site-speed-is-still-impacting-your-conversion-rate.htm" target="_blank" rel="noopener noreferrer">Portent</a> fand, dass die Conversion-Rate mit jeder zusätzlichen Sekunde Ladezeit im Bereich von 0 bis 5 Sekunden im Schnitt um rund 4,4 Prozent sinkt. Eine Seite, die in einer Sekunde lädt, konvertiert demnach etwa zweieinhalbmal so gut wie eine, die fünf Sekunden braucht.
                 </p>
                 <p>
-                    Die üblichen Ursachen für langsame Seiten: unkomprimierte Bilder, zu viele Plugins, billiges Hosting und nicht optimierter Code. Wir gehen dem im Artikel <a href="/wissen/warum-langsame-websites-kunden-kosten">Warum langsame Websites Kunden kosten</a> genauer nach. Testen können Sie Ihre Seite kostenlos mit Google PageSpeed Insights. Wer von Grund auf schnell bauen will, findet das in unserem <a href="/leistungen/webdesign">Webdesign</a> wieder, und für Shops im Detail unter <a href="/leistungen/e-commerce-entwicklung">E-Commerce-Entwicklung</a>.
+                    Die üblichen Ursachen für langsame Seiten: unkomprimierte Bilder, zu viele Plugins, billiges Hosting und nicht optimierter Code. Ich gehe dem im Artikel <a href="/wissen/warum-langsame-websites-kunden-kosten">Warum langsame Websites Kunden kosten</a> genauer nach. Testen können Sie Ihre Seite kostenlos mit Google PageSpeed Insights. Wer von Grund auf schnell bauen will, findet das in meinem <a href="/leistungen/webdesign">Webdesign</a> wieder, und für Shops im Detail unter <a href="/leistungen/e-commerce-entwicklung">E-Commerce-Entwicklung</a>.
                 </p>
 
                 <h2>Ein Beispiel aus Hamburg</h2>
                 <blockquote>
-                    Für einen Beauty-Coworking-Space in Hamburg haben wir die Nutzerführung neu aufgebaut und ein Buchungssystem integriert. Zwei Monate später: rund 5.000 Impressionen und ausgebuchte Arbeitsplätze, ganz ohne Werbebudget.
+                    Für einen Beauty-Coworking-Space in Hamburg habe ich die Nutzerführung neu aufgebaut und ein Buchungssystem integriert. Zwei Monate später: rund 5.000 Impressionen und ausgebuchte Arbeitsplätze, ganz ohne Werbebudget.
                 </blockquote>
                 <p>
                     Keine Magie. Nur eine Website, die Besuchern nicht im Weg steht: klare Navigation, sichtbare Buchungsmöglichkeit, schnelle Ladezeiten und echtes Vertrauen durch Bilder und Bewertungen.

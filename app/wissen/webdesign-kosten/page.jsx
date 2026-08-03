@@ -265,7 +265,7 @@ export default function WebdesignKostenArticlePage() {
                     als einem Monat amortisiert. Laut einer Studie von <a href="https://www.standoutdigitalmarketing.com/" target="_blank" rel="noopener noreferrer">StandOut Digital Marketing</a> generieren
                     professionell optimierte Websites bis zu 3x mehr Anfragen als Standard-Templates. Mehr zu den
                     M&ouml;glichkeiten professionellen <Link href="/leistungen/webdesign">Webdesigns</Link> finden
-                    Sie auf unserer Leistungsseite.
+                    Sie auf der Leistungsseite.
                 </p>
 
                 <h2>Webdesign Kosten in Hamburg: Was Agenturen berechnen</h2>
@@ -287,13 +287,13 @@ export default function WebdesignKostenArticlePage() {
                     spezialisierten Boutique-Agenturen.
                 </p>
                 <p>
-                    Bei AISEO Hamburg verfolgen wir einen transparenten Ansatz: One-Pager starten ab 4.000
-                    Euro, mehrseitige Websites ab 6.000 Euro, jeweils inklusive SEO-Grundoptimierung und
+                    Bei AISEO Hamburg verfolge ich einen transparenten Ansatz: Eine Conversion Landingpage startet ab 2.900
+                    Euro, eine mehrseitige Unternehmenswebsite ab 4.500 Euro, jeweils inklusive SEO-Grundoptimierung und
                     Performance-Optimierung. Kein Kleingedrucktes, keine &Uuml;berraschungen nach
-                    Projektstart. Was im Angebot steht, ist der Preis. Unsere Referenzen zeigen, was
+                    Projektstart. Was im Angebot steht, ist der Preis. Meine Referenzen zeigen, was
                     dabei herauskommt: Die <Link href="/referenzen/blitz-hamburg">Website f&uuml;r Blitz Hamburg</Link> erzielte
                     nach dem Launch eine Ladezeit unter 1 Sekunde und steigende Kundenanfragen.
-                    Details zu unserem Angebot finden Sie unter <Link href="/leistungen/website-erstellen-lassen">Website erstellen lassen</Link>.
+                    Details zu meinem Angebot finden Sie unter <Link href="/leistungen/website-erstellen-lassen">Website erstellen lassen</Link>.
                 </p>
 
                 <h2>Worauf Sie bei der Agenturwahl achten sollten</h2>
@@ -352,7 +352,7 @@ export default function WebdesignKostenArticlePage() {
                     Stadt, der nach Ihrer Dienstleistung sucht.
                 </p>
                 <p>
-                    Besonders wichtig ist die Performance-Optimierung. Wie unsere Analyse zeigt, kostet
+                    Besonders wichtig ist die Performance-Optimierung. Wie meine Analyse zeigt, kostet
                     eine <Link href="/wissen/warum-langsame-websites-kunden-kosten">langsame Website</Link> nicht
                     nur Nerven, sondern bares Geld: Jede Sekunde l&auml;ngere Ladezeit reduziert die
                     Conversion-Rate um durchschnittlich 7 Prozent. Investitionen in Geschwindigkeit

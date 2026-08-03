@@ -231,7 +231,7 @@ export default function DybeautyCaseStudy() {
                     <div className="subpage-features-grid animate-up">
                         <Link href="/leistungen/seo" className="subpage-feature" style={{ textDecoration: 'none' }}>
                             <h3>SEO fur E-Commerce</h3>
-                            <p>Technisches SEO, Produktoptimierung und Content-Strategie fur Online-Shops. Ab 2.000 &euro;/Mt.</p>
+                            <p>Technisches SEO, Produktoptimierung und Content-Strategie fur Online-Shops. Ab 1.000 &euro;/Mt.</p>
                         </Link>
                         <Link href="/leistungen/website-audit" className="subpage-feature" style={{ textDecoration: 'none' }}>
                             <h3>Website-Audit</h3>

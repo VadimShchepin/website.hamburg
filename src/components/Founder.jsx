@@ -32,10 +32,11 @@ export default function Founder() {
                         <p className="section-kicker animate-up">Wer dahinter steht</p>
                         <h2 className="section-title animate-up">Sie sprechen direkt mit dem Entwickler.</h2>
                         <p className="large-text animate-up">
-                            Ich bin Vadim Shchepin, Webentwickler aus Hamburg. Bei mir gibt es keine Projektmanager-Zwischenebene und keine ausgelagerte Umsetzung: Analyse, Design, Code und Betreuung kommen aus einer Hand.
+                            Ich bin Vadim Shchepin, Webentwickler aus Hamburg. Bei mir gibt es keine Projektmanager-Zwischenebene: Analyse, Design, Code und Betreuung liegen in einer Hand, und Sie sprechen immer mit der Person, die Ihr Projekt auch umsetzt.
                         </p>
                         <ul className="check-list mt-4 animate-up">
                             <li><strong>Direkter Draht:</strong> Sie erreichen mich per Telefon, E-Mail oder WhatsApp, ohne Ticketsystem.</li>
+                            <li><strong>Spezialisten nur bei Bedarf:</strong> Braucht ein Projekt zusätzliche Expertise, hole ich geprüfte Spezialisten dazu. Verantwortlich bleibe ich.</li>
                             <li><strong>10+ Jahre Erfahrung</strong> in Webentwicklung, SEO und Google Ads.</li>
                             <li><strong>Aus Hamburg, für Hamburg:</strong> Persönliches Kennenlernen vor Ort möglich.</li>
                         </ul>

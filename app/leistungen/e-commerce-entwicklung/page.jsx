@@ -12,11 +12,11 @@ const PAGE_URL = `${SITE_URL}/leistungen/e-commerce-entwicklung`;
 
 export const metadata = {
     title: 'E-Commerce Entwicklung Hamburg | Shop-Entwicklung & Beratung',
-    description: 'E-Commerce Agentur aus Hamburg: ein kleines, erfahrenes Team aus Entwicklern, Designern, Textern und Marketing. Shop-Entwicklung, Erweiterung, Automatisierung und Beratung für Shopify, Shopware, WooCommerce und Custom-Shops. 11 Jahre Erfahrung.',
+    description: 'E-Commerce Entwicklung aus Hamburg: Sie arbeiten direkt mit dem Entwickler. Shop-Entwicklung, Erweiterung, Automatisierung und Beratung für Shopify, Shopware, WooCommerce und Custom-Shops. Über 10 Jahre Erfahrung.',
     alternates: { canonical: PAGE_URL },
     openGraph: {
         title: 'E-Commerce Entwicklung Hamburg | Shop-Entwicklung & Beratung',
-        description: 'E-Commerce aus einer Hand: Strategie, Design, Entwicklung, Content, Marketing und Automatisierung. Shopify, Shopware, WooCommerce und Custom. 11 Jahre Erfahrung.',
+        description: 'E-Commerce aus einer Hand: Strategie, Design, Entwicklung, Content, Marketing und Automatisierung. Shopify, Shopware, WooCommerce und Custom. Über 10 Jahre Erfahrung.',
         url: PAGE_URL,
         type: 'website',
     },
@@ -37,16 +37,16 @@ const Icon = {
 };
 
 const platforms = [
-    { logo: '/leistungen/ecommerce/logos/shopify.svg', name: 'Shopify', tag: 'Schneller Marktstart', desc: 'Für DTC-Marken und einen schnellen, wartungsarmen Start. Wir bauen individuelle Themes und Headless-Storefronts.' },
+    { logo: '/leistungen/ecommerce/logos/shopify.svg', name: 'Shopify', tag: 'Schneller Marktstart', desc: 'Für DTC-Marken und einen schnellen, wartungsarmen Start. Ich baue individuelle Themes und Headless-Storefronts.' },
     { logo: '/leistungen/ecommerce/logos/shopware.svg', name: 'Shopware 6', tag: 'Stark im B2B', desc: 'Für anspruchsvolle B2B- und Mittelstands-Shops mit komplexen Preis- und Sortimentslogiken. Made in Germany.' },
-    { logo: '/leistungen/ecommerce/logos/woocommerce.svg', name: 'WooCommerce', tag: 'Content trifft Shop', desc: 'Wenn Inhalt und Shop zusammengehören. Voll anpassbar, und wir kümmern uns um Performance und Sicherheit.' },
+    { logo: '/leistungen/ecommerce/logos/woocommerce.svg', name: 'WooCommerce', tag: 'Content trifft Shop', desc: 'Wenn Inhalt und Shop zusammengehören. Voll anpassbar, und um Performance und Sicherheit kümmere ich mich.' },
     { logo: '/leistungen/ecommerce/logos/nextdotjs.svg', name: 'Custom & Headless', tag: 'Maximale Freiheit', desc: 'Für besondere Geschäftsmodelle: Headless mit Next.js oder Medusa, wenn ein Standardsystem nicht mehr ausreicht.' },
 ];
 
-const team = [
-    { icon: Icon.code, role: 'Entwickler', desc: 'Sauberer, schneller Code für Shopify, Shopware, WooCommerce und Headless. Schnittstellen und Sicherheit gehören für uns dazu.' },
-    { icon: Icon.design, role: 'Designer', desc: 'UX/UI, das verkauft: klare Produktseiten und ein Checkout, durch den Käufer ohne Umwege kommen. Mobile zuerst.' },
-    { icon: Icon.pen, role: 'Texter', desc: 'Produkttexte, die Menschen überzeugen und bei Google funktionieren, über das ganze Sortiment hinweg.' },
+const disciplines = [
+    { icon: Icon.code, role: 'Entwicklung', desc: 'Sauberer, schneller Code für Shopify, Shopware, WooCommerce und Headless. Schnittstellen und Sicherheit gehören dazu.' },
+    { icon: Icon.design, role: 'Design', desc: 'UX/UI, das verkauft: klare Produktseiten und ein Checkout, durch den Käufer ohne Umwege kommen. Mobile zuerst.' },
+    { icon: Icon.pen, role: 'Text', desc: 'Produkttexte, die Menschen überzeugen und bei Google funktionieren, über das ganze Sortiment hinweg.' },
     { icon: Icon.megaphone, role: 'Marketing', desc: 'SEO, Google Ads und Feed-Management, damit der Shop gefunden und gekauft wird.' },
 ];
 
@@ -58,20 +58,20 @@ const automations = [
 ];
 
 const process = [
-    { title: 'Erstgespräch', desc: 'Wir verstehen Ihr Geschäft und empfehlen das passende System. Kostenlos.' },
-    { title: 'Konzept & Festpreis', desc: 'Wir legen Umfang, Schnittstellen und Design fest. Sie bekommen ein verbindliches Angebot.' },
-    { title: 'Design & Entwicklung', desc: 'Das Team setzt Design, Shop, Texte und Integrationen parallel um.' },
+    { title: 'Erstgespräch', desc: 'Wir gehen Ihr Geschäft durch, ich empfehle das passende System. Kostenlos.' },
+    { title: 'Konzept & Festpreis', desc: 'Umfang, Schnittstellen und Design stehen fest. Sie bekommen ein verbindliches Angebot.' },
+    { title: 'Design & Entwicklung', desc: 'Design, Shop, Texte und Integrationen entstehen parallel.' },
     { title: 'Testing & Launch', desc: 'Alles geprüft, Tracking und Feeds aktiv, sauberer Go-live mit Übergabe.' },
     { title: 'Wachstum', desc: 'Laufende Optimierung, neue Funktionen, Marketing und Wartung.' },
 ];
 
 const faqItems = [
-    { q: 'Welches Shopsystem ist das richtige für mein Unternehmen?', a: 'Das hängt von Sortiment, Zielmarkt und Wachstumsplänen ab. Shopify eignet sich für einen schnellen, wartungsarmen Start und für DTC-Marken. Shopware 6 ist stark im B2B und bei komplexen deutschen Sortiments- und Steuerlogiken. WooCommerce passt, wenn Content und Shop eng zusammengehören. Custom oder Headless lohnt sich bei besonderen Geschäftsmodellen oder sehr hohen Performance-Anforderungen. Im kostenlosen Erstgespräch empfehlen wir herstellerneutral, denn an Lizenzen verdienen wir nichts.' },
-    { q: 'Macht ihr nur die Technik oder auch Design, Texte und Marketing?', a: 'Wir liefern den vollen Zyklus aus einer Hand: Strategie und Beratung, UX/UI-Design, Entwicklung, Produkttexte und Copywriting sowie Marketing wie SEO, Google Ads und Feed-Management. Sie müssen keine drei Dienstleister koordinieren. Ein kleines, eingespieltes Team verantwortet das Ergebnis von Anfang bis Ende.' },
-    { q: 'Könnt ihr unseren bestehenden Shop erweitern statt neu zu bauen?', a: 'Ja. Ein großer Teil unserer Arbeit ist die Erweiterung und Optimierung bestehender Shops: neue Funktionen, mehr Performance und Conversion, Schnittstellen zu ERP und Warenwirtschaft, Zahlungs- und Versanddienstleistern sowie Automatisierungen. Wir starten mit einem Blick auf den Ist-Zustand und sagen Ihnen ehrlich, ob sich eine Erweiterung lohnt oder ein Relaunch sinnvoller ist.' },
+    { q: 'Welches Shopsystem ist das richtige für mein Unternehmen?', a: 'Das hängt von Sortiment, Zielmarkt und Wachstumsplänen ab. Shopify eignet sich für einen schnellen, wartungsarmen Start und für DTC-Marken. Shopware 6 ist stark im B2B und bei komplexen deutschen Sortiments- und Steuerlogiken. WooCommerce passt, wenn Content und Shop eng zusammengehören. Custom oder Headless lohnt sich bei besonderen Geschäftsmodellen oder sehr hohen Performance-Anforderungen. Im kostenlosen Erstgespräch berate ich herstellerneutral, denn an Lizenzen verdiene ich nichts.' },
+    { q: 'Machen Sie nur die Technik oder auch Design, Texte und Marketing?', a: 'Sie bekommen den vollen Zyklus aus einer Hand: Strategie und Beratung, UX/UI-Design, Entwicklung, Produkttexte und Copywriting sowie Marketing wie SEO, Google Ads und Feed-Management. Sie müssen keine drei Dienstleister koordinieren. Braucht ein Bereich zusätzliche Kapazität, etwa Fotografie oder Produkttexte über ein sehr großes Sortiment, hole ich geprüfte Spezialisten dazu. Verantwortlich für das Ergebnis bleibe ich.' },
+    { q: 'Können Sie unseren bestehenden Shop erweitern statt neu zu bauen?', a: 'Ja. Ein großer Teil meiner Arbeit ist die Erweiterung und Optimierung bestehender Shops: neue Funktionen, mehr Performance und Conversion, Schnittstellen zu ERP und Warenwirtschaft, Zahlungs- und Versanddienstleistern sowie Automatisierungen. Ich starte mit einem Blick auf den Ist-Zustand und sage Ihnen ehrlich, ob sich eine Erweiterung lohnt oder ein Relaunch sinnvoller ist.' },
     { q: 'Welche Automatisierungen sind im E-Commerce sinnvoll?', a: 'Häufig sind das: ein automatischer Produktdaten-Feed an Google Merchant Center und Marktplätze, die Synchronisation von Lagerbeständen zwischen Shop und Warenwirtschaft, automatische Rechnungen und Versandlabels sowie E-Mail-Automatisierung für Warenkorbabbrüche, Begrüßung und Reaktivierung. Solche Abläufe sparen täglich Handarbeit und holen Umsatz zurück, der sonst liegen bleibt.' },
-    { q: 'Wie viel Erfahrung steckt im Team?', a: 'Über 11 Jahre, aus Projekten in ganz unterschiedlichen Branchen, von DTC-Beauty über B2B-Industrie bis zu SaaS und lokalen Händlern. Diese Erfahrung fließt direkt in Ihr Projekt ein. Wir kennen die teuren Fehler, bevor sie passieren.' },
-    { q: 'Was kostet ein E-Commerce-Projekt?', a: 'Das hängt stark vom Umfang ab, also vom System, der Sortimentsgröße, den Schnittstellen und dem Designaufwand. Einen Einstieg mit Standardsystem realisieren wir im niedrigen vierstelligen Bereich, komplexe B2B- oder Custom-Lösungen liegen höher. Vor Projektstart erhalten Sie ein verbindliches Festpreis-Angebot ohne versteckte Kosten. Schreiben Sie uns Ihr Vorhaben, dann nennen wir Ihnen einen realistischen Rahmen.' },
+    { q: 'Wer arbeitet an meinem Shop?', a: 'Sie arbeiten direkt mit mir, Vadim Shchepin. Über 10 Jahre Projekterfahrung aus ganz unterschiedlichen Branchen, von DTC-Beauty über B2B-Industrie bis zu SaaS und lokalen Händlern, fließen direkt in Ihr Projekt ein. Kein Account-Manager dazwischen. Braucht ein Projekt zusätzliche Expertise, hole ich geprüfte Spezialisten dazu, Ihr Ansprechpartner bleibe ich.' },
+    { q: 'Was kostet ein E-Commerce-Projekt?', a: 'Das hängt stark vom Umfang ab, also vom System, der Sortimentsgröße, den Schnittstellen und dem Designaufwand. Ein Einstieg mit Standardsystem beginnt im mittleren vierstelligen Bereich, komplexe B2B- oder Custom-Lösungen liegen deutlich höher, deshalb gibt es hier keinen Ab-Preis, sondern ein Angebot auf Anfrage. Vor Projektstart erhalten Sie ein verbindliches Festpreis-Angebot ohne versteckte Kosten. Schreiben Sie mir Ihr Vorhaben, dann nenne ich Ihnen einen realistischen Rahmen.' },
 ];
 
 export default function EcommerceEntwicklungPage() {
@@ -83,7 +83,7 @@ export default function EcommerceEntwicklungPage() {
         provider: BUSINESS,
         areaServed: { '@type': 'Country', name: 'Deutschland' },
         url: PAGE_URL,
-        description: 'E-Commerce aus einer Hand: Strategie, Design, Entwicklung, Content, Marketing und Automatisierung für Shopify, Shopware, WooCommerce und Custom-Shops von einem kleinen, erfahrenen Team aus Hamburg.',
+        description: 'E-Commerce aus einer Hand: Strategie, Design, Entwicklung, Content, Marketing und Automatisierung für Shopify, Shopware, WooCommerce und Custom-Shops, direkt vom Entwickler aus Hamburg.',
     };
     const breadcrumbJsonLd = {
         '@context': 'https://schema.org',
@@ -119,7 +119,7 @@ export default function EcommerceEntwicklungPage() {
                             <p className="section-kicker animate-up">E-Commerce Entwicklung aus Hamburg</p>
                             <h1 className="subpage-title animate-up">Online-Shops, die verkaufen.</h1>
                             <p className="ecx-hero-lead animate-up">
-                                Wir sind ein kleines, eingespieltes Team aus Entwicklung, Design, Text und Marketing. Wir bauen Ihren Shop, erweitern ihn und kümmern uns danach weiter darum. Alles aus einer Hand, für Shopify, Shopware, WooCommerce oder eine eigene Lösung.
+                                Entwicklung, Design, Text und Marketing aus einer Hand: meiner. Ich baue Ihren Shop, erweitere ihn und kümmere mich danach weiter darum, für Shopify, Shopware, WooCommerce oder eine eigene Lösung.
                             </p>
                             <div className="ecx-hero-actions animate-up">
                                 <Link href="/kontakt" className="button button-primary button-large" data-umami-event="cta-click" data-umami-event-location="ecom-hero">Kostenloses Erstgespräch</Link>
@@ -128,8 +128,8 @@ export default function EcommerceEntwicklungPage() {
                                 </a>
                             </div>
                             <div className="ecx-trust animate-up">
-                                <span className="ecx-trust-item">{Icon.check} Über 11 Jahre Erfahrung</span>
-                                <span className="ecx-trust-item">{Icon.check} Alles aus einer Hand</span>
+                                <span className="ecx-trust-item">{Icon.check} Über 10 Jahre Erfahrung</span>
+                                <span className="ecx-trust-item">{Icon.check} Direkt mit dem Entwickler</span>
                                 <span className="ecx-trust-item">{Icon.check} Herstellerneutrale Beratung</span>
                                 <span className="ecx-trust-item">{Icon.check} Festpreis vor Projektstart</span>
                             </div>
@@ -149,7 +149,7 @@ export default function EcommerceEntwicklungPage() {
             {/* LOGO STRIP */}
             <section className="ecx-logostrip light-bg">
                 <div className="container">
-                    <p className="ecx-logostrip-label">Wir entwickeln auf der Plattform, die zu Ihrem Geschäft passt</p>
+                    <p className="ecx-logostrip-label">Ich entwickle auf der Plattform, die zu Ihrem Geschäft passt</p>
                     <div className="ecx-logos animate-up">
                         {platforms.map((p) => (
                             <span key={p.name} className="ecx-logo">
@@ -165,7 +165,7 @@ export default function EcommerceEntwicklungPage() {
             <section className="section">
                 <div className="container">
                     <div className="section-header text-center">
-                        <p className="section-kicker animate-up">Was wir übernehmen</p>
+                        <p className="section-kicker animate-up">Was ich übernehme</p>
                         <h2 className="section-title animate-up">Full-Cycle: von der Idee bis zum Umsatz.</h2>
                         <p className="section-desc animate-up">Von der Strategie bis zum laufenden Marketing. Ob neuer Shop, Umzug oder Ausbau Ihres bestehenden. Tippen Sie auf einen Bereich für die Details.</p>
                     </div>
@@ -177,12 +177,12 @@ export default function EcommerceEntwicklungPage() {
             <section className="ecx-dark section">
                 <div className="container">
                     <div className="section-header text-center">
-                        <p className="section-kicker animate-up">Ein Team statt vieler Schnittstellen</p>
-                        <h2 className="section-title animate-up">Vier Disziplinen, ein eingespieltes Team.</h2>
-                        <p className="section-desc animate-up">Klein, erfahren und aufeinander eingespielt. Über 11 Jahre Projekterfahrung aus ganz unterschiedlichen Branchen fließen direkt in Ihren Shop.</p>
+                        <p className="section-kicker animate-up">Ein Ansprechpartner statt vieler Schnittstellen</p>
+                        <h2 className="section-title animate-up">Vier Disziplinen, eine Verantwortung.</h2>
+                        <p className="section-desc animate-up">Diese vier Bereiche entscheiden über einen Shop, der verkauft. Sie kommen aus einer Hand: meiner. Braucht ein Bereich zusätzliche Kapazität, etwa Fotografie oder Texte über ein sehr großes Sortiment, hole ich geprüfte Spezialisten dazu. Ihr Ansprechpartner bleibe ich.</p>
                     </div>
                     <div className="ecx-team-grid">
-                        {team.map((t, i) => (
+                        {disciplines.map((t, i) => (
                             <div key={t.role} className={`ecx-team-card animate-up delay-${(i % 4) + 1}`}>
                                 <div className="ecx-team-icon">{t.icon}</div>
                                 <h3>{t.role}</h3>
@@ -200,7 +200,7 @@ export default function EcommerceEntwicklungPage() {
                         <div className="text-col">
                             <p className="section-kicker animate-up">Automatisierung</p>
                             <h2 className="section-title animate-up">Ihr Shop arbeitet, auch wenn Sie es nicht tun.</h2>
-                            <p className="large-text animate-up">Wir richten die Abläufe ein, die den größten Unterschied machen. Sie nehmen Ihnen täglich Handarbeit ab und holen Umsatz zurück, der sonst liegen bleibt.</p>
+                            <p className="large-text animate-up">Ich richte die Abläufe ein, die den größten Unterschied machen. Sie nehmen Ihnen täglich Handarbeit ab und holen Umsatz zurück, der sonst liegen bleibt.</p>
                         </div>
                         <div className="visual-col">
                             <div className="ecx-auto-grid" style={{ marginTop: 0 }}>
@@ -225,7 +225,7 @@ export default function EcommerceEntwicklungPage() {
                     <div className="section-header text-center">
                         <p className="section-kicker animate-up">Plattformen</p>
                         <h2 className="section-title animate-up">Das richtige System für Ihr Geschäft.</h2>
-                        <p className="section-desc animate-up">Wir sind an kein System gebunden und verdienen nichts an Lizenzen. Wir empfehlen das, was zu Ihnen passt.</p>
+                        <p className="section-desc animate-up">Ich bin an kein System gebunden und verdiene nichts an Lizenzen. Meine Empfehlung richtet sich danach, was zu Ihnen passt.</p>
                     </div>
                     <div className="ecx-platforms">
                         {platforms.map((p, i) => (
@@ -288,11 +288,11 @@ export default function EcommerceEntwicklungPage() {
                     <div className="section-header text-center">
                         <p className="section-kicker animate-up">Der Unterschied</p>
                         <h2 className="section-title animate-up">Ein Shop ist nur dann gut, wenn er verkauft.</h2>
-                        <p className="section-desc animate-up">Die meisten Shop-Probleme kosten täglich Umsatz, ohne dass es jemand merkt. Genau da setzen wir an.</p>
+                        <p className="section-desc animate-up">Die meisten Shop-Probleme kosten täglich Umsatz, ohne dass es jemand merkt. Genau da setze ich an.</p>
                     </div>
                     <div className="ecx-compare">
                         <div className="ecx-compare-card ecx-compare-pain animate-up">
-                            <h3>Ohne das richtige Team</h3>
+                            <h3>Ohne den richtigen Partner</h3>
                             <ul className="ecx-compare-list">
                                 <li><span className="ecx-compare-icon">{Icon.x}</span> Der Shop lädt langsam, und Besucher springen ab, bevor sie kaufen</li>
                                 <li><span className="ecx-compare-icon">{Icon.x}</span> Drei Dienstleister, und am Ende verantwortet niemand das Ergebnis</li>
@@ -302,10 +302,10 @@ export default function EcommerceEntwicklungPage() {
                             </ul>
                         </div>
                         <div className="ecx-compare-card ecx-compare-gain animate-up delay-1">
-                            <h3>Mit uns</h3>
+                            <h3>Mit mir</h3>
                             <ul className="ecx-compare-list">
                                 <li><span className="ecx-compare-icon">{Icon.check}</span> Schnelle Ladezeiten und grüne Core Web Vitals, also mehr Conversion</li>
-                                <li><span className="ecx-compare-icon">{Icon.check}</span> Ein Team und ein Ansprechpartner, von Anfang bis Ende</li>
+                                <li><span className="ecx-compare-icon">{Icon.check}</span> Ein Ansprechpartner, von Anfang bis Ende</li>
                                 <li><span className="ecx-compare-icon">{Icon.check}</span> Texte, die verkaufen und bei Google gefunden werden, über das ganze Sortiment</li>
                                 <li><span className="ecx-compare-icon">{Icon.check}</span> Automatisierungen, die Ihnen täglich Arbeit abnehmen</li>
                                 <li><span className="ecx-compare-icon">{Icon.check}</span> Marketing, das weiterläuft und den Umsatz wachsen lässt</li>
@@ -320,7 +320,7 @@ export default function EcommerceEntwicklungPage() {
                 <div className="container subpage-body">
                     <h2 className="animate-up">Was bedeutet Full-Cycle E-Commerce-Entwicklung?</h2>
                     <div className="subpage-takeaway animate-up">
-                        <p>Full-Cycle E-Commerce-Entwicklung heißt, dass ein einziges Team <strong>alle Phasen eines Online-Shops</strong> übernimmt: Strategie und Beratung, Design, Entwicklung, Texte, Marketing, Automatisierung und die laufende Betreuung. Bei uns ist dieses Team klein und erfahren, mit <strong>Entwicklern, Designern, Textern und Marketing-Spezialisten und über 11 Jahren Projekterfahrung</strong>. Wir arbeiten herstellerneutral mit Shopify, Shopware 6, WooCommerce und Custom- oder Headless-Plattformen und betreuen neue Shops genauso wie die Erweiterung bestehender.</p>
+                        <p>Full-Cycle E-Commerce-Entwicklung heißt, dass ein einziger Dienstleister <strong>alle Phasen eines Online-Shops</strong> übernimmt: Strategie und Beratung, Design, Entwicklung, Texte, Marketing, Automatisierung und die laufende Betreuung. Bei AISEO ist das <strong>Vadim Shchepin, Webentwickler aus Hamburg mit über 10 Jahren Projekterfahrung</strong>. Sie arbeiten direkt mit ihm, bei zusätzlichem Bedarf kommen geprüfte Spezialisten dazu. Gearbeitet wird herstellerneutral mit Shopify, Shopware 6, WooCommerce und Custom- oder Headless-Plattformen, für neue Shops genauso wie für die Erweiterung bestehender.</p>
                     </div>
                     <ServiceMeta />
                     <div className="subpage-sources animate-up">
@@ -339,7 +339,7 @@ export default function EcommerceEntwicklungPage() {
             <RelatedServices exclude="e-commerce-entwicklung" />
             <ServiceCta
                 title="Lassen Sie uns über Ihren Shop sprechen."
-                text="Kostenloses Erstgespräch. Wir schauen uns Ihr Vorhaben an, empfehlen das passende System und nennen Ihnen einen realistischen Rahmen. Ob Neubau, Umzug oder Erweiterung."
+                text="Kostenloses Erstgespräch. Ich schaue mir Ihr Vorhaben an, empfehle das passende System und nenne Ihnen einen realistischen Rahmen. Ob Neubau, Umzug oder Erweiterung."
             />
         </>
     );

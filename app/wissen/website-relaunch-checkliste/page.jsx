@@ -155,7 +155,7 @@ export default function WebsiteRelaunchArticlePage() {
                     Messen Sie die Core Web Vitals auf der Staging-Umgebung. Vergleichen Sie LCP,
                     FID (bzw. INP) und CLS mit den Werten der alten Seite. Ein Relaunch, der
                     die Ladezeit verschlechtert, ist ein Rueckschritt, egal wie gut das Design
-                    aussieht. Warum Performance so entscheidend ist, zeigen wir im Detail in unserem Artikel <a href="/wissen/warum-langsame-websites-kunden-kosten">Warum langsame Websites Kunden kosten</a>.
+                    aussieht. Warum Performance so entscheidend ist, zeige ich im Detail im Artikel <a href="/wissen/warum-langsame-websites-kunden-kosten">Warum langsame Websites Kunden kosten</a>.
                 </p>
                 <p>
                     Testen Sie auf echten Geraeten, nicht nur im Chrome DevTools Device Mode.

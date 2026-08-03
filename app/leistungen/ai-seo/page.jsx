@@ -8,7 +8,7 @@ import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
     title: 'AI SEO Hamburg | Sichtbar in ChatGPT, Perplexity & Copilot',
-    description: 'AI SEO (GEO) für Sichtbarkeit in ChatGPT, Perplexity, Google AI Overviews und Microsoft Copilot. Ihr Unternehmen als zitierte Quelle in KI-Antworten. Ab 2.400 €/Monat.',
+    description: 'AI SEO (GEO) für Sichtbarkeit in ChatGPT, Perplexity, Google AI Overviews und Microsoft Copilot. Ihr Unternehmen als zitierte Quelle in KI-Antworten. Sprint ab 1.500 €, Betreuung ab 600 €/Monat.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/ai-seo',
     },
@@ -27,6 +27,7 @@ const faqItems = [
     { q: 'Wie messe ich KI-Sichtbarkeit?', a: 'Über drei Wege: die Bing Webmaster Tools zeigen unter „AI Search Queries" die Grounding-Queries und Zitationen für Copilot; Tools wie Peec AI oder Otterly tracken Erwähnungen in ChatGPT, Perplexity und Gemini; und manuelle Test-Prompts in den Engines zeigen, ob und wie Sie genannt werden. Dazu kommen klassische Metriken aus der Google Search Console.' },
     { q: 'Welche Inhalte werden von KI am häufigsten zitiert?', a: 'Vergleichsartikel (rund ein Drittel aller Zitationen), umfassende Ratgeber und eigene Daten oder Statistiken. Die Princeton-GEO-Studie (KDD 2024) zeigt: Quellenangaben erhöhen die Zitationswahrscheinlichkeit um rund 40 %, konkrete Statistiken um rund 37 %, während Keyword-Überfüllung sie um rund 10 % senkt.' },
     { q: 'Für wen lohnt sich AI SEO?', a: 'Für jedes Unternehmen, das in seinem Bereich als Experte wahrgenommen werden will, besonders für Dienstleister, Berater, spezialisierte Handwerker und erklärungsbedürftige Leistungen. Der AI-Suchmarkt ist noch jung: frühe Investition bedeutet frühen Vorsprung.' },
+    { q: 'Was kostet AI SEO?', a: 'Der Einstieg ist der AI Visibility Sprint ab 1.500 € einmalig: Analyse, Optimierung Ihrer wichtigsten Seiten, Schema-Markup, Crawler-Konfiguration und eine Messung vorher und nachher, mit Ergebnis in 10 bis 14 Tagen. Eine laufende Betreuung gibt es danach optional ab 600 € pro Monat, monatlich kündbar. Sie müssen also keinen teuren Vertrag abschließen, bevor Sie wissen, was der Kanal für Sie bringt.' },
 ];
 
 export default function AiSeoPage() {
@@ -38,7 +39,10 @@ export default function AiSeoPage() {
         areaServed: { '@type': 'City', name: 'Hamburg' },
         url: 'https://webseite.hamburg/leistungen/ai-seo',
         description: 'AI SEO (Generative Engine Optimization) für Sichtbarkeit in ChatGPT, Perplexity, Google AI Overviews und Microsoft Copilot.',
-        offers: { '@type': 'Offer', price: '2400', priceCurrency: 'EUR', priceSpecification: { '@type': 'UnitPriceSpecification', unitText: 'Monat' } },
+        offers: [
+            { '@type': 'Offer', name: 'AI Visibility Sprint', price: '1500', priceCurrency: 'EUR' },
+            { '@type': 'Offer', name: 'AI Visibility Betreuung', price: '600', priceCurrency: 'EUR', priceSpecification: { '@type': 'UnitPriceSpecification', unitText: 'Monat' } },
+        ],
     };
 
     const breadcrumbJsonLd = {
@@ -131,20 +135,35 @@ export default function AiSeoPage() {
                     </div>
 
                     <h2 className="animate-up">Preise und Umfang</h2>
-                    <div className="subpage-single-price animate-up">
-                        <div className="sp-price-value">ab 2.400 &euro;/Monat</div>
-                        <p>Enthält alle Leistungen aus dem <Link href="/leistungen/seo">SEO-Paket</Link> plus gezielte KI-Sichtbarkeits-Optimierung. Als Upgrade zum bestehenden SEO oder eigenständig buchbar.</p>
-                        <ul className="sp-price-includes">
-                            <li>Alle klassischen SEO-Leistungen inklusive</li>
-                            <li>KI-Sichtbarkeits-Audit (ChatGPT, Perplexity, AI Overviews, Copilot)</li>
-                            <li>Schema-Markup & strukturierte Daten</li>
-                            <li>Zitierfähige Content-Strategie (Definitionen, Statistiken, FAQ)</li>
-                            <li>Crawler-Konfiguration (robots.txt, llms.txt)</li>
-                            <li>Autoritäts- und Vertrauensaufbau</li>
-                            <li>KI-Antwort-Monitoring inkl. Bing Grounding-Queries</li>
-                            <li>Monatlicher Report inkl. KI-Metriken</li>
-                        </ul>
+                    <p className="animate-up">KI-Sichtbarkeit beginnt mit einem einmaligen Sprint, nicht mit einem teuren Vertrag. Erst wenn Sie sehen, was der Kanal bringt, ist eine laufende Betreuung sinnvoll.</p>
+                    <div className="subpage-pricing-compare animate-up">
+                        <div className="subpage-price-col subpage-price-featured">
+                            <h3>AI Visibility Sprint</h3>
+                            <div className="sp-price-value">ab 1.500 &euro;</div>
+                            <p>Einmalig. Ihre wichtigsten Seiten werden für KI-Antworten aufbereitet, mit Messung vorher und nachher. Ergebnis in 10 bis 14 Tagen.</p>
+                            <ul className="sp-price-includes">
+                                <li>KI-Sichtbarkeits-Analyse (ChatGPT, Perplexity, AI Overviews, Copilot)</li>
+                                <li>Optimierung Ihrer wichtigsten Seiten für Zitierfähigkeit</li>
+                                <li>Schema-Markup & strukturierte Daten</li>
+                                <li>Crawler-Konfiguration (robots.txt, llms.txt, Indexierung)</li>
+                                <li>Messung vorher und nachher, dokumentiert</li>
+                                <li>Ergebnis in 10 bis 14 Tagen</li>
+                            </ul>
+                        </div>
+                        <div className="subpage-price-col">
+                            <h3>AI Visibility Betreuung</h3>
+                            <div className="sp-price-value">ab 600 &euro;/Monat</div>
+                            <p>Optional nach dem Sprint. Für Unternehmen, die ihre Position halten und ausbauen wollen. Monatlich kündbar.</p>
+                            <ul className="sp-price-includes">
+                                <li>Laufendes KI-Antwort-Monitoring inkl. Bing Grounding-Queries</li>
+                                <li>Neue zitierfähige Inhalte (Definitionen, Statistiken, FAQ)</li>
+                                <li>Autoritäts- und Vertrauensaufbau</li>
+                                <li>Nachschärfen bei Modell- und Plattform-Änderungen</li>
+                                <li>Monatlicher Report inkl. KI-Metriken</li>
+                            </ul>
+                        </div>
                     </div>
+                    <p className="animate-up">Kombinierbar mit dem laufenden <Link href="/leistungen/seo">SEO-Paket</Link>, das die technische Grundlage für KI-Zitationen liefert.</p>
 
                     <h2 className="animate-up">Warum jetzt der richtige Zeitpunkt ist</h2>
                     <p className="animate-up">AI-Suche ist noch ein junger Markt. Die meisten Wettbewerber optimieren noch nicht dafür. Wer jetzt investiert, baut einen Vorsprung auf, den man später schwer einholt. In zwei bis drei Jahren wird AI SEO so selbstverständlich sein wie klassisches SEO heute. Die zitierten Plätze sind dann aber längst vergeben.</p>

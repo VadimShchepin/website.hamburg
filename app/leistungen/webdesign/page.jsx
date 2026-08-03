@@ -7,13 +7,13 @@ import ServiceMeta from '../../../src/components/ServiceMeta';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'Webdesign Hamburg | Schnelle Websites ab 4.000 €',
-    description: 'Individuelles Webdesign für Unternehmen in Hamburg: programmiert statt Baukasten, Lighthouse 90–100, gute Core Web Vitals, Conversion-Optimierung. One-Pager ab 4.000 €.',
+    title: 'Webdesign Hamburg | Schnelle Websites ab 2.900 €',
+    description: 'Individuelles Webdesign für Unternehmen in Hamburg: programmiert statt Baukasten, Lighthouse 90–100, gute Core Web Vitals, Conversion-Optimierung. Conversion Landingpage ab 2.900 €.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/webdesign',
     },
     openGraph: {
-        title: 'Webdesign Hamburg | Schnelle Websites ab 4.000 €',
+        title: 'Webdesign Hamburg | Schnelle Websites ab 2.900 €',
         description: 'Individuelles Webdesign für Unternehmen in Hamburg: programmiert statt Baukasten, Lighthouse 90–100, gute Core Web Vitals, Conversion-Optimierung.',
         url: 'https://webseite.hamburg/leistungen/webdesign',
         type: 'website',
@@ -21,8 +21,8 @@ export const metadata = {
 };
 
 const faqItems = [
-    { q: 'Was kostet eine professionelle Website?', a: 'Ein One-Pager startet ab 4.000 €, eine mehrseitige Website ab 6.000 €. Sie erhalten vor Projektstart ein verbindliches Festpreis-Angebot, keine versteckten Kosten. Der finale Preis hängt vom Umfang ab (Seitenzahl, CMS, Shop, Sonderfunktionen).' },
-    { q: 'Wie lange dauert die Erstellung einer Website?', a: 'Ein One-Pager ist in 2–3 Wochen fertig, eine mehrseitige Website in 4–6 Wochen. Komplexere Projekte mit Shop oder Mitgliederbereich dauern 6–10 Wochen. Der genaue Zeitrahmen hängt vom Umfang und Ihrem Feedback-Tempo ab.' },
+    { q: 'Was kostet eine professionelle Website?', a: 'Eine Conversion Landingpage (One-Pager) startet ab 2.900 €, eine mehrseitige Unternehmenswebsite ab 4.500 €. Sie erhalten vor Projektstart ein verbindliches Festpreis-Angebot, keine versteckten Kosten. Der finale Preis hängt vom Umfang ab (Seitenzahl, CMS, Shop, Sonderfunktionen).' },
+    { q: 'Wie lange dauert die Erstellung einer Website?', a: 'Eine Landingpage ist in 2–3 Wochen fertig, eine mehrseitige Website in 4–6 Wochen. Komplexere Projekte mit Shop oder Mitgliederbereich dauern 6–10 Wochen. Der genaue Zeitrahmen hängt vom Umfang und Ihrem Feedback-Tempo ab.' },
     { q: 'Nutzen Sie Baukastensysteme wie Wix oder Squarespace?', a: 'Nein. Jede Website wird individuell programmiert. Das garantiert maximale Performance, volle gestalterische Freiheit und Unabhängigkeit von Plattform-Einschränkungen. Wenn Sie Inhalte selbst pflegen wollen, binde ich ein CMS wie WordPress oder einen Headless-Ansatz ein.' },
     { q: 'Was bedeutet ein Lighthouse-Score von 90–100?', a: 'Lighthouse ist Googles Werkzeug zur Bewertung von Performance, SEO und Zugänglichkeit, auf einer Skala von 0–100 (sichtbar in den Chrome DevTools und in PageSpeed Insights). Viele Agentur-Websites erreichen nur 30–60 Punkte. Meine Seiten liegen regelmäßig bei 90–100, und das bedeutet schnelles Laden, bessere Rankings und höhere Conversion.' },
     { q: 'Was sind Core Web Vitals?', a: 'Core Web Vitals sind Googles offizielle Kennzahlen für Nutzererlebnis: LCP (Ladezeit des größten Elements, gut: unter 2,5 s), INP (Reaktionszeit auf Eingaben, gut: unter 200 ms) und CLS (Layout-Stabilität, gut: unter 0,1). Sie fließen in das Google-Ranking ein. Jede Website baue ich so, dass sie alle drei Werte im grünen Bereich erreicht.' },
@@ -40,8 +40,8 @@ export default function WebdesignPage() {
         url: 'https://webseite.hamburg/leistungen/webdesign',
         description: 'Individuelles Webdesign für Unternehmen in Hamburg: programmiert statt Baukasten, Lighthouse 90–100, gute Core Web Vitals, Conversion-Optimierung.',
         offers: [
-            { '@type': 'Offer', name: 'One-Pager', price: '4000', priceCurrency: 'EUR' },
-            { '@type': 'Offer', name: 'Mehrseitige Website', price: '6000', priceCurrency: 'EUR' },
+            { '@type': 'Offer', name: 'Conversion Landingpage', price: '2900', priceCurrency: 'EUR' },
+            { '@type': 'Offer', name: 'Unternehmenswebsite', price: '4500', priceCurrency: 'EUR' },
         ],
     };
 
@@ -80,7 +80,7 @@ export default function WebdesignPage() {
                 <div className="container subpage-body">
                     <h2 className="animate-up">Was kostet professionelles Webdesign?</h2>
                     <div className="subpage-takeaway animate-up">
-                        <p>Eine professionelle Website kostet bei mir <strong>ab 4.000 €</strong> (One-Pager) bzw. <strong>ab 6.000 €</strong> (mehrseitig), jeweils zum Festpreis. Sie wird individuell programmiert, ohne Baukasten und ohne gekauftes WordPress-Theme, und erreicht Lighthouse-Werte von 90–100 sowie gute Core Web Vitals. Ein One-Pager ist in 2–3 Wochen fertig, eine mehrseitige Website in 4–6 Wochen.</p>
+                        <p>Eine professionelle Website kostet bei mir <strong>ab 2.900 €</strong> (Conversion Landingpage) bzw. <strong>ab 4.500 €</strong> (mehrseitige Unternehmenswebsite), jeweils zum Festpreis. Sie wird individuell programmiert, ohne Baukasten und ohne gekauftes WordPress-Theme, und erreicht Lighthouse-Werte von 90–100 sowie gute Core Web Vitals. Eine Landingpage ist in 2–3 Wochen fertig, eine mehrseitige Website in 4–6 Wochen.</p>
                     </div>
 
                     <h2 className="animate-up">Warum viele Firmenwebsites Kunden verlieren</h2>
@@ -134,9 +134,9 @@ export default function WebdesignPage() {
                     <h2 className="animate-up">Was im Preis enthalten ist</h2>
                     <div className="subpage-pricing-compare animate-up">
                         <div className="subpage-price-col">
-                            <h3>One-Pager</h3>
-                            <div className="sp-price-value">ab 4.000 &euro;</div>
-                            <p>Kompakte Landingpage mit einem klaren Ziel. Ideal für Dienstleister, Kampagnen oder als Einstieg.</p>
+                            <h3>Conversion Landingpage</h3>
+                            <div className="sp-price-value">ab 2.900 &euro;</div>
+                            <p>Für eine konkrete Dienstleistung oder Kampagne. Inklusive Struktur, Design, Entwicklung, Tracking und SEO-Grundlage.</p>
                             <ul className="sp-price-includes">
                                 <li>1 Seite, vollständig responsiv</li>
                                 <li>Individuelles Design</li>
@@ -147,9 +147,9 @@ export default function WebdesignPage() {
                             </ul>
                         </div>
                         <div className="subpage-price-col subpage-price-featured">
-                            <h3>Mehrseitige Website</h3>
-                            <div className="sp-price-value">ab 6.000 &euro;</div>
-                            <p>Vollständige Unternehmenswebsite mit Struktur für Wachstum. CMS optional.</p>
+                            <h3>Unternehmenswebsite</h3>
+                            <div className="sp-price-value">ab 4.500 &euro;</div>
+                            <p>Mehrseitige Website mit Leistungsseiten, Referenzen, CMS und Conversion-Tracking.</p>
                             <ul className="sp-price-includes">
                                 <li>5+ Seiten</li>
                                 <li>Individuelles Design & Konzept</li>

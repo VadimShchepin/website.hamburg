@@ -36,6 +36,7 @@ Arbeitsweise: Kunden arbeiten direkt mit Vadim Shchepin, es gibt keine Account-M
 - URL: https://webseite.hamburg/leistungen/seo
 
 ### AI SEO
+- KI-Kurzanalyse: kostenlos, 15 Minuten (Live-Check, ob das Unternehmen in KI-Antworten genannt wird; kein Report, keine Verpflichtung)
 - AI Visibility Sprint: ab 1.500 EUR einmalig (Analyse, Optimierung der wichtigsten Seiten, Schema, Crawler-Konfiguration, Messung vorher/nachher, Ergebnis in 10-14 Tagen)
 - AI Visibility Betreuung: ab 600 EUR/Monat, optional nach dem Sprint, monatlich kündbar
 - Sichtbarkeit in ChatGPT, Perplexity, Google AI Overviews

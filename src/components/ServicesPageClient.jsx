@@ -268,6 +268,16 @@ export default function ServicesPageClient() {
                         </div>
 
                         <div className="sp-service-sidebar">
+                            <div className="sp-price-card sp-price-card-free bull-boundary animate-up">
+                                <p className="sp-price-label">KI-Kurzanalyse</p>
+                                <div className="sp-price-value">0 &euro;</div>
+                                <p className="sp-price-desc">15 Minuten. Wir schauen live nach, ob Sie in KI-Antworten genannt werden. Kein Report, keine Verpflichtung.</p>
+                                <ul className="sp-price-includes">
+                                    <li>Werden Sie aktuell genannt?</li>
+                                    <li>Wer wird stattdessen empfohlen?</li>
+                                    <li>Die drei wichtigsten Hebel</li>
+                                </ul>
+                            </div>
                             <div className="sp-price-card bull-boundary animate-up">
                                 <p className="sp-price-label">AI Visibility Sprint</p>
                                 <div className="sp-price-value">ab 1.500 &euro;</div>
@@ -291,7 +301,7 @@ export default function ServicesPageClient() {
                                     <li>Monatlicher Report</li>
                                 </ul>
                             </div>
-                            <p className="sp-price-note animate-up">Kein teurer Vertrag, bevor Sie wissen, was der Kanal bringt. Erst der Sprint, dann entscheiden Sie.</p>
+                            <p className="sp-price-note animate-up">Kein teurer Vertrag, bevor Sie wissen, was der Kanal bringt. Erst der kostenlose Call, dann der Sprint, dann entscheiden Sie über die Betreuung.</p>
                         </div>
                     </div>
                 </div>

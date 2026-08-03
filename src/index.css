@@ -2529,6 +2529,11 @@ img {
   margin: var(--space-lg) 0;
 }
 
+/* Three-step offers (free entry -> sprint -> retainer) */
+.subpage-pricing-compare.is-three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .subpage-price-col {
   padding: var(--space-md);
   border: 1px solid var(--color-bg-gray2);
@@ -3660,6 +3665,10 @@ a.service-card {
    Subpage Responsive
    ========================================================================== */
 @media (max-width: 1024px) {
+  .subpage-pricing-compare.is-three {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .subpage-stats {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -3725,7 +3734,8 @@ a.service-card {
     grid-template-columns: 1fr;
   }
 
-  .subpage-pricing-compare {
+  .subpage-pricing-compare,
+  .subpage-pricing-compare.is-three {
     grid-template-columns: 1fr;
   }
 

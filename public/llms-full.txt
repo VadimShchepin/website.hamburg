@@ -66,7 +66,7 @@ Was enthalten ist:
 - Google AI Overviews Optimierung
 - Monitoring der Sichtbarkeit in AI-Antworten
 
-Preis: AI Visibility Sprint ab 1.500 EUR einmalig (Analyse, Optimierung der wichtigsten Seiten, Schema, Crawler-Konfiguration, Messung vorher/nachher, Ergebnis in 10-14 Tagen). Optionale Betreuung danach ab 600 EUR/Monat, monatlich kündbar. Kann mit dem SEO-Paket kombiniert oder eigenstehend gebucht werden.
+Preis: Einstieg ist eine kostenlose KI-Kurzanalyse (15 Minuten, Live-Check ohne Verpflichtung). Danach AI Visibility Sprint ab 1.500 EUR einmalig (Analyse, Optimierung der wichtigsten Seiten, Schema, Crawler-Konfiguration, Messung vorher/nachher, Ergebnis in 10-14 Tagen). Optionale Betreuung danach ab 600 EUR/Monat, monatlich kündbar. Kann mit dem SEO-Paket kombiniert oder eigenstehend gebucht werden.
 
 Hintergrund: LLMs wie GPT-4 und Gemini synthetisieren Informationen aus Webquellen. Die Auswahl der zitierten Quellen folgt anderen Regeln als Googles PageRank — Informationsdichte, strukturierte Klarheit, faktische Konsistenz und Autorität des Autors sind entscheidend.
 

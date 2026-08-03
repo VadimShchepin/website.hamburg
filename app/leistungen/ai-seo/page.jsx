@@ -27,7 +27,7 @@ const faqItems = [
     { q: 'Wie messe ich KI-Sichtbarkeit?', a: 'Über drei Wege: die Bing Webmaster Tools zeigen unter „AI Search Queries" die Grounding-Queries und Zitationen für Copilot; Tools wie Peec AI oder Otterly tracken Erwähnungen in ChatGPT, Perplexity und Gemini; und manuelle Test-Prompts in den Engines zeigen, ob und wie Sie genannt werden. Dazu kommen klassische Metriken aus der Google Search Console.' },
     { q: 'Welche Inhalte werden von KI am häufigsten zitiert?', a: 'Vergleichsartikel (rund ein Drittel aller Zitationen), umfassende Ratgeber und eigene Daten oder Statistiken. Die Princeton-GEO-Studie (KDD 2024) zeigt: Quellenangaben erhöhen die Zitationswahrscheinlichkeit um rund 40 %, konkrete Statistiken um rund 37 %, während Keyword-Überfüllung sie um rund 10 % senkt.' },
     { q: 'Für wen lohnt sich AI SEO?', a: 'Für jedes Unternehmen, das in seinem Bereich als Experte wahrgenommen werden will, besonders für Dienstleister, Berater, spezialisierte Handwerker und erklärungsbedürftige Leistungen. Der AI-Suchmarkt ist noch jung: frühe Investition bedeutet frühen Vorsprung.' },
-    { q: 'Was kostet AI SEO?', a: 'Der Einstieg ist der AI Visibility Sprint ab 1.500 € einmalig: Analyse, Optimierung Ihrer wichtigsten Seiten, Schema-Markup, Crawler-Konfiguration und eine Messung vorher und nachher, mit Ergebnis in 10 bis 14 Tagen. Eine laufende Betreuung gibt es danach optional ab 600 € pro Monat, monatlich kündbar. Sie müssen also keinen teuren Vertrag abschließen, bevor Sie wissen, was der Kanal für Sie bringt.' },
+    { q: 'Was kostet AI SEO?', a: 'In drei Schritten: Der Einstieg ist eine kostenlose KI-Kurzanalyse, 15 Minuten, in denen wir live nachsehen, ob Sie in KI-Antworten genannt werden. Danach folgt bei Bedarf der AI Visibility Sprint ab 1.500 € einmalig: Analyse, Optimierung Ihrer wichtigsten Seiten, Schema-Markup, Crawler-Konfiguration und eine Messung vorher und nachher, mit Ergebnis in 10 bis 14 Tagen. Eine laufende Betreuung gibt es danach optional ab 600 € pro Monat, monatlich kündbar. Sie müssen also keinen teuren Vertrag abschließen, bevor Sie wissen, was der Kanal für Sie bringt.' },
 ];
 
 export default function AiSeoPage() {
@@ -40,6 +40,7 @@ export default function AiSeoPage() {
         url: 'https://webseite.hamburg/leistungen/ai-seo',
         description: 'AI SEO (Generative Engine Optimization) für Sichtbarkeit in ChatGPT, Perplexity, Google AI Overviews und Microsoft Copilot.',
         offers: [
+            { '@type': 'Offer', name: 'KI-Kurzanalyse', price: '0', priceCurrency: 'EUR' },
             { '@type': 'Offer', name: 'AI Visibility Sprint', price: '1500', priceCurrency: 'EUR' },
             { '@type': 'Offer', name: 'AI Visibility Betreuung', price: '600', priceCurrency: 'EUR', priceSpecification: { '@type': 'UnitPriceSpecification', unitText: 'Monat' } },
         ],
@@ -135,8 +136,18 @@ export default function AiSeoPage() {
                     </div>
 
                     <h2 className="animate-up">Preise und Umfang</h2>
-                    <p className="animate-up">KI-Sichtbarkeit beginnt mit einem einmaligen Sprint, nicht mit einem teuren Vertrag. Erst wenn Sie sehen, was der Kanal bringt, ist eine laufende Betreuung sinnvoll.</p>
-                    <div className="subpage-pricing-compare animate-up">
+                    <p className="animate-up">Der Einstieg ist ein kostenloser Call, kein Vertrag. Danach folgt ein einmaliger Sprint, und erst wenn Sie sehen, was der Kanal bringt, wird eine laufende Betreuung sinnvoll.</p>
+                    <div className="subpage-pricing-compare is-three animate-up">
+                        <div className="subpage-price-col">
+                            <h3>KI-Kurzanalyse</h3>
+                            <div className="sp-price-value">0 &euro;</div>
+                            <p>15 Minuten am Telefon oder per Video. Wir schauen live nach, ob Sie in KI-Antworten genannt werden. Kein Report, keine Verpflichtung.</p>
+                            <ul className="sp-price-includes">
+                                <li>KI-Status: Werden Sie aktuell genannt?</li>
+                                <li>Wettbewerbs-Check: Wer wird stattdessen empfohlen?</li>
+                                <li>Die drei wichtigsten Hebel, direkt im Gespräch</li>
+                            </ul>
+                        </div>
                         <div className="subpage-price-col subpage-price-featured">
                             <h3>AI Visibility Sprint</h3>
                             <div className="sp-price-value">ab 1.500 &euro;</div>

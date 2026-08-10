@@ -7,7 +7,7 @@ const faqCategories = [
     {
         name: 'Webdesign & Website-Erstellung',
         questions: [
-            { q: 'Was kostet eine professionelle Website?', a: 'Eine Conversion Landingpage (One-Pager) beginnt ab 2.900 Euro, eine mehrseitige Unternehmenswebsite ab 4.500 Euro. Der finale Preis hängt von Umfang, Funktionen und individuellen Anforderungen ab. Im kostenlosen Erstgespräch erhalten Sie eine konkrete Einschätzung.' },
+            { q: 'Was kostet eine professionelle Website?', a: 'Der Website-Start mit bewaehrtem Layout und Ihren Texten beginnt ab 1.500 Euro. Eine individuell gestaltete Conversion Landingpage ab 2.900 Euro, eine mehrseitige Unternehmenswebsite ab 4.500 Euro. Der finale Preis hängt von Umfang, Funktionen und individuellen Anforderungen ab. Im kostenlosen Erstgespräch erhalten Sie eine konkrete Einschätzung.' },
             { q: 'Wie lange dauert die Erstellung einer Website?', a: 'Eine Landingpage ist typischerweise in 2-3 Wochen fertig, eine mehrseitige Website in 4-6 Wochen. Die genaue Dauer hängt von Ihrem Feedback-Tempo und dem Umfang des Projekts ab.' },
             { q: 'Verwenden Sie WordPress oder einen Baukasten?', a: 'Nein. Jede Website wird individuell mit modernen Technologien wie React und Next.js entwickelt. Das bedeutet maximale Geschwindigkeit (PageSpeed 90-100), volle Flexibilität und keine Abhängigkeit von Plugins oder Page-Buildern.' },
             { q: 'Ist meine Website auch auf dem Handy optimiert?', a: 'Ja. Jede Website ist vollständig responsive und wird auf allen Geräten getestet: Smartphone, Tablet und Desktop. Über 60% der Zugriffe kommen mobil, daher ist Mobile-Optimierung keine Option, sondern Standard.' },

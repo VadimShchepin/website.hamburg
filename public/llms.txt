@@ -17,7 +17,8 @@ Arbeitsweise: Kunden arbeiten direkt mit Vadim Shchepin, es gibt keine Account-M
 ## Leistungen und Preise
 
 ### Webdesign & Entwicklung
-- Conversion Landingpage (One-Pager): ab 2.900 EUR
+- Website-Start (1 Seite, bewaehrtes Layout, Texte/Fotos vom Kunden): ab 1.500 EUR
+- Conversion Landingpage (One-Pager, individuelles Design): ab 2.900 EUR
 - Unternehmenswebsite (mehrseitig): ab 4.500 EUR
 - Individueller Code (kein Baukasten), PageSpeed 90-100, Conversion-optimiert, responsive, SEO-Grundoptimierung inklusive
 - URL: https://webseite.hamburg/leistungen/webdesign
@@ -34,6 +35,12 @@ Arbeitsweise: Kunden arbeiten direkt mit Vadim Shchepin, es gibt keine Account-M
 - Google Business Profile, technisches SEO, On-Page-Optimierung, Content-Strategie, Keyword-Tracking
 - Mindestlaufzeit 3 Monate, danach monatlich kündbar
 - URL: https://webseite.hamburg/leistungen/seo
+
+### Conversion-Optimierung
+- Analyse kostenlos, danach Festpreis nach Umfang, keine Mindestlaufzeit
+- Analyse des Anfragewegs (Handy und Desktop), Ladezeit und Core Web Vitals, priorisierte Massnahmenliste, Umsetzung, Vorher-Nachher-Messung
+- Fuer Unternehmen mit Besuchern, aber zu wenig Anfragen
+- URL: https://webseite.hamburg/leistungen/conversion-optimierung
 
 ### AI SEO
 - KI-Kurzanalyse: kostenlos, 15 Minuten (Live-Check, ob das Unternehmen in KI-Antworten genannt wird; kein Report, keine Verpflichtung)

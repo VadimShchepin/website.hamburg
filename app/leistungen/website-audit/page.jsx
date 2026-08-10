@@ -8,13 +8,13 @@ import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
     title: 'Website-Audit Hamburg | Kostenlose Analyse',
-    description: 'Kostenlose Website-Analyse: Performance (Core Web Vitals), SEO, Conversion und Wettbewerb. Bericht in 2–3 Werktagen, unverbindlich.',
+    description: 'Kostenlose Website-Analyse: Performance (Core Web Vitals), SEO, Conversion und Wettbewerb. Bericht in 2 bis 3 Werktagen, unverbindlich.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/website-audit',
     },
     openGraph: {
         title: 'Website-Audit Hamburg | Kostenlose Analyse',
-        description: 'Kostenlose Website-Analyse: Performance (Core Web Vitals), SEO, Conversion und Wettbewerb. Bericht in 2–3 Werktagen mit priorisierten Empfehlungen.',
+        description: 'Kostenlose Website-Analyse: Performance (Core Web Vitals), SEO, Conversion und Wettbewerb. Bericht in 2 bis 3 Werktagen mit priorisierten Empfehlungen.',
         url: 'https://webseite.hamburg/leistungen/website-audit',
         type: 'website',
     },
@@ -22,7 +22,7 @@ export const metadata = {
 
 const faqItems = [
     { q: 'Was kostet das Website-Audit?', a: 'Nichts. Das Audit ist kostenlos und unverbindlich. Sie erhalten eine ehrliche Analyse und entscheiden selbst, ob und wie Sie weiter vorgehen. Kein Haken, kein Kleingedrucktes.' },
-    { q: 'Wie lange dauert das Audit?', a: 'Die Analyse erstelle ich innerhalb von 2–3 Werktagen nach Ihrer Anfrage. Das anschließende Besprechungsgespräch dauert rund 30 Minuten, in denen wir die Ergebnisse gemeinsam durchgehen.' },
+    { q: 'Wie lange dauert das Audit?', a: 'Die Analyse erstelle ich innerhalb von 2 bis 3 Werktagen nach Ihrer Anfrage. Das anschließende Besprechungsgespräch dauert rund 30 Minuten, in denen wir die Ergebnisse gemeinsam durchgehen.' },
     { q: 'Welche Tools nutzen Sie für das Audit?', a: 'Für die Performance Google Lighthouse und PageSpeed Insights inklusive der Core Web Vitals (LCP, INP, CLS). Für SEO die Google Search Console und Keyword-Tools, für das Nutzerverhalten GA4. So basiert die Analyse auf belegbaren Daten statt auf Bauchgefühl.' },
     { q: 'Was passiert nach dem Audit?', a: 'Sie erhalten konkrete Handlungsempfehlungen mit Prioritäten. Einige können Sie selbst umsetzen, für andere kann ich ein Angebot machen. Es gibt keinen Druck, die Entscheidung liegt bei Ihnen.' },
     { q: 'Muss ich danach etwas bei Ihnen buchen?', a: 'Nein. Das Audit ist wirklich kostenlos, nicht als Verkaufstrick, sondern weil gute Beratung Vertrauen schafft. Viele meiner Kunden kommen über diesen Weg, aber es gibt keinerlei Verpflichtung.' },
@@ -72,7 +72,7 @@ export default function WebsiteAuditPage() {
                 <div className="container subpage-body">
                     <h2 className="animate-up">Was ist das Website-Audit?</h2>
                     <div className="subpage-takeaway animate-up">
-                        <p>Das <strong>Website-Audit</strong> ist eine kostenlose, unverbindliche Analyse Ihrer Website in vier Bereichen: Performance (Core Web Vitals), SEO, Conversion und Wettbewerb. Sie erhalten innerhalb von <strong>2–3 Werktagen</strong> einen Bericht mit Screenshots, Daten und priorisierten Handlungsempfehlungen, dazu ein 30-minütiges Gespräch. Kein Haken, keine Verpflichtung.</p>
+                        <p>Das <strong>Website-Audit</strong> ist eine kostenlose, unverbindliche Analyse Ihrer Website in vier Bereichen: Performance (Core Web Vitals), SEO, Conversion und Wettbewerb. Sie erhalten innerhalb von <strong>2 bis 3 Werktagen</strong> einen Bericht mit Screenshots, Daten und priorisierten Handlungsempfehlungen, dazu ein 30-minütiges Gespräch. Kein Haken, keine Verpflichtung.</p>
                     </div>
 
                     <h2 className="animate-up">Was das Audit umfasst</h2>
@@ -126,7 +126,7 @@ export default function WebsiteAuditPage() {
                     <h2 className="animate-up">So läuft es ab</h2>
                     <div className="subpage-process animate-up">
                         <div className="sp-step"><span className="sp-step-num">1</span><div><strong>Anfrage</strong><p>Schicken Sie mir Ihre Website-URL und kurz Infos zu Ihrem Unternehmen. Das geht in 2 Minuten.</p></div></div>
-                        <div className="sp-step"><span className="sp-step-num">2</span><div><strong>Analyse</strong><p>Ich analysiere Ihre Website innerhalb von 2–3 Werktagen: Performance, SEO, Struktur, Wettbewerber.</p></div></div>
+                        <div className="sp-step"><span className="sp-step-num">2</span><div><strong>Analyse</strong><p>Ich analysiere Ihre Website innerhalb von 2 bis 3 Werktagen: Performance, SEO, Struktur, Wettbewerber.</p></div></div>
                         <div className="sp-step"><span className="sp-step-num">3</span><div><strong>Besprechung</strong><p>In einem 30-minütigen Gespräch gehen wir die Ergebnisse durch. Sie stellen Fragen, ich gebe ehrliche Antworten.</p></div></div>
                         <div className="sp-step"><span className="sp-step-num">4</span><div><strong>Ihre Entscheidung</strong><p>Sie erhalten Analyse und Empfehlungen. Was Sie damit machen, ist Ihre Entscheidung. Kein Druck.</p></div></div>
                     </div>

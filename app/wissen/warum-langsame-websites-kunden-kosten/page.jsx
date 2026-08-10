@@ -153,7 +153,7 @@ export default function LangsameWebsitesArticlePage() {
                 <h2>Quellen</h2>
                 <ol>
                     <li>Think with Google, „Mobile Page Speed New Industry Benchmarks": 53 % der mobilen Nutzer verlassen Seiten mit über 3 s Ladezeit. <a href="https://www.thinkwithgoogle.com/marketing-strategies/app-and-mobile/mobile-page-speed-new-industry-benchmarks/" target="_blank" rel="nofollow noopener noreferrer">thinkwithgoogle.com</a></li>
-                    <li>Portent, „Site Speed Is Still Impacting Your Conversion Rate" (2022): ~4,4 % weniger Conversion pro zusätzlicher Sekunde (0–5 s); 1 s konvertiert ~2,5× besser als 5 s. <a href="https://www.portent.com/blog/design-dev/site-speed-is-still-impacting-your-conversion-rate.htm" target="_blank" rel="nofollow noopener noreferrer">portent.com</a></li>
+                    <li>Portent, „Site Speed Is Still Impacting Your Conversion Rate" (2022): ~4,4 % weniger Conversion pro zusätzlicher Sekunde (0 bis 5 s); 1 s konvertiert ~2,5× besser als 5 s. <a href="https://www.portent.com/blog/design-dev/site-speed-is-still-impacting-your-conversion-rate.htm" target="_blank" rel="nofollow noopener noreferrer">portent.com</a></li>
                     <li>Google, web.dev: Schwellenwerte der Core Web Vitals (LCP, INP, CLS). <a href="https://web.dev/vitals/" target="_blank" rel="nofollow noopener noreferrer">web.dev/vitals</a></li>
                 </ol>
             </ArticleLayout>

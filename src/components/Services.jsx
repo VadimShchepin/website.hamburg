@@ -8,7 +8,7 @@ export default function Services() {
             title: 'Webdesign & Entwicklung',
             desc: 'Schnelle, konversionsstarke Websites mit klarer Struktur. Kein Baukasten, sondern individuell entwickelt für Ihr Geschäft.',
             points: ['Responsive Design', 'PageSpeed 100/100', 'Klare Nutzerführung', 'CMS oder Custom'],
-            price: 'Ab 2.900',
+            price: 'Ab 1.500',
             icon: (
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                     <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>

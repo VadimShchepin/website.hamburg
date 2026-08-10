@@ -34,6 +34,12 @@ export default function sitemap() {
             priority: 0.8,
         },
         {
+            url: `${SITE_URL}/leistungen/conversion-optimierung`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.8,
+        },
+        {
             url: `${SITE_URL}/leistungen/ai-seo`,
             lastModified: new Date(),
             changeFrequency: 'monthly',

@@ -72,7 +72,7 @@ export default function Hero() {
                         <span className="hero-line hero-line-accent">sucht jetzt.</span>
                     </h1>
                     <p className="hero-sub">
-                        Findet er Sie – oder Ihren Wettbewerber? Websites, SEO und Ads, die messbar Anfragen bringen. Im Schnitt 40+ pro Monat für meine Kunden.
+                        Findet er Sie, oder Ihren Wettbewerber? Websites, SEO und Ads, die messbar Anfragen bringen. Im Schnitt 40+ pro Monat für meine Kunden.
                     </p>
                     <div className="hero-cta">
                         <Link href="/kontakt" className="button button-primary button-large" data-umami-event="cta-click" data-umami-event-location="hero">

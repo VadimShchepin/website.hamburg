@@ -26,7 +26,7 @@ const faqItems = [
     { q: 'Kann ich eine Online-Terminbuchung integrieren?', a: 'Ja. Ich integriere gängige Systeme wie Doctolib, Jameda oder Clickdoc direkt in Ihre Website. Patienten buchen rund um die Uhr, das entlastet Ihr Team und reduziert Telefonanfragen. Laut Bitkom hatte 2024 bereits jede zweite Person in Deutschland schon einmal online einen Arzttermin vereinbart.' },
     { q: 'Wie finden Patienten meine Praxis bei Google?', a: 'Durch lokale SEO, Google-Maps-Integration und strukturierte Daten erscheint Ihre Praxis bei Suchen wie „Zahnarzt Hamburg Eimsbüttel" oder „Hausarzt in der Nähe". Ich optimiere Ihr Google Business Profile und sorge für konsistente NAP-Daten (Name, Adresse, Telefon).' },
     { q: 'Kann ich Sprechzeiten und Team-Infos selbst aktualisieren?', a: 'Ja. Ich richte ein benutzerfreundliches CMS ein, mit dem Sie Sprechzeiten, Urlaubszeiten, Team-Mitglieder und Leistungen selbst anpassen, ganz ohne technische Kenntnisse. Ich schule Sie und Ihr Praxisteam in der Bedienung.' },
-    { q: 'Wie lange dauert die Erstellung?', a: 'Eine Praxis-Website ist in der Regel in 3–5 Wochen fertig. Der genaue Zeitrahmen hängt vom Umfang ab, etwa ob Sie Online-Terminbuchung, Teamfotos oder Leistungsseiten benötigen. Nach dem Erstgespräch erhalten Sie einen konkreten Zeitplan.' },
+    { q: 'Wie lange dauert die Erstellung?', a: 'Eine Praxis-Website ist in der Regel in 3 bis 5 Wochen fertig. Der genaue Zeitrahmen hängt vom Umfang ab, etwa ob Sie Online-Terminbuchung, Teamfotos oder Leistungsseiten benötigen. Nach dem Erstgespräch erhalten Sie einen konkreten Zeitplan.' },
 ];
 
 export default function WebdesignAerztePage() {
@@ -139,7 +139,7 @@ export default function WebdesignAerztePage() {
                         </div>
                         <div className="subpage-feature">
                             <h3>Schnelle Ladezeiten</h3>
-                            <p>Lighthouse-Werte von 90–100 sind Standard. Eine schnelle Website bedeutet bessere Google-Rankings, weniger Absprünge und Patienten, die nicht warten müssen.</p>
+                            <p>Lighthouse-Werte von 90 bis 100 sind Standard. Eine schnelle Website bedeutet bessere Google-Rankings, weniger Absprünge und Patienten, die nicht warten müssen.</p>
                         </div>
                         <div className="subpage-feature">
                             <h3>Bewertungen-Integration</h3>
@@ -161,7 +161,7 @@ export default function WebdesignAerztePage() {
                                 <li>SEO-Grundoptimierung</li>
                                 <li>Google-Maps-Integration</li>
                                 <li>SSL & Cookie-Management</li>
-                                <li>Lighthouse 90–100</li>
+                                <li>Lighthouse 90 bis 100</li>
                             </ul>
                         </div>
                         <div className="subpage-price-col subpage-price-featured">

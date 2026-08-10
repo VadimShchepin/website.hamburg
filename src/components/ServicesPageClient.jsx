@@ -147,6 +147,17 @@ export default function ServicesPageClient() {
 
                         <div className="sp-service-sidebar">
                             <div className="sp-price-card bull-boundary animate-up">
+                                <p className="sp-price-label">Website-Start</p>
+                                <div className="sp-price-value">ab 1.500 &euro;</div>
+                                <p className="sp-price-desc">Der schnelle Einstieg: eine Seite auf Basis eines bewährten Layouts, mit Ihren Texten und Fotos.</p>
+                                <ul className="sp-price-includes">
+                                    <li>1 Seite, responsiv</li>
+                                    <li>Bewährtes Layout</li>
+                                    <li>Ihre Texte und Fotos</li>
+                                    <li>Fertig in 1 bis 2 Wochen</li>
+                                </ul>
+                            </div>
+                            <div className="sp-price-card bull-boundary animate-up delay-1">
                                 <p className="sp-price-label">Conversion Landingpage</p>
                                 <div className="sp-price-value">ab 2.900 &euro;</div>
                                 <p className="sp-price-desc">Für eine konkrete Dienstleistung oder Kampagne. Inklusive Struktur, Design, Entwicklung, Tracking und SEO-Grundlage.</p>

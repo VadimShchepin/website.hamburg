@@ -22,8 +22,8 @@ export const metadata = {
 
 const faqItems = [
     { q: 'Was kostet lokale SEO in Hamburg?', a: 'Ab 1.000 € pro Monat. Der genaue Betrag hängt vom Wettbewerb in Ihrer Branche und Region ab: ein Steuerberater in der Innenstadt hat ein anderes Wettbewerbsumfeld als ein Maler im Umland. Mindestlaufzeit sind 3 Monate, danach ist der Vertrag monatlich kündbar. Im Erstgespräch sage ich Ihnen ehrlich, ob SEO für Ihre Situation sinnvoll ist und welches Budget realistisch ist.' },
-    { q: 'Wie schnell sehe ich SEO-Ergebnisse?', a: 'Erste messbare Verbesserungen typischerweise nach 4–8 Wochen, deutliche Ranking-Veränderungen nach 3–6 Monaten. SEO ist eine Investition in dauerhaften, klickkostenfreien Traffic: Anders als bei Google Ads hört der Besucherstrom nicht auf, wenn das Budget stoppt.' },
-    { q: 'Lohnt sich SEO oder Google Ads mehr für mein Unternehmen?', a: 'Beides hat seinen Platz. Google Ads liefern ab Tag 1 Anfragen, kosten aber pro Klick und stoppen, sobald das Budget endet. Lokale SEO braucht 3–6 Monate, bringt danach aber dauerhaft Besucher ohne Klickkosten. Für die meisten Hamburger Unternehmen ist die Kombination am stärksten: Ads für den Sofort-Effekt, SEO für den langfristigen Aufbau.' },
+    { q: 'Wie schnell sehe ich SEO-Ergebnisse?', a: 'Erste messbare Verbesserungen typischerweise nach 4 bis 8 Wochen, deutliche Ranking-Veränderungen nach 3 bis 6 Monaten. SEO ist eine Investition in dauerhaften, klickkostenfreien Traffic: Anders als bei Google Ads hört der Besucherstrom nicht auf, wenn das Budget stoppt.' },
+    { q: 'Lohnt sich SEO oder Google Ads mehr für mein Unternehmen?', a: 'Beides hat seinen Platz. Google Ads liefern ab Tag 1 Anfragen, kosten aber pro Klick und stoppen, sobald das Budget endet. Lokale SEO braucht 3 bis 6 Monate, bringt danach aber dauerhaft Besucher ohne Klickkosten. Für die meisten Hamburger Unternehmen ist die Kombination am stärksten: Ads für den Sofort-Effekt, SEO für den langfristigen Aufbau.' },
     { q: 'Was ist der Unterschied zwischen lokalem SEO und normalem SEO?', a: 'Lokales SEO fokussiert auf Sichtbarkeit in Ihrer Region: Google Maps, das lokale 3er-Pack, lokale Suchergebnisse und Ihr Google Business Profile. Klassisches (organisches) SEO zielt auf bundesweite oder thematische Suchbegriffe ohne Ortsbezug. Wenn Ihre Kunden in Hamburg oder Umgebung suchen, ist lokales SEO der direkteste Kanal.' },
     { q: 'Garantieren Sie Platz 1 bei Google?', a: 'Nein, und seien Sie vorsichtig bei jedem, der das tut. Google-Rankings hängen von über 200 Faktoren ab, die niemand vollständig kontrolliert. Was ich garantiere: transparente, datenbasierte Arbeit, monatliche Reports und Optimierung, bis die Ergebnisse stimmen.' },
     { q: 'Brauche ich eine neue Website für SEO?', a: 'Nicht unbedingt. Oft lassen sich bestehende Websites technisch und inhaltlich optimieren. Wenn die Basis schlecht ist (langsame Ladezeiten, nicht mobiloptimiert, veraltete Technik), kann ein Relaunch langfristig günstiger sein als Flickwerk. Das klären wir in der Analyse.' },
@@ -122,7 +122,7 @@ export default function SeoPage() {
                                 <tr><th>Kriterium</th><th>Lokale SEO</th><th><Link href="/leistungen/google-ads">Google Ads</Link></th></tr>
                             </thead>
                             <tbody>
-                                <tr><th>Erste Wirkung</th><td>nach 3–6 Monaten</td><td>ab Tag 1</td></tr>
+                                <tr><th>Erste Wirkung</th><td>nach 3 bis 6 Monaten</td><td>ab Tag 1</td></tr>
                                 <tr><th>Kosten pro Klick</th><td>0 € (organisch)</td><td>bezahlt pro Klick / Anfrage</td></tr>
                                 <tr><th>Nach Budgetstopp</th><td>Sichtbarkeit bleibt</td><td>Anzeigen verschwinden sofort</td></tr>
                                 <tr><th>Stärke</th><td>nachhaltiger Aufbau</td><td>schnelle Anfragen, Tests</td></tr>

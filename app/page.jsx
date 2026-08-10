@@ -14,7 +14,7 @@ import Cta from '../src/components/Cta';
 const faqItems = [
     {
         q: 'Was kostet eine professionelle Website?',
-        a: 'Eine Conversion Landingpage beginnt ab 2.900 Euro, eine mehrseitige Unternehmenswebsite ab 4.500 Euro. Den finalen Preis erhalten Sie nach dem kostenlosen Erstgespräch, schriftlich und ohne versteckte Kosten.',
+        a: 'Der Website-Start beginnt ab 1.500 Euro, eine individuell gestaltete Conversion Landingpage ab 2.900 Euro, eine mehrseitige Unternehmenswebsite ab 4.500 Euro. Den finalen Preis erhalten Sie nach dem kostenlosen Erstgespräch, schriftlich und ohne versteckte Kosten.',
     },
     {
         q: 'Wie lange dauert die Erstellung einer Website?',

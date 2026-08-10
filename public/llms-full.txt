@@ -33,7 +33,8 @@ Was enthalten ist:
 - SSL, DSGVO-konform, technisch einwandfrei
 
 Preise:
-- Conversion Landingpage / One-Pager (1 Seite, Kontaktformular, SEO-Setup): ab 2.900 EUR einmalig
+- Website-Start (1 Seite, bewaehrtes Layout, Texte und Fotos vom Kunden): ab 1.500 EUR einmalig
+- Conversion Landingpage / One-Pager (1 Seite, individuelles Design, Kontaktformular, SEO-Setup): ab 2.900 EUR einmalig
 - Unternehmenswebsite (5+ Seiten, CMS, Blog optional, erweitertes SEO): ab 4.500 EUR einmalig
 
 Typischer Ablauf: Erstgespräch → Konzept & Struktur → Design & Entwicklung → Launch & Optimierung. Dauer: 2-3 Wochen (One-Pager) bis 4-6 Wochen (mehrseitig).
@@ -53,6 +54,22 @@ Was enthalten ist:
 
 Preis: ab 1.000 EUR/Monat. Mindestlaufzeit 3 Monate, danach monatlich kündbar.
 Erste Ergebnisse typischerweise nach 4-8 Wochen. Volle Wirkung nach 3-6 Monaten.
+
+### Conversion-Optimierung
+
+Mehr Anfragen aus vorhandenem Traffic, statt zusaetzliche Besucher einzukaufen.
+
+Was enthalten ist:
+- Analyse des kompletten Anfragewegs auf Handy und Desktop
+- Messung von Ladezeit und Core Web Vitals
+- Priorisierte Massnahmenliste nach Wirkung und Aufwand
+- Umsetzung der freigegebenen Punkte
+- Sauberes Conversion-Tracking
+- Vorher-Nachher-Vergleich an denselben Kennzahlen
+
+Preis: Die Analyse ist kostenlos. Danach Festpreis nach Umfang, der vor der Entscheidung feststeht. Keine Mindestlaufzeit und keine monatliche Bindung.
+
+Fuer wen: Unternehmen, die Besucher haben, aber zu wenige davon zu Anfragen werden. Wenn kaum Besucher da sind, ist SEO oder Google Ads der richtige Hebel, nicht Conversion-Optimierung.
 
 ### AI SEO — Sichtbarkeit in KI-Suchsystemen
 

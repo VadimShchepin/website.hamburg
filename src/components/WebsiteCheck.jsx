@@ -159,7 +159,7 @@ export default function WebsiteCheck() {
                     <p className="section-kicker" style={{ color: 'rgba(255,255,255,0.6)' }}>Kostenloser Schnelltest</p>
                     <h2 className="section-title" style={{ color: '#fff' }}>Wie gut ist Ihre Website? Der 60-Sekunden-Check.</h2>
                     <p className="section-desc" style={{ color: 'rgba(255,255,255,0.7)' }}>
-                        Ladezeit, SEO-Grundlagen und Technik – gemessen mit Google PageSpeed, direkt hier, ohne E-Mail-Adresse.
+                        Ladezeit, SEO-Grundlagen und Technik, gemessen mit Google PageSpeed, direkt hier, ohne E-Mail-Adresse.
                     </p>
                 </div>
 
@@ -195,7 +195,7 @@ export default function WebsiteCheck() {
                     <div className="wc-results">
                         <div className="wc-scores">
                             {psiFailed ? (
-                                <p className="wc-psi-note">Der Google-PageSpeed-Test ist gerade ausgelastet. Hier sind Ihre SEO-Grundlagen – die volle Messung liefere ich in der kostenlosen Analyse nach.</p>
+                                <p className="wc-psi-note">Der Google-PageSpeed-Test ist gerade ausgelastet. Hier sind Ihre SEO-Grundlagen, die volle Messung liefere ich in der kostenlosen Analyse nach.</p>
                             ) : (
                                 <>
                                     <ScoreRing score={psi?.performance ?? null} label="Performance (Mobil)" />
@@ -209,19 +209,19 @@ export default function WebsiteCheck() {
                         </div>
 
                         <ul className="wc-checks">
-                            <CheckRow ok={c.https} label="HTTPS-Verschlüsselung" detail={c.https ? 'aktiv' : 'fehlt – Warnung im Browser'} />
-                            <CheckRow ok={titleOk} warn={c.titleLength > 0 && !titleOk} label="Seitentitel" detail={c.titleLength === 0 ? 'fehlt' : `${c.titleLength} Zeichen (optimal: 30–65)`} />
-                            <CheckRow ok={descOk} warn={c.descriptionLength > 0 && !descOk} label="Meta-Beschreibung" detail={c.descriptionLength === 0 ? 'fehlt – Google wählt den Text selbst' : `${c.descriptionLength} Zeichen (optimal: 50–165)`} />
-                            <CheckRow ok={c.h1Count === 1} warn={c.h1Count > 1} label="H1-Überschrift" detail={c.h1Count === 1 ? 'genau eine – korrekt' : c.h1Count === 0 ? 'fehlt' : `${c.h1Count} gefunden (empfohlen: genau eine)`} />
+                            <CheckRow ok={c.https} label="HTTPS-Verschlüsselung" detail={c.https ? 'aktiv' : 'fehlt, Warnung im Browser'} />
+                            <CheckRow ok={titleOk} warn={c.titleLength > 0 && !titleOk} label="Seitentitel" detail={c.titleLength === 0 ? 'fehlt' : `${c.titleLength} Zeichen (optimal: 30 bis 65)`} />
+                            <CheckRow ok={descOk} warn={c.descriptionLength > 0 && !descOk} label="Meta-Beschreibung" detail={c.descriptionLength === 0 ? 'fehlt, Google wählt den Text selbst' : `${c.descriptionLength} Zeichen (optimal: 50 bis 165)`} />
+                            <CheckRow ok={c.h1Count === 1} warn={c.h1Count > 1} label="H1-Überschrift" detail={c.h1Count === 1 ? 'genau eine, korrekt' : c.h1Count === 0 ? 'fehlt' : `${c.h1Count} gefunden (empfohlen: genau eine)`} />
                             <CheckRow ok={c.viewport} label="Mobile Optimierung (Viewport)" detail={c.viewport ? 'vorhanden' : 'fehlt'} />
                         </ul>
 
                         <div className="wc-verdict">
                             <p>
                                 {lowScore || failedBasics >= 2
-                                    ? 'Hier liegt messbares Potenzial. Jeder dieser Punkte kostet Sie Besucher – und damit Anfragen.'
+                                    ? 'Hier liegt messbares Potenzial. Jeder dieser Punkte kostet Sie Besucher, und damit Anfragen.'
                                     : 'Solide Basis. Wie viel mehr möglich ist, zeigt erst der Blick auf Struktur, Inhalte und Conversion-Pfade.'}
-                                {' '}Die kostenlose Analyse zeigt Ihnen die 3 wichtigsten Hebel – konkret und umsetzbar, innerhalb von 48 h.
+                                {' '}Die kostenlose Analyse zeigt Ihnen die 3 wichtigsten Hebel, konkret und umsetzbar, innerhalb von 48 h.
                             </p>
                             <Link
                                 href={`/kontakt?website=${encodeURIComponent(checkedUrl)}`}

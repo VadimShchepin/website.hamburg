@@ -7,23 +7,23 @@ import ServiceMeta from '../../../src/components/ServiceMeta';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'Website erstellen lassen Hamburg | Professionell ab 2.900 €',
-    description: 'Website erstellen lassen in Hamburg: individuell programmiert, Lighthouse 90–100, Festpreis ab 2.900 €. Fertig in 2–6 Wochen.',
+    title: 'Website erstellen lassen: Festpreis ab 1.500 Euro',
+    description: 'Website erstellen lassen in Hamburg: Festpreis ab 1.500 €, individuell programmiert, Lighthouse 90 bis 100. Fertig in 1 bis 6 Wochen.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/website-erstellen-lassen',
     },
     openGraph: {
-        title: 'Website erstellen lassen Hamburg | Professionell ab 2.900 €',
-        description: 'Website erstellen lassen in Hamburg: individuell programmiert, Lighthouse 90–100, Festpreis ab 2.900 €. Keine Baukästen, keine versteckten Kosten.',
+        title: 'Website erstellen lassen: Festpreis ab 1.500 Euro',
+        description: 'Website erstellen lassen in Hamburg: Festpreis ab 1.500 €, individuell programmiert, Lighthouse 90 bis 100. Keine versteckten Kosten.',
         url: 'https://webseite.hamburg/leistungen/website-erstellen-lassen',
         type: 'website',
     },
 };
 
 const faqItems = [
-    { q: 'Was kostet es, eine Website erstellen zu lassen?', a: 'Eine Conversion Landingpage (One-Pager) startet ab 2.900 €, eine mehrseitige Unternehmenswebsite ab 4.500 €. Der finale Preis hängt vom Umfang ab, aber Sie erhalten vor Projektstart ein verbindliches Festpreis-Angebot. Keine versteckten Kosten, keine Überraschungen.' },
-    { q: 'Wie lange dauert die Erstellung?', a: 'Eine Landingpage ist in 2–3 Wochen fertig, eine mehrseitige Website in 4–6 Wochen. Der genaue Zeitrahmen hängt vom Umfang und Ihrem Feedback-Tempo ab. Den konkreten Zeitplan besprechen wir im Erstgespräch.' },
-    { q: 'Baukasten, WordPress oder individuell programmiert: was ist besser?', a: 'Baukästen wie Wix oder Squarespace sind günstig im Start, aber durch Templates begrenzt und oft langsam. WordPress-Themes sind flexibler, brauchen aber Pflege und Plugins. Individuell programmierter Code liefert die beste Performance (Lighthouse 90–100), volle Gestaltungsfreiheit und keine Plattform-Abhängigkeit, also die richtige Wahl für Unternehmen mit Anspruch. Genau das baue ich.' },
+    { q: 'Was kostet es, eine Website erstellen zu lassen?', a: 'Der Einstieg ist der Website-Start ab 1.500 €: eine Seite auf Basis eines bewährten Layouts, mit Ihren Texten und Fotos. Eine individuell gestaltete Conversion Landingpage startet ab 2.900 €, eine mehrseitige Unternehmenswebsite ab 4.500 €. Der finale Preis hängt vom Umfang ab, aber Sie erhalten vor Projektstart ein verbindliches Festpreis-Angebot. Keine versteckten Kosten, keine Überraschungen.' },
+    { q: 'Wie lange dauert die Erstellung?', a: 'Eine Landingpage ist in 2 bis 3 Wochen fertig, eine mehrseitige Website in 4 bis 6 Wochen. Der genaue Zeitrahmen hängt vom Umfang und Ihrem Feedback-Tempo ab. Den konkreten Zeitplan besprechen wir im Erstgespräch.' },
+    { q: 'Baukasten, WordPress oder individuell programmiert: was ist besser?', a: 'Baukästen wie Wix oder Squarespace sind günstig im Start, aber durch Templates begrenzt und oft langsam. WordPress-Themes sind flexibler, brauchen aber Pflege und Plugins. Individuell programmierter Code liefert die beste Performance (Lighthouse 90 bis 100), volle Gestaltungsfreiheit und keine Plattform-Abhängigkeit, also die richtige Wahl für Unternehmen mit Anspruch. Genau das baue ich.' },
     { q: 'Nutzen Sie WordPress oder Baukastensysteme?', a: 'Standardmäßig nein, jede Website wird individuell programmiert. Das garantiert maximale Performance, volle Flexibilität und Unabhängigkeit von Plattform-Einschränkungen. Wenn Sie Inhalte selbst pflegen wollen, binde ich ein CMS ein.' },
     { q: 'Ist die Website SEO-optimiert?', a: 'Ja. Jede Website enthält eine SEO-Grundoptimierung: saubere URL-Struktur, Meta-Tags, strukturierte Daten (Schema.org), semantisches HTML, Bildoptimierung und Mobile-First-Entwicklung. Für laufende SEO-Betreuung gibt es separate Pakete.' },
     { q: 'Kann ich die Website selbst bearbeiten?', a: 'Ja, wenn Sie das wünschen. Ich richte ein CMS ein und schule Sie in der Bedienung. Sie können Texte, Bilder und Seiten eigenständig anpassen, ohne technische Kenntnisse.' },
@@ -38,8 +38,9 @@ export default function WebsiteErstellenLassenPage() {
         provider: BUSINESS,
         areaServed: { '@type': 'City', name: 'Hamburg' },
         url: 'https://webseite.hamburg/leistungen/website-erstellen-lassen',
-        description: 'Professionelle Website erstellen lassen in Hamburg. Individuell programmiert, Lighthouse 90–100, Festpreis ab 2.900 €.',
+        description: 'Professionelle Website erstellen lassen in Hamburg. Individuell programmiert, Lighthouse 90 bis 100, Festpreis ab 1.500 €.',
         offers: [
+            { '@type': 'Offer', name: 'Website-Start', price: '1500', priceCurrency: 'EUR' },
             { '@type': 'Offer', name: 'Conversion Landingpage', price: '2900', priceCurrency: 'EUR' },
             { '@type': 'Offer', name: 'Unternehmenswebsite', price: '4500', priceCurrency: 'EUR' },
         ],
@@ -80,11 +81,24 @@ export default function WebsiteErstellenLassenPage() {
                 <div className="container subpage-body">
                     <h2 className="animate-up">Was kostet es, eine Website erstellen zu lassen?</h2>
                     <div className="subpage-takeaway animate-up">
-                        <p>Eine Website erstellen zu lassen kostet bei mir <strong>ab 2.900 €</strong> (Conversion Landingpage) bzw. <strong>ab 4.500 €</strong> (mehrseitige Unternehmenswebsite), jeweils als verbindlicher Festpreis vor Projektstart. Sie wird individuell programmiert, ohne Baukasten und ohne gekauftes Theme, und erreicht Lighthouse-Werte von 90–100. Ein One-Pager ist in 2–3 Wochen fertig, eine mehrseitige Website in 4–6 Wochen.</p>
+                        <p>Eine Website erstellen zu lassen kostet bei mir <strong>ab 1.500 €</strong> (Website-Start mit bewährtem Layout), <strong>ab 2.900 €</strong> (Conversion Landingpage) bzw. <strong>ab 4.500 €</strong> (mehrseitige Unternehmenswebsite), jeweils als verbindlicher Festpreis vor Projektstart. Sie wird individuell programmiert, ohne Baukasten und ohne gekauftes Theme, und erreicht Lighthouse-Werte von 90 bis 100. Ein One-Pager ist in 2 bis 3 Wochen fertig, eine mehrseitige Website in 4 bis 6 Wochen.</p>
                     </div>
 
                     <p className="animate-up">Transparente Preise statt vager Schätzungen. Sie wissen vor Projektstart genau, was Sie investieren und was Sie dafür bekommen.</p>
-                    <div className="subpage-pricing-compare animate-up">
+                    <div className="subpage-pricing-compare is-three animate-up">
+                        <div className="subpage-price-col">
+                            <h3>Website-Start</h3>
+                            <div className="sp-price-value">ab 1.500 &euro;</div>
+                            <p>Der schnelle Einstieg: eine Seite auf Basis eines bewährten Layouts, mit Ihren Texten und Fotos.</p>
+                            <ul className="sp-price-includes">
+                                <li>1 Seite, vollständig responsiv</li>
+                                <li>Bewährtes Layout statt individuellem Design</li>
+                                <li>Ihre Texte und Fotos werden übernommen</li>
+                                <li>Kontaktformular, SSL & DSGVO-konform</li>
+                                <li>SEO-Grundsetup, Lighthouse 90–100</li>
+                                <li>Fertig in 1–2 Wochen</li>
+                            </ul>
+                        </div>
                         <div className="subpage-price-col">
                             <h3>Conversion Landingpage</h3>
                             <div className="sp-price-value">ab 2.900 &euro;</div>
@@ -95,8 +109,8 @@ export default function WebsiteErstellenLassenPage() {
                                 <li>Kontaktformular & Tracking</li>
                                 <li>SEO-Grundoptimierung</li>
                                 <li>SSL & DSGVO-konform</li>
-                                <li>Lighthouse 90–100</li>
-                                <li>Fertig in 2–3 Wochen</li>
+                                <li>Lighthouse 90 bis 100</li>
+                                <li>Fertig in 2 bis 3 Wochen</li>
                             </ul>
                         </div>
                         <div className="subpage-price-col subpage-price-featured">
@@ -110,9 +124,9 @@ export default function WebsiteErstellenLassenPage() {
                                 <li>Blog / News optional</li>
                                 <li>Erweiterte SEO-Optimierung</li>
                                 <li>Conversion-Tracking & Analytics (GA4)</li>
-                                <li>Lighthouse 90–100</li>
+                                <li>Lighthouse 90 bis 100</li>
                                 <li>Schulung zur Bedienung</li>
-                                <li>Fertig in 4–6 Wochen</li>
+                                <li>Fertig in 4 bis 6 Wochen</li>
                             </ul>
                         </div>
                     </div>
@@ -127,7 +141,7 @@ export default function WebsiteErstellenLassenPage() {
                             <tbody>
                                 <tr><th>Baukasten (Wix, Squarespace)</th><td>mittel</td><td>durch Templates begrenzt</td><td>Hobby, schneller Start</td></tr>
                                 <tr><th>WordPress-Theme</th><td>mittel, pflegeabhängig</td><td>Theme-abhängig</td><td>Standard-Websites</td></tr>
-                                <tr><th>Individuell programmiert</th><td>sehr hoch (Lighthouse 90–100)</td><td>unbegrenzt</td><td>Unternehmen mit Anspruch</td></tr>
+                                <tr><th>Individuell programmiert</th><td>sehr hoch (Lighthouse 90 bis 100)</td><td>unbegrenzt</td><td>Unternehmen mit Anspruch</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -137,7 +151,7 @@ export default function WebsiteErstellenLassenPage() {
                     <div className="subpage-features-grid animate-up">
                         <div className="subpage-feature">
                             <h3>Performance-First</h3>
-                            <p>Lighthouse 90–100 und grüne Core Web Vitals (LCP unter 2,5 s, INP unter 200 ms, CLS unter 0,1) sind kein Versprechen, sondern messbarer Standard. Schnelle Seiten bedeuten weniger Absprünge und bessere Rankings.</p>
+                            <p>Lighthouse 90 bis 100 und grüne Core Web Vitals (LCP unter 2,5 s, INP unter 200 ms, CLS unter 0,1) sind kein Versprechen, sondern messbarer Standard. Schnelle Seiten bedeuten weniger Absprünge und bessere Rankings.</p>
                         </div>
                         <div className="subpage-feature">
                             <h3>Conversion-Architektur</h3>
@@ -180,7 +194,7 @@ export default function WebsiteErstellenLassenPage() {
                         <li>Zielgruppe: Wer soll die Website finden und was soll er als nächstes tun?</li>
                         <li>Wettbewerber: Zwei bis drei Websites, die Ihnen gefallen, und zwei, die nicht funktionieren.</li>
                         <li>Content: Haben Sie Texte, Fotos und Logo bereits? Oder muss das alles noch entstehen?</li>
-                        <li>Budget: Grober Rahmen (ab 2.900 € für eine Landingpage, ab 4.500 € für eine mehrseitige Website).</li>
+                        <li>Budget: Grober Rahmen (ab 1.500 € für den Website-Start, ab 2.900 € für eine Landingpage, ab 4.500 € für eine mehrseitige Website).</li>
                         <li>Zeitplan: Gibt es einen konkreten Launch-Termin (Messe, Eröffnung, Kampagne)?</li>
                     </ul>
 

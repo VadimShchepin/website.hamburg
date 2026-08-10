@@ -27,7 +27,7 @@ const faqItems = [
     },
     {
         q: 'Welche Bildgröße gehört in ein Galerie-Grid?',
-        a: 'Eine Grid-Zelle, die mit 200–400 px gerendert wird, braucht eine ~300-px-Variante (WebP, ~32–47 KB), keine 800-px- oder Original-Datei. In diesem Projekt senkte der Wechsel von 800 px auf 300 px die Bildbandbreite beim Scrollen um den Faktor 5–10: von ~150 MB auf ~25 MB für ein 1.204-Foto-Album.',
+        a: 'Eine Grid-Zelle, die mit 200 bis 400 px gerendert wird, braucht eine ~300-px-Variante (WebP, ~32 bis 47 KB), keine 800-px- oder Original-Datei. In diesem Projekt senkte der Wechsel von 800 px auf 300 px die Bildbandbreite beim Scrollen um den Faktor 5 bis 10: von ~150 MB auf ~25 MB für ein 1.204-Foto-Album.',
     },
     {
         q: 'Was bringt content-visibility: auto bei langen Listen?',
@@ -88,7 +88,7 @@ export default function FotogaleriePerformanceArticlePage() {
                         bis überhaupt etwas erschien. Die Ursache war ein N+1-Problem bei signierten URLs:
                         2.408 einzelne HTTP-Requests pro Seitenaufruf. Nach der Umstellung auf Batch-Signierung
                         sind es ~12 Requests, und die API antwortet in 0,98 s (kalt) bzw. 0,64 s (warm). Alle Zahlen
-                        in diesem Artikel sind echte Produktionsmessungen vom 10.–12. Juni 2026.
+                        in diesem Artikel sind echte Produktionsmessungen vom 10. bis 12. Juni 2026.
                     </p>
                 </div>
 
@@ -102,7 +102,7 @@ export default function FotogaleriePerformanceArticlePage() {
                     eine DSGVO-konforme Foto-Plattform für Schulen und Kitas, an der wir als Entwicklungsprojekt arbeiten:
                     Fotografen laden Event-Alben hoch, ordnen Fotos Kindern zu, Eltern greifen ohne Account per
                     QR-Code und PIN zu. Der Stack: Next.js 16 (App Router), React 19, selbst gehostetes Supabase
-                    (16–20 Docker-Container inkl. Kong API-Gateway, Storage-API und imgproxy), PostgreSQL mit
+                    (16 bis 20 Docker-Container inkl. Kong API-Gateway, Storage-API und imgproxy), PostgreSQL mit
                     Row Level Security, Fotos auf Hetzner S3.
                 </p>
                 <p>
@@ -194,12 +194,12 @@ const { data } = await supabase.storage
                             </tr>
                             <tr>
                                 <th scope="row">API-Antwort, 1.204 Fotos (warm)</th>
-                                <td>—</td>
+                                <td>nein</td>
                                 <td>0,64 s</td>
                             </tr>
                             <tr>
                                 <th scope="row">Kindbezogene Galerie (26 Fotos)</th>
-                                <td>—</td>
+                                <td>nein</td>
                                 <td>0,31 s / 21.661 Bytes</td>
                             </tr>
                             <tr>
@@ -218,9 +218,9 @@ const { data } = await supabase.storage
                 <h2>Bonus-Fund 1: 800-px-Bilder in 250-px-Zellen</h2>
                 <p>
                     Während der Analyse fiel auf: Das Grid lud die 800-px-<code>cover</code>-Variante in Zellen,
-                    die mit 200–400 px gerendert werden. Der Wechsel auf die 300-px-<code>thumb</code>-Variante
+                    die mit 200 bis 400 px gerendert werden. Der Wechsel auf die 300-px-<code>thumb</code>-Variante
                     (gemessen: 47 KB pro Bild) senkt die Bildbandbreite beim Scrollen um den{' '}
-                    <strong>Faktor 5–10</strong>: beim kompletten Durchscrollen des Albums der Unterschied
+                    <strong>Faktor 5 bis 10</strong>: beim kompletten Durchscrollen des Albums der Unterschied
                     zwischen ~150 MB und ~25 MB. Die 1.920-px-<code>full</code>-Variante bleibt der Lightbox vorbehalten.
                 </p>
 
@@ -287,7 +287,7 @@ contain-intrinsic-size: auto 250px;`}</code></pre>
                 <div className="subpage-sources">
                     <h2>Quellen &amp; Werkzeuge</h2>
                     <ol>
-                        <li>Produktionsmessungen dsgvoschulfotos.de, 10.–12. Juni 2026 (curl-Timings inkl. TLS, PostgreSQL-Abfragen, Storage-Logs)</li>
+                        <li>Produktionsmessungen dsgvoschulfotos.de, 10. bis 12. Juni 2026 (curl-Timings inkl. TLS, PostgreSQL-Abfragen, Storage-Logs)</li>
                         <li><a href="https://supabase.com/docs/reference/javascript/storage-from-createsignedurls" target="_blank" rel="noopener noreferrer">Supabase Storage: createSignedUrls(), Batch-Signierung</a></li>
                         <li><a href="https://web.dev/articles/content-visibility" target="_blank" rel="noopener noreferrer">web.dev: content-visibility, Rendering-Performance für lange Listen</a></li>
                         <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/content-visibility" target="_blank" rel="noopener noreferrer">MDN: CSS content-visibility</a></li>

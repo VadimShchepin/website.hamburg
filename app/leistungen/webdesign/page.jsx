@@ -7,24 +7,24 @@ import ServiceMeta from '../../../src/components/ServiceMeta';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'Webdesign Hamburg | Schnelle Websites ab 2.900 €',
-    description: 'Individuelles Webdesign für Unternehmen in Hamburg: programmiert statt Baukasten, Lighthouse 90–100, conversion-optimiert. Ab 2.900 €.',
+    title: 'Webdesign Hamburg | Schnelle Websites ab 1.500 €',
+    description: 'Individuelles Webdesign für Unternehmen in Hamburg: programmiert statt Baukasten, Lighthouse 90 bis 100, conversion-optimiert. Ab 1.500 €.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/webdesign',
     },
     openGraph: {
-        title: 'Webdesign Hamburg | Schnelle Websites ab 2.900 €',
-        description: 'Individuelles Webdesign für Unternehmen in Hamburg: programmiert statt Baukasten, Lighthouse 90–100, gute Core Web Vitals, Conversion-Optimierung.',
+        title: 'Webdesign Hamburg | Schnelle Websites ab 1.500 €',
+        description: 'Individuelles Webdesign für Unternehmen in Hamburg: programmiert statt Baukasten, Lighthouse 90 bis 100, gute Core Web Vitals, Conversion-Optimierung.',
         url: 'https://webseite.hamburg/leistungen/webdesign',
         type: 'website',
     },
 };
 
 const faqItems = [
-    { q: 'Was kostet eine professionelle Website?', a: 'Eine Conversion Landingpage (One-Pager) startet ab 2.900 €, eine mehrseitige Unternehmenswebsite ab 4.500 €. Sie erhalten vor Projektstart ein verbindliches Festpreis-Angebot, keine versteckten Kosten. Der finale Preis hängt vom Umfang ab (Seitenzahl, CMS, Shop, Sonderfunktionen).' },
-    { q: 'Wie lange dauert die Erstellung einer Website?', a: 'Eine Landingpage ist in 2–3 Wochen fertig, eine mehrseitige Website in 4–6 Wochen. Komplexere Projekte mit Shop oder Mitgliederbereich dauern 6–10 Wochen. Der genaue Zeitrahmen hängt vom Umfang und Ihrem Feedback-Tempo ab.' },
+    { q: 'Was kostet eine professionelle Website?', a: 'Der Einstieg ist der Website-Start ab 1.500 €: eine Seite auf Basis eines bewährten Layouts, mit Ihren Texten und Fotos. Eine individuell gestaltete Conversion Landingpage startet ab 2.900 €, eine mehrseitige Unternehmenswebsite ab 4.500 €. Sie erhalten vor Projektstart ein verbindliches Festpreis-Angebot, keine versteckten Kosten. Der finale Preis hängt vom Umfang ab (Seitenzahl, CMS, Shop, Sonderfunktionen).' },
+    { q: 'Wie lange dauert die Erstellung einer Website?', a: 'Eine Landingpage ist in 2 bis 3 Wochen fertig, eine mehrseitige Website in 4 bis 6 Wochen. Komplexere Projekte mit Shop oder Mitgliederbereich dauern 6 bis 10 Wochen. Der genaue Zeitrahmen hängt vom Umfang und Ihrem Feedback-Tempo ab.' },
     { q: 'Nutzen Sie Baukastensysteme wie Wix oder Squarespace?', a: 'Nein. Jede Website wird individuell programmiert. Das garantiert maximale Performance, volle gestalterische Freiheit und Unabhängigkeit von Plattform-Einschränkungen. Wenn Sie Inhalte selbst pflegen wollen, binde ich ein CMS wie WordPress oder einen Headless-Ansatz ein.' },
-    { q: 'Was bedeutet ein Lighthouse-Score von 90–100?', a: 'Lighthouse ist Googles Werkzeug zur Bewertung von Performance, SEO und Zugänglichkeit, auf einer Skala von 0–100 (sichtbar in den Chrome DevTools und in PageSpeed Insights). Viele Agentur-Websites erreichen nur 30–60 Punkte. Meine Seiten liegen regelmäßig bei 90–100, und das bedeutet schnelles Laden, bessere Rankings und höhere Conversion.' },
+    { q: 'Was bedeutet ein Lighthouse-Score von 90 bis 100?', a: 'Lighthouse ist Googles Werkzeug zur Bewertung von Performance, SEO und Zugänglichkeit, auf einer Skala von 0 bis 100 (sichtbar in den Chrome DevTools und in PageSpeed Insights). Viele Agentur-Websites erreichen nur 30 bis 60 Punkte. Meine Seiten liegen regelmäßig bei 90 bis 100, und das bedeutet schnelles Laden, bessere Rankings und höhere Conversion.' },
     { q: 'Was sind Core Web Vitals?', a: 'Core Web Vitals sind Googles offizielle Kennzahlen für Nutzererlebnis: LCP (Ladezeit des größten Elements, gut: unter 2,5 s), INP (Reaktionszeit auf Eingaben, gut: unter 200 ms) und CLS (Layout-Stabilität, gut: unter 0,1). Sie fließen in das Google-Ranking ein. Jede Website baue ich so, dass sie alle drei Werte im grünen Bereich erreicht.' },
     { q: 'Ist die Website SEO-optimiert?', a: 'Ja. Jede Website enthält eine SEO-Grundoptimierung: saubere URL-Struktur, Meta-Tags, strukturierte Daten (Schema.org), semantisches HTML, Bildoptimierung und Mobile-First-Entwicklung. Für laufende Betreuung gibt es das separate SEO-Paket.' },
     { q: 'Kann ich die Website später selbst bearbeiten?', a: 'Ja, wenn Sie das wünschen. Ich richte ein CMS ein und schule Sie in der Bedienung. Sie können Texte, Bilder und Seiten eigenständig anpassen, ohne technische Kenntnisse.' },
@@ -38,8 +38,9 @@ export default function WebdesignPage() {
         provider: BUSINESS,
         areaServed: { '@type': 'City', name: 'Hamburg' },
         url: 'https://webseite.hamburg/leistungen/webdesign',
-        description: 'Individuelles Webdesign für Unternehmen in Hamburg: programmiert statt Baukasten, Lighthouse 90–100, gute Core Web Vitals, Conversion-Optimierung.',
+        description: 'Individuelles Webdesign für Unternehmen in Hamburg: programmiert statt Baukasten, Lighthouse 90 bis 100, gute Core Web Vitals, Conversion-Optimierung.',
         offers: [
+            { '@type': 'Offer', name: 'Website-Start', price: '1500', priceCurrency: 'EUR' },
             { '@type': 'Offer', name: 'Conversion Landingpage', price: '2900', priceCurrency: 'EUR' },
             { '@type': 'Offer', name: 'Unternehmenswebsite', price: '4500', priceCurrency: 'EUR' },
         ],
@@ -80,14 +81,14 @@ export default function WebdesignPage() {
                 <div className="container subpage-body">
                     <h2 className="animate-up">Was kostet professionelles Webdesign?</h2>
                     <div className="subpage-takeaway animate-up">
-                        <p>Eine professionelle Website kostet bei mir <strong>ab 2.900 €</strong> (Conversion Landingpage) bzw. <strong>ab 4.500 €</strong> (mehrseitige Unternehmenswebsite), jeweils zum Festpreis. Sie wird individuell programmiert, ohne Baukasten und ohne gekauftes WordPress-Theme, und erreicht Lighthouse-Werte von 90–100 sowie gute Core Web Vitals. Eine Landingpage ist in 2–3 Wochen fertig, eine mehrseitige Website in 4–6 Wochen.</p>
+                        <p>Eine professionelle Website kostet bei mir <strong>ab 1.500 €</strong> (Website-Start mit bewährtem Layout), <strong>ab 2.900 €</strong> (Conversion Landingpage) bzw. <strong>ab 4.500 €</strong> (mehrseitige Unternehmenswebsite), jeweils zum Festpreis. Sie wird individuell programmiert, ohne Baukasten und ohne gekauftes WordPress-Theme, und erreicht Lighthouse-Werte von 90 bis 100 sowie gute Core Web Vitals. Eine Landingpage ist in 2 bis 3 Wochen fertig, eine mehrseitige Website in 4 bis 6 Wochen.</p>
                     </div>
 
                     <h2 className="animate-up">Warum viele Firmenwebsites Kunden verlieren</h2>
                     <p className="animate-up">Eine <a href="/wissen/warum-langsame-websites-kunden-kosten">langsame, unstrukturierte Website kostet täglich Anfragen</a>, ohne dass Sie es merken. Google fand bereits 2016: 53 % der mobilen Nutzer verlassen eine Seite, die länger als 3 Sekunden lädt. Gleichzeitig entscheidet das Design in Millisekunden über Vertrauen oder Absprung.</p>
                     <p className="animate-up">Die häufigsten Probleme, die ich bei Unternehmen in Hamburg sehe:</p>
                     <ul className="check-list animate-up">
-                        <li>Ladezeiten von 5–10 Sekunden statt unter 1 Sekunde</li>
+                        <li>Ladezeiten von 5 bis 10 Sekunden statt unter 1 Sekunde</li>
                         <li>Keine klare Handlungsaufforderung, sodass Besucher nicht wissen, was sie tun sollen</li>
                         <li>Nicht mobiloptimiert, obwohl ein Großteil der Zugriffe über Smartphones kommt</li>
                         <li>Veraltetes Design, das Vertrauen zerstört statt aufbaut</li>
@@ -100,8 +101,8 @@ export default function WebdesignPage() {
                             <span className="subpage-stat-label">verlassen mobile Seiten, die länger als 3 s laden (Google, 2016)</span>
                         </div>
                         <div className="subpage-stat">
-                            <span className="subpage-stat-value">90–100</span>
-                            <span className="subpage-stat-label">Lighthouse-Score meiner Websites; viele Agentur-Seiten liegen bei 30–60</span>
+                            <span className="subpage-stat-value">90 bis 100</span>
+                            <span className="subpage-stat-label">Lighthouse-Score meiner Websites; viele Agentur-Seiten liegen bei 30 bis 60</span>
                         </div>
                         <div className="subpage-stat">
                             <span className="subpage-stat-value">&lt; 2,5 s</span>
@@ -115,7 +116,7 @@ export default function WebdesignPage() {
                     <div className="subpage-features-grid animate-up">
                         <div className="subpage-feature">
                             <h3>Performance-First</h3>
-                            <p>Jede Website wird auf Geschwindigkeit gebaut. Lighthouse-Werte von 90–100 und grüne Core Web Vitals (LCP, INP, CLS) sind Standard, nicht Ausnahme. Das senkt Absprünge und verbessert das Ranking.</p>
+                            <p>Jede Website wird auf Geschwindigkeit gebaut. Lighthouse-Werte von 90 bis 100 und grüne Core Web Vitals (LCP, INP, CLS) sind Standard, nicht Ausnahme. Das senkt Absprünge und verbessert das Ranking.</p>
                         </div>
                         <div className="subpage-feature">
                             <h3>Conversion-Architektur</h3>
@@ -132,7 +133,20 @@ export default function WebdesignPage() {
                     </div>
 
                     <h2 className="animate-up">Was im Preis enthalten ist</h2>
-                    <div className="subpage-pricing-compare animate-up">
+                    <div className="subpage-pricing-compare is-three animate-up">
+                        <div className="subpage-price-col">
+                            <h3>Website-Start</h3>
+                            <div className="sp-price-value">ab 1.500 &euro;</div>
+                            <p>Der schnelle Einstieg: eine Seite auf Basis eines bewährten Layouts, mit Ihren Texten und Fotos.</p>
+                            <ul className="sp-price-includes">
+                                <li>1 Seite, vollständig responsiv</li>
+                                <li>Bewährtes Layout statt individuellem Design</li>
+                                <li>Ihre Texte und Fotos werden übernommen</li>
+                                <li>Kontaktformular, SSL & DSGVO-konform</li>
+                                <li>SEO-Grundsetup, Lighthouse 90–100</li>
+                                <li>Fertig in 1–2 Wochen</li>
+                            </ul>
+                        </div>
                         <div className="subpage-price-col">
                             <h3>Conversion Landingpage</h3>
                             <div className="sp-price-value">ab 2.900 &euro;</div>
@@ -143,7 +157,7 @@ export default function WebdesignPage() {
                                 <li>Kontaktformular & Tracking</li>
                                 <li>SEO-Grundoptimierung</li>
                                 <li>SSL & DSGVO-konform</li>
-                                <li>Lighthouse 90–100</li>
+                                <li>Lighthouse 90 bis 100</li>
                             </ul>
                         </div>
                         <div className="subpage-price-col subpage-price-featured">
@@ -157,7 +171,7 @@ export default function WebdesignPage() {
                                 <li>Blog / News optional</li>
                                 <li>Erweiterte SEO-Optimierung</li>
                                 <li>Conversion-Tracking & Analytics (GA4)</li>
-                                <li>Lighthouse 90–100</li>
+                                <li>Lighthouse 90 bis 100</li>
                                 <li>Schulung zur Bedienung</li>
                             </ul>
                         </div>

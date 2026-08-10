@@ -90,7 +90,7 @@ export default function AiSeoPage() {
                             <span className="subpage-stat-label">wöchentliche ChatGPT-Nutzer (OpenAI, Oktober 2025)</span>
                         </div>
                         <div className="subpage-stat">
-                            <span className="subpage-stat-value">16–20%</span>
+                            <span className="subpage-stat-value">16 bis 20%</span>
                             <span className="subpage-stat-label">der Google-Suchen zeigen AI Overviews (Semrush, Ahrefs, 2025)</span>
                         </div>
                         <div className="subpage-stat">
@@ -183,7 +183,7 @@ export default function AiSeoPage() {
                         <h2>Quellen</h2>
                         <ol>
                             <li>OpenAI / Sam Altman, DevDay 2025: 800 Mio. wöchentliche ChatGPT-Nutzer (Oktober 2025). <a href="https://techcrunch.com/2025/10/06/sam-altman-says-chatgpt-has-hit-800m-weekly-active-users/" rel="nofollow noopener" target="_blank">techcrunch.com</a></li>
-                            <li>Semrush AI Overviews Study 2025; Ahrefs, Anteil der Suchen mit AI Overviews (~16–20 %). <a href="https://www.semrush.com/blog/semrush-ai-overviews-study/" rel="nofollow noopener" target="_blank">semrush.com</a></li>
+                            <li>Semrush AI Overviews Study 2025; Ahrefs, Anteil der Suchen mit AI Overviews (~16 bis 20 %). <a href="https://www.semrush.com/blog/semrush-ai-overviews-study/" rel="nofollow noopener" target="_blank">semrush.com</a></li>
                             <li>Aggarwal et al., „GEO: Generative Engine Optimization", KDD 2024. <a href="https://arxiv.org/abs/2311.09735" rel="nofollow noopener" target="_blank">arxiv.org/abs/2311.09735</a></li>
                         </ol>
                     </div>

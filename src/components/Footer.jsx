@@ -22,6 +22,7 @@ export default function Footer() {
                     <Link href="/leistungen/webdesign">Webdesign & Entwicklung</Link>
                     <Link href="/leistungen/seo">SEO für lokale Unternehmen</Link>
                     <Link href="/leistungen/ai-seo">AI SEO</Link>
+                    <Link href="/leistungen/conversion-optimierung">Conversion-Optimierung</Link>
                     <Link href="/leistungen/google-ads">Google Ads Management</Link>
                     <Link href="/leistungen/website-audit">Website-Audit</Link>
                     <Link href="/leistungen/webdesign-handwerker">Webdesign für Handwerker</Link>

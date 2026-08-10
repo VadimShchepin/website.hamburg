@@ -61,7 +61,11 @@ export default function ConversionOptimierungArticlePage() {
                     <figcaption>Conversion-Optimierung sorgt dafür, dass aus den vorhandenen Besuchern mehr echte Anfragen werden.</figcaption>
                 </figure>
 
-                <h2>Was die Conversion-Rate bedeutet und warum sie zählt</h2>
+                <div className="subpage-takeaway animate-up">
+                    <p>Sie wollen das nicht selbst umsetzen? Ich mache das als Leistung: <a href="/leistungen/conversion-optimierung">Conversion-Optimierung in Hamburg</a>, Analyse kostenlos.</p>
+                </div>
+
+                    <h2>Was die Conversion-Rate bedeutet und warum sie zählt</h2>
                 <p>
                     Die Conversion-Rate ist der Anteil der Besucher, die das tun, was Sie sich wünschen: ein Formular absenden, anrufen, einen Termin buchen. Websites lokaler Dienstleister liegen oft bei 1 bis 3 Prozent. Zum Vergleich: Über alle Branchen hinweg liegt die mittlere Conversion-Rate von Landingpages laut dem <a href="https://unbounce.com/conversion-benchmark-report/" target="_blank" rel="noopener noreferrer">Unbounce Conversion Benchmark Report</a> bei etwa 6,6 Prozent, bei Dienstleistern um die 4,6 Prozent. Nach oben ist also Luft.
                 </p>
@@ -172,8 +176,8 @@ export default function ConversionOptimierungArticlePage() {
                 <h2>Quellen</h2>
                 <ol>
                     <li>Unbounce, Conversion Benchmark Report: mittlere Landingpage-Conversion ~6,6 %, Dienstleister ~4,6 %. <a href="https://unbounce.com/conversion-benchmark-report/" target="_blank" rel="nofollow noopener noreferrer">unbounce.com</a></li>
-                    <li>Portent, „Site Speed Is Still Impacting Your Conversion Rate" (2022): ~4,4 % weniger Conversion pro zusätzlicher Sekunde (0–5 s); 1 s lädt ~2,5× besser als 5 s. <a href="https://www.portent.com/blog/design-dev/site-speed-is-still-impacting-your-conversion-rate.htm" target="_blank" rel="nofollow noopener noreferrer">portent.com</a></li>
-                    <li>Nielsen Norman Group, „How Long Do Users Stay on Web Pages?": Großteil der Absprünge in den ersten 10–20 Sekunden. <a href="https://www.nngroup.com/articles/how-long-do-users-stay-on-web-pages/" target="_blank" rel="nofollow noopener noreferrer">nngroup.com</a></li>
+                    <li>Portent, „Site Speed Is Still Impacting Your Conversion Rate" (2022): ~4,4 % weniger Conversion pro zusätzlicher Sekunde (0 bis 5 s); 1 s lädt ~2,5× besser als 5 s. <a href="https://www.portent.com/blog/design-dev/site-speed-is-still-impacting-your-conversion-rate.htm" target="_blank" rel="nofollow noopener noreferrer">portent.com</a></li>
+                    <li>Nielsen Norman Group, „How Long Do Users Stay on Web Pages?": Großteil der Absprünge in den ersten 10 bis 20 Sekunden. <a href="https://www.nngroup.com/articles/how-long-do-users-stay-on-web-pages/" target="_blank" rel="nofollow noopener noreferrer">nngroup.com</a></li>
                     <li>Baymard Institute, Checkout- und Form-Usability: zu viele Felder als häufiger Abbruchgrund. <a href="https://baymard.com/blog/checkout-usability" target="_blank" rel="nofollow noopener noreferrer">baymard.com</a></li>
                     <li>BrightLocal, Local Consumer Review Survey: Bewertungen als zentrales Vertrauenssignal, Mehrheit erwartet ≥ 4 Sterne. <a href="https://www.brightlocal.com/research/local-consumer-review-survey/" target="_blank" rel="nofollow noopener noreferrer">brightlocal.com</a></li>
                     <li>Statista, Conversion Rate by Device: Desktop konvertiert im Schnitt deutlich besser als mobil. <a href="https://www.statista.com/statistics/439579/global-conversion-rate-by-device/" target="_blank" rel="nofollow noopener noreferrer">statista.com</a></li>

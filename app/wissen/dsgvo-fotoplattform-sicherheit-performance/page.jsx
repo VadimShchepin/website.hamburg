@@ -27,7 +27,7 @@ const faqItems = [
     },
     {
         q: 'Welche Bildvarianten sollte man vorgenerieren?',
-        a: 'In diesem Projekt drei WebP-Varianten pro Foto: thumb (300 px, Qualität 80, ~32–47 KB) für Grids, cover (800 px, ~100–200 KB) für Karten und Vorschauen, full (1920 px, Qualität 85, ~300–500 KB) für die Lightbox. Der Backfill für 3.101 Bestandsfotos erzeugte 9.180 WebP-Objekte mit 1,668 GiB.',
+        a: 'In diesem Projekt drei WebP-Varianten pro Foto: thumb (300 px, Qualität 80, ~32 bis 47 KB) für Grids, cover (800 px, ~100 bis 200 KB) für Karten und Vorschauen, full (1920 px, Qualität 85, ~300 bis 500 KB) für die Lightbox. Der Backfill für 3.101 Bestandsfotos erzeugte 9.180 WebP-Objekte mit 1,668 GiB.',
     },
     {
         q: 'Machen signierte URLs eine Website langsamer?',
@@ -100,7 +100,7 @@ export default function DsgvoFotoplattformArticlePage() {
                 <h2>Die Architektur: bewusst klein, bewusst geschlossen</h2>
                 <p>
                     Die Plattform läuft komplett auf <strong>einem Hetzner-Server mit 2 vCPU und 8 GB RAM</strong>:
-                    Next.js 16 mit React 19, ein selbst gehostetes Supabase mit 16–20 Docker-Containern (darunter
+                    Next.js 16 mit React 19, ein selbst gehostetes Supabase mit 16 bis 20 Docker-Containern (darunter
                     Kong als API-Gateway, die Storage-API und imgproxy), PostgreSQL mit Row Level Security, die
                     Fotos in einem privaten Hetzner-S3-Bucket. Kein externes SaaS, keine US-Cloud: bei
                     Kinderfotos ist das kein Nice-to-have, sondern die Geschäftsgrundlage.
@@ -156,21 +156,21 @@ export default function DsgvoFotoplattformArticlePage() {
                                 <th scope="row">thumb</th>
                                 <td>300 px</td>
                                 <td>80</td>
-                                <td>~32–47 KB (gemessen)</td>
+                                <td>~32 bis 47 KB (gemessen)</td>
                                 <td>Galerie-Grid</td>
                             </tr>
                             <tr>
                                 <th scope="row">cover</th>
                                 <td>800 px</td>
                                 <td>80</td>
-                                <td>~100–200 KB</td>
+                                <td>~100 bis 200 KB</td>
                                 <td>Karten, Vorschau</td>
                             </tr>
                             <tr>
                                 <th scope="row">full</th>
                                 <td>1.920 px</td>
                                 <td>85</td>
-                                <td>~300–500 KB</td>
+                                <td>~300 bis 500 KB</td>
                                 <td>Lightbox</td>
                             </tr>
                         </tbody>
@@ -229,7 +229,7 @@ export default function DsgvoFotoplattformArticlePage() {
 
                 <h2>Verifikation auf Produktion statt Bauchgefühl</h2>
                 <p>
-                    Jede Zahl in diesem Artikel stammt aus Messungen vom 10.–12. Juni 2026: PostgreSQL-Abfragen
+                    Jede Zahl in diesem Artikel stammt aus Messungen vom 10. bis 12. Juni 2026: PostgreSQL-Abfragen
                     direkt auf der Produktionsdatenbank, curl-Timings inklusive TLS von einem externen Client,
                     Container-Logs für die imgproxy-Fehlerraten. Für den Volltest wurde ein temporäres
                     Album-Token eingesetzt und nach der Messung gelöscht; der PIN-Flow der Eltern wurde
@@ -262,7 +262,7 @@ export default function DsgvoFotoplattformArticlePage() {
                 <div className="subpage-sources">
                     <h2>Quellen &amp; Werkzeuge</h2>
                     <ol>
-                        <li>Produktions-Logs und -Messungen dsgvoschulfotos.de, 10.–12. Juni 2026 (imgproxy-/Logflare-Logs, PostgreSQL, curl-Timings)</li>
+                        <li>Produktions-Logs und -Messungen dsgvoschulfotos.de, 10. bis 12. Juni 2026 (imgproxy-/Logflare-Logs, PostgreSQL, curl-Timings)</li>
                         <li><a href="https://supabase.com/docs/guides/database/postgres/row-level-security" target="_blank" rel="noopener noreferrer">Supabase: Row Level Security in PostgreSQL</a></li>
                         <li><a href="https://imgproxy.net/" target="_blank" rel="noopener noreferrer">imgproxy: On-the-fly-Bildtransformation</a></li>
                         <li><a href="https://developers.google.com/speed/webp" target="_blank" rel="noopener noreferrer">Google Developers: WebP-Bildformat</a></li>

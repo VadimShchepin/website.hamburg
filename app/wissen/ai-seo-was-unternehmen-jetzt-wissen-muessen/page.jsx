@@ -2,7 +2,7 @@ import ArticleLayout from '../../../src/components/ArticleLayout';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'AI SEO: Was Unternehmen jetzt wissen müssen | Hamburg',
+    title: 'AI SEO: was Unternehmen jetzt wissen müssen',
     description: 'ChatGPT, Perplexity, Google AI Overviews verändern die Suche. Wie Sie sicherstellen, dass Ihr Unternehmen in KI-Antworten als Quelle erscheint.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/ai-seo-was-unternehmen-jetzt-wissen-muessen',

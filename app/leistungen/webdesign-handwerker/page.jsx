@@ -8,7 +8,7 @@ import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
     title: 'Mehr Aufträge | Webdesign für Handwerker Hamburg',
-    description: 'Websites für Handwerksbetriebe in Hamburg: mobile-first, Telefon- und WhatsApp-Button, Google-Maps-Sichtbarkeit. Mehr Anfragen, weniger Aufwand. Ab 2.900 €.',
+    description: 'Websites für Handwerksbetriebe in Hamburg: mobile-first, Telefon- und WhatsApp-Button, Google-Maps-Sichtbarkeit. Mehr Anfragen, weniger Aufwand. Ab 1.500 €.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/webdesign-handwerker',
     },
@@ -21,9 +21,9 @@ export const metadata = {
 };
 
 const faqItems = [
-    { q: 'Was kostet eine Website für einen Handwerksbetrieb?', a: 'Ein One-Pager mit allen wichtigen Informationen, Kontaktdaten und Google-Optimierung gibt es ab 2.900 €. Eine mehrseitige Website mit Leistungsseiten, Referenzen und CMS ab 4.500 €. Sie erhalten ein konkretes Festpreis-Angebot nach dem kostenlosen Erstgespräch.' },
+    { q: 'Was kostet eine Website für einen Handwerksbetrieb?', a: 'Der Website-Start mit bewährtem Layout, Ihren Texten und Google-Optimierung gibt es ab 1.500 €. Eine individuell gestaltete Seite ab 2.900 €. Eine mehrseitige Website mit Leistungsseiten, Referenzen und CMS ab 4.500 €. Sie erhalten ein konkretes Festpreis-Angebot nach dem kostenlosen Erstgespräch.' },
     { q: 'Brauche ich als Handwerker wirklich eine eigene Website?', a: 'Ja. Ihre Kunden suchen „Elektriker Hamburg" oder „Maler in der Nähe" und erwarten eine professionelle Website. Laut Think with Google besuchen 76 % der Menschen, die lokal mit dem Smartphone suchen, innerhalb eines Tages ein Geschäft. Ohne eigene Website verlieren Sie diese Anfragen an die Konkurrenz, die online sichtbar ist.' },
-    { q: 'Wie lange dauert die Erstellung?', a: 'Ein One-Pager ist in 2–3 Wochen fertig, eine mehrseitige Website in 4–6 Wochen. Ich weiß, dass Sie als Handwerker wenig Zeit haben, deshalb halte ich den Abstimmungsaufwand so gering wie möglich.' },
+    { q: 'Wie lange dauert die Erstellung?', a: 'Ein One-Pager ist in 2 bis 3 Wochen fertig, eine mehrseitige Website in 4 bis 6 Wochen. Ich weiß, dass Sie als Handwerker wenig Zeit haben, deshalb halte ich den Abstimmungsaufwand so gering wie möglich.' },
     { q: 'Kann ich die Website selbst aktualisieren?', a: 'Ja, wenn Sie das wünschen. Ich richte ein einfaches CMS ein und zeige Ihnen in rund 30 Minuten, wie Sie Texte, Bilder und Referenzfotos selbst anpassen. Keine technischen Vorkenntnisse nötig.' },
     { q: 'Hilft die Website auch bei Google Maps?', a: 'Ja. Ich optimiere Ihre Website für lokale Suchergebnisse und helfe bei der Einrichtung bzw. Optimierung Ihres Google Business Profile. So erscheinen Sie sowohl in der Google-Suche als auch auf Google Maps, wenn Kunden in Ihrer Nähe suchen.' },
     { q: 'Was passiert nach dem Launch?', a: 'Nach dem Go-live richte ich Tracking ein, damit Sie sehen, wie viele Anfragen über die Website kommen. Auf Wunsch betreue ich Ihre Website langfristig mit Updates und Optimierungen, während Sie sich auf Ihre Aufträge konzentrieren.' },
@@ -39,6 +39,7 @@ export default function WebdesignHandwerkerPage() {
         url: 'https://webseite.hamburg/leistungen/webdesign-handwerker',
         description: 'Websites für Handwerksbetriebe in Hamburg: mobile-first, Telefon- und WhatsApp-Button, Google-Maps-Sichtbarkeit.',
         offers: [
+            { '@type': 'Offer', name: 'Website-Start', price: '1500', priceCurrency: 'EUR' },
             { '@type': 'Offer', name: 'Conversion Landingpage', price: '2900', priceCurrency: 'EUR' },
             { '@type': 'Offer', name: 'Unternehmenswebsite', price: '4500', priceCurrency: 'EUR' },
         ],
@@ -79,7 +80,7 @@ export default function WebdesignHandwerkerPage() {
                 <div className="container subpage-body">
                     <h2 className="animate-up">Was kostet eine Handwerker-Website?</h2>
                     <div className="subpage-takeaway animate-up">
-                        <p>Eine Handwerker-Website kostet bei mir <strong>ab 2.900 €</strong> (One-Pager) bzw. <strong>ab 4.500 €</strong> (mehrseitig) zum Festpreis. Sie ist mobile-first, in rund einer Sekunde geladen und für lokale Suchen wie „Elektriker Hamburg" optimiert, mit Telefon- und WhatsApp-Button direkt im Blickfeld. Laut Think with Google besuchen 76 % der Menschen, die lokal mit dem Smartphone suchen, innerhalb eines Tages ein Geschäft.</p>
+                        <p>Eine Handwerker-Website kostet bei mir <strong>ab 1.500 €</strong> (Website-Start), <strong>ab 2.900 €</strong> (One-Pager) bzw. <strong>ab 4.500 €</strong> (mehrseitig) zum Festpreis. Sie ist mobile-first, in rund einer Sekunde geladen und für lokale Suchen wie „Elektriker Hamburg" optimiert, mit Telefon- und WhatsApp-Button direkt im Blickfeld. Laut Think with Google besuchen 76 % der Menschen, die lokal mit dem Smartphone suchen, innerhalb eines Tages ein Geschäft.</p>
                     </div>
 
                     <h2 className="animate-up">Warum Handwerker eine professionelle Website brauchen</h2>
@@ -119,7 +120,7 @@ export default function WebdesignHandwerkerPage() {
                         </div>
                         <div className="subpage-feature">
                             <h3>Schnelle Ladezeit</h3>
-                            <p>Ladezeit unter einer Sekunde, Lighthouse 90–100. Kein Warten, kein Absprung. <a href="/wissen/warum-langsame-websites-kunden-kosten">Google belohnt schnelle Seiten</a> mit besseren Rankings, und Ihre Kunden bleiben.</p>
+                            <p>Ladezeit unter einer Sekunde, Lighthouse 90 bis 100. Kein Warten, kein Absprung. <a href="/wissen/warum-langsame-websites-kunden-kosten">Google belohnt schnelle Seiten</a> mit besseren Rankings, und Ihre Kunden bleiben.</p>
                         </div>
                     </div>
 
@@ -135,7 +136,20 @@ export default function WebdesignHandwerkerPage() {
                     </p>
 
                     <h2 className="animate-up">Was kostet eine Handwerker-Website?</h2>
-                    <div className="subpage-pricing-compare animate-up">
+                    <div className="subpage-pricing-compare is-three animate-up">
+                        <div className="subpage-price-col">
+                            <h3>Website-Start</h3>
+                            <div className="sp-price-value">ab 1.500 &euro;</div>
+                            <p>Der schnelle Einstieg: eine Seite auf Basis eines bewährten Layouts, mit Ihren Texten und Fotos.</p>
+                            <ul className="sp-price-includes">
+                                <li>1 Seite, vollständig responsiv</li>
+                                <li>Bewährtes Layout statt individuellem Design</li>
+                                <li>Ihre Texte und Fotos werden übernommen</li>
+                                <li>Kontaktformular, SSL & DSGVO-konform</li>
+                                <li>SEO-Grundsetup, Lighthouse 90–100</li>
+                                <li>Fertig in 1–2 Wochen</li>
+                            </ul>
+                        </div>
                         <div className="subpage-price-col">
                             <h3>Conversion Landingpage</h3>
                             <div className="sp-price-value">ab 2.900 &euro;</div>
@@ -146,7 +160,7 @@ export default function WebdesignHandwerkerPage() {
                                 <li>Google-Maps-Integration</li>
                                 <li>SEO-Grundoptimierung</li>
                                 <li>SSL & DSGVO-konform</li>
-                                <li>Lighthouse 90–100</li>
+                                <li>Lighthouse 90 bis 100</li>
                             </ul>
                         </div>
                         <div className="subpage-price-col subpage-price-featured">
@@ -160,7 +174,7 @@ export default function WebdesignHandwerkerPage() {
                                 <li>CMS für eigene Inhaltspflege</li>
                                 <li>Erweiterte SEO-Optimierung</li>
                                 <li>Conversion-Tracking & Analytics (GA4)</li>
-                                <li>Lighthouse 90–100</li>
+                                <li>Lighthouse 90 bis 100</li>
                                 <li>Schulung zur Bedienung</li>
                             </ul>
                         </div>

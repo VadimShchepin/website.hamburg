@@ -2,7 +2,7 @@ import ArticleLayout from '../../../src/components/ArticleLayout';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'Website-Relaunch Checkliste: Was Sie vorher wissen müssen | Hamburg',
+    title: 'Was vor dem Relaunch wichtig ist | Checkliste',
     description: 'Ein Relaunch kann Ihre Sichtbarkeit stärken oder Ihre Rankings zerstören. Die wichtigsten Punkte vor, während und nach dem Relaunch.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/website-relaunch-checkliste',

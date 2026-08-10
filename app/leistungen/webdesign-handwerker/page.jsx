@@ -7,13 +7,13 @@ import ServiceMeta from '../../../src/components/ServiceMeta';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'Webdesign für Handwerker Hamburg | Websites, die Aufträge bringen',
+    title: 'Mehr Aufträge | Webdesign für Handwerker Hamburg',
     description: 'Websites für Handwerksbetriebe in Hamburg: mobile-first, Telefon- und WhatsApp-Button, Google-Maps-Sichtbarkeit. Mehr Anfragen, weniger Aufwand. Ab 2.900 €.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/webdesign-handwerker',
     },
     openGraph: {
-        title: 'Webdesign für Handwerker Hamburg | Websites, die Aufträge bringen',
+        title: 'Mehr Aufträge | Webdesign für Handwerker Hamburg',
         description: 'Websites für Handwerksbetriebe in Hamburg: mobile-first, Telefon- und WhatsApp-Button, Google-Maps-Sichtbarkeit. Mehr Anfragen, weniger Aufwand.',
         url: 'https://webseite.hamburg/leistungen/webdesign-handwerker',
         type: 'website',

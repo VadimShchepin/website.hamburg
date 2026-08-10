@@ -7,7 +7,7 @@ const SITE_URL = 'https://webseite.hamburg';
 const PAGE_URL = `${SITE_URL}/referenzen/gl-sommer`;
 
 export const metadata = {
-    title: 'GL Sommer Case Study | SEO-Audit, Google Ads & Redesign für GaLaBau Hamburg',
+    title: 'Mehr Kunden durch SEO & Ads | GaLaBau Hamburg',
     description: 'Wie GL Sommer durch Website-Modernisierung, SEO-Audit und Google Ads 728 lokale Aktionen und 1.113 Klicks pro Monat erreicht hat.',
     alternates: {
         canonical: PAGE_URL,

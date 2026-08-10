@@ -7,13 +7,13 @@ const SITE_URL = 'https://webseite.hamburg';
 const PAGE_URL = `${SITE_URL}/referenzen/dybeauty`;
 
 export const metadata = {
-    title: 'DYBeauty Case Study | Organischen Traffic verdoppelt in 90 Tagen',
+    title: 'Traffic in 90 Tagen verdoppelt | DYBeauty Shopify',
     description: 'Wie ein K-Beauty Shopify-Shop durch SEO-Audit, 723 Produktoptimierungen und Merchant Center seinen Traffic in 3 Monaten verdoppelt hat.',
     alternates: {
         canonical: PAGE_URL,
     },
     openGraph: {
-        title: 'DYBeauty Case Study | Organischen Traffic verdoppelt in 90 Tagen',
+        title: 'Traffic in 90 Tagen verdoppelt | DYBeauty Shopify',
         description: 'K-Beauty E-Commerce: 723 Produkte optimiert, 78.500 Impressionen, Traffic verdoppelt. SEO-Audit, Google Merchant Center, Content-Strategie.',
         url: PAGE_URL,
         type: 'article',

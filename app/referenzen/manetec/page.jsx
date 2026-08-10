@@ -6,7 +6,7 @@ const SITE_URL = 'https://webseite.hamburg';
 const PAGE_URL = `${SITE_URL}/referenzen/manetec`;
 
 export const metadata = {
-    title: 'Manetec Case Study | Schädlingsbekämpfung für Hotels mit KI-Risikoanalyse',
+    title: 'KI-Risikoanalyse für Hotels | Schädlingsbekämpfung',
     description: 'Website für professionelle Schädlingsbekämpfung in der Hamburger Hotellerie und Gastronomie. React + Gemini API für automatisierte Risikoanalyse.',
     alternates: { canonical: PAGE_URL },
     openGraph: {

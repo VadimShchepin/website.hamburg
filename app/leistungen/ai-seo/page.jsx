@@ -7,13 +7,13 @@ import ServiceMeta from '../../../src/components/ServiceMeta';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'AI SEO Hamburg | Sichtbar in ChatGPT, Perplexity & Copilot',
+    title: 'In 1 Monat sichtbar in ChatGPT | AI SEO Hamburg',
     description: 'AI SEO (GEO) für Sichtbarkeit in ChatGPT, Perplexity, Google AI Overviews und Copilot. Als Quelle zitiert werden. Sprint ab 1.500 €, dann ab 600 €/Mt.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/ai-seo',
     },
     openGraph: {
-        title: 'AI SEO Hamburg | Sichtbar in ChatGPT, Perplexity & Copilot',
+        title: 'In 1 Monat sichtbar in ChatGPT | AI SEO Hamburg',
         description: 'AI SEO (GEO) für Sichtbarkeit in ChatGPT, Perplexity, Google AI Overviews und Microsoft Copilot. Ihr Unternehmen als zitierte Quelle in KI-Antworten.',
         url: 'https://webseite.hamburg/leistungen/ai-seo',
         type: 'website',

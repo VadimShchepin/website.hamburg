@@ -2,7 +2,7 @@ import ArticleLayout from '../../../src/components/ArticleLayout';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'DSGVO-Fotoplattform für Schulen: Was Sicherheit wirklich kostet | Case Study',
+    title: 'Was Sicherheit wirklich kostet | DSGVO-Fotoplattform',
     description: 'Architektur-Case-Study: QR-Code plus PIN statt Accounts, Row Level Security, signierte URLs, und was das an Performance gekostet hat.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/dsgvo-fotoplattform-sicherheit-performance',

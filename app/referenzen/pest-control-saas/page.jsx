@@ -6,7 +6,7 @@ const SITE_URL = 'https://webseite.hamburg';
 const PAGE_URL = `${SITE_URL}/referenzen/pest-control-saas`;
 
 export const metadata = {
-    title: 'Pest Control SaaS Case Study | Enterprise-Architektur für Schädlingsbekämpfung',
+    title: 'Aufträge, Techniker & Nachweise in einer App | SaaS',
     description: 'Multi-Tenant SaaS für Schädlingsbekämpfer: Hexagonale Architektur, DDD, Offline-PWA, EU-Biozid-Verordnung-Compliance. Laravel 12 + Next.js 16 + PostgreSQL.',
     alternates: {
         canonical: PAGE_URL,

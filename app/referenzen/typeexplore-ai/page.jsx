@@ -6,7 +6,7 @@ const SITE_URL = 'https://webseite.hamburg';
 const PAGE_URL = `${SITE_URL}/referenzen/typeexplore-ai`;
 
 export const metadata = {
-    title: 'TypeExplore AI Case Study | KI-Tipptrainer mit Gemini API',
+    title: 'KI-Tipptrainer mit Gemini | TypeExplore AI',
     description: 'EdTech-App: Tippen lernen mit KI-generierten Lektionen zu jedem Thema. React + Express + Gemini API. Sichere Architektur, Echtzeit-Feedback.',
     alternates: { canonical: PAGE_URL },
     openGraph: {

@@ -6,7 +6,7 @@ const SITE_URL = 'https://webseite.hamburg';
 const PAGE_URL = `${SITE_URL}/referenzen/mit-kinder`;
 
 export const metadata = {
-    title: 'mit-kinder.de Case Study | KI-Aktivitätsplattform für Familien',
+    title: 'KI findet Aktivitäten für Familien | mit-kinder.de',
     description: 'NestJS + React + Gemini AI: Familien-Aktivitätsplattform mit Hexagonaler Architektur, KI-Empfehlungen und interaktiver Karte. Für Eltern in Deutschland.',
     alternates: { canonical: PAGE_URL },
     openGraph: {

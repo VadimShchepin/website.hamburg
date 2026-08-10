@@ -8,7 +8,7 @@ const PAGE_URL = `${SITE_URL}/referenzen/kinderalbum`;
 const IMG = '/referenzen/kinderalbum';
 
 export const metadata = {
-    title: 'KinderAlbum Case Study | DSGVO-Schulfotos-App: Produkt + #1 in ChatGPT & Perplexity',
+    title: '#1 in ChatGPT: DSGVO-Schulfotos-App | KinderAlbum',
     description: 'DSGVO-konforme Schulfotos-Plattform: 76 RLS-Policies, Einwilligungsverwaltung, Fotografen-Workflow. #1 in ChatGPT und Perplexity.',
     alternates: {
         canonical: PAGE_URL,

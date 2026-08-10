@@ -3,13 +3,13 @@ import { BUSINESS } from '../../../src/lib/schema';
 import Link from 'next/link';
 
 export const metadata = {
-    title: 'Webdesign Kosten 2026: Was eine professionelle Website wirklich kostet',
+    title: 'Was eine Website wirklich kostet | Webdesign 2026',
     description: 'Von 500 bis 50.000 Euro: was bestimmt den Preis einer Website? Ehrlicher Kostenguide mit Preisbeispielen und versteckten Kosten.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/webdesign-kosten',
     },
     openGraph: {
-        title: 'Webdesign Kosten 2026: Was eine professionelle Website wirklich kostet',
+        title: 'Was eine Website wirklich kostet | Webdesign 2026',
         description: 'Von 500 bis 50.000 Euro: was bestimmt den Preis einer Website? Ehrlicher Kostenguide mit Preisbeispielen und versteckten Kosten.',
         url: 'https://webseite.hamburg/wissen/webdesign-kosten',
         type: 'article',

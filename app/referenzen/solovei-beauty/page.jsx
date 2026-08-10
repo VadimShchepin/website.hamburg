@@ -6,7 +6,7 @@ const SITE_URL = 'https://webseite.hamburg';
 const PAGE_URL = `${SITE_URL}/referenzen/solovei-beauty`;
 
 export const metadata = {
-    title: 'Solovei Beauty Case Study | Dreisprachige Coworking-Plattform mit CMS',
+    title: 'Dreisprachig buchen | Coworking-Plattform Hamburg',
     description: 'Next.js 16 + Payload CMS + PostgreSQL: Dreisprachige Website für Beauty-Coworking in Hamburg. Deutsch, Englisch, Russisch, mit CI/CD und Docker-Deployment.',
     alternates: { canonical: PAGE_URL },
     openGraph: {

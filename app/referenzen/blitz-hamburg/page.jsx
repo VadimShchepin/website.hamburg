@@ -8,7 +8,7 @@ const PAGE_URL = `${SITE_URL}/referenzen/blitz-hamburg`;
 const IMG = '/referenzen/blitz-hamburg';
 
 export const metadata = {
-    title: 'Blitz Hamburg Case Study | ROI in 7 Wochen, ~40 Kunden pro Monat',
+    title: 'ROI in 7 Wochen, ~40 Kunden/Monat | Blitz Hamburg',
     description: 'Wie ein Hamburger Handwerksbetrieb durch Website-Neubau, Google Ads und SEO in 7 Wochen den ROI erreicht hat und heute ~40 Kunden pro Monat gewinnt.',
     alternates: {
         canonical: PAGE_URL,

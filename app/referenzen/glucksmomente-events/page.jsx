@@ -6,7 +6,7 @@ const SITE_URL = 'https://webseite.hamburg';
 const PAGE_URL = `${SITE_URL}/referenzen/glucksmomente-events`;
 
 export const metadata = {
-    title: 'Glücksmomente Events Case Study | Event-Website mit Aquarell-Ästhetik',
+    title: 'Aquarell-Ästhetik statt Baukasten | Event-Website',
     description: 'Individuelle Event-Website für Josy Eberlein in Hamburg. React + GSAP Scroll-Animationen, Aquarell-Design, mobile-optimiert.',
     alternates: { canonical: PAGE_URL },
     openGraph: {

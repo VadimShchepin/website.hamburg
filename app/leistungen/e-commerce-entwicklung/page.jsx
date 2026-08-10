@@ -11,11 +11,11 @@ const SITE_URL = 'https://webseite.hamburg';
 const PAGE_URL = `${SITE_URL}/leistungen/e-commerce-entwicklung`;
 
 export const metadata = {
-    title: 'E-Commerce Entwicklung Hamburg | Shop-Entwicklung & Beratung',
+    title: 'E-Commerce Entwicklung Hamburg | Shops & Beratung',
     description: 'E-Commerce Entwicklung aus Hamburg, direkt vom Entwickler: Shopify, Shopware, WooCommerce und Custom-Shops. Neubau, Migration, Automatisierung.',
     alternates: { canonical: PAGE_URL },
     openGraph: {
-        title: 'E-Commerce Entwicklung Hamburg | Shop-Entwicklung & Beratung',
+        title: 'E-Commerce Entwicklung Hamburg | Shops & Beratung',
         description: 'E-Commerce aus einer Hand: Strategie, Design, Entwicklung, Content, Marketing und Automatisierung. Shopify, Shopware, WooCommerce und Custom. Über 10 Jahre Erfahrung.',
         url: PAGE_URL,
         type: 'website',

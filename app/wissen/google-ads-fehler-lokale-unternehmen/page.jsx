@@ -2,7 +2,7 @@ import ArticleLayout from '../../../src/components/ArticleLayout';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'Die 7 teuersten Google Ads Fehler lokaler Unternehmen | Hamburg',
+    title: 'Die 7 teuersten Google Ads Fehler | Hamburg',
     description: 'Von unkontrolliertem Broad Match bis fehlendem Conversion-Tracking: diese Fehler verbrennen Ihr Werbebudget. Mit Checkliste.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/google-ads-fehler-lokale-unternehmen',

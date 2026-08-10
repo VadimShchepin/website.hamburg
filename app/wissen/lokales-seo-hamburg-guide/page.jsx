@@ -2,13 +2,13 @@ import ArticleLayout from '../../../src/components/ArticleLayout';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'Lokales SEO in Hamburg: Der komplette Leitfaden für 2026',
+    title: 'In Hamburg lokal gefunden werden | Lokales SEO',
     description: 'Von Google Business Profile bis lokale Keywords: alles, was Sie brauchen, um in Hamburg bei Google gefunden zu werden.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/lokales-seo-hamburg-guide',
     },
     openGraph: {
-        title: 'Lokales SEO in Hamburg: Der komplette Leitfaden für 2026',
+        title: 'In Hamburg lokal gefunden werden | Lokales SEO',
         description: 'Von Google Business Profile bis lokale Keywords: alles, was Sie wissen müssen, um in Hamburg bei Google gefunden zu werden.',
         url: 'https://webseite.hamburg/wissen/lokales-seo-hamburg-guide',
         type: 'article',

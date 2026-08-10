@@ -70,7 +70,7 @@ const caseStudies = [
         category: 'WEBDESIGN + KI',
         title: 'Schädlingsbekämpfung trifft KI-Risikoanalyse',
         client: 'Manetec Hamburg',
-        excerpt: 'Website für professionelle Schädlingsbekämpfung in Hotels und Gastronomie, mit KI-gestutzter Risikoanalyse via Gemini, HACCP-Compliance und industrieller Asthetik.',
+        excerpt: 'Website für professionelle Schädlingsbekämpfung in Hotels und Gastronomie, mit KI-gestützter Risikoanalyse via Gemini, HACCP-Compliance und industrieller Ästhetik.',
         metric: 'KI-Risikoanalyse als Lead-Tool',
     },
     {
@@ -84,7 +84,7 @@ const caseStudies = [
     {
         slug: 'mit-kinder',
         category: 'KI-PLATTFORM',
-        title: 'Aktivitatsplattform für Familien mit KI-Chatbot',
+        title: 'Aktivitätsplattform für Familien mit KI-Chatbot',
         client: 'mit-kinder.de',
         excerpt: 'Hexagonale Architektur, Gemini-Chatbot mit Standort- und Zeitbewusstsein, interaktive Karte. Für Eltern, die samstags um 14 Uhr nicht wissen, was sie mit den Kindern machen sollen.',
         metric: 'Hexagonal + Gemini + 75 Tests',
@@ -92,8 +92,8 @@ const caseStudies = [
     {
         slug: 'glucksmomente-events',
         category: 'WEBDESIGN',
-        title: 'Aquarell-Asthetik für Eventplanerin',
-        client: 'Glucksmomente Events',
+        title: 'Aquarell-Ästhetik für Eventplanerin',
+        client: 'Glücksmomente Events',
         excerpt: 'Individuelle Event-Website für Josy Eberlein in Hamburg: React + GSAP Scroll-Animationen, Aquarell-Design, drei handverlesene Schriftarten. Warmherzig und professionell.',
         metric: 'GSAP-Animationen + Aquarell-Design',
     },

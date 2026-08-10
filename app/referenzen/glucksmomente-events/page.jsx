@@ -6,12 +6,12 @@ const SITE_URL = 'https://webseite.hamburg';
 const PAGE_URL = `${SITE_URL}/referenzen/glucksmomente-events`;
 
 export const metadata = {
-    title: 'Glucksmomente Events Case Study | Event-Website mit Aquarell-Asthetik',
+    title: 'Glücksmomente Events Case Study | Event-Website mit Aquarell-Ästhetik',
     description: 'Individuelle Event-Website für Josy Eberlein in Hamburg. React + GSAP Scroll-Animationen, Aquarell-Design, mobile-optimiert.',
     alternates: { canonical: PAGE_URL },
     openGraph: {
-        title: 'Glucksmomente Events | Event-Website mit Herz und GSAP',
-        description: 'React + GSAP: Individuelle Event-Website mit Aquarell-Asthetik und Scroll-Animationen.',
+        title: 'Glücksmomente Events | Event-Website mit Herz und GSAP',
+        description: 'React + GSAP: Individuelle Event-Website mit Aquarell-Ästhetik und Scroll-Animationen.',
         url: PAGE_URL,
         type: 'article',
     },
@@ -21,7 +21,7 @@ export default function GlucksmomenteCaseStudy() {
     const articleJsonLd = {
         '@context': 'https://schema.org',
         '@type': 'Article',
-        headline: 'Glucksmomente Events: Eine Website, die nach Aquarell riecht',
+        headline: 'Glücksmomente Events: Eine Website, die nach Aquarell riecht',
         description: 'Case Study: Event-Website mit React, GSAP und Aquarell-Design.',
         url: PAGE_URL,
         datePublished: '2026-04-03',
@@ -37,7 +37,7 @@ export default function GlucksmomenteCaseStudy() {
         itemListElement: [
             { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
             { '@type': 'ListItem', position: 2, name: 'Referenzen', item: `${SITE_URL}/referenzen` },
-            { '@type': 'ListItem', position: 3, name: 'Glucksmomente Events', item: PAGE_URL },
+            { '@type': 'ListItem', position: 3, name: 'Glücksmomente Events', item: PAGE_URL },
         ],
     };
 
@@ -51,14 +51,14 @@ export default function GlucksmomenteCaseStudy() {
                     <Breadcrumbs items={[
                         { label: 'Home', href: '/' },
                         { label: 'Referenzen', href: '/referenzen' },
-                        { label: 'Glucksmomente Events' },
+                        { label: 'Glücksmomente Events' },
                     ]} />
                     <div className="article-meta animate-up">
                         <span className="wissen-card-category">CASE STUDY</span>
                         <span className="wissen-card-time">Webdesign</span>
                     </div>
                     <h1 className="subpage-title animate-up">
-                        Glucksmomente Events: Eine Website, die so warmherzig ist wie die Frau dahinter.
+                        Glücksmomente Events: Eine Website, die so warmherzig ist wie die Frau dahinter.
                     </h1>
                     <p className="subpage-intro animate-up">
                         Josy plant Hochzeiten, Geburtstage und Events in Hamburg. Ihre Website musste genau das ausstrahlen: Warme, Kreativitat und Professionalitat. Kein Template von der Stange. Eine Website, die nach Aquarell riecht, wenn Websites riechen konnten.
@@ -83,7 +83,7 @@ export default function GlucksmomenteCaseStudy() {
 
                     <div className="subpage-features-grid animate-up">
                         <div className="subpage-feature">
-                            <h3>Aquarell-Asthetik</h3>
+                            <h3>Aquarell-Ästhetik</h3>
                             <p>Animierte Blob-Hintergründe in Aquarelltonen. Drei handverlesene Schriftarten: Cormorant Garamond für Überschriften, Outfit für Fliesstexte, Caveat für handschriftliche Akzente. Das visuelle Gefuhl einer eleganten Einladungskarte.</p>
                         </div>
                         <div className="subpage-feature">
@@ -111,7 +111,7 @@ export default function GlucksmomenteCaseStudy() {
                     <div className="cs-takeaway animate-up">
                         <h3>Das Wichtigste</h3>
                         <p>
-                            Nicht jede Website braucht ein CMS, eine Datenbank und 15 Integrationen. Manchmal reichen React, schöne Animationen und ein Entwickler, der versteht, was die Kundin ausstrahlen will. Glucksmomente zeigt: Technologie soll die Botschaft unterstutzen, nicht uberschatten. Und manchmal ist die beste Technologie die, die man am wenigsten sieht.
+                            Nicht jede Website braucht ein CMS, eine Datenbank und 15 Integrationen. Manchmal reichen React, schöne Animationen und ein Entwickler, der versteht, was die Kundin ausstrahlen will. Glücksmomente zeigt: Technologie soll die Botschaft unterstutzen, nicht uberschatten. Und manchmal ist die beste Technologie die, die man am wenigsten sieht.
                         </p>
                     </div>
                 </div>

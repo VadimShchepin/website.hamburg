@@ -6,11 +6,11 @@ const SITE_URL = 'https://webseite.hamburg';
 const PAGE_URL = `${SITE_URL}/referenzen/mit-kinder`;
 
 export const metadata = {
-    title: 'mit-kinder.de Case Study | KI-Aktivitatsplattform für Familien',
-    description: 'NestJS + React + Gemini AI: Familien-Aktivitatsplattform mit Hexagonaler Architektur, KI-Empfehlungen und interaktiver Karte. Für Eltern in Deutschland.',
+    title: 'mit-kinder.de Case Study | KI-Aktivitätsplattform für Familien',
+    description: 'NestJS + React + Gemini AI: Familien-Aktivitätsplattform mit Hexagonaler Architektur, KI-Empfehlungen und interaktiver Karte. Für Eltern in Deutschland.',
     alternates: { canonical: PAGE_URL },
     openGraph: {
-        title: 'mit-kinder.de | KI-Aktivitatsplattform für Familien',
+        title: 'mit-kinder.de | KI-Aktivitätsplattform für Familien',
         description: 'NestJS + Gemini AI: Hexagonale Architektur, KI-Chatbot, interaktive Karte. Case Study.',
         url: PAGE_URL,
         type: 'article',
@@ -31,7 +31,7 @@ export default function MitKinderCaseStudy() {
     const articleJsonLd = {
         '@context': 'https://schema.org',
         '@type': 'Article',
-        headline: 'mit-kinder.de: KI-Aktivitatsplattform für Familien in Deutschland',
+        headline: 'mit-kinder.de: KI-Aktivitätsplattform für Familien in Deutschland',
         description: 'Case Study: Familien-Plattform mit Hexagonaler Architektur, Gemini KI und interaktiver Karte.',
         url: PAGE_URL,
         datePublished: '2026-04-03',
@@ -71,7 +71,7 @@ export default function MitKinderCaseStudy() {
                         mit-kinder.de: Weil &bdquo;Was machen wir heute?&ldquo; die schwierigste Frage der Elternschaft ist.
                     </h1>
                     <p className="subpage-intro animate-up">
-                        Eine Plattform, die Eltern in Deutschland hilft, altersgerechte Aktivitaten für ihre Kinder zu finden: mit KI-Empfehlungen, interaktiver Karte und dem Verständnis, dass ein 3-Jahriger und ein 12-Jahriger fundamental unterschiedliche Bedürfnisse haben. Gebaut mit Hexagonaler Architektur, weil guter Code auch für Kinder ein gutes Vorbild ist.
+                        Eine Plattform, die Eltern in Deutschland hilft, altersgerechte Aktivitäten für ihre Kinder zu finden: mit KI-Empfehlungen, interaktiver Karte und dem Verständnis, dass ein 3-Jahriger und ein 12-Jahriger fundamental unterschiedliche Bedürfnisse haben. Gebaut mit Hexagonaler Architektur, weil guter Code auch für Kinder ein gutes Vorbild ist.
                     </p>
                     <div className="article-byline animate-up">
                         Von <Link href="/ueber-uns">Vadim Shchepin</Link> &middot; 3. April 2026
@@ -113,7 +113,7 @@ export default function MitKinderCaseStudy() {
                         </div>
                         <div className="subpage-feature">
                             <h3>Interaktive Karte</h3>
-                            <p>Leaflet-basierte Karte mit Aktivitaten in der Nähe. Filtern nach Kategorie, Alter, Entfernung. Weil Eltern mit kleinen Kindern nicht 45 Minuten fahren wollen.</p>
+                            <p>Leaflet-basierte Karte mit Aktivitäten in der Nähe. Filtern nach Kategorie, Alter, Entfernung. Weil Eltern mit kleinen Kindern nicht 45 Minuten fahren wollen.</p>
                         </div>
                         <div className="subpage-feature">
                             <h3>Google-Echtzeitsuche</h3>
@@ -135,7 +135,7 @@ export default function MitKinderCaseStudy() {
                     <div className="cs-takeaway animate-up">
                         <h3>Das Wichtigste</h3>
                         <p>
-                            Gute Software für Familien braucht zwei Dinge: ein echtes Verständnis für das Problem (jeder Elternteil kennt die &bdquo;Was machen wir heute?&ldquo;-Panik) und eine Architektur, die mit dem Produkt wachst. mit-kinder.de hat beides: KI-gestutzte Empfehlungen, die wirklich helfen, und Clean Architecture, die nicht bei Feature Nr. 5 zusammenbricht.
+                            Gute Software für Familien braucht zwei Dinge: ein echtes Verständnis für das Problem (jeder Elternteil kennt die &bdquo;Was machen wir heute?&ldquo;-Panik) und eine Architektur, die mit dem Produkt wachst. mit-kinder.de hat beides: KI-gestützte Empfehlungen, die wirklich helfen, und Clean Architecture, die nicht bei Feature Nr. 5 zusammenbricht.
                         </p>
                     </div>
                 </div>

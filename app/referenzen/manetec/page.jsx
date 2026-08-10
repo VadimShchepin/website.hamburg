@@ -11,7 +11,7 @@ export const metadata = {
     alternates: { canonical: PAGE_URL },
     openGraph: {
         title: 'Manetec Hamburg | Schädlingsbekämpfung mit KI-Risikoanalyse',
-        description: 'React + Framer Motion + Gemini API: Industrielle Asthetik für professionelle Schädlingsbekämpfung.',
+        description: 'React + Framer Motion + Gemini API: Industrielle Ästhetik für professionelle Schädlingsbekämpfung.',
         url: PAGE_URL,
         type: 'article',
     },
@@ -32,7 +32,7 @@ export default function ManetecCaseStudy() {
         '@context': 'https://schema.org',
         '@type': 'Article',
         headline: 'Manetec Hamburg: Schädlingsbekämpfung trifft KI-Risikoanalyse',
-        description: 'Case Study: Website für Schädlingsbekämpfung in Hotels und Gastronomie mit KI-gestutzter Risikoanalyse.',
+        description: 'Case Study: Website für Schädlingsbekämpfung in Hotels und Gastronomie mit KI-gestützter Risikoanalyse.',
         url: PAGE_URL,
         datePublished: '2026-04-03',
         dateModified: '2026-04-03',
@@ -71,7 +71,7 @@ export default function ManetecCaseStudy() {
                         Manetec: Wenn Schädlingsbekämpfung auf kunstliche Intelligenz trifft. Klingt absurd. Funktioniert hervorragend.
                     </h1>
                     <p className="subpage-intro animate-up">
-                        Eine Website für professionelle Schädlingsbekämpfung in Hamburger Hotels und Restaurants, mit KI-gestutzter Risikoanalyse, HACCP-Compliance und einem Design, das so ernst und präzise ist wie die Arbeit selbst. Weil auch Schädlingsbekämpfer eine Website verdienen, die nicht nach 2008 aussieht.
+                        Eine Website für professionelle Schädlingsbekämpfung in Hamburger Hotels und Restaurants, mit KI-gestützter Risikoanalyse, HACCP-Compliance und einem Design, das so ernst und präzise ist wie die Arbeit selbst. Weil auch Schädlingsbekämpfer eine Website verdienen, die nicht nach 2008 aussieht.
                     </p>
                     <div className="article-byline animate-up">
                         Von <Link href="/ueber-uns">Vadim Shchepin</Link> &middot; 3. April 2026
@@ -84,7 +84,7 @@ export default function ManetecCaseStudy() {
                     <div className="cs-metrics-grid animate-up">
                         <MetricCard value="Gemini" label="KI-Risikoanalyse" detail="Automatisierte Bewertung" />
                         <MetricCard value="HACCP" label="Compliance" detail="Hotellerie & Gastronomie" />
-                        <MetricCard value="0px" label="Border-Radius" detail="Industrielle Asthetik" />
+                        <MetricCard value="0px" label="Border-Radius" detail="Industrielle Ästhetik" />
                         <MetricCard value="JSON" label="Schema-Output" detail="Strukturierte KI-Antworten" />
                     </div>
                 </div>
@@ -108,7 +108,7 @@ export default function ManetecCaseStudy() {
                             <p>Das Herzstück: Ein KI-Assistent, der den Betriebstyp, die Größe und spezifische Faktoren abfragt und dann eine professionelle Risikoeinschatzung generiert. Risikostufe (niedrig/mittel/hoch/kritisch), Zusammenfassung und konkrete Empfehlungen, alles via Gemini 2.5-flash mit JSON-Schema-Validierung.</p>
                         </div>
                         <div className="subpage-feature">
-                            <h3>Industrielle Asthetik</h3>
+                            <h3>Industrielle Ästhetik</h3>
                             <p>Null Border-Radius. Scharfe Kanten. Playfair Display für Autorität, Lato für Lesbarkeit. Das Design sagt: &bdquo;Wir meinen es ernst.&ldquo; Weil ein Hotel keinen Schädlingsbekämpfer will, dessen Website aussieht wie ein Kindergeburtstag.</p>
                         </div>
                         <div className="subpage-feature">

@@ -23,7 +23,7 @@ export const metadata = {
 const faqItems = [
     { q: 'Was kostet eine Website für einen Handwerksbetrieb?', a: 'Der Website-Start mit bewährtem Layout, Ihren Texten und Google-Optimierung gibt es ab 1.500 €. Eine individuell gestaltete Seite ab 2.900 €. Eine mehrseitige Website mit Leistungsseiten, Referenzen und CMS ab 4.500 €. Sie erhalten ein konkretes Festpreis-Angebot nach dem kostenlosen Erstgespräch.' },
     { q: 'Brauche ich als Handwerker wirklich eine eigene Website?', a: 'Ja. Ihre Kunden suchen „Elektriker Hamburg" oder „Maler in der Nähe" und erwarten eine professionelle Website. Laut Think with Google besuchen 76 % der Menschen, die lokal mit dem Smartphone suchen, innerhalb eines Tages ein Geschäft. Ohne eigene Website verlieren Sie diese Anfragen an die Konkurrenz, die online sichtbar ist.' },
-    { q: 'Wie lange dauert die Erstellung?', a: 'Ein One-Pager ist in 2 bis 3 Wochen fertig, eine mehrseitige Website in 4 bis 6 Wochen. Ich weiß, dass Sie als Handwerker wenig Zeit haben, deshalb halte ich den Abstimmungsaufwand so gering wie möglich.' },
+    { q: 'Wie lange dauert die Erstellung?', a: 'Der Website-Start ist in 2 bis 5 Arbeitstagen online, eine individuell gestaltete Seite in 2 bis 3 Wochen, eine mehrseitige Website in 4 bis 6 Wochen. Ich weiß, dass Sie als Handwerker wenig Zeit haben, deshalb halte ich den Abstimmungsaufwand so gering wie möglich.' },
     { q: 'Kann ich die Website selbst aktualisieren?', a: 'Ja, wenn Sie das wünschen. Ich richte ein einfaches CMS ein und zeige Ihnen in rund 30 Minuten, wie Sie Texte, Bilder und Referenzfotos selbst anpassen. Keine technischen Vorkenntnisse nötig.' },
     { q: 'Hilft die Website auch bei Google Maps?', a: 'Ja. Ich optimiere Ihre Website für lokale Suchergebnisse und helfe bei der Einrichtung bzw. Optimierung Ihres Google Business Profile. So erscheinen Sie sowohl in der Google-Suche als auch auf Google Maps, wenn Kunden in Ihrer Nähe suchen.' },
     { q: 'Was passiert nach dem Launch?', a: 'Nach dem Go-live richte ich Tracking ein, damit Sie sehen, wie viele Anfragen über die Website kommen. Auf Wunsch betreue ich Ihre Website langfristig mit Updates und Optimierungen, während Sie sich auf Ihre Aufträge konzentrieren.' },
@@ -140,14 +140,14 @@ export default function WebdesignHandwerkerPage() {
                         <div className="subpage-price-col">
                             <h3>Website-Start</h3>
                             <div className="sp-price-value">ab 1.500 &euro;</div>
-                            <p>Der schnelle Einstieg: eine Seite auf Basis eines bewährten Layouts, mit Ihren Texten und Fotos.</p>
+                            <p>Der schnelle Einstieg: eine Seite auf Basis eines bewährten Layouts, mit Ihren Texten und Fotos. In 2 bis 5 Arbeitstagen online.</p>
                             <ul className="sp-price-includes">
                                 <li>1 Seite, vollständig responsiv</li>
                                 <li>Bewährtes Layout statt individuellem Design</li>
                                 <li>Ihre Texte und Fotos werden übernommen</li>
                                 <li>Kontaktformular, SSL & DSGVO-konform</li>
                                 <li>SEO-Grundsetup, Lighthouse 90–100</li>
-                                <li>Fertig in 1–2 Wochen</li>
+                                <li>Fertig in 2 bis 5 Arbeitstagen</li>
                             </ul>
                         </div>
                         <div className="subpage-price-col">

@@ -22,7 +22,7 @@ export const metadata = {
 
 const faqItems = [
     { q: 'Was kostet eine professionelle Website?', a: 'Der Einstieg ist der Website-Start ab 1.500 €: eine Seite auf Basis eines bewährten Layouts, mit Ihren Texten und Fotos. Eine individuell gestaltete Conversion Landingpage startet ab 2.900 €, eine mehrseitige Unternehmenswebsite ab 4.500 €. Sie erhalten vor Projektstart ein verbindliches Festpreis-Angebot, keine versteckten Kosten. Der finale Preis hängt vom Umfang ab (Seitenzahl, CMS, Shop, Sonderfunktionen).' },
-    { q: 'Wie lange dauert die Erstellung einer Website?', a: 'Eine Landingpage ist in 2 bis 3 Wochen fertig, eine mehrseitige Website in 4 bis 6 Wochen. Komplexere Projekte mit Shop oder Mitgliederbereich dauern 6 bis 10 Wochen. Der genaue Zeitrahmen hängt vom Umfang und Ihrem Feedback-Tempo ab.' },
+    { q: 'Wie lange dauert die Erstellung einer Website?', a: 'Der Website-Start ist in 2 bis 5 Arbeitstagen online. Eine individuell gestaltete Landingpage ist in 2 bis 3 Wochen fertig, eine mehrseitige Website in 4 bis 6 Wochen. Komplexere Projekte mit Shop oder Mitgliederbereich dauern 6 bis 10 Wochen. Der genaue Zeitrahmen hängt vom Umfang und Ihrem Feedback-Tempo ab.' },
     { q: 'Nutzen Sie Baukastensysteme wie Wix oder Squarespace?', a: 'Nein. Jede Website wird individuell programmiert. Das garantiert maximale Performance, volle gestalterische Freiheit und Unabhängigkeit von Plattform-Einschränkungen. Wenn Sie Inhalte selbst pflegen wollen, binde ich ein CMS wie WordPress oder einen Headless-Ansatz ein.' },
     { q: 'Was bedeutet ein Lighthouse-Score von 90 bis 100?', a: 'Lighthouse ist Googles Werkzeug zur Bewertung von Performance, SEO und Zugänglichkeit, auf einer Skala von 0 bis 100 (sichtbar in den Chrome DevTools und in PageSpeed Insights). Viele Agentur-Websites erreichen nur 30 bis 60 Punkte. Meine Seiten liegen regelmäßig bei 90 bis 100, und das bedeutet schnelles Laden, bessere Rankings und höhere Conversion.' },
     { q: 'Was sind Core Web Vitals?', a: 'Core Web Vitals sind Googles offizielle Kennzahlen für Nutzererlebnis: LCP (Ladezeit des größten Elements, gut: unter 2,5 s), INP (Reaktionszeit auf Eingaben, gut: unter 200 ms) und CLS (Layout-Stabilität, gut: unter 0,1). Sie fließen in das Google-Ranking ein. Jede Website baue ich so, dass sie alle drei Werte im grünen Bereich erreicht.' },
@@ -137,14 +137,14 @@ export default function WebdesignPage() {
                         <div className="subpage-price-col">
                             <h3>Website-Start</h3>
                             <div className="sp-price-value">ab 1.500 &euro;</div>
-                            <p>Der schnelle Einstieg: eine Seite auf Basis eines bewährten Layouts, mit Ihren Texten und Fotos.</p>
+                            <p>Der schnelle Einstieg: eine Seite auf Basis eines bewährten Layouts, mit Ihren Texten und Fotos. In 2 bis 5 Arbeitstagen online.</p>
                             <ul className="sp-price-includes">
                                 <li>1 Seite, vollständig responsiv</li>
                                 <li>Bewährtes Layout statt individuellem Design</li>
                                 <li>Ihre Texte und Fotos werden übernommen</li>
                                 <li>Kontaktformular, SSL & DSGVO-konform</li>
                                 <li>SEO-Grundsetup, Lighthouse 90–100</li>
-                                <li>Fertig in 1–2 Wochen</li>
+                                <li>Fertig in 2 bis 5 Arbeitstagen</li>
                             </ul>
                         </div>
                         <div className="subpage-price-col">

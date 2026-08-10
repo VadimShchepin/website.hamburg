@@ -8,7 +8,7 @@ import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
     title: 'Website erstellen lassen: Festpreis ab 1.500 Euro',
-    description: 'Website erstellen lassen in Hamburg: Festpreis ab 1.500 €, individuell programmiert, Lighthouse 90 bis 100. Fertig in 1 bis 6 Wochen.',
+    description: 'Website erstellen lassen in Hamburg: Festpreis ab 1.500 €, individuell programmiert, Lighthouse 90 bis 100. Fertig in 2 Arbeitstagen bis 6 Wochen.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/website-erstellen-lassen',
     },
@@ -22,7 +22,7 @@ export const metadata = {
 
 const faqItems = [
     { q: 'Was kostet es, eine Website erstellen zu lassen?', a: 'Der Einstieg ist der Website-Start ab 1.500 €: eine Seite auf Basis eines bewährten Layouts, mit Ihren Texten und Fotos. Eine individuell gestaltete Conversion Landingpage startet ab 2.900 €, eine mehrseitige Unternehmenswebsite ab 4.500 €. Der finale Preis hängt vom Umfang ab, aber Sie erhalten vor Projektstart ein verbindliches Festpreis-Angebot. Keine versteckten Kosten, keine Überraschungen.' },
-    { q: 'Wie lange dauert die Erstellung?', a: 'Eine Landingpage ist in 2 bis 3 Wochen fertig, eine mehrseitige Website in 4 bis 6 Wochen. Der genaue Zeitrahmen hängt vom Umfang und Ihrem Feedback-Tempo ab. Den konkreten Zeitplan besprechen wir im Erstgespräch.' },
+    { q: 'Wie lange dauert die Erstellung?', a: 'Der Website-Start ist in 2 bis 5 Arbeitstagen online. Eine individuell gestaltete Landingpage ist in 2 bis 3 Wochen fertig, eine mehrseitige Website in 4 bis 6 Wochen. Der genaue Zeitrahmen hängt vom Umfang und Ihrem Feedback-Tempo ab. Den konkreten Zeitplan besprechen wir im Erstgespräch.' },
     { q: 'Baukasten, WordPress oder individuell programmiert: was ist besser?', a: 'Baukästen wie Wix oder Squarespace sind günstig im Start, aber durch Templates begrenzt und oft langsam. WordPress-Themes sind flexibler, brauchen aber Pflege und Plugins. Individuell programmierter Code liefert die beste Performance (Lighthouse 90 bis 100), volle Gestaltungsfreiheit und keine Plattform-Abhängigkeit, also die richtige Wahl für Unternehmen mit Anspruch. Genau das baue ich.' },
     { q: 'Nutzen Sie WordPress oder Baukastensysteme?', a: 'Standardmäßig nein, jede Website wird individuell programmiert. Das garantiert maximale Performance, volle Flexibilität und Unabhängigkeit von Plattform-Einschränkungen. Wenn Sie Inhalte selbst pflegen wollen, binde ich ein CMS ein.' },
     { q: 'Ist die Website SEO-optimiert?', a: 'Ja. Jede Website enthält eine SEO-Grundoptimierung: saubere URL-Struktur, Meta-Tags, strukturierte Daten (Schema.org), semantisches HTML, Bildoptimierung und Mobile-First-Entwicklung. Für laufende SEO-Betreuung gibt es separate Pakete.' },
@@ -89,14 +89,14 @@ export default function WebsiteErstellenLassenPage() {
                         <div className="subpage-price-col">
                             <h3>Website-Start</h3>
                             <div className="sp-price-value">ab 1.500 &euro;</div>
-                            <p>Der schnelle Einstieg: eine Seite auf Basis eines bewährten Layouts, mit Ihren Texten und Fotos.</p>
+                            <p>Der schnelle Einstieg: eine Seite auf Basis eines bewährten Layouts, mit Ihren Texten und Fotos. In 2 bis 5 Arbeitstagen online.</p>
                             <ul className="sp-price-includes">
                                 <li>1 Seite, vollständig responsiv</li>
                                 <li>Bewährtes Layout statt individuellem Design</li>
                                 <li>Ihre Texte und Fotos werden übernommen</li>
                                 <li>Kontaktformular, SSL & DSGVO-konform</li>
                                 <li>SEO-Grundsetup, Lighthouse 90–100</li>
-                                <li>Fertig in 1–2 Wochen</li>
+                                <li>Fertig in 2 bis 5 Arbeitstagen</li>
                             </ul>
                         </div>
                         <div className="subpage-price-col">

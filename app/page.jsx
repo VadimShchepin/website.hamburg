@@ -18,7 +18,7 @@ const faqItems = [
     },
     {
         q: 'Wie lange dauert die Erstellung einer Website?',
-        a: 'Ein One-Pager ist typischerweise in 2 bis 3 Wochen fertig, eine mehrseitige Website in 4 bis 6 Wochen. Abhängig von Umfang und Ihrem Feedback-Tempo.',
+        a: 'Der Website-Start ist in 2 bis 5 Arbeitstagen online, eine individuell gestaltete Landingpage in 2 bis 3 Wochen, eine mehrseitige Website in 4 bis 6 Wochen. Abhängig von Umfang und Ihrem Feedback-Tempo.',
     },
     {
         q: 'Was passiert in der kostenlosen Website-Analyse?',

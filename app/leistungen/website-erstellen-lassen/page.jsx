@@ -95,7 +95,7 @@ export default function WebsiteErstellenLassenPage() {
                                 <li>Bewährtes Layout statt individuellem Design</li>
                                 <li>Ihre Texte und Fotos werden übernommen</li>
                                 <li>Kontaktformular, SSL & DSGVO-konform</li>
-                                <li>SEO-Grundsetup, Lighthouse 90–100</li>
+                                <li>SEO-Grundsetup, Lighthouse 90 bis 100</li>
                                 <li>Fertig in 2 bis 5 Arbeitstagen</li>
                             </ul>
                         </div>

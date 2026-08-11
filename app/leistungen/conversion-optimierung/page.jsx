@@ -8,7 +8,7 @@ import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
     title: 'Conversion-Optimierung Hamburg: mehr Anfragen',
-    description: 'Conversion-Optimierung für Unternehmen in Hamburg: mehr Anfragen aus dem Traffic, den Sie schon haben. Analyse, Priorisierung, Umsetzung, Messung.',
+    description: 'Conversion-Optimierung für Unternehmen in Hamburg: mehr Anfragen aus dem Traffic, den Sie schon haben. Analyse kostenlos, Umsetzung ab 1.200 Euro.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/conversion-optimierung',
     },
@@ -21,7 +21,7 @@ export const metadata = {
 };
 
 const faqItems = [
-    { q: 'Was kostet Conversion-Optimierung?', a: 'Der Einstieg ist die kostenlose Analyse. Danach hängt der Preis vom Umfang ab: einzelne Seiten sind ein überschaubarer Sprint, ein kompletter Anfrageweg über mehrere Seiten ist mehr Arbeit. Ich nenne Ihnen den Festpreis nach der Analyse, bevor Sie sich entscheiden. Keine Stundenzettel, keine Überraschungen.' },
+    { q: 'Was kostet Conversion-Optimierung?', a: 'Die Analyse ist kostenlos, die Umsetzung startet bei 1.200 Euro einmalig. Der genaue Festpreis hängt vom Umfang ab: eine einzelne Landingpage ist ein überschaubarer Sprint, ein kompletter Anfrageweg über mehrere Seiten ist mehr Arbeit. Sie kennen den Preis nach der Analyse und bevor Sie sich entscheiden. Keine Stundenzettel, keine Überraschungen.' },
     { q: 'Wie schnell sehe ich Ergebnisse?', a: 'Anders als bei SEO wirken die Änderungen sofort, sobald sie live sind. Ob die Wirkung messbar ist, hängt an Ihren Besucherzahlen: bei wenigen hundert Besuchern im Monat braucht es ein paar Monate, bis sich ein Unterschied sauber vom Zufall trennen lässt. Bei mehreren tausend sehen Sie es innerhalb weniger Wochen.' },
     { q: 'Brauche ich dafür eine neue Website?', a: 'Meistens nicht. Conversion-Optimierung arbeitet mit dem, was da ist: Struktur, Reihenfolge, Formulare, Ladezeit, Vertrauenselemente. Wenn die technische Basis so alt ist, dass jede Änderung teurer wird als ein Neubau, sage ich Ihnen das offen. Dann ist ein Relaunch der ehrlichere Weg.' },
     { q: 'Woher wissen Sie, was funktioniert?', a: 'Aus Ihren Daten, nicht aus meinem Geschmack. Ich schaue mir an, wo Besucher abspringen, welche Seiten Anfragen erzeugen und welche nicht, wie sich Mobil- und Desktop-Nutzung unterscheiden. Dazu kommen belegte Grundlagen aus der Forschung zu Formularen und Ladezeiten. Was ich nicht belegen kann, verkaufe ich Ihnen nicht als Gewissheit.' },
@@ -39,6 +39,7 @@ export default function ConversionOptimierungPage() {
         areaServed: { '@type': 'City', name: 'Hamburg' },
         url: 'https://webseite.hamburg/leistungen/conversion-optimierung',
         description: 'Conversion-Optimierung für Unternehmen in Hamburg: Analyse der Nutzerwege, Priorisierung nach Wirkung, Umsetzung und Messung.',
+        offers: { '@type': 'Offer', price: '1200', priceCurrency: 'EUR' },
     };
 
     const breadcrumbJsonLd = {
@@ -134,8 +135,8 @@ export default function ConversionOptimierungPage() {
 
                     <h2 className="animate-up">Was Sie bekommen</h2>
                     <div className="subpage-single-price animate-up">
-                        <div className="sp-price-value">Analyse kostenlos</div>
-                        <p>Danach Festpreis nach Umfang, den Sie vor der Entscheidung kennen. Keine Mindestlaufzeit, keine monatliche Bindung.</p>
+                        <div className="sp-price-value">ab 1.200 &euro; einmalig</div>
+                        <p>Die Analyse vorab ist kostenlos. Den Festpreis kennen Sie, bevor Sie sich entscheiden. Keine Mindestlaufzeit, keine monatliche Bindung.</p>
                         <ul className="sp-price-includes">
                             <li>Analyse des kompletten Anfragewegs, Handy und Desktop</li>
                             <li>Messung von Ladezeit und Core Web Vitals</li>

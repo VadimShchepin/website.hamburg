@@ -12,6 +12,12 @@ export const metadata = {
 
 const redesigns = [
     {
+        slug: 'hopfenbachvilla',
+        firm: 'Naturidylle Hopfenbachvilla',
+        sector: 'MOEBLIERTES WOHNEN & CO-LIVING · GROSSHANSDORF BEI AHRENSBURG · SEIT 1908',
+        description: 'Ruhiger Waldgruen-Auftritt aus den eigenen Fotos der Vermieterin: freie Raeume mit Preis und Termin ueber dem Falz, die Hausregeln als eigenes Kapitel und ein Kontaktweg, den die alte Jimdo-Seite gar nicht hatte.',
+    },
+    {
         slug: 'denis-fahrschule',
         firm: 'Denis Fahrschule',
         sector: 'FAHRSCHULE · HAMBURG · BERLINER TOR',

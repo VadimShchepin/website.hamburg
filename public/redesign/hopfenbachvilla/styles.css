@@ -7,6 +7,9 @@
   --ink:#182019;
   --sage:#7F956C;
   --moss:#5E7452;
+  /* same hue, darkened for use on the stone surface, where plain moss only
+     reaches 3.97:1 against #E8E2D5 and misses AA for label-sized text */
+  --moss-dk:#4A5F41;
   --ivory:#F5F1E8;
   --stone:#E8E2D5;
   --line:#D6D0C3;
@@ -46,6 +49,17 @@ p:last-child{margin-bottom:0}
 .split--narrow{grid-template-columns:.92fr 1.08fr}
 
 /* ---------- surfaces ---------- */
+/* The paper panel is the one recurring device for content that has to sit on a
+   dark or photographic ground: the hero text and the enquiry form both use it.
+   Reading matter always ends up as ink on paper, so contrast is never a
+   function of whatever the photograph happens to be doing behind it. */
+.panel{background:var(--ivory);color:var(--ink);border-radius:var(--r);position:relative;
+  padding:clamp(28px,3vw,42px);
+  box-shadow:0 2px 4px rgba(12,20,14,.16),0 36px 74px -26px rgba(12,20,14,.55)}
+.s-forest .panel,.s-forest .panel p,.s-forest .panel .lead,
+.s-forest .panel .muted,.s-forest .panel label{color:var(--ink)}
+.s-forest .panel .muted,.s-forest .panel .small.muted{color:var(--muted)}
+.s-forest .panel h2,.s-forest .panel h3,.s-forest .panel h4{color:var(--ink)}
 .s-stone{background:var(--stone);border-block:1px solid var(--line)}
 .s-forest{background:var(--forest);color:var(--light)}
 .s-forest h1,.s-forest h2,.s-forest h3,.s-forest h4{color:var(--light)}
@@ -63,6 +77,8 @@ p:last-child{margin-bottom:0}
 .chapter svg{width:19px;height:19px;flex:none;stroke:currentColor;fill:none;stroke-width:1.25;stroke-linecap:round;stroke-linejoin:round}
 .chapter b{font-weight:600;font-variant-numeric:tabular-nums}
 .chapter i{display:inline-block;width:20px;height:1px;background:var(--moss);opacity:.55;font-style:normal}
+.s-stone .chapter,.phead .chapter{color:var(--moss-dk)}
+.s-stone .chapter i,.phead .chapter i{background:var(--moss-dk)}
 .h1{font-size:clamp(42px,4.9vw,76px);letter-spacing:-.012em}
 .h2{font-size:clamp(36px,3.9vw,60px)}
 .h3{font-size:clamp(26px,2.2vw,36px);line-height:1.16}
@@ -82,19 +98,19 @@ p:last-child{margin-bottom:0}
   text-decoration:none;cursor:pointer;
   transition:background .3s var(--ease),color .3s var(--ease),border-color .3s var(--ease);
 }
+/* Only two button surfaces exist: forest on paper, paper on forest.
+   Sage is reserved for labels and icons, per the brief, never for a fill:
+   a sage button placed on a photograph of trees has no contrast at all. */
 .btn--solid{background:var(--forest);color:var(--light)}
+.btn--solid:hover{background:#2B4232}
+.btn--light{background:var(--ivory);color:var(--forest)}
+.btn--light:hover{background:#fff}
 .btn--solid::after,.btn--light::after{content:"";width:11px;height:1px;background:currentColor;
   opacity:.55;transition:width .3s var(--ease),opacity .3s var(--ease)}
 .btn--solid:hover::after,.btn--light:hover::after{width:24px;opacity:1}
-.btn--solid:hover{background:var(--moss)}
-.btn--line{border-color:var(--line);color:var(--ink);background:transparent}
-.btn--line:hover{border-color:var(--moss);background:var(--stone)}
-.btn--ghost{border-color:rgba(255,255,255,.5);color:#fff;background:rgba(255,255,255,.08)}
-.btn--ghost:hover{background:rgba(255,255,255,.18);border-color:#fff}
-.btn--light{background:var(--sage);color:#152016}
-.s-forest .btn--light{background:var(--sage);color:#152016}
-.s-forest .btn--light:hover{background:var(--light);color:var(--forest)}
-.s-forest .btn--line{border-color:rgba(233,237,230,.35);color:var(--light)}
+.btn--line{border-color:rgba(24,32,25,.26);color:var(--ink);background:transparent}
+.btn--line:hover{border-color:var(--forest);background:rgba(24,32,25,.05)}
+.s-forest .btn--line{border-color:rgba(233,237,230,.42);color:var(--light)}
 .s-forest .btn--line:hover{border-color:var(--light);background:rgba(233,237,230,.1)}
 .btnrow{display:flex;flex-wrap:wrap;gap:12px}
 
@@ -114,7 +130,10 @@ p:last-child{margin-bottom:0}
 .hdr.solid .nav a,.hdr--static .nav a{color:var(--ink)}
 .nav a::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:1px;background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .3s var(--ease)}
 .nav a:hover::after,.nav a[aria-current]::after{transform:scaleX(1);transform-origin:left}
-.hdr .btn--head{min-height:42px;padding:10px 20px;font-size:15px;border-radius:2px;background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.45)}
+/* over the photograph the header has no surface of its own, so the sky can wash
+   it out; a shadow on the glyphs costs nothing and does not darken the picture */
+.hdr:not(.solid) .brand,.hdr:not(.solid) .nav a{text-shadow:0 1px 4px rgba(12,20,14,.55)}
+.hdr .btn--head{min-height:42px;padding:10px 20px;font-size:15px;border-radius:2px;background:rgba(18,29,21,.4);color:#fff;border:1px solid rgba(255,255,255,.55);backdrop-filter:blur(6px)}
 .hdr.solid .btn--head,.hdr--static .btn--head{background:var(--forest);color:var(--light);border-color:var(--forest)}
 .hdr .btn--head:hover{background:var(--moss);color:var(--light);border-color:var(--moss)}
 .burger{display:none;width:46px;height:46px;border:0;background:transparent;cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:0}
@@ -125,39 +144,63 @@ p:last-child{margin-bottom:0}
 .mnav a{font-family:"EB Garamond",Georgia,serif;font-size:32px;text-decoration:none;padding:11px 0;color:var(--light)}
 .mnav__x{position:absolute;top:18px;right:var(--pad);width:46px;height:46px;background:none;border:0;color:var(--light);font-size:32px;cursor:pointer;line-height:1}
 
-/* ---------- hero ---------- */
-.hero{position:relative;min-height:min(92svh,860px);display:flex;align-items:flex-end;overflow:hidden;background:var(--forest)}
+/* ---------- hero ----------
+   The text sits on a sheet of paper mounted over the photograph, the way a
+   label is mounted in a journal. That keeps the photograph itself unretouched:
+   the villa and the trees both stay in full daylight, and every word on top
+   of them is ink on paper rather than white on whatever happens to be behind. */
+/* the inner grid stretches to the full frame, so the label can be placed against
+   the picture (down on the lawn, clear of the house) rather than against the panel */
+.hero{position:relative;min-height:min(93svh,880px);display:flex;align-items:stretch;
+  overflow:hidden;background:var(--forest)}
 .hero__img{position:absolute;inset:0}
 .hero__img img{width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+/* only two jobs left for the veil: keep the navigation legible against the sky,
+   and seat the panel so its shadow has something to fall on */
 .hero__veil{position:absolute;inset:0;background:
-  linear-gradient(to left,rgba(18,29,21,.9) 0%,rgba(18,29,21,.86) 26%,rgba(18,29,21,.6) 46%,rgba(18,29,21,.2) 60%,rgba(18,29,21,0) 74%),
-  linear-gradient(to bottom,rgba(18,29,21,.62) 0%,rgba(18,29,21,.24) 12%,rgba(18,29,21,0) 26%)}
-.hero{align-items:center}
+  linear-gradient(to bottom,rgba(18,29,21,.86) 0%,rgba(18,29,21,.78) 4%,rgba(18,29,21,.6) 9%,
+    rgba(18,29,21,.4) 14%,rgba(18,29,21,.22) 19%,rgba(18,29,21,.09) 25%,rgba(18,29,21,0) 32%),
+  linear-gradient(to left,rgba(18,29,21,.34) 0%,rgba(18,29,21,.14) 32%,rgba(18,29,21,0) 58%)}
 .hero__in{position:relative;z-index:2;width:100%;max-width:var(--maxw);margin:0 auto;
   padding:calc(84px + 24px) var(--pad) clamp(44px,6vh,72px);
-  display:grid;grid-template-columns:1fr minmax(0,min(50%,540px))}
-.hero__panel{grid-column:2}
-.hero h1{color:#fff;max-width:14ch}
-.hero h1 em{font-style:italic}
-.hero__sub{color:rgba(255,255,255,.88);max-width:44ch;margin-top:20px;font-size:clamp(18px,1.35vw,21px);line-height:1.55}
+  display:grid;grid-template-columns:1fr minmax(0,min(48%,560px));align-items:center}
+/* the availability label belongs on the photograph, next to the house it
+   describes; keeping it out of the panel leaves the panel with one job */
+.hero .tag{grid-column:1;grid-row:1;justify-self:start;align-self:end;
+  margin:0;max-width:min(100%,336px);
+  filter:drop-shadow(0 16px 30px rgba(12,20,14,.5))}
+.hero__panel{grid-column:2;grid-row:1;
+  padding:clamp(32px,3vw,44px) clamp(28px,2.9vw,42px) clamp(34px,3.2vw,46px);
+  box-shadow:0 2px 6px rgba(12,20,14,.18),0 36px 74px -26px rgba(12,20,14,.6)}
+/* frosted rather than solid: the trees stay readable through the sheet, and the
+   blur flattens them enough that ink on top keeps its contrast */
+@supports ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
+  .hero__panel{background:rgba(245,241,232,.84);
+    -webkit-backdrop-filter:blur(22px) saturate(.85);backdrop-filter:blur(22px) saturate(.85)}
+}
+.hero h1{color:var(--ink);font-size:clamp(38px,4.1vw,60px);letter-spacing:-.014em;max-width:none}
+.hero__line{font-family:"EB Garamond",Georgia,serif;font-style:italic;font-weight:400;
+  font-size:clamp(23px,1.95vw,30px);line-height:1.22;color:var(--moss);margin:9px 0 0}
+.hero__sub{color:var(--muted);max-width:42ch;margin-top:19px;
+  font-size:clamp(16.5px,1.15vw,18.5px);line-height:1.65}
+.hero .btnrow{margin-top:28px}
 /* nursery tag: punched hole, clipped end, entries noted like a plant label */
 .tag{
-  position:relative;display:inline-block;max-width:min(100%,352px);
-  margin:0 0 30px;padding:14px 22px 15px 46px;
-  background:#F1ECDF;color:var(--forest);
-  font-size:15.5px;line-height:1.5;letter-spacing:.005em;
-  clip-path:polygon(0 50%,17px 0,100% 0,100% 100%,17px 100%);
-  filter:drop-shadow(0 14px 30px rgba(12,20,14,.45));
-  transform:rotate(-.8deg);transform-origin:left center;
+  position:relative;display:inline-block;max-width:100%;
+  margin:0 0 26px;padding:12px 20px 13px 43px;
+  background:var(--stone);color:var(--forest);
+  font-size:15px;line-height:1.5;letter-spacing:.005em;
+  clip-path:polygon(0 50%,16px 0,100% 0,100% 100%,16px 100%);
+  filter:drop-shadow(0 3px 6px rgba(12,20,14,.16));
+  transform:rotate(-.7deg);transform-origin:left center;
 }
-.tag::before{content:"";position:absolute;left:23px;top:21px;width:10px;height:10px;
-  border-radius:50%;box-shadow:inset 0 0 0 1px rgba(27,43,34,.38)}
+.tag::before{content:"";position:absolute;left:19px;top:50%;width:9px;height:9px;
+  margin-top:-4.5px;border-radius:50%;box-shadow:inset 0 0 0 1px rgba(27,43,34,.42)}
 .tag b{display:block;font-family:"Source Sans 3",sans-serif;font-weight:700;
-  font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--moss);
-  margin-bottom:5px;padding-bottom:5px;border-bottom:1px solid rgba(27,43,34,.16)}
+  font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--moss-dk);
+  margin-bottom:5px;padding-bottom:5px;border-bottom:1px solid rgba(27,43,34,.18)}
 .tag span{display:block;font-weight:600;white-space:nowrap}
 .tag em{font-style:normal;font-weight:400;font-variant-numeric:tabular-nums;color:var(--muted)}
-.hero .btnrow{margin-top:30px}
 
 /* ---------- page head (subpages) ---------- */
 .phead{padding:calc(84px + var(--sp-sm)) 0 var(--sp-sm);background:var(--stone);border-bottom:1px solid var(--line)}
@@ -269,15 +312,25 @@ figure{margin:0}
 .f2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .field{display:grid;gap:7px}
 .field label{font-size:14px;font-weight:600;color:var(--light)}
+/* the fields are paper on the forest section, not a darker dark on dark:
+   you can see where to write, and the ink meets AA against its own background */
 .field input,.field select,.field textarea{
-  font-family:inherit;font-size:16.5px;color:var(--light);min-height:46px;
-  padding:11px 14px;border:1px solid rgba(233,237,230,.3);border-radius:var(--r);
-  background:rgba(233,237,230,.07);width:100%;transition:border-color .3s var(--ease)}
+  font-family:inherit;font-size:16.5px;color:var(--ink);min-height:46px;
+  padding:11px 14px;border:1px solid rgba(245,241,232,.3);border-radius:var(--r);
+  background:var(--ivory);width:100%;
+  transition:border-color .25s var(--ease),box-shadow .25s var(--ease),background .25s var(--ease)}
 .field textarea{min-height:120px;resize:vertical;line-height:1.6}
-.field input:focus,.field select:focus,.field textarea:focus{outline:0;border-color:var(--sage);background:rgba(233,237,230,.12)}
-.field input::placeholder,.field textarea::placeholder{color:rgba(233,237,230,.45)}
+.field input:focus,.field select:focus,.field textarea:focus{outline:0;background:#fff;
+  border-color:var(--moss);box-shadow:0 0 0 3px rgba(127,149,108,.42)}
+.field input::placeholder,.field textarea::placeholder{color:var(--muted);opacity:1}
 .field select option{color:#182019}
+/* on paper the fields recess instead of glowing, so the submit button is the
+   only filled object in the form and reads as the single action */
+.panel .field input,.panel .field select,.panel .field textarea{
+  background:#FCFAF5;border-color:var(--line)}
+.panel .field input:focus,.panel .field select:focus,.panel .field textarea:focus{background:#fff}
 .sent{display:none;padding:14px 18px;background:rgba(127,149,108,.25);border:1px solid var(--sage);border-radius:var(--r);font-size:16px}
+.panel .sent{background:rgba(127,149,108,.16);border-color:var(--moss);color:var(--ink)}
 .sent.on{display:block}
 .dl{display:grid;gap:18px;margin:0}
 .dl dt{font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--sage);font-weight:600;margin-bottom:4px}
@@ -317,19 +370,22 @@ figure{margin:0}
   .bens{grid-template-columns:repeat(2,1fr);gap:32px}
 }
 @media (max-width:880px){
+  /* the panel keeps its paper and simply slides down over the foot of the
+     photograph, so the mounted-label idea survives the stack */
   .hero{display:block;min-height:0;background:var(--ivory)}
   .hero__img{position:relative;inset:auto}
   .hero__img img{aspect-ratio:4/3;height:auto;object-position:50% 55%}
-  .hero__veil{inset:0 0 auto 0;height:190px;
-    background:linear-gradient(to bottom,rgba(18,29,21,.66) 0%,rgba(18,29,21,.2) 62%,rgba(18,29,21,0) 100%)}
-  .hero__in{display:block;padding:clamp(26px,5vw,36px) var(--pad) clamp(36px,7vw,52px)}
-  .hero__panel{grid-column:auto}
-  .hero h1{color:var(--ink);max-width:none}
-  .hero__sub{color:var(--muted);max-width:none}
-  .hero .tag{background:var(--stone);color:var(--forest);
-    filter:drop-shadow(0 6px 14px rgba(12,20,14,.12));max-width:100%}
-  .hero .btn--ghost{border-color:var(--line);color:var(--ink);background:transparent}
-  .hero .btn--ghost:hover{background:var(--stone);border-color:var(--moss)}
+  .hero__veil{inset:0 0 auto 0;height:180px;
+    background:linear-gradient(to bottom,rgba(18,29,21,.7) 0%,rgba(18,29,21,.22) 60%,rgba(18,29,21,0) 100%)}
+  /* stacked, the page itself is already paper, so the panel drops its surface
+     entirely and only the tag stays an object, tucked under the photo edge */
+  .hero__in{display:block;padding:0 var(--pad) clamp(38px,7vw,56px);position:relative;z-index:3}
+  .hero .tag{grid-column:auto;grid-row:auto;position:relative;z-index:4;
+    margin:clamp(-62px,-9vw,-44px) 0 clamp(24px,5vw,30px);max-width:100%;
+    filter:drop-shadow(0 12px 24px rgba(12,20,14,.42))}
+  .hero__panel{grid-column:auto;grid-row:auto;padding:0;
+    background:none;box-shadow:none;-webkit-backdrop-filter:none;backdrop-filter:none}
+  .hero__sub{max-width:none}
   .unit__gal{position:static}
   .nav,.hdr .btn--head{display:none}
   .burger{display:flex}

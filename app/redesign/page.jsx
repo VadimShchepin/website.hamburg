@@ -15,7 +15,7 @@ const redesigns = [
         slug: 'hopfenbachvilla',
         firm: 'Naturidylle Hopfenbachvilla',
         sector: 'MOEBLIERTES WOHNEN & CO-LIVING · GROSSHANSDORF BEI AHRENSBURG · SEIT 1908',
-        description: 'Ruhiger Waldgruen-Auftritt aus den eigenen Fotos der Vermieterin: freie Raeume mit Preis und Termin ueber dem Falz, die Hausregeln als eigenes Kapitel und ein Kontaktweg, den die alte Jimdo-Seite gar nicht hatte.',
+        description: 'Redaktionelles Gartenjournal aus Garamond, Waldgruen und botanischen Tuschezeichnungen. Vier Seiten: Startseite mit acht Kapiteln, komplettes Raumverzeichnis und zwei Raumseiten. Jeder der zehn Raeume hat Foto und Preis, auch die belegten.',
     },
     {
         slug: 'denis-fahrschule',

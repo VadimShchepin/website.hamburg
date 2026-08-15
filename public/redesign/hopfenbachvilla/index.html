@@ -4,870 +4,338 @@
 <meta charset="utf-8">
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hopfenbachvilla, Naturidylle bei Ahrensburg | Möblierte Zimmer und Wohnungen</title>
-<meta name="description" content="Möblierte Zimmer und Wohnungen in einer Jugendstil-Villa von 1908, mitten im Landschaftsschutzgebiet bei Ahrensburg. Über 3.000 qm Park, eigener Brunnen, 20 Minuten mit der Bahn nach Hamburg.">
+<title>Hopfenbachvilla, möbliert wohnen im Grünen bei Ahrensburg</title>
+<meta name="description" content="Möblierte Zimmer und Wohnungen in einer Jugendstil-Villa von 1908 bei Ahrensburg. Über 3.000 m² Garten, ab Ahrensburg 15 bis 20 Minuten mit der Bahn nach Hamburg.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<style>
-:root{
-  --paper:#F6F3EC;
-  --paper-2:#EFEADF;
-  --paper-3:#E5E0D2;
-  --ink:#18211B;
-  --ink-2:#374439;
-  --muted:#6C7A6D;
-  --line:#D6D2C3;
-  --forest:#1F2C23;
-  --forest-2:#2C3D30;
-  --moss:#71865F;
-  --moss-2:#5A6E4B;
-  --clay:#A9663D;
-  --sand:#DBE0D0;
-  --r:3px;
-  --maxw:1240px;
-  --pad:clamp(20px,5vw,64px);
-  --ease:cubic-bezier(.22,.61,.36,1);
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:88px;-webkit-text-size-adjust:100%}
-body{
-  margin:0;background:var(--paper);color:var(--ink);
-  font-family:Inter,system-ui,sans-serif;font-weight:400;
-  font-size:clamp(16px,1.05vw,17.5px);line-height:1.75;
-  -webkit-font-smoothing:antialiased;overflow-x:hidden;
-}
-img{display:block;max-width:100%;height:auto}
-a{color:inherit}
-h1,h2,h3,h4{font-family:Fraunces,Georgia,serif;font-weight:400;line-height:1.08;letter-spacing:-.015em;margin:0}
-p{margin:0 0 1.1em}
-p:last-child{margin-bottom:0}
-
-/* ---------- layout helpers ---------- */
-.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--pad)}
-.narrow{max-width:760px}
-.sec{padding:clamp(72px,10vw,140px) 0}
-.sec--tight{padding:clamp(56px,7vw,96px) 0}
-.eyebrow{
-  display:flex;align-items:center;gap:12px;
-  font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;
-  font-weight:500;color:var(--moss-2);margin-bottom:26px;
-}
-.eyebrow::before{content:"";width:26px;height:1px;background:var(--moss);opacity:.65;flex:none}
-.h-xl{font-size:clamp(38px,6.2vw,74px)}
-.h-lg{font-size:clamp(30px,4.2vw,52px)}
-.h-md{font-size:clamp(23px,2.5vw,31px);line-height:1.2}
-.lead{font-size:clamp(17.5px,1.5vw,21px);line-height:1.68;color:var(--ink-2);font-weight:300}
-.muted{color:var(--muted)}
-.rule{height:1px;background:var(--line);border:0;margin:0}
-
-/* ---------- buttons ---------- */
-.btn{
-  display:inline-flex;align-items:center;gap:10px;
-  padding:14px 26px;border-radius:999px;border:1px solid transparent;
-  font-size:14.5px;font-weight:500;letter-spacing:.01em;text-decoration:none;
-  transition:background .35s var(--ease),color .35s var(--ease),border-color .35s var(--ease),transform .35s var(--ease);
-  cursor:pointer;font-family:inherit;
-}
-.btn:hover{transform:translateY(-2px)}
-.btn--solid{background:var(--forest);color:#F3F1E9}
-.btn--solid:hover{background:var(--moss-2)}
-.btn--ghost{border-color:rgba(255,255,255,.45);color:#fff;background:transparent}
-.btn--ghost:hover{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.75)}
-.btn--line{border-color:var(--line);color:var(--ink);background:transparent}
-.btn--line:hover{border-color:var(--moss);background:var(--paper-2)}
-.btn svg{flex:none}
-
-/* ---------- header ---------- */
-.hdr{
-  position:fixed;inset:0 0 auto 0;z-index:60;
-  transition:background .45s var(--ease),box-shadow .45s var(--ease),backdrop-filter .45s var(--ease);
-}
-.hdr__in{
-  max-width:var(--maxw);margin:0 auto;padding:18px var(--pad);
-  display:flex;align-items:center;justify-content:space-between;gap:24px;
-}
-.hdr.solid{background:rgba(246,243,236,.9);backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line)}
-.brand{display:flex;align-items:center;gap:13px;text-decoration:none;color:#fff;transition:color .45s var(--ease)}
-.hdr.solid .brand{color:var(--ink)}
-.brand svg{flex:none}
-.brand b{display:block;font-family:Fraunces,serif;font-weight:400;font-size:19px;letter-spacing:.005em;line-height:1.1}
-.brand span{display:block;font-size:9.5px;letter-spacing:.26em;text-transform:uppercase;opacity:.72;margin-top:3px}
-.nav{display:flex;align-items:center;gap:30px}
-.nav a{
-  font-size:13.5px;text-decoration:none;color:rgba(255,255,255,.88);
-  position:relative;padding:4px 0;transition:color .35s var(--ease);
-}
-.hdr.solid .nav a{color:var(--ink-2)}
-.nav a::after{
-  content:"";position:absolute;left:0;bottom:0;width:100%;height:1px;
-  background:currentColor;transform:scaleX(0);transform-origin:right;
-  transition:transform .4s var(--ease);
-}
-.nav a:hover::after{transform:scaleX(1);transform-origin:left}
-.hdr .btn--head{
-  padding:11px 20px;font-size:13.5px;background:rgba(255,255,255,.14);
-  color:#fff;border:1px solid rgba(255,255,255,.4);backdrop-filter:blur(6px);
-}
-.hdr.solid .btn--head{background:var(--forest);color:#F3F1E9;border-color:var(--forest)}
-.burger{
-  display:none;width:44px;height:44px;border:0;background:transparent;cursor:pointer;
-  align-items:center;justify-content:center;flex-direction:column;gap:5px;padding:0;
-}
-.burger i{display:block;width:20px;height:1.5px;background:#fff;transition:.35s var(--ease)}
-.hdr.solid .burger i{background:var(--ink)}
-.mnav{
-  position:fixed;inset:0;z-index:70;background:var(--forest);color:#EFEDE3;
-  display:flex;flex-direction:column;justify-content:center;gap:6px;padding:0 var(--pad);
-  opacity:0;visibility:hidden;transition:opacity .4s var(--ease),visibility .4s;
-}
-.mnav.open{opacity:1;visibility:visible}
-.mnav a{font-family:Fraunces,serif;font-size:30px;text-decoration:none;padding:9px 0;color:#EFEDE3}
-.mnav__x{position:absolute;top:22px;right:var(--pad);background:none;border:0;color:#EFEDE3;font-size:30px;cursor:pointer;line-height:1}
-
-/* ---------- hero ---------- */
-.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;background:var(--forest)}
-.hero__img{position:absolute;inset:0}
-.hero__img img{width:100%;height:100%;object-fit:cover;object-position:52% 62%;
-  animation:drift 26s var(--ease) forwards}
-@keyframes drift{from{transform:scale(1.09)}to{transform:scale(1)}}
-.hero__veil{
-  position:absolute;inset:0;
-  background:
-    linear-gradient(to top,rgba(16,24,18,.80) 0%,rgba(16,24,18,.42) 34%,rgba(16,24,18,.06) 62%,rgba(16,24,18,.30) 100%);
-}
-.hero__in{position:relative;z-index:2;width:100%;max-width:var(--maxw);margin:0 auto;padding:0 var(--pad) clamp(44px,7vh,84px)}
-.hero h1{color:#fff;font-size:clamp(40px,7.2vw,88px);font-weight:300;max-width:15ch;letter-spacing:-.02em}
-.hero h1 em{font-style:italic;font-weight:300}
-.hero__sub{color:rgba(255,255,255,.85);max-width:52ch;margin-top:26px;font-size:clamp(16px,1.35vw,19px);font-weight:300;line-height:1.65}
-.hero__cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
-.hero__flag{
-  display:inline-flex;align-items:center;gap:11px;margin-bottom:26px;
-  padding:9px 18px 9px 12px;border-radius:999px;
-  background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.28);
-  backdrop-filter:blur(8px);color:#fff;font-size:13px;letter-spacing:.01em;
-}
-.dot{width:7px;height:7px;border-radius:50%;background:#9DBE7C;flex:none;box-shadow:0 0 0 0 rgba(157,190,124,.7);animation:pulse 2.8s infinite}
-@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(157,190,124,.55)}70%{box-shadow:0 0 0 9px rgba(157,190,124,0)}100%{box-shadow:0 0 0 0 rgba(157,190,124,0)}}
-.hero__scroll{
-  position:absolute;right:var(--pad);bottom:clamp(44px,7vh,84px);z-index:2;
-  writing-mode:vertical-rl;font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;
-  color:rgba(255,255,255,.7);display:flex;align-items:center;gap:14px;text-decoration:none;
-}
-.hero__scroll::after{content:"";width:1px;height:52px;background:linear-gradient(rgba(255,255,255,.7),rgba(255,255,255,0))}
-
-/* ---------- facts strip ---------- */
-.facts{background:var(--paper-2);border-block:1px solid var(--line)}
-.facts__grid{display:grid;grid-template-columns:repeat(6,1fr)}
-.fact{padding:clamp(28px,3.2vw,44px) clamp(14px,1.6vw,24px);border-right:1px solid var(--line)}
-.fact:last-child{border-right:0}
-.fact b{display:block;font-family:Fraunces,serif;font-weight:400;font-size:clamp(26px,2.9vw,38px);line-height:1;letter-spacing:-.02em}
-.fact span{display:block;margin-top:10px;font-size:12.5px;line-height:1.5;color:var(--muted)}
-
-/* ---------- generic split ---------- */
-.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,90px);align-items:center}
-.split--wide{grid-template-columns:1.05fr .95fr}
-.stack>*+*{margin-top:22px}
-
-/* ---------- figures ---------- */
-figure{margin:0}
-.fig img{width:100%;border-radius:var(--r)}
-.fig figcaption{margin-top:12px;font-size:12.5px;color:var(--muted);letter-spacing:.01em}
-.arch img{border-radius:min(50%,220px) min(50%,220px) var(--r) var(--r)/26% 26% var(--r) var(--r)}
-.mosaic{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;gap:14px}
-.mosaic .tall{grid-row:span 2;height:100%}
-.mosaic img{width:100%;height:100%;object-fit:cover;border-radius:var(--r)}
-
-/* ---------- available units ---------- */
-.unit{
-  display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(28px,4vw,64px);
-  align-items:center;padding:clamp(34px,4vw,52px) 0;
-}
-.unit+.unit{border-top:1px solid var(--line)}
-.unit__media{display:grid;grid-template-columns:1.62fr 1fr;grid-template-rows:repeat(3,1fr);gap:10px;height:clamp(320px,40vw,470px)}
-.unit__media img{width:100%;height:100%;object-fit:cover;border-radius:var(--r)}
-.unit__media img:first-child{grid-row:span 3}
-.unit--flip .unit__body{order:-1}
-.pill{
-  display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:999px;
-  font-size:11.5px;letter-spacing:.11em;text-transform:uppercase;font-weight:500;
-  white-space:nowrap;
-}
-.pill--free{background:var(--moss-2);color:#F2F3EC}
-.pill--taken{background:var(--paper-3);color:var(--muted)}
-.unit h3{margin:16px 0 6px}
-.unit__meta{font-size:13.5px;color:var(--muted);letter-spacing:.02em;margin-bottom:18px}
-.specs{list-style:none;padding:0;margin:0 0 24px;display:grid;gap:10px}
-.specs li{position:relative;padding-left:26px;font-size:15px;color:var(--ink-2);line-height:1.6}
-.specs li::before{
-  content:"";position:absolute;left:2px;top:.62em;width:9px;height:9px;
-  border:1px solid var(--moss);border-radius:50% 0 50% 50%;transform:rotate(45deg);
-}
-.price{
-  display:grid;grid-template-columns:repeat(3,auto);gap:2px 30px;justify-content:start;
-  padding:20px 24px;background:var(--paper-2);border-radius:var(--r);border:1px solid var(--line);
-  margin-bottom:24px;
-}
-.price dt{font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
-.price dd{margin:4px 0 0;font-family:Fraunces,serif;font-size:23px;letter-spacing:-.01em}
-.price .sm{font-family:Inter,sans-serif;font-size:12.5px;color:var(--muted);letter-spacing:0;display:block;margin-top:2px}
-
-/* ---------- room table ---------- */
-.rooms{width:100%;border-collapse:collapse;margin-top:8px}
-.rooms th{
-  text-align:left;font-size:11px;letter-spacing:.19em;text-transform:uppercase;
-  font-weight:500;color:var(--muted);padding:0 12px 14px 0;border-bottom:1px solid var(--line);
-}
-.rooms td{padding:17px 12px 17px 0;border-bottom:1px solid var(--line);vertical-align:baseline;font-size:15.5px}
-.rooms tr:hover td{background:rgba(113,134,95,.05)}
-.rooms .nm{font-family:Fraunces,serif;font-size:19px;letter-spacing:-.01em}
-.rooms .sz{white-space:nowrap;font-variant-numeric:tabular-nums}
-.rooms td:last-child,.rooms th:last-child{text-align:right;padding-right:0}
-.rooms .lo{color:var(--muted);font-size:14px}
-@media (min-width:881px){.rooms .nm{white-space:nowrap}}
-
-/* ---------- full bleed band ---------- */
-.strip{position:relative;height:clamp(280px,38vw,460px);overflow:hidden}
-.strip img{width:100%;height:100%;object-fit:cover}
-.strip figcaption{
-  position:absolute;left:0;right:0;bottom:0;padding:var(--pad);
-  background:linear-gradient(transparent,rgba(16,24,18,.6));
-  color:rgba(255,255,255,.86);font-size:13px;letter-spacing:.02em;
-}
-
-/* ---------- seasons gallery ---------- */
-.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(12px,1.6vw,20px)}
-.gal figure{margin:0}
-.gal img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r)}
-.gal figcaption{margin-top:11px;font-size:12.5px;color:var(--muted)}
-.gal b{display:block;font-family:Fraunces,serif;font-weight:400;font-size:16px;color:var(--ink);margin-bottom:2px}
-.duo{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.duo img{width:100%;height:100%;object-fit:cover;border-radius:var(--r)}
-
-/* ---------- dark band ---------- */
-.band{background:var(--forest);color:#E9E7DC}
-.band .eyebrow{color:#A9BE93}
-.band .eyebrow::before{background:#A9BE93}
-.band .muted{color:rgba(233,231,220,.6)}
-
-/* ---------- rules ---------- */
-.rules{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(233,231,220,.16);border:1px solid rgba(233,231,220,.16);border-radius:var(--r);overflow:hidden}
-.rule-card{background:var(--forest);padding:clamp(24px,2.6vw,34px)}
-.rule-card h4{font-size:19px;margin-bottom:9px}
-.rule-card p{font-size:14.5px;line-height:1.7;color:rgba(233,231,220,.72);margin:0}
-.rule-card .no{display:block;font-family:Fraunces,serif;font-size:12px;letter-spacing:.2em;color:#93AA7B;margin-bottom:14px}
-
-/* ---------- quote band ---------- */
-.quote{position:relative;min-height:clamp(430px,60vh,620px);display:grid;place-items:center;overflow:hidden;text-align:center}
-.quote img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.quote::after{content:"";position:absolute;inset:0;background:
-  radial-gradient(120% 90% at 50% 50%,rgba(18,26,20,.58) 0%,rgba(18,26,20,.86) 100%),
-  linear-gradient(rgba(18,26,20,.34),rgba(18,26,20,.5))}
-.quote__in{position:relative;z-index:2;max-width:900px;padding:0 var(--pad);color:#fff}
-.quote blockquote{margin:0;font-family:Fraunces,serif;font-weight:300;font-size:clamp(24px,3.4vw,42px);line-height:1.28;letter-spacing:-.015em}
-.quote cite{display:block;margin-top:26px;font-style:normal;font-size:13px;letter-spacing:.06em;color:rgba(255,255,255,.7);line-height:1.7}
-
-/* ---------- ways ---------- */
-.ways{list-style:none;margin:0;padding:0}
-.ways li{display:grid;grid-template-columns:96px 1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--line);align-items:baseline}
-.ways b{font-family:Fraunces,serif;font-weight:400;font-size:22px;letter-spacing:-.01em;white-space:nowrap}
-.ways span{font-size:15px;color:var(--ink-2)}
-.ways .how{display:block;font-size:12.5px;color:var(--muted);margin-top:2px}
-
-/* ---------- timeline ---------- */
-.time{list-style:none;margin:0;padding:0;display:grid;gap:0}
-.time li{display:grid;grid-template-columns:88px 1fr;gap:24px;padding:22px 0;border-top:1px solid var(--line)}
-.time li:last-child{border-bottom:1px solid var(--line)}
-.time b{font-family:Fraunces,serif;font-weight:400;font-size:20px;color:var(--moss-2)}
-.time p{font-size:15px;margin:0;color:var(--ink-2)}
-
-/* ---------- voices ---------- */
-.voices{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2vw,26px)}
-.voice{background:var(--paper-2);border:1px solid var(--line);border-radius:var(--r);padding:clamp(26px,2.6vw,36px);display:flex;flex-direction:column}
-.voice p{font-family:Fraunces,serif;font-size:19px;line-height:1.45;font-weight:300;letter-spacing:-.005em;flex:1}
-.voice cite{font-style:normal;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--moss-2);margin-top:22px}
-
-/* ---------- contact ---------- */
-.form{display:grid;gap:16px}
-.field{display:grid;gap:7px}
-.field label{font-size:11.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}
-.field input,.field select,.field textarea{
-  font-family:inherit;font-size:15.5px;color:var(--ink);
-  padding:13px 15px;border:1px solid var(--line);border-radius:var(--r);
-  background:var(--paper);transition:border-color .3s var(--ease),background .3s var(--ease);
-  width:100%;
-}
-.field textarea{min-height:132px;resize:vertical;line-height:1.65}
-.field input:focus,.field select:focus,.field textarea:focus{outline:0;border-color:var(--moss);background:#fff}
-.f2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.formnote{font-size:12.5px;color:var(--muted);margin-top:4px}
-.sent{display:none;padding:14px 18px;background:var(--sand);border-radius:var(--r);font-size:14.5px;color:var(--forest-2)}
-.sent.on{display:block}
-.contact-card{background:var(--paper-2);border:1px solid var(--line);border-radius:var(--r);padding:clamp(26px,3vw,40px)}
-.contact-card dl{margin:0;display:grid;gap:20px}
-.contact-card dt{font-size:11.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}
-.contact-card dd{margin:0;font-size:16px;line-height:1.6}
-.checklist{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:9px}
-.checklist li{position:relative;padding-left:24px;font-size:14.5px;color:var(--ink-2)}
-.checklist li::before{content:"";position:absolute;left:1px;top:.55em;width:8px;height:8px;border-radius:50%;border:1px solid var(--moss)}
-.band .checklist li{color:rgba(233,231,220,.75)}
-.band .checklist li::before{border-color:#93AA7B}
-.band .specs li{color:rgba(233,231,220,.75)}
-
-/* ---------- footer ---------- */
-.ftr{background:var(--forest);color:rgba(233,231,220,.62);padding:clamp(56px,7vw,86px) 0 34px}
-.ftr__top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:clamp(28px,4vw,60px);padding-bottom:44px;border-bottom:1px solid rgba(233,231,220,.16)}
-.ftr .brand{color:#EFEDE3}
-.ftr h5{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#93AA7B;margin:0 0 16px;font-weight:500;font-family:Inter,sans-serif}
-.ftr ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
-.ftr a{text-decoration:none;font-size:14.5px;transition:color .3s var(--ease)}
-.ftr a:hover{color:#EFEDE3}
-.ftr__bot{display:flex;flex-wrap:wrap;gap:8px 26px;justify-content:space-between;padding-top:26px;font-size:12.5px}
-.ftr__bot p{margin:0}
-.ftr__blurb{font-size:14.5px;line-height:1.7;max-width:36ch;margin-top:20px}
-
-/* ---------- reveal ---------- */
-.rv{opacity:0;transform:translateY(26px);transition:opacity 1.05s var(--ease),transform 1.05s var(--ease);transition-delay:var(--d,0s)}
-.rv.in{opacity:1;transform:none}
-.rv-img{clip-path:inset(0 0 100% 0);transition:clip-path 1.25s var(--ease);transition-delay:var(--d,0s)}
-.rv-img.in{clip-path:inset(0 0 0 0)}
-
-@media (max-width:1020px){
-  .facts__grid{grid-template-columns:repeat(3,1fr)}
-  .fact:nth-child(3n){border-right:0}
-  .fact:nth-child(-n+3){border-bottom:1px solid var(--line)}
-  .voices{grid-template-columns:1fr}
-}
-@media (max-width:880px){
-  .nav,.hdr .btn--head{display:none}
-  .burger{display:flex}
-  .split,.split--wide,.unit{grid-template-columns:1fr;gap:32px}
-  .unit--flip .unit__body{order:0}
-  .unit__media{height:auto;grid-template-rows:200px 200px}
-  .rules{grid-template-columns:1fr}
-  .ftr__top{grid-template-columns:1fr;gap:34px}
-  .f2{grid-template-columns:1fr}
-  .rooms .lo{display:none}
-  .hero__scroll{display:none}
-  .gal{grid-template-columns:1fr 1fr}
-}
-@media (max-width:560px){
-  .facts__grid{grid-template-columns:repeat(2,1fr)}
-  .fact:nth-child(3n){border-right:1px solid var(--line)}
-  .fact:nth-child(2n){border-right:0}
-  .fact:nth-child(-n+4){border-bottom:1px solid var(--line)}
-  .price{grid-template-columns:1fr;gap:16px}
-  .time li,.ways li{grid-template-columns:1fr;gap:6px}
-  .unit__media{grid-template-columns:1fr;grid-template-rows:repeat(3,180px)}
-  .unit__media img:first-child{grid-row:span 1}
-}
-@media (max-width:880px){
-  .hero__veil{background:linear-gradient(to top,rgba(16,24,18,.88) 0%,rgba(16,24,18,.72) 45%,rgba(16,24,18,.34) 72%,rgba(16,24,18,.5) 100%)}
-}
-@media (prefers-reduced-motion:reduce){
-  *{animation:none!important;transition-duration:.01ms!important}
-  html{scroll-behavior:auto}
-  .rv,.rv-img{opacity:1;transform:none;clip-path:none}
-  .hero__img img{animation:none}
-}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/redesign/hopfenbachvilla/styles.css">
 </head>
 <body>
-
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20 4c0 8.5-5 13-11 13-2 0-3.5-.5-3.5-.5S4 12 8 8c3.4-3.4 12-4 12-4Z"/><path d="M4 20c2-4 5.5-7.5 10-10.5"/></symbol>
+<symbol id="i-gables" viewBox="0 0 24 24"><path d="M2 20v-7l3.5-3.5L9 13v7"/><path d="M8 20V10l4-4 4 4v10"/><path d="M15 20v-7l3.5-3.5L22 13v7"/><path d="M1.5 20.5h21"/></symbol>
+<symbol id="i-tree" viewBox="0 0 24 24"><path d="M12 21v-5"/><path d="M12 16c-3.9 0-7-2.9-7-6.4C5 6 8.1 3 12 3s7 3 7 6.6c0 3.5-3.1 6.4-7 6.4Z"/><path d="M12 16V9m0 2.5L9.4 9M12 12.5 14.6 10"/></symbol>
+<symbol id="i-boot" viewBox="0 0 24 24"><path d="M9 3v9.5c0 1.2-.5 2-1.6 2.7C6 16 5 17 5 18.6V21h14v-2.2c0-1.6-.9-2.4-2.4-3l-2.2-.9c-1-.4-1.4-1-1.4-2V3Z"/><path d="M5 18h14"/></symbol>
+<symbol id="i-bed" viewBox="0 0 24 24"><path d="M2 19v-9M2 14h20v5M22 19v-4"/><path d="M6 10V7h12v3"/><circle cx="8" cy="11.5" r="1.6"/></symbol>
+<symbol id="i-key" viewBox="0 0 24 24"><circle cx="7" cy="7" r="4"/><path d="M9.9 9.9 21 21m-4-1 2-2m-5-1 2-2"/></symbol>
+<symbol id="i-person" viewBox="0 0 24 24"><circle cx="12" cy="7" r="3.5"/><path d="M4.5 21c0-4.1 3.4-7.5 7.5-7.5s7.5 3.4 7.5 7.5"/></symbol>
+<symbol id="i-spade" viewBox="0 0 24 24"><path d="M12 2v11"/><path d="M9 2h6"/><path d="M8 13h8l-1.4 6.4a2 2 0 0 1-2 1.6h-1.2a2 2 0 0 1-2-1.6Z"/></symbol>
+<symbol id="i-paw-off" viewBox="0 0 24 24"><ellipse cx="7" cy="9" rx="1.9" ry="2.6"/><ellipse cx="12.4" cy="7.2" rx="1.9" ry="2.7"/><ellipse cx="17.4" cy="10" rx="1.8" ry="2.4"/><path d="M12 13c-2.6 0-4.6 1.9-4.6 3.9C7.4 19 9 20 12 20s4.6-1 4.6-3.1c0-2-2-3.9-4.6-3.9Z"/><path d="M3 21 21 3"/></symbol>
+<symbol id="i-sound" viewBox="0 0 24 24"><path d="M4 9.5h3.4L12 5.5v13L7.4 14.5H4Z"/><path d="M15.6 9.2a4 4 0 0 1 0 5.6M18.4 6.4a8 8 0 0 1 0 11.2"/></symbol>
+<symbol id="i-smoke" viewBox="0 0 24 24"><rect x="2.5" y="14.5" width="13" height="4.5" rx="1"/><path d="M11 14.5v4.5"/><rect x="18" y="14.5" width="3.5" height="4.5" rx="1"/><path d="M16.5 11.5c2.2-1.5 1.2-3.8 0-4.9M20.5 11.5c1.8-1.8.9-4.4-.7-5.7"/><path d="M2.5 21.5 21.5 2.5"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.4l3.4 2"/></symbol>
+<symbol id="i-tram" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="14" rx="2.6"/><path d="M5 12h14M9.5 7h5"/><path d="M8 21l1.6-4m6.4 4-1.6-4"/></symbol>
+<symbol id="i-train" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="11" rx="2"/><path d="M3 10h18M8 4v6m8-6v6"/><path d="M6 19l2-4m10 4-2-4M4 19h16"/></symbol>
+<symbol id="i-car" viewBox="0 0 24 24"><path d="M3 15v-2.5l2-4.6A2 2 0 0 1 6.8 6.6h10.4a2 2 0 0 1 1.8 1.3l2 4.6V15"/><path d="M3 15h18v3h-3v-3M6 18v-3H3"/><circle cx="7.3" cy="15" r="1.4"/><circle cx="16.7" cy="15" r="1.4"/></symbol>
+<symbol id="i-wave" viewBox="0 0 24 24"><path d="M2 9c2.2 0 2.2 2 4.4 2S8.6 9 10.9 9s2.2 2 4.4 2S17.5 9 19.8 9c1.1 0 1.6.5 2.2 1"/><path d="M2 15c2.2 0 2.2 2 4.4 2S8.6 15 10.9 15s2.2 2 4.4 2 2.2-2 4.5-2c1.1 0 1.6.5 2.2 1"/></symbol>
+<symbol id="i-well" viewBox="0 0 24 24"><path d="M12 2.5c2.6 3.4 4.6 6.2 4.6 8.5A4.6 4.6 0 0 1 12 15.6a4.6 4.6 0 0 1-4.6-4.6c0-2.3 2-5.1 4.6-8.5Z"/><path d="M4 19h16M6.5 22h11"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="M4 12.6 9.2 18 20 6.6"/></symbol>
+</defs></svg>
 <header class="hdr" id="hdr">
   <div class="hdr__in">
-    <a class="brand" href="#start" aria-label="Hopfenbachvilla, zur Startseite">
+    <a class="brand" href="/redesign/hopfenbachvilla/index.html" aria-label="Hopfenbachvilla, zur Startseite">
       <svg width="34" height="26" viewBox="0 0 34 26" fill="none" aria-hidden="true">
         <path d="M1 25 L1 14 L7 7.5 L13 14 L13 25" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
         <path d="M11 25 L11 10 L17 3 L23 10 L23 25" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
         <path d="M21 25 L21 14 L27 7.5 L33 14 L33 25" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
-        <path d="M0 25.4 H34" stroke="currentColor" stroke-width="1.2"/>
-      </svg>
-      <span>
-        <b>Hopfenbachvilla</b>
-        <span>Naturidylle bei Ahrensburg</span>
-      </span>
+        <path d="M0 25.4 H34" stroke="currentColor" stroke-width="1.2"/></svg>
+      <span><b>Hopfenbachvilla</b><span>Naturidylle bei Ahrensburg</span></span>
     </a>
-    <nav class="nav" aria-label="Hauptnavigation">
-      <a href="#frei">Freie Räume</a>
-      <a href="#wohnen">Wohnen</a>
-      <a href="#gemeinschaft">Hausgemeinschaft</a>
-      <a href="#garten">Garten</a>
-      <a href="#lage">Lage</a>
-      <a href="#geschichte">Geschichte</a>
-    </nav>
-    <a class="btn btn--head" href="#kontakt">Anfrage senden</a>
+    <nav class="nav" aria-label="Hauptnavigation"><a href="/redesign/hopfenbachvilla/index.html#freie-raeume">Freie Räume</a><a href="/redesign/hopfenbachvilla/index.html#zusammenleben">Zusammenleben</a><a href="/redesign/hopfenbachvilla/index.html#haus-garten">Haus &amp; Garten</a><a href="/redesign/hopfenbachvilla/index.html#lage">Lage</a><a href="/redesign/hopfenbachvilla/index.html#geschichte">Geschichte</a></nav>
+    <a class="btn btn--head" href="/redesign/hopfenbachvilla/index.html#kontakt">Anfrage senden</a>
     <button class="burger" id="burger" aria-label="Menü öffnen" aria-expanded="false"><i></i><i></i><i></i></button>
   </div>
 </header>
-
-<div class="mnav" id="mnav" role="dialog" aria-label="Menü">
+<div class="mnav" id="mnav" role="dialog" aria-modal="true" aria-label="Menü">
   <button class="mnav__x" id="mnavX" aria-label="Menü schließen">&times;</button>
-  <a href="#frei">Freie Räume</a>
-  <a href="#wohnen">Wohnen</a>
-  <a href="#gemeinschaft">Hausgemeinschaft</a>
-  <a href="#garten">Garten</a>
-  <a href="#lage">Lage</a>
-  <a href="#geschichte">Geschichte</a>
-  <a href="#kontakt">Anfrage senden</a>
+  <a href="/redesign/hopfenbachvilla/index.html#freie-raeume">Freie Räume</a><a href="/redesign/hopfenbachvilla/index.html#zusammenleben">Zusammenleben</a><a href="/redesign/hopfenbachvilla/index.html#haus-garten">Haus &amp; Garten</a><a href="/redesign/hopfenbachvilla/index.html#lage">Lage</a><a href="/redesign/hopfenbachvilla/index.html#geschichte">Geschichte</a><a href="/redesign/hopfenbachvilla/raeume.html">Alle Räume</a><a href="/redesign/hopfenbachvilla/index.html#kontakt">Anfrage senden</a>
 </div>
 
-<!-- ============ HERO ============ -->
-<section class="hero" id="start">
-  <div class="hero__img">
-    <img src="/redesign/hopfenbachvilla/assets/hero.webp" alt="Die Hopfenbachvilla im Abendlicht, umgeben von alten Bäumen und einer Blumenwiese" fetchpriority="high" width="1280" height="927">
-  </div>
+<main>
+<section class="hero">
+  <div class="hero__img"><img src="/redesign/hopfenbachvilla/assets/hero.webp" alt="Die Hopfenbachvilla im Abendlicht, umgeben von alten Bäumen und einer Blumenwiese" fetchpriority="high" width="1280" height="927"></div>
   <div class="hero__veil"></div>
   <div class="hero__in">
-    <span class="hero__flag"><span class="dot"></span> Zwei Räume werden frei: Garten-Studio ab September 2026, Dachraum ab März 2027</span>
-    <h1>Landliebe. <em>Da möchte ich sein.</em></h1>
-    <p class="hero__sub">Möblierte Zimmer und Wohnungen in einer Jugendstil-Villa von 1908, mitten im Landschaftsschutzgebiet zwischen Ahrensburg und Großhansdorf. Über 3.000 Quadratmeter Park, alte Bäume, eigener Brunnen. Ab Ahrensburg fährt die Bahn 15 bis 20 Minuten bis zum Hamburger Hauptbahnhof.</p>
-    <div class="hero__cta">
-      <a class="btn btn--solid" href="#frei">Freie Räume ansehen</a>
-      <a class="btn btn--ghost" href="#gemeinschaft">Wie wir hier leben</a>
-    </div>
-  </div>
-  <a class="hero__scroll" href="#haus">Nach unten</a>
-</section>
-
-<!-- ============ FACTS ============ -->
-<section class="facts">
-  <div class="facts__grid">
-    <div class="fact rv"><b>1908</b><span>Baujahr der Jugendstil-Villa</span></div>
-    <div class="fact rv" style="--d:.06s"><b>3.000 m<sup>2</sup></b><span>parkähnlicher Gemeinschaftsgarten</span></div>
-    <div class="fact rv" style="--d:.12s"><b>150</b><span>Jahre alt sind die ältesten Bäume</span></div>
-    <div class="fact rv" style="--d:.18s"><b>80 m</b><span>tief ist der eigene Brunnen</span></div>
-    <div class="fact rv" style="--d:.24s"><b>15 min</b><span>zu Fuß zur U-Bahn Ahrensburg-Ost</span></div>
-    <div class="fact rv" style="--d:.3s"><b>10</b><span>Menschen leben im Haus</span></div>
-  </div>
-</section>
-
-<!-- ============ DAS HAUS ============ -->
-<section class="sec" id="haus">
-  <div class="wrap split split--wide">
-    <div class="stack">
-      <p class="eyebrow rv">Das Haus</p>
-      <h2 class="h-lg rv" style="--d:.05s">Ein Haus, das im Wald steht und trotzdem an der Bahn liegt.</h2>
-      <p class="lead rv" style="--d:.1s">Die Hopfenbachvilla ist eine typische Hamburger Jugendstil-Stadtvilla mit drei Giebeln. Sie steht in einem Landschaftsschutzgebiet, umgeben von einem parkähnlichen Garten mit alten Bäumen, Staudenbeeten und mehreren Feuer- und Grillplätzen.</p>
-      <p class="rv" style="--d:.15s">Aus jedem Fenster geht der Blick unverbaut in große alte Bäume und über weite Felder. Das ist der schönste Schmuck der Räume, und der Grund, warum viele Bewohner sagen: eine tolle Energie hier.</p>
-      <p class="rv" style="--d:.2s">Im Erdgeschoss und im ersten Obergeschoss gibt es sechs möblierte Zimmer für Einzelpersonen. Auf beiden Etagen stehen moderne Duschbäder und gut ausgestattete Küchen zur gemeinsamen Nutzung. Die Zimmer sind mit dem Nötigen ausgestattet, mit Bett, Schrank und Schreibtisch, damit Menschen in beruflichen oder persönlichen Veränderungen schnell und unkompliziert landen können. Dazu kommen drei größere Einheiten: Wintergarten, Galerie-Wohnung und Garten-Studio.</p>
-    </div>
-    <div>
-      <figure class="fig arch rv-img" style="--d:.12s">
-        <img src="/redesign/hopfenbachvilla/assets/waldweg.webp" alt="Waldweg mit Buchen und Kiefern in der Umgebung der Villa" loading="lazy" width="1500" height="1125">
-        <figcaption>Das angrenzende Waldstück gehört zum Anwesen und darf waldgemäß genutzt werden.</figcaption>
-      </figure>
-      <figure class="fig rv-img" style="--d:.18s;margin-top:22px">
-        <img src="/redesign/hopfenbachvilla/assets/villa-wintergarten.webp" alt="Die Villa mit dem verglasten Wintergarten und der Rasenfläche davor" loading="lazy" width="1200" height="854">
-        <figcaption>Der Wintergarten im Erdgeschoss, davor die offene Wiese zum Bach hin.</figcaption>
-      </figure>
+    <p class="hero__flag"><svg aria-hidden="true"><use href="#i-check"/></svg> Zwei Räume werden frei: Garten-Studio ab September 2026, Dachraum ab März 2027</p>
+    <h1 class="h1">Möbliert wohnen im Grünen.<br><em>Gut verbunden mit Hamburg.</em></h1>
+    <p class="hero__sub">Landliebe. Da möchte ich sein. Die Hopfenbachvilla vermietet möblierte Zimmer und Wohnungen in einer Jugendstil-Villa von 1908, mitten im Landschaftsschutzgebiet zwischen Ahrensburg und Großhansdorf.</p>
+    <div class="btnrow">
+      <a class="btn btn--light" href="#freie-raeume">Freie Räume ansehen</a>
+      <a class="btn btn--ghost" href="#zusammenleben">So leben wir hier</a>
     </div>
   </div>
 </section>
 
-<!-- ============ FREIE RÄUME ============ -->
-<section class="sec--tight" id="frei" style="background:var(--paper-2);border-block:1px solid var(--line)">
+<!-- 01 FREIE RÄUME -->
+<section class="sec" id="freie-raeume">
   <div class="wrap">
-    <div class="narrow" style="margin-bottom:clamp(28px,3.6vw,48px)">
-      <p class="eyebrow rv">Verfügbar</p>
-      <h2 class="h-lg rv" style="--d:.05s">Zwei Räume, zwei Termine.</h2>
+    <div class="measure" style="margin-bottom:clamp(30px,4vw,52px)">
+      <p class="chapter rv"><svg aria-hidden="true"><use href="#i-leaf"/></svg><b>01</b><i></i>Freie Räume</p>
+      <h2 class="h2 rv" style="--d:.05s">Zwei Räume, zwei Termine.</h2>
       <p class="lead rv" style="--d:.1s;margin-top:18px">Größe, Ausrichtung, Ausstattung und die vollständigen Kosten stehen hier. Sie müssen nichts zusammensuchen und nichts nachfragen.</p>
     </div>
-
-    <!-- Garten-Studio -->
     <article class="unit">
-      <div class="unit__media rv-img">
-        <img src="/redesign/hopfenbachvilla/assets/studio-wohnen.webp" alt="Wohnbereich im Garten-Studio mit Fenster in den Garten" loading="lazy" width="1000" height="750">
-        <img src="/redesign/hopfenbachvilla/assets/studio-schlafen.webp" alt="Schlafraum im Garten-Studio mit Doppelbett" loading="lazy" width="1000" height="749">
-        <img src="/redesign/hopfenbachvilla/assets/studio-kueche.webp" alt="Küchenzeile mit Holzarbeitsplatte im Garten-Studio" loading="lazy" width="640" height="480">
-        <img src="/redesign/hopfenbachvilla/assets/ausblick.webp" alt="Blick aus dem Fenster in den grünen Garten" loading="lazy" width="480" height="640">
-      </div>
-      <div class="unit__body">
-        <span class="pill pill--free rv">Frei ab 1. September 2026</span>
-        <h3 class="h-md rv" style="--d:.05s">Garten-Studio, 60 m<sup>2</sup></h3>
-        <p class="unit__meta rv" style="--d:.08s">Souterrain im neueren Anbau &middot; eigener Eingang &middot; für eine Person oder ein Paar</p>
-        <ul class="specs rv" style="--d:.12s">
-          <li>Ebenerdig von einer sonnigen Gartenterrasse in die offene Wohnküche, über drei Stufen in den Wohnbereich und zu zwei kleinen Räumen.</li>
-          <li>Vollständig möbliert. Einbauküche mit Miele-Geschirrspüler, Herd mit Ceranfeld und Backofen, Kühl-Gefrierkombination.</li>
-          <li>Modernes Duschbad mit begehbarer Dusche, Abstellkammer mit Waschmaschine.</li>
-          <li>Doppelbett 160 x 200 cm, im zweiten Raum ein Schlafsofa für Gäste oder ein Büro.</li>
-          <li>Die kleinen Zimmer liegen nach Osten zum Wald und sind sehr still. Terrassentür und große Fenster nach Westen bekommen ab dem frühen Nachmittag volle Sonne.</li>
-        </ul>
-        <dl class="price rv" style="--d:.16s">
-          <div><dt>Kaltmiete</dt><dd>1.020 EUR<span class="sm">1.060 EUR für zwei Personen</span></dd></div>
-          <div><dt>Betriebskosten</dt><dd>190 EUR<span class="sm">240 EUR für zwei Personen</span></dd></div>
-          <div><dt>Kaution</dt><dd>2.600 EUR<span class="sm">Mindestmietzeit 6 Monate</span></dd></div>
+      <div class="unit__gal rv"><a href="/redesign/hopfenbachvilla/raum-garten-studio.html"><img src="/redesign/hopfenbachvilla/assets/st-1-wohnen.webp" alt="Wohnbereich im Garten-Studio"></a><a href="/redesign/hopfenbachvilla/raum-garten-studio.html"><img src="/redesign/hopfenbachvilla/assets/studio-schlafen.webp" alt="Schlafraum mit Doppelbett"></a><a href="/redesign/hopfenbachvilla/raum-garten-studio.html"><img src="/redesign/hopfenbachvilla/assets/st-3-bad.webp" alt="Duschbad mit begehbarer Dusche"></a></div>
+      <div class="rv" style="--d:.1s">
+        <span class="pill pill--free">Frei ab 1. September 2026</span>
+        <h3 class="h3">Garten-Studio, 60 m<sup>2</sup></h3>
+        <p class="unit__meta">Souterrain im Anbau &middot; Wohnung mit eigenem Eingang &middot; für 1 Person oder Paar</p>
+        <dl class="facts">
+          <div><dt>Kaltmiete</dt><dd>1.020 EUR<small>zzgl. Betriebskosten</small></dd></div>
+          <div><dt>Warmmiete</dt><dd>1.210 EUR<small>Strom und WLAN kommen dazu</small></dd></div>
+          <div><dt>Kaution</dt><dd>2.600 EUR<small>bei Vertragsabschluss</small></dd></div>
+          <div><dt>Mindestmietzeit</dt><dd>6 Monate<small>unbefristeter Vertrag</small></dd></div>
         </dl>
-        <p class="muted rv" style="--d:.18s;font-size:13.5px">Strom nach Verbrauch, WLAN 10 EUR. Ein kompletter Hausstand mit Töpfen, Gläsern und Besteck kann gegen Gebühr gestellt werden.</p>
-        <p class="rv" style="--d:.2s;margin-top:22px"><a class="btn btn--solid" href="#kontakt">Garten-Studio anfragen</a></p>
-      </div>
-    </article>
-
-    <!-- Dachraum -->
-    <article class="unit unit--flip">
-      <div class="unit__media rv-img">
-        <img src="/redesign/hopfenbachvilla/assets/dachraum-1.webp" alt="Heller Dachraum unter dem Giebel mit großem Fenster ins Grüne" loading="lazy" width="1280" height="960">
-        <img src="/redesign/hopfenbachvilla/assets/dachraum-bad.webp" alt="Badewanne unter dem Dachfenster im Ostgiebel" loading="lazy" width="500" height="667">
-        <img src="/redesign/hopfenbachvilla/assets/dachraum-kueche.webp" alt="Offener Küchenblock im Dachraum" loading="lazy" width="856" height="634">
-        <img src="/redesign/hopfenbachvilla/assets/dachraum-2.webp" alt="Giebelfenster im Dachraum mit Blick ins Grüne" loading="lazy" width="480" height="640">
-      </div>
-      <div class="unit__body">
-        <span class="pill pill--free rv">Frei ab 1. März 2027</span>
-        <h3 class="h-md rv" style="--d:.05s">Dachraum, 42 m<sup>2</sup></h3>
-        <p class="unit__meta rv" style="--d:.08s">Zweites Obergeschoss &middot; über die ganze Breite des Drei-Giebel-Hauses &middot; für eine Person</p>
-        <ul class="specs rv" style="--d:.12s">
-          <li>Aus dem großen Fenster im Westgiebel geht der Blick quer durch den Raum über den Hopfenbach auf eine Naturwiese.</li>
-          <li>Der Südgiebel hat ein bodentiefes Fenster mit Blick durch den ganzen Garten bis zur Hopfenbach-Brücke.</li>
-          <li>Offene Küche mit Miele-Herd, separatem Backofen und Ceranfeld, Kühlschrank, Geschirrspüler. Arbeitsplatten aus Bambus.</li>
-          <li>Bad im Ostgiebel mit Badewanne direkt unter dem Dachfenster nach Süden, dazu ein altes rundes Eisenfenster in der Giebelwand.</li>
-          <li>Die Dachflächen sind gut isoliert, im Sommer wie im Winter. An heißen Tagen sorgen die Dachfenster für Querlüftung.</li>
-        </ul>
-        <dl class="price rv" style="--d:.16s">
-          <div><dt>Kaltmiete</dt><dd>820 EUR<span class="sm">inkl. Teilmöblierung</span></dd></div>
-          <div><dt>Warmmiete</dt><dd>965 EUR<span class="sm">inkl. 145 EUR Vorauszahlung</span></dd></div>
-          <div><dt>Kaution</dt><dd>2.200 EUR<span class="sm">Mindestmietzeit 6 Monate</span></dd></div>
-        </dl>
-        <p class="muted rv" style="--d:.18s;font-size:13.5px">Eigener Stromvertrag, WLAN 8 EUR. Bad- und Kücheneinrichtung, ein kleiner Kleiderschrank und Kommoden sind vorhanden, ein großes Bett kann wieder aufgestellt werden.</p>
-        <p class="rv" style="--d:.2s;margin-top:22px"><a class="btn btn--solid" href="#kontakt">Dachraum anfragen</a></p>
-      </div>
-    </article>
-  </div>
-</section>
-
-<!-- ============ ALLE RÄUME ============ -->
-<section class="sec" id="wohnen">
-  <div class="wrap split" style="align-items:start">
-    <div class="stack">
-      <p class="eyebrow rv">Alle Räume</p>
-      <h2 class="h-lg rv" style="--d:.05s">Zehn Räume unter einem Dach.</h2>
-      <p class="rv" style="--d:.1s">Das Haus ist ein Einfamilienhaus geblieben. Die Wohnebenen sind keine getrennten Wohneinheiten: auf jeder Etage gibt es Küche und Bad, vermietet werden einzelne Zimmer plus die Mitnutzung der gemeinsamen Räume. Der Name eines Raums nennt immer die Etage und die Himmelsrichtung seiner Fenster.</p>
-      <p class="rv" style="--d:.14s">Belegte Räume nehmen wir gern in eine Warteliste auf. Wer sich früh meldet, hört als Erstes von uns, wenn sich etwas ändert.</p>
-      <p class="rv" style="--d:.18s"><a class="btn btn--line" href="#kontakt">Auf die Warteliste</a></p>
-      <figure class="fig rv-img" style="--d:.1s;margin-top:14px">
-        <img src="/redesign/hopfenbachvilla/assets/luftbild.webp" alt="Luftbild der Hopfenbachvilla mit Garten, Wiese und angrenzendem Wald" loading="lazy" width="1200" height="950">
-        <figcaption>Das Anwesen von oben: Villa, Anbau, Gemüsegarten und der Hopfenbach am Rand.</figcaption>
-      </figure>
-      <figure class="fig rv-img" style="--d:.14s;margin-top:22px">
-        <img src="/redesign/hopfenbachvilla/assets/villa-pavillon.webp" alt="Die Villa von der Wiese aus, mit Anbau und Terrasse" loading="lazy" width="1200" height="854">
-        <figcaption>Der Anbau mit der Galerie-Wohnung und dem Garten-Studio darunter.</figcaption>
-      </figure>
-    </div>
-    <div class="rv" style="--d:.08s">
-      <table class="rooms">
-        <thead>
-          <tr><th>Raum</th><th class="lo">Lage</th><th>Größe</th><th>Status</th></tr>
-        </thead>
-        <tbody>
-          <tr><td class="nm">Garten-Studio</td><td class="lo">Souterrain im Anbau</td><td class="sz">60 m<sup>2</sup></td><td><span class="pill pill--free">ab 09.2026</span></td></tr>
-          <tr><td class="nm">Dachraum</td><td class="lo">2. Obergeschoss</td><td class="sz">42 m<sup>2</sup></td><td><span class="pill pill--free">ab 03.2027</span></td></tr>
-          <tr><td class="nm">Galerie-Wohnung</td><td class="lo">Anbau, zwei Ebenen</td><td class="sz">70 m<sup>2</sup></td><td><span class="pill pill--taken">belegt</span></td></tr>
-          <tr><td class="nm">Wintergarten</td><td class="lo">Erdgeschoss</td><td class="sz">42 m<sup>2</sup></td><td><span class="pill pill--taken">belegt</span></td></tr>
-          <tr><td class="nm">Zimmer Süd-Ost</td><td class="lo">Erdgeschoss, mit Küchenzeile</td><td class="sz">28 m<sup>2</sup></td><td><span class="pill pill--taken">belegt</span></td></tr>
-          <tr><td class="nm">Zimmer West</td><td class="lo">Erdgeschoss, mit Küchenzeile</td><td class="sz">24 m<sup>2</sup></td><td><span class="pill pill--taken">belegt</span></td></tr>
-          <tr><td class="nm">Zimmer Süd-West</td><td class="lo">1. Obergeschoss</td><td class="sz">23 m<sup>2</sup></td><td><span class="pill pill--taken">belegt</span></td></tr>
-          <tr><td class="nm">Zimmer Nord-West</td><td class="lo">1. Obergeschoss</td><td class="sz">21 m<sup>2</sup></td><td><span class="pill pill--taken">belegt</span></td></tr>
-          <tr><td class="nm">Zimmer Süd</td><td class="lo">1. Obergeschoss, mit Balkon</td><td class="sz">20 m<sup>2</sup></td><td><span class="pill pill--taken">belegt</span></td></tr>
-          <tr><td class="nm">Zimmer Ost</td><td class="lo">1. Obergeschoss</td><td class="sz">10 m<sup>2</sup></td><td><span class="pill pill--taken">belegt</span></td></tr>
-        </tbody>
-      </table>
-      <div class="mosaic rv-img" style="--d:.14s;margin-top:26px">
-        <img class="tall" src="/redesign/hopfenbachvilla/assets/galerie-1.webp" alt="Galerie-Wohnung mit hohen Fenstern und Wendeltreppe" loading="lazy" width="640" height="480">
-        <img src="/redesign/hopfenbachvilla/assets/treppe.webp" alt="Treppenhausfenster mit Blick auf die Wiese" loading="lazy" width="479" height="640">
-        <img src="/redesign/hopfenbachvilla/assets/galerie-2.webp" alt="Offene Küche unter der Galerie" loading="lazy" width="640" height="480">
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ HAUSGEMEINSCHAFT ============ -->
-<section class="sec band" id="gemeinschaft">
-  <div class="wrap">
-    <div class="split split--wide" style="align-items:center;margin-bottom:clamp(30px,4vw,54px)">
-      <div>
-        <p class="eyebrow rv">Hausgemeinschaft</p>
-        <h2 class="h-lg rv" style="--d:.05s">Wir sind keine große Familie. Wir sind gute Nachbarn.</h2>
-        <p class="lead rv" style="--d:.1s;color:rgba(233,231,220,.78);margin-top:20px">Das Zusammenleben in Haus und Garten ist gut organisiert, freundlich, ruhig und aufgeräumt. Wir treffen uns zwanglos, plaudern miteinander und sitzen gelegentlich zusammen im Garten. Es gibt ein paar bewährte Regeln. Wer die nicht mag, ist bei uns nicht richtig, und das sagen wir lieber vorher als nachher.</p>
-      </div>
-      <figure class="fig rv-img" style="--d:.12s">
-        <img src="/redesign/hopfenbachvilla/assets/garten-arbeit.webp" alt="Eine Bewohnerin mit Schubkarre auf der Wiese vor der Villa" loading="lazy" width="550" height="400">
-        <figcaption style="color:rgba(233,231,220,.55)">Drei Stunden im Monat, verteilt über das Jahr, mal mehr und mal weniger.</figcaption>
-      </figure>
-    </div>
-    <div class="rules rv" style="--d:.12s">
-      <div class="rule-card"><span class="no">01</span><h4>Einzelpersonen, mindestens sechs Monate</h4><p>Wir vermieten möblierte Zimmer an Einzelpersonen. Die Mindestmietzeit beträgt sechs Monate, der Mietvertrag ist unbefristet.</p></div>
-      <div class="rule-card"><span class="no">02</span><h4>Ab 30, im Berufsleben, Nichtraucher</h4><p>Willkommen sind kontaktoffene, ruhige und umsichtige Menschen, die im Berufsleben angekommen sind. Ohne Jobcenter-Finanzierung und ohne Bürgschaft.</p></div>
-      <div class="rule-card"><span class="no">03</span><h4>Drei Stunden Garten im Monat</h4><p>Der Garten wird von allen genutzt und von allen gepflegt, auch von der Vermieterin. Vertraglich vereinbart sind durchschnittlich drei Stunden pro Person und Monat, bei Wochenendfahrern zwei.</p></div>
-      <div class="rule-card"><span class="no">04</span><h4>Keine Hunde, keine Katzen</h4><p>Auf dem Grundstück und im Gemeinschaftsgarten sind Hunde und Katzen nicht erlaubt.</p></div>
-      <div class="rule-card"><span class="no">05</span><h4>Das Haus ist hellhörig</h4><p>Eine Villa von 1908 trägt jeden Ton weiter. Wir gehen deshalb rücksichtsvoll mit Fernsehen und Musik um.</p></div>
-      <div class="rule-card"><span class="no">06</span><h4>Kinder kommen zu Besuch</h4><p>Im Haus leben keine Kinder. Zu Besuch sind sie sehr willkommen: der Garten, der Bach und die Wälder ringsum sind ein Paradies für sie.</p></div>
-    </div>
-    <p class="rv" style="--d:.16s;margin-top:34px;font-size:14.5px;color:rgba(233,231,220,.6);max-width:66ch">Für einige Menschen ist die Hopfenbachvilla eine Zwischenstation, für andere über viele Jahre ein geliebtes Zuhause. Das Wohnkonzept geht auf Wohnformen zurück, die Angela Debes in Kalifornien kennengelernt hat: beruflich engagierte Menschen, klare Absprachen, minimaler Aufwand für alles, was das Wohnen betrifft.</p>
-  </div>
-</section>
-
-<!-- ============ GARTEN ============ -->
-<section class="sec" id="garten">
-  <div class="wrap">
-    <div class="split split--wide" style="align-items:center">
-      <div class="stack">
-        <p class="eyebrow rv">Der Garten</p>
-        <h2 class="h-lg rv" style="--d:.05s">Über 3.000 Quadratmeter, die allen gehören.</h2>
-        <p class="lead rv" style="--d:.1s">Als das Haus 2012 zurück in die Familie kam, war der Garten zugewachsen und vermüllt. Heute stehen die alten Bäume wieder frei, es gibt Staudenbeete, ein Himbeerspalier, Erdbeer- und Gemüsebeete, einen Pavillon und mehrere Feuerstellen.</p>
-        <p class="rv" style="--d:.14s">Seit 2012 sind rund 15 Bäume dazugekommen, überwiegend Obstgehölze, dazu Weiden, Sumpfzypressen, Buchen, eine Catalpa und Birken. Blütenbäume und Sträucher wie Hartriegel, Magnolie, japanische Kirsche, Flieder und Ginster setzen die Jahreszeiten. Seit 2020 wächst hier außerdem ein Obst- und Gemüseanbau nach den Ideen der Permakultur.</p>
-        <p class="rv" style="--d:.18s">Was die Zeit oder die Kenntnisse der Bewohner übersteigt, etwa Baumpflege und Heckenschnitt, übernehmen externe Helfer. Das läuft über die Betriebskostenabrechnung.</p>
-      </div>
-      <div class="mosaic rv-img" style="--d:.1s">
-        <img class="tall" src="/redesign/hopfenbachvilla/assets/allium.webp" alt="Zierlauch und Stauden im Garten der Hopfenbachvilla" loading="lazy" width="1200" height="900">
-        <img src="/redesign/hopfenbachvilla/assets/pavillon.webp" alt="Pavillon mit Sitzgruppe unter alten Bäumen" loading="lazy" width="593" height="480">
-        <img src="/redesign/hopfenbachvilla/assets/gemuesegarten.webp" alt="Hochbeete im Gemüsegarten vor der Villa" loading="lazy" width="640" height="480">
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="sec--tight" style="padding-top:0">
-  <div class="wrap">
-    <div class="mosaic rv-img" style="grid-template-columns:1.4fr 1fr 1fr;grid-template-rows:clamp(180px,22vw,300px)">
-      <img src="/redesign/hopfenbachvilla/assets/hopfenbach.webp" alt="Der Hopfenbach mit Sumpfdotterblumen am Ufer" loading="lazy" width="640" height="480">
-      <img src="/redesign/hopfenbachvilla/assets/gartentafel.webp" alt="Lange Holztafel mit Stühlen auf der Wiese vor der Villa" loading="lazy" width="1200" height="890">
-      <img src="/redesign/hopfenbachvilla/assets/pilze.webp" alt="Schopftintlinge zwischen Herbstlaub im Park" loading="lazy" width="1200" height="835">
-    </div>
-    <div class="split" style="margin-top:clamp(40px,5vw,64px);align-items:start">
-      <div>
-        <figure class="fig rv-img">
-          <img src="/redesign/hopfenbachvilla/assets/nebelwald.webp" alt="Morgennebel zwischen Buchen im Wald bei der Villa" loading="lazy" width="640" height="480">
-          <figcaption>Morgennebel im Buchenwald, wenige Minuten vom Haus entfernt.</figcaption>
-        </figure>
-        <div class="duo rv-img" style="--d:.1s;margin-top:16px">
-          <img src="/redesign/hopfenbachvilla/assets/gewaechshaus.webp" alt="Gewächshaus und Gartenhaus im Gemüsegarten" loading="lazy" width="1200" height="899">
-          <img src="/redesign/hopfenbachvilla/assets/bach-staude.webp" alt="Der Hopfenbach zwischen Gräsern und Stauden" loading="lazy" width="640" height="480">
+        <ul class="keys"><li>Ebenerdiger Eingang von einer sonnigen Gartenterrasse in die offene Wohnküche.</li><li>Vollständig möbliert, mit Einbauküche, Miele-Geschirrspüler und Kühl-Gefrierkombination.</li><li>Modernes Duschbad mit begehbarer Dusche, Abstellkammer mit Waschmaschine.</li><li>Doppelbett 160 x 200 cm, dazu ein zweiter kleiner Raum als Büro oder Gästezimmer.</li><li>Fenster nach Osten in den Wald, sehr still. Nach Westen ab dem frühen Nachmittag volle Sonne.</li></ul>
+        <div class="btnrow">
+          <a class="btn btn--solid" href="/redesign/hopfenbachvilla/raum-garten-studio.html">Raum ansehen</a>
+          <a class="btn btn--line" href="/redesign/hopfenbachvilla/index.html#kontakt">Anfrage senden</a>
         </div>
       </div>
-      <div class="stack">
-        <h3 class="h-md rv">Gutes Wasser, gute Luft.</h3>
-        <p class="rv" style="--d:.05s">Gesundheitsbewusste Menschen schätzen die Luft am Waldrand und das Trinkwasser aus dem eigenen, 80 Meter tiefen Brunnen. Die Werte werden regelmäßig im Labor geprüft und sind ausgezeichnet.</p>
-        <p class="rv" style="--d:.1s">Spaziergänger, Radfahrer und Läufer haben die Routen praktisch vor der Tür: der Auewanderweg entlang des Hopfenbachs, die Mischwälder ringsum, der Manhagensee.</p>
-        <p class="rv" style="--d:.14s">Im angrenzenden Waldstück, das zum Anwesen gehört, holen die Bewohner ihr Feuerholz. Im Gemüsegarten am Bach liegt ein Feuerplatz, an dem man abends sitzen und grillen kann.</p>
+    </article>
+    <article class="unit">
+      <div class="unit__gal rv"><a href="/redesign/hopfenbachvilla/raum-dachraum.html"><img src="/redesign/hopfenbachvilla/assets/da-1-wohnen.webp" alt="Dachraum mit Bett und Sitzplatz am Fenster"></a><a href="/redesign/hopfenbachvilla/raum-dachraum.html"><img src="/redesign/hopfenbachvilla/assets/da-3-kueche.webp" alt="Offene Küche im Dachraum"></a><a href="/redesign/hopfenbachvilla/raum-dachraum.html"><img src="/redesign/hopfenbachvilla/assets/da-4-bad.webp" alt="Badewanne unter dem Dachfenster"></a></div>
+      <div class="rv" style="--d:.1s">
+        <span class="pill pill--free">Frei ab 1. März 2027</span>
+        <h3 class="h3">Dachraum, 42 m<sup>2</sup></h3>
+        <p class="unit__meta">2. Obergeschoss &middot; Offener Wohnraum über drei Giebel &middot; für 1 Person</p>
+        <dl class="facts">
+          <div><dt>Kaltmiete</dt><dd>820 EUR<small>zzgl. Betriebskosten</small></dd></div>
+          <div><dt>Warmmiete</dt><dd>965 EUR<small>Strom und WLAN kommen dazu</small></dd></div>
+          <div><dt>Kaution</dt><dd>2.200 EUR<small>bei Vertragsabschluss</small></dd></div>
+          <div><dt>Mindestmietzeit</dt><dd>6 Monate<small>unbefristeter Vertrag</small></dd></div>
+        </dl>
+        <ul class="keys"><li>Der Raum zieht sich über die ganze Breite des Drei-Giebel-Hauses.</li><li>Westgiebel mit großem Fenster über den Hopfenbach auf eine Naturwiese.</li><li>Südgiebel mit bodentiefem Fenster, Blick durch den Garten bis zur Hopfenbach-Brücke.</li><li>Offene Küche mit Miele-Herd, Backofen, Ceranfeld und Arbeitsplatten aus Bambus.</li><li>Bad im Ostgiebel, Badewanne unter dem Dachfenster, altes rundes Eisenfenster im Giebel.</li></ul>
+        <div class="btnrow">
+          <a class="btn btn--solid" href="/redesign/hopfenbachvilla/raum-dachraum.html">Raum ansehen</a>
+          <a class="btn btn--line" href="/redesign/hopfenbachvilla/index.html#kontakt">Anfrage senden</a>
+        </div>
+      </div>
+    </article>
+    <p class="rv" style="margin-top:var(--sp-sm)"><a class="btn btn--line" href="/redesign/hopfenbachvilla/raeume.html">Alle zehn Räume mit Preisen ansehen</a></p>
+  </div>
+</section>
+
+<!-- 02 WARUM HIER -->
+<section class="sec s-stone" id="warum">
+  <div class="wrap">
+    <div class="split split--wide" style="align-items:center;margin-bottom:clamp(36px,4.5vw,64px)">
+      <div>
+        <p class="chapter rv"><svg aria-hidden="true"><use href="#i-leaf"/></svg><b>02</b><i></i>Warum hier</p>
+        <h2 class="h2 rv" style="--d:.05s">Ein Haus, das im Wald steht und trotzdem an der Bahn liegt.</h2>
+      </div>
+      <div class="rv" style="--d:.1s">
+        <p class="lead">Die Hopfenbachvilla ist eine typische Hamburger Jugendstil-Stadtvilla mit drei Giebeln. Aus jedem Fenster geht der Blick unverbaut in große alte Bäume und über weite Felder.</p>
+        <p class="muted" style="margin-top:14px">Im Erdgeschoss und im ersten Obergeschoss liegen sechs möblierte Zimmer für Einzelpersonen, dazu kommen drei größere Einheiten: Wintergarten, Galerie-Wohnung und Garten-Studio. Küche und Bad auf jeder Etage werden gemeinsam genutzt, ein Putzservice reinigt sie wöchentlich.</p>
+      </div>
+    </div>
+    <div class="bens">
+      <div class="ben rv"><svg aria-hidden="true"><use href="#i-gables"/></svg><b>Villa von 1908</b><p>Jugendstil mit drei Giebeln, seit 2012 Schritt für Schritt saniert.</p></div>
+      <div class="ben rv" style="--d:.07s"><svg aria-hidden="true"><use href="#i-tree"/></svg><b>Über 3.000 m<sup>2</sup></b><p>Parkähnlicher Gemeinschaftsgarten mit 150 Jahre alten Bäumen.</p></div>
+      <div class="ben rv" style="--d:.14s"><svg aria-hidden="true"><use href="#i-boot"/></svg><b>15 Minuten</b><p>Zu Fuß zur U-Bahn Ahrensburg-Ost, ohne Auto geht es hier gut.</p></div>
+      <div class="ben rv" style="--d:.21s"><svg aria-hidden="true"><use href="#i-bed"/></svg><b>Möbliert einziehen</b><p>Persönlich vermietet, mit klaren Absprachen statt Verwaltung.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 ZUSAMMENLEBEN -->
+<section class="sec s-forest" id="zusammenleben">
+  <div class="wrap">
+    <div class="split split--wide" style="align-items:center;margin-bottom:clamp(32px,4vw,56px)">
+      <div>
+        <p class="chapter rv"><svg aria-hidden="true"><use href="#i-leaf"/></svg><b>03</b><i></i>Zusammenleben</p>
+        <h2 class="h2 rv" style="--d:.05s">Wir sind keine große Familie. Wir sind gute Nachbarn.</h2>
+      </div>
+      <div class="rv" style="--d:.1s">
+        <p class="lead">Das Zusammenleben in Haus und Garten ist gut organisiert, freundlich, ruhig und aufgeräumt. Wir treffen uns zwanglos, plaudern miteinander und sitzen gelegentlich zusammen im Garten.</p>
+        <p style="margin-top:14px">Es gibt ein paar bewährte Regeln. Wer die nicht mag, ist bei uns nicht richtig, und das sagen wir lieber vorher als nachher. Zehn Menschen leben im Haus.</p>
+      </div>
+    </div>
+    <div class="conds rv" style="--d:.14s">
+      <div class="cond"><svg aria-hidden="true"><use href="#i-person"/></svg><h4>Ab 30, im Berufsleben</h4><p>Willkommen sind kontaktoffene, ruhige und umsichtige Menschen, die im Berufsleben angekommen sind. Ohne Jobcenter-Finanzierung und ohne Bürgschaft.</p></div>
+      <div class="cond"><svg aria-hidden="true"><use href="#i-clock"/></svg><h4>Mindestens sechs Monate</h4><p>Wir vermieten möblierte Zimmer an Einzelpersonen. Der Mietvertrag ist unbefristet, die Mindestmietzeit beträgt sechs Monate.</p></div>
+      <div class="cond"><svg aria-hidden="true"><use href="#i-spade"/></svg><h4>Drei Stunden Garten im Monat</h4><p>Der Garten wird von allen genutzt und von allen gepflegt, auch von der Vermieterin. Vertraglich vereinbart sind durchschnittlich drei Stunden pro Person und Monat, bei Wochenendfahrern zwei.</p></div>
+      <div class="cond"><svg aria-hidden="true"><use href="#i-smoke"/></svg><h4>Nichtraucherhaus</h4><p>Im Haus wird nicht geraucht. Das gilt für alle Bewohnerinnen und Bewohner.</p></div>
+      <div class="cond"><svg aria-hidden="true"><use href="#i-sound"/></svg><h4>Das Haus ist hellhörig</h4><p>Eine Villa von 1908 trägt jeden Ton weiter. Wir gehen deshalb rücksichtsvoll mit Fernsehen und Musik um.</p></div>
+      <div class="cond"><svg aria-hidden="true"><use href="#i-paw-off"/></svg><h4>Keine Hunde, keine Katzen</h4><p>Auf dem Grundstück und im Gemeinschaftsgarten sind Hunde und Katzen nicht erlaubt. Im Haus leben keine Kinder, zu Besuch sind sie willkommen.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 HAUS & GARTEN -->
+<section class="sec" id="haus-garten">
+  <div class="wrap">
+    <div class="split split--wide" style="align-items:center">
+      <figure class="fig rv">
+        <img src="/redesign/hopfenbachvilla/assets/allium.webp" alt="Zierlauch und Stauden im Garten der Hopfenbachvilla" width="1200" height="900">
+      </figure>
+      <div>
+        <p class="chapter rv"><svg aria-hidden="true"><use href="#i-leaf"/></svg><b>04</b><i></i>Haus und Garten</p>
+        <h2 class="h2 rv" style="--d:.05s">Über 3.000 Quadratmeter, die allen gehören.</h2>
+        <p class="lead rv" style="--d:.1s;margin-top:18px">Als das Haus 2012 zurück in die Familie kam, war der Garten zugewachsen und vermüllt. Heute stehen die alten Bäume wieder frei, es gibt Staudenbeete, ein Himbeerspalier, Erdbeer- und Gemüsebeete, einen Pavillon und mehrere Feuerstellen.</p>
+        <p class="rv" style="--d:.14s;margin-top:14px">Der Hopfenbach läuft an der unteren Kante des Grundstücks, das angrenzende Waldstück gehört zum Anwesen. Das Trinkwasser kommt aus einem eigenen, 80 Meter tiefen Brunnen und wird regelmäßig im Labor geprüft. Seit 2020 wächst hier ein Obst- und Gemüseanbau nach den Ideen der Permakultur.</p>
+      </div>
+    </div>
+    <div class="quad rv" style="--d:.1s;margin-top:clamp(28px,3.5vw,52px)">
+      <figure><img src="/redesign/hopfenbachvilla/assets/garten-fruehling.webp" alt="Frisches Grün und blühende Bäume im Frühling"><figcaption class="cap">Frühling: Magnolie, japanische Kirsche und Flieder blühen nacheinander auf.</figcaption></figure>
+      <figure><img src="/redesign/hopfenbachvilla/assets/gartentafel.webp" alt="Lange Holztafel mit Stühlen auf der Wiese"><figcaption class="cap">Sommer: die lange Tafel auf der Wiese, dazu Pavillon und Feuerstellen.</figcaption></figure>
+      <figure><img src="/redesign/hopfenbachvilla/assets/garten-herbst.webp" alt="Herbstlaub und goldenes Licht im Park"><figcaption class="cap">Herbst: die alten Bäume färben sich, im eigenen Waldstück gibt es Feuerholz.</figcaption></figure>
+      <figure><img src="/redesign/hopfenbachvilla/assets/hopfenbach.webp" alt="Der Hopfenbach mit Sumpfdotterblumen am Ufer"><figcaption class="cap">Der Hopfenbach, dahinter der Auewanderweg Richtung Ahrensburger Schloss.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<div class="sec--sm" style="padding-top:0"><svg class="stream" viewBox="0 0 660 24" preserveAspectRatio="none" aria-hidden="true">
+<path fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"
+d="M6 12c27 0 27-7.5 54-7.5S87 12 114 12s27-7.5 54-7.5S195 12 222 12s27-7.5 54-7.5S303 12 330 12s27-7.5 54-7.5S411 12 438 12s27-7.5 54-7.5S519 12 546 12s27-7.5 54-7.5S627 12 654 12"/>
+<path fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" opacity=".5"
+d="M6 19c27 0 27-7.5 54-7.5S87 19 114 19s27-7.5 54-7.5S195 19 222 19s27-7.5 54-7.5S303 19 330 19s27-7.5 54-7.5S411 19 438 19s27-7.5 54-7.5S519 19 546 19s27-7.5 54-7.5S627 19 654 19"/></svg></div>
+
+<!-- 05 LAGE -->
+<section class="sec s-stone" id="lage">
+  <div class="wrap">
+    <div class="split split--narrow" style="align-items:start">
+      <div>
+        <p class="chapter rv"><svg aria-hidden="true"><use href="#i-leaf"/></svg><b>05</b><i></i>Lage</p>
+        <h2 class="h2 rv" style="--d:.05s">Umgeben von Natur und doch verkehrsgünstig.</h2>
+        <p class="rv" style="--d:.1s;margin:18px 0 26px">Das Haus liegt am Rand der Schlossstadt Ahrensburg, im sogenannten Speckgürtel von Hamburg, unweit der Ostsee. Das HVV-Netz erreichen Sie zu Fuß.</p>
+        <ul class="ways rv" style="--d:.14s">
+          <li><b><svg aria-hidden="true"><use href="#i-tram"/></svg>15 min</b><span>zu Fuß zur U-Bahn Ahrensburg-Ost<span class="how">U1 Richtung Hamburg</span></span></li>
+          <li><b><svg aria-hidden="true"><use href="#i-train"/></svg>20 min</b><span>zu Fuß zur Regionalbahn Ahrensburg<span class="how">von dort 15 bis 20 min bis Hamburg Hauptbahnhof</span></span></li>
+          <li><b><svg aria-hidden="true"><use href="#i-boot"/></svg>10 min</b><span>zu Fuß zum Ahrensburger Schloss<span class="how">über den Auewanderweg am Hopfenbach</span></span></li>
+          <li><b><svg aria-hidden="true"><use href="#i-car"/></svg>30 min</b><span>mit dem Auto in die Hamburger Innenstadt<span class="how">über die A1</span></span></li>
+          <li><b><svg aria-hidden="true"><use href="#i-wave"/></svg>40 min</b><span>mit dem Auto an den Ostseestrand<span class="how">oder mit der Bahn bis Travemünde</span></span></li>
+        </ul>
+        <p class="muted rv small" style="--d:.18s;margin-top:20px">Einkaufen lässt sich in Ahrensburg oder im Gewerbegebiet Beimoor. Tennisplätze, Badeseen und der Manhagensee liegen im Umfeld.</p>
+      </div>
+      <div class="rv" style="--d:.08s">
+        <figure class="fig">
+          <img src="/redesign/hopfenbachvilla/assets/luftbild-wide.webp" alt="Luftbild des Anwesens mit Villa, Garten, Bach und angrenzendem Wald" width="1280" height="677">
+          <figcaption>Das Anwesen liegt zwischen der Straße Eilshorst und dem Ostring, mit Wald auf der einen und offener Wiese auf der anderen Seite.</figcaption>
+        </figure>
+        <div class="duo" style="margin-top:12px">
+          <img src="/redesign/hopfenbachvilla/assets/feld-villa.webp" alt="Weites Feld mit Baumreihe am Horizont">
+          <img src="/redesign/hopfenbachvilla/assets/waldweg.webp" alt="Waldweg mit Buchen und Kiefern in der Umgebung">
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ JAHRESZEITEN ============ -->
-<section class="sec--tight" style="padding-top:0">
+<!-- 06 GESCHICHTE UND STIMMEN -->
+<section class="sec" id="geschichte">
   <div class="wrap">
-    <div class="narrow" style="margin-bottom:clamp(24px,3vw,40px)">
-      <p class="eyebrow rv">Das Jahr im Garten</p>
-      <h2 class="h-md rv" style="--d:.05s">Vier Jahreszeiten vor dem Fenster.</h2>
-    </div>
-    <div class="gal">
-      <figure class="rv" style="--d:.02s">
-        <img src="/redesign/hopfenbachvilla/assets/garten-fruehling.webp" alt="Frisches Grün und blühende Bäume im Garten im Frühling" loading="lazy" width="1200" height="900">
-        <figcaption><b>Frühling</b>Magnolie, japanische Kirsche und Flieder blühen nacheinander auf.</figcaption>
-      </figure>
-      <figure class="rv" style="--d:.09s">
-        <img src="/redesign/hopfenbachvilla/assets/staudenbeet.webp" alt="Üppiges Staudenbeet mit Gräsern im Sommer" loading="lazy" width="1200" height="894">
-        <figcaption><b>Sommer</b>Die Staudenbeete stehen hoch. Im Garten gibt es mehrere Feuer- und Grillplätze.</figcaption>
-      </figure>
-      <figure class="rv" style="--d:.16s">
-        <img src="/redesign/hopfenbachvilla/assets/garten-herbst.webp" alt="Herbstlaub und goldenes Licht im Park" loading="lazy" width="1200" height="900">
-        <figcaption><b>Herbst</b>Die alten Bäume färben sich. Im eigenen Waldstück lässt sich Feuerholz holen.</figcaption>
-      </figure>
-      <figure class="rv" style="--d:.23s">
-        <img src="/redesign/hopfenbachvilla/assets/aepfel.webp" alt="Geerntete Äpfel in Korb und Holzkiste auf der Wiese" loading="lazy" width="900" height="1241">
-        <figcaption><b>Ernte</b>Obstgehölze, Himbeerspalier, Erdbeer- und Gemüsebeete.</figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
-
-<!-- ============ QUOTE ============ -->
-<section class="quote">
-  <img src="/redesign/hopfenbachvilla/assets/buche.webp" alt="Blick in die Krone einer alten Blutbuche" loading="lazy" width="1280" height="960">
-  <div class="quote__in">
-    <blockquote class="rv">"Wer Träume verwirklichen will, muss wacher sein und tiefer träumen als andere."</blockquote>
-    <cite class="rv" style="--d:.1s">Prof. Dr. hc. Karl Foerster (1874 bis 1970), Staudenzüchter, Schriftsteller und Gartenphilosoph.<br>Großonkel der Eigentümerin.</cite>
-  </div>
-</section>
-
-<!-- ============ BAND ============ -->
-<figure class="strip">
-  <img src="/redesign/hopfenbachvilla/assets/luftbild-wide.webp" alt="Die Hopfenbachvilla mit Wiese, Park und angrenzendem Wald von oben" loading="lazy" width="1280" height="677">
-  <figcaption>Zwischen Eilshorst und Ostring: Haus, Park, Bach und Wald gehören zusammen.</figcaption>
-</figure>
-
-<!-- ============ LAGE ============ -->
-<section class="sec" id="lage">
-  <div class="wrap split" style="align-items:center">
-    <div class="stack">
-      <p class="eyebrow rv">Lage und Umfeld</p>
-      <h2 class="h-lg rv" style="--d:.05s">Umgeben von Natur und doch verkehrsgünstig.</h2>
-      <p class="rv" style="--d:.1s">Das Haus liegt am Rand der Schlossstadt Ahrensburg, im sogenannten Speckgürtel von Hamburg, unweit der Ostsee. Das HVV-Netz erreichen Sie zu Fuß, ohne Auto geht es hier gut.</p>
-      <ul class="ways rv" style="--d:.14s">
-        <li><b>15 min</b><span>zu Fuß zur U-Bahn Ahrensburg-Ost<span class="how">U1 Richtung Hamburg</span></span></li>
-        <li><b>20 min</b><span>zu Fuß zur Regionalbahn Ahrensburg<span class="how">von dort 15 bis 20 min bis Hamburg Hauptbahnhof</span></span></li>
-        <li><b>10 min</b><span>zu Fuß zum Ahrensburger Schloss<span class="how">über den Auewanderweg am Hopfenbach</span></span></li>
-        <li><b>30 min</b><span>mit dem Auto in die Hamburger Innenstadt<span class="how">über die A1</span></span></li>
-        <li><b>40 min</b><span>mit dem Auto an den Ostseestrand<span class="how">oder mit der Bahn bis Travemünde</span></span></li>
-      </ul>
-      <p class="rv muted" style="--d:.18s;font-size:14.5px">Einkaufen lässt sich in der kleinen Schlossstadt Ahrensburg oder im Gewerbegebiet Beimoor, der große Famila-Komplex ist zehn Radminuten entfernt. Tennisplätze und Badeseen liegen im Umfeld.</p>
-    </div>
-    <div>
-      <figure class="fig rv-img" style="--d:.08s">
-        <img src="/redesign/hopfenbachvilla/assets/wiese-villa.webp" alt="Die Villa am Waldrand hinter einer weiten Wiese" loading="lazy" width="1600" height="1077">
-        <figcaption>Der Blick vom Feld: das Haus liegt am Waldrand, mit offener Wiese davor.</figcaption>
-      </figure>
-      <div class="duo rv-img" style="--d:.14s;margin-top:16px">
-        <img src="/redesign/hopfenbachvilla/assets/feld-villa.webp" alt="Weites Feld mit Baumreihe am Horizont" loading="lazy" width="1500" height="1010">
-        <img src="/redesign/hopfenbachvilla/assets/wald-herbst.webp" alt="Herbstlicher Mischwald am Rand des Grundstücks" loading="lazy" width="1200" height="900">
+    <div class="split split--wide" style="align-items:center">
+      <div>
+        <p class="chapter rv"><svg aria-hidden="true"><use href="#i-leaf"/></svg><b>06</b><i></i>Geschichte</p>
+        <h2 class="h2 rv" style="--d:.05s">Seit 1908 an dieser Stelle, seit 1942 in der Familie.</h2>
+        <p class="lead rv" style="--d:.1s;margin-top:18px">Ein Hamburger Lehrer und seine dänische Frau ließen das Haus nach der großen Cholera-Epidemie außerhalb der Stadt bauen. 1942 erwarben die Großeltern der heutigen Eigentümerin das Anwesen.</p>
+        <p class="rv" style="--d:.14s;margin-top:14px">Angela Debes wuchs hier mit vier Geschwistern auf und kaufte das Haus 2012 zurück. Seitdem wird saniert und der Garten wieder freigelegt. Einiges von früher fehlt heute. Die Eigentümerin nennt ihr Haus selbst etwas amputiert und etwas geliftet.</p>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ GESCHICHTE ============ -->
-<section class="sec--tight" id="geschichte" style="background:var(--paper-2);border-block:1px solid var(--line)">
-  <div class="wrap split" style="align-items:start">
-    <div class="stack">
-      <p class="eyebrow rv">Geschichte</p>
-      <h2 class="h-lg rv" style="--d:.05s">Seit 1908 an dieser Stelle, seit 1942 in der Familie.</h2>
-      <p class="rv" style="--d:.1s">Ein Hamburger Lehrer und seine dänische Frau ließen das Haus nach der großen Cholera-Epidemie außerhalb der Stadt bauen. Sie legten den Garten an, pflanzten die Blutbuche und die Kastanie und bauten am Hopfenbach ein Badehaus.</p>
-      <p class="rv" style="--d:.14s">2018 tauchte in einem Bildband eine Aufnahme von 1930 auf: das Drei-Giebel-Haus mit breitem Balkon, eleganter Holzveranda, Giebelschmuck und Gartenteich. Einiges davon fehlt heute. Die Eigentümerin nennt ihr Haus selbst etwas amputiert und etwas geliftet.</p>
-      <figure class="fig rv-img" style="--d:.1s;margin-top:26px">
-        <img src="/redesign/hopfenbachvilla/assets/historie.webp" alt="Historische Aufnahme der Villa mit Holzveranda" loading="lazy" width="545" height="400">
-        <figcaption>Die Villa mit ihrer alten Holzveranda, aus dem Album der Erbauerfamilie.</figcaption>
+      <figure class="fig rv" style="--d:.1s">
+        <img src="/redesign/hopfenbachvilla/assets/historie.webp" alt="Historische Aufnahme der Villa mit Holzveranda" width="545" height="400">
+        <figcaption>Die Villa mit ihrer alten Holzveranda, aus dem Album der Erbauerfamilie. Das Foto von 1930 tauchte 2018 in einem Bildband auf.</figcaption>
       </figure>
     </div>
-    <div class="rv" style="--d:.08s">
-      <ul class="time">
-        <li><b>1908</b><p>Die Villa entsteht inmitten eines parkähnlichen Grundstücks, als typische Hamburger Jugendstil-Stadtvilla mit drei Giebeln.</p></li>
-        <li><b>1942</b><p>Die Großeltern der heutigen Eigentümerin erwerben das Anwesen und ziehen mit der jungen Familie aus Hamburg-Othmarschen hierher.</p></li>
-        <li><b>1947</b><p>Angela Debes wird hier geboren und wächst mit vier Geschwistern, Eltern und Großmutter im Haus auf.</p></li>
-        <li><b>2012</b><p>Nach Jahrzehnten kommt das Haus zurück in die Familie. Seitdem wird saniert, der Garten wieder freigelegt und Schritt für Schritt gestaltet.</p></li>
-        <li><b>2020</b><p>Im Gemüsegarten entsteht ein Obst- und Gemüseanbau nach den Ideen der Permakultur.</p></li>
-        <li><b>Heute</b><p>Zehn Menschen leben im Haus. Haus &amp; Grund hat über die Villa, ihre Geschichte und das Co-Living-Konzept berichtet.</p></li>
-      </ul>
-      <figure class="fig rv-img" style="--d:.12s;margin-top:26px">
-        <img src="/redesign/hopfenbachvilla/assets/villa-herbst.webp" alt="Die Villa im Herbst mit Trockenmauer und rotem Laub" loading="lazy" width="1200" height="894">
-      </figure>
-    </div>
-  </div>
-</section>
-
-<!-- ============ STIMMEN ============ -->
-<section class="sec">
-  <div class="wrap">
-    <div class="narrow" style="margin-bottom:clamp(26px,3.4vw,44px)">
-      <p class="eyebrow rv">Stimmen</p>
-      <h2 class="h-lg rv" style="--d:.05s">Was Bewohner erzählt haben.</h2>
-    </div>
-    <div class="voices">
-      <figure class="voice rv">
+    <div class="voices rv" style="--d:.12s;margin-top:clamp(36px,4.5vw,64px)">
+      <figure class="voice">
         <p>"Besonders großartig an der Wohnung ist der Ausblick, tut der Seele einfach gut. Sehr schön auch, die kleinen spontanen Treffen mit den anderen Bewohnern im Garten."</p>
         <cite>Ein Paar</cite>
       </figure>
-      <figure class="voice rv" style="--d:.08s">
+      <figure class="voice">
         <p>"Schon beim Betreten der Wohnung kommt Urlaubsstimmung auf. Nie habe ich mich irgendwo so schnell und gut erholen können."</p>
         <cite>Ein Geschäftsmann aus Süddeutschland</cite>
       </figure>
-      <figure class="voice rv" style="--d:.16s">
-        <p>"Kleine Pausen im Garten, Joggingrunde um den Manhagensee oder durch die umliegenden Wälder. Die Life Work Balance könnte nicht besser sein."</p>
-        <cite>Eine freiberufliche Grafikerin</cite>
-      </figure>
     </div>
   </div>
 </section>
 
-<!-- ============ KONTAKT ============ -->
-<section class="sec band" id="kontakt">
-  <div class="wrap split" style="align-items:start">
-    <div class="stack">
-      <p class="eyebrow rv">Kontakt</p>
-      <h2 class="h-lg rv" style="--d:.05s">Schreiben Sie uns etwas über sich.</h2>
-      <p class="lead rv" style="--d:.1s;color:rgba(233,231,220,.78);margin-top:18px">Weil wir uns als Hausgemeinschaft verstehen und den Garten gemeinsam nutzen, schauen wir genauer hin, wer zu uns passt. Ein paar Sätze über Sie helfen uns mehr als ein Formular voller Pflichtfelder.</p>
-      <div class="rv" style="--d:.14s">
-        <p style="font-size:14.5px;color:rgba(233,231,220,.72);margin-bottom:6px">Hilfreich sind:</p>
-        <ul class="checklist" style="color:rgba(233,231,220,.72)">
-          <li>Ihr Beruf und was Sie gerade beschäftigt</li>
-          <li>Ihr Alter und ab wann Sie einziehen möchten</li>
-          <li>Der Anlass Ihres Umzugs</li>
-          <li>Ob Sie Erfahrung im Garten mitbringen</li>
-        </ul>
-      </div>
-      <div class="contact-card rv" style="--d:.18s;background:rgba(233,231,220,.06);border-color:rgba(233,231,220,.16);margin-top:30px">
-        <dl>
-          <div><dt style="color:#93AA7B">Vermieterin</dt><dd style="color:#EFEDE3">Angela Debes</dd></div>
-          <div><dt style="color:#93AA7B">Adresse</dt><dd style="color:#EFEDE3">Eilshorst 19<br>Großhansdorf bei Ahrensburg</dd></div>
-          <div><dt style="color:#93AA7B">Besichtigung</dt><dd style="color:#EFEDE3">Nach Absprache.<br>Das Raumgefühl lässt sich durch Fotos schwer vermitteln, man muss es erlebt haben.</dd></div>
+<section class="moment">
+  <img src="/redesign/hopfenbachvilla/assets/buche.webp" alt="Blick in die Krone einer alten Blutbuche" width="1280" height="960">
+  <div class="moment__in">
+    <blockquote class="rv">"Wer Träume verwirklichen will, muss wacher sein und tiefer träumen als andere."</blockquote>
+    <cite class="rv" style="--d:.08s">Prof. Dr. hc. Karl Foerster (1874 bis 1970), Staudenzüchter, Schriftsteller und Gartenphilosoph.<br>Großonkel der Eigentümerin.</cite>
+  </div>
+</section>
+
+<!-- 07 KONTAKT -->
+<section class="sec s-forest" id="kontakt">
+  <div class="wrap">
+    <div class="split split--wide" style="align-items:start">
+      <div>
+        <p class="chapter rv"><svg aria-hidden="true"><use href="#i-leaf"/></svg><b>07</b><i></i>Kontakt</p>
+        <h2 class="h2 rv" style="--d:.05s">Schreiben Sie uns etwas über sich.</h2>
+        <p class="lead rv" style="--d:.1s;margin-top:18px">Weil wir uns als Hausgemeinschaft verstehen und den Garten gemeinsam nutzen, schauen wir genauer hin, wer zu uns passt. Ein paar Sätze über Sie helfen uns mehr als ein Formular voller Pflichtfelder.</p>
+        <dl class="dl rv" style="--d:.14s;margin-top:32px">
+          <div><dt>Vermieterin</dt><dd>Angela Debes</dd></div>
+          <div><dt>Adresse</dt><dd>Eilshorst 19<br>Großhansdorf bei Ahrensburg</dd></div>
+          <div><dt>Besichtigung</dt><dd>Nach Absprache. Vor einem Termin schicken wir Ihnen unsere Vereinbarungen zu.<br>Das Raumgefühl lässt sich durch Fotos schwer vermitteln, man muss es erlebt haben.</dd></div>
         </dl>
+        <figure class="fig rv" style="--d:.18s;margin-top:32px">
+          <img src="/redesign/hopfenbachvilla/assets/abend.webp" alt="Die Villa am Abend mit warm erleuchteten Fenstern" width="640" height="426">
+        </figure>
       </div>
-    </div>
-    <div class="rv" style="--d:.1s">
-      <form class="form" id="anfrage" novalidate>
-        <div class="f2">
-          <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" style="background:rgba(246,243,236,.07);border-color:rgba(233,231,220,.22);color:#EFEDE3"></div>
-          <div class="field"><label for="f-alter">Alter</label><input id="f-alter" name="alter" type="text" inputmode="numeric" style="background:rgba(246,243,236,.07);border-color:rgba(233,231,220,.22);color:#EFEDE3"></div>
-        </div>
-        <div class="f2">
-          <div class="field"><label for="f-mail">E-Mail</label><input id="f-mail" name="mail" type="email" autocomplete="email" style="background:rgba(246,243,236,.07);border-color:rgba(233,231,220,.22);color:#EFEDE3"></div>
-          <div class="field"><label for="f-tel">Telefon, optional</label><input id="f-tel" name="tel" type="tel" autocomplete="tel" style="background:rgba(246,243,236,.07);border-color:rgba(233,231,220,.22);color:#EFEDE3"></div>
-        </div>
-        <div class="field">
-          <label for="f-raum">Interesse an</label>
-          <select id="f-raum" name="raum" style="background:rgba(246,243,236,.07);border-color:rgba(233,231,220,.22);color:#EFEDE3">
-            <option>Garten-Studio, 60 m², frei ab 1. September 2026</option>
-            <option>Dachraum, 42 m², frei ab 1. März 2027</option>
-            <option>Warteliste für ein Zimmer im Haus</option>
-          </select>
-        </div>
-        <div class="field">
-          <label for="f-text">Ein paar Sätze über Sie</label>
-          <textarea id="f-text" name="text" placeholder="Beruf, Alter, Anlass des Umzugs, Gartenerfahrung, gewünschter Einzugstermin" style="background:rgba(246,243,236,.07);border-color:rgba(233,231,220,.22);color:#EFEDE3"></textarea>
-        </div>
-        <button class="btn btn--solid" type="submit" style="background:#93AA7B;color:#1B2419;justify-self:start">Anfrage senden</button>
-        <p class="sent" id="sent">Danke. In der fertigen Website ginge Ihre Nachricht jetzt direkt an Angela Debes.</p>
-        <p class="formnote" style="color:rgba(233,231,220,.5)">Ihre Angaben werden nur für die Beantwortung Ihrer Anfrage genutzt.</p>
-      </form>
-      <figure class="fig rv-img" style="--d:.16s;margin-top:26px">
-        <img src="/redesign/hopfenbachvilla/assets/abend.webp" alt="Die Villa am Abend mit warm erleuchteten Fenstern" loading="lazy" width="640" height="426">
-        <figcaption style="color:rgba(233,231,220,.55)">Abends im Herbst, von der Wiese aus gesehen.</figcaption>
-      </figure>
+      <div class="rv" style="--d:.1s">
+        <form class="form" id="anfrage" novalidate>
+          <div class="f2">
+            <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name"></div>
+            <div class="field"><label for="f-alter">Alter</label><input id="f-alter" name="alter" type="text" inputmode="numeric"></div>
+          </div>
+          <div class="f2">
+            <div class="field"><label for="f-mail">E-Mail</label><input id="f-mail" name="mail" type="email" autocomplete="email"></div>
+            <div class="field"><label for="f-tel">Telefon, optional</label><input id="f-tel" name="tel" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="f2">
+            <div class="field">
+              <label for="f-raum">Interesse an</label>
+              <select id="f-raum" name="raum">
+                <option>Garten-Studio, 60 m², frei ab 1. September 2026</option>
+                <option>Dachraum, 42 m², frei ab 1. März 2027</option>
+                <option>Warteliste für ein Zimmer im Haus</option>
+              </select>
+            </div>
+            <div class="field"><label for="f-datum">Gewünschter Einzug</label><input id="f-datum" name="datum" type="text" placeholder="zum Beispiel Oktober 2026"></div>
+          </div>
+          <div class="field"><label for="f-beruf">Beruf und aktuelle Situation</label><input id="f-beruf" name="beruf" type="text"></div>
+          <div class="field"><label for="f-anlass">Anlass Ihres Umzugs</label><input id="f-anlass" name="anlass" type="text"></div>
+          <div class="field"><label for="f-text">Ein paar Sätze über Sie</label><textarea id="f-text" name="text" placeholder="Was Sie gerade beschäftigt, ob Sie Erfahrung im Garten mitbringen, was Sie an diesem Ort interessiert"></textarea></div>
+          <button class="btn btn--light" type="submit" style="justify-self:start">Anfrage senden</button>
+          <p class="sent" id="sent">Danke. In der fertigen Website ginge Ihre Nachricht jetzt direkt an Angela Debes.</p>
+          <p class="small muted">Ihre Angaben werden nur für die Beantwortung Ihrer Anfrage genutzt.</p>
+        </form>
+      </div>
     </div>
   </div>
 </section>
-
-<!-- ============ FOOTER ============ -->
+</main>
 <footer class="ftr">
   <div class="wrap">
     <div class="ftr__top">
       <div>
-        <a class="brand" href="#start">
-          <svg width="34" height="26" viewBox="0 0 34 26" fill="none" aria-hidden="true">
-            <path d="M1 25 L1 14 L7 7.5 L13 14 L13 25" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
-            <path d="M11 25 L11 10 L17 3 L23 10 L23 25" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
-            <path d="M21 25 L21 14 L27 7.5 L33 14 L33 25" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
-            <path d="M0 25.4 H34" stroke="currentColor" stroke-width="1.2"/>
-          </svg>
-          <span><b>Hopfenbachvilla</b><span>Naturidylle bei Ahrensburg</span></span>
-        </a>
+        <a class="brand" href="/redesign/hopfenbachvilla/index.html"><svg width="34" height="26" viewBox="0 0 34 26" fill="none" aria-hidden="true">
+        <path d="M1 25 L1 14 L7 7.5 L13 14 L13 25" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+        <path d="M11 25 L11 10 L17 3 L23 10 L23 25" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+        <path d="M21 25 L21 14 L27 7.5 L33 14 L33 25" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+        <path d="M0 25.4 H34" stroke="currentColor" stroke-width="1.2"/></svg><span><b>Hopfenbachvilla</b><span>Naturidylle bei Ahrensburg</span></span></a>
         <p class="ftr__blurb">Möblierte Zimmer und Wohnungen in einer Jugendstil-Villa von 1908, im Landschaftsschutzgebiet zwischen Ahrensburg und Großhansdorf.</p>
       </div>
       <div>
         <h5>Wohnen</h5>
         <ul>
-          <li><a href="#frei">Freie Räume</a></li>
-          <li><a href="#wohnen">Alle Räume</a></li>
-          <li><a href="#gemeinschaft">Hausgemeinschaft</a></li>
-          <li><a href="#kontakt">Warteliste</a></li>
+          <li><a href="/redesign/hopfenbachvilla/index.html#freie-raeume">Freie Räume</a></li>
+          <li><a href="/redesign/hopfenbachvilla/raeume.html">Alle Räume</a></li>
+          <li><a href="/redesign/hopfenbachvilla/index.html#zusammenleben">Zusammenleben</a></li>
+          <li><a href="/redesign/hopfenbachvilla/index.html#kontakt">Warteliste</a></li>
         </ul>
       </div>
       <div>
         <h5>Haus und Umfeld</h5>
         <ul>
-          <li><a href="#garten">Garten</a></li>
-          <li><a href="#lage">Lage und Wege</a></li>
-          <li><a href="#geschichte">Geschichte</a></li>
-          <li><a href="#kontakt">Kontakt</a></li>
+          <li><a href="/redesign/hopfenbachvilla/index.html#haus-garten">Haus und Garten</a></li>
+          <li><a href="/redesign/hopfenbachvilla/index.html#lage">Lage und Wege</a></li>
+          <li><a href="/redesign/hopfenbachvilla/index.html#geschichte">Geschichte</a></li>
+          <li><a href="/redesign/hopfenbachvilla/index.html#kontakt">Kontakt</a></li>
         </ul>
       </div>
     </div>
@@ -877,35 +345,30 @@ figure{margin:0}
     </div>
   </div>
 </footer>
-
 <script>
 (function(){
   var hdr=document.getElementById('hdr');
-  var onScroll=function(){ hdr.classList.toggle('solid', window.scrollY>40); };
-  onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
-
-  var mnav=document.getElementById('mnav');
-  var open=function(v){ mnav.classList.toggle('open',v);
-    document.getElementById('burger').setAttribute('aria-expanded',v?'true':'false');
-    document.body.style.overflow=v?'hidden':''; };
-  document.getElementById('burger').addEventListener('click',function(){open(true)});
+  if(hdr && !hdr.classList.contains('hdr--static')){
+    var s=function(){hdr.classList.toggle('solid',window.scrollY>40)};s();
+    window.addEventListener('scroll',s,{passive:true});
+  }
+  var mnav=document.getElementById('mnav'),burger=document.getElementById('burger');
+  var open=function(v){mnav.classList.toggle('open',v);burger.setAttribute('aria-expanded',v?'true':'false');
+    document.body.style.overflow=v?'hidden':''};
+  burger.addEventListener('click',function(){open(true)});
   document.getElementById('mnavX').addEventListener('click',function(){open(false)});
   mnav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){open(false)})});
-  document.addEventListener('keydown',function(e){ if(e.key==='Escape') open(false); });
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')open(false)});
 
-  var els=document.querySelectorAll('.rv,.rv-img');
-  if(!('IntersectionObserver' in window)){ els.forEach(function(e){e.classList.add('in')}); }
-  else{
-    var io=new IntersectionObserver(function(entries){
-      entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
-    },{rootMargin:'0px 0px -8% 0px',threshold:.08});
-    els.forEach(function(e){io.observe(e)});
-  }
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')})}
+  else{var io=new IntersectionObserver(function(en){en.forEach(function(x){
+    if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.06});
+    els.forEach(function(e){io.observe(e)})}
 
-  document.getElementById('anfrage').addEventListener('submit',function(e){
-    e.preventDefault();
-    document.getElementById('sent').classList.add('on');
-  });
+  var f=document.getElementById('anfrage');
+  if(f)f.addEventListener('submit',function(e){e.preventDefault();
+    document.getElementById('sent').classList.add('on');});
 })();
 </script>
 </body>

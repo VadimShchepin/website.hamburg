@@ -185,6 +185,47 @@ export default function WebdesignPage() {
                         <div className="sp-step"><span className="sp-step-num">4</span><div><strong>Testing & Launch</strong><p>Tests auf allen Geräten und Browsern, Tracking-Setup, Go-live und Übergabe mit Dokumentation.</p></div></div>
                     </div>
 
+                    <h2 className="animate-up">Webdesign für Ihre Branche</h2>
+                    <p className="animate-up">
+                        Jede Branche hat andere Pflichtangaben, andere Anfragewege und andere Erwartungen. Für diese
+                        Bereiche habe ich das im Detail aufgeschrieben, inklusive Preisen und Rechtsgrundlagen:
+                    </p>
+                    <div className="subpage-cases animate-up">
+                        <Link href="/leistungen/webdesign-handwerker" className="subpage-case-card">
+                            <span className="subpage-case-metric">Handwerk</span>
+                            <span className="subpage-case-name">Aufträge über Notdienst-Suchen und lokale Sichtbarkeit</span>
+                        </Link>
+                        <Link href="/leistungen/webdesign-aerzte" className="subpage-case-card">
+                            <span className="subpage-case-metric">Arztpraxen</span>
+                            <span className="subpage-case-name">Terminbuchung, DSGVO und Google Maps</span>
+                        </Link>
+                        <Link href="/leistungen/webdesign-anwaelte" className="subpage-case-card">
+                            <span className="subpage-case-metric">Kanzleien</span>
+                            <span className="subpage-case-name">Mandate gewinnen im Rahmen von BRAO und BORA</span>
+                        </Link>
+                        <Link href="/leistungen/webdesign-steuerberater" className="subpage-case-card">
+                            <span className="subpage-case-metric">Steuerberater</span>
+                            <span className="subpage-case-name">Mandanten und Bewerber auf einer Website</span>
+                        </Link>
+                        <Link href="/leistungen/webdesign-gastronomie" className="subpage-case-card">
+                            <span className="subpage-case-metric">Gastronomie</span>
+                            <span className="subpage-case-name">Speisekarte, Reservierung, Pflichtangaben</span>
+                        </Link>
+                        <Link href="/leistungen/webdesign-hotels" className="subpage-case-card">
+                            <span className="subpage-case-metric">Hotels</span>
+                            <span className="subpage-case-name">Direktbuchungen statt Portalprovision</span>
+                        </Link>
+                        <Link href="/leistungen/webdesign-immobilienmakler" className="subpage-case-card">
+                            <span className="subpage-case-metric">Immobilienmakler</span>
+                            <span className="subpage-case-name">Eigentümer-Anfragen und GEG-Pflichtangaben</span>
+                        </Link>
+                    </div>
+                    <p className="animate-up">
+                        Unsicher, ob Agentur, Freelancer oder Baukasten zu Ihrem Vorhaben passt? Der Vergleich steht im
+                        Artikel <Link href="/wissen/webdesign-agentur-oder-freelancer">Agentur, Freelancer oder Baukasten</Link>,
+                        die Kostenseite im <Link href="/wissen/webdesign-kosten">Kostenguide</Link>.
+                    </p>
+
                     <div className="subpage-sources animate-up">
                         <h2>Quellen</h2>
                         <ol>

@@ -3,7 +3,7 @@
 > Professionelle Websites, SEO und Google Ads für lokale Unternehmen in Hamburg.
 
 Preferred-Citation: "AISEO Hamburg (webseite.hamburg)"
-Last-Updated: 2026-03-19
+Last-Updated: 2026-08-20
 Contact: hallo@webseite.hamburg
 
 ## Über AISEO
@@ -62,6 +62,15 @@ Arbeitsweise: Kunden arbeiten direkt mit Vadim Shchepin, es gibt keine Account-M
 - Persönliches Gespräch zur Besprechung der Ergebnisse
 - URL: https://webseite.hamburg/leistungen/website-audit
 
+### Branchenseiten (Webdesign nach Branche)
+- Handwerker: https://webseite.hamburg/leistungen/webdesign-handwerker
+- Arztpraxen und Zahnärzte: https://webseite.hamburg/leistungen/webdesign-aerzte
+- Rechtsanwälte und Kanzleien (BRAO/BORA-konform, ab 2.900 EUR): https://webseite.hamburg/leistungen/webdesign-anwaelte
+- Steuerberater (Mandanten- und Bewerbergewinnung, § 57a StBerG, ab 2.900 EUR): https://webseite.hamburg/leistungen/webdesign-steuerberater
+- Restaurants und Gastronomie (Speisekarte, Reservierung, LMIV-Allergene, ab 1.500 EUR): https://webseite.hamburg/leistungen/webdesign-gastronomie
+- Hotels (Direktbuchung statt OTA-Provision, Google-Buchungslinks, ab 2.900 EUR): https://webseite.hamburg/leistungen/webdesign-hotels
+- Immobilienmakler (Eigentümer-Akquise, Pflichtangaben § 87 GEG, ab 2.900 EUR): https://webseite.hamburg/leistungen/webdesign-immobilienmakler
+
 ### FAQ
 - Antworten auf häufige Fragen zu Webdesign, SEO, AI SEO, Google Ads und Zusammenarbeit
 - URL: https://webseite.hamburg/faq
@@ -111,4 +120,9 @@ Arbeitsweise: Kunden arbeiten direkt mit Vadim Shchepin, es gibt keine Account-M
 - AI SEO — Was Unternehmen jetzt wissen müssen: https://webseite.hamburg/wissen/ai-seo-was-unternehmen-jetzt-wissen-muessen
 - Die 7 teuersten Google Ads Fehler: https://webseite.hamburg/wissen/google-ads-fehler-lokale-unternehmen
 - Conversion-Optimierung erklärt: https://webseite.hamburg/wissen/website-conversion-optimierung
+- Website nicht bei Google zu finden? Die 12 häufigsten Ursachen: https://webseite.hamburg/wissen/website-nicht-bei-google-gefunden
+- Google-Unternehmensprofil optimieren, der Hamburg-Leitfaden: https://webseite.hamburg/wissen/google-business-profile-optimieren
+- Was kostet SEO in Hamburg? Preise, Modelle, Arbeitsstunden: https://webseite.hamburg/wissen/seo-kosten-hamburg
+- Agentur, Freelancer oder Baukasten: wer soll die Website bauen: https://webseite.hamburg/wissen/webdesign-agentur-oder-freelancer
+- Wix, Jimdo oder eigene Website: was der Baukasten wirklich kostet: https://webseite.hamburg/wissen/website-baukasten-oder-eigene-website
 - Website-Relaunch Checkliste: https://webseite.hamburg/wissen/website-relaunch-checkliste

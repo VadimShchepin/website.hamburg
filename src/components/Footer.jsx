@@ -25,9 +25,17 @@ export default function Footer() {
                     <Link href="/leistungen/conversion-optimierung">Conversion-Optimierung</Link>
                     <Link href="/leistungen/google-ads">Google Ads Management</Link>
                     <Link href="/leistungen/website-audit">Website-Audit</Link>
-                    <Link href="/leistungen/webdesign-handwerker">Webdesign für Handwerker</Link>
-                    <Link href="/leistungen/webdesign-aerzte">Webdesign für Arztpraxen</Link>
                     <Link href="/leistungen/website-erstellen-lassen">Website erstellen lassen</Link>
+                </div>
+                <div className="footer-links">
+                    <h4>Branchen</h4>
+                    <Link href="/leistungen/webdesign-handwerker">Handwerker</Link>
+                    <Link href="/leistungen/webdesign-aerzte">Arztpraxen</Link>
+                    <Link href="/leistungen/webdesign-anwaelte">Anwälte &amp; Kanzleien</Link>
+                    <Link href="/leistungen/webdesign-steuerberater">Steuerberater</Link>
+                    <Link href="/leistungen/webdesign-gastronomie">Restaurants &amp; Cafés</Link>
+                    <Link href="/leistungen/webdesign-hotels">Hotels</Link>
+                    <Link href="/leistungen/webdesign-immobilienmakler">Immobilienmakler</Link>
                 </div>
                 <div className="footer-links">
                     <h4>Unternehmen</h4>

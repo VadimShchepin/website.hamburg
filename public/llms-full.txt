@@ -179,6 +179,29 @@ Vadim Shchepin:
 
 ## Fachartikel und Ressourcen
 
+0a. Website nicht bei Google zu finden? Die 12 häufigsten Ursachen (August 2026)
+   Thema: Indexierung, Search-Console-Statusmeldungen "Gefunden/Gecrawlt, zurzeit nicht indexiert", noindex, robots.txt, Canonical, verwaiste Seiten, Crawl-Budget-Mythos
+   Besonderheit: Erfahrungsbericht zur eigenen Website (Mai 2026: 34 Seiten, rund 10 indexiert) und was die Ursache war
+   URL: https://webseite.hamburg/wissen/website-nicht-bei-google-gefunden
+
+0b. Google-Unternehmensprofil optimieren, der Hamburg-Leitfaden (August 2026)
+   Thema: offizielle Ranking-Faktoren Relevanz/Entfernung/Bekanntheit, Namensregeln, Einzugsgebiet fuer Dienstleister, Bewertungsrichtlinien, Wochenroutine
+   Quellen: Google-Richtlinien, BrightLocal Local Consumer Review Survey 2026, Think with Google
+   URL: https://webseite.hamburg/wissen/google-business-profile-optimieren
+
+0c. Was kostet SEO in Hamburg? (August 2026)
+   Thema: Retainer- und Stundensatzmodelle, was 1.000 EUR im Monat an Arbeitsstunden bedeuten, Zeitrahmen laut Google, Warnsignale, wann SEO die falsche Investition ist
+   URL: https://webseite.hamburg/wissen/seo-kosten-hamburg
+
+0d. Agentur, Freelancer oder Baukasten: wer soll Ihre Website bauen? (August 2026)
+   Thema: Stundensätze 2026, Projektpreise, Ausfallrisiko beim Solo-Anbieter und dessen vertragliche Absicherung, Nutzungsrechte nach § 31 UrhG, Domain- und Kontoeigentum
+   URL: https://webseite.hamburg/wissen/webdesign-agentur-oder-freelancer
+
+0e. Wix, Jimdo oder eigene Website: was der Baukasten wirklich kostet (August 2026)
+   Thema: Monatspreise 2026, Fünf-Jahres-Rechnung, Datenexport und Lock-in laut Anbieterdokumentation, Core Web Vitals nach Plattform, Umzugsreihenfolge
+   URL: https://webseite.hamburg/wissen/website-baukasten-oder-eigene-website
+
+
 1. Warum langsame Websites Sie jeden Tag Kunden kosten
    Thema: PageSpeed, Core Web Vitals, Ladezeit-Optimierung
    URL: https://webseite.hamburg/wissen/warum-langsame-websites-kunden-kosten

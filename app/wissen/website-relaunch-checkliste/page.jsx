@@ -1,4 +1,5 @@
 import ArticleLayout from '../../../src/components/ArticleLayout';
+import Link from 'next/link';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
@@ -194,10 +195,16 @@ export default function WebsiteRelaunchArticlePage() {
 
                 <blockquote>
                     Ein häufiger Launch-Fehler: Die Staging-Umgebung hatte eine globale
-                    noindex-Anweisung, die beim Deployment auf die Live-Seite uebernommen wurde.
+                    noindex-Anweisung, die beim Deployment auf die Live-Seite übernommen wurde.
                     Ergebnis: Google deindexiert die gesamte Website innerhalb weniger Tage.
                     Prüfen Sie das doppelt.
                 </blockquote>
+                <p>
+                    Wenn nach dem Launch Seiten fehlen, arbeiten Sie die Ursachenliste im Artikel
+                    {' '}<Link href="/wissen/website-nicht-bei-google-gefunden">Website nicht bei Google zu finden</Link> von
+                    oben nach unten durch. In den meisten Fällen sind es eine vergessene noindex-Anweisung, ein
+                    falsches Canonical-Tag oder fehlende Weiterleitungen.
+                </p>
 
                 <h2>Phase 4: Nach dem Relaunch</h2>
 

@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc" stroke-linejoin="round" stroke-linecap="round">
+  <title id="title">Immobilienmakler-Website zur Eigentümer-Akquise</title>
+  <desc id="desc">Flache Vektorillustration mit Wohnhaus und Verkaufsschild, einem Exposé mit Pflichtangaben und rotem Energieausweis sowie einem Laptop mit Formular zur Wertermittlung.</desc>
+
+  <rect x="45" y="45" width="1510" height="810" rx="32" fill="#F5F7FA" stroke="#E9EEF3" stroke-width="6"/>
+  <path d="M85 790h1430" fill="none" stroke="#E9EEF3" stroke-width="6"/>
+
+  <g id="objekt">
+    <rect x="168" y="92" width="178" height="58" rx="29" fill="#FFFFFF" stroke="#172A45" stroke-width="5"/>
+    <text x="257" y="130" text-anchor="middle" fill="#0A192F" font-family="Inter, Helvetica, Arial, sans-serif" font-size="26" font-weight="700">Objekt</text>
+
+    <path d="M88 385l174-164 174 164z" fill="#E9EEF3" stroke="#0A192F" stroke-width="7"/>
+    <path d="M118 385h288v335H118z" fill="#FFFFFF" stroke="#0A192F" stroke-width="7"/>
+    <path d="M337 292v-73h47v117" fill="#FFFFFF" stroke="#172A45" stroke-width="6"/>
+
+    <rect x="151" y="445" width="95" height="92" rx="6" fill="#F5F7FA" stroke="#172A45" stroke-width="6"/>
+    <path d="M198 448v86M154 491h89" fill="none" stroke="#E9EEF3" stroke-width="5"/>
+    <rect x="279" y="445" width="95" height="92" rx="6" fill="#F5F7FA" stroke="#172A45" stroke-width="6"/>
+    <path d="M326 448v86M282 491h89" fill="none" stroke="#E9EEF3" stroke-width="5"/>
+    <rect x="151" y="574" width="108" height="146" rx="7" fill="#E9EEF3" stroke="#0A192F" stroke-width="7"/>
+    <circle cx="232" cy="650" r="7" fill="#E53935"/>
+
+    <path d="M451 536v202M420 738h62" fill="none" stroke="#0A192F" stroke-width="7"/>
+    <rect x="310" y="558" width="198" height="78" rx="8" fill="#FFFFFF" stroke="#E53935" stroke-width="6"/>
+    <text x="409" y="606" text-anchor="middle" fill="#E53935" font-family="Inter, Helvetica, Arial, sans-serif" font-size="24" font-weight="700">Zu verkaufen</text>
+  </g>
+
+  <path d="M518 444h45m-18-18 18 18-18 18" fill="none" stroke="#E53935" stroke-width="7"/>
+
+  <g id="expose">
+    <rect x="585" y="100" width="395" height="670" rx="18" fill="#FFFFFF" stroke="#0A192F" stroke-width="7"/>
+    <path d="M882 100v98h98" fill="#E9EEF3" stroke="#0A192F" stroke-width="7"/>
+    <path d="M882 100l98 98" fill="none" stroke="#0A192F" stroke-width="7"/>
+    <text x="635" y="180" fill="#0A192F" font-family="Inter, Helvetica, Arial, sans-serif" font-size="32" font-weight="700">Exposé</text>
+    <path d="M635 210h204" fill="none" stroke="#E9EEF3" stroke-width="6"/>
+
+    <text x="635" y="268" fill="#666666" font-family="Inter, Helvetica, Arial, sans-serif" font-size="22" font-weight="600">Pflichtangaben</text>
+    <rect x="635" y="296" width="34" height="34" rx="7" fill="#F5F7FA" stroke="#172A45" stroke-width="5"/>
+    <path d="M644 312l7 8 12-17" fill="none" stroke="#E53935" stroke-width="5"/>
+    <path d="M700 306h215M700 326h158" fill="none" stroke="#E9EEF3" stroke-width="6"/>
+    <rect x="635" y="356" width="34" height="34" rx="7" fill="#F5F7FA" stroke="#172A45" stroke-width="5"/>
+    <path d="M644 372l7 8 12-17" fill="none" stroke="#E53935" stroke-width="5"/>
+    <path d="M700 366h215M700 386h180" fill="none" stroke="#E9EEF3" stroke-width="6"/>
+    <rect x="635" y="416" width="34" height="34" rx="7" fill="#F5F7FA" stroke="#172A45" stroke-width="5"/>
+    <path d="M644 432l7 8 12-17" fill="none" stroke="#E53935" stroke-width="5"/>
+    <path d="M700 426h215M700 446h135" fill="none" stroke="#E9EEF3" stroke-width="6"/>
+
+    <text x="635" y="508" fill="#0A192F" font-family="Inter, Helvetica, Arial, sans-serif" font-size="24" font-weight="700">Energieausweis</text>
+    <rect x="635" y="532" width="280" height="22" rx="11" fill="#E9EEF3"/>
+    <rect x="635" y="532" width="238" height="22" rx="11" fill="#E53935"/>
+    <rect x="635" y="573" width="280" height="22" rx="11" fill="#E9EEF3"/>
+    <rect x="635" y="573" width="188" height="22" rx="11" fill="#E53935"/>
+    <rect x="635" y="614" width="280" height="22" rx="11" fill="#E9EEF3"/>
+    <rect x="635" y="614" width="134" height="22" rx="11" fill="#E53935"/>
+    <path d="M635 681h280M635 718h212" fill="none" stroke="#E9EEF3" stroke-width="6"/>
+  </g>
+
+  <path d="M992 444h42m-18-18 18 18-18 18" fill="none" stroke="#E53935" stroke-width="7"/>
+
+  <g id="anfrage">
+    <rect x="1045" y="192" width="465" height="476" rx="24" fill="#172A45" stroke="#0A192F" stroke-width="7"/>
+    <rect x="1075" y="222" width="405" height="416" rx="12" fill="#FFFFFF" stroke="#E9EEF3" stroke-width="5"/>
+    <circle cx="1278" cy="207" r="5" fill="#E9EEF3"/>
+
+    <text x="1278" y="294" text-anchor="middle" fill="#0A192F" font-family="Inter, Helvetica, Arial, sans-serif" font-size="30" font-weight="700">Anfrage</text>
+    <path d="M1182 316h192" fill="none" stroke="#E9EEF3" stroke-width="6"/>
+
+    <rect x="1120" y="350" width="315" height="62" rx="12" fill="#F5F7FA" stroke="#172A45" stroke-width="5"/>
+    <path d="M1154 368c-12 0-21 9-21 21 0 16 21 32 21 32s21-16 21-32c0-12-9-21-21-21zm0 14a7 7 0 1 0 0 14 7 7 0 0 0 0-14z" fill="#E9EEF3" stroke="#172A45" stroke-width="4"/>
+    <path d="M1198 381h194" fill="none" stroke="#E9EEF3" stroke-width="6"/>
+
+    <rect x="1120" y="438" width="315" height="62" rx="12" fill="#F5F7FA" stroke="#172A45" stroke-width="5"/>
+    <path d="M1138 459h34v25h-34zM1145 459v-8h20v8" fill="none" stroke="#172A45" stroke-width="4"/>
+    <path d="M1198 469h194" fill="none" stroke="#E9EEF3" stroke-width="6"/>
+
+    <rect x="1120" y="532" width="315" height="66" rx="14" fill="#E53935" stroke="#E53935" stroke-width="5"/>
+    <text x="1278" y="575" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Helvetica, Arial, sans-serif" font-size="25" font-weight="700">Wert ermitteln</text>
+
+    <path d="M1045 668h465l42 67H1003z" fill="#E9EEF3" stroke="#0A192F" stroke-width="7"/>
+    <path d="M1208 692h140l18 24h-176z" fill="#FFFFFF" stroke="#172A45" stroke-width="5"/>
+    <path d="M990 735h565" fill="none" stroke="#0A192F" stroke-width="7"/>
+  </g>
+</svg>

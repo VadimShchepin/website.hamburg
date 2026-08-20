@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Digitale Steuerberater-Kanzlei</title>
+  <desc id="desc">Eine flache Infografik zeigt Papierbelege, ein sicheres Mandantenportal mit Datei-Upload und eine Kanzlei-Website mit Button für ein Erstgespräch.</desc>
+  <style>
+    svg{stroke-linecap:round;stroke-linejoin:round}
+    .line{fill:none;stroke:#0A192F;stroke-width:6}
+    .fine{fill:none;stroke:#172A45;stroke-width:4}
+    .soft{fill:#FFFFFF;stroke:#E9EEF3;stroke-width:4}
+    .label{fill:#0A192F;font-family:Inter,Helvetica,Arial,sans-serif;font-size:30px;font-weight:700}
+    .small{fill:#666666;font-family:Inter,Helvetica,Arial,sans-serif;font-size:24px;font-weight:600}
+  </style>
+  <rect x="44" y="44" width="1512" height="812" rx="34" fill="#F5F7FA" stroke="#E9EEF3" stroke-width="4"/>
+
+  <g aria-label="Papierbelege">
+    <rect x="98" y="125" width="170" height="58" rx="29" fill="#FFFFFF"/>
+    <circle cx="129" cy="154" r="9" fill="#E53935"/>
+    <text class="label" x="152" y="164">Belege</text>
+    <rect x="142" y="278" width="258" height="340" rx="12" fill="#E9EEF3" stroke="#172A45" stroke-width="4"/>
+    <rect x="121" y="305" width="258" height="340" rx="12" fill="#F5F7FA" stroke="#172A45" stroke-width="4"/>
+    <rect x="99" y="332" width="258" height="340" rx="12" fill="#FFFFFF" stroke="#0A192F" stroke-width="6"/>
+    <path d="M130 382h112" stroke="#E53935" stroke-width="7"/>
+    <path class="fine" d="M130 425h190M130 462h148M130 617h190"/>
+    <circle cx="228" cy="541" r="58" fill="#F5F7FA" stroke="#172A45" stroke-width="4"/>
+    <text x="228" y="560" text-anchor="middle" fill="#0A192F" font-family="Inter,Helvetica,Arial,sans-serif" font-size="56" font-weight="700">%</text>
+    <path class="fine" d="M322 636v-26h-26"/>
+  </g>
+
+  <path d="M380 462h64" stroke="#E53935" stroke-width="7"/>
+  <path d="m425 443 19 19-19 19" fill="none" stroke="#E53935" stroke-width="7"/>
+
+  <g aria-label="Mandantenportal auf einem Laptop">
+    <rect x="594" y="125" width="350" height="58" rx="29" fill="#FFFFFF"/>
+    <circle cx="625" cy="154" r="9" fill="#E53935"/>
+    <text class="label" x="648" y="164">Mandantenportal</text>
+    <rect x="478" y="232" width="574" height="414" rx="24" fill="#0A192F"/>
+    <rect x="500" y="254" width="530" height="368" rx="10" fill="#FFFFFF"/>
+    <path d="M500 264a10 10 0 0 1 10-10h510a10 10 0 0 1 10 10v52H500z" fill="#E9EEF3"/>
+    <path class="fine" d="M500 316h530"/>
+    <circle cx="532" cy="285" r="7" fill="#E53935"/>
+    <circle cx="556" cy="285" r="7" fill="#172A45"/>
+    <circle cx="580" cy="285" r="7" fill="#172A45"/>
+    <rect x="535" y="348" width="126" height="160" rx="16" fill="#F5F7FA" stroke="#E9EEF3" stroke-width="4"/>
+    <path d="M563 399h31l12 14h31v54h-74z" fill="#FFFFFF" stroke="#0A192F" stroke-width="6"/>
+    <path d="M563 419h74" stroke="#0A192F" stroke-width="6"/>
+    <rect x="869" y="348" width="126" height="160" rx="16" fill="#F5F7FA" stroke="#E9EEF3" stroke-width="4"/>
+    <rect x="902" y="409" width="60" height="58" rx="9" fill="#FFFFFF" stroke="#0A192F" stroke-width="6"/>
+    <path class="line" d="M913 409v-15c0-25 38-25 38 0v15"/>
+    <circle cx="932" cy="437" r="6" fill="#E53935"/>
+    <path d="M932 443v10" stroke="#E53935" stroke-width="6"/>
+    <circle cx="765" cy="420" r="79" fill="#FFFFFF" stroke="#E9EEF3" stroke-width="4"/>
+    <path d="M765 469v-92" stroke="#0A192F" stroke-width="7"/>
+    <path d="m729 413 36-36 36 36" fill="none" stroke="#E53935" stroke-width="7"/>
+    <path d="M721 469h88" stroke="#0A192F" stroke-width="7"/>
+    <text class="small" x="765" y="558" text-anchor="middle">Upload</text>
+    <path d="M438 646h654l42 48a12 12 0 0 1-9 20H405a12 12 0 0 1-9-20z" fill="#172A45" stroke="#0A192F" stroke-width="6"/>
+    <path d="M681 676h168" stroke="#E9EEF3" stroke-width="6"/>
+  </g>
+
+  <path d="M1074 462h48" stroke="#E53935" stroke-width="7"/>
+  <path d="m1103 443 19 19-19 19" fill="none" stroke="#E53935" stroke-width="7"/>
+
+  <g aria-label="Website der Kanzlei">
+    <rect x="1210" y="125" width="190" height="58" rx="29" fill="#FFFFFF"/>
+    <circle cx="1241" cy="154" r="9" fill="#E53935"/>
+    <text class="label" x="1264" y="164">Anfrage</text>
+    <rect x="1138" y="232" width="402" height="414" rx="22" fill="#172A45" stroke="#0A192F" stroke-width="6"/>
+    <rect x="1158" y="252" width="362" height="368" rx="8" fill="#FFFFFF"/>
+    <path d="M1158 260a8 8 0 0 1 8-8h346a8 8 0 0 1 8 8v52h-362z" fill="#E9EEF3"/>
+    <path class="fine" d="M1158 312h362"/>
+    <circle cx="1187" cy="282" r="7" fill="#E53935"/>
+    <path d="M1211 275h74v14h-74z" fill="#0A192F"/>
+    <path class="fine" d="M1428 282h55"/>
+    <path d="M1191 356h178v16h-178zM1191 389h244v10h-244zM1191 413h210v10h-210z" fill="#0A192F"/>
+    <rect x="1191" y="467" width="256" height="64" rx="12" fill="#E53935"/>
+    <text x="1319" y="507" text-anchor="middle" fill="#FFFFFF" font-family="Inter,Helvetica,Arial,sans-serif" font-size="24" font-weight="700">Erstgespräch</text>
+    <path d="M1191 568h108M1323 568h86" stroke="#E9EEF3" stroke-width="7"/>
+    <path d="M1309 646h60v64h-60z" fill="#172A45" stroke="#0A192F" stroke-width="6"/>
+    <path d="M1244 710h190l28 32h-246z" fill="#172A45" stroke="#0A192F" stroke-width="6"/>
+  </g>
+</svg>

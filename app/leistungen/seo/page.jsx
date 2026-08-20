@@ -98,11 +98,11 @@ export default function SeoPage() {
                     <div className="subpage-features-grid animate-up">
                         <div className="subpage-feature">
                             <h3>Google Business Profile</h3>
-                            <p>Optimierung Ihres Unternehmensprofils für Google Maps und das lokale 3er-Pack: Fotos, Öffnungszeiten, Leistungen, Bewertungsmanagement und regelmäßige Beiträge. Das Profil ist oft der erste Kontaktpunkt, noch vor der Website.</p>
+                            <p>Optimierung Ihres Unternehmensprofils für Google Maps und das lokale 3er-Pack: Fotos, Öffnungszeiten, Leistungen, Bewertungsmanagement und regelmäßige Beiträge. Das Profil ist oft der erste Kontaktpunkt, noch vor der Website. Die Schritte im Detail stehen im <Link href="/wissen/google-business-profile-optimieren">Leitfaden zum Unternehmensprofil</Link>.</p>
                         </div>
                         <div className="subpage-feature">
                             <h3>Technisches SEO</h3>
-                            <p>Saubere Seitenstruktur, schnelle Ladezeiten und gute Core Web Vitals (LCP unter 2,5 s, INP unter 200 ms, CLS unter 0,1), Mobile-Optimierung und korrekte Indexierung. Die technische Basis, die Google braucht, um Ihre Seite zu bewerten.</p>
+                            <p>Saubere Seitenstruktur, schnelle Ladezeiten und gute Core Web Vitals (LCP unter 2,5 s, INP unter 200 ms, CLS unter 0,1), Mobile-Optimierung und korrekte Indexierung. Die technische Basis, die Google braucht, um Ihre Seite zu bewerten. Wenn Seiten gar nicht im Index landen, hilft die Ursachenliste <Link href="/wissen/website-nicht-bei-google-gefunden">Website nicht bei Google zu finden</Link>.</p>
                         </div>
                         <div className="subpage-feature">
                             <h3>On-Page-Optimierung</h3>
@@ -134,7 +134,7 @@ export default function SeoPage() {
                     <h2 className="animate-up">Was im SEO-Paket enthalten ist</h2>
                     <div className="subpage-single-price animate-up">
                         <div className="sp-price-value">ab 1.000 &euro;/Monat</div>
-                        <p>Mindestlaufzeit 3 Monate, danach monatlich kündbar. Keine versteckten Kosten.</p>
+                        <p>Mindestlaufzeit 3 Monate, danach monatlich kündbar. Keine versteckten Kosten. Wie sich dieser Betrag in Arbeitsstunden aufteilt und was der Markt sonst verlangt, steht im Artikel <Link href="/wissen/seo-kosten-hamburg">Was kostet SEO in Hamburg</Link>.</p>
                         <ul className="sp-price-includes">
                             <li>Initiales SEO-Audit und Strategie</li>
                             <li>Google Business Profile Optimierung</li>

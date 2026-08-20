@@ -1,4 +1,5 @@
 import ArticleLayout from '../../../src/components/ArticleLayout';
+import Link from 'next/link';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
@@ -77,6 +78,8 @@ export default function LokalesSeoHamburgArticlePage() {
                 <h2>Google Business Profile: die Basis, die viele falsch machen</h2>
                 <p>
                     Das <a href="https://support.google.com/business/answer/7091" target="_blank" rel="noopener noreferrer">Google Business Profile</a> (GBP) ist der wichtigste einzelne Faktor für lokale Sichtbarkeit. Trotzdem sind erstaunlich viele Profile Hamburger Unternehmen unvollständig oder veraltet.
+                    Eine ausführliche Anleitung mit den offiziellen Ranking-Faktoren, den Regeln zu Name und Adresse
+                    und einer Pflegeroutine finden Sie im <Link href="/wissen/google-business-profile-optimieren">Leitfaden zum Google-Unternehmensprofil</Link>.
                 </p>
                 <p>
                     Was ein vollständiges Profil mindestens braucht:

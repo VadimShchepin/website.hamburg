@@ -18,6 +18,41 @@ export const metadata = {
 
 const articles = [
     {
+        slug: 'website-nicht-bei-google-gefunden',
+        category: 'SEO',
+        title: 'Website nicht bei Google zu finden? Die 12 häufigsten Ursachen',
+        excerpt: 'Im Mai 2026 waren von 34 Seiten dieser Website nur etwa 10 im Google-Index. Was die Ursache war, wie Sie es bei sich prüfen und was Google offiziell zu nicht indexierten Seiten sagt.',
+        readTime: '12 Min.',
+    },
+    {
+        slug: 'google-business-profile-optimieren',
+        category: 'SEO',
+        title: 'Google-Unternehmensprofil optimieren: der Hamburg-Leitfaden',
+        excerpt: 'Die drei Ranking-Faktoren, die Google selbst nennt, die Namensregel, an der Profile gesperrt werden, und eine Pflegeroutine, die 20 Minuten pro Woche dauert.',
+        readTime: '12 Min.',
+    },
+    {
+        slug: 'seo-kosten-hamburg',
+        category: 'SEO',
+        title: 'Was kostet SEO in Hamburg? Preise, Modelle und was Sie dafür bekommen',
+        excerpt: 'Was in einem Monatsbudget von 1.000 Euro an Arbeitsstunden steckt, wie lange es laut Google dauert, und warum SEO manchmal die falsche Investition ist.',
+        readTime: '11 Min.',
+    },
+    {
+        slug: 'webdesign-agentur-oder-freelancer',
+        category: 'WEBDESIGN',
+        title: 'Agentur, Freelancer oder Baukasten: Wer soll Ihre Website bauen?',
+        excerpt: 'Stundensätze, Projektpreise, Ausfallrisiko und Vertragsfallen im Vergleich. Geschrieben von einem Solo-Entwickler, mitsamt der Frage, wann das die falsche Wahl ist.',
+        readTime: '11 Min.',
+    },
+    {
+        slug: 'website-baukasten-oder-eigene-website',
+        category: 'WEBDESIGN',
+        title: 'Wix, Jimdo oder eigene Website: Was der Baukasten wirklich kostet',
+        excerpt: 'Monatspreise 2026, die Fünf-Jahres-Rechnung und was beim Umzug verloren geht. Inklusive der Fälle, in denen der Baukasten die vernünftigere Wahl ist.',
+        readTime: '10 Min.',
+    },
+    {
         slug: 'case-study-fotogalerie-performance',
         category: 'PERFORMANCE',
         title: 'Case Study: 1.200 Fotos pro Album, wie 2.408 versteckte Requests eine Galerie ausbremsten',

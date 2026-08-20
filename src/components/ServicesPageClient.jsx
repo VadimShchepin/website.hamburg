@@ -187,8 +187,13 @@ export default function ServicesPageClient() {
                     <div className="sp-branch-links animate-up" style={{ marginTop: '2rem' }}>
                         <h3>Webdesign für Ihre Branche</h3>
                         <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '0.75rem' }}>
-                            <Link href="/leistungen/webdesign-handwerker" className="button button-secondary">Webdesign für Handwerker</Link>
-                            <Link href="/leistungen/webdesign-aerzte" className="button button-secondary">Webdesign für Arztpraxen</Link>
+                            <Link href="/leistungen/webdesign-handwerker" className="button button-secondary">Handwerker</Link>
+                            <Link href="/leistungen/webdesign-aerzte" className="button button-secondary">Arztpraxen</Link>
+                            <Link href="/leistungen/webdesign-anwaelte" className="button button-secondary">Anwälte</Link>
+                            <Link href="/leistungen/webdesign-steuerberater" className="button button-secondary">Steuerberater</Link>
+                            <Link href="/leistungen/webdesign-gastronomie" className="button button-secondary">Gastronomie</Link>
+                            <Link href="/leistungen/webdesign-hotels" className="button button-secondary">Hotels</Link>
+                            <Link href="/leistungen/webdesign-immobilienmakler" className="button button-secondary">Immobilienmakler</Link>
                             <Link href="/leistungen/website-erstellen-lassen" className="button button-secondary">Website erstellen lassen</Link>
                         </div>
                     </div>

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc" stroke-linejoin="round" stroke-linecap="round">
+  <title id="title">Website-Baukasten oder individuelle Entwicklung</title>
+  <desc id="desc">Links steht ein Turm aus gleichen Vorlagen-Bausteinen mit rotem Vorhängeschloss für die Abhängigkeit vom Baukasten. Rechts entsteht aus einem präzisen Bauplan mit Zirkel und Lineal eine schlanke Website aus eigenem Code.</desc>
+
+  <rect x="60" y="60" width="680" height="780" rx="32" fill="#F5F7FA" stroke="#0A192F" stroke-width="6"/>
+  <rect x="860" y="60" width="680" height="780" rx="32" fill="#FFFFFF" stroke="#0A192F" stroke-width="6"/>
+  <path d="M800 122v656" fill="none" stroke="#172A45" stroke-width="5" stroke-dasharray="10 18"/>
+
+  <rect x="110" y="105" width="220" height="66" rx="33" fill="#FFFFFF" stroke="#0A192F" stroke-width="4"/>
+  <text x="136" y="148" fill="#0A192F" font-family="Inter, Helvetica, Arial, sans-serif" font-size="30" font-weight="700">Baukasten</text>
+
+  <path d="M126 726h548M150 750h500" fill="none" stroke="#172A45" stroke-width="5"/>
+  <g stroke="#0A192F" stroke-width="5">
+    <rect x="145" y="240" width="160" height="105" rx="10" fill="#FFFFFF"/>
+    <rect x="320" y="240" width="160" height="105" rx="10" fill="#E9EEF3"/>
+    <rect x="495" y="240" width="160" height="105" rx="10" fill="#FFFFFF"/>
+    <rect x="145" y="360" width="160" height="105" rx="10" fill="#E9EEF3"/>
+    <rect x="320" y="360" width="160" height="105" rx="10" fill="#FFFFFF"/>
+    <rect x="495" y="360" width="160" height="105" rx="10" fill="#E9EEF3"/>
+    <rect x="145" y="480" width="160" height="105" rx="10" fill="#FFFFFF"/>
+    <rect x="320" y="480" width="160" height="105" rx="10" fill="#E9EEF3"/>
+    <rect x="495" y="480" width="160" height="105" rx="10" fill="#FFFFFF"/>
+    <rect x="145" y="600" width="160" height="105" rx="10" fill="#E9EEF3"/>
+    <rect x="320" y="600" width="160" height="105" rx="10" fill="#FFFFFF"/>
+    <rect x="495" y="600" width="160" height="105" rx="10" fill="#E9EEF3"/>
+  </g>
+  <text x="344" y="306" fill="#666666" font-family="Inter, Helvetica, Arial, sans-serif" font-size="24" font-weight="600">Vorlage</text>
+  <path d="M348 444v-46a52 52 0 0 1 104 0v46" fill="none" stroke="#0A192F" stroke-width="7"/>
+  <rect x="305" y="434" width="190" height="174" rx="22" fill="#E53935" stroke="#0A192F" stroke-width="7"/>
+  <circle cx="400" cy="505" r="18" fill="#FFFFFF" stroke="#0A192F" stroke-width="5"/>
+  <path d="M400 523v35" fill="none" stroke="#FFFFFF" stroke-width="7"/>
+
+  <rect x="910" y="105" width="190" height="66" rx="33" fill="#F5F7FA" stroke="#0A192F" stroke-width="4"/>
+  <text x="940" y="148" fill="#0A192F" font-family="Inter, Helvetica, Arial, sans-serif" font-size="30" font-weight="700">Bauplan</text>
+
+  <path d="M925 246 1465 270 1410 760 900 724Z" fill="#F5F7FA" stroke="#0A192F" stroke-width="6"/>
+  <path d="m922 320 531 23M915 394l530 22M910 468l527 22M905 542l524 22M901 616l520 22M1040 251l-26 480M1160 256l-18 483M1280 262l-10 486M1400 267l-2 477" fill="none" stroke="#E9EEF3" stroke-width="4"/>
+  <path d="M949 285h94v66h-94zM1340 683h50v42h-50z" fill="none" stroke="#172A45" stroke-width="4" stroke-dasharray="9 12"/>
+  <circle cx="965" cy="488" r="16" fill="#E53935" stroke="#0A192F" stroke-width="5"/>
+  <path d="M953 500 900 666M977 500l70 166M884 666h32M1031 666h32M926 580a129 129 0 0 0 85 4" fill="none" stroke="#0A192F" stroke-width="6"/>
+  <path d="m955 472 9-38 13 38" fill="#FFFFFF" stroke="#0A192F" stroke-width="5"/>
+
+  <path d="m1080 530-79 92M1440 530l-17 99M1001 622l422 7" fill="none" stroke="#E53935" stroke-width="4" stroke-dasharray="8 13"/>
+  <rect x="1080" y="220" width="360" height="310" rx="18" fill="#FFFFFF" stroke="#0A192F" stroke-width="7"/>
+  <path d="M1080 280h360" fill="none" stroke="#0A192F" stroke-width="6"/>
+  <circle cx="1114" cy="250" r="7" fill="#E53935"/>
+  <circle cx="1140" cy="250" r="7" fill="#172A45"/>
+  <circle cx="1166" cy="250" r="7" fill="#172A45"/>
+  <path d="M1118 326h130M1118 352h104M1118 390h142M1118 414h116" fill="none" stroke="#172A45" stroke-width="6"/>
+  <rect x="1118" y="454" width="118" height="40" rx="20" fill="#E53935"/>
+  <path d="M1145 474h64" fill="none" stroke="#FFFFFF" stroke-width="5"/>
+  <rect x="1280" y="320" width="116" height="174" rx="12" fill="#E9EEF3" stroke="#172A45" stroke-width="5"/>
+  <path d="m1302 448 30-36 24 22 20-28" fill="none" stroke="#E53935" stroke-width="6"/>
+  <circle cx="1357" cy="358" r="14" fill="#FFFFFF" stroke="#172A45" stroke-width="5"/>
+
+  <rect x="1080" y="565" width="235" height="58" rx="29" fill="#FFFFFF" stroke="#E53935" stroke-width="4"/>
+  <text x="1118" y="602" fill="#0A192F" font-family="Inter, Helvetica, Arial, sans-serif" font-size="24" font-weight="700">Eigener Code</text>
+
+  <rect x="1090" y="664" width="282" height="62" rx="8" fill="#E9EEF3" stroke="#0A192F" stroke-width="5"/>
+  <path d="M1112 665v21M1140 665v13M1168 665v21M1196 665v13M1224 665v21M1252 665v13M1280 665v21M1308 665v13M1336 665v21" fill="none" stroke="#172A45" stroke-width="4"/>
+  <path d="M1120 706h222" fill="none" stroke="#172A45" stroke-width="5"/>
+</svg>

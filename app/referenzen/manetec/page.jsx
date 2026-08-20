@@ -97,7 +97,7 @@ export default function ManetecCaseStudy() {
                         Manetec ist spezialisiert auf Schädlingsbekämpfung für Hotels und Gastronomiebetriebe in Hamburg. Das ist keine Branche, in der man mit bunten Farben und lustigen Icons arbeitet. Hier geht es um HACCP-Normen, Gesundheitsamts-Inspektionen und die Tatsache, dass eine einzige Kakerlake in einer Hotelkuche den Ruf eines 4-Sterne-Hauses ruinieren kann.
                     </p>
                     <p className="animate-up">
-                        Die bisherige Online-Präsenz? Nennen wir es diplomatisch: ausbaufähig. Ein Hotelmanager, der einen professionellen Schädlingsbekämpfer sucht, erwartet Seriosität. Nicht eine Website, die wie ein Schulprojekt aussieht.
+                        Die bisherige Online-Präsenz? Nennen wir es diplomatisch: ausbaufähig. Ein Hotelmanager, der einen professionellen Schädlingsbekämpfer sucht, erwartet Seriosität. Nicht eine Website, die wie ein Schulprojekt aussieht. Wie ich Websites für die andere Seite dieses Marktes baue, steht auf den Seiten <Link href="/leistungen/webdesign-hotels">Webdesign für Hotels</Link> und <Link href="/leistungen/webdesign-gastronomie">Webdesign für Gastronomie</Link>.
                     </p>
 
                     <h2 className="animate-up">Die Lösung</h2>

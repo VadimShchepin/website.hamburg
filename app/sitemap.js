@@ -75,6 +75,36 @@ export default function sitemap() {
             changeFrequency: 'monthly',
             priority: 0.8,
         },
+        {
+            url: `${SITE_URL}/leistungen/webdesign-anwaelte`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.8,
+        },
+        {
+            url: `${SITE_URL}/leistungen/webdesign-steuerberater`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.8,
+        },
+        {
+            url: `${SITE_URL}/leistungen/webdesign-gastronomie`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.8,
+        },
+        {
+            url: `${SITE_URL}/leistungen/webdesign-hotels`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.8,
+        },
+        {
+            url: `${SITE_URL}/leistungen/webdesign-immobilienmakler`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.8,
+        },
         // Referenzen
         {
             url: `${SITE_URL}/referenzen`,
@@ -199,6 +229,36 @@ export default function sitemap() {
         },
         {
             url: `${SITE_URL}/wissen/webdesign-kosten`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.7,
+        },
+        {
+            url: `${SITE_URL}/wissen/website-nicht-bei-google-gefunden`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.7,
+        },
+        {
+            url: `${SITE_URL}/wissen/google-business-profile-optimieren`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.7,
+        },
+        {
+            url: `${SITE_URL}/wissen/seo-kosten-hamburg`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.7,
+        },
+        {
+            url: `${SITE_URL}/wissen/webdesign-agentur-oder-freelancer`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.7,
+        },
+        {
+            url: `${SITE_URL}/wissen/website-baukasten-oder-eigene-website`,
             lastModified: new Date(),
             changeFrequency: 'monthly',
             priority: 0.7,

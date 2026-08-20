@@ -7,13 +7,13 @@ import ServiceMeta from '../../../src/components/ServiceMeta';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'Direkt buchen statt Provision | Hotel-Website',
+    title: 'Direktbuchungen statt Provision | Hotel-Website',
     description: 'Hotel-Websites in Hamburg mit Direktbuchung: schnelle Buchungsstrecke, Google-Buchungslinks, weniger Portalprovision. Ab 2.900 Euro.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/webdesign-hotels',
     },
     openGraph: {
-        title: 'Direkt buchen statt Provision | Hotel-Website',
+        title: 'Direktbuchungen statt Provision | Hotel-Website',
         description: 'Hotel-Websites in Hamburg mit Direktbuchung: schnelle Buchungsstrecke, Google-Buchungslinks, weniger Portalprovision.',
         url: 'https://webseite.hamburg/leistungen/webdesign-hotels',
         type: 'website',
@@ -66,12 +66,19 @@ export default function WebdesignHotelsPage() {
                         { label: 'Leistungen', href: '/leistungen' },
                         { label: 'Webdesign für Hotels' },
                     ]} />
-                    <p className="section-kicker animate-up">Webdesign für Hotels</p>
-                    <h1 className="subpage-title animate-up">Hotel-Websites in Hamburg, auf denen Gäste direkt buchen.</h1>
-                    <p className="subpage-intro animate-up">
-                        Jede Buchung über ein Portal kostet Provision. Jede Buchung über Ihre eigene Seite kostet einen Bruchteil davon. Der Unterschied entscheidet sich an einer einzigen Stelle: Wie schnell kommt ein Gast von Ihrer Startseite zu einem Preis für sein Datum.
-                    </p>
-                    <ServiceMeta />
+                    <div className="subpage-hero-split">
+                        <div>
+                        <p className="section-kicker animate-up">Webdesign für Hotels</p>
+                        <h1 className="subpage-title animate-up">Hotel-Websites in Hamburg, auf denen Gäste direkt buchen.</h1>
+                        <p className="subpage-intro animate-up">
+                            Jede Buchung über ein Portal kostet Provision. Jede Buchung über Ihre eigene Seite kostet einen Bruchteil davon. Der Unterschied entscheidet sich an einer einzigen Stelle: Wie schnell kommt ein Gast von Ihrer Startseite zu einem Preis für sein Datum.
+                        </p>
+                        <ServiceMeta />
+                        </div>
+                        <div className="subpage-hero-media animate-up">
+                            <img src="/leistungen/branchen/hero-hotels.svg" alt="Illustration: Hotelgebäude mit Vordach und großem rotem Buchungs-Button als Zeichen für die Direktbuchung" width="1200" height="900" />
+                        </div>
+                    </div>
                 </div>
             </section>
 

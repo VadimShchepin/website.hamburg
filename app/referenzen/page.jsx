@@ -126,11 +126,18 @@ export default function ReferenzenPage() {
             <section className="subpage-hero section">
                 <div className="container">
                     <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Referenzen' }]} />
-                    <p className="section-kicker animate-up">Referenzen</p>
-                    <h1 className="subpage-title animate-up">Echte Projekte. Echte Ergebnisse.</h1>
-                    <p className="subpage-intro animate-up">
-                        Keine Stockfotos, keine erfundenen Zahlen. Hier sehen Sie, was ich für Unternehmen in Hamburg konkret erreicht habe, mit messbaren Ergebnissen und echten Daten.
-                    </p>
+                    <div className="subpage-hero-split">
+                        <div>
+                            <p className="section-kicker animate-up">Referenzen</p>
+                            <h1 className="subpage-title animate-up">Echte Projekte. Echte Ergebnisse.</h1>
+                            <p className="subpage-intro animate-up">
+                                Keine Stockfotos, keine erfundenen Zahlen. Hier sehen Sie, was ich für Unternehmen in Hamburg konkret erreicht habe, mit messbaren Ergebnissen und echten Daten.
+                            </p>
+                        </div>
+                        <div className="subpage-hero-media animate-up">
+                            <img src="/hero-referenzen.svg" alt="Illustration: drei gestaffelte Browserfenster mit roter Steigungskurve und ein Pokal als Zeichen für Projektergebnisse" width="1200" height="900" />
+                        </div>
+                    </div>
                 </div>
             </section>
 

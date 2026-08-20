@@ -7,13 +7,13 @@ import ServiceMeta from '../../../src/components/ServiceMeta';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'Mandanten und Bewerber | Steuerberater-Website',
+    title: 'Mandanten & Bewerber | Steuerberater-Website Hamburg',
     description: 'Websites für Steuerberater in Hamburg: Mandantengewinnung, Karriereseite gegen den Fachkräftemangel, § 57a StBerG beachtet. Ab 2.900 Euro.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/webdesign-steuerberater',
     },
     openGraph: {
-        title: 'Mandanten und Bewerber | Steuerberater-Website',
+        title: 'Mandanten & Bewerber | Steuerberater-Website Hamburg',
         description: 'Websites für Steuerberater in Hamburg: Mandantengewinnung, Karriereseite gegen den Fachkräftemangel, berufsrechtlich sauber.',
         url: 'https://webseite.hamburg/leistungen/webdesign-steuerberater',
         type: 'website',
@@ -66,12 +66,19 @@ export default function WebdesignSteuerberaterPage() {
                         { label: 'Leistungen', href: '/leistungen' },
                         { label: 'Webdesign für Steuerberater' },
                     ]} />
-                    <p className="section-kicker animate-up">Webdesign für Steuerberater</p>
-                    <h1 className="subpage-title animate-up">Kanzlei-Websites für Steuerberater in Hamburg: für Mandanten und für Bewerber.</h1>
-                    <p className="subpage-intro animate-up">
-                        Viele Steuerkanzleien haben kein Mandantenproblem, sondern ein Personalproblem. Beides landet auf derselben Website. Deshalb baue ich Kanzleiseiten so, dass sie zwei Zielgruppen bedienen: Unternehmer, die einen neuen Berater suchen, und Fachkräfte, die einen neuen Arbeitgeber prüfen.
-                    </p>
-                    <ServiceMeta />
+                    <div className="subpage-hero-split">
+                        <div>
+                        <p className="section-kicker animate-up">Webdesign für Steuerberater</p>
+                        <h1 className="subpage-title animate-up">Kanzlei-Websites für Steuerberater in Hamburg: für Mandanten und für Bewerber.</h1>
+                        <p className="subpage-intro animate-up">
+                            Viele Steuerkanzleien haben kein Mandantenproblem, sondern ein Personalproblem. Beides landet auf derselben Website. Deshalb baue ich Kanzleiseiten so, dass sie zwei Zielgruppen bedienen: Unternehmer, die einen neuen Berater suchen, und Fachkräfte, die einen neuen Arbeitgeber prüfen.
+                        </p>
+                        <ServiceMeta />
+                        </div>
+                        <div className="subpage-hero-media animate-up">
+                            <img src="/leistungen/branchen/hero-steuerberater.svg" alt="Illustration: Aktenordner, aus dem ein Belegstapel in digitale Karten übergeht, daneben ein rotes Prozentzeichen" width="1200" height="900" />
+                        </div>
+                    </div>
                 </div>
             </section>
 

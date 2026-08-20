@@ -7,13 +7,13 @@ import ServiceMeta from '../../../src/components/ServiceMeta';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'Mandate statt Klicks | Kanzlei-Website Hamburg',
+    title: 'Mehr Mandate | Kanzlei-Website Hamburg ab 2.900 €',
     description: 'Kanzlei-Websites für Anwälte in Hamburg: berufsrechtlich sauber, lokal sichtbar, mit klarem Weg zum Erstgespräch. Ab 2.900 Euro, Festpreis.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/webdesign-anwaelte',
     },
     openGraph: {
-        title: 'Mandate statt Klicks | Kanzlei-Website Hamburg',
+        title: 'Mehr Mandate | Kanzlei-Website Hamburg ab 2.900 €',
         description: 'Kanzlei-Websites für Anwälte in Hamburg: berufsrechtlich sauber, lokal sichtbar, mit klarem Weg zum Erstgespräch.',
         url: 'https://webseite.hamburg/leistungen/webdesign-anwaelte',
         type: 'website',
@@ -66,12 +66,19 @@ export default function WebdesignAnwaeltePage() {
                         { label: 'Leistungen', href: '/leistungen' },
                         { label: 'Webdesign für Anwälte' },
                     ]} />
-                    <p className="section-kicker animate-up">Webdesign für Anwälte</p>
-                    <h1 className="subpage-title animate-up">Kanzlei-Websites für Anwälte in Hamburg, die Mandate bringen.</h1>
-                    <p className="subpage-intro animate-up">
-                        Im Kammerbezirk Hamburg sind über 11.000 Anwältinnen und Anwälte zugelassen. Fast alle haben eine Website. Nur wenige haben eine, die einem Ratsuchenden in dreißig Sekunden beantwortet: Sind Sie zuständig, was kostet das Erstgespräch, und wie erreiche ich Sie jetzt.
-                    </p>
-                    <ServiceMeta />
+                    <div className="subpage-hero-split">
+                        <div>
+                        <p className="section-kicker animate-up">Webdesign für Anwälte</p>
+                        <h1 className="subpage-title animate-up">Kanzlei-Websites für Anwälte in Hamburg, die Mandate bringen.</h1>
+                        <p className="subpage-intro animate-up">
+                            Im Kammerbezirk Hamburg sind über 11.000 Anwältinnen und Anwälte zugelassen. Fast alle haben eine Website. Nur wenige haben eine, die einem Ratsuchenden in dreißig Sekunden beantwortet: Sind Sie zuständig, was kostet das Erstgespräch, und wie erreiche ich Sie jetzt.
+                        </p>
+                        <ServiceMeta />
+                        </div>
+                        <div className="subpage-hero-media animate-up">
+                            <img src="/leistungen/branchen/hero-anwaelte.svg" alt="Illustration: Justitia-Waage, deren eine Waagschale eine rote Sprechblase als Mandatsanfrage trägt, davor die Fassade einer Kanzlei" width="1200" height="900" />
+                        </div>
+                    </div>
                 </div>
             </section>
 

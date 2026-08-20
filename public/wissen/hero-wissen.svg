@@ -1,0 +1,36 @@
+<svg viewBox="0 0 1200 900" role="img" aria-labelledby="title desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="title">Praxiswissen für Webdesign und SEO</title>
+  <desc id="desc">Ein aufgeschlagenes Buch trägt ein Browserfenster. Daneben steigt eine rote Lupe als Symbol für Suchmaschinenoptimierung auf.</desc>
+
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <!-- Ruhige Akzente im Umfeld -->
+    <path d="M196 282h62M227 251v62" fill="none" stroke="#172A45" stroke-width="8"/>
+    <path d="M963 245l38-38M963 207l38 38" fill="none" stroke="#172A45" stroke-width="8"/>
+    <path d="M174 637h72" fill="none" stroke="#172A45" stroke-width="8"/>
+
+    <!-- Browserfenster, das aus dem Buch aufsteigt -->
+    <rect x="334" y="139" width="532" height="430" rx="28" fill="#FFFFFF" stroke="#0A192F" stroke-width="10"/>
+    <path d="M334 219h532" fill="none" stroke="#0A192F" stroke-width="10"/>
+    <circle cx="386" cy="179" r="11" fill="#172A45"/>
+    <circle cx="424" cy="179" r="11" fill="#172A45"/>
+    <circle cx="462" cy="179" r="11" fill="#172A45"/>
+    <rect x="386" y="267" width="300" height="78" rx="18" fill="#E9EEF3" stroke="#172A45" stroke-width="8"/>
+    <path d="M416 306h226" fill="none" stroke="#172A45" stroke-width="8"/>
+    <rect x="386" y="387" width="208" height="122" rx="18" fill="#F5F7FA" stroke="#172A45" stroke-width="8"/>
+    <path d="M630 406h168M630 446h132M630 486h150" fill="none" stroke="#172A45" stroke-width="8"/>
+
+    <!-- Aufgeschlagenes Buch als zentrales Fundament -->
+    <path d="M599 518C530 459 415 437 279 466v276c136-29 251-7 320 52V518Z" fill="#FFFFFF" stroke="#0A192F" stroke-width="10"/>
+    <path d="M601 518c69-59 184-81 320-52v276c-136-29-251-7-320 52V518Z" fill="#FFFFFF" stroke="#0A192F" stroke-width="10"/>
+    <path d="M279 742c136-29 251-7 320 52M921 742c-136-29-251-7-320 52" fill="none" stroke="#0A192F" stroke-width="10"/>
+    <path d="M337 535c80-10 148 4 203 38M337 595c80-10 148 4 203 38M863 535c-80-10-148 4-203 38M863 595c-80-10-148 4-203 38" fill="none" stroke="#E9EEF3" stroke-width="10"/>
+
+    <!-- Einziger roter Blickfang: Lupe -->
+    <circle cx="860" cy="366" r="83" fill="#FFFFFF" stroke="#E53935" stroke-width="10"/>
+    <path d="M920 426l91 91" fill="none" stroke="#E53935" stroke-width="22"/>
+
+    <!-- Label -->
+    <rect x="433" y="717" width="336" height="86" rx="24" fill="#0A192F"/>
+    <text x="601" y="774" fill="#FFFFFF" font-family="Inter, Helvetica, Arial, sans-serif" font-size="38" font-weight="600" text-anchor="middle">Praxiswissen</text>
+  </g>
+</svg>

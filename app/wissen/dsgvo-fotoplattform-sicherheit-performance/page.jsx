@@ -81,6 +81,9 @@ export default function DsgvoFotoplattformArticlePage() {
                 title="DSGVO-Fotoplattform für Schulen: Was Sicherheit wirklich kostet, und welche Entscheidungen wir korrigieren mussten"
                 readTime="8 Min."
                 publishDate="2026-06-12"
+                heroImage="/wissen/hero-dsgvo-fotoplattform.webp"
+                heroAlt="DSGVO-konforme Fotoplattform für Schulen als Sinnbild für Sicherheitsarchitektur"
+                heroFramed
             >
                 <div className="subpage-takeaway">
                     <p>
@@ -92,10 +95,6 @@ export default function DsgvoFotoplattformArticlePage() {
                         beides, mit echten Produktionszahlen.
                     </p>
                 </div>
-
-                <figure className="article-figure">
-                    <img src="/wissen/hero-dsgvo-fotoplattform.webp" alt="Illustration: Schulfoto-Karten hinter einem Sicherheitsschild mit QR-Code und PIN-Tastatur" width="1600" height="900" />
-                </figure>
 
                 <h2>Die Architektur: bewusst klein, bewusst geschlossen</h2>
                 <p>

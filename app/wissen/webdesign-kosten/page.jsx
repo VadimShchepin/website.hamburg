@@ -50,6 +50,8 @@ export default function WebdesignKostenArticlePage() {
                 title="Webdesign Kosten 2026: Was eine professionelle Website wirklich kostet"
                 readTime="10 Min."
                 publishDate="2026-03-20"
+                heroImage="/wissen/hero-webdesign-kosten.svg"
+                heroAlt="Illustration: Preisschild mit rotem Eurozeichen vor einem Browserfenster"
             >
                 <p>
                     Eine professionelle Website kostet zwischen 2.000 und 15.000 Euro f&uuml;r die meisten

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Lokale Suchmaschinenoptimierung auf Platz eins</title>
+  <desc id="desc">Eine große Lupe zeigt eine lokale Suchergebnisliste. Das oberste Ergebnis mit dem Label Platz 1 ist rot hervorgehoben, darunter liegt ein angedeuteter Kartenausschnitt.</desc>
+  <defs>
+    <clipPath id="glass">
+      <circle cx="510" cy="340" r="270"/>
+    </clipPath>
+  </defs>
+
+  <!-- Griff der Lupe -->
+  <path d="M674 508c16-16 36-16 52 0l278 278c17 17 17 39 0 56s-39 17-56 0L670 564c-16-16-16-36 4-56Z" fill="#0A192F"/>
+  <path d="m694 532 290 290-8 8-290-290Z" fill="#172A45"/>
+
+  <!-- Lupenglas -->
+  <circle cx="510" cy="340" r="270" fill="#FFFFFF"/>
+  <g clip-path="url(#glass)" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Suchergebnisliste -->
+    <rect x="296" y="158" width="428" height="116" rx="24" fill="#E53935"/>
+    <text x="328" y="229" fill="#FFFFFF" font-family="Inter, Helvetica, Arial, sans-serif" font-size="42" font-weight="600">Platz 1</text>
+    <path d="M545 203h139M545 231h98" fill="none" stroke="#FFFFFF" stroke-width="8"/>
+
+    <rect x="270" y="304" width="480" height="82" rx="20" fill="#E9EEF3"/>
+    <circle cx="310" cy="345" r="14" fill="#172A45"/>
+    <path d="M348 334h252M348 357h176" fill="none" stroke="#0A192F" stroke-width="8"/>
+
+    <rect x="281" y="410" width="458" height="76" rx="20" fill="#F5F7FA" stroke="#E9EEF3" stroke-width="8"/>
+    <circle cx="321" cy="448" r="14" fill="#172A45"/>
+    <path d="M359 438h224M359 460h148" fill="none" stroke="#0A192F" stroke-width="8"/>
+
+    <!-- Angedeuteter lokaler Kartenausschnitt -->
+    <path d="M224 510h572v150H224Z" fill="#E9EEF3"/>
+    <path d="M236 616c89-72 161-31 233-73s138-25 207-2 96-13 127-45M344 504c7 46 35 75 74 99 25 15 42 35 50 59M597 500c-26 39-37 76-34 139" fill="none" stroke="#FFFFFF" stroke-width="10"/>
+    <path d="M510 526c-22 0-40 18-40 40 0 32 40 72 40 72s40-40 40-72c0-22-18-40-40-40Z" fill="#172A45" stroke="#FFFFFF" stroke-width="8"/>
+    <circle cx="510" cy="566" r="12" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Klare Außenkontur -->
+  <circle cx="510" cy="340" r="270" fill="none" stroke="#0A192F" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Ruhige unterstützende Ortsmarken -->
+  <path d="M978 171c-24 0-44 20-44 44 0 35 44 80 44 80s44-45 44-80c0-24-20-44-44-44Z" fill="#FFFFFF" stroke="#0A192F" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="978" cy="215" r="13" fill="#172A45"/>
+  <path d="M1070 365h68M1104 331v68" fill="none" stroke="#172A45" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

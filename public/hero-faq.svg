@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc" stroke-linejoin="round" stroke-linecap="round">
+  <title id="title">Häufige Fragen und Antworten</title>
+  <desc id="desc">Zwei große Sprechblasen: vorne ein rotes Fragezeichen, dahinter drei Antwortzeilen und daneben das Label Antworten.</desc>
+
+  <!-- Hintere Sprechblase mit drei Antwortzeilen -->
+  <path d="M500 122H978C1020 122 1054 156 1054 198V454C1054 496 1020 530 978 530H916L964 608L842 530H500C458 530 424 496 424 454V198C424 156 458 122 500 122Z" fill="#E9EEF3" stroke="#172A45" stroke-width="8"/>
+  <path d="M618 220H924M618 280H884M782 340H924" fill="none" stroke="#666666" stroke-width="10"/>
+
+  <!-- Vordere Sprechblase als klarer Fokus -->
+  <path d="M214 310H674C718 310 754 346 754 390V616C754 660 718 696 674 696H386L264 784L304 696H214C170 696 134 660 134 616V390C134 346 170 310 214 310Z" fill="#FFFFFF" stroke="#0A192F" stroke-width="10"/>
+  <text x="444" y="594" fill="#E53935" font-family="Inter, Helvetica, Arial, sans-serif" font-size="270" font-weight="600" text-anchor="middle">?</text>
+
+  <!-- Label -->
+  <rect x="798" y="646" width="280" height="88" rx="44" fill="#0A192F"/>
+  <text x="938" y="704" fill="#FFFFFF" font-family="Inter, Helvetica, Arial, sans-serif" font-size="44" font-weight="600" text-anchor="middle">Antworten</text>
+
+  <!-- Zwei ruhige Akzente -->
+  <path d="M126 208H82M104 186V230" fill="none" stroke="#172A45" stroke-width="8"/>
+  <path d="M1092 584H1140M1116 560V608" fill="none" stroke="#172A45" stroke-width="8"/>
+</svg>

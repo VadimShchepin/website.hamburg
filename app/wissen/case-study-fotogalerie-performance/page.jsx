@@ -81,6 +81,9 @@ export default function FotogaleriePerformanceArticlePage() {
                 title="Case Study: 1.200 Fotos pro Album, wie 2.408 versteckte Requests eine Galerie ausbremsten"
                 readTime="9 Min."
                 publishDate="2026-06-12"
+                heroImage="/wissen/hero-galerie-performance.webp"
+                heroAlt="Fotogalerie-Plattform mit vielen Bildvorschauen als Sinnbild für die Performance-Case-Study"
+                heroFramed
             >
                 <div className="subpage-takeaway">
                     <p>
@@ -91,10 +94,6 @@ export default function FotogaleriePerformanceArticlePage() {
                         in diesem Artikel sind echte Produktionsmessungen vom 10. bis 12. Juni 2026.
                     </p>
                 </div>
-
-                <figure className="article-figure">
-                    <img src="/wissen/hero-galerie-performance.webp" alt="Illustration: Raster aus hunderten Foto-Thumbnails, die mit hoher Geschwindigkeit laden" width="1600" height="900" />
-                </figure>
 
                 <h2>Das Setup: eine DSGVO-Fotoplattform auf 2 CPU-Kernen</h2>
                 <p>

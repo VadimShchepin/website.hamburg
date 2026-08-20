@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc" stroke-linecap="round" stroke-linejoin="round">
+  <title id="title">Hotel mit direkter Onlinebuchung</title>
+  <desc id="desc">Ein großes, klares Hotelgebäude mit Vordach. Darüber steht ein Schlüssel, davor liegt ein roter Button mit der Aufschrift Direkt buchen.</desc>
+
+  <!-- Schlüssel als prägnantes Symbol über dem Hotel -->
+  <g stroke="#0A192F" stroke-width="9">
+    <circle cx="500" cy="130" r="48" fill="#FFFFFF"/>
+    <circle cx="500" cy="130" r="15" fill="#E9EEF3"/>
+    <path d="M548 130h154l35 35-28 28-26-26-25 25-27-27h-83Z" fill="#E9EEF3"/>
+  </g>
+
+  <!-- Zentrales Hotelgebäude -->
+  <path d="M190 300 600 210l410 90Z" fill="#E9EEF3" stroke="#0A192F" stroke-width="9"/>
+  <rect x="235" y="300" width="730" height="490" rx="12" fill="#FFFFFF" stroke="#0A192F" stroke-width="9"/>
+  <path d="M215 300h770v62H215Z" fill="#172A45" stroke="#0A192F" stroke-width="9"/>
+
+  <!-- Große, auch in kleiner Darstellung erkennbare Fenster -->
+  <g fill="#F5F7FA" stroke="#172A45" stroke-width="8">
+    <rect x="290" y="400" width="105" height="100" rx="8"/>
+    <rect x="450" y="400" width="105" height="100" rx="8"/>
+    <rect x="645" y="400" width="105" height="100" rx="8"/>
+    <rect x="805" y="400" width="105" height="100" rx="8"/>
+    <rect x="290" y="555" width="120" height="115" rx="8"/>
+    <rect x="790" y="555" width="120" height="115" rx="8"/>
+  </g>
+
+  <!-- Eingang und markantes Vordach -->
+  <rect x="500" y="590" width="200" height="200" rx="8" fill="#E9EEF3" stroke="#0A192F" stroke-width="9"/>
+  <path d="M600 590v200" fill="none" stroke="#172A45" stroke-width="8"/>
+  <path d="M445 590 485 540h230l40 50Z" fill="#172A45" stroke="#0A192F" stroke-width="9"/>
+  <path d="M475 590v95M725 590v95" fill="none" stroke="#0A192F" stroke-width="8"/>
+
+  <!-- Zwei ruhige, unterstützende Hoteleingangs-Elemente -->
+  <g stroke="#0A192F" stroke-width="8">
+    <circle cx="150" cy="640" r="52" fill="#E9EEF3"/>
+    <path d="M150 692v54" fill="none"/>
+    <path d="M112 735h76l-13 55h-50Z" fill="#FFFFFF"/>
+    <circle cx="1050" cy="640" r="52" fill="#E9EEF3"/>
+    <path d="M1050 692v54" fill="none"/>
+    <path d="M1012 735h76l-13 55h-50Z" fill="#FFFFFF"/>
+  </g>
+
+  <path d="M70 820h280M850 820h280" fill="none" stroke="#0A192F" stroke-width="8"/>
+
+  <!-- Einziger roter Blickfang: Direktbuchungs-Button -->
+  <rect x="390" y="680" width="420" height="122" rx="24" fill="#E53935" stroke="#0A192F" stroke-width="9"/>
+  <text x="600" y="755" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Helvetica, Arial, sans-serif" font-size="44" font-weight="700">Direkt buchen</text>
+</svg>

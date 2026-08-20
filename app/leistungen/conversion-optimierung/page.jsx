@@ -7,13 +7,13 @@ import ServiceMeta from '../../../src/components/ServiceMeta';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'Conversion-Optimierung Hamburg: mehr Anfragen',
+    title: 'Mehr Anfragen bei gleichem Traffic | Conversion',
     description: 'Conversion-Optimierung für Unternehmen in Hamburg: mehr Anfragen aus dem Traffic, den Sie schon haben. Analyse kostenlos, Umsetzung ab 1.200 Euro.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/conversion-optimierung',
     },
     openGraph: {
-        title: 'Conversion-Optimierung Hamburg: mehr Anfragen',
+        title: 'Mehr Anfragen bei gleichem Traffic | Conversion',
         description: 'Mehr Anfragen ohne mehr Besucher. Conversion-Optimierung für lokale Unternehmen in Hamburg: Analyse, Priorisierung, Umsetzung, Messung.',
         url: 'https://webseite.hamburg/leistungen/conversion-optimierung',
         type: 'website',
@@ -60,12 +60,19 @@ export default function ConversionOptimierungPage() {
             <section className="subpage-hero section">
                 <div className="container">
                     <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Leistungen', href: '/leistungen' }, { label: 'Conversion-Optimierung' }]} />
-                    <p className="section-kicker animate-up">Conversion-Optimierung</p>
-                    <h1 className="subpage-title animate-up">Mehr Anfragen aus dem Traffic, den Sie schon haben.</h1>
-                    <p className="subpage-intro animate-up">
-                        Die meisten Websites haben kein Besucherproblem, sondern ein Abschlussproblem. Bevor Sie mehr Geld in Werbung stecken, lohnt sich der Blick darauf, warum die Menschen, die schon da sind, wieder gehen.
-                    </p>
-                    <ServiceMeta />
+                    <div className="subpage-hero-split">
+                        <div>
+                        <p className="section-kicker animate-up">Conversion-Optimierung</p>
+                        <h1 className="subpage-title animate-up">Mehr Anfragen aus dem Traffic, den Sie schon haben.</h1>
+                        <p className="subpage-intro animate-up">
+                            Die meisten Websites haben kein Besucherproblem, sondern ein Abschlussproblem. Bevor Sie mehr Geld in Werbung stecken, lohnt sich der Blick darauf, warum die Menschen, die schon da sind, wieder gehen.
+                        </p>
+                        <ServiceMeta />
+                        </div>
+                        <div className="subpage-hero-media animate-up">
+                            <img src="/leistungen/hero-conversion.svg" alt="Illustration: Trichter, in den Besucher gehen und aus dem eine rote Anfrage herauskommt" width="1200" height="900" />
+                        </div>
+                    </div>
                 </div>
             </section>
 

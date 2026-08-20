@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Conversion-Optimierung für mehr Anfragen</title>
+  <desc id="desc">Besucher fließen als Punkte in einen großen Trichter. Unten entsteht eine rote Anfrage, begleitet von einem steigenden Pfeil.</desc>
+
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <!-- Besucher -->
+    <g fill="#172A45">
+      <circle cx="270" cy="112" r="24"/>
+      <circle cx="372" cy="154" r="18"/>
+      <circle cx="478" cy="92" r="20"/>
+      <circle cx="586" cy="137" r="24"/>
+      <circle cx="698" cy="86" r="17"/>
+      <circle cx="792" cy="144" r="21"/>
+    </g>
+    <g fill="none" stroke="#0A192F" stroke-width="8">
+      <path d="M270 154v38"/>
+      <path d="M478 134v58"/>
+      <path d="M698 125v67"/>
+    </g>
+
+    <!-- Zentraler Conversion-Trichter -->
+    <path d="M178 230H842L650 526v124c0 10-8 18-18 18H506c-10 0-18-8-18-18V526L178 230Z"
+          fill="#FFFFFF" stroke="#0A192F" stroke-width="10"/>
+    <path d="M178 230H842L808 284H234L178 230Z"
+          fill="#E9EEF3" stroke="#0A192F" stroke-width="10"/>
+
+    <!-- Verdichteter Besucherstrom -->
+    <g fill="#172A45">
+      <circle cx="330" cy="339" r="22"/>
+      <circle cx="510" cy="338" r="22"/>
+      <circle cx="690" cy="339" r="22"/>
+      <circle cx="418" cy="421" r="18"/>
+      <circle cx="600" cy="421" r="18"/>
+      <circle cx="510" cy="494" r="15"/>
+      <circle cx="552" cy="568" r="13"/>
+    </g>
+
+    <!-- Einziger roter Blickfang: die gewonnene Anfrage -->
+    <path d="M415 704c0-18 15-33 33-33h270c18 0 33 15 33 33v67c0 18-15 33-33 33H448c-18 0-33-15-33-33v-67Z"
+          fill="#E53935"/>
+    <g fill="none" stroke="#FFFFFF" stroke-width="8">
+      <rect x="453" y="716" width="64" height="48" rx="6"/>
+      <path d="m457 721 28 23 28-23"/>
+    </g>
+    <text x="546" y="753" fill="#FFFFFF" font-family="Inter, Helvetica, Arial, sans-serif" font-size="42" font-weight="600">Anfrage</text>
+
+    <!-- Steigende Entwicklung -->
+    <path d="m828 666 70-79 55 34 91-135" fill="none" stroke="#172A45" stroke-width="10"/>
+    <path d="m993 493 51-7-7 51" fill="none" stroke="#0A192F" stroke-width="10"/>
+  </g>
+</svg>

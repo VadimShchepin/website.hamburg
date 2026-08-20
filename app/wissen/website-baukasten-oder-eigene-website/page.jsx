@@ -3,13 +3,13 @@ import { BUSINESS } from '../../../src/lib/schema';
 import Link from 'next/link';
 
 export const metadata = {
-    title: 'Wix, Jimdo oder eigene Website?',
+    title: 'Wix & Jimdo: was der Baukasten wirklich kostet',
     description: 'Was ein Website-Baukasten über fünf Jahre kostet, was beim Umzug verloren geht und wann er trotzdem die richtige Wahl ist. Mit Preisvergleich 2026.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/website-baukasten-oder-eigene-website',
     },
     openGraph: {
-        title: 'Wix, Jimdo oder eigene Website?',
+        title: 'Wix & Jimdo: was der Baukasten wirklich kostet',
         description: 'Was ein Website-Baukasten über fünf Jahre kostet, was beim Umzug verloren geht und wann er trotzdem die richtige Wahl ist.',
         url: 'https://webseite.hamburg/wissen/website-baukasten-oder-eigene-website',
         type: 'article',
@@ -50,6 +50,8 @@ export default function BaukastenOderEigeneWebsitePage() {
                 title="Wix, Jimdo oder eigene Website: Was der Baukasten wirklich kostet"
                 readTime="10 Min."
                 publishDate="2026-08-20"
+                heroImage="/wissen/hero-baukasten.svg"
+                heroAlt="Illustration: gestapelte Bausteine, die eine Website bilden, ein Baustein rot, daneben ein Vorhängeschloss"
             >
                 <p>
                     Ein Baukasten ist wie eine möblierte Mietwohnung. Sie können sofort einziehen, alles ist da, und

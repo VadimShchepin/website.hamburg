@@ -7,13 +7,13 @@ import ServiceMeta from '../../../src/components/ServiceMeta';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'Volle Tische | Restaurant-Website Hamburg',
+    title: 'Volle Tische | Restaurant-Website ab 1.500 €',
     description: 'Websites für Restaurants und Cafés in Hamburg: Speisekarte mobil lesbar, Reservierung ohne Provision, Google Maps gepflegt. Ab 1.500 Euro.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/webdesign-gastronomie',
     },
     openGraph: {
-        title: 'Volle Tische | Restaurant-Website Hamburg',
+        title: 'Volle Tische | Restaurant-Website ab 1.500 €',
         description: 'Websites für Restaurants und Cafés in Hamburg: Speisekarte mobil lesbar, Reservierung ohne Provision, Google Maps gepflegt.',
         url: 'https://webseite.hamburg/leistungen/webdesign-gastronomie',
         type: 'website',
@@ -66,12 +66,19 @@ export default function WebdesignGastronomiePage() {
                         { label: 'Leistungen', href: '/leistungen' },
                         { label: 'Webdesign für Gastronomie' },
                     ]} />
-                    <p className="section-kicker animate-up">Webdesign für Gastronomie</p>
-                    <h1 className="subpage-title animate-up">Restaurant-Websites in Hamburg, die Tische füllen statt Preise zu verstecken.</h1>
-                    <p className="subpage-intro animate-up">
-                        Ein Gast steht um 18:40 Uhr in der Schanze, hat Hunger und ein Handy in der Hand. Er entscheidet in etwa zwanzig Sekunden. In diesen zwanzig Sekunden muss Ihre Seite drei Dinge zeigen: was es gibt, was es kostet, ob noch ein Tisch frei ist. Alles andere ist Dekoration.
-                    </p>
-                    <ServiceMeta />
+                    <div className="subpage-hero-split">
+                        <div>
+                        <p className="section-kicker animate-up">Webdesign für Gastronomie</p>
+                        <h1 className="subpage-title animate-up">Restaurant-Websites in Hamburg, die Tische füllen statt Preise zu verstecken.</h1>
+                        <p className="subpage-intro animate-up">
+                            Ein Gast steht um 18:40 Uhr in der Schanze, hat Hunger und ein Handy in der Hand. Er entscheidet in etwa zwanzig Sekunden. In diesen zwanzig Sekunden muss Ihre Seite drei Dinge zeigen: was es gibt, was es kostet, ob noch ein Tisch frei ist. Alles andere ist Dekoration.
+                        </p>
+                        <ServiceMeta />
+                        </div>
+                        <div className="subpage-hero-media animate-up">
+                            <img src="/leistungen/branchen/hero-gastronomie.svg" alt="Illustration: Teller von oben mit Besteck, der Teller zeigt eine digitale Speisekarte, oben rechts ein roter Standort-Pin" width="1200" height="900" />
+                        </div>
+                    </div>
                 </div>
             </section>
 

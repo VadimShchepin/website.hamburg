@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc" stroke-linejoin="round" stroke-linecap="round">
+  <title id="title">Leistungsübersicht der Digitalagentur</title>
+  <desc id="desc">Vier große Karten zeigen Webentwicklung, Suche, Beratung und Preise. Die Preiskarte ist rot hervorgehoben.</desc>
+
+  <!-- Ruhige seitliche Akzente hinter dem zentralen Kartenfeld -->
+  <rect x="70" y="205" width="150" height="190" rx="32" fill="#E9EEF3" stroke="#172A45" stroke-width="8"/>
+  <rect x="980" y="505" width="150" height="190" rx="32" fill="#E9EEF3" stroke="#172A45" stroke-width="8"/>
+
+  <!-- Zentrales 2×2-Raster -->
+  <rect x="180" y="70" width="840" height="760" rx="48" fill="#0A192F"/>
+
+  <!-- Browserfenster -->
+  <g stroke="#0A192F" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="240" y="120" width="330" height="330" rx="30" fill="#FFFFFF" stroke="#172A45" stroke-width="8"/>
+    <rect x="298" y="202" width="214" height="148" rx="18" fill="#F5F7FA"/>
+    <path d="M298 246h214M334 224h2M366 224h2M398 224h2M340 285h130M340 316h82" fill="none"/>
+  </g>
+
+  <!-- Lupe -->
+  <g stroke="#0A192F" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="630" y="120" width="330" height="330" rx="30" fill="#FFFFFF" stroke="#172A45" stroke-width="8"/>
+    <circle cx="755" cy="252" r="70" fill="#E9EEF3"/>
+    <path d="M806 303l78 78" fill="none"/>
+  </g>
+
+  <!-- Sprechblase -->
+  <g stroke="#0A192F" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="240" y="480" width="330" height="330" rx="30" fill="#FFFFFF" stroke="#172A45" stroke-width="8"/>
+    <path d="M328 554h154c22 0 40 18 40 40v72c0 22-18 40-40 40h-70l-62 52 15-52h-37c-22 0-40-18-40-40v-72c0-22 18-40 40-40z" fill="#E9EEF3"/>
+    <path d="M346 630h2M404 630h2M462 630h2" fill="none"/>
+  </g>
+
+  <!-- Hervorgehobene Anzeigen- und Preiskarte -->
+  <g stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="630" y="480" width="330" height="330" rx="30" fill="#E53935" stroke="none"/>
+    <rect x="690" y="540" width="210" height="134" rx="18" fill="none"/>
+    <path d="M690 580h210M728 611h96M728 642h56" fill="none"/>
+  </g>
+  <text x="795" y="765" fill="#FFFFFF" font-family="Inter, Helvetica, Arial, sans-serif" font-size="40" font-weight="600" text-anchor="middle">Preise</text>
+</svg>

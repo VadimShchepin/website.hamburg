@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc" stroke-linejoin="round" stroke-linecap="round">
+  <title id="title">Kostenloses Website-Audit</title>
+  <desc id="desc">Plakative Illustration eines großen Klemmbretts mit Audit-Prüfliste, drei Haken, rotem Warndreieck und Tachometer für die Ladezeit.</desc>
+
+  <!-- Großes Klemmbrett als klares Zentrum -->
+  <rect x="105" y="120" width="650" height="680" rx="52" fill="#172A45" stroke="#0A192F" stroke-width="8"/>
+  <rect x="150" y="165" width="560" height="590" rx="28" fill="#FFFFFF" stroke="#0A192F" stroke-width="8"/>
+  <rect x="285" y="75" width="290" height="125" rx="28" fill="#0A192F" stroke="#0A192F" stroke-width="8"/>
+  <path d="M365 106h130" fill="none" stroke="#E9EEF3" stroke-width="10"/>
+  <text x="430" y="165" fill="#FFFFFF" font-family="Inter, Helvetica, Arial, sans-serif" font-size="38" font-weight="600" text-anchor="middle">Audit</text>
+
+  <!-- Drei große Prüfpunkte -->
+  <g fill="#E9EEF3" stroke="#0A192F" stroke-width="8">
+    <rect x="205" y="275" width="72" height="72" rx="16"/>
+    <rect x="205" y="405" width="72" height="72" rx="16"/>
+    <rect x="205" y="535" width="72" height="72" rx="16"/>
+  </g>
+  <g fill="none" stroke="#0A192F" stroke-width="10">
+    <path d="m222 310 14 15 27-34"/>
+    <path d="m222 440 14 15 27-34"/>
+    <path d="m222 570 14 15 27-34"/>
+  </g>
+  <g fill="none" stroke="#172A45" stroke-width="10">
+    <path d="M320 297h310"/>
+    <path d="M320 325h215"/>
+    <path d="M320 427h260"/>
+    <path d="M320 455h310"/>
+    <path d="M320 557h285"/>
+    <path d="M320 585h160"/>
+  </g>
+
+  <!-- Einziger roter Blickfang: Warnhinweis -->
+  <path d="M590 625 662 725H518Z" fill="#E53935" stroke="#E53935" stroke-width="8"/>
+  <path d="M590 660v28M590 708h.1" fill="none" stroke="#FFFFFF" stroke-width="10"/>
+
+  <!-- Tachometer für die Ladezeit -->
+  <g stroke="#0A192F" stroke-width="8">
+    <path d="M800 640a170 170 0 0 1 340 0h-55a115 115 0 0 0-230 0Z" fill="#E9EEF3"/>
+    <path d="m836 583 34 11M875 512l25 28M970 470v38M1065 512l-25 28M1104 583l-34 11" fill="none"/>
+    <path d="m970 640 82-123" fill="none" stroke-width="10"/>
+    <circle cx="970" cy="640" r="18" fill="#0A192F"/>
+    <path d="M820 680h300" fill="none" stroke-width="10"/>
+  </g>
+</svg>

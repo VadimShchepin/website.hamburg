@@ -7,13 +7,13 @@ import ServiceMeta from '../../../src/components/ServiceMeta';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'Mehr Eigentümer-Anfragen | Makler-Website',
+    title: 'Mehr Eigentümer-Anfragen | Makler-Website Hamburg',
     description: 'Websites für Immobilienmakler in Hamburg: Eigentümer gewinnen statt Portale füttern, Pflichtangaben nach § 87 GEG sauber gelöst. Ab 2.900 Euro.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/webdesign-immobilienmakler',
     },
     openGraph: {
-        title: 'Mehr Eigentümer-Anfragen | Makler-Website',
+        title: 'Mehr Eigentümer-Anfragen | Makler-Website Hamburg',
         description: 'Websites für Immobilienmakler in Hamburg: Eigentümer gewinnen statt Portale füttern, Pflichtangaben sauber gelöst.',
         url: 'https://webseite.hamburg/leistungen/webdesign-immobilienmakler',
         type: 'website',
@@ -66,12 +66,19 @@ export default function WebdesignImmobilienmaklerPage() {
                         { label: 'Leistungen', href: '/leistungen' },
                         { label: 'Webdesign für Immobilienmakler' },
                     ]} />
-                    <p className="section-kicker animate-up">Webdesign für Immobilienmakler</p>
-                    <h1 className="subpage-title animate-up">Makler-Websites in Hamburg: Ihre Seite verkauft keine Wohnung, sie gewinnt Eigentümer.</h1>
-                    <p className="subpage-intro animate-up">
-                        Käufer finden Objekte auf den Portalen, daran ändert keine Website etwas. Die Frage, wem ein Eigentümer seine Immobilie anvertraut, entscheidet sich woanders: bei der Recherche nach dem Namen, den er auf dem Schild in der Nachbarschaft gelesen hat.
-                    </p>
-                    <ServiceMeta />
+                    <div className="subpage-hero-split">
+                        <div>
+                        <p className="section-kicker animate-up">Webdesign für Immobilienmakler</p>
+                        <h1 className="subpage-title animate-up">Makler-Websites in Hamburg: Ihre Seite verkauft keine Wohnung, sie gewinnt Eigentümer.</h1>
+                        <p className="subpage-intro animate-up">
+                            Käufer finden Objekte auf den Portalen, daran ändert keine Website etwas. Die Frage, wem ein Eigentümer seine Immobilie anvertraut, entscheidet sich woanders: bei der Recherche nach dem Namen, den er auf dem Schild in der Nachbarschaft gelesen hat.
+                        </p>
+                        <ServiceMeta />
+                        </div>
+                        <div className="subpage-hero-media animate-up">
+                            <img src="/leistungen/branchen/hero-immobilien.svg" alt="Illustration: Wohnhaus mit rotem Verkaufsschild, daneben Schlüssel und Lupe als Zeichen für die Wertermittlung" width="1200" height="900" />
+                        </div>
+                    </div>
                 </div>
             </section>
 

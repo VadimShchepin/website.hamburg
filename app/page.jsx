@@ -39,13 +39,13 @@ const faqItems = [
 ];
 
 export const metadata = {
-    title: 'Webdesign & SEO Hamburg | Websites die Kunden bringen',
+    title: 'Webdesign & SEO Hamburg | Mehr Kunden über Google',
     description: 'Professionelles Webdesign, SEO und Google Ads für lokale Unternehmen in Hamburg. Datenbasiert, transparent, ergebnisorientiert. Kostenlose Erstanalyse.',
     alternates: {
         canonical: 'https://webseite.hamburg',
     },
     openGraph: {
-        title: 'Webdesign & SEO Hamburg | Websites die Kunden bringen',
+        title: 'Webdesign & SEO Hamburg | Mehr Kunden über Google',
         description: 'Professionelles Webdesign, SEO und Google Ads für lokale Unternehmen in Hamburg. Datenbasiert, transparent, ergebnisorientiert.',
         url: 'https://webseite.hamburg',
         type: 'website',

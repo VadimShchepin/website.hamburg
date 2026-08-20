@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Sichtbar in KI-Antworten</title>
+  <desc id="desc">Eine große Antwort-Sprechblase mit drei klaren Textzeilen, einem Quellenhinweis und einem angedeuteten Chat-Cursor im Hintergrund.</desc>
+
+  <!-- Angedeuteter Chat-Cursor hinter der Antwort -->
+  <path d="M806 96 1042 320l-122 14 66 126-75 39-65-126-91 78Z"
+        fill="#E9EEF3" stroke="#172A45" stroke-width="9"
+        stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- Zentrale KI-Antwort -->
+  <path d="M226 185h704a64 64 0 0 1 64 64v351a64 64 0 0 1-64 64H622L496 770l17-106H226a64 64 0 0 1-64-64V249a64 64 0 0 1 64-64Z"
+        fill="#FFFFFF" stroke="#0A192F" stroke-width="10"
+        stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- Drei großzügige Textzeilen -->
+  <rect x="286" y="294" width="560" height="24" rx="12" fill="#172A45"/>
+  <rect x="286" y="380" width="474" height="24" rx="12" fill="#172A45"/>
+  <rect x="286" y="466" width="382" height="24" rx="12" fill="#172A45"/>
+
+  <!-- Quellenhinweis -->
+  <rect x="286" y="546" width="344" height="88" rx="44"
+        fill="#E9EEF3" stroke="#0A192F" stroke-width="8"/>
+  <path d="M350 605c-13 13-34-8-21-21l22-22c13-13 34 8 21 21l-8 8m21-11 8-8c13-13 34 8 21 21l-22 22c-13 13-34-8-21-21"
+        fill="none" stroke="#E53935" stroke-width="10"
+        stroke-linejoin="round" stroke-linecap="round"/>
+  <text x="444" y="605" fill="#0A192F"
+        font-family="Inter, Helvetica, Arial, sans-serif"
+        font-size="38" font-weight="600">Quelle</text>
+</svg>

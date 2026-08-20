@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Wegweiser zur Anbieterwahl</title>
+  <desc id="desc">Ein großer Wegweiser vor einem angedeuteten Laptop zeigt die Richtungen Baukasten, Freelancer und Agentur. Freelancer ist rot hervorgehoben.</desc>
+
+  <!-- Ruhiger Laptop im Hintergrund -->
+  <rect x="150" y="105" width="900" height="565" rx="34" fill="#E9EEF3" stroke="#0A192F" stroke-width="9" stroke-linejoin="round"/>
+  <rect x="195" y="150" width="810" height="475" rx="18" fill="#FFFFFF" stroke="#172A45" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M150 670H1050L1135 735Q1145 748 1137 762Q1129 775 1110 775H90Q71 775 63 762Q55 748 65 735L150 670Z" fill="#E9EEF3" stroke="#0A192F" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M510 714H690" fill="none" stroke="#666666" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Zentraler Wegweiser -->
+  <path d="M558 174Q558 150 582 150H618Q642 150 642 174V788H558Z" fill="#0A192F" stroke="#0A192F" stroke-width="8" stroke-linejoin="round"/>
+
+  <path d="M590 205H278L218 265L278 325H590Z" fill="#FFFFFF" stroke="#0A192F" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+  <text x="405" y="278" fill="#0A192F" font-family="Inter, Helvetica, Arial, sans-serif" font-size="40" font-weight="600" text-anchor="middle">Baukasten</text>
+
+  <path d="M610 350H925L990 415L925 480H610Z" fill="#E53935" stroke="#0A192F" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+  <text x="784" y="429" fill="#FFFFFF" font-family="Inter, Helvetica, Arial, sans-serif" font-size="40" font-weight="600" text-anchor="middle">Freelancer</text>
+
+  <path d="M590 505H303L243 565L303 625H590Z" fill="#FFFFFF" stroke="#0A192F" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+  <text x="410" y="578" fill="#0A192F" font-family="Inter, Helvetica, Arial, sans-serif" font-size="40" font-weight="600" text-anchor="middle">Agentur</text>
+
+  <path d="M520 788H680L720 835H480Z" fill="#172A45" stroke="#0A192F" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

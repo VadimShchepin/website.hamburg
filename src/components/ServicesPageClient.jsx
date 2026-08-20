@@ -47,13 +47,20 @@ export default function ServicesPageClient() {
             {/* Page Hero */}
             <section className="sp-hero section">
                 <div className="container">
-                    <p className="section-kicker animate-up">Leistungen & Preise</p>
-                    <h1 className="section-title animate-up" style={{ fontSize: 'clamp(2.2rem, 5vw, 3.5rem)' }}>
-                        Klare Leistungen. Faire Preise. Echte Ergebnisse.
-                    </h1>
-                    <p className="large-text animate-up" style={{ maxWidth: 680 }}>
-                        Keine versteckten Kosten, keine vagen Versprechen. Sie wissen genau, was Sie bekommen, und können die Ergebnisse jederzeit einsehen. Ich arbeite datenbasiert, kommuniziere transparent und optimiere, bis das Ergebnis stimmt.
-                    </p>
+                    <div className="subpage-hero-split">
+                        <div>
+                            <p className="section-kicker animate-up">Leistungen & Preise</p>
+                            <h1 className="section-title animate-up" style={{ fontSize: 'clamp(2.2rem, 5vw, 3.5rem)' }}>
+                                Klare Leistungen. Faire Preise. Echte Ergebnisse.
+                            </h1>
+                            <p className="large-text animate-up" style={{ maxWidth: 680 }}>
+                                Keine versteckten Kosten, keine vagen Versprechen. Sie wissen genau, was Sie bekommen, und können die Ergebnisse jederzeit einsehen. Ich arbeite datenbasiert, kommuniziere transparent und optimiere, bis das Ergebnis stimmt.
+                            </p>
+                        </div>
+                        <div className="subpage-hero-media animate-up">
+                            <img src="/leistungen/hero-leistungen.svg" alt="Illustration: vier Leistungskarten im Raster mit Browserfenster, Lupe, Sprechblase und Anzeigenblock, eine Karte rot hervorgehoben" width="1200" height="900" />
+                        </div>
+                    </div>
                 </div>
             </section>
 

@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Breadcrumbs from './Breadcrumbs';
 import { getRelatedArticles } from '../lib/articles';
 
-export default function ArticleLayout({ slug, category, title, readTime, publishDate, children }) {
+export default function ArticleLayout({ slug, category, title, readTime, publishDate, heroImage, heroAlt, heroFramed = false, children }) {
     const relatedArticles = getRelatedArticles(slug, 3);
 
     const formattedDate = new Date(publishDate).toLocaleDateString('de-DE', {
@@ -23,13 +23,22 @@ export default function ArticleLayout({ slug, category, title, readTime, publish
                         { label: 'Wissen', href: '/wissen' },
                         { label: title },
                     ]} />
-                    <div className="article-meta animate-up">
-                        <span className="wissen-card-category">{category}</span>
-                        <span className="wissen-card-time">{readTime} Lesezeit</span>
-                    </div>
-                    <h1 className="subpage-title animate-up">{title}</h1>
-                    <div className="article-byline animate-up">
-                        Von <Link href="/ueber-uns">Vadim Shchepin</Link> · {formattedDate}
+                    <div className={heroImage ? 'subpage-hero-split' : undefined}>
+                        <div>
+                            <div className="article-meta animate-up">
+                                <span className="wissen-card-category">{category}</span>
+                                <span className="wissen-card-time">{readTime} Lesezeit</span>
+                            </div>
+                            <h1 className="subpage-title animate-up">{title}</h1>
+                            <div className="article-byline animate-up">
+                                Von <Link href="/ueber-uns">Vadim Shchepin</Link> · {formattedDate}
+                            </div>
+                        </div>
+                        {heroImage && (
+                            <div className={`subpage-hero-media animate-up${heroFramed ? ' hero-media-framed' : ''}`}>
+                                <img src={heroImage} alt={heroAlt || ''} width="1200" height="900" />
+                            </div>
+                        )}
                     </div>
                 </div>
             </section>

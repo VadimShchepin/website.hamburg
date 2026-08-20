@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc" stroke-linejoin="round" stroke-linecap="round">
+  <title id="title">Was eine Website kostet</title>
+  <desc id="desc">Ein großes Preisschild mit rotem Eurozeichen und der Aufschrift Festpreis hängt vor einem angedeuteten Browserfenster.</desc>
+
+  <rect x="135" y="90" width="930" height="590" rx="30" fill="#FFFFFF" stroke="#0A192F" stroke-width="8"/>
+  <path d="M139 185h922" fill="none" stroke="#0A192F" stroke-width="8"/>
+  <circle cx="190" cy="138" r="12" fill="#172A45"/>
+  <circle cx="230" cy="138" r="12" fill="#666666"/>
+  <circle cx="270" cy="138" r="12" fill="#E9EEF3" stroke="#172A45" stroke-width="6"/>
+  <rect x="330" y="116" width="650" height="44" rx="22" fill="#E9EEF3"/>
+  <path d="M195 250h95M195 296h70" fill="none" stroke="#172A45" stroke-width="8"/>
+
+  <path d="M292 468 475 235q12-15 32-15h425q21 0 36 15l22 24v405q0 40-40 40H507q-20 0-32-15Z" fill="#FFFFFF" stroke="#0A192F" stroke-width="10"/>
+  <path d="M420 468c-86-58-124-146-78-238 42-84 167-110 232-43 37 38 39 91 9 130" fill="none" stroke="#172A45" stroke-width="8"/>
+  <circle cx="420" cy="468" r="29" fill="#E9EEF3" stroke="#0A192F" stroke-width="8"/>
+
+  <text x="733" y="541" fill="#E53935" font-family="Inter, Helvetica, Arial, sans-serif" font-size="270" font-weight="600" text-anchor="middle">€</text>
+  <rect x="595" y="590" width="276" height="72" rx="36" fill="#0A192F"/>
+  <text x="733" y="639" fill="#FFFFFF" font-family="Inter, Helvetica, Arial, sans-serif" font-size="38" font-weight="600" text-anchor="middle">Festpreis</text>
+</svg>

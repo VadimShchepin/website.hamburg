@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Kundenprojekte mit starken Ergebnissen</title>
+  <desc id="desc">Drei gestaffelte Browserfenster zeigen vorne eine rote Steigungskurve. Daneben steht ein geometrischer Pokal.</desc>
+
+  <g stroke-linejoin="round" stroke-linecap="round">
+    <!-- Hinteres Browserfenster -->
+    <rect x="95" y="105" width="670" height="510" rx="28" fill="#E9EEF3" stroke="#0A192F" stroke-width="8"/>
+    <path d="M99 190H761" fill="none" stroke="#0A192F" stroke-width="8"/>
+    <circle cx="140" cy="148" r="10" fill="#172A45"/>
+    <circle cx="176" cy="148" r="10" fill="#666666"/>
+    <circle cx="212" cy="148" r="10" fill="#666666"/>
+
+    <!-- Mittleres Browserfenster -->
+    <rect x="155" y="170" width="670" height="510" rx="28" fill="#F5F7FA" stroke="#0A192F" stroke-width="8"/>
+    <path d="M159 255H821" fill="none" stroke="#0A192F" stroke-width="8"/>
+    <circle cx="200" cy="213" r="10" fill="#172A45"/>
+    <circle cx="236" cy="213" r="10" fill="#666666"/>
+    <circle cx="272" cy="213" r="10" fill="#666666"/>
+
+    <!-- Vorderes Browserfenster -->
+    <rect x="215" y="235" width="670" height="510" rx="28" fill="#FFFFFF" stroke="#0A192F" stroke-width="10"/>
+    <path d="M220 325H880" fill="none" stroke="#0A192F" stroke-width="10"/>
+    <circle cx="263" cy="280" r="11" fill="#172A45"/>
+    <circle cx="302" cy="280" r="11" fill="#666666"/>
+    <circle cx="341" cy="280" r="11" fill="#666666"/>
+    <text x="480" y="293" fill="#0A192F" font-family="Inter, Helvetica, Arial, sans-serif" font-size="40" font-weight="600">Ergebnisse</text>
+
+    <!-- Ruhige Inhaltsfläche -->
+    <rect x="275" y="370" width="555" height="320" rx="30" fill="#E9EEF3"/>
+
+    <!-- Einziger roter Blickfang: Steigungskurve -->
+    <path d="M320 625C385 611 421 558 482 573C541 588 578 518 633 526C692 534 734 458 800 402" fill="none" stroke="#E53935" stroke-width="10"/>
+
+    <!-- Pokal -->
+    <path d="M940 355H1095V425C1095 492 1063 535 1018 535C973 535 940 492 940 425Z" fill="#E9EEF3" stroke="#0A192F" stroke-width="10"/>
+    <path d="M940 380H910V420C910 465 932 486 963 489M1095 380H1125V420C1125 465 1103 486 1072 489" fill="none" stroke="#0A192F" stroke-width="10"/>
+    <path d="M1018 535V610M973 610H1063M955 650H1081" fill="none" stroke="#0A192F" stroke-width="10"/>
+    <path d="M973 610H1063L1081 650H955Z" fill="#172A45" stroke="#0A192F" stroke-width="10"/>
+  </g>
+</svg>

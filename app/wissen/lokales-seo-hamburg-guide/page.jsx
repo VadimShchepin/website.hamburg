@@ -52,15 +52,12 @@ export default function LokalesSeoHamburgArticlePage() {
                 title="Lokales SEO in Hamburg: Der komplette Leitfaden für 2026"
                 readTime="12 Min."
                 publishDate="2026-01-20"
+                heroImage="/wissen/localseo-hero.svg"
+                heroAlt="Illustration: Stadtplan mit Standort-Pins und ein Smartphone mit lokaler Suche"
             >
                 <p>
                     Lokales SEO entscheidet, ob ein Hamburger Betrieb bei Google gefunden wird oder nicht. Das ist keine Randnotiz: Laut <a href="https://www.brightlocal.com/research/35-local-seo-statistics/" target="_blank" rel="noopener noreferrer">BrightLocal</a> haben rund 46 Prozent aller Google-Suchen eine lokale Absicht, und 87 Prozent der Verbraucher nutzen Google, um lokale Unternehmen zu finden. Dieser Leitfaden geht die konkreten Faktoren durch, die lokale Rankings in Hamburg bestimmen, und was Sie dafür tun können.
                 </p>
-
-                <figure className="article-figure">
-                    <img src="/wissen/localseo-hero.svg" alt="Illustration: Stadtplan mit mehreren Standort-Pins und ein Smartphone, das eine lokale Suche mit Kartenausschnitt zeigt" width="1600" height="900" />
-                    <figcaption>Lokales SEO sorgt dafür, dass Kunden in Ihrer Nähe Sie zuerst finden.</figcaption>
-                </figure>
 
                 <h2>Was ist lokales SEO und warum zählt es in Hamburg besonders?</h2>
                 <p>

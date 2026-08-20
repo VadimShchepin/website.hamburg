@@ -1,13 +1,13 @@
 import ServicesPageClient from '../../src/components/ServicesPageClient';
 
 export const metadata = {
-    title: 'Leistungen & Preise | Webdesign, SEO & Ads',
+    title: 'Preise & Leistungen: Webdesign, SEO & Google Ads',
     description: 'Klare Leistungen, faire Preise: Webdesign ab 1.500 Euro, SEO ab 1.000 Euro/Mt., Google Ads ab 500 Euro/Mt. Ergebnis-Garantie und volle Transparenz.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen',
     },
     openGraph: {
-        title: 'Leistungen & Preise | Webdesign, SEO & Ads',
+        title: 'Preise & Leistungen: Webdesign, SEO & Google Ads',
         description: 'Klare Leistungen, faire Preise: Webdesign ab 2.900 Euro, SEO ab 1.000 Euro/Mt., Google Ads ab 500 Euro/Mt.',
         url: 'https://webseite.hamburg/leistungen',
         type: 'website',

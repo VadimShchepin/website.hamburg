@@ -3,13 +3,13 @@ import { BUSINESS } from '../../../src/lib/schema';
 import Link from 'next/link';
 
 export const metadata = {
-    title: 'Google-Unternehmensprofil optimieren',
+    title: 'Mehr Anrufe aus Google Maps | Unternehmensprofil',
     description: 'Der Hamburg-Leitfaden zum Google-Unternehmensprofil: offizielle Ranking-Faktoren, Bewertungsregeln, Sperrfallen und eine Routine, die 20 Minuten pro Woche dauert.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/google-business-profile-optimieren',
     },
     openGraph: {
-        title: 'Google-Unternehmensprofil optimieren',
+        title: 'Mehr Anrufe aus Google Maps | Unternehmensprofil',
         description: 'Offizielle Ranking-Faktoren, Bewertungsregeln, Sperrfallen und eine wöchentliche Routine für lokale Unternehmen in Hamburg.',
         url: 'https://webseite.hamburg/wissen/google-business-profile-optimieren',
         type: 'article',
@@ -50,6 +50,8 @@ export default function GoogleBusinessProfilePage() {
                 title="Google-Unternehmensprofil optimieren: der Hamburg-Leitfaden"
                 readTime="12 Min."
                 publishDate="2026-08-20"
+                heroImage="/wissen/hero-gbp.svg"
+                heroAlt="Illustration: großer roter Standort-Pin mit Ladengeschäft-Symbol über einer Reihe von fünf Sternen"
             >
                 <p>
                     Für ein lokales Unternehmen in Hamburg ist das Google-Unternehmensprofil der wichtigste kostenlose

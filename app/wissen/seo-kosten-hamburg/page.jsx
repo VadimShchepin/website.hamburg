@@ -3,13 +3,13 @@ import { BUSINESS } from '../../../src/lib/schema';
 import Link from 'next/link';
 
 export const metadata = {
-    title: 'Was kostet SEO in Hamburg?',
+    title: 'Was kostet SEO in Hamburg? Echte Preise 2026',
     description: 'Monatsbudgets, Stundensätze und was ein Retainer wirklich enthält. Mit Google-Aussagen zur Dauer, Warnsignalen und einer Rechnung, was 1.000 Euro kaufen.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/seo-kosten-hamburg',
     },
     openGraph: {
-        title: 'Was kostet SEO in Hamburg?',
+        title: 'Was kostet SEO in Hamburg? Echte Preise 2026',
         description: 'Monatsbudgets, Stundensätze und was ein Retainer wirklich enthält. Mit Warnsignalen und einer ehrlichen Rechnung.',
         url: 'https://webseite.hamburg/wissen/seo-kosten-hamburg',
         type: 'article',
@@ -50,6 +50,8 @@ export default function SeoKostenHamburgPage() {
                 title="Was kostet SEO in Hamburg? Preise, Modelle und was Sie dafür bekommen"
                 readTime="11 Min."
                 publishDate="2026-08-20"
+                heroImage="/wissen/hero-seo-kosten.svg"
+                heroAlt="Illustration: Münzstapel, aus dem eine rote Kurve nach oben steigt, daneben eine Lupe"
             >
                 <p>
                     Kurze Antwort für lokale Unternehmen in Hamburg: 800 bis 2.500 Euro im Monat bei Freelancern und

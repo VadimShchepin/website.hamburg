@@ -51,6 +51,8 @@ export default function GoogleAdsFehlerArticlePage() {
                 title="Die 7 teuersten Google Ads Fehler lokaler Unternehmen"
                 readTime="8 Min."
                 publishDate="2026-02-01"
+                heroImage="/wissen/googleads-hero.svg"
+                heroAlt="Illustration: Google-Suchergebnisseite mit zwei Anzeigenplätzen, ein Mauszeiger klickt die obere Anzeige"
             >
                 <p>
                     Google Ads kann der schnellste Weg zu neuen Kunden sein oder ein zuverlässiger Weg, Geld zu verbrennen. Beides liegt nah beieinander. Die meisten lokalen Unternehmen in Hamburg, die wir auditieren, machen mindestens drei dieser sieben Fehler, und jeder davon kostet jeden Monat bares Geld.
@@ -58,11 +60,6 @@ export default function GoogleAdsFehlerArticlePage() {
                 <p>
                     Wie teuer ein einzelner Klick ist, hängt stark von der Branche ab. Laut den <a href="https://www.wordstream.com/blog/ws/google-ads-benchmarks" target="_blank" rel="noopener noreferrer">Google Ads Benchmarks von WordStream/LocaliQ</a> zahlen Handwerks- und Hausdienstleister im Schnitt rund acht Dollar pro Klick, bei einer durchschnittlichen Conversion-Rate von etwa 7 Prozent. Bei diesen Preisen entscheidet Sorgfalt darüber, ob aus dem Budget Anfragen werden oder nur Klicks.
                 </p>
-
-                <figure className="article-figure">
-                    <img src="/wissen/googleads-hero.svg" alt="Illustration: Google-Suchergebnisseite mit zwei Anzeigenplätzen oben, ein Mauszeiger klickt die obere Anzeige, daneben eine Euro-Münze als Symbol für die Klickkosten" width="1600" height="900" />
-                    <figcaption>Oben klicken kostet: Top-Anzeigen ziehen die meisten Klicks, und jeder davon kostet Geld.</figcaption>
-                </figure>
 
                 <h2>1. Broad-Match-Keywords ohne Kontrolle</h2>
                 <p>

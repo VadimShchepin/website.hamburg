@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc" stroke-linejoin="round" stroke-linecap="round">
+  <title id="title">Website-Relaunch ohne Ranking-Verlust</title>
+  <desc id="desc">Ein blasses altes und ein modernes neues Browserfenster werden durch einen großen roten Rundpfeil verbunden. Darunter stehen drei Haken für einen sicheren Relaunch.</desc>
+
+  <g>
+    <rect x="455" y="70" width="290" height="86" rx="43" fill="#0A192F"/>
+    <text x="600" y="126" fill="#FFFFFF" font-family="Inter, Helvetica, Arial, sans-serif" font-size="40" font-weight="600" text-anchor="middle">Relaunch</text>
+  </g>
+
+  <g>
+    <rect x="70" y="205" width="410" height="435" rx="28" fill="#E9EEF3" stroke="#666666" stroke-width="8"/>
+    <path d="M74 300h402" fill="none" stroke="#666666" stroke-width="8"/>
+    <circle cx="112" cy="253" r="11" fill="#666666"/>
+    <circle cx="148" cy="253" r="11" fill="#666666"/>
+    <circle cx="184" cy="253" r="11" fill="#666666"/>
+    <rect x="224" y="232" width="208" height="42" rx="21" fill="#FFFFFF" stroke="#666666" stroke-width="6"/>
+    <path d="M250 253h132" fill="none" stroke="#666666" stroke-width="8"/>
+
+    <rect x="105" y="340" width="154" height="132" rx="14" fill="#FFFFFF" stroke="#666666" stroke-width="7"/>
+    <path d="M293 352h136M293 389h104M293 426h124" fill="none" stroke="#666666" stroke-width="9"/>
+    <path d="M105 520h324M105 558h268M105 596h300" fill="none" stroke="#666666" stroke-width="9"/>
+  </g>
+
+  <g>
+    <rect x="720" y="205" width="410" height="435" rx="28" fill="#FFFFFF" stroke="#0A192F" stroke-width="8"/>
+    <path d="M724 300h402" fill="none" stroke="#0A192F" stroke-width="8"/>
+    <circle cx="762" cy="253" r="11" fill="#172A45"/>
+    <circle cx="798" cy="253" r="11" fill="#172A45"/>
+    <circle cx="834" cy="253" r="11" fill="#172A45"/>
+    <rect x="874" y="232" width="208" height="42" rx="21" fill="#E9EEF3" stroke="#172A45" stroke-width="6"/>
+    <path d="M900 253h132" fill="none" stroke="#172A45" stroke-width="8"/>
+
+    <rect x="755" y="340" width="154" height="132" rx="14" fill="#172A45"/>
+    <path d="m780 444 38-42 25 25 24-29 18 46Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="6"/>
+    <circle cx="864" cy="372" r="12" fill="#FFFFFF"/>
+    <path d="M943 352h136M943 389h104M943 426h124" fill="none" stroke="#0A192F" stroke-width="9"/>
+    <rect x="943" y="457" width="136" height="44" rx="22" fill="#0A192F"/>
+    <rect x="755" y="530" width="92" height="70" rx="12" fill="#E9EEF3"/>
+    <rect x="865" y="530" width="92" height="70" rx="12" fill="#E9EEF3"/>
+    <rect x="975" y="530" width="104" height="70" rx="12" fill="#E9EEF3"/>
+  </g>
+
+  <path d="M538 322C581 285 647 290 687 337C730 388 721 466 668 505C632 532 584 536 541 516L514 503L527 445L578 486C602 494 628 490 649 475C685 448 690 397 662 364C633 330 584 329 553 355Z" fill="#E53935"/>
+
+  <g>
+    <circle cx="152" cy="752" r="31" fill="#FFFFFF" stroke="#0A192F" stroke-width="8"/>
+    <path d="m136 752 11 12 23-27" fill="none" stroke="#0A192F" stroke-width="8"/>
+    <path d="M207 739h182M207 769h130" fill="none" stroke="#172A45" stroke-width="9"/>
+  </g>
+  <g>
+    <circle cx="502" cy="752" r="31" fill="#FFFFFF" stroke="#0A192F" stroke-width="8"/>
+    <path d="m486 752 11 12 23-27" fill="none" stroke="#0A192F" stroke-width="8"/>
+    <path d="M557 739h182M557 769h130" fill="none" stroke="#172A45" stroke-width="9"/>
+  </g>
+  <g>
+    <circle cx="852" cy="752" r="31" fill="#FFFFFF" stroke="#0A192F" stroke-width="8"/>
+    <path d="m836 752 11 12 23-27" fill="none" stroke="#0A192F" stroke-width="8"/>
+    <path d="M907 739h182M907 769h130" fill="none" stroke="#172A45" stroke-width="9"/>
+  </g>
+</svg>

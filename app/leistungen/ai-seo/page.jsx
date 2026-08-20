@@ -64,12 +64,19 @@ export default function AiSeoPage() {
             <section className="subpage-hero section">
                 <div className="container">
                     <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Leistungen', href: '/leistungen' }, { label: 'AI SEO' }]} />
-                    <p className="section-kicker animate-up">AI SEO / GEO</p>
-                    <h1 className="subpage-title animate-up">Sichtbar in ChatGPT, Perplexity und Google AI Overviews.</h1>
-                    <p className="subpage-intro animate-up">
-                        Immer mehr Menschen suchen mit ChatGPT, Perplexity oder Google AI Overviews statt mit der klassischen Linkliste. Wenn diese Systeme nach Experten in Ihrem Bereich gefragt werden, taucht dann Ihr Unternehmen in der Antwort auf?
-                    </p>
-                    <ServiceMeta />
+                    <div className="subpage-hero-split">
+                        <div>
+                        <p className="section-kicker animate-up">AI SEO / GEO</p>
+                        <h1 className="subpage-title animate-up">Sichtbar in ChatGPT, Perplexity und Google AI Overviews.</h1>
+                        <p className="subpage-intro animate-up">
+                            Immer mehr Menschen suchen mit ChatGPT, Perplexity oder Google AI Overviews statt mit der klassischen Linkliste. Wenn diese Systeme nach Experten in Ihrem Bereich gefragt werden, taucht dann Ihr Unternehmen in der Antwort auf?
+                        </p>
+                        <ServiceMeta />
+                        </div>
+                        <div className="subpage-hero-media animate-up">
+                            <img src="/leistungen/hero-ai-seo.svg" alt="Illustration: Chat-Antwort mit rotem Pfeil auf eine zitierte Website als Quelle" width="1200" height="900" />
+                        </div>
+                    </div>
                 </div>
             </section>
 

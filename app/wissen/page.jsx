@@ -3,13 +3,13 @@ import Breadcrumbs from '../../src/components/Breadcrumbs';
 import { BUSINESS } from '../../src/lib/schema';
 
 export const metadata = {
-    title: 'Wissen | Webdesign, SEO & Ads Guides',
+    title: 'Praxiswissen zu Webdesign, SEO & Google Ads',
     description: 'Fachartikel zu Webdesign, SEO, AI SEO und Google Ads für lokale Unternehmen. Praxiswissen, keine Theorie, geschrieben für Unternehmer in Hamburg.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen',
     },
     openGraph: {
-        title: 'Wissen | Webdesign, SEO & Ads Guides',
+        title: 'Praxiswissen zu Webdesign, SEO & Google Ads',
         description: 'Fachartikel zu Webdesign, SEO, AI SEO und Google Ads für lokale Unternehmen. Praxiswissen, keine Theorie.',
         url: 'https://webseite.hamburg/wissen',
         type: 'website',
@@ -144,11 +144,18 @@ export default function WissenPage() {
             <section className="subpage-hero section">
                 <div className="container">
                     <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Wissen' }]} />
-                    <p className="section-kicker animate-up">Wissen</p>
-                    <h1 className="subpage-title animate-up">Praxiswissen für Ihr Online-Wachstum.</h1>
-                    <p className="subpage-intro animate-up">
-                        Keine Theorie, keine Floskeln. Hier finden Sie konkrete Anleitungen, Analysen und Einblicke zu Webdesign, SEO, AI SEO und Google Ads, geschrieben für Unternehmer, die verstehen wollen, was wirklich funktioniert.
-                    </p>
+                    <div className="subpage-hero-split">
+                        <div>
+                            <p className="section-kicker animate-up">Wissen</p>
+                            <h1 className="subpage-title animate-up">Praxiswissen für Ihr Online-Wachstum.</h1>
+                            <p className="subpage-intro animate-up">
+                                Keine Theorie, keine Floskeln. Hier finden Sie konkrete Anleitungen, Analysen und Einblicke zu Webdesign, SEO, AI SEO und Google Ads, geschrieben für Unternehmer, die verstehen wollen, was wirklich funktioniert.
+                            </p>
+                        </div>
+                        <div className="subpage-hero-media animate-up">
+                            <img src="/wissen/hero-wissen.svg" alt="Illustration: aufgeschlagenes Buch, aus dem ein Browserfenster und eine rote Lupe aufsteigen" width="1200" height="900" />
+                        </div>
+                    </div>
                 </div>
             </section>
 

@@ -7,13 +7,13 @@ import ServiceMeta from '../../../src/components/ServiceMeta';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'Website-Audit Hamburg | Kostenlose Analyse',
+    title: 'Kostenloses Website-Audit | Was Ihre Seite bremst',
     description: 'Kostenlose Website-Analyse: Performance (Core Web Vitals), SEO, Conversion und Wettbewerb. Bericht in 2 bis 3 Werktagen, unverbindlich.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/website-audit',
     },
     openGraph: {
-        title: 'Website-Audit Hamburg | Kostenlose Analyse',
+        title: 'Kostenloses Website-Audit | Was Ihre Seite bremst',
         description: 'Kostenlose Website-Analyse: Performance (Core Web Vitals), SEO, Conversion und Wettbewerb. Bericht in 2 bis 3 Werktagen mit priorisierten Empfehlungen.',
         url: 'https://webseite.hamburg/leistungen/website-audit',
         type: 'website',
@@ -59,12 +59,19 @@ export default function WebsiteAuditPage() {
             <section className="subpage-hero section">
                 <div className="container">
                     <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Leistungen', href: '/leistungen' }, { label: 'Website-Audit' }]} />
-                    <p className="section-kicker animate-up">Website-Audit</p>
-                    <h1 className="subpage-title animate-up">Kostenlose Website-Analyse für Ihr Unternehmen.</h1>
-                    <p className="subpage-intro animate-up">
-                        Wissen Sie, wie viele Kunden Ihre Website jeden Tag verliert? Die meisten Unternehmer nicht. Mein Website-Audit zeigt Ihnen, wo Ihre Website steht, was sie kostet und was möglich wäre. Kostenlos, ehrlich, konkret.
-                    </p>
-                    <ServiceMeta />
+                    <div className="subpage-hero-split">
+                        <div>
+                        <p className="section-kicker animate-up">Website-Audit</p>
+                        <h1 className="subpage-title animate-up">Kostenlose Website-Analyse für Ihr Unternehmen.</h1>
+                        <p className="subpage-intro animate-up">
+                            Wissen Sie, wie viele Kunden Ihre Website jeden Tag verliert? Die meisten Unternehmer nicht. Mein Website-Audit zeigt Ihnen, wo Ihre Website steht, was sie kostet und was möglich wäre. Kostenlos, ehrlich, konkret.
+                        </p>
+                        <ServiceMeta />
+                        </div>
+                        <div className="subpage-hero-media animate-up">
+                            <img src="/leistungen/hero-website-audit.svg" alt="Illustration: Klemmbrett mit Prüfliste, rotem Warndreieck und Tachometer für die Ladezeit" width="1200" height="900" />
+                        </div>
+                    </div>
                 </div>
             </section>
 

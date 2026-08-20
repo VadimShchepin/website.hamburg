@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'Was vor dem Relaunch wichtig ist | Checkliste',
+    title: 'Relaunch ohne Ranking-Verlust | Checkliste 2026',
     description: 'Ein Relaunch kann Ihre Sichtbarkeit stärken oder Ihre Rankings zerstören. Die wichtigsten Punkte vor, während und nach dem Relaunch.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/website-relaunch-checkliste',
@@ -50,6 +50,8 @@ export default function WebsiteRelaunchArticlePage() {
                 title="Website-Relaunch Checkliste: Was Sie vorher wissen müssen"
                 readTime="10 Min."
                 publishDate="2026-02-25"
+                heroImage="/wissen/hero-relaunch.svg"
+                heroAlt="Illustration: altes und neues Browserfenster, dazwischen ein roter Rundpfeil, darunter eine Checkliste"
             >
                 <p>
                     Ein Website-Relaunch ist kein Redesign-Projekt. Es ist ein technisches Migrationsprojekt mit

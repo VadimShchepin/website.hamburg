@@ -68,12 +68,19 @@ export default function WebdesignPage() {
                         { label: 'Leistungen', href: '/leistungen' },
                         { label: 'Webdesign' },
                     ]} />
-                    <p className="section-kicker animate-up">Webdesign & Entwicklung</p>
-                    <h1 className="subpage-title animate-up">Professionelle Websites für Unternehmen in Hamburg.</h1>
-                    <p className="subpage-intro animate-up">
-                        Ihre Website ist oft der erste Eindruck, den ein potenzieller Kunde von Ihrem Unternehmen bekommt. Wenige Sekunden entscheiden, ob er bleibt oder abspringt. Ich sorge dafür, dass er bleibt und anfragt.
-                    </p>
-                    <ServiceMeta />
+                    <div className="subpage-hero-split">
+                        <div>
+                        <p className="section-kicker animate-up">Webdesign & Entwicklung</p>
+                        <h1 className="subpage-title animate-up">Professionelle Websites für Unternehmen in Hamburg.</h1>
+                        <p className="subpage-intro animate-up">
+                            Ihre Website ist oft der erste Eindruck, den ein potenzieller Kunde von Ihrem Unternehmen bekommt. Wenige Sekunden entscheiden, ob er bleibt oder abspringt. Ich sorge dafür, dass er bleibt und anfragt.
+                        </p>
+                        <ServiceMeta />
+                        </div>
+                        <div className="subpage-hero-media animate-up">
+                            <img src="/leistungen/hero-webdesign.svg" alt="Illustration: Browserfenster mit klarer Seitenstruktur und rotem Button, darüber ein Layout-Raster" width="1200" height="900" />
+                        </div>
+                    </div>
                 </div>
             </section>
 

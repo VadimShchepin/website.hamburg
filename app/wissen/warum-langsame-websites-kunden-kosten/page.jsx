@@ -2,7 +2,7 @@ import ArticleLayout from '../../../src/components/ArticleLayout';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'Warum langsame Websites Kunden kosten | Hamburg',
+    title: 'Jede Sekunde kostet 7 % Conversion | Ladezeit',
     description: 'Jede zusätzliche Sekunde Ladezeit senkt die Conversion-Rate um rund 4 Prozent. Wie Sie das messen und verbessern.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/warum-langsame-websites-kunden-kosten',
@@ -51,6 +51,8 @@ export default function LangsameWebsitesArticlePage() {
                 title="Warum langsame Websites Sie jeden Tag Kunden kosten"
                 readTime="7 Min."
                 publishDate="2026-02-15"
+                heroImage="/wissen/speed-hero.svg"
+                heroAlt="Illustration: Tachometer und Stoppuhr als Sinnbild für die Ladezeit einer Website"
             >
                 <p>
                     Ihre Website lädt länger als drei Sekunden? Dann ist ein Teil Ihrer Besucher in diesem Moment schon wieder weg. Nicht vielleicht, sondern messbar.
@@ -58,11 +60,6 @@ export default function LangsameWebsitesArticlePage() {
                 <p>
                     Eine viel zitierte <a href="https://www.thinkwithgoogle.com/marketing-strategies/app-and-mobile/mobile-page-speed-new-industry-benchmarks/" target="_blank" rel="noopener noreferrer">Google-Analyse</a> fand: 53 Prozent der mobilen Nutzer verlassen eine Seite, die länger als drei Sekunden lädt. Und je langsamer es wird, desto schneller kippt es. Steigt die Ladezeit von einer auf fünf Sekunden, erhöht sich die Wahrscheinlichkeit eines Absprungs um rund 90 Prozent. Das ist kein Rundungsfehler, das ist fast jeder zweite Besucher.
                 </p>
-
-                <figure className="article-figure">
-                    <img src="/wissen/speed-hero.svg" alt="Illustration: Ein Browserfenster lädt, daneben ein Tacho, dessen Nadel von der langsamen roten in die schnelle grüne Zone zeigt" width="1600" height="900" />
-                    <figcaption>Tempo ist der erste Eindruck Ihrer Website, oft noch bevor ein einziger Buchstabe sichtbar ist.</figcaption>
-                </figure>
 
                 <h2>Wie schnell muss eine Website wirklich laden?</h2>
                 <p>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc" stroke-linejoin="round" stroke-linecap="round">
+  <title id="title">Website erstellen lassen zum Festpreis</title>
+  <desc id="desc">Ein großes Browserfenster wird aus zwei geometrischen Hälften zusammengesetzt. Daneben zeigt ein rotes Preisschild mit Haken den Festpreis.</desc>
+
+  <defs>
+    <clipPath id="browser-shape">
+      <rect x="70" y="130" width="830" height="640" rx="40"/>
+    </clipPath>
+  </defs>
+
+  <!-- Großes Browserfenster aus zwei klaren Hälften -->
+  <g clip-path="url(#browser-shape)">
+    <path d="M70 230H610L480 770H70Z" fill="#FFFFFF"/>
+    <path d="M610 230H900V770H480Z" fill="#E9EEF3"/>
+    <path d="M70 130H900V230H70Z" fill="#172A45"/>
+  </g>
+  <rect x="70" y="130" width="830" height="640" rx="40" fill="none" stroke="#0A192F" stroke-width="10"/>
+  <path d="M70 230H900M610 230 480 770" fill="none" stroke="#0A192F" stroke-width="8"/>
+
+  <!-- Reduzierte Browserleiste -->
+  <g fill="#FFFFFF">
+    <circle cx="125" cy="180" r="12"/>
+    <circle cx="165" cy="180" r="12"/>
+    <circle cx="205" cy="180" r="12"/>
+  </g>
+  <rect x="265" y="157" width="550" height="46" rx="23" fill="#FFFFFF"/>
+
+  <!-- Ruhige, große Website-Bausteine -->
+  <g fill="#0A192F">
+    <rect x="145" y="325" width="300" height="28" rx="14"/>
+    <rect x="145" y="382" width="220" height="22" rx="11"/>
+  </g>
+  <rect x="145" y="475" width="210" height="82" rx="20" fill="#172A45"/>
+  <path d="M205 516h90" fill="none" stroke="#FFFFFF" stroke-width="10"/>
+
+  <rect x="555" y="315" width="255" height="300" rx="28" fill="#FFFFFF" stroke="#0A192F" stroke-width="8"/>
+  <circle cx="690" cy="402" r="44" fill="#172A45"/>
+  <path d="m596 561 65-72 52 49 38-36 59 59Z" fill="#0A192F"/>
+
+  <!-- Einziger roter Blickfang: Preisschild -->
+  <path d="M805 285H1015L1150 420 1015 555H805Z" fill="#E53935" stroke="#E53935" stroke-width="8"/>
+  <path d="m894 371 30 30 66-72" fill="none" stroke="#FFFFFF" stroke-width="10"/>
+  <text x="940" y="489" fill="#FFFFFF" font-family="Inter, Helvetica, Arial, sans-serif" font-size="44" font-weight="600" text-anchor="middle">Festpreis</text>
+</svg>

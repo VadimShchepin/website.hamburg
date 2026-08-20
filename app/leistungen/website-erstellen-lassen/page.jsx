@@ -68,12 +68,19 @@ export default function WebsiteErstellenLassenPage() {
                         { label: 'Leistungen', href: '/leistungen' },
                         { label: 'Website erstellen lassen' },
                     ]} />
-                    <p className="section-kicker animate-up">Website erstellen lassen</p>
-                    <h1 className="subpage-title animate-up">Website erstellen lassen in Hamburg: so treffen Sie die richtige Entscheidung.</h1>
-                    <p className="subpage-intro animate-up">
-                        Wer noch nie eine Website beauftragt hat, steht vor echten Fragen: Baukasten oder Agentur? Was ist ein realistischer Preis? Woran erkenne ich einen seriösen Anbieter? Diese Seite beantwortet das ehrlich und zeigt, wie ich arbeite.
-                    </p>
-                    <ServiceMeta />
+                    <div className="subpage-hero-split">
+                        <div>
+                        <p className="section-kicker animate-up">Website erstellen lassen</p>
+                        <h1 className="subpage-title animate-up">Website erstellen lassen in Hamburg: so treffen Sie die richtige Entscheidung.</h1>
+                        <p className="subpage-intro animate-up">
+                            Wer noch nie eine Website beauftragt hat, steht vor echten Fragen: Baukasten oder Agentur? Was ist ein realistischer Preis? Woran erkenne ich einen seriösen Anbieter? Diese Seite beantwortet das ehrlich und zeigt, wie ich arbeite.
+                        </p>
+                        <ServiceMeta />
+                        </div>
+                        <div className="subpage-hero-media animate-up">
+                            <img src="/leistungen/hero-website-erstellen.svg" alt="Illustration: Browserfenster, das aus zwei Hälften zusammengesetzt wird, daneben ein rotes Preisschild" width="1200" height="900" />
+                        </div>
+                    </div>
                 </div>
             </section>
 

@@ -3,13 +3,13 @@ import { BUSINESS } from '../../../src/lib/schema';
 import Link from 'next/link';
 
 export const metadata = {
-    title: 'Agentur, Freelancer oder Baukasten?',
+    title: 'Agentur oder Freelancer? Preise & Risiken 2026',
     description: 'Stundensätze, Projektpreise, Ausfallrisiko und Vertragsfallen im Vergleich. Ein ehrlicher Entscheidungsleitfaden, geschrieben von einem Solo-Entwickler.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/webdesign-agentur-oder-freelancer',
     },
     openGraph: {
-        title: 'Agentur, Freelancer oder Baukasten?',
+        title: 'Agentur oder Freelancer? Preise & Risiken 2026',
         description: 'Stundensätze, Projektpreise, Ausfallrisiko und Vertragsfallen im Vergleich. Ein ehrlicher Entscheidungsleitfaden.',
         url: 'https://webseite.hamburg/wissen/webdesign-agentur-oder-freelancer',
         type: 'article',
@@ -50,6 +50,8 @@ export default function AgenturOderFreelancerPage() {
                 title="Agentur, Freelancer oder Baukasten: Wer soll Ihre Website bauen?"
                 readTime="11 Min."
                 publishDate="2026-08-20"
+                heroImage="/wissen/hero-agentur-freelancer.svg"
+                heroAlt="Illustration: Wegweiser mit drei Schildern für Baukasten, Freelancer und Agentur, das mittlere rot hervorgehoben"
             >
                 <p>
                     Zuerst die Offenlegung, damit Sie den Rest richtig einordnen können: Ich bin die Freelancer-Option.

@@ -7,13 +7,13 @@ import ServiceMeta from '../../../src/components/ServiceMeta';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'SEO Hamburg | Lokale Sichtbarkeit & Google Rankings',
+    title: 'SEO Hamburg ab 1.000 €/Monat | Lokal gefunden werden',
     description: 'Lokale SEO für Unternehmen in Hamburg: Google Business Profile, Google Maps, technisches SEO und Content. Live-Dashboard. Ab 1.000 €/Monat.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/seo',
     },
     openGraph: {
-        title: 'SEO Hamburg | Lokale Sichtbarkeit & Google Rankings',
+        title: 'SEO Hamburg ab 1.000 €/Monat | Lokal gefunden werden',
         description: 'Lokale Suchmaschinenoptimierung für Unternehmen in Hamburg: Google Business Profile, Google Maps, technisches SEO und Content. Ab 1.000 €/Monat.',
         url: 'https://webseite.hamburg/leistungen/seo',
         type: 'website',
@@ -60,12 +60,19 @@ export default function SeoPage() {
             <section className="subpage-hero section">
                 <div className="container">
                     <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Leistungen', href: '/leistungen' }, { label: 'SEO' }]} />
-                    <p className="section-kicker animate-up">SEO & Lokale Sichtbarkeit</p>
-                    <h1 className="subpage-title animate-up">Suchmaschinenoptimierung für lokale Unternehmen in Hamburg.</h1>
-                    <p className="subpage-intro animate-up">
-                        Wenn jemand in Hamburg nach Ihrer Leistung sucht und Sie nicht auf der ersten Seite stehen, existieren Sie für diese Person nicht. Lokale SEO ändert das: messbar und ohne Klickkosten pro Besucher.
-                    </p>
-                    <ServiceMeta />
+                    <div className="subpage-hero-split">
+                        <div>
+                        <p className="section-kicker animate-up">SEO & Lokale Sichtbarkeit</p>
+                        <h1 className="subpage-title animate-up">Suchmaschinenoptimierung für lokale Unternehmen in Hamburg.</h1>
+                        <p className="subpage-intro animate-up">
+                            Wenn jemand in Hamburg nach Ihrer Leistung sucht und Sie nicht auf der ersten Seite stehen, existieren Sie für diese Person nicht. Lokale SEO ändert das: messbar und ohne Klickkosten pro Besucher.
+                        </p>
+                        <ServiceMeta />
+                        </div>
+                        <div className="subpage-hero-media animate-up">
+                            <img src="/leistungen/hero-seo.svg" alt="Illustration: Lupe über einer Suchergebnisliste, das oberste Ergebnis rot hervorgehoben, darunter ein Kartenausschnitt" width="1200" height="900" />
+                        </div>
+                    </div>
                 </div>
             </section>
 

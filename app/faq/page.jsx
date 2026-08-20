@@ -59,7 +59,7 @@ const faqCategories = [
 const allQuestions = faqCategories.flatMap(cat => cat.questions);
 
 export const metadata = {
-    title: 'Häufig gestellte Fragen (FAQ)',
+    title: 'Häufige Fragen zu Preisen, Ablauf & Zusammenarbeit',
     description: 'Antworten auf die häufigsten Fragen zu Webdesign, SEO, AI SEO, Google Ads und der Zusammenarbeit mit AISEO Hamburg.',
     alternates: { canonical: `${SITE_URL}/faq` },
     openGraph: {
@@ -96,8 +96,15 @@ export default function FaqPage() {
             <section className="subpage-hero section">
                 <div className="container">
                     <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'FAQ' }]} />
-                    <h1 className="subpage-title">Häufig gestellte Fragen</h1>
-                    <p className="subpage-desc">Antworten auf die wichtigsten Fragen zu Webdesign, SEO, AI SEO, Google Ads und der Zusammenarbeit.</p>
+                    <div className="subpage-hero-split">
+                        <div>
+                            <h1 className="subpage-title">Häufig gestellte Fragen</h1>
+                            <p className="subpage-desc">Antworten auf die wichtigsten Fragen zu Webdesign, SEO, AI SEO, Google Ads und der Zusammenarbeit.</p>
+                        </div>
+                        <div className="subpage-hero-media animate-up">
+                            <img src="/hero-faq.svg" alt="Illustration: zwei Sprechblasen, die vordere mit rotem Fragezeichen, die hintere mit Antworttext" width="1200" height="900" />
+                        </div>
+                    </div>
                 </div>
             </section>
             <section className="section">

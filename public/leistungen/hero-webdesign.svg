@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Individuelles Webdesign mit eigenem Code</title>
+  <desc id="desc">Ein großes Browserfenster mit klaren Inhaltsblöcken und rotem Button. Darüber schwebt ein Layoutraster neben dem Label Eigener Code.</desc>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <!-- Label -->
+    <rect x="70" y="132" width="340" height="96" rx="20" fill="#0A192F"/>
+    <text x="240" y="194" fill="#FFFFFF" font-family="Inter, Helvetica, Arial, sans-serif" font-size="38" font-weight="600" text-anchor="middle">Eigener Code</text>
+
+    <!-- Zentrales Browserfenster -->
+    <rect x="170" y="250" width="860" height="550" rx="24" fill="#FFFFFF"/>
+    <path d="M194 254h812a20 20 0 0 1 20 20v58H174v-58a20 20 0 0 1 20-20Z" fill="#E9EEF3"/>
+    <path d="M174 332h852" fill="none" stroke="#0A192F" stroke-width="8"/>
+    <circle cx="216" cy="292" r="10" fill="#0A192F"/>
+    <circle cx="248" cy="292" r="10" fill="#172A45"/>
+    <circle cx="280" cy="292" r="10" fill="#666666"/>
+    <rect x="330" y="274" width="338" height="36" rx="18" fill="#FFFFFF" stroke="#172A45" stroke-width="6"/>
+    <path d="M366 292h198" fill="none" stroke="#666666" stroke-width="6"/>
+
+    <!-- Klare Seitenstruktur -->
+    <rect x="230" y="400" width="338" height="38" rx="6" fill="#0A192F"/>
+    <rect x="230" y="458" width="282" height="26" rx="6" fill="#172A45"/>
+    <path d="M230 532h336M230 570h286" fill="none" stroke="#666666" stroke-width="10"/>
+    <rect x="230" y="624" width="250" height="78" rx="14" fill="#E53935"/>
+    <text x="355" y="675" fill="#FFFFFF" font-family="Inter, Helvetica, Arial, sans-serif" font-size="34" font-weight="600" text-anchor="middle">Anfragen</text>
+
+    <!-- Großes visuelles Inhaltsmodul -->
+    <rect x="666" y="386" width="290" height="336" rx="18" fill="#E9EEF3" stroke="#0A192F" stroke-width="8"/>
+    <rect x="706" y="426" width="170" height="30" rx="6" fill="#172A45"/>
+    <rect x="706" y="486" width="210" height="112" rx="12" fill="#FFFFFF" stroke="#172A45" stroke-width="6"/>
+    <circle cx="811" cy="542" r="34" fill="#0A192F"/>
+    <path d="m795 545 12 12 24-30" fill="none" stroke="#FFFFFF" stroke-width="8"/>
+    <rect x="706" y="628" width="94" height="54" rx="10" fill="#FFFFFF" stroke="#172A45" stroke-width="6"/>
+    <rect x="822" y="628" width="94" height="54" rx="10" fill="#FFFFFF" stroke="#172A45" stroke-width="6"/>
+    <rect x="170" y="250" width="860" height="550" rx="24" fill="none" stroke="#0A192F" stroke-width="8"/>
+
+    <!-- Schwebender Layoutrahmen -->
+    <rect x="760" y="90" width="340" height="260" rx="20" fill="#FFFFFF" stroke="#0A192F" stroke-width="8"/>
+    <path d="M764 150h332M890 154v192M764 232h122M894 270h202" fill="none" stroke="#172A45" stroke-width="6"/>
+    <rect x="792" y="112" width="82" height="16" rx="6" fill="#0A192F"/>
+    <rect x="986" y="112" width="78" height="16" rx="6" fill="#666666"/>
+    <rect x="790" y="174" width="72" height="34" rx="6" fill="#E9EEF3"/>
+    <rect x="918" y="176" width="150" height="54" rx="8" fill="#E9EEF3"/>
+    <rect x="790" y="256" width="72" height="64" rx="8" fill="#172A45"/>
+    <rect x="918" y="296" width="150" height="24" rx="6" fill="#0A192F"/>
+  </g>
+</svg>

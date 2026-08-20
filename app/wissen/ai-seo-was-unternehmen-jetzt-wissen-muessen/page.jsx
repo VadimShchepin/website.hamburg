@@ -2,7 +2,7 @@ import ArticleLayout from '../../../src/components/ArticleLayout';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'AI SEO: was Unternehmen jetzt wissen müssen',
+    title: 'Sichtbar in ChatGPT & Perplexity | AI SEO',
     description: 'ChatGPT, Perplexity, Google AI Overviews verändern die Suche. Wie Sie sicherstellen, dass Ihr Unternehmen in KI-Antworten als Quelle erscheint.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/ai-seo-was-unternehmen-jetzt-wissen-muessen',
@@ -49,6 +49,8 @@ export default function AiSeoArticlePage() {
                 title="AI SEO: Was Unternehmen jetzt wissen müssen"
                 readTime="8 Min."
                 publishDate="2026-03-01"
+                heroImage="/wissen/hero-ai-seo.svg"
+                heroAlt="Illustration: Sprechblase mit Antworttext und rotem Quellenverweis auf eine Website"
             >
                 <p>
                     Suchmaschinen liefern zunehmend direkte Antworten statt Linklisten. Google AI Overviews, ChatGPT mit Browsing-Funktion,

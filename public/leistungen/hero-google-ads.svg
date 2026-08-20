@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Google Ads: Suchanzeige mit Klick und Euro-Münze</title>
+  <desc id="desc">Eine große Suchleiste steht über einem klaren Anzeigenblock. Ein Mauszeiger klickt auf das rote Label Anzeige, daneben liegt eine Euro-Münze.</desc>
+
+  <g stroke-linejoin="round" stroke-linecap="round">
+    <!-- Zentrales Suchfenster -->
+    <rect x="120" y="95" width="960" height="670" rx="42" fill="#FFFFFF" stroke="#0A192F" stroke-width="10"/>
+    <path d="M120 170H1080" fill="none" stroke="#0A192F" stroke-width="8"/>
+    <circle cx="170" cy="133" r="10" fill="#172A45"/>
+    <circle cx="205" cy="133" r="10" fill="#172A45"/>
+    <circle cx="240" cy="133" r="10" fill="#172A45"/>
+
+    <!-- Große Suchleiste -->
+    <rect x="205" y="210" width="790" height="112" rx="56" fill="#F5F7FA" stroke="#0A192F" stroke-width="8"/>
+    <circle cx="275" cy="266" r="23" fill="none" stroke="#172A45" stroke-width="8"/>
+    <path d="M292 283L312 303" fill="none" stroke="#172A45" stroke-width="8"/>
+    <path d="M350 266H760" fill="none" stroke="#666666" stroke-width="10"/>
+    <path d="M930 245V287M909 266H951" fill="none" stroke="#172A45" stroke-width="8"/>
+
+    <!-- Anzeigenblock -->
+    <rect x="205" y="365" width="650" height="300" rx="28" fill="#E9EEF3" stroke="#0A192F" stroke-width="8"/>
+    <rect x="255" y="405" width="190" height="66" rx="18" fill="#E53935"/>
+    <text x="350" y="448" fill="#FFFFFF" font-family="Inter, Helvetica, Arial, sans-serif" font-size="34" font-weight="600" text-anchor="middle">Anzeige</text>
+    <path d="M260 515H680" fill="none" stroke="#0A192F" stroke-width="10"/>
+    <path d="M260 560H615" fill="none" stroke="#172A45" stroke-width="10"/>
+    <path d="M260 602H535" fill="none" stroke="#666666" stroke-width="10"/>
+
+    <!-- Euro-Münze -->
+    <circle cx="930" cy="555" r="112" fill="#FFFFFF" stroke="#0A192F" stroke-width="10"/>
+    <circle cx="930" cy="555" r="88" fill="#E9EEF3" stroke="#172A45" stroke-width="6"/>
+    <text x="930" y="588" fill="#0A192F" font-family="Inter, Helvetica, Arial, sans-serif" font-size="94" font-weight="600" text-anchor="middle">€</text>
+
+    <!-- Mauszeiger am Anzeigen-Label -->
+    <path d="M445 466L610 620L545 625L520 690L445 466Z" fill="#FFFFFF" stroke="#0A192F" stroke-width="10"/>
+    <path d="M545 625L596 686" fill="none" stroke="#0A192F" stroke-width="10"/>
+  </g>
+</svg>

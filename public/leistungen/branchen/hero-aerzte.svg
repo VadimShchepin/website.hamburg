@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc" stroke-linejoin="round" stroke-linecap="round">
+  <title id="title">Arztpraxis-Website mit Online-Termin</title>
+  <desc id="desc">Ein großes Smartphone zeigt einen übersichtlichen Terminkalender mit einem rot markierten Termin. Daneben stehen ein Ärztekreuz im Kreis und ein schlichtes Praxisschild.</desc>
+
+  <path d="M82 850H1118" fill="none" stroke="#E9EEF3" stroke-width="10"/>
+
+  <g aria-label="Ärztekreuz">
+    <circle cx="190" cy="270" r="108" fill="#FFFFFF" stroke="#0A192F" stroke-width="10"/>
+    <path d="M165 197h50v48h48v50h-48v48h-50v-48h-48v-50h48Z" fill="#172A45"/>
+  </g>
+
+  <g aria-label="Praxisschild">
+    <path d="M1095 286H885M1095 286V850M910 286v55M1070 286v55" fill="none" stroke="#0A192F" stroke-width="10"/>
+    <rect x="860" y="340" width="260" height="200" rx="24" fill="#FFFFFF" stroke="#0A192F" stroke-width="10"/>
+    <path d="M910 387h40v38h38v40h-38v38h-40v-38h-38v-40h38Z" fill="#172A45"/>
+    <path d="M1018 407h60M1018 452h60" fill="none" stroke="#666666" stroke-width="8"/>
+  </g>
+
+  <g aria-label="Smartphone mit Terminkalender">
+    <rect x="335" y="45" width="500" height="810" rx="64" fill="#172A45" stroke="#0A192F" stroke-width="10"/>
+    <rect x="380" y="128" width="410" height="620" rx="34" fill="#F5F7FA" stroke="#0A192F" stroke-width="8"/>
+    <path d="M532 91h106" fill="none" stroke="#FFFFFF" stroke-width="10"/>
+    <path d="M545 801h80" fill="none" stroke="#FFFFFF" stroke-width="10"/>
+
+    <rect x="415" y="170" width="340" height="500" rx="26" fill="#FFFFFF" stroke="#0A192F" stroke-width="8"/>
+    <path d="M441 170h288a26 26 0 0 1 26 26v82H415v-82a26 26 0 0 1 26-26Z" fill="#E9EEF3"/>
+    <path d="M415 278h340M470 146v60M700 146v60" fill="none" stroke="#0A192F" stroke-width="8"/>
+
+    <g fill="#172A45">
+      <rect x="451" y="315" width="60" height="54" rx="12"/>
+      <rect x="555" y="315" width="60" height="54" rx="12"/>
+      <rect x="659" y="315" width="60" height="54" rx="12"/>
+    </g>
+    <g fill="#E9EEF3">
+      <rect x="451" y="401" width="60" height="54" rx="12"/>
+      <rect x="555" y="401" width="60" height="54" rx="12"/>
+      <rect x="659" y="401" width="60" height="54" rx="12"/>
+    </g>
+
+    <rect x="447" y="500" width="276" height="104" rx="22" fill="#E53935"/>
+    <text x="585" y="568" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Helvetica, Arial, sans-serif" font-size="44" font-weight="600">Termin</text>
+  </g>
+</svg>

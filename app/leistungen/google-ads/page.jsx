@@ -62,12 +62,19 @@ export default function GoogleAdsPage() {
             <section className="subpage-hero section">
                 <div className="container">
                     <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Leistungen', href: '/leistungen' }, { label: 'Google Ads' }]} />
-                    <p className="section-kicker animate-up">Google & Local Ads</p>
-                    <h1 className="subpage-title animate-up">Google Ads für lokale Unternehmen in Hamburg.</h1>
-                    <p className="subpage-intro animate-up">
-                        Während SEO langfristig wirkt, liefern Google Ads sofort Ergebnisse. Ihre Anzeige erscheint genau dann, wenn jemand nach Ihrer Leistung sucht, und das schon heute. Jeder Euro wird getrackt, jeder Lead gemessen.
-                    </p>
-                    <ServiceMeta />
+                    <div className="subpage-hero-split">
+                        <div>
+                        <p className="section-kicker animate-up">Google & Local Ads</p>
+                        <h1 className="subpage-title animate-up">Google Ads für lokale Unternehmen in Hamburg.</h1>
+                        <p className="subpage-intro animate-up">
+                            Während SEO langfristig wirkt, liefern Google Ads sofort Ergebnisse. Ihre Anzeige erscheint genau dann, wenn jemand nach Ihrer Leistung sucht, und das schon heute. Jeder Euro wird getrackt, jeder Lead gemessen.
+                        </p>
+                        <ServiceMeta />
+                        </div>
+                        <div className="subpage-hero-media animate-up">
+                            <img src="/leistungen/hero-google-ads.svg" alt="Illustration: Suchleiste mit Anzeigenblock, rotes Anzeigen-Label und ein Mauszeiger, der klickt" width="1200" height="900" />
+                        </div>
+                    </div>
                 </div>
             </section>
 

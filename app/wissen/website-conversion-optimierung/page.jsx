@@ -51,15 +51,12 @@ export default function ConversionOptimierungArticlePage() {
                 title="Mehr Anfragen ohne mehr Traffic: Conversion-Optimierung erklärt"
                 readTime="10 Min."
                 publishDate="2026-01-10"
+                heroImage="/wissen/conversion-hero.svg"
+                heroAlt="Illustration: Besucherstrom, der über einen Trichter zu Anfragen wird"
             >
                 <p>
                     Wenn die Anfragen stagnieren, ist der erste Reflex fast immer derselbe: mehr Werbung schalten, mehr Budget in <a href="/wissen/google-ads-fehler-lokale-unternehmen">Google Ads</a> stecken, mehr posten. Das kostet und bringt oft weniger als erwartet. Dabei liegt der Engpass meistens schon auf der eigenen Website. Die Besucher sind da, aber zu viele gehen wieder, ohne etwas zu tun.
                 </p>
-
-                <figure className="article-figure">
-                    <img src="/wissen/conversion-hero.svg" alt="Illustration: Viele Website-Besucher strömen in einen Trichter, nur ein Teil wird zu echten Anfragen über Kontaktformular und Telefon" width="1600" height="900" />
-                    <figcaption>Conversion-Optimierung sorgt dafür, dass aus den vorhandenen Besuchern mehr echte Anfragen werden.</figcaption>
-                </figure>
 
                 <div className="subpage-takeaway animate-up">
                     <p>Sie wollen das nicht selbst umsetzen? Ich mache das als Leistung: <a href="/leistungen/conversion-optimierung">Conversion-Optimierung in Hamburg</a>, Analyse kostenlos.</p>

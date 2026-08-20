@@ -66,12 +66,19 @@ export default function WebdesignAerztePage() {
                         { label: 'Leistungen', href: '/leistungen' },
                         { label: 'Webdesign für Arztpraxen' },
                     ]} />
-                    <p className="section-kicker animate-up">Webdesign für Arztpraxen</p>
-                    <h1 className="subpage-title animate-up">Praxis-Websites für Ärzte und Zahnärzte in Hamburg.</h1>
-                    <p className="subpage-intro animate-up">
-                        Patienten suchen „Zahnarzt Hamburg Eimsbüttel" oder „Hausarzt in der Nähe". Wird Ihre Praxis nicht gefunden oder wirkt die Website veraltet, buchen sie woanders. Und DSGVO-Konformität ist für medizinische Einrichtungen keine Option, sondern Pflicht.
-                    </p>
-                    <ServiceMeta />
+                    <div className="subpage-hero-split">
+                        <div>
+                        <p className="section-kicker animate-up">Webdesign für Arztpraxen</p>
+                        <h1 className="subpage-title animate-up">Praxis-Websites für Ärzte und Zahnärzte in Hamburg.</h1>
+                        <p className="subpage-intro animate-up">
+                            Patienten suchen „Zahnarzt Hamburg Eimsbüttel" oder „Hausarzt in der Nähe". Wird Ihre Praxis nicht gefunden oder wirkt die Website veraltet, buchen sie woanders. Und DSGVO-Konformität ist für medizinische Einrichtungen keine Option, sondern Pflicht.
+                        </p>
+                        <ServiceMeta />
+                        </div>
+                        <div className="subpage-hero-media animate-up">
+                            <img src="/leistungen/branchen/hero-aerzte.svg" alt="Illustration: Smartphone mit Terminkalender, ein Termin rot markiert, daneben ein Ärztekreuz im Kreis" width="1200" height="900" />
+                        </div>
+                    </div>
                 </div>
             </section>
 

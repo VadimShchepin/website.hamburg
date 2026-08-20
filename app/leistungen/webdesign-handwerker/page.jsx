@@ -67,12 +67,19 @@ export default function WebdesignHandwerkerPage() {
                         { label: 'Leistungen', href: '/leistungen' },
                         { label: 'Webdesign für Handwerker' },
                     ]} />
-                    <p className="section-kicker animate-up">Webdesign für Handwerker</p>
-                    <h1 className="subpage-title animate-up">Websites für Handwerksbetriebe in Hamburg: mehr Aufträge, weniger Aufwand.</h1>
-                    <p className="subpage-intro animate-up">
-                        Sie sind Handwerker, kein Webdesigner. Ihre Zeit steckt in Baustellen und Kunden, nicht in Websites. Aber Ihre nächsten Kunden suchen gerade „Elektriker Hamburg" oder „Maler in der Nähe". Ich sorge dafür, dass diese Anfragen bei Ihnen landen.
-                    </p>
-                    <ServiceMeta />
+                    <div className="subpage-hero-split">
+                        <div>
+                        <p className="section-kicker animate-up">Webdesign für Handwerker</p>
+                        <h1 className="subpage-title animate-up">Websites für Handwerksbetriebe in Hamburg: mehr Aufträge, weniger Aufwand.</h1>
+                        <p className="subpage-intro animate-up">
+                            Sie sind Handwerker, kein Webdesigner. Ihre Zeit steckt in Baustellen und Kunden, nicht in Websites. Aber Ihre nächsten Kunden suchen gerade „Elektriker Hamburg" oder „Maler in der Nähe". Ich sorge dafür, dass diese Anfragen bei Ihnen landen.
+                        </p>
+                        <ServiceMeta />
+                        </div>
+                        <div className="subpage-hero-media animate-up">
+                            <img src="/leistungen/branchen/hero-handwerker.svg" alt="Illustration: Werkzeugkasten, aus dem ein rotes Smartphone mit eingehendem Anruf ragt" width="1200" height="900" />
+                        </div>
+                    </div>
                 </div>
             </section>
 

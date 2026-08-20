@@ -3,13 +3,13 @@ import { BUSINESS } from '../../../src/lib/schema';
 import Link from 'next/link';
 
 export const metadata = {
-    title: 'Website nicht bei Google zu finden?',
+    title: '12 Gründe, warum Google Ihre Website nicht zeigt',
     description: '12 Ursachen, warum Seiten nicht im Index landen, in der Reihenfolge zum Prüfen. Mit Google-Originalquellen und dem Fall meiner eigenen Website.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/website-nicht-bei-google-gefunden',
     },
     openGraph: {
-        title: 'Website nicht bei Google zu finden?',
+        title: '12 Gründe, warum Google Ihre Website nicht zeigt',
         description: '12 Ursachen, warum Seiten nicht im Index landen, in der Reihenfolge zum Prüfen. Mit Google-Originalquellen.',
         url: 'https://webseite.hamburg/wissen/website-nicht-bei-google-gefunden',
         type: 'article',
@@ -50,6 +50,8 @@ export default function NichtBeiGoogleGefundenPage() {
                 title="Website nicht bei Google zu finden? Die 12 häufigsten Ursachen"
                 readTime="12 Min."
                 publishDate="2026-08-20"
+                heroImage="/wissen/hero-indexierung.svg"
+                heroAlt="Illustration: Dokument mit Textzeilen unter einer Lupe, daneben ein rotes Fragezeichen als Zeichen für eine nicht indexierte Seite"
             >
                 <p>
                     Ich fange mit einem Eigentor an. Im Mai 2026 habe ich die Search Console dieser Website

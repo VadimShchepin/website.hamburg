@@ -113,7 +113,7 @@ export default function WebdesignHotelsPage() {
                     <div className="subpage-split animate-up">
                         <div className="sp-split-media">
                             <img src="/leistungen/branchen/hotels/buchung.webp" alt="Gast sitzt am Schreibtisch eines Hotelzimmers am Laptop und bucht online" width="1200" height="900" loading="lazy" decoding="async" />
-                            <p className="sp-split-caption">Der Direktkanal ist der größte Buchungsweg und trotzdem oft der schlechtest ausgestattete.</p>
+                            <p className="sp-split-caption">Der Direktkanal ist der größte Buchungsweg und trotzdem oft der am schlechtesten ausgestattete.</p>
                         </div>
                         <div className="sp-split-body">
                             <p>

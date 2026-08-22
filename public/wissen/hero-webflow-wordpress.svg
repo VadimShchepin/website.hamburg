@@ -1,0 +1,47 @@
+<svg viewBox="0 0 1200 900" role="img" aria-labelledby="title desc" xmlns="http://www.w3.org/2000/svg" stroke-linejoin="round" stroke-linecap="round">
+  <title id="title">Baukasten und Code auf einer Balkenwaage</title>
+  <desc id="desc">Eine große Balkenwaage vergleicht einen Baukasten aus drei Quadraten mit einem Zahnrad zwischen Code-Klammern. Der Balken neigt sich leicht zur Code-Seite, der Zeiger ist rot.</desc>
+
+  <g transform="translate(0 -60)">
+  <!-- Standfuß und Mittelachse -->
+  <path d="M490 790 H710 L675 735 H525 Z" fill="#E9EEF3" stroke="#0A192F" stroke-width="10"/>
+  <path d="M565 735 L580 424 H620 L635 735 Z" fill="#FFFFFF" stroke="#0A192F" stroke-width="10"/>
+
+  <!-- Aufhängungen hinter den Schalen -->
+  <g fill="none" stroke="#0A192F" stroke-width="8">
+    <path d="M280 286 L205 584 M455 303 L515 584"/>
+    <path d="M745 329 L675 635 M930 346 L1070 635"/>
+  </g>
+
+  <!-- Schalen -->
+  <path d="M170 584 H530 Q512 665 350 665 Q188 665 170 584 Z" fill="#E9EEF3" stroke="#0A192F" stroke-width="10"/>
+  <path d="M640 635 H1080 Q1058 716 860 716 Q662 716 640 635 Z" fill="#E9EEF3" stroke="#0A192F" stroke-width="10"/>
+
+  <!-- Baukasten: drei große, gestapelte Quadrate -->
+  <g stroke="#0A192F" stroke-width="8">
+    <rect x="314" y="340" width="72" height="72" rx="8" fill="#172A45"/>
+    <rect x="338" y="418" width="72" height="72" rx="8" fill="#FFFFFF"/>
+    <rect x="314" y="496" width="72" height="72" rx="8" fill="#172A45"/>
+  </g>
+
+  <!-- Zahnrad mit spitzen Code-Klammern -->
+  <g fill="none" stroke="#0A192F" stroke-width="10">
+    <path d="M765 465 L735 510 L765 555"/>
+    <path d="M955 465 L985 510 L955 555"/>
+  </g>
+  <path d="M847 442 H873 L877 461 L892 467 L908 456 L926 474 L915 491 L921 505 L941 509 V535 L921 539 L915 554 L926 570 L908 588 L892 577 L877 583 L873 603 H847 L843 583 L829 577 L812 588 L794 570 L805 554 L799 539 L780 535 V509 L799 505 L805 491 L794 474 L812 456 L829 467 L843 461 Z" fill="#172A45" stroke="#0A192F" stroke-width="8"/>
+  <circle cx="860" cy="522" r="31" fill="#FFFFFF" stroke="#0A192F" stroke-width="8"/>
+
+  <!-- Waagebalken, Skala und roter Zeiger -->
+  <path d="M220 280 L980 350" fill="none" stroke="#0A192F" stroke-width="10"/>
+  <circle cx="600" cy="315" r="24" fill="#FFFFFF" stroke="#0A192F" stroke-width="10"/>
+  <path d="M520 399 Q600 450 680 399" fill="none" stroke="#0A192F" stroke-width="8"/>
+  <path d="M598 339 L625 408 L610 412 Z" fill="#E53935" stroke="#E53935" stroke-width="6"/>
+
+  <!-- Einzige Beschriftungen -->
+  <g fill="#0A192F" font-family="Inter, Helvetica, Arial, sans-serif" font-size="34" font-weight="600" text-anchor="middle">
+    <text x="350" y="643">Baukasten</text>
+    <text x="860" y="694">Code</text>
+  </g>
+  </g>
+</svg>

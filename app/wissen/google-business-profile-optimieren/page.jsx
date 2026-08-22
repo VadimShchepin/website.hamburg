@@ -1,20 +1,30 @@
 import ArticleLayout from '../../../src/components/ArticleLayout';
+import FaqSection from '../../../src/components/FaqSection';
 import { BUSINESS } from '../../../src/lib/schema';
 import Link from 'next/link';
 
 export const metadata = {
-    title: 'Mehr Anrufe aus Google Maps | Unternehmensprofil',
-    description: 'Der Hamburg-Leitfaden zum Google-Unternehmensprofil: offizielle Ranking-Faktoren, Bewertungsregeln, Sperrfallen und eine Routine, die 20 Minuten pro Woche dauert.',
+    title: 'Google-Unternehmensprofil optimieren: Anleitung Hamburg',
+    description: 'Google-Unternehmensprofil optimieren: offizielle Ranking-Faktoren, Bewertungsregeln, Sperrfallen und eine Routine, die 20 Minuten pro Woche dauert.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/google-business-profile-optimieren',
     },
     openGraph: {
-        title: 'Mehr Anrufe aus Google Maps | Unternehmensprofil',
+        title: 'Google-Unternehmensprofil optimieren: Anleitung Hamburg',
         description: 'Offizielle Ranking-Faktoren, Bewertungsregeln, Sperrfallen und eine wöchentliche Routine für lokale Unternehmen in Hamburg.',
         url: 'https://webseite.hamburg/wissen/google-business-profile-optimieren',
         type: 'article',
+        images: [{ url: 'https://webseite.hamburg/wissen/fotos/gbp-maps.webp', width: 1200, height: 900 }],
     },
 };
+
+const faqItems = [
+    { q: "Wie optimiere ich mein Google-Unternehmensprofil?", a: "Google nennt drei Faktoren für das lokale Ranking: Relevanz, Entfernung und Bekanntheit. Praktisch heißt das: die exakteste Hauptkategorie wählen, jede Leistung einzeln anlegen, Öffnungszeiten inklusive Feiertagen pflegen, echte Fotos ergänzen, einen kurzen Beitrag pro Woche einstellen und auf jede Bewertung antworten. Das kostet 15 bis 20 Minuten pro Woche." },
+    { q: "Darf ich Suchbegriffe in den Namen des Profils schreiben?", a: "Nein. Google verlangt, dass der Name im Profil dem echten Geschäftsnamen entspricht, also dem, der am Laden, auf dem Briefkopf und in der Gewerbeanmeldung steht. Zusätzliche Suchbegriffe sind ein Richtlinienverstoß und einer der häufigsten Gründe für eine Profilsperrung. Stadtteile und Leistungen gehören in die Website, in die Leistungsbeschreibung und in die Beiträge." },
+    { q: "Wie viele Google-Bewertungen brauche ich?", a: "Zehn bis fünfzehn echte Bewertungen bringen einen lokalen Dienstleister in Hamburg in den meisten Branchen schon in eine gute Position, weil viele Wettbewerber bei drei stehen. Wichtiger als die Menge ist die Aktualität: Laut BrightLocal 2026 achten 74 Prozent der Verbraucher vor allem auf Bewertungen aus den letzten drei Monaten, 31 Prozent verlangen mindestens 4,5 Sterne und 89 Prozent erwarten, dass Inhaber antworten." },
+    { q: "Brauche ich eine Adresse, wenn ich zu meinen Kunden fahre?", a: "Nein. Wenn Sie kein Ladenlokal haben, das während der Öffnungszeiten besetzt ist, verlangt Google, dass Sie die Adresse ausblenden und stattdessen ein Einzugsgebiet angeben. Postfächer, virtuelle Büros und unbesetzte Coworking-Adressen sind nicht erlaubt. Als Einzugsgebiet reicht meist Hamburg plus die angrenzenden Gebiete, in denen Sie wirklich arbeiten." },
+    { q: "Mein Profil wurde gesperrt, was mache ich jetzt?", a: "In vier Schritten: erst die Ursache finden, in fast allen Fällen ist es der Name mit Suchbegriffen, eine Adresse ohne Kundenverkehr, mehrere Profile für dieselbe Adresse oder ein auffälliger Bewertungszuwachs. Dann den Verstoß beheben, bevor Sie Einspruch einlegen. Danach Nachweise sammeln, also Gewerbeanmeldung, Fotos von Schild und Eingang, Briefkopf und Rechnungen mit Adresse. Zuletzt Einspruch stellen und warten." },
+];
 
 export default function GoogleBusinessProfilePage() {
     const articleJsonLd = {
@@ -26,6 +36,7 @@ export default function GoogleBusinessProfilePage() {
         datePublished: '2026-08-20',
         dateModified: '2026-08-20',
         url: 'https://webseite.hamburg/wissen/google-business-profile-optimieren',
+        image: 'https://webseite.hamburg/wissen/fotos/gbp-maps.webp',
         inLanguage: 'de',
         mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://webseite.hamburg/wissen/google-business-profile-optimieren' },
     };
@@ -50,8 +61,9 @@ export default function GoogleBusinessProfilePage() {
                 title="Google-Unternehmensprofil optimieren: der Hamburg-Leitfaden"
                 readTime="12 Min."
                 publishDate="2026-08-20"
-                heroImage="/wissen/hero-gbp.svg"
-                heroAlt="Illustration: großer roter Standort-Pin mit Ladengeschäft-Symbol über einer Reihe von fünf Sternen"
+                heroImage="/wissen/fotos/gbp-maps.webp"
+                heroAlt="Hand haelt ein Smartphone, auf dem eine Karte mit einem markierten Standort zu sehen ist"
+                heroFramed
             >
                 <p>
                     Für ein lokales Unternehmen in Hamburg ist das Google-Unternehmensprofil der wichtigste kostenlose
@@ -66,11 +78,11 @@ export default function GoogleBusinessProfilePage() {
                 </p>
 
                 <figure className="article-figure">
-                    <img src="/wissen/gbp-hero.svg" alt="Illustration: Smartphone mit Kartenausschnitt und drei lokalen Einträgen, der erste hervorgehoben mit Sternebewertung, daneben ein Ladengeschäft mit Öffnungszeiten-Schild" width="1600" height="900" />
+                    <img src="/wissen/fotos/gbp-unterwegs.webp" alt="Mann tippt unterwegs auf einer Strasse etwas in sein Smartphone ein" width="1600" height="900" loading="lazy" decoding="async" />
                     <figcaption>Das lokale Dreierpack über den Suchergebnissen entscheidet, wer angerufen wird.</figcaption>
                 </figure>
 
-                <h2>Die drei Faktoren, die Google offiziell nennt</h2>
+                <h2>Welche Ranking-Faktoren nennt Google offiziell?</h2>
                 <p>
                     Google beschreibt in seiner Hilfe für Unternehmensprofile drei Faktoren für das lokale Ranking:
                     Relevanz, Entfernung und Bekanntheit. Das klingt banal, hat aber praktische Folgen:
@@ -94,7 +106,7 @@ export default function GoogleBusinessProfilePage() {
                     </li>
                 </ul>
 
-                <h2>Der teure Fehler mit dem Namen</h2>
+                <h2>Darf ich Suchbegriffe in den Profilnamen schreiben?</h2>
                 <p>
                     Es gibt einen Klassiker, den man in Hamburg täglich sieht: „Malerbetrieb Hansen Maler Hamburg
                     Altona Notdienst". Der Gedanke dahinter ist verständlich, die Regel dazu ist eindeutig. Google
@@ -122,7 +134,7 @@ export default function GoogleBusinessProfilePage() {
                     hinfahren würde, hilft dem Ranking nicht und macht die Anfragen schlechter.
                 </p>
 
-                <h2>Bewertungen: was Verbraucher 2026 erwarten</h2>
+                <h2>Was erwarten Verbraucher 2026 von Bewertungen?</h2>
                 <p>
                     Die Local Consumer Review Survey 2026 von BrightLocal liefert die Zahlen, die man kennen sollte:
                     97 Prozent der Verbraucher lesen Bewertungen lokaler Unternehmen, 41 Prozent tun das immer.
@@ -210,7 +222,7 @@ export default function GoogleBusinessProfilePage() {
                     <li><strong>Termin- oder Reservierungslink:</strong> falls vorhanden, direkt einbinden. Jeder Zwischenschritt kostet Anfragen.</li>
                 </ul>
 
-                <h2>Die Wochenroutine: 20 Minuten</h2>
+                <h2>Wie pflege ich das Profil in 20 Minuten pro Woche?</h2>
                 <div className="subpage-table-wrap">
                     <table className="subpage-table">
                         <thead>
@@ -301,6 +313,7 @@ export default function GoogleBusinessProfilePage() {
                     </ol>
                 </div>
             </ArticleLayout>
+            <FaqSection title="Häufige Fragen zum Google-Unternehmensprofil" items={faqItems} />
         </>
     );
 }

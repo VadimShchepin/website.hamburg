@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">WordPress-Sicherheit durch Schutz und sichere Plugins</title>
+  <desc id="desc">Ein großes Schutzschild mit Schloss steht vor einem Browser-Fenster. Rechts liegen drei Plugin-Bausteine übereinander; der unterste ist rot und deutlich gerissen.</desc>
+
+  <!-- Browser-Fenster im Hintergrund -->
+  <rect x="72" y="170" width="748" height="520" rx="34" fill="#FFFFFF" stroke="#0A192F" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M106 174h680c17 0 30 13 30 30v52H76v-52c0-17 13-30 30-30Z" fill="#E9EEF3"/>
+  <path d="M76 256h740" fill="none" stroke="#0A192F" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="124" cy="215" r="10" fill="#172A45"/>
+  <circle cx="158" cy="215" r="10" fill="#172A45"/>
+  <circle cx="192" cy="215" r="10" fill="#172A45"/>
+  <rect x="238" y="194" width="488" height="42" rx="21" fill="#FFFFFF" stroke="#172A45" stroke-width="6"/>
+  <path d="M122 320h566M122 366h444M122 474h548M122 520h394M122 628h564" fill="none" stroke="#E9EEF3" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- Zentrales Schutzschild -->
+  <path d="M492 214 716 290v185c0 152-84 256-224 315-140-59-224-163-224-315V290Z" fill="#0A192F" stroke="#0A192F" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M425 430v-42c0-40 30-72 67-72s67 32 67 72v42" fill="none" stroke="#FFFFFF" stroke-width="28" stroke-linecap="round"/>
+  <rect x="389" y="416" width="206" height="184" rx="28" fill="#FFFFFF"/>
+  <circle cx="492" cy="496" r="22" fill="#172A45"/>
+  <path d="M492 518v46" fill="none" stroke="#172A45" stroke-width="16" stroke-linecap="round"/>
+
+  <!-- Drei übereinander liegende Plugin-Bausteine -->
+  <path d="M872 220h72v-18c0-23 18-41 41-41s41 18 41 41v18h73c16 0 29 13 29 29v92c0 16-13 29-29 29h-69v-18c0-22-18-40-40-40s-40 18-40 40v18h-78c-16 0-29-13-29-29v-92c0-16 13-29 29-29Z" fill="#E9EEF3" stroke="#0A192F" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M886 365h64v-17c0-22 18-40 40-40s40 18 40 40v17h85c16 0 29 13 29 29v92c0 16-13 29-29 29h-85v-17c0-22-18-40-40-40s-40 18-40 40v17h-64c-16 0-29-13-29-29v-92c0-16 13-29 29-29Z" fill="#FFFFFF" stroke="#0A192F" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M872 510h78v-17c0-22 18-40 40-40s40 18 40 40v17h69c16 0 29 13 29 29v92c0 16-13 29-29 29H872c-16 0-29-13-29-29v-92c0-16 13-29 29-29Z" fill="#E53935" stroke="#0A192F" stroke-width="8" stroke-linejoin="round"/>
+  <path d="m1016 535-35 35 32 26-36 39" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="986" y="730" fill="#0A192F" font-family="Inter, Helvetica, Arial, sans-serif" font-size="38" font-weight="600" text-anchor="middle">Plugins</text>
+</svg>

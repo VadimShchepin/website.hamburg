@@ -111,18 +111,27 @@ export default function HomePage() {
                     </div>
                     <div className="wissen-grid">
                         <Link href="/wissen/warum-langsame-websites-kunden-kosten" className="wissen-card animate-up delay-1">
+                            <div className="wissen-card-media">
+                                <img src="/wissen/cards/warum-langsame-websites-kunden-kosten.webp" alt="Illustration: Browserfenster mit halb gefuelltem Ladebalken, daneben eine Stoppuhr und ein wegfuehrender Pfeil" width="760" height="494" loading="lazy" decoding="async" />
+                            </div>
                             <div className="wissen-card-meta"><span className="wissen-card-category">WEBDESIGN</span></div>
                             <h3 className="wissen-card-title"><span>Warum langsame Websites Sie jeden Tag Kunden kosten</span></h3>
                             <p className="wissen-card-excerpt">Jede Sekunde Ladezeit kostet 7 % Conversion-Rate. Wie Sie die Geschwindigkeit messen und konkret verbessern.</p>
                             <span className="wissen-card-link">Artikel lesen <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
                         </Link>
                         <Link href="/wissen/lokales-seo-hamburg-guide" className="wissen-card animate-up delay-2">
+                            <div className="wissen-card-media">
+                                <img src="/wissen/cards/lokales-seo-hamburg-guide.webp" alt="Illustration: Stadtkarte eines Hafenviertels mit zentralem Standort-Pin und schwebenden Suchergebnissen" width="760" height="494" loading="lazy" decoding="async" />
+                            </div>
                             <div className="wissen-card-meta"><span className="wissen-card-category">SEO</span></div>
                             <h3 className="wissen-card-title"><span>Lokales SEO in Hamburg: Der komplette Leitfaden für 2026</span></h3>
                             <p className="wissen-card-excerpt">Google Business Profile, lokale Keywords und NAP-Konsistenz: alles, was Sie brauchen, um in Hamburg gefunden zu werden.</p>
                             <span className="wissen-card-link">Artikel lesen <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
                         </Link>
                         <Link href="/wissen/website-conversion-optimierung" className="wissen-card animate-up delay-3">
+                            <div className="wissen-card-media">
+                                <img src="/wissen/cards/website-conversion-optimierung.webp" alt="Illustration: Trichter, in den wenige Pfeile eintreten und aus dem viele in ein Formular mit Button austreten" width="760" height="494" loading="lazy" decoding="async" />
+                            </div>
                             <div className="wissen-card-meta"><span className="wissen-card-category">CONVERSION</span></div>
                             <h3 className="wissen-card-title"><span>Mehr Anfragen ohne mehr Traffic: Conversion-Optimierung erklärt</span></h3>
                             <p className="wissen-card-excerpt">Warum mehr Besucher selten die Lösung sind und wie Sie mit gleicher Besucherzahl doppelt so viele Anfragen bekommen.</p>

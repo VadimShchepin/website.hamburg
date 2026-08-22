@@ -467,24 +467,36 @@ export default function ServicesPageClient() {
                     </div>
                     <div className="wissen-grid animate-up">
                         <Link href="/wissen/webdesign-kosten" className="wissen-card">
+                            <div className="wissen-card-media">
+                                <img src="/wissen/cards/webdesign-kosten.webp" alt="Illustration: drei Preisschilder in aufsteigender Groesse vor einem Browserfenster" width="760" height="494" loading="lazy" decoding="async" />
+                            </div>
                             <div className="wissen-card-meta"><span className="wissen-card-category">WEBDESIGN</span></div>
                             <h3 className="wissen-card-title"><span>Webdesign Kosten 2026: Was eine professionelle Website wirklich kostet</span></h3>
                             <p className="wissen-card-excerpt">Von 500 bis 50.000 Euro: Was bestimmt den Preis? Kostenguide mit Preisbeispielen und versteckten Kosten.</p>
                             <span className="wissen-card-link">Artikel lesen <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
                         </Link>
                         <Link href="/wissen/lokales-seo-hamburg-guide" className="wissen-card">
+                            <div className="wissen-card-media">
+                                <img src="/wissen/cards/lokales-seo-hamburg-guide.webp" alt="Illustration: Stadtkarte eines Hafenviertels mit zentralem Standort-Pin und schwebenden Suchergebnissen" width="760" height="494" loading="lazy" decoding="async" />
+                            </div>
                             <div className="wissen-card-meta"><span className="wissen-card-category">SEO</span></div>
                             <h3 className="wissen-card-title"><span>Lokales SEO in Hamburg: Der komplette Leitfaden für 2026</span></h3>
                             <p className="wissen-card-excerpt">Von Google Business Profile bis lokale Keywords: alles, was Sie wissen müssen, um in Hamburg gefunden zu werden.</p>
                             <span className="wissen-card-link">Artikel lesen <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
                         </Link>
                         <Link href="/wissen/google-ads-fehler-lokale-unternehmen" className="wissen-card">
+                            <div className="wissen-card-media">
+                                <img src="/wissen/cards/google-ads-fehler-lokale-unternehmen.webp" alt="Illustration: Anzeigenpanel ueber einem Trichter, aus dessen Riss Muenzen herausfallen" width="760" height="494" loading="lazy" decoding="async" />
+                            </div>
                             <div className="wissen-card-meta"><span className="wissen-card-category">GOOGLE ADS</span></div>
                             <h3 className="wissen-card-title"><span>Die 7 teuersten Google Ads Fehler lokaler Unternehmen</span></h3>
                             <p className="wissen-card-excerpt">Von falschen Keywords bis fehlendem Conversion-Tracking: diese Fehler verbrennen Ihr Werbebudget.</p>
                             <span className="wissen-card-link">Artikel lesen <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
                         </Link>
                         <Link href="/wissen/ai-seo-was-unternehmen-jetzt-wissen-muessen" className="wissen-card">
+                            <div className="wissen-card-media">
+                                <img src="/wissen/cards/ai-seo-was-unternehmen-jetzt-wissen-muessen.webp" alt="Illustration: grosse Antwortkachel mit KI-Funke, verbunden mit drei Quellenkarten" width="760" height="494" loading="lazy" decoding="async" />
+                            </div>
                             <div className="wissen-card-meta"><span className="wissen-card-category">AI SEO</span></div>
                             <h3 className="wissen-card-title"><span>AI SEO: Was Unternehmen jetzt wissen müssen</span></h3>
                             <p className="wissen-card-excerpt">ChatGPT, Perplexity, Google AI Overviews verändern die Suche. Wie Sie sicherstellen, dass Ihr Unternehmen als Quelle erscheint.</p>

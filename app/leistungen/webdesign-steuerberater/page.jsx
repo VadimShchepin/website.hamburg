@@ -83,7 +83,7 @@ export default function WebdesignSteuerberaterPage() {
                         <ServiceMeta />
                         </div>
                         <div className="subpage-hero-media hero-media-framed animate-up">
-                            <img src="/leistungen/branchen/steuerberater/kanzlei.webp" alt="Steuerberater bespricht am Schreibtisch seiner Kanzlei Unterlagen, im Hintergrund die Arbeitsplaetze des Teams" width="1200" height="900" fetchPriority="high" decoding="async" />
+                            <img src="/leistungen/branchen/steuerberater/kanzlei.webp" alt="Steuerberater bespricht am Schreibtisch seiner Kanzlei Unterlagen, im Hintergrund die Arbeitsplätze des Teams" width="1200" height="900" fetchPriority="high" decoding="async" />
                         </div>
                     </div>
                 </div>

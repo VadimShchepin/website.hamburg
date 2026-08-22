@@ -19,6 +19,8 @@ export const metadata = {
 const articles = [
     {
         slug: 'website-nicht-bei-google-gefunden',
+        image: '/wissen/cards/website-nicht-bei-google-gefunden.webp',
+        alt: 'Illustration: gestapelte Webseiten hinter einem durchgestrichenen Auge, davor eine Lupe',
         category: 'SEO',
         title: 'Website nicht bei Google zu finden? Die 12 häufigsten Ursachen',
         excerpt: 'Im Mai 2026 waren von 34 Seiten dieser Website nur etwa 10 im Google-Index. Was die Ursache war, wie Sie es bei sich prüfen und was Google offiziell zu nicht indexierten Seiten sagt.',
@@ -26,6 +28,8 @@ const articles = [
     },
     {
         slug: 'google-business-profile-optimieren',
+        image: '/wissen/cards/google-business-profile-optimieren.webp',
+        alt: 'Illustration: Standort-Pin auf einem Ladengeschaeft, umgeben von Sternen und einer Uhr',
         category: 'SEO',
         title: 'Google-Unternehmensprofil optimieren: der Hamburg-Leitfaden',
         excerpt: 'Die drei Ranking-Faktoren, die Google selbst nennt, die Namensregel, an der Profile gesperrt werden, und eine Pflegeroutine, die 20 Minuten pro Woche dauert.',
@@ -33,6 +37,8 @@ const articles = [
     },
     {
         slug: 'seo-kosten-hamburg',
+        image: '/wissen/cards/seo-kosten-hamburg.webp',
+        alt: 'Illustration: Waage, die einen Muenzstapel gegen ein steigendes Liniendiagramm abwaegt',
         category: 'SEO',
         title: 'Was kostet SEO in Hamburg? Preise, Modelle und was Sie dafür bekommen',
         excerpt: 'Was in einem Monatsbudget von 1.000 Euro an Arbeitsstunden steckt, wie lange es laut Google dauert, und warum SEO manchmal die falsche Investition ist.',
@@ -40,6 +46,8 @@ const articles = [
     },
     {
         slug: 'webdesign-agentur-oder-freelancer',
+        image: '/wissen/cards/webdesign-agentur-oder-freelancer.webp',
+        alt: 'Illustration: drei Podeste mit Buerogebaeude, Einzelarbeitsplatz und Baukastenbloecken im Vergleich',
         category: 'WEBDESIGN',
         title: 'Agentur, Freelancer oder Baukasten: Wer soll Ihre Website bauen?',
         excerpt: 'Stundensätze, Projektpreise, Ausfallrisiko und Vertragsfallen im Vergleich. Geschrieben von einem Solo-Entwickler, mitsamt der Frage, wann das die falsche Wahl ist.',
@@ -47,6 +55,8 @@ const articles = [
     },
     {
         slug: 'website-baukasten-oder-eigene-website',
+        image: '/wissen/cards/website-baukasten-oder-eigene-website.webp',
+        alt: 'Illustration: zusammengesetzte Baukasten-Bloecke einer Website mit Preisschild und Vorhaengeschloss',
         category: 'WEBDESIGN',
         title: 'Wix, Jimdo oder eigene Website: Was der Baukasten wirklich kostet',
         excerpt: 'Monatspreise 2026, die Fünf-Jahres-Rechnung und was beim Umzug verloren geht. Inklusive der Fälle, in denen der Baukasten die vernünftigere Wahl ist.',
@@ -54,6 +64,8 @@ const articles = [
     },
     {
         slug: 'case-study-fotogalerie-performance',
+        image: '/wissen/cards/case-study-fotogalerie-performance.webp',
+        alt: 'Illustration: Raster aus Fotokacheln, dessen wirre Verbindungslinien in einer sauberen Leitung buendeln, daneben eine Stoppuhr',
         category: 'PERFORMANCE',
         title: 'Case Study: 1.200 Fotos pro Album, wie 2.408 versteckte Requests eine Galerie ausbremsten',
         excerpt: 'Echte Produktionszahlen: Ein N+1-Problem bei signierten URLs erzeugte 2.408 HTTP-Requests pro Seitenaufruf. Nach Batch-Signierung: ~12 Requests und 0,98 s Antwortzeit.',
@@ -61,6 +73,8 @@ const articles = [
     },
     {
         slug: 'dsgvo-fotoplattform-sicherheit-performance',
+        image: '/wissen/cards/dsgvo-fotoplattform-sicherheit-performance.webp',
+        alt: 'Illustration: grosses Schutzschild mit QR-Code-Kachel und Zifferntastatur davor',
         category: 'SICHERHEIT',
         title: 'DSGVO-Fotoplattform für Schulen: Was Sicherheit wirklich kostet',
         excerpt: 'QR-Code + PIN statt Accounts, Row Level Security, signierte URLs. Und der Preis: 723 Bildfehler in 72 Stunden, bis vorgenerierte WebP-Varianten kamen. Eine ehrliche Architektur-Case-Study.',
@@ -68,6 +82,8 @@ const articles = [
     },
     {
         slug: 'warum-langsame-websites-kunden-kosten',
+        image: '/wissen/cards/warum-langsame-websites-kunden-kosten.webp',
+        alt: 'Illustration: Browserfenster mit halb gefuelltem Ladebalken, daneben eine Stoppuhr und ein wegfuehrender Pfeil',
         category: 'WEBDESIGN',
         title: 'Warum langsame Websites Sie jeden Tag Kunden kosten',
         excerpt: 'Jede Sekunde Ladezeit kostet Sie 7% Conversion-Rate. Erfahren Sie, wie Sie die Geschwindigkeit Ihrer Website messen und mit konkreten Maßnahmen verbessern können.',
@@ -75,6 +91,8 @@ const articles = [
     },
     {
         slug: 'lokales-seo-hamburg-guide',
+        image: '/wissen/cards/lokales-seo-hamburg-guide.webp',
+        alt: 'Illustration: Stadtkarte eines Hafenviertels mit zentralem Standort-Pin und schwebenden Suchergebnissen',
         category: 'SEO',
         title: 'Lokales SEO in Hamburg: Der komplette Leitfaden für 2026',
         excerpt: 'Von Google Business Profile bis lokale Keywords: alles, was Sie wissen müssen, um in Hamburg bei Google gefunden zu werden. Mit Schritt-für-Schritt-Anleitung.',
@@ -82,6 +100,8 @@ const articles = [
     },
     {
         slug: 'ai-seo-was-unternehmen-jetzt-wissen-muessen',
+        image: '/wissen/cards/ai-seo-was-unternehmen-jetzt-wissen-muessen.webp',
+        alt: 'Illustration: grosse Antwortkachel mit KI-Funke, verbunden mit drei Quellenkarten',
         category: 'AI SEO',
         title: 'AI SEO: Was Unternehmen jetzt wissen müssen',
         excerpt: 'ChatGPT, Perplexity, Google AI Overviews verändern die Suche. Wie Sie sicherstellen, dass Ihr Unternehmen in KI-Antworten als Quelle erscheint.',
@@ -89,6 +109,8 @@ const articles = [
     },
     {
         slug: 'google-ads-fehler-lokale-unternehmen',
+        image: '/wissen/cards/google-ads-fehler-lokale-unternehmen.webp',
+        alt: 'Illustration: Anzeigenpanel ueber einem Trichter, aus dessen Riss Muenzen herausfallen',
         category: 'GOOGLE ADS',
         title: 'Die 7 teuersten Google Ads Fehler lokaler Unternehmen',
         excerpt: 'Von falschen Keywords bis fehlendem Conversion-Tracking: diese Fehler verbrennen Ihr Werbebudget. Und wie Sie sie vermeiden.',
@@ -96,6 +118,8 @@ const articles = [
     },
     {
         slug: 'website-conversion-optimierung',
+        image: '/wissen/cards/website-conversion-optimierung.webp',
+        alt: 'Illustration: Trichter, in den wenige Pfeile eintreten und aus dem viele in ein Formular mit Button austreten',
         category: 'CONVERSION',
         title: 'Mehr Anfragen ohne mehr Traffic: Conversion-Optimierung erklärt',
         excerpt: 'Warum mehr Besucher nicht die Lösung ist. Wie Sie mit der gleichen Besucherzahl durch bessere Struktur und klarere Nutzerführung deutlich mehr Anfragen generieren.',
@@ -103,6 +127,8 @@ const articles = [
     },
     {
         slug: 'website-relaunch-checkliste',
+        image: '/wissen/cards/website-relaunch-checkliste.webp',
+        alt: 'Illustration: alte Website, die per Pfeil in eine neue uebergeht, davor eine Checkliste',
         category: 'WEBDESIGN',
         title: 'Website-Relaunch Checkliste: Was Sie vorher wissen müssen',
         excerpt: 'Ein Relaunch kann Ihre Online-Präsenz transformieren oder Ihre Rankings zerstören. Die wichtigsten Punkte, die Sie vor, während und nach dem Relaunch beachten müssen.',
@@ -110,6 +136,8 @@ const articles = [
     },
     {
         slug: 'webdesign-kosten',
+        image: '/wissen/cards/webdesign-kosten.webp',
+        alt: 'Illustration: drei Preisschilder in aufsteigender Groesse vor einem Browserfenster',
         category: 'WEBDESIGN',
         title: 'Webdesign Kosten 2026: Was eine professionelle Website wirklich kostet',
         excerpt: 'Von 500 bis 50.000 Euro: was bestimmt den Preis einer Website? Ehrlicher Kostenguide mit Preisbeispielen, versteckten Kosten und Tipps für die richtige Entscheidung.',
@@ -164,6 +192,9 @@ export default function WissenPage() {
                     <div className="wissen-grid">
                         {articles.map((article, i) => (
                             <Link key={article.slug} href={`/wissen/${article.slug}`} className={`wissen-card animate-up delay-${(i % 3) + 1}`}>
+                                <div className="wissen-card-media">
+                                    <img src={article.image} alt={article.alt} width="760" height="494" loading={i < 3 ? 'eager' : 'lazy'} decoding="async" />
+                                </div>
                                 <div className="wissen-card-meta">
                                     <span className="wissen-card-category">{article.category}</span>
                                     <span className="wissen-card-time">{article.readTime}</span>

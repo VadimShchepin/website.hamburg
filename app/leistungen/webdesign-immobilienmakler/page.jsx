@@ -83,7 +83,7 @@ export default function WebdesignImmobilienmaklerPage() {
                         <ServiceMeta />
                         </div>
                         <div className="subpage-hero-media hero-media-framed animate-up">
-                            <img src="/leistungen/branchen/makler/besichtigung.webp" alt="Immobilienmaklerin zeigt einem Paar die Kueche einer helle Wohnung bei der Besichtigung" width="1200" height="900" fetchPriority="high" decoding="async" />
+                            <img src="/leistungen/branchen/makler/besichtigung.webp" alt="Immobilienmaklerin zeigt einem Paar die Küche einer hellen Wohnung bei der Besichtigung" width="1200" height="900" fetchPriority="high" decoding="async" />
                         </div>
                     </div>
                 </div>

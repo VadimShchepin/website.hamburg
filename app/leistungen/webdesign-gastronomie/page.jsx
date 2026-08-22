@@ -83,7 +83,7 @@ export default function WebdesignGastronomiePage() {
                         <ServiceMeta />
                         </div>
                         <div className="subpage-hero-media hero-media-framed animate-up">
-                            <img src="/leistungen/branchen/gastronomie/gastraum.webp" alt="Gaeste sitzen an einem Tisch in einem warm beleuchteten Restaurant und essen zu Abend" width="1200" height="900" fetchPriority="high" decoding="async" />
+                            <img src="/leistungen/branchen/gastronomie/gastraum.webp" alt="Gäste sitzen an einem Tisch in einem warm beleuchteten Restaurant und essen zu Abend" width="1200" height="900" fetchPriority="high" decoding="async" />
                         </div>
                     </div>
                 </div>
@@ -113,7 +113,7 @@ export default function WebdesignGastronomiePage() {
                     <h2 className="animate-up">Wie wählen Gäste heute ein Restaurant aus?</h2>
                     <div className="subpage-split is-reverse animate-up">
                         <div className="sp-split-media">
-                            <img src="/leistungen/branchen/gastronomie/speisekarte.webp" alt="Zwei Gaeste sitzen in einer Restaurantnische und sehen sich die Speisekarte an" width="1200" height="900" loading="lazy" decoding="async" />
+                            <img src="/leistungen/branchen/gastronomie/speisekarte.webp" alt="Zwei Gäste sitzen in einer Restaurantnische und sehen sich die Speisekarte an" width="1200" height="900" loading="lazy" decoding="async" />
                             <p className="sp-split-caption">53 Prozent der Gäste sehen sich die Speisekarte online an, bevor sie sich für ein Lokal entscheiden.</p>
                         </div>
                         <div className="sp-split-body">
@@ -142,7 +142,7 @@ export default function WebdesignGastronomiePage() {
                     </div>
 
                     <figure className="subpage-figure is-band animate-up">
-                        <img src="/leistungen/branchen/gastronomie/abendgeschaeft.webp" alt="Gaeste an einem Holztisch an der Bar eines Restaurants am Abend, vor ihnen Getraenke und Essen" width="1800" height="760" loading="lazy" decoding="async" />
+                        <img src="/leistungen/branchen/gastronomie/abendgeschaeft.webp" alt="Gäste an einem Holztisch an der Bar eines Restaurants am Abend, vor ihnen Getränke und Essen" width="1800" height="760" loading="lazy" decoding="async" />
                         <figcaption>Karte, Speisekarte, Tisch: Der Weg vom Suchergebnis zum belegten Platz ist kurz und bricht an jeder Hürde ab.</figcaption>
                     </figure>
 

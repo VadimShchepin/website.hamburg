@@ -1,20 +1,30 @@
 import ArticleLayout from '../../../src/components/ArticleLayout';
+import FaqSection from '../../../src/components/FaqSection';
 import { BUSINESS } from '../../../src/lib/schema';
 import Link from 'next/link';
 
 export const metadata = {
-    title: 'Wix & Jimdo: was der Baukasten wirklich kostet',
-    description: 'Was ein Website-Baukasten über fünf Jahre kostet, was beim Umzug verloren geht und wann er trotzdem die richtige Wahl ist. Mit Preisvergleich 2026.',
+    title: 'Website-Baukasten oder eigene Website? Kostenvergleich',
+    description: 'Website-Baukasten oder eigene Website? Was Wix, Jimdo und Squarespace über fünf Jahre kosten, was beim Umzug verloren geht und wann der Baukasten reicht.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/website-baukasten-oder-eigene-website',
     },
     openGraph: {
-        title: 'Wix & Jimdo: was der Baukasten wirklich kostet',
+        title: 'Website-Baukasten oder eigene Website? Kostenvergleich',
         description: 'Was ein Website-Baukasten über fünf Jahre kostet, was beim Umzug verloren geht und wann er trotzdem die richtige Wahl ist.',
         url: 'https://webseite.hamburg/wissen/website-baukasten-oder-eigene-website',
         type: 'article',
+        images: [{ url: 'https://webseite.hamburg/wissen/fotos/baukasten-hero.webp', width: 1200, height: 900 }],
     },
 };
+
+const faqItems = [
+    { q: "Was kostet ein Website-Baukasten im Monat?", a: "Bei Jahreszahlung liegen die Einstiegstarife bei etwa 11 bis 17 Euro im Monat, die für Unternehmen meist nötigen Business-Tarife bei etwa 17 bis 69 Euro. Über fünf Jahre summiert sich das je Anbieter auf rund 1.000 bis 4.100 Euro, bei Shopify für Shops auf rund 4.000 bis 17.000 Euro. Bei monatlicher Zahlung liegen die Preise durchweg höher." },
+    { q: "Ist eine eigene Website teurer als ein Baukasten?", a: "Über fünf Jahre gerechnet nicht zwangsläufig. Eine individuelle Website kostet 2.900 Euro einmalig plus etwa 10 bis 15 Euro Betrieb im Monat, also rund 3.500 bis 3.800 Euro in fünf Jahren. Das liegt im Bereich eines mittleren Baukasten-Tarifs. Der Unterschied ist nicht der Preis, sondern was am Ende der fünf Jahre Ihnen gehört." },
+    { q: "Kann ich meine Baukasten-Website später umziehen?", a: "Die Website selbst in der Regel nicht. Wix schreibt in seinem Hilfebereich, dass eine Wix-Website nicht anderswo gehostet werden kann; exportieren lassen sich nur Daten wie Medien, CMS-Sammlungen und Produktlisten als CSV. Squarespace erlaubt einen XML-Export, ohne Layout-Stile, eigenes CSS und interaktive Elemente. Die Domain ist dagegen unproblematisch: Der Auth-Code für den Transfer ist kostenlos." },
+    { q: "Sind Baukasten-Websites schlecht für SEO?", a: "Nein. Google sagt zwei Dinge, die man zusammen lesen muss: Die Wahl des Systems ist kein Ranking-Faktor, bewertet wird das ausgelieferte Ergebnis. Und die Core Web Vitals sind Teil der Page-Experience-Signale. Im Core Web Vitals Technology Report des HTTP Archive liegen gehostete Baukästen im Mittelfeld bis oberen Bereich, während selbst gehostete WordPress-Installationen extrem streuen. Der Vergleich lautet also nicht Baukasten gegen individuell, sondern schlecht umgesetzt gegen gut umgesetzt." },
+    { q: "Wann ist ein Baukasten die richtige Wahl?", a: "Wenn das Gesamtbudget klein ist, die Seite vor allem als digitale Visitenkarte dient, Sie die Pflege selbst übernehmen wollen und Sie keinen Anspruch darauf haben, über Google planbar Neukunden zu gewinnen. Eine schnelle Baukasten-Seite ist einer langsamen Eigenentwicklung in jedem Fall vorzuziehen." },
+];
 
 export default function BaukastenOderEigeneWebsitePage() {
     const articleJsonLd = {
@@ -26,6 +36,7 @@ export default function BaukastenOderEigeneWebsitePage() {
         datePublished: '2026-08-20',
         dateModified: '2026-08-20',
         url: 'https://webseite.hamburg/wissen/website-baukasten-oder-eigene-website',
+        image: 'https://webseite.hamburg/wissen/fotos/baukasten-hero.webp',
         inLanguage: 'de',
         mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://webseite.hamburg/wissen/website-baukasten-oder-eigene-website' },
     };
@@ -50,8 +61,9 @@ export default function BaukastenOderEigeneWebsitePage() {
                 title="Wix, Jimdo oder eigene Website: Was der Baukasten wirklich kostet"
                 readTime="10 Min."
                 publishDate="2026-08-20"
-                heroImage="/wissen/hero-baukasten.svg"
-                heroAlt="Illustration: gestapelte Bausteine, die eine Website bilden, ein Baustein rot, daneben ein Vorhängeschloss"
+                heroImage="/wissen/fotos/baukasten-hero.webp"
+                heroAlt="Designer arbeitet an einem hellen Schreibtisch mit Grafiktablett und Monitor an einem Layout"
+                heroFramed
             >
                 <p>
                     Ein Baukasten ist wie eine möblierte Mietwohnung. Sie können sofort einziehen, alles ist da, und
@@ -65,11 +77,11 @@ export default function BaukastenOderEigeneWebsitePage() {
                 </p>
 
                 <figure className="article-figure">
-                    <img src="/wissen/baukasten-hero.svg" alt="Illustration: links ein Turm aus gleichen Bausteinen mit Vorhängeschloss als Symbol für Baukasten-Abhängigkeit, rechts ein Bauplan mit Zirkel und Lineal für individuelle Entwicklung" width="1600" height="900" />
+                    <img src="/wissen/fotos/baukasten-eigenbau.webp" alt="Blick von oben auf einen Schreibtisch, an dem jemand Code auf zwei Bildschirmen schreibt" width="1600" height="900" loading="lazy" decoding="async" />
                     <figcaption>Vorgefertigte Bausteine oder eigener Bauplan. Der Unterschied zeigt sich beim Umzug.</figcaption>
                 </figure>
 
-                <h2>Die Monatspreise, Stand August 2026</h2>
+                <h2>Was kostet ein Website-Baukasten im Monat?</h2>
                 <p>
                     Die Anbieter staffeln ihre Tarife nach Funktionen, und die Listenpreise ändern sich regelmäßig.
                     Die folgende Übersicht zeigt die Größenordnung bei Jahreszahlung. Bei monatlicher Zahlung liegen
@@ -128,7 +140,7 @@ export default function BaukastenOderEigeneWebsitePage() {
                     {' '}<Link href="/wissen/webdesign-kosten">Kostenguide zu Webdesign</Link>.
                 </p>
 
-                <h2>Der Umzug: was Sie wirklich mitnehmen können</h2>
+                <h2>Kann ich meine Baukasten-Website später umziehen?</h2>
                 <p>
                     Hier trennen sich Marketingversprechen und Technik. Wix schreibt in seinem Hilfebereich deutlich,
                     dass eine Wix-Website nicht anderswo gehostet werden kann, weil sie auf der eigenen Infrastruktur
@@ -148,7 +160,7 @@ export default function BaukastenOderEigeneWebsitePage() {
                     wenigsten brauchen: beim Wachstum.
                 </p>
 
-                <h2>Performance: kein Vorurteil, sondern messbar</h2>
+                <h2>Sind Baukasten-Websites schlecht für SEO?</h2>
                 <p>
                     Google sagt zwei Dinge, die man zusammen lesen muss. Erstens: Die Wahl des Systems ist kein
                     Ranking-Faktor, bewertet wird das ausgelieferte Ergebnis. Zweitens: Die Core Web Vitals sind
@@ -200,7 +212,7 @@ export default function BaukastenOderEigeneWebsitePage() {
                     </li>
                 </ul>
 
-                <h2>Wann der Baukasten die richtige Entscheidung ist</h2>
+                <h2>Wann ist ein Baukasten die richtige Wahl?</h2>
                 <p>
                     Es gibt diese Fälle, und es wäre unredlich, sie zu verschweigen:
                 </p>
@@ -273,6 +285,7 @@ export default function BaukastenOderEigeneWebsitePage() {
                     </ol>
                 </div>
             </ArticleLayout>
+            <FaqSection title="Häufige Fragen zu Baukasten und eigener Website" items={faqItems} />
         </>
     );
 }

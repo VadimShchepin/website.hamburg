@@ -1,0 +1,12 @@
+#!/bin/zsh
+# In-Artikel-Diagramme fuer den Batch vom 22.08.2026.
+cd /Users/vadim/projects/website.hamburg || exit 1
+S=outputs/svgen.sh
+P=/Users/vadim/projects/website.hamburg/public/wissen
+
+$S "$P/bfsg-entscheidung.svg" "Ein Entscheidungsbaum von links nach rechts in drei Stufen. Startknoten links: Website. Erste Verzweigung mit der Frage: Vertrag online? Der Nein-Zweig fuehrt nach unten zu einem hellen Kasten mit der Beschriftung: keine Pflicht. Der Ja-Zweig fuehrt nach rechts zur zweiten Verzweigung mit der Frage: Kleinstunternehmen? Deren Ja-Zweig fuehrt zu einem hellen Kasten: keine Pflicht. Deren Nein-Zweig fuehrt zu einem rot umrandeten Kasten rechts: BFSG gilt. Klare Linien, Raute-Formen fuer die Fragen, Rechtecke fuer die Ergebnisse." &
+$S "$P/wcag-vier-prinzipien.svg" "Vier gleich grosse Karten in einer Reihe von links nach rechts, jede mit einer Kopfzeile und einem einfachen Piktogramm darunter. Karte 1 Titel wahrnehmbar mit einem Auge und darunter dem Label Kontrast. Karte 2 Titel bedienbar mit einer Tastatur-Taste und darunter dem Label Tastatur. Karte 3 Titel verstaendlich mit einer Sprechblase und darunter dem Label Beschriftung. Karte 4 Titel robust mit einem Code-Klammer-Zeichen und darunter dem Label HTML. Genau eine Karte hat einen roten Rahmen als Akzent." &
+$S "$P/googleads-matchtypes.svg" "Ein Balkenvergleich mit drei Gruppen. Ueberschrift oben links: Klickpreis gegen Kosten je Anfrage. Drei Zeilen mit je zwei Balken nebeneinander, links ein dunkler kurzer Balken fuer den Klickpreis, rechts ein hellerer langer Balken fuer die Kosten je Anfrage. Zeile 1 Beschriftung weitgehend passend, dort ist der Klickpreis-Balken sehr kurz und der Anfrage-Balken sehr lang und rot. Zeile 2 Beschriftung Wortgruppe, mittlerer Klickpreis-Balken, kurzer Anfrage-Balken. Zeile 3 Beschriftung exakt, langer Klickpreis-Balken, mittlerer Anfrage-Balken." &
+$S "$P/cms-landschaft.svg" "Eine Uebersicht in drei senkrechten Spalten mit Kopfzeilen. Spalte 1 Kopfzeile Baukasten, darunter drei gleiche kleine Bloecke gestapelt. Spalte 2 Kopfzeile Klassisches CMS, darunter ein grosser Block mit vielen kleinen Feldern darin. Spalte 3 Kopfzeile Headless, darunter ein Datenbank-Zylinder oben und darunter zwei getrennte Ausgabe-Rechtecke, verbunden durch zwei Linien. Genau ein Element in Spalte 3 ist rot hervorgehoben. Sachlich, wie eine Infografik in einer Wirtschaftszeitung." &
+wait
+echo DIAGRAMS-DONE

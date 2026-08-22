@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc" stroke-linejoin="round" stroke-linecap="round">
+  <title id="title">Google-Ads-Klickpreise in der Auktion</title>
+  <desc id="desc">Ein großer Auktionshammer trifft auf ein breites Suchfeld. Darunter stehen drei ansteigende Münzstapel, von denen der höchste rot hervorgehoben ist.</desc>
+
+  <!-- Breites Suchfeld als ruhiges Zentrum -->
+  <rect x="80" y="380" width="800" height="170" rx="62" fill="#FFFFFF" stroke="#0A192F" stroke-width="10"/>
+  <circle cx="168" cy="463" r="35" fill="#E9EEF3" stroke="#0A192F" stroke-width="10"/>
+  <path d="m193 488 28 28" fill="none" stroke="#0A192F" stroke-width="10"/>
+  <text x="265" y="482" fill="#0A192F" font-family="Inter, Helvetica, Arial, sans-serif" font-size="50" font-weight="600" dominant-baseline="middle">Klickpreis</text>
+
+  <!-- Drei Münzstapel mit klar ansteigender Höhe -->
+  <g fill="#E9EEF3" stroke="#0A192F" stroke-width="8">
+    <rect x="220" y="724" width="160" height="48" rx="24"/>
+    <rect x="220" y="766" width="160" height="48" rx="24"/>
+    <rect x="220" y="808" width="160" height="48" rx="24"/>
+  </g>
+  <g fill="#E9EEF3" stroke="#0A192F" stroke-width="8">
+    <rect x="445" y="640" width="160" height="48" rx="24"/>
+    <rect x="445" y="682" width="160" height="48" rx="24"/>
+    <rect x="445" y="724" width="160" height="48" rx="24"/>
+    <rect x="445" y="766" width="160" height="48" rx="24"/>
+    <rect x="445" y="808" width="160" height="48" rx="24"/>
+  </g>
+  <g fill="#E53935" stroke="#0A192F" stroke-width="8">
+    <rect x="670" y="598" width="160" height="48" rx="24"/>
+    <rect x="670" y="640" width="160" height="48" rx="24"/>
+    <rect x="670" y="682" width="160" height="48" rx="24"/>
+    <rect x="670" y="724" width="160" height="48" rx="24"/>
+    <rect x="670" y="766" width="160" height="48" rx="24"/>
+    <rect x="670" y="808" width="160" height="48" rx="24"/>
+  </g>
+
+  <!-- Großer Auktionshammer aus der rechten oberen Ecke -->
+  <path d="M786 252 1038 55q13-10 26 0l39 31q13 11 0 23L817 334Z" fill="#172A45" stroke="#0A192F" stroke-width="9"/>
+  <g transform="rotate(38 750 331)" stroke="#0A192F" stroke-width="9">
+    <rect x="592" y="281" width="316" height="100" rx="25" fill="#0A192F"/>
+    <rect x="566" y="266" width="78" height="130" rx="22" fill="#172A45"/>
+    <rect x="856" y="266" width="78" height="130" rx="22" fill="#172A45"/>
+  </g>
+</svg>

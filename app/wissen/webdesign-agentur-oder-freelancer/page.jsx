@@ -1,20 +1,30 @@
 import ArticleLayout from '../../../src/components/ArticleLayout';
+import FaqSection from '../../../src/components/FaqSection';
 import { BUSINESS } from '../../../src/lib/schema';
 import Link from 'next/link';
 
 export const metadata = {
-    title: 'Agentur oder Freelancer? Preise & Risiken 2026',
+    title: 'Webdesign: Agentur oder Freelancer? Preise & Risiken 2026',
     description: 'Stundensätze, Projektpreise, Ausfallrisiko und Vertragsfallen im Vergleich. Ein ehrlicher Entscheidungsleitfaden, geschrieben von einem Solo-Entwickler.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/webdesign-agentur-oder-freelancer',
     },
     openGraph: {
-        title: 'Agentur oder Freelancer? Preise & Risiken 2026',
+        title: 'Webdesign: Agentur oder Freelancer? Preise & Risiken 2026',
         description: 'Stundensätze, Projektpreise, Ausfallrisiko und Vertragsfallen im Vergleich. Ein ehrlicher Entscheidungsleitfaden.',
         url: 'https://webseite.hamburg/wissen/webdesign-agentur-oder-freelancer',
         type: 'article',
+        images: [{ url: 'https://webseite.hamburg/wissen/fotos/freelancer-hero.webp', width: 1200, height: 900 }],
     },
 };
+
+const faqItems = [
+    { q: "Agentur oder Freelancer: was ist günstiger?", a: "Ein Freelancer liegt bei Projektpreisen von 2.000 bis 12.000 Euro, eine Agentur bei 8.000 bis 30.000 Euro und mehr. Der Grund ist keine Qualitätsfrage, sondern Kostenstruktur: Agenturen finanzieren Projektleitung, Qualitätssicherung und Vertrieb mit. Die Marktstudie Freelancer-Kompass nennt für den DACH-Raum einen durchschnittlichen Stundensatz von rund 104 Euro (2025) beziehungsweise 103 Euro (2026), der Median im IT-Bereich liegt bei etwa 95 Euro." },
+    { q: "Wann ist eine Agentur die richtige Wahl?", a: "Ab etwa 15.000 Euro Budget, bei mehreren Sprachen, mehreren Standorten oder wenn Ihr Einkauf einen Rahmenvertrag mit Vertretungsregelung braucht. Ein Freelancer passt bei Projekten zwischen 2.000 und 12.000 Euro, wenn Sie schnelle Entscheidungen und einen festen Ansprechpartner wollen." },
+    { q: "Wie sichere ich das Ausfallrisiko bei einem Freelancer ab?", a: "Mit vier Maßnahmen, die fast nichts kosten: Der Quellcode liegt in einem Repository, das Ihnen gehört, etwa bei GitHub oder GitLab. Alle Zugänge zu Hosting, DNS, CMS, Analytics und Ads liegen in Ihrem eigenen Passwortmanager. Die Domain läuft auf Ihren Namen, bei einer .de-Domain als DENIC-Inhaber. Und im Vertrag steht eine Zeile, wer im Ausfall übernimmt." },
+    { q: "Wem gehört die Website nach dem Projekt?", a: "Das Urheberrecht an Design und Code bleibt nach deutschem Recht beim Menschen, der es geschaffen hat, Sie erwerben Nutzungsrechte. Steht im Vertrag nicht, welche, greift die Zweckübertragungsregel aus § 31 Absatz 5 UrhG: Sie bekommen im Zweifel nur die Rechte, die für den konkreten Vertragszweck nötig sind. Auch die Herausgabe des Quellcodes schuldet der Auftragnehmer nur, wenn sie vereinbart wurde oder für die vertragsgemäße Nutzung unumgänglich ist." },
+    { q: "Wie lange dauert ein Website-Projekt?", a: "Ein Baukasten ist in einem bis vierzehn Tagen fertig, ein Freelancer-Projekt in drei bis acht Wochen, ein Agenturprojekt in zwei bis sechs Monaten. Der Unterschied liegt weniger in der Arbeitsmenge als in den Entscheidungswegen: direkt beim Freelancer, über eine Projektleitung bei der Agentur." },
+];
 
 export default function AgenturOderFreelancerPage() {
     const articleJsonLd = {
@@ -26,6 +36,7 @@ export default function AgenturOderFreelancerPage() {
         datePublished: '2026-08-20',
         dateModified: '2026-08-20',
         url: 'https://webseite.hamburg/wissen/webdesign-agentur-oder-freelancer',
+        image: 'https://webseite.hamburg/wissen/fotos/freelancer-hero.webp',
         inLanguage: 'de',
         mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://webseite.hamburg/wissen/webdesign-agentur-oder-freelancer' },
     };
@@ -50,8 +61,9 @@ export default function AgenturOderFreelancerPage() {
                 title="Agentur, Freelancer oder Baukasten: Wer soll Ihre Website bauen?"
                 readTime="11 Min."
                 publishDate="2026-08-20"
-                heroImage="/wissen/hero-agentur-freelancer.svg"
-                heroAlt="Illustration: Wegweiser mit drei Schildern für Baukasten, Freelancer und Agentur, das mittlere rot hervorgehoben"
+                heroImage="/wissen/fotos/freelancer-hero.webp"
+                heroAlt="Entwickler arbeitet an einem Schreibtisch vor einem großen Fenster am Monitor"
+                heroFramed
             >
                 <p>
                     Zuerst die Offenlegung, damit Sie den Rest richtig einordnen können: Ich bin die Freelancer-Option.
@@ -66,12 +78,18 @@ export default function AgenturOderFreelancerPage() {
                     mehreren Standorten oder wenn Ihr Einkauf einen Rahmenvertrag mit Vertretungsregelung braucht.
                 </p>
 
-                <figure className="article-figure">
-                    <img src="/wissen/agentur-freelancer-hero.svg" alt="Illustration: drei Wege zu einer neuen Website, symbolisiert durch Bauklötze für den Baukasten, eine Person am Laptop für den Freelancer und ein Team mit Organigramm für die Agentur" width="1600" height="900" />
-                    <figcaption>Drei Wege, ein Ziel. Der Unterschied liegt nicht in der Qualität, sondern in Risiko, Tempo und Preis.</figcaption>
-                </figure>
+                <div className="subpage-duo">
+                    <figure>
+                        <img src="/wissen/fotos/freelancer-schreibtisch.webp" alt="Einzelner Entwickler arbeitet in einem mit Pflanzen eingerichteten Arbeitszimmer am Monitor" width="1000" height="750" loading="lazy" decoding="async" />
+                        <figcaption>Freelancer: ein Ansprechpartner, kurze Entscheidungswege, ein Kalender.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/wissen/fotos/agentur-team.webp" alt="Agenturteam sitzt in einem hellen Besprechungsraum vor einem Flipchart mit Notizzetteln" width="1000" height="750" loading="lazy" decoding="async" />
+                        <figcaption>Agentur: Projektleitung, Vertretung, Struktur, und die Kosten dafür.</figcaption>
+                    </figure>
+                </div>
 
-                <h2>Was die drei Wege 2026 kosten</h2>
+                <h2>Was kosten Baukasten, Freelancer und Agentur 2026?</h2>
                 <p>
                     Preise für Websites sind schwer vergleichbar, weil niemand dasselbe verkauft. Stundensätze sind
                     dagegen recht gut dokumentiert. Die Marktstudie Freelancer-Kompass von freelancermap nennt für den
@@ -145,7 +163,7 @@ export default function AgenturOderFreelancerPage() {
                     Rechnen Sie zusätzlich 15 bis 20 Prozent des Erstellungspreises pro Jahr für Betrieb und Pflege ein.
                 </p>
 
-                <h2>Das Ausfallrisiko beim Solo-Anbieter, ehrlich gerechnet</h2>
+                <h2>Wie sichere ich das Ausfallrisiko beim Freelancer ab?</h2>
                 <p>
                     Bei einem Freelancer hängt Ihr Projekt an einer Person. Krankheit, Unfall, Geschäftsaufgabe:
                     In allen drei Fällen steht das Projekt. Wer das kleinredet, verkauft Ihnen etwas. Der Punkt ist
@@ -222,7 +240,7 @@ export default function AgenturOderFreelancerPage() {
                     <li><strong>Rechtstexte:</strong> Klare Trennung, wer Impressum, Datenschutzerklärung und Cookie-Banner liefert. Webdesigner dürfen keine Rechtsberatung leisten.</li>
                 </ul>
 
-                <h2>Wann welche Option die richtige ist</h2>
+                <h2>Wann ist welche Option die richtige?</h2>
                 <h3>Baukasten</h3>
                 <p>
                     Sinnvoll für Vereine, Nebenprojekte, Testphasen und Betriebe, die keine Kunden über Google
@@ -286,6 +304,7 @@ export default function AgenturOderFreelancerPage() {
                     </ol>
                 </div>
             </ArticleLayout>
+            <FaqSection title="Häufige Fragen zu Agentur, Freelancer und Baukasten" items={faqItems} />
         </>
     );
 }

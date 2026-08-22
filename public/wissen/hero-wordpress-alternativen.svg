@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc" stroke-linejoin="round" stroke-linecap="round">
+  <title id="title">CMS-Mauer und drei Alternativen</title>
+  <desc id="desc">Links steht eine große Mauer aus gleichen quadratischen Bausteinen. Rechts bilden drei unterschiedliche einzelne Bausteine die Alternativen, wobei der mittlere rot hervorgehoben ist.</desc>
+
+  <defs>
+    <rect id="wall-block" width="74" height="74" rx="10"/>
+  </defs>
+
+  <rect x="90" y="125" width="190" height="82" rx="41" fill="#FFFFFF" stroke="#0A192F" stroke-width="8"/>
+  <text x="140" y="181" fill="#0A192F" font-family="Inter, Helvetica, Arial, sans-serif" font-size="44" font-weight="600">CMS</text>
+
+  <g fill="#FFFFFF" stroke="#0A192F" stroke-width="8">
+    <use href="#wall-block" x="90" y="246"/>
+    <use href="#wall-block" x="180" y="246"/>
+    <use href="#wall-block" x="270" y="246"/>
+    <use href="#wall-block" x="360" y="246"/>
+    <use href="#wall-block" x="450" y="246"/>
+    <use href="#wall-block" x="540" y="246"/>
+
+    <use href="#wall-block" x="90" y="336"/>
+    <use href="#wall-block" x="180" y="336"/>
+    <use href="#wall-block" x="270" y="336"/>
+    <use href="#wall-block" x="360" y="336"/>
+    <use href="#wall-block" x="450" y="336"/>
+    <use href="#wall-block" x="540" y="336"/>
+
+    <use href="#wall-block" x="90" y="426"/>
+    <use href="#wall-block" x="180" y="426"/>
+    <use href="#wall-block" x="270" y="426"/>
+    <use href="#wall-block" x="360" y="426"/>
+    <use href="#wall-block" x="450" y="426"/>
+    <use href="#wall-block" x="540" y="426"/>
+
+    <use href="#wall-block" x="90" y="516"/>
+    <use href="#wall-block" x="180" y="516"/>
+    <use href="#wall-block" x="270" y="516"/>
+    <use href="#wall-block" x="360" y="516"/>
+    <use href="#wall-block" x="450" y="516"/>
+    <use href="#wall-block" x="540" y="516"/>
+
+    <use href="#wall-block" x="90" y="606"/>
+    <use href="#wall-block" x="180" y="606"/>
+    <use href="#wall-block" x="270" y="606"/>
+    <use href="#wall-block" x="360" y="606"/>
+    <use href="#wall-block" x="450" y="606"/>
+    <use href="#wall-block" x="540" y="606"/>
+  </g>
+
+  <rect x="800" y="145" width="285" height="150" rx="75" fill="#E9EEF3" stroke="#0A192F" stroke-width="10"/>
+  <path d="M830 375 875 330h165l45 45-45 45H875Z" fill="#E53935" stroke="#0A192F" stroke-width="10"/>
+  <path d="M815 530h155v58h115v132H815Z" fill="#172A45" stroke="#0A192F" stroke-width="10"/>
+</svg>

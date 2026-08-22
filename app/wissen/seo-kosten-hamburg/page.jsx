@@ -1,4 +1,5 @@
 import ArticleLayout from '../../../src/components/ArticleLayout';
+import FaqSection from '../../../src/components/FaqSection';
 import { BUSINESS } from '../../../src/lib/schema';
 import Link from 'next/link';
 
@@ -13,8 +14,17 @@ export const metadata = {
         description: 'Monatsbudgets, Stundensätze und was ein Retainer wirklich enthält. Mit Warnsignalen und einer ehrlichen Rechnung.',
         url: 'https://webseite.hamburg/wissen/seo-kosten-hamburg',
         type: 'article',
+        images: [{ url: 'https://webseite.hamburg/wissen/fotos/seo-kosten-hamburg.webp', width: 1200, height: 900 }],
     },
 };
+
+const faqItems = [
+    { q: "Was kostet SEO in Hamburg pro Monat?", a: "Für lokale Unternehmen liegen die Monatsbudgets bei 800 bis 2.500 Euro bei Freelancern und kleinen Anbietern und bei 2.000 bis 5.000 Euro bei Agenturen, jeweils netto und mit einer Laufzeit von mindestens drei bis sechs Monaten. Bei mir beginnt laufende SEO-Betreuung bei 1.000 Euro pro Monat mit drei Monaten Mindestlaufzeit und danach monatlicher Kündbarkeit." },
+    { q: "Wie lange dauert es, bis SEO wirkt?", a: "Google Search Central nennt für die meisten Fälle vier Monate bis zu einem Jahr, bis Verbesserungen umgesetzt sind und Wirkung zeigen. Eine Ahrefs-Auswertung zeigt, dass nur etwa 1,74 Prozent neu veröffentlichter Seiten innerhalb von zwölf Monaten die Top 10 erreichen, und dass die erfolgreichen Seiten dafür im Schnitt zwei bis sechs Monate brauchen." },
+    { q: "Was bekomme ich für 1.000 Euro im Monat konkret?", a: "Ein Monatsbudget ist Arbeitszeit. Bei einem Stundensatz von 100 Euro sind 1.000 Euro etwa zehn Stunden: zwei Stunden technische Prüfung und Behebung, drei bis vier Stunden Inhalte, eine Stunde lokale Signale, ein bis zwei Stunden Analyse und eine Stunde Abstimmung. Wer für 299 Euro im Monat vollumfängliche Betreuung verspricht, verkauft rechnerisch zweieinhalb Stunden." },
+    { q: "Woran erkenne ich unseriöse SEO-Angebote?", a: "Google nennt in seiner Dokumentation ausdrücklich Warnsignale. Die wichtigsten: Ranking-Garantien, eine behauptete Sonderbeziehung zu Google, keine Angabe der enthaltenen Arbeitsstunden, Berichte statt Arbeit, Analytics- und Search-Console-Konten, die der Agentur gehören statt Ihnen, gekaufte Linkpakete und lange Vertragsbindung ohne Ausstieg." },
+    { q: "Wann lohnt sich SEO nicht?", a: "In vier Fällen: wenn Sie Aufträge in zwei Wochen brauchen, dann ist Google Ads das richtige Werkzeug; wenn Ihre Website keine Anfragen erzeugt, dann kommt zuerst Conversion-Optimierung; wenn Sie keine Kapazität für neue Kunden haben; und wenn Ihr Angebot noch gar nicht gesucht wird, weil es dafür kein Suchvolumen gibt." },
+];
 
 export default function SeoKostenHamburgPage() {
     const articleJsonLd = {
@@ -26,6 +36,7 @@ export default function SeoKostenHamburgPage() {
         datePublished: '2026-08-20',
         dateModified: '2026-08-20',
         url: 'https://webseite.hamburg/wissen/seo-kosten-hamburg',
+        image: 'https://webseite.hamburg/wissen/fotos/seo-kosten-hamburg.webp',
         inLanguage: 'de',
         mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://webseite.hamburg/wissen/seo-kosten-hamburg' },
     };
@@ -50,8 +61,9 @@ export default function SeoKostenHamburgPage() {
                 title="Was kostet SEO in Hamburg? Preise, Modelle und was Sie dafür bekommen"
                 readTime="11 Min."
                 publishDate="2026-08-20"
-                heroImage="/wissen/hero-seo-kosten.svg"
-                heroAlt="Illustration: Münzstapel, aus dem eine rote Kurve nach oben steigt, daneben eine Lupe"
+                heroImage="/wissen/fotos/seo-kosten-hamburg.webp"
+                heroAlt="Blick durch einen Kanal der Hamburger Speicherstadt mit Backsteinspeichern auf beiden Seiten"
+                heroFramed
             >
                 <p>
                     Kurze Antwort für lokale Unternehmen in Hamburg: 800 bis 2.500 Euro im Monat bei Freelancern und
@@ -62,11 +74,11 @@ export default function SeoKostenHamburgPage() {
                 </p>
 
                 <figure className="article-figure">
-                    <img src="/wissen/seo-kosten-hero.svg" alt="Illustration: Waage mit Euromünzen als Monatsbudget auf der einen und einer steigenden Kurve mit Lupe als Ergebnis auf der anderen Seite, darunter eine Zeitachse mit Monatsmarken" width="1600" height="900" />
+                    <img src="/wissen/fotos/seo-kosten-budget.webp" alt="Laptop auf einem Schreibtisch zeigt ein Dashboard mit Balken- und Liniendiagrammen, daneben eine Tasse Kaffee" width="1600" height="900" loading="lazy" decoding="async" />
                     <figcaption>SEO ist eine Investition mit Anlaufzeit. Wer das einpreist, wird nicht enttäuscht.</figcaption>
                 </figure>
 
-                <h2>Die drei üblichen Abrechnungsmodelle</h2>
+                <h2>Wie rechnen SEO-Dienstleister ab?</h2>
                 <p>
                     Die Preisumfrage von Ahrefs unter SEO-Dienstleistern zeigt, wie der Markt abrechnet: 78,2 Prozent
                     arbeiten mit monatlichen Pauschalen, 48,9 Prozent mit Projektpreisen und 34,8 Prozent nach
@@ -131,7 +143,7 @@ export default function SeoKostenHamburgPage() {
                     Betrugsabsicht, es ist Arithmetik.
                 </p>
 
-                <h2>Wie lange es dauert, und was Google dazu sagt</h2>
+                <h2>Wie lange dauert es, bis SEO wirkt?</h2>
                 <p>
                     In der offiziellen Dokumentation von Google Search Central steht zwei Dinge, die jeder Anbieter
                     kennen sollte. Erstens: „Niemand kann eine Platzierung auf Platz 1 bei Google garantieren."
@@ -150,7 +162,7 @@ export default function SeoKostenHamburgPage() {
                     Jahresrisiko tragen.
                 </p>
 
-                <h2>Woran Sie unseriöse Angebote erkennen</h2>
+                <h2>Woran erkenne ich unseriöse SEO-Angebote?</h2>
                 <p>
                     Google nennt in derselben Dokumentation ausdrücklich Warnsignale. Ergänzt um das, was ich in
                     Hamburger Angeboten regelmäßig lese:
@@ -165,7 +177,7 @@ export default function SeoKostenHamburgPage() {
                     <li><strong>Keine Aussage zur Laufzeit.</strong> Zwölf Monate Bindung ohne Ausstieg ist bei einem lokalen Betrieb unnötig.</li>
                 </ul>
 
-                <h2>Wann SEO die falsche Investition ist</h2>
+                <h2>Wann lohnt sich SEO nicht?</h2>
                 <p>
                     Das sagt Ihnen selten jemand, der SEO verkauft, also sage ich es: SEO lohnt nicht immer.
                 </p>
@@ -231,6 +243,7 @@ export default function SeoKostenHamburgPage() {
                     </ol>
                 </div>
             </ArticleLayout>
+            <FaqSection title="Häufige Fragen zu SEO-Kosten in Hamburg" items={faqItems} />
         </>
     );
 }

@@ -1,20 +1,30 @@
 import ArticleLayout from '../../../src/components/ArticleLayout';
+import FaqSection from '../../../src/components/FaqSection';
 import { BUSINESS } from '../../../src/lib/schema';
 import Link from 'next/link';
 
 export const metadata = {
-    title: '12 Gründe, warum Google Ihre Website nicht zeigt',
+    title: 'Website nicht bei Google gefunden? 12 Gründe + Lösungen',
     description: '12 Ursachen, warum Seiten nicht im Index landen, in der Reihenfolge zum Prüfen. Mit Google-Originalquellen und dem Fall meiner eigenen Website.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/website-nicht-bei-google-gefunden',
     },
     openGraph: {
-        title: '12 Gründe, warum Google Ihre Website nicht zeigt',
+        title: 'Website nicht bei Google gefunden? 12 Gründe + Lösungen',
         description: '12 Ursachen, warum Seiten nicht im Index landen, in der Reihenfolge zum Prüfen. Mit Google-Originalquellen.',
         url: 'https://webseite.hamburg/wissen/website-nicht-bei-google-gefunden',
         type: 'article',
+        images: [{ url: 'https://webseite.hamburg/wissen/fotos/indexierung-hero.webp', width: 1200, height: 900 }],
     },
 };
+
+const faqItems = [
+    { q: "Warum wird meine Website nicht bei Google gefunden?", a: "Bevor Sie etwas ändern, brauchen Sie eine Diagnose, und die dauert zwanzig Minuten: Markensuche nach dem exakten Firmennamen, eine Stichprobe über site:ihredomain.de, das URL-Prüftool der Search Console für eine konkrete Adresse und der Seitenindexierungsbericht. Wichtig zur Einordnung, und zwar von Google selbst: Google crawlt nicht alle Seiten des Webs und indexiert nicht alle, die gecrawlt werden. Dass nicht jede Seite im Index ist, ist normal. Kritisch wird es, wenn wichtige Seiten fehlen." },
+    { q: "Was bedeutet „Gefunden, zurzeit nicht indexiert“?", a: "Google kennt die Adresse, hat sie aber noch nicht gecrawlt. Google nennt als typischen Grund, dass das Crawlen verschoben wurde, um die Website nicht zu überlasten. In der Praxis steckt dahinter meistens Priorisierung: Die URL ist Google nicht wichtig genug, um sie jetzt abzurufen. Das ist fast immer ein Verlinkungsproblem." },
+    { q: "Was bedeutet „Gecrawlt, zurzeit nicht indexiert“?", a: "Der Googlebot war da, hat den Inhalt gelesen und sich entschieden, ihn nicht aufzunehmen. Das ist in der Regel kein technisches Problem, sondern ein Qualitäts- oder Redundanzsignal. Wenn dieser Status bei vielen Seiten auftritt, deutet das auf ein Muster hin: austauschbare Texte, sehr ähnliche Seiten oder dünne Inhalte, die es online schon hundertfach gibt." },
+    { q: "Muss ich mein Crawl-Budget optimieren?", a: "Für kleine und mittelgroße Websites ist das Crawl-Budget laut Google kein Thema. Relevant wird es erst bei Websites mit mehr als einer Million Adressen, deren Inhalte sich moderat ändern, oder bei mehr als 10.000 Adressen mit sehr häufigen Änderungen, etwa Nachrichtenportalen und Marktplätzen. Wenn Ihre Website 40 Seiten hat, hat sie kein Crawl-Budget-Problem, sondern ein Verlinkungs- oder Qualitätsproblem." },
+    { q: "Wie bekomme ich meine Seiten schneller in den Index?", a: "Der 48-Stunden-Plan: Search Console einrichten, noindex und robots.txt inklusive HTTP-Header prüfen, Canonical-Tags auf Startseite, einer Leistungsseite und einem Artikel prüfen, Sitemap mit ausschließlich kanonischen 200er-Adressen einreichen, die interne Verlinkung reparieren, sodass jede wichtige Seite mindestens zwei interne Links aus thematisch passenden Seiten hat, die wichtigsten Seiten manuell zur Indexierung anfordern, neue Adressen über die Bing Webmaster Tools und IndexNow melden, dann zwei Wochen warten und den Bericht erneut vergleichen." },
+];
 
 export default function NichtBeiGoogleGefundenPage() {
     const articleJsonLd = {
@@ -26,6 +36,7 @@ export default function NichtBeiGoogleGefundenPage() {
         datePublished: '2026-08-20',
         dateModified: '2026-08-20',
         url: 'https://webseite.hamburg/wissen/website-nicht-bei-google-gefunden',
+        image: 'https://webseite.hamburg/wissen/fotos/indexierung-hero.webp',
         inLanguage: 'de',
         mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://webseite.hamburg/wissen/website-nicht-bei-google-gefunden' },
     };
@@ -50,8 +61,9 @@ export default function NichtBeiGoogleGefundenPage() {
                 title="Website nicht bei Google zu finden? Die 12 häufigsten Ursachen"
                 readTime="12 Min."
                 publishDate="2026-08-20"
-                heroImage="/wissen/hero-indexierung.svg"
-                heroAlt="Illustration: Dokument mit Textzeilen unter einer Lupe, daneben ein rotes Fragezeichen als Zeichen für eine nicht indexierte Seite"
+                heroImage="/wissen/fotos/indexierung-hero.webp"
+                heroAlt="Mann sitzt abends vor einem Monitor und sucht nach der Ursache eines Problems"
+                heroFramed
             >
                 <p>
                     Ich fange mit einem Eigentor an. Im Mai 2026 habe ich die Search Console dieser Website
@@ -68,11 +80,11 @@ export default function NichtBeiGoogleGefundenPage() {
                 </p>
 
                 <figure className="article-figure">
-                    <img src="/wissen/indexierung-hero.svg" alt="Illustration: Trichter, in den viele Seiten hineingehen, in der Mitte ein Filter mit Crawler-Symbol, unten kommen wenige indexierte Seiten heraus, einige fallen rot markiert heraus" width="1600" height="900" />
+                    <img src="/wissen/fotos/indexierung-pruefen.webp" alt="Blick von oben auf einen Schreibtisch mit Laptop, Notizbuch und einem Bericht, jemand tippt auf der Tastatur" width="1600" height="900" loading="lazy" decoding="async" />
                     <figcaption>Gefunden, gecrawlt, indexiert: drei Stufen, an denen Seiten verloren gehen können.</figcaption>
                 </figure>
 
-                <h2>Zuerst: Wie stellen Sie überhaupt fest, was los ist?</h2>
+                <h2>Wie stelle ich fest, ob meine Seiten indexiert sind?</h2>
                 <p>
                     Bevor Sie irgendetwas ändern, brauchen Sie eine Diagnose. Vier Schritte, zwanzig Minuten:
                 </p>
@@ -201,7 +213,7 @@ export default function NichtBeiGoogleGefundenPage() {
                     alle anderen Punkte irrelevant, bis es geklärt ist.
                 </p>
 
-                <h2>Der Crawl-Budget-Mythos</h2>
+                <h2>Muss ich mein Crawl-Budget optimieren?</h2>
                 <p>
                     Fast jeder zweite Ratgeber empfiehlt „Crawl-Budget-Optimierung". Google selbst schreibt dazu:
                     Für kleine und mittelgroße Websites ist das Crawl-Budget kein Thema. Relevant wird es erst bei
@@ -213,7 +225,7 @@ export default function NichtBeiGoogleGefundenPage() {
                     oder ein Qualitätsproblem. Diese Unterscheidung spart viel Geld für die falschen Maßnahmen.
                 </p>
 
-                <h2>Der 48-Stunden-Plan</h2>
+                <h2>Wie bekomme ich meine Seiten schneller in den Index?</h2>
                 <ol>
                     <li><strong>Search Console einrichten</strong>, falls nicht vorhanden. Ohne sie raten Sie.</li>
                     <li><strong>noindex und robots.txt prüfen</strong>, inklusive HTTP-Header. Zwei Minuten pro Seitentyp.</li>
@@ -225,7 +237,7 @@ export default function NichtBeiGoogleGefundenPage() {
                     <li><strong>Zwei Wochen warten.</strong> Danach denselben Bericht erneut ansehen und vergleichen.</li>
                 </ol>
 
-                <h2>Wenn alles indexiert ist und trotzdem niemand kommt</h2>
+                <h2>Alles indexiert und trotzdem kein Besucher: warum?</h2>
                 <p>
                     Dann haben Sie kein Indexierungsproblem, sondern ein Ranking- oder ein Nachfrageproblem. Drei
                     Möglichkeiten:
@@ -280,6 +292,7 @@ export default function NichtBeiGoogleGefundenPage() {
                     </ol>
                 </div>
             </ArticleLayout>
+            <FaqSection title="Häufige Fragen zur Indexierung bei Google" items={faqItems} />
         </>
     );
 }

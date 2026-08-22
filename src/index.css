@@ -2794,6 +2794,27 @@ img {
   color: inherit;
 }
 
+/* Full-bleed Kartenbild, hebt das Karten-Padding auf */
+.wissen-card-media {
+  margin: calc(var(--space-md) * -1) calc(var(--space-md) * -1) var(--space-md);
+  aspect-ratio: 760 / 494;
+  overflow: hidden;
+  background: var(--color-primary);
+  border-bottom: 1px solid var(--color-bg-gray2);
+}
+
+.wissen-card-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+a.wissen-card:hover .wissen-card-media img {
+  transform: scale(1.04);
+}
+
 .wissen-card-meta {
   display: flex;
   align-items: center;

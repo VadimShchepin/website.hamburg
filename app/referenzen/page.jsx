@@ -19,6 +19,8 @@ export const metadata = {
 const caseStudies = [
     {
         slug: 'gl-sommer',
+        image: '/referenzen/cards/gl-sommer.webp',
+        alt: 'Illustration: Browserfenster mit GaLaBau-Website, Standort-Pin und steigendes Balkendiagramm',
         category: 'SEO + GOOGLE ADS + REDESIGN',
         title: '728 lokale Aktionen pro Monat',
         client: 'GL Sommer GmbH',
@@ -27,6 +29,8 @@ const caseStudies = [
     },
     {
         slug: 'dybeauty',
+        image: '/referenzen/cards/dybeauty.webp',
+        alt: 'Illustration: drei Kosmetikflakons auf einem Produktraster mit Einkaufstasche und steil steigender Kurve',
         category: 'E-COMMERCE SEO',
         title: 'Organischen Traffic verdoppelt in 90 Tagen',
         client: 'DYBeauty',
@@ -35,6 +39,8 @@ const caseStudies = [
     },
     {
         slug: 'blitz-hamburg',
+        image: '/referenzen/cards/blitz-hamburg.webp',
+        alt: 'Illustration: Browserfenster mit Kostenschaetzer, Blitzsymbol und steigender ROI-Kurve',
         category: 'WEBDESIGN + GOOGLE ADS + SEO',
         title: 'ROI in 7 Wochen, ~40 Kunden/Monat',
         client: 'Blitz Hamburg',
@@ -43,6 +49,8 @@ const caseStudies = [
     },
     {
         slug: 'pest-control-saas',
+        image: '/referenzen/cards/pest-control-saas.webp',
+        alt: 'Illustration: vernetzte Sechseck-Module einer Software-Architektur mit Smartphone im Vordergrund',
         category: 'SAAS-PRODUKTENTWICKLUNG',
         title: 'Enterprise-Architektur für Schädlingsbekämpfung',
         client: 'Pest Control SaaS',
@@ -51,6 +59,8 @@ const caseStudies = [
     },
     {
         slug: 'kinderalbum',
+        image: '/referenzen/cards/kinderalbum.webp',
+        alt: 'Illustration: gestapelte Fotorahmen hinter einem Schutzschild mit Vorhaengeschloss und KI-Funke',
         category: 'SAAS-PRODUKT + AI SEO',
         title: 'DSGVO-Schulfotos-Plattform: #1 in ChatGPT',
         client: 'KinderAlbum',
@@ -59,6 +69,8 @@ const caseStudies = [
     },
     {
         slug: 'solovei-beauty',
+        image: '/referenzen/cards/solovei-beauty.webp',
+        alt: 'Illustration: Browserfenster mit Globus und drei Inhaltsbloecken, die per Cursor angeordnet werden',
         category: 'WEBDESIGN + CMS',
         title: '3 Sprachen, null Abhängigkeit vom Entwickler',
         client: 'Solovei Beauty',
@@ -67,6 +79,8 @@ const caseStudies = [
     },
     {
         slug: 'manetec',
+        image: '/referenzen/cards/manetec.webp',
+        alt: 'Illustration: Hotelgebaeude unter der Lupe mit Pruefringen und Haekchen-Siegel',
         category: 'WEBDESIGN + KI',
         title: 'Schädlingsbekämpfung trifft KI-Risikoanalyse',
         client: 'Manetec Hamburg',
@@ -75,6 +89,8 @@ const caseStudies = [
     },
     {
         slug: 'typeexplore-ai',
+        image: '/referenzen/cards/typeexplore-ai.webp',
+        alt: 'Illustration: isometrische Tastatur mit abhebenden Tasten, KI-Funke und Konfetti',
         category: 'KI-PRODUKT',
         title: 'KI-Tipptrainer: Lernen beim Tippen',
         client: 'TypeExplore AI',
@@ -83,6 +99,8 @@ const caseStudies = [
     },
     {
         slug: 'mit-kinder',
+        image: '/referenzen/cards/mit-kinder.webp',
+        alt: 'Illustration: aufgefaltete Stadtkarte mit Standort-Pins und schwebender Chat-Blase',
         category: 'KI-PLATTFORM',
         title: 'Aktivitätsplattform für Familien mit KI-Chatbot',
         client: 'mit-kinder.de',
@@ -91,6 +109,8 @@ const caseStudies = [
     },
     {
         slug: 'glucksmomente-events',
+        image: '/referenzen/cards/glucksmomente-events.webp',
+        alt: 'Illustration: Eventbogen mit Ballontraube und geschwungenen Baendern',
         category: 'WEBDESIGN',
         title: 'Aquarell-Ästhetik für Eventplanerin',
         client: 'Glücksmomente Events',
@@ -146,6 +166,9 @@ export default function ReferenzenPage() {
                     <div className="wissen-grid">
                         {caseStudies.map((study, i) => (
                             <Link key={study.slug} href={`/referenzen/${study.slug}`} className={`wissen-card animate-up delay-${(i % 3) + 1}`}>
+                                <div className="wissen-card-media">
+                                    <img src={study.image} alt={study.alt} width="760" height="494" loading={i < 3 ? 'eager' : 'lazy'} decoding="async" />
+                                </div>
                                 <div className="wissen-card-meta">
                                     <span className="wissen-card-category">{study.category}</span>
                                 </div>

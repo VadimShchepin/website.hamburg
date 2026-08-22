@@ -86,7 +86,7 @@ nav.haupt a:hover::after{width:100%}
 
 /* ---------- Hero: Nachthimmel ---------- */
 .hero{
-  position:relative;overflow:hidden;color:var(--creme);
+  position:relative;color:var(--creme);
   background:
     radial-gradient(1100px 600px at 78% -10%, #27509b 0%, transparent 60%),
     radial-gradient(900px 700px at -10% 110%, #12305f 0%, transparent 55%),
@@ -113,30 +113,47 @@ nav.haupt a:hover::after{width:100%}
 }
 @keyframes funkeln{from{opacity:.55}to{opacity:.95}}
 .hero-grid{
-  position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center;
-  padding:96px 0 150px;
+  position:relative;display:grid;grid-template-columns:1.14fr .86fr;
+  gap:18px 64px;align-items:end;
+  padding:78px 0 0;
 }
-.hero h1{font-size:clamp(42px,5.4vw,72px);margin:26px 0 26px;color:#fdfaf2}
+.hero h1{font-size:clamp(40px,4.6vw,64px);margin:22px 0 0;color:#fdfaf2}
+.hero-intro{padding-bottom:8px}
 .hero h1 em{font-style:normal;color:var(--gold-hell)}
 .hero .kicker{color:var(--gold-hell)}
 .hero p.lead{font-size:19px;line-height:1.7;color:rgba(250,245,234,.82);max-width:52ch;font-weight:300}
 .hero p.lead strong{font-weight:600;color:#fdfaf2}
-.hero-cta{display:flex;flex-wrap:wrap;gap:16px;margin-top:38px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:16px;margin-top:30px}
 .hero-fakten{
+  grid-column:1/-1;
   display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 40px;
-  margin-top:54px;padding-top:28px;border-top:1px solid rgba(250,245,234,.16);
+  margin-top:34px;padding-top:26px;border-top:1px solid rgba(250,245,234,.16);
 }
 .hero-fakten div{font-size:13.5px;color:rgba(250,245,234,.6);line-height:1.55}
 .hero-fakten strong{display:block;font-size:15.5px;color:#fdfaf2;font-weight:700;margin-bottom:2px}
 
-/* Heldbild: ruhig, praezise */
-.hero-bild{position:relative}
-.hero-foto{
-  position:relative;border-radius:var(--radius-l);overflow:hidden;
-  border:1px solid rgba(250,245,234,.18);
-  box-shadow:0 50px 100px -40px rgba(0,0,0,.65), 0 20px 40px -24px rgba(0,0,0,.5);
+/* Heldbild: Familie im gesteppten Matratzenrahmen, kippt aus der Nacht in den Tag */
+.hero-rahmen{
+  grid-column:1/-1;position:relative;z-index:3;
+  margin:48px 0 -84px;padding:12px;border-radius:var(--radius-xl);
+  background:linear-gradient(180deg,#fdfaf2,var(--leinen));
+  box-shadow:0 60px 110px -45px rgba(0,0,0,.6), var(--schatten-weich);
+  transform:rotate(-1.3deg);
 }
-.hero-foto img{width:100%;aspect-ratio:5/4;object-fit:cover;display:block}
+.hero-rahmen::before{
+  content:"";position:absolute;inset:6px;border-radius:30px;
+  border:1.5px dashed rgba(13,30,56,.28);pointer-events:none;z-index:2;
+}
+.hero-stempel{
+  position:absolute;top:-18px;right:44px;z-index:4;
+  padding:11px 22px;border-radius:999px;
+  background:linear-gradient(180deg,var(--gold-hell),var(--gold));
+  color:var(--nacht);font-weight:700;font-size:14px;letter-spacing:.04em;
+  transform:rotate(2deg);
+  box-shadow:0 14px 30px -10px rgba(227,164,28,.55);
+}
+.hero-foto{position:relative;border-radius:26px;overflow:hidden}
+.hero-foto img{width:100%;height:auto;aspect-ratio:1095/412;object-fit:cover;display:block}
 .hero-foto figcaption{
   position:absolute;left:0;right:0;bottom:0;z-index:2;
   display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 18px;
@@ -164,7 +181,7 @@ nav.haupt a:hover::after{width:100%}
 .welle{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:90px;display:block}
 
 /* ---------- Vertrauensleiste ---------- */
-.vertrauen{background:var(--creme);padding:34px 0 10px}
+.vertrauen{background:var(--creme);padding:132px 0 10px}
 .vertrauen-grid{
   display:grid;grid-template-columns:repeat(4,1fr);gap:18px;
 }
@@ -317,8 +334,10 @@ footer a:hover{color:#fdfaf2}
 /* ---------- Mobil ---------- */
 @media (max-width:1000px){
   nav.haupt{display:none}
-  .hero-grid{grid-template-columns:1fr;gap:56px;padding:64px 0 130px}
-  .hero-bild{max-width:560px}
+  .hero-grid{grid-template-columns:1fr;gap:0;padding:56px 0 0}
+  .hero-intro{padding-bottom:0;margin-top:26px}
+  .hero-rahmen{margin:40px 0 -84px}
+  .hero-foto img{aspect-ratio:2/1}
   .vertrauen-grid{grid-template-columns:1fr 1fr}
   .karten{grid-template-columns:1fr;max-width:560px;margin:0 auto}
   .gastgeber-grid,.manufaktur-grid{grid-template-columns:1fr;gap:56px}
@@ -329,6 +348,13 @@ footer a:hover{color:#fdfaf2}
   .vertrauen-grid{grid-template-columns:1fr}
   .hero h1{font-size:40px}
   .hero-fakten{grid-template-columns:1fr;gap:16px}
+  .hero-rahmen{padding:9px;margin:34px 0 -70px;border-radius:26px}
+  .hero-rahmen::before{inset:4px;border-radius:22px}
+  .hero-foto{border-radius:18px}
+  .hero-stempel{right:16px;top:-15px;font-size:12.5px;padding:9px 16px}
+  .hero-foto figcaption{padding:36px 18px 14px}
+  .hero-foto figcaption span{display:none}
+  .vertrauen{padding-top:112px}
   section{padding:72px 0}
   .cta-inner{padding:54px 26px}
   .footer-unten a{margin-left:0;margin-right:18px}
@@ -362,9 +388,12 @@ footer a:hover{color:#fdfaf2}
 
   <div class="wrap">
     <div class="hero-grid">
-      <div>
+      <div class="hero-kopf">
         <span class="kicker">Bettenfabrikation in Gleismuthhausen</span>
         <h1>Ihre Gäste schlafen <em>wie auf Wolken</em>.</h1>
+      </div>
+
+      <div class="hero-intro">
         <p class="lead">Boxspringbetten, Matratzen und Überwürfe <strong>direkt vom Hersteller</strong>. Gefertigt in Gleismuthhausen bei Seßlach, gemacht für Gastgeber: Hotels, Pensionen und Ferienhöfe.</p>
         <div class="hero-cta">
           <a class="btn btn-gold" href="#sortiment">Sortiment ansehen</a>
@@ -373,16 +402,18 @@ footer a:hover{color:#fdfaf2}
             0 95 67 / 2 18
           </a>
         </div>
-        <div class="hero-fakten">
-          <div><strong>Boxspringbetten</strong>weniger Arbeit im Alltag</div>
-          <div><strong>Matratzen</strong>wie auf Wolken gebettet</div>
-          <div><strong>Überwürfe</strong>Größen und Designs nach Wahl</div>
-        </div>
       </div>
 
-      <div class="hero-bild">
+      <div class="hero-fakten">
+        <div><strong>Boxspringbetten</strong>weniger Arbeit im Alltag</div>
+        <div><strong>Matratzen</strong>wie auf Wolken gebettet</div>
+        <div><strong>Überwürfe</strong>Größen und Designs nach Wahl</div>
+      </div>
+
+      <div class="hero-rahmen">
+        <span class="hero-stempel">Aus eigener Fertigung</span>
         <figure class="hero-foto">
-          <img src="/redesign/billinger/assets/hero.webp" alt="Boxspringbett mit nachtblauem Kopfteil und goldenem Überwurf in einem Gästezimmer" width="1376" height="768">
+          <img src="/redesign/billinger/assets/familie.webp" alt="Familie mit kleinem Kind liegt lachend in einem Bett unter einer grauen Decke" width="1095" height="412">
           <figcaption>
             <strong>Gefertigt in Oberfranken</strong>
             <span>Gleismuthhausen 1, 96145 Seßlach</span>

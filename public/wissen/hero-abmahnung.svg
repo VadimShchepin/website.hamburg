@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc" stroke-linejoin="round" stroke-linecap="round">
+  <title id="title">Abmahnung wegen einer Website</title>
+  <desc id="desc">Ein großer geöffneter Briefumschlag mit rotem Rand enthält ein Schreiben mit Paragrafenzeichen. Daneben führt ein Pfeil von einem Browserfenster zu einer Wolke.</desc>
+
+  <!-- Geöffnete Rückklappe des Umschlags -->
+  <path d="M108 404 425 184 742 404Z" fill="#E9EEF3" stroke="#0A192F" stroke-width="9"/>
+
+  <!-- Gefaltetes Schreiben -->
+  <path d="M278 106h304l78 78v382H278Z" fill="#FFFFFF" stroke="#0A192F" stroke-width="9"/>
+  <path d="M582 106v78h78Z" fill="#E9EEF3" stroke="#0A192F" stroke-width="8"/>
+  <text x="469" y="306" fill="#0A192F" font-family="Inter, Helvetica, Arial, sans-serif" font-size="138" font-weight="600" text-anchor="middle">§</text>
+  <path d="M340 350h258M340 389h198M340 428h230" fill="none" stroke="#172A45" stroke-width="8"/>
+
+  <!-- Vorderseite des Umschlags -->
+  <path d="M100 394h650v376H100Z" fill="#FFFFFF"/>
+  <path d="m105 402 320 221 320-221v358H105Z" fill="#E9EEF3"/>
+  <path d="m105 758 320-228 320 228" fill="#FFFFFF" stroke="#0A192F" stroke-width="9"/>
+  <path d="m105 402 320 221 320-221" fill="none" stroke="#0A192F" stroke-width="9"/>
+
+  <!-- Einziger roter Blickfang: der Rand des Umschlags -->
+  <path d="M278 394H118q-18 0-18 18v340q0 18 18 18h614q18 0 18-18V412q0-18-18-18h-72" fill="none" stroke="#E53935" stroke-width="10"/>
+
+  <!-- Browserfenster -->
+  <rect x="822" y="343" width="323" height="228" rx="24" fill="#FFFFFF" stroke="#0A192F" stroke-width="9"/>
+  <path d="M822 410h323" fill="none" stroke="#0A192F" stroke-width="8"/>
+  <circle cx="861" cy="376" r="9" fill="#172A45"/>
+  <circle cx="895" cy="376" r="9" fill="#172A45"/>
+  <circle cx="929" cy="376" r="9" fill="#172A45"/>
+  <rect x="870" y="450" width="105" height="74" rx="12" fill="#E9EEF3" stroke="#172A45" stroke-width="7"/>
+  <path d="M1008 458h89M1008 490h67M1008 522h89" fill="none" stroke="#172A45" stroke-width="7"/>
+
+  <!-- Datenweg zur Wolke -->
+  <path d="M980 328c5-42 28-70 64-87" fill="none" stroke="#172A45" stroke-width="9"/>
+  <path d="m1022 240 25-1-11 23" fill="none" stroke="#172A45" stroke-width="9"/>
+  <path d="M915 222c-1-30 23-54 53-54 9 0 18 2 25 6 13-29 42-49 76-49 45 0 81 35 83 79 24 5 42 26 42 51 0 29-23 52-52 52H947c-32 0-58-26-58-58 0-14 5-27 14-37" fill="#FFFFFF" stroke="#0A192F" stroke-width="9"/>
+
+  <!-- Ruhiges Themenlabel -->
+  <rect x="218" y="798" width="414" height="62" rx="31" fill="#0A192F"/>
+  <text x="425" y="841" fill="#FFFFFF" font-family="Inter, Helvetica, Arial, sans-serif" font-size="40" font-weight="600" text-anchor="middle">Abmahnung</text>
+</svg>

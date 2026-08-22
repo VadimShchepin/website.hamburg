@@ -103,6 +103,25 @@ export default function PestControlCaseStudy() {
                 </div>
             </section>
 
+            {/* Visual */}
+            <section className="section" style={{ paddingTop: 0 }}>
+                <div className="container">
+                    <div className="cs-image-showcase animate-up">
+                        <img
+                            src="/referenzen/pest-control-saas-hero.webp"
+                            alt="Illustration: vernetzte Sechseck-Module einer Software-Architektur mit Smartphone im Vordergrund"
+                            width="1200"
+                            height="780"
+                            loading="lazy"
+                            decoding="async"
+                            style={{ width: '100%', height: 'auto' }}
+                        />
+                        <p className="cs-image-caption">Sechs Bounded Contexts, sauber getrennt, plus Offline-PWA fuer die Techniker.</p>
+                    </div>
+                </div>
+            </section>
+
+
             {/* Content */}
             <section className="subpage-content section light-bg">
                 <div className="container subpage-body">

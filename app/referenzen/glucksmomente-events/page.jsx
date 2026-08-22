@@ -69,6 +69,25 @@ export default function GlucksmomenteCaseStudy() {
                 </div>
             </section>
 
+            {/* Visual */}
+            <section className="section" style={{ paddingTop: 0 }}>
+                <div className="container">
+                    <div className="cs-image-showcase animate-up">
+                        <img
+                            src="/referenzen/glucksmomente-events-hero.webp"
+                            alt="Illustration: Eventbogen mit Ballontraube und geschwungenen Baendern"
+                            width="1200"
+                            height="780"
+                            loading="lazy"
+                            decoding="async"
+                            style={{ width: '100%', height: 'auto' }}
+                        />
+                        <p className="cs-image-caption">Eventgestaltung als Leitmotiv: Bogen, Ballons und fliessende Scroll-Bewegung.</p>
+                    </div>
+                </div>
+            </section>
+
+
             <section className="subpage-content section light-bg">
                 <div className="container subpage-body">
                     <h2 className="animate-up">Die Aufgabe</h2>

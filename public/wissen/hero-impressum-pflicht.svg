@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc" stroke-linejoin="round" stroke-linecap="round">
+  <title id="title">Impressumspflicht für Unternehmen</title>
+  <desc id="desc">Zwei versetzt gestapelte Dokumentseiten mit Textzeilen, einem großen Paragraphenzeichen und einem runden Stempel mit der Aufschrift Pflichtangaben.</desc>
+
+  <!-- Hintere Dokumentseite -->
+  <g transform="rotate(-5 520 490)">
+    <rect x="240" y="185" width="560" height="610" rx="22" fill="#E9EEF3" stroke="#172A45" stroke-width="8"/>
+    <path d="M295 280h180M295 335h128M295 665h150M295 720h105" fill="none" stroke="#666666" stroke-width="8"/>
+  </g>
+
+  <!-- Vordere Dokumentseite -->
+  <rect x="330" y="210" width="600" height="600" rx="22" fill="#FFFFFF" stroke="#0A192F" stroke-width="10"/>
+
+  <!-- Paragraph und angedeutete Pflichtangaben -->
+  <text x="410" y="480" fill="#0A192F" font-family="Inter, Helvetica, Arial, sans-serif" font-size="218" font-weight="700">§</text>
+  <path d="M625 420h190M625 470h145M410 545h440M410 605h350M410 665h400M410 725h260" fill="none" stroke="#172A45" stroke-width="10"/>
+
+  <!-- Stempel: Der Rand ist das einzige rote Element -->
+  <circle cx="805" cy="210" r="150" fill="#FFFFFF" stroke="#E53935" stroke-width="10"/>
+  <text x="805" y="221" fill="#0A192F" font-family="Inter, Helvetica, Arial, sans-serif" font-size="30" font-weight="600" text-anchor="middle">Pflichtangaben</text>
+</svg>

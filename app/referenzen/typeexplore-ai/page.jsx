@@ -90,6 +90,25 @@ export default function TypeExploreCaseStudy() {
                 </div>
             </section>
 
+            {/* Visual */}
+            <section className="section" style={{ paddingTop: 0 }}>
+                <div className="container">
+                    <div className="cs-image-showcase animate-up">
+                        <img
+                            src="/referenzen/typeexplore-ai-hero.webp"
+                            alt="Illustration: isometrische Tastatur mit abhebenden Tasten, KI-Funke und Konfetti"
+                            width="1200"
+                            height="780"
+                            loading="lazy"
+                            decoding="async"
+                            style={{ width: '100%', height: 'auto' }}
+                        />
+                        <p className="cs-image-caption">Tippen lernen an KI-generierten Lektionen, mit Konfetti als Belohnung.</p>
+                    </div>
+                </div>
+            </section>
+
+
             <section className="subpage-content section light-bg">
                 <div className="container subpage-body">
                     <h2 className="animate-up">Das Problem</h2>

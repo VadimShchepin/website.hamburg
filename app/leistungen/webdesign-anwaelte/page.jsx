@@ -7,16 +7,17 @@ import ServiceMeta from '../../../src/components/ServiceMeta';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'Mehr Mandate | Kanzlei-Website Hamburg ab 2.900 €',
-    description: 'Kanzlei-Websites für Anwälte in Hamburg: berufsrechtlich sauber, lokal sichtbar, mit klarem Weg zum Erstgespräch. Ab 2.900 Euro, Festpreis.',
+    title: 'Kanzlei-Website Hamburg: Webdesign für Anwälte ab 2.900 €',
+    description: 'Was kostet eine Kanzlei-Website in Hamburg? Ab 2.900 Euro zum Festpreis: berufsrechtlich sauber nach § 43b BRAO, lokal sichtbar, mit klarem Weg zum Erstgespräch.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/webdesign-anwaelte',
     },
     openGraph: {
-        title: 'Mehr Mandate | Kanzlei-Website Hamburg ab 2.900 €',
-        description: 'Kanzlei-Websites für Anwälte in Hamburg: berufsrechtlich sauber, lokal sichtbar, mit klarem Weg zum Erstgespräch.',
+        title: 'Kanzlei-Website Hamburg: Webdesign für Anwälte ab 2.900 €',
+        description: 'Was kostet eine Kanzlei-Website in Hamburg? Ab 2.900 Euro zum Festpreis, berufsrechtlich sauber und mit klarem Weg zum Erstgespräch.',
         url: 'https://webseite.hamburg/leistungen/webdesign-anwaelte',
         type: 'website',
+        images: [{ url: 'https://webseite.hamburg/leistungen/branchen/anwaelte/kanzlei.webp', width: 1200, height: 900 }],
     },
 };
 
@@ -37,6 +38,7 @@ export default function WebdesignAnwaeltePage() {
         provider: BUSINESS,
         areaServed: { '@type': 'City', name: 'Hamburg' },
         url: 'https://webseite.hamburg/leistungen/webdesign-anwaelte',
+        image: 'https://webseite.hamburg/leistungen/branchen/anwaelte/kanzlei.webp',
         description: 'Kanzlei-Websites für Rechtsanwälte in Hamburg: berufsrechtlich sauber nach BRAO und BORA, lokal sichtbar, mit klarem Weg zum Erstgespräch.',
         offers: [
             { '@type': 'Offer', name: 'Kanzlei-Website kompakt', price: '2900', priceCurrency: 'EUR' },
@@ -71,20 +73,25 @@ export default function WebdesignAnwaeltePage() {
                         <p className="section-kicker animate-up">Webdesign für Anwälte</p>
                         <h1 className="subpage-title animate-up">Kanzlei-Websites für Anwälte in Hamburg, die Mandate bringen.</h1>
                         <p className="subpage-intro animate-up">
-                            Im Kammerbezirk Hamburg sind über 11.000 Anwältinnen und Anwälte zugelassen. Fast alle haben eine Website. Nur wenige haben eine, die einem Ratsuchenden in dreißig Sekunden beantwortet: Sind Sie zuständig, was kostet das Erstgespräch, und wie erreiche ich Sie jetzt.
+                            Eine Kanzlei-Website in Hamburg hat genau eine Aufgabe: Sie muss einem Ratsuchenden in dreißig Sekunden beantworten, ob Sie zuständig sind, was das Erstgespräch kostet und wie er Sie jetzt erreicht. Im Kammerbezirk Hamburg sind über 11.000 Anwältinnen und Anwälte zugelassen, fast alle haben eine Website. Nur wenige haben eine, die das leistet.
                         </p>
+                        <div className="hero-proof animate-up">
+                            <span>Festpreis ab 2.900 €</span>
+                            <span>§ 43b BRAO beachtet</span>
+                            <span>PageSpeed 90 bis 100</span>
+                        </div>
                         <ServiceMeta />
                         </div>
-                        <div className="subpage-hero-media animate-up">
-                            <img src="/leistungen/branchen/hero-anwaelte.svg" alt="Illustration: Justitia-Waage, deren eine Waagschale eine rote Sprechblase als Mandatsanfrage trägt, davor die Fassade einer Kanzlei" width="1200" height="900" />
+                        <div className="subpage-hero-media hero-media-framed animate-up">
+                            <img src="/leistungen/branchen/anwaelte/kanzlei.webp" alt="Rechtsanwalt sitzt an einem Besprechungstisch seiner Kanzlei am Fenster und blickt in die Kamera" width="1200" height="900" fetchPriority="high" decoding="async" />
                         </div>
                     </div>
                 </div>
             </section>
 
             <section className="subpage-content section light-bg">
-                <div className="container subpage-body">
-                    <h2 className="animate-up">Was kostet eine Kanzlei-Website?</h2>
+                <div className="container subpage-body is-inset">
+                    <h2 className="animate-up">Was kostet eine Kanzlei-Website in Hamburg?</h2>
                     <div className="subpage-takeaway animate-up">
                         <p>Eine Kanzlei-Website kostet bei mir <strong>ab 2.900 Euro</strong> einseitig und <strong>ab 4.500 Euro</strong> mehrseitig mit eigener Seite je Rechtsgebiet. Enthalten sind Struktur, Design, Entwicklung, Textvorschläge, lokale SEO-Grundlage und eine berufsrechtlich zurückhaltende Formulierung nach § 43b BRAO. Sie bekommen einen Festpreis vor Projektstart.</p>
                     </div>
@@ -99,13 +106,21 @@ export default function WebdesignAnwaeltePage() {
                         </p>
                     </div>
 
-                    <h2 className="animate-up">Warum Sichtbarkeit für Kanzleien schwieriger geworden ist</h2>
-                    <p className="animate-up">
-                        Zum 1. Januar 2026 waren in Deutschland 167.547 Rechtsanwältinnen und Rechtsanwälte zugelassen, ein Plus gegenüber 166.504 im Vorjahr (BRAK-Mitgliederstatistik). Der Wettbewerb wächst also weiter, und er verlagert sich. Bitkom hat Ende 2024 erhoben, dass 15 Prozent der Menschen bei einem Rechtsproblem zuerst zu einem Online-Tool, einer App oder einer KI greifen, in der Altersgruppe von 16 bis 29 Jahren sind es 23 Prozent. Als Gründe nennen die Befragten Verfügbarkeit rund um die Uhr (61 Prozent), Bequemlichkeit (57 Prozent) und Schnelligkeit (47 Prozent).
-                    </p>
-                    <p className="animate-up">
-                        Das ist keine Nachricht über den Untergang der Anwaltschaft. Es ist eine Nachricht über den Einstieg: Die erste Antwort auf ein Rechtsproblem kommt heute oft von einer Suchmaschine oder einem Chatbot. Wenn Ihre Kanzlei dort als Quelle vorkommt, sind Sie die zweite Antwort, und die ist die bezahlte. Genau darum geht es bei <Link href="/leistungen/ai-seo">AI SEO</Link> und bei einer Seitenstruktur, aus der Maschinen einzelne Aussagen sauber zitieren können.
-                    </p>
+                    <h2 className="animate-up">Warum finden Mandanten meine Kanzlei nicht?</h2>
+                    <div className="subpage-split animate-up">
+                        <div className="sp-split-media">
+                            <img src="/leistungen/branchen/anwaelte/erstgespraech.webp" alt="Anwältin und Anwalt besprechen mit einer Mandantin Unterlagen im Erstgespräch" width="1200" height="900" loading="lazy" decoding="async" />
+                            <p className="sp-split-caption">Das Erstgespräch entscheidet über das Mandat. Die Website entscheidet, ob es zustande kommt.</p>
+                        </div>
+                        <div className="sp-split-body">
+                            <p>
+                                Zum 1. Januar 2026 waren in Deutschland 167.547 Rechtsanwältinnen und Rechtsanwälte zugelassen, ein Plus gegenüber 166.504 im Vorjahr (BRAK-Mitgliederstatistik). Der Wettbewerb wächst also weiter, und er verlagert sich. Bitkom hat Ende 2024 erhoben, dass 15 Prozent der Menschen bei einem Rechtsproblem zuerst zu einem Online-Tool, einer App oder einer KI greifen, in der Altersgruppe von 16 bis 29 Jahren sind es 23 Prozent. Als Gründe nennen die Befragten Verfügbarkeit rund um die Uhr (61 Prozent), Bequemlichkeit (57 Prozent) und Schnelligkeit (47 Prozent).
+                            </p>
+                            <p>
+                                Das ist keine Nachricht über den Untergang der Anwaltschaft. Es ist eine Nachricht über den Einstieg: Die erste Antwort auf ein Rechtsproblem kommt heute oft von einer Suchmaschine oder einem Chatbot. Wenn Ihre Kanzlei dort als Quelle vorkommt, sind Sie die zweite Antwort, und die ist die bezahlte. Genau darum geht es bei <Link href="/leistungen/ai-seo">AI SEO</Link> und bei einer Seitenstruktur, aus der Maschinen einzelne Aussagen sauber zitieren können.
+                            </p>
+                        </div>
+                    </div>
 
                     <div className="subpage-stats animate-up">
                         <div className="subpage-stat">
@@ -122,12 +137,12 @@ export default function WebdesignAnwaeltePage() {
                         </div>
                     </div>
 
-                    <figure className="subpage-figure animate-up">
-                        <img src="/leistungen/branchen/anwaelte.svg" alt="Illustration: Ein Smartphone zeigt Suchergebnisse zu Anwalt Hamburg, ein Pfeil führt vom obersten Ergebnis zur Kanzlei, daneben Paragraphenzeichen und Waage" width="1600" height="900" loading="lazy" />
+                    <figure className="subpage-figure is-band animate-up">
+                        <img src="/leistungen/branchen/anwaelte/mandat.webp" alt="Anwalt prüft am Schreibtisch ein mehrseitiges Schriftstück, im Vordergrund seine Hände auf dem Dokument" width="1800" height="760" loading="lazy" decoding="async" />
                         <figcaption>Der Weg vom Rechtsproblem zum Mandat führt heute fast immer über ein Suchergebnis.</figcaption>
                     </figure>
 
-                    <h2 className="animate-up">Was auf eine Kanzlei-Website darf und was nicht</h2>
+                    <h2 className="animate-up">Was darf auf eine Kanzlei-Website und was nicht?</h2>
                     <p className="animate-up">
                         Anwaltswerbung ist erlaubt, sie ist nur an Sachlichkeit gebunden. § 43b BRAO lässt Werbung zu, soweit sie über die berufliche Tätigkeit in Form und Inhalt sachlich unterrichtet und nicht auf ein Mandat im Einzelfall gerichtet ist. Die BORA konkretisiert das, unter anderem bei Referenzen: Werbung mit Mandaten oder Mandanten ist nur mit ausdrücklicher Einwilligung zulässig. Das ist der Grund, warum Kanzlei-Websites keine Logo-Wand wie ein Softwareanbieter haben.
                     </p>
@@ -159,7 +174,7 @@ export default function WebdesignAnwaeltePage() {
                         Dazu gehört eine Einschränkung: Ich bin Entwickler, kein Anwalt. Die berufsrechtliche Prüfung Ihrer Texte bleibt bei Ihnen, und darin sind Sie besser als ich. Und noch eine Beobachtung: Zurückhaltung ist kein Nachteil. Eine Kanzlei, die nüchtern erklärt, wie ein Kündigungsschutzprozess abläuft, wirkt vertrauenswürdiger als eine, die mit Superlativen arbeitet. Sachlichkeit ist hier zufällig auch gutes Marketing.
                     </p>
 
-                    <h2 className="animate-up">Was eine Kanzlei-Website leisten muss</h2>
+                    <h2 className="animate-up">Was muss eine Kanzlei-Website leisten?</h2>
                     <div className="subpage-features-grid animate-up">
                         <div className="subpage-feature">
                             <h3>Eine Seite je Rechtsgebiet</h3>
@@ -250,7 +265,7 @@ export default function WebdesignAnwaeltePage() {
                         </Link>
                     </div>
 
-                    <h2 className="animate-up">Der Ablauf</h2>
+                    <h2 className="animate-up">Wie läuft ein Kanzlei-Website-Projekt ab?</h2>
                     <div className="subpage-process animate-up">
                         <div className="sp-step"><span className="sp-step-num">1</span><div><strong>Erstgespräch, 30 Minuten</strong><p>Welche Rechtsgebiete tragen die Kanzlei, woher kommen Mandate heute, welche Anfragen wollen Sie mehr und welche weniger. Kostenlos und unverbindlich.</p></div></div>
                         <div className="sp-step"><span className="sp-step-num">2</span><div><strong>Struktur und Texte</strong><p>Ich baue die Seitenstruktur nach Rechtsgebieten und liefere Textvorschläge, die Sie berufsrechtlich prüfen. Sie schreiben nicht von null, Sie korrigieren.</p></div></div>

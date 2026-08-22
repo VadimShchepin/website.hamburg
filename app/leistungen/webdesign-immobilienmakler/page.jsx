@@ -7,16 +7,17 @@ import ServiceMeta from '../../../src/components/ServiceMeta';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'Mehr Eigentümer-Anfragen | Makler-Website Hamburg',
-    description: 'Websites für Immobilienmakler in Hamburg: Eigentümer gewinnen statt Portale füttern, Pflichtangaben nach § 87 GEG sauber gelöst. Ab 2.900 Euro.',
+    title: 'Makler-Website Hamburg: Webdesign für Immobilienmakler',
+    description: 'Was kostet eine Makler-Website? Ab 2.900 Euro zum Festpreis: Eigentümer gewinnen statt Portale füttern, Pflichtangaben nach § 87 GEG sauber gelöst.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/webdesign-immobilienmakler',
     },
     openGraph: {
-        title: 'Mehr Eigentümer-Anfragen | Makler-Website Hamburg',
-        description: 'Websites für Immobilienmakler in Hamburg: Eigentümer gewinnen statt Portale füttern, Pflichtangaben sauber gelöst.',
+        title: 'Makler-Website Hamburg: Webdesign für Immobilienmakler',
+        description: 'Was kostet eine Makler-Website? Ab 2.900 Euro zum Festpreis, auf Eigentümer-Akquise statt Portalpflege gebaut.',
         url: 'https://webseite.hamburg/leistungen/webdesign-immobilienmakler',
         type: 'website',
+        images: [{ url: 'https://webseite.hamburg/leistungen/branchen/makler/besichtigung.webp', width: 1200, height: 900 }],
     },
 };
 
@@ -38,6 +39,7 @@ export default function WebdesignImmobilienmaklerPage() {
         areaServed: { '@type': 'City', name: 'Hamburg' },
         url: 'https://webseite.hamburg/leistungen/webdesign-immobilienmakler',
         description: 'Websites für Immobilienmakler in Hamburg: Eigentümer-Akquise, Objektdarstellung mit Pflichtangaben nach GEG, Anbindung der Maklersoftware.',
+        image: 'https://webseite.hamburg/leistungen/branchen/makler/besichtigung.webp',
         offers: [
             { '@type': 'Offer', name: 'Makler-Website individuell', price: '2900', priceCurrency: 'EUR' },
             { '@type': 'Offer', name: 'Makler-Website mehrseitig mit Ratgeber', price: '4500', priceCurrency: 'EUR' },
@@ -71,20 +73,25 @@ export default function WebdesignImmobilienmaklerPage() {
                         <p className="section-kicker animate-up">Webdesign für Immobilienmakler</p>
                         <h1 className="subpage-title animate-up">Makler-Websites in Hamburg: Ihre Seite verkauft keine Wohnung, sie gewinnt Eigentümer.</h1>
                         <p className="subpage-intro animate-up">
-                            Käufer finden Objekte auf den Portalen, daran ändert keine Website etwas. Die Frage, wem ein Eigentümer seine Immobilie anvertraut, entscheidet sich woanders: bei der Recherche nach dem Namen, den er auf dem Schild in der Nachbarschaft gelesen hat.
+                            Eine Makler-Website in Hamburg gewinnt keine Käufer, sondern Eigentümer. Käufer finden Objekte auf den Portalen, daran ändert keine Website etwas. Die Frage, wem ein Eigentümer seine Immobilie anvertraut, entscheidet sich woanders: bei der Recherche nach dem Namen, den er auf dem Schild in der Nachbarschaft gelesen hat.
                         </p>
+                        <div className="hero-proof animate-up">
+                            <span>Festpreis ab 2.900 €</span>
+                            <span>§ 87 GEG sauber gelöst</span>
+                            <span>Maklersoftware angebunden</span>
+                        </div>
                         <ServiceMeta />
                         </div>
-                        <div className="subpage-hero-media animate-up">
-                            <img src="/leistungen/branchen/hero-immobilien.svg" alt="Illustration: Wohnhaus mit rotem Verkaufsschild, daneben Schlüssel und Lupe als Zeichen für die Wertermittlung" width="1200" height="900" />
+                        <div className="subpage-hero-media hero-media-framed animate-up">
+                            <img src="/leistungen/branchen/makler/besichtigung.webp" alt="Immobilienmaklerin zeigt einem Paar die Kueche einer helle Wohnung bei der Besichtigung" width="1200" height="900" fetchPriority="high" decoding="async" />
                         </div>
                     </div>
                 </div>
             </section>
 
             <section className="subpage-content section light-bg">
-                <div className="container subpage-body">
-                    <h2 className="animate-up">Was kostet eine Makler-Website?</h2>
+                <div className="container subpage-body is-inset">
+                    <h2 className="animate-up">Was kostet eine Makler-Website in Hamburg?</h2>
                     <div className="subpage-takeaway animate-up">
                         <p>Eine Makler-Website kostet bei mir <strong>ab 2.900 Euro</strong> mit Bewertungsanfrage und Objektübersicht, <strong>ab 4.500 Euro</strong> mehrseitig mit Stadtteilseiten, Ratgeber und Teamprofilen. Objektanbindung per OpenImmo kalkuliere ich je nach Maklersoftware dazu. Pflichtangaben nach § 87 GEG sind in der Objektvorlage vorgesehen, nicht optional.</p>
                     </div>
@@ -102,13 +109,21 @@ export default function WebdesignImmobilienmaklerPage() {
                         </p>
                     </div>
 
-                    <h2 className="animate-up">Wo Suchende wirklich suchen</h2>
-                    <p className="animate-up">
-                        Bitkom hat 2025 erhoben, wie Menschen in Deutschland eine Wohnung suchen. 81 Prozent nutzen die großen Portale, 19 Prozent die Websites einzelner Anbieter, 12 Prozent soziale Netzwerke, 10 Prozent Makler-Newsletter und 2 Prozent KI-Suchsysteme. Diese Zahlen liest man am besten nicht als Niederlage der eigenen Website, sondern als Arbeitsteilung: Portale bringen Nachfrage, die eigene Seite bringt Aufträge.
-                    </p>
-                    <p className="animate-up">
-                        Portale kosten Geld, und zwar laufend. Nach den Finanzberichten der Scout24 SE liegt der durchschnittliche Monatsumsatz pro gewerblichem Maklerkunden im vierstelligen Bereich. Das ist eine feste monatliche Ausgabe für Sichtbarkeit, die Sie mieten. Eine eigene Website mit Ratgeberinhalten baut dagegen Substanz auf, die Ihnen gehört. Beides zusammen ist die vernünftige Antwort, nur eines von beidem ist teuer.
-                    </p>
+                    <h2 className="animate-up">Wo suchen Eigentümer und Käufer wirklich?</h2>
+                    <div className="subpage-split is-reverse animate-up">
+                        <div className="sp-split-media">
+                            <img src="/leistungen/branchen/makler/objekt.webp" alt="Immobilienmaklerin bespricht mit einem Paar Unterlagen in einer leeren, hellen Wohnung" width="1200" height="900" loading="lazy" decoding="async" />
+                            <p className="sp-split-caption">Portale bringen Nachfrage. Die eigene Website bringt den Auftrag vom Eigentümer.</p>
+                        </div>
+                        <div className="sp-split-body">
+                            <p>
+                                Bitkom hat 2025 erhoben, wie Menschen in Deutschland eine Wohnung suchen. 81 Prozent nutzen die großen Portale, 19 Prozent die Websites einzelner Anbieter, 12 Prozent soziale Netzwerke, 10 Prozent Makler-Newsletter und 2 Prozent KI-Suchsysteme. Diese Zahlen liest man am besten nicht als Niederlage der eigenen Website, sondern als Arbeitsteilung: Portale bringen Nachfrage, die eigene Seite bringt Aufträge.
+                            </p>
+                            <p>
+                                Portale kosten Geld, und zwar laufend. Nach den Finanzberichten der Scout24 SE liegt der durchschnittliche Monatsumsatz pro gewerblichem Maklerkunden im vierstelligen Bereich. Das ist eine feste monatliche Ausgabe für Sichtbarkeit, die Sie mieten. Eine eigene Website mit Ratgeberinhalten baut dagegen Substanz auf, die Ihnen gehört. Beides zusammen ist die vernünftige Antwort, nur eines von beidem ist teuer.
+                            </p>
+                        </div>
+                    </div>
 
                     <div className="subpage-stats animate-up">
                         <div className="subpage-stat">
@@ -125,8 +140,8 @@ export default function WebdesignImmobilienmaklerPage() {
                         </div>
                     </div>
 
-                    <figure className="subpage-figure animate-up">
-                        <img src="/leistungen/branchen/immobilien.svg" alt="Illustration: Wohnhaus mit Verkaufsschild, Exposé mit Pflichtangaben und Energieausweis-Balken sowie ein Laptop mit dem Formular zur Wertermittlung" width="1600" height="900" loading="lazy" />
+                    <figure className="subpage-figure is-band animate-up">
+                        <img src="/leistungen/branchen/makler/hamburg.webp" alt="Hamburger Hafenrand mit Backsteinspeichern, Booten und den Neubauten der Hafencity" width="1800" height="760" loading="lazy" decoding="async" />
                         <figcaption>Der Weg zum Auftrag beginnt bei der Wertfrage, nicht beim Objektfoto.</figcaption>
                     </figure>
 
@@ -162,7 +177,7 @@ export default function WebdesignImmobilienmaklerPage() {
                         Zur Klarstellung: Ich bin Entwickler, nicht Anwalt, und dieser Abschnitt ist keine Rechtsberatung. Er beschreibt, welche Felder und Abläufe ich vorsehe, damit Ihre Rechtsberatung am Ende nichts mehr zu beanstanden hat.
                     </p>
 
-                    <h2 className="animate-up">Was eine Makler-Website leisten muss</h2>
+                    <h2 className="animate-up">Was muss eine Makler-Website leisten?</h2>
                     <div className="subpage-features-grid animate-up">
                         <div className="subpage-feature">
                             <h3>Wertanfrage als Hauptziel</h3>
@@ -249,7 +264,7 @@ export default function WebdesignImmobilienmaklerPage() {
                         </Link>
                     </div>
 
-                    <h2 className="animate-up">Der Ablauf</h2>
+                    <h2 className="animate-up">Wie läuft ein Makler-Website-Projekt ab?</h2>
                     <div className="subpage-process animate-up">
                         <div className="sp-step"><span className="sp-step-num">1</span><div><strong>Erstgespräch, kostenlos</strong><p>Woher kommen Ihre Aufträge heute, welche Lagen wollen Sie besetzen, wie viel zahlen Sie monatlich an Portale. Danach ist klar, was die Website leisten soll.</p></div></div>
                         <div className="sp-step"><span className="sp-step-num">2</span><div><strong>Struktur für die Akquise</strong><p>Wertanfrage, Stadtteilseiten, Ratgeberthemen und Objektvorlage inklusive Pflichtfelder. Ich liefere Textvorschläge, Sie ergänzen Ihre Marktkenntnis.</p></div></div>

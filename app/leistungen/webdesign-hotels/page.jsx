@@ -7,16 +7,17 @@ import ServiceMeta from '../../../src/components/ServiceMeta';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'Direktbuchungen statt Provision | Hotel-Website',
-    description: 'Hotel-Websites in Hamburg mit Direktbuchung: schnelle Buchungsstrecke, Google-Buchungslinks, weniger Portalprovision. Ab 2.900 Euro.',
+    title: 'Hotel-Website Hamburg: Direktbuchungen statt Provision',
+    description: 'Was kostet eine Hotel-Website mit Direktbuchung? Ab 2.900 Euro zum Festpreis: schnelle Buchungsstrecke, Google-Buchungslinks, weniger Portalprovision.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/webdesign-hotels',
     },
     openGraph: {
-        title: 'Direktbuchungen statt Provision | Hotel-Website',
-        description: 'Hotel-Websites in Hamburg mit Direktbuchung: schnelle Buchungsstrecke, Google-Buchungslinks, weniger Portalprovision.',
+        title: 'Hotel-Website Hamburg: Direktbuchungen statt Provision',
+        description: 'Was kostet eine Hotel-Website mit Direktbuchung? Ab 2.900 Euro zum Festpreis, mit angebundener Buchungsmaschine.',
         url: 'https://webseite.hamburg/leistungen/webdesign-hotels',
         type: 'website',
+        images: [{ url: 'https://webseite.hamburg/leistungen/branchen/hotels/zimmer.webp', width: 1200, height: 900 }],
     },
 };
 
@@ -38,6 +39,7 @@ export default function WebdesignHotelsPage() {
         areaServed: { '@type': 'City', name: 'Hamburg' },
         url: 'https://webseite.hamburg/leistungen/webdesign-hotels',
         description: 'Hotel-Websites in Hamburg mit Direktbuchungsstrecke, Anbindung der Buchungsmaschine und kostenlosen Google-Buchungslinks.',
+        image: 'https://webseite.hamburg/leistungen/branchen/hotels/zimmer.webp',
         offers: [
             { '@type': 'Offer', name: 'Hotel-Website individuell', price: '2900', priceCurrency: 'EUR' },
             { '@type': 'Offer', name: 'Hotel-Website mehrseitig mit Buchungsstrecke', price: '4500', priceCurrency: 'EUR' },
@@ -71,20 +73,25 @@ export default function WebdesignHotelsPage() {
                         <p className="section-kicker animate-up">Webdesign für Hotels</p>
                         <h1 className="subpage-title animate-up">Hotel-Websites in Hamburg, auf denen Gäste direkt buchen.</h1>
                         <p className="subpage-intro animate-up">
-                            Jede Buchung über ein Portal kostet Provision. Jede Buchung über Ihre eigene Seite kostet einen Bruchteil davon. Der Unterschied entscheidet sich an einer einzigen Stelle: Wie schnell kommt ein Gast von Ihrer Startseite zu einem Preis für sein Datum.
+                            Eine Hotel-Website in Hamburg entscheidet über Ihren Deckungsbeitrag: Jede Buchung über ein Portal kostet Provision, jede Buchung über Ihre eigene Seite einen Bruchteil davon. Der Unterschied entscheidet sich an einer einzigen Stelle, nämlich daran, wie schnell ein Gast von Ihrer Startseite zu einem Preis für sein Datum kommt.
                         </p>
+                        <div className="hero-proof animate-up">
+                            <span>Festpreis ab 2.900 €</span>
+                            <span>Buchungsmaschine angebunden</span>
+                            <span>Google-Buchungslinks</span>
+                        </div>
                         <ServiceMeta />
                         </div>
-                        <div className="subpage-hero-media animate-up">
-                            <img src="/leistungen/branchen/hero-hotels.svg" alt="Illustration: Hotelgebäude mit Vordach und großem rotem Buchungs-Button als Zeichen für die Direktbuchung" width="1200" height="900" />
+                        <div className="subpage-hero-media hero-media-framed animate-up">
+                            <img src="/leistungen/branchen/hotels/zimmer.webp" alt="Helles Hotelzimmer mit grossem Fenster, Sesseln und Blick ueber die Stadt" width="1200" height="900" fetchPriority="high" decoding="async" />
                         </div>
                     </div>
                 </div>
             </section>
 
             <section className="subpage-content section light-bg">
-                <div className="container subpage-body">
-                    <h2 className="animate-up">Was kostet eine Hotel-Website?</h2>
+                <div className="container subpage-body is-inset">
+                    <h2 className="animate-up">Was kostet eine Hotel-Website in Hamburg?</h2>
                     <div className="subpage-takeaway animate-up">
                         <p>Eine Hotel-Website kostet bei mir <strong>ab 2.900 Euro</strong> einseitig und <strong>ab 4.500 Euro</strong> mehrseitig mit Zimmerseiten, Angeboten und angebundener Buchungsmaske. Portalprovisionen liegen je nach Programm bei etwa 15 bis 25 Prozent, die Kosten einer Direktbuchung meist im einstelligen Prozentbereich. Die Website rechnet sich also über die Zahl der Direktbuchungen, nicht über das Design.</p>
                     </div>
@@ -102,13 +109,21 @@ export default function WebdesignHotelsPage() {
                         </p>
                     </div>
 
-                    <h2 className="animate-up">Wie in Deutschland tatsächlich gebucht wird</h2>
-                    <p className="animate-up">
-                        Die europäische Vertriebsstudie von HOTREC (Erhebungsjahr 2023) zeigt für Deutschland ein Bild, das viele Hoteliers unterschätzen: 58,2 Prozent der Übernachtungen kommen über direkte Kanäle, davon 22,7 Prozent per E-Mail, 19,3 Prozent über die eigene Website samt Buchungsmaschine, 13,8 Prozent per Telefon und 2,4 Prozent als Laufkundschaft. Auf Portale entfallen 31,2 Prozent. Innerhalb des Portalsegments dominiert eine Firmengruppe: Booking Holdings kommt in Deutschland auf rund 72 Prozent.
-                    </p>
-                    <p className="animate-up">
-                        Zwei Schlüsse daraus. Erstens: Der Direktkanal ist kein Nischenthema, er ist der größte Kanal, wird aber oft am schlechtesten ausgestattet. Zweitens: Wer nur auf Booking optimiert, optimiert für einen Anbieter mit sehr großer Verhandlungsmacht. Ein zweites Bein tut nicht weh.
-                    </p>
+                    <h2 className="animate-up">Wie buchen Gäste in Deutschland tatsächlich?</h2>
+                    <div className="subpage-split animate-up">
+                        <div className="sp-split-media">
+                            <img src="/leistungen/branchen/hotels/buchung.webp" alt="Gast sitzt am Schreibtisch eines Hotelzimmers am Laptop und bucht online" width="1200" height="900" loading="lazy" decoding="async" />
+                            <p className="sp-split-caption">Der Direktkanal ist der größte Buchungsweg und trotzdem oft der schlechtest ausgestattete.</p>
+                        </div>
+                        <div className="sp-split-body">
+                            <p>
+                                Die europäische Vertriebsstudie von HOTREC (Erhebungsjahr 2023) zeigt für Deutschland ein Bild, das viele Hoteliers unterschätzen: 58,2 Prozent der Übernachtungen kommen über direkte Kanäle, davon 22,7 Prozent per E-Mail, 19,3 Prozent über die eigene Website samt Buchungsmaschine, 13,8 Prozent per Telefon und 2,4 Prozent als Laufkundschaft. Auf Portale entfallen 31,2 Prozent. Innerhalb des Portalsegments dominiert eine Firmengruppe: Booking Holdings kommt in Deutschland auf rund 72 Prozent.
+                            </p>
+                            <p>
+                                Zwei Schlüsse daraus. Erstens: Der Direktkanal ist kein Nischenthema, er ist der größte Kanal, wird aber oft am schlechtesten ausgestattet. Zweitens: Wer nur auf Booking optimiert, optimiert für einen Anbieter mit sehr großer Verhandlungsmacht. Ein zweites Bein tut nicht weh.
+                            </p>
+                        </div>
+                    </div>
 
                     <div className="subpage-stats animate-up">
                         <div className="subpage-stat">
@@ -125,8 +140,8 @@ export default function WebdesignHotelsPage() {
                         </div>
                     </div>
 
-                    <figure className="subpage-figure animate-up">
-                        <img src="/leistungen/branchen/hotels.svg" alt="Illustration: Buchungsportal mit herausgeschnittenem rotem Provisionsanteil neben der eigenen Hotel-Website mit vollständigem Umsatzkreis, beide führen zum gleichen Hotel" width="1600" height="900" loading="lazy" />
+                    <figure className="subpage-figure is-band animate-up">
+                        <img src="/leistungen/branchen/hotels/suite.webp" alt="Langes Hotelzimmer mit Fensterfront, Bett und warmem Abendlicht" width="1800" height="760" loading="lazy" decoding="async" />
                         <figcaption>Gleicher Gast, gleiches Zimmer, unterschiedlicher Deckungsbeitrag.</figcaption>
                     </figure>
 
@@ -173,7 +188,7 @@ export default function WebdesignHotelsPage() {
                         Portale abschaffen ist selten das Ziel. Sie sind Schaufenster und bringen Gäste, die Sie sonst nie erreichen. Das Ziel ist, dass ein Gast, der Ihr Haus schon kennt und den Namen googelt, nicht wieder im Portal landet. Diese Buchung sollte Ihnen gehören.
                     </p>
 
-                    <h2 className="animate-up">Was eine Hotel-Website leisten muss</h2>
+                    <h2 className="animate-up">Was muss eine Hotel-Website leisten?</h2>
                     <div className="subpage-features-grid animate-up">
                         <div className="subpage-feature">
                             <h3>Preis in zwei Klicks</h3>
@@ -260,7 +275,7 @@ export default function WebdesignHotelsPage() {
                         </Link>
                     </div>
 
-                    <h2 className="animate-up">Der Ablauf</h2>
+                    <h2 className="animate-up">Wie läuft ein Hotel-Website-Projekt ab?</h2>
                     <div className="subpage-process animate-up">
                         <div className="sp-step"><span className="sp-step-num">1</span><div><strong>Kanalanalyse, kostenlos</strong><p>Wir schauen auf Ihre aktuelle Verteilung zwischen Portal und Direktbuchung, auf Provisionshöhe und auf den Weg zum Preis auf Ihrer Seite.</p></div></div>
                         <div className="sp-step"><span className="sp-step-num">2</span><div><strong>Buchungsstrecke planen</strong><p>Welche Buchungsmaschine, welcher Direktbucher-Vorteil, welche Pakete. Erst danach reden wir über Design, weil das Design dieser Strecke folgt.</p></div></div>

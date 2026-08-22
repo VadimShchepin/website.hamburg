@@ -7,16 +7,17 @@ import ServiceMeta from '../../../src/components/ServiceMeta';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'Volle Tische | Restaurant-Website ab 1.500 €',
-    description: 'Websites für Restaurants und Cafés in Hamburg: Speisekarte mobil lesbar, Reservierung ohne Provision, Google Maps gepflegt. Ab 1.500 Euro.',
+    title: 'Restaurant-Website Hamburg: Webdesign für Gastronomie',
+    description: 'Was kostet eine Restaurant-Website? Ab 1.500 Euro zum Festpreis: Speisekarte mobil lesbar, Reservierung ohne Provision, Google Maps gepflegt.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/webdesign-gastronomie',
     },
     openGraph: {
-        title: 'Volle Tische | Restaurant-Website ab 1.500 €',
-        description: 'Websites für Restaurants und Cafés in Hamburg: Speisekarte mobil lesbar, Reservierung ohne Provision, Google Maps gepflegt.',
+        title: 'Restaurant-Website Hamburg: Webdesign für Gastronomie',
+        description: 'Was kostet eine Restaurant-Website? Ab 1.500 Euro zum Festpreis, mit mobiler Speisekarte und Reservierung ohne Provision.',
         url: 'https://webseite.hamburg/leistungen/webdesign-gastronomie',
         type: 'website',
+        images: [{ url: 'https://webseite.hamburg/leistungen/branchen/gastronomie/gastraum.webp', width: 1200, height: 900 }],
     },
 };
 
@@ -38,6 +39,7 @@ export default function WebdesignGastronomiePage() {
         areaServed: { '@type': 'City', name: 'Hamburg' },
         url: 'https://webseite.hamburg/leistungen/webdesign-gastronomie',
         description: 'Websites für Restaurants, Cafés und Bars in Hamburg: mobile Speisekarte mit Allergenangaben, Reservierung ohne Provision, lokale Sichtbarkeit.',
+        image: 'https://webseite.hamburg/leistungen/branchen/gastronomie/gastraum.webp',
         offers: [
             { '@type': 'Offer', name: 'Website-Start Gastronomie', price: '1500', priceCurrency: 'EUR' },
             { '@type': 'Offer', name: 'Restaurant-Website individuell', price: '2900', priceCurrency: 'EUR' },
@@ -71,20 +73,25 @@ export default function WebdesignGastronomiePage() {
                         <p className="section-kicker animate-up">Webdesign für Gastronomie</p>
                         <h1 className="subpage-title animate-up">Restaurant-Websites in Hamburg, die Tische füllen statt Preise zu verstecken.</h1>
                         <p className="subpage-intro animate-up">
-                            Ein Gast steht um 18:40 Uhr in der Schanze, hat Hunger und ein Handy in der Hand. Er entscheidet in etwa zwanzig Sekunden. In diesen zwanzig Sekunden muss Ihre Seite drei Dinge zeigen: was es gibt, was es kostet, ob noch ein Tisch frei ist. Alles andere ist Dekoration.
+                            Eine Restaurant-Website in Hamburg hat etwa zwanzig Sekunden. So lange braucht ein Gast, der um 18:40 Uhr in der Schanze steht, Hunger hat und ein Handy in der Hand hält. In diesen zwanzig Sekunden muss Ihre Seite drei Dinge zeigen: was es gibt, was es kostet, ob noch ein Tisch frei ist. Alles andere ist Dekoration.
                         </p>
+                        <div className="hero-proof animate-up">
+                            <span>Festpreis ab 1.500 €</span>
+                            <span>Reservierung ohne Provision</span>
+                            <span>Mobil zuerst gebaut</span>
+                        </div>
                         <ServiceMeta />
                         </div>
-                        <div className="subpage-hero-media animate-up">
-                            <img src="/leistungen/branchen/hero-gastronomie.svg" alt="Illustration: Teller von oben mit Besteck, der Teller zeigt eine digitale Speisekarte, oben rechts ein roter Standort-Pin" width="1200" height="900" />
+                        <div className="subpage-hero-media hero-media-framed animate-up">
+                            <img src="/leistungen/branchen/gastronomie/gastraum.webp" alt="Gaeste sitzen an einem Tisch in einem warm beleuchteten Restaurant und essen zu Abend" width="1200" height="900" fetchPriority="high" decoding="async" />
                         </div>
                     </div>
                 </div>
             </section>
 
             <section className="subpage-content section light-bg">
-                <div className="container subpage-body">
-                    <h2 className="animate-up">Was kostet eine Restaurant-Website?</h2>
+                <div className="container subpage-body is-inset">
+                    <h2 className="animate-up">Was kostet eine Restaurant-Website in Hamburg?</h2>
                     <div className="subpage-takeaway animate-up">
                         <p>Der Einstieg kostet <strong>ab 1.500 Euro</strong> (eine Seite, bewährtes Layout, Speisekarte und Reservierungsweg, fertig in zwei bis fünf Arbeitstagen). Eine individuell gestaltete Restaurant-Website beginnt bei <strong>2.900 Euro</strong>, mehrseitig mit Events und Catering bei <strong>4.500 Euro</strong>. Laufende Kosten für Hosting und Domain liegen bei etwa 15 Euro im Monat.</p>
                     </div>
@@ -103,13 +110,21 @@ export default function WebdesignGastronomiePage() {
                         </p>
                     </div>
 
-                    <h2 className="animate-up">Wie Gäste heute ein Restaurant auswählen</h2>
-                    <p className="animate-up">
-                        Bitkom hat 2024 rund 1.000 Personen ab 16 Jahren dazu befragt. Das Ergebnis ist eindeutig: 69 Prozent erwarten, dass ein Betrieb eine Website mit Fotos von Speisen und Räumen hat. 53 Prozent sehen sich vorab die Speisekarte online an, bei den 16- bis 29-Jährigen sind es 65 Prozent. Für 30 Prozent sind Online-Bewertungen das wichtigste Kriterium bei der Wahl eines neuen Lokals, und 39 Prozent schreiben nach dem Besuch selbst eine.
-                    </p>
-                    <p className="animate-up">
-                        Dazu kommt der wirtschaftliche Druck. Nach Angaben des Statistischen Bundesamtes lag der Umsatz im Gastgewerbe 2025 preisbereinigt 2,1 Prozent unter dem Vorjahr. In einem Markt mit dünnen Margen ist jede provisionsfreie Reservierung und jede Abholbestellung ohne Plattformgebühr direkt Ergebnis. Genau da verdient eine eigene Website ihr Geld.
-                    </p>
+                    <h2 className="animate-up">Wie wählen Gäste heute ein Restaurant aus?</h2>
+                    <div className="subpage-split is-reverse animate-up">
+                        <div className="sp-split-media">
+                            <img src="/leistungen/branchen/gastronomie/speisekarte.webp" alt="Zwei Gaeste sitzen in einer Restaurantnische und sehen sich die Speisekarte an" width="1200" height="900" loading="lazy" decoding="async" />
+                            <p className="sp-split-caption">53 Prozent der Gäste sehen sich die Speisekarte online an, bevor sie sich für ein Lokal entscheiden.</p>
+                        </div>
+                        <div className="sp-split-body">
+                            <p>
+                                Bitkom hat 2024 rund 1.000 Personen ab 16 Jahren dazu befragt. Das Ergebnis ist eindeutig: 69 Prozent erwarten, dass ein Betrieb eine Website mit Fotos von Speisen und Räumen hat. 53 Prozent sehen sich vorab die Speisekarte online an, bei den 16- bis 29-Jährigen sind es 65 Prozent. Für 30 Prozent sind Online-Bewertungen das wichtigste Kriterium bei der Wahl eines neuen Lokals, und 39 Prozent schreiben nach dem Besuch selbst eine.
+                            </p>
+                            <p>
+                                Dazu kommt der wirtschaftliche Druck. Nach Angaben des Statistischen Bundesamtes lag der Umsatz im Gastgewerbe 2025 preisbereinigt 2,1 Prozent unter dem Vorjahr. In einem Markt mit dünnen Margen ist jede provisionsfreie Reservierung und jede Abholbestellung ohne Plattformgebühr direkt Ergebnis. Genau da verdient eine eigene Website ihr Geld.
+                            </p>
+                        </div>
+                    </div>
 
                     <div className="subpage-stats animate-up">
                         <div className="subpage-stat">
@@ -126,12 +141,12 @@ export default function WebdesignGastronomiePage() {
                         </div>
                     </div>
 
-                    <figure className="subpage-figure animate-up">
-                        <img src="/leistungen/branchen/gastronomie.svg" alt="Illustration: Smartphone mit Kartenausschnitt und Standort-Pin, digitale Speisekarte und ein gedeckter Tisch mit Reservierungsschild" width="1600" height="900" loading="lazy" />
+                    <figure className="subpage-figure is-band animate-up">
+                        <img src="/leistungen/branchen/gastronomie/abendgeschaeft.webp" alt="Gaeste an einem Holztisch an der Bar eines Restaurants am Abend, vor ihnen Getraenke und Essen" width="1800" height="760" loading="lazy" decoding="async" />
                         <figcaption>Karte, Speisekarte, Tisch: Der Weg vom Suchergebnis zum belegten Platz ist kurz und bricht an jeder Hürde ab.</figcaption>
                     </figure>
 
-                    <h2 className="animate-up">Was auf eine Gastro-Website gehört</h2>
+                    <h2 className="animate-up">Was gehört auf eine Gastronomie-Website?</h2>
                     <div className="subpage-features-grid animate-up">
                         <div className="subpage-feature">
                             <h3>Speisekarte als echte Seite</h3>
@@ -256,7 +271,7 @@ export default function WebdesignGastronomiePage() {
                         </Link>
                     </div>
 
-                    <h2 className="animate-up">Der Ablauf</h2>
+                    <h2 className="animate-up">Wie läuft ein Gastro-Website-Projekt ab?</h2>
                     <div className="subpage-process animate-up">
                         <div className="sp-step"><span className="sp-step-num">1</span><div><strong>Kurzcheck, kostenlos</strong><p>Ich sehe mir Google-Profil, aktuelle Seite und Reservierungsweg an und sage Ihnen, was der schnellste Hebel ist. Manchmal ist das nicht die Website.</p></div></div>
                         <div className="sp-step"><span className="sp-step-num">2</span><div><strong>Inhalte sammeln</strong><p>Karte, Preise, Allergene, Fotos, Zeiten. Sie schicken, was da ist, ich sage, was fehlt, und organisiere bei Bedarf einen Fotografen.</p></div></div>

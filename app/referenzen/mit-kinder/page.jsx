@@ -90,6 +90,25 @@ export default function MitKinderCaseStudy() {
                 </div>
             </section>
 
+            {/* Visual */}
+            <section className="section" style={{ paddingTop: 0 }}>
+                <div className="container">
+                    <div className="cs-image-showcase animate-up">
+                        <img
+                            src="/referenzen/mit-kinder-hero.webp"
+                            alt="Illustration: aufgefaltete Stadtkarte mit Standort-Pins und schwebender Chat-Blase"
+                            width="1200"
+                            height="780"
+                            loading="lazy"
+                            decoding="async"
+                            style={{ width: '100%', height: 'auto' }}
+                        />
+                        <p className="cs-image-caption">Karte plus Chatbot: Aktivitaeten nach Ort, Zeit und Alter gefiltert.</p>
+                    </div>
+                </div>
+            </section>
+
+
             <section className="subpage-content section light-bg">
                 <div className="container subpage-body">
                     <h2 className="animate-up">Das Problem</h2>

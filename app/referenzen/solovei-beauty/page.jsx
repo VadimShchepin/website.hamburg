@@ -90,6 +90,25 @@ export default function SoloveiCaseStudy() {
                 </div>
             </section>
 
+            {/* Visual */}
+            <section className="section" style={{ paddingTop: 0 }}>
+                <div className="container">
+                    <div className="cs-image-showcase animate-up">
+                        <img
+                            src="/referenzen/solovei-beauty-hero.webp"
+                            alt="Illustration: Browserfenster mit Globus und drei Inhaltsbloecken, die per Cursor angeordnet werden"
+                            width="1200"
+                            height="780"
+                            loading="lazy"
+                            decoding="async"
+                            style={{ width: '100%', height: 'auto' }}
+                        />
+                        <p className="cs-image-caption">Drei Sprachen, ein Redaktionssystem: Inhalte pflegt das Team selbst.</p>
+                    </div>
+                </div>
+            </section>
+
+
             <section className="subpage-content section light-bg">
                 <div className="container subpage-body">
                     <h2 className="animate-up">Die Ausgangssituation</h2>

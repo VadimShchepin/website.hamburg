@@ -7,16 +7,17 @@ import ServiceMeta from '../../../src/components/ServiceMeta';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'Mandanten & Bewerber | Steuerberater-Website Hamburg',
-    description: 'Websites für Steuerberater in Hamburg: Mandantengewinnung, Karriereseite gegen den Fachkräftemangel, § 57a StBerG beachtet. Ab 2.900 Euro.',
+    title: 'Steuerberater-Website Hamburg: Webdesign für Kanzleien',
+    description: 'Was kostet eine Steuerberater-Website? Ab 2.900 Euro zum Festpreis: Mandantengewinnung, Karriereseite gegen den Fachkräftemangel, § 57a StBerG beachtet.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/webdesign-steuerberater',
     },
     openGraph: {
-        title: 'Mandanten & Bewerber | Steuerberater-Website Hamburg',
-        description: 'Websites für Steuerberater in Hamburg: Mandantengewinnung, Karriereseite gegen den Fachkräftemangel, berufsrechtlich sauber.',
+        title: 'Steuerberater-Website Hamburg: Webdesign für Kanzleien',
+        description: 'Was kostet eine Steuerberater-Website? Ab 2.900 Euro zum Festpreis, mit Karriereseite gegen den Fachkräftemangel.',
         url: 'https://webseite.hamburg/leistungen/webdesign-steuerberater',
         type: 'website',
+        images: [{ url: 'https://webseite.hamburg/leistungen/branchen/steuerberater/kanzlei.webp', width: 1200, height: 900 }],
     },
 };
 
@@ -38,6 +39,7 @@ export default function WebdesignSteuerberaterPage() {
         areaServed: { '@type': 'City', name: 'Hamburg' },
         url: 'https://webseite.hamburg/leistungen/webdesign-steuerberater',
         description: 'Websites für Steuerberatungskanzleien in Hamburg: Mandantengewinnung, Karriereseite, berufsrechtlich sauber nach § 57a StBerG.',
+        image: 'https://webseite.hamburg/leistungen/branchen/steuerberater/kanzlei.webp',
         offers: [
             { '@type': 'Offer', name: 'Kanzlei-Website kompakt', price: '2900', priceCurrency: 'EUR' },
             { '@type': 'Offer', name: 'Kanzlei-Website mehrseitig mit Karrierebereich', price: '4500', priceCurrency: 'EUR' },
@@ -71,20 +73,25 @@ export default function WebdesignSteuerberaterPage() {
                         <p className="section-kicker animate-up">Webdesign für Steuerberater</p>
                         <h1 className="subpage-title animate-up">Kanzlei-Websites für Steuerberater in Hamburg: für Mandanten und für Bewerber.</h1>
                         <p className="subpage-intro animate-up">
-                            Viele Steuerkanzleien haben kein Mandantenproblem, sondern ein Personalproblem. Beides landet auf derselben Website. Deshalb baue ich Kanzleiseiten so, dass sie zwei Zielgruppen bedienen: Unternehmer, die einen neuen Berater suchen, und Fachkräfte, die einen neuen Arbeitgeber prüfen.
+                            Eine Steuerberater-Website in Hamburg muss zwei Zielgruppen gleichzeitig bedienen: Unternehmer, die einen neuen Berater suchen, und Fachkräfte, die einen neuen Arbeitgeber prüfen. Denn viele Steuerkanzleien haben kein Mandantenproblem, sondern ein Personalproblem, und beides landet auf derselben Seite.
                         </p>
+                        <div className="hero-proof animate-up">
+                            <span>Festpreis ab 2.900 €</span>
+                            <span>§ 57a StBerG beachtet</span>
+                            <span>Karriereseite inklusive</span>
+                        </div>
                         <ServiceMeta />
                         </div>
-                        <div className="subpage-hero-media animate-up">
-                            <img src="/leistungen/branchen/hero-steuerberater.svg" alt="Illustration: Aktenordner, aus dem ein Belegstapel in digitale Karten übergeht, daneben ein rotes Prozentzeichen" width="1200" height="900" />
+                        <div className="subpage-hero-media hero-media-framed animate-up">
+                            <img src="/leistungen/branchen/steuerberater/kanzlei.webp" alt="Steuerberater bespricht am Schreibtisch seiner Kanzlei Unterlagen, im Hintergrund die Arbeitsplaetze des Teams" width="1200" height="900" fetchPriority="high" decoding="async" />
                         </div>
                     </div>
                 </div>
             </section>
 
             <section className="subpage-content section light-bg">
-                <div className="container subpage-body">
-                    <h2 className="animate-up">Was kostet eine Steuerberater-Website?</h2>
+                <div className="container subpage-body is-inset">
+                    <h2 className="animate-up">Was kostet eine Steuerberater-Website in Hamburg?</h2>
                     <div className="subpage-takeaway animate-up">
                         <p>Eine Kanzlei-Website kostet bei mir <strong>ab 2.900 Euro</strong> einseitig und <strong>ab 4.500 Euro</strong> mehrseitig mit Leistungsseiten, Teamprofilen und Karrierebereich. Enthalten sind Struktur, Design, Entwicklung, Textvorschläge und lokale SEO-Grundlage. Die Formulierungen bleiben innerhalb des Sachlichkeitsgebots aus § 57a StBerG.</p>
                     </div>
@@ -102,13 +109,21 @@ export default function WebdesignSteuerberaterPage() {
                         </p>
                     </div>
 
-                    <h2 className="animate-up">Der Markt: viele Kanzleien, wenig Nachwuchs</h2>
-                    <p className="animate-up">
-                        Die Berufsstatistik der Bundessteuerberaterkammer zählt zum 1. Januar 2026 insgesamt 105.953 Kammermitglieder und 90.336 Steuerberaterinnen, Steuerberater und Steuerbevollmächtigte. Das Durchschnittsalter liegt bei 53,7 Jahren, 65,9 Prozent arbeiten selbstständig, und 67,1 Prozent der Praxen sind Einzelpraxen. Das ist ein Markt mit vielen kleinen Einheiten, in dem sehr viele Inhaber in den nächsten Jahren eine Nachfolge suchen werden.
-                    </p>
-                    <p className="animate-up">
-                        Für Ihre Website heißt das zwei Dinge. Erstens: Sichtbarkeit entscheidet weniger über die Menge der Anfragen als über deren Qualität. Wer klar sagt, für welche Branchen und Mandatsgrößen er arbeitet, bekommt weniger Anfragen und mehr passende. Zweitens: Eine gepflegte Website ist bei einer Kanzleiübergabe ein Vermögenswert. Sie ist das Einzige, was ein Nachfolger vor der ersten Mandantenübergabe sehen kann.
-                    </p>
+                    <h2 className="animate-up">Wie steht der Markt für Steuerberater in Hamburg?</h2>
+                    <div className="subpage-split animate-up">
+                        <div className="sp-split-media">
+                            <img src="/leistungen/branchen/steuerberater/mandat.webp" alt="Steuerberater notiert am Schreibtisch Zahlen, daneben Unterlagen, Taschenrechner und Laptop" width="1200" height="900" loading="lazy" decoding="async" />
+                            <p className="sp-split-caption">Qualität der Anfragen schlägt Menge. Wer klar sagt, für wen er arbeitet, bekommt passendere Mandate.</p>
+                        </div>
+                        <div className="sp-split-body">
+                            <p>
+                                Die Berufsstatistik der Bundessteuerberaterkammer zählt zum 1. Januar 2026 insgesamt 105.953 Kammermitglieder und 90.336 Steuerberaterinnen, Steuerberater und Steuerbevollmächtigte. Das Durchschnittsalter liegt bei 53,7 Jahren, 65,9 Prozent arbeiten selbstständig, und 67,1 Prozent der Praxen sind Einzelpraxen. Das ist ein Markt mit vielen kleinen Einheiten, in dem sehr viele Inhaber in den nächsten Jahren eine Nachfolge suchen werden.
+                            </p>
+                            <p>
+                                Für Ihre Website heißt das zwei Dinge. Erstens: Sichtbarkeit entscheidet weniger über die Menge der Anfragen als über deren Qualität. Wer klar sagt, für welche Branchen und Mandatsgrößen er arbeitet, bekommt weniger Anfragen und mehr passende. Zweitens: Eine gepflegte Website ist bei einer Kanzleiübergabe ein Vermögenswert. Sie ist das Einzige, was ein Nachfolger vor der ersten Mandantenübergabe sehen kann.
+                            </p>
+                        </div>
+                    </div>
 
                     <div className="subpage-stats animate-up">
                         <div className="subpage-stat">
@@ -125,12 +140,12 @@ export default function WebdesignSteuerberaterPage() {
                         </div>
                     </div>
 
-                    <figure className="subpage-figure animate-up">
-                        <img src="/leistungen/branchen/steuerberater.svg" alt="Illustration: Belegstapel, Laptop mit Mandantenportal und Upload-Pfeil sowie eine Kanzlei-Website mit Anfrage-Button" width="1600" height="900" loading="lazy" />
+                    <figure className="subpage-figure is-band animate-up">
+                        <img src="/leistungen/branchen/steuerberater/schreibtisch.webp" alt="Blick von oben auf einen Kanzleitisch mit Laptop, Taschenrechner und Unterlagen, zwei Personen besprechen Zahlen" width="1800" height="760" loading="lazy" decoding="async" />
                         <figcaption>Die Website ist die Vorstufe zum Portal: Sie klärt Zuständigkeit, Ablauf und Erreichbarkeit.</figcaption>
                     </figure>
 
-                    <h2 className="animate-up">Werberecht: was auf die Kanzleiseite darf</h2>
+                    <h2 className="animate-up">Was darf laut Werberecht auf die Kanzleiseite?</h2>
                     <p className="animate-up">
                         Steuerberaterwerbung ist seit Jahren liberalisiert, aber an Sachlichkeit gebunden. Maßgeblich sind § 57a StBerG und die Berufsordnung. Dazu kommt die Verschwiegenheitspflicht aus § 57 StBerG und § 203 StGB, die bei Referenzen zum entscheidenden Punkt wird.
                     </p>
@@ -249,7 +264,7 @@ export default function WebdesignSteuerberaterPage() {
                         </Link>
                     </div>
 
-                    <h2 className="animate-up">Der Ablauf</h2>
+                    <h2 className="animate-up">Wie läuft ein Kanzlei-Website-Projekt ab?</h2>
                     <div className="subpage-process animate-up">
                         <div className="sp-step"><span className="sp-step-num">1</span><div><strong>Erstgespräch, 30 Minuten</strong><p>Nehmen Sie Mandate an, welche Zielgruppen wollen Sie, suchen Sie Personal, und was soll die Website konkret abnehmen. Kostenlos.</p></div></div>
                         <div className="sp-step"><span className="sp-step-num">2</span><div><strong>Struktur und Texte</strong><p>Zwei Einstiegspfade, Leistungsseiten, Karrierebereich. Ich liefere Textvorschläge, Sie prüfen sie berufsrechtlich und fachlich.</p></div></div>

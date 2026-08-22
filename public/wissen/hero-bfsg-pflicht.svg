@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc" stroke-linejoin="round" stroke-linecap="round">
+  <title id="title">Barrierefreiheit nach dem BFSG</title>
+  <desc id="desc">Ein großes Browserfenster zeigt das Barrierefreiheits-Symbol mit einer Person im Kreis. Rechts daneben steht ein rotes Amtssiegel mit Paragraphenzeichen.</desc>
+
+  <!-- Browserfenster -->
+  <rect x="80" y="100" width="1040" height="700" rx="36" fill="#FFFFFF"/>
+  <path d="M116 100h968a36 36 0 0 1 36 36v84H80v-84a36 36 0 0 1 36-36Z" fill="#E9EEF3"/>
+  <rect x="80" y="100" width="1040" height="700" rx="36" fill="none" stroke="#0A192F" stroke-width="10"/>
+  <path d="M80 220h1040" fill="none" stroke="#0A192F" stroke-width="10"/>
+
+  <!-- Browserbedienung -->
+  <circle cx="135" cy="160" r="10" fill="#172A45"/>
+  <circle cx="173" cy="160" r="10" fill="#172A45"/>
+  <circle cx="211" cy="160" r="10" fill="#172A45"/>
+  <rect x="265" y="132" width="610" height="56" rx="28" fill="#FFFFFF" stroke="#172A45" stroke-width="8"/>
+  <circle cx="305" cy="160" r="10" fill="none" stroke="#172A45" stroke-width="8"/>
+  <path d="m312 167 12 12M350 160h264" fill="none" stroke="#172A45" stroke-width="8"/>
+
+  <!-- BFSG-Label -->
+  <rect x="920" y="132" width="148" height="56" rx="28" fill="#0A192F"/>
+  <text x="994" y="171" fill="#FFFFFF" font-family="Inter, Helvetica, Arial, sans-serif" font-size="34" font-weight="600" text-anchor="middle">BFSG</text>
+
+  <!-- Barrierefreiheits-Symbol -->
+  <circle cx="485" cy="505" r="205" fill="#F5F7FA" stroke="#0A192F" stroke-width="10"/>
+  <circle cx="485" cy="390" r="38" fill="#0A192F"/>
+  <path d="M370 458c44 2 81-11 115-34 34 23 71 36 115 34" fill="none" stroke="#0A192F" stroke-width="10"/>
+  <path d="M485 425v125M485 550l-88 92M485 550l88 92" fill="none" stroke="#0A192F" stroke-width="10"/>
+  <path d="M435 522h100" fill="none" stroke="#172A45" stroke-width="8"/>
+
+  <!-- Rotes Amtssiegel -->
+  <g aria-label="Amtssiegel mit Paragraphenzeichen">
+    <circle cx="900" cy="510" r="115" fill="#E53935"/>
+    <circle cx="900" cy="510" r="88" fill="none" stroke="#FFFFFF" stroke-width="8"/>
+    <text x="900" y="547" fill="#FFFFFF" font-family="Inter, Helvetica, Arial, sans-serif" font-size="104" font-weight="600" text-anchor="middle">§</text>
+  </g>
+</svg>

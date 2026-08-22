@@ -362,6 +362,15 @@ export default function WebdesignKostenArticlePage() {
                 </p>
 
                 <p>
+                    Zwei Kostenfragen haben eigene Artikel, weil sie eigene Rechnungen sind: Für einen Shop steht
+                    alles in <Link href="/wissen/onlineshop-kosten">Onlineshop Kosten 2026</Link>, für bezahlte
+                    Anzeigen mit echten Zahlen aus einem betreuten Konto in
+                    {' '}<Link href="/wissen/google-ads-kosten">Google Ads Kosten</Link>. Wenn ein Teil Ihres
+                    laufenden Budgets in Pflege und Updates fließt, lohnt außerdem der Blick in
+                    {' '}<Link href="/wissen/wordpress-sicherheit-wartung">WordPress absichern und warten</Link>:
+                    dort steht, wofür dieses Geld tatsächlich gebraucht wird.
+                </p>
+                <p>
                     Wollen Sie wissen, was eine Website f&uuml;r Ihr Unternehmen konkret kosten w&uuml;rde?
                     Ich analysiere Ihre Anforderungen und gebe Ihnen einen ehrlichen Kostenrahmen, kostenlos
                     und unverbindlich. <Link href="/kontakt">Schreiben Sie mir</Link>, und Sie erhalten innerhalb

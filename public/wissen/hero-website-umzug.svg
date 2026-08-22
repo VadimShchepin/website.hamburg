@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc" stroke-linejoin="round" stroke-linecap="round">
+  <title id="title">Website-Umzug mit 301-Weiterleitung</title>
+  <desc id="desc">Zwei große Server-Schränke, verbunden durch einen geschwungenen Umzugspfeil mit einem roten 301-Schild.</desc>
+
+  <g stroke="#0A192F" stroke-width="10">
+    <rect x="60" y="135" width="280" height="620" rx="28" fill="#FFFFFF"/>
+    <path d="M60 205H340V163Q340 135 312 135H88Q60 135 60 163Z" fill="#172A45"/>
+    <rect x="92" y="244" width="216" height="118" rx="14" fill="#E9EEF3"/>
+    <rect x="92" y="390" width="216" height="118" rx="14" fill="#E9EEF3"/>
+    <rect x="92" y="536" width="216" height="118" rx="14" fill="#E9EEF3"/>
+    <path d="M125 303H218M125 449H218M125 595H218" fill="none" stroke-width="8"/>
+    <circle cx="267" cy="303" r="11" fill="#666666" stroke="none"/>
+    <circle cx="267" cy="449" r="11" fill="#666666" stroke="none"/>
+    <circle cx="267" cy="595" r="11" fill="#666666" stroke="none"/>
+    <path d="M100 755V790M300 755V790M48 790H352" fill="none"/>
+  </g>
+
+  <g stroke="#0A192F" stroke-width="10">
+    <rect x="860" y="135" width="280" height="620" rx="28" fill="#FFFFFF"/>
+    <path d="M860 205H1140V163Q1140 135 1112 135H888Q860 135 860 163Z" fill="#172A45"/>
+    <rect x="892" y="244" width="216" height="118" rx="14" fill="#E9EEF3"/>
+    <rect x="892" y="390" width="216" height="118" rx="14" fill="#E9EEF3"/>
+    <rect x="892" y="536" width="216" height="118" rx="14" fill="#E9EEF3"/>
+    <path d="M925 303H1018M925 449H1018M925 595H1018" fill="none" stroke-width="8"/>
+    <circle cx="1067" cy="303" r="11" fill="#666666" stroke="none"/>
+    <circle cx="1067" cy="449" r="11" fill="#666666" stroke="none"/>
+    <circle cx="1067" cy="595" r="11" fill="#666666" stroke="none"/>
+    <path d="M900 755V790M1100 755V790M848 790H1152" fill="none"/>
+  </g>
+
+  <path d="M325 430C440 290 620 245 780 310L750 250L900 350L795 490L805 418C650 350 485 380 380 500Z" fill="#0A192F" stroke="#0A192F" stroke-width="8"/>
+  <text x="610" y="337" fill="#FFFFFF" font-family="Inter, Helvetica, Arial, sans-serif" font-size="46" font-weight="600" text-anchor="middle">Umzug</text>
+
+  <path d="M565 414V500M675 388V500" fill="none" stroke="#0A192F" stroke-width="8"/>
+  <rect x="515" y="500" width="210" height="116" rx="12" fill="#E53935" stroke="#0A192F" stroke-width="8"/>
+  <text x="620" y="577" fill="#FFFFFF" font-family="Inter, Helvetica, Arial, sans-serif" font-size="58" font-weight="600" text-anchor="middle">301</text>
+</svg>

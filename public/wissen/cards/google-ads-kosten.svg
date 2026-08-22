@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1520 988" role="img" aria-labelledby="title desc">
+  <rect x="0" y="0" width="1520" height="988" fill="#0A192F"/>
+  <title id="title">Auktionshammer über Suchfeld und Münzstapeln</title>
+  <desc id="desc">Ein großer Auktionshammer weist schräg von rechts oben auf ein breites Suchfeld. Darunter stehen drei isometrische Münzstapel, deren höchster rot hervorgehoben ist.</desc>
+
+  <path d="M239 367h855c41 0 74 33 74 74v83c0 41-33 74-74 74H239c-41 0-74-33-74-74v-83c0-41 33-74 74-74Z" fill="none" stroke="#8892B0" stroke-width="4"/>
+  <rect x="195" y="326" width="930" height="226" rx="70" fill="#172A45" stroke="#CBD5E1" stroke-width="5"/>
+  <path d="M244 388c31-35 72-42 111-42h598" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="330" cy="439" r="55" fill="none" stroke="#CBD5E1" stroke-width="5"/>
+  <path d="m371 480 47 47" fill="none" stroke="#CBD5E1" stroke-width="5" stroke-linecap="round"/>
+  <path d="M484 439h480" fill="none" stroke="#8892B0" stroke-width="4" stroke-linecap="round"/>
+
+  <path d="m1008 278 276-194c10-7 24-5 31 5l30 43c7 10 5 24-5 31l-276 194Z" fill="#172A45" stroke="#CBD5E1" stroke-width="5" stroke-linejoin="round"/>
+  <path d="m1274 100 38-27c13-9 30-6 39 7l20 29c9 13 6 30-7 39l-38 27Z" fill="#8892B0" stroke="#CBD5E1" stroke-width="5"/>
+  <path d="m910 186 175 249-66 47-175-250Z" fill="#172A45" stroke="#CBD5E1" stroke-width="5" stroke-linejoin="round"/>
+  <path d="m851 207 57-40c13-9 31-6 40 7l181 258c9 13 6 31-7 40l-57 40Z" fill="#8892B0" stroke="#CBD5E1" stroke-width="5" stroke-linejoin="round"/>
+  <path d="m866 217 49-34M1060 494l49-34" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+
+  <path d="M360 690c0-23 50-42 112-42s112 19 112 42v112c0 23-50 42-112 42s-112-19-112-42Z" fill="#172A45" stroke="#CBD5E1" stroke-width="5"/>
+  <ellipse cx="472" cy="690" rx="112" ry="42" fill="#8892B0" stroke="#CBD5E1" stroke-width="5"/>
+  <path d="M361 746c0 23 50 42 111 42s111-19 111-42M361 790c0 23 50 42 111 42s111-19 111-42" fill="none" stroke="#8892B0" stroke-width="4"/>
+  <path d="M411 679c17-10 39-15 62-15 24 0 46 5 63 15" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+
+  <path d="M612 623c0-23 50-42 112-42s112 19 112 42v179c0 23-50 42-112 42s-112-19-112-42Z" fill="#172A45" stroke="#CBD5E1" stroke-width="5"/>
+  <ellipse cx="724" cy="623" rx="112" ry="42" fill="#8892B0" stroke="#CBD5E1" stroke-width="5"/>
+  <path d="M613 677c0 23 50 42 111 42s111-19 111-42M613 731c0 23 50 42 111 42s111-19 111-42M613 785c0 23 50 42 111 42s111-19 111-42" fill="none" stroke="#8892B0" stroke-width="4"/>
+  <path d="M663 612c17-10 39-15 62-15 24 0 46 5 63 15" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+
+  <path d="M864 554c0-23 50-42 112-42s112 19 112 42v248c0 23-50 42-112 42s-112-19-112-42Zm0 0c0 23 50 42 112 42s112-19 112-42-50-42-112-42-112 19-112 42Z" fill="#E53935" stroke="#CBD5E1" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M865 610c0 23 50 42 111 42s111-19 111-42M865 667c0 23 50 42 111 42s111-19 111-42M865 724c0 23 50 42 111 42s111-19 111-42M865 781c0 23 50 42 111 42s111-19 111-42" fill="none" stroke="#CBD5E1" stroke-width="4"/>
+  <path d="M915 543c17-10 39-15 62-15 24 0 46 5 63 15" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+
+  <path d="M301 861h844" fill="none" stroke="#8892B0" stroke-width="4" stroke-linecap="round"/>
+</svg>

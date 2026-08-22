@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1520 988" role="img" aria-labelledby="title desc">
+  <rect x="0" y="0" width="1520" height="988" fill="#0A192F"/>
+  <title id="title">Website-Umzug zwischen zwei Servern</title>
+  <desc id="desc">Zwei isometrische Serverschraenke stehen einander gegenueber. Ein geschwungener Pfeil mit einem roten, unbeschrifteten Schild verbindet sie.</desc>
+
+  <g stroke="#CBD5E1" stroke-width="4" stroke-linejoin="round">
+    <path d="M152 274Q152 256 170 253L472 218 535 257 535 736Q535 755 517 758L215 793 152 754Z" fill="#172A45"/>
+    <path d="M472 218 535 257 535 736 472 701Z" fill="#0A192F"/>
+    <path d="M152 274 472 238V701L152 737Z" fill="#172A45"/>
+    <path d="M152 274 472 238 535 273 215 310Z" fill="#8892B0"/>
+
+    <path d="M180 340 444 310V390L180 420Z" fill="#0A192F"/>
+    <path d="M180 457 444 427V507L180 537Z" fill="#0A192F"/>
+    <path d="M180 574 444 544V624L180 654Z" fill="#0A192F"/>
+    <path d="M180 691 444 661V704L180 734Z" fill="#0A192F"/>
+
+    <path d="M1001 257 1064 218 1366 253Q1384 256 1384 274V754L1321 793 1019 758Q1001 755 1001 736Z" fill="#172A45"/>
+    <path d="M1001 257 1064 218V701L1001 736Z" fill="#0A192F"/>
+    <path d="M1064 238 1384 274V737L1064 701Z" fill="#172A45"/>
+    <path d="M1001 273 1064 238 1384 274 1321 310Z" fill="#8892B0"/>
+
+    <path d="M1092 310 1356 340V420L1092 390Z" fill="#0A192F"/>
+    <path d="M1092 427 1356 457V537L1092 507Z" fill="#0A192F"/>
+    <path d="M1092 544 1356 574V654L1092 624Z" fill="#0A192F"/>
+    <path d="M1092 661 1356 691V734L1092 704Z" fill="#0A192F"/>
+  </g>
+
+  <g fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round">
+    <path d="M199 354 420 329"/>
+    <path d="M1116 329 1337 354"/>
+  </g>
+
+  <path d="M486 483C648 345 830 354 987 428L966 375 1080 450 970 535 990 480C844 414 682 410 507 550Z" fill="#8892B0" stroke="#CBD5E1" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M756 451V570M744 451H768" fill="none" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round"/>
+  <rect x="676" y="570" width="160" height="96" rx="12" fill="#E53935" stroke="#CBD5E1" stroke-width="4"/>
+</svg>

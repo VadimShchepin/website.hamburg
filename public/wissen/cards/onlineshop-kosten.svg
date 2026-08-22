@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1520 988" role="img" aria-labelledby="title desc">
+  <rect x="0" y="0" width="1520" height="988" fill="#0A192F"/>
+  <title id="title">Einkaufswagen mit rotem Preisschild vor einem Browserfenster</title>
+  <desc id="desc">Ein großer, leicht isometrischer Einkaufswagen steht vor einem halb verdeckten Browserfenster. An seinem Griff hängt ein rotes rechteckiges Preisschild mit Loch und feiner Schnur.</desc>
+
+  <rect x="302" y="176" width="900" height="508" rx="34" fill="none" stroke="#8892B0" stroke-width="4"/>
+  <rect x="330" y="204" width="900" height="508" rx="34" fill="#172A45" stroke="#CBD5E1" stroke-width="5"/>
+  <path d="M331 306h898" fill="none" stroke="#CBD5E1" stroke-width="4"/>
+  <circle cx="388" cy="255" r="12" fill="none" stroke="#8892B0" stroke-width="4"/>
+  <circle cx="432" cy="255" r="12" fill="none" stroke="#8892B0" stroke-width="4"/>
+  <circle cx="476" cy="255" r="12" fill="none" stroke="#8892B0" stroke-width="4"/>
+  <rect x="558" y="237" width="576" height="36" rx="18" fill="none" stroke="#8892B0" stroke-width="4"/>
+  <path d="M366 334h342" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+
+  <path d="M366 390h112c18 0 34 11 40 28l27 70" fill="none" stroke="#CBD5E1" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M348 370h132" fill="none" stroke="#8892B0" stroke-width="5" stroke-linecap="round"/>
+  <path d="m518 467 667-46-108 292-454 36Z" fill="#172A45" stroke="#CBD5E1" stroke-width="5" stroke-linejoin="round"/>
+  <path d="m532 499 618-42-78 211-430 34Z" fill="none" stroke="#8892B0" stroke-width="4" stroke-linejoin="round"/>
+  <path d="m690 487-8 203m172-215-5 201m169-213-2 199" fill="none" stroke="#8892B0" stroke-width="4"/>
+  <path d="m578 561 552-40M602 630l501-38" fill="none" stroke="#8892B0" stroke-width="4"/>
+  <path d="m543 488 625-43" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  <path d="m623 749-29 63h481" fill="none" stroke="#CBD5E1" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M650 827c0 37-30 67-67 67s-67-30-67-67 30-67 67-67 67 30 67 67Zm474-30c0 37-30 67-67 67s-67-30-67-67 30-67 67-67 67 30 67 67Z" fill="#172A45" stroke="#CBD5E1" stroke-width="5"/>
+  <path d="M550 805c8-15 23-24 40-26m434-3c9-15 24-23 41-22" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+
+  <path d="M401 390c0 24-22 39-22 68s22 42 22 67" fill="none" stroke="#CBD5E1" stroke-width="3" stroke-linecap="round"/>
+  <rect x="286" y="494" width="242" height="168" rx="20" transform="rotate(-4 286 494)" fill="#E53935" stroke="#CBD5E1" stroke-width="5"/>
+  <circle cx="406" cy="518" r="14" fill="#0A192F" stroke="#CBD5E1" stroke-width="4"/>
+  <path d="M310 632c46 7 95 4 142-9" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+</svg>

@@ -55,7 +55,7 @@ export const ARTICLES = [
     },
     {
         slug: 'website-baukasten-oder-eigene-website',
-        title: 'Wix, Jimdo oder eigene Website: Was der Baukasten wirklich kostet',
+        title: 'Website-Baukasten oder eigene Website: Was Wix und Jimdo wirklich kosten',
         category: 'WEBDESIGN',
         readTime: '10 Min.',
     },
@@ -82,6 +82,66 @@ export const ARTICLES = [
         title: 'Webdesign Kosten 2026: Was eine professionelle Website wirklich kostet',
         category: 'WEBDESIGN',
         readTime: '10 Min.',
+    },
+    {
+        slug: 'barrierefreie-website-pflicht',
+        title: 'Barrierefreie Website: Wer muss, wer nicht, und was das BFSG wirklich verlangt',
+        category: 'RECHT',
+        readTime: '12 Min.',
+    },
+    {
+        slug: 'website-barrierefrei-machen',
+        title: 'Website barrierefrei machen: WCAG 2.2 in der Praxis',
+        category: 'RECHT',
+        readTime: '13 Min.',
+    },
+    {
+        slug: 'impressum-datenschutzerklaerung-pflicht',
+        title: 'Impressum und Datenschutzerklärung: welche Pflichtangaben eine Website 2026 braucht',
+        category: 'RECHT',
+        readTime: '11 Min.',
+    },
+    {
+        slug: 'website-abmahnung-vermeiden',
+        title: 'Abmahnung wegen der Website: was 2026 wirklich riskant ist',
+        category: 'RECHT',
+        readTime: '10 Min.',
+    },
+    {
+        slug: 'wordpress-alternativen',
+        title: 'WordPress-Alternativen: wann ein Wechsel sich lohnt und wann nicht',
+        category: 'WEBDESIGN',
+        readTime: '12 Min.',
+    },
+    {
+        slug: 'webflow-oder-wordpress',
+        title: 'Webflow oder WordPress: welches System zu welchem Projekt passt',
+        category: 'WEBDESIGN',
+        readTime: '10 Min.',
+    },
+    {
+        slug: 'google-ads-kosten',
+        title: 'Google Ads Kosten: 90 Tage aus einem echten Konto',
+        category: 'GOOGLE ADS',
+        readTime: '11 Min.',
+    },
+    {
+        slug: 'wordpress-sicherheit-wartung',
+        title: 'WordPress absichern und warten: was wirklich schützt',
+        category: 'SICHERHEIT',
+        readTime: '11 Min.',
+    },
+    {
+        slug: 'website-umzug-hosting-deutschland',
+        title: 'Hosting in Deutschland und Website umziehen: worauf es wirklich ankommt',
+        category: 'TECHNIK',
+        readTime: '10 Min.',
+    },
+    {
+        slug: 'onlineshop-kosten',
+        title: 'Onlineshop Kosten 2026: was wirklich zusammenkommt',
+        category: 'E-COMMERCE',
+        readTime: '11 Min.',
     },
 ];
 

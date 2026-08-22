@@ -248,6 +248,16 @@ export default function WebsiteRelaunchArticlePage() {
                     unvorhersehbare Probleme, sondern durch uebersprungene Schritte. Arbeiten
                     Sie diese Liste ab, bevor Sie live gehen.
                 </p>
+                <p>
+                    Drei Anschlussfragen, die bei einem Relaunch fast immer aufkommen: Wenn sich nur der Server
+                    aendert und nicht die Adressen, ist der Aufwand deutlich kleiner, das steht in
+                    {' '}<Link href="/wissen/website-umzug-hosting-deutschland">Hosting in Deutschland und Website umziehen</Link>.
+                    Wenn dabei auch das System wechseln soll, hilft
+                    {' '}<Link href="/wissen/wordpress-alternativen">WordPress-Alternativen</Link>. Und wenn Ihre
+                    neue Seite Vertraege abschliesst, gilt seit dem 28. Juni 2025
+                    {' '}<Link href="/wissen/barrierefreie-website-pflicht">das BFSG</Link>, das man beim Neubau
+                    guenstiger beruecksichtigt als beim Nachruesten.
+                </p>
             </ArticleLayout>
         </>
     );

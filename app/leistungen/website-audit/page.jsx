@@ -129,6 +129,7 @@ export default function WebsiteAuditPage() {
                     <h2 className="animate-up">Warum kostenlos?</h2>
                     <p className="animate-up">Weil gute Beratung sich von selbst trägt. Wenn Sie sehen, was möglich ist, und meine Arbeitsweise kennenlernen, entscheiden Sie selbst, ob eine Zusammenarbeit sinnvoll ist. Kein Druck, keine Tricks, nur Fakten.</p>
                     <p className="animate-up">Viele meiner langfristigen Kundenbeziehungen haben mit genau diesem Audit begonnen, nicht weil ich überredet habe, sondern weil die Daten für sich gesprochen haben.</p>
+                    <p className="animate-up">Was ich dabei am häufigsten finde, können Sie vorab selbst nachlesen: Fremdskripte, die vor der Einwilligung laden, siehe <a href="/wissen/website-abmahnung-vermeiden">Abmahnung wegen der Website vermeiden</a>, veraltete Rechtsgrundlagen in den Pflichttexten, siehe <a href="/wissen/impressum-datenschutzerklaerung-pflicht">Impressum und Datenschutzerklärung</a>, und Bedienprobleme ohne Maus, siehe <a href="/wissen/website-barrierefrei-machen">Website barrierefrei machen</a>.</p>
 
                     <h2 className="animate-up">So läuft es ab</h2>
                     <div className="subpage-process animate-up">

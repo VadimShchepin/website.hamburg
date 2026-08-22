@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc" stroke-linejoin="round" stroke-linecap="round">
+  <title id="title">Entscheidungsbaum zur Geltung des BFSG</title>
+  <desc id="desc">Ein Entscheidungsbaum zeigt, wann das Barrierefreiheitsstärkungsgesetz für eine Website gilt: Ein Online-Vertrag führt zur Prüfung auf ein Kleinstunternehmen. Ohne Online-Vertrag oder bei einem Kleinstunternehmen besteht keine Pflicht, andernfalls gilt das BFSG.</desc>
+
+  <rect x="40" y="40" width="1520" height="820" rx="28" fill="#F5F7FA"/>
+
+  <g fill="none" stroke="#0A192F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M340 450H420"/>
+    <path d="M740 450H840"/>
+    <path d="M585 610V700"/>
+    <path d="M1050 660V700"/>
+    <path d="M1250 450H1320"/>
+  </g>
+
+  <g fill="#0A192F">
+    <path d="M430 450l-14-9v18z"/>
+    <path d="M850 450l-14-9v18z"/>
+    <path d="M585 710l-9-14h18z"/>
+    <path d="M1050 710l-9-14h18z"/>
+    <path d="M1330 450l-14-9v18z"/>
+  </g>
+
+  <rect x="90" y="360" width="250" height="180" rx="24" fill="#FFFFFF" stroke="#172A45" stroke-width="6"/>
+  <g fill="none" stroke="#172A45" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="156" y="391" width="118" height="62" rx="8"/>
+    <path d="M157 414h116M172 403h1M188 403h1M204 403h1"/>
+  </g>
+  <text x="215" y="499" fill="#0A192F" font-family="Inter, Helvetica, Arial, sans-serif" font-size="34" font-weight="700" text-anchor="middle">Website</text>
+
+  <path d="M585 290L740 450 585 610 430 450Z" fill="#FFFFFF" stroke="#0A192F" stroke-width="6" stroke-linejoin="round"/>
+  <text x="585" y="437" fill="#0A192F" font-family="Inter, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" text-anchor="middle">
+    <tspan x="585">Vertrag</tspan>
+    <tspan x="585" dy="42">online?</tspan>
+  </text>
+
+  <text x="795" y="414" fill="#666666" font-family="Inter, Helvetica, Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">Ja</text>
+
+  <rect x="360" y="710" width="450" height="130" rx="20" fill="#E9EEF3" stroke="#172A45" stroke-width="5"/>
+  <text x="585" y="757" fill="#0A192F" font-family="Inter, Helvetica, Arial, sans-serif" text-anchor="middle">
+    <tspan x="585" font-size="22" font-weight="700" fill="#666666">Nein</tspan>
+    <tspan x="585" dy="38" font-size="28" font-weight="700">keine Pflicht</tspan>
+  </text>
+
+  <path d="M1050 240L1250 450 1050 660 850 450Z" fill="#FFFFFF" stroke="#0A192F" stroke-width="6" stroke-linejoin="round"/>
+  <text x="1050" y="437" fill="#0A192F" font-family="Inter, Helvetica, Arial, sans-serif" font-size="28" font-weight="700" text-anchor="middle">
+    <tspan x="1050">Kleinst-</tspan>
+    <tspan x="1050" dy="40">unternehmen?</tspan>
+  </text>
+
+  <rect x="850" y="710" width="400" height="130" rx="20" fill="#E9EEF3" stroke="#172A45" stroke-width="5"/>
+  <text x="1050" y="757" fill="#0A192F" font-family="Inter, Helvetica, Arial, sans-serif" text-anchor="middle">
+    <tspan x="1050" font-size="22" font-weight="700" fill="#666666">Ja</tspan>
+    <tspan x="1050" dy="38" font-size="28" font-weight="700">keine Pflicht</tspan>
+  </text>
+
+  <text x="1290" y="414" fill="#666666" font-family="Inter, Helvetica, Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">Nein</text>
+
+  <rect x="1330" y="360" width="220" height="180" rx="24" fill="#FFFFFF" stroke="#E53935" stroke-width="7"/>
+  <path d="M1380 408h120" fill="none" stroke="#E53935" stroke-width="6" stroke-linecap="round"/>
+  <text x="1440" y="472" fill="#0A192F" font-family="Inter, Helvetica, Arial, sans-serif" font-size="32" font-weight="700" text-anchor="middle">BFSG gilt</text>
+</svg>

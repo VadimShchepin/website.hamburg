@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export const metadata = {
     title: 'Abmahnung wegen der Website vermeiden',
-    description: 'Google Fonts, Cookie-Banner, fehlendes Impressum: was 2026 wirklich abmahnbar ist, was das Urteil des LG Muenchen sagt und wie Sie die Risiken abstellen.',
+    description: 'Google Fonts, Cookie-Banner, fehlendes Impressum: was 2026 wirklich abmahnbar ist, was das Urteil des LG München sagt und wie Sie die Risiken abstellen.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/website-abmahnung-vermeiden',
     },
@@ -89,7 +89,7 @@ export default function WebsiteAbmahnungVermeidenPage() {
                 readTime="10 Min."
                 publishDate="2026-08-22"
                 heroImage="/wissen/hero-abmahnung.svg"
-                heroAlt="Illustration: geoeffneter Briefumschlag mit rotem Rand und Paragraphenzeichen, daneben ein Browser-Fenster mit Datenabfluss zu einer Wolke"
+                heroAlt="Illustration: geöffneter Briefumschlag mit rotem Rand und Paragraphenzeichen, daneben ein Browser-Fenster mit Datenabfluss zu einer Wolke"
             >
                 <p>
                     Abmahnungen wegen einer Website sind selten und teuer, und genau diese Kombination macht sie zu

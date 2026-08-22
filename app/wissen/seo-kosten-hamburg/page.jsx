@@ -232,6 +232,12 @@ export default function SeoKostenHamburgPage() {
                     und Sie erhalten eine ehrliche Einschätzung mit Zahlen. Details zum Leistungsumfang stehen auf
                     der Seite <Link href="/leistungen/seo">SEO und lokale Sichtbarkeit</Link>.
                 </p>
+                <p>
+                    Ein Hinweis zur Reihenfolge: Wer noch nicht weiß, ob es in seinem Markt überhaupt Nachfrage
+                    gibt, erfährt das mit bezahlten Anzeigen in vier Wochen statt in sechs Monaten. Was das kostet
+                    und wie eine Anfrage im Verhältnis zum Auftragswert dasteht, steht mit echten Kontozahlen in
+                    {' '}<Link href="/wissen/google-ads-kosten">Google Ads Kosten</Link>.
+                </p>
 
                 <div className="subpage-sources">
                     <h2>Quellen</h2>

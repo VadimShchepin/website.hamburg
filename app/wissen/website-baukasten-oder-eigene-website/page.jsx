@@ -30,7 +30,7 @@ export default function BaukastenOderEigeneWebsitePage() {
     const articleJsonLd = {
         '@context': 'https://schema.org',
         '@type': 'Article',
-        headline: 'Wix, Jimdo oder eigene Website: Was der Baukasten wirklich kostet',
+        headline: 'Website-Baukasten oder eigene Website: Was Wix und Jimdo wirklich kosten',
         author: { '@type': 'Person', name: 'Vadim Shchepin', url: 'https://www.linkedin.com/in/vadim-shchepin/' },
         publisher: BUSINESS,
         datePublished: '2026-08-20',
@@ -58,7 +58,7 @@ export default function BaukastenOderEigeneWebsitePage() {
             <ArticleLayout
                 slug="website-baukasten-oder-eigene-website"
                 category="WEBDESIGN"
-                title="Wix, Jimdo oder eigene Website: Was der Baukasten wirklich kostet"
+                title="Website-Baukasten oder eigene Website: Was Wix und Jimdo wirklich kosten"
                 readTime="10 Min."
                 publishDate="2026-08-20"
                 heroImage="/wissen/fotos/baukasten-hero.webp"
@@ -272,6 +272,15 @@ export default function BaukastenOderEigeneWebsitePage() {
                     Ihrer aktuellen Seite. Ich sage Ihnen kostenlos, ob ein Wechsel sich rechnet oder ob Sie mit
                     zwei Nachmittagen Pflege besser fahren. Zum <Link href="/kontakt">Kontakt</Link> oder zur
                     Leistungsseite <Link href="/leistungen/webdesign">Webdesign</Link>.
+                </p>
+                <p>
+                    Wenn der Baukasten für Sie ausfällt, geht es weiter mit der Systemfrage: Der Überblick über
+                    alle Kandidaten steht in
+                    {' '}<Link href="/wissen/wordpress-alternativen">WordPress-Alternativen</Link>, der direkte
+                    Zweikampf in <Link href="/wissen/webflow-oder-wordpress">Webflow oder WordPress</Link>. Und
+                    beachten Sie bei jedem Baukasten, wie weit er Sie an das HTML heranlässt, denn davon hängt ab,
+                    ob Sie die Anforderungen aus
+                    {' '}<Link href="/wissen/barrierefreie-website-pflicht">dem BFSG</Link> überhaupt erfüllen können.
                 </p>
 
                 <div className="subpage-sources">

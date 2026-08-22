@@ -146,6 +146,13 @@ export default function LangsameWebsitesArticlePage() {
                 <p>
                     Tempo ist kein technisches Detail. Es ist der erste Eindruck Ihrer Website, und der entscheidet, ob jemand bleibt oder geht. Wollen Sie wissen, wo Ihre Seite steht? <a href="/kontakt">Fordern Sie eine kostenlose Analyse an.</a>
                 </p>
+                <p>
+                    Zwei häufige Ursachen haben eigene Artikel. Wenn die Antwortzeit des Servers das Problem ist,
+                    hilft <a href="/wissen/website-umzug-hosting-deutschland">Hosting in Deutschland und Website
+                    umziehen</a>. Wenn die Ladezeit an Fremdskripten hängt, die vor der Einwilligung starten,
+                    lösen Sie damit gleich zwei Probleme auf einmal, siehe
+                    {' '}<a href="/wissen/website-abmahnung-vermeiden">Abmahnung wegen der Website vermeiden</a>.
+                </p>
 
                 <h2>Quellen</h2>
                 <ol>

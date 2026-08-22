@@ -322,6 +322,13 @@ export default function EcommerceEntwicklungPage() {
                     <div className="subpage-takeaway animate-up">
                         <p>Full-Cycle E-Commerce-Entwicklung heißt, dass ein einziger Dienstleister <strong>alle Phasen eines Online-Shops</strong> übernimmt: Strategie und Beratung, Design, Entwicklung, Texte, Marketing, Automatisierung und die laufende Betreuung. Bei AISEO ist das <strong>Vadim Shchepin, Webentwickler aus Hamburg mit über 10 Jahren Projekterfahrung</strong>. Sie arbeiten direkt mit ihm, bei zusätzlichem Bedarf kommen geprüfte Spezialisten dazu. Gearbeitet wird herstellerneutral mit Shopify, Shopware 6, WooCommerce und Custom- oder Headless-Plattformen, für neue Shops genauso wie für die Erweiterung bestehender.</p>
                     </div>
+                    <p className="animate-up">
+                        Zur Budgetplanung: <a href="/wissen/onlineshop-kosten">Onlineshop Kosten 2026</a> listet alle
+                        Posten offen auf, von den Plattformpreisen über Produktdaten und Transaktionsgebühren bis zu
+                        den gesetzlichen Pflichten. Zur Bestellstrecke gilt seit dem 28. Juni 2025 außerdem
+                        {' '}<a href="/wissen/barrierefreie-website-pflicht">das BFSG</a>, das für Shops
+                        ausdrücklich barrierefreie Identifizierung, Authentifizierung und Zahlung verlangt.
+                    </p>
                     <ServiceMeta />
                     <div className="subpage-sources animate-up">
                         <h2>Quellen</h2>

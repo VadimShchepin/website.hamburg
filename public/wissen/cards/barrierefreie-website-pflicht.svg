@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1520 988" role="img" aria-labelledby="title desc">
+  <rect x="0" y="0" width="1520" height="988" fill="#0A192F"/>
+  <title id="title">Barrierefreie Website mit amtlichem Siegel</title>
+  <desc id="desc">Ein grosses Browserfenster zeigt das Symbol fuer Barrierefreiheit. Dahinter stehen zwei versetzte Fensterrahmen, davor liegt rechts unten ein rotes Amtssiegel.</desc>
+
+  <g transform="matrix(1 -0.04 0.025 1 -12 40)" fill="#172A45" stroke="#CBD5E1" stroke-width="4">
+    <rect x="150" y="270" width="690" height="420" rx="24"/>
+    <path d="M150 344H840" fill="none"/>
+    <circle cx="190" cy="307" r="8" fill="#8892B0" stroke="none"/>
+    <circle cx="220" cy="307" r="8" fill="#8892B0" stroke="none"/>
+    <path d="M190 395H420M190 430H355" fill="none"/>
+  </g>
+
+  <g transform="matrix(1 -0.04 0.025 1 52 5)" fill="#172A45" stroke="#CBD5E1" stroke-width="4">
+    <rect x="170" y="235" width="720" height="440" rx="24"/>
+    <path d="M170 311H890" fill="none"/>
+    <circle cx="210" cy="273" r="8" fill="#8892B0" stroke="none"/>
+    <circle cx="240" cy="273" r="8" fill="#8892B0" stroke="none"/>
+    <path d="M210 365H465M210 400H385" fill="none"/>
+  </g>
+
+  <g transform="matrix(1 -0.04 0.025 1 -10 42)" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="340" y="205" width="900" height="560" rx="30" fill="#172A45" stroke="#CBD5E1" stroke-width="5"/>
+    <path d="M340 291H1240" fill="none" stroke="#CBD5E1" stroke-width="5"/>
+    <circle cx="391" cy="248" r="10" fill="#8892B0"/>
+    <circle cx="428" cy="248" r="10" fill="#8892B0"/>
+    <circle cx="465" cy="248" r="10" fill="#8892B0"/>
+    <rect x="388" y="335" width="804" height="375" rx="18" fill="#0A192F" stroke="#8892B0" stroke-width="4"/>
+
+    <circle cx="790" cy="512" r="135" fill="none" stroke="#CBD5E1" stroke-width="5"/>
+    <circle cx="790" cy="430" r="25" fill="#8892B0"/>
+    <path d="M682 473Q790 512 898 473M790 467V557M790 516L720 611M790 516L860 611" fill="none" stroke="#8892B0" stroke-width="5"/>
+    <path d="M438 661H548M1032 382H1142" fill="none" stroke="#CBD5E1" stroke-width="4"/>
+    <path d="M438 681H510M1070 402H1142" fill="none" stroke="#8892B0" stroke-width="4"/>
+  </g>
+
+  <path fill="#E53935" d="M1120 574L1130 590 1145 580 1150 599 1168 593 1169 613 1189 612 1183 632 1203 638 1191 655 1209 666 1193 681 1208 696 1190 707 1201 725 1182 731 1187 751 1167 750 1165 770 1147 764 1140 783 1123 773 1111 789 1098 773 1080 782 1074 763 1055 769 1054 749 1034 750 1039 730 1020 724 1031 707 1013 696 1028 681 1012 666 1030 655 1018 638 1038 632 1032 612 1052 613 1054 593 1072 599 1078 580 1095 590 1107 574Z"/>
+  <circle cx="1110" cy="682" r="70" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+  <circle cx="1110" cy="682" r="54" fill="none" stroke="#CBD5E1" stroke-width="3"/>
+  <path d="M1078 683L1101 706 1145 657" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

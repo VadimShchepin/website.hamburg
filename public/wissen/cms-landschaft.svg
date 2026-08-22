@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">CMS-Landschaft im Vergleich</title>
+  <desc id="desc">Sachliche Infografik mit drei Spalten für Baukasten, klassisches CMS und Headless. Beim Headless-System versorgt eine hervorgehobene Datenquelle zwei getrennte Ausgaben.</desc>
+  <rect x="40" y="40" width="1520" height="820" fill="#F5F7FA"/>
+
+  <g stroke-linejoin="round" stroke-linecap="round">
+    <rect x="90" y="190" width="410" height="620" rx="10" fill="#FFFFFF" stroke="#E9EEF3" stroke-width="5"/>
+    <rect x="595" y="190" width="410" height="620" rx="10" fill="#FFFFFF" stroke="#E9EEF3" stroke-width="5"/>
+    <rect x="1100" y="190" width="410" height="620" rx="10" fill="#FFFFFF" stroke="#E9EEF3" stroke-width="5"/>
+
+    <rect x="90" y="70" width="410" height="90" rx="10" fill="#0A192F"/>
+    <rect x="595" y="70" width="410" height="90" rx="10" fill="#0A192F"/>
+    <rect x="1100" y="70" width="410" height="90" rx="10" fill="#0A192F"/>
+    <g fill="#FFFFFF" font-family="Inter, Helvetica, Arial, sans-serif" font-size="30" font-weight="700" text-anchor="middle">
+      <text x="295" y="126">Baukasten</text>
+      <text x="800" y="126">Klassisches CMS</text>
+      <text x="1305" y="126">Headless</text>
+    </g>
+
+    <g fill="#FFFFFF" stroke="#0A192F" stroke-width="5">
+      <rect x="140" y="245" width="310" height="135" rx="8"/>
+      <rect x="140" y="432" width="310" height="135" rx="8"/>
+      <rect x="140" y="619" width="310" height="135" rx="8"/>
+    </g>
+    <g fill="none" stroke="#172A45" stroke-width="5">
+      <path d="M142 282H448 M142 469H448 M142 656H448"/>
+    </g>
+    <g fill="#E9EEF3" stroke="#172A45" stroke-width="5">
+      <rect x="168" y="306" width="68" height="48" rx="5"/>
+      <rect x="168" y="493" width="68" height="48" rx="5"/>
+      <rect x="168" y="680" width="68" height="48" rx="5"/>
+    </g>
+    <g fill="none" stroke="#172A45" stroke-width="5">
+      <path d="M265 315H418 M265 337H385"/>
+      <path d="M265 502H418 M265 524H385"/>
+      <path d="M265 689H418 M265 711H385"/>
+    </g>
+
+    <rect x="645" y="245" width="310" height="509" rx="8" fill="#FFFFFF" stroke="#0A192F" stroke-width="6"/>
+    <path d="M648 292H952 M648 352H952" fill="none" stroke="#172A45" stroke-width="5"/>
+    <g fill="#172A45">
+      <circle cx="676" cy="269" r="6"/>
+      <circle cx="700" cy="269" r="6"/>
+      <circle cx="724" cy="269" r="6"/>
+    </g>
+    <text x="800" y="333" fill="#0A192F" font-family="Inter, Helvetica, Arial, sans-serif" font-size="25" font-weight="700" text-anchor="middle">Seiten &amp; Inhalte</text>
+    <g fill="#F5F7FA" stroke="#172A45" stroke-width="5">
+      <rect x="677" y="384" width="105" height="76" rx="5"/>
+      <rect x="818" y="384" width="105" height="76" rx="5"/>
+      <rect x="677" y="489" width="105" height="76" rx="5"/>
+      <rect x="818" y="489" width="105" height="76" rx="5"/>
+      <rect x="677" y="594" width="105" height="76" rx="5"/>
+      <rect x="818" y="594" width="105" height="76" rx="5"/>
+    </g>
+    <g fill="none" stroke="#666666" stroke-width="4">
+      <path d="M696 410H763 M696 433H748 M837 410H904 M837 433H889"/>
+      <path d="M696 515H763 M696 538H748 M837 515H904 M837 538H889"/>
+      <path d="M696 620H763 M696 643H748 M837 620H904 M837 643H889"/>
+    </g>
+    <path d="M682 706H918" fill="none" stroke="#172A45" stroke-width="6"/>
+
+    <path d="M1305 245C1366 245 1415 264 1415 288V371C1415 395 1366 414 1305 414C1244 414 1195 395 1195 371V288C1195 264 1244 245 1305 245Z" fill="#E53935" stroke="#0A192F" stroke-width="6"/>
+    <path d="M1195 288C1195 312 1244 331 1305 331C1366 331 1415 312 1415 288" fill="none" stroke="#0A192F" stroke-width="6"/>
+    <text x="1305" y="298" fill="#FFFFFF" font-family="Inter, Helvetica, Arial, sans-serif" font-size="25" font-weight="700" text-anchor="middle">Inhalte</text>
+
+    <g fill="none" stroke="#172A45" stroke-width="6">
+      <path d="M1270 414V489H1218V590"/>
+      <path d="M1340 414V489H1393V590"/>
+    </g>
+    <g fill="#FFFFFF" stroke="#0A192F" stroke-width="6">
+      <rect x="1145" y="590" width="146" height="145" rx="8"/>
+      <rect x="1320" y="590" width="146" height="145" rx="8"/>
+    </g>
+    <g fill="none" stroke="#172A45" stroke-width="5">
+      <path d="M1148 625H1288 M1323 625H1463"/>
+      <rect x="1173" y="640" width="90" height="32" rx="4"/>
+      <path d="M1358 649H1428 M1372 669H1414"/>
+    </g>
+    <g fill="#0A192F" font-family="Inter, Helvetica, Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">
+      <text x="1218" y="716">Website</text>
+      <text x="1393" y="716">App</text>
+    </g>
+  </g>
+</svg>

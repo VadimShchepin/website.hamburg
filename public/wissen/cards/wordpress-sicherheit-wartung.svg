@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1520 988" role="img" aria-labelledby="title desc">
+  <rect x="0" y="0" width="1520" height="988" fill="#0A192F"/>
+  <title id="title">WordPress-Sicherheit und Wartung</title>
+  <desc id="desc">Ein großes Schutzschild mit Schloss steht vor einem Browserfenster. Rechts liegen drei flache Bausteine übereinander, der unterste ist rot und deutlich gerissen.</desc>
+
+  <g transform="skewY(-3)">
+    <rect x="170" y="265" width="760" height="450" rx="30" fill="#172A45" stroke="#CBD5E1" stroke-width="4"/>
+    <path d="M172 337H928" fill="none" stroke="#CBD5E1" stroke-width="4"/>
+    <circle cx="218" cy="301" r="8" fill="#8892B0"/>
+    <circle cx="249" cy="301" r="8" fill="#8892B0"/>
+    <circle cx="280" cy="301" r="8" fill="#8892B0"/>
+    <rect x="226" y="386" width="272" height="218" rx="19" fill="#0A192F" stroke="#8892B0" stroke-width="3"/>
+    <path d="M548 402H848M548 449H804M548 496H851M548 543H760M548 590H821" fill="none" stroke="#8892B0" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <path d="M735 238C800 279 863 293 930 304V474C930 616 858 739 735 807C612 739 540 616 540 474V304C607 293 670 279 735 238Z" fill="#172A45" stroke="#CBD5E1" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M735 290C782 317 830 329 881 339V476C881 582 829 675 735 735C641 675 589 582 589 476V339C640 329 688 317 735 290Z" fill="none" stroke="#8892B0" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M660 474V431C660 330 810 330 810 431V474" fill="none" stroke="#CBD5E1" stroke-width="5" stroke-linecap="round"/>
+  <rect x="628" y="453" width="214" height="164" rx="25" fill="#8892B0" stroke="#CBD5E1" stroke-width="4"/>
+  <circle cx="735" cy="518" r="19" fill="#0A192F"/>
+  <path d="M735 533V567" fill="none" stroke="#0A192F" stroke-width="5" stroke-linecap="round"/>
+  <path d="M675 474V432C675 351 795 351 795 432" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  <path d="M658 479H812" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+
+  <path d="M1002 323L1167 270Q1176 267 1185 271L1363 351Q1370 354 1363 362V389L1200 444Q1191 447 1182 443L1002 361V335Q992 329 1002 323Z" fill="#172A45" stroke="#CBD5E1" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M1010 327L1188 407Q1195 410 1203 407L1354 358" fill="none" stroke="#8892B0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M1023 449L1188 396Q1197 393 1206 397L1379 476Q1387 480 1379 488V515L1220 570Q1211 573 1202 569L1023 487V461Q1013 455 1023 449Z" fill="#172A45" stroke="#CBD5E1" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M1031 453L1209 533Q1216 536 1224 533L1370 484" fill="none" stroke="#8892B0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M991 589L1156 536Q1165 533 1174 537L1352 617Q1360 621 1352 629V656L1189 711Q1180 714 1171 710L991 628V601Q981 595 991 589Z" fill="#E53935" stroke="#CBD5E1" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M999 593L1177 674Q1184 677 1192 674L1344 625" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M1157 537L1138 583L1173 606L1146 642L1178 679L1169 708" fill="none" stroke="#0A192F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

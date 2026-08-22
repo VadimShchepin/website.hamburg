@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1520 988" role="img" aria-labelledby="title desc" stroke-linecap="round" stroke-linejoin="round">
+  <rect width="1520" height="988" fill="#0A192F"/>
+  <title id="title">Impressum und Datenschutzerklärung als Pflichtangaben</title>
+  <desc id="desc">Drei versetzt übereinanderliegende Dokumentseiten in isometrischer Ansicht mit feinen Zeilen und einem roten, gezackten Stempel.</desc>
+
+  <path d="M188 650h126M1210 272h116M248 718h72M1190 685h146" fill="none" stroke="#172A45" stroke-width="4"/>
+
+  <g transform="matrix(1 -.12 .26 .96 -80 150)">
+    <rect x="280" y="190" width="620" height="400" rx="26" fill="#172A45" stroke="#8892B0" stroke-width="3"/>
+    <path d="M340 270h300M340 318h410M340 366h245" fill="none" stroke="#8892B0" stroke-width="4"/>
+
+    <rect x="330" y="240" width="650" height="440" rx="28" fill="#0A192F" stroke="#8892B0" stroke-width="4"/>
+    <path d="M395 330h250M395 378h430M395 426h350M395 544h415M395 592h275" fill="none" stroke="#CBD5E1" stroke-width="4"/>
+
+    <rect x="390" y="300" width="650" height="440" rx="28" fill="#172A45" stroke="#CBD5E1" stroke-width="5"/>
+    <path d="M455 388h205M455 438h420M455 488h335M455 588h410M455 638h280" fill="none" stroke="#CBD5E1" stroke-width="4"/>
+    <path d="M455 358h145" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+  </g>
+
+  <path d="M1036 314L1056.3 328 1080.4 322.8 1093.8 343.5 1118 348 1122.5 372.2 1143.2 385.6 1138 409.7 1152 430 1138 450.3 1143.2 474.4 1122.5 487.8 1118 512 1093.8 516.5 1080.4 537.2 1056.3 532 1036 546 1015.7 532 991.6 537.2 978.2 516.5 954 512 949.5 487.8 928.8 474.4 934 450.3 920 430 934 409.7 928.8 385.6 949.5 372.2 954 348 978.2 343.5 991.6 322.8 1015.7 328Z" fill="#E53935"/>
+  <circle cx="1036" cy="430" r="82" fill="#0A192F" stroke="#CBD5E1" stroke-width="4"/>
+  <path d="M995 431l27 27 56-62" fill="none" stroke="#FFFFFF" stroke-width="5"/>
+</svg>

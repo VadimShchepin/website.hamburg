@@ -197,9 +197,50 @@ Vadim Shchepin:
    Thema: Stundensätze 2026, Projektpreise, Ausfallrisiko beim Solo-Anbieter und dessen vertragliche Absicherung, Nutzungsrechte nach § 31 UrhG, Domain- und Kontoeigentum
    URL: https://webseite.hamburg/wissen/webdesign-agentur-oder-freelancer
 
-0e. Wix, Jimdo oder eigene Website: was der Baukasten wirklich kostet (August 2026)
+0e. Website-Baukasten oder eigene Website: was Wix und Jimdo wirklich kosten (August 2026)
    Thema: Monatspreise 2026, Fünf-Jahres-Rechnung, Datenexport und Lock-in laut Anbieterdokumentation, Core Web Vitals nach Plattform, Umzugsreihenfolge
    URL: https://webseite.hamburg/wissen/website-baukasten-oder-eigene-website
+
+0f. Barrierefreie Website: Wer muss, wer nicht, und was das BFSG wirklich verlangt (August 2026)
+   Thema: Barrierefreiheitsstärkungsgesetz gilt seit 28.06.2025 für Dienstleistungen aus § 1 Abs. 3 BFSG, darunter Dienstleistungen im elektronischen Geschäftsverkehr. Kleinstunternehmen nach § 2 Nr. 17 BFSG (weniger als zehn Beschäftigte und höchstens 2 Mio. EUR Jahresumsatz oder Jahresbilanzsumme) sind nach § 3 Abs. 3 BFSG bei Dienstleistungen ausgenommen, bei Produkten nicht. Bußgeldrahmen § 37 Abs. 2 BFSG: bis 100.000 EUR in den Fällen Abs. 1 Nr. 1, 7, 8, 9, 10, sonst bis 10.000 EUR. Zuständig ist die Marktüberwachungsstelle der Länder MLBF, Verbraucher können nach § 32 BFSG ein Verfahren beantragen.
+   Quellen: gesetze-im-internet.de (BFSG §§ 1, 2, 3, 14, 32, 37, 38; BFSGV §§ 12, 19), mlbf-barrierefrei.de, Bundesfachstelle Barrierefreiheit, WebAIM Million Februar 2026
+   URL: https://webseite.hamburg/wissen/barrierefreie-website-pflicht
+
+0g. Website barrierefrei machen: WCAG 2.2 in der Praxis (August 2026)
+   Thema: die vier Prinzipien wahrnehmbar, bedienbar, verständlich, robust aus § 12 BFSGV; WCAG 2.2 als W3C-Empfehlung in der Fassung vom 12.12.2024 mit neun neuen Erfolgskriterien und Entfall von 4.1.1 Parsing; die sechs häufigsten Fehlerarten laut WebAIM Million Februar 2026 (Kontrast 83,9 %, fehlender Alt-Text 53,1 %, unbeschriftete Formularfelder 51,0 %, leere Links 46,3 %, leere Buttons 30,6 %, fehlende Sprachangabe 13,5 %) mit Aufwandsschätzung je Maßnahme; Tastaturtest, Screenreader-Test, Grenzen von Accessibility-Overlays
+   URL: https://webseite.hamburg/wissen/website-barrierefrei-machen
+
+0h. Impressum und Datenschutzerklärung: Pflichtangaben 2026 (August 2026)
+   Thema: Impressumspflicht steht seit 14.05.2024 in § 5 DDG, nicht mehr im TMG; alle Pflichtangaben inklusive E-Mail-Adresse (Kontaktformular genügt nicht) und USt-IdNr. nur bei Vorhandensein; Informationspflichten nach Art. 13 DSGVO; Einwilligung nach § 25 TDDDG vor Zugriff auf das Endgerät mit den zwei Ausnahmen in Absatz 2; Auftragsverarbeitung nach Art. 28 DSGVO; Netzwerk-Tab-Test zur Ermittlung der tatsächlichen Verarbeitungsliste
+   URL: https://webseite.hamburg/wissen/impressum-datenschutzerklaerung-pflicht
+
+0i. Abmahnung wegen der Website: was 2026 wirklich riskant ist (August 2026)
+   Thema: LG München I, Urteil vom 20.01.2022, Az. 3 O 17493/20 zu dynamisch eingebundenen Google Fonts, 100 EUR Schadensersatz nach Art. 82 DSGVO plus Unterlassung; anschließende Abmahnwelle und deren Scheitern (AG Berlin-Charlottenburg, 20.12.2022, 217 C 64/22); Rangliste der realen Risiken mit Behebungsaufwand; vier Maßnahmen: Schriften lokal, Einbettungen erst nach Klick, Banner mit gleichwertigem Ablehnen, Rechtstexte auf DDG und TDDDG aktualisieren
+   URL: https://webseite.hamburg/wissen/website-abmahnung-vermeiden
+
+0j. WordPress-Alternativen: wann ein Wechsel sich lohnt und wann nicht (August 2026)
+   Thema: WordPress laut W3Techs (22.08.2026) auf 40,7 % aller Websites und 58,9 % der Seiten mit bekanntem CMS; Diagnosetabelle Symptom gegen tatsächliche Ursache; drei Familien von Alternativen (Baukästen, klassische Redaktionssysteme wie TYPO3, Drupal, Craft, Statamic, Kirby, Contao, Ghost, sowie statisch generiert und Headless); Zuordnung nach Fall; Wechselkosten inklusive Weiterleitungen
+   URL: https://webseite.hamburg/wissen/wordpress-alternativen
+
+0k. Webflow oder WordPress: welches System zu welchem Projekt passt (August 2026)
+   Thema: Webflow-Listenpreise Stand August 2026 (Starter kostenlos, Basic 15 USD, Premium 25 USD im Monat bei Jahreszahlung, Team 2.500 USD, Enterprise auf Anfrage); WordPress-Gesamtrechnung über drei Jahre mit Hosting, Lizenzen und Pflege; Sicherheitsvergleich; Ausstiegsrisiko; Sonderfall TYPO3 bei Mehrsprachigkeit und Freigabeprozessen
+   URL: https://webseite.hamburg/wissen/webflow-oder-wordpress
+
+0l. Google Ads Kosten: 90 Tage aus einem echten Konto (August 2026)
+   Thema: Kontoauswertung 24.05. bis 21.08.2026 eines betreuten Kontos: 15.940 Impressionen, 1.032 Klicks, 2.991,54 EUR, 42 Conversions, also 2,90 EUR Klickpreis, 6,5 % Klickrate und 71,23 EUR je Anfrage. Kernbefund zu Keyword-Optionen: weitgehend passend 1,00 EUR Klickpreis und 162 EUR je Anfrage, passende Wortgruppe 3,79 EUR Klickpreis und 43 EUR je Anfrage, genau passend 4,24 EUR und 63 EUR. Der teurere Klick war fast viermal wirtschaftlicher. Google Ads Hilfe zum Anzeigenrang, Keyword-Planner-Gebotsspannen.
+   URL: https://webseite.hamburg/wissen/google-ads-kosten
+
+0m. WordPress absichern und warten: was wirklich schützt (August 2026)
+   Thema: Patchstack State of WordPress Security in 2026: 11.334 neue Schwachstellen 2025 (plus 42 %), 91 % in Plugins, 9 % in Themes, sechs im Kern und alle geringes Risiko; gewichteter Median fünf Stunden bis zur ersten Ausnutzung, 45 % binnen 24 Stunden, 46 % bei Veröffentlichung ohne Patch, 87,8 % der getesteten Hosting-Schutzmaßnahmen erfolglos; sechs wirksame Maßnahmen; Reihenfolge nach einem Einbruch
+   URL: https://webseite.hamburg/wissen/wordpress-sicherheit-wartung
+
+0n. Hosting in Deutschland und Website umziehen (August 2026)
+   Thema: die DSGVO schreibt keinen Serverstandort vor, sie verlangt Auftragsverarbeitung nach Art. 28 und eine Grundlage nach Art. 44 ff.; Stand EU-US Data Privacy Framework: Angemessenheitsbeschluss Juli 2023, EuG-Urteil Latombe T-553/23 vom 03.09.2025 weist die Klage ab, Rechtsmittel C-703/25 P beim EuGH anhängig; Merkmale von Hosting mit Substanz; Umzug mit unveränderten URLs gegen Umzug mit URL-Änderungen und 301-Weiterleitungen
+   URL: https://webseite.hamburg/wissen/website-umzug-hosting-deutschland
+
+0o. Onlineshop Kosten 2026: was wirklich zusammenkommt (August 2026)
+   Thema: Shopify Deutschland bei Jahreszahlung Basic 27 EUR, Grow 79 EUR, Advanced 289 EUR, Plus ab 2.100 EUR im Monat; Shopware Community Edition kostenlos zum Selbsthosten; WooCommerce als kostenlose Erweiterung; die vier eigentlichen Kostenposten Umsetzung, Produktdaten, Transaktionsgebühren und Pflege; gesetzliche Pflichten inklusive Barrierefreiheit nach § 19 BFSGV für die Bestellstrecke; zwei Rechenbeispiele über drei Jahre
+   URL: https://webseite.hamburg/wissen/onlineshop-kosten
 
 
 1. Warum langsame Websites Sie jeden Tag Kunden kosten

@@ -232,6 +232,14 @@ export default function WebdesignPage() {
                         Artikel <Link href="/wissen/webdesign-agentur-oder-freelancer">Agentur, Freelancer oder Baukasten</Link>,
                         die Kostenseite im <Link href="/wissen/webdesign-kosten">Kostenguide</Link>.
                     </p>
+                    <p className="animate-up">
+                        Zur Systemfrage gibt es zwei ausführliche Vergleiche:
+                        {' '}<Link href="/wissen/wordpress-alternativen">WordPress-Alternativen</Link> und
+                        {' '}<Link href="/wissen/webflow-oder-wordpress">Webflow oder WordPress</Link>. Und wenn Ihre
+                        Seite Verträge abschließt, etwa über einen Shop oder eine Buchung, klärt
+                        {' '}<Link href="/wissen/barrierefreie-website-pflicht">Barrierefreie Website: Pflicht nach dem BFSG</Link>,
+                        was seit dem 28. Juni 2025 dafür gilt.
+                    </p>
 
                     <div className="subpage-sources animate-up">
                         <h2>Quellen</h2>

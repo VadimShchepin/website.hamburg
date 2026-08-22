@@ -4,13 +4,13 @@ import Link from 'next/link';
 
 export const metadata = {
     title: 'Website barrierefrei machen: die Anleitung',
-    description: 'WCAG 2.2 praktisch umgesetzt: die vier Prinzipien, die sechs haeufigsten Fehler, Tastatur- und Screenreader-Test, Aufwand und Reihenfolge.',
+    description: 'WCAG 2.2 praktisch umgesetzt: die vier Prinzipien, die sechs häufigsten Fehler, Tastatur- und Screenreader-Test, Aufwand und Reihenfolge.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/website-barrierefrei-machen',
     },
     openGraph: {
         title: 'Website barrierefrei machen: die Anleitung',
-        description: 'WCAG 2.2 praktisch umgesetzt: vier Prinzipien, sechs haeufige Fehler, Tastatur- und Screenreader-Test, Aufwand und Reihenfolge.',
+        description: 'WCAG 2.2 praktisch umgesetzt: vier Prinzipien, sechs häufige Fehler, Tastatur- und Screenreader-Test, Aufwand und Reihenfolge.',
         url: 'https://webseite.hamburg/wissen/website-barrierefrei-machen',
         type: 'article',
     },
@@ -89,7 +89,7 @@ export default function WebsiteBarrierefreiMachenPage() {
                 readTime="13 Min."
                 publishDate="2026-08-22"
                 heroImage="/wissen/hero-barrierefrei-machen.svg"
-                heroAlt="Illustration: Browser-Fenster mit drei Prueffeldern fuer Kontrast, Formularbeschriftung und Tastaturfokus, davor eine Lupe"
+                heroAlt="Illustration: Browser-Fenster mit drei Prüffeldern für Kontrast, Formularbeschriftung und Tastaturfokus, davor eine Lupe"
             >
                 <p>
                     Ob Sie überhaupt müssen, klärt der Artikel zur
@@ -136,7 +136,7 @@ export default function WebsiteBarrierefreiMachenPage() {
                 </p>
 
                 <figure className="article-figure">
-                    <img src="/wissen/wcag-vier-prinzipien.svg" alt="Diagramm der vier WCAG-Prinzipien wahrnehmbar, bedienbar, verstaendlich, robust mit je einem typischen Pruefpunkt" width="1600" height="900" />
+                    <img src="/wissen/wcag-vier-prinzipien.svg" alt="Diagramm der vier WCAG-Prinzipien wahrnehmbar, bedienbar, verständlich, robust mit je einem typischen Prüfpunkt" width="1600" height="900" />
                     <figcaption>Die vier Prinzipien, wie sie auch in § 12 BFSGV stehen, mit je einem typischen Prüfpunkt.</figcaption>
                 </figure>
 

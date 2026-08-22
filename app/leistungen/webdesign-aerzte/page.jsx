@@ -198,6 +198,15 @@ export default function WebdesignAerztePage() {
                         <div className="sp-step"><span className="sp-step-num">4</span><div><strong>Testing, Launch & Schulung</strong><p>Tests auf allen Geräten, DSGVO-Check, Tracking-Setup und Go-live. Anschließend schule ich Sie und Ihr Team in der Bedienung des CMS.</p></div></div>
                     </div>
 
+                    <p className="animate-up">
+                        Zwei Punkte, die Praxen mit Online-Terminbuchung besonders betreffen: Eine Terminbuchung
+                        ist ein Vertragsabschluss auf elektronischem Weg, damit greifen die Anforderungen aus
+                        {' '}<Link href="/wissen/barrierefreie-website-pflicht">dem BFSG</Link>, sofern die Praxis
+                        nicht als Kleinstunternehmen ausgenommen ist. Und die Pflichtangaben im Impressum stehen
+                        seit Mai 2024 in § 5 DDG, nicht mehr im TMG, siehe
+                        {' '}<Link href="/wissen/impressum-datenschutzerklaerung-pflicht">Impressum und Datenschutzerklärung</Link>.
+                    </p>
+
                     <div className="subpage-sources animate-up">
                         <h2>Quellen</h2>
                         <ol>

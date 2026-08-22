@@ -4,13 +4,13 @@ import Link from 'next/link';
 
 export const metadata = {
     title: 'Barrierefreie Website: Pflicht oder nicht?',
-    description: 'Das BFSG gilt seit dem 28. Juni 2025. Wer betroffen ist, wer als Kleinstunternehmen ausgenommen bleibt, was im Gesetz steht und was bei Verstoessen droht.',
+    description: 'Das BFSG gilt seit dem 28. Juni 2025. Wer betroffen ist, wer als Kleinstunternehmen ausgenommen bleibt, was im Gesetz steht und was bei Verstößen droht.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/barrierefreie-website-pflicht',
     },
     openGraph: {
         title: 'Barrierefreie Website: Pflicht oder nicht?',
-        description: 'Das BFSG gilt seit dem 28. Juni 2025. Wer betroffen ist, wer ausgenommen bleibt und was bei Verstoessen droht.',
+        description: 'Das BFSG gilt seit dem 28. Juni 2025. Wer betroffen ist, wer ausgenommen bleibt und was bei Verstößen droht.',
         url: 'https://webseite.hamburg/wissen/barrierefreie-website-pflicht',
         type: 'article',
     },
@@ -204,7 +204,7 @@ export default function BarrierefreieWebsitePflichtPage() {
                 </p>
                 <p>
                     Drittens ist neun Beschäftigte kein Dauerzustand. Wer wächst, wächst in die Pflicht hinein.
-                    Das ist der Grund, warum ich bei jedem Shop-Projekt Barrierefreiheit einbaue, auch wenn der
+                    Deshalb baue ich bei jedem Shop-Projekt Barrierefreiheit ein, auch wenn der
                     Kunde heute ausgenommen ist. Nachrüsten kostet ein Vielfaches von Mitbauen, und der Zeitpunkt
                     des Wachstums ist selten der Zeitpunkt, an dem Budget für Nacharbeit da ist.
                 </p>

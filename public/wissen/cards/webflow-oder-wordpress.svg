@@ -1,0 +1,35 @@
+<svg viewBox="0 0 1520 988" role="img" aria-labelledby="title desc" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="1520" height="988" fill="#0A192F"/>
+  <title id="title">Webflow oder WordPress im Vergleich</title>
+  <desc id="desc">Eine große Balkenwaage mit drei gestapelten abgerundeten Quadraten in der linken Schale und einem Zahnrad in der rechten Schale. Der Balken neigt sich leicht nach rechts, ein feiner roter Zeiger markiert die Mitte.</desc>
+
+  <path d="M303 427L202 708M303 427L574 708M1217 540L967 788M1217 540L1320 788" fill="none" stroke="#8892B0" stroke-width="4" stroke-linecap="round"/>
+
+  <rect x="270" y="461" width="980" height="38" rx="19" fill="#172A45" stroke="#CBD5E1" stroke-width="4" transform="rotate(7 760 480)"/>
+  <path d="M292 419L318 423M1203 533L1230 537" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+
+  <path d="M715 839H805L789 559Q787 531 760 531Q733 531 731 559Z" fill="#172A45" stroke="#CBD5E1" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M650 872Q650 839 684 839H836Q870 839 870 872Z" fill="#172A45" stroke="#CBD5E1" stroke-width="4"/>
+  <path d="M688 873H832" fill="none" stroke="#8892B0" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="760" cy="480" r="44" fill="#0A192F" stroke="#CBD5E1" stroke-width="4"/>
+  <circle cx="760" cy="480" r="15" fill="#8892B0" stroke="#CBD5E1" stroke-width="3"/>
+  <path d="M760 466L731 367" fill="none" stroke="#E53935" stroke-width="5" stroke-linecap="round"/>
+
+  <rect x="300" y="472" width="144" height="144" rx="25" fill="#172A45" stroke="#8892B0" stroke-width="4" transform="rotate(-4 372 544)"/>
+  <path d="M328 500H394" fill="none" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round"/>
+  <rect x="318" y="531" width="144" height="144" rx="25" fill="#172A45" stroke="#CBD5E1" stroke-width="4" transform="rotate(-4 390 603)"/>
+  <path d="M347 560H413" fill="none" stroke="#8892B0" stroke-width="4" stroke-linecap="round"/>
+  <rect x="336" y="590" width="144" height="144" rx="25" fill="#172A45" stroke="#CBD5E1" stroke-width="4" transform="rotate(-4 408 662)"/>
+  <path d="M366 620H432" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+
+  <path d="M202 708Q390 758 574 708L556 754Q390 826 220 754Z" fill="#172A45" stroke="#CBD5E1" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M236 728Q390 766 540 728" fill="none" stroke="#8892B0" stroke-width="3" stroke-linecap="round"/>
+
+  <path d="M1082 539L1113 539L1119 565Q1135 568 1150 576L1172 560L1194 582L1178 604Q1186 619 1189 635L1215 641V672L1189 678Q1186 694 1178 709L1194 731L1172 753L1150 737Q1135 745 1119 748L1113 774H1082L1076 748Q1060 745 1045 737L1023 753L1001 731L1017 709Q1009 694 1006 678L980 672V641L1006 635Q1009 619 1017 604L1001 582L1023 560L1045 576Q1060 568 1076 565Z" fill="#172A45" stroke="#CBD5E1" stroke-width="4" stroke-linejoin="round"/>
+  <circle cx="1098" cy="657" r="71" fill="#172A45" stroke="#8892B0" stroke-width="4"/>
+  <circle cx="1098" cy="657" r="31" fill="#0A192F" stroke="#CBD5E1" stroke-width="4"/>
+  <path d="M1054 618Q1096 585 1138 618" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+
+  <path d="M967 788Q1144 838 1320 788L1302 834Q1144 901 985 834Z" fill="#172A45" stroke="#CBD5E1" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M999 808Q1144 846 1288 808" fill="none" stroke="#8892B0" stroke-width="3" stroke-linecap="round"/>
+</svg>

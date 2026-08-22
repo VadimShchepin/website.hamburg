@@ -4,13 +4,13 @@ import Link from 'next/link';
 
 export const metadata = {
     title: 'Impressum und Datenschutz: was rein muss',
-    description: 'Die Impressumspflicht steht seit Mai 2024 in § 5 DDG, nicht mehr im TMG. Alle Pflichtangaben, die Informationspflichten nach Art. 13 DSGVO und die haeufigen Fehler.',
+    description: 'Die Impressumspflicht steht seit Mai 2024 in § 5 DDG, nicht mehr im TMG. Alle Pflichtangaben, Art. 13 DSGVO und die häufigen Fehler.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/impressum-datenschutzerklaerung-pflicht',
     },
     openGraph: {
         title: 'Impressum und Datenschutz: was rein muss',
-        description: 'Die Impressumspflicht steht seit Mai 2024 in § 5 DDG. Alle Pflichtangaben, Art. 13 DSGVO und die haeufigen Fehler.',
+        description: 'Die Impressumspflicht steht seit Mai 2024 in § 5 DDG. Alle Pflichtangaben, Art. 13 DSGVO und die häufigen Fehler.',
         url: 'https://webseite.hamburg/wissen/impressum-datenschutzerklaerung-pflicht',
         type: 'article',
     },
@@ -89,7 +89,7 @@ export default function ImpressumDatenschutzPflichtPage() {
                 readTime="11 Min."
                 publishDate="2026-08-22"
                 heroImage="/wissen/hero-impressum-pflicht.svg"
-                heroAlt="Illustration: zwei gestapelte Dokumentseiten mit Paragraphenzeichen und einem roten Stempel darueber"
+                heroAlt="Illustration: zwei gestapelte Dokumentseiten mit Paragraphenzeichen und einem roten Stempel darüber"
             >
                 <p>
                     Es gibt einen Fehler, den ich auf so vielen deutschen Websites finde, dass er inzwischen fast

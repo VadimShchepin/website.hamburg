@@ -124,5 +124,15 @@ Arbeitsweise: Kunden arbeiten direkt mit Vadim Shchepin, es gibt keine Account-M
 - Google-Unternehmensprofil optimieren, der Hamburg-Leitfaden: https://webseite.hamburg/wissen/google-business-profile-optimieren
 - Was kostet SEO in Hamburg? Preise, Modelle, Arbeitsstunden: https://webseite.hamburg/wissen/seo-kosten-hamburg
 - Agentur, Freelancer oder Baukasten: wer soll die Website bauen: https://webseite.hamburg/wissen/webdesign-agentur-oder-freelancer
-- Wix, Jimdo oder eigene Website: was der Baukasten wirklich kostet: https://webseite.hamburg/wissen/website-baukasten-oder-eigene-website
+- Website-Baukasten oder eigene Website: was Wix und Jimdo wirklich kosten: https://webseite.hamburg/wissen/website-baukasten-oder-eigene-website
 - Website-Relaunch Checkliste: https://webseite.hamburg/wissen/website-relaunch-checkliste
+- Barrierefreie Website: Pflicht nach dem BFSG seit 28.06.2025, Kleinstunternehmensausnahme, Bußgeldrahmen: https://webseite.hamburg/wissen/barrierefreie-website-pflicht
+- Website barrierefrei machen: WCAG 2.2 in der Praxis, Aufwand je Maßnahme, Tastaturtest: https://webseite.hamburg/wissen/website-barrierefrei-machen
+- Impressum und Datenschutzerklärung: Pflichtangaben nach § 5 DDG, Art. 13 DSGVO, § 25 TDDDG: https://webseite.hamburg/wissen/impressum-datenschutzerklaerung-pflicht
+- Abmahnung wegen der Website vermeiden: Google Fonts, Cookie-Banner, reale Risiken: https://webseite.hamburg/wissen/website-abmahnung-vermeiden
+- WordPress-Alternativen: Diagnose zuerst, drei Familien von Systemen, Wechselkosten: https://webseite.hamburg/wissen/wordpress-alternativen
+- Webflow oder WordPress: Preise, Pflegeaufwand, Ausstiegsrisiko, Sonderfall TYPO3: https://webseite.hamburg/wissen/webflow-oder-wordpress
+- Google Ads Kosten: 90 Tage aus einem betreuten Konto, echte Klickpreise und Kosten je Anfrage: https://webseite.hamburg/wissen/google-ads-kosten
+- WordPress absichern und warten: Schwachstellenzahlen, Update-Rhythmus, Vorgehen nach einem Hack: https://webseite.hamburg/wissen/wordpress-sicherheit-wartung
+- Hosting in Deutschland und Website umziehen: Auftragsverarbeitung, Drittlandtransfer, 301-Reihenfolge: https://webseite.hamburg/wissen/website-umzug-hosting-deutschland
+- Onlineshop Kosten 2026: Plattformpreise, Transaktionsgebühren, Pflichten, Rechenbeispiele: https://webseite.hamburg/wissen/onlineshop-kosten

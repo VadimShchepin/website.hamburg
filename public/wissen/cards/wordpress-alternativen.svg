@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1520 988" role="img" aria-labelledby="title desc">
+  <rect x="0" y="0" width="1520" height="988" fill="#0A192F"/>
+  <title id="title">Modulare Alternativen zu einem geschlossenen Baukastensystem</title>
+  <desc id="desc">Eine isometrische Mauer aus gleichen Bausteinen steht links. Drei unterschiedliche, verbundene Bausteine schweben rechts, der mittlere ist rot.</desc>
+  <defs>
+    <g id="brick" stroke="#CBD5E1" stroke-width="3" stroke-linejoin="round">
+      <path d="M0 18 70 0l42 22-70 18Z" fill="#172A45"/>
+      <path d="M0 18l42 22v60L0 78Z" fill="#172A45"/>
+      <path d="M42 40l70-18v60l-70 18Z" fill="#172A45"/>
+    </g>
+  </defs>
+
+  <g fill="none" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M806 325h85l62-55h87"/>
+    <path d="M806 487h234"/>
+    <path d="M806 648h85l62 55h112"/>
+  </g>
+
+  <g aria-hidden="true">
+    <use href="#brick" transform="translate(200 310)"/>
+    <use href="#brick" transform="translate(298 284)"/>
+    <use href="#brick" transform="translate(396 258)"/>
+    <use href="#brick" transform="translate(494 232)"/>
+    <use href="#brick" transform="translate(592 206)"/>
+    <use href="#brick" transform="translate(690 180)"/>
+
+    <use href="#brick" transform="translate(200 392)"/>
+    <use href="#brick" transform="translate(298 366)"/>
+    <use href="#brick" transform="translate(396 340)"/>
+    <use href="#brick" transform="translate(494 314)"/>
+    <use href="#brick" transform="translate(592 288)"/>
+    <use href="#brick" transform="translate(690 262)"/>
+
+    <use href="#brick" transform="translate(200 474)"/>
+    <use href="#brick" transform="translate(298 448)"/>
+    <use href="#brick" transform="translate(396 422)"/>
+    <use href="#brick" transform="translate(494 396)"/>
+    <use href="#brick" transform="translate(592 370)"/>
+    <use href="#brick" transform="translate(690 344)"/>
+
+    <use href="#brick" transform="translate(200 556)"/>
+    <use href="#brick" transform="translate(298 530)"/>
+    <use href="#brick" transform="translate(396 504)"/>
+    <use href="#brick" transform="translate(494 478)"/>
+    <use href="#brick" transform="translate(592 452)"/>
+    <use href="#brick" transform="translate(690 426)"/>
+
+    <use href="#brick" transform="translate(200 638)"/>
+    <use href="#brick" transform="translate(298 612)"/>
+    <use href="#brick" transform="translate(396 586)"/>
+    <use href="#brick" transform="translate(494 560)"/>
+    <use href="#brick" transform="translate(592 534)"/>
+    <use href="#brick" transform="translate(690 508)"/>
+  </g>
+
+  <g stroke="#CBD5E1" stroke-width="4" stroke-linejoin="round">
+    <path d="M1040 231l113-30 91 47-113 30Z" fill="#8892B0"/>
+    <path d="M1040 231l91 47v70l-91-47Z" fill="#172A45"/>
+    <path d="M1131 278l113-30v70l-113 30Z" fill="#172A45"/>
+    <path d="M1081 254l70-18 48 25-70 18Z" fill="#0A192F"/>
+    <path d="M1090 246l45-12" fill="none" stroke="#FFFFFF" stroke-linecap="round"/>
+  </g>
+
+  <g stroke="#CBD5E1" stroke-width="4" stroke-linejoin="round">
+    <path d="M1040 487l63-62h106l63 62-63 62h-106Z" fill="#E53935"/>
+    <path d="M1103 425l28-27h106l63 62-28 27-63-62Z" fill="#172A45"/>
+    <path d="M1272 487l28-27v62l-63 62h-106l-28-35h106Z" fill="#172A45"/>
+    <path d="M1071 478l31-31" fill="none" stroke="#FFFFFF" stroke-linecap="round"/>
+  </g>
+
+  <g stroke="#CBD5E1" stroke-width="4" stroke-linejoin="round">
+    <path d="M1065 665l72-42 103 25 31 83-72 42-103-25Z" fill="#172A45"/>
+    <path d="M1098 672l52-30 70 17 21 56-52 30-70-17Z" fill="#8892B0"/>
+    <path d="M1134 681l28-16 38 9 11 30-28 16-38-9Z" fill="#0A192F"/>
+    <path d="M1083 674l42-25" fill="none" stroke="#FFFFFF" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -159,7 +159,13 @@ export default function GoogleAdsFehlerArticlePage() {
                 </ul>
 
                 <p>
-                    Jeder dieser sieben Fehler ist vermeidbar, die meisten lassen sich an einem Tag beheben. Der Unterschied zwischen einer Kampagne, die Geld verbrennt, und einer, die Kunden bringt, liegt selten am Budget, sondern an der Sorgfalt beim Aufsetzen und Pflegen. Für lokale Dienstleister lohnt sich oft zusätzlich ein Blick auf die Local Services Ads (Google Garantiert), die pro Lead statt pro Klick abrechnen. Wenn Sie das lieber abgeben möchten, übernehmen wir es in der <a href="/leistungen/google-ads">Google-Ads-Betreuung</a>, oder wir schauen es uns bei einer <a href="/kontakt">kostenlosen Analyse</a> gemeinsam an.
+                    Jeder dieser sieben Fehler ist vermeidbar, die meisten lassen sich an einem Tag beheben. Der Unterschied zwischen einer Kampagne, die Geld verbrennt, und einer, die Kunden bringt, liegt selten am Budget, sondern an der Sorgfalt beim Aufsetzen und Pflegen. Für lokale Dienstleister lohnt sich oft zusätzlich ein Blick auf die Local Services Ads (Google Garantiert), die pro Lead statt pro Klick abrechnen. Wenn Sie das lieber abgeben möchten, übernehme ich es in der <a href="/leistungen/google-ads">Google-Ads-Betreuung</a>, oder wir schauen es uns bei einer <a href="/kontakt">kostenlosen Analyse</a> gemeinsam an.
+                </p>
+                <p>
+                    Wie sich Fehler 1, die zu weit gefassten Keyword-Optionen, in Euro auswirkt, zeigt die
+                    Auswertung eines betreuten Kontos über 90 Tage in
+                    {' '}<a href="/wissen/google-ads-kosten">Google Ads Kosten</a>: Der Klick für 1,00 Euro hat
+                    dort Anfragen zu 162 Euro produziert, der Klick für 3,79 Euro Anfragen zu 43 Euro.
                 </p>
 
                 <h2>Quellen</h2>

@@ -4,7 +4,38 @@ import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
 import ServiceCta from '../../../src/components/ServiceCta';
 import ServiceMeta from '../../../src/components/ServiceMeta';
+import WebsiteShowcase from '../../../src/components/WebsiteShowcase';
 import { BUSINESS } from '../../../src/lib/schema';
+
+const showcaseSlides = [
+    {
+        client: 'Blitz Hamburg',
+        note: 'Handwerksbetrieb für Entrümpelung und Sanierung, ROI in 7 Wochen',
+        url: 'blitz-hamburg.de/entruempelung',
+        href: '/referenzen/blitz-hamburg',
+        desktop: '/leistungen/branchen/handwerker/web-blitz2.webp',
+        mobile: '/leistungen/branchen/handwerker/web-blitz2-mobil.webp',
+        alt: 'Leistungsseite von Blitz Hamburg mit Telefon- und WhatsApp-Button direkt im Blickfeld',
+    },
+    {
+        client: 'GL Sommer GmbH',
+        note: 'Garten- und Landschaftsbau, 728 lokale Aktionen pro Monat',
+        url: 'gl-sommer.de',
+        href: '/referenzen/gl-sommer',
+        desktop: '/leistungen/branchen/handwerker/web-sommer.webp',
+        mobile: '/leistungen/branchen/handwerker/web-sommer-mobil.webp',
+        alt: 'Startseite von GL Sommer mit Angebotsanfrage und Anruf-Button im ersten Bildschirm',
+    },
+    {
+        client: 'Blitz Hamburg',
+        note: 'Startseite mit Festpreis-Garantie und 5,0 Sterne bei Google',
+        url: 'blitz-hamburg.de',
+        href: '/referenzen/blitz-hamburg',
+        desktop: '/leistungen/branchen/handwerker/web-blitz.webp',
+        mobile: '/leistungen/branchen/handwerker/web-blitz-mobil.webp',
+        alt: 'Startseite von Blitz Hamburg mit Teamfoto und zwei Kontaktmöglichkeiten',
+    },
+];
 
 export const metadata = {
     title: 'Mehr Aufträge | Webdesign für Handwerker Hamburg',
@@ -60,39 +91,52 @@ export default function WebdesignHandwerkerPage() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
-            <section className="subpage-hero section">
+            <section className="subpage-hero section is-showcase">
                 <div className="container">
                     <Breadcrumbs items={[
                         { label: 'Home', href: '/' },
                         { label: 'Leistungen', href: '/leistungen' },
                         { label: 'Webdesign für Handwerker' },
                     ]} />
-                    <div className="subpage-hero-split">
-                        <div>
-                        <p className="section-kicker animate-up">Webdesign für Handwerker</p>
-                        <h1 className="subpage-title animate-up">Websites für Handwerksbetriebe in Hamburg: mehr Aufträge, weniger Aufwand.</h1>
-                        <p className="subpage-intro animate-up">
-                            Sie sind Handwerker, kein Webdesigner. Ihre Zeit steckt in Baustellen und Kunden, nicht in Websites. Aber Ihre nächsten Kunden suchen gerade „Elektriker Hamburg" oder „Maler in der Nähe". Ich sorge dafür, dass diese Anfragen bei Ihnen landen.
-                        </p>
-                        <ServiceMeta />
+                    <div className="hero-showcase-grid">
+                        <div className="hero-showcase-copy">
+                            <p className="section-kicker animate-up">Webdesign für Handwerker</p>
+                            <h1 className="subpage-title animate-up">Websites für Handwerksbetriebe in Hamburg: mehr Aufträge, weniger Aufwand.</h1>
+                            <p className="subpage-intro animate-up">
+                                Sie sind Handwerker, kein Webdesigner. Ihre Zeit steckt in Baustellen und Kunden, nicht in Websites. Aber Ihre nächsten Kunden suchen gerade „Elektriker Hamburg" oder „Maler in der Nähe". Ich sorge dafür, dass diese Anfragen bei Ihnen landen.
+                            </p>
+                            <div className="hero-proof animate-up">
+                                <span>Festpreis</span>
+                                <span>Mobile-First</span>
+                                <span>Lighthouse 90 bis 100</span>
+                            </div>
+                            <ServiceMeta />
                         </div>
-                        <div className="subpage-hero-media animate-up">
-                            <img src="/leistungen/branchen/hero-handwerker.svg" alt="Illustration: Werkzeugkasten, aus dem ein rotes Smartphone mit eingehendem Anruf ragt" width="1200" height="900" />
+                        <div className="animate-up">
+                            <WebsiteShowcase slides={showcaseSlides} />
                         </div>
                     </div>
                 </div>
             </section>
 
             <section className="subpage-content section light-bg">
-                <div className="container subpage-body">
+                <div className="container subpage-body is-inset">
                     <h2 className="animate-up">Was kostet eine Handwerker-Website?</h2>
                     <div className="subpage-takeaway animate-up">
                         <p>Eine Handwerker-Website kostet bei mir <strong>ab 1.500 €</strong> (Website-Start), <strong>ab 2.900 €</strong> (One-Pager) bzw. <strong>ab 4.500 €</strong> (mehrseitig) zum Festpreis. Sie ist mobile-first, in rund einer Sekunde geladen und für lokale Suchen wie „Elektriker Hamburg" optimiert, mit Telefon- und WhatsApp-Button direkt im Blickfeld. Laut Think with Google besuchen 76 % der Menschen, die lokal mit dem Smartphone suchen, innerhalb eines Tages ein Geschäft.</p>
                     </div>
 
                     <h2 className="animate-up">Warum Handwerker eine professionelle Website brauchen</h2>
-                    <p className="animate-up">Mundpropaganda ist gut, reicht aber nicht mehr. Wer einen Handwerker braucht, sucht heute zuerst bei Google, oft vom Smartphone. Laut Think with Google besuchen 76 % der Menschen, die lokal suchen, innerhalb eines Tages ein Geschäft, und 28 % der „in der Nähe"-Suchen enden mit einem Kauf.</p>
-                    <p className="animate-up">Das heißt: Ihre zukünftigen Kunden suchen jetzt gerade nach einem Handwerker wie Ihnen. Wenn Sie online nicht sichtbar sind, existieren Sie für diese Kunden nicht, und der Auftrag geht an den Wettbewerber mit Website, selbst wenn Ihre Arbeit besser ist.</p>
+                    <div className="subpage-split animate-up">
+                        <div className="sp-split-media">
+                            <img src="/leistungen/branchen/handwerker/anruf.webp" alt="Maler in Arbeitskleidung schaut auf einem Balkon auf sein Smartphone" width="1200" height="900" loading="lazy" />
+                            <p className="sp-split-caption">Der nächste Auftrag beginnt auf einem Smartphone. Die Frage ist nur, bei wem er ankommt.</p>
+                        </div>
+                        <div className="sp-split-body">
+                            <p>Mundpropaganda ist gut, reicht aber nicht mehr. Wer einen Handwerker braucht, sucht heute zuerst bei Google, oft vom Smartphone. Laut Think with Google besuchen 76 % der Menschen, die lokal suchen, innerhalb eines Tages ein Geschäft, und 28 % der „in der Nähe"-Suchen enden mit einem Kauf.</p>
+                            <p>Das heißt: Ihre zukünftigen Kunden suchen jetzt gerade nach einem Handwerker wie Ihnen. Wenn Sie online nicht sichtbar sind, existieren Sie für diese Kunden nicht, und der Auftrag geht an den Wettbewerber mit Website, selbst wenn Ihre Arbeit besser ist.</p>
+                        </div>
+                    </div>
 
                     <div className="subpage-stats animate-up">
                         <div className="subpage-stat">
@@ -111,6 +155,11 @@ export default function WebdesignHandwerkerPage() {
 
                     <h2 className="animate-up">Was eine Handwerker-Website können muss</h2>
                     <p className="animate-up">Handwerker brauchen keine Website mit 50 Seiten, sondern eine, die funktioniert: schnell, mobil und auffindbar, mit einem Ziel, dass der Kunde anruft.</p>
+
+                    <figure className="subpage-figure is-band animate-up">
+                        <img src="/leistungen/branchen/handwerker/mobil.webp" alt="Handwerker in Latzhose und Helm bedient sein Smartphone in einer Zimmerei" width="1800" height="760" loading="lazy" />
+                        <figcaption>Auf der Baustelle wird nicht am Schreibtisch gesucht. Deshalb wird zuerst fürs Smartphone gebaut.</figcaption>
+                    </figure>
 
                     <div className="subpage-features-grid animate-up">
                         <div className="subpage-feature">
@@ -142,7 +191,7 @@ export default function WebdesignHandwerkerPage() {
                         <Link href="/referenzen/blitz-hamburg" className="cta-link">Zur Referenz: Blitz Hamburg &rarr;</Link>
                     </p>
 
-                    <h2 className="animate-up">Was kostet eine Handwerker-Website?</h2>
+                    <h2 className="animate-up">Was im Preis enthalten ist</h2>
                     <div className="subpage-pricing-compare is-three animate-up">
                         <div className="subpage-price-col">
                             <h3>Website-Start</h3>
@@ -160,9 +209,10 @@ export default function WebdesignHandwerkerPage() {
                         <div className="subpage-price-col">
                             <h3>Conversion Landingpage</h3>
                             <div className="sp-price-value">ab 2.900 &euro;</div>
-                            <p>Kompakte Website mit allem, was ein Handwerksbetrieb braucht. Ideal als Einstieg oder wenn Sie schnell online sichtbar sein wollen.</p>
+                            <p>Individuell gestaltete Seite für Ihren Betrieb, auf Anfragen ausgelegt. Fertig in 2 bis 3 Wochen.</p>
                             <ul className="sp-price-includes">
                                 <li>1 Seite, vollständig responsiv</li>
+                                <li>Individuelles Design statt Vorlage</li>
                                 <li>Telefon & WhatsApp-Button</li>
                                 <li>Google-Maps-Integration</li>
                                 <li>SEO-Grundoptimierung</li>
@@ -187,8 +237,28 @@ export default function WebdesignHandwerkerPage() {
                         </div>
                     </div>
 
+                    <div className="subpage-duo animate-up">
+                        <figure>
+                            <img src="/leistungen/branchen/handwerker/angebot.webp" alt="Handwerker notiert ein Angebot auf dem Klemmbrett, daneben sein roter Werkzeugkasten" width="1000" height="750" loading="lazy" />
+                            <figcaption>Sie kalkulieren zum Festpreis, ich auch.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="/leistungen/branchen/handwerker/handschlag.webp" alt="Handwerker und Kunde geben sich in einer Küche die Hand" width="1000" height="750" loading="lazy" />
+                            <figcaption>Keine Stundenzettel, keine Überraschung am Ende.</figcaption>
+                        </figure>
+                    </div>
+
                     <h2 className="animate-up">Der Ablauf</h2>
-                    <p className="animate-up">Einfach, klar und ohne Fachchinesisch. Sie brauchen keine Vorbereitung, nur 30 Minuten Zeit für ein Gespräch.</p>
+                    <div className="subpage-split is-reverse animate-up">
+                        <div className="sp-split-media">
+                            <img src="/leistungen/branchen/handwerker/beratung.webp" alt="Handwerker mit Werkzeuggürtel zeigt einer Kundin etwas auf einem Tablet" width="1600" height="900" loading="lazy" />
+                            <p className="sp-split-caption">Sie erklären mir Ihr Gewerk, ich erkläre Ihnen die Website. Beides ohne Fachchinesisch.</p>
+                        </div>
+                        <div className="sp-split-body">
+                            <p>Einfach, klar und ohne Fachchinesisch. Sie brauchen keine Vorbereitung, nur 30 Minuten Zeit für ein Gespräch.</p>
+                            <p>Danach übernehme ich Struktur, Design, Entwicklung und Google-Setup. Sie geben Feedback, wenn es etwas zu entscheiden gibt, und bleiben ansonsten auf der Baustelle.</p>
+                        </div>
+                    </div>
                     <div className="subpage-process animate-up">
                         <div className="sp-step"><span className="sp-step-num">1</span><div><strong>Kostenloses Gespräch</strong><p>Wir besprechen, was Sie brauchen und was Ihre Kunden suchen. Ich analysiere Ihre aktuelle Online-Situation und zeige, was möglich ist. Unverbindlich.</p></div></div>
                         <div className="sp-step"><span className="sp-step-num">2</span><div><strong>Konzept</strong><p>Ich erstelle Seitenstruktur und Aufbau Ihrer Website. Sie sehen vorab, wie alles aussehen wird, bevor die Entwicklung startet.</p></div></div>

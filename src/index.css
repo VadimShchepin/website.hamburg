@@ -4720,3 +4720,367 @@ a.service-card {
     width: 100%;
   }
 }
+
+/* ==========================================================================
+   Website-Showcase (Hero-Slideshow mit echten Kundenseiten)
+   ========================================================================== */
+.subpage-hero.is-showcase {
+  padding-top: 6.5rem;
+  padding-bottom: var(--space-md);
+  overflow: hidden;
+}
+
+.hero-showcase-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: var(--space-md);
+  align-items: center;
+}
+
+.hero-showcase-copy .subpage-title {
+  font-size: clamp(1.4rem, 2.4vw, 2.1rem);
+  line-height: 1.12;
+  overflow-wrap: break-word;
+  hyphens: none;
+}
+
+.hero-showcase-copy,
+.hero-showcase-grid > div {
+  min-width: 0;
+}
+
+.hero-showcase-copy .subpage-intro {
+  max-width: 44ch;
+}
+
+.hero-proof {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: var(--space-md);
+}
+
+.hero-proof span {
+  font-family: var(--font-heading);
+  font-size: 0.66rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  background: var(--color-bg-white);
+  border: 1px solid var(--color-bg-gray2);
+  border-left: 2px solid var(--color-accent);
+  padding: 0.45rem 0.7rem;
+  white-space: nowrap;
+}
+
+.ws-showcase {
+  position: relative;
+}
+
+/* Versetzter Navy-Block mit Raster: gibt dem Mockup Tiefe und bricht das Grid. */
+.ws-stage {
+  position: relative;
+  padding-bottom: 2.75rem;
+}
+
+.ws-stage::before {
+  content: '';
+  position: absolute;
+  top: 2rem;
+  left: 2.5rem;
+  right: -1rem;
+  bottom: 0;
+  background-color: var(--color-primary);
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+  background-size: 26px 26px;
+  z-index: 0;
+}
+
+.ws-browser {
+  position: relative;
+  z-index: 1;
+  border: 1px solid var(--color-bg-gray2);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--color-bg-white);
+  box-shadow: 0 34px 60px -28px rgba(10, 25, 47, 0.45);
+}
+
+.ws-chrome {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: 0.6rem 0.9rem;
+  background: var(--color-bg-lightgray);
+  border-bottom: 1px solid var(--color-bg-gray2);
+}
+
+.ws-lights {
+  display: flex;
+  gap: 0.35rem;
+  flex-shrink: 0;
+}
+.ws-lights i {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--color-bg-gray2);
+}
+
+.ws-url {
+  flex: 1;
+  max-width: 340px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+  background: var(--color-bg-white);
+  border: 1px solid var(--color-bg-gray2);
+  border-radius: 20px;
+  padding: 0.22rem 0.9rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ws-screen {
+  position: relative;
+  aspect-ratio: 1400 / 875;
+  background: var(--color-bg-white);
+}
+.ws-screen img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+.ws-screen img.is-active {
+  opacity: 1;
+}
+
+.ws-phone {
+  position: absolute;
+  right: -3%;
+  bottom: 0;
+  z-index: 2;
+  width: 20%;
+  min-width: 108px;
+  border: 6px solid var(--color-primary);
+  border-radius: 22px;
+  background: var(--color-primary);
+  box-shadow: 0 22px 45px -16px rgba(10, 25, 47, 0.55);
+}
+.ws-phone-screen {
+  position: relative;
+  aspect-ratio: 440 / 790;
+  border-radius: 15px;
+  overflow: hidden;
+  background: var(--color-bg-white);
+}
+.ws-phone-screen img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+.ws-phone-screen img.is-active {
+  opacity: 1;
+}
+
+.ws-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.ws-caption {
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+.ws-caption strong {
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+/* .cta-link wurde im Markup benutzt, war aber nie definiert. */
+.cta-link,
+.ws-link {
+  color: var(--color-accent);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+.cta-link:hover,
+.ws-link:hover {
+  border-bottom-color: var(--color-accent);
+}
+
+/* .subpage-body setzt padding als Shorthand und loescht damit das
+   horizontale Padding von .container. Zwischen 769px und 1264px klebte der
+   Inhalt deshalb am Viewport-Rand. Hier seitenweise korrigiert. */
+.subpage-body.is-inset {
+  padding-left: var(--space-md);
+  padding-right: var(--space-md);
+}
+
+@media (max-width: 768px) {
+  .subpage-body.is-inset {
+    padding-left: var(--space-sm);
+    padding-right: var(--space-sm);
+  }
+}
+
+.ws-dots {
+  display: flex;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+.ws-dot {
+  width: 34px;
+  height: 4px;
+  border: 0;
+  padding: 0;
+  border-radius: 2px;
+  background: var(--color-bg-gray2);
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+.ws-dot:hover {
+  background: var(--color-text-muted);
+}
+.ws-dot.is-active {
+  background: var(--color-accent);
+}
+
+@media (max-width: 980px) {
+  /* minmax(0, 1fr) statt 1fr: sonst blaeht das lange Wort "Handwerksbetriebe"
+     die Spalte auf ihre min-content-Breite auf und sprengt den Container. */
+  .hero-showcase-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-md);
+  }
+  .subpage-hero.is-showcase {
+    padding-top: 6.5rem;
+  }
+  .hero-showcase-copy .subpage-intro {
+    max-width: none;
+  }
+  .ws-stage::before {
+    left: 2rem;
+    top: 1.5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .ws-stage {
+    padding-bottom: 0;
+  }
+  .ws-stage::before {
+    display: none;
+  }
+  .ws-phone {
+    display: none;
+  }
+  .ws-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-sm);
+  }
+  .hero-proof span {
+    white-space: normal;
+  }
+}
+
+/* ==========================================================================
+   Bild-Kompositionen fuer Subpages (Split, Band, Duo)
+   ========================================================================== */
+.subpage-split {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: var(--space-md);
+  align-items: center;
+  margin: var(--space-md) 0 var(--space-lg);
+}
+.subpage-split.is-reverse .sp-split-media {
+  order: 2;
+}
+.sp-split-media img {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid var(--color-bg-gray2);
+}
+.sp-split-body > p:last-child {
+  margin-bottom: 0;
+}
+.sp-split-caption {
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.subpage-figure.is-band img {
+  aspect-ratio: 1800 / 760;
+  object-fit: cover;
+}
+
+.subpage-duo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-sm);
+  margin: var(--space-md) 0 var(--space-lg);
+}
+.subpage-duo figure {
+  margin: 0;
+}
+.subpage-duo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid var(--color-bg-gray2);
+}
+.subpage-duo figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+@media (max-width: 768px) {
+  .subpage-split {
+    grid-template-columns: 1fr;
+  }
+  .subpage-split.is-reverse .sp-split-media {
+    order: 0;
+  }
+  .subpage-duo {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+}

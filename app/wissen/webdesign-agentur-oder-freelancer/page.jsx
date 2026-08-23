@@ -246,7 +246,7 @@ export default function AgenturOderFreelancerPage() {
                     Sinnvoll für Vereine, Nebenprojekte, Testphasen und Betriebe, die keine Kunden über Google
                     gewinnen müssen. Der Preis ist unschlagbar, der Preis dafür ist Abhängigkeit. Was Sie beim
                     Umzug verlieren und was ein Baukasten über fünf Jahre wirklich kostet, steht im Artikel
-                    {' '}<Link href="/wissen/website-baukasten-oder-eigene-website">Wix, Jimdo oder eigene Website</Link>.
+                    {' '}<Link href="/wissen/website-baukasten-oder-eigene-website">Website-Baukasten oder eigene Website</Link>.
                 </p>
                 <h3>Freelancer</h3>
                 <p>

@@ -77,7 +77,7 @@ export default function WebdesignHotelsPage() {
                         </p>
                         <div className="hero-proof animate-up">
                             <span>Festpreis ab 2.900 €</span>
-                            <span>Buchungsmaschine angebunden</span>
+                            <span>Direktbuchung</span>
                             <span>Google-Buchungslinks</span>
                         </div>
                         <ServiceMeta />

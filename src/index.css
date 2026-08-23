@@ -2816,7 +2816,8 @@ img {
 
 .wissen-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  /* minmax(0,...) statt 1fr: sonst blaeht das SVG-Kartenbild die Spalte auf */
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: var(--space-md);
   margin-top: var(--space-lg);
 }
@@ -3335,6 +3336,7 @@ a.wissen-card {
   color: inherit;
   display: flex;
   flex-direction: column;
+  min-width: 0;
   padding: var(--space-md);
   border: 1px solid var(--color-bg-gray2);
   background: var(--color-bg-white);
@@ -3741,7 +3743,7 @@ a.service-card {
   }
 
   .wissen-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .about-layout {
@@ -3811,7 +3813,7 @@ a.service-card {
   }
 
   .wissen-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .about-expertise-grid {

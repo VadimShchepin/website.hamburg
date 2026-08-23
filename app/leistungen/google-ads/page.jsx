@@ -104,6 +104,11 @@ export default function GoogleAdsPage() {
                         </div>
                     </div>
 
+                    <figure className="subpage-figure is-band animate-up">
+                        <img src="/leistungen/fotos/google-ads.webp" alt="Illustration: Liste von Suchergebnissen mit rot hervorgehobenem Anzeigenplatz, daneben Gebotsanzeige und Muenzstapel" width="1800" height="760" loading="lazy" decoding="async" />
+                        <figcaption>Der Platz ganz oben wird versteigert. Was er wert ist, entscheidet Ihre Marge, nicht das Gebot.</figcaption>
+                    </figure>
+
                     <h2 className="animate-up">Die Anzeigentypen im Überblick</h2>
                     <div className="subpage-table-wrap animate-up">
                         <table className="subpage-table">

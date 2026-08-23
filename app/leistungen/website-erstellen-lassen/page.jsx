@@ -153,6 +153,11 @@ export default function WebsiteErstellenLassenPage() {
                         </table>
                     </div>
 
+                    <figure className="subpage-figure is-band animate-up">
+                        <img src="/leistungen/fotos/website-erstellen-lassen.webp" alt="Aufsicht auf einen aufgeraeumten Schreibtisch mit Rechner, Tastatur, Tablet und Notizblock" width="1800" height="760" loading="lazy" decoding="async" />
+                        <figcaption>Vor dem ersten Entwurf steht die Frage, was die Seite fuer Ihr Geschaeft leisten soll.</figcaption>
+                    </figure>
+
                     <h2 className="animate-up">Was eine gute Website ausmacht</h2>
                     <p className="animate-up">Eine Website, die Kunden bringt, braucht mehr als hübsches Design. Vier Prinzipien machen den Unterschied:</p>
                     <div className="subpage-features-grid animate-up">

@@ -86,6 +86,11 @@ export default function ConversionOptimierungPage() {
                     <h2 className="animate-up">Warum das oft günstiger ist als mehr Werbung</h2>
                     <p className="animate-up">Rechnen Sie es an Ihrem eigenen Fall durch. Wenn von 500 Besuchern im Monat fünf anfragen, liegt Ihre Conversion Rate bei 1 Prozent. Um die Anfragen zu verdoppeln, haben Sie zwei Wege: 500 zusätzliche Besucher kaufen, jeden Monat wieder. Oder dafür sorgen, dass aus denselben 500 Besuchern zehn Anfragen werden. Der erste Weg kostet dauerhaft, der zweite einmalig. Warum Geschwindigkeit dabei eine so große Rolle spielt, steht im Beitrag <a href="/wissen/warum-langsame-websites-kunden-kosten">warum langsame Websites Kunden kosten</a>.</p>
 
+                    <figure className="subpage-figure is-band animate-up">
+                        <img src="/leistungen/fotos/conversion-optimierung.webp" alt="Buero mit Laptop, auf dessen Bildschirm Auswertungen und Kennzahlen zu sehen sind" width="1800" height="760" loading="lazy" decoding="async" />
+                        <figcaption>Erst messen, wo Besucher abspringen. Dann aendern. In dieser Reihenfolge.</figcaption>
+                    </figure>
+
                     <h2 className="animate-up">Woran es bei lokalen Websites meistens liegt</h2>
                     <p className="animate-up">Die Ursachen wiederholen sich. In fast jeder Analyse tauchen dieselben sechs Punkte auf:</p>
                     <div className="subpage-features-grid animate-up">

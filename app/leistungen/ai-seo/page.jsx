@@ -106,6 +106,11 @@ export default function AiSeoPage() {
                         </div>
                     </div>
 
+                    <figure className="subpage-figure is-band animate-up">
+                        <img src="/leistungen/fotos/ai-seo.webp" alt="Illustration: eine Website in der Mitte, deren Inhalte als Quellenverweise zu mehreren Antwortpanels fuehren" width="1800" height="760" loading="lazy" decoding="async" />
+                        <figcaption>Wer als Quelle taugt, wird zitiert: klare Aussagen, belegte Zahlen, sauberes Markup.</figcaption>
+                    </figure>
+
                     <h2 className="animate-up">Wie KI-Systeme ihre Quellen auswählen</h2>
                     <p className="animate-up">Jede Engine grounded ihre Antworten anders. Wer zitiert werden will, muss wissen, wo die jeweilige Engine sucht:</p>
                     <div className="subpage-table-wrap animate-up">

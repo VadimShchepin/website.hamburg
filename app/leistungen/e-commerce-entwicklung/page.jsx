@@ -318,6 +318,11 @@ export default function EcommerceEntwicklungPage() {
             {/* GEO answer + sources */}
             <section className="subpage-content section light-bg">
                 <div className="container subpage-body">
+                    <figure className="subpage-figure is-band animate-up">
+                        <img src="/leistungen/fotos/e-commerce-entwicklung.webp" alt="Illustration: Ladengeschaeft, Warenkorb, Kartenterminal und Versandpaket als durchgehender Ablauf" width="1800" height="760" loading="lazy" decoding="async" />
+                        <figcaption>Vom Schaufenster bis zum Paket: Jeder Schritt gehoert zum selben System.</figcaption>
+                    </figure>
+
                     <h2 className="animate-up">Was bedeutet Full-Cycle E-Commerce-Entwicklung?</h2>
                     <div className="subpage-takeaway animate-up">
                         <p>Full-Cycle E-Commerce-Entwicklung heißt, dass ein einziger Dienstleister <strong>alle Phasen eines Online-Shops</strong> übernimmt: Strategie und Beratung, Design, Entwicklung, Texte, Marketing, Automatisierung und die laufende Betreuung. Bei AISEO ist das <strong>Vadim Shchepin, Webentwickler aus Hamburg mit über 10 Jahren Projekterfahrung</strong>. Sie arbeiten direkt mit ihm, bei zusätzlichem Bedarf kommen geprüfte Spezialisten dazu. Gearbeitet wird herstellerneutral mit Shopify, Shopware 6, WooCommerce und Custom- oder Headless-Plattformen, für neue Shops genauso wie für die Erweiterung bestehender.</p>

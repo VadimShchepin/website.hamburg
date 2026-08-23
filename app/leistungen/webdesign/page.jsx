@@ -117,6 +117,11 @@ export default function WebdesignPage() {
                         </div>
                     </div>
 
+                    <figure className="subpage-figure is-band animate-up">
+                        <img src="/leistungen/fotos/webdesign.webp" alt="Naheinstellung: Haende tippen Code auf einer Tastatur vor zwei Monitoren mit Entwicklungsumgebung" width="1800" height="760" loading="lazy" decoding="async" />
+                        <figcaption>Individuell programmiert statt Theme von der Stange: Jede Entscheidung laesst sich begruenden.</figcaption>
+                    </figure>
+
                     <h2 className="animate-up">Was hinter jeder Designentscheidung steckt</h2>
                     <p className="animate-up">Jede Designentscheidung folgt Daten und bewährten <a href="/wissen/website-conversion-optimierung">Conversion-Prinzipien</a>, nicht dem Geschmack. Wer einen Online-Shop braucht, findet das passende Angebot unter <a href="/leistungen/e-commerce-entwicklung">E-Commerce-Entwicklung</a>, für laufende Sichtbarkeit gibt es die <a href="/leistungen/seo">SEO-Betreuung</a>.</p>
 

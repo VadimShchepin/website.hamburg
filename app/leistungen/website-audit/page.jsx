@@ -82,6 +82,11 @@ export default function WebsiteAuditPage() {
                         <p>Das <strong>Website-Audit</strong> ist eine kostenlose, unverbindliche Analyse Ihrer Website in vier Bereichen: Performance (Core Web Vitals), SEO, Conversion und Wettbewerb. Sie erhalten innerhalb von <strong>2 bis 3 Werktagen</strong> einen Bericht mit Screenshots, Daten und priorisierten Handlungsempfehlungen, dazu ein 30-minütiges Gespräch. Kein Haken, keine Verpflichtung.</p>
                     </div>
 
+                    <figure className="subpage-figure is-band animate-up">
+                        <img src="/leistungen/fotos/website-audit.webp" alt="Illustration: Browserfenster auf einem Pruefstand unter einer Lupe, daneben Bewertungsskala und Checkliste" width="1800" height="760" loading="lazy" decoding="async" />
+                        <figcaption>Ladezeit, Technik, Struktur und Conversion-Pfad, jeweils mit Messwert statt Bauchgefuehl.</figcaption>
+                    </figure>
+
                     <h2 className="animate-up">Was das Audit umfasst</h2>
                     <p className="animate-up">Kein oberflächlicher Schnellcheck, sondern eine fundierte Analyse der Faktoren, die über den Erfolg Ihrer Website entscheiden, jeweils mit dem passenden Werkzeug:</p>
                     <div className="subpage-table-wrap animate-up">

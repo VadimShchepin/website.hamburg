@@ -101,6 +101,11 @@ export default function SeoPage() {
                         </div>
                     </div>
 
+                    <figure className="subpage-figure is-band animate-up">
+                        <img src="/leistungen/fotos/seo.webp" alt="Buerotisch mit zwei Monitoren, auf denen Diagramme und Kennzahlen zur Websiteleistung zu sehen sind" width="1800" height="760" loading="lazy" decoding="async" />
+                        <figcaption>Sichtbarkeit wird gemessen, nicht behauptet: Rankings, Klicks und Anrufe im Monatsreport.</figcaption>
+                    </figure>
+
                     <h2 className="animate-up">Was lokales SEO konkret bedeutet</h2>
                     <div className="subpage-features-grid animate-up">
                         <div className="subpage-feature">

@@ -131,6 +131,21 @@ export default function ContactPageClient() {
 
                     {/* Right: Info */}
                     <div className="contact-info-col">
+                        <div className="contact-person animate-up">
+                            <img
+                                src="/referenzen/vadim-portraet.webp"
+                                alt="Vadim Shchepin, Webentwickler aus Hamburg"
+                                width="640"
+                                height="640"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                            <div className="contact-person-body">
+                                <p className="contact-person-name">Vadim Shchepin</p>
+                                <p className="contact-person-role">Webentwickler aus Hamburg. Ihre Anfrage landet direkt bei mir, nicht in einem Ticketsystem.</p>
+                            </div>
+                        </div>
+
                         <div className="contact-info-card bull-boundary animate-up">
                             <h3>Direkter Kontakt</h3>
                             <div className="contact-info-items">

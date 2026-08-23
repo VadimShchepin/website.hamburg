@@ -17,6 +17,7 @@ export const metadata = {
         description: 'Websites für Arztpraxen und Zahnärzte in Hamburg: DSGVO-konform, Online-Terminbuchung, Google-Maps-Sichtbarkeit. Mehr Patienten.',
         url: 'https://webseite.hamburg/leistungen/webdesign-aerzte',
         type: 'website',
+        images: [{ url: 'https://webseite.hamburg/leistungen/branchen/aerzte/praxis.webp', width: 1200, height: 900 }],
     },
 };
 
@@ -38,6 +39,7 @@ export default function WebdesignAerztePage() {
         areaServed: { '@type': 'City', name: 'Hamburg' },
         url: 'https://webseite.hamburg/leistungen/webdesign-aerzte',
         description: 'DSGVO-konforme Websites für Arztpraxen und Zahnärzte in Hamburg mit Online-Terminbuchung und Google-Maps-Sichtbarkeit.',
+        image: 'https://webseite.hamburg/leistungen/branchen/aerzte/praxis.webp',
         offers: [
             { '@type': 'Offer', name: 'Praxis-Website Kompakt', price: '2900', priceCurrency: 'EUR' },
             { '@type': 'Offer', name: 'Praxis-Website Premium', price: '5500', priceCurrency: 'EUR' },
@@ -75,8 +77,8 @@ export default function WebdesignAerztePage() {
                         </p>
                         <ServiceMeta />
                         </div>
-                        <div className="subpage-hero-media animate-up">
-                            <img src="/leistungen/branchen/hero-aerzte.svg" alt="Illustration: Smartphone mit Terminkalender, ein Termin rot markiert, daneben ein Ärztekreuz im Kreis" width="1200" height="900" />
+                        <div className="subpage-hero-media hero-media-framed animate-up">
+                            <img src="/leistungen/branchen/aerzte/praxis.webp" alt="Heller Empfangstresen einer Arztpraxis mit Wartebereich und Bestuhlung" width="1200" height="900" fetchPriority="high" decoding="async" />
                         </div>
                     </div>
                 </div>
@@ -90,7 +92,16 @@ export default function WebdesignAerztePage() {
                     </div>
 
                     <h2 className="animate-up">Warum Arztpraxen eine moderne Website brauchen</h2>
-                    <p className="animate-up">Laut Bitkom (2024) hat die Hälfte der Deutschen schon mindestens einmal online einen Arzttermin vereinbart, 2019 waren es erst 26 %. 27 % wählen ihre Praxis gezielt danach aus, ob Online-Terminbuchung angeboten wird. Plattformen wie Doctolib und Jameda dominieren die Suchergebnisse zunehmend.</p>
+                    <div className="subpage-split animate-up">
+                        <div className="sp-split-media">
+                            <img src="/leistungen/branchen/aerzte/telefon.webp" alt="Medizinische Fachangestellte nimmt am Praxisschreibtisch einen Anruf entgegen, daneben ein Laptop" width="1200" height="900" loading="lazy" decoding="async" />
+                            <p className="sp-split-caption">Jeder Termin, der online gebucht wird, ist ein Anruf weniger an der Anmeldung.</p>
+                        </div>
+                        <div className="sp-split-body">
+                            <p>Laut Bitkom (2024) hat die Hälfte der Deutschen schon mindestens einmal online einen Arzttermin vereinbart, 2019 waren es erst 26 %. 27 % wählen ihre Praxis gezielt danach aus, ob Online-Terminbuchung angeboten wird. Plattformen wie Doctolib und Jameda dominieren die Suchergebnisse zunehmend.</p>
+                            <p>Das entlastet auch das Team: Wer rund um die Uhr selbst buchen kann, ruft nicht zur Sprechstundenzeit an. Die Anmeldung gewinnt Zeit für die Patienten, die tatsächlich vor Ort stehen.</p>
+                        </div>
+                    </div>
                     <p className="animate-up">Die häufigsten Probleme, die ich bei Praxis-Websites in Hamburg sehe:</p>
                     <ul className="check-list animate-up">
                         <li>Keine oder schlechte Google-Sichtbarkeit, sodass Patienten die Praxis nicht finden</li>
@@ -153,6 +164,11 @@ export default function WebdesignAerztePage() {
                             <p>Positive Bewertungen von Jameda, Google und anderen Plattformen direkt einbinden. 57 % der Patienten messen Bewertungen bei der Arztwahl große Bedeutung bei (Bitkom).</p>
                         </div>
                     </div>
+
+                    <figure className="subpage-figure is-band animate-up">
+                        <img src="/leistungen/branchen/aerzte/arbeitsplatz.webp" alt="Arbeitsplatz im Behandlungszimmer mit Monitor, Tastatur und medizinischen Instrumenten" width="1800" height="760" loading="lazy" decoding="async" />
+                        <figcaption>Die Website ist die Vorstufe zur Praxissoftware: Sie klärt Zuständigkeit, Sprechzeiten und Terminweg, bevor jemand anruft.</figcaption>
+                    </figure>
 
                     <h2 className="animate-up">Was im Preis enthalten ist</h2>
                     <div className="subpage-pricing-compare animate-up">

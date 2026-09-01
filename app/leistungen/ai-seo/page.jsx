@@ -187,6 +187,7 @@ export default function AiSeoPage() {
                         </div>
                     </div>
                     <p className="animate-up">Kombinierbar mit dem laufenden <Link href="/leistungen/seo">SEO-Paket</Link>, das die technische Grundlage für KI-Zitationen liefert.</p>
+                    <p className="animate-up">Seit August 2026 gibt es in ChatGPT neben der Antwort auch bezahlte Plätze. Erwähnungen in der Antwort verdienen Sie sich über AI SEO, den Platz darunter kaufen Sie: <Link href="/leistungen/chatgpt-ads">ChatGPT Ads</Link>.</p>
 
                     <h2 className="animate-up">Warum jetzt der richtige Zeitpunkt ist</h2>
                     <p className="animate-up">AI-Suche ist noch ein junger Markt. Die meisten Wettbewerber optimieren noch nicht dafür. Wer jetzt investiert, baut einen Vorsprung auf, den man später schwer einholt. In zwei bis drei Jahren wird AI SEO so selbstverständlich sein wie klassisches SEO heute. Die zitierten Plätze sind dann aber längst vergeben.</p>

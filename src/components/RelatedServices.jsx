@@ -8,6 +8,7 @@ const allServices = [
     { slug: 'conversion-optimierung', title: 'Conversion-Optimierung', desc: 'Mehr Anfragen aus vorhandenem Traffic', price: 'Ab 1.200' },
     { slug: 'ai-seo', title: 'AI SEO', desc: 'Sichtbar in ChatGPT & Perplexity', price: 'Sprint ab 1.500' },
     { slug: 'google-ads', title: 'Google & Local Ads', desc: 'Sofort Anfragen über bezahlte Suche', price: 'Ab 500/Mt.' },
+    { slug: 'chatgpt-ads', title: 'ChatGPT Ads', desc: 'Werbung in ChatGPT, neu in Deutschland', price: 'Ab 500/Mt.' },
     { slug: 'website-audit', title: 'Website-Audit', desc: 'Kostenlose Analyse Ihrer Website', price: 'Kostenlos' },
 ];
 

@@ -40,6 +40,18 @@ export default function Services() {
             ),
         },
         {
+            slug: 'chatgpt-ads',
+            title: 'ChatGPT Ads',
+            desc: 'Neu in Deutschland: Anzeigen in ChatGPT, dort wo Menschen gerade vergleichen und entscheiden.',
+            points: ['Kampagnen im OpenAI Ads Manager', 'Kontext statt Keywords', 'Pixel & Conversions API', 'Ehrliche Bilanz nach 4 Wochen'],
+            price: 'Ab 500/Mt.',
+            icon: (
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="m12 7 1.2 2.8L16 11l-2.8 1.2L12 15l-1.2-2.8L8 11l2.8-1.2z"/>
+                </svg>
+            ),
+        },
+        {
             slug: 'website-audit',
             title: 'Website-Audit',
             desc: 'Kostenlose Analyse Ihrer aktuellen Website: Geschwindigkeit, SEO, Struktur und Conversion-Potenzial.',

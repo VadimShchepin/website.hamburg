@@ -392,7 +392,66 @@ export default function ServicesPageClient() {
 
             <div className="sp-divider"><div className="container"><hr /></div></div>
 
-            {/* SERVICE 5: AUDIT */}
+            {/* SERVICE 5: CHATGPT ADS */}
+            <section id="chatgpt-ads" className="sp-service section">
+                <div className="container">
+                    <div className="sp-service-layout">
+                        <div className="sp-service-content">
+                            <p className="section-kicker animate-up">Neu: ChatGPT Ads</p>
+                            <h2 className="section-title animate-up">Werbung in ChatGPT, bevor es teuer wird.</h2>
+                            <p className="large-text animate-up">
+                                Seit dem 24. August 2026 laufen Anzeigen in ChatGPT auch in Deutschland, seit Anfang September ist der OpenAI Ads Manager im Self-Service buchbar. Ich schalte seit dem Start eigene Kampagnen und baue sie jetzt für Unternehmen auf, die den Vorsprung mitnehmen wollen. <Link href="/leistungen/chatgpt-ads">Alles zu ChatGPT Ads</Link>
+                            </p>
+
+                            <div className="sp-what-you-get animate-up">
+                                <h3>Was Sie bekommen</h3>
+                                <ul className="check-list">
+                                    <li>Ads-Manager-Konto auf Ihren Namen, Kampagnenstruktur, Gebotsstrategie</li>
+                                    <li>Kontext-Hinweise statt Keywords: die eigentliche Steuerung in diesem Kanal</li>
+                                    <li>Anzeigentexte und Bild-Assets in mehreren Varianten</li>
+                                    <li>Conversion-Tracking über OpenAI-Pixel und Conversions API</li>
+                                    <li>Wöchentliche Optimierung, monatlicher Report</li>
+                                    <li>Nach vier Wochen eine ehrliche Bilanz: ausbauen, umbauen oder stoppen</li>
+                                </ul>
+                            </div>
+
+                            <div className="sp-transparency-box animate-up">
+                                <h3>Ehrlich zum Zeitpunkt</h3>
+                                <p>Belastbare Branchen-Benchmarks gibt es für diesen Kanal noch nicht, auch OpenAI veröffentlicht keine. Wer Ihnen heute exakte Klickpreise verspricht, rät. Ich sage Ihnen, was ich in meinen eigenen Konten sehe, und rechne im Kurzcheck mit Ihren Zahlen durch, ob sich der Test trägt.</p>
+                            </div>
+                        </div>
+
+                        <div className="sp-service-sidebar">
+                            <div className="sp-price-card bull-boundary animate-up">
+                                <p className="sp-price-label">Kampagnen-Setup</p>
+                                <div className="sp-price-value">ab 700 &euro;</div>
+                                <p className="sp-price-desc">Einmalig. Konto, Kampagne und Messung stehen sauber, auch wenn Sie danach selbst weitermachen.</p>
+                                <ul className="sp-price-includes">
+                                    <li>Konto- und Kampagnenaufbau</li>
+                                    <li>Kontext-Hinweise & Geo-Targeting</li>
+                                    <li>Anzeigen und Bild-Assets</li>
+                                    <li>Pixel & Conversions API</li>
+                                </ul>
+                            </div>
+                            <div className="sp-price-card bull-boundary animate-up delay-1">
+                                <p className="sp-price-label">Laufende Betreuung</p>
+                                <div className="sp-price-value">ab 500 &euro;/Mt.</div>
+                                <p className="sp-price-desc">Monatlich kündbar. Werbebudget kommt separat dazu und läuft über Ihr eigenes OpenAI-Konto.</p>
+                                <ul className="sp-price-includes">
+                                    <li>Gebote, Hinweise, Kreative</li>
+                                    <li>Landingpage-Tests</li>
+                                    <li>Monatlicher Report</li>
+                                </ul>
+                            </div>
+                            <p className="sp-price-note animate-up">Als Testbudget empfehle ich mindestens 500 &euro;/Mt. über zwei bis drei Monate. OpenAI empfiehlt für Klick-Kampagnen ein Start-Höchstgebot von 3 bis 5 US-Dollar pro Klick.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div className="sp-divider"><div className="container"><hr /></div></div>
+
+            {/* SERVICE 6: AUDIT */}
             <section id="audit" className="sp-service section">
                 <div className="container">
                     <div className="sp-service-layout">

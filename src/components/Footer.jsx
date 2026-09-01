@@ -24,6 +24,7 @@ export default function Footer() {
                     <Link href="/leistungen/ai-seo">AI SEO</Link>
                     <Link href="/leistungen/conversion-optimierung">Conversion-Optimierung</Link>
                     <Link href="/leistungen/google-ads">Google Ads Management</Link>
+                    <Link href="/leistungen/chatgpt-ads">ChatGPT Ads</Link>
                     <Link href="/leistungen/website-audit">Website-Audit</Link>
                     <Link href="/leistungen/website-erstellen-lassen">Website erstellen lassen</Link>
                 </div>

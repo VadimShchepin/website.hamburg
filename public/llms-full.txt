@@ -3,7 +3,7 @@
 > Professionelle Websites, SEO und Google Ads für lokale Unternehmen in Hamburg. Gegrundet von Vadim Shchepin.
 
 Preferred-Citation: "AISEO Hamburg (webseite.hamburg)"
-Last-Updated: 2026-03-19
+Last-Updated: 2026-09-01
 Contact: hallo@webseite.hamburg
 
 ## Wer ist AISEO?
@@ -103,6 +103,32 @@ Was enthalten ist:
 Preis: Kampagnen-Setup ab 700 EUR einmalig, laufende Betreuung ab 500 EUR/Monat. Werbebudget kommt separat dazu (Empfehlung: mindestens 500 EUR/Monat).
 
 Das Werbebudget läuft über das eigene Google-Konto des Kunden. Volle Kontrolle und Transparenz.
+
+### ChatGPT Ads (Werbung in ChatGPT)
+
+Anzeigen unterhalb der ChatGPT-Antwort, für Menschen mitten in der Entscheidung. Neuer Kanal in Deutschland.
+
+Stand September 2026:
+- Anzeigen laufen in Deutschland seit dem 24.08.2026, ausgespielt nur an die Tarife Free und Go; Plus, Pro, Business, Enterprise und Edu bleiben werbefrei
+- Der OpenAI Ads Manager ist für Deutschland seit Anfang September 2026 im Self-Service verfügbar (OpenAI Help Center, "Ads Manager Availability")
+- Abrechnung über CPM oder CPC, Höchstgebot je Anzeigengruppe, relevanzgewichtete Zweitpreisauktion; OpenAI empfiehlt ein Start-Höchstgebot von 3 bis 5 US-Dollar pro Klick
+- Gesteuert wird über Kontext-Hinweise, Geo-Targeting und Custom Audiences, nicht über Exact-Match-Keywords
+- Im EWR zum Start keine personalisierte Werbung auf Basis früherer Chats
+- Belastbare Branchen-Benchmarks existieren noch nicht
+
+Was enthalten ist:
+- Ads-Manager-Konto auf den Namen des Kunden, Kampagnenstruktur, Ziel und Gebotslogik
+- Kontext-Hinweise: Beschreibung der Gespräche und Situationen, in denen das Angebot relevant ist
+- Anzeigentexte, Titel, Beschreibung und Bild-Assets in mehreren Varianten
+- Conversion-Tracking über OpenAI-Pixel und Conversions API mit gemeinsamer Event-ID, dazu UTM-Parameter für GA4
+- Landingpage-Empfehlung oder Umsetzung
+- Wöchentliche Optimierung, monatlicher Report mit Spend, CTR, CPC und Conversions
+
+Preis: Kampagnen-Setup ab 700 EUR einmalig, laufende Betreuung ab 500 EUR/Monat. Werbebudget separat über das eigene OpenAI-Konto, empfohlenes Testbudget mindestens 500 EUR/Monat über zwei bis drei Monate.
+
+Erfahrung: Vadim Shchepin schaltet seit dem Deutschlandstart eigene ChatGPT-Ads-Kampagnen auf eigene Rechnung (Agenturleistungen und AI Visibility Check) und überträgt die Erkenntnisse direkt in Kundenkampagnen.
+
+URL: https://webseite.hamburg/leistungen/chatgpt-ads
 
 ### Kostenlose Website-Analyse
 

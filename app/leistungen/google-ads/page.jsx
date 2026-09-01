@@ -177,6 +177,8 @@ export default function GoogleAdsPage() {
                     <p className="animate-up">Im monatlichen Report zeige ich klar, was ausgegeben wurde, wie viele Anfragen kamen, was ein Lead kostet und was ich für den nächsten Monat empfehle. Wenn eine Kampagne nicht funktioniert, sage ich es Ihnen und optimiere, bis es stimmt.</p>
 
                     <p className="animate-up">Für nachhaltige Sichtbarkeit ohne Klickkosten kombinieren viele Kunden Ads mit <Link href="/leistungen/seo">lokaler SEO</Link>: Ads für den Sofort-Effekt, SEO für den langfristigen Aufbau.</p>
+
+                    <p className="animate-up">Neu daneben: <Link href="/leistungen/chatgpt-ads">ChatGPT Ads</Link>. Seit August 2026 laufen Anzeigen in ChatGPT auch in Deutschland, und die Auktion ist dort noch dünn besetzt. Google Ads bleiben die Grundlast für planbare Anfragen, ChatGPT Ads sind das Testbudget mit Lernvorsprung.</p>
                 </div>
             </section>
 

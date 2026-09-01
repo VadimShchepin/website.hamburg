@@ -34,6 +34,11 @@ const nextConfig = {
                 source: '/redesign/:slug',
                 destination: '/redesign/:slug/index.html',
             },
+            // Language roots inside a bundle, e.g. /redesign/hejzel/pl
+            {
+                source: '/redesign/:slug/:lang(de|pl|en)',
+                destination: '/redesign/:slug/:lang/index.html',
+            },
         ];
     },
     async redirects() {

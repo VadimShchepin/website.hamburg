@@ -12,6 +12,12 @@ export const metadata = {
 
 const redesigns = [
     {
+        slug: 'hejzel',
+        firm: 'Steuerberatung Marek Hejzel',
+        sector: 'STEUERBERATUNG · HAMBURG WANDSBEK · SEIT 2004',
+        description: 'Einfarbiger Kanzlei-Editorial, gebaut aus den eigenen Schwarzweißaufnahmen von Silke Heyer, mit dem Logo-Cyan als Signal statt als Fläche. 51 Seiten auf Deutsch, Polnisch und Englisch: zehn Mandantengruppen mit eigenen Inhalten und ein vierstufiger Fragebogen, der Anfragen vorqualifiziert. Dazu eine Angebotsseite mit drei Paketen.',
+    },
+    {
         slug: 'hopfenbachvilla',
         firm: 'Naturidylle Hopfenbachvilla',
         sector: 'MOEBLIERTES WOHNEN & CO-LIVING · GROSSHANSDORF BEI AHRENSBURG · SEIT 1908',

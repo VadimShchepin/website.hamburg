@@ -74,7 +74,7 @@ export default function ChatGptAdsPage() {
                             <p className="section-kicker animate-up">Neu in Deutschland</p>
                             <h1 className="subpage-title animate-up">ChatGPT Ads schalten, bevor Ihr Wettbewerb den Kanal kennt.</h1>
                             <p className="subpage-intro animate-up">
-                                Seit dem 24. August 2026 sehen Menschen in Deutschland Anzeigen in ChatGPT. Seit Anfang September ist der OpenAI Ads Manager hier auch im Self-Service buchbar. Ich schalte seit dem Start eigene Kampagnen darin, mit eigenem Geld, und baue sie jetzt für Unternehmen auf, die den Vorsprung mitnehmen wollen.
+                                Seit dem 24. August 2026 sehen Menschen in Deutschland Anzeigen in ChatGPT. Seit dem 31. August 2026 ist der OpenAI Ads Manager hier auch im Self-Service buchbar. Ich schalte seit dem Start eigene Kampagnen darin, mit eigenem Geld, und baue sie jetzt für Unternehmen auf, die den Vorsprung mitnehmen wollen.
                             </p>
                             <ServiceMeta />
                         </div>
@@ -89,7 +89,7 @@ export default function ChatGptAdsPage() {
                 <div className="container subpage-body">
                     <h2 className="animate-up">Was sind ChatGPT Ads?</h2>
                     <div className="subpage-takeaway animate-up">
-                        <p><strong>ChatGPT Ads</strong> sind bezahlte Anzeigen, die unterhalb einer ChatGPT-Antwort erscheinen, klar als gesponsert gekennzeichnet und vom Antworttext getrennt. Ausgespielt werden sie nur an Nutzer der Tarife Free und Go, abgerechnet pro 1.000 Impressionen (CPM) oder pro Klick (CPC). In Deutschland laufen sie seit dem 24. August 2026; den Ads Manager können deutsche Unternehmen seit Anfang September 2026 selbst buchen.</p>
+                        <p><strong>ChatGPT Ads</strong> sind bezahlte Anzeigen, die unterhalb einer ChatGPT-Antwort erscheinen, klar als gesponsert gekennzeichnet und vom Antworttext getrennt. Ausgespielt werden sie nur an Nutzer der Tarife Free und Go, abgerechnet pro 1.000 Impressionen (CPM) oder pro Klick (CPC). In Deutschland laufen sie seit dem 24. August 2026; den Ads Manager können deutsche Unternehmen seit dem 31. August 2026 selbst buchen.</p>
                     </div>
 
                     <div className="subpage-stats animate-up">

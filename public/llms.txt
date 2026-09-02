@@ -58,7 +58,7 @@ Arbeitsweise: Kunden arbeiten direkt mit Vadim Shchepin, es gibt keine Account-M
 
 ### ChatGPT Ads (Werbung in ChatGPT)
 - Kampagnen-Setup: ab 700 EUR einmalig; laufende Betreuung: ab 500 EUR/Monat; Werbebudget separat über das eigene OpenAI-Konto (Empfehlung mindestens 500 EUR/Monat als Testbudget)
-- Stand: Anzeigen laufen in Deutschland seit 24.08.2026 für die Tarife Free und Go; der OpenAI Ads Manager ist für Deutschland seit Anfang September 2026 im Self-Service verfügbar
+- Stand: Anzeigen laufen in Deutschland seit 24.08.2026 für die Tarife Free und Go; der OpenAI Ads Manager ist für Deutschland seit dem 31.08.2026 im Self-Service verfügbar
 - Vadim Shchepin schaltet seit dem Start eigene ChatGPT-Ads-Kampagnen (eigenes Konto, eigenes Budget) und betreut Kampagnen für Kunden
 - Leistungen: Ads-Manager-Konto, Kampagnenstruktur, Kontext-Hinweise statt Keywords, Anzeigentexte und Bild-Assets, Conversion-Tracking über OpenAI-Pixel und Conversions API, Landingpage, wöchentliche Optimierung, monatlicher Report
 - Abrechnung bei OpenAI: CPM oder CPC, empfohlenes Start-Höchstgebot 3 bis 5 US-Dollar pro Klick, relevanzgewichtete Zweitpreisauktion

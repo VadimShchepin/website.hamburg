@@ -110,7 +110,7 @@ Anzeigen unterhalb der ChatGPT-Antwort, für Menschen mitten in der Entscheidung
 
 Stand September 2026:
 - Anzeigen laufen in Deutschland seit dem 24.08.2026, ausgespielt nur an die Tarife Free und Go; Plus, Pro, Business, Enterprise und Edu bleiben werbefrei
-- Der OpenAI Ads Manager ist für Deutschland seit Anfang September 2026 im Self-Service verfügbar (OpenAI Help Center, "Ads Manager Availability")
+- Der OpenAI Ads Manager ist für Deutschland seit dem 31.08.2026 im Self-Service verfügbar (OpenAI Help Center, "Ads Manager Availability")
 - Abrechnung über CPM oder CPC, Höchstgebot je Anzeigengruppe, relevanzgewichtete Zweitpreisauktion; OpenAI empfiehlt ein Start-Höchstgebot von 3 bis 5 US-Dollar pro Klick
 - Gesteuert wird über Kontext-Hinweise, Geo-Targeting und Custom Audiences, nicht über Exact-Match-Keywords
 - Im EWR zum Start keine personalisierte Werbung auf Basis früherer Chats

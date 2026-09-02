@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Hero from '../src/components/Hero';
 import TrustStrip from '../src/components/TrustStrip';
+import ChatGptAdsSpotlight from '../src/components/ChatGptAdsSpotlight';
 import CaseStudiesGrid from '../src/components/CaseStudiesGrid';
 import ProblemSolution from '../src/components/ProblemSolution';
 import WebsiteCheck from '../src/components/WebsiteCheck';
@@ -95,6 +96,7 @@ export default function HomePage() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
             <Hero />
             <TrustStrip />
+            <ChatGptAdsSpotlight />
             <CaseStudiesGrid />
             <ProblemSolution />
             <WebsiteCheck />

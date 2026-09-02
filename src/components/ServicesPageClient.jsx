@@ -400,7 +400,7 @@ export default function ServicesPageClient() {
                             <p className="section-kicker animate-up">Neu: ChatGPT Ads</p>
                             <h2 className="section-title animate-up">Werbung in ChatGPT, bevor es teuer wird.</h2>
                             <p className="large-text animate-up">
-                                Seit dem 24. August 2026 laufen Anzeigen in ChatGPT auch in Deutschland, seit Anfang September ist der OpenAI Ads Manager im Self-Service buchbar. Ich schalte seit dem Start eigene Kampagnen und baue sie jetzt für Unternehmen auf, die den Vorsprung mitnehmen wollen. <Link href="/leistungen/chatgpt-ads">Alles zu ChatGPT Ads</Link>
+                                Seit dem 24. August 2026 laufen Anzeigen in ChatGPT auch in Deutschland, seit dem 31. August 2026 ist der OpenAI Ads Manager im Self-Service buchbar. Ich schalte seit dem Start eigene Kampagnen und baue sie jetzt für Unternehmen auf, die den Vorsprung mitnehmen wollen. <Link href="/leistungen/chatgpt-ads">Alles zu ChatGPT Ads</Link>
                             </p>
 
                             <div className="sp-what-you-get animate-up">

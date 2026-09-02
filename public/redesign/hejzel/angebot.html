@@ -8,8 +8,8 @@
     <meta name="description" content="Drei Pakete für den neuen Auftritt der Steuerberatung Marek Hejzel in Hamburg Wandsbek.">
     <script>document.documentElement.classList.add("js")</script>
     <meta name="theme-color" content="#0B1215">
-    <link rel="preload" as="font" type="font/woff2" href="/redesign/hejzel/assets/fonts/fraunces-latin.woff2" crossorigin>
-    <link rel="preload" as="font" type="font/woff2" href="/redesign/hejzel/assets/fonts/inter-latin.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/redesign/hejzel/assets/fonts/poppins-500-latin.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/redesign/hejzel/assets/fonts/poppins-400-latin.woff2" crossorigin>
     <link rel="stylesheet" href="/redesign/hejzel/assets/fonts.css">
     <link rel="stylesheet" href="/redesign/hejzel/assets/site.css">
     <style>
@@ -23,7 +23,7 @@
               grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr)); align-items:start; }
       .pak{ background:var(--paper-2); border:1px solid var(--line); border-radius:var(--r);
              padding:clamp(1.5rem,2.4vw,2.1rem); display:flex; flex-direction:column; }
-      .pak-best{ border-color:var(--ink); box-shadow:0 0 0 1px var(--ink); }
+      .pak-best{ border-color:transparent; box-shadow:var(--sh-lg); }
       .pak header{ padding-bottom:1.3rem; border-bottom:1px solid var(--line); margin-bottom:1.3rem; }
       .pak .num{ display:inline-block; }
       .ptag{ float:right; font-size:.66rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
@@ -40,11 +40,11 @@
       .pak ul{ list-style:none; margin:0; padding:0; }
       .pak li{ font-size:.87rem; line-height:1.5; color:var(--text-soft);
                 padding:.42rem 0 .42rem 1.4rem; position:relative; }
-      .pak-in li::before{ content:""; position:absolute; left:0; top:.78em; width:8px; height:8px;
-                           background:var(--cyan); transform:skewX(-14deg); }
+      .pak-in li::before{ content:""; position:absolute; left:0; top:.72em; width:8px; height:8px;
+                           border-radius:50%; background:var(--cyan); }
       .pak-out li{ color:var(--text-faint); }
-      .pak-out li::before{ content:""; position:absolute; left:0; top:1.02em; width:9px; height:1px;
-                            background:var(--text-faint); }
+      .pak-out li::before{ content:""; position:absolute; left:0; top:1.02em; width:9px; height:1.5px;
+                            border-radius:2px; background:var(--text-faint); }
 
       .vgl{ width:100%; border-collapse:collapse; font-size:.87rem; }
       .vgl th,.vgl td{ text-align:left; padding:.85rem .9rem; border-bottom:1px solid var(--line);
@@ -259,7 +259,7 @@
         </p>
       </div>
       <div class="cta-media">
-        <img src="/redesign/hejzel/assets/img/schild.webp" alt="Kanzleischild an der Schloßstraße 108" loading="lazy" decoding="async" width="1177" height="947">
+        <img src="/redesign/hejzel/assets/img/schild.webp" alt="Kanzleischild an der Schloßstraße 108" loading="lazy" decoding="async" width="1152" height="921">
       </div>
     </div>
   </div>

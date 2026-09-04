@@ -28,6 +28,15 @@
   --space-lg: 4rem;
   --space-xl: 6rem;
   --space-2xl: 8rem;
+
+  /* Abstand vom (sticky) Header zur ersten Hero-Zeile, gilt fuer alle Seiten */
+  --hero-pad-top: 4rem;
+}
+
+@media (max-width: 900px) {
+  :root {
+    --hero-pad-top: 2rem;
+  }
 }
 
 /* Base Reset */
@@ -285,7 +294,7 @@ img {
    Header
    ========================================================================== */
 .site-header {
-  padding: 0.5rem 0;
+  padding: 0.4rem 0;
   border-bottom: 1px solid rgba(10, 25, 47, 0.06);
   position: sticky;
   top: 0;
@@ -304,6 +313,12 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.logo img {
+  display: block;
+  height: 64px;
+  width: auto;
 }
 
 .main-nav {
@@ -1243,7 +1258,7 @@ img {
    Services Page
    ========================================================================== */
 .sp-hero {
-  padding-top: var(--space-2xl);
+  padding-top: var(--hero-pad-top);
   padding-bottom: var(--space-lg);
 }
 
@@ -1568,7 +1583,7 @@ img {
    Contact Page
    ========================================================================== */
 .contact-page {
-  padding-top: var(--space-2xl);
+  padding-top: var(--hero-pad-top);
 }
 
 .contact-layout {
@@ -1973,7 +1988,7 @@ img {
    ========================================================================== */
 
 .subpage-hero {
-  padding-top: 10rem;
+  padding-top: var(--hero-pad-top);
   padding-bottom: var(--space-lg);
   background: var(--color-bg-lightgray);
 }
@@ -2095,6 +2110,7 @@ img {
 
 /* Hero: two-column, copy + illustration */
 .ecx-hero {
+  padding-top: var(--hero-pad-top);
   padding-bottom: var(--space-lg);
 }
 .ecx-hero-grid {
@@ -3768,10 +3784,6 @@ a.service-card {
 }
 
 @media (max-width: 768px) {
-  .subpage-hero {
-    padding-top: 7rem;
-  }
-
   .cs-metrics-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -4012,8 +4024,11 @@ a.service-card {
    ========================================================================== */
 .hero-split {
   text-align: left;
-  padding-top: 7.5rem;
+  padding-top: var(--hero-pad-top);
   padding-bottom: var(--space-lg);
+  /* Ohne min-height wuerde die vertikale Zentrierung aus .hero-modern auf
+     hohen Screens zusaetzlichen Leerraum ueber der Headline erzeugen. */
+  min-height: auto;
 }
 
 .hero-split .hero-headline {
@@ -4307,10 +4322,6 @@ a.service-card {
 
 /* Responsive: hero split, founder, chips */
 @media (max-width: 900px) {
-  .hero-split {
-    padding-top: 7rem;
-  }
-
   .hero-split-inner {
     grid-template-columns: 1fr;
     gap: var(--space-md);
@@ -4780,7 +4791,6 @@ a.service-card {
    Website-Showcase (Hero-Slideshow mit echten Kundenseiten)
    ========================================================================== */
 .subpage-hero.is-showcase {
-  padding-top: 6.5rem;
   padding-bottom: var(--space-md);
   overflow: hidden;
 }
@@ -5034,9 +5044,6 @@ a.service-card {
   .hero-showcase-grid {
     grid-template-columns: minmax(0, 1fr);
     gap: var(--space-md);
-  }
-  .subpage-hero.is-showcase {
-    padding-top: 6.5rem;
   }
   .hero-showcase-copy .subpage-intro {
     max-width: none;

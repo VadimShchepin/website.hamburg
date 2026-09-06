@@ -267,38 +267,136 @@ p:last-child{ margin-bottom:0; }
 
 /* -------------------------------------------------------------------- hero */
 
-.hero{ background:var(--ink); color:#fff; position:relative; overflow:hidden; padding-top:78px; }
+/* Der dunkle Grund traegt eine Lichtrichtung: warmes Licht oben rechts hinter dem
+   Bild, ein kuehler Rest unten links. Ohne das bleibt die Flaeche totes Grau. */
+.hero{
+  color:#fff; position:relative; overflow:hidden; padding-top:78px;
+  background:
+    radial-gradient(620px 500px at 79% 2%,   rgba(0,191,243,.10),  transparent 58%),
+    radial-gradient(820px 660px at 102% 42%, rgba(255,255,255,.05), transparent 62%),
+    radial-gradient(760px 620px at 0% 104%,  rgba(0,0,0,.34),       transparent 68%),
+    linear-gradient(172deg, #303D47 0%, #2C3942 44%, #202D36 100%);
+}
+/* feines Raster hinter der Textspalte, nach rechts ausgeblendet */
+.hero-glow{
+  position:absolute; inset:0; pointer-events:none; z-index:0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
+  background-size:64px 64px;
+  -webkit-mask-image:radial-gradient(66% 78% at 4% 42%, #000 0%, transparent 70%);
+          mask-image:radial-gradient(66% 78% at 4% 42%, #000 0%, transparent 70%);
+  opacity:.42;
+}
 .hero::before{
   content:""; position:absolute; right:-14%; top:-32%;
   width:60vw; height:60vw; max-width:820px; max-height:820px;
-  border:1px solid rgba(255,255,255,.09); border-radius:50%;
+  border:1px solid rgba(255,255,255,.13); border-radius:50%;
   pointer-events:none;
 }
 .hero::after{
   content:""; position:absolute; right:2%; bottom:-40%;
   width:44vw; height:44vw; max-width:620px; max-height:620px;
-  border:1px solid rgba(0,191,243,.16); border-radius:50%;
+  border:1px solid rgba(0,191,243,.30); border-radius:50%;
   pointer-events:none;
 }
 .hero .wrap{ position:relative; z-index:1; }
 .hero-grid{ display:grid; gap:clamp(2rem,4vw,3.5rem); align-items:center;
-            padding-block:clamp(2.75rem,5.5vw,5rem); }
-@media (min-width:980px){ .hero-grid{ grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr); } }
+            padding-block:clamp(2.5rem,4.4vw,3.75rem); }
+/* Ab zwei Spalten laeuft die Textspalte auf volle Hoehe und die Mitgliedszeile
+   sitzt unten, auf einer Linie mit der Unterkante des Bildes. Sonst steht der
+   Text als kurzer Block in einer viel zu grossen dunklen Flaeche. */
+@media (min-width:980px){
+  .hero-grid{ grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr); align-items:stretch; }
+  .hero-copy{ display:flex; flex-direction:column; }
+  .hero-copy .hero-trust{ margin-top:auto; }
+}
 .hero h1{ color:#fff; margin-bottom:1.25rem; }
 .hero .lede{ color:var(--on-ink-soft); margin-bottom:2rem; max-width:52ch; }
-.hero-media{ position:relative; border-radius:var(--r-lg); overflow:hidden; box-shadow:var(--sh-lg); }
-.hero-media img{ width:100%; height:100%; object-fit:cover; display:block; }
+.hero .btn-cyan{ box-shadow:0 14px 32px -14px rgba(0,191,243,.55); }
+.hero .btn-cyan:hover{ box-shadow:0 18px 38px -14px rgba(0,191,243,.7); }
 .hero-note{ display:flex; align-items:flex-start; gap:.6rem; margin-top:1.6rem;
             font-size:.85rem; color:var(--on-ink-soft); max-width:46ch; }
 .hero-note svg{ flex:none; margin-top:.15rem; color:var(--cyan); }
 
+.hero-trust{ display:flex; align-items:center; gap:1.4rem; flex-wrap:wrap;
+             margin-top:1.9rem; padding-top:1.5rem; border-top:1px solid var(--line-ink); }
+/* --text-faint kaeme auf dunklem Grund nur auf 4,0:1, zu wenig fuer 11px. */
+.hero-trust-label{ font-size:.68rem; font-weight:600; letter-spacing:.14em;
+                   text-transform:uppercase; color:rgba(255,255,255,.62); }
+.hero-trust-logos{ display:flex; align-items:center; gap:1.75rem; }
+.hero-trust-logos img{ height:29px; width:auto; opacity:.78;
+                       transition:opacity .25s var(--ease); }
+.hero-trust-logos img.sbv{ height:39px; }
+.hero-trust:hover .hero-trust-logos img{ opacity:1; }
+/* Die Kammermarke ist 420 zu 70 breit und laeuft sonst aus der Spalte. */
+@media (max-width:760px){
+  .hero-trust{ gap:.85rem; margin-top:1.6rem; padding-top:1.3rem; }
+  .hero-trust-logos{ gap:1.15rem; }
+  .hero-trust-logos img{ height:21px; }
+  .hero-trust-logos img.sbv{ height:29px; }
+}
+
+/* Das Bild ist ein gebautes Objekt: Rahmenlinie dahinter, Haarlinie darauf,
+   ein Schatten der auf dunklem Grund ueberhaupt sichtbar ist. */
+.hero-media{ position:relative; }
+.hero-rule{
+  position:absolute; inset:auto -18px -18px auto; width:62%; height:62%;
+  border:1px solid rgba(0,191,243,.42); border-radius:var(--r-lg);
+  pointer-events:none;
+}
+.hero-shot{
+  position:relative; margin:0; border-radius:var(--r-lg); overflow:hidden;
+  box-shadow:0 42px 90px -28px rgba(0,0,0,.72), 0 2px 0 rgba(255,255,255,.06) inset;
+  isolation:isolate;
+}
+.hero-shot::after{
+  content:""; position:absolute; inset:0; border-radius:inherit;
+  border:1px solid rgba(255,255,255,.14);
+  background:linear-gradient(to top, rgba(16,30,39,.42) 0%, transparent 26%);
+  pointer-events:none;
+}
+.hero-shot img{ width:100%; height:100%; object-fit:cover; display:block; }
+.hero-badge{
+  position:absolute; left:-26px; bottom:26px; z-index:2; margin:0;
+  display:flex; align-items:center; gap:.7rem;
+  padding:.62rem .95rem .62rem .68rem; border-radius:var(--pill);
+  background:rgba(23,35,44,.82); border:1px solid rgba(255,255,255,.14);
+  box-shadow:0 18px 40px -16px rgba(0,0,0,.8);
+  -webkit-backdrop-filter:blur(14px) saturate(140%);
+          backdrop-filter:blur(14px) saturate(140%);
+}
+.hero-badge-langs{ display:flex; gap:4px; }
+/* Dunkler Chip statt cyan getoentem: das Hausblau bleibt so unveraendert und
+   kommt trotzdem auf 7,7:1 statt auf 4,3:1. */
+.hero-badge-langs b{
+  font-size:.66rem; font-weight:700; letter-spacing:.06em; line-height:1;
+  padding:.4rem .45rem; border-radius:6px;
+  background:rgba(3,22,30,.72); border:1px solid rgba(0,191,243,.34);
+  color:var(--cyan);
+}
+.hero-badge-txt{ font-size:.8rem; font-weight:500; color:#fff; white-space:nowrap; }
+/* Einspaltig sitzt die Plakette im Bild, nicht im Seitenrand daneben. */
+@media (max-width:979px){ .hero-badge{ left:16px; bottom:16px; } }
+@media (max-width:400px){ .hero-badge{ left:12px; bottom:12px; padding-right:.8rem; } }
+
+/* Trennlinien als echte Rahmen, nicht als 1px-Luecke mit Fuellfarbe: der Hero
+   traegt jetzt einen Verlauf, eine deckende Kachelfarbe wuerde darin auffallen. */
 .facts{
-  display:grid; gap:1px; background:var(--line-ink);
+  display:grid; gap:0;
   border-top:1px solid var(--line-ink);
   grid-template-columns:repeat(2,minmax(0,1fr));
 }
 @media (min-width:880px){ .facts{ grid-template-columns:repeat(4,minmax(0,1fr)); } }
-.fact{ background:var(--ink); padding:clamp(1.3rem,2.2vw,1.9rem) clamp(1rem,1.8vw,1.6rem); }
+.fact{ position:relative;
+       padding:clamp(1.3rem,2.2vw,1.9rem) clamp(1.1rem,1.8vw,1.6rem); }
+.fact + .fact{ border-left:1px solid var(--line-ink); }
+@media (max-width:879px){
+  .fact:nth-child(2n+1){ border-left:0; }
+  .fact:nth-child(n+3){ border-top:1px solid var(--line-ink); }
+}
+.fact::before{ content:""; position:absolute; left:-1px; top:-1px;
+               width:30px; height:2px; background:var(--cyan); opacity:.75; }
 .fact dt{ font-size:clamp(1.35rem,2vw,1.7rem); font-weight:600; color:#fff; line-height:1.15;
           margin-bottom:.35rem; letter-spacing:-.015em; }
 .fact dd{ margin:0; font-size:.8rem; color:var(--on-ink-soft); line-height:1.5; }

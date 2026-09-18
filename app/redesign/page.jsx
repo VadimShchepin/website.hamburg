@@ -15,7 +15,7 @@ const redesigns = [
         slug: 'hejzel',
         firm: 'Steuerberatung Marek Hejzel',
         sector: 'STEUERBERATUNG · HAMBURG WANDSBEK · SEIT 2004',
-        description: 'Heller, ruhiger Kanzlei-Auftritt in Poppins mit dunklem Navy-Hero, weichen Rundungen und Farbfotografie. 51 Seiten auf Deutsch, Polnisch und Englisch: zehn Mandantengruppen mit eigenen Inhalten und ein vierstufiger Fragebogen, der Anfragen vorqualifiziert. Die Schwarzweißaufnahmen der Kanzlei wurden dafür eingefärbt. Dazu eine Angebotsseite mit drei Paketen.',
+        description: 'Ruhiger Kanzlei-Auftritt in tiefem Navy: ein vollflächiger Speicherstadt-Hero, ein Zusagenband mit drei belegbaren Angaben und sechs Leistungsfelder mit eigenen Strichzeichnungen. 51 Seiten auf Deutsch, Polnisch und Englisch, zehn Mandantengruppen mit eigenen Inhalten und ein vierstufiger Fragebogen, der Anfragen vorqualifiziert. Die Schwarzweißaufnahmen der Kanzlei wurden dafür eingefärbt. Dazu eine Angebotsseite mit drei Paketen.',
     },
     {
         slug: 'hopfenbachvilla',

@@ -7,16 +7,18 @@
     <title>Angebot: neuer Auftritt der Steuerberatung Marek Hejzel</title>
     <meta name="description" content="Drei Pakete für den neuen Auftritt der Steuerberatung Marek Hejzel in Hamburg Wandsbek.">
     <script>document.documentElement.classList.add("js")</script>
-    <meta name="theme-color" content="#0B1215">
+    <meta name="theme-color" content="#00112F">
     <link rel="preload" as="font" type="font/woff2" href="/redesign/hejzel/assets/fonts/poppins-500-latin.woff2" crossorigin>
     <link rel="preload" as="font" type="font/woff2" href="/redesign/hejzel/assets/fonts/poppins-400-latin.woff2" crossorigin>
     <link rel="stylesheet" href="/redesign/hejzel/assets/fonts.css">
     <link rel="stylesheet" href="/redesign/hejzel/assets/site.css">
     <style>
+      body{ padding-top:0; }
       .ang-hd{ position:static; background:var(--ink); border-bottom:1px solid var(--line-ink); }
+      .ang-hd .hd-nav a, .ang-hd .lang a{ color:var(--on-ink); }
       .ang-hd .hd-inner{ min-height:70px; }
-      .ang-mark{ font-family:var(--ff-display); font-size:1.15rem; color:var(--on-ink); text-decoration:none; }
-      .ang-mark span{ color:var(--cyan); }
+      .ang-mark{ font-family:var(--ff-d); font-size:1.15rem; color:var(--on-ink); text-decoration:none; }
+      .ang-mark span{ color:var(--acc); }
       .ang-meta{ margin-left:auto; font-size:.78rem; color:var(--on-ink-soft); letter-spacing:.04em; }
 
       .paks{ display:grid; gap:clamp(1rem,2vw,1.5rem);
@@ -27,10 +29,10 @@
       .pak header{ padding-bottom:1.3rem; border-bottom:1px solid var(--line); margin-bottom:1.3rem; }
       .pak .num{ display:inline-block; }
       .ptag{ float:right; font-size:.66rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
-              background:var(--cyan); color:#04262F; padding:.34rem .6rem; border-radius:999px; }
+              background:var(--acc); color:#04262F; padding:.34rem .6rem; border-radius:999px; }
       .pak h3{ margin-top:.7rem; }
       .pak-fuer{ font-size:.9rem; color:var(--text-soft); margin-top:.6rem; line-height:1.55; min-height:3.4em; }
-      .pak-preis{ font-family:var(--ff-display); font-size:clamp(2.2rem,3.4vw,3rem); line-height:1;
+      .pak-preis{ font-family:var(--ff-d); font-size:clamp(2.2rem,3.4vw,3rem); line-height:1;
                    margin:1.1rem 0 .35rem; letter-spacing:-.02em; }
       .pak-preis .cur{ font-size:1.1rem; color:var(--text-faint); }
       .pak-net{ font-size:.76rem; color:var(--text-faint); letter-spacing:.03em; }
@@ -41,7 +43,7 @@
       .pak li{ font-size:.87rem; line-height:1.5; color:var(--text-soft);
                 padding:.42rem 0 .42rem 1.4rem; position:relative; }
       .pak-in li::before{ content:""; position:absolute; left:0; top:.72em; width:8px; height:8px;
-                           border-radius:50%; background:var(--cyan); }
+                           border-radius:50%; background:var(--acc); }
       .pak-out li{ color:var(--text-faint); }
       .pak-out li::before{ content:""; position:absolute; left:0; top:1.02em; width:9px; height:1.5px;
                             border-radius:2px; background:var(--text-faint); }
@@ -49,7 +51,7 @@
       .vgl{ width:100%; border-collapse:collapse; font-size:.87rem; }
       .vgl th,.vgl td{ text-align:left; padding:.85rem .9rem; border-bottom:1px solid var(--line);
                         vertical-align:top; }
-      .vgl thead th{ font-family:var(--ff-display); font-size:1.02rem; font-weight:500;
+      .vgl thead th{ font-family:var(--ff-d); font-size:1.02rem; font-weight:500;
                       border-bottom:1px solid var(--ink); white-space:nowrap; }
       .vgl tbody th{ font-weight:500; color:var(--text); width:32%; }
       .vgl td{ color:var(--text-soft); }
@@ -82,7 +84,7 @@
       können Sie sich ansehen, wovon wir reden: Der Entwurf ist gebaut, in drei Sprachen,
       mit Ihren Fotos und Ihrem Logo. Danach kommen drei Pakete und was jeweils nicht darin ist.</p>
     <div class="btn-row mt-m">
-      <a class="btn btn-cyan" href="/redesign/hejzel/">Den Entwurf ansehen<svg class="arw" width="15" height="12" viewBox="0 0 15 12" fill="none" aria-hidden="true"><path d="M9 1l5 5-5 5M14 6H0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a class="btn btn-acc" href="/redesign/hejzel/">Den Entwurf ansehen<svg class="arw" width="15" height="12" viewBox="0 0 15 12" fill="none" aria-hidden="true"><path d="M9 1l5 5-5 5M14 6H0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       <a class="btn btn-ghost-ink" href="#pakete">Zu den Paketen</a>
     </div>
   </div>
@@ -251,11 +253,11 @@
           Anfrageformular zum Durchklicken. Danach wissen Sie, worüber wir sprechen, und ein
           Termin in Ihrer Kanzlei dauert eine Stunde.</p>
         <div class="btn-row mt-m">
-          <a class="btn btn-cyan" href="/redesign/hejzel/">Entwurf öffnen<svg class="arw" width="15" height="12" viewBox="0 0 15 12" fill="none" aria-hidden="true"><path d="M9 1l5 5-5 5M14 6H0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a class="btn btn-acc" href="/redesign/hejzel/">Entwurf öffnen<svg class="arw" width="15" height="12" viewBox="0 0 15 12" fill="none" aria-hidden="true"><path d="M9 1l5 5-5 5M14 6H0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           <a class="btn btn-ghost-ink" href="tel:+4917632194754">+49 176 321 94 754</a>
         </div>
         <p class="mt-m" style="font-size:.85rem;color:var(--on-ink-soft)">
-          Vadim Shchepin · Hamburg · <a href="mailto:hallo@webseite.hamburg" style="color:var(--cyan)">hallo@webseite.hamburg</a>
+          Vadim Shchepin · Hamburg · <a href="mailto:hallo@webseite.hamburg" style="color:var(--acc)">hallo@webseite.hamburg</a>
         </p>
       </div>
       <div class="cta-media">

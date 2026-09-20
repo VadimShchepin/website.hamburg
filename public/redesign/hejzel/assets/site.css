@@ -449,10 +449,58 @@ p:last-child{ margin-bottom:0; }
 .phero-in{ padding-block:clamp(2.5rem,5vw,4.5rem); }
 .phero h1{ color:#fff; max-width:22ch; }
 .phero .lede{ color:var(--on-ink-soft); margin-top:1.1rem; }
-.phero-media{ margin-top:clamp(1.8rem,3.5vw,2.8rem); border-radius:var(--r-lg); overflow:hidden;
-              box-shadow:var(--sh-lg); }
-.phero-media img{ width:100%; aspect-ratio:21/8; object-fit:cover; }
-@media (max-width:700px){ .phero-media img{ aspect-ratio:16/10; } }
+
+/* ------------------------------------------------- Feldbild im Gruppenkopf */
+
+/* Vorher lag unter dem Text ein Bildstreifen im Format 21:8, gut 400 Pixel
+   hoch. Er kostete den ganzen ersten Bildschirm und sagte nichts, was die
+   Ueberschrift nicht schon gesagt hatte.
+
+   Das Bild hat hier eine einzige Aufgabe: dem Besucher in einer halben
+   Sekunde bestaetigen, dass die Kanzlei in seinem Fach arbeitet. Dafuer
+   reicht ein Kreis neben dem Text, der am rechten Fensterrand auslaeuft.
+   Der Text bleibt dabei die Hauptsache und behaelt die linke Haelfte.
+
+   --orb traegt den Durchmesser, damit der Zierring daneben denselben
+   Mittelpunkt benutzen kann. */
+.phero.has-orb{ --orb:clamp(96px,26vw,132px); }
+.phero-orb{
+  position:relative; margin:0 0 1.5rem;
+  width:var(--orb); aspect-ratio:1;
+  border-radius:50%; overflow:hidden; flex:none;
+  background:var(--ink-2);
+  box-shadow:0 0 0 1px rgba(255,255,255,.14);
+}
+.phero-orb img{ width:100%; height:100%; object-fit:cover; }
+
+@media (min-width:900px){
+  .phero.has-orb{ --orb:clamp(296px,29.5vw,436px); --orb-off:clamp(-84px,-3vw,-24px); }
+  /* static, damit der Kreis gegen den Abschnitt rechnet und am Fensterrand
+     auslaufen darf statt am 1220er Raster. Die Textspalte bekommt dafuer
+     ihre eigene Ebene. */
+  .phero.has-orb .phero-in{
+    position:static;
+    display:flex; flex-direction:column; align-items:flex-start; justify-content:center;
+    /* Die Hoehe haengt am Durchmesser, nicht an einem geratenen Wert. Sonst
+       schneidet der Abschnitt dem Kreis oben und unten die Kappe ab. */
+    min-height:calc(var(--orb) + clamp(3rem,5vw,5.5rem));
+  }
+  .phero.has-orb .crumbs,
+  .phero.has-orb .phero-copy{ position:relative; z-index:2; max-width:min(56%,620px); }
+  .phero.has-orb .crumbs{ width:100%; }
+  .phero.has-orb .phero-orb{
+    position:absolute; z-index:1; margin:0;
+    top:50%; right:var(--orb-off); transform:translateY(-50%);
+    box-shadow:0 0 0 1px rgba(255,255,255,.12), 0 34px 80px rgba(0,0,0,.42);
+  }
+  /* Der Zierring sass oben rechts im Nichts. Jetzt liegt er konzentrisch um
+     das Feldbild und bindet es in die Flaeche ein. */
+  .phero.has-orb::before{
+    width:calc(var(--orb) + 110px); height:calc(var(--orb) + 110px);
+    max-width:none; max-height:none;
+    top:50%; right:calc(var(--orb-off) - 55px); transform:translateY(-50%);
+  }
+}
 
 .crumbs{ display:flex; flex-wrap:wrap; align-items:center; gap:.4rem;
          font-size:.85rem; color:var(--on-ink-soft); margin-bottom:1.25rem; }
@@ -596,6 +644,46 @@ p:last-child{ margin-bottom:0; }
            font-size:.9rem; font-weight:600; color:var(--acc-deep); }
 .card .go .arw{ transition:transform .3s var(--ease); }
 .card:hover .go .arw{ transform:translateX(4px); }
+
+/* ------------------------------------------- weiterfuehrende Gruppen, kompakt */
+
+/* Am Ende einer Gruppenseite sind die anderen Gruppen ein Nebenweg. Vorher
+   standen dort drei Fotokacheln im Format 3:2, also der zweitgroesste
+   Bildblock der Seite fuer den unwichtigsten Inhalt. Jetzt tragen die Zeilen
+   dasselbe Kreisbild wie der Seitenkopf, nur klein. */
+/* Der Block ist jetzt so flach, dass die volle Abschnittshoehe darunter eine
+   Luecke reisst. Den Abstand zum Handlungsaufruf setzt dessen eigener
+   Innenabstand. */
+.sec-rel{ padding-bottom:0; }
+.relgrid{ display:grid; gap:0; border-top:1px solid var(--line); }
+@media (min-width:820px){
+  .relgrid{ grid-template-columns:repeat(3,minmax(0,1fr)); gap:0 clamp(1.5rem,3vw,3rem); }
+}
+.relcard{
+  display:flex; align-items:flex-start; gap:1.1rem;
+  padding:1.35rem .2rem; text-decoration:none; color:inherit;
+  border-bottom:1px solid var(--line);
+  transition:padding-left .25s var(--ease);
+}
+.relcard:hover{ padding-left:.5rem; }
+.relcard-orb{
+  flex:none; width:58px; height:58px; border-radius:50%; overflow:hidden;
+  background:var(--paper-3);
+}
+.relcard-orb img{ width:100%; height:100%; object-fit:cover;
+                  transition:transform .5s var(--ease); }
+.relcard:hover .relcard-orb img{ transform:scale(1.06); }
+.relcard-body{ display:block; min-width:0; }
+.relcard-t{ display:block; font-weight:600; font-size:1.02rem; line-height:1.35;
+            letter-spacing:-.006em; margin-bottom:.2rem; }
+.relcard-d{ display:block; font-size:.93rem; color:var(--text-soft); line-height:1.5; }
+.relcard .arw{ flex:none; margin-top:.55rem; color:var(--acc-deep); opacity:.75;
+               transition:transform .3s var(--ease), opacity .25s var(--ease); }
+.relcard:hover .arw{ transform:translateX(4px); opacity:1; }
+@media (prefers-reduced-motion: reduce){
+  .relcard,.relcard-orb img,.relcard .arw{ transition:none; }
+  .relcard:hover{ padding-left:.2rem; }
+}
 
 .card-cta{ background:var(--ink); border-color:var(--ink); }
 .card-cta .card-body{ justify-content:center; padding:clamp(1.6rem,2.4vw,2.1rem) 1.4rem;

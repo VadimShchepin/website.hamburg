@@ -1,8 +1,8 @@
 /* ==========================================================================
    Steuerberatung Marek Hejzel - Entwurf
-   Ruhiges Navy, helle Flaechen, Poppins. Akzent ist ein gedaempftes Stahlblau
-   zwischen #00194A und #007AC1. Das Logo-Cyan #00BFF3 bleibt dem Logo selbst
-   vorbehalten, damit die Seite ruhig bleibt.
+   Ruhiges Navy, helle Flaechen, Source Sans 3. Akzent ist ein gedaempftes
+   Stahlblau zwischen #00194A und #007AC1. Das Logo-Cyan #00BFF3 bleibt dem Logo
+   selbst vorbehalten, damit die Seite ruhig bleibt.
    ========================================================================== */
 
 :root{
@@ -33,18 +33,34 @@
   --gut:        clamp(20px, 5vw, 56px);
   --maxw:       1220px;
 
-  --r:          16px;
-  --r-sm:       12px;
-  --r-lg:       24px;
+  /* Rundungen eine Stufe kleiner als vorher (24/16/12). Eine Steuerkanzlei
+     darf etwas formeller aussehen, und das Leistungsraster wirkte mit 24 Pixeln
+     an den Aussenecken weicher als sein Inhalt. */
+  --r:          12px;
+  --r-sm:       8px;
+  --r-lg:       16px;
+  --r-xs:       6px;
   --pill:       999px;
 
   --sh:         0 1px 12px rgba(0,0,0,.06);
   --sh-md:      0 8px 30px rgba(0,0,0,.07);
   --sh-lg:      0 28px 64px rgba(0,0,0,.12);
 
-  --ff:         "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  --ff-d:       "Newsreader", "Iowan Old Style", Georgia, "Times New Roman", serif;
+  /* Eine Schrift fuer die ganze Seite. Source Sans 3 in 600 fuer Ueberschriften,
+     400 im Fliesstext. --ff-d ist der Hebel fuer die Anzeigenschrift: er zeigt
+     auf dieselbe Familie, solange <html> nicht .serif-display traegt. */
+  --ff:         "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --ff-d:       var(--ff);
+  --wd:         600;
   --ease:       cubic-bezier(.22,.61,.36,1);
+}
+
+/* Rueckfallvariante fuer den traditionelleren Charakter: die grossen
+   Ueberschriften in Newsreader, alles Kleinteilige bleibt in Source Sans 3.
+   Eingeschaltet ueber build.py --serif. */
+.serif-display{
+  --ff-d: "Newsreader", "Iowan Old Style", Georgia, "Times New Roman", serif;
+  --wd:   500;
 }
 
 *,*::before,*::after{ box-sizing:border-box; }
@@ -60,8 +76,10 @@ body{
   background:var(--paper);
   color:var(--text);
   font-family:var(--ff);
-  font-size:16px;
-  line-height:1.65;
+  /* 17px statt 16. Source Sans 3 hat eine kleinere Mittellaenge als Poppins,
+     bei gleicher Pixelzahl liest es sich also kleiner. */
+  font-size:17px;
+  line-height:1.62;
   -webkit-font-smoothing:antialiased;
   overflow-x:hidden;
 }
@@ -74,50 +92,61 @@ a{ color:inherit; }
 
 .skip{
   position:fixed; left:-9999px; top:0; z-index:200;
-  background:var(--ink); color:#fff; padding:.9rem 1.3rem; font-size:.85rem;
+  background:var(--ink); color:#fff; padding:.9rem 1.3rem; font-size:.92rem;
   border-radius:0 0 var(--r-sm) 0;
 }
 .skip:focus{ left:0; top:0; }
 
 /* --------------------------------------------------------------- typography */
 
-/* Zwei Schriften: Newsreader traegt die Ueberschriften, Poppins alles andere.
-   Eine einzige geometrische Grotesk ueber die ganze Seite war der Grund, warum
-   der Entwurf wie eine Vorlage aussah. */
+/* Eine Schrift ueber die ganze Seite. Der Wechsel zwischen Serife in den
+   Ueberschriften und Grotesk im Text zog den Auftritt in zwei Richtungen:
+   die Serife editorial und traditionell, die Pillen und der Text zeitgenoessisch.
+   Source Sans 3 traegt beides, Halbfett oben, Regular unten.
+
+   Groessen auf dem Schirm: Hero 56 bis 64, Abschnittstitel 36 bis 44,
+   Fliesstext 16 bis 18. Die Werte darunter sind genau darauf gerechnet, bei
+   16px Wurzelgroesse und 1440px Fensterbreite. */
 h1,h2,h3,h4{
   font-family:var(--ff-d);
-  font-weight:400;
-  letter-spacing:-.005em;
-  line-height:1.16;
+  font-weight:var(--wd);
+  letter-spacing:-.01em;
+  line-height:1.18;
   margin:0;
   text-wrap:balance;
+  /* Deutsche und polnische Komposita sind lang. Sie duerfen umbrechen, statt
+     aus der Karte zu laufen. */
+  overflow-wrap:break-word;
+  hyphens:auto;
 }
 
-.d-xl{ font-size:clamp(2.6rem, 5.2vw, 4.4rem);  line-height:1.02; letter-spacing:-.022em; }
-.d-l { font-size:clamp(2rem, 3.6vw, 3.1rem);    line-height:1.1;  letter-spacing:-.018em; }
-.d-m { font-size:clamp(1.55rem, 2.4vw, 2.1rem); line-height:1.18; letter-spacing:-.012em; }
-.d-s { font-size:clamp(1.2rem, 1.6vw, 1.42rem); line-height:1.28; letter-spacing:-.008em; }
+.d-xl{ font-size:clamp(2.25rem, 4.6vw, 4rem);     line-height:1.06; letter-spacing:-.021em; }
+.d-l { font-size:clamp(1.8rem, 3.1vw, 2.75rem);   line-height:1.13; letter-spacing:-.017em; }
+.d-m { font-size:clamp(1.5rem, 2.2vw, 2rem);      line-height:1.2;  letter-spacing:-.013em; }
+.d-s { font-size:clamp(1.22rem, 1.55vw, 1.375rem);line-height:1.3;  letter-spacing:-.008em; }
 
-/* Kleinteiliges bleibt in der Grotesk: Karten, Schritte, Formular, Fusszeile. */
-.dl .t,.ft-h,.faq summary,.frail .lbl,.opt .t{ font-family:var(--ff); font-weight:500; }
-.card h3,.svc-item h3,.step h3,.callout h2,.callout h3,legend,.pak h3{
-  font-family:var(--ff-d); font-weight:500; letter-spacing:-.008em;
+/* Kleinere Ueberschriften stehen eine Spur leichter, damit die Halbfett-Stufe
+   den grossen Titeln vorbehalten bleibt. */
+.card h3,.svc-item h3,.step h3,.callout h2,.callout h3,legend,.pak h3,
+.dl .t,.ft-h,.faq summary,.frail .lbl,.opt .t{
+  font-family:var(--ff-d); font-weight:600; letter-spacing:-.006em;
 }
+.dl .t,.ft-h,.frail .lbl,.opt .t{ font-family:var(--ff); letter-spacing:0; }
 
 p{ margin:0 0 1.05em; }
 p:last-child{ margin-bottom:0; }
 
 .lede{
-  font-size:clamp(1rem, 1.15vw, 1.1rem);
-  line-height:1.7;
+  font-size:clamp(1.0625rem, 1.2vw, 1.175rem);
+  line-height:1.66;
   color:var(--text-soft);
   max-width:62ch;
 }
 
 .eyebrow{
   display:inline-flex; align-items:center; gap:.55rem;
-  font-size:.72rem; font-weight:600;
-  letter-spacing:.13em; text-transform:uppercase;
+  font-size:.76rem; font-weight:600;
+  letter-spacing:.12em; text-transform:uppercase;
   color:var(--acc-deep);
   margin:0 0 1rem;
 }
@@ -167,8 +196,8 @@ p:last-child{ margin-bottom:0; }
 .shead.on-ink .lede{ color:var(--on-ink-soft); }
 .eyebrow-ix::before{ display:none; }
 .shead-ix{
-  font-family:var(--ff-d); font-size:1rem; font-weight:500;
-  letter-spacing:0; text-transform:none; margin-right:.55rem;
+  font-family:var(--ff); font-size:.82rem; font-weight:600;
+  letter-spacing:.06em; text-transform:none; margin-right:.6rem;
   font-variant-numeric:tabular-nums;
 }
 .sec-head.split{ display:grid; gap:clamp(1rem,2.5vw,3rem); align-items:end; }
@@ -181,7 +210,7 @@ p:last-child{ margin-bottom:0; }
 
 .btn{
   display:inline-flex; align-items:center; gap:.55rem;
-  font-family:var(--ff); font-size:.9rem; font-weight:500;
+  font-family:var(--ff); font-size:.95rem; font-weight:600;
   padding:.95rem 1.7rem;
   border-radius:var(--pill);
   border:1px solid transparent;
@@ -212,7 +241,7 @@ p:last-child{ margin-bottom:0; }
 
 .tlink{
   display:inline-flex; align-items:center; gap:.45rem;
-  font-size:.88rem; font-weight:500; text-decoration:none; color:var(--acc-deep);
+  font-size:.95rem; font-weight:600; text-decoration:none; color:var(--acc-deep);
   transition:gap .25s var(--ease);
 }
 .tlink:hover{ gap:.75rem; }
@@ -240,7 +269,7 @@ p:last-child{ margin-bottom:0; }
 .hd-nav{ display:none; margin-left:auto; align-items:center; gap:clamp(.7rem,1.5vw,1.6rem); }
 @media (min-width:1080px){ .hd-nav{ display:flex; } }
 .hd-nav a{
-  font-size:.875rem; font-weight:400; text-decoration:none;
+  font-size:.95rem; font-weight:500; text-decoration:none;
   color:var(--text); opacity:.9; padding:.45rem .2rem; position:relative;
   transition:opacity .2s var(--ease), color .2s var(--ease);
 }
@@ -255,16 +284,35 @@ p:last-child{ margin-bottom:0; }
 .hd-tools{ display:flex; align-items:center; gap:.6rem; margin-left:auto; }
 @media (min-width:1080px){ .hd-tools{ margin-left:0; } }
 
+/* Die Sprachwahl ist das zweitwichtigste Bedienelement dieser Seite, nach dem
+   Handlungsaufruf. In 11 Pixeln Versalien war sie das kleinste. Jetzt steht sie
+   lesbar da und traegt ab 1240 Pixeln die vollen Sprachnamen. Darunter bleibt
+   das Kuerzel, der volle Name steht dann fuer Vorlesegeraete im Titel. */
 .lang{ display:flex; align-items:center; gap:2px; border-radius:var(--pill); padding:3px;
        background:var(--paper-2); }
 .lang a{
-  font-size:.7rem; font-weight:600; letter-spacing:.06em; text-transform:uppercase;
-  text-decoration:none; color:var(--text-soft); opacity:.8;
-  padding:.32rem .6rem; border-radius:var(--pill);
+  display:block; font-size:.85rem; font-weight:600; letter-spacing:.05em;
+  text-decoration:none; color:var(--text-soft); opacity:.85; line-height:1.2;
+  padding:.4rem .68rem; border-radius:var(--pill);
   transition:background .2s var(--ease), color .2s var(--ease), opacity .2s var(--ease);
 }
-.lang a:hover{ opacity:1; }
+.lang a:hover{ opacity:1; color:var(--ink); }
 .lang a[aria-current="true"]{ background:var(--acc); color:#fff; opacity:1; }
+.lang .l-short{ text-transform:uppercase; }
+.lang .l-full{ display:none; letter-spacing:.01em; }
+@media (min-width:1240px){
+  .lang a{ padding:.4rem .85rem; letter-spacing:.01em; }
+  .lang .l-short{ display:none; }
+  .lang .l-full{ display:block; }
+}
+/* Im Mobilmenue steht die Sprachwahl in voller Breite und mit vollem Namen. */
+.drawer .lang{ background:rgba(255,255,255,.08); margin:1.4rem 0 .4rem; }
+.drawer .lang a{ flex:1; text-align:center; color:rgba(255,255,255,.75);
+                 font-size:.9rem; border:0; padding:.6rem .5rem; }
+.drawer .lang a:hover{ color:#fff; }
+.drawer .lang a[aria-current="true"]{ background:var(--acc); color:#fff; }
+.drawer .lang .l-short{ display:none; }
+.drawer .lang .l-full{ display:block; }
 
 .hd-cta{ display:none; }
 @media (min-width:820px){ .hd-cta{ display:inline-flex; } }
@@ -294,7 +342,7 @@ p:last-child{ margin-bottom:0; }
   padding:.65rem 0; border-bottom:1px solid var(--line-ink);
 }
 .drawer .sub{ padding:.8rem 0 1rem; }
-.drawer .sub a{ font-size:.95rem; font-weight:400; opacity:.7; padding:.4rem 0; border:0; }
+.drawer .sub a{ font-size:1rem; font-weight:400; opacity:.7; padding:.4rem 0; border:0; }
 
 /* -------------------------------------------------------------------- hero */
 
@@ -353,7 +401,8 @@ p:last-child{ margin-bottom:0; }
 }
 .hero-copy{ align-self:center; max-width:46rem; padding-block:clamp(1rem,3vw,2.5rem); }
 .hero h1{ color:#fff; margin-bottom:1.15rem; max-width:19ch; }
-.hero .lede{ color:rgba(255,255,255,.82); margin-bottom:2.1rem; max-width:48ch; }
+.hero .lede{ color:rgba(255,255,255,.84); margin-bottom:2.1rem; max-width:50ch;
+             font-size:clamp(1.0625rem, 1.3vw, 1.15rem); }
 .hero .btn-row{ gap:1.1rem; }
 .hero .btn-acc{ box-shadow:0 16px 34px -16px rgba(0,0,0,.8); }
 
@@ -368,7 +417,7 @@ p:last-child{ margin-bottom:0; }
   border-top:1px solid rgba(255,255,255,.2);
 }
 .hero-mem-label{
-  font-size:.66rem; font-weight:600; letter-spacing:.16em; text-transform:uppercase;
+  font-size:.72rem; font-weight:600; letter-spacing:.14em; text-transform:uppercase;
   color:rgba(255,255,255,.6); flex:none;
 }
 .hero-mem-logos{
@@ -406,24 +455,32 @@ p:last-child{ margin-bottom:0; }
 @media (max-width:700px){ .phero-media img{ aspect-ratio:16/10; } }
 
 .crumbs{ display:flex; flex-wrap:wrap; align-items:center; gap:.4rem;
-         font-size:.78rem; color:var(--on-ink-soft); margin-bottom:1.25rem; }
+         font-size:.85rem; color:var(--on-ink-soft); margin-bottom:1.25rem; }
 .crumbs a{ text-decoration:none; opacity:.85; }
 .crumbs a:hover{ opacity:1; color:var(--acc-ink); }
 .crumbs span{ opacity:.45; }
 
 /* ------------------------------------------------------------------ service */
 
-/* Sechs Felder, eigene Strichzeichnungen, kurzer Satz statt Textwand. Ruhe
-   entsteht hier durch Haarlinien und Weissraum, nicht durch Schatten. */
+/* Sechs Felder, eigene Strichzeichnungen, ein Satz statt Textwand. Ruhe
+   entsteht hier durch Haarlinien und Weissraum, nicht durch Schatten.
+
+   Jedes Feld ist ein Verweis auf seinen Abschnitt auf der Leistungsseite.
+   Vorher trugen die Felder ein Verhalten bei Beruehrung, ohne anklickbar zu
+   sein: die Seite versprach etwas, das sie nicht einloeste.
+
+   Alle sechs stehen auf demselben Grund. Das dunkle Feld fuer die
+   grenzueberschreitende Beratung beherrschte das Raster und setzte damit eine
+   Prioritaet, die die Kanzlei so nicht bestaetigt hat. */
 .svc{ display:grid; gap:1px;
-      border:1px solid var(--line); border-radius:var(--r-lg); overflow:hidden;
+      border:1px solid var(--line); border-radius:var(--r-sm); overflow:hidden;
       background:var(--line);
       grid-template-columns:minmax(0,1fr); }
 @media (min-width:620px){ .svc{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
 @media (min-width:940px){ .svc{ grid-template-columns:repeat(3,minmax(0,1fr)); } }
 .svc-item{
-  position:relative; background:#fff;
-  padding:clamp(1.8rem,2.8vw,2.6rem);
+  position:relative; background:#fff; color:inherit; text-decoration:none;
+  padding:clamp(1.7rem,2.6vw,2.4rem);
   display:flex; flex-direction:column;
   transition:background .35s var(--ease);
 }
@@ -434,48 +491,58 @@ p:last-child{ margin-bottom:0; }
   transition:transform .45s var(--ease);
 }
 .svc-item:hover::before{ transform:scaleX(1); }
-.svc-ic{ color:var(--acc); margin-bottom:1.5rem; width:44px; height:44px;
+.svc-ic{ color:var(--acc); margin-bottom:1.4rem; width:44px; height:44px;
          transition:color .35s var(--ease); }
 .svc-item:hover .svc-ic{ color:var(--acc-deep); }
-.svc-item h3{ margin-bottom:.65rem; font-size:1.3rem; }
-.svc-item p{ font-size:.885rem; color:var(--text-soft); line-height:1.62; margin:0; }
+.svc-item h3{ margin-bottom:.5rem; font-size:1.22rem; }
+.svc-item p{ font-size:1rem; color:var(--text-soft); line-height:1.58; margin:0 0 1.2rem; }
+/* Sichtbarer Hinweis darauf, wohin das Feld fuehrt. margin-top:auto legt die
+   Haarlinie in allen sechs Feldern auf dieselbe Hoehe, egal wie lang der Satz
+   in der jeweiligen Sprache ausfaellt. */
 .svc-item .svc-more{
-  margin-top:1.1rem; font-size:.78rem; font-weight:500; letter-spacing:.02em;
-  color:var(--text-faint);
+  margin-top:auto; padding-top:.95rem; border-top:1px solid var(--line-soft);
+  display:inline-flex; align-items:center; gap:.45rem;
+  font-size:.85rem; font-weight:600; letter-spacing:.01em;
+  color:var(--acc-deep);
 }
-
-/* Die grenzueberschreitende Beratung ist das, was diese Kanzlei von den
-   anderen in Wandsbek unterscheidet. Deshalb steht ihr Feld dunkel. */
-.svc-item.is-feature{ background:var(--ink); color:#fff; }
-.svc-item.is-feature:hover{ background:var(--ink-2); }
-.svc-item.is-feature h3{ color:#fff; }
-.svc-item.is-feature p{ color:var(--on-ink-soft); }
-.svc-item.is-feature .svc-ic,
-.svc-item.is-feature:hover .svc-ic{ color:var(--acc-ink); }
-.svc-item.is-feature::before{ background:var(--acc-ink); }
-.svc-item.is-feature .svc-more{ color:rgba(255,255,255,.6); }
+.svc-item .svc-more .arw{ transition:transform .3s var(--ease); }
+.svc-item:hover .svc-more .arw{ transform:translateX(4px); }
+@media (prefers-reduced-motion: reduce){
+  .svc-item::before,.svc-item .svc-more .arw{ transition:none; }
+}
 
 /* --------------------------------------------- Leistungsseite, sechs Bloecke */
 
 .lst{ display:grid; gap:clamp(2rem,3.4vw,3.2rem) clamp(2rem,4vw,4.5rem); }
 @media (min-width:860px){ .lst{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
-.lst-item{ padding-top:1.6rem; border-top:1px solid var(--line); position:relative; }
+/* Jeder Block traegt seinen Anker, weil die Felder auf der Startseite direkt
+   hierher fuehren. Der Abstand nach oben haelt die Ueberschrift frei von der
+   fest stehenden Kopfzeile. */
+.lst-item{ padding-top:1.6rem; border-top:1px solid var(--line); position:relative;
+           scroll-margin-top:calc(var(--hdh) + 2rem); }
 .lst-item::before{
   content:""; position:absolute; left:0; top:-1px; width:44px; height:2px;
   background:var(--acc);
 }
-.lst-num{ font-size:.72rem; font-weight:600; letter-spacing:.12em;
+.lst-num{ font-size:.76rem; font-weight:600; letter-spacing:.12em;
           color:var(--text-faint); display:block; margin-bottom:1.1rem; }
 .lst-item .svc-ic{ margin-bottom:1rem; }
 .lst-item h2{ margin-bottom:.55rem; }
-.lst-teaser{ font-size:.92rem; color:var(--text-soft); line-height:1.65;
-             margin:0 0 .35rem; max-width:46ch; }
-.lst-item .ticks li{ font-size:.875rem; padding-block:.42rem; }
+.lst-teaser{ font-size:1rem; color:var(--text-soft); line-height:1.6;
+             margin:0 0 .9rem; max-width:48ch; }
+.lst-item .ticks li{ font-size:.94rem; padding-block:.42rem; }
+/* Kurz aufleuchten, wenn man ueber ein Feld der Startseite hier gelandet ist. */
+.lst-item:target::before{ width:100%; transition:width .5s var(--ease); }
 
 /* ------------------------------------------------- Mandanten als Aufzaehlung */
 
 /* Die Vorlage listet die Mandantschaft schlicht neben einem Absatz Text. Die
-   Idee bleibt, nur die Zeilen sind hier Verweise auf die jeweilige Seite. */
+   Idee bleibt, nur die Zeilen sind hier Verweise auf die jeweilige Seite.
+
+   Statt der Haken steht jetzt in jeder Zeile ein Pfeil, und zwar dauerhaft
+   sichtbar. Ein Haken sagt "trifft zu", ein Pfeil sagt "hier geht es weiter".
+   Zehn Zeilen mit Haken sahen aus wie eine Aufzaehlung von Eigenschaften,
+   obwohl jede davon eine eigene Seite oeffnet. */
 .glist{ display:grid; gap:clamp(2rem,4vw,4rem); align-items:start; }
 @media (min-width:940px){
   .glist{ grid-template-columns:minmax(0,.86fr) minmax(0,1.14fr); }
@@ -489,17 +556,21 @@ p:last-child{ margin-bottom:0; }
 @media (min-width:560px){ .glist-links{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
 .glist-links li{ border-bottom:1px solid var(--line-ink); }
 .glist-links a{
-  display:flex; align-items:center; gap:.85rem;
-  padding:.92rem .2rem; text-decoration:none;
-  font-size:.93rem; color:rgba(255,255,255,.88);
+  display:flex; align-items:center; gap:1rem;
+  padding:.9rem .2rem; text-decoration:none;
+  font-size:1rem; color:rgba(255,255,255,.9);
   transition:color .25s var(--ease), padding-left .25s var(--ease);
 }
-.glist-links a:hover{ color:#fff; padding-left:.6rem; }
-.glist-links a svg{ flex:none; color:var(--acc-ink); opacity:.85; }
-.glist-links a:hover svg{ opacity:1; }
-.glist-links .gl-arw{ margin-left:auto; opacity:0; transition:opacity .25s var(--ease); }
-.glist-links a:hover .gl-arw{ opacity:.7; }
-@media (prefers-reduced-motion: reduce){ .glist-links a:hover{ padding-left:.2rem; } }
+.glist-links a:hover{ color:#fff; padding-left:.55rem; }
+.glist-links .gl-arw{
+  flex:none; margin-left:auto; color:var(--acc-ink); opacity:.8;
+  transition:transform .25s var(--ease), opacity .25s var(--ease);
+}
+.glist-links a:hover .gl-arw{ opacity:1; transform:translateX(3px); }
+@media (prefers-reduced-motion: reduce){
+  .glist-links a:hover{ padding-left:.2rem; }
+  .glist-links .gl-arw{ transition:none; }
+}
 
 /* -------------------------------------------------------------- group cards */
 
@@ -517,12 +588,12 @@ p:last-child{ margin-bottom:0; }
                  transition:transform .6s var(--ease); }
 .card:hover .card-media img{ transform:scale(1.045); }
 .card-body{ padding:1.25rem 1.35rem 1.4rem; display:flex; flex-direction:column; flex:1; }
-.card-kicker{ font-size:.68rem; font-weight:600; letter-spacing:.11em; text-transform:uppercase;
+.card-kicker{ font-size:.73rem; font-weight:600; letter-spacing:.11em; text-transform:uppercase;
               color:var(--acc-deep); margin-bottom:.55rem; }
-.card h3{ font-size:1.12rem; margin-bottom:.5rem; line-height:1.28; }
-.card p{ font-size:.875rem; color:var(--text-soft); line-height:1.6; margin-bottom:1.1rem; }
+.card h3{ font-size:1.16rem; margin-bottom:.5rem; line-height:1.28; }
+.card p{ font-size:.96rem; color:var(--text-soft); line-height:1.55; margin-bottom:1.1rem; }
 .card .go{ margin-top:auto; display:inline-flex; align-items:center; gap:.4rem;
-           font-size:.83rem; font-weight:500; color:var(--acc-deep); }
+           font-size:.9rem; font-weight:600; color:var(--acc-deep); }
 .card .go .arw{ transition:transform .3s var(--ease); }
 .card:hover .go .arw{ transform:translateX(4px); }
 
@@ -536,9 +607,12 @@ p:last-child{ margin-bottom:0; }
 
 /* ------------------------------------------------------------------ process */
 
-/* Vier Schritte als Raster aus Haarlinien statt als vier Kaesten. */
+/* Drei Schritte als Raster aus Haarlinien statt als Kaesten. Vorher waren es
+   vier, und der dritte hiess "Entscheidung": die Seite erklaerte dem Besucher
+   erst einmal, dass die Kanzlei ueber ihn befindet. Anfrage, Erstgespraech,
+   Zusammenarbeit sagt dasselbe, ohne wie ein Bewerbungsverfahren zu klingen. */
 .steps{ display:grid; gap:0; border-top:1px solid var(--line); }
-@media (min-width:880px){ .steps{ grid-template-columns:repeat(4,minmax(0,1fr)); } }
+@media (min-width:880px){ .steps{ grid-template-columns:repeat(3,minmax(0,1fr)); } }
 .step{
   position:relative; padding:clamp(1.5rem,2.4vw,2rem) 0 clamp(1.6rem,2.6vw,2.2rem);
   border-bottom:1px solid var(--line);
@@ -556,12 +630,12 @@ p:last-child{ margin-bottom:0; }
 @media (min-width:880px){ .step:not(:first-child)::before{ left:clamp(1.1rem,2.2vw,2rem); } }
 .step:hover::before{ width:64px; }
 .step .num{
-  display:block; font-family:var(--ff-d); font-weight:500;
-  font-size:clamp(1.7rem,2.6vw,2.2rem); line-height:1;
-  color:var(--acc); margin-bottom:.9rem;
+  display:block; font-family:var(--ff); font-weight:600;
+  font-size:clamp(1.6rem,2.4vw,2rem); line-height:1;
+  color:var(--acc); margin-bottom:.9rem; font-variant-numeric:tabular-nums;
 }
-.step h3{ font-size:1.08rem; margin-bottom:.5rem; }
-.step p{ font-size:.87rem; color:var(--text-soft); line-height:1.6; }
+.step h3{ font-size:1.16rem; margin-bottom:.5rem; }
+.step p{ font-size:1rem; color:var(--text-soft); line-height:1.58; max-width:42ch; }
 .on-ink-bg .step{ border-color:var(--line-ink); }
 .on-ink-bg .step h3{ color:#fff; }
 .on-ink-bg .step .num{ color:var(--acc-ink); }
@@ -578,7 +652,7 @@ p:last-child{ margin-bottom:0; }
 .split.top{ align-items:start; }
 .split-media{ border-radius:var(--r-lg); overflow:hidden; box-shadow:var(--sh-md); }
 .split-media img{ width:100%; object-fit:cover; }
-.figcap{ font-size:.75rem; color:var(--text-faint); margin-top:.7rem; }
+.figcap{ font-size:.82rem; color:var(--text-faint); margin-top:.7rem; }
 
 .darkcard{
   background:var(--ink); color:#fff; border-radius:var(--r-lg); overflow:hidden;
@@ -607,8 +681,8 @@ p:last-child{ margin-bottom:0; }
   padding-block:clamp(4rem,9vw,7.5rem); max-width:56rem;
 }
 .quoteband blockquote{
-  margin:0; font-family:var(--ff-d); font-weight:400;
-  font-size:clamp(1.55rem,3.2vw,2.5rem); line-height:1.3;
+  margin:0; font-family:var(--ff-d); font-weight:500;
+  font-size:clamp(1.55rem,3.2vw,2.5rem); line-height:1.28;
   letter-spacing:-.012em; text-wrap:balance;
 }
 .quoteband blockquote::before{
@@ -616,7 +690,7 @@ p:last-child{ margin-bottom:0; }
   margin-bottom:clamp(1.4rem,2.5vw,2rem);
 }
 .quoteband .attr{
-  margin-top:clamp(1.4rem,2.4vw,2rem); font-size:.82rem; letter-spacing:.02em;
+  margin-top:clamp(1.4rem,2.4vw,2rem); font-size:.88rem; letter-spacing:.01em;
   color:rgba(255,255,255,.62);
 }
 
@@ -627,7 +701,7 @@ p:last-child{ margin-bottom:0; }
 .on-paper2 .quote{ background:#fff; box-shadow:var(--sh); }
 .quote blockquote{ margin:0; font-size:clamp(1.15rem,1.9vw,1.5rem); line-height:1.5;
                    font-weight:500; letter-spacing:-.01em; }
-.quote .attr{ margin-top:1.2rem; font-size:.8rem; color:var(--text-faint); }
+.quote .attr{ margin-top:1.2rem; font-size:.87rem; color:var(--text-faint); }
 .on-ink-bg .quote{ background:var(--ink-2); }
 .on-ink-bg .quote blockquote{ color:#fff; }
 .on-ink-bg .quote .attr{ color:var(--on-ink-soft); }
@@ -638,17 +712,17 @@ p:last-child{ margin-bottom:0; }
 .deflist > div{ display:grid; gap:.35rem 2rem; padding:1.15rem 0;
                 border-bottom:1px solid var(--line); grid-template-columns:minmax(0,1fr); }
 @media (min-width:720px){ .deflist > div{ grid-template-columns:minmax(0,.4fr) minmax(0,1fr); } }
-.deflist dt{ font-weight:500; font-size:.95rem; }
-.deflist dd{ margin:0; font-size:.9rem; color:var(--text-soft); line-height:1.65; }
+.deflist dt{ font-weight:600; font-size:1rem; }
+.deflist dd{ margin:0; font-size:.98rem; color:var(--text-soft); line-height:1.6; }
 .deflist.on-ink{ border-color:var(--line-ink); }
 .deflist.on-ink > div{ border-color:var(--line-ink); }
 .deflist.on-ink dt{ color:#fff; }
 .deflist.on-ink dd{ color:var(--on-ink-soft); }
 
 .ticks{ list-style:none; margin:0; padding:0; }
-.ticks li{ position:relative; padding:.6rem 0 .6rem 1.9rem; font-size:.92rem;
+.ticks li{ position:relative; padding:.6rem 0 .6rem 1.9rem; font-size:1rem;
            line-height:1.6; color:var(--text-soft); }
-.ticks li strong{ display:block; color:var(--text); font-weight:500; margin-bottom:.05rem; }
+.ticks li strong{ display:block; color:var(--text); font-weight:600; margin-bottom:.05rem; }
 .ticks li::before{
   content:""; position:absolute; left:0; top:.95em; width:11px; height:11px;
   border-radius:50%; background:var(--acc-soft);
@@ -665,7 +739,7 @@ p:last-child{ margin-bottom:0; }
 .faq details[open]{ box-shadow:var(--sh-md); border-color:transparent; }
 .faq summary{
   list-style:none; cursor:pointer; padding:1.15rem 3.4rem 1.15rem 1.35rem;
-  position:relative; font-size:1rem; font-weight:500; line-height:1.45;
+  position:relative; font-size:1.06rem; font-weight:600; line-height:1.4;
 }
 .faq summary::-webkit-details-marker{ display:none; }
 .faq summary::after{
@@ -687,7 +761,7 @@ p:last-child{ margin-bottom:0; }
 }
 .faq details[open] summary::before{ background-size:11px 1.5px, 1.5px 0; }
 .faq details[open] summary::after{ background:var(--acc-soft); }
-.faq .faq-body{ padding:0 3.4rem 1.35rem 1.35rem; font-size:.92rem; color:var(--text-soft);
+.faq .faq-body{ padding:0 3.4rem 1.35rem 1.35rem; font-size:1rem; color:var(--text-soft);
                 line-height:1.7; max-width:70ch; }
 
 /* ---------------------------------------------------------------- downloads */
@@ -701,10 +775,10 @@ p:last-child{ margin-bottom:0; }
   transition:box-shadow .3s var(--ease), transform .25s var(--ease), border-color .3s var(--ease);
 }
 .dl a:hover{ box-shadow:var(--sh-md); transform:translateY(-2px); border-color:transparent; }
-.dl .ext{ font-size:.64rem; font-weight:700; letter-spacing:.08em; color:var(--acc-deep);
+.dl .ext{ font-size:.7rem; font-weight:700; letter-spacing:.08em; color:var(--acc-deep);
           background:var(--acc-soft); border-radius:6px; padding:.32rem .5rem; }
-.dl .t{ font-size:.95rem; font-weight:500; }
-.dl .m{ font-size:.79rem; color:var(--text-faint); }
+.dl .t{ font-size:1rem; font-weight:600; }
+.dl .m{ font-size:.86rem; color:var(--text-faint); }
 .dl .arw{ color:var(--text-faint); transition:transform .3s var(--ease); }
 .dl a:hover .arw{ transform:translateX(4px); color:var(--acc-deep); }
 
@@ -755,24 +829,24 @@ p:last-child{ margin-bottom:0; }
                     transform:scaleX(0); transform-origin:left;
                     transition:transform .5s var(--ease); }
 .frail li.done .bar::after,.frail li.now .bar::after{ transform:scaleX(1); }
-.frail .lbl{ display:block; margin-top:.55rem; font-size:.72rem; color:var(--text-faint);
+.frail .lbl{ display:block; margin-top:.55rem; font-size:.78rem; color:var(--text-faint);
              min-height:2.6em; line-height:1.35; }
 .frail li.now .lbl{ color:var(--ink); font-weight:500; }
 
 fieldset{ border:0; margin:0 0 2rem; padding:0; }
-legend{ font-size:clamp(1.25rem,1.9vw,1.6rem); font-weight:500; line-height:1.25;
+legend{ font-size:clamp(1.3rem,1.9vw,1.65rem); font-weight:600; line-height:1.25;
         margin-bottom:.45rem; padding:0; }
-.fhint{ font-size:.88rem; color:var(--text-soft); margin-bottom:1.5rem; max-width:56ch; }
+.fhint{ font-size:.98rem; color:var(--text-soft); margin-bottom:1.5rem; max-width:56ch; }
 
 .fgroup{ margin-bottom:1.4rem; }
-.fgroup > .flabel{ display:block; font-size:.82rem; font-weight:500; margin-bottom:.55rem; }
-.fgroup .fsub{ font-size:.78rem; color:var(--text-faint); font-weight:400; }
+.fgroup > .flabel{ display:block; font-size:.88rem; font-weight:600; margin-bottom:.55rem; }
+.fgroup .fsub{ font-size:.84rem; color:var(--text-faint); font-weight:400; }
 
 .frow{ display:grid; gap:1rem; grid-template-columns:minmax(0,1fr); }
 @media (min-width:640px){ .frow.two{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
 
 input[type=text],input[type=email],input[type=tel],input[type=date],select,textarea{
-  width:100%; font-family:inherit; font-size:.93rem; color:var(--text);
+  width:100%; font-family:inherit; font-size:1rem; color:var(--text);
   background:#fff; border:1px solid var(--line); border-radius:var(--r-sm);
   padding:.85rem 1rem;
   transition:border-color .2s var(--ease), box-shadow .2s var(--ease);
@@ -792,7 +866,7 @@ input:focus,select:focus,textarea:focus{
 .opt{
   position:relative; display:flex; align-items:flex-start; gap:.65rem;
   padding:.85rem 1rem; border:1px solid var(--line); border-radius:var(--r-sm);
-  background:#fff; cursor:pointer; font-size:.89rem; line-height:1.45;
+  background:#fff; cursor:pointer; font-size:.97rem; line-height:1.4;
   transition:border-color .2s var(--ease), background .2s var(--ease),
              box-shadow .2s var(--ease);
 }
@@ -813,9 +887,9 @@ input:focus,select:focus,textarea:focus{
 .opt:has(input:checked){ border-color:var(--acc-deep); background:var(--acc-soft); }
 .opt input:focus-visible ~ .box{ outline:2px solid var(--acc); outline-offset:2px; }
 .opt .t{ display:block; }
-.opt .d{ display:block; font-size:.77rem; color:var(--text-faint); margin-top:.1rem; }
+.opt .d{ display:block; font-size:.84rem; color:var(--text-faint); margin-top:.1rem; }
 
-.consent{ display:flex; gap:.75rem; align-items:flex-start; font-size:.85rem;
+.consent{ display:flex; gap:.75rem; align-items:flex-start; font-size:.92rem;
           color:var(--text-soft); line-height:1.6; padding:1.1rem;
           border:1px solid var(--line); border-radius:var(--r-sm); background:var(--paper-2); }
 .consent a{ color:var(--acc-deep); }
@@ -823,7 +897,7 @@ input:focus,select:focus,textarea:focus{
 .fnav{ display:flex; flex-wrap:wrap; gap:.75rem; align-items:center;
        padding-top:1.5rem; border-top:1px solid var(--line); }
 .fnav .spacer{ margin-left:auto; }
-.fnote{ font-size:.8rem; color:var(--text-faint); }
+.fnote{ font-size:.87rem; color:var(--text-faint); }
 
 .fdone{ display:none; }
 .fdone.show{ display:block; animation:fade .45s var(--ease); }
@@ -834,8 +908,8 @@ input:focus,select:focus,textarea:focus{
 
 .callout{ border:1px solid var(--line); border-radius:var(--r);
           background:var(--paper-2); padding:clamp(1.3rem,2.2vw,1.9rem); }
-.callout h2,.callout h3{ font-size:1.1rem; margin-bottom:.7rem; }
-.callout p,.callout li{ font-size:.89rem; color:var(--text-soft); line-height:1.65; }
+.callout h2,.callout h3{ font-size:1.14rem; margin-bottom:.7rem; }
+.callout p,.callout li{ font-size:.97rem; color:var(--text-soft); line-height:1.6; }
 .callout ul{ margin:0; padding:0; list-style:none; }
 .callout li{ position:relative; padding-left:1.5rem; margin-bottom:.55rem; }
 .callout li::before{ content:""; position:absolute; left:0; top:.62em; width:8px; height:8px;
@@ -853,16 +927,16 @@ input:focus,select:focus,textarea:focus{
 .cline .ic{ flex:none; display:grid; place-items:center; width:40px; height:40px;
             border-radius:50%; background:var(--acc-soft); color:var(--acc-deep); }
 .cline > span:last-child{ display:block; min-width:0; padding-top:.15rem; }
-.cline .k{ display:block; font-size:.72rem; letter-spacing:.1em; text-transform:uppercase;
+.cline .k{ display:block; font-size:.77rem; letter-spacing:.1em; text-transform:uppercase;
            color:var(--text-faint); margin-bottom:.2rem; }
-.cline .v{ display:block; font-size:1rem; line-height:1.4; overflow-wrap:anywhere; }
+.cline .v{ display:block; font-size:1.06rem; line-height:1.4; overflow-wrap:anywhere; }
 .cline a{ text-decoration:none; border-bottom:1px solid var(--line); }
 .cline a:hover{ border-color:var(--acc); color:var(--acc-deep); }
 
 /* -------------------------------------------------------------------- chips */
 
 .chips{ display:flex; flex-wrap:wrap; gap:.45rem; }
-.chip{ font-size:.79rem; line-height:1; color:var(--text-soft);
+.chip{ font-size:.87rem; line-height:1; color:var(--text-soft);
        border:1px solid var(--line); border-radius:var(--pill);
        padding:.55rem .9rem; background:#fff; }
 
@@ -875,25 +949,25 @@ input:focus,select:focus,textarea:focus{
 .ft{ background:var(--ink-deep); color:#fff; padding-block:clamp(3rem,5vw,4.5rem) 0; }
 .ft-top{ display:grid; gap:clamp(2rem,3.5vw,3rem); grid-template-columns:minmax(0,1fr); }
 @media (min-width:900px){ .ft-top{ grid-template-columns:minmax(0,1.3fr) repeat(3,minmax(0,1fr)); } }
-.ft .ft-h{ font-size:.72rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase;
+.ft .ft-h{ font-size:.76rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase;
            color:var(--on-ink-soft); margin-bottom:1rem; line-height:1.4; }
 .ft ul{ list-style:none; margin:0; padding:0; }
 .ft li{ margin-bottom:.5rem; }
-.ft a{ text-decoration:none; font-size:.88rem; opacity:.8;
+.ft a{ text-decoration:none; font-size:.95rem; opacity:.8;
        transition:opacity .2s var(--ease), color .2s var(--ease); }
 .ft a:hover{ opacity:1; color:var(--acc-ink); }
 .ft-brand img{ height:36px; margin-bottom:1.2rem; }
-.ft-brand p{ font-size:.88rem; color:var(--on-ink-soft); max-width:34ch; }
+.ft-brand p{ font-size:.95rem; color:var(--on-ink-soft); max-width:34ch; }
 .ft-bot{ margin-top:clamp(2.2rem,3.5vw,3rem); padding-block:1.5rem;
          border-top:1px solid var(--line-ink);
          display:flex; flex-wrap:wrap; gap:.9rem 2rem; align-items:center;
-         font-size:.78rem; color:var(--on-ink-soft); }
+         font-size:.85rem; color:var(--on-ink-soft); }
 .ft-bot .spacer{ margin-left:auto; }
-.ft-bot a{ font-size:.78rem; }
+.ft-bot a{ font-size:.85rem; }
 .sr-spacer{ display:none; }
 @media (min-width:900px){ .sr-spacer{ display:block; height:1rem; margin-bottom:1rem; } }
 
-.mockbar{ background:var(--ink-2); color:rgba(255,255,255,.88); font-size:.76rem; padding:.55rem 0;
+.mockbar{ background:var(--ink-2); color:rgba(255,255,255,.88); font-size:.82rem; padding:.55rem 0;
           text-align:center; }
 .mockbar strong{ font-weight:600; }
 

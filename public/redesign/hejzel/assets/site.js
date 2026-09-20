@@ -23,7 +23,7 @@
       document.body.style.overflow = !open ? "hidden" : "";
     });
     drawer.addEventListener("click", function (e) {
-      if (e.target.tagName === "A") {
+      if (e.target.closest("a")) {
         burger.setAttribute("aria-expanded", "false");
         drawer.classList.remove("open");
         document.body.style.overflow = "";

@@ -458,11 +458,19 @@ p:last-child{ margin-bottom:0; }
 
    Das Bild hat hier eine einzige Aufgabe: dem Besucher in einer halben
    Sekunde bestaetigen, dass die Kanzlei in seinem Fach arbeitet. Dafuer
-   reicht ein Kreis neben dem Text, der am rechten Fensterrand auslaeuft.
-   Der Text bleibt dabei die Hauptsache und behaelt die linke Haelfte.
+   reicht ein Kreis neben dem Text. Der Text bleibt die Hauptsache und
+   behaelt die linke Haelfte.
 
-   --orb traegt den Durchmesser, damit der Zierring daneben denselben
-   Mittelpunkt benutzen kann. */
+   Der Kreis stand erst vollstaendig im Abschnitt, mit gleichem Abstand oben
+   und unten. Das war brav und leblos: eine Scheibe, die brav in ihrem Kasten
+   sitzt. Jetzt ist er deutlich groesser als der Abschnitt hoch ist und laeuft
+   oben und rechts aus dem Bild. Die Schnittkanten sind die Unterkante der
+   Kopfzeile und der Fensterrand, also zwei Linien, die sowieso da sind. Damit
+   liest sich der Anschnitt als Absicht und nicht als Unfall.
+
+   --orb traegt den Durchmesser, --orb-top und --orb-off die Verschiebung.
+   Alles andere rechnet daraus, damit Zierring und Abschnittshoehe
+   automatisch mitgehen. */
 .phero.has-orb{ --orb:clamp(96px,26vw,132px); }
 .phero-orb{
   position:relative; margin:0 0 1.5rem;
@@ -473,32 +481,43 @@ p:last-child{ margin-bottom:0; }
 }
 .phero-orb img{ width:100%; height:100%; object-fit:cover; }
 
-@media (min-width:900px){
-  .phero.has-orb{ --orb:clamp(296px,29.5vw,436px); --orb-off:clamp(-84px,-3vw,-24px); }
+@media (min-width:860px){
+  .phero.has-orb{
+    --orb:     clamp(320px,38vw,580px);
+    /* Nach rechts aus dem Fenster. */
+    --orb-off: clamp(-190px,-7vw,-56px);
+    /* Nach oben unter die Kopfzeile. 27 Prozent des Durchmessers, also ein
+       gutes Viertel der Scheibe, verschwindet hinter der Oberkante. */
+    --orb-top: calc(var(--orb) * -.27);
+    --ring:    56px;
+  }
   /* static, damit der Kreis gegen den Abschnitt rechnet und am Fensterrand
      auslaufen darf statt am 1220er Raster. Die Textspalte bekommt dafuer
      ihre eigene Ebene. */
   .phero.has-orb .phero-in{
     position:static;
     display:flex; flex-direction:column; align-items:flex-start; justify-content:center;
-    /* Die Hoehe haengt am Durchmesser, nicht an einem geratenen Wert. Sonst
-       schneidet der Abschnitt dem Kreis oben und unten die Kappe ab. */
-    min-height:calc(var(--orb) + clamp(3rem,5vw,5.5rem));
+    /* Nur der sichtbare Teil der Scheibe zaehlt fuer die Hoehe: 73 Prozent
+       des Durchmessers plus Luft darunter. Der Abschnitt richtet sich also
+       nach dem, was man sieht, nicht nach dem, was angeschnitten ist. */
+    min-height:calc(var(--orb) * .73 + clamp(2.5rem,4vw,4.5rem));
   }
   .phero.has-orb .crumbs,
   .phero.has-orb .phero-copy{ position:relative; z-index:2; max-width:min(56%,620px); }
   .phero.has-orb .crumbs{ width:100%; }
   .phero.has-orb .phero-orb{
     position:absolute; z-index:1; margin:0;
-    top:50%; right:var(--orb-off); transform:translateY(-50%);
+    top:var(--orb-top); right:var(--orb-off); transform:none;
     box-shadow:0 0 0 1px rgba(255,255,255,.12), 0 34px 80px rgba(0,0,0,.42);
   }
   /* Der Zierring sass oben rechts im Nichts. Jetzt liegt er konzentrisch um
-     das Feldbild und bindet es in die Flaeche ein. */
+     das Feldbild und laeuft mit ihm aus dem Bild. Unten bleibt ein Bogen im
+     Navy stehen, der den Anschnitt aufnimmt. */
   .phero.has-orb::before{
-    width:calc(var(--orb) + 110px); height:calc(var(--orb) + 110px);
+    width:calc(var(--orb) + var(--ring) * 2); height:calc(var(--orb) + var(--ring) * 2);
     max-width:none; max-height:none;
-    top:50%; right:calc(var(--orb-off) - 55px); transform:translateY(-50%);
+    top:calc(var(--orb-top) - var(--ring)); right:calc(var(--orb-off) - var(--ring));
+    transform:none;
   }
 }
 

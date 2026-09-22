@@ -408,8 +408,11 @@ p:last-child{ margin-bottom:0; }
 
 
 /* Markenzeile auf dem Bild: weisse Fassungen, damit sie auf der Aufnahme
-   ueberhaupt tragen. Die farbige Fassung mit dem Wechsel von Grau zu Farbe
-   steht weiter auf der Kanzleiseite, auf hellem Grund. */
+   ueberhaupt tragen. Jede Marke ist ein Link zur Kammer beziehungsweise zum
+   Verband. Bei Beruehrung legt sich eine helle Platte darunter und die weisse
+   Fassung wechselt zur farbigen. Ohne diese Platte traegt keine der drei
+   Farbfassungen auf der dunklen Aufnahme: das Blau des Bundes und die graue
+   Schrift der Kammer verschwinden im Navy. */
 .hero-mem{
   display:flex; align-items:center; flex-wrap:wrap;
   gap:clamp(1.2rem,3.5vw,3rem);
@@ -424,19 +427,36 @@ p:last-child{ margin-bottom:0; }
   display:flex; align-items:center; flex-wrap:wrap;
   gap:clamp(1.5rem,3.5vw,3rem);
 }
+/* Die Platte sitzt im negativen Aussenabstand, damit der Abstand zwischen den
+   Marken derselbe bleibt wie vorher. */
+.mem-lnk{
+  display:inline-flex; align-items:center;
+  padding:.4rem .5rem; margin:-.4rem -.5rem;
+  border-radius:9px; text-decoration:none;
+  transition:background-color .3s var(--ease);
+}
+.mem-sw{ position:relative; display:block; }
 .hero-mem-logos img{
+  display:block;
   height:clamp(25px,2.4vw,31px); width:auto; opacity:.88;
   transition:opacity .3s var(--ease);
 }
-.hero-mem-logos img.sbv{ height:clamp(35px,3.4vw,43px); }
-.hero-mem:hover img{ opacity:1; }
+.hero-mem-logos .sbv img{ height:clamp(35px,3.4vw,43px); }
+.hero-mem-logos .mem-on{ position:absolute; top:0; left:0; opacity:0; }
+.mem-lnk:hover,.mem-lnk:focus-visible{ background:rgba(255,255,255,.96); }
+.mem-lnk:focus-visible{ outline:2px solid var(--acc); outline-offset:2px; }
+.mem-lnk:hover img,.mem-lnk:focus-visible img{ opacity:0; }
+.mem-lnk:hover .mem-on,.mem-lnk:focus-visible .mem-on{ opacity:1; }
 @media (max-width:760px){
   .hero-mem{ gap:.9rem; }
   .hero-mem-logos{ gap:1.4rem; }
+  .mem-lnk{ padding:.3rem .35rem; margin:-.3rem -.35rem; }
   .hero-mem-logos img{ height:19px; }
-  .hero-mem-logos img.sbv{ height:26px; }
+  .hero-mem-logos .sbv img{ height:26px; }
 }
-@media (prefers-reduced-motion: reduce){ .hero-mem-logos img{ transition:none; } }
+@media (prefers-reduced-motion: reduce){
+  .hero-mem-logos img,.mem-lnk{ transition:none; }
+}
 
 /* Die Innenseiten behalten die ruhige Vollfarbe. */
 .phero{ background:var(--ink); color:#fff; position:relative; overflow:hidden; }
@@ -895,13 +915,16 @@ p:last-child{ margin-bottom:0; }
           gap:clamp(2rem,4.5vw,4rem); }
 /* Grau in Farbe bei Beruehrung, so wie es die Kanzlei auf ihrer Seite hat.
    Die Marken bleiben unveraendert, nur die Saettigung wird zurueckgenommen. */
+.members a{ display:inline-flex; align-items:center; border-radius:6px; }
+.members a:focus-visible{ outline:2px solid var(--acc-deep); outline-offset:4px; }
 .members img{
+  display:block;
   height:clamp(28px,3vw,36px); width:auto;
   filter:grayscale(1) contrast(.85) opacity(.78);
   transition:filter .35s var(--ease), transform .35s var(--ease);
 }
 .mem-head{ justify-content:center; display:flex; margin-bottom:1.6rem; }
-.members img:hover,.members a:focus-visible img{
+.members img:hover,.members a:hover img,.members a:focus-visible img{
   filter:none; transform:translateY(-2px);
 }
 .members .sbv{ height:clamp(40px,4.2vw,50px); }

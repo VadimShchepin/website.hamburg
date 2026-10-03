@@ -10,9 +10,11 @@
   --ink-2:      #052B5E;
   --ink-deep:   #00112F;
 
-  --paper:      #FFFFFF;
-  --paper-2:    #F4F7FA;
-  --paper-3:    #E7EDF4;
+  /* Warmes Weiss statt kaltem Grau-Blau seit 03.10.2026. Die Flaechen tragen
+     die Ruhe, das Blau der Kanzlei bleibt Akzent. */
+  --paper:      #FCFBF8;
+  --paper-2:    #F4F1EB;
+  --paper-3:    #E9E4DA;
 
   --acc:       #14598F;
   --acc-deep:  #0C3F6C;
@@ -150,11 +152,9 @@ p:last-child{ margin-bottom:0; }
   color:var(--acc-deep);
   margin:0 0 1rem;
 }
-.eyebrow::before{
-  content:""; width:18px; height:2px; flex:none; border-radius:2px; background:var(--acc);
-}
+/* Keine Zierstriche und keine Zaehler mehr vor den Augenbrauen. Schrift und
+   Abstand tragen die Gliederung allein. */
 .eyebrow.on-ink{ color:var(--acc-ink); }
-.eyebrow.on-ink::before{ background:var(--acc-ink); }
 
 .num{
   font-family:var(--ff); font-weight:600;
@@ -194,12 +194,6 @@ p:last-child{ margin-bottom:0; }
 .shead.on-ink{ border-top-color:var(--line-ink); }
 .shead .lede{ margin-bottom:0; }
 .shead.on-ink .lede{ color:var(--on-ink-soft); }
-.eyebrow-ix::before{ display:none; }
-.shead-ix{
-  font-family:var(--ff); font-size:.82rem; font-weight:600;
-  letter-spacing:.06em; text-transform:none; margin-right:.6rem;
-  font-variant-numeric:tabular-nums;
-}
 .sec-head.split{ display:grid; gap:clamp(1rem,2.5vw,3rem); align-items:end; }
 @media (min-width:900px){ .sec-head.split{ grid-template-columns:minmax(0,1.1fr) minmax(0,1fr); } }
 .sec-head.center{ text-align:center; max-width:720px; margin-inline:auto; }
@@ -346,65 +340,60 @@ p:last-child{ margin-bottom:0; }
 
 /* -------------------------------------------------------------------- hero */
 
-/* Eine Aufnahme der Speicherstadt, tief ins Navy gezogen, darueber ein Verlauf
-   von links. Das Bild bleibt lesbar, der Text steht trotzdem auf ruhigem Grund. */
-.hero{
-  color:#fff; position:relative; overflow:hidden;
-  background:#0A1426;
-  min-height:clamp(520px, 74vh, 730px);
-  display:flex;
+/* Zweigeteilt: links das Bild bis an den Fensterrand, rechts der Text auf
+   ruhigem Navy, buendig mit der rechten Kante des 1220er Rasters.
+   Bis 30.09.2026 lag der Text links auf einem Verlauf ueber einer
+   vollflaechigen Speicherstadt-Aufnahme, wie beim Wettbewerber. Am 01.10. kam
+   die Teilung mit Text links, seit 03.10. steht der Text rechts, damit auch die
+   Position der Ueberschrift sich klar unterscheidet. Das Motiv waehlt
+   build.py --hero. */
+.hero{ color:#fff; background:var(--ink-deep); --tg:10px; }
+/* Bild zwei Drittel, Text ein Drittel (03.10.2026). Der Text haengt damit nicht
+   mehr an der rechten Rasterkante, sonst bliebe in der schmalen Spalte zu wenig
+   Platz fuer "Hamburg-Wandsbek" in einer Zeile. Zwischen 821 und 1099 Pixeln
+   waere ein Drittel zu schmal, dort 55 zu 45. */
+.hero-grid{
+  display:grid; grid-template-columns:minmax(0,55fr) minmax(0,45fr);
+  min-height:clamp(500px, 70vh, 680px);
 }
-.hero-shot{
-  position:absolute; inset:0; margin:0; z-index:0;
+@media (min-width:1100px){
+  .hero-grid{ grid-template-columns:minmax(0,66fr) minmax(0,34fr); }
 }
-.hero-shot picture{ display:block; width:100%; height:100%; }
+.hero-copy{
+  align-self:center; background:var(--ink-deep);
+  padding:clamp(2.5rem,5vw,4.5rem) clamp(1.8rem,3vw,3.25rem);
+}
+.hero-shot{ margin:0; position:relative; min-height:100%; overflow:hidden; }
+.hero-shot picture{ position:absolute; inset:0; display:block; }
 .hero-shot img{ width:100%; height:100%; object-fit:cover; display:block; }
-/* Verlauf von links: dort steht der Text, rechts bleibt die Stadt sichtbar. */
-/* Neutrales Dunkel statt Navy: das Bild soll die Stadt zeigen, nicht eine blaue
-   Flaeche.
-
-   Die Haltepunkte haengen an der Mitte, nicht an Prozenten der Fensterbreite.
-   Der Textblock sitzt im 1220er Raster, also zwischen calc(50% - 610px) und etwa
-   calc(50% + 130px). Mit reinen Prozentwerten wandert die dunkle Zone auf breiten
-   Schirmen nach links aus dem Text heraus, und die zweite Zeile stand dann auf dem
-   hellen Himmel in der Bildmitte. */
-.hero-shot::after{
-  content:""; position:absolute; inset:0; pointer-events:none;
-  background:
-    /* Links ein Hauch Navy hinter dem Text, nach rechts vollstaendig auf null.
-       Die Haltepunkte haengen an der Mitte, nicht an Prozenten der Fensterbreite:
-       sonst wandert die dunkle Zone auf breiten Schirmen aus dem Text heraus. */
-    linear-gradient(to right,
-      rgba(3,24,62,.76) 0,
-      rgba(3,24,62,.70) calc(50% - 240px),
-      rgba(3,24,62,.36) calc(50% + 200px),
-      rgba(3,24,62,.10) calc(50% + 560px),
-      rgba(3,24,62,0)   100%),
-    /* nur so viel Fuss, dass die Markenzeile auf dem Wasser lesbar bleibt */
-    linear-gradient(to bottom,
-      rgba(3,24,62,.16) 0%, rgba(3,24,62,0) 16%,
-      rgba(3,24,62,0) 54%, rgba(3,24,62,.58) 100%);
-}
-@media (max-width:820px){
-  .hero-shot::after{
-    background:
-      linear-gradient(to bottom,
-        rgba(3,24,62,.78) 0%, rgba(3,24,62,.66) 45%, rgba(3,24,62,.82) 100%);
-  }
-}
-.hero .wrap{ position:relative; z-index:1; width:100%; }
-/* Text mittig in der freien Hoehe, die Markenzeile sitzt fest auf der Unterkante
-   des Bildes. So endet der Hero mit einem Beleg und nicht mit leerem Wasser. */
-.hero-in{
-  display:grid; grid-template-rows:1fr auto; min-height:inherit;
-  padding-block:clamp(3rem,6vw,4.5rem) clamp(1.3rem,2.2vw,1.9rem);
-}
-.hero-copy{ align-self:center; max-width:46rem; padding-block:clamp(1rem,3vw,2.5rem); }
-.hero h1{ color:#fff; margin-bottom:1.15rem; max-width:19ch; }
-.hero .lede{ color:rgba(255,255,255,.84); margin-bottom:2.1rem; max-width:50ch;
-             font-size:clamp(1.0625rem, 1.3vw, 1.15rem); }
-.hero .btn-row{ gap:1.1rem; }
+.hero h1{ color:#fff; margin-bottom:1.15rem; max-width:none;
+          font-size:clamp(2rem, 2.85vw, 3.1rem); }
+.nw{ white-space:nowrap; }
+.hero .lede{ color:rgba(255,255,255,.84); margin-bottom:2rem; max-width:46ch;
+             font-size:clamp(1rem, 1.15vw, 1.1rem); }
+.hero .lede span{ display:block; }
+.hero .btn-row{ gap:.8rem; }
 .hero .btn-acc{ box-shadow:0 16px 34px -16px rgba(0,0,0,.8); }
+/* Markenzeile als eigenes Band unter beiden Spalten. */
+.hero-band{ background:var(--ink); border-top:1px solid rgba(255,255,255,.08); }
+.hero-band .hero-mem{ border-top:0; padding-block:clamp(1rem,1.8vw,1.35rem); }
+
+/* Test: einzelne Flaechen mit schmaler Fuge auf warmweissem Grund. Der Text
+   fuellt seine Flaeche in voller Hoehe, die Markenzeile wird zur dritten Flaeche. */
+.hero.is-tiles{ background:var(--paper); padding:var(--tg) var(--tg) 0; }
+.hero.is-tiles .hero-grid{ gap:var(--tg); }
+.hero.is-tiles .hero-shot,
+.hero.is-tiles .hero-copy,
+.hero.is-tiles .hero-band{ border-radius:var(--r); }
+.hero.is-tiles .hero-copy{ align-self:stretch; display:flex; flex-direction:column; justify-content:center; }
+.hero.is-tiles .hero-band{ margin-top:var(--tg); border-top:0; }
+
+@media (max-width:820px){
+  .hero-grid{ grid-template-columns:1fr; min-height:0; }
+  .hero-copy{ padding:clamp(2rem,7vw,2.6rem) var(--gut); }
+  .hero-shot{ aspect-ratio:16/10; min-height:0; }
+  .hero h1{ font-size:clamp(1.9rem, 7.4vw, 2.4rem); }
+}
 
 
 /* Markenzeile auf dem Bild: weisse Fassungen, damit sie auf der Aufnahme
@@ -565,6 +554,10 @@ p:last-child{ margin-bottom:0; }
       grid-template-columns:minmax(0,1fr); }
 @media (min-width:620px){ .svc{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
 @media (min-width:940px){ .svc{ grid-template-columns:repeat(3,minmax(0,1fr)); } }
+/* Test: einzelne Karten mit 10 Pixeln Fuge, jede mit eigener Haarlinie und
+   Rundung. Der Akzentstrich bei Beruehrung bleibt in der Karte (overflow). */
+.svc.is-split{ gap:10px; border:0; border-radius:0; overflow:visible; background:none; }
+.svc.is-split .svc-item{ border:1px solid var(--line); border-radius:var(--r-sm); overflow:hidden; }
 .svc-item{
   position:relative; background:#fff; color:inherit; text-decoration:none;
   padding:clamp(1.7rem,2.6vw,2.4rem);
@@ -596,6 +589,63 @@ p:last-child{ margin-bottom:0; }
 .svc-item:hover .svc-more .arw{ transform:translateX(4px); }
 @media (prefers-reduced-motion: reduce){
   .svc-item::before,.svc-item .svc-more .arw{ transition:none; }
+}
+
+/* ------------------------------------------------------------------ DATEV */
+
+/* Eine ruhige Platte unter den Mandantengruppen: Logo, ein Satz, drei
+   sachliche Vorteile, rechts die Anmeldungen. Kein Bild, keine Haken. Das Logo
+   steht unveraendert in den Hausfarben der DATEV auf eigener weisser Flaeche. */
+/* Steht seit 03.10.2026 nach den Mandantengruppen (Zusatz, nicht Kern) und vor
+   dem Kanzleiabschnitt. Beide hell, deshalb unten kein eigener Abstand. */
+.sec-datev{ padding-bottom:0; }
+.datev{
+  display:grid; gap:clamp(1.5rem,3vw,2.6rem);
+  grid-template-columns:minmax(0,1fr);
+  background:#fff; border:1px solid var(--line); border-radius:var(--r);
+  padding:clamp(1.6rem,3vw,2.6rem);
+}
+@media (min-width:700px){
+  .datev{ grid-template-columns:auto minmax(0,1fr); }
+  .datev-links{ grid-column:1 / -1; }
+}
+@media (min-width:1100px){
+  .datev{ grid-template-columns:auto minmax(0,1fr) minmax(250px,.42fr); align-items:start; }
+  .datev-links{ grid-column:auto; }
+}
+.datev-logo img{ display:block; width:clamp(64px,7vw,96px); height:auto; }
+.datev-copy h2{ margin-bottom:.6rem; }
+.datev-lede{ color:var(--text-soft); max-width:58ch; margin:0 0 1.6rem; }
+.datev-facts{
+  list-style:none; margin:0; padding:0;
+  display:grid; gap:1.1rem clamp(1.2rem,2.4vw,2rem);
+}
+@media (min-width:860px){ .datev-facts{ grid-template-columns:repeat(3,minmax(0,1fr)); } }
+.datev-facts li{ border-top:1px solid var(--line); padding-top:.85rem; }
+.datev-facts strong{ display:block; font-weight:600; color:var(--text); margin-bottom:.3rem; }
+.datev-facts span{ display:block; overflow-wrap:break-word; font-size:.95rem; line-height:1.55; color:var(--text-soft); }
+
+/* Anmeldungen: die aktive als dunkle Flaeche, die kommende gestrichelt und
+   nicht klickbar. Steht die Adresse des Portals fest, genuegt die URL in
+   content_*.py, die Darstellung wechselt von selbst. */
+.datev-links{ display:grid; gap:.6rem; align-content:start; }
+@media (min-width:700px) and (max-width:1099px){ .datev-links{ grid-template-columns:1fr 1fr; } }
+.datev-lnk{
+  display:flex; flex-direction:column; gap:.2rem;
+  padding:1rem 1.15rem; border-radius:var(--r-sm);
+  background:var(--ink); color:#fff; text-decoration:none;
+  transition:background .3s var(--ease);
+}
+a.datev-lnk:hover{ background:var(--acc); }
+a.datev-lnk:focus-visible{ outline:2px solid var(--acc); outline-offset:3px; }
+.datev-lnk-name{ font-size:.78rem; font-weight:600; letter-spacing:.08em; text-transform:uppercase; opacity:.72; }
+.datev-lnk-act{ display:inline-flex; align-items:center; gap:.5rem; font-weight:600; font-size:1.05rem; }
+.datev-lnk-act .arw{ transition:transform .3s var(--ease); }
+a.datev-lnk:hover .arw{ transform:translateX(4px); }
+.datev-lnk.is-soon{ background:transparent; color:var(--text-soft); border:1px dashed var(--line); }
+.datev-lnk.is-soon .datev-lnk-act{ font-weight:500; font-size:1rem; }
+@media (prefers-reduced-motion: reduce){
+  .datev-lnk,.datev-lnk-act .arw{ transition:none; }
 }
 
 /* --------------------------------------------- Leistungsseite, sechs Bloecke */
@@ -780,6 +830,11 @@ p:last-child{ margin-bottom:0; }
 .split-media{ border-radius:var(--r-lg); overflow:hidden; box-shadow:var(--sh-md); }
 .split-media img{ width:100%; object-fit:cover; }
 .figcap{ font-size:.82rem; color:var(--text-faint); margin-top:.7rem; }
+/* Kanzleiabschnitt der Startseite: echtes Foto mit sachlicher Bildzeile darunter.
+   Rundung und Schatten sitzen am Bild, damit die Zeile frei darunter steht. */
+.split-media.about-fig{ margin:0; border-radius:0; overflow:visible; box-shadow:none; }
+.about-fig img{ display:block; border-radius:var(--r-lg); box-shadow:var(--sh-md); }
+.about-fig figcaption{ font-size:.9rem; color:var(--text-soft); margin-top:.85rem; }
 
 .darkcard{
   background:var(--ink); color:#fff; border-radius:var(--r-lg); overflow:hidden;
@@ -792,34 +847,6 @@ p:last-child{ margin-bottom:0; }
 .darkcard-media{ padding:clamp(0px,2vw,1.6rem); }
 .darkcard-media img{ width:100%; border-radius:var(--r); object-fit:cover; }
 @media (max-width:919px){ .darkcard-media{ padding:0 1.2rem 1.2rem; } }
-
-/* Vollflaechiges Zitatband. Bricht die Folge heller Abschnitte und bringt eine
-   zweite Aufnahme der Kanzlei ins Spiel. */
-.quoteband{ position:relative; overflow:hidden; background:var(--ink-deep); color:#fff; }
-.quoteband > img{
-  position:absolute; inset:0; width:100%; height:100%; object-fit:cover;
-}
-.quoteband::after{
-  content:""; position:absolute; inset:0;
-  background:linear-gradient(105deg, rgba(0,17,47,.93) 0%, rgba(0,17,47,.82) 50%, rgba(0,17,47,.68) 100%);
-}
-.quoteband .wrap{ position:relative; z-index:1; }
-.quoteband-in{
-  padding-block:clamp(4rem,9vw,7.5rem); max-width:56rem;
-}
-.quoteband blockquote{
-  margin:0; font-family:var(--ff-d); font-weight:500;
-  font-size:clamp(1.55rem,3.2vw,2.5rem); line-height:1.28;
-  letter-spacing:-.012em; text-wrap:balance;
-}
-.quoteband blockquote::before{
-  content:""; display:block; width:52px; height:2px; background:var(--acc-ink);
-  margin-bottom:clamp(1.4rem,2.5vw,2rem);
-}
-.quoteband .attr{
-  margin-top:clamp(1.4rem,2.4vw,2rem); font-size:.88rem; letter-spacing:.01em;
-  color:rgba(255,255,255,.62);
-}
 
 /* ------------------------------------------------------------------- quote */
 
@@ -945,12 +972,106 @@ p:last-child{ margin-bottom:0; }
 /* -------------------------------------------------------------------- form */
 
 .form-wrap{ max-width:820px; }
+
+/* Anfrageseite seit 03.10.2026: kein blauer Kopf mehr. Links eine kurze,
+   freundliche Einleitung und der direkte Weg ueber Telefon und E-Mail, rechts
+   sofort der Fragebogen. Die Hinweise stehen als kleine Notiz darunter. */
+.anf{ padding-top:clamp(2.2rem,4.5vw,4rem); }
+.anf-grid{ display:grid; gap:clamp(2rem,4vw,4.5rem); align-items:start; }
+@media (min-width:960px){
+  .anf-grid{ grid-template-columns:minmax(0,.72fr) minmax(0,1.5fr); }
+  .anf-side{ position:sticky; top:calc(var(--hdh) + 2rem); }
+}
+.anf-side h1{ margin-bottom:.9rem; text-wrap:balance; }
+.anf-lede{ color:var(--text-soft); font-size:1.06rem; line-height:1.6; margin:0 0 2rem; max-width:36ch; }
+.anf-direct{ border-top:1px solid var(--line); padding-top:1.4rem; }
+.anf-direct-t{ font-weight:600; font-size:1.05rem; margin:0 0 .25rem; }
+.anf-direct-b{ color:var(--text-soft); font-size:.95rem; margin:0 0 1rem; }
+.anf-ch{
+  display:flex; gap:.9rem; align-items:center; text-decoration:none; color:inherit;
+  padding:.8rem .95rem; margin-bottom:.55rem;
+  background:#fff; border:1px solid var(--line); border-radius:var(--r-sm);
+  transition:border-color .25s var(--ease), background .25s var(--ease);
+}
+.anf-ch:hover{ border-color:var(--acc); background:var(--paper-2); }
+.anf-ch:focus-visible{ outline:2px solid var(--acc); outline-offset:2px; }
+.anf-ch .ic{ flex:none; display:grid; place-items:center; width:38px; height:38px;
+             border-radius:50%; background:var(--acc-soft); color:var(--acc-deep); }
+.anf-ch .k{ display:block; font-size:.72rem; letter-spacing:.1em; text-transform:uppercase; color:var(--text-faint); }
+.anf-ch .v{ display:block; font-size:1.02rem; font-weight:600; overflow-wrap:anywhere; }
+.anf-main .frail{ margin-top:0; }
+
+/* --- Verzweigter Fragebogen (03.10.2026) ---------------------------------
+   Schritt 1 als ruhige Liste. Unter der gewaehlten Art klappt eine kleine
+   Nachfrage auf, ohne neuen Schritt. */
+.tlist{ display:grid; gap:.5rem; }
+.tpick .opt{ width:100%; }
+.tpop{
+  display:grid; grid-template-rows:0fr; opacity:0;
+  transition:grid-template-rows .35s var(--ease), opacity .25s var(--ease), margin .35s var(--ease);
+}
+.tpop-in{ min-height:0; overflow:hidden; }
+.tpop{ margin:0 0 0 2.2rem; }
+.tpick:has(input[name="type"]:checked) .tpop{
+  grid-template-rows:1fr; opacity:1; margin:.6rem 0 .5rem 2.2rem;
+}
+.tpop-q{ font-size:.9rem; font-weight:600; margin:0 0 .5rem; }
+@media (prefers-reduced-motion: reduce){ .tpop{ transition:none; } }
+
+/* Kleine Auswahl als Pillen: Rechtsform, Umsatz, Zeitpunkt. */
+.fchips{ display:flex; flex-wrap:wrap; gap:.45rem; }
+.fchip{ position:relative; cursor:pointer; }
+.fchip input{ position:absolute; opacity:0; width:1px; height:1px; margin:0; }
+.fchip span{
+  display:inline-block; padding:.55rem .95rem; border-radius:var(--pill);
+  border:1px solid var(--line); background:#fff; font-size:.92rem; line-height:1.2;
+  transition:border-color .2s var(--ease), background .2s var(--ease), color .2s var(--ease);
+}
+.fchip:hover span{ border-color:rgba(16,35,63,.35); }
+.fchip input:checked + span{ background:var(--ink); border-color:var(--ink); color:#fff; }
+.fchip input:focus-visible + span{ outline:2px solid var(--acc); outline-offset:2px; }
+
+/* Schritt 2 zeigt nur die Gruppen der gewaehlten Art. Ohne JavaScript fehlt
+   data-type, dann bleibt alles sichtbar. */
+form[data-type] [data-for]{ display:none; }
+form[data-type="unternehmen"] [data-for~="unternehmen"],
+form[data-type="selbst"] [data-for~="selbst"],
+form[data-type="frei"] [data-for~="frei"],
+form[data-type="privat"] [data-for~="privat"],
+form[data-type="gruendung"] [data-for~="gruendung"]{ display:block; }
+
+.ferr{ margin:0 0 .6rem; min-height:1.2em; font-size:.9rem; font-weight:500; color:#A3322A; }
+.fstep.has-err .fnav .btn-primary,.fstep.has-err .fnav .btn-acc{ animation:fshake .35s var(--ease); }
+@keyframes fshake{ 25%{ transform:translateX(-4px); } 75%{ transform:translateX(4px); } }
+@media (prefers-reduced-motion: reduce){ .fstep.has-err .fnav .btn{ animation:none; } }
+
+.anf-ch.is-static{ cursor:default; }
+.anf-ch.is-static:hover{ border-color:var(--line); background:#fff; }
+.anf-small{ font-size:.86rem; color:var(--text-soft); line-height:1.55; margin:.6rem 0 0; }
+/* In der schmaleren Formularspalte paarweise statt drei nebeneinander, sonst
+   steht bei vier Optionen eine allein in der zweiten Reihe. */
+@media (min-width:560px){ .anf .opts{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
+.anf-note{
+  max-width:820px; margin-top:clamp(2rem,3.5vw,2.8rem);
+  background:var(--paper-2); border-radius:var(--r-sm);
+  padding:1rem 1.2rem;
+}
+.anf-note p{ margin:0; font-size:.88rem; line-height:1.6; color:var(--text-soft); }
+.anf-note strong{ color:var(--text); font-weight:600; }
+@media (max-width:959px){
+  .anf-lede{ margin-bottom:1.4rem; }
+  .anf-direct{ display:grid; grid-template-columns:1fr 1fr; gap:.55rem; }
+  .anf-direct-t,.anf-direct-b{ grid-column:1 / -1; }
+  .anf-direct-b{ margin-bottom:.45rem; }
+  .anf-ch{ margin:0; }
+}
+@media (max-width:520px){ .anf-direct{ grid-template-columns:1fr; } }
 .fstep{ display:none; }
 .fstep.active{ display:block; animation:fade .4s var(--ease); }
 @keyframes fade{ from{ opacity:0; transform:translateY(10px);} to{ opacity:1; transform:none;} }
 @media (prefers-reduced-motion: reduce){ .fstep.active{ animation:none; } }
 
-.frail{ display:grid; grid-template-columns:repeat(4,1fr); gap:.5rem;
+.frail{ display:grid; grid-template-columns:repeat(3,1fr); gap:.5rem;
         margin:0 0 clamp(1.8rem,3vw,2.6rem); padding:0; }
 .frail li{ list-style:none; }
 .frail .bar{ display:block; height:3px; border-radius:3px; background:var(--paper-3);

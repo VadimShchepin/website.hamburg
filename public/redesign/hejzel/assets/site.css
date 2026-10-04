@@ -704,8 +704,30 @@ a.datev-lnk:hover .arw{ transform:translateX(4px); }
   transition:transform .25s var(--ease), opacity .25s var(--ease);
 }
 .glist-links a:hover .gl-arw{ opacity:1; transform:translateX(3px); }
+/* Test --glist-thumbs: das runde Gruppenfoto gleitet bei Beruehrung vor den
+   Namen. Breite 0 im Ruhezustand, der negative Rand gleicht die Luecke der
+   Flexbox aus, damit die Zeile ohne Foto exakt so steht wie vorher. Nur bei
+   echter Maus, auf Telefonen bleibt die Liste unveraendert. */
+.gl-thumb{ display:none; }
+@media (hover:hover){
+  .glist-links.has-thumbs .gl-thumb{
+    display:block; flex:none; width:0; height:40px; margin:-.5rem -1rem -.5rem 0;
+    border-radius:50%; overflow:hidden; opacity:0; transform:scale(.6);
+    box-shadow:0 0 0 2px rgba(255,255,255,.14);
+    transition:width .3s var(--ease), margin .3s var(--ease),
+               opacity .25s var(--ease), transform .3s var(--ease);
+  }
+  .glist-links.has-thumbs .gl-thumb img{ width:40px; height:40px; object-fit:cover; display:block; }
+  .glist-links.has-thumbs a:hover .gl-thumb,
+  .glist-links.has-thumbs a:focus-visible .gl-thumb{
+    width:40px; margin-right:0; opacity:1; transform:none;
+  }
+  /* Das Foto bringt die Bewegung, der Einzug entfaellt. */
+  .glist-links.has-thumbs a:hover{ padding-left:.2rem; }
+}
 @media (prefers-reduced-motion: reduce){
   .glist-links a:hover{ padding-left:.2rem; }
+  .glist-links.has-thumbs .gl-thumb{ transition:none; }
   .glist-links .gl-arw{ transition:none; }
 }
 

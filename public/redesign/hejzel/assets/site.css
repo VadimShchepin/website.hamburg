@@ -273,6 +273,7 @@ p:last-child{ margin-bottom:0; }
   transform:scaleX(0); transform-origin:left; transition:transform .3s var(--ease);
 }
 .hd-nav a:hover{ opacity:1; }
+.hd-nav a[aria-current="page"]{ opacity:1; color:var(--acc-deep); font-weight:600; }
 .hd-nav a:hover::after,.hd-nav a[aria-current="page"]::after{ transform:scaleX(1); }
 
 .hd-tools{ display:flex; align-items:center; gap:.6rem; margin-left:auto; }
@@ -335,6 +336,7 @@ p:last-child{ margin-bottom:0; }
   font-size:1.35rem; font-weight:500; line-height:1.3;
   padding:.65rem 0; border-bottom:1px solid var(--line-ink);
 }
+.drawer a.drawer-util{ font-size:1rem; font-weight:400; opacity:.75; }
 .drawer .sub{ padding:.8rem 0 1rem; }
 .drawer .sub a{ font-size:1rem; font-weight:400; opacity:.7; padding:.4rem 0; border:0; }
 
@@ -458,6 +460,17 @@ p:last-child{ margin-bottom:0; }
 .phero-in{ padding-block:clamp(2.5rem,5vw,4.5rem); }
 .phero h1{ color:#fff; max-width:22ch; }
 .phero .lede{ color:var(--on-ink-soft); margin-top:1.1rem; }
+
+/* Knapper heller Kopf fuer Verzeichnisseiten (seit 04.10.2026): Pfad, Titel,
+   ein Satz, dann sofort der Inhalt. Kein Navy, kein Zierring. */
+.phero.is-compact{ background:transparent; color:var(--text); border-bottom:1px solid var(--line-soft); }
+.phero.is-compact::before{ display:none; }
+.phero.is-compact .phero-in{ padding-block:clamp(1.6rem,3vw,2.6rem) clamp(1.4rem,2.6vw,2.2rem); }
+.phero.is-compact h1{ color:var(--ink); max-width:none; font-size:clamp(2rem,3.4vw,2.9rem); }
+.phero.is-compact .lede{ color:var(--text-soft); margin-top:.7rem; max-width:62ch; }
+.phero.is-compact .crumbs{ color:var(--text-faint); margin-bottom:.9rem; }
+.phero.is-compact .crumbs a:hover{ color:var(--acc-deep); }
+.phero.is-compact + main > .sec:first-child{ padding-top:clamp(1.8rem,3.4vw,3rem); }
 
 /* ------------------------------------------------- Feldbild im Gruppenkopf */
 
@@ -593,59 +606,57 @@ p:last-child{ margin-bottom:0; }
 
 /* ------------------------------------------------------------------ DATEV */
 
-/* Eine ruhige Platte unter den Mandantengruppen: Logo, ein Satz, drei
-   sachliche Vorteile, rechts die Anmeldungen. Kein Bild, keine Haken. Das Logo
-   steht unveraendert in den Hausfarben der DATEV auf eigener weisser Flaeche. */
-/* Steht seit 03.10.2026 nach den Mandantengruppen (Zusatz, nicht Kern) und vor
-   dem Kanzleiabschnitt. Beide hell, deshalb unten kein eigener Abstand. */
-.sec-datev{ padding-bottom:0; }
-.datev{
-  display:grid; gap:clamp(1.5rem,3vw,2.6rem);
+/* Mandantenportal (seit 04.10.2026, vorher "Wir arbeiten mit DATEV"). Der
+   Abschnitt ist ein Weg fuer bestehende Mandanten, keine Werbung: links Titel
+   und ein Satz, rechts die beiden Anmeldungen, darunter DATEV als Fussnote mit
+   kleinem Logo. Steht nach den Mandantengruppen, vor dem Kanzleiabschnitt. */
+.sec-portal{ padding-bottom:0; }
+.portal{
+  display:grid; gap:clamp(1.3rem,2.6vw,2.2rem) clamp(1.5rem,4vw,4rem);
   grid-template-columns:minmax(0,1fr);
   background:#fff; border:1px solid var(--line); border-radius:var(--r);
   padding:clamp(1.6rem,3vw,2.6rem);
 }
-@media (min-width:700px){
-  .datev{ grid-template-columns:auto minmax(0,1fr); }
-  .datev-links{ grid-column:1 / -1; }
+@media (min-width:900px){
+  .portal{ grid-template-columns:minmax(0,1fr) minmax(320px,.9fr); align-items:center; }
+  .portal-note{ grid-column:1 / -1; }
 }
-@media (min-width:1100px){
-  .datev{ grid-template-columns:auto minmax(0,1fr) minmax(250px,.42fr); align-items:start; }
-  .datev-links{ grid-column:auto; }
-}
-.datev-logo img{ display:block; width:clamp(64px,7vw,96px); height:auto; }
-.datev-copy h2{ margin-bottom:.6rem; }
-.datev-lede{ color:var(--text-soft); max-width:58ch; margin:0 0 1.6rem; }
-.datev-facts{
-  list-style:none; margin:0; padding:0;
-  display:grid; gap:1.1rem clamp(1.2rem,2.4vw,2rem);
-}
-@media (min-width:860px){ .datev-facts{ grid-template-columns:repeat(3,minmax(0,1fr)); } }
-.datev-facts li{ border-top:1px solid var(--line); padding-top:.85rem; }
-.datev-facts strong{ display:block; font-weight:600; color:var(--text); margin-bottom:.3rem; }
-.datev-facts span{ display:block; overflow-wrap:break-word; font-size:.95rem; line-height:1.55; color:var(--text-soft); }
+.portal-copy h2{ margin:.2rem 0 .6rem; }
+.portal-lede{ color:var(--text-soft); max-width:46ch; margin:0; }
+.portal-links{ display:grid; gap:.6rem; }
 
-/* Anmeldungen: die aktive als dunkle Flaeche, die kommende gestrichelt und
-   nicht klickbar. Steht die Adresse des Portals fest, genuegt die URL in
-   content_*.py, die Darstellung wechselt von selbst. */
-.datev-links{ display:grid; gap:.6rem; align-content:start; }
-@media (min-width:700px) and (max-width:1099px){ .datev-links{ grid-template-columns:1fr 1fr; } }
-.datev-lnk{
-  display:flex; flex-direction:column; gap:.2rem;
-  padding:1rem 1.15rem; border-radius:var(--r-sm);
-  background:var(--ink); color:#fff; text-decoration:none;
-  transition:background .3s var(--ease);
+.portal-go{ width:100%; justify-content:space-between; padding-block:1.05rem; font-size:1.02rem; }
+.portal-go.is-soon{
+  display:flex; flex-direction:column; align-items:flex-start; gap:.2rem;
+  padding:.95rem 1.15rem; border:1px dashed var(--line); border-radius:var(--r-sm);
+  color:var(--text-soft);
 }
-a.datev-lnk:hover{ background:var(--acc); }
-a.datev-lnk:focus-visible{ outline:2px solid var(--acc); outline-offset:3px; }
-.datev-lnk-name{ font-size:.78rem; font-weight:600; letter-spacing:.08em; text-transform:uppercase; opacity:.72; }
-.datev-lnk-act{ display:inline-flex; align-items:center; gap:.5rem; font-weight:600; font-size:1.05rem; }
-.datev-lnk-act .arw{ transition:transform .3s var(--ease); }
-a.datev-lnk:hover .arw{ transform:translateX(4px); }
-.datev-lnk.is-soon{ background:transparent; color:var(--text-soft); border:1px dashed var(--line); }
-.datev-lnk.is-soon .datev-lnk-act{ font-weight:500; font-size:1rem; }
+.portal-go-t{ font-weight:600; color:var(--text); opacity:.55; }
+.portal-go-d{ font-size:.9rem; }
+
+.portal-ano{
+  display:flex; align-items:center; justify-content:space-between; gap:1rem;
+  padding:.95rem 1.15rem; border:1px solid var(--line); border-radius:var(--r-sm);
+  text-decoration:none; color:var(--text);
+  transition:border-color .25s var(--ease), background .25s var(--ease);
+}
+.portal-ano:hover{ border-color:var(--acc); background:var(--acc-soft); }
+.portal-ano:focus-visible{ outline:2px solid var(--acc); outline-offset:3px; }
+.portal-ano-t{ display:block; font-weight:600; }
+.portal-ano-d{ display:block; font-size:.9rem; color:var(--text-soft); margin-top:.15rem; }
+.portal-ano-a{ flex:none; display:inline-flex; align-items:center; gap:.45rem;
+               font-weight:600; font-size:.95rem; color:var(--acc-deep); }
+.portal-ano-a .arw{ transition:transform .3s var(--ease); }
+.portal-ano:hover .arw{ transform:translateX(4px); }
+
+.portal-note{
+  display:flex; align-items:center; gap:.8rem; margin:0;
+  padding-top:1.1rem; border-top:1px solid var(--line-soft);
+  font-size:.88rem; color:var(--text-soft);
+}
+.portal-note img{ flex:none; width:34px; height:auto; }
 @media (prefers-reduced-motion: reduce){
-  .datev-lnk,.datev-lnk-act .arw{ transition:none; }
+  .portal-ano,.portal-ano-a .arw{ transition:none; }
 }
 
 /* --------------------------------------------- Leistungsseite, sechs Bloecke */
@@ -735,6 +746,19 @@ a.datev-lnk:hover .arw{ transform:translateX(4px); }
 
 .grid-cards{ display:grid; gap:clamp(1rem,1.8vw,1.5rem);
              grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr)); }
+.grid-cards.is-groups{ grid-template-columns:minmax(0,1fr); }
+@media (min-width:640px){ .grid-cards.is-groups{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (min-width:1000px){
+  .grid-cards.is-groups{ grid-template-columns:repeat(3,minmax(0,1fr)); }
+  /* 10 Gruppen in drei Spalten lassen eine Karte allein stehen. Die letzte
+     (Privatpersonen) laeuft deshalb quer ueber die ganze Zeile. */
+  .grid-cards.is-groups > .card:last-child:nth-child(3n+1){
+    grid-column:1 / -1; flex-direction:row; }
+  .grid-cards.is-groups > .card:last-child:nth-child(3n+1) .card-media{ flex:0 0 calc((100% - 2 * clamp(1rem,1.8vw,1.5rem)) / 3); }
+  .grid-cards.is-groups > .card:last-child:nth-child(3n+1) .card-media img{ height:100%; aspect-ratio:auto; min-height:260px; }
+  .grid-cards.is-groups > .card:last-child:nth-child(3n+1) .card-body{ justify-content:center; padding:2rem 2.2rem; }
+  .grid-cards.is-groups > .card:last-child:nth-child(3n+1) .go{ margin-top:.4rem; }
+}
 .card{
   display:flex; flex-direction:column; background:#fff;
   border:1px solid var(--line); border-radius:var(--r); overflow:hidden;

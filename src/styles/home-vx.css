@@ -147,15 +147,6 @@
   height: 380px;
 }
 
-.vx-hero-glow {
-  position: absolute;
-  width: 420px;
-  height: 420px;
-  border-radius: 50%;
-  /* round glow from the gradient itself; corners are square site-wide */
-  background: radial-gradient(circle closest-side, #FFFFFF 0%, rgba(255, 255, 255, 0.9) 45%, rgba(250, 250, 250, 0) 100%);
-}
-
 .vx-hero-mark img {
   position: relative;
   width: 200px;

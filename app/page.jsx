@@ -274,8 +274,7 @@ export default function HomePage() {
                         </div>
                     </div>
                     <div className="vx-hero-mark" aria-hidden="true">
-                        <div className="vx-hero-glow" />
-                        <img src="/logo_blue_transparent.webp" alt="" width="200" height="172" />
+                        <img src="/logo_blue_transparent.webp" alt="" width="200" height="186" />
                     </div>
                     <ul className="vx-hero-list">
                         <li>Webdesign für Hamburger Betriebe</li>

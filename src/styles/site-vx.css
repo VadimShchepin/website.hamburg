@@ -153,7 +153,6 @@ h3, h4 {
 
 .header-vx .logo img {
   height: 44px;
-  mix-blend-mode: multiply;
 }
 
 .header-vx .main-nav {
@@ -233,10 +232,6 @@ h3, h4 {
   color: #171717 !important;
 }
 
-.site-footer img {
-  mix-blend-mode: multiply;
-}
-
 .footer-social-link {
   background: #FFFFFF;
   border: 1px solid #EBEBEB;
@@ -307,4 +302,40 @@ h3, h4 {
 
 .bull-boundary {
   border: 1px solid #EBEBEB;
+}
+
+/* Custom pointer: faceted black/red arrow (generated with Magnific,
+   white outline added for dark sections). Hotspot = arrow tip.
+   Links and buttons keep the normal hand, text fields the I-beam. */
+html {
+  cursor: url('/cursor.png') 6 5, auto;
+  cursor: -webkit-image-set(url('/cursor.png') 1x, url('/cursor@2x.png') 2x) 6 5, auto;
+  cursor: image-set(url('/cursor.png') 1x, url('/cursor@2x.png') 2x) 6 5, auto;
+}
+
+input,
+textarea,
+[contenteditable] {
+  cursor: text;
+}
+
+a,
+button,
+summary,
+label,
+[role='button'] {
+  cursor: pointer;
+}
+
+/* Social icons: keep the glyph centred in its square (general footer link
+   rules were shifting it) */
+.site-footer .footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  margin: 0;
+  transform: none;
 }

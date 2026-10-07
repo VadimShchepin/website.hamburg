@@ -31,7 +31,7 @@ export default function Header() {
         <header className={`site-header header-vx${scrolled ? ' header-scrolled' : ''}`}>
             <div className="container header-container">
                 <Link href="/" className="logo" aria-label="AISEO Home">
-                    <img src="/logo_blue.webp" alt="AISEO Logo" width="100" height="86" />
+                    <img src="/logo_blue_transparent.webp" alt="AISEO Logo" width="100" height="93" />
                 </Link>
 
                 <a href="tel:+4917632194754" className="header-phone-mobile" aria-label="Anrufen: 0176 321 94 754" data-umami-event="phone-call" data-umami-event-location="header-mobile">

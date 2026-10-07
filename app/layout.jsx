@@ -2,7 +2,6 @@ import Script from 'next/script';
 import Header from '../src/components/Header';
 import Footer from '../src/components/Footer';
 import AnimateOnScroll from '../src/components/AnimateOnScroll';
-import CursorFollowerWrapper from '../src/components/CursorFollowerWrapper';
 import CookieConsent from '../src/components/CookieConsent';
 import { vxFontVars } from '../src/lib/fonts';
 import '../src/index.css';
@@ -114,7 +113,6 @@ export default function RootLayout({ children }) {
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
                 />
                 <AnimateOnScroll />
-                <CursorFollowerWrapper />
                 <Header />
                 <main>{children}</main>
                 <Footer />

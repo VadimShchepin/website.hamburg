@@ -10,7 +10,7 @@ export default function Footer() {
         <footer className="site-footer">
             <div className="container footer-grid">
                 <div className="footer-brand">
-                    <img src="/logo_red.webp" alt="AISEO" width="80" height="70" style={{ opacity: 0.9 }} />
+                    <img src="/logo_red_transparent.webp" alt="AISEO" width="80" height="75" />
                     <p className="mt-2" style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.9rem', lineHeight: 1.6 }}>
                         Professionelle Websites, SEO und Google Ads für lokale Unternehmen in Hamburg. Messbar. Transparent. Ergebnisorientiert.
                     </p>

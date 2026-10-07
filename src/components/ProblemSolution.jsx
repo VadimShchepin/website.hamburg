@@ -30,7 +30,7 @@ export default function ProblemSolution() {
                     </div>
                 </div>
                 <p className="ps-cta-hint text-center animate-up">
-                    Wo steht Ihre Website? <a href="#website-check">Machen Sie den kostenlosen 60-Sekunden-Check ↓</a>
+                    Wo steht Ihre Website? <a href="/kontakt" data-umami-event="cta-click" data-umami-event-location="problem-solution">Kostenlose Analyse anfordern →</a>
                 </p>
             </div>
         </section>

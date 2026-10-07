@@ -5,7 +5,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-import ShaderBackdrop from './shaders/ShaderBackdrop';
 
 const GOOGLE_ICON = (
     <svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -52,8 +51,7 @@ export default function Hero() {
     }, { scope: sectionRef });
 
     return (
-        <section id="hero" className="hero-modern hero-split shader-host" ref={sectionRef}>
-            <ShaderBackdrop scene="hero" />
+        <section id="hero" className="hero-modern hero-split" ref={sectionRef}>
             <div className="hero-split-inner container">
                 <div className="hero-copy">
                     <a

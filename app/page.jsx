@@ -4,14 +4,12 @@ import TrustStrip from '../src/components/TrustStrip';
 import ChatGptAdsSpotlight from '../src/components/ChatGptAdsSpotlight';
 import CaseStudiesGrid from '../src/components/CaseStudiesGrid';
 import ProblemSolution from '../src/components/ProblemSolution';
-import WebsiteCheck from '../src/components/WebsiteCheck';
 import Services from '../src/components/Services';
 import Proof from '../src/components/Proof';
 import Cases from '../src/components/Cases';
 import Founder from '../src/components/Founder';
 import FaqSection from '../src/components/FaqSection';
 import Cta from '../src/components/Cta';
-import WordmarkBand from '../src/components/shaders/WordmarkBand';
 
 const faqItems = [
     {
@@ -100,12 +98,10 @@ export default function HomePage() {
             <ChatGptAdsSpotlight />
             <CaseStudiesGrid />
             <ProblemSolution />
-            <WebsiteCheck />
             <Services />
             <Founder />
             <Proof />
             <Cases />
-            <WordmarkBand />
             <FaqSection title="Was Unternehmer mich am häufigsten fragen" items={faqItems} />
             <section className="section light-bg">
                 <div className="container">

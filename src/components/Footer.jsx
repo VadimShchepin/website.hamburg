@@ -1,9 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
 import { SOCIAL_LINKS } from '../lib/schema';
+import ContactBubble from './ContactBubble';
 
 export default function Footer() {
+    // The chat bubble lives here because the footer renders on every page.
     return (
+        <>
         <footer className="site-footer">
             <div className="container footer-grid">
                 <div className="footer-brand">
@@ -75,5 +78,7 @@ export default function Footer() {
                 <p>&copy; {(new Date()).getFullYear()} AISEO Hamburg. Alle Rechte vorbehalten.</p>
             </div>
         </footer>
+        <ContactBubble />
+        </>
     );
 }

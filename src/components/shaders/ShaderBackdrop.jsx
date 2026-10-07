@@ -5,9 +5,6 @@ import dynamic from 'next/dynamic';
 
 // Code-split: the shader engine only downloads once a scene is about to show.
 const SCENES = {
-    hero: dynamic(() => import('./scenes').then((m) => m.HeroScene), { ssr: false }),
-    proof: dynamic(() => import('./scenes').then((m) => m.ProofScene), { ssr: false }),
-    wordmark: dynamic(() => import('./scenes').then((m) => m.WordmarkScene), { ssr: false }),
     cta: dynamic(() => import('./scenes').then((m) => m.CtaScene), { ssr: false }),
 };
 

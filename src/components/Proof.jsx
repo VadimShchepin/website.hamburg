@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useEffect, useRef, useState } from 'react';
-import ShaderBackdrop from './shaders/ShaderBackdrop';
 
 function Counter({ target, duration = 2000, suffix = '' }) {
     const [count, setCount] = useState(0);
@@ -43,8 +42,7 @@ function Counter({ target, duration = 2000, suffix = '' }) {
 
 export default function Proof() {
     return (
-        <section id="proof" className="proof section dark-blue-bg shader-host">
-            <ShaderBackdrop scene="proof" />
+        <section id="proof" className="proof section dark-blue-bg">
             <div className="container">
                 <div className="section-header text-center">
                     <p className="section-kicker" style={{ color: 'rgba(255,255,255,0.6)' }}>Echte Ergebnisse</p>

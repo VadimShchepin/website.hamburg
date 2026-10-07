@@ -4428,205 +4428,6 @@ a.service-card {
 }
 
 /* ==========================================================================
-   60-Sekunden Website-Check
-   ========================================================================== */
-.wc-form {
-  display: flex;
-  gap: var(--space-sm);
-  justify-content: center;
-  max-width: 640px;
-  margin: var(--space-md) auto 0;
-}
-
-.wc-form input {
-  flex: 1;
-  min-width: 0;
-  padding: 1rem 1.25rem;
-  font-family: var(--font-body);
-  font-size: 1.05rem;
-  color: var(--color-text-main);
-  background: var(--color-bg-white);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.wc-form input:focus {
-  outline: 2px solid var(--color-accent);
-  outline-offset: 0;
-}
-
-.website-check .button-primary {
-  border-color: var(--color-accent);
-  background: var(--color-accent);
-}
-
-.wc-progress {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin-top: var(--space-md);
-  color: rgba(255, 255, 255, 0.85);
-  font-size: 0.95rem;
-}
-
-.wc-error {
-  max-width: 560px;
-  margin: var(--space-md) auto 0;
-  padding: var(--space-sm) var(--space-md);
-  text-align: center;
-  color: #fff;
-  background: rgba(229, 57, 53, 0.15);
-  border: 1px solid rgba(229, 57, 53, 0.5);
-}
-
-.wc-results {
-  max-width: 760px;
-  margin: var(--space-lg) auto 0;
-}
-
-.wc-scores {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-lg);
-  flex-wrap: wrap;
-  margin-bottom: var(--space-md);
-}
-
-.wc-score {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.4rem;
-}
-
-.wc-score-label {
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.wc-facts {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-sm);
-}
-
-.wc-fact {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.3;
-}
-
-.wc-fact strong {
-  font-family: var(--font-heading);
-  font-size: 1.4rem;
-  color: #fff;
-}
-
-.wc-fact span {
-  font-size: 0.72rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.wc-psi-note {
-  max-width: 520px;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.85);
-  margin: 0;
-}
-
-.wc-checks {
-  list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.6rem var(--space-md);
-  margin-bottom: var(--space-md);
-}
-
-.wc-check {
-  display: flex;
-  gap: 0.7rem;
-  align-items: flex-start;
-  padding: 0.7rem 0.9rem;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: rgba(255, 255, 255, 0.9);
-  line-height: 1.4;
-}
-
-.wc-check strong {
-  display: block;
-  font-size: 0.9rem;
-  color: #fff;
-}
-
-.wc-check em {
-  display: block;
-  font-style: normal;
-  font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.wc-check-icon {
-  flex-shrink: 0;
-  width: 22px;
-  height: 22px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 0.8rem;
-  border-radius: 50%;
-  margin-top: 2px;
-}
-
-.wc-check-ok .wc-check-icon {
-  color: #22c55e;
-  background: rgba(34, 197, 94, 0.15);
-}
-
-.wc-check-warn .wc-check-icon {
-  color: #f59e0b;
-  background: rgba(245, 158, 11, 0.15);
-}
-
-.wc-check-fail .wc-check-icon {
-  color: #E53935;
-  background: rgba(229, 57, 53, 0.15);
-}
-
-.wc-verdict {
-  text-align: center;
-  padding-top: var(--space-sm);
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
-}
-
-.wc-verdict p {
-  max-width: 560px;
-  margin: 0 auto var(--space-md);
-  color: rgba(255, 255, 255, 0.85);
-}
-
-@media (max-width: 700px) {
-  .wc-form {
-    flex-direction: column;
-  }
-
-  .wc-checks {
-    grid-template-columns: 1fr;
-  }
-
-  .wc-scores {
-    gap: var(--space-md);
-  }
-}
-
-/* ==========================================================================
    Branchenseiten & Story-Bausteine (2026)
    ========================================================================== */
 .subpage-figure {
@@ -5366,25 +5167,175 @@ a.service-card {
   color: var(--color-text-white);
 }
 
-/* Wordmark band: fixed aspect so the canvas text scales with the width */
-.wordmark-band {
-  aspect-ratio: 4.8 / 1;
-  background-color: var(--color-bg-lightgray);
+/* Header phone: inline in the desktop nav, icon button next to the
+   hamburger on mobile */
+.main-nav a.header-phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  white-space: nowrap;
+  letter-spacing: 0.3px;
+}
+
+.header-phone-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    gap: var(--space-sm);
+  }
+
+  .header-phone-mobile {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    margin-left: auto;
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+  }
+}
+
+/* ==========================================================================
+   Contact bubble (floating mini form, src/components/ContactBubble.jsx)
+   ========================================================================== */
+.contact-bubble {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 150;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.75rem;
+}
+
+.contact-bubble-toggle {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: 0;
+  background: var(--color-accent);
+  color: var(--color-text-white);
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(229, 57, 53, 0.35);
+  transition: transform 0.2s ease;
 }
 
-.wordmark-band-fallback {
-  font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 10vw;
-  line-height: 1;
+.contact-bubble-toggle:hover {
+  transform: scale(1.06);
+}
+
+.contact-bubble-panel {
+  width: min(340px, calc(100vw - 2.5rem));
+  background: var(--color-bg-white);
+  border: 1px solid var(--color-bg-gray2);
+  border-radius: 18px 18px 4px 18px;
+  box-shadow: 0 24px 64px rgba(10, 25, 47, 0.18);
+  padding: 1.1rem;
+  animation: contact-bubble-in 0.25s ease;
+}
+
+@keyframes contact-bubble-in {
+  from { opacity: 0; transform: translateY(10px) scale(0.97); }
+  to { opacity: 1; transform: none; }
+}
+
+.contact-bubble-head {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.8rem;
+}
+
+.contact-bubble-head img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.contact-bubble-head strong {
+  display: block;
+  font-size: 0.95rem;
   color: var(--color-primary);
-  transition: opacity 0.6s ease;
+  line-height: 1.2;
 }
 
-.shader-backdrop.is-ready + .wordmark-band-fallback {
-  opacity: 0;
+.contact-bubble-head span {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+}
+
+.contact-bubble-msg {
+  background: var(--color-bg-lightgray);
+  border-radius: 4px 14px 14px 14px;
+  padding: 0.7rem 0.85rem;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
+}
+
+.contact-bubble-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-bubble-form input,
+.contact-bubble-form textarea {
+  font: inherit;
+  font-size: 0.95rem;
+  padding: 0.65rem 0.8rem;
+  border: 1px solid var(--color-bg-gray2);
+  border-radius: 8px;
+  resize: none;
+}
+
+.contact-bubble-form input:focus,
+.contact-bubble-form textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.contact-bubble-form .button {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact-bubble-error {
+  font-size: 0.85rem;
+  color: var(--color-accent);
+}
+
+.contact-bubble-alt {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 0.7rem;
+  font-size: 0.85rem;
+}
+
+.contact-bubble-alt a {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .contact-bubble {
+    right: 1rem;
+    bottom: 1rem;
+  }
+}
+
+/* Wait until the cookie banner is answered; both live bottom-right */
+body:has(.cookie-banner) .contact-bubble {
+  display: none;
 }

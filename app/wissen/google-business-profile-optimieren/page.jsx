@@ -34,7 +34,7 @@ export default function GoogleBusinessProfilePage() {
         author: { '@type': 'Person', name: 'Vadim Shchepin', url: 'https://www.linkedin.com/in/vadim-shchepin/' },
         publisher: BUSINESS,
         datePublished: '2026-08-20',
-        dateModified: '2026-08-20',
+        dateModified: '2026-10-07',
         url: 'https://webseite.hamburg/wissen/google-business-profile-optimieren',
         image: 'https://webseite.hamburg/wissen/fotos/gbp-maps.webp',
         inLanguage: 'de',
@@ -271,10 +271,11 @@ export default function GoogleBusinessProfilePage() {
                     Suchart mit der kürzesten Strecke zwischen Klick und Umsatz.
                 </p>
                 <p>
-                    Was das in der Praxis bedeutet, zeigt der Fall
-                    {' '}<Link href="/referenzen/gl-sommer">GL Sommer</Link>: 728 lokale Aktionen und 1.113 Klicks pro
-                    Monat nach Modernisierung von Website und lokaler Sichtbarkeit. Das sind keine Impressionen,
-                    sondern Anrufe, Routenanfragen und Klicks von Leuten aus der Umgebung.
+                    Wie leicht man diese Zahlen überschätzt, zeigt der Fall
+                    {' '}<Link href="/referenzen/gl-sommer">GL Sommer</Link>: Eine Smart-Kampagne meldete im März 2026
+                    über 700 Conversions, 597 davon waren Interaktionen mit dem Unternehmensprofil, keine Anfragen.
+                    Schauen Sie deshalb getrennt auf Anrufe, Routenanfragen und Website-Klicks, denn nur die zeigen
+                    Menschen aus der Umgebung, die wirklich etwas von Ihnen wollen.
                 </p>
 
                 <h2>Profil gesperrt: was jetzt?</h2>

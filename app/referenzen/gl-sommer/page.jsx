@@ -2,19 +2,24 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import ServiceCta from '../../../src/components/ServiceCta';
+import CaseChart from '../../../src/components/CaseChart';
+import '../../../src/styles/case-study.css';
 
 const SITE_URL = 'https://webseite.hamburg';
 const PAGE_URL = `${SITE_URL}/referenzen/gl-sommer`;
 
+const TITLE = 'GL Sommer GmbH: SEO und Google Ads für GaLaBau in Hamburg';
+const DESCRIPTION = 'Fallstudie GL Sommer GmbH: Website modernisiert, SEO-Audit, Google Ads von Smart auf Search umgebaut. Kosten je Kontaktaktion 27,15 EUR (Jan bis Mär) auf 11,06 EUR (Apr bis Sep 2026).';
+
 export const metadata = {
-    title: 'Mehr Kunden durch SEO & Ads | GaLaBau Hamburg',
-    description: 'Wie GL Sommer durch Website-Modernisierung, SEO-Audit und Google Ads 728 lokale Aktionen und 1.113 Klicks pro Monat erreicht hat.',
+    title: TITLE,
+    description: DESCRIPTION,
     alternates: {
         canonical: PAGE_URL,
     },
     openGraph: {
-        title: 'GL Sommer Case Study | GaLaBau Hamburg: SEO + Google Ads',
-        description: 'Website-Modernisierung, SEO-Audit von 34/100 aufwarts, Google Ads mit 728 lokalen Aktionen bei 529 EUR/Monat. Case Study mit echten Daten.',
+        title: 'GL Sommer Case Study: Google Ads umgebaut, ehrlich gerechnet',
+        description: 'Von der Smart-Kampagne zu Search-Kampagnen: Kosten je Kontaktaktion 27,15 auf 11,06 EUR, mit allen Haken, die dazugehören. GaLaBau in Hamburg.',
         url: PAGE_URL,
         type: 'article',
     },
@@ -45,15 +50,15 @@ export default function GlSommerCaseStudy() {
     const articleJsonLd = {
         '@context': 'https://schema.org',
         '@type': 'Article',
-        headline: 'GL Sommer GmbH: SEO-Audit, Redesign und Google Ads für GaLaBau Hamburg',
-        description: 'Wie ein etabliertes Garten- und Landschaftsbau-Unternehmen durch Website-Modernisierung, SEO-Optimierung und Google Ads messbar mehr Kundenanfragen generiert.',
+        headline: 'GL Sommer GmbH: Google Ads umgebaut, Kosten je Kontaktaktion von 27,15 auf 11,06 EUR',
+        description: DESCRIPTION,
         url: PAGE_URL,
         datePublished: '2026-04-03',
-        dateModified: '2026-04-03',
+        dateModified: '2026-10-07',
         author: {
             '@type': 'Person',
             name: 'Vadim Shchepin',
-            url: `${SITE_URL}/über-uns`,
+            url: `${SITE_URL}/ueber-uns`,
         },
         publisher: {
             '@type': 'Organization',
@@ -88,16 +93,16 @@ export default function GlSommerCaseStudy() {
                     ]} />
                     <div className="article-meta animate-up">
                         <span className="wissen-card-category">CASE STUDY</span>
-                        <span className="wissen-card-time">SEO + Google Ads + Redesign</span>
+                        <span className="wissen-card-time">Website + SEO-Audit + Google Ads</span>
                     </div>
                     <h1 className="subpage-title animate-up">
-                        GL Sommer GmbH: 728 lokale Aktionen pro Monat für Hamburgs GaLaBau-Unternehmen.
+                        GL Sommer GmbH: Google Ads umgebaut, Kosten je Kontakt von 27,15 auf 11,06 EUR.
                     </h1>
                     <p className="subpage-intro animate-up">
-                        Ein etabliertes Garten- und Landschaftsbau-Unternehmen mit über 1.650 Projekten seit 2010. Website modernisiert, SEO-Audit von 34/100 aufwarts optimiert, Google Ads gestartet. Das Ergebnis: 728 lokale Aktionen und 19 Conversions pro Monat bei nur 529 &euro; Werbebudget.
+                        Ein etablierter Garten- und Landschaftsbauer in Hamburg, seit 2010 im Geschäft. Die Website brauchte eine Modernisierung, die Anzeigen einen Umbau. Diese Seite erzählt, was das gebracht hat, und warum hier früher eine viel größere Zahl stand, die ich gestrichen habe.
                     </p>
                     <div className="article-byline animate-up">
-                        Von <Link href="/ueber-uns">Vadim Shchepin</Link> &middot; 3. April 2026
+                        Von <Link href="/ueber-uns">Vadim Shchepin</Link> &middot; 3. April 2026, aktualisiert am 7. Oktober 2026
                     </div>
                 </div>
             </section>
@@ -105,13 +110,11 @@ export default function GlSommerCaseStudy() {
             {/* Key Metrics */}
             <section className="section">
                 <div className="container">
-                    <div className="cs-metrics-grid animate-up">
-                        <MetricCard value="728" label="Lokale Aktionen" detail="pro Monat" />
-                        <MetricCard value="67.888" label="Impressionen" detail="Google Ads / Monat" />
-                        <MetricCard value="1.113" label="Klicks" detail="Google Ads / Monat" />
-                        <MetricCard value="529 &euro;" label="Werbebudget" detail="pro Monat" />
-                        <MetricCard value="19" label="Conversions" detail="pro Monat" />
-                        <MetricCard value="34 &rarr; ?" label="SEO-Score" detail="Audit-Start bei 34/100" />
+                    <div className="cs-metrics-grid cs-metrics-4 animate-up">
+                        <MetricCard value="11,06 &euro;" label="Je Kontaktaktion" detail="April bis September 2026 (Januar bis März: 27,15 EUR)" />
+                        <MetricCard value="629" label="Kontaktaktionen" detail="April bis September 2026 (Januar bis März: 83)" />
+                        <MetricCard value="154" label="Strenge Conversions" detail="April bis September 2026, je 45,19 EUR" />
+                        <MetricCard value="23,34 &euro;" label="Je Kontaktaktion" detail="September 2026, steigt seit Juli" />
                     </div>
                 </div>
             </section>
@@ -122,149 +125,128 @@ export default function GlSommerCaseStudy() {
                     <div className="cs-image-showcase animate-up">
                         <Image
                             src="/referenzen/Gl-sommer-hero.webp"
-                            alt="GL Sommer GmbH Website: Hero-Bereich mit Garten- und Landschaftsbau Leistungen in Hamburg"
+                            alt="Startseite von gl-sommer.de mit Leistungen im Garten- und Landschaftsbau in Hamburg"
                             width={1200}
                             height={712}
                             quality={85}
                             style={{ width: '100%', height: 'auto', borderRadius: '2px' }}
                         />
-                        <p className="cs-image-caption">Die modernisierte Website: gl-sommer.de, Startseite mit klarem Leistungsangebot und Vertrauenssignalen.</p>
+                        <p className="cs-image-caption">gl-sommer.de nach der Modernisierung: klares Leistungsangebot und Kontakt im ersten Bildschirm.</p>
                     </div>
                 </div>
             </section>
 
             {/* Content */}
-            <section className="subpage-content section light-bg">
+            <section className="subpage-content section light-bg cs-story">
                 <div className="container subpage-body">
-                    <h2 className="animate-up">Die Ausgangssituation</h2>
+                    <h2 className="animate-up">Die Ausgangslage</h2>
                     <p className="animate-up">
-                        GL Sommer GmbH ist seit 2010 im Garten- und Landschaftsbau in Hamburg tätig: Terrassenverlegung, Pflasterarbeiten, Zaunbau, Gartenpflege. Über 1.650 abgeschlossene Projekte und ausgezeichnete Google-Bewertungen. Ein Unternehmen mit echtem Ruf und echter Expertise.
-                    </p>
-                    <p className="animate-up">
-                        Aber die digitale Präsenz hielt nicht Schritt. Die bestehende WordPress-Elementor-Website hatte strukturelle SEO-Probleme, veraltete Inhalte und keine aktive Strategie zur Kundengewinnung über Google. Das SEO-Audit ergab einen Score von <strong>34 von 100</strong>, mit kritischen Lucken bei Title Tags, Meta Descriptions, H1-Struktur, Alt-Texten und Sicherheitsheadern.
+                        GL Sommer baut Terrassen, verlegt Pflaster, setzt Zäune und pflegt Gärten in Hamburg. Die WordPress-Website hatte strukturelle SEO-Probleme, das Audit zu Beginn ergab 34 von 100 Punkten. Google Ads liefen schon länger, mindestens seit Januar 2024. Von Januar bis März 2026 lief eine Smart-Kampagne, bei der Google fast alles selbst entscheidet. Sie kostete in diesen drei Monaten 27,15 EUR je Kontaktaktion.
                     </p>
 
-                    <h2 className="animate-up">Die Lösung: Modernisierung + SEO + Ads</h2>
-
-                    <h3 className="animate-up" style={{ marginTop: 'var(--space-lg)', fontSize: '1.3rem' }}>
-                        1. Website-Modernisierung
+                    <h2 className="animate-up">Was ich gemacht habe</h2>
+                    <h3 className="animate-up" style={{ marginTop: 'var(--space-md)', fontSize: '1.3rem' }}>
+                        1. Website modernisiert statt neu gebaut
                     </h3>
                     <p className="animate-up">
-                        Kein kompletter Neubau, sondern gezielte Modernisierung. Das bestehende Design wurde beibehalten, aber grundlegend verbessert: klarere Seitenstruktur, bessere Mobile-Experience, schnellere Ladezeiten. Neue <strong>Referenz-Seiten</strong> wurden erstellt, um abgeschlossene Projekte professionell zu präsentieren, das wichtigste Vertrauenssignal im B2B-Gartenbau.
+                        Das Design blieb, die Struktur wurde klarer: bessere mobile Darstellung, schnellere Seiten und neue Referenz-Seiten, auf denen abgeschlossene Projekte mit Fotos gezeigt werden. Im Gartenbau will jeder zuerst sehen, wie die Terrasse beim Nachbarn geworden ist.
                     </p>
-
-                    <h3 className="animate-up" style={{ marginTop: 'var(--space-lg)', fontSize: '1.3rem' }}>
-                        2. Vollständiges SEO-Audit & Optimierung
-                    </h3>
-                    <p className="animate-up">
-                        Das technische Audit deckte systematische Probleme auf, die Seite für Seite behoben wurden:
-                    </p>
-
-                    <div className="cs-before-after animate-up" style={{ marginTop: 'var(--space-md)' }}>
-                        <BeforeAfter label="H1-Tags" before="Fehlten auf allen Unterseiten" after="Keyword-optimiert pro Seite" />
-                        <BeforeAfter label="Title Tags" before="Auto-generiert mit Pipe" after="Handgeschrieben, klickstark" />
-                        <BeforeAfter label="Meta Descriptions" before="Nicht vorhanden" after="150-160 Zeichen, mit CTA" />
-                        <BeforeAfter label="Alt-Texte" before="24 Bilder ohne Alt-Text" after="Beschreibend, auf Deutsch" />
-                        <BeforeAfter label="Datenschutz" before="Falscher Firmenname" after="Korrekt: GL Sommer GmbH" />
-                        <BeforeAfter label="Sicherheitsheader" before="Nicht konfiguriert" after="HSTS, X-Frame, Referrer-Policy" />
-                    </div>
-
                     <div className="cs-image-showcase animate-up" style={{ marginTop: 'var(--space-md)' }}>
                         <Image
                             src="/referenzen/Gl-sommer-leistungen.webp"
-                            alt="GL Sommer Leistungen: Gartenpflege und Garten- & Landschaftsbau Übersicht"
+                            alt="Leistungsübersicht von GL Sommer: Gartenpflege sowie Garten- und Landschaftsbau"
                             width={1200}
                             height={781}
                             quality={85}
                             style={{ width: '100%', height: 'auto', borderRadius: '2px' }}
                         />
-                        <p className="cs-image-caption">Die Leistungs-Übersicht: Klare Kategorien für Gartenpflege und Landschaftsbau mit direktem Zugang zu Details.</p>
+                        <p className="cs-image-caption">Die Leistungsübersicht: Gartenpflege und Landschaftsbau mit direktem Weg zu den Details.</p>
                     </div>
 
                     <h3 className="animate-up" style={{ marginTop: 'var(--space-lg)', fontSize: '1.3rem' }}>
-                        3. Content-Strategie aus echten Suchdaten
+                        2. SEO-Audit, Seite für Seite abgearbeitet
                     </h3>
-                    <p className="animate-up">
-                        Die GSC-Daten zeigten, wo GL Sommer bereits stark war und wo die Lucken lagen. <strong>&bdquo;Pflasterarbeiten Hamburg&ldquo;</strong> war bereits auf Position 2,78. Aber zentrale B2B-Begriffe wie &bdquo;Garten und Landschaftsbau Hamburg&ldquo; standen noch auf Seite 2. Gezielte Service-Landingpages und Referenz-Inhalte wurden erstellt, um diese Lucken zu schließen.
-                    </p>
-
-                    <div className="subpage-features-grid animate-up">
-                        <div className="subpage-feature">
-                            <h3>Position 2,78</h3>
-                            <p>&bdquo;Pflasterarbeiten Hamburg&ldquo;: Top 3 bei einem hochrelevanten Dienstleistungs-Keyword mit starker lokaler Kaufabsicht.</p>
-                        </div>
-                        <div className="subpage-feature">
-                            <h3>Referenz-Seiten</h3>
-                            <p>Abgeschlossene Projekte professionell dokumentiert, mit Fotos, Leistungsbeschreibung und Projektdetails. Das Vertrauenssignal Nr. 1 im GaLaBau.</p>
-                        </div>
-                        <div className="subpage-feature">
-                            <h3>Lokale SEO-Signale</h3>
-                            <p>Google Business Profil optimiert, konsistente NAP-Daten, lokale Schema-Markup-Integration für Hamburg und Umgebung.</p>
-                        </div>
-                        <div className="subpage-feature">
-                            <h3>Keyword-Cluster</h3>
-                            <p>Gartenpflege, Galabau, Terrassenbau, Pflasterarbeiten: jedes Cluster mit eigener Landingpage und gezieltem Content.</p>
-                        </div>
+                    <div className="cs-before-after animate-up">
+                        <BeforeAfter label="H1-Überschriften" before="fehlten auf Unterseiten" after="eine pro Seite" />
+                        <BeforeAfter label="Title Tags" before="automatisch erzeugt" after="handgeschrieben" />
+                        <BeforeAfter label="Meta Descriptions" before="nicht vorhanden" after="pro Seite geschrieben" />
+                        <BeforeAfter label="Alt-Texte" before="24 Bilder ohne" after="beschreibend, auf Deutsch" />
+                        <BeforeAfter label="Sicherheitsheader" before="nicht gesetzt" after="HSTS, X-Frame, Referrer-Policy" />
                     </div>
 
                     <h3 className="animate-up" style={{ marginTop: 'var(--space-lg)', fontSize: '1.3rem' }}>
-                        4. Google Ads: lokale Anfragen generieren
+                        3. Google Ads von Smart auf Search umgebaut
                     </h3>
                     <p className="animate-up">
-                        Parallel zur SEO-Arbeit wurde eine Google Ads-Kampagne gestartet, die auf Hamburger Gartenpflege- und Landschaftsbau-Suchanfragen mit lokaler Kaufabsicht zielt. Ergebnis: effiziente Lead-Generierung bei niedrigem Budget.
+                        Ab dem 31. März 2026 liefen statt der Smart-Kampagne eigene Suchkampagnen mit Begriffen, bei denen jemand wirklich einen Gartenbauer in Hamburg sucht, mit passenden Anzeigentexten und sauberer Zählung der Kontakte.
                     </p>
-
-                    <div className="cs-ads-results animate-up">
-                        <div className="cs-ads-stat">
-                            <div className="cs-ads-stat-header">
-                                <span className="cs-ads-stat-value">728</span>
-                                <span className="cs-ads-stat-label">Lokale Aktionen / Monat</span>
-                            </div>
-                            <p>Wegbeschreibungen, Anrufe, Interaktionen mit dem Google Business Profil: Nutzer, die aktiv nach einem lokalen Dienstleister suchen und handeln.</p>
-                        </div>
-                        <div className="cs-ads-stat">
-                            <div className="cs-ads-stat-header">
-                                <span className="cs-ads-stat-value">~0,73 &euro;</span>
-                                <span className="cs-ads-stat-label">Kosten pro lokaler Aktion</span>
-                            </div>
-                            <p>Bei 529 &euro; Monatsbudget und 728 lokalen Aktionen eine extrem effiziente Akquise für einen lokalen Handwerksbetrieb.</p>
-                        </div>
-                        <div className="cs-ads-stat">
-                            <div className="cs-ads-stat-header">
-                                <span className="cs-ads-stat-value">19</span>
-                                <span className="cs-ads-stat-label">Conversions / Monat</span>
-                            </div>
-                            <p>Direkte Anfragen und Kontaktaufnahmen über die Ads-Kampagne, bei einem Kosten-pro-Conversion von ca. 27,80 &euro;.</p>
-                        </div>
-                    </div>
 
                     {/* Results */}
-                    <h2 className="animate-up">Die Ergebnisse: März 2026</h2>
+                    <h2 className="animate-up">Was passiert ist</h2>
+                    <p className="animate-up">
+                        Von April bis September 2026 kostete eine Kontaktaktion im Schnitt 11,06 EUR, nach 27,15 EUR in den Smart-Monaten Januar bis März. In absoluten Zahlen: 629 Kontaktaktionen in sechs Monaten statt 83 in drei. Der beste Monat war der Juni 2026 mit 7,38 EUR je Kontaktaktion.
+                    </p>
 
-                    <div className="cs-results-grid animate-up">
-                        <div className="cs-result-card">
-                            <h3>67.888 Impressionen</h3>
-                            <p>Die Anzeigen werden Zehntausende Male pro Monat in Hamburg und Umgebung ausgespielt: maximale lokale Sichtbarkeit.</p>
-                        </div>
-                        <div className="cs-result-card">
-                            <h3>1.113 Klicks</h3>
-                            <p>Über 1.100 qualifizierte Besucher pro Monat über Google Ads, Nutzer mit konkreter Gartenpflege- oder Landschaftsbau-Suchabsicht.</p>
-                        </div>
-                        <div className="cs-result-card">
-                            <h3>20 Anrufklicks</h3>
-                            <p>Direkte Anrufe aus den Anzeigen: die starkste Conversion-Art für einen lokalen Dienstleister.</p>
-                        </div>
-                        <div className="cs-result-card">
-                            <h3>SEO-Audit: 34/100 &rarr; aufwarts</h3>
-                            <p>Vom kritischen Ausgangszustand systematisch verbessert: Title Tags, Meta Descriptions, H1-Struktur, Alt-Texte, Sicherheit, Schema.</p>
-                        </div>
+                    <CaseChart
+                        slug="glsommer-kosten-pro-kontakt"
+                        title="Werbekosten je Kontaktaktion bei GL Sommer (niedriger ist besser)"
+                        alt="Säulendiagramm: Google-Ads-Kosten je Kontaktaktion bei GL Sommer. Herbst 2025 mit Search und Performance Max zwischen 4,8 und 14 EUR, Smart-Kampagne Januar bis März 2026 zwischen 21 und 42 EUR, neue Search-Kampagnen ab April 2026 zwischen 7,4 und 13 EUR, im September 2026 wieder 23 EUR."
+                        source="Quelle: Google-Ads-Konto von GL Sommer, September 2025 bis September 2026, abgerufen am 7. Oktober 2026."
+                        note="Kosten geteilt durch die Conversion-Aktion Kontakt (1). Sie kann mehrere Kontakte pro Klick zählen."
+                    />
+
+                    <p className="animate-up">
+                        Jetzt der Teil, den man in Fallstudien selten liest. Erstens: Von September bis Dezember 2025 lagen die damaligen Search- und Performance-Max-Kampagnen bei 7,02 EUR je Kontaktaktion, also günstiger als meine. Der Umbau hat vor allem die teure Smart-Phase beendet, keinen Allzeitrekord aufgestellt. Zweitens: Seit Juli 2026 steigen die Kosten wieder, im September 2026 auf 23,34 EUR. Auch das gehört in die Grafik.
+                    </p>
+
+                    <CaseChart
+                        slug="glsommer-kontakte"
+                        title="Kontaktaktionen aus Google Ads pro Monat, weit und streng gezählt"
+                        alt="Liniendiagramm: Kontaktaktionen aus Google Ads bei GL Sommer. Weite Zählung Kontakt (1): rund 200 im Herbst 2025, 20 bis 32 in den Smart-Monaten, 172 im Juni 2026 und 56 im September 2026. Strenge Zählung Ads Conversion ab Februar 2026: höchstens 34 pro Monat."
+                        source="Quelle: Google-Ads-Konto von GL Sommer, September 2025 bis September 2026, abgerufen am 7. Oktober 2026."
+                        note="Die strenge Aktion Ads Conversion zählt höchstens einmal pro Klick und existiert erst seit Februar 2026."
+                    />
+
+                    {/* Fun facts */}
+                    <div className="cs-funfacts animate-up">
+                        <h2>Fun Facts aus den Daten</h2>
+                        <ol>
+                            <li>
+                                <strong>Im Juni denkt Hamburg an den Garten.</strong> 172 Kontaktaktionen im Juni 2026, 56 im September 2026. Die Saison ist im Werbekonto deutlicher zu sehen als in jedem Kalender.
+                            </li>
+                            <li>
+                                <strong>Weniger Klicks, mehr Kontakte.</strong> Im März 2026 brachte die Smart-Kampagne 1.322 Klicks und 31 Kontaktaktionen. Im Juni 2026 brachten die neuen Kampagnen 818 Klicks und 172 Kontaktaktionen.
+                            </li>
+                            <li>
+                                <strong>Hamburg kennt den Namen.</strong> 25 der 108 organischen Google-Klicks im September 2026 kamen über &quot;gl sommer&quot; und &quot;gl sommer gmbh&quot;, jeweils auf Position 1.
+                            </li>
+                            <li>
+                                <strong>Google ist nachsichtig.</strong> Auch bei &quot;napflasterarbeiten hamburg&quot; zeigte Google im September 2026 GL Sommer, auf Position 1,3 (3 Einblendungen). Tippfehler im Suchfeld sind offenbar kein Hindernis.
+                            </li>
+                        </ol>
+                    </div>
+
+                    <h2 className="animate-up">Was ich gelernt habe</h2>
+                    <p className="animate-up">
+                        Hier stand früher eine viel größere Zahl: über 700 &quot;lokale Aktionen&quot; in einem Monat. Sie stammte aus einem einzigen Monat, März 2026, aus der Smart-Kampagne vor meinem Umbau. Und 597 dieser Aktionen waren Interaktionen mit dem Unternehmensprofil bei Google, keine Anfragen. Ich habe die Zahl gestrichen. Die Lehre daraus gebe ich jedem Kunden mit: Bevor man eine Conversion feiert, schaut man nach, was sie eigentlich zählt.
+                    </p>
+                    <p className="animate-up">
+                        Deshalb stehen oben zwei Zählweisen. &quot;Kontakt (1)&quot; ist weit und kann mehrere Kontakte pro Klick zählen. Die strenge &quot;Ads Conversion&quot; zählt höchstens einmal pro Klick: 154 von April bis September 2026, also 45,19 EUR je Conversion. Die Wahrheit liegt irgendwo dazwischen, und wie viele echte Aufträge daraus wurden, weiß nur GL Sommer.
+                    </p>
+                    <p className="animate-up">
+                        Und SEO? Die organischen Klicks sind seit März 2026 stabil, ohne klaren Trend: 131 im April, 108 im September 2026. &quot;pflasterarbeiten hamburg&quot; stand schon im Februar 2026, als ich anfing, auf Position 2,4. Das war eine Stärke von GL Sommer, kein Ergebnis meiner Arbeit, und so steht es hier jetzt auch.
+                    </p>
+
+                    <div className="cs-limits animate-up">
+                        <p><strong>Ehrliche Grenzen:</strong> Der Umbau fiel in die Gartensaison. Saison und Umbau lassen sich mit diesen Daten nicht sauber trennen, die Kurven zeigen einen Zusammenhang, keinen Beweis.</p>
+                        <p>Quellen: Google-Ads-Konto und Google Search Console von GL Sommer, abgerufen am 7. Oktober 2026. Search-Console-Daten liegen erst ab 16. Februar 2026 vor.</p>
                     </div>
 
                     {/* Key Takeaway */}
                     <div className="cs-takeaway animate-up">
                         <h3>Das Wichtigste</h3>
                         <p>
-                            Ein etabliertes Unternehmen muss seine Website nicht komplett neu bauen, aber die digitale Präsenz muss zum Geschäft passen. GL Sommer zeigt: Gezielte Modernisierung, systematische SEO-Optimierung und effiziente Google Ads können aus einer bestehenden Website eine echte Akquise-Maschine machen. 728 lokale Aktionen pro Monat für 529 &euro;: das ist planbare, skalierbare Kundengewinnung.
+                            Ein Werbekonto sauber aufzubauen bringt messbar etwas: 11,06 EUR statt 27,15 EUR je Kontaktaktion. Aber die wichtigste Arbeit war, die Zählung ehrlich zu machen. Erst dann sieht man, ob ein Euro Werbung eine Anfrage bringt oder nur einen Profilaufruf.
                         </p>
                     </div>
                 </div>
@@ -274,31 +256,31 @@ export default function GlSommerCaseStudy() {
             <section className="section">
                 <div className="container">
                     <div className="section-header text-center">
-                        <p className="section-kicker animate-up">Ahnliches Projekt geplant?</p>
+                        <p className="section-kicker animate-up">Ähnliches Projekt geplant?</p>
                         <h2 className="section-title animate-up">Leistungen, die zum Einsatz kamen</h2>
                     </div>
                     <div className="subpage-features-grid animate-up">
+                        <Link href="/leistungen/google-ads" className="subpage-feature" style={{ textDecoration: 'none' }}>
+                            <h3>Google Ads Betreuung</h3>
+                            <p>Suchkampagnen statt Blackbox, mit ehrlicher Zählung der Kontakte. Ab 500 &euro; im Monat.</p>
+                        </Link>
                         <Link href="/leistungen/seo" className="subpage-feature" style={{ textDecoration: 'none' }}>
                             <h3>SEO für lokale Unternehmen</h3>
-                            <p>Langfristige organische Sichtbarkeit durch technische und inhaltliche Optimierung. Ab 1.000 &euro;/Mt.</p>
-                        </Link>
-                        <Link href="/leistungen/google-ads" className="subpage-feature" style={{ textDecoration: 'none' }}>
-                            <h3>Google Ads Management</h3>
-                            <p>Gezielte Kampagnen für lokale Unternehmen. Maximale Sichtbarkeit bei minimierten Kosten. Ab 500 &euro;/Mt.</p>
+                            <p>Technische Grundlagen und Inhalte, die in Hamburg gefunden werden. Ab 1.000 &euro; im Monat.</p>
                         </Link>
                         <Link href="/leistungen/website-audit" className="subpage-feature" style={{ textDecoration: 'none' }}>
                             <h3>Website-Audit</h3>
                             <p>Kostenlose Erstanalyse: Performance, SEO und Conversion-Potenzial Ihrer aktuellen Website.</p>
                         </Link>
-                        <Link href="/leistungen/webdesign" className="subpage-feature" style={{ textDecoration: 'none' }}>
-                            <h3>Webdesign & Entwicklung</h3>
-                            <p>Individuelle Websites, die schnell laden und Besucher zu Kunden machen. Ab 2.900 &euro;.</p>
+                        <Link href="/wissen/google-business-profile-optimieren" className="subpage-feature" style={{ textDecoration: 'none' }}>
+                            <h3>Google-Unternehmensprofil</h3>
+                            <p>Was ein gepflegtes Profil bringt und was seine Zahlen wirklich messen.</p>
                         </Link>
                     </div>
                 </div>
             </section>
 
-            <ServiceCta text="Ahnliche Ergebnisse für Ihr Unternehmen? Kostenloses Erstgespräch. Ich analysiere Ihre aktuelle Website und zeige Ihnen, wo das Potenzial liegt." />
+            <ServiceCta text="Sie sind nicht sicher, was Ihre Google-Ads-Conversions eigentlich zählen? Im kostenlosen Erstgespräch schaue ich mit Ihnen in Ihr Konto." />
         </>
     );
 }

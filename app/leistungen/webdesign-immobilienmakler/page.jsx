@@ -251,11 +251,11 @@ export default function WebdesignImmobilienmaklerPage() {
                     <h2 className="animate-up">Vergleichbare Projekte</h2>
                     <div className="subpage-cases animate-up">
                         <Link href="/referenzen/gl-sommer" className="subpage-case-card">
-                            <span className="subpage-case-metric">1.113 Klicks/Monat</span>
-                            <span className="subpage-case-name">GL Sommer: lokale Sichtbarkeit für einen Hamburger Betrieb</span>
+                            <span className="subpage-case-metric">11,06 EUR je Kontakt</span>
+                            <span className="subpage-case-name">GL Sommer: Google Ads für einen Hamburger Betrieb, ehrlich gezählt</span>
                         </Link>
                         <Link href="/referenzen/blitz-hamburg" className="subpage-case-card">
-                            <span className="subpage-case-metric">ROI in 7 Wochen</span>
+                            <span className="subpage-case-metric">24 auf 374 Google-Klicks</span>
                             <span className="subpage-case-name">Blitz Hamburg: Anfragen über Website, Ads und SEO</span>
                         </Link>
                         <Link href="/referenzen/mit-kinder" className="subpage-case-card">

@@ -273,7 +273,7 @@ export default function AgenturOderFreelancerPage() {
                 <ul>
                     <li>Die Ladezeit der eigenen Website. Wer bei sich selbst 8 Sekunden braucht, liefert Ihnen keine 1,5.</li>
                     <li>Konkrete Fragen zu Ihrem Geschäft im Erstgespräch statt Design-Geschmacksdiskussionen.</li>
-                    <li>Ergebnisse in Referenzen, nicht nur Screenshots. Ein Beispiel: <Link href="/referenzen/blitz-hamburg">ROI in sieben Wochen bei Blitz Hamburg</Link>.</li>
+                    <li>Ergebnisse in Referenzen, nicht nur Screenshots. Ein Beispiel: <Link href="/referenzen/blitz-hamburg">Blitz Hamburg, von 24 auf 374 Google-Klicks im Monat</Link>.</li>
                     <li>Ein Angebot, das Nicht-Leistungen benennt. Wer aufschreibt, was nicht enthalten ist, hat schon einmal ein Projekt zu Ende gebracht.</li>
                     <li>Bereitschaft, von einem Projekt abzuraten. Das ist das teuerste und ehrlichste Verkaufsargument, das es gibt.</li>
                 </ul>

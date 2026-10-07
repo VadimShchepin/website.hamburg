@@ -86,18 +86,29 @@ Arbeitsweise: Kunden arbeiten direkt mit Vadim Shchepin, es gibt keine Account-M
 ## Referenzen
 
 ### Blitz Hamburg (Handwerksbetrieb)
-- Website-Neubau, Google Ads und lokale SEO
-- 5.000+ Impressionen in 3 Monaten, ~2 EUR CPC, 33%+ Auktionsgewinnrate, 90% obere Anzeigenposition
-- Lighthouse-Scores 97+, 93 Stadtteil-Landingpages, AI-Kostenschätzer mit Gemini
-- Google Business Conversion 2x gesteigert, 5.0 Sterne bei 24 Bewertungen
+- Website-Neubau, Google Ads und Ratgeber-SEO, Relaunch am 03.05.2026
+- Organische Google-Klicks: 24 (April 2026) auf 374 (September 2026), rund 94 % ohne Markennamen (Google Search Console)
+- Durchschnittliche Google-Position: 21,1 (April 2026) auf 10,5 (September 2026)
+- Kontaktklicks (Anruf, WhatsApp, E-Mail): 57 (März 2026) auf 87 (September 2026), Untergrenze (Umami)
 - Case Study: https://webseite.hamburg/referenzen/blitz-hamburg
 - Website: https://www.blitz-hamburg.de/
 
 ### KinderAlbum (DSGVO-konforme Schulfotos-App)
-- Full-Stack Entwicklung und AI SEO
-- Ergebnis: Platz 1 in ChatGPT, Perplexity und Google AI für relevante Suchanfragen
-- Hunderte aktive Nutzer an echten Schulen
+- Full-Stack Entwicklung und SEO mit Ratgebern und Vorlagen
+- Organische Google-Klicks: 23 (Februar 2026) auf 792 (September 2026), durchschnittliche Position 6,2 (Google Search Console)
+- 14 Konten mit neuen Fotoalben im September 2026, 2 im April 2026 (Produktdatenbank, ohne Testkonten)
+- Case Study: https://webseite.hamburg/referenzen/kinderalbum
 - URL: https://dsgvoschulfotos.de/
+
+### DYBeauty (K-Beauty Shopify-Shop)
+- SEO-Audit, 723 Produkttitel, Produktdaten, Ratgeber, Arbeit ab 16.03.2026
+- Google-Impressionen: 23.353 (Februar 2026) auf 56.651 (September 2026); Klicks ohne Markennamen 446 auf 810 (Google Search Console)
+- Case Study: https://webseite.hamburg/referenzen/dybeauty
+
+### GL Sommer GmbH (Garten- und Landschaftsbau Hamburg)
+- Website modernisiert, SEO-Audit, Google Ads ab 31.03.2026 von Smart auf Search umgebaut
+- Kosten je Kontaktaktion: 27,15 EUR (Januar bis März 2026) auf 11,06 EUR (April bis September 2026), seit Juli wieder steigend (Google Ads)
+- Case Study: https://webseite.hamburg/referenzen/gl-sommer
 
 ### Solovei Beauty (Beauty-Coworking Hamburg)
 - Website mit integriertem Buchungssystem, Vertragsmanagement, Rollenverwaltung

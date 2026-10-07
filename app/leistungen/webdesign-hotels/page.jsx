@@ -270,7 +270,7 @@ export default function WebdesignHotelsPage() {
                             <span className="subpage-case-name">Solovei Beauty: mehrsprachige Plattform mit Buchungslogik</span>
                         </Link>
                         <Link href="/referenzen/blitz-hamburg" className="subpage-case-card">
-                            <span className="subpage-case-metric">ROI in 7 Wochen</span>
+                            <span className="subpage-case-metric">24 auf 374 Google-Klicks</span>
                             <span className="subpage-case-name">Blitz Hamburg: Website plus Ads plus SEO im Verbund</span>
                         </Link>
                     </div>

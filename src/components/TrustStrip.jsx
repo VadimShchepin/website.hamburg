@@ -1,9 +1,9 @@
 import React from 'react';
 
 const results = [
-    { metric: '~40 Kunden/Monat', client: 'Blitz Hamburg' },
-    { metric: '728 lokale Aktionen/Mt.', client: 'GL Sommer' },
-    { metric: '2× organischer Traffic', client: 'DYBeauty' },
+    { metric: '24 auf 374 Google-Klicks/Mt.', client: 'Blitz Hamburg' },
+    { metric: '23 auf 792 Google-Klicks/Mt.', client: 'KinderAlbum' },
+    { metric: '2,4× Google-Impressionen', client: 'DYBeauty' },
     { metric: '50+ Projekte', client: 'in 10+ Jahren geliefert' },
 ];
 

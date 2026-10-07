@@ -109,11 +109,11 @@ export default function Hero() {
                         />
                     </div>
                     <div className="hero-chip hero-chip-1">
-                        <strong>ROI in 7 Wochen</strong>
+                        <strong>24 auf 374 Google-Klicks/Mt.</strong>
                         <span>Blitz Hamburg</span>
                     </div>
                     <div className="hero-chip hero-chip-2">
-                        <strong>728 lokale Aktionen/Mt.</strong>
+                        <strong>11,06 EUR je Kontakt</strong>
                         <span>GL Sommer</span>
                     </div>
                     <div className="hero-chip hero-chip-3">

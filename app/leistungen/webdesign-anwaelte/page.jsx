@@ -252,16 +252,16 @@ export default function WebdesignAnwaeltePage() {
                     </p>
                     <div className="subpage-cases animate-up">
                         <Link href="/referenzen/blitz-hamburg" className="subpage-case-card">
-                            <span className="subpage-case-metric">ROI in 7 Wochen</span>
+                            <span className="subpage-case-metric">24 auf 374 Google-Klicks</span>
                             <span className="subpage-case-name">Blitz Hamburg: Website, Ads und SEO für einen Handwerksbetrieb</span>
                         </Link>
                         <Link href="/referenzen/gl-sommer" className="subpage-case-card">
-                            <span className="subpage-case-metric">728 lokale Aktionen</span>
-                            <span className="subpage-case-name">GL Sommer: lokale Sichtbarkeit im Monat nach dem Relaunch</span>
+                            <span className="subpage-case-metric">11,06 EUR je Kontakt</span>
+                            <span className="subpage-case-name">GL Sommer: Google Ads umgebaut, Kontakte ehrlich gezählt</span>
                         </Link>
                         <Link href="/referenzen/kinderalbum" className="subpage-case-card">
-                            <span className="subpage-case-metric">Platz 1 in ChatGPT</span>
-                            <span className="subpage-case-name">KinderAlbum: Sichtbarkeit in KI-Antworten für ein DSGVO-Thema</span>
+                            <span className="subpage-case-metric">23 auf 792 Google-Klicks</span>
+                            <span className="subpage-case-name">KinderAlbum: Ratgeber zu einem heiklen DSGVO-Thema</span>
                         </Link>
                     </div>
 

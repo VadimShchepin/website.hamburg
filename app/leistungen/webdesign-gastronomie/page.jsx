@@ -266,7 +266,7 @@ export default function WebdesignGastronomiePage() {
                             <span className="subpage-case-name">Glücksmomente Events: Aquarell-Ästhetik statt Baukastenvorlage</span>
                         </Link>
                         <Link href="/referenzen/blitz-hamburg" className="subpage-case-card">
-                            <span className="subpage-case-metric">ROI in 7 Wochen</span>
+                            <span className="subpage-case-metric">24 auf 374 Google-Klicks</span>
                             <span className="subpage-case-name">Blitz Hamburg: lokaler Dienstleister mit Website, Ads und SEO</span>
                         </Link>
                     </div>

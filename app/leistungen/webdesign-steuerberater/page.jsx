@@ -251,7 +251,7 @@ export default function WebdesignSteuerberaterPage() {
                     <h2 className="animate-up">Was dieselbe Arbeitsweise anderswo gebracht hat</h2>
                     <div className="subpage-cases animate-up">
                         <Link href="/referenzen/blitz-hamburg" className="subpage-case-card">
-                            <span className="subpage-case-metric">rund 40 Kunden/Monat</span>
+                            <span className="subpage-case-metric">24 auf 374 Google-Klicks</span>
                             <span className="subpage-case-name">Blitz Hamburg: Website, Google Ads und SEO im Verbund</span>
                         </Link>
                         <Link href="/referenzen/manetec" className="subpage-case-card">

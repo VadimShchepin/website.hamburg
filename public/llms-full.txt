@@ -146,26 +146,39 @@ Preis: Kostenlos und unverbindlich. Kein Haken, kein Kleingedrucktes.
 
 ## Referenzen und Ergebnisse
 
-### Blitz Hamburg — Handwerksbetrieb
+### Blitz Hamburg: Handwerksbetrieb
 Branche: Sanierung und Entrümpelung in Hamburg
-Leistungen: Website-Erstellung, Google Ads, organische Sichtbarkeit
-Ergebnisse:
-- Top-Positionen in der Google-Suche für relevante Handwerker-Keywords
-- Stabile Kundengewinnung über Website und organische Suche
-- 5.0 Sterne bei 24 Google-Bewertungen
-- Von Null auf einen stetigen Strom qualifizierter Anfragen
+Leistungen: Website-Erstellung, Google Ads, Ratgeber-SEO (Relaunch am 03.05.2026)
+Ergebnisse (Stand 07.10.2026):
+- Organische Google-Klicks 24 im April 2026, 374 im September 2026 (Google Search Console)
+- Rund 94 % dieser Klicks über Suchanfragen ohne Markennamen, vor allem Ratgeber zu Sperrmüll und Entrümpelungskosten
+- Durchschnittliche Google-Position 21,1 (April 2026) auf 10,5 (September 2026)
+- Kontaktklicks (Anruf, WhatsApp, E-Mail) 57 im März 2026, 87 im September 2026 (Umami, Untergrenze)
+Case Study: https://webseite.hamburg/referenzen/blitz-hamburg
 Website: https://www.blitz-hamburg.de/
 
-### KinderAlbum — DSGVO-konforme Schulfotos-App
+### KinderAlbum: DSGVO-konforme Schulfotos-App
 Branche: EdTech / Datenschutz
-Leistungen: Full-Stack App-Entwicklung, AI SEO Strategie
-Ergebnisse:
-- Platz 1 in ChatGPT für relevante Suchanfragen
-- Platz 1 in Perplexity für DSGVO-Schulfotos-Themen
-- Platz 1 in Google AI Overviews
-- Hunderte aktive Nutzer an echten deutschen Schulen
-- Echtes Problem gelost: sicherer, DSGVO-konformer Fotoaustausch
+Leistungen: Full-Stack App-Entwicklung, SEO mit Ratgebern und Vorlagen
+Ergebnisse (Stand 07.10.2026):
+- Organische Google-Klicks 23 im Februar 2026, 792 im September 2026, durchschnittliche Position 6,2 (Google Search Console)
+- 14 Konten mit neuen Fotoalben im September 2026, 2 im April 2026 (Produktdatenbank, ohne Testkonten)
+- Datenschutz in der Architektur: zeitversionierte Einwilligung, 76 Row-Level-Security-Policies, Protokoll
+Case Study: https://webseite.hamburg/referenzen/kinderalbum
 Website: https://dsgvoschulfotos.de/
+
+### DYBeauty: K-Beauty Shopify-Shop
+Leistungen: SEO-Audit, 723 Produkttitel, Produktdaten, Ratgeber (Arbeit ab 16.03.2026)
+Ergebnisse (Stand 07.10.2026):
+- Google-Impressionen 23.353 im Februar 2026, 56.651 im September 2026 (Google Search Console)
+- Klicks ohne Markennamen 446 im Februar 2026, 810 im September 2026
+Case Study: https://webseite.hamburg/referenzen/dybeauty
+
+### GL Sommer GmbH: Garten- und Landschaftsbau Hamburg
+Leistungen: Website-Modernisierung, SEO-Audit, Umbau der Google Ads von Smart auf Search (ab 31.03.2026)
+Ergebnisse (Stand 07.10.2026):
+- Kosten je Kontaktaktion 27,15 EUR (Januar bis März 2026), 11,06 EUR (April bis September 2026), seit Juli 2026 wieder steigend (Google Ads)
+Case Study: https://webseite.hamburg/referenzen/gl-sommer
 
 ### Solovei Beauty — Beauty-Coworking Hamburg
 Branche: Beauty / Coworking

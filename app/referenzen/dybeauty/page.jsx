@@ -2,19 +2,24 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import ServiceCta from '../../../src/components/ServiceCta';
+import CaseChart from '../../../src/components/CaseChart';
+import '../../../src/styles/case-study.css';
 
 const SITE_URL = 'https://webseite.hamburg';
 const PAGE_URL = `${SITE_URL}/referenzen/dybeauty`;
 
+const TITLE = 'DYBeauty: Shopify-SEO, 2,4-mal mehr Google-Impressionen';
+const DESCRIPTION = 'Fallstudie DYBeauty: SEO für einen K-Beauty Shopify-Shop. 723 Produkte überarbeitet, Google-Impressionen von 23.353 (Februar) auf 56.651 (September 2026).';
+
 export const metadata = {
-    title: 'Traffic in 90 Tagen verdoppelt | DYBeauty Shopify',
-    description: 'Wie ein K-Beauty Shopify-Shop durch SEO-Audit, 723 Produktoptimierungen und Merchant Center seinen Traffic in 3 Monaten verdoppelt hat.',
+    title: TITLE,
+    description: DESCRIPTION,
     alternates: {
         canonical: PAGE_URL,
     },
     openGraph: {
-        title: 'Traffic in 90 Tagen verdoppelt | DYBeauty Shopify',
-        description: 'K-Beauty E-Commerce: 723 Produkte optimiert, 78.500 Impressionen, Traffic verdoppelt. SEO-Audit, Google Merchant Center, Content-Strategie.',
+        title: 'DYBeauty Case Study: Shopify-SEO für koreanische Kosmetik',
+        description: 'Impressionen 23.353 auf 56.651, Klicks ohne Markennamen 446 auf 810 (Februar bis September 2026). Was ich am Shop geändert habe und was die Zahlen nicht beweisen.',
         url: PAGE_URL,
         type: 'article',
     },
@@ -45,15 +50,15 @@ export default function DybeautyCaseStudy() {
     const articleJsonLd = {
         '@context': 'https://schema.org',
         '@type': 'Article',
-        headline: 'DYBeauty: Organischen Traffic verdoppelt in 90 Tagen',
-        description: 'Wie ein K-Beauty Shopify-Shop durch SEO-Audit, 723 Produktoptimierungen und Content-Strategie den organischen Traffic verdoppelt hat.',
+        headline: 'DYBeauty: von 23.353 auf 56.651 Google-Impressionen im Monat',
+        description: DESCRIPTION,
         url: PAGE_URL,
         datePublished: '2026-04-03',
-        dateModified: '2026-04-03',
+        dateModified: '2026-10-07',
         author: {
             '@type': 'Person',
             name: 'Vadim Shchepin',
-            url: `${SITE_URL}/über-uns`,
+            url: `${SITE_URL}/ueber-uns`,
         },
         publisher: {
             '@type': 'Organization',
@@ -91,13 +96,13 @@ export default function DybeautyCaseStudy() {
                         <span className="wissen-card-time">E-Commerce SEO</span>
                     </div>
                     <h1 className="subpage-title animate-up">
-                        DYBeauty: Organischen Traffic verdoppelt in 90 Tagen.
+                        DYBeauty: von 23.353 auf 56.651 Google-Impressionen im Monat.
                     </h1>
                     <p className="subpage-intro animate-up">
-                        Ein K-Beauty Shopify-Shop, der fast ausschließlich über Instagram lief: ohne SEO-Grundlage, ohne deutsche Rechtstexte, ohne Google Merchant Center. 723 Produkte optimiert, Content-Strategie aufgebaut, organischen Traffic verdoppelt.
+                        Koreanische Kosmetik hat eine treue, sehr gut informierte Kundschaft. Die fragt Google Dinge wie &quot;Was ist der Unterschied zwischen Dr. Althea 345 und 147?&quot;. Seit März 2026 sorge ich dafür, dass dybeauty.de darauf eine Antwort hat, und für 723 Produkte einen Titel, nach dem tatsächlich jemand sucht.
                     </p>
                     <div className="article-byline animate-up">
-                        Von <Link href="/ueber-uns">Vadim Shchepin</Link> &middot; 3. April 2026
+                        Von <Link href="/ueber-uns">Vadim Shchepin</Link> &middot; 3. April 2026, aktualisiert am 7. Oktober 2026
                     </div>
                 </div>
             </section>
@@ -105,13 +110,11 @@ export default function DybeautyCaseStudy() {
             {/* Key Metrics */}
             <section className="section">
                 <div className="container">
-                    <div className="cs-metrics-grid animate-up">
-                        <MetricCard value="2x" label="Organischer Traffic" detail="verdoppelt in 90 Tagen" />
-                        <MetricCard value="1.860" label="Organische Klicks" detail="in 3 Monaten" />
-                        <MetricCard value="78.500" label="Impressionen" detail="in 3 Monaten" />
-                        <MetricCard value="11,5" label="Durchschn. Position" detail="Tendenz steigend" />
-                        <MetricCard value="723" label="Produkte optimiert" detail="SEO-Titel & Attribute" />
-                        <MetricCard value="80/100" label="SEO-Score" detail="Technisches Audit" />
+                    <div className="cs-metrics-grid cs-metrics-4 animate-up">
+                        <MetricCard value="56.651" label="Impressionen" detail="September 2026 (Februar 2026: 23.353)" />
+                        <MetricCard value="810" label="Klicks ohne Marke" detail="September 2026 (Februar 2026: 446)" />
+                        <MetricCard value="4.224" label="Suchanfragen" detail="September 2026 (Februar 2026: 2.010)" />
+                        <MetricCard value="723" label="Produkte überarbeitet" detail="Arbeit ab 16. März 2026" />
                     </div>
                 </div>
             </section>
@@ -122,100 +125,103 @@ export default function DybeautyCaseStudy() {
                     <div className="cs-image-showcase animate-up">
                         <Image
                             src="/referenzen/dybeauty.webp"
-                            alt="DYBeauty K-Beauty Shopify-Shop: Startseite mit Produktkategorien und koreanischer Kosmetik"
+                            alt="DYBeauty Shopify-Shop: Startseite mit Produktkategorien für koreanische Kosmetik"
                             width={1200}
                             height={706}
                             quality={85}
                             style={{ width: '100%', height: 'auto', borderRadius: '2px' }}
                         />
-                        <p className="cs-image-caption">Der DYBeauty Shop: dybeauty.de, koreanische Kosmetik für den deutschen Markt.</p>
+                        <p className="cs-image-caption">dybeauty.de: koreanische Kosmetik für den deutschen Markt, gebaut auf Shopify.</p>
                     </div>
                 </div>
             </section>
 
             {/* Content */}
-            <section className="subpage-content section light-bg">
+            <section className="subpage-content section light-bg cs-story">
                 <div className="container subpage-body">
-                    <h2 className="animate-up">Die Ausgangssituation</h2>
+                    <h2 className="animate-up">Die Ausgangslage</h2>
                     <p className="animate-up">
-                        DYBeauty verkauft koreanische Kosmetik in Deutschland, eine wachsende Nische mit echtem Wettbewerb. Der Shop hatte treue Instagram-Kunden, aber Google kannte ihn praktisch nicht.
-                    </p>
-                    <p className="animate-up">
-                        Das erste Audit zeigte fundamentale Probleme: Produktbeschreibungen waren ChatGPT-generierter Fulltext ohne Suchintention. Kein einziger SEO-Titel war optimiert. Produktdaten waren unvollständig: fehlende EANs, Größen, Inhaltsstoffe. Kein Google Merchant Center. Und rechtlich war der Shop für den deutschen Markt nicht betriebsbereit: kein Impressum, keine Datenschutzerklärung, kein Widerrufsrecht. Der Shop war nicht einmal auf Deutsch als Standardsprache konfiguriert.
-                    </p>
-                    <p className="animate-up">
-                        Gute Produkte. Keine Infrastruktur.
+                        DYBeauty verkauft koreanische Kosmetik in Deutschland. Google kannte den Shop schon: Im Februar 2026 kamen 536 Klicks aus der organischen Suche, 90 davon über den Namen. Das Fundament war aber dünn. Die Produkttexte waren generisch und ohne Bezug zu dem, was Menschen suchen, kein SEO-Titel war bearbeitet, Produktdaten wie EAN, Größe und Inhaltsstoffe fehlten oft, und die Rechtstexte für den deutschen Markt waren nicht vollständig. Gute Produkte, wackelige Infrastruktur.
                     </p>
 
-                    <h2 className="animate-up">Die Lösung: Systematischer Aufbau</h2>
-
-                    <h3 className="animate-up" style={{ marginTop: 'var(--space-lg)', fontSize: '1.3rem' }}>
-                        1. Rechtliche Grundlage & Technisches Fundament
-                    </h3>
+                    <h2 className="animate-up">Was ich gemacht habe</h2>
                     <p className="animate-up">
-                        Bevor SEO-Maßnahmen greifen konnten, musste der Shop ein legitimer deutscher Online-Handel sein. Alle gesetzlich vorgeschriebenen Seiten wurden erstellt: Impressum, Datenschutzerklärung, Widerrufsbelehrung. Deutsch wurde als Standard-Shopsprache konfiguriert. Ein vollständiges technisches SEO-Audit identifizierte samtliche strukturellen Lucken.
+                        Die Arbeit begann am 16. März 2026. Die Reihenfolge war bewusst unspektakulär: erst das Fundament, dann die Inhalte.
                     </p>
-
-                    <h3 className="animate-up" style={{ marginTop: 'var(--space-lg)', fontSize: '1.3rem' }}>
-                        2. 723 Produkte. 40 Collections. Jeder Titel neu geschrieben.
-                    </h3>
-                    <p className="animate-up">
-                        Nicht per Template. Nicht per KI generiert. Jeder SEO-Titel basiert auf echtem Suchvolumen und Wettbewerbsanalyse für den deutschen K-Beauty-Markt. Produktattribute wie EANs, Größen, Varianten und Inhaltsstoffe wurden über den gesamten Katalog ergänzt. Das machte die Produkte für Google Shopping qualifizierbar und verbesserte die Katalogqualitatssignale site-weit.
-                    </p>
-
-                    <div className="cs-before-after animate-up" style={{ marginTop: 'var(--space-md)' }}>
-                        <BeforeAfter label="SEO-Titel" before="Generisch / ChatGPT" after="Keyword-optimiert pro Produkt" />
-                        <BeforeAfter label="Produktdaten" before="Unvollständig" after="EANs, Größen, Varianten" />
-                        <BeforeAfter label="Rechtstexte" before="Nicht vorhanden" after="Impressum, DSGVO, Widerruf" />
-                        <BeforeAfter label="Shopsprache" before="Nicht konfiguriert" after="Deutsch als Standard" />
-                        <BeforeAfter label="Google Merchant" before="Nicht vorhanden" after="Feed live & aktiv" />
-                        <BeforeAfter label="SEO-Score" before="Niedrig" after="80 / 100" />
+                    <div className="cs-before-after animate-up">
+                        <BeforeAfter label="Rechtstexte" before="unvollständig" after="Impressum, Datenschutz, Widerruf" />
+                        <BeforeAfter label="Shopsprache" before="nicht konfiguriert" after="Deutsch als Standard" />
+                        <BeforeAfter label="SEO-Titel" before="generisch" after="723 Produkte, 40 Kollektionen" />
+                        <BeforeAfter label="Produktdaten" before="lückenhaft" after="EAN, Größen, Varianten" />
+                        <BeforeAfter label="Übersetzungen" before="uneinheitlich" after="einheitlich auf Deutsch" />
                     </div>
-
-                    <h3 className="animate-up" style={{ marginTop: 'var(--space-lg)', fontSize: '1.3rem' }}>
-                        3. Google Merchant Center, von Null aufgebaut
-                    </h3>
                     <p className="animate-up">
-                        Der Produkt-Feed wurde erstmalig eingerichtet, verifiziert und bei Google Merchant Center eingereicht. Damit wurde der Shopping-Kanal geooffnet, der vorher schlicht nicht existierte: ein komplett neuer Akquisitionsweg für organischen und bezahlten Traffic.
-                    </p>
-
-                    <h3 className="animate-up" style={{ marginTop: 'var(--space-lg)', fontSize: '1.3rem' }}>
-                        4. Content-Strategie & Ubersetzungen
-                    </h3>
-                    <p className="animate-up">
-                        Neue Blog-Artikel auf Basis von Keyword-Recherche und Content-Gap-Analyse gegen deutsche K-Beauty-Wettbewerber. Automatisierte, hochwertige deutsche Ubersetzungen für den gesamten zweisprachigen Katalog, als Ersatz für die bisherigen inkonsistenten maschinellen Ubersetzungen, die Vertrauenssignale beschadigt hatten.
+                        Jeder SEO-Titel orientiert sich an echten Suchbegriffen für K-Beauty in Deutschland, nicht an einer Vorlage. Dazu kamen Ratgeber-Artikel im Shop-Blog, ausgewählt nach Keyword-Recherche und nach den Lücken bei deutschen Wettbewerbern.
                     </p>
 
                     {/* Results */}
-                    <h2 className="animate-up">Die Ergebnisse nach 3 Monaten</h2>
+                    <h2 className="animate-up">Was passiert ist</h2>
                     <p className="animate-up">
-                        Der organische Traffic hat sich verdoppelt. Die Impressionen zeigen eine klare Beschleunigung ab Mitte März 2026, dem Punkt, an dem technische Fixes, Produktdaten-Optimierung und Content gleichzeitig greifen.
+                        Zuerst wenig. Von April bis Juni 2026 lagen die Impressionen zwischen 25.049 und 34.177, also kaum über dem Februar. Ab Juli 2026 ging es deutlich nach oben: 44.926, dann 50.743 im August und 56.651 im September 2026. Shop-SEO braucht Geduld, besonders wenn hunderte Produktseiten neu bewertet werden müssen.
                     </p>
 
-                    <div className="cs-results-grid animate-up">
-                        <div className="cs-result-card">
-                            <h3>1.860 organische Klicks</h3>
-                            <p>Verdoppelt gegenüber dem Vorzeitraum. Von einer Domain, die vorher praktisch keine Google-Sichtbarkeit hatte.</p>
-                        </div>
-                        <div className="cs-result-card">
-                            <h3>78.500 Impressionen</h3>
-                            <p>Google zeigt den Shop für Tausende relevanter Suchanfragen: das Fundament für weiteres Wachstum.</p>
-                        </div>
-                        <div className="cs-result-card">
-                            <h3>Position 11,5, Tendenz steigend</h3>
-                            <p>Durchschnittliche Position auf Seite 2, mit klarer Aufwartsbewegung Richtung Seite 1. Die Kurve zeigt steil nach oben.</p>
-                        </div>
-                        <div className="cs-result-card">
-                            <h3>Google Merchant Center aktiv</h3>
-                            <p>723 Produkte im Shopping-Feed. Ein komplett neuer Kanal, der vorher nicht existierte.</p>
-                        </div>
+                    <CaseChart
+                        slug="dybeauty-impressionen"
+                        title="Google-Impressionen von dybeauty.de pro Monat"
+                        alt="Säulendiagramm: Google-Impressionen von dybeauty.de. Januar 2026 26.231, Februar 23.353, nach Start der SEO-Arbeit im März zunächst seitwärts, ab Juli Anstieg auf 56.651 im September 2026."
+                        source="Quelle: Google Search Console (dybeauty.de), Januar bis September 2026, abgerufen am 7. Oktober 2026."
+                        note="Search-Console-Daten liegen erst ab 22. Dezember 2025 vor. Start der SEO-Arbeit: 16. März 2026."
+                    />
+
+                    <p className="animate-up">
+                        Spannender als Impressionen sind Klicks von Menschen, die DYBeauty noch nicht kannten. Klicks über Suchanfragen ohne den Namen dybeauty stiegen von 446 im Februar 2026 auf 810 im September 2026. Alle Klicks zusammen: 536 im Februar, 865 im September 2026.
+                    </p>
+
+                    <CaseChart
+                        slug="dybeauty-klicks-ohne-marke"
+                        title="Google-Klicks auf dybeauty.de ohne Marken-Suchen, pro Monat"
+                        alt="Säulendiagramm: organische Klicks auf dybeauty.de ohne Suchanfragen mit dem Namen dybeauty. Februar 2026 446, April bis Juni rund 450 bis 470, dann 665 im Juli, 713 im August und 810 im September 2026."
+                        source="Quelle: Google Search Console (dybeauty.de), Januar bis September 2026, abgerufen am 7. Oktober 2026."
+                        note="Gesamtklicks minus erkennbare Marken-Suchanfragen. Anonymisierte Suchanfragen zählen als ohne Marke."
+                    />
+
+                    {/* Fun facts */}
+                    <div className="cs-funfacts animate-up">
+                        <h2>Fun Facts aus den Daten</h2>
+                        <ol>
+                            <li>
+                                <strong>Die große Cremefrage.</strong> Der Blog-Ratgeber zu Dr. Althea 345 und 147 wurde im September 2026 3.851 Mal in Google eingeblendet und 33 Mal geklickt. Die Suchanfrage &quot;dr althea 345 und 147 unterschied&quot; allein: 124 Einblendungen, Position 3,5.
+                            </li>
+                            <li>
+                                <strong>K-Beauty spricht viele Sprachen.</strong> &quot;dr hedison кушон&quot; wurde im September 2026 147 Mal eingeblendet. Die Kundschaft sucht auch auf Russisch und Ukrainisch, und ein russischsprachiger Ratgeber zu PDRN brachte im selben Monat 17 Klicks.
+                            </li>
+                            <li>
+                                <strong>Eine Marke als Zugpferd.</strong> Die Kollektionsseite von USOLAB holte im September 2026 119 Klicks, mehr als jede andere Seite außer der Startseite (176). &quot;usolab&quot; war mit 31 Klicks die stärkste Suchanfrage ohne den Shopnamen.
+                            </li>
+                            <li>
+                                <strong>Doppelt so viele Fragen.</strong> Die Search Console listete im Februar 2026 2.010 verschiedene Suchanfragen, im September 2026 4.224.
+                            </li>
+                        </ol>
+                    </div>
+
+                    <h2 className="animate-up">Was ich gelernt habe</h2>
+                    <p className="animate-up">
+                        Ratgeber bringen Sichtbarkeit, Kollektionsseiten bringen Klicks. Die Artikel sorgen für viele Einblendungen bei Fragen, die Klicks kommen am zuverlässigsten dort, wo jemand eine Marke schon im Kopf hat und sie kaufen will.
+                    </p>
+                    <p className="animate-up">
+                        Und die durchschnittliche Position ist eine trügerische Zahl. Sie lag im Februar 2026 bei 11,3 und im September 2026 bei 13,7, obwohl der Shop in dieser Zeit deutlich sichtbarer wurde. Wer für doppelt so viele Suchanfragen eingeblendet wird, steht bei vielen neuen Begriffen erst einmal weiter hinten, und das drückt den Schnitt.
+                    </p>
+
+                    <div className="cs-limits animate-up">
+                        <p><strong>Ehrliche Grenzen:</strong> Die Kurven zeigen, was nach Beginn der Arbeit passiert ist, nicht zwingend warum. Saison, Nachfrage und Google-Updates sind nicht herausgerechnet. Die Sitzungen aus der organischen Suche (Google Analytics 4) stiegen schon ab Oktober 2025, also vor meinem Start, und die Klicks über den Namen dybeauty fielen von 146 im Juni auf 37 im Juli 2026. Ein Teil des Anstiegs ohne Marke kann eine Verschiebung sein. Organisch gewonnene Käufe sind mit 3 bis 12 im Monat zu wenige für eine Umsatzaussage.</p>
+                        <p>Quellen: Google Search Console und Google Analytics 4 von dybeauty.de, abgerufen am 7. Oktober 2026. Startdatum laut Changelog: 16. März 2026.</p>
                     </div>
 
                     {/* Key Takeaway */}
                     <div className="cs-takeaway animate-up">
                         <h3>Das Wichtigste</h3>
                         <p>
-                            Ein Instagram-getriebener Shop kann nicht auf SEO umschalten, ohne die Grundlagen zu legen. Rechtstexte, Produktdaten, technisches SEO und Content-Strategie müssen zusammenspielen. DYBeauty zeigt: Wenn die Infrastruktur stimmt, kommt der Traffic, und er wachst exponentiell.
+                            Ein Shop wird nicht über Nacht sichtbar. Bei DYBeauty kamen erst Rechtstexte, Sprache und Produktdaten, dann Titel und Ratgeber, und nach rund vier Monaten die Kurve: 56.651 Impressionen und 810 Klicks ohne Markennamen im September 2026.
                         </p>
                     </div>
                 </div>
@@ -225,27 +231,27 @@ export default function DybeautyCaseStudy() {
             <section className="section">
                 <div className="container">
                     <div className="section-header text-center">
-                        <p className="section-kicker animate-up">Ahnliches Projekt geplant?</p>
+                        <p className="section-kicker animate-up">Ähnliches Projekt geplant?</p>
                         <h2 className="section-title animate-up">Leistungen, die zum Einsatz kamen</h2>
                     </div>
                     <div className="subpage-features-grid animate-up">
+                        <Link href="/leistungen/e-commerce-entwicklung" className="subpage-feature" style={{ textDecoration: 'none' }}>
+                            <h3>E-Commerce</h3>
+                            <p>Shopify, Shopware, WooCommerce: Shops aufbauen, erweitern und sauber an Google anbinden.</p>
+                        </Link>
                         <Link href="/leistungen/seo" className="subpage-feature" style={{ textDecoration: 'none' }}>
-                            <h3>SEO für E-Commerce</h3>
-                            <p>Technisches SEO, Produktoptimierung und Content-Strategie für Online-Shops. Ab 1.000 &euro;/Mt.</p>
+                            <h3>SEO für Online-Shops</h3>
+                            <p>Produktdaten, Titel, Kollektionen und Ratgeber, die gefunden werden. Ab 1.000 &euro; im Monat.</p>
                         </Link>
-                        <Link href="/leistungen/website-audit" className="subpage-feature" style={{ textDecoration: 'none' }}>
-                            <h3>Website-Audit</h3>
-                            <p>Kostenlose Erstanalyse: Performance, SEO und Conversion-Potenzial Ihrer aktuellen Website.</p>
-                        </Link>
-                        <Link href="/leistungen/ai-seo" className="subpage-feature" style={{ textDecoration: 'none' }}>
-                            <h3>AI SEO</h3>
-                            <p>Sichtbarkeit in ChatGPT, Perplexity und Google AI Overviews. Werden Sie zur #1-Empfehlung.</p>
+                        <Link href="/wissen/onlineshop-kosten" className="subpage-feature" style={{ textDecoration: 'none' }}>
+                            <h3>Was kostet ein Onlineshop?</h3>
+                            <p>Preise, Plattformen und laufende Kosten im Überblick.</p>
                         </Link>
                     </div>
                 </div>
             </section>
 
-            <ServiceCta text="E-Commerce SEO für Ihren Shop? Ich analysiere Ihren Shop und zeige Ihnen, wo das größte Wachstumspotenzial liegt. Kostenlos und unverbindlich." />
+            <ServiceCta text="Ihr Shop hat gute Produkte, aber Google zeigt ihn selten? Im kostenlosen Erstgespräch schaue ich mir Ihre Produktseiten und Suchdaten an." />
         </>
     );
 }

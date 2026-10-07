@@ -1,0 +1,130 @@
+/* Case-study building blocks (Referenzen, Stand 10/2026): chart figure,
+   fun-facts box, honest-limits note. Matches site-vx.css: hairlines, square
+   corners, black accent. */
+
+.cs-chart {
+  margin: var(--space-md) 0 var(--space-lg);
+  padding: var(--space-sm) var(--space-sm) 0.75rem;
+  background: #FFFFFF;
+  border: 1px solid #EBEBEB;
+}
+
+.cs-chart-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #171717;
+  margin: 0 0 0.5rem;
+}
+
+.cs-chart img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.cs-chart-caption {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #666666;
+}
+
+.cs-metrics-grid.cs-metrics-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.cs-funfacts {
+  margin: var(--space-lg) 0;
+  padding: var(--space-md);
+  background: #FFFFFF;
+  border: 1px solid #171717;
+}
+
+.subpage-content .cs-funfacts h2 {
+  margin-top: 0;
+}
+
+.cs-funfacts ol {
+  margin: var(--space-sm) 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: fact;
+}
+
+.cs-funfacts li {
+  counter-increment: fact;
+  position: relative;
+  padding: 0.85rem 0 0.85rem 3rem;
+  border-top: 1px solid #EBEBEB;
+  line-height: 1.6;
+}
+
+.cs-funfacts li::before {
+  content: counter(fact, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 0.85rem;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: #171717;
+}
+
+.cs-limits {
+  margin: var(--space-lg) 0 0;
+  padding: var(--space-sm) var(--space-md);
+  border-left: 3px solid #171717;
+  background: #F5F5F5;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: #4D4D4D;
+}
+
+.cs-limits p {
+  margin: 0;
+}
+
+.cs-limits p + p {
+  margin-top: 0.5rem;
+}
+
+.cs-limits strong {
+  color: #171717;
+}
+
+@media (max-width: 900px) {
+  .cs-metrics-grid.cs-metrics-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .cs-chart {
+    padding: 0.75rem 0.5rem 0.6rem;
+  }
+
+  .cs-funfacts {
+    padding: var(--space-sm);
+  }
+
+  .cs-funfacts li {
+    padding-left: 2.4rem;
+  }
+}
+
+/* Scoped to the case-study story section (className cs-story) */
+.cs-story .cs-chart-title {
+  color: #171717;
+}
+
+.cs-story .subpage-body p a,
+.cs-story .cs-funfacts a {
+  color: #171717;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* site-vx.css colours all .subpage-content h3 black, which hid the
+   takeaway heading on the black box */
+.subpage-content .cs-takeaway h3 {
+  color: #FFFFFF;
+}

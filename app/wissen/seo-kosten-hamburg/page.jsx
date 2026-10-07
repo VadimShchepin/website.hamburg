@@ -34,7 +34,7 @@ export default function SeoKostenHamburgPage() {
         author: { '@type': 'Person', name: 'Vadim Shchepin', url: 'https://www.linkedin.com/in/vadim-shchepin/' },
         publisher: BUSINESS,
         datePublished: '2026-08-20',
-        dateModified: '2026-08-20',
+        dateModified: '2026-10-07',
         url: 'https://webseite.hamburg/wissen/seo-kosten-hamburg',
         image: 'https://webseite.hamburg/wissen/fotos/seo-kosten-hamburg.webp',
         inLanguage: 'de',
@@ -206,12 +206,12 @@ export default function SeoKostenHamburgPage() {
                 <h2>Was Ergebnisse konkret aussehen können</h2>
                 <p>
                     Damit die Zahlen nicht abstrakt bleiben, zwei Beispiele aus meinen Projekten. Bei
-                    {' '}<Link href="/referenzen/dybeauty">DYBeauty</Link>, einem Shopify-Shop, hat sich der Traffic
-                    innerhalb von 90 Tagen verdoppelt, nach einem SEO-Audit, 723 überarbeiteten Produktseiten und
-                    einer sauberen Merchant-Center-Anbindung. Bei
-                    {' '}<Link href="/referenzen/gl-sommer">GL Sommer</Link> aus dem Garten- und Landschaftsbau kamen
-                    728 lokale Aktionen und 1.113 Klicks pro Monat zusammen, nachdem Website und lokale Sichtbarkeit
-                    modernisiert waren.
+                    {' '}<Link href="/referenzen/dybeauty">DYBeauty</Link>, einem Shopify-Shop, stiegen die
+                    Google-Impressionen nach einem SEO-Audit und 723 überarbeiteten Produktseiten von 23.353 im
+                    Februar auf 56.651 im September 2026, der Anstieg kam allerdings erst ab Juli. Bei
+                    {' '}<Link href="/referenzen/blitz-hamburg">Blitz Hamburg</Link>, einem Entrümpelungsbetrieb,
+                    wuchsen die organischen Klicks nach dem Relaunch mit Ratgeber-Seiten von 24 im April auf 374 im
+                    September 2026. SEO braucht also Monate, nicht Wochen.
                 </p>
                 <p>
                     Beides sind keine Versprechen für Ihr Projekt, sondern Größenordnungen. Wettbewerb, Ausgangslage

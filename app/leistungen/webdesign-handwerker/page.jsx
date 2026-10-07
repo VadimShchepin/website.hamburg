@@ -10,7 +10,7 @@ import { BUSINESS } from '../../../src/lib/schema';
 const showcaseSlides = [
     {
         client: 'Blitz Hamburg',
-        note: 'Handwerksbetrieb für Entrümpelung und Sanierung, ROI in 7 Wochen',
+        note: 'Entrümpelung und Sanierung, organische Google-Klicks 24 (April) auf 374 (September 2026)',
         url: 'blitz-hamburg.de/entruempelung',
         href: '/referenzen/blitz-hamburg',
         desktop: '/leistungen/branchen/handwerker/web-blitz2.webp',
@@ -19,7 +19,7 @@ const showcaseSlides = [
     },
     {
         client: 'GL Sommer GmbH',
-        note: 'Garten- und Landschaftsbau, 728 lokale Aktionen pro Monat',
+        note: 'Garten- und Landschaftsbau, Website modernisiert und Google Ads umgebaut',
         url: 'gl-sommer.de',
         href: '/referenzen/gl-sommer',
         desktop: '/leistungen/branchen/handwerker/web-sommer.webp',
@@ -181,11 +181,11 @@ export default function WebdesignHandwerkerPage() {
                     </div>
 
                     <h2 className="animate-up">Referenz: Blitz Hamburg</h2>
-                    <p className="animate-up">Blitz Hamburg ist ein Handwerksbetrieb für Entrümpelung in Hamburg. Nach dem Website-Relaunch stiegen die Online-Anfragen deutlich, bei stabiler Auftragslage über Monate.</p>
+                    <p className="animate-up">Blitz Hamburg ist ein Handwerksbetrieb für Entrümpelung in Hamburg. Nach dem Relaunch im Mai 2026 stiegen die organischen Google-Klicks von 24 im April auf 374 im September 2026 (Google Search Console).</p>
                     <ul className="check-list animate-up">
-                        <li>5.000+ Impressionen in den ersten 3 Monaten</li>
+                        <li>75.263 Google-Impressionen im September 2026, nach 2.652 im April</li>
                         <li>Lighthouse-Score 99/100</li>
-                        <li>Stabile Auftragslage durch kontinuierliche Online-Anfragen</li>
+                        <li>87 Klicks auf Anruf, WhatsApp und E-Mail im September 2026 (Umami, Untergrenze)</li>
                     </ul>
                     <p className="animate-up">
                         <Link href="/referenzen/blitz-hamburg" className="cta-link">Zur Referenz: Blitz Hamburg &rarr;</Link>

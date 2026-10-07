@@ -160,7 +160,7 @@ export default function ConversionOptimierungPage() {
                     </div>
 
                     <h2 className="animate-up">Belege aus eigenen Projekten</h2>
-                    <p className="animate-up">Statt allgemeiner Versprechen zwei nachrechenbare Fälle aus der eigenen Arbeit: eine Fotogalerie, die von mehreren Sekunden auf unter eine Sekunde kam, nachzulesen in der <a href="/wissen/case-study-fotogalerie-performance">Case Study zur Galerie-Performance</a>, und ein Shop, dessen organischer Traffic sich in 90 Tagen verdoppelt hat, dokumentiert unter <a href="/referenzen/dybeauty">DYBeauty</a>. Wenn Sie tiefer einsteigen wollen, erklärt der Beitrag <a href="/wissen/website-conversion-optimierung">mehr Anfragen ohne mehr Traffic</a> die Denkweise dahinter.</p>
+                    <p className="animate-up">Statt allgemeiner Versprechen zwei nachrechenbare Fälle aus der eigenen Arbeit: eine Fotogalerie, die von mehreren Sekunden auf unter eine Sekunde kam, nachzulesen in der <a href="/wissen/case-study-fotogalerie-performance">Case Study zur Galerie-Performance</a>, und ein Shop, dessen Google-Impressionen von 23.353 im Februar auf 56.651 im September 2026 stiegen, dokumentiert unter <a href="/referenzen/dybeauty">DYBeauty</a>. Wenn Sie tiefer einsteigen wollen, erklärt der Beitrag <a href="/wissen/website-conversion-optimierung">mehr Anfragen ohne mehr Traffic</a> die Denkweise dahinter.</p>
                 </div>
             </section>
 

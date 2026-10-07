@@ -1291,3 +1291,41 @@ input:focus,select:focus,textarea:focus{
 .center{ text-align:center; }
 .maxw-60{ max-width:60ch; }
 .sr{ position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+
+/* Uebernommen aus dem WordPress-Theme (hejzel-wp, Commit ed9b1b3, 07.10.2026):
+   Gruppenliste und 'Fuer wen wir ausserdem arbeiten' springen beim Ueberfahren nicht mehr. */
+/* ------------------------------------------- client group list (hover) */
+/* In the draft the round photo grew from 0 to 40px inside the row on hover.
+   That narrowed the text, long names re-wrapped and the row jumped by a
+   line. Now hover never changes layout: the photo sits on its own layer,
+   the name slides into space that is always reserved for it (transform, no
+   re-wrap), and every row keeps its height. */
+@media (hover:hover){
+  .glist-links.has-thumbs a,
+  .glist-links.has-thumbs a:hover{ position:relative; padding-left:.2rem; }
+  .glist-links.has-thumbs a > span:not(.gl-thumb){
+    flex:1; min-width:0; padding-right:3.2rem; margin-right:-3.2rem;
+    transition:transform .35s var(--ease), color .25s var(--ease);
+  }
+  .glist-links.has-thumbs .gl-arw{ position:relative; z-index:1; }
+  .glist-links.has-thumbs .gl-thumb{
+    position:absolute; left:.2rem; top:50%; margin:0;
+    width:40px; height:40px;
+    transform:translateY(-50%) scale(.6); opacity:0;
+    transition:opacity .25s var(--ease), transform .35s var(--ease);
+  }
+  .glist-links.has-thumbs a:hover > span:not(.gl-thumb),
+  .glist-links.has-thumbs a:focus-visible > span:not(.gl-thumb){ transform:translateX(3.2rem); }
+  .glist-links.has-thumbs a:hover .gl-thumb,
+  .glist-links.has-thumbs a:focus-visible .gl-thumb{ width:40px; margin:0; opacity:1; transform:translateY(-50%) scale(1); }
+}
+@media (hover:hover) and (prefers-reduced-motion: reduce){
+  .glist-links.has-thumbs a > span:not(.gl-thumb),.glist-links.has-thumbs .gl-thumb{ transition:none; }
+}
+
+/* Related groups below a group page: same idea, the row stays put and
+   only its content slides. */
+.relcard,.relcard:hover{ padding-left:.2rem; }
+.relcard > *{ transition:transform .25s var(--ease); }
+.relcard:hover > .relcard-orb,.relcard:hover > .relcard-body{ transform:translateX(.3rem); }
+@media (prefers-reduced-motion: reduce){ .relcard > *{ transition:none; } }

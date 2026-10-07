@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { FaqItem } from './FaqSection';
 import VxCta from './VxCta';
@@ -38,6 +38,9 @@ const overview = [
 const services = [
     {
         id: 'webdesign',
+        num: '01',
+        image: '/leistungen/fotos/webdesign-illu.webp',
+        imageAlt: 'Illustration: Browserfenster und Smartphone mit derselben responsiven Website, roter Anfrage-Button',
         kicker: 'Webdesign & Entwicklung',
         title: 'Eine Website, die für Sie arbeitet, nicht nur existiert.',
         intro: 'Ihre Website ist Ihr wichtigster Vertriebsmitarbeiter. Sie arbeitet 24/7, empfängt jeden Besucher und entscheidet in Sekunden, ob aus Interesse eine Anfrage wird. Ich baue Websites, die genau das tun: schnell, klar strukturiert und auf Conversion optimiert.',
@@ -94,6 +97,9 @@ const services = [
     },
     {
         id: 'seo',
+        num: '02',
+        image: '/leistungen/fotos/seo-illu.webp',
+        imageAlt: 'Illustration: Lupe über einem Stapel Suchergebnisse, daneben eine Stadtkarte mit rotem Standort-Pin',
         kicker: 'SEO & Lokale Sichtbarkeit',
         title: 'SEO in Hamburg: gefunden werden, wenn Ihre Kunden suchen.',
         intro: 'Wer einen Dienstleister braucht, sucht zuerst bei Google, oft vom Smartphone und oft mit dem Ortsnamen. Taucht Ihr Unternehmen dort nicht auf, bekommt die Anfrage jemand anderes. Lokale SEO sorgt dafür, dass Sie erscheinen, wenn jemand in Ihrer Region nach Ihrer Leistung sucht: in der Trefferliste und auf der Karte.',
@@ -123,6 +129,9 @@ const services = [
     },
     {
         id: 'ai-seo',
+        num: '03',
+        image: '/leistungen/fotos/ai-seo.webp',
+        imageAlt: 'Illustration: verbundene Antwortkarten einer KI-Suche',
         kicker: 'AI SEO',
         title: 'Sichtbar in ChatGPT, Perplexity und AI-Suche.',
         intro: 'Die Art, wie Menschen suchen, verändert sich. Immer mehr Nutzer stellen ihre Fragen an ChatGPT, Perplexity oder Google AI Overviews statt klassisch zu googeln. Wenn Ihre Website dort nicht als Quelle auftaucht, verlieren Sie einen wachsenden Kanal.',
@@ -163,6 +172,9 @@ const services = [
     },
     {
         id: 'ads',
+        num: '04',
+        image: '/leistungen/fotos/google-ads.webp',
+        imageAlt: 'Illustration: gestapelte Anzeigenzeilen mit hervorgehobener roter Anzeige, Tacho und Münzen',
         kicker: 'Google & Local Ads',
         title: 'Google Ads: sofort sichtbar, sofort Anfragen.',
         intro: 'SEO braucht Zeit. Ads liefern sofort. Ich schalte Google Ads und Local Services Ads, die genau die Menschen erreichen, die gerade aktiv nach Ihrer Dienstleistung suchen. Jeder Euro wird getrackt. Sie sehen genau, was er bringt.',
@@ -198,6 +210,9 @@ const services = [
     },
     {
         id: 'chatgpt-ads',
+        num: '05',
+        image: '/leistungen/fotos/chatgpt-ads-anzeige.webp',
+        imageAlt: 'Illustration: Chat-Antwortkarte mit darunterliegender roter Anzeige und Mauszeiger',
         kicker: 'Neu: ChatGPT Ads',
         title: 'Werbung in ChatGPT, bevor es teuer wird.',
         intro: (
@@ -236,6 +251,9 @@ const services = [
     },
     {
         id: 'audit',
+        num: '06',
+        image: '/leistungen/fotos/website-audit.webp',
+        imageAlt: 'Illustration: Lupe über einer Website, daneben Tacho und Checkliste',
         kicker: 'Website-Audit',
         title: 'Kostenloses Website-Audit: wissen, wo Sie stehen.',
         intro: 'Bevor wir über Lösungen sprechen, analysiere ich Ihre aktuelle Situation. Was funktioniert? Was kostet Sie Kunden? Wo liegt das größte Potenzial? Das Audit ist kostenlos, ehrlich und konkret, mit klaren Handlungsempfehlungen, die Sie auch ohne mich umsetzen können.',
@@ -313,16 +331,19 @@ const faqs = [
     { q: 'Warum sollte ich nicht einfach eine günstigere Agentur nehmen?', a: 'Können Sie. Aber fragen Sie vorher: Bekommen Sie Zugang zu allen Daten? Arbeiten die weiter, wenn Ergebnisse ausbleiben? Ist der Code individuell oder ein Template? Sie zahlen bei mir nicht für Overhead, sondern für Ergebnisse und direkte Kommunikation ohne Umwege.' },
 ];
 
-function ServiceSection({ s }) {
+function ServiceSection({ s, index }) {
     return (
-        <section id={s.id} className="lx-service">
+        <section id={s.id} className={`lx-service${index % 2 ? ' is-alt' : ''}`}>
             <div className="vx-wrap">
                 <div className="lx-service-head">
-                    <div>
-                        <p className="vx-label">{s.kicker}</p>
+                    <div className="lx-service-title">
+                        <p className="lx-service-kicker"><span>{s.num}</span>{s.kicker}</p>
                         <h2>{s.title}</h2>
+                        <p className="lx-service-intro">{s.intro}</p>
                     </div>
-                    <p className="lx-service-intro">{s.intro}</p>
+                    <div className="lx-service-media">
+                        <img src={s.image} alt={s.imageAlt} width="1800" height="760" loading="lazy" decoding="async" />
+                    </div>
                 </div>
 
                 <div className={`lx-tiers lx-tiers-${s.tiers.length}`}>
@@ -337,9 +358,13 @@ function ServiceSection({ s }) {
                         </div>
                     ))}
                 </div>
-                {s.notes.map((n) => <p key={n} className="lx-note">{n}</p>)}
+                {s.notes.length > 0 && (
+                    <div className="lx-notes">
+                        {s.notes.map((n) => <p key={n}>{n}</p>)}
+                    </div>
+                )}
 
-                <div className="lx-details">
+                <div className={`lx-details${s.box ? ' has-box' : ''}`}>
                     <div>
                         <h3>{s.benefitsTitle}</h3>
                         <ul className="lx-benefits">
@@ -352,17 +377,18 @@ function ServiceSection({ s }) {
                             <p>{s.box.text}</p>
                         </div>
                     )}
-                    {s.steps && (
-                        <div>
-                            <h3>Wie es abläuft</h3>
-                            <ol className="lx-steps">
-                                {s.steps.map((st) => (
-                                    <li key={st.title}><strong>{st.title}</strong> {st.text}</li>
-                                ))}
-                            </ol>
-                        </div>
-                    )}
                 </div>
+
+                {s.steps && (
+                    <div className="lx-steps-wrap">
+                        <h3>Wie es abläuft</h3>
+                        <ol className="lx-steps">
+                            {s.steps.map((st) => (
+                                <li key={st.title}><strong>{st.title}</strong><span>{st.text}</span></li>
+                            ))}
+                        </ol>
+                    </div>
+                )}
 
                 {s.branches && (
                     <div className="lx-branches">
@@ -374,6 +400,33 @@ function ServiceSection({ s }) {
                 )}
             </div>
         </section>
+    );
+}
+
+// Sticky in-page navigation; highlights the section in view.
+function ServiceNav() {
+    const [active, setActive] = useState('');
+
+    useEffect(() => {
+        const sections = overview.map((o) => document.getElementById(o.id)).filter(Boolean);
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((e) => { if (e.isIntersecting) setActive(e.target.id); });
+            },
+            { rootMargin: '-40% 0px -55% 0px' },
+        );
+        sections.forEach((el) => observer.observe(el));
+        return () => observer.disconnect();
+    }, []);
+
+    return (
+        <nav className="lx-subnav" aria-label="Leistungen">
+            <div className="vx-wrap">
+                {overview.map((o) => (
+                    <a key={o.id} href={`#${o.id}`} className={active === o.id ? 'is-active' : ''}>{o.title}</a>
+                ))}
+            </div>
+        </nav>
     );
 }
 
@@ -412,7 +465,8 @@ export default function ServicesPageClient() {
                 </div>
             </section>
 
-            {services.map((s) => <ServiceSection key={s.id} s={s} />)}
+            <ServiceNav />
+            {services.map((s, i) => <ServiceSection key={s.id} s={s} index={i} />)}
 
             {/* Promise */}
             <section className="lx-promise">

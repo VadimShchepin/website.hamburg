@@ -891,77 +891,82 @@ body .vx .vx-service h3 {
 }
 
 /* ==========================================================================
-   Leistungen (/leistungen): prices on the first screen, one clear
-   structure per service. Prefix lx-.
+   Leistungen (/leistungen). Prefix lx-. Type scale: h1 56, h2 44, tier
+   price 40, h3 20, body 17, small 14. Body copy #3D3D3D (not light gray)
+   so the hierarchy reads by size and weight, not by faint colour.
    ========================================================================== */
+.lx {
+  --lx-text: #3D3D3D;
+}
+
+/* Hero + prices at a glance */
 .lx-hero {
-  padding: 56px 0 72px;
+  padding: 64px 0 72px;
 }
 
 .lx-hero-head {
   display: grid;
   grid-template-columns: 7fr 5fr;
-  gap: 48px;
+  gap: 56px;
   align-items: end;
-  margin-bottom: 40px;
+  margin-bottom: 48px;
 }
 
 .vx .lx-hero h1 {
-  font-size: 52px;
+  font-size: 56px;
   line-height: 1.02;
   max-width: 15ch;
   margin: 0;
 }
 
 .lx-hero-side p {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.6;
-  color: var(--vx-muted);
-  margin: 0 0 20px;
+  color: var(--lx-text);
+  margin: 0 0 24px;
 }
 
-/* Prices at a glance: 6 hairline cells */
 .lx-overview {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  border: 1px solid var(--vx-line);
-  background: var(--vx-card);
+  gap: 12px;
 }
 
 .lx-overview-cell {
   display: flex;
   flex-direction: column;
   gap: 6px;
-  padding: 22px 20px;
-  border-left: 1px solid var(--vx-line);
+  padding: 22px 20px 18px;
+  background: var(--vx-card);
+  border: 1px solid var(--vx-line);
   color: var(--vx-fg);
-  transition: background 0.15s ease;
-}
-
-.lx-overview-cell:first-child {
-  border-left: 0;
+  transition: border-color 0.15s ease, transform 0.15s ease;
 }
 
 .lx-overview-cell:hover {
-  background: #F7F7F7;
+  border-color: var(--vx-fg);
+  transform: translateY(-2px);
 }
 
 .lx-overview-title {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--vx-muted);
 }
 
 .lx-overview-cell strong {
   font-family: var(--font-vx-display), var(--vx-font), sans-serif;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 24px;
   letter-spacing: -0.03em;
   line-height: 1.1;
 }
 
 .lx-overview-note {
-  font-size: 13px;
-  color: var(--vx-muted);
+  font-size: 14px;
+  color: var(--lx-text);
   flex: 1;
 }
 
@@ -970,43 +975,118 @@ body .vx .vx-service h3 {
   align-items: center;
   gap: 6px;
   font-size: 13px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* Sticky in-page nav */
+.lx-subnav {
+  position: sticky;
+  top: 57px; /* header height */
+  z-index: 90;
+  background: rgba(250, 250, 250, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid var(--vx-line);
+  border-bottom: 1px solid var(--vx-line);
+}
+
+.lx-subnav .vx-wrap {
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.lx-subnav a {
+  flex: 0 0 auto;
+  padding: 14px 14px;
+  font-size: 14px;
   font-weight: 500;
-  margin-top: 8px;
+  color: var(--vx-muted);
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  transition: color 0.15s ease;
+}
+
+.lx-subnav a:hover {
+  color: var(--vx-fg);
+}
+
+.lx-subnav a.is-active {
+  color: var(--vx-fg);
+  border-bottom-color: var(--vx-fg);
 }
 
 /* One service */
 .lx-service {
-  border-top: 1px solid var(--vx-line);
-  padding: 88px 0;
-  scroll-margin-top: 70px;
+  padding: 104px 0;
+  scroll-margin-top: 110px;
+  background: var(--vx-bg);
+}
+
+.lx-service.is-alt {
+  background: #FFFFFF;
 }
 
 .lx-service-head {
   display: grid;
-  grid-template-columns: 7fr 5fr;
-  gap: 48px;
-  align-items: end;
-  margin-bottom: 36px;
+  grid-template-columns: 6fr 6fr;
+  gap: 56px;
+  align-items: center;
+  margin-bottom: 56px;
+}
+
+.lx-service-kicker {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--vx-fg);
+  margin: 0 0 18px;
+}
+
+.lx-service-kicker span {
+  font-family: var(--font-vx-display), var(--vx-font), sans-serif;
+  font-size: 15px;
+  color: var(--vx-brand-red, #E53935);
+  letter-spacing: 0;
 }
 
 .vx .lx-service-head h2 {
-  font-size: 40px;
-  line-height: 1.05;
-  max-width: 18ch;
-  margin: 0;
+  font-size: 44px;
+  line-height: 1.04;
+  max-width: 17ch;
+  margin: 0 0 22px;
 }
 
 .lx-service-intro {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
-  color: var(--vx-muted);
+  color: var(--lx-text);
   margin: 0;
+  max-width: 34em;
 }
 
+.lx-service-media {
+  border: 1px solid var(--vx-line);
+  overflow: hidden;
+  background: #0A192F;
+}
+
+.lx-service-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Price tiers: separate cards, the price is the loudest thing */
 .lx-tiers {
   display: grid;
-  border: 1px solid var(--vx-line);
-  background: var(--vx-card);
+  gap: 16px;
 }
 
 .lx-tiers-1 { grid-template-columns: 1fr; }
@@ -1014,205 +1094,277 @@ body .vx .vx-service h3 {
 .lx-tiers-3 { grid-template-columns: 1fr 1fr 1fr; }
 
 .lx-tier {
-  padding: 28px;
-  border-left: 1px solid var(--vx-line);
+  padding: 32px;
+  background: var(--vx-card);
+  border: 1px solid var(--vx-line);
 }
 
-.lx-tier:first-child {
-  border-left: 0;
+.lx-service.is-alt .lx-tier {
+  background: var(--vx-bg);
 }
 
 .lx-tiers-1 .lx-tier {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 48px;
+  column-gap: 56px;
 }
 
 .lx-tiers-1 .lx-tier ul {
   grid-column: 2;
   grid-row: 1 / span 3;
   align-self: center;
+  border-top: 0;
+  padding-top: 0;
 }
 
 .lx-tier-label {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
-  margin: 0 0 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--vx-muted);
+  margin: 0 0 10px;
 }
 
 .lx-tier-price {
   font-family: var(--font-vx-display), var(--vx-font), sans-serif;
-  font-size: 34px;
-  letter-spacing: -0.03em;
-  line-height: 1.05;
-  margin: 0 0 12px;
+  font-size: 40px;
+  letter-spacing: -0.035em;
+  line-height: 1;
+  color: var(--vx-fg);
+  margin: 0 0 16px;
 }
 
 .lx-tier-desc {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.55;
-  color: var(--vx-muted);
-  margin: 0 0 18px;
+  color: var(--lx-text);
+  margin: 0 0 22px;
 }
 
-.lx-tier ul,
+.lx-tier ul {
+  list-style: none;
+  margin: 0;
+  padding: 20px 0 0;
+  border-top: 1px solid var(--vx-line);
+}
+
 .lx-benefits {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .lx-tier li,
 .lx-benefits li {
   position: relative;
-  padding: 7px 0 7px 22px;
-  font-size: 14px;
+  padding: 5px 0 5px 26px;
+  font-size: 15px;
   line-height: 1.45;
-  border-top: 1px solid var(--vx-line);
+  color: var(--vx-fg);
 }
 
 .lx-tier li::before,
 .lx-benefits li::before {
   content: '';
   position: absolute;
-  left: 2px;
-  top: 13px;
-  width: 9px;
+  left: 3px;
+  top: 12px;
+  width: 10px;
   height: 5px;
-  border-left: 1.5px solid var(--vx-fg);
-  border-bottom: 1.5px solid var(--vx-fg);
+  border-left: 2px solid var(--vx-fg);
+  border-bottom: 2px solid var(--vx-fg);
   transform: rotate(-45deg);
 }
 
-.lx-note {
-  font-size: 13px;
-  color: var(--vx-muted);
-  margin: 12px 0 0;
-  max-width: 820px;
+.lx-notes {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 16px;
+  padding-left: 14px;
+  border-left: 2px solid var(--vx-line);
 }
 
+.lx-notes p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--vx-muted);
+  margin: 0;
+  max-width: 860px;
+}
+
+/* What you get + dark info panel */
 .lx-details {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
-  margin-top: 48px;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  margin-top: 64px;
+}
+
+.lx-details.has-box {
+  grid-template-columns: 7fr 5fr;
+  gap: 56px;
+  align-items: start;
 }
 
 .vx .lx-details h3,
+.vx .lx-steps-wrap h3,
 .vx .lx-branches h3 {
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 12px;
+  font-family: var(--vx-font), sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 0 0 18px;
+}
+
+.lx-benefits {
+  columns: 2;
+  column-gap: 40px;
+}
+
+.lx-details.has-box .lx-benefits {
+  columns: 1;
+}
+
+.lx-benefits li {
+  break-inside: avoid;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.lx-benefits li::before {
+  top: 14px;
 }
 
 .lx-box {
-  background: var(--vx-card);
-  border: 1px solid var(--vx-line);
-  padding: 24px 28px;
-  align-self: start;
+  background: #0A192F;
+  color: #FFFFFF;
+  padding: 32px;
+}
+
+.vx .lx-box h3 {
+  color: #FFFFFF;
 }
 
 .lx-box p {
-  font-size: 14px;
-  line-height: 1.6;
-  color: var(--vx-muted);
+  font-size: 16px;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.82);
   margin: 0;
+}
+
+/* Process: horizontal numbered row */
+.lx-steps-wrap {
+  margin-top: 64px;
 }
 
 .lx-steps {
   list-style: none;
   counter-reset: step;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
   padding: 0;
   margin: 0;
 }
 
 .lx-steps li {
   counter-increment: step;
-  position: relative;
-  padding: 10px 0 10px 40px;
-  font-size: 14px;
-  line-height: 1.5;
-  color: var(--vx-muted);
-  border-top: 1px solid var(--vx-line);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 24px;
+  background: var(--vx-card);
+  border: 1px solid var(--vx-line);
+}
+
+.lx-service.is-alt .lx-steps li {
+  background: var(--vx-bg);
 }
 
 .lx-steps li::before {
   content: counter(step, decimal-leading-zero);
-  position: absolute;
-  left: 0;
-  top: 10px;
-  font-weight: 600;
+  font-family: var(--font-vx-display), var(--vx-font), sans-serif;
+  font-size: 28px;
+  line-height: 1;
   color: var(--vx-fg);
+  margin-bottom: 10px;
 }
 
 .lx-steps strong {
+  font-size: 16px;
+  font-weight: 700;
   color: var(--vx-fg);
-  font-weight: 600;
+}
+
+.lx-steps span {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--lx-text);
 }
 
 .lx-branches {
-  margin-top: 40px;
+  margin-top: 56px;
 }
 
 .lx-branches .vx-btn {
-  height: 38px;
-  font-size: 14px;
+  height: 40px;
+  font-size: 15px;
 }
 
-/* Promise: light hairline grid instead of the navy block */
+/* Promise */
 .lx-promise {
   border-top: 1px solid var(--vx-line);
-  padding: 88px 0;
+  padding: 104px 0;
 }
 
 .vx .lx-promise h2 {
-  font-size: 40px;
-  margin-bottom: 32px;
+  font-size: 44px;
+  margin-bottom: 40px;
 }
 
 .lx-promise-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  border: 1px solid var(--vx-line);
-  background: var(--vx-card);
+  gap: 16px;
 }
 
 .lx-promise-grid > div {
-  padding: 28px;
-  border-left: 1px solid var(--vx-line);
-}
-
-.lx-promise-grid > div:first-child {
-  border-left: 0;
+  padding: 32px;
+  background: var(--vx-card);
+  border: 1px solid var(--vx-line);
 }
 
 .lx-promise-num {
   display: block;
-  font-size: 13px;
-  color: var(--vx-faint);
-  margin-bottom: 16px;
+  font-family: var(--font-vx-display), var(--vx-font), sans-serif;
+  font-size: 28px;
+  line-height: 1;
+  color: var(--vx-fg);
+  margin-bottom: 20px;
 }
 
 .vx .lx-promise h3 {
-  font-size: 18px;
-  margin-bottom: 8px;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .lx-promise p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.6;
-  color: var(--vx-muted);
+  color: var(--lx-text);
   margin: 0;
 }
 
 /* Articles */
 .lx-articles {
   border-top: 1px solid var(--vx-line);
-  padding: 88px 0;
+  padding: 104px 0;
 }
 
 .vx .lx-articles h2 {
-  font-size: 40px;
+  font-size: 44px;
 }
 
 .lx-article-grid {
@@ -1228,7 +1380,7 @@ body .vx .vx-service h3 {
 .lx-article-img {
   border: 1px solid var(--vx-line);
   overflow: hidden;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 .lx-article-img img {
@@ -1247,32 +1399,26 @@ body .vx .vx-service h3 {
 }
 
 .vx .lx-article h3 {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.35;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 .lx-article-excerpt {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.5;
-  color: var(--vx-muted);
+  color: var(--lx-text);
   margin: 0;
 }
 
+/* Responsive */
 @media (max-width: 1100px) {
   .lx-overview {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .lx-overview-cell:nth-child(4) {
-    border-left: 0;
-  }
-
-  .lx-overview-cell:nth-child(n + 4) {
-    border-top: 1px solid var(--vx-line);
-  }
-
-  .lx-article-grid {
+  .lx-article-grid,
+  .lx-steps {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -1280,9 +1426,9 @@ body .vx .vx-service h3 {
 @media (max-width: 900px) {
   .lx-hero-head,
   .lx-service-head,
-  .lx-details {
+  .lx-details.has-box {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 28px;
   }
 
   .lx-tiers-2,
@@ -1291,18 +1437,17 @@ body .vx .vx-service h3 {
     grid-template-columns: 1fr;
   }
 
-  .lx-tier,
-  .lx-promise-grid > div {
-    border-left: 0;
-  }
-
-  .lx-tier + .lx-tier,
-  .lx-promise-grid > div + div {
-    border-top: 1px solid var(--vx-line);
-  }
-
   .lx-tiers-1 .lx-tier {
     display: block;
+  }
+
+  .lx-tiers-1 .lx-tier ul {
+    border-top: 1px solid var(--vx-line);
+    padding-top: 20px;
+  }
+
+  .lx-benefits {
+    columns: 1;
   }
 }
 
@@ -1315,57 +1460,6 @@ body .vx .vx-service h3 {
     font-size: 36px;
   }
 
-  .lx-overview {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .lx-overview-cell {
-    padding: 16px 14px;
-  }
-
-  .lx-overview-cell:nth-child(odd) {
-    border-left: 0;
-  }
-
-  .lx-overview-cell:nth-child(4) {
-    border-left: 1px solid var(--vx-line);
-  }
-
-  .lx-overview-cell:nth-child(n + 3) {
-    border-top: 1px solid var(--vx-line);
-  }
-
-  .lx-overview-cell strong {
-    font-size: 19px;
-  }
-
-  .lx-overview-more {
-    display: none;
-  }
-
-  .lx-service,
-  .lx-promise,
-  .lx-articles {
-    padding: 56px 0;
-  }
-
-  .vx .lx-service-head h2,
-  .vx .lx-promise h2,
-  .vx .lx-articles h2 {
-    font-size: 28px;
-  }
-
-  .lx-tier-price {
-    font-size: 28px;
-  }
-
-  .lx-article-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Phones: prices straight under the headline, intro text after them */
-@media (max-width: 768px) {
   .lx-hero .vx-wrap {
     display: flex;
     flex-direction: column;
@@ -1382,10 +1476,64 @@ body .vx .vx-service h3 {
 
   .lx-overview {
     order: 2;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
   }
 
   .lx-hero-side {
     order: 3;
     margin-top: 28px;
+  }
+
+  .lx-overview-cell {
+    padding: 16px 14px;
+  }
+
+  .lx-overview-cell strong {
+    font-size: 20px;
+  }
+
+  .lx-overview-more {
+    display: none;
+  }
+
+  .lx-service,
+  .lx-promise,
+  .lx-articles {
+    padding: 64px 0;
+  }
+
+  .lx-service-head {
+    margin-bottom: 36px;
+  }
+
+  .vx .lx-service-head h2,
+  .vx .lx-promise h2,
+  .vx .lx-articles h2 {
+    font-size: 30px;
+  }
+
+  .lx-service-intro {
+    font-size: 17px;
+  }
+
+  .lx-tier,
+  .lx-box,
+  .lx-promise-grid > div {
+    padding: 24px;
+  }
+
+  .lx-tier-price {
+    font-size: 34px;
+  }
+
+  .lx-details,
+  .lx-steps-wrap {
+    margin-top: 44px;
+  }
+
+  .lx-steps,
+  .lx-article-grid {
+    grid-template-columns: 1fr;
   }
 }

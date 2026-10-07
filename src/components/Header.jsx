@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { geist } from '../lib/fonts';
+import { vxFontVars } from '../lib/fonts';
 
 const PHONE_ICON = (
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
@@ -31,7 +31,7 @@ export default function Header() {
     const closeMenu = () => setMenuOpen(false);
 
     return (
-        <header className={`site-header${scrolled ? ' header-scrolled' : ''}${isHome ? ` header-vx ${geist.variable}` : ''}`}>
+        <header className={`site-header${scrolled ? ' header-scrolled' : ''}${isHome ? ` header-vx ${vxFontVars}` : ''}`}>
             <div className="container header-container">
                 <Link href="/" className="logo" aria-label="AISEO Home">
                     <img src="/logo_blue.webp" alt="AISEO Logo" width="100" height="86" />

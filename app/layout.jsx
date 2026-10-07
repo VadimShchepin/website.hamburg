@@ -1,25 +1,12 @@
 import Script from 'next/script';
-import { Goldman, Inter } from 'next/font/google';
 import Header from '../src/components/Header';
 import Footer from '../src/components/Footer';
 import AnimateOnScroll from '../src/components/AnimateOnScroll';
 import CursorFollowerWrapper from '../src/components/CursorFollowerWrapper';
 import CookieConsent from '../src/components/CookieConsent';
+import { vxFontVars } from '../src/lib/fonts';
 import '../src/index.css';
-
-const goldman = Goldman({
-    subsets: ['latin'],
-    weight: ['400', '700'],
-    display: 'swap',
-    variable: '--font-goldman',
-});
-
-const inter = Inter({
-    subsets: ['latin'],
-    weight: ['400', '700'],
-    display: 'swap',
-    variable: '--font-inter',
-});
+import '../src/styles/site-vx.css';
 
 const SITE_URL = 'https://webseite.hamburg';
 
@@ -108,7 +95,7 @@ const organizationJsonLd = {
 
 export default function RootLayout({ children }) {
     return (
-        <html lang="de" className={`${goldman.variable} ${inter.variable}`}>
+        <html lang="de" className={vxFontVars}>
             <head>
                 <Script
                     defer

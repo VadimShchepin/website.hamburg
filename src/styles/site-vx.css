@@ -1,0 +1,310 @@
+/* ==========================================================================
+   Site-wide redesign layer (2026). Loaded after index.css in layout.jsx.
+   Fonts: Archivo (text) + Archivo Black (headlines) via src/lib/fonts.js.
+   ========================================================================== */
+:root {
+  --vx-font: var(--font-vx);
+  /* small labels/h3 that used Goldman get bold Archivo; big titles get
+     Archivo Black explicitly below */
+  --font-heading: var(--font-vx), system-ui, sans-serif;
+  --font-body: var(--font-vx), system-ui, sans-serif;
+  --font-display: var(--font-vx-display), var(--font-vx), sans-serif;
+
+  --color-primary: #171717;
+  --color-primary-light: #383838;
+  --color-primary-dark: #0A0A0A;
+  --color-text-main: #171717;
+  --color-text-muted: #666666;
+  --color-bg-lightgray: #F5F5F5;
+  --color-bg-gray2: #EBEBEB;
+  --frame-border: 1px solid #EBEBEB;
+}
+
+body {
+  background-color: #FAFAFA;
+  color: #171717;
+}
+
+/* Typography: no more all-caps shouting */
+h1, h2, h3, h4,
+.hero-title,
+.section-title,
+.subpage-title {
+  text-transform: none;
+  color: #171717;
+}
+
+h1, h2,
+.hero-title,
+.section-title,
+.subpage-title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+
+h3, h4 {
+  font-family: var(--font-body);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.section-title {
+  font-size: clamp(2rem, 3.6vw, 2.9rem);
+}
+
+.subpage-title {
+  font-size: clamp(2.3rem, 4.4vw, 3.6rem);
+}
+
+.section-kicker {
+  font-weight: 500;
+  font-size: 0.85rem;
+  text-transform: none;
+  letter-spacing: 0;
+  color: #8F8F8F;
+}
+
+/* Dark sections keep the navy brand colour */
+.dark-blue-bg {
+  background-color: #0A192F;
+}
+
+.dark-blue-bg :is(h1, h2, h3, h4, .section-title) {
+  color: #FFFFFF;
+}
+
+/* Buttons: flat, square, sentence case */
+.button {
+  font-family: var(--font-body);
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 15px;
+  padding: 0.8rem 1.4rem;
+  border: 1px solid #171717;
+  color: #171717;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.button::before {
+  display: none;
+}
+
+.button:hover {
+  background: #F2F2F2;
+  color: #171717;
+}
+
+.button-primary {
+  background: #171717;
+  color: #FFFFFF;
+}
+
+.button-primary:hover {
+  background: #383838;
+  color: #FFFFFF;
+}
+
+.button-large {
+  font-size: 16px;
+  padding: 0.95rem 1.6rem;
+}
+
+.button-sm {
+  font-size: 14px;
+  padding: 0.5rem 1rem;
+}
+
+.dark-blue-bg .button:not(.button-primary) {
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #FFFFFF;
+}
+
+.dark-blue-bg .button-primary {
+  background: #FFFFFF;
+  border-color: #FFFFFF;
+  color: #171717;
+}
+
+/* Cards and boxes: hairlines instead of navy frames */
+.subpage-feature:hover {
+  border-color: #CFCFCF;
+}
+
+
+/* Header (light, every page) */
+.header-vx {
+  background: rgba(250, 250, 250, 0.9);
+  border-bottom-color: transparent;
+  font-family: var(--vx-font), system-ui, sans-serif;
+}
+
+.header-vx.header-scrolled {
+  box-shadow: none;
+  border-bottom-color: #EBEBEB;
+}
+
+.header-vx .header-container {
+  max-width: 1400px;
+  padding: 0 24px;
+}
+
+.header-vx .logo img {
+  height: 44px;
+  mix-blend-mode: multiply;
+}
+
+.header-vx .main-nav {
+  gap: 28px;
+}
+
+.header-vx .main-nav a {
+  font-family: inherit;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 14px;
+  color: #4D4D4D;
+}
+
+.header-vx .main-nav a:hover:not(.button) {
+  color: #171717;
+}
+
+.header-vx .main-nav a.header-phone {
+  color: #171717;
+}
+
+.header-vx .main-nav .button {
+  font-family: inherit;
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 0 14px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  background: #171717;
+  border-color: #171717;
+  color: #FFFFFF;
+}
+
+.header-vx .main-nav .button::before {
+  display: none;
+}
+
+.header-vx .header-phone-mobile {
+  border-radius: 999px;
+  border-color: #EBEBEB;
+  color: #171717;
+  background: #FFFFFF;
+}
+
+/* Footer (light, every page) */
+.site-footer {
+  background: #FAFAFA;
+  border-top: 1px solid #EBEBEB;
+  color: #666666;
+  font-family: var(--vx-font), system-ui, sans-serif;
+}
+
+.site-footer h3,
+.site-footer h4 {
+  font-family: inherit;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #171717;
+}
+
+.site-footer a,
+.site-footer p,
+.site-footer li {
+  color: #666666 !important;
+  font-size: 14px;
+}
+
+.site-footer a:hover {
+  color: #171717 !important;
+}
+
+.site-footer img {
+  mix-blend-mode: multiply;
+}
+
+.footer-social-link {
+  background: #FFFFFF;
+  border: 1px solid #EBEBEB;
+  color: #171717 !important;
+}
+
+.site-footer [class*="border"],
+.site-footer hr {
+  border-color: #EBEBEB;
+}
+
+
+/* In-content headings on service pages, case studies and articles */
+.subpage-content h2,
+.article-content h2 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.6rem, 2.4vw, 2rem);
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: #171717;
+}
+
+.subpage-content h3,
+.article-content h3 {
+  font-family: var(--font-body);
+  font-weight: 700;
+  color: #171717;
+}
+
+/* Stats: black display numerals instead of red */
+.subpage-stat-value {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  color: #171717;
+}
+
+.subpage-takeaway {
+  border-left-color: #171717;
+}
+
+/* Accent: black does the accent job now; red is reserved for the chat
+   button (brand red kept as its own token). */
+:root {
+  --color-brand-red: #E53935;
+  --color-accent: #171717;
+}
+
+.contact-bubble-toggle {
+  background: var(--color-brand-red);
+}
+
+/* Leftover all-caps on prices, process steps and tags */
+.sp-price-value,
+.sp-step strong,
+.sp-step h3,
+.sp-step-title,
+.case-tag {
+  text-transform: none;
+}
+
+/* Drop the old corner-bracket ornament on boxes; hairlines carry it now */
+.bull-boundary::before,
+.bull-boundary::after {
+  display: none;
+}
+
+.bull-boundary {
+  border: 1px solid #EBEBEB;
+}

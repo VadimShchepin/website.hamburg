@@ -2,7 +2,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { FaqItem } from '../src/components/FaqSection';
 import ShaderBackdrop from '../src/components/shaders/ShaderBackdrop';
-import { vxFontVars } from '../src/lib/fonts';
 import '../src/styles/home-vx.css';
 
 const PHONE = '+4917632194754';
@@ -254,7 +253,7 @@ export default function HomePage() {
 
 
     return (
-        <div className={`vx ${vxFontVars}`}>
+        <div className="vx">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />

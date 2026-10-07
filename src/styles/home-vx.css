@@ -957,3 +957,40 @@ body:has(.vx) .site-footer [class*="border"],
 body:has(.vx) .site-footer hr {
   border-color: #EBEBEB;
 }
+
+/* Bold display face for headlines (Archivo Black has a single weight) */
+body .vx :is(h1, h2, .vx-proof-score strong) {
+  font-family: var(--font-vx-display), var(--vx-font), sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+
+body .vx .vx-hero h1 {
+  font-size: 60px;
+  line-height: 1.02;
+  max-width: 10ch;
+}
+
+body .vx .vx-project-heading {
+  font-size: 36px;
+  line-height: 1.08;
+}
+
+body .vx :is(.vx-services h2, .vx-faq h2, .vx-cta h2) {
+  font-size: 44px;
+  line-height: 1.05;
+}
+
+body .vx .vx-service h3 {
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  body .vx .vx-hero h1 {
+    font-size: 42px;
+  }
+
+  body .vx :is(.vx-project-heading, .vx-services h2, .vx-faq h2, .vx-cta h2) {
+    font-size: 30px;
+  }
+}

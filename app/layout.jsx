@@ -12,13 +12,14 @@ const SITE_URL = 'https://webseite.hamburg';
 export const metadata = {
     metadataBase: new URL(SITE_URL),
     title: {
-        default: 'Webdesign & SEO Hamburg | Websites die Kunden bringen',
-        template: '%s | AISEO',
+        default: 'Webdesign Hamburg, SEO & Google Ads | webseite.hamburg',
+        // Page titles carry the brand themselves where it fits (no suffix)
+        template: '%s',
     },
     description: 'Professionelle Websites, SEO und Google Ads für Handwerker und lokale Unternehmen in Hamburg. Schnell, strukturiert, messbar. Kostenlose Website-Analyse.',
     authors: [{ name: 'Vadim Shchepin', url: 'https://www.linkedin.com/in/vadim-shchepin/' }],
-    creator: 'AISEO Hamburg',
-    publisher: 'AISEO Hamburg',
+    creator: 'webseite.hamburg',
+    publisher: 'webseite.hamburg',
     robots: { index: true, follow: true },
     alternates: {
         types: { 'text/plain': '/llms.txt' },
@@ -27,14 +28,13 @@ export const metadata = {
         type: 'website',
         locale: 'de_DE',
         url: SITE_URL,
-        siteName: 'AISEO Hamburg',
-        title: 'Webdesign & SEO Hamburg | Websites die Kunden bringen',
+        siteName: 'webseite.hamburg',
+        title: 'Webdesign Hamburg, SEO & Google Ads | webseite.hamburg',
         description: 'Professionelle Websites, SEO und Google Ads für lokale Unternehmen. Schnell, strukturiert, messbar.',
     },
     twitter: {
         card: 'summary_large_image',
     },
-    icons: { icon: '/logo_red.webp' },
 };
 
 // Global JSON-LD: WebSite + Organization
@@ -42,8 +42,8 @@ const websiteJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     '@id': `${SITE_URL}/#website`,
-    name: 'AISEO Hamburg',
-    alternateName: 'webseite.hamburg',
+    name: 'webseite.hamburg',
+    alternateName: 'Webseite Hamburg',
     url: `${SITE_URL}/`,
     description: 'Professionelle Websites, SEO und Google Ads für lokale Unternehmen in Hamburg',
     inLanguage: 'de',
@@ -54,8 +54,8 @@ const organizationJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     '@id': `${SITE_URL}/#organization`,
-    name: 'AISEO',
-    alternateName: 'AISEO Hamburg',
+    name: 'webseite.hamburg',
+    alternateName: 'Webseite Hamburg',
     url: `${SITE_URL}/`,
     logo: { '@type': 'ImageObject', url: `${SITE_URL}/logo_red.webp` },
     image: `${SITE_URL}/logo_red.webp`,
@@ -71,7 +71,7 @@ const organizationJsonLd = {
         '@id': `${SITE_URL}/#founder`,
         name: 'Vadim Shchepin',
         jobTitle: 'Gründer & Webentwickler',
-        url: `${SITE_URL}/über-uns`,
+        url: `${SITE_URL}/ueber-uns`,
         sameAs: ['https://www.linkedin.com/in/vadim-shchepin/'],
     },
     address: {

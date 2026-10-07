@@ -4,7 +4,7 @@ const SITE_URL = 'https://webseite.hamburg';
 
 export const metadata = {
     title: 'Impressum',
-    description: 'Impressum von AISEO Hamburg - Vadim Shchepin, Webdesign & SEO.',
+    description: 'Impressum von webseite.hamburg: Vadim Shchepin, Webdesign und SEO in Hamburg.',
     alternates: { canonical: `${SITE_URL}/impressum` },
     robots: { index: false, follow: true },
 };

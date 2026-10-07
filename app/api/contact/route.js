@@ -12,7 +12,7 @@ export async function POST(request) {
 
     try {
         await resend.emails.send({
-            from: 'AISEO Kontaktformular <hallo@webseite.hamburg>',
+            from: 'webseite.hamburg Kontaktformular <hallo@webseite.hamburg>',
             to: 'vadim.shchepin.it@gmail.com',
             subject: `Neue Anfrage von ${name}`,
             html: `<h2>Neue Anfrage uber webseite.hamburg</h2>

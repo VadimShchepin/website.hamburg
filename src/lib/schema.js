@@ -1,6 +1,6 @@
 export const BUSINESS = {
     '@type': 'ProfessionalService',
-    name: 'AISEO',
+    name: 'webseite.hamburg',
     url: 'https://webseite.hamburg',
     telephone: '+4917632194754',
     email: 'hallo@webseite.hamburg',

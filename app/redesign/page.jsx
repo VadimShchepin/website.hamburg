@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Breadcrumbs from '../../src/components/Breadcrumbs';
 
 export const metadata = {
-    title: 'Redesign-Konzepte | AISEO Hamburg',
+    title: 'Redesign-Konzepte | webseite.hamburg',
     description: 'Fertige Redesign-Entwuerfe für echte Unternehmen: Startseiten-Konzepte mit echten Inhalten, gebaut vor dem ersten Gespräch.',
     robots: {
         index: false,

@@ -4,7 +4,7 @@ const SITE_URL = 'https://webseite.hamburg';
 
 export const metadata = {
     title: 'Datenschutz',
-    description: 'Datenschutzerklärung von AISEO Hamburg.',
+    description: 'Datenschutzerklärung von webseite.hamburg.',
     alternates: { canonical: `${SITE_URL}/datenschutz` },
     robots: { index: false, follow: true },
 };

@@ -14,11 +14,10 @@ function FaqItem({ q, a }) {
                     <line x1="5" y1="12" x2="19" y2="12" />
                 </svg>
             </button>
-            {open && (
-                <div className="faq-answer">
-                    <p>{a}</p>
-                </div>
-            )}
+            {/* Always in the DOM (server HTML for search engines), only hidden while closed */}
+            <div className="faq-answer" hidden={!open}>
+                <p>{a}</p>
+            </div>
         </div>
     );
 }

@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og';
 
 export const runtime = 'edge';
-export const alt = 'AISEO Hamburg - Webdesign & SEO';
+export const alt = 'webseite.hamburg: Webdesign, SEO und Google Ads aus Hamburg';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -50,7 +50,7 @@ export default function OgImage() {
                             display: 'flex',
                         }}
                     >
-                        AISEO
+                        webseite.hamburg
                     </div>
                     <div
                         style={{

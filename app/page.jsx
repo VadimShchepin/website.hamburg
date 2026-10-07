@@ -2,7 +2,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { FaqItem } from '../src/components/FaqSection';
 import ShaderBackdrop from '../src/components/shaders/ShaderBackdrop';
-import FontSwitcher from '../src/components/FontSwitcher';
 import { vxFontVars } from '../src/lib/fonts';
 import '../src/styles/home-vx.css';
 
@@ -259,7 +258,6 @@ export default function HomePage() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-            <FontSwitcher />
 
             {/* Hero */}
             <section className="vx-hero">

@@ -48,6 +48,14 @@
   padding: 0;
 }
 
+/* House style: square corners everywhere, no rounded edges. The
+   !important also beats inline styles and third-party widget CSS. */
+*,
+*::before,
+*::after {
+  border-radius: 0 !important;
+}
+
 html {
   scroll-behavior: smooth;
   font-size: 16px;

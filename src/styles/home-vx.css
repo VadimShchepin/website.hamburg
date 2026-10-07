@@ -1,14 +1,9 @@
-/* Font candidates (see FontSwitcher.jsx); default Inter Tight */
+/* Space Grotesk via next/font (src/lib/fonts.js) */
 .vx,
 .header-vx,
 body:has(.vx) .site-footer {
-  --vx-font: var(--font-vx-intertight);
+  --vx-font: var(--font-vx);
 }
-
-html[data-vx-font="manrope"] :is(.vx, .header-vx, .site-footer) { --vx-font: var(--font-vx-manrope); }
-html[data-vx-font="jakarta"] :is(.vx, .header-vx, .site-footer) { --vx-font: var(--font-vx-jakarta); }
-html[data-vx-font="dmsans"] :is(.vx, .header-vx, .site-footer) { --vx-font: var(--font-vx-dmsans); }
-html[data-vx-font="geist"] :is(.vx, .header-vx, .site-footer) { --vx-font: var(--font-vx-geist); }
 
 /* ==========================================================================
    Homepage concept, Vercel-style: off-white canvas, Geist, hairline
@@ -145,7 +140,7 @@ html[data-vx-font="geist"] :is(.vx, .header-vx, .site-footer) { --vx-font: var(-
 .vx-hero h1 {
   font-size: 64px;
   line-height: 1;
-  letter-spacing: -0.06em;
+  letter-spacing: -0.04em;
   font-weight: 400;
   margin-bottom: 28px;
   max-width: 9ch;
@@ -164,8 +159,8 @@ html[data-vx-font="geist"] :is(.vx, .header-vx, .site-footer) { --vx-font: var(-
   width: 420px;
   height: 420px;
   border-radius: 50%;
-  background: radial-gradient(circle, #FFFFFF 0%, rgba(255, 255, 255, 0.85) 35%, rgba(250, 250, 250, 0) 70%);
-  box-shadow: 0 0 120px rgba(0, 0, 0, 0.04);
+  /* round glow from the gradient itself; corners are square site-wide */
+  background: radial-gradient(circle closest-side, #FFFFFF 0%, rgba(255, 255, 255, 0.9) 45%, rgba(250, 250, 250, 0) 100%);
 }
 
 .vx-hero-mark img {
@@ -225,7 +220,7 @@ html[data-vx-font="geist"] :is(.vx, .header-vx, .site-footer) { --vx-font: var(-
   font-size: 64px;
   line-height: 1;
   font-weight: 400;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.035em;
 }
 
 .vx-proof-score span:last-child {
@@ -290,7 +285,7 @@ html[data-vx-font="geist"] :is(.vx, .header-vx, .site-footer) { --vx-font: var(-
 .vx .vx-project-heading {
   font-size: 40px;
   line-height: 1.05;
-  letter-spacing: -0.045em;
+  letter-spacing: -0.035em;
   font-weight: 400;
   margin-bottom: 20px;
 }
@@ -385,7 +380,7 @@ html[data-vx-font="geist"] :is(.vx, .header-vx, .site-footer) { --vx-font: var(-
 .vx-services h2,
 .vx-faq h2 {
   font-size: 48px;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.035em;
   font-weight: 400;
 }
 
@@ -688,7 +683,7 @@ html[data-vx-font="geist"] :is(.vx, .header-vx, .site-footer) { --vx-font: var(-
 .vx .vx-cta h2 {
   color: #FFFFFF;
   font-size: 48px;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.035em;
   font-weight: 400;
   line-height: 1.05;
   max-width: 18ch;
@@ -846,48 +841,6 @@ html[data-vx-font="geist"] :is(.vx, .header-vx, .site-footer) { --vx-font: var(-
 
   .vx-cta {
     padding: 80px 20px;
-  }
-}
-
-/* Temporary font picker (FontSwitcher.jsx) */
-.vx-fontswitch {
-  position: fixed;
-  left: 50%;
-  bottom: 20px;
-  transform: translateX(-50%);
-  z-index: 140;
-  display: flex;
-  gap: 4px;
-  padding: 4px;
-  background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(12px);
-  border: 1px solid #EBEBEB;
-  border-radius: 999px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-}
-
-.vx-fontswitch button {
-  border: 0;
-  background: transparent;
-  border-radius: 999px;
-  padding: 8px 14px;
-  font-size: 14px;
-  color: #4D4D4D;
-  cursor: pointer;
-  white-space: nowrap;
-}
-
-.vx-fontswitch button.is-active {
-  background: #171717;
-  color: #FFFFFF;
-}
-
-@media (max-width: 768px) {
-  .vx-fontswitch {
-    left: 12px;
-    right: 84px;
-    transform: none;
-    overflow-x: auto;
   }
 }
 

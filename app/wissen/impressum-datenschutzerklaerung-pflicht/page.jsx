@@ -10,6 +10,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/wissen/impressum-datenschutzerklaerung-pflicht',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Impressum und Datenschutzerklärung: Pflichtangaben 2026',
         description: 'Die Impressumspflicht steht seit Mai 2024 in § 5 DDG. Alle Pflichtangaben, Art. 13 DSGVO und die häufigen Fehler.',
         url: 'https://webseite.hamburg/wissen/impressum-datenschutzerklaerung-pflicht',

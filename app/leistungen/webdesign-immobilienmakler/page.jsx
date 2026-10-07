@@ -14,6 +14,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/leistungen/webdesign-immobilienmakler',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Makler-Website Hamburg: Webdesign für Immobilienmakler',
         description: 'Was kostet eine Makler-Website? Ab 2.900 Euro zum Festpreis, auf Eigentümer-Akquise statt Portalpflege gebaut.',
         url: 'https://webseite.hamburg/leistungen/webdesign-immobilienmakler',

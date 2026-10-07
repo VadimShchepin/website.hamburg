@@ -65,6 +65,8 @@ export const metadata = {
     description: 'Antworten auf häufige Fragen zu Webdesign, SEO, AI SEO und Google Ads: Preise, Laufzeiten, Ablauf und wem Konten und Website gehören. Direkt vom Entwickler.',
     alternates: { canonical: `${SITE_URL}/faq` },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'FAQ: Preise, Ablauf & Zusammenarbeit | webseite.hamburg',
         description: 'Antworten auf die häufigsten Fragen zu Webdesign, SEO, AI SEO und Google Ads.',
         url: `${SITE_URL}/faq`,

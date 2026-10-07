@@ -14,6 +14,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/leistungen/seo',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'SEO Hamburg: Suchmaschinenoptimierung ab 1.000 €/Monat',
         description: 'Lokale Suchmaschinenoptimierung für Unternehmen in Hamburg: Google Business Profile, Google Maps, technisches SEO und Content. Ab 1.000 €/Monat.',
         url: 'https://webseite.hamburg/leistungen/seo',

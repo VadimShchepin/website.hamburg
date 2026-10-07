@@ -7,6 +7,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/leistungen',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Preise für Webdesign, SEO und Google Ads in Hamburg',
         description: 'Klare Leistungen, faire Preise: Webdesign ab 2.900 Euro, SEO ab 1.000 Euro/Mt., Google Ads ab 500 Euro/Mt.',
         url: 'https://webseite.hamburg/leistungen',

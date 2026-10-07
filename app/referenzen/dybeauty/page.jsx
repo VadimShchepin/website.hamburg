@@ -19,6 +19,8 @@ export const metadata = {
         canonical: PAGE_URL,
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'DYBeauty Case Study: Shopify-SEO für koreanische Kosmetik',
         description: 'Impressionen 23.353 auf 56.651, Klicks ohne Markennamen 446 auf 810 (Februar bis September 2026). Was ich am Shop geändert habe und was die Zahlen nicht beweisen.',
         url: PAGE_URL,

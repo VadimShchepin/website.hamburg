@@ -7,6 +7,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/kontakt',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Kontakt: Website-Analyse anfragen | webseite.hamburg',
         description: 'Kostenlose Website-Analyse anfordern. Ich melde mich innerhalb von 24 Stunden mit einer ersten Einschätzung.',
         url: 'https://webseite.hamburg/kontakt',

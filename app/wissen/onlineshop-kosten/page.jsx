@@ -10,6 +10,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/wissen/onlineshop-kosten',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Onlineshop Kosten 2026: was ein Shop wirklich kostet',
         description: 'Plattformpreise, Umsetzung, Transaktionsgebühren, gesetzliche Pflichten und laufende Pflege, mit Rechenbeispielen.',
         url: 'https://webseite.hamburg/wissen/onlineshop-kosten',

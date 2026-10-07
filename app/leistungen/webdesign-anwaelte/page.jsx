@@ -14,6 +14,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/leistungen/webdesign-anwaelte',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Kanzlei-Website für Anwälte in Hamburg ab 2.900 €',
         description: 'Was kostet eine Kanzlei-Website in Hamburg? Ab 2.900 Euro zum Festpreis, berufsrechtlich sauber und mit klarem Weg zum Erstgespräch.',
         url: 'https://webseite.hamburg/leistungen/webdesign-anwaelte',

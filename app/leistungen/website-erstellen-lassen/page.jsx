@@ -14,6 +14,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/leistungen/website-erstellen-lassen',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Website erstellen lassen Hamburg: Festpreis ab 1.500 €',
         description: 'Website erstellen lassen in Hamburg: Festpreis ab 1.500 €, individuell programmiert, Lighthouse 90 bis 100. Keine versteckten Kosten.',
         url: 'https://webseite.hamburg/leistungen/website-erstellen-lassen',

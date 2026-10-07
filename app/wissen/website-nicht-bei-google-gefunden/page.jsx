@@ -11,6 +11,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/wissen/website-nicht-bei-google-gefunden',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Website nicht bei Google gefunden? 12 Ursachen und Lösungen',
         description: '12 Ursachen, warum Seiten nicht im Index landen, in der Reihenfolge zum Prüfen. Mit Google-Originalquellen.',
         url: 'https://webseite.hamburg/wissen/website-nicht-bei-google-gefunden',

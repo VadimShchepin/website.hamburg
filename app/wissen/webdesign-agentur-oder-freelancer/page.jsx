@@ -11,6 +11,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/wissen/webdesign-agentur-oder-freelancer',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Webdesign Agentur oder Freelancer? Preise und Risiken 2026',
         description: 'Stundensätze, Projektpreise, Ausfallrisiko und Vertragsfallen im Vergleich. Ein ehrlicher Entscheidungsleitfaden.',
         url: 'https://webseite.hamburg/wissen/webdesign-agentur-oder-freelancer',

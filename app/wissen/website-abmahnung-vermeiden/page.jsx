@@ -10,6 +10,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/wissen/website-abmahnung-vermeiden',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Abmahnung wegen der Website vermeiden: Risiken 2026',
         description: 'Google Fonts, Cookie-Banner, fehlendes Impressum: was wirklich abmahnbar ist und wie Sie die Risiken abstellen.',
         url: 'https://webseite.hamburg/wissen/website-abmahnung-vermeiden',

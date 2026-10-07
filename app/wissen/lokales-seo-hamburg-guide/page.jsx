@@ -16,6 +16,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/wissen/lokales-seo-hamburg-guide',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Lokales SEO in Hamburg: Leitfaden für Google und Maps',
         description: 'Von Google Business Profile bis lokale Keywords: alles, was Sie wissen müssen, um in Hamburg bei Google gefunden zu werden.',
         url: 'https://webseite.hamburg/wissen/lokales-seo-hamburg-guide',

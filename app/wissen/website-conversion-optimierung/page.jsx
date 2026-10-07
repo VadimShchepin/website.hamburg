@@ -9,6 +9,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/wissen/website-conversion-optimierung',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Mehr Anfragen ohne mehr Traffic: Conversion-Optimierung der Website erklärt',
         description: 'Warum mehr Besucher selten die Lösung ist. Wie Sie mit der gleichen Besucherzahl deutlich mehr Anfragen bekommen.',
         url: 'https://webseite.hamburg/wissen/website-conversion-optimierung',

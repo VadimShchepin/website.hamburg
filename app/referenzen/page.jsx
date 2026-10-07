@@ -10,6 +10,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/referenzen',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Referenzen: Webdesign, SEO & Google Ads aus Hamburg',
         description: 'Zehn echte Projekte mit Zahlen: Blitz Hamburg von 24 auf 374 Google-Klicks im Monat, KinderAlbum von 23 auf 792, DYBeauty mit 2,4-mal mehr Impressionen.',
         url: 'https://webseite.hamburg/referenzen',

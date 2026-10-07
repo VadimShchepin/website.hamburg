@@ -10,6 +10,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/wissen/website-barrierefrei-machen',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Website barrierefrei machen: WCAG 2.2 Anleitung',
         description: 'WCAG 2.2 praktisch umgesetzt: vier Prinzipien, sechs häufige Fehler, Tastatur- und Screenreader-Test, Aufwand und Reihenfolge.',
         url: 'https://webseite.hamburg/wissen/website-barrierefrei-machen',

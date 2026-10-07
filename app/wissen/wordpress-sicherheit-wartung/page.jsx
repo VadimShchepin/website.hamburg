@@ -10,6 +10,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/wissen/wordpress-sicherheit-wartung',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'WordPress Sicherheit und Wartung: was wirklich schützt',
         description: '11.334 neue Schwachstellen 2025, davon 91 Prozent in Plugins. Update-Rhythmus, Wartungskosten und Vorgehen nach einem Hack.',
         url: 'https://webseite.hamburg/wissen/wordpress-sicherheit-wartung',

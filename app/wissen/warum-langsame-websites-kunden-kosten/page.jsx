@@ -9,6 +9,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/wissen/warum-langsame-websites-kunden-kosten',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Warum langsame Websites Sie jeden Tag Kunden kosten',
         description: 'Jede zusätzliche Sekunde Ladezeit senkt die Conversion-Rate um rund 4 Prozent. So messen und verbessern Sie die Geschwindigkeit Ihrer Website.',
         url: 'https://webseite.hamburg/wissen/warum-langsame-websites-kunden-kosten',

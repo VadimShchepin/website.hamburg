@@ -10,6 +10,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/wissen/wordpress-alternativen',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'WordPress-Alternativen 2026: der ehrliche Vergleich',
         description: 'Wann ein Wechsel von WordPress sich lohnt, welche Alternativen wofür taugen und was der Umzug wirklich kostet.',
         url: 'https://webseite.hamburg/wissen/wordpress-alternativen',

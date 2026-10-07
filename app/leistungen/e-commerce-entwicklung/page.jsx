@@ -16,6 +16,8 @@ export const metadata = {
     description: 'Onlineshop erstellen lassen in Hamburg, direkt beim Entwickler: Shopify, Shopware, WooCommerce oder eigene Lösung. Neubau, Umzug oder Ausbau.',
     alternates: { canonical: PAGE_URL },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Onlineshop erstellen lassen in Hamburg: Shopify, Shopware',
         description: 'E-Commerce aus einer Hand: Strategie, Design, Entwicklung, Content, Marketing und Automatisierung. Shopify, Shopware, WooCommerce und Custom. Über 10 Jahre Erfahrung.',
         url: PAGE_URL,
@@ -96,18 +98,12 @@ export default function EcommerceEntwicklungPage() {
             { '@type': 'ListItem', position: 3, name: 'E-Commerce Entwicklung', item: PAGE_URL },
         ],
     };
-    const faqJsonLd = {
-        '@context': 'https://schema.org',
-        '@type': 'FAQPage',
-        mainEntity: faqItems.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
-    };
 
     return (
         <>
             <AutoLinks path="/leistungen/e-commerce-entwicklung">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
             {/* HERO */}
             <section className="ecx-hero section">

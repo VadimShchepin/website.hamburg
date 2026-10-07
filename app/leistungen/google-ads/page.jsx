@@ -14,6 +14,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/leistungen/google-ads',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Google Ads Hamburg: Betreuung vom Freelancer ab 500 €/Mt.',
         description: 'Google Ads Management für lokale Unternehmen in Hamburg: Search Ads, Local Services Ads, Conversion-Tracking, ROAS-Optimierung. Setup ab 700 €, Betreuung ab 500 €/Monat.',
         url: 'https://webseite.hamburg/leistungen/google-ads',

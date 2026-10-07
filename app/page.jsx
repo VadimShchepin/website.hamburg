@@ -205,6 +205,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Webdesign Hamburg, SEO & Google Ads | webseite.hamburg',
         description: 'Professionelles Webdesign, SEO und Google Ads für lokale Unternehmen in Hamburg. Datenbasiert, transparent, ergebnisorientiert.',
         url: 'https://webseite.hamburg',

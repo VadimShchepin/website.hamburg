@@ -19,6 +19,8 @@ export const metadata = {
         canonical: PAGE_URL,
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'KinderAlbum Case Study: von 23 auf 792 Google-Klicks im Monat',
         description: 'Eine DSGVO-Plattform für Schulfotos und Ratgeber zu den Fragen, die Eltern und Schulen wirklich googeln. Mit Grafiken, Quellen und ehrlichen Grenzen.',
         url: PAGE_URL,

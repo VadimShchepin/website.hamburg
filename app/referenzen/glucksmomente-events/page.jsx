@@ -11,6 +11,8 @@ export const metadata = {
     description: 'Individuelle Website für die Hamburger Eventplanerin Josy Eberlein: Aquarell-Design, Scroll-Animationen mit GSAP, schnell auf dem Handy und ohne Baukasten.',
     alternates: { canonical: PAGE_URL },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Glücksmomente Events | Event-Website mit Herz und GSAP',
         description: 'React + GSAP: Individuelle Event-Website mit Aquarell-Ästhetik und Scroll-Animationen.',
         url: PAGE_URL,

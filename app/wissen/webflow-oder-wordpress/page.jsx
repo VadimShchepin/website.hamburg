@@ -10,6 +10,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/wissen/webflow-oder-wordpress',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Webflow oder WordPress? Kosten und Vergleich 2026',
         description: 'Webflow-Preise, WordPress-Gesamtkosten, Pflegeaufwand und Ausstiegsrisiko, mit aktuellen Listenpreisen.',
         url: 'https://webseite.hamburg/wissen/webflow-oder-wordpress',

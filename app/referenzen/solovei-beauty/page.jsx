@@ -11,6 +11,8 @@ export const metadata = {
     description: 'Dreisprachige Website für das Beauty-Coworking Solovei Beauty in Hamburg: Deutsch, Englisch, Russisch, mit Payload CMS, das die Inhaberin selbst pflegt.',
     alternates: { canonical: PAGE_URL },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Solovei Beauty | Dreisprachige Coworking-Plattform',
         description: 'Beauty-Coworking Hamburg: Next.js + Payload CMS, 3 Sprachen, Docker-Deployment. Case Study.',
         url: PAGE_URL,

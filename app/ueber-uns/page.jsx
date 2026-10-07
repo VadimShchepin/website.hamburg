@@ -11,6 +11,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/ueber-uns',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Über mich: Vadim Shchepin, Webentwickler in Hamburg',
         description: 'Über 10 Jahre Erfahrung in der digitalen Produktentwicklung. Webdesign, SEO und Google Ads für lokale Unternehmen in Hamburg.',
         url: 'https://webseite.hamburg/ueber-uns',

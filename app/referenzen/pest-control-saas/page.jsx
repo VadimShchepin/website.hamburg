@@ -13,6 +13,8 @@ export const metadata = {
         canonical: PAGE_URL,
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Pest Control SaaS | Enterprise-Architektur mit DDD & Offline-PWA',
         description: 'Multi-Tenant SaaS: Hexagonale Architektur, 6 Bounded Contexts, Offline-PWA für Techniker, EU-Biozid-Compliance. Case Study.',
         url: PAGE_URL,

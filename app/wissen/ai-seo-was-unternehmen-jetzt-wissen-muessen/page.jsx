@@ -9,6 +9,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/wissen/ai-seo-was-unternehmen-jetzt-wissen-muessen',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'AI SEO: Was Unternehmen jetzt wissen müssen',
         description: 'ChatGPT, Perplexity, Google AI Overviews verändern die Suche. Wie Sie sicherstellen, dass Ihr Unternehmen in KI-Antworten als Quelle erscheint.',
         url: 'https://webseite.hamburg/wissen/ai-seo-was-unternehmen-jetzt-wissen-muessen',

@@ -10,6 +10,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/wissen/website-umzug-hosting-deutschland',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Website-Hosting in Deutschland und Umzug ohne Ranking-Verlust',
         description: 'Serverstandort, Auftragsverarbeitung, Drittlandtransfer und die Umzugsreihenfolge, die Rankings erhält.',
         url: 'https://webseite.hamburg/wissen/website-umzug-hosting-deutschland',

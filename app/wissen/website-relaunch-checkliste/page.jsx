@@ -17,6 +17,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/wissen/website-relaunch-checkliste',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Website-Relaunch Checkliste: Was Sie vorher wissen müssen',
         description: 'Ein Relaunch kann Ihre Online-Präsenz transformieren oder Ihre Rankings zerstören. Die wichtigsten Punkte für einen erfolgreichen Relaunch.',
         url: 'https://webseite.hamburg/wissen/website-relaunch-checkliste',

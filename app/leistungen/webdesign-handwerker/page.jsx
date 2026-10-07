@@ -45,6 +45,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/leistungen/webdesign-handwerker',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Website für Handwerker in Hamburg: Festpreis ab 1.500 €',
         description: 'Websites für Handwerksbetriebe in Hamburg: mobile-first, Telefon- und WhatsApp-Button, Google-Maps-Sichtbarkeit. Mehr Anfragen, weniger Aufwand.',
         url: 'https://webseite.hamburg/leistungen/webdesign-handwerker',

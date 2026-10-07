@@ -10,6 +10,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/wissen/google-ads-kosten',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Google Ads Kosten: echte Zahlen aus 90 Tagen',
         description: '90 Tage aus einem betreuten Konto: Klickpreise, Kosten je Anfrage und warum billige Klicks die teuren sind.',
         url: 'https://webseite.hamburg/wissen/google-ads-kosten',

@@ -17,6 +17,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/wissen/webdesign-kosten',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Was kostet eine Website? Preise und versteckte Kosten 2026',
         description: 'Was kostet eine Website 2026? Von 500 bis 50.000 Euro: was den Preis bestimmt, welche Folgekosten dazukommen und wann sich eine teurere Website rechnet.',
         url: 'https://webseite.hamburg/wissen/webdesign-kosten',

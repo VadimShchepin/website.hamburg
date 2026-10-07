@@ -14,6 +14,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/leistungen/webdesign-hotels',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Hotel-Website Hamburg: Direktbuchungen statt Provision',
         description: 'Was kostet eine Hotel-Website mit Direktbuchung? Ab 2.900 Euro zum Festpreis, mit angebundener Buchungsmaschine.',
         url: 'https://webseite.hamburg/leistungen/webdesign-hotels',

@@ -14,6 +14,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/leistungen/webdesign-aerzte',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Webdesign für Arztpraxen & Zahnärzte in Hamburg',
         description: 'Websites für Arztpraxen und Zahnärzte in Hamburg: DSGVO-konform, Online-Terminbuchung, Google-Maps-Sichtbarkeit. Mehr Patienten.',
         url: 'https://webseite.hamburg/leistungen/webdesign-aerzte',

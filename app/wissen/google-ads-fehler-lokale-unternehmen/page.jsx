@@ -9,6 +9,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/wissen/google-ads-fehler-lokale-unternehmen',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Die 7 teuersten Google Ads Fehler lokaler Unternehmen',
         description: 'Von unkontrolliertem Broad Match bis fehlendem Conversion-Tracking: diese Fehler verbrennen Ihr Werbebudget. Und wie Sie sie vermeiden.',
         url: 'https://webseite.hamburg/wissen/google-ads-fehler-lokale-unternehmen',

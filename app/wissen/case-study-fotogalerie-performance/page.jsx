@@ -9,6 +9,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/wissen/case-study-fotogalerie-performance',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Case Study: 1.200-Foto-Galerie von Sekunden auf 0,98 s',
         description: 'Wie 2.408 versteckte HTTP-Requests eine Fotogalerie ausbremsten, und wie Batch-Signierung, WebP-Thumbnails und content-visibility das Problem lösten. Mit echten Messwerten.',
         url: 'https://webseite.hamburg/wissen/case-study-fotogalerie-performance',

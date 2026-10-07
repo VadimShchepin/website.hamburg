@@ -14,6 +14,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/leistungen/webdesign-steuerberater',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Website für Steuerberater in Hamburg: Mandanten & Bewerber',
         description: 'Was kostet eine Steuerberater-Website? Ab 2.900 Euro zum Festpreis, mit Karriereseite gegen den Fachkräftemangel.',
         url: 'https://webseite.hamburg/leistungen/webdesign-steuerberater',

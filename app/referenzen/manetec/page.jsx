@@ -11,6 +11,8 @@ export const metadata = {
     description: 'Website für professionelle Schädlingsbekämpfung in der Hamburger Hotellerie und Gastronomie. React + Gemini API für automatisierte Risikoanalyse.',
     alternates: { canonical: PAGE_URL },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Manetec Hamburg | Schädlingsbekämpfung mit KI-Risikoanalyse',
         description: 'React + Framer Motion + Gemini API: Industrielle Ästhetik für professionelle Schädlingsbekämpfung.',
         url: PAGE_URL,

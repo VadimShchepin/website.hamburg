@@ -9,6 +9,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/wissen/dsgvo-fotoplattform-sicherheit-performance',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'DSGVO-Fotoplattform für Schulen: Was Sicherheit wirklich kostet',
         description: 'QR-Code + PIN statt Accounts, Row Level Security, signierte URLs. Der Performance-Preis: 723 imgproxy-Fehler in 72 Stunden, bis vorgenerierte WebP-Varianten kamen.',
         url: 'https://webseite.hamburg/wissen/dsgvo-fotoplattform-sicherheit-performance',

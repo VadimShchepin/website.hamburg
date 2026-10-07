@@ -14,6 +14,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/leistungen/ai-seo',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'AI SEO Hamburg: sichtbar in ChatGPT, Copilot & Perplexity',
         description: 'AI SEO (GEO) für Sichtbarkeit in ChatGPT, Perplexity, Google AI Overviews und Microsoft Copilot. Ihr Unternehmen als zitierte Quelle in KI-Antworten.',
         url: 'https://webseite.hamburg/leistungen/ai-seo',

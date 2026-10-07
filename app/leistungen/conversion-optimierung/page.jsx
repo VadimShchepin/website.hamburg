@@ -14,6 +14,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/leistungen/conversion-optimierung',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Conversion-Optimierung Hamburg: mehr Anfragen pro Besucher',
         description: 'Mehr Anfragen ohne mehr Besucher. Conversion-Optimierung für lokale Unternehmen in Hamburg: Analyse, Priorisierung, Umsetzung, Messung.',
         url: 'https://webseite.hamburg/leistungen/conversion-optimierung',

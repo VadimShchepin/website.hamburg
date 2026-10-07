@@ -14,6 +14,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/leistungen/chatgpt-ads',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'ChatGPT Ads schalten: Kosten, Ablauf und Betreuung',
         description: 'Werbung in ChatGPT für deutsche Unternehmen: Kampagnenaufbau im OpenAI Ads Manager, Pixel-Tracking, Landingpage. Ich schalte seit dem Start eigene Kampagnen.',
         url: 'https://webseite.hamburg/leistungen/chatgpt-ads',

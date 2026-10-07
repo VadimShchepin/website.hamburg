@@ -11,6 +11,8 @@ export const metadata = {
     description: 'NestJS + React + Gemini AI: Familien-Aktivitätsplattform mit Hexagonaler Architektur, KI-Empfehlungen und interaktiver Karte. Für Eltern in Deutschland.',
     alternates: { canonical: PAGE_URL },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'mit-kinder.de | KI-Aktivitätsplattform für Familien',
         description: 'NestJS + Gemini AI: Hexagonale Architektur, KI-Chatbot, interaktive Karte. Case Study.',
         url: PAGE_URL,

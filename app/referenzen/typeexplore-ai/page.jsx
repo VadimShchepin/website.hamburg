@@ -11,6 +11,8 @@ export const metadata = {
     description: 'EdTech-App: Tippen lernen mit KI-generierten Lektionen zu jedem Thema. React + Express + Gemini API. Sichere Architektur, Echtzeit-Feedback.',
     alternates: { canonical: PAGE_URL },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'TypeExplore AI | KI-Tipptrainer: Lernen beim Tippen',
         description: 'React + Gemini API: KI generiert Tipp-Lektionen zu jedem Thema. Sichere Backend-Proxy-Architektur.',
         url: PAGE_URL,

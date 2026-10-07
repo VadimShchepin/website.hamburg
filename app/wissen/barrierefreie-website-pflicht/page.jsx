@@ -10,6 +10,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/wissen/barrierefreie-website-pflicht',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Barrierefreie Website Pflicht? Was das BFSG verlangt',
         description: 'Das BFSG gilt seit dem 28. Juni 2025. Wer betroffen ist, wer ausgenommen bleibt und was bei Verstößen droht.',
         url: 'https://webseite.hamburg/wissen/barrierefreie-website-pflicht',

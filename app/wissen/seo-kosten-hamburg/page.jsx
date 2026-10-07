@@ -11,6 +11,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/wissen/seo-kosten-hamburg',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Was kostet SEO in Hamburg? Preise 2026 im Vergleich',
         description: 'Monatsbudgets, Stundensätze und was ein Retainer wirklich enthält. Mit Warnsignalen und einer ehrlichen Rechnung.',
         url: 'https://webseite.hamburg/wissen/seo-kosten-hamburg',

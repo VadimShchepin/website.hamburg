@@ -14,6 +14,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/leistungen/webdesign-gastronomie',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Restaurant-Website Hamburg: Webdesign für Gastronomie',
         description: 'Was kostet eine Restaurant-Website? Ab 1.500 Euro zum Festpreis, mit mobiler Speisekarte und Reservierung ohne Provision.',
         url: 'https://webseite.hamburg/leistungen/webdesign-gastronomie',

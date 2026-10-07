@@ -19,6 +19,8 @@ export const metadata = {
         canonical: PAGE_URL,
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'GL Sommer Case Study: Google Ads umgebaut, ehrlich gerechnet',
         description: 'Von der Smart-Kampagne zu Search-Kampagnen: Kosten je Kontaktaktion 27,15 auf 11,06 EUR, mit allen Haken, die dazugehören. GaLaBau in Hamburg.',
         url: PAGE_URL,

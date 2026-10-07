@@ -20,6 +20,8 @@ export const metadata = {
         canonical: PAGE_URL,
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Blitz Hamburg Case Study: von 24 auf 374 Google-Klicks im Monat',
         description: 'Relaunch im Mai 2026, Ratgeber zu Sperrmüll und Entrümpelungskosten, durchschnittliche Google-Position von 21,1 auf 10,5. Alle Zahlen mit Monat und Quelle.',
         url: PAGE_URL,

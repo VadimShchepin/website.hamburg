@@ -14,6 +14,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/leistungen/webdesign',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Webdesigner in Hamburg: Websites ab 1.500 € Festpreis',
         description: 'Individuelles Webdesign für Unternehmen in Hamburg: programmiert statt Baukasten, Lighthouse 90 bis 100, gute Core Web Vitals, Conversion-Optimierung.',
         url: 'https://webseite.hamburg/leistungen/webdesign',

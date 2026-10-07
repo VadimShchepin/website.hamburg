@@ -67,6 +67,9 @@ export const KEYWORD_LINKS = [
     { href: '/wissen/website-baukasten-oder-eigene-website', phrases: ['Website-Baukasten', 'Homepage-Baukasten', 'Baukasten', 'Baukästen', 'Jimdo', 'Wix'] },
     { href: '/wissen/website-nicht-bei-google-gefunden', phrases: ['nicht bei Google gefunden', 'nicht bei Google zu finden', 'nicht indexiert'] },
     { href: '/wissen/warum-langsame-websites-kunden-kosten', phrases: ['Ladezeit', 'Ladezeiten', 'Core Web Vitals', 'PageSpeed'] },
+    { href: '/wissen/website-mit-ki-erstellen', phrases: ['Website mit KI erstellen', 'Website mit KI', 'KI-Website-Baukasten', 'KI-Baukasten', 'KI-Baukästen', 'KI-Website-Builder'] },
+    { href: '/wissen/google-bewertungen', phrases: ['Google-Bewertungen kaufen', 'Bewertungen kaufen', 'gekaufte Bewertungen', 'Google-Bewertungen sammeln', 'Google-Bewertungen', 'Google Bewertungen'] },
+    { href: '/website-check', phrases: ['kostenlosen Website-Check', 'kostenloser Website-Check', 'Website-Check', 'SEO-Check'] },
     { href: '/wissen/google-ads-fehler-lokale-unternehmen', phrases: ['Google-Ads-Fehler', 'Google Ads Fehler'] },
 
     // Referenzen (brand names of the case studies)

@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc" stroke-linejoin="round" stroke-linecap="round">
+  <title id="title">Echte Stimmen: Google-Bewertungen</title>
+  <desc id="desc">Eine große Bewertungskarte mit fünf Sternen und angedeuteten Textzeilen. Rechts davor steht ein Smartphone mit einem QR-Code-Muster. Ein kleines rot durchgestrichenes Preisschild links symbolisiert echte, unbezahlte Bewertungen.</desc>
+  <path d="M222 292 Q222 136 406 136 H820 Q1038 136 1038 348 V614 Q1038 742 870 742 H412 Q222 742 222 572Z" fill="#E9EEF3"/>
+  <rect x="260" y="180" width="690" height="500" rx="38" fill="#FFFFFF" stroke="#0A192F" stroke-width="8"/>
+  <text x="320" y="270" fill="#0A192F" font-family="Inter, Helvetica, Arial, sans-serif" font-size="44" font-weight="600">Echte Stimmen</text>
+  <g fill="#0A192F" stroke="#0A192F" stroke-width="6">
+    <polygon points="365.00,317.00 377.93,345.20 408.75,348.79 385.92,369.80 392.04,400.21 365.00,385.00 337.96,400.21 344.08,369.80 321.25,348.79 352.07,345.20"/>
+    <polygon points="480.00,317.00 492.93,345.20 523.75,348.79 500.92,369.80 507.04,400.21 480.00,385.00 452.96,400.21 459.08,369.80 436.25,348.79 467.07,345.20"/>
+    <polygon points="595.00,317.00 607.93,345.20 638.75,348.79 615.92,369.80 622.04,400.21 595.00,385.00 567.96,400.21 574.08,369.80 551.25,348.79 582.07,345.20"/>
+    <polygon points="710.00,317.00 722.93,345.20 753.75,348.79 730.92,369.80 737.04,400.21 710.00,385.00 682.96,400.21 689.08,369.80 666.25,348.79 697.07,345.20"/>
+    <polygon points="825.00,317.00 837.93,345.20 868.75,348.79 845.92,369.80 852.04,400.21 825.00,385.00 797.96,400.21 804.08,369.80 781.25,348.79 812.07,345.20"/>
+  </g>
+  <g fill="#E9EEF3">
+    <rect x="320" y="452" width="426" height="18" rx="9"/>
+    <rect x="320" y="498" width="366" height="18" rx="9"/>
+    <rect x="320" y="544" width="406" height="18" rx="9"/>
+  </g>
+  <g fill="none" stroke="#E53935" stroke-width="9">
+    <path d="M92 418 L145 382 H225 V499 H145 L92 463Z" fill="#F5F7FA"/>
+    <circle cx="123" cy="441" r="8"/>
+    <path d="M96 513 L229 370"/>
+  </g>
+  <rect x="798" y="410" width="268" height="402" rx="38" fill="#0A192F" stroke="#0A192F" stroke-width="8"/>
+  <rect x="814" y="427" width="236" height="368" rx="25" fill="#FFFFFF"/>
+  <path d="M902 450 H962" fill="none" stroke="#0A192F" stroke-width="8"/>
+  <g fill="#0A192F">
+    <path fill-rule="evenodd" d="M848 503h56v56h-56Z m8 8v40h40v-40Z"/>
+    <rect x="864" y="519" width="24" height="24"/>
+    <path fill-rule="evenodd" d="M960 503h56v56h-56Z m8 8v40h40v-40Z"/>
+    <rect x="976" y="519" width="24" height="24"/>
+    <path fill-rule="evenodd" d="M848 615h56v56h-56Z m8 8v40h40v-40Z"/>
+    <rect x="864" y="631" width="24" height="24"/>
+    <rect x="912" y="503" width="8" height="8"/>
+    <rect x="944" y="503" width="8" height="8"/>
+    <rect x="928" y="511" width="8" height="8"/>
+    <rect x="936" y="511" width="8" height="8"/>
+    <rect x="912" y="519" width="8" height="8"/>
+    <rect x="944" y="519" width="8" height="8"/>
+    <rect x="912" y="527" width="8" height="8"/>
+    <rect x="944" y="527" width="8" height="8"/>
+    <rect x="928" y="543" width="8" height="8"/>
+    <rect x="936" y="543" width="8" height="8"/>
+    <rect x="928" y="551" width="8" height="8"/>
+    <rect x="936" y="551" width="8" height="8"/>
+    <rect x="912" y="559" width="8" height="8"/>
+    <rect x="944" y="559" width="8" height="8"/>
+    <rect x="872" y="567" width="8" height="8"/>
+    <rect x="880" y="567" width="8" height="8"/>
+    <rect x="896" y="567" width="8" height="8"/>
+    <rect x="928" y="567" width="8" height="8"/>
+    <rect x="936" y="567" width="8" height="8"/>
+    <rect x="952" y="567" width="8" height="8"/>
+    <rect x="984" y="567" width="8" height="8"/>
+    <rect x="992" y="567" width="8" height="8"/>
+    <rect x="1008" y="567" width="8" height="8"/>
+    <rect x="848" y="575" width="8" height="8"/>
+    <rect x="856" y="575" width="8" height="8"/>
+    <rect x="888" y="575" width="8" height="8"/>
+    <rect x="904" y="575" width="8" height="8"/>
+    <rect x="912" y="575" width="8" height="8"/>
+    <rect x="944" y="575" width="8" height="8"/>
+    <rect x="960" y="575" width="8" height="8"/>
+    <rect x="968" y="575" width="8" height="8"/>
+    <rect x="1000" y="575" width="8" height="8"/>
+    <rect x="848" y="583" width="8" height="8"/>
+    <rect x="856" y="583" width="8" height="8"/>
+    <rect x="888" y="583" width="8" height="8"/>
+    <rect x="904" y="583" width="8" height="8"/>
+    <rect x="912" y="583" width="8" height="8"/>
+    <rect x="944" y="583" width="8" height="8"/>
+    <rect x="960" y="583" width="8" height="8"/>
+    <rect x="968" y="583" width="8" height="8"/>
+    <rect x="1000" y="583" width="8" height="8"/>
+    <rect x="872" y="599" width="8" height="8"/>
+    <rect x="880" y="599" width="8" height="8"/>
+    <rect x="896" y="599" width="8" height="8"/>
+    <rect x="928" y="599" width="8" height="8"/>
+    <rect x="936" y="599" width="8" height="8"/>
+    <rect x="952" y="599" width="8" height="8"/>
+    <rect x="984" y="599" width="8" height="8"/>
+    <rect x="992" y="599" width="8" height="8"/>
+    <rect x="1008" y="599" width="8" height="8"/>
+    <rect x="928" y="607" width="8" height="8"/>
+    <rect x="936" y="607" width="8" height="8"/>
+    <rect x="952" y="607" width="8" height="8"/>
+    <rect x="984" y="607" width="8" height="8"/>
+    <rect x="992" y="607" width="8" height="8"/>
+    <rect x="1008" y="607" width="8" height="8"/>
+    <rect x="912" y="615" width="8" height="8"/>
+    <rect x="944" y="615" width="8" height="8"/>
+    <rect x="960" y="615" width="8" height="8"/>
+    <rect x="968" y="615" width="8" height="8"/>
+    <rect x="1000" y="615" width="8" height="8"/>
+    <rect x="928" y="623" width="8" height="8"/>
+    <rect x="936" y="623" width="8" height="8"/>
+    <rect x="952" y="623" width="8" height="8"/>
+    <rect x="984" y="623" width="8" height="8"/>
+    <rect x="992" y="623" width="8" height="8"/>
+    <rect x="1008" y="623" width="8" height="8"/>
+    <rect x="912" y="631" width="8" height="8"/>
+    <rect x="944" y="631" width="8" height="8"/>
+    <rect x="960" y="631" width="8" height="8"/>
+    <rect x="968" y="631" width="8" height="8"/>
+    <rect x="1000" y="631" width="8" height="8"/>
+    <rect x="912" y="639" width="8" height="8"/>
+    <rect x="944" y="639" width="8" height="8"/>
+    <rect x="960" y="639" width="8" height="8"/>
+    <rect x="968" y="639" width="8" height="8"/>
+    <rect x="1000" y="639" width="8" height="8"/>
+    <rect x="928" y="655" width="8" height="8"/>
+    <rect x="936" y="655" width="8" height="8"/>
+    <rect x="952" y="655" width="8" height="8"/>
+    <rect x="984" y="655" width="8" height="8"/>
+    <rect x="992" y="655" width="8" height="8"/>
+    <rect x="1008" y="655" width="8" height="8"/>
+    <rect x="928" y="663" width="8" height="8"/>
+    <rect x="936" y="663" width="8" height="8"/>
+    <rect x="952" y="663" width="8" height="8"/>
+    <rect x="984" y="663" width="8" height="8"/>
+    <rect x="992" y="663" width="8" height="8"/>
+    <rect x="1008" y="663" width="8" height="8"/>
+  </g>
+  <path d="M902 759 H962" fill="none" stroke="#0A192F" stroke-width="8"/>
+</svg>

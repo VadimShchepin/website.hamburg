@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Eine Website entsteht aus einem Prompt</title>
+  <desc id="desc">Ein großes Browserfenster zeigt eine Website mit Kopfzeile, Bildfläche und drei Kacheln. Bildfläche und mittlere Kachel schweben leicht versetzt über ihren vorgesehenen Plätzen. Links unten führt eine gestrichelte Linie vom Prompt-Eingabefeld zum Fenster. Ein rotes Warndreieck am rechten Fensterrand mahnt zur Prüfung.</desc>
+  <g stroke="#0A192F" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Die Verbindung bleibt außerhalb des Website-Layouts. -->
+    <path d="M350 722H225Q195 722 195 692V490Q195 460 225 460H260" fill="none" stroke-dasharray="14 18"/>
+
+    <!-- Browser: bewusst groß und ohne kleinteilige Bedienelemente. -->
+    <rect x="280" y="150" width="800" height="550" rx="28" fill="#FFFFFF"/>
+    <path d="M280 230H1080" fill="none"/>
+    <g fill="#0A192F" stroke="none">
+      <circle cx="324" cy="190" r="9"/>
+      <circle cx="356" cy="190" r="9"/>
+      <circle cx="388" cy="190" r="9"/>
+    </g>
+    <path d="M465 190H886" fill="none" stroke="#E9EEF3"/>
+
+    <!-- Fertige Kopfzeile. -->
+    <rect x="326" y="272" width="708" height="62" rx="12" fill="#0A192F" stroke="none"/>
+    <path d="M352 303H424M846 303H887M932 303H998" fill="none" stroke="#FFFFFF"/>
+
+    <!-- Freie Plätze machen das Zusammensetzen sichtbar. -->
+    <rect x="326" y="392" width="680" height="158" rx="16" fill="#F5F7FA" stroke="#666666" stroke-width="6" stroke-dasharray="12 16"/>
+    <rect x="568" y="594" width="196" height="66" rx="12" fill="#F5F7FA" stroke="#666666" stroke-width="6" stroke-dasharray="10 14"/>
+
+    <!-- Zwei schwebende Bausteine, jeweils nach rechts oben versetzt. -->
+    <rect x="350" y="366" width="680" height="158" rx="16" fill="#E9EEF3"/>
+    <circle cx="876" cy="408" r="18" fill="#FFFFFF" stroke="none"/>
+    <path d="M526 494L617 409L686 474L732 433L796 494Z" fill="#172A45" stroke="none"/>
+    <rect x="590" y="568" width="196" height="66" rx="12" fill="#172A45"/>
+
+    <!-- Zwei bereits eingesetzte Kacheln. -->
+    <rect x="326" y="594" width="196" height="66" rx="12" fill="#E9EEF3"/>
+    <rect x="810" y="594" width="196" height="66" rx="12" fill="#E9EEF3"/>
+
+    <!-- Einziger roter Blickfang: Warnsymbol am Fensterrand. -->
+    <path d="M1080 478L1136 577H1024Z" fill="#E53935" stroke="none"/>
+    <path d="M1080 516V541" fill="none" stroke="#FFFFFF"/>
+    <circle cx="1080" cy="557" r="5" fill="#FFFFFF" stroke="none"/>
+
+    <!-- Prompt als kompakte Sprechblase mit Eingabecursor. -->
+    <path d="M104 744H324L364 716V744H446Q470 744 470 768V818Q470 842 446 842H104Q80 842 80 818V768Q80 744 104 744Z" fill="#FFFFFF"/>
+    <path d="M418 776V810" fill="none"/>
+  </g>
+  <text x="116" y="807" fill="#0A192F" font-family="Inter, Helvetica, Arial, sans-serif" font-size="40" font-weight="600">Prompt</text>
+</svg>

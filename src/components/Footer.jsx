@@ -29,6 +29,7 @@ export default function Footer() {
                     <Link href="/leistungen/google-ads">Google Ads Management</Link>
                     <Link href="/leistungen/chatgpt-ads">ChatGPT Ads</Link>
                     <Link href="/leistungen/website-audit">Website-Audit</Link>
+                    <Link href="/website-check">Kostenloser Website-Check</Link>
                     <Link href="/leistungen/website-erstellen-lassen">Website erstellen lassen</Link>
                 </div>
                 <div className="footer-links">

@@ -14,6 +14,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/leistungen/website-audit',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Kostenloses Website-Audit: SEO, Ladezeit, Conversion',
         description: 'Kostenlose Website-Analyse: Performance (Core Web Vitals), SEO, Conversion und Wettbewerb. Bericht in 2 bis 3 Werktagen mit priorisierten Empfehlungen.',
         url: 'https://webseite.hamburg/leistungen/website-audit',
@@ -90,6 +92,8 @@ export default function WebsiteAuditPage() {
                         <img src="/leistungen/fotos/website-audit.webp" alt="Illustration: Browserfenster auf einem Prüfstand unter einer Lupe, daneben Bewertungsskala und Checkliste" width="1800" height="760" loading="lazy" decoding="async" />
                         <figcaption>Ladezeit, Technik, Struktur und Conversion-Pfad, jeweils mit Messwert statt Bauchgefühl.</figcaption>
                     </figure>
+
+                    <p className="animate-up">Wenn Sie vorher selbst einen ersten Blick werfen wollen: Der <Link href="/website-check">kostenlose Website-Check</Link> prüft Server-Antwortzeit, Komprimierung und die SEO-Grundlagen Ihrer Startseite in rund einer Minute, ohne Anmeldung. Das Audit geht weiter, weil es Ihre Daten aus der Search Console, die Unterseiten und den Weg zur Anfrage einbezieht.</p>
 
                     <h2 className="animate-up">Was das Audit umfasst</h2>
                     <p className="animate-up">Kein oberflächlicher Schnellcheck, sondern eine fundierte Analyse der Faktoren, die über den Erfolg Ihrer Website entscheiden, jeweils mit dem passenden Werkzeug:</p>

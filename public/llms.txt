@@ -70,6 +70,11 @@ Arbeitsweise: Kunden arbeiten direkt mit Vadim Shchepin, es gibt keine Account-M
 - Persönliches Gespräch zur Besprechung der Ergebnisse
 - URL: https://webseite.hamburg/leistungen/website-audit
 
+### Kostenloser Website-Check (Werkzeug)
+- Sofortprüfung einer Startseite ohne Anmeldung: Server-Antwortzeit (TTFB, gemessen aus Frankfurt), Weiterleitungen, Komprimierung, HTTPS, Viewport, Google-Fonts-Einbindung, Titel, Meta-Beschreibung, H1, Sprachangabe, Canonical, noindex, strukturierte Daten, Alternativtexte, robots.txt, XML-Sitemap
+- Misst keine Core Web Vitals (verlinkt dafür auf PageSpeed Insights) und keine Unterseiten; nächster Schritt ist das persönliche Website-Audit
+- URL: https://webseite.hamburg/website-check
+
 ### Branchenseiten (Webdesign nach Branche)
 - Handwerker: https://webseite.hamburg/leistungen/webdesign-handwerker
 - Arztpraxen und Zahnärzte: https://webseite.hamburg/leistungen/webdesign-aerzte
@@ -155,3 +160,5 @@ Arbeitsweise: Kunden arbeiten direkt mit Vadim Shchepin, es gibt keine Account-M
 - WordPress absichern und warten: Schwachstellenzahlen, Update-Rhythmus, Vorgehen nach einem Hack: https://webseite.hamburg/wissen/wordpress-sicherheit-wartung
 - Hosting in Deutschland und Website umziehen: Auftragsverarbeitung, Drittlandtransfer, 301-Reihenfolge: https://webseite.hamburg/wissen/website-umzug-hosting-deutschland
 - Onlineshop Kosten 2026: Plattformpreise, Transaktionsgebühren, Pflichten, Rechenbeispiele: https://webseite.hamburg/wissen/onlineshop-kosten
+- Website mit KI erstellen: fünf KI-Baukästen (Wix, Jimdo, Hostinger, 10Web, Framer) nach Preis, Hosting, Rechtstexten und Export, Selbstversuch mit Codex CLI und Antigravity-CLI: https://webseite.hamburg/wissen/website-mit-ki-erstellen
+- Google-Bewertungen kaufen oder sammeln: Google-Richtlinien, UWG Anhang Nr. 23b/23c seit 28.05.2022, Profilsperren, Bewertungslink und QR-Code, Antworten: https://webseite.hamburg/wissen/google-bewertungen

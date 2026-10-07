@@ -11,6 +11,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/wissen/website-baukasten-oder-eigene-website',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Website-Baukasten oder eigene Website? Kosten im Vergleich',
         description: 'Was ein Website-Baukasten über fünf Jahre kostet, was beim Umzug verloren geht und wann er trotzdem die richtige Wahl ist.',
         url: 'https://webseite.hamburg/wissen/website-baukasten-oder-eigene-website',
@@ -223,6 +225,7 @@ export default function BaukastenOderEigeneWebsitePage() {
                     <li>Ihr Budget liegt insgesamt unter 1.000 Euro und Sie haben Zeit, selbst zu bauen.</li>
                     <li>Sie gewinnen Kunden über Empfehlung oder Instagram und brauchen keine Suchsichtbarkeit.</li>
                     <li>Ihr Verein oder Ihr Nebenprojekt braucht eine Visitenkarte, kein Vertriebsinstrument.</li>
+                    <li>Sie wollen die Seite per KI-Assistent im Baukasten anlegen lassen. Was die KI-Funktionen von Wix, Jimdo, Hostinger und anderen heute leisten, steht in <Link href="/wissen/website-mit-ki-erstellen">Website mit KI erstellen</Link>.</li>
                     <li>Sie betreiben einen Shop mit überschaubarem Sortiment. Für Shops sind Plattformen oft die richtige Antwort, siehe <Link href="/referenzen/dybeauty">dieses Shopify-Projekt</Link> und die <Link href="/leistungen/e-commerce-entwicklung">E-Commerce-Seite</Link>.</li>
                 </ul>
                 <p>

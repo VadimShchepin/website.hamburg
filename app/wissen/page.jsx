@@ -10,6 +10,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/wissen',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Ratgeber Webdesign, SEO & Google Ads | webseite.hamburg',
         description: 'Fachartikel zu Webdesign, SEO, AI SEO und Google Ads für lokale Unternehmen. Praxiswissen, keine Theorie.',
         url: 'https://webseite.hamburg/wissen',
@@ -18,6 +20,24 @@ export const metadata = {
 };
 
 const articles = [
+    {
+        slug: 'website-mit-ki-erstellen',
+        image: '/wissen/cards/website-mit-ki-erstellen.svg',
+        alt: 'Illustration: Browserfenster, in das sich Layout-Blöcke von selbst einfügen, daneben eine Chat-Sprechblase, ein Block rot',
+        category: 'WEBDESIGN',
+        title: 'Website mit KI erstellen: was 2026 wirklich funktioniert',
+        excerpt: 'Fünf KI-Baukästen nach Preis, Hosting, Rechtstexten und Export geprüft, dazu ein Selbstversuch mit zwei KI-Programmierwerkzeugen: was funktioniert, was erfunden wird und wann sich ein Entwickler lohnt.',
+        readTime: '12 Min.',
+    },
+    {
+        slug: 'google-bewertungen',
+        image: '/wissen/cards/google-bewertungen.svg',
+        alt: 'Illustration: Bewertungskarte mit fünf Sternen neben einem Smartphone mit QR-Code, ein durchgestrichenes Preisschild rot',
+        category: 'SEO',
+        title: 'Google-Bewertungen kaufen oder sammeln: was erlaubt ist und was wirkt',
+        excerpt: 'Warum gekaufte Bewertungen gegen Google-Richtlinien und UWG verstoßen, was Google mit betroffenen Profilen macht und wie Sie echte Bewertungen per Link und QR-Code sammeln.',
+        readTime: '11 Min.',
+    },
     {
         slug: 'barrierefreie-website-pflicht',
         image: '/wissen/cards/barrierefreie-website-pflicht.svg',
@@ -239,10 +259,10 @@ const articles = [
 
 // Overview grouped by topic so the articles are easy to find (and linked by theme)
 const groups = [
-    { title: 'Kosten', slugs: ['webdesign-kosten', 'onlineshop-kosten', 'seo-kosten-hamburg', 'google-ads-kosten', 'webdesign-agentur-oder-freelancer', 'website-baukasten-oder-eigene-website'] },
+    { title: 'Kosten', slugs: ['webdesign-kosten', 'onlineshop-kosten', 'seo-kosten-hamburg', 'google-ads-kosten', 'webdesign-agentur-oder-freelancer', 'website-baukasten-oder-eigene-website', 'website-mit-ki-erstellen'] },
     { title: 'Recht und Pflichten', slugs: ['impressum-datenschutzerklaerung-pflicht', 'barrierefreie-website-pflicht', 'website-barrierefrei-machen', 'website-abmahnung-vermeiden'] },
     { title: 'Technik', slugs: ['wordpress-alternativen', 'wordpress-sicherheit-wartung', 'webflow-oder-wordpress', 'website-umzug-hosting-deutschland', 'website-relaunch-checkliste', 'warum-langsame-websites-kunden-kosten', 'case-study-fotogalerie-performance', 'dsgvo-fotoplattform-sicherheit-performance'] },
-    { title: 'Sichtbarkeit', slugs: ['lokales-seo-hamburg-guide', 'google-business-profile-optimieren', 'website-nicht-bei-google-gefunden', 'ai-seo-was-unternehmen-jetzt-wissen-muessen', 'google-ads-fehler-lokale-unternehmen', 'website-conversion-optimierung'] },
+    { title: 'Sichtbarkeit', slugs: ['lokales-seo-hamburg-guide', 'google-business-profile-optimieren', 'google-bewertungen', 'website-nicht-bei-google-gefunden', 'ai-seo-was-unternehmen-jetzt-wissen-muessen', 'google-ads-fehler-lokale-unternehmen', 'website-conversion-optimierung'] },
 ];
 
 export default function WissenPage() {

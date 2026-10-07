@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1520 988" role="img" aria-labelledby="title desc">
+  <rect x="0" y="0" width="1520" height="988" fill="#0A192F"/>
+  <title id="title">Eine Website entsteht mit künstlicher Intelligenz</title>
+  <desc id="desc">Ein leicht isometrisch versetztes Browserfenster mit Kopfzeile, Bildfläche und drei Kacheln. Die Bildfläche und eine einzelne rote Kachel schweben über ihren gestrichelten Einfügeplätzen. Rechts daneben steht eine schwebende Chat-Sprechblase mit drei Punkten, die durch eine feine gestrichelte Linie mit dem Browser verbunden ist.</desc>
+  <g stroke="#CBD5E1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Verbindung zum Chat -->
+    <path d="M1000 480 C1090 490 1045 410 1120 410" fill="none" stroke-dasharray="9 12"/>
+    <!-- Versetzte Browser-Ebene -->
+    <g transform="matrix(1 0.12 -0.22 1 390 280)">
+      <rect x="15" y="19" width="650" height="400" rx="24" fill="#0A192F"/>
+      <path d="M650 375 L665 394 M24 400 L39 419" fill="none"/>
+      <rect width="650" height="400" rx="24" fill="#172A45" stroke-width="4"/>
+      <path d="M1 54 H649" fill="none"/>
+      <g fill="#8892B0" stroke="none">
+        <circle cx="28" cy="27" r="5"/>
+        <circle cx="48" cy="27" r="5"/>
+        <circle cx="68" cy="27" r="5"/>
+      </g>
+      <path d="M112 26 H536" fill="none" stroke="#8892B0"/>
+      <!-- Eingesetzte Kopfzeile -->
+      <rect x="30" y="79" width="590" height="37" rx="9" fill="#0A192F"/>
+      <path d="M51 97 H119 M493 97 H531 M556 97 H595" fill="none" stroke="#8892B0"/>
+      <!-- Freier Platz für die schwebende Bildfläche -->
+      <rect x="30" y="145" width="590" height="125" rx="13" fill="#0A192F" stroke="#8892B0" stroke-dasharray="8 10"/>
+      <path d="M30 145 V101 M620 145 V101 M30 270 V226 M620 270 V226" fill="none" stroke="#8892B0" stroke-dasharray="5 9"/>
+      <!-- Drei große Kacheln, die dritte noch nicht eingesetzt -->
+      <rect x="30" y="302" width="178" height="69" rx="12" fill="#0A192F"/>
+      <rect x="236" y="302" width="178" height="69" rx="12" fill="#0A192F"/>
+      <rect x="442" y="302" width="178" height="69" rx="12" fill="#0A192F" stroke="#8892B0" stroke-dasharray="8 10"/>
+      <!-- Schwebende Bildfläche mit einfachem Bildsymbol -->
+      <rect x="30" y="101" width="590" height="125" rx="13" fill="#172A45" stroke-width="4"/>
+      <circle cx="496" cy="136" r="13" fill="#8892B0" stroke="none"/>
+      <path d="M56 204 L160 139 L252 204 L335 157 L416 204 Z" fill="#8892B0" stroke="none"/>
+      <path d="M49 111 H205" fill="none" stroke="#FFFFFF"/>
+      <!-- Die einzige rote Form schwebt über ihrem Einfügeplatz -->
+      <path d="M442 302 V260 M620 302 V260 M442 371 V329 M620 371 V329" fill="none" stroke="#8892B0" stroke-dasharray="5 9"/>
+      <rect x="442" y="260" width="178" height="69" rx="12" fill="#E53935" stroke-width="4"/>
+      <path d="M459 271 H508" fill="none" stroke="#FFFFFF"/>
+    </g>
+    <!-- Schwebende Chat-Sprechblase -->
+    <g transform="matrix(1 0.12 -0.15 1 1144 316)">
+      <path d="M22 0 H160 Q182 0 182 22 V100 Q182 122 160 122 H75 L38 153 V122 H22 Q0 122 0 100 V22 Q0 0 22 0 Z" fill="#172A45" stroke-width="4"/>
+      <g fill="#CBD5E1" stroke="none">
+        <circle cx="53" cy="61" r="8"/>
+        <circle cx="91" cy="61" r="8"/>
+        <circle cx="129" cy="61" r="8"/>
+      </g>
+      <path d="M24 12 H70" fill="none" stroke="#FFFFFF"/>
+    </g>
+  </g>
+</svg>

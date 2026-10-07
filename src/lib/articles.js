@@ -143,6 +143,18 @@ export const ARTICLES = [
         category: 'E-COMMERCE',
         readTime: '11 Min.',
     },
+    {
+        slug: 'website-mit-ki-erstellen',
+        title: 'Website mit KI erstellen: was 2026 wirklich funktioniert',
+        category: 'WEBDESIGN',
+        readTime: '12 Min.',
+    },
+    {
+        slug: 'google-bewertungen',
+        title: 'Google-Bewertungen kaufen oder sammeln: was erlaubt ist und was wirkt',
+        category: 'SEO',
+        readTime: '11 Min.',
+    },
 ];
 
 // Related articles: same category first, then the following articles in list order.

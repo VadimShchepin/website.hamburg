@@ -11,6 +11,8 @@ export const metadata = {
         canonical: 'https://webseite.hamburg/wissen/google-business-profile-optimieren',
     },
     openGraph: {
+        siteName: 'webseite.hamburg',
+        locale: 'de_DE',
         title: 'Google-Unternehmensprofil optimieren: Leitfaden Hamburg',
         description: 'Offizielle Ranking-Faktoren, Bewertungsregeln, Sperrfallen und eine wöchentliche Routine für lokale Unternehmen in Hamburg.',
         url: 'https://webseite.hamburg/wissen/google-business-profile-optimieren',
@@ -195,6 +197,9 @@ export default function GoogleBusinessProfilePage() {
                     also das Vorschalten eines Filters, bei dem nur zufriedene Kunden zu Google geschickt werden.
                     Ebenfalls verboten: Bewertungen von Mitarbeitern, Inhabern oder Agenturen für das eigene
                     Unternehmen. Verstöße führen zur Löschung der Bewertungen und im Wiederholungsfall zu Sperren.
+                    Was das UWG dazu sagt, wie Google betroffene Profile kennzeichnet und wie Sie Bewertungen per Link
+                    und QR-Code sammeln, steht ausführlich in
+                    {' '}<Link href="/wissen/google-bewertungen">Google-Bewertungen kaufen oder sammeln</Link>.
                 </p>
                 <p>
                     Was erlaubt und wirksam ist, ist unspektakulär: Fragen Sie jeden zufriedenen Kunden direkt nach

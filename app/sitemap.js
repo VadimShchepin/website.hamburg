@@ -329,7 +329,25 @@ export default function sitemap() {
             changeFrequency: 'monthly',
             priority: 0.7,
         },
+        {
+            url: `${SITE_URL}/wissen/website-mit-ki-erstellen`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.7,
+        },
+        {
+            url: `${SITE_URL}/wissen/google-bewertungen`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.7,
+        },
         // Sonstige
+        {
+            url: `${SITE_URL}/website-check`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.8,
+        },
         {
             url: `${SITE_URL}/ueber-uns`,
             lastModified: new Date(),

@@ -144,6 +144,10 @@ Was die Analyse umfasst:
 
 Preis: Kostenlos und unverbindlich. Kein Haken, kein Kleingedrucktes.
 
+### Kostenloser Website-Check (Werkzeug)
+Eigene Seite mit einem Prüfwerkzeug, das eine eingegebene Startseite einmal von einem Server in Frankfurt lädt und 16 Punkte auswertet: Zeit bis zum ersten Byte (gut bis 0,8 s, schlecht über 1,8 s laut web.dev), Weiterleitungen, Komprimierung, HTTPS, Viewport, Schriften von Google-Servern, Seitentitel, Meta-Beschreibung, H1, Sprachangabe, Canonical, noindex (Meta und X-Robots-Tag), JSON-LD, Alternativtexte, robots.txt und XML-Sitemap. Ohne Anmeldung, Ergebnis wird nicht gespeichert. Nicht gemessen: Core Web Vitals (Link zu PageSpeed Insights), Unterseiten, Rankings, Rechtstexte.
+URL: https://webseite.hamburg/website-check
+
 ## Referenzen und Ergebnisse
 
 ### Blitz Hamburg: Handwerksbetrieb
@@ -280,6 +284,14 @@ Vadim Shchepin:
 0o. Onlineshop Kosten 2026: was wirklich zusammenkommt (August 2026)
    Thema: Shopify Deutschland bei Jahreszahlung Basic 27 EUR, Grow 79 EUR, Advanced 289 EUR, Plus ab 2.100 EUR im Monat; Shopware Community Edition kostenlos zum Selbsthosten; WooCommerce als kostenlose Erweiterung; die vier eigentlichen Kostenposten Umsetzung, Produktdaten, Transaktionsgebühren und Pflege; gesetzliche Pflichten inklusive Barrierefreiheit nach § 19 BFSGV für die Bestellstrecke; zwei Rechenbeispiele über drei Jahre
    URL: https://webseite.hamburg/wissen/onlineshop-kosten
+
+0x. Website mit KI erstellen: was 2026 wirklich funktioniert (Oktober 2026)
+   Thema: KI-Funktionen, Einstiegspreise und Bedingungen, Rechtstexte, Hosting und Export von Wix (Harmony/Aria), Jimdo Website Builder, Hostinger KI-Baukasten, 10Web und Framer Agents laut Anbieterseiten, Stand 07.10.2026; Lighthouse-Messungen von je zwei Vorzeige-Seiten (Leistung 39 bis 93, LCP 1,2 bis 15,2 s); Selbstversuch mit identischem Auftrag an Codex CLI 0.155.1 und Antigravity-CLI 1.3.1: Codex markierte fehlende Daten als Platzhalter, die Antigravity-CLI erfand Adresse, Telefon, "100% Kundenzufriedenheit" und ein Formular ohne Funktion, Lighthouse-SEO 100 bei beiden
+   URL: https://webseite.hamburg/wissen/website-mit-ki-erstellen
+
+0y. Google-Bewertungen kaufen oder sammeln: was erlaubt ist und was wirkt (Oktober 2026)
+   Thema: Google-Richtlinie zu gefälschten Interaktionen und Manipulation von Bewertungen (Anreize, Review Gating, Interessenkonflikte), Profileinschränkungen mit Warnhinweis, entfernte Rezensionen laut Google (2022: über 115 Mio., 2024: über 240 Mio., 2025: über 292 Mio.); UWG Anhang Nr. 23b und 23c seit 28.05.2022 (Umsetzung RL (EU) 2019/2161), §§ 5b Abs. 3, 8, 9, 19 UWG; Bundeskartellamt Sektoruntersuchung Nutzerbewertungen 2020; BGH VI ZR 1244/20, OLG Oldenburg 13 U 110/23, OLG Frankfurt 16 U 2/25; Bewertungslink und QR-Code, Zeitpunkt, Antworten
+   URL: https://webseite.hamburg/wissen/google-bewertungen
 
 
 1. Warum langsame Websites Sie jeden Tag Kunden kosten

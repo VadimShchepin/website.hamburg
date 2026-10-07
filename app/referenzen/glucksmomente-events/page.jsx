@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import ServiceCta from '../../../src/components/ServiceCta';
 
@@ -6,8 +7,8 @@ const SITE_URL = 'https://webseite.hamburg';
 const PAGE_URL = `${SITE_URL}/referenzen/glucksmomente-events`;
 
 export const metadata = {
-    title: 'Aquarell-Ästhetik statt Baukasten | Event-Website',
-    description: 'Individuelle Event-Website für Josy Eberlein in Hamburg. React + GSAP Scroll-Animationen, Aquarell-Design, mobile-optimiert.',
+    title: 'Glücksmomente Events: Event-Website mit Aquarell-Design',
+    description: 'Individuelle Website für die Hamburger Eventplanerin Josy Eberlein: Aquarell-Design, Scroll-Animationen mit GSAP, schnell auf dem Handy und ohne Baukasten.',
     alternates: { canonical: PAGE_URL },
     openGraph: {
         title: 'Glücksmomente Events | Event-Website mit Herz und GSAP',
@@ -26,7 +27,7 @@ export default function GlucksmomenteCaseStudy() {
         url: PAGE_URL,
         datePublished: '2026-04-03',
         dateModified: '2026-04-03',
-        author: { '@type': 'Person', name: 'Vadim Shchepin', url: `${SITE_URL}/über-uns` },
+        author: { '@type': 'Person', name: 'Vadim Shchepin', url: `${SITE_URL}/ueber-uns` },
         publisher: { '@type': 'Organization', '@id': `${SITE_URL}/#organization` },
         mainEntityOfPage: PAGE_URL,
     };
@@ -43,6 +44,7 @@ export default function GlucksmomenteCaseStudy() {
 
     return (
         <>
+            <AutoLinks path="/referenzen/glucksmomente-events">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -61,7 +63,7 @@ export default function GlucksmomenteCaseStudy() {
                         Glücksmomente Events: Eine Website, die so warmherzig ist wie die Frau dahinter.
                     </h1>
                     <p className="subpage-intro animate-up">
-                        Josy plant Hochzeiten, Geburtstage und Events in Hamburg. Ihre Website musste genau das ausstrahlen: Warme, Kreativitat und Professionalitat. Kein Template von der Stange. Eine Website, die nach Aquarell riecht, wenn Websites riechen konnten.
+                        Josy plant Hochzeiten, Geburtstage und Events in Hamburg. Ihre Website musste genau das ausstrahlen: Wärme, Kreativität und Professionalität. Kein Template von der Stange. Eine Website, die nach Aquarell riecht, wenn Websites riechen könnten.
                     </p>
                     <div className="article-byline animate-up">
                         Von <Link href="/ueber-uns">Vadim Shchepin</Link> &middot; 3. April 2026
@@ -75,14 +77,14 @@ export default function GlucksmomenteCaseStudy() {
                     <div className="cs-image-showcase animate-up">
                         <img
                             src="/referenzen/glucksmomente-events-hero.webp"
-                            alt="Illustration: Eventbogen mit Ballontraube und geschwungenen Baendern"
+                            alt="Illustration: Eventbogen mit Ballontraube und geschwungenen Bändern"
                             width="1200"
                             height="780"
                             loading="lazy"
                             decoding="async"
                             style={{ width: '100%', height: 'auto' }}
                         />
-                        <p className="cs-image-caption">Eventgestaltung als Leitmotiv: Bogen, Ballons und fliessende Scroll-Bewegung.</p>
+                        <p className="cs-image-caption">Eventgestaltung als Leitmotiv: Bogen, Ballons und fließende Scroll-Bewegung.</p>
                     </div>
                 </div>
             </section>
@@ -95,7 +97,7 @@ export default function GlucksmomenteCaseStudy() {
                         Josy Eberlein ist Eventplanerin in Hamburg. Hochzeiten, private Feiern, Firmenevents. Sie hat Geschmack, sie hat Erfahrung, und sie hatte keine Website. In einer Branche, in der Vertrauen alles ist, ist das ein Problem. Denn bevor jemand eine Hochzeit für 20.000 Euro plant, schaut er sich die Website an. Und wenn es keine gibt, bucht er jemand anderen.
                     </p>
                     <p className="animate-up">
-                        Die Anforderung: Eine Website, die Josys Personlichkeit widerspiegelt. Nicht &bdquo;modern und minimalistisch&ldquo; im Sinne von &bdquo;weisser Hintergrund mit Stock-Fotos&ldquo;. Sondern wirklich warmherzig. Kunstlerisch. Wie eine handgeschriebene Einladung, aber digital.
+                        Die Anforderung: Eine Website, die Josys Persönlichkeit widerspiegelt. Nicht &quot;modern und minimalistisch&quot; im Sinne von &quot;weisser Hintergrund mit Stock-Fotos&quot;. Sondern wirklich warmherzig. Künstlerisch. Wie eine handgeschriebene Einladung, aber digital.
                     </p>
 
                     <h2 className="animate-up">Die Lösung: Aquarell trifft Code</h2>
@@ -103,15 +105,15 @@ export default function GlucksmomenteCaseStudy() {
                     <div className="subpage-features-grid animate-up">
                         <div className="subpage-feature">
                             <h3>Aquarell-Ästhetik</h3>
-                            <p>Animierte Blob-Hintergründe in Aquarelltonen. Drei handverlesene Schriftarten: Cormorant Garamond für Überschriften, Outfit für Fliesstexte, Caveat für handschriftliche Akzente. Das visuelle Gefuhl einer eleganten Einladungskarte.</p>
+                            <p>Animierte Blob-Hintergründe in Aquarelltonen. Drei handverlesene Schriftarten: Cormorant Garamond für Überschriften, Outfit für Fliesstexte, Caveat für handschriftliche Akzente. Das visuelle Gefühl einer eleganten Einladungskarte.</p>
                         </div>
                         <div className="subpage-feature">
                             <h3>GSAP Scroll-Animationen</h3>
-                            <p>Jede Sektion erscheint beim Scrollen, sanft, nicht aufdringlich. ScrollTrigger-gesteuerte Reveal-Effekte, die die Geschichte erzählen, während der Besucher scrollt. Wie ein guter Gastgeber, der den Abend Stuck für Stuck entfaltet.</p>
+                            <p>Jede Sektion erscheint beim Scrollen, sanft, nicht aufdringlich. ScrollTrigger-gesteuerte Reveal-Effekte, die die Geschichte erzählen, während der Besucher scrollt. Wie ein guter Gastgeber, der den Abend Stück für Stück entfaltet.</p>
                         </div>
                         <div className="subpage-feature">
                             <h3>Single-Page, aber mit Tiefe</h3>
-                            <p>Smooth Scrolling zwischen den Sektionen. Navigation, die mitwandert. Alle Informationen auf einer Seite: Services, Über mich, Portfolio, Kontakt, ohne das Gefuhl von Enge.</p>
+                            <p>Smooth Scrolling zwischen den Sektionen. Navigation, die mitwandert. Alle Informationen auf einer Seite: Services, Über mich, Portfolio, Kontakt, ohne das Gefühl von Enge.</p>
                         </div>
                         <div className="subpage-feature">
                             <h3>Mobile-First</h3>
@@ -121,7 +123,7 @@ export default function GlucksmomenteCaseStudy() {
 
                     <h2 className="animate-up">Warum kein WordPress</h2>
                     <p className="animate-up">
-                        Josy brauchte keine Blog-Maschine mit 47 Plugins. Sie brauchte eine schnelle, schöne, einzigartige Website, die genau das tut, was sie soll, und nichts anderes. React + Vite + GSAP liefern genau das: eine leichte, performante Seite ohne den Ballast eines CMS. Kein Update-Popup, kein Plugin-Konflikt, kein &bdquo;Ihre Website wurde gehackt&ldquo;-E-Mail um 3 Uhr morgens.
+                        Josy brauchte keine Blog-Maschine mit 47 Plugins. Sie brauchte eine schnelle, schöne, einzigartige Website, die genau das tut, was sie soll, und nichts anderes. React + Vite + GSAP liefern genau das: eine leichte, performante Seite ohne den Ballast eines CMS. Kein Update-Popup, kein Plugin-Konflikt, kein &quot;Ihre Website wurde gehackt&quot;-E-Mail um 3 Uhr morgens.
                     </p>
                     <p className="animate-up">
                         Wenn Josy den Text ändern will, schreibt sie mir. Ich andere es in 5 Minuten. Das ist schneller als jedes WordPress-Backend. Und sicherer.
@@ -130,7 +132,7 @@ export default function GlucksmomenteCaseStudy() {
                     <div className="cs-takeaway animate-up">
                         <h3>Das Wichtigste</h3>
                         <p>
-                            Nicht jede Website braucht ein CMS, eine Datenbank und 15 Integrationen. Manchmal reichen React, schöne Animationen und ein Entwickler, der versteht, was die Kundin ausstrahlen will. Glücksmomente zeigt: Technologie soll die Botschaft unterstutzen, nicht uberschatten. Und manchmal ist die beste Technologie die, die man am wenigsten sieht.
+                            Nicht jede Website braucht ein CMS, eine Datenbank und 15 Integrationen. Manchmal reichen React, schöne Animationen und ein Entwickler, der versteht, was die Kundin ausstrahlen will. Glücksmomente zeigt: Technologie soll die Botschaft unterstützen, nicht überschatten. Und manchmal ist die beste Technologie die, die man am wenigsten sieht.
                         </p>
                     </div>
                 </div>
@@ -145,7 +147,7 @@ export default function GlucksmomenteCaseStudy() {
                     <div className="subpage-features-grid animate-up">
                         <Link href="/leistungen/webdesign" className="subpage-feature" style={{ textDecoration: 'none' }}>
                             <h3>Webdesign & Entwicklung</h3>
-                            <p>Individuelle Websites, die Ihre Personlichkeit widerspiegeln. Ab 2.900 &euro;.</p>
+                            <p>Individuelle Websites, die Ihre Persönlichkeit widerspiegeln. Ab 2.900 &euro;.</p>
                         </Link>
                         <Link href="/leistungen/seo" className="subpage-feature" style={{ textDecoration: 'none' }}>
                             <h3>SEO</h3>
@@ -155,7 +157,8 @@ export default function GlucksmomenteCaseStudy() {
                 </div>
             </section>
 
-            <ServiceCta text="Individuelle Website gewunscht? Keine Templates, keine Stock-Fotos. Ich baue Websites, die nach Ihnen aussehen, nicht nach allen anderen. Und ja, es darf Aquarell sein." />
+            <ServiceCta text="Individuelle Website gewünscht? Keine Templates, keine Stock-Fotos. Ich baue Websites, die nach Ihnen aussehen, nicht nach allen anderen. Und ja, es darf Aquarell sein." />
+            </AutoLinks>
         </>
     );
 }

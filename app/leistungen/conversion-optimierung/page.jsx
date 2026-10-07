@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
@@ -7,13 +8,13 @@ import ServiceMeta from '../../../src/components/ServiceMeta';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'Mehr Anfragen bei gleichem Traffic | Conversion',
-    description: 'Conversion-Optimierung für Unternehmen in Hamburg: mehr Anfragen aus dem Traffic, den Sie schon haben. Analyse kostenlos, Umsetzung ab 1.200 Euro.',
+    title: 'Conversion-Optimierung Hamburg: mehr Anfragen pro Besucher',
+    description: 'Conversion-Optimierung für Unternehmen in Hamburg: mehr Anfragen aus dem Traffic, den Sie schon haben. Analyse kostenlos, Umsetzung zum Festpreis ab 2.400 €.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/conversion-optimierung',
     },
     openGraph: {
-        title: 'Mehr Anfragen bei gleichem Traffic | Conversion',
+        title: 'Conversion-Optimierung Hamburg: mehr Anfragen pro Besucher',
         description: 'Mehr Anfragen ohne mehr Besucher. Conversion-Optimierung für lokale Unternehmen in Hamburg: Analyse, Priorisierung, Umsetzung, Messung.',
         url: 'https://webseite.hamburg/leistungen/conversion-optimierung',
         type: 'website',
@@ -21,13 +22,14 @@ export const metadata = {
 };
 
 const faqItems = [
-    { q: 'Was kostet Conversion-Optimierung?', a: 'Die Analyse ist kostenlos, die Umsetzung startet bei 1.200 Euro einmalig. Der genaue Festpreis hängt vom Umfang ab: eine einzelne Landingpage ist ein überschaubarer Sprint, ein kompletter Anfrageweg über mehrere Seiten ist mehr Arbeit. Sie kennen den Preis nach der Analyse und bevor Sie sich entscheiden. Keine Stundenzettel, keine Überraschungen.' },
+    { q: 'Was kostet Conversion-Optimierung?', a: 'Die Analyse ist kostenlos, die Umsetzung startet bei 2.400 Euro einmalig. Der genaue Festpreis hängt vom Umfang ab: eine einzelne Landingpage ist ein überschaubarer Sprint, ein kompletter Anfrageweg über mehrere Seiten ist mehr Arbeit. Sie kennen den Preis nach der Analyse und bevor Sie sich entscheiden. Keine Stundenzettel, keine Überraschungen.' },
     { q: 'Wie schnell sehe ich Ergebnisse?', a: 'Anders als bei SEO wirken die Änderungen sofort, sobald sie live sind. Ob die Wirkung messbar ist, hängt an Ihren Besucherzahlen: bei wenigen hundert Besuchern im Monat braucht es ein paar Monate, bis sich ein Unterschied sauber vom Zufall trennen lässt. Bei mehreren tausend sehen Sie es innerhalb weniger Wochen.' },
     { q: 'Brauche ich dafür eine neue Website?', a: 'Meistens nicht. Conversion-Optimierung arbeitet mit dem, was da ist: Struktur, Reihenfolge, Formulare, Ladezeit, Vertrauenselemente. Wenn die technische Basis so alt ist, dass jede Änderung teurer wird als ein Neubau, sage ich Ihnen das offen. Dann ist ein Relaunch der ehrlichere Weg.' },
     { q: 'Woher wissen Sie, was funktioniert?', a: 'Aus Ihren Daten, nicht aus meinem Geschmack. Ich schaue mir an, wo Besucher abspringen, welche Seiten Anfragen erzeugen und welche nicht, wie sich Mobil- und Desktop-Nutzung unterscheiden. Dazu kommen belegte Grundlagen aus der Forschung zu Formularen und Ladezeiten. Was ich nicht belegen kann, verkaufe ich Ihnen nicht als Gewissheit.' },
     { q: 'Machen Sie auch A/B-Tests?', a: 'Wenn genug Traffic da ist, ja. Ein A/B-Test braucht eine Mindestmenge an Besuchern, sonst misst er Rauschen und nicht Wirkung. Für die meisten lokalen Unternehmen in Hamburg ist die Menge zu klein. Dort ist es ehrlicher, offensichtliche Schwachstellen direkt zu beheben und die Anfragen über die Zeit zu vergleichen.' },
     { q: 'Lohnt sich das bei wenig Traffic?', a: 'Oft mehr als zusätzliche Werbung. Wenn 200 Menschen im Monat auf Ihrer Seite landen und zwei davon anfragen, ist der Hebel nicht mehr Besucher, sondern die 198. Der Nachweis dauert bei kleinen Zahlen länger, aber die Änderungen kosten einmalig statt monatlich.' },
     { q: 'Was ist der Unterschied zu Webdesign?', a: 'Webdesign baut die Website. Conversion-Optimierung verbessert eine Website, die es schon gibt, entlang der Frage: warum fragt jemand nicht an? Wenn Sie neu bauen, ist Conversion-Optimierung Teil des Projekts. Wenn Ihre Seite steht und zu wenig bringt, ist das hier der günstigere Eingriff.' },
+    { q: 'Wie kann ich die Conversion Rate meiner Website selbst verbessern?', a: 'Mit vier Handgriffen, die fast immer wirken: die Telefonnummer auf dem Handy antippbar machen, das Formular auf Name, Kontaktweg und Anliegen kürzen, einen klaren Handlungsaufruf in den ersten Bildschirm setzen und Bewertungen direkt neben das Formular stellen. Danach messen Sie die Anfragen vier Wochen lang und vergleichen.' },
 ];
 
 export default function ConversionOptimierungPage() {
@@ -39,7 +41,7 @@ export default function ConversionOptimierungPage() {
         areaServed: { '@type': 'City', name: 'Hamburg' },
         url: 'https://webseite.hamburg/leistungen/conversion-optimierung',
         description: 'Conversion-Optimierung für Unternehmen in Hamburg: Analyse der Nutzerwege, Priorisierung nach Wirkung, Umsetzung und Messung.',
-        offers: { '@type': 'Offer', price: '1200', priceCurrency: 'EUR' },
+        offers: { '@type': 'Offer', price: '2400', priceCurrency: 'EUR' },
     };
 
     const breadcrumbJsonLd = {
@@ -54,6 +56,7 @@ export default function ConversionOptimierungPage() {
 
     return (
         <>
+            <AutoLinks path="/leistungen/conversion-optimierung">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -63,7 +66,7 @@ export default function ConversionOptimierungPage() {
                     <div className="subpage-hero-split">
                         <div>
                         <p className="section-kicker animate-up">Conversion-Optimierung</p>
-                        <h1 className="subpage-title animate-up">Mehr Anfragen aus dem Traffic, den Sie schon haben.</h1>
+                        <h1 className="subpage-title animate-up">Conversion-Optimierung: mehr Anfragen aus dem Traffic, den Sie schon haben.</h1>
                         <p className="subpage-intro animate-up">
                             Die meisten Websites haben kein Besucherproblem, sondern ein Abschlussproblem. Bevor Sie mehr Geld in Werbung stecken, lohnt sich der Blick darauf, warum die Menschen, die schon da sind, wieder gehen.
                         </p>
@@ -78,7 +81,7 @@ export default function ConversionOptimierungPage() {
 
             <section className="subpage-content section light-bg">
                 <div className="container subpage-body">
-                    <h2 className="animate-up">Was Conversion-Optimierung konkret bedeutet</h2>
+                    <h2 className="animate-up">Was ist Conversion-Optimierung?</h2>
                     <div className="subpage-takeaway animate-up">
                         <p><strong>Conversion-Optimierung</strong> (auch CRO, Conversion Rate Optimierung) verbessert das Verhältnis von Besuchern zu Anfragen. Statt mehr Menschen auf die Seite zu holen, sorgt sie dafür, dass mehr der vorhandenen Besucher tatsächlich anrufen, schreiben oder ein Formular abschicken. Die Arbeit besteht aus vier Teilen: Analyse der Nutzerwege, Priorisierung nach Wirkung, Umsetzung und Messung.</p>
                     </div>
@@ -87,8 +90,8 @@ export default function ConversionOptimierungPage() {
                     <p className="animate-up">Rechnen Sie es an Ihrem eigenen Fall durch. Wenn von 500 Besuchern im Monat fünf anfragen, liegt Ihre Conversion Rate bei 1 Prozent. Um die Anfragen zu verdoppeln, haben Sie zwei Wege: 500 zusätzliche Besucher kaufen, jeden Monat wieder. Oder dafür sorgen, dass aus denselben 500 Besuchern zehn Anfragen werden. Der erste Weg kostet dauerhaft, der zweite einmalig. Warum Geschwindigkeit dabei eine so große Rolle spielt, steht im Beitrag <a href="/wissen/warum-langsame-websites-kunden-kosten">warum langsame Websites Kunden kosten</a>.</p>
 
                     <figure className="subpage-figure is-band animate-up">
-                        <img src="/leistungen/fotos/conversion-optimierung.webp" alt="Buero mit Laptop, auf dessen Bildschirm Auswertungen und Kennzahlen zu sehen sind" width="1800" height="760" loading="lazy" decoding="async" />
-                        <figcaption>Erst messen, wo Besucher abspringen. Dann aendern. In dieser Reihenfolge.</figcaption>
+                        <img src="/leistungen/fotos/conversion-optimierung.webp" alt="Büro mit Laptop, auf dessen Bildschirm Auswertungen und Kennzahlen zu sehen sind" width="1800" height="760" loading="lazy" decoding="async" />
+                        <figcaption>Erst messen, wo Besucher abspringen. Dann ändern. In dieser Reihenfolge.</figcaption>
                     </figure>
 
                     <h2 className="animate-up">Woran es bei lokalen Websites meistens liegt</h2>
@@ -147,7 +150,7 @@ export default function ConversionOptimierungPage() {
 
                     <h2 className="animate-up">Was Sie bekommen</h2>
                     <div className="subpage-single-price animate-up">
-                        <div className="sp-price-value">ab 1.200 &euro; einmalig</div>
+                        <div className="sp-price-value">ab 2.400 &euro; einmalig</div>
                         <p>Die Analyse vorab ist kostenlos. Den Festpreis kennen Sie, bevor Sie sich entscheiden. Keine Mindestlaufzeit, keine monatliche Bindung.</p>
                         <ul className="sp-price-includes">
                             <li>Analyse des kompletten Anfragewegs, Handy und Desktop</li>
@@ -167,6 +170,7 @@ export default function ConversionOptimierungPage() {
             <FaqSection title="Fragen zur Conversion-Optimierung" items={faqItems} />
             <RelatedServices exclude="conversion-optimierung" />
             <ServiceCta text="Lassen Sie mich Ihren Anfrageweg einmal durchgehen. Ich sage Ihnen ehrlich, ob das Problem bei den Besuchern liegt oder bei der Seite, kostenlos und unverbindlich." />
+            </AutoLinks>
         </>
     );
 }

@@ -1,15 +1,16 @@
 import ArticleLayout from '../../../src/components/ArticleLayout';
+import AutoLinks from '../../../src/components/AutoLinks';
 import { BUSINESS } from '../../../src/lib/schema';
 import Link from 'next/link';
 
 export const metadata = {
-    title: 'WordPress-Alternativen: der ehrliche Vergleich',
+    title: 'WordPress-Alternativen 2026: der ehrliche Vergleich',
     description: 'WordPress läuft auf 40,7 Prozent aller Websites. Wann ein Wechsel sich lohnt, welche Alternativen wofür taugen und was der Umzug wirklich kostet.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/wordpress-alternativen',
     },
     openGraph: {
-        title: 'WordPress-Alternativen: der ehrliche Vergleich',
+        title: 'WordPress-Alternativen 2026: der ehrliche Vergleich',
         description: 'Wann ein Wechsel von WordPress sich lohnt, welche Alternativen wofür taugen und was der Umzug wirklich kostet.',
         url: 'https://webseite.hamburg/wissen/wordpress-alternativen',
         type: 'article',
@@ -91,6 +92,7 @@ export default function WordPressAlternativenPage() {
                 heroImage="/wissen/hero-wordpress-alternativen.svg"
                 heroAlt="Illustration: links eine Mauer aus gleichen Bausteinen als großes System, rechts drei unterschiedliche Bausteine als Alternativen, einer rot"
             >
+                <AutoLinks path="/wissen/wordpress-alternativen">
                 <p>
                     Die Frage nach einer WordPress-Alternative kommt fast nie aus technischer Neugier. Sie kommt
                     nach einem Vorfall: die Seite war zwei Tage offline, ein Update hat das Layout zerlegt, ein
@@ -178,7 +180,7 @@ export default function WordPressAlternativenPage() {
                 </p>
 
                 <figure className="article-figure">
-                    <img src="/wissen/cms-landschaft.svg" alt="Diagramm mit drei Spalten: Baukasten mit gestapelten Blöcken, klassisches CMS als grosser Block, Headless mit getrennter Datenbank und zwei Ausgabekanaelen" width="1600" height="900" />
+                    <img src="/wissen/cms-landschaft.svg" alt="Diagramm mit drei Spalten: Baukasten mit gestapelten Blöcken, klassisches CMS als großer Block, Headless mit getrennter Datenbank und zwei Ausgabekanälen" width="1600" height="900" />
                     <figcaption>Drei Bauprinzipien. Die Wahl entscheidet vor allem darüber, wer künftig Inhalte pflegt.</figcaption>
                 </figure>
 
@@ -363,6 +365,7 @@ export default function WordPressAlternativenPage() {
                         <li>Google Search Central, Page Experience: Core Web Vitals als Teil der Page-Experience-Signale. <a href="https://developers.google.com/search/docs/appearance/page-experience" rel="nofollow noopener" target="_blank">developers.google.com</a></li>
                     </ol>
                 </div>
+                </AutoLinks>
             </ArticleLayout>
         </>
     );

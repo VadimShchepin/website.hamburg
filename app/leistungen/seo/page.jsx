@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
@@ -7,13 +8,13 @@ import ServiceMeta from '../../../src/components/ServiceMeta';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'SEO Hamburg ab 1.000 €/Monat | Lokal gefunden werden',
-    description: 'Lokale SEO für Unternehmen in Hamburg: Google Business Profile, Google Maps, technisches SEO und Content. Live-Dashboard. Ab 1.000 €/Monat.',
+    title: 'SEO Hamburg: Suchmaschinenoptimierung ab 1.000 €/Monat',
+    description: 'SEO in Hamburg vom Experten, der selbst entwickelt: Google-Unternehmensprofil, Google Maps, Technik und Inhalte. Live-Dashboard, ab 1.000 €/Monat.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/seo',
     },
     openGraph: {
-        title: 'SEO Hamburg ab 1.000 €/Monat | Lokal gefunden werden',
+        title: 'SEO Hamburg: Suchmaschinenoptimierung ab 1.000 €/Monat',
         description: 'Lokale Suchmaschinenoptimierung für Unternehmen in Hamburg: Google Business Profile, Google Maps, technisches SEO und Content. Ab 1.000 €/Monat.',
         url: 'https://webseite.hamburg/leistungen/seo',
         type: 'website',
@@ -28,6 +29,8 @@ const faqItems = [
     { q: 'Garantieren Sie Platz 1 bei Google?', a: 'Nein, und seien Sie vorsichtig bei jedem, der das tut. Google-Rankings hängen von über 200 Faktoren ab, die niemand vollständig kontrolliert. Was ich garantiere: transparente, datenbasierte Arbeit, monatliche Reports und Optimierung, bis die Ergebnisse stimmen.' },
     { q: 'Brauche ich eine neue Website für SEO?', a: 'Nicht unbedingt. Oft lassen sich bestehende Websites technisch und inhaltlich optimieren. Wenn die Basis schlecht ist (langsame Ladezeiten, nicht mobiloptimiert, veraltete Technik), kann ein Relaunch langfristig günstiger sein als Flickwerk. Das klären wir in der Analyse.' },
     { q: 'Bekomme ich Zugang zu den Daten?', a: 'Ja. Sie erhalten Zugang zu einem Live-Dashboard mit allen Rankings, Traffic-Daten aus Google Search Console und Anfragen. Dazu monatliche Reports mit Zusammenfassung und konkreten nächsten Schritten. Volle Transparenz, keine Blackbox.' },
+    { q: 'Ist SEO noch sinnvoll, wenn Google KI-Antworten zeigt?', a: 'Ja, für lokale Leistungen sogar besonders. Google baut KI-Übersichten aus Seiten, die ohnehin gut ranken, ein eigenes KI-Ranking gibt es nicht. Bei Suchen nach Dienstleistung plus Hamburg zeigt Google meist die Karte mit drei Firmen: In meiner Auswertung von 23 Hamburger Ergebnisseiten (Oktober 2026) stand sie 14-mal ganz oben, eine KI-Übersicht nur 8-mal.' },
+    { q: 'SEO-Agentur oder SEO-Experte als Einzelperson?', a: 'Das hängt am Umfang. Für lokale Unternehmen ist meist entscheidend, wer die Arbeit tatsächlich macht. Bei mir arbeiten Sie direkt mit dem, der Technik, Inhalte und Profil umsetzt. Braucht ein Projekt zusätzliche Expertise, etwa bei Text oder Fotografie, hole ich geprüfte Spezialisten dazu.' },
 ];
 
 export default function SeoPage() {
@@ -54,6 +57,7 @@ export default function SeoPage() {
 
     return (
         <>
+            <AutoLinks path="/leistungen/seo">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -63,7 +67,7 @@ export default function SeoPage() {
                     <div className="subpage-hero-split">
                         <div>
                         <p className="section-kicker animate-up">SEO & Lokale Sichtbarkeit</p>
-                        <h1 className="subpage-title animate-up">Suchmaschinenoptimierung für lokale Unternehmen in Hamburg.</h1>
+                        <h1 className="subpage-title animate-up">SEO in Hamburg: Suchmaschinenoptimierung für lokale Unternehmen.</h1>
                         <p className="subpage-intro animate-up">
                             Wenn jemand in Hamburg nach Ihrer Leistung sucht und Sie nicht auf der ersten Seite stehen, existieren Sie für diese Person nicht. Lokale SEO ändert das: messbar und ohne Klickkosten pro Besucher.
                         </p>
@@ -80,7 +84,7 @@ export default function SeoPage() {
                 <div className="container subpage-body">
                     <h2 className="animate-up">Was ist lokale SEO?</h2>
                     <div className="subpage-takeaway animate-up">
-                        <p><strong>Lokale SEO</strong> (lokale Suchmaschinenoptimierung) sorgt dafür, dass ein Unternehmen in der regionalen Google-Suche, in Google Maps und im lokalen 3er-Pack erscheint, wenn Menschen in der Nähe nach einer Leistung suchen. Sie umfasst vier Bausteine: Optimierung des Google Business Profile, technisches SEO, lokale Inhalte und den Aufbau von Citations. In Hamburg liegt die Investition bei ab 1.000 € pro Monat.</p>
+                        <p><strong>Lokale SEO</strong> (lokale Suchmaschinenoptimierung) sorgt dafür, dass ein Unternehmen in der regionalen Google-Suche, in Google Maps und im lokalen 3er-Pack erscheint, wenn Menschen in der Nähe nach einer Leistung suchen. Sie umfasst vier Bausteine: Optimierung des Google-Unternehmensprofils, technisches SEO, lokale Inhalte und den Aufbau von Citations. Bei mir beginnt lokale SEO in Hamburg bei 1.000 € pro Monat.</p>
                     </div>
 
                     <h2 className="animate-up">Warum lokale Sichtbarkeit über Aufträge entscheidet</h2>
@@ -93,7 +97,7 @@ export default function SeoPage() {
                         </div>
                         <div className="subpage-stat">
                             <span className="subpage-stat-value">28%</span>
-                            <span className="subpage-stat-label">der „in der Nähe"-Suchen enden mit einem Kauf (Think with Google)</span>
+                            <span className="subpage-stat-label">der "in der Nähe"-Suchen enden mit einem Kauf (Think with Google)</span>
                         </div>
                         <div className="subpage-stat">
                             <span className="subpage-stat-value">0 €</span>
@@ -102,14 +106,14 @@ export default function SeoPage() {
                     </div>
 
                     <figure className="subpage-figure is-band animate-up">
-                        <img src="/leistungen/fotos/seo.webp" alt="Buerotisch mit zwei Monitoren, auf denen Diagramme und Kennzahlen zur Websiteleistung zu sehen sind" width="1800" height="760" loading="lazy" decoding="async" />
+                        <img src="/leistungen/fotos/seo.webp" alt="Bürotisch mit zwei Monitoren, auf denen Diagramme und Kennzahlen zur Websiteleistung zu sehen sind" width="1800" height="760" loading="lazy" decoding="async" />
                         <figcaption>Sichtbarkeit wird gemessen, nicht behauptet: Rankings, Klicks und Anrufe im Monatsreport.</figcaption>
                     </figure>
 
                     <h2 className="animate-up">Was lokales SEO konkret bedeutet</h2>
                     <div className="subpage-features-grid animate-up">
                         <div className="subpage-feature">
-                            <h3>Google Business Profile</h3>
+                            <h3>Google-Unternehmensprofil</h3>
                             <p>Optimierung Ihres Unternehmensprofils für Google Maps und das lokale 3er-Pack: Fotos, Öffnungszeiten, Leistungen, Bewertungsmanagement und regelmäßige Beiträge. Das Profil ist oft der erste Kontaktpunkt, noch vor der Website. Die Schritte im Detail stehen im <Link href="/wissen/google-business-profile-optimieren">Leitfaden zum Unternehmensprofil</Link>.</p>
                         </div>
                         <div className="subpage-feature">
@@ -122,7 +126,7 @@ export default function SeoPage() {
                         </div>
                         <div className="subpage-feature">
                             <h3>Lokale Autorität (Citations)</h3>
-                            <p>Konsistente NAP-Daten (Name, Adresse, Telefon) in Branchenverzeichnissen plus lokale Backlinks. Google muss verstehen, dass Ihr Unternehmen in Hamburg relevant und vertrauenswürdig ist.</p>
+                            <p>Konsistente NAP-Daten (Name, Adresse, Telefon) in Branchenverzeichnissen wie dem Branchenbuch auf hamburg.de oder Gelbe Seiten, dazu lokale Backlinks. Google muss verstehen, dass Ihr Unternehmen in Hamburg relevant und vertrauenswürdig ist.</p>
                         </div>
                     </div>
 
@@ -173,16 +177,17 @@ export default function SeoPage() {
                     <div className="subpage-sources animate-up">
                         <h2>Quellen</h2>
                         <ol>
-                            <li>Think with Google, Consumer Insights zu „near me"-Suchen (76 % Geschäftsbesuch innerhalb eines Tages, 28 % Kauf). <a href="https://www.thinkwithgoogle.com/" rel="nofollow noopener" target="_blank">thinkwithgoogle.com</a></li>
+                            <li>Think with Google, Consumer Insights zu Near-me-Suchen (76 % Geschäftsbesuch innerhalb eines Tages, 28 % Kauf). <a href="https://www.thinkwithgoogle.com/" rel="nofollow noopener" target="_blank">thinkwithgoogle.com</a></li>
                             <li>Google, Core Web Vitals: Schwellenwerte für LCP, INP und CLS. <a href="https://web.dev/articles/vitals" rel="nofollow noopener" target="_blank">web.dev/articles/vitals</a></li>
                         </ol>
                     </div>
                 </div>
             </section>
 
-            <FaqSection title="Fragen zu SEO" items={faqItems} />
+            <FaqSection title="Fragen zu SEO in Hamburg" items={faqItems} />
             <RelatedServices exclude="seo" />
             <ServiceCta text="Lassen Sie mich Ihre aktuelle Sichtbarkeit analysieren. Ich sage Ihnen ehrlich, wo Sie stehen und was möglich ist, kostenlos und unverbindlich." />
+            </AutoLinks>
         </>
     );
 }

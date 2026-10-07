@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import AutoLinks from '../../../src/components/AutoLinks';
 import Image from 'next/image';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import ServiceCta from '../../../src/components/ServiceCta';
@@ -81,6 +82,7 @@ export default function BlitzHamburgCaseStudy() {
 
     return (
         <>
+            <AutoLinks path="/referenzen/blitz-hamburg">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -293,6 +295,7 @@ export default function BlitzHamburgCaseStudy() {
             </section>
 
             <ServiceCta text="Sie wollen wissen, welche Fragen Ihre Kunden googeln, bevor sie anrufen? Im kostenlosen Erstgespräch schaue ich mir Ihre Seite und Ihre Suchdaten an." />
+            </AutoLinks>
         </>
     );
 }

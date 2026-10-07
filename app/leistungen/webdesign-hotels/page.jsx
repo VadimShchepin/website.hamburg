@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
@@ -25,7 +26,7 @@ const faqItems = [
     { q: 'Was kostet eine Hotel-Website?', a: 'Eine individuell gestaltete Hotel-Website beginnt bei 2.900 Euro, mehrseitig mit Zimmerseiten, Angebotspaketen, Tagungsbereich und angebundener Buchungsmaske ab 4.500 Euro. Die Anbindung Ihrer Buchungsmaschine ist im Projekt enthalten, die Lizenzkosten der Buchungsmaschine selbst zahlen Sie direkt an den Anbieter, meist 50 bis 250 Euro im Monat.' },
     { q: 'Darf ich auf meiner Website günstiger sein als auf Booking.com?', a: 'Ja. Bestpreisklauseln sind in Deutschland kartellrechtlich untersagt, der Bundesgerichtshof hat das am 18. Mai 2021 letztinstanzlich für enge Bestpreisklauseln entschieden (KVR 54/20), der Europäische Gerichtshof hat am 19. September 2024 in der Sache C-264/23 nachgezogen. Zusätzlich verbietet Artikel 5 Absatz 3 des Digital Markets Act benannten Gatekeepern, Hotels bei eigenen Vertriebswegen zu beschränken. Booking Holdings ist seit dem 13. Mai 2024 als Gatekeeper benannt.' },
     { q: 'Wie viel spare ich pro Direktbuchung?', a: 'Portalprovisionen liegen je nach Programm bei etwa 15 bis 25 Prozent des Buchungswerts. Die Kosten einer Direktbuchung setzen sich aus Buchungsmaschine, Zahlungsdienstleister und Marketing zusammen und liegen typischerweise im einstelligen Prozentbereich. Bei einem Zimmerpreis von 140 Euro sind das grob 20 bis 30 Euro Unterschied pro Nacht. Ab welcher Zahl von Direktbuchungen sich eine neue Website rechnet, kann man also ausrechnen, und das machen wir im Erstgespräch.' },
-    { q: 'Bekommen ich auch die kostenlosen Google-Buchungslinks?', a: 'Ja, sofern Ihre Buchungsmaschine an Google angebunden ist. Google zeigt seit 2021 kostenlose Buchungslinks im Hotelmodul der Suche und in Maps an, für Klicks darauf entstehen keine Kosten. Voraussetzung sind aktuelle Preise und Verfügbarkeiten aus Ihrem System und eine Landingpage, die direkt zum gewählten Zimmer führt. Die Einrichtung läuft in der Regel über Ihren Systemanbieter, ich stimme das mit ab.' },
+    { q: 'Bekomme ich auch die kostenlosen Google-Buchungslinks?', a: 'Ja, sofern Ihre Buchungsmaschine an Google angebunden ist. Google zeigt seit 2021 kostenlose Buchungslinks im Hotelmodul der Suche und in Maps an, für Klicks darauf entstehen keine Kosten. Voraussetzung sind aktuelle Preise und Verfügbarkeiten aus Ihrem System und eine Landingpage, die direkt zum gewählten Zimmer führt. Die Einrichtung läuft in der Regel über Ihren Systemanbieter, ich stimme das mit ab.' },
     { q: 'Was ist wichtiger, Website oder Buchungsmaschine?', a: 'Die Buchungsmaschine verwaltet Verfügbarkeit und Zahlung, die Website entscheidet, ob jemand überhaupt bis zur Maschine kommt. In der Praxis scheitern Direktbuchungen an Kleinigkeiten: Preis erst nach drei Klicks sichtbar, Buchungsmaske in einem fremden Design, auf dem Handy nicht bedienbar. Genau diese Übergabe baue ich sauber.' },
     { q: 'Arbeiten Sie auch für Ferienwohnungen und Apartmenthäuser?', a: 'Ja. Die Logik ist dieselbe wie im Hotel, nur mit anderen Regeln: Mindestaufenthalt, Endreinigung, Kurtaxe und Schlüsselübergabe müssen sofort verständlich sein. Bei Ferienwohnungen ist der Provisionsanteil der Plattformen häufig noch höher, der Effekt einer eigenen Buchungsstrecke also größer.' },
 ];
@@ -58,6 +59,7 @@ export default function WebdesignHotelsPage() {
 
     return (
         <>
+            <AutoLinks path="/leistungen/webdesign-hotels">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -83,7 +85,7 @@ export default function WebdesignHotelsPage() {
                         <ServiceMeta />
                         </div>
                         <div className="subpage-hero-media hero-media-framed animate-up">
-                            <img src="/leistungen/branchen/hotels/zimmer.webp" alt="Helles Hotelzimmer mit grossem Fenster, Sesseln und Blick ueber die Stadt" width="1200" height="900" fetchPriority="high" decoding="async" />
+                            <img src="/leistungen/branchen/hotels/zimmer.webp" alt="Helles Hotelzimmer mit großem Fenster, Sesseln und Blick über die Stadt" width="1200" height="900" fetchPriority="high" decoding="async" />
                         </div>
                     </div>
                 </div>
@@ -300,6 +302,7 @@ export default function WebdesignHotelsPage() {
             <FaqSection title="Häufige Fragen zu Hotel-Websites" items={faqItems} />
             <RelatedServices exclude="webdesign" />
             <ServiceCta text="Nennen Sie mir Ihre Provisionsquote und Ihre Zimmerzahl. Dann rechnen wir gemeinsam aus, wie viele Direktbuchungen pro Monat nötig sind, damit sich eine neue Website bezahlt." />
+            </AutoLinks>
         </>
     );
 }

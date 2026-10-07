@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
@@ -7,13 +8,13 @@ import ServiceMeta from '../../../src/components/ServiceMeta';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'Google Ads Hamburg | Sofort qualifizierte Anfragen',
-    description: 'Google Ads für lokale Unternehmen in Hamburg: Search Ads, Local Services Ads, Conversion-Tracking. Ihr Konto. Setup ab 700 €, dann ab 500 €/Monat.',
+    title: 'Google Ads Hamburg: Betreuung vom Freelancer ab 500 €/Mt.',
+    description: 'Google Ads in Hamburg vom Freelancer statt Agentur: Suchkampagnen, Conversion-Tracking, Ihr eigenes Konto. Setup ab 700 €, Betreuung ab 500 €/Monat.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/google-ads',
     },
     openGraph: {
-        title: 'Google Ads Hamburg | Sofort qualifizierte Anfragen',
+        title: 'Google Ads Hamburg: Betreuung vom Freelancer ab 500 €/Mt.',
         description: 'Google Ads Management für lokale Unternehmen in Hamburg: Search Ads, Local Services Ads, Conversion-Tracking, ROAS-Optimierung. Setup ab 700 €, Betreuung ab 500 €/Monat.',
         url: 'https://webseite.hamburg/leistungen/google-ads',
         type: 'website',
@@ -24,9 +25,11 @@ const faqItems = [
     { q: 'Was kosten Google Ads pro Monat?', a: 'Drei getrennte Posten: das Kampagnen-Setup ab 700 € einmalig, die laufende Betreuung ab 500 € pro Monat und Ihr Werbebudget, das direkt an Google geht und über Ihr eigenes Konto läuft. Das Werbebudget bestimmen Sie selbst; mindestens rund 500 € pro Monat sind sinnvoll, damit genug Daten zum Optimieren entstehen.' },
     { q: 'Wie schnell kommen die ersten Anfragen?', a: 'Oft innerhalb der ersten Woche nach Kampagnenstart, denn Google Ads sind der schnellste Weg zu qualifizierten Anfragen. Die ersten 2 bis 4 Wochen dienen der Datensammlung; danach sinkt der Preis pro Anfrage, weil die Kampagne aus den Conversion-Daten lernt.' },
     { q: 'Was bedeuten CPC, CPA und ROAS?', a: 'CPC (Cost-per-Click) ist der Preis pro Klick auf Ihre Anzeige. CPA (Cost-per-Acquisition) ist der Preis pro Anfrage oder Abschluss. ROAS (Return on Ad Spend) ist der Umsatz pro investiertem Werbe-Euro. Diese drei Kennzahlen entscheiden, ob eine Kampagne profitabel ist, und stehen in jedem Report.' },
-    { q: 'Was sind Local Services Ads?', a: 'Local Services Ads erscheinen ganz oben in der Google-Suche für lokale Dienstleister, noch über den normalen Google Ads, oft mit dem „Google Garantie"-Siegel. Sie zahlen pro Anfrage (Anruf oder Nachricht), nicht pro Klick. Verfügbarkeit und Branchen sind in Deutschland begrenzt. Im Erstgespräch prüfe ich, ob es für Sie infrage kommt.' },
+    { q: 'Was sind Local Services Ads?', a: 'Local Services Ads erscheinen ganz oben in der Google-Suche für lokale Dienstleister, noch über den normalen Google Ads, oft mit dem "Google Garantie"-Siegel. Sie zahlen pro Anfrage (Anruf oder Nachricht), nicht pro Klick. Verfügbarkeit und Branchen sind in Deutschland begrenzt. Im Erstgespräch prüfe ich, ob es für Sie infrage kommt.' },
     { q: 'Gehört das Google Ads Konto mir?', a: 'Ja, zu 100 %. Ich arbeite in Ihrem eigenen Google Ads Konto. Sie haben vollen Zugang zu allen Kampagnen, Kosten und Daten. Wenn Sie morgen wechseln, nehmen Sie alles mit, inklusive der gesamten Historie.' },
     { q: 'Wie messen Sie den Erfolg der Kampagnen?', a: 'Jeder Anruf, jedes Formular und jeder Kauf wird per Conversion-Tracking (GA4 und Google Ads) einem Keyword zugeordnet. Sie sehen genau: Was kostet ein Lead? Welche Keywords bringen die besten Kunden? Welcher ROAS kommt heraus? Dazu monatlicher Report plus Live-Zugang.' },
+    { q: 'Sind Google Ads für lokale Betriebe noch sinnvoll?', a: 'Ja, wenn Tracking und Zielseite stimmen. Beim Hamburger GaLaBau-Betrieb GL Sommer sank nach dem Umbau von der Smart-Kampagne auf eigene Suchkampagnen der Preis je Kontaktaktion von 27,15 auf 11,06 Euro (April bis September 2026). In einem von mir betreuten Konto kosteten 42 Anfragen in 90 Tagen 2.991 Euro, nachzulesen im Artikel Google Ads Kosten.' },
+    { q: 'Wer ist mein Ansprechpartner?', a: 'Ich, Vadim Shchepin. Ich baue die Kampagnen selbst, werte sie selbst aus und schreibe den Monatsbericht selbst, ohne Account-Manager dazwischen. Sie arbeiten mit einem Freelancer statt mit einer Agentur, und das Konto läuft auf Ihren Namen.' },
 ];
 
 export default function GoogleAdsPage() {
@@ -56,6 +59,7 @@ export default function GoogleAdsPage() {
 
     return (
         <>
+            <AutoLinks path="/leistungen/google-ads">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -86,7 +90,7 @@ export default function GoogleAdsPage() {
                     </div>
 
                     <h2 className="animate-up">Warum Google Ads für lokale Unternehmen funktionieren</h2>
-                    <p className="animate-up">Google Ads sind kein Glücksspiel, sondern präzise Kundenakquise. Wer „Elektriker Hamburg Notdienst" oder „Steuerberater Hamburg Neustadt" sucht, hat unmittelbare Kaufabsicht. Die Anzeige platziert Ihr Unternehmen genau vor diesen Suchenden.</p>
+                    <p className="animate-up">Google Ads sind kein Glücksspiel, sondern präzise Kundenakquise. Wer "Elektriker Hamburg Notdienst" oder "Steuerberater Hamburg Neustadt" sucht, hat unmittelbare Kaufabsicht. Die Anzeige platziert Ihr Unternehmen genau vor diesen Suchenden.</p>
                     <p className="animate-up">Der Unterschied zwischen professionellem und schlechtem Ads-Management ist groß: Bei schlechter Verwaltung verbrennt Budget für irrelevante Klicks. Gut gesteuert zahlen Sie für Klicks, die zu Anfragen führen. Welche Fehler dabei am teuersten sind, habe ich in den <a href="/wissen/google-ads-fehler-lokale-unternehmen">7 teuersten Google-Ads-Fehlern lokaler Unternehmen</a> gesammelt. Echte Zahlen aus einem von mir betreuten Konto, inklusive Klickpreisen und Kosten je Anfrage, stehen in <a href="/wissen/google-ads-kosten">Google Ads Kosten</a>.</p>
 
                     <div className="subpage-stats animate-up">
@@ -105,7 +109,7 @@ export default function GoogleAdsPage() {
                     </div>
 
                     <figure className="subpage-figure is-band animate-up">
-                        <img src="/leistungen/fotos/google-ads.webp" alt="Illustration: Liste von Suchergebnissen mit rot hervorgehobenem Anzeigenplatz, daneben Gebotsanzeige und Muenzstapel" width="1800" height="760" loading="lazy" decoding="async" />
+                        <img src="/leistungen/fotos/google-ads.webp" alt="Illustration: Liste von Suchergebnissen mit rot hervorgehobenem Anzeigenplatz, daneben Gebotsanzeige und Münzstapel" width="1800" height="760" loading="lazy" decoding="async" />
                         <figcaption>Der Platz ganz oben wird versteigert. Was er wert ist, entscheidet Ihre Marge, nicht das Gebot.</figcaption>
                     </figure>
 
@@ -143,7 +147,7 @@ export default function GoogleAdsPage() {
                         </div>
                     </div>
 
-                    <h2 className="animate-up">Preise und Leistungen</h2>
+                    <h2 className="animate-up">Was kostet die Google-Ads-Betreuung?</h2>
                     <p className="animate-up">Der Aufbau wird einmalig abgerechnet, die laufende Betreuung monatlich. So zahlen Sie die Einrichtung nicht jeden Monat mit.</p>
                     <div className="subpage-pricing-compare animate-up">
                         <div className="subpage-price-col">
@@ -182,9 +186,10 @@ export default function GoogleAdsPage() {
                 </div>
             </section>
 
-            <FaqSection title="Fragen zu Google Ads" items={faqItems} />
+            <FaqSection title="Fragen zu Google Ads in Hamburg" items={faqItems} />
             <RelatedServices exclude="google-ads" />
             <ServiceCta text="Ich analysiere Ihren Markt und zeige Ihnen, was mit Google Ads für Ihr Unternehmen möglich ist. Kostenlos, konkret, unverbindlich." />
+            </AutoLinks>
         </>
     );
 }

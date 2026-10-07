@@ -1,15 +1,16 @@
 import Link from 'next/link';
+import AutoLinks from '../../src/components/AutoLinks';
 import Breadcrumbs from '../../src/components/Breadcrumbs';
 import { BUSINESS } from '../../src/lib/schema';
 
 export const metadata = {
-    title: 'Praxiswissen zu Webdesign, SEO & Google Ads',
-    description: 'Fachartikel zu Webdesign, SEO, AI SEO und Google Ads für lokale Unternehmen. Praxiswissen, keine Theorie, geschrieben für Unternehmer in Hamburg.',
+    title: 'Ratgeber Webdesign, SEO & Google Ads | webseite.hamburg',
+    description: 'Ratgeber für Unternehmen: Kosten, Pflichten, Technik und Sichtbarkeit rund um Website, SEO und Google Ads. Mit Quellen, echten Zahlen und Beispielen aus Hamburg.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen',
     },
     openGraph: {
-        title: 'Praxiswissen zu Webdesign, SEO & Google Ads',
+        title: 'Ratgeber Webdesign, SEO & Google Ads | webseite.hamburg',
         description: 'Fachartikel zu Webdesign, SEO, AI SEO und Google Ads für lokale Unternehmen. Praxiswissen, keine Theorie.',
         url: 'https://webseite.hamburg/wissen',
         type: 'website',
@@ -29,7 +30,7 @@ const articles = [
     {
         slug: 'website-barrierefrei-machen',
         image: '/wissen/cards/website-barrierefrei-machen.svg',
-        alt: 'Illustration: Browser-Fenster mit drei Prueffeldern und einer Lupe, ein Fokusrahmen rot',
+        alt: 'Illustration: Browser-Fenster mit drei Prüffeldern und einer Lupe, ein Fokusrahmen rot',
         category: 'RECHT',
         title: 'Website barrierefrei machen: WCAG 2.2 in der Praxis',
         excerpt: 'Sechs Fehlerarten machen 96 Prozent aller Verstöße aus, fünf davon behebt man an einem Tag. Mit Aufwandstabelle, Tastaturtest und der Wahrheit über Overlay-Widgets.',
@@ -38,7 +39,7 @@ const articles = [
     {
         slug: 'google-ads-kosten',
         image: '/wissen/cards/google-ads-kosten.svg',
-        alt: 'Illustration: Auktionshammer ueber einem Suchfeld, darunter drei Muenzstapel, der hoechste rot',
+        alt: 'Illustration: Auktionshammer über einem Suchfeld, darunter drei Münzstapel, der höchste rot',
         category: 'GOOGLE ADS',
         title: 'Google Ads Kosten: 90 Tage aus einem echten Konto',
         excerpt: '2.991 Euro, 1.032 Klicks, 42 Anfragen. Echte Klickpreise, echte Kosten je Anfrage und der Beweis, dass der Klick für 1 Euro die teuerste Anfrage produziert hat.',
@@ -65,7 +66,7 @@ const articles = [
     {
         slug: 'impressum-datenschutzerklaerung-pflicht',
         image: '/wissen/cards/impressum-datenschutzerklaerung-pflicht.svg',
-        alt: 'Illustration: zwei gestapelte Dokumentseiten mit einem roten Stempel darueber',
+        alt: 'Illustration: zwei gestapelte Dokumentseiten mit einem roten Stempel darüber',
         category: 'RECHT',
         title: 'Impressum und Datenschutzerklärung: welche Pflichtangaben eine Website 2026 braucht',
         excerpt: 'Die Impressumspflicht steht seit Mai 2024 in § 5 DDG, nicht mehr im TMG. Alle Pflichtangaben, Art. 13 DSGVO, § 25 TDDDG und der Browsertest, der Ihre echte Verarbeitungsliste zeigt.',
@@ -74,7 +75,7 @@ const articles = [
     {
         slug: 'website-abmahnung-vermeiden',
         image: '/wissen/cards/website-abmahnung-vermeiden.svg',
-        alt: 'Illustration: geoeffneter Briefumschlag mit roter Innenklappe, daneben ein Browser-Fenster mit Datenabfluss',
+        alt: 'Illustration: geöffneter Briefumschlag mit roter Innenklappe, daneben ein Browser-Fenster mit Datenabfluss',
         category: 'RECHT',
         title: 'Abmahnung wegen der Website: was 2026 wirklich riskant ist',
         excerpt: 'Das Google-Fonts-Urteil des LG München, die Rangliste der realen Risiken mit Behebungsaufwand und die vier Maßnahmen, die den größten Teil davon an einem Tag abstellen.',
@@ -85,14 +86,14 @@ const articles = [
         image: '/wissen/cards/onlineshop-kosten.svg',
         alt: 'Illustration: Einkaufswagen vor einem Browser-Fenster mit rotem Preisschild',
         category: 'E-COMMERCE',
-        title: 'Onlineshop Kosten 2026: was wirklich zusammenkommt',
+        title: 'Onlineshop-Kosten: Was kostet ein Onlineshop wirklich?',
         excerpt: 'Die Plattform ist der kleinste Posten. Aktuelle Listenpreise, Transaktionsgebühren, gesetzliche Pflichten und zwei Rechenbeispiele über drei Jahre.',
         readTime: '11 Min.',
     },
     {
         slug: 'webflow-oder-wordpress',
         image: '/wissen/cards/webflow-oder-wordpress.svg',
-        alt: 'Illustration: Balkenwaage mit Baukastenbloecken und einem Zahnrad, der Zeiger rot',
+        alt: 'Illustration: Balkenwaage mit Baukastenblöcken und einem Zahnrad, der Zeiger rot',
         category: 'WEBDESIGN',
         title: 'Webflow oder WordPress: welches System zu welchem Projekt passt',
         excerpt: 'Aktuelle Webflow-Preise, die WordPress-Gesamtrechnung über drei Jahre, das Ausstiegsrisiko und der Sonderfall TYPO3. Von jemandem, der beides nicht verkauft.',
@@ -101,7 +102,7 @@ const articles = [
     {
         slug: 'website-umzug-hosting-deutschland',
         image: '/wissen/cards/website-umzug-hosting-deutschland.svg',
-        alt: 'Illustration: zwei Serverschraenke mit einem Pfeil dazwischen und einem roten Schild',
+        alt: 'Illustration: zwei Serverschränke mit einem Pfeil dazwischen und einem roten Schild',
         category: 'TECHNIK',
         title: 'Hosting in Deutschland und Website umziehen: worauf es wirklich ankommt',
         excerpt: 'Warum der Serverstandort weniger entscheidet als der Auftragsverarbeitungsvertrag, wie der Data-Privacy-Framework-Streit aktuell steht und die Umzugsreihenfolge, die Rankings erhält.',
@@ -119,7 +120,7 @@ const articles = [
     {
         slug: 'google-business-profile-optimieren',
         image: '/wissen/cards/google-business-profile-optimieren.webp',
-        alt: 'Illustration: Standort-Pin auf einem Ladengeschaeft, umgeben von Sternen und einer Uhr',
+        alt: 'Illustration: Standort-Pin auf einem Ladengeschäft, umgeben von Sternen und einer Uhr',
         category: 'SEO',
         title: 'Google-Unternehmensprofil optimieren: der Hamburg-Leitfaden',
         excerpt: 'Die drei Ranking-Faktoren, die Google selbst nennt, die Namensregel, an der Profile gesperrt werden, und eine Pflegeroutine, die 20 Minuten pro Woche dauert.',
@@ -128,7 +129,7 @@ const articles = [
     {
         slug: 'seo-kosten-hamburg',
         image: '/wissen/cards/seo-kosten-hamburg.webp',
-        alt: 'Illustration: Waage, die einen Muenzstapel gegen ein steigendes Liniendiagramm abwaegt',
+        alt: 'Illustration: Waage, die einen Münzstapel gegen ein steigendes Liniendiagramm abwägt',
         category: 'SEO',
         title: 'Was kostet SEO in Hamburg? Preise, Modelle und was Sie dafür bekommen',
         excerpt: 'Was in einem Monatsbudget von 1.000 Euro an Arbeitsstunden steckt, wie lange es laut Google dauert, und warum SEO manchmal die falsche Investition ist.',
@@ -137,7 +138,7 @@ const articles = [
     {
         slug: 'webdesign-agentur-oder-freelancer',
         image: '/wissen/cards/webdesign-agentur-oder-freelancer.webp',
-        alt: 'Illustration: drei Podeste mit Buerogebaeude, Einzelarbeitsplatz und Baukastenbloecken im Vergleich',
+        alt: 'Illustration: drei Podeste mit Bürogebäude, Einzelarbeitsplatz und Baukastenblöcken im Vergleich',
         category: 'WEBDESIGN',
         title: 'Agentur, Freelancer oder Baukasten: Wer soll Ihre Website bauen?',
         excerpt: 'Stundensätze, Projektpreise, Ausfallrisiko und Vertragsfallen im Vergleich. Geschrieben von einem Solo-Entwickler, mitsamt der Frage, wann das die falsche Wahl ist.',
@@ -146,7 +147,7 @@ const articles = [
     {
         slug: 'website-baukasten-oder-eigene-website',
         image: '/wissen/cards/website-baukasten-oder-eigene-website.webp',
-        alt: 'Illustration: zusammengesetzte Baukasten-Bloecke einer Website mit Preisschild und Vorhaengeschloss',
+        alt: 'Illustration: zusammengesetzte Baukasten-Blöcke einer Website mit Preisschild und Vorhängeschloss',
         category: 'WEBDESIGN',
         title: 'Website-Baukasten oder eigene Website: Was Wix und Jimdo wirklich kosten',
         excerpt: 'Monatspreise 2026, die Fünf-Jahres-Rechnung und was beim Umzug verloren geht. Inklusive der Fälle, in denen der Baukasten die vernünftigere Wahl ist.',
@@ -155,7 +156,7 @@ const articles = [
     {
         slug: 'case-study-fotogalerie-performance',
         image: '/wissen/cards/case-study-fotogalerie-performance.webp',
-        alt: 'Illustration: Raster aus Fotokacheln, dessen wirre Verbindungslinien in einer sauberen Leitung buendeln, daneben eine Stoppuhr',
+        alt: 'Illustration: Raster aus Fotokacheln, dessen wirre Verbindungslinien in einer sauberen Leitung bündeln, daneben eine Stoppuhr',
         category: 'PERFORMANCE',
         title: 'Case Study: 1.200 Fotos pro Album, wie 2.408 versteckte Requests eine Galerie ausbremsten',
         excerpt: 'Echte Produktionszahlen: Ein N+1-Problem bei signierten URLs erzeugte 2.408 HTTP-Requests pro Seitenaufruf. Nach Batch-Signierung: ~12 Requests und 0,98 s Antwortzeit.',
@@ -164,7 +165,7 @@ const articles = [
     {
         slug: 'dsgvo-fotoplattform-sicherheit-performance',
         image: '/wissen/cards/dsgvo-fotoplattform-sicherheit-performance.webp',
-        alt: 'Illustration: grosses Schutzschild mit QR-Code-Kachel und Zifferntastatur davor',
+        alt: 'Illustration: großes Schutzschild mit QR-Code-Kachel und Zifferntastatur davor',
         category: 'SICHERHEIT',
         title: 'DSGVO-Fotoplattform für Schulen: Was Sicherheit wirklich kostet',
         excerpt: 'QR-Code + PIN statt Accounts, Row Level Security, signierte URLs. Und der Preis: 723 Bildfehler in 72 Stunden, bis vorgenerierte WebP-Varianten kamen. Eine ehrliche Architektur-Case-Study.',
@@ -173,10 +174,10 @@ const articles = [
     {
         slug: 'warum-langsame-websites-kunden-kosten',
         image: '/wissen/cards/warum-langsame-websites-kunden-kosten.webp',
-        alt: 'Illustration: Browserfenster mit halb gefuelltem Ladebalken, daneben eine Stoppuhr und ein wegfuehrender Pfeil',
+        alt: 'Illustration: Browserfenster mit halb gefülltem Ladebalken, daneben eine Stoppuhr und ein wegführender Pfeil',
         category: 'WEBDESIGN',
         title: 'Warum langsame Websites Sie jeden Tag Kunden kosten',
-        excerpt: 'Jede Sekunde Ladezeit kostet Sie 7% Conversion-Rate. Erfahren Sie, wie Sie die Geschwindigkeit Ihrer Website messen und mit konkreten Maßnahmen verbessern können.',
+        excerpt: 'Jede zusätzliche Sekunde Ladezeit kostet rund 4 Prozent Conversion. Wie Sie die Geschwindigkeit Ihrer Website messen und mit konkreten Maßnahmen verbessern.',
         readTime: '6 Min.',
     },
     {
@@ -191,7 +192,7 @@ const articles = [
     {
         slug: 'ai-seo-was-unternehmen-jetzt-wissen-muessen',
         image: '/wissen/cards/ai-seo-was-unternehmen-jetzt-wissen-muessen.webp',
-        alt: 'Illustration: grosse Antwortkachel mit KI-Funke, verbunden mit drei Quellenkarten',
+        alt: 'Illustration: große Antwortkachel mit KI-Funke, verbunden mit drei Quellenkarten',
         category: 'AI SEO',
         title: 'AI SEO: Was Unternehmen jetzt wissen müssen',
         excerpt: 'ChatGPT, Perplexity, Google AI Overviews verändern die Suche. Wie Sie sicherstellen, dass Ihr Unternehmen in KI-Antworten als Quelle erscheint.',
@@ -200,7 +201,7 @@ const articles = [
     {
         slug: 'google-ads-fehler-lokale-unternehmen',
         image: '/wissen/cards/google-ads-fehler-lokale-unternehmen.webp',
-        alt: 'Illustration: Anzeigenpanel ueber einem Trichter, aus dessen Riss Muenzen herausfallen',
+        alt: 'Illustration: Anzeigenpanel über einem Trichter, aus dessen Riss Münzen herausfallen',
         category: 'GOOGLE ADS',
         title: 'Die 7 teuersten Google Ads Fehler lokaler Unternehmen',
         excerpt: 'Von falschen Keywords bis fehlendem Conversion-Tracking: diese Fehler verbrennen Ihr Werbebudget. Und wie Sie sie vermeiden.',
@@ -211,23 +212,23 @@ const articles = [
         image: '/wissen/cards/website-conversion-optimierung.webp',
         alt: 'Illustration: Trichter, in den wenige Pfeile eintreten und aus dem viele in ein Formular mit Button austreten',
         category: 'CONVERSION',
-        title: 'Mehr Anfragen ohne mehr Traffic: Conversion-Optimierung erklärt',
+        title: 'Mehr Anfragen ohne mehr Traffic: Conversion-Optimierung der Website erklärt',
         excerpt: 'Warum mehr Besucher nicht die Lösung ist. Wie Sie mit der gleichen Besucherzahl durch bessere Struktur und klarere Nutzerführung deutlich mehr Anfragen generieren.',
         readTime: '9 Min.',
     },
     {
         slug: 'website-relaunch-checkliste',
         image: '/wissen/cards/website-relaunch-checkliste.webp',
-        alt: 'Illustration: alte Website, die per Pfeil in eine neue uebergeht, davor eine Checkliste',
+        alt: 'Illustration: alte Website, die per Pfeil in eine neue übergeht, davor eine Checkliste',
         category: 'WEBDESIGN',
         title: 'Website-Relaunch Checkliste: Was Sie vorher wissen müssen',
-        excerpt: 'Ein Relaunch kann Ihre Online-Präsenz transformieren oder Ihre Rankings zerstören. Die wichtigsten Punkte, die Sie vor, während und nach dem Relaunch beachten müssen.',
+        excerpt: 'Ein Relaunch kann Ihre Sichtbarkeit stärken oder Ihre Rankings zerstören. Die wichtigsten Punkte vor, während und nach dem Relaunch, als Checkliste.',
         readTime: '10 Min.',
     },
     {
         slug: 'webdesign-kosten',
         image: '/wissen/cards/webdesign-kosten.webp',
-        alt: 'Illustration: drei Preisschilder in aufsteigender Groesse vor einem Browserfenster',
+        alt: 'Illustration: drei Preisschilder in aufsteigender Größe vor einem Browserfenster',
         category: 'WEBDESIGN',
         title: 'Webdesign Kosten 2026: Was eine professionelle Website wirklich kostet',
         excerpt: 'Von 500 bis 50.000 Euro: was bestimmt den Preis einer Website? Ehrlicher Kostenguide mit Preisbeispielen, versteckten Kosten und Tipps für die richtige Entscheidung.',
@@ -235,11 +236,20 @@ const articles = [
     },
 ];
 
+
+// Overview grouped by topic so the articles are easy to find (and linked by theme)
+const groups = [
+    { title: 'Kosten', slugs: ['webdesign-kosten', 'onlineshop-kosten', 'seo-kosten-hamburg', 'google-ads-kosten', 'webdesign-agentur-oder-freelancer', 'website-baukasten-oder-eigene-website'] },
+    { title: 'Recht und Pflichten', slugs: ['impressum-datenschutzerklaerung-pflicht', 'barrierefreie-website-pflicht', 'website-barrierefrei-machen', 'website-abmahnung-vermeiden'] },
+    { title: 'Technik', slugs: ['wordpress-alternativen', 'wordpress-sicherheit-wartung', 'webflow-oder-wordpress', 'website-umzug-hosting-deutschland', 'website-relaunch-checkliste', 'warum-langsame-websites-kunden-kosten', 'case-study-fotogalerie-performance', 'dsgvo-fotoplattform-sicherheit-performance'] },
+    { title: 'Sichtbarkeit', slugs: ['lokales-seo-hamburg-guide', 'google-business-profile-optimieren', 'website-nicht-bei-google-gefunden', 'ai-seo-was-unternehmen-jetzt-wissen-muessen', 'google-ads-fehler-lokale-unternehmen', 'website-conversion-optimierung'] },
+];
+
 export default function WissenPage() {
     const collectionJsonLd = {
         '@context': 'https://schema.org',
         '@type': 'CollectionPage',
-        name: 'Wissen - AISEO Hamburg',
+        name: 'Ratgeber Webdesign, SEO & Google Ads | webseite.hamburg',
         description: 'Fachartikel zu Webdesign, SEO, AI SEO und Google Ads für lokale Unternehmen. Praxiswissen, keine Theorie.',
         url: 'https://webseite.hamburg/wissen',
         publisher: BUSINESS,
@@ -256,6 +266,7 @@ export default function WissenPage() {
 
     return (
         <>
+            <AutoLinks path="/wissen">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -265,9 +276,9 @@ export default function WissenPage() {
                     <div className="subpage-hero-split">
                         <div>
                             <p className="section-kicker animate-up">Wissen</p>
-                            <h1 className="subpage-title animate-up">Praxiswissen für Ihr Online-Wachstum.</h1>
+                            <h1 className="subpage-title animate-up">Ratgeber zu Website, SEO und Google Ads.</h1>
                             <p className="subpage-intro animate-up">
-                                Keine Theorie, keine Floskeln. Hier finden Sie konkrete Anleitungen, Analysen und Einblicke zu Webdesign, SEO, AI SEO und Google Ads, geschrieben für Unternehmer, die verstehen wollen, was wirklich funktioniert.
+                                Keine Theorie, keine Floskeln. Hier finden Sie Anleitungen, Kostenrechnungen und Rechtsgrundlagen zu Webdesign, SEO, AI SEO und Google Ads, geschrieben für Unternehmer, die verstehen wollen, was wirklich funktioniert, mit Quellen und echten Zahlen aus meinen Projekten.
                             </p>
                         </div>
                         <div className="subpage-hero-media animate-up">
@@ -279,27 +290,32 @@ export default function WissenPage() {
 
             <section className="wissen-grid-section section light-bg">
                 <div className="container">
-                    <div className="wissen-grid">
-                        {articles.map((article, i) => (
-                            <Link key={article.slug} href={`/wissen/${article.slug}`} className={`wissen-card animate-up delay-${(i % 3) + 1}`}>
-                                <div className="wissen-card-media">
-                                    <img src={article.image} alt={article.alt} width="760" height="494" loading={i < 3 ? 'eager' : 'lazy'} decoding="async" />
-                                </div>
-                                <div className="wissen-card-meta">
-                                    <span className="wissen-card-category">{article.category}</span>
-                                    <span className="wissen-card-time">{article.readTime}</span>
-                                </div>
-                                <h2 className="wissen-card-title">
-                                    <span>{article.title}</span>
-                                </h2>
-                                <p className="wissen-card-excerpt">{article.excerpt}</p>
-                                <span className="wissen-card-link">
-                                    Artikel lesen
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-                                </span>
-                            </Link>
-                        ))}
-                    </div>
+                    {groups.map((group, g) => (
+                        <div key={group.title} className="wissen-group">
+                            <h2 className="wissen-group-title animate-up">{group.title}</h2>
+                            <div className="wissen-grid">
+                                {group.slugs.map((slug) => articles.find((a) => a.slug === slug)).map((article, i) => (
+                                    <Link key={article.slug} href={`/wissen/${article.slug}`} className={`wissen-card animate-up delay-${(i % 3) + 1}`}>
+                                        <div className="wissen-card-media">
+                                            <img src={article.image} alt={article.alt} width="760" height="494" loading={g === 0 && i < 3 ? 'eager' : 'lazy'} decoding="async" />
+                                        </div>
+                                        <div className="wissen-card-meta">
+                                            <span className="wissen-card-category">{article.category}</span>
+                                            <span className="wissen-card-time">{article.readTime}</span>
+                                        </div>
+                                        <h3 className="wissen-card-title">
+                                            <span>{article.title}</span>
+                                        </h3>
+                                        <p className="wissen-card-excerpt">{article.excerpt}</p>
+                                        <span className="wissen-card-link">
+                                            Artikel lesen
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                                        </span>
+                                    </Link>
+                                ))}
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </section>
 
@@ -315,6 +331,7 @@ export default function WissenPage() {
                     </div>
                 </div>
             </section>
+            </AutoLinks>
         </>
     );
 }

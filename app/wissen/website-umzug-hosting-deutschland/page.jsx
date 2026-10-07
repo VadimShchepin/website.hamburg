@@ -1,15 +1,16 @@
 import ArticleLayout from '../../../src/components/ArticleLayout';
+import AutoLinks from '../../../src/components/AutoLinks';
 import { BUSINESS } from '../../../src/lib/schema';
 import Link from 'next/link';
 
 export const metadata = {
-    title: 'Hosting in Deutschland und Website umziehen',
+    title: 'Website-Hosting in Deutschland und Umzug ohne Ranking-Verlust',
     description: 'Warum der Serverstandort weniger entscheidet als der Auftragsverarbeitungsvertrag, was beim Umzug schiefgeht und die Reihenfolge, die Rankings erhält.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/website-umzug-hosting-deutschland',
     },
     openGraph: {
-        title: 'Hosting in Deutschland und Website umziehen',
+        title: 'Website-Hosting in Deutschland und Umzug ohne Ranking-Verlust',
         description: 'Serverstandort, Auftragsverarbeitung, Drittlandtransfer und die Umzugsreihenfolge, die Rankings erhält.',
         url: 'https://webseite.hamburg/wissen/website-umzug-hosting-deutschland',
         type: 'article',
@@ -91,6 +92,7 @@ export default function WebsiteUmzugHostingPage() {
                 heroImage="/wissen/hero-website-umzug.svg"
                 heroAlt="Illustration: zwei Server-Schränke, dazwischen ein geschwungener Pfeil mit einem roten Schild mit der Aufschrift 301"
             >
+                <AutoLinks path="/wissen/website-umzug-hosting-deutschland">
                 <p>
                     Zwei Fragen laufen bei diesem Thema durcheinander. Die erste ist rechtlich: Darf mein Server im
                     Ausland stehen? Die zweite ist handwerklich: Wie ziehe ich um, ohne dass die Sichtbarkeit
@@ -322,6 +324,7 @@ export default function WebsiteUmzugHostingPage() {
                         <li>Google Search Central, Page Experience: Core Web Vitals als Teil der Page-Experience-Signale. <a href="https://developers.google.com/search/docs/appearance/page-experience" rel="nofollow noopener" target="_blank">developers.google.com</a></li>
                     </ol>
                 </div>
+                </AutoLinks>
             </ArticleLayout>
         </>
     );

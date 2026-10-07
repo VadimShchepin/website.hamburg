@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import ServiceCta from '../../../src/components/ServiceCta';
 
@@ -6,7 +7,7 @@ const SITE_URL = 'https://webseite.hamburg';
 const PAGE_URL = `${SITE_URL}/referenzen/typeexplore-ai`;
 
 export const metadata = {
-    title: 'KI-Tipptrainer mit Gemini | TypeExplore AI',
+    title: 'TypeExplore AI: KI-Tipptrainer mit Gemini, Case Study',
     description: 'EdTech-App: Tippen lernen mit KI-generierten Lektionen zu jedem Thema. React + Express + Gemini API. Sichere Architektur, Echtzeit-Feedback.',
     alternates: { canonical: PAGE_URL },
     openGraph: {
@@ -36,7 +37,7 @@ export default function TypeExploreCaseStudy() {
         url: PAGE_URL,
         datePublished: '2026-04-03',
         dateModified: '2026-04-03',
-        author: { '@type': 'Person', name: 'Vadim Shchepin', url: `${SITE_URL}/über-uns` },
+        author: { '@type': 'Person', name: 'Vadim Shchepin', url: `${SITE_URL}/ueber-uns` },
         publisher: { '@type': 'Organization', '@id': `${SITE_URL}/#organization` },
         mainEntityOfPage: PAGE_URL,
     };
@@ -53,6 +54,7 @@ export default function TypeExploreCaseStudy() {
 
     return (
         <>
+            <AutoLinks path="/referenzen/typeexplore-ai">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -113,7 +115,7 @@ export default function TypeExploreCaseStudy() {
                 <div className="container subpage-body">
                     <h2 className="animate-up">Das Problem</h2>
                     <p className="animate-up">
-                        Tipptrainer sind seit 1995 nicht weiterentwickelt worden. Man tippt &bdquo;asdf jklo&ldquo; hundert Mal und fragt sich, warum man das nicht einfach lassen kann. Die Motivation halt genau so lange, bis der erste Satz &bdquo;Der schnelle braune Fuchs&ldquo; erscheint. Dann schliesst man das Fenster und macht etwas Sinnvolles.
+                        Tipptrainer sind seit 1995 nicht weiterentwickelt worden. Man tippt &quot;asdf jklo&quot; hundert Mal und fragt sich, warum man das nicht einfach lassen kann. Die Motivation hält genau so lange, bis der erste Satz &quot;Der schnelle braune Fuchs&quot; erscheint. Dann schließt man das Fenster und macht etwas Sinnvolles.
                     </p>
                     <p className="animate-up">
                         Die Idee war simpel: Was, wenn man stattdessen über Themen tippt, die einen tatsächlich interessieren? Astronomie, Kochen, Geschichte, Programmierung, egal was. Die KI generiert den Text, Sie tippen ihn ab, und am Ende haben Sie nicht nur schneller getippt, sondern auch etwas gelernt.
@@ -124,7 +126,7 @@ export default function TypeExploreCaseStudy() {
                     <div className="subpage-features-grid animate-up">
                         <div className="subpage-feature">
                             <h3>KI-generierte Lektionen</h3>
-                            <p>Geben Sie ein Thema ein, etwa &bdquo;Japanische Teezubereitung&ldquo;, &bdquo;Warum der Himmel blau ist&ldquo; oder &bdquo;Die Geschichte der Schreibmaschine&ldquo;, und Gemini 2.5-flash erzeugt einen perfekt formatierten Ubungstext. Kein Thema zu absurd.</p>
+                            <p>Geben Sie ein Thema ein, etwa &quot;Japanische Teezubereitung&quot;, &quot;Warum der Himmel blau ist&quot; oder &quot;Die Geschichte der Schreibmaschine&quot;, und Gemini 2.5-flash erzeugt einen perfekt formatierten Übungstext. Kein Thema zu absurd.</p>
                         </div>
                         <div className="subpage-feature">
                             <h3>Sichere API-Architektur</h3>
@@ -136,7 +138,7 @@ export default function TypeExploreCaseStudy() {
                         </div>
                         <div className="subpage-feature">
                             <h3>Konfetti als Belohnung</h3>
-                            <p>Lektion abgeschlossen? Drei-Burst-Konfetti-Animation. Weil positive Verstarkung funktioniert. Fragen Sie jeden Psychologen. Oder jeden Hund.</p>
+                            <p>Lektion abgeschlossen? Drei-Burst-Konfetti-Animation. Weil positive Verstärkung funktioniert. Fragen Sie jeden Psychologen. Oder jeden Hund.</p>
                         </div>
                     </div>
 
@@ -144,16 +146,16 @@ export default function TypeExploreCaseStudy() {
                         Technische Details, die niemand sieht (aber die wichtig sind)
                     </h3>
                     <p className="animate-up">
-                        Text-Normalisierung für KI-Output (smarte Anfuhrungszeichen und Gedankenstriche von Gemini müssen in Standard-Zeichen konvertiert werden, sonst stimmt die Fehlererkennung nicht). LocalStorage-Caching, damit dieselbe Lektion nicht zweimal generiert wird. Rate-Limiting: 2 Gratis-Lektionen, dann E-Mail-Registrierung. Mobile-Erkennung: Auf dem Handy macht eine virtuelle Tastatur-Anzeige keinen Sinn, also wird sie ausgeblendet.
+                        Text-Normalisierung für KI-Output (smarte Anführungszeichen und Gedankenstriche von Gemini müssen in Standard-Zeichen konvertiert werden, sonst stimmt die Fehlererkennung nicht). LocalStorage-Caching, damit dieselbe Lektion nicht zweimal generiert wird. Rate-Limiting: 2 Gratis-Lektionen, dann E-Mail-Registrierung. Mobile-Erkennung: Auf dem Handy macht eine virtuelle Tastatur-Anzeige keinen Sinn, also wird sie ausgeblendet.
                     </p>
                     <p className="animate-up">
-                        Das sind die Details, die den Unterschied machen zwischen &bdquo;funktioniert technisch&ldquo; und &bdquo;funktioniert für echte Menschen&ldquo;.
+                        Das sind die Details, die den Unterschied machen zwischen &quot;funktioniert technisch&quot; und &quot;funktioniert für echte Menschen&quot;.
                     </p>
 
                     <div className="cs-takeaway animate-up">
                         <h3>Das Wichtigste</h3>
                         <p>
-                            Die beste Technologie ist die, die man nicht bemerkt. Der Nutzer tippt, lernt und hat Spass. Dass im Hintergrund ein Express-Proxy den API-Key schutzt, Gemini den Text normalisiert und localStorage die Lektionen cached: das muss niemand wissen. Ausser Sie lesen gerade diese Case Study. Dann wissen Sie es jetzt.
+                            Die beste Technologie ist die, die man nicht bemerkt. Der Nutzer tippt, lernt und hat Spass. Dass im Hintergrund ein Express-Proxy den API-Key schützt, Gemini den Text normalisiert und localStorage die Lektionen cached: das muss niemand wissen. Ausser Sie lesen gerade diese Case Study. Dann wissen Sie es jetzt.
                         </p>
                     </div>
                 </div>
@@ -179,6 +181,7 @@ export default function TypeExploreCaseStudy() {
             </section>
 
             <ServiceCta text="KI-Produkt geplant? Ich baue Anwendungen mit Gemini, Claude und anderen LLMs, von der API-Architektur bis zum fertigen Produkt. Und ja, es gibt Konfetti." />
+            </AutoLinks>
         </>
     );
 }

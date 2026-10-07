@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
@@ -38,13 +39,13 @@ const showcaseSlides = [
 ];
 
 export const metadata = {
-    title: 'Mehr Aufträge | Webdesign für Handwerker Hamburg',
-    description: 'Websites für Handwerksbetriebe in Hamburg: mobile-first, Telefon- und WhatsApp-Button, Google-Maps-Sichtbarkeit. Mehr Anfragen, weniger Aufwand. Ab 1.500 €.',
+    title: 'Website für Handwerker in Hamburg: Festpreis ab 1.500 €',
+    description: 'Website für Handwerksbetriebe in Hamburg: fürs Handy gebaut, Anruf und WhatsApp mit einem Tipp, sichtbar bei Google Maps. Festpreis ab 1.500 €.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/webdesign-handwerker',
     },
     openGraph: {
-        title: 'Mehr Aufträge | Webdesign für Handwerker Hamburg',
+        title: 'Website für Handwerker in Hamburg: Festpreis ab 1.500 €',
         description: 'Websites für Handwerksbetriebe in Hamburg: mobile-first, Telefon- und WhatsApp-Button, Google-Maps-Sichtbarkeit. Mehr Anfragen, weniger Aufwand.',
         url: 'https://webseite.hamburg/leistungen/webdesign-handwerker',
         type: 'website',
@@ -53,11 +54,12 @@ export const metadata = {
 
 const faqItems = [
     { q: 'Was kostet eine Website für einen Handwerksbetrieb?', a: 'Der Website-Start mit bewährtem Layout, Ihren Texten und Google-Optimierung gibt es ab 1.500 €. Eine individuell gestaltete Seite ab 2.900 €. Eine mehrseitige Website mit Leistungsseiten, Referenzen und CMS ab 4.500 €. Sie erhalten ein konkretes Festpreis-Angebot nach dem kostenlosen Erstgespräch.' },
-    { q: 'Brauche ich als Handwerker wirklich eine eigene Website?', a: 'Ja. Ihre Kunden suchen „Elektriker Hamburg" oder „Maler in der Nähe" und erwarten eine professionelle Website. Laut Think with Google besuchen 76 % der Menschen, die lokal mit dem Smartphone suchen, innerhalb eines Tages ein Geschäft. Ohne eigene Website verlieren Sie diese Anfragen an die Konkurrenz, die online sichtbar ist.' },
+    { q: 'Brauche ich als Handwerker wirklich eine eigene Website?', a: 'Ja. Ihre Kunden suchen "Elektriker Hamburg" oder "Maler in der Nähe" und erwarten eine professionelle Website. Laut Think with Google besuchen 76 % der Menschen, die lokal mit dem Smartphone suchen, innerhalb eines Tages ein Geschäft. Ohne eigene Website verlieren Sie diese Anfragen an die Konkurrenz, die online sichtbar ist.' },
     { q: 'Wie lange dauert die Erstellung?', a: 'Der Website-Start ist in 2 bis 5 Arbeitstagen online, eine individuell gestaltete Seite in 2 bis 3 Wochen, eine mehrseitige Website in 4 bis 6 Wochen. Ich weiß, dass Sie als Handwerker wenig Zeit haben, deshalb halte ich den Abstimmungsaufwand so gering wie möglich.' },
     { q: 'Kann ich die Website selbst aktualisieren?', a: 'Ja, wenn Sie das wünschen. Ich richte ein einfaches CMS ein und zeige Ihnen in rund 30 Minuten, wie Sie Texte, Bilder und Referenzfotos selbst anpassen. Keine technischen Vorkenntnisse nötig.' },
     { q: 'Hilft die Website auch bei Google Maps?', a: 'Ja. Ich optimiere Ihre Website für lokale Suchergebnisse und helfe bei der Einrichtung bzw. Optimierung Ihres Google Business Profile. So erscheinen Sie sowohl in der Google-Suche als auch auf Google Maps, wenn Kunden in Ihrer Nähe suchen.' },
     { q: 'Was passiert nach dem Launch?', a: 'Nach dem Go-live richte ich Tracking ein, damit Sie sehen, wie viele Anfragen über die Website kommen. Auf Wunsch betreue ich Ihre Website langfristig mit Updates und Optimierungen, während Sie sich auf Ihre Aufträge konzentrieren.' },
+    { q: 'Wie finde ich über meine Website neue Mitarbeiter?', a: 'Mit einer eigenen Karriereseite statt eines PDFs: echte Teamfotos, Lohnrahmen oder Vorteile, Arbeitszeiten und ein Bewerbungsformular mit wenigen Feldern, das auf dem Handy funktioniert. Jede Stelle bekommt eine eigene Seite mit JobPosting-Auszeichnung, damit sie in der Google-Jobsuche erscheint. Das kann Teil der Unternehmenswebsite ab 4.500 € sein.' },
 ];
 
 export default function WebdesignHandwerkerPage() {
@@ -88,6 +90,7 @@ export default function WebdesignHandwerkerPage() {
 
     return (
         <>
+            <AutoLinks path="/leistungen/webdesign-handwerker">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -101,9 +104,9 @@ export default function WebdesignHandwerkerPage() {
                     <div className="hero-showcase-grid">
                         <div className="hero-showcase-copy">
                             <p className="section-kicker animate-up">Webdesign für Handwerker</p>
-                            <h1 className="subpage-title animate-up">Websites für Handwerksbetriebe in Hamburg: mehr Aufträge, weniger Aufwand.</h1>
+                            <h1 className="subpage-title animate-up">Website für Handwerker in Hamburg: mehr Aufträge, weniger Aufwand.</h1>
                             <p className="subpage-intro animate-up">
-                                Sie sind Handwerker, kein Webdesigner. Ihre Zeit steckt in Baustellen und Kunden, nicht in Websites. Aber Ihre nächsten Kunden suchen gerade „Elektriker Hamburg" oder „Maler in der Nähe". Ich sorge dafür, dass diese Anfragen bei Ihnen landen.
+                                Sie sind Handwerker, kein Webdesigner. Ihre Zeit steckt in Baustellen und Kunden, nicht in Websites. Aber Ihre nächsten Kunden suchen gerade "Elektriker Hamburg" oder "Maler in der Nähe". Ich sorge dafür, dass diese Anfragen bei Ihnen landen.
                             </p>
                             <div className="hero-proof animate-up">
                                 <span>Festpreis</span>
@@ -123,7 +126,7 @@ export default function WebdesignHandwerkerPage() {
                 <div className="container subpage-body is-inset">
                     <h2 className="animate-up">Was kostet eine Handwerker-Website?</h2>
                     <div className="subpage-takeaway animate-up">
-                        <p>Eine Handwerker-Website kostet bei mir <strong>ab 1.500 €</strong> (Website-Start), <strong>ab 2.900 €</strong> (One-Pager) bzw. <strong>ab 4.500 €</strong> (mehrseitig) zum Festpreis. Sie ist mobile-first, in rund einer Sekunde geladen und für lokale Suchen wie „Elektriker Hamburg" optimiert, mit Telefon- und WhatsApp-Button direkt im Blickfeld. Laut Think with Google besuchen 76 % der Menschen, die lokal mit dem Smartphone suchen, innerhalb eines Tages ein Geschäft.</p>
+                        <p>Eine Handwerker-Website kostet bei mir <strong>ab 1.500 €</strong> (Website-Start), <strong>ab 2.900 €</strong> (individuell gestaltete Seite) oder <strong>ab 4.500 €</strong> (mehrseitig) zum Festpreis. Sie ist mobile-first, in rund einer Sekunde geladen und für lokale Suchen wie "Elektriker Hamburg" optimiert, mit Telefon- und WhatsApp-Button direkt im Blickfeld. Laut Think with Google besuchen 76 % der Menschen, die lokal mit dem Smartphone suchen, innerhalb eines Tages ein Geschäft.</p>
                     </div>
 
                     <h2 className="animate-up">Warum Handwerker eine professionelle Website brauchen</h2>
@@ -133,7 +136,7 @@ export default function WebdesignHandwerkerPage() {
                             <p className="sp-split-caption">Der nächste Auftrag beginnt auf einem Smartphone. Die Frage ist nur, bei wem er ankommt.</p>
                         </div>
                         <div className="sp-split-body">
-                            <p>Mundpropaganda ist gut, reicht aber nicht mehr. Wer einen Handwerker braucht, sucht heute zuerst bei Google, oft vom Smartphone. Laut Think with Google besuchen 76 % der Menschen, die lokal suchen, innerhalb eines Tages ein Geschäft, und 28 % der „in der Nähe"-Suchen enden mit einem Kauf.</p>
+                            <p>Mundpropaganda ist gut, reicht aber nicht mehr. Wer einen Handwerker braucht, sucht heute zuerst bei Google, oft vom Smartphone. Laut Think with Google besuchen 76 % der Menschen, die lokal suchen, innerhalb eines Tages ein Geschäft, und 28 % der "in der Nähe"-Suchen enden mit einem Kauf.</p>
                             <p>Das heißt: Ihre zukünftigen Kunden suchen jetzt gerade nach einem Handwerker wie Ihnen. Wenn Sie online nicht sichtbar sind, existieren Sie für diese Kunden nicht, und der Auftrag geht an den Wettbewerber mit Website, selbst wenn Ihre Arbeit besser ist.</p>
                         </div>
                     </div>
@@ -145,7 +148,7 @@ export default function WebdesignHandwerkerPage() {
                         </div>
                         <div className="subpage-stat">
                             <span className="subpage-stat-value">28%</span>
-                            <span className="subpage-stat-label">der „in der Nähe"-Suchen enden mit einem Kauf (Think with Google)</span>
+                            <span className="subpage-stat-label">der "in der Nähe"-Suchen enden mit einem Kauf (Think with Google)</span>
                         </div>
                         <div className="subpage-stat">
                             <span className="subpage-stat-value">99/100</span>
@@ -181,7 +184,7 @@ export default function WebdesignHandwerkerPage() {
                     </div>
 
                     <h2 className="animate-up">Referenz: Blitz Hamburg</h2>
-                    <p className="animate-up">Blitz Hamburg ist ein Handwerksbetrieb für Entrümpelung in Hamburg. Nach dem Relaunch im Mai 2026 stiegen die organischen Google-Klicks von 24 im April auf 374 im September 2026 (Google Search Console).</p>
+                    <p className="animate-up">Blitz Hamburg ist ein Handwerksbetrieb für Entrümpelung und Sanierung in Hamburg. Nach dem Relaunch im Mai 2026 stiegen die organischen Google-Klicks von 24 im April auf 374 im September 2026 (Google Search Console).</p>
                     <ul className="check-list animate-up">
                         <li>75.263 Google-Impressionen im September 2026, nach 2.652 im April</li>
                         <li>Lighthouse-Score 99/100</li>
@@ -266,10 +269,13 @@ export default function WebdesignHandwerkerPage() {
                         <div className="sp-step"><span className="sp-step-num">4</span><div><strong>Launch</strong><p>Die Website geht live, Tracking wird eingerichtet, und Sie sehen ab Tag 1, wie viele Besucher und Anfragen reinkommen. Sie kümmern sich um die Aufträge, ich um die Website.</p></div></div>
                     </div>
 
+                    <h2 className="animate-up">Mitarbeiter finden über die eigene Website</h2>
+                    <p className="animate-up">Gute Leute schauen sich Ihren Betrieb online an, bevor sie anrufen. Eine eigene Karriereseite mit echten Fotos aus dem Team, klaren Arbeitszeiten und einer Bewerbung, die auf dem Handy in zwei Minuten erledigt ist, wirkt mehr als eine weitere Anzeige im Jobportal. Mit der passenden Auszeichnung erscheinen Ihre Stellen zusätzlich in der Google-Jobsuche.</p>
+
                     <div className="subpage-sources animate-up">
                         <h2>Quellen</h2>
                         <ol>
-                            <li>Think with Google, Consumer Insights zu „near me"-Suchen: 76 % Geschäftsbesuch innerhalb eines Tages, 28 % Kauf. <a href="https://www.thinkwithgoogle.com/" rel="nofollow noopener" target="_blank">thinkwithgoogle.com</a></li>
+                            <li>Think with Google, Consumer Insights zu Near-me-Suchen: 76 % Geschäftsbesuch innerhalb eines Tages, 28 % Kauf. <a href="https://www.thinkwithgoogle.com/" rel="nofollow noopener" target="_blank">thinkwithgoogle.com</a></li>
                             <li>Referenzprojekt Blitz Hamburg, gemessen mit Google Lighthouse (Score 99/100). <a href="/referenzen/blitz-hamburg">Zur Referenz</a></li>
                         </ol>
                     </div>
@@ -279,6 +285,7 @@ export default function WebdesignHandwerkerPage() {
             <FaqSection title="Häufige Fragen von Handwerkern" items={faqItems} />
             <RelatedServices exclude="webdesign" />
             <ServiceCta text="Sie sind Handwerker in Hamburg und wollen mehr Aufträge über Ihre Website? Lassen Sie uns sprechen, kostenlos und unverbindlich. Ich zeige Ihnen, was für Ihren Betrieb möglich ist." />
+            </AutoLinks>
         </>
     );
 }

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import ServiceCta from '../../../src/components/ServiceCta';
 
@@ -6,7 +7,7 @@ const SITE_URL = 'https://webseite.hamburg';
 const PAGE_URL = `${SITE_URL}/referenzen/manetec`;
 
 export const metadata = {
-    title: 'KI-Risikoanalyse für Hotels | Schädlingsbekämpfung',
+    title: 'Manetec: Website mit KI-Risikoanalyse für Schädlingsbekämpfung',
     description: 'Website für professionelle Schädlingsbekämpfung in der Hamburger Hotellerie und Gastronomie. React + Gemini API für automatisierte Risikoanalyse.',
     alternates: { canonical: PAGE_URL },
     openGraph: {
@@ -36,7 +37,7 @@ export default function ManetecCaseStudy() {
         url: PAGE_URL,
         datePublished: '2026-04-03',
         dateModified: '2026-04-03',
-        author: { '@type': 'Person', name: 'Vadim Shchepin', url: `${SITE_URL}/über-uns` },
+        author: { '@type': 'Person', name: 'Vadim Shchepin', url: `${SITE_URL}/ueber-uns` },
         publisher: { '@type': 'Organization', '@id': `${SITE_URL}/#organization` },
         mainEntityOfPage: PAGE_URL,
     };
@@ -53,6 +54,7 @@ export default function ManetecCaseStudy() {
 
     return (
         <>
+            <AutoLinks path="/referenzen/manetec">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -68,7 +70,7 @@ export default function ManetecCaseStudy() {
                         <span className="wissen-card-time">Webdesign + KI</span>
                     </div>
                     <h1 className="subpage-title animate-up">
-                        Manetec: Wenn Schädlingsbekämpfung auf kunstliche Intelligenz trifft. Klingt absurd. Funktioniert hervorragend.
+                        Manetec: Wenn Schädlingsbekämpfung auf künstliche Intelligenz trifft. Klingt absurd, funktioniert hervorragend.
                     </h1>
                     <p className="subpage-intro animate-up">
                         Eine Website für professionelle Schädlingsbekämpfung in Hamburger Hotels und Restaurants, mit KI-gestützter Risikoanalyse, HACCP-Compliance und einem Design, das so ernst und präzise ist wie die Arbeit selbst. Weil auch Schädlingsbekämpfer eine Website verdienen, die nicht nach 2008 aussieht.
@@ -96,14 +98,14 @@ export default function ManetecCaseStudy() {
                     <div className="cs-image-showcase animate-up">
                         <img
                             src="/referenzen/manetec-hero.webp"
-                            alt="Illustration: Hotelgebaeude unter der Lupe mit Pruefringen und Haekchen-Siegel"
+                            alt="Illustration: Hotelgebäude unter der Lupe mit Prüfringen und Häkchen-Siegel"
                             width="1200"
                             height="780"
                             loading="lazy"
                             decoding="async"
                             style={{ width: '100%', height: 'auto' }}
                         />
-                        <p className="cs-image-caption">Kernidee der Seite: Objekt pruefen, Risiko bewerten, Nachweis dokumentieren.</p>
+                        <p className="cs-image-caption">Kernidee der Seite: Objekt prüfen, Risiko bewerten, Nachweis dokumentieren.</p>
                     </div>
                 </div>
             </section>
@@ -124,15 +126,15 @@ export default function ManetecCaseStudy() {
                     <div className="subpage-features-grid animate-up">
                         <div className="subpage-feature">
                             <h3>KI-Risikoanalyse</h3>
-                            <p>Das Herzstück: Ein KI-Assistent, der den Betriebstyp, die Größe und spezifische Faktoren abfragt und dann eine professionelle Risikoeinschatzung generiert. Risikostufe (niedrig/mittel/hoch/kritisch), Zusammenfassung und konkrete Empfehlungen, alles via Gemini 2.5-flash mit JSON-Schema-Validierung.</p>
+                            <p>Das Herzstück: Ein KI-Assistent, der den Betriebstyp, die Größe und spezifische Faktoren abfragt und dann eine professionelle Risikoeinschätzung generiert. Risikostufe (niedrig/mittel/hoch/kritisch), Zusammenfassung und konkrete Empfehlungen, alles via Gemini 2.5-flash mit JSON-Schema-Validierung.</p>
                         </div>
                         <div className="subpage-feature">
                             <h3>Industrielle Ästhetik</h3>
-                            <p>Null Border-Radius. Scharfe Kanten. Playfair Display für Autorität, Lato für Lesbarkeit. Das Design sagt: &bdquo;Wir meinen es ernst.&ldquo; Weil ein Hotel keinen Schädlingsbekämpfer will, dessen Website aussieht wie ein Kindergeburtstag.</p>
+                            <p>Null Border-Radius. Scharfe Kanten. Playfair Display für Autorität, Lato für Lesbarkeit. Das Design sagt: &quot;Wir meinen es ernst.&quot; Weil ein Hotel keinen Schädlingsbekämpfer will, dessen Website aussieht wie ein Kindergeburtstag.</p>
                         </div>
                         <div className="subpage-feature">
                             <h3>Farbcodierte Risikostufen</h3>
-                            <p>Die KI-Ausgabe wird visuell aufbereitet: Grun für niedrig, Gelb für mittel, Orange für hoch, Rot für kritisch. Ein Hotelmanager sieht auf einen Blick, wie dringend der Handlungsbedarf ist. Psychologie trifft UX.</p>
+                            <p>Die KI-Ausgabe wird visuell aufbereitet: Grün für niedrig, Gelb für mittel, Orange für hoch, Rot für kritisch. Ein Hotelmanager sieht auf einen Blick, wie dringend der Handlungsbedarf ist. Psychologie trifft UX.</p>
                         </div>
                         <div className="subpage-feature">
                             <h3>Framer Motion Animationen</h3>
@@ -142,16 +144,16 @@ export default function ManetecCaseStudy() {
 
                     <h2 className="animate-up">Warum KI hier Sinn macht</h2>
                     <p className="animate-up">
-                        Man konnte argumentieren: Braucht ein Schädlingsbekämpfer wirklich KI auf der Website? Die Antwort: Ja. Und zwar nicht als Gimmick, sondern als Lead-Qualifizierung. Ein Hotelmanager, der den KI-Assistenten nutzt und &bdquo;hohes Risiko&ldquo; angezeigt bekommt, hat plotzlich echte Dringlichkeit und greift zum Telefon. Das ist kein Chatbot-Widget. Das ist ein Verkaufsinstrument, das sich als nutzliches Tool tarnt.
+                        Man könnte argumentieren: Braucht ein Schädlingsbekämpfer wirklich KI auf der Website? Die Antwort: Ja. Und zwar nicht als Gimmick, sondern als Lead-Qualifizierung. Ein Hotelmanager, der den KI-Assistenten nutzt und &quot;hohes Risiko&quot; angezeigt bekommt, hat plötzlich echte Dringlichkeit und greift zum Telefon. Das ist kein Chatbot-Widget. Das ist ein Verkaufsinstrument, das sich als nützliches Tool tarnt.
                     </p>
                     <p className="animate-up">
-                        Die strukturierte JSON-Ausgabe (mit Schema-Validierung durch Gemini) stellt sicher, dass die Antworten immer im richtigen Format ankommen: Risikostufe als Enum, Zusammenfassung als Fliesstext, Empfehlungen als Liste. Keine halluzinierten Tabellen, keine kaputten Layouts. Vorhersagbar, zuverlassig, professionell.
+                        Die strukturierte JSON-Ausgabe (mit Schema-Validierung durch Gemini) stellt sicher, dass die Antworten immer im richtigen Format ankommen: Risikostufe als Enum, Zusammenfassung als Fließtext, Empfehlungen als Liste. Keine halluzinierten Tabellen, keine kaputten Layouts. Vorhersagbar, zuverlässig, professionell.
                     </p>
 
                     <div className="cs-takeaway animate-up">
                         <h3>Das Wichtigste</h3>
                         <p>
-                            KI ist kein Feature, das man auf jede Website kleben sollte. Aber wenn sie ein echtes Problem lost, in diesem Fall: &bdquo;Wie dringend brauche ich Schädlingsbekämpfung?&ldquo;, dann ist sie mehr als ein Gimmick. Sie ist ein Wettbewerbsvorteil. Manetec zeigt: Auch in &bdquo;traditionellen&ldquo; Branchen kann KI den Unterschied machen. Man muss sie nur richtig einsetzen.
+                            KI ist kein Feature, das man auf jede Website kleben sollte. Aber wenn sie ein echtes Problem löst, in diesem Fall: &quot;Wie dringend brauche ich Schädlingsbekämpfung?&quot;, dann ist sie mehr als ein Gimmick. Sie ist ein Wettbewerbsvorteil. Manetec zeigt: Auch in &quot;traditionellen&quot; Branchen kann KI den Unterschied machen. Man muss sie nur richtig einsetzen.
                         </p>
                     </div>
                 </div>
@@ -176,7 +178,8 @@ export default function ManetecCaseStudy() {
                 </div>
             </section>
 
-            <ServiceCta text="Website für Ihr Unternehmen? Auch wenn Ihre Branche nicht &bdquo;sexy&ldquo; klingt: gerade dann macht professionelles Webdesign den größten Unterschied. Sprechen wir darüber." />
+            <ServiceCta text="Website für Ihr Unternehmen? Auch wenn Ihre Branche nicht &quot;sexy&quot; klingt: gerade dann macht professionelles Webdesign den größten Unterschied. Sprechen wir darüber." />
+            </AutoLinks>
         </>
     );
 }

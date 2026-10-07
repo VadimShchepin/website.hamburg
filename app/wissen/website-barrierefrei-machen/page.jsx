@@ -1,15 +1,16 @@
 import ArticleLayout from '../../../src/components/ArticleLayout';
+import AutoLinks from '../../../src/components/AutoLinks';
 import { BUSINESS } from '../../../src/lib/schema';
 import Link from 'next/link';
 
 export const metadata = {
-    title: 'Website barrierefrei machen: die Anleitung',
+    title: 'Website barrierefrei machen: WCAG 2.2 Anleitung',
     description: 'WCAG 2.2 praktisch umgesetzt: die vier Prinzipien, die sechs häufigsten Fehler, Tastatur- und Screenreader-Test, Aufwand und Reihenfolge.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/website-barrierefrei-machen',
     },
     openGraph: {
-        title: 'Website barrierefrei machen: die Anleitung',
+        title: 'Website barrierefrei machen: WCAG 2.2 Anleitung',
         description: 'WCAG 2.2 praktisch umgesetzt: vier Prinzipien, sechs häufige Fehler, Tastatur- und Screenreader-Test, Aufwand und Reihenfolge.',
         url: 'https://webseite.hamburg/wissen/website-barrierefrei-machen',
         type: 'article',
@@ -91,6 +92,7 @@ export default function WebsiteBarrierefreiMachenPage() {
                 heroImage="/wissen/hero-barrierefrei-machen.svg"
                 heroAlt="Illustration: Browser-Fenster mit drei Prüffeldern für Kontrast, Formularbeschriftung und Tastaturfokus, davor eine Lupe"
             >
+                <AutoLinks path="/wissen/website-barrierefrei-machen">
                 <p>
                     Ob Sie überhaupt müssen, klärt der Artikel zur
                     {' '}<Link href="/wissen/barrierefreie-website-pflicht">Pflicht nach dem BFSG</Link>. Hier geht
@@ -356,6 +358,7 @@ export default function WebsiteBarrierefreiMachenPage() {
                         <li>Bundesfachstelle Barrierefreiheit, FAQ zum BFSG, kostenlose Beratung für Kleinstunternehmen. <a href="https://www.bundesfachstelle-barrierefreiheit.de/DE/Fachwissen/Produkte-und-Dienstleistungen/Barrierefreiheitsstaerkungsgesetz/FAQ/faq_node.html" rel="nofollow noopener" target="_blank">bundesfachstelle-barrierefreiheit.de</a></li>
                     </ol>
                 </div>
+                </AutoLinks>
             </ArticleLayout>
         </>
     );

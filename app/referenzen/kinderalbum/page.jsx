@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import AutoLinks from '../../../src/components/AutoLinks';
 import Image from 'next/image';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import ServiceCta from '../../../src/components/ServiceCta';
@@ -69,6 +70,7 @@ export default function KinderAlbumCaseStudy() {
 
     return (
         <>
+            <AutoLinks path="/referenzen/kinderalbum">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -266,6 +268,7 @@ export default function KinderAlbumCaseStudy() {
             </section>
 
             <ServiceCta text="Ihre Zielgruppe hat Fragen, bevor sie kauft? Im kostenlosen Erstgespräch zeige ich Ihnen, welche davon Sie bei Google beantworten sollten." />
+            </AutoLinks>
         </>
     );
 }

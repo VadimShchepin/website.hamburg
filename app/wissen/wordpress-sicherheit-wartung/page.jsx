@@ -1,15 +1,16 @@
 import ArticleLayout from '../../../src/components/ArticleLayout';
+import AutoLinks from '../../../src/components/AutoLinks';
 import { BUSINESS } from '../../../src/lib/schema';
 import Link from 'next/link';
 
 export const metadata = {
-    title: 'WordPress absichern: was wirklich schützt',
+    title: 'WordPress Sicherheit und Wartung: was wirklich schützt',
     description: '11.334 neue Schwachstellen 2025, davon 91 Prozent in Plugins. Was das für Ihren Update-Rhythmus bedeutet und was Wartung kostet.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/wordpress-sicherheit-wartung',
     },
     openGraph: {
-        title: 'WordPress absichern: was wirklich schützt',
+        title: 'WordPress Sicherheit und Wartung: was wirklich schützt',
         description: '11.334 neue Schwachstellen 2025, davon 91 Prozent in Plugins. Update-Rhythmus, Wartungskosten und Vorgehen nach einem Hack.',
         url: 'https://webseite.hamburg/wissen/wordpress-sicherheit-wartung',
         type: 'article',
@@ -91,6 +92,7 @@ export default function WordpressSicherheitWartungPage() {
                 heroImage="/wissen/hero-wordpress-sicherheit.svg"
                 heroAlt="Illustration: Schutzschild mit Schloss vor einem Browser-Fenster, daneben drei Plugin-Bausteine, einer davon rot und rissig"
             >
+                <AutoLinks path="/wissen/wordpress-sicherheit-wartung">
                 <p>
                     Ich baue selbst keine WordPress-Seiten. Trotzdem bekomme ich regelmäßig Anrufe von Betrieben mit
                     einer gehackten WordPress-Installation, weil ihr damaliger Dienstleister nicht mehr erreichbar
@@ -330,6 +332,7 @@ export default function WordpressSicherheitWartungPage() {
                         <li>WordPress.org, Security: Sicherheitsmodell und Aktualisierungspolitik des Projekts. <a href="https://wordpress.org/about/security/" rel="nofollow noopener" target="_blank">wordpress.org</a></li>
                     </ol>
                 </div>
+                </AutoLinks>
             </ArticleLayout>
         </>
     );

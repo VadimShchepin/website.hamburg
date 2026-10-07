@@ -51,7 +51,7 @@ export default function ArticleLayout({ slug, category, title, readTime, publish
 
                     {relatedArticles.length > 0 && (
                         <nav className="related-articles animate-up" aria-label="Weitere Artikel">
-                            <h3>Weiterfuhrende Artikel</h3>
+                            <h3>Weiterführende Artikel</h3>
                             <div className="related-articles-grid">
                                 {relatedArticles.map((article) => (
                                     <Link key={article.slug} href={`/wissen/${article.slug}`} className="related-article-card">

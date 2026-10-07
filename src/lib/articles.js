@@ -139,7 +139,7 @@ export const ARTICLES = [
     },
     {
         slug: 'onlineshop-kosten',
-        title: 'Onlineshop Kosten 2026: was wirklich zusammenkommt',
+        title: 'Onlineshop-Kosten: Was kostet ein Onlineshop wirklich?',
         category: 'E-COMMERCE',
         readTime: '11 Min.',
     },

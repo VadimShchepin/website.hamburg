@@ -75,7 +75,7 @@ export default function CaseStudiesGrid() {
             <div className="container">
                 <div className="section-header text-center">
                     <p className="section-kicker animate-up">Referenzen</p>
-                    <h2 className="section-title animate-up">Echte Projekte. Echte Ergebnisse.</h2>
+                    <h2 className="section-title animate-up">Referenzen: echte Projekte, echte Ergebnisse.</h2>
                 </div>
                 <div className="cases-grid">
                     {cases.map((item, index) => {

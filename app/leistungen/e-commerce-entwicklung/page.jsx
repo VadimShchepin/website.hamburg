@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
@@ -11,11 +12,11 @@ const SITE_URL = 'https://webseite.hamburg';
 const PAGE_URL = `${SITE_URL}/leistungen/e-commerce-entwicklung`;
 
 export const metadata = {
-    title: 'E-Commerce Entwicklung Hamburg | Shops & Beratung',
-    description: 'E-Commerce Entwicklung aus Hamburg, direkt vom Entwickler: Shopify, Shopware, WooCommerce und Custom-Shops. Neubau, Migration, Automatisierung.',
+    title: 'Onlineshop erstellen lassen in Hamburg: Shopify, Shopware',
+    description: 'Onlineshop erstellen lassen in Hamburg, direkt beim Entwickler: Shopify, Shopware, WooCommerce oder eigene Lösung. Neubau, Umzug oder Ausbau.',
     alternates: { canonical: PAGE_URL },
     openGraph: {
-        title: 'E-Commerce Entwicklung Hamburg | Shops & Beratung',
+        title: 'Onlineshop erstellen lassen in Hamburg: Shopify, Shopware',
         description: 'E-Commerce aus einer Hand: Strategie, Design, Entwicklung, Content, Marketing und Automatisierung. Shopify, Shopware, WooCommerce und Custom. Über 10 Jahre Erfahrung.',
         url: PAGE_URL,
         type: 'website',
@@ -71,7 +72,8 @@ const faqItems = [
     { q: 'Können Sie unseren bestehenden Shop erweitern statt neu zu bauen?', a: 'Ja. Ein großer Teil meiner Arbeit ist die Erweiterung und Optimierung bestehender Shops: neue Funktionen, mehr Performance und Conversion, Schnittstellen zu ERP und Warenwirtschaft, Zahlungs- und Versanddienstleistern sowie Automatisierungen. Ich starte mit einem Blick auf den Ist-Zustand und sage Ihnen ehrlich, ob sich eine Erweiterung lohnt oder ein Relaunch sinnvoller ist.' },
     { q: 'Welche Automatisierungen sind im E-Commerce sinnvoll?', a: 'Häufig sind das: ein automatischer Produktdaten-Feed an Google Merchant Center und Marktplätze, die Synchronisation von Lagerbeständen zwischen Shop und Warenwirtschaft, automatische Rechnungen und Versandlabels sowie E-Mail-Automatisierung für Warenkorbabbrüche, Begrüßung und Reaktivierung. Solche Abläufe sparen täglich Handarbeit und holen Umsatz zurück, der sonst liegen bleibt.' },
     { q: 'Wer arbeitet an meinem Shop?', a: 'Sie arbeiten direkt mit mir, Vadim Shchepin. Über 10 Jahre Projekterfahrung aus ganz unterschiedlichen Branchen, von DTC-Beauty über B2B-Industrie bis zu SaaS und lokalen Händlern, fließen direkt in Ihr Projekt ein. Kein Account-Manager dazwischen. Braucht ein Projekt zusätzliche Expertise, hole ich geprüfte Spezialisten dazu, Ihr Ansprechpartner bleibe ich.' },
-    { q: 'Was kostet ein E-Commerce-Projekt?', a: 'Das hängt stark vom Umfang ab, also vom System, der Sortimentsgröße, den Schnittstellen und dem Designaufwand. Ein Einstieg mit Standardsystem beginnt im mittleren vierstelligen Bereich, komplexe B2B- oder Custom-Lösungen liegen deutlich höher, deshalb gibt es hier keinen Ab-Preis, sondern ein Angebot auf Anfrage. Vor Projektstart erhalten Sie ein verbindliches Festpreis-Angebot ohne versteckte Kosten. Schreiben Sie mir Ihr Vorhaben, dann nenne ich Ihnen einen realistischen Rahmen.' },
+    { q: 'Was kostet ein E-Commerce-Projekt?', a: 'Das hängt stark vom Umfang ab, also vom System, der Sortimentsgröße, den Schnittstellen und dem Designaufwand. Ein Einstieg mit Standardsystem beginnt ab 9.000 Euro, komplexe B2B- oder Custom-Lösungen liegen deutlich höher und werden je Projekt kalkuliert. Vor Projektstart erhalten Sie ein verbindliches Festpreis-Angebot ohne versteckte Kosten. Schreiben Sie mir Ihr Vorhaben, dann nenne ich Ihnen einen realistischen Rahmen.' },
+    { q: 'Was kostet es, Shopify einrichten zu lassen?', a: 'Zwei Posten: das Shopify-Abo, das laut Preisliste ab 27 Euro im Monat beginnt (Stand August 2026, Details im Artikel Onlineshop Kosten 2026), und die Einrichtung selbst. Die hängt an Theme, Produktzahl, Zahlungsarten und Schnittstellen. Dafür bekommen Sie nach dem kostenlosen Erstgespräch einen Festpreis, bevor die Arbeit beginnt.' },
 ];
 
 export default function EcommerceEntwicklungPage() {
@@ -102,6 +104,7 @@ export default function EcommerceEntwicklungPage() {
 
     return (
         <>
+            <AutoLinks path="/leistungen/e-commerce-entwicklung">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
@@ -117,7 +120,7 @@ export default function EcommerceEntwicklungPage() {
                     <div className="ecx-hero-grid">
                         <div>
                             <p className="section-kicker animate-up">E-Commerce Entwicklung aus Hamburg</p>
-                            <h1 className="subpage-title animate-up">Online-Shops, die verkaufen.</h1>
+                            <h1 className="subpage-title animate-up">Onlineshop erstellen lassen: Shops, die verkaufen.</h1>
                             <p className="ecx-hero-lead animate-up">
                                 Entwicklung, Design, Text und Marketing aus einer Hand: meiner. Ich baue Ihren Shop, erweitere ihn und kümmere mich danach weiter darum, für Shopify, Shopware, WooCommerce oder eine eigene Lösung.
                             </p>
@@ -319,13 +322,13 @@ export default function EcommerceEntwicklungPage() {
             <section className="subpage-content section light-bg">
                 <div className="container subpage-body">
                     <figure className="subpage-figure is-band animate-up">
-                        <img src="/leistungen/fotos/e-commerce-entwicklung.webp" alt="Illustration: Ladengeschaeft, Warenkorb, Kartenterminal und Versandpaket als durchgehender Ablauf" width="1800" height="760" loading="lazy" decoding="async" />
-                        <figcaption>Vom Schaufenster bis zum Paket: Jeder Schritt gehoert zum selben System.</figcaption>
+                        <img src="/leistungen/fotos/e-commerce-entwicklung.webp" alt="Illustration: Ladengeschäft, Warenkorb, Kartenterminal und Versandpaket als durchgehender Ablauf" width="1800" height="760" loading="lazy" decoding="async" />
+                        <figcaption>Vom Schaufenster bis zum Paket: Jeder Schritt gehört zum selben System.</figcaption>
                     </figure>
 
                     <h2 className="animate-up">Was bedeutet Full-Cycle E-Commerce-Entwicklung?</h2>
                     <div className="subpage-takeaway animate-up">
-                        <p>Full-Cycle E-Commerce-Entwicklung heißt, dass ein einziger Dienstleister <strong>alle Phasen eines Online-Shops</strong> übernimmt: Strategie und Beratung, Design, Entwicklung, Texte, Marketing, Automatisierung und die laufende Betreuung. Bei AISEO ist das <strong>Vadim Shchepin, Webentwickler aus Hamburg mit über 10 Jahren Projekterfahrung</strong>. Sie arbeiten direkt mit ihm, bei zusätzlichem Bedarf kommen geprüfte Spezialisten dazu. Gearbeitet wird herstellerneutral mit Shopify, Shopware 6, WooCommerce und Custom- oder Headless-Plattformen, für neue Shops genauso wie für die Erweiterung bestehender.</p>
+                        <p>Full-Cycle E-Commerce-Entwicklung heißt, dass ein einziger Dienstleister <strong>alle Phasen eines Online-Shops</strong> übernimmt: Strategie und Beratung, Design, Entwicklung, Texte, Marketing, Automatisierung und die laufende Betreuung. Auf webseite.hamburg übernimmt das <strong>Vadim Shchepin, Webentwickler aus Hamburg mit über 10 Jahren Projekterfahrung</strong>. Sie arbeiten direkt mit ihm, bei zusätzlichem Bedarf kommen geprüfte Spezialisten dazu. Gearbeitet wird herstellerneutral mit Shopify, Shopware 6, WooCommerce und Custom- oder Headless-Plattformen, für neue Shops genauso wie für die Erweiterung bestehender.</p>
                     </div>
                     <p className="animate-up">
                         Zur Budgetplanung: <a href="/wissen/onlineshop-kosten">Onlineshop Kosten 2026</a> listet alle
@@ -338,7 +341,7 @@ export default function EcommerceEntwicklungPage() {
                     <div className="subpage-sources animate-up">
                         <h2>Quellen</h2>
                         <ol>
-                            <li>Deloitte und Google, „Milliseconds Make Millions" (2020): 0,1 s schnellere mobile Ladezeit führten zu 8,4 % mehr Conversion und 9,2 % höherem durchschnittlichen Bestellwert im Handel. <a href="https://www2.deloitte.com/content/dam/Deloitte/ie/Documents/Consulting/Milliseconds_Make_Millions_report.pdf" rel="nofollow noopener" target="_blank">deloitte.com</a></li>
+                            <li>Deloitte und Google, Milliseconds Make Millions (2020): 0,1 s schnellere mobile Ladezeit führten zu 8,4 % mehr Conversion und 9,2 % höherem durchschnittlichen Bestellwert im Handel. <a href="https://www2.deloitte.com/content/dam/Deloitte/ie/Documents/Consulting/Milliseconds_Make_Millions_report.pdf" rel="nofollow noopener" target="_blank">deloitte.com</a></li>
                             <li>Baymard Institute, Cart Abandonment Rate Statistics: im Schnitt 70,22 % über 50 Studien. <a href="https://baymard.com/lists/cart-abandonment-rate" rel="nofollow noopener" target="_blank">baymard.com/lists/cart-abandonment-rate</a></li>
                             <li>Handelsverband Deutschland (HDE), Online-Monitor 2025: deutscher B2C-E-Commerce-Umsatz rund 88,8 Mrd. € im Jahr 2024. <a href="https://www.einzelhandel.de/online-monitor" rel="nofollow noopener" target="_blank">einzelhandel.de/online-monitor</a></li>
                             <li>Statista (2023): Mobile Commerce macht rund 60 % des weltweiten E-Commerce-Umsatzes aus. <a href="https://www.statista.com/chart/30588/share-of-mobile-e-commerce-in-all-e-commerce/" rel="nofollow noopener" target="_blank">statista.com</a></li>
@@ -347,12 +350,13 @@ export default function EcommerceEntwicklungPage() {
                 </div>
             </section>
 
-            <FaqSection title="Fragen zur E-Commerce-Entwicklung" items={faqItems} />
+            <FaqSection title="Fragen zum Onlineshop erstellen lassen" items={faqItems} />
             <RelatedServices exclude="e-commerce-entwicklung" />
             <ServiceCta
                 title="Lassen Sie uns über Ihren Shop sprechen."
                 text="Kostenloses Erstgespräch. Ich schaue mir Ihr Vorhaben an, empfehle das passende System und nenne Ihnen einen realistischen Rahmen. Ob Neubau, Umzug oder Erweiterung."
             />
+            </AutoLinks>
         </>
     );
 }

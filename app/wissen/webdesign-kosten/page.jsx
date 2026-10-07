@@ -1,16 +1,24 @@
 import ArticleLayout from '../../../src/components/ArticleLayout';
+import AutoLinks from '../../../src/components/AutoLinks';
+import FaqSection from '../../../src/components/FaqSection';
 import { BUSINESS } from '../../../src/lib/schema';
 import Link from 'next/link';
 
+
+const faqItems = [
+    { q: 'Wie viel kostet es, eine Website erstellen zu lassen?', a: 'Für die meisten lokalen Unternehmen zwischen 2.000 und 15.000 Euro, je nach Seitenzahl, Design und Funktionen. Ein Einstieg mit einer Seite auf bewährtem Layout ist bei mir ab 1.500 Euro möglich. Dazu kommen laufende Kosten für Hosting, Domain und Pflege, die viele Angebote nicht nennen.' },
+    { q: 'Kann man eine Website mieten statt kaufen?', a: 'Ja, einige Anbieter bieten Websites gegen Monatsgebühr inklusive Hosting und Pflege an. Rechnen Sie die Laufzeit durch: Nach einigen Jahren kann die Summe den Kaufpreis übersteigen, und nach der Kündigung gehört Ihnen die Seite oft nicht. Fragen Sie vorher, ob Domain, Texte und Bilder bei Ihnen bleiben.' },
+];
+
 export const metadata = {
-    title: 'Was eine Website wirklich kostet | Webdesign 2026',
-    description: 'Von 500 bis 50.000 Euro: was bestimmt den Preis einer Website? Ehrlicher Kostenguide mit Preisbeispielen und versteckten Kosten.',
+    title: 'Was kostet eine Website? Preise und versteckte Kosten 2026',
+    description: 'Was kostet eine Website 2026? Von 500 bis 50.000 Euro: was den Preis bestimmt, welche Folgekosten dazukommen und wann sich eine teurere Website rechnet.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/webdesign-kosten',
     },
     openGraph: {
-        title: 'Was eine Website wirklich kostet | Webdesign 2026',
-        description: 'Von 500 bis 50.000 Euro: was bestimmt den Preis einer Website? Ehrlicher Kostenguide mit Preisbeispielen und versteckten Kosten.',
+        title: 'Was kostet eine Website? Preise und versteckte Kosten 2026',
+        description: 'Was kostet eine Website 2026? Von 500 bis 50.000 Euro: was den Preis bestimmt, welche Folgekosten dazukommen und wann sich eine teurere Website rechnet.',
         url: 'https://webseite.hamburg/wissen/webdesign-kosten',
         type: 'article',
     },
@@ -53,6 +61,7 @@ export default function WebdesignKostenArticlePage() {
                 heroImage="/wissen/hero-webdesign-kosten.svg"
                 heroAlt="Illustration: Preisschild mit rotem Eurozeichen vor einem Browserfenster"
             >
+                <AutoLinks path="/wissen/webdesign-kosten">
                 <p>
                     Eine professionelle Website kostet zwischen 2.000 und 15.000 Euro f&uuml;r die meisten
                     lokalen Unternehmen. Aber der Preis allein sagt wenig &uuml;ber den Wert. Eine Website
@@ -77,7 +86,7 @@ export default function WebdesignKostenArticlePage() {
                     <li>
                         <strong>Design, Template oder individuell:</strong> Ein fertig gekauftes Template
                         kostet 50 bis 200 Euro. Ein individuelles Design, das exakt auf Ihre Marke zugeschnitten
-                        ist, beginnt bei 1.500 Euro. Der Unterschied: Ein Template sieht aus wie tausend andere
+                        ist, beginnt bei mir ab 2.900 Euro. Der Unterschied: Ein Template sieht aus wie tausend andere
                         Websites. Ein individuelles Design kommuniziert Ihre Alleinstellung vom ersten Pixel an.
                     </li>
                     <li>
@@ -289,7 +298,7 @@ export default function WebdesignKostenArticlePage() {
                     spezialisierten Boutique-Agenturen.
                 </p>
                 <p>
-                    Bei AISEO Hamburg verfolge ich einen transparenten Ansatz: Eine Conversion Landingpage startet ab 2.900
+                    Bei mir gilt ein transparenter Ansatz: Der Website-Start beginnt bei 1.500 Euro, eine Conversion Landingpage startet ab 2.900
                     Euro, eine mehrseitige Unternehmenswebsite ab 4.500 Euro, jeweils inklusive SEO-Grundoptimierung und
                     Performance-Optimierung. Kein Kleingedrucktes, keine &Uuml;berraschungen nach
                     Projektstart. Was im Angebot steht, ist der Preis. Meine Referenzen zeigen, was
@@ -376,7 +385,9 @@ export default function WebdesignKostenArticlePage() {
                     und unverbindlich. <Link href="/kontakt">Schreiben Sie mir</Link>, und Sie erhalten innerhalb
                     von 48 Stunden eine erste Einsch&auml;tzung mit konkreten Zahlen statt vager Versprechen.
                 </p>
+                </AutoLinks>
             </ArticleLayout>
+            <FaqSection title="Häufige Fragen zu Website-Kosten" items={faqItems} />
         </>
     );
 }

@@ -1,15 +1,16 @@
 import ArticleLayout from '../../../src/components/ArticleLayout';
+import AutoLinks from '../../../src/components/AutoLinks';
 import { BUSINESS } from '../../../src/lib/schema';
 import Link from 'next/link';
 
 export const metadata = {
-    title: 'Webflow oder WordPress? Klare Entscheidung',
+    title: 'Webflow oder WordPress? Kosten und Vergleich 2026',
     description: 'Webflow-Preise, WordPress-Gesamtkosten, Pflegeaufwand, Ausstiegsrisiko und der Sonderfall TYPO3. Mit aktuellen Listenpreisen und einer Zuordnung nach Fall.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/webflow-oder-wordpress',
     },
     openGraph: {
-        title: 'Webflow oder WordPress? Klare Entscheidung',
+        title: 'Webflow oder WordPress? Kosten und Vergleich 2026',
         description: 'Webflow-Preise, WordPress-Gesamtkosten, Pflegeaufwand und Ausstiegsrisiko, mit aktuellen Listenpreisen.',
         url: 'https://webseite.hamburg/wissen/webflow-oder-wordpress',
         type: 'article',
@@ -91,6 +92,7 @@ export default function WebflowOderWordpressPage() {
                 heroImage="/wissen/hero-webflow-wordpress.svg"
                 heroAlt="Illustration: Balkenwaage, links ein Baukasten aus drei Blöcken, rechts ein Zahnrad mit Code-Klammern, der Zeiger ist rot"
             >
+                <AutoLinks path="/wissen/webflow-oder-wordpress">
                 <p>
                     Die Frage wird meist als technische gestellt und ist eine betriebswirtschaftliche. Beide
                     Systeme bauen gute Websites. Sie verteilen nur Arbeit, Kosten und Abhängigkeit
@@ -322,6 +324,7 @@ export default function WebflowOderWordpressPage() {
                         <li>Google Search Central, Page Experience: Google bewertet das ausgelieferte Ergebnis, Core Web Vitals als Teil der Signale. <a href="https://developers.google.com/search/docs/appearance/page-experience" rel="nofollow noopener" target="_blank">developers.google.com</a></li>
                     </ol>
                 </div>
+                </AutoLinks>
             </ArticleLayout>
         </>
     );

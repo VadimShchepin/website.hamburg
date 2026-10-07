@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
@@ -7,13 +8,13 @@ import ServiceMeta from '../../../src/components/ServiceMeta';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'DSGVO-konform | Webdesign für Arztpraxen Hamburg',
-    description: 'Websites für Arztpraxen und Zahnärzte in Hamburg: DSGVO-konform, Online-Terminbuchung (Doctolib, Jameda), Google Maps. Ab 2.900 €.',
+    title: 'Webdesign für Arztpraxen & Zahnärzte in Hamburg',
+    description: 'Praxis-Website für Ärzte und Zahnärzte in Hamburg: DSGVO-konform, Online-Terminbuchung über Doctolib oder Jameda, sichtbar bei Google Maps. Ab 2.900 € Festpreis.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/webdesign-aerzte',
     },
     openGraph: {
-        title: 'DSGVO-konform | Webdesign für Arztpraxen Hamburg',
+        title: 'Webdesign für Arztpraxen & Zahnärzte in Hamburg',
         description: 'Websites für Arztpraxen und Zahnärzte in Hamburg: DSGVO-konform, Online-Terminbuchung, Google-Maps-Sichtbarkeit. Mehr Patienten.',
         url: 'https://webseite.hamburg/leistungen/webdesign-aerzte',
         type: 'website',
@@ -23,9 +24,9 @@ export const metadata = {
 
 const faqItems = [
     { q: 'Was kostet eine Praxis-Website?', a: 'Eine kompakte Praxis-Website mit den wichtigsten Informationen beginnt ab 2.900 €. Eine umfangreiche Website mit Online-Terminbuchung, Team-Vorstellung und Leistungsseiten liegt ab 5.500 €. Den genauen Preis als Festpreis besprechen wir im kostenlosen Erstgespräch.' },
-    { q: 'Ist die Website DSGVO-konform?', a: 'Ja. Gerade für Arztpraxen ist DSGVO-Konformität Pflicht. Ich setze datenschutzkonforme Kontaktformulare, ein rechtssicheres Cookie-Management und eine korrekte Datenschutzerklärung um. Alle übertragenen Daten werden per SSL verschlüsselt. Auf Wunsch binde ich Ihren Datenschutzbeauftragten ein.' },
+    { q: 'Ist die Website DSGVO-konform?', a: 'Ja, technisch setze ich alles dafür um: datenschutzfreundliche Kontaktformulare, ein Cookie-Management, das Dienste erst nach Einwilligung lädt, und eine Datenschutzerklärung, die zu den tatsächlich eingebundenen Diensten passt. Alle übertragenen Daten werden per SSL verschlüsselt. Die rechtliche Freigabe bleibt bei Ihnen; auf Wunsch stimme ich alles direkt mit Ihrem Datenschutzbeauftragten ab.' },
     { q: 'Kann ich eine Online-Terminbuchung integrieren?', a: 'Ja. Ich integriere gängige Systeme wie Doctolib, Jameda oder Clickdoc direkt in Ihre Website. Patienten buchen rund um die Uhr, das entlastet Ihr Team und reduziert Telefonanfragen. Laut Bitkom hatte 2024 bereits jede zweite Person in Deutschland schon einmal online einen Arzttermin vereinbart.' },
-    { q: 'Wie finden Patienten meine Praxis bei Google?', a: 'Durch lokale SEO, Google-Maps-Integration und strukturierte Daten erscheint Ihre Praxis bei Suchen wie „Zahnarzt Hamburg Eimsbüttel" oder „Hausarzt in der Nähe". Ich optimiere Ihr Google Business Profile und sorge für konsistente NAP-Daten (Name, Adresse, Telefon).' },
+    { q: 'Wie finden Patienten meine Praxis bei Google?', a: 'Durch lokale SEO, Google-Maps-Integration und strukturierte Daten erscheint Ihre Praxis bei Suchen wie "Zahnarzt Hamburg Eimsbüttel" oder "Hausarzt in der Nähe". Ich optimiere Ihr Google Business Profile und sorge für konsistente NAP-Daten (Name, Adresse, Telefon).' },
     { q: 'Kann ich Sprechzeiten und Team-Infos selbst aktualisieren?', a: 'Ja. Ich richte ein benutzerfreundliches CMS ein, mit dem Sie Sprechzeiten, Urlaubszeiten, Team-Mitglieder und Leistungen selbst anpassen, ganz ohne technische Kenntnisse. Ich schule Sie und Ihr Praxisteam in der Bedienung.' },
     { q: 'Wie lange dauert die Erstellung?', a: 'Eine Praxis-Website ist in der Regel in 3 bis 5 Wochen fertig. Der genaue Zeitrahmen hängt vom Umfang ab, etwa ob Sie Online-Terminbuchung, Teamfotos oder Leistungsseiten benötigen. Nach dem Erstgespräch erhalten Sie einen konkreten Zeitplan.' },
 ];
@@ -58,6 +59,7 @@ export default function WebdesignAerztePage() {
 
     return (
         <>
+            <AutoLinks path="/leistungen/webdesign-aerzte">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -71,9 +73,9 @@ export default function WebdesignAerztePage() {
                     <div className="subpage-hero-split">
                         <div>
                         <p className="section-kicker animate-up">Webdesign für Arztpraxen</p>
-                        <h1 className="subpage-title animate-up">Praxis-Websites für Ärzte und Zahnärzte in Hamburg.</h1>
+                        <h1 className="subpage-title animate-up">Webdesign für Arztpraxen und Zahnärzte in Hamburg.</h1>
                         <p className="subpage-intro animate-up">
-                            Patienten suchen „Zahnarzt Hamburg Eimsbüttel" oder „Hausarzt in der Nähe". Wird Ihre Praxis nicht gefunden oder wirkt die Website veraltet, buchen sie woanders. Und DSGVO-Konformität ist für medizinische Einrichtungen keine Option, sondern Pflicht.
+                            Patienten suchen "Zahnarzt Hamburg Eimsbüttel" oder "Hausarzt in der Nähe". Wird Ihre Praxis nicht gefunden oder wirkt die Website veraltet, buchen sie woanders. Und DSGVO-Konformität ist für medizinische Einrichtungen keine Option, sondern Pflicht.
                         </p>
                         <ServiceMeta />
                         </div>
@@ -226,8 +228,8 @@ export default function WebdesignAerztePage() {
                     <div className="subpage-sources animate-up">
                         <h2>Quellen</h2>
                         <ol>
-                            <li>Bitkom e. V., „Die Hälfte der Deutschen vereinbart Arzttermine online" (2024): 50 % (2019: 26 %), 27 % wählen Praxis nach Online-Buchung. <a href="https://www.bitkom.org/Presse/Presseinformation/Haelfte-vereinbart-Arzttermine-online" rel="nofollow noopener" target="_blank">bitkom.org</a></li>
-                            <li>Bitkom e. V., „Mehr als die Hälfte liest Arzt-Bewertungen im Internet": Bewertungen bei der Arztwahl. <a href="https://www.bitkom.org/Presse/Presseinformation/Haelfte-liest-Arzt-Bewertungen-Internet" rel="nofollow noopener" target="_blank">bitkom.org</a></li>
+                            <li>Bitkom e. V., Die Hälfte der Deutschen vereinbart Arzttermine online (2024): 50 % (2019: 26 %), 27 % wählen Praxis nach Online-Buchung. <a href="https://www.bitkom.org/Presse/Presseinformation/Haelfte-vereinbart-Arzttermine-online" rel="nofollow noopener" target="_blank">bitkom.org</a></li>
+                            <li>Bitkom e. V., Mehr als die Hälfte liest Arzt-Bewertungen im Internet: Bewertungen bei der Arztwahl. <a href="https://www.bitkom.org/Presse/Presseinformation/Haelfte-liest-Arzt-Bewertungen-Internet" rel="nofollow noopener" target="_blank">bitkom.org</a></li>
                         </ol>
                     </div>
                 </div>
@@ -236,6 +238,7 @@ export default function WebdesignAerztePage() {
             <FaqSection title="Häufige Fragen zu Praxis-Websites" items={faqItems} />
             <RelatedServices exclude="webdesign" />
             <ServiceCta text="Lassen Sie uns über Ihre Praxis-Website sprechen. Im kostenlosen Erstgespräch analysiere ich Ihre Online-Präsenz und zeige Ihnen, wie Sie mehr Patienten über Google gewinnen. DSGVO-konform und professionell." />
+            </AutoLinks>
         </>
     );
 }

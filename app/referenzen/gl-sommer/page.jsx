@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import AutoLinks from '../../../src/components/AutoLinks';
 import Image from 'next/image';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import ServiceCta from '../../../src/components/ServiceCta';
@@ -80,6 +81,7 @@ export default function GlSommerCaseStudy() {
 
     return (
         <>
+            <AutoLinks path="/referenzen/gl-sommer">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -281,6 +283,7 @@ export default function GlSommerCaseStudy() {
             </section>
 
             <ServiceCta text="Sie sind nicht sicher, was Ihre Google-Ads-Conversions eigentlich zählen? Im kostenlosen Erstgespräch schaue ich mit Ihnen in Ihr Konto." />
+            </AutoLinks>
         </>
     );
 }

@@ -5,10 +5,10 @@ const allServices = [
     { slug: 'webdesign', title: 'Webdesign & Entwicklung', desc: 'Schnelle, konversionsstarke Websites', price: 'Ab 1.500' },
     { slug: 'e-commerce-entwicklung', title: 'E-Commerce Entwicklung', desc: 'Shops für Shopify, Shopware & WooCommerce', price: 'Auf Anfrage' },
     { slug: 'seo', title: 'SEO & Lokale Sichtbarkeit', desc: 'Gefunden werden bei Google & Maps', price: 'Ab 1.000/Mt.' },
-    { slug: 'conversion-optimierung', title: 'Conversion-Optimierung', desc: 'Mehr Anfragen aus vorhandenem Traffic', price: 'Ab 1.200' },
+    { slug: 'conversion-optimierung', title: 'Conversion-Optimierung', desc: 'Mehr Anfragen aus vorhandenem Traffic', price: 'Ab 2.400' },
     { slug: 'ai-seo', title: 'AI SEO', desc: 'Sichtbar in ChatGPT & Perplexity', price: 'Sprint ab 1.500' },
     { slug: 'google-ads', title: 'Google & Local Ads', desc: 'Sofort Anfragen über bezahlte Suche', price: 'Ab 500/Mt.' },
-    { slug: 'chatgpt-ads', title: 'ChatGPT Ads', desc: 'Werbung in ChatGPT, neu in Deutschland', price: 'Ab 500/Mt.' },
+    { slug: 'chatgpt-ads', title: 'ChatGPT Ads', desc: 'Werbung in ChatGPT, neu in Deutschland', price: 'Ab 1.000/Mt.' },
     { slug: 'website-audit', title: 'Website-Audit', desc: 'Kostenlose Analyse Ihrer Website', price: 'Kostenlos' },
 ];
 

@@ -1,9 +1,17 @@
 import ArticleLayout from '../../../src/components/ArticleLayout';
+import AutoLinks from '../../../src/components/AutoLinks';
+import FaqSection from '../../../src/components/FaqSection';
 import Link from 'next/link';
 import { BUSINESS } from '../../../src/lib/schema';
 
+
+const faqItems = [
+    { q: 'Was bedeutet Website-Relaunch?', a: 'Ein Relaunch ist der Neustart einer bestehenden Website: neues Design, oft neues System und neue Struktur, aber dieselbe Domain. Anders als bei einer neuen Website gibt es schon Rankings und Links, die erhalten bleiben sollen. Deshalb ist die wichtigste Liste beim Relaunch nicht die Designliste, sondern die Liste der Weiterleitungen von alten auf neue Adressen.' },
+    { q: 'Was kostet ein Website-Relaunch?', a: 'Ungefähr so viel wie eine neue Website derselben Größe, plus die Arbeit für Weiterleitungen, Inhaltsübernahme und Tests. Bei mir gelten dieselben Preise wie beim Neubau, ab 1.500 € für eine Seite und ab 4.500 € für eine mehrseitige Website, jeweils als Festpreis nach dem Erstgespräch.' },
+];
+
 export const metadata = {
-    title: 'Relaunch ohne Ranking-Verlust | Checkliste 2026',
+    title: 'Website-Relaunch Checkliste: ohne Ranking-Verlust (2026)',
     description: 'Ein Relaunch kann Ihre Sichtbarkeit stärken oder Ihre Rankings zerstören. Die wichtigsten Punkte vor, während und nach dem Relaunch.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/website-relaunch-checkliste',
@@ -53,21 +61,16 @@ export default function WebsiteRelaunchArticlePage() {
                 heroImage="/wissen/hero-relaunch.svg"
                 heroAlt="Illustration: altes und neues Browserfenster, dazwischen ein roter Rundpfeil, darunter eine Checkliste"
             >
+                <AutoLinks path="/wissen/website-relaunch-checkliste">
                 <p>
-                    Ein Website-Relaunch ist kein Redesign-Projekt. Es ist ein technisches Migrationsprojekt mit
-                    Designkomponente. Wer das verwechselt, verliert Rankings, Traffic und im schlimmsten Fall Umsatz.
-                    Diese Checkliste deckt die kritischen Schritte ab, chronologisch und ohne Ausschmueckungen.
+                    Ein Website-Relaunch ist kein Redesign-Projekt. Es ist ein technisches Migrationsprojekt mit Designkomponente. Wer das verwechselt, verliert Rankings, Traffic und im schlimmsten Fall Umsatz. Diese Checkliste deckt die kritischen Schritte ab, chronologisch und ohne Ausschmückungen.
                 </p>
 
                 <h2>Phase 1: Vor dem Relaunch</h2>
 
                 <h3>Analytics auswerten, bevor irgendetwas angefasst wird</h3>
                 <p>
-                    Der häufigste Fehler: Man startet mit dem Design, ohne vorher in die Daten zu schauen.
-                    Öffnen Sie Google Analytics und Search Console. Identifizieren Sie die Seiten, die den meisten
-                    organischen Traffic bringen. Schauen Sie sich an, welche Seiten konvertieren. Diese Seiten
-                    sind heilig: sie duerfen nicht einfach gelöscht oder umstrukturiert werden, ohne dass ein
-                    klarer Plan existiert.
+                    Der häufigste Fehler: Man startet mit dem Design, ohne vorher in die Daten zu schauen. Öffnen Sie Google Analytics und Search Console. Identifizieren Sie die Seiten, die den meisten organischen Traffic bringen. Schauen Sie sich an, welche Seiten konvertieren. Diese Seiten sind heilig: sie dürfen nicht einfach gelöscht oder umstrukturiert werden, ohne dass ein klarer Plan existiert.
                 </p>
                 <p>
                     Exportieren Sie aus der Search Console die Liste aller indexierten URLs mit Klicks, Impressionen
@@ -77,9 +80,8 @@ export default function WebsiteRelaunchArticlePage() {
 
                 <h3>SEO-Audit: Bewahren, was funktioniert</h3>
                 <p>
-                    Ein gruendliches <a href="/wissen/lokales-seo-hamburg-guide">SEO-Audit</a> ist Pflicht. Crawlen Sie die bestehende Website vollständig, mit Screaming Frog, Sitebulb oder einem
-                    vergleichbaren Tool. Dokumentieren Sie saemtliche URLs, Title-Tags, Meta-Descriptions,
-                    H1-Strukturen, interne Links und Canonical-Tags. Sichern Sie auch die XML-Sitemap und
+                    Ein gründliches <a href="/wissen/lokales-seo-hamburg-guide">SEO-Audit</a> ist Pflicht. Crawlen Sie die bestehende Website vollständig, mit Screaming Frog, Sitebulb oder einem
+                    vergleichbaren Tool. Dokumentieren Sie sämtliche URLs, Title-Tags, Meta-Descriptions, H1-Strukturen, interne Links und Canonical-Tags. Sichern Sie auch die XML-Sitemap und
                     die robots.txt.
                 </p>
                 <ul>
@@ -104,14 +106,13 @@ export default function WebsiteRelaunchArticlePage() {
                 </p>
                 <p>
                     Erstellen Sie eine vollständige Redirect-Map als Tabelle: alte URL in Spalte A,
-                    neue URL in Spalte B. Prüfen Sie jede Zeile manuell. Automatisierte Mappings
-                    auf Basis von URL-Aehnlichkeiten sind fehleranfaellig.{' '}
+                    neue URL in Spalte B. Prüfen Sie jede Zeile manuell. Automatisierte Mappings auf Basis von URL-Ähnlichkeiten sind fehleranfällig.{' '}
                     <a href="https://ahrefs.com/blog/301-redirects/" target="_blank" rel="noopener noreferrer">
-                        Ahrefs erklärt ausfuehrlich, wie Redirect-Mapping korrekt umgesetzt wird
+                        Ahrefs erklärt ausführlich, wie Redirect-Mapping korrekt umgesetzt wird
                     </a>.
                 </p>
                 <ul>
-                    <li>Keine Redirect-Ketten: A leitet auf B, B leitet auf C, denn das kostet Crawl-Budget und verduennt Link-Equity</li>
+                    <li>Keine Redirect-Ketten: A leitet auf B, B leitet auf C, denn das kostet Crawl-Budget und verdünnt Link-Equity</li>
                     <li>Keine 302-Redirects verwenden, nur 301 (permanent)</li>
                     <li>Redirects serverseitig implementieren (htaccess, nginx.conf, Edge-Functions), nicht per JavaScript</li>
                     <li>Nach der Implementierung jeden einzelnen Redirect testen, manuell oder per Skript</li>
@@ -128,10 +129,7 @@ export default function WebsiteRelaunchArticlePage() {
 
                 <h3>Content-Migration</h3>
                 <p>
-                    Inhalte werden nicht einfach kopiert. Sie werden geprüft, aktualisiert und bewusst
-                    uebernommen oder gestrichen. Jede Seite, die organischen Traffic bringt, muss
-                    inhaltlich mindestens gleichwertig sein. Kürzen Sie nicht an Stellen, die für
-                    Rankings relevant sind.
+                    Inhalte werden nicht einfach kopiert. Sie werden geprüft, aktualisiert und bewusst übernommen oder gestrichen. Jede Seite, die organischen Traffic bringt, muss inhaltlich mindestens gleichwertig sein. Kürzen Sie nicht an Stellen, die für Rankings relevant sind.
                 </p>
                 <p>
                     Prüfen Sie bei der Migration, ob interne Links noch funktionieren. Neue
@@ -155,9 +153,8 @@ export default function WebsiteRelaunchArticlePage() {
 
                 <h3>Performance und Mobile testen</h3>
                 <p>
-                    Messen Sie die Core Web Vitals auf der Staging-Umgebung. Vergleichen Sie LCP,
-                    FID (bzw. INP) und CLS mit den Werten der alten Seite. Ein Relaunch, der
-                    die Ladezeit verschlechtert, ist ein Rueckschritt, egal wie gut das Design
+                    Messen Sie die Core Web Vitals auf der Staging-Umgebung. Vergleichen Sie LCP, INP (seit März 2024 Nachfolger von FID) und CLS mit den Werten der alten Seite. Ein Relaunch, der
+                    die Ladezeit verschlechtert, ist ein Rückschritt, egal wie gut das Design
                     aussieht. Warum Performance so entscheidend ist, zeige ich im Detail im Artikel <a href="/wissen/warum-langsame-websites-kunden-kosten">Warum langsame Websites Kunden kosten</a>.
                 </p>
                 <p>
@@ -212,53 +209,39 @@ export default function WebsiteRelaunchArticlePage() {
 
                 <h3>Die ersten 48 Stunden</h3>
                 <p>
-                    Ueberwachen Sie die Search Console stuendlich in den ersten zwei Tagen.
-                    Achten Sie auf Crawl-Fehler, 404-Seiten und Indexierungsprobleme.
-                    Prüfen Sie die Server-Logs auf Googlebot-Anfragen: crawlt Google die
-                    neuen URLs? Werden Redirects korrekt aufgeloest?
+                    Überwachen Sie die Search Console stündlich in den ersten zwei Tagen. Achten Sie auf Crawl-Fehler, 404-Seiten und Indexierungsprobleme. Prüfen Sie die Server-Logs auf Googlebot-Anfragen: crawlt Google die neuen URLs? Werden Redirects korrekt aufgelöst?
                 </p>
 
                 <h3>Die ersten vier Wochen</h3>
                 <p>
-                    Vergleichen Sie wöchentlich den organischen Traffic mit der Baseline.
-                    Leichte Schwankungen sind normal, Google braucht Zeit, um die neue
-                    Struktur zu verarbeiten. Ein Traffic-Einbruch von mehr als 20%, der
-                    länger als zwei Wochen anhaelt, deutet auf ein Problem hin. Typische
-                    Ursachen: fehlende Redirects, veraenderte Inhalte auf Top-Seiten oder
-                    technische Crawling-Hindernisse.
+                    Vergleichen Sie wöchentlich den organischen Traffic mit der Baseline. Leichte Schwankungen sind normal, Google braucht Zeit, um die neue Struktur zu verarbeiten. Ein Traffic-Einbruch von mehr als 20%, der länger als zwei Wochen anhält, deutet auf ein Problem hin. Typische Ursachen: fehlende Redirects, veränderte Inhalte auf Top-Seiten oder technische Crawling-Hindernisse.
                 </p>
                 <ul>
                     <li>Search Console wöchentlich auf neue 404-Fehler prüfen</li>
-                    <li>Keyword-Rankings der Top-20-Seiten ueberwachen</li>
+                    <li>Keyword-Rankings der Top-20-Seiten überwachen</li>
                     <li>Backlinks prüfen: Kommen die Verweise über Redirects korrekt an?</li>
                     <li>Core Web Vitals im Feld-Daten-Report vergleichen (CrUX)</li>
-                    <li>Conversion-Raten vor und nach Relaunch gegenueberstellen</li>
+                    <li>Conversion-Raten vor und nach Relaunch gegenüberstellen</li>
                 </ul>
 
                 <h3>Langfristig</h3>
                 <p>
-                    Lassen Sie die 301-Redirects mindestens ein Jahr aktiv. Entfernen Sie sie
-                    nicht voreilig. Externe Websites und Bookmarks verweisen moeglicherweise
-                    noch jahrelang auf die alten URLs. Ein Redirect kostet nichts, ein
-                    verlorener Backlink schon.
+                    Lassen Sie die 301-Redirects mindestens ein Jahr aktiv. Entfernen Sie sie nicht voreilig. Externe Websites und Bookmarks verweisen möglicherweise noch jahrelang auf die alten URLs. Ein Redirect kostet nichts, ein verlorener Backlink schon.
                 </p>
 
                 <p>
-                    Ein Relaunch ist planbar. Die meisten Schaeden entstehen nicht durch
-                    unvorhersehbare Probleme, sondern durch uebersprungene Schritte. Arbeiten
-                    Sie diese Liste ab, bevor Sie live gehen.
+                    Ein Relaunch ist planbar. Die meisten Schäden entstehen nicht durch unvorhersehbare Probleme, sondern durch übersprungene Schritte. Arbeiten Sie diese Liste ab, bevor Sie live gehen.
                 </p>
                 <p>
-                    Drei Anschlussfragen, die bei einem Relaunch fast immer aufkommen: Wenn sich nur der Server
-                    aendert und nicht die Adressen, ist der Aufwand deutlich kleiner, das steht in
+                    Drei Anschlussfragen, die bei einem Relaunch fast immer aufkommen: Wenn sich nur der Server ändert und nicht die Adressen, ist der Aufwand deutlich kleiner, das steht in
                     {' '}<Link href="/wissen/website-umzug-hosting-deutschland">Hosting in Deutschland und Website umziehen</Link>.
                     Wenn dabei auch das System wechseln soll, hilft
-                    {' '}<Link href="/wissen/wordpress-alternativen">WordPress-Alternativen</Link>. Und wenn Ihre
-                    neue Seite Vertraege abschliesst, gilt seit dem 28. Juni 2025
-                    {' '}<Link href="/wissen/barrierefreie-website-pflicht">das BFSG</Link>, das man beim Neubau
-                    guenstiger beruecksichtigt als beim Nachruesten.
+                    {' '}<Link href="/wissen/wordpress-alternativen">WordPress-Alternativen</Link>. Und wenn Ihre neue Seite Verträge abschließt, gilt seit dem 28. Juni 2025
+                    {' '}<Link href="/wissen/barrierefreie-website-pflicht">das BFSG</Link>, das man beim Neubau günstiger berücksichtigt als beim Nachrüsten.
                 </p>
+                </AutoLinks>
             </ArticleLayout>
+            <FaqSection title="Häufige Fragen zum Website-Relaunch" items={faqItems} />
         </>
     );
 }

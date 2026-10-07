@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import ServiceCta from '../../../src/components/ServiceCta';
 
@@ -6,7 +7,7 @@ const SITE_URL = 'https://webseite.hamburg';
 const PAGE_URL = `${SITE_URL}/referenzen/pest-control-saas`;
 
 export const metadata = {
-    title: 'Aufträge, Techniker & Nachweise in einer App | SaaS',
+    title: 'Pest Control SaaS: Software für die Schädlingsbekämpfung',
     description: 'Multi-Tenant SaaS für Schädlingsbekämpfer: Hexagonale Architektur, DDD, Offline-PWA, EU-Biozid-Verordnung-Compliance. Laravel 12 + Next.js 16 + PostgreSQL.',
     alternates: {
         canonical: PAGE_URL,
@@ -41,7 +42,7 @@ export default function PestControlCaseStudy() {
         author: {
             '@type': 'Person',
             name: 'Vadim Shchepin',
-            url: `${SITE_URL}/über-uns`,
+            url: `${SITE_URL}/ueber-uns`,
         },
         publisher: {
             '@type': 'Organization',
@@ -62,6 +63,7 @@ export default function PestControlCaseStudy() {
 
     return (
         <>
+            <AutoLinks path="/referenzen/pest-control-saas">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -81,7 +83,7 @@ export default function PestControlCaseStudy() {
                         Pest Control SaaS: Enterprise-Architektur für die Schädlingsbekämpfungsbranche.
                     </h1>
                     <p className="subpage-intro animate-up">
-                        Ein Multi-Tenant SaaS-System, das Kundenverwaltung, Einsatzplanung, Vor-Ort-Dokumentation und rechtskonforme Berichterstattung in einer Plattform vereint. Gebaut mit Hexagonaler Architektur, Domain-Driven Design und einer Offline-fahigen PWA für Techniker im Feld.
+                        Ein Multi-Tenant SaaS-System, das Kundenverwaltung, Einsatzplanung, Vor-Ort-Dokumentation und rechtskonforme Berichterstattung in einer Plattform vereint. Gebaut mit Hexagonaler Architektur, Domain-Driven Design und einer Offline-fähigen PWA für Techniker im Feld.
                     </p>
                     <div className="article-byline animate-up">
                         Von <Link href="/ueber-uns">Vadim Shchepin</Link> &middot; 3. April 2026
@@ -116,7 +118,7 @@ export default function PestControlCaseStudy() {
                             decoding="async"
                             style={{ width: '100%', height: 'auto' }}
                         />
-                        <p className="cs-image-caption">Sechs Bounded Contexts, sauber getrennt, plus Offline-PWA fuer die Techniker.</p>
+                        <p className="cs-image-caption">Sechs Bounded Contexts, sauber getrennt, plus Offline-PWA für die Techniker.</p>
                     </div>
                 </div>
             </section>
@@ -127,7 +129,7 @@ export default function PestControlCaseStudy() {
                 <div className="container subpage-body">
                     <h2 className="animate-up">Das Problem</h2>
                     <p className="animate-up">
-                        Schädlingsbekämpfer in Deutschland arbeiten mit einem Flickwerk aus Tools: Kundendaten in Excel, Einsatzplane per WhatsApp, Fotos auf dem Handy, Berichte in Word-Vorlagen. Jeder Einsatz erzeugt Papierkram, der manuell zusammengefuhrt werden muss: zeitaufwandig, fehleranfallig und nicht rechtskonform.
+                        Schädlingsbekämpfer in Deutschland arbeiten mit einem Flickwerk aus Tools: Kundendaten in Excel, Einsatzplane per WhatsApp, Fotos auf dem Handy, Berichte in Word-Vorlagen. Jeder Einsatz erzeugt Papierkram, der manuell zusammengeführt werden muss: zeitaufwändig, fehleranfällig und nicht rechtskonform.
                     </p>
                     <p className="animate-up">
                         Die EU-Biozid-Verordnung (528/2012) schreibt vor, dass bei jedem Einsatz detailliert dokumentiert wird: Auftraggeber, Einsatzort, Datum und Uhrzeit, Schädlingsart, Befallsgrad, Maßnahmen, eingesetzte Mittel und Unterschrift. Ein vergessenes Feld kann rechtliche Konsequenzen haben.
@@ -139,13 +141,13 @@ export default function PestControlCaseStudy() {
                         Architektur: Hexagonal + Domain-Driven Design
                     </h3>
                     <p className="animate-up">
-                        Die Plattform wurde von Grund auf als Enterprise-System entworfen, nicht als aufgeblahtes CRUD-Tool. Die Architektur folgt dem Hexagonalen Muster mit striktem Domain-Driven Design:
+                        Die Plattform wurde von Grund auf als Enterprise-System entworfen, nicht als aufgeblähtes CRUD-Tool. Die Architektur folgt dem Hexagonalen Muster mit striktem Domain-Driven Design:
                     </p>
 
                     <div className="subpage-features-grid animate-up">
                         <div className="subpage-feature">
                             <h3>Domain Layer</h3>
-                            <p>Reines PHP ohne Framework-Abhangigkeiten. Entities, Value Objects, Domain Services, Events und Exceptions. Null Abhangigkeiten zu anderen Schichten.</p>
+                            <p>Reines PHP ohne Framework-Abhängigkeiten. Entities, Value Objects, Domain Services, Events und Exceptions. Null Abhängigkeiten zu anderen Schichten.</p>
                         </div>
                         <div className="subpage-feature">
                             <h3>Application Layer</h3>
@@ -165,7 +167,7 @@ export default function PestControlCaseStudy() {
                         6 Bounded Contexts
                     </h3>
                     <p className="animate-up">
-                        Die Fachdomane ist in sechs klar getrennte Module aufgeteilt, jedes mit eigenem Verantwortungsbereich:
+                        Die Fachdomäne ist in sechs klar getrennte Module aufgeteilt, jedes mit eigenem Verantwortungsbereich:
                     </p>
                     <div className="subpage-features-grid animate-up">
                         <div className="subpage-feature">
@@ -198,7 +200,7 @@ export default function PestControlCaseStudy() {
                         Multi-Tenancy & Datenisolierung
                     </h3>
                     <p className="animate-up">
-                        Jede Entitat trägt eine <code>tenant_id</code>. Der Tenant wird aus der authentifizierten Benutzersitzung aufgelost. Alle Repository-Methoden filtern automatisch nach Tenant, mit globalen Eloquent Scopes als letzte Sicherheitsschicht. Tests prüfen die Tenant-Isolierung explizit.
+                        Jede Entität trägt eine <code>tenant_id</code>. Der Tenant wird aus der authentifizierten Benutzersitzung aufgelöst. Alle Repository-Methoden filtern automatisch nach Tenant, mit globalen Eloquent Scopes als letzte Sicherheitsschicht. Tests prüfen die Tenant-Isolierung explizit.
                     </p>
 
                     <h3 className="animate-up" style={{ marginTop: 'var(--space-lg)', fontSize: '1.3rem' }}>
@@ -212,7 +214,7 @@ export default function PestControlCaseStudy() {
                         Der Techniker-Workflow im Feld
                     </h3>
                     <p className="animate-up">
-                        Der Techniker offnet die PWA, sieht seine heutigen Einsatze, navigiert zum Kunden (ein Klick auf die Adresse offnet Google Maps), dokumentiert den Einsatz mit Befallsgrad, Beobachtungen, eingesetzten Mitteln und Fotos, und unterschreibt digital auf dem Gerat. Geolocation wird mit der Unterschrift erfasst. Der Bericht wird automatisch generiert.
+                        Der Techniker öffnet die PWA, sieht seine heutigen Einsätze, navigiert zum Kunden (ein Klick auf die Adresse öffnet Google Maps), dokumentiert den Einsatz mit Befallsgrad, Beobachtungen, eingesetzten Mitteln und Fotos, und unterschreibt digital auf dem Gerät. Geolocation wird mit der Unterschrift erfasst. Der Bericht wird automatisch generiert.
                     </p>
 
                     {/* Tech Stack */}
@@ -240,7 +242,7 @@ export default function PestControlCaseStudy() {
                     <div className="cs-takeaway animate-up">
                         <h3>Das Wichtigste</h3>
                         <p>
-                            Enterprise-Architektur ist kein Overhead, sondern eine Investition. Hexagonales Design mit DDD bedeutet: klare Fachmodule, testbare Geschaftslogik, einfache Erweiterbarkeit. Der Beweis: 0 Architektur-Verletzungen in der gesamten Codebasis, automatisch geprüft vor jedem Commit. Dieses System wachst mit dem Geschäft, nicht dagegen.
+                            Enterprise-Architektur ist kein Overhead, sondern eine Investition. Hexagonales Design mit DDD bedeutet: klare Fachmodule, testbare Geschäftslogik, einfache Erweiterbarkeit. Der Beweis: 0 Architektur-Verletzungen in der gesamten Codebasis, automatisch geprüft vor jedem Commit. Dieses System wächst mit dem Geschäft, nicht dagegen.
                         </p>
                     </div>
                 </div>
@@ -250,7 +252,7 @@ export default function PestControlCaseStudy() {
             <section className="section">
                 <div className="container">
                     <div className="section-header text-center">
-                        <p className="section-kicker animate-up">Ahnliches Projekt geplant?</p>
+                        <p className="section-kicker animate-up">Ähnliches Projekt geplant?</p>
                         <h2 className="section-title animate-up">Relevante Leistungen</h2>
                     </div>
                     <div className="subpage-features-grid animate-up">
@@ -266,7 +268,8 @@ export default function PestControlCaseStudy() {
                 </div>
             </section>
 
-            <ServiceCta text="Enterprise-Anwendung oder SaaS-Plattform geplant? Ich entwerfe und baue Systeme, die wachsen: technisch sauber, regulatorisch konform, zukunftsfahig." />
+            <ServiceCta text="Enterprise-Anwendung oder SaaS-Plattform geplant? Ich entwerfe und baue Systeme, die wachsen: technisch sauber, regulatorisch konform, zukunftsfähig." />
+            </AutoLinks>
         </>
     );
 }

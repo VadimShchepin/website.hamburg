@@ -1,8 +1,9 @@
 import ArticleLayout from '../../../src/components/ArticleLayout';
+import AutoLinks from '../../../src/components/AutoLinks';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'Von Sekunden auf 0,98 s | 1.200-Foto-Galerie',
+    title: 'Fotogalerie schneller machen: Case Study mit 1.200 Fotos',
     description: 'Echte Produktionszahlen: wie 2.408 versteckte HTTP-Requests eine Galerie mit 1.204 Fotos ausbremsten und was sie auf 0,98 s brachte.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/case-study-fotogalerie-performance',
@@ -85,6 +86,7 @@ export default function FotogaleriePerformanceArticlePage() {
                 heroAlt="Fotogalerie-Plattform mit vielen Bildvorschauen als Sinnbild für die Performance-Case-Study"
                 heroFramed
             >
+                <AutoLinks path="/wissen/case-study-fotogalerie-performance">
                 <div className="subpage-takeaway">
                     <p>
                         <strong>Das Ergebnis vorab:</strong> Ein Foto-Album mit 1.204 Bildern brauchte mehrere Sekunden,
@@ -265,7 +267,7 @@ contain-intrinsic-size: auto 250px;`}</code></pre>
                     <li><strong>Lazy Loading versteckt, wo die Zeit wirklich hingeht.</strong> Die Bilder waren lazy; die 2.408 Signierungs-Round-Trips nicht. Profilen Sie den Request, der die Liste liefert, nicht nur die Assets.</li>
                     <li><strong>N+1 ist kein reines Datenbank-Problem.</strong> Jeder Pro-Element-Aufruf an einen internen HTTP-Service (URL-Signierung, Feature-Flags, Berechtigungs-Checks) ist derselbe Bug in anderem Gewand. Batch-Endpoints existieren fast immer, sie werden nur nicht standardmäßig genutzt.</li>
                     <li><strong>Signierte URLs deaktivieren stillschweigend das HTTP-Caching.</strong> Einplanen oder die URL-Erzeugung pro TTL-Fenster deterministisch machen.</li>
-                    <li><strong>Bildgröße an Render-Größe koppeln.</strong> 300-px-WebP für 250-px-Zellen, nicht 800 px „zur Sicherheit&quot;.</li>
+                    <li><strong>Bildgröße an Render-Größe koppeln.</strong> 300-px-WebP für 250-px-Zellen, nicht 800 px &quot;zur Sicherheit&quot;.</li>
                     <li><strong>Vorberechnen, was Nutzer vorhersehbar anfragen.</strong> Echtzeit-Bildtransformationen auf einer 2-Kern-Maschine funktionierten genau bis zum ersten echten 1.246-Foto-Album.</li>
                 </ul>
                 <p>
@@ -293,6 +295,7 @@ contain-intrinsic-size: auto 250px;`}</code></pre>
                         <li><a href="https://imgproxy.net/" target="_blank" rel="noopener noreferrer">imgproxy: On-the-fly-Bildtransformation (hier nur noch als Fallback)</a></li>
                     </ol>
                 </div>
+                </AutoLinks>
             </ArticleLayout>
         </>
     );

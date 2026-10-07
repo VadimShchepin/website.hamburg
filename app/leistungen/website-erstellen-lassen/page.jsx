@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
@@ -7,13 +8,13 @@ import ServiceMeta from '../../../src/components/ServiceMeta';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'Website erstellen lassen: Festpreis ab 1.500 Euro',
-    description: 'Website erstellen lassen in Hamburg: Festpreis ab 1.500 €, individuell programmiert, Lighthouse 90 bis 100. Fertig in 2 Arbeitstagen bis 6 Wochen.',
+    title: 'Website erstellen lassen Hamburg: Festpreis ab 1.500 €',
+    description: 'Website oder Homepage erstellen lassen in Hamburg: Festpreis ab 1.500 €, individuell programmiert, Lighthouse 90 bis 100. Online in 2 Arbeitstagen bis 6 Wochen.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/website-erstellen-lassen',
     },
     openGraph: {
-        title: 'Website erstellen lassen: Festpreis ab 1.500 Euro',
+        title: 'Website erstellen lassen Hamburg: Festpreis ab 1.500 €',
         description: 'Website erstellen lassen in Hamburg: Festpreis ab 1.500 €, individuell programmiert, Lighthouse 90 bis 100. Keine versteckten Kosten.',
         url: 'https://webseite.hamburg/leistungen/website-erstellen-lassen',
         type: 'website',
@@ -27,7 +28,10 @@ const faqItems = [
     { q: 'Nutzen Sie WordPress oder Baukastensysteme?', a: 'Standardmäßig nein, jede Website wird individuell programmiert. Das garantiert maximale Performance, volle Flexibilität und Unabhängigkeit von Plattform-Einschränkungen. Wenn Sie Inhalte selbst pflegen wollen, binde ich ein CMS ein.' },
     { q: 'Ist die Website SEO-optimiert?', a: 'Ja. Jede Website enthält eine SEO-Grundoptimierung: saubere URL-Struktur, Meta-Tags, strukturierte Daten (Schema.org), semantisches HTML, Bildoptimierung und Mobile-First-Entwicklung. Für laufende SEO-Betreuung gibt es separate Pakete.' },
     { q: 'Kann ich die Website selbst bearbeiten?', a: 'Ja, wenn Sie das wünschen. Ich richte ein CMS ein und schule Sie in der Bedienung. Sie können Texte, Bilder und Seiten eigenständig anpassen, ohne technische Kenntnisse.' },
-    { q: 'Was ist im Preis enthalten?', a: 'Konzeption, individuelles Design, Entwicklung, SEO-Grundoptimierung, SSL-Zertifikat, DSGVO-konforme Umsetzung, Kontaktformular, Tracking-Setup (GA4), Testing auf allen Geräten und eine Einweisung nach Launch. Hosting und Domain sind nicht enthalten.' },
+    { q: 'Was ist im Preis enthalten?', a: 'Konzeption, Design (beim Website-Start ein bewährtes Layout, ab der Conversion Landingpage individuell), Entwicklung, SEO-Grundoptimierung, SSL-Zertifikat, DSGVO-konforme Umsetzung, Kontaktformular, Tracking-Setup (GA4), Testing auf allen Geräten und eine Einweisung nach Launch. Hosting und Domain sind nicht enthalten.' },
+    { q: 'Was ist der Unterschied zwischen Homepage und Website?', a: 'Im Alltag meinen beide dasselbe, den Internetauftritt eines Unternehmens. Genau genommen ist die Homepage nur die Startseite, die Website das Ganze mit allen Unterseiten. Für Ihr Angebot zählt nur, wie viele Seiten Sie brauchen: eine Seite ab 1.500 €, eine mehrseitige Website ab 4.500 €.' },
+    { q: 'Ist WordPress noch zeitgemäß?', a: 'Für viele Websites ja, WordPress läuft auf rund 40 Prozent aller Websites. Der Preis sind Updates, Plugins und Sicherheitspflege. Ich programmiere standardmäßig individuell und setze ein CMS ein, wenn Sie viele Inhalte selbst pflegen wollen. Die Abwägung steht im Artikel WordPress-Alternativen.' },
+    { q: 'Kann ChatGPT mir eine Website erstellen?', a: 'Einen Entwurf ja, eine fertige Unternehmenswebsite nicht. KI-Baukästen erzeugen in Minuten eine Seite, aber Impressum, Datenschutz, Ladezeit, Google-Sichtbarkeit und ein durchdachter Weg zur Anfrage bleiben Ihre Aufgabe. Für einen ersten Auftritt kann das reichen. Wenn die Website Anfragen bringen soll, lohnt sich der Blick eines Entwicklers.' },
 ];
 
 export default function WebsiteErstellenLassenPage() {
@@ -58,6 +62,7 @@ export default function WebsiteErstellenLassenPage() {
 
     return (
         <>
+            <AutoLinks path="/leistungen/website-erstellen-lassen">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -154,8 +159,8 @@ export default function WebsiteErstellenLassenPage() {
                     </div>
 
                     <figure className="subpage-figure is-band animate-up">
-                        <img src="/leistungen/fotos/website-erstellen-lassen.webp" alt="Aufsicht auf einen aufgeraeumten Schreibtisch mit Rechner, Tastatur, Tablet und Notizblock" width="1800" height="760" loading="lazy" decoding="async" />
-                        <figcaption>Vor dem ersten Entwurf steht die Frage, was die Seite fuer Ihr Geschaeft leisten soll.</figcaption>
+                        <img src="/leistungen/fotos/website-erstellen-lassen.webp" alt="Aufsicht auf einen aufgeräumten Schreibtisch mit Rechner, Tastatur, Tablet und Notizblock" width="1800" height="760" loading="lazy" decoding="async" />
+                        <figcaption>Vor dem ersten Entwurf steht die Frage, was die Seite für Ihr Geschäft leisten soll.</figcaption>
                     </figure>
 
                     <h2 className="animate-up">Was eine gute Website ausmacht</h2>
@@ -213,7 +218,7 @@ export default function WebsiteErstellenLassenPage() {
                     <div className="subpage-sources animate-up">
                         <h2>Quellen</h2>
                         <ol>
-                            <li>Google, „The Need for Mobile Speed" (2016): 53 % Abbruch bei Ladezeit über 3 s. <a href="https://www.thinkwithgoogle.com/" rel="nofollow noopener" target="_blank">thinkwithgoogle.com</a></li>
+                            <li>Google, The Need for Mobile Speed (2016): 53 % Abbruch bei Ladezeit über 3 s. <a href="https://www.thinkwithgoogle.com/" rel="nofollow noopener" target="_blank">thinkwithgoogle.com</a></li>
                             <li>Google, Core Web Vitals: Schwellenwerte für LCP, INP, CLS. <a href="https://web.dev/articles/vitals" rel="nofollow noopener" target="_blank">web.dev/articles/vitals</a></li>
                         </ol>
                     </div>
@@ -223,6 +228,7 @@ export default function WebsiteErstellenLassenPage() {
             <FaqSection title="Häufige Fragen zum Website erstellen lassen" items={faqItems} />
             <RelatedServices exclude="webdesign" />
             <ServiceCta text="Lassen Sie uns über Ihre neue Website sprechen. Im kostenlosen Erstgespräch analysiere ich Ihre aktuelle Situation und zeige Ihnen, was möglich ist." />
+            </AutoLinks>
         </>
     );
 }

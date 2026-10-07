@@ -1,15 +1,16 @@
 import ArticleLayout from '../../../src/components/ArticleLayout';
+import AutoLinks from '../../../src/components/AutoLinks';
 import { BUSINESS } from '../../../src/lib/schema';
 import Link from 'next/link';
 
 export const metadata = {
-    title: 'Abmahnung wegen der Website vermeiden',
+    title: 'Abmahnung wegen der Website vermeiden: Risiken 2026',
     description: 'Google Fonts, Cookie-Banner, fehlendes Impressum: was 2026 wirklich abmahnbar ist, was das Urteil des LG München sagt und wie Sie die Risiken abstellen.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/website-abmahnung-vermeiden',
     },
     openGraph: {
-        title: 'Abmahnung wegen der Website vermeiden',
+        title: 'Abmahnung wegen der Website vermeiden: Risiken 2026',
         description: 'Google Fonts, Cookie-Banner, fehlendes Impressum: was wirklich abmahnbar ist und wie Sie die Risiken abstellen.',
         url: 'https://webseite.hamburg/wissen/website-abmahnung-vermeiden',
         type: 'article',
@@ -91,6 +92,7 @@ export default function WebsiteAbmahnungVermeidenPage() {
                 heroImage="/wissen/hero-abmahnung.svg"
                 heroAlt="Illustration: geöffneter Briefumschlag mit rotem Rand und Paragraphenzeichen, daneben ein Browser-Fenster mit Datenabfluss zu einer Wolke"
             >
+                <AutoLinks path="/wissen/website-abmahnung-vermeiden">
                 <p>
                     Abmahnungen wegen einer Website sind selten und teuer, und genau diese Kombination macht sie zu
                     einem guten Verkaufsargument für Panikmarketing. Ich versuche hier das Gegenteil: nüchtern
@@ -338,6 +340,7 @@ export default function WebsiteAbmahnungVermeidenPage() {
                         <li>DSGVO Art. 13: Informationspflichten gegenüber Betroffenen. <a href="https://dsgvo-gesetz.de/art-13-dsgvo/" rel="nofollow noopener" target="_blank">dsgvo-gesetz.de</a></li>
                     </ol>
                 </div>
+                </AutoLinks>
             </ArticleLayout>
         </>
     );

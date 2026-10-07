@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
@@ -7,13 +8,13 @@ import ServiceMeta from '../../../src/components/ServiceMeta';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'Kostenloses Website-Audit | Was Ihre Seite bremst',
-    description: 'Kostenlose Website-Analyse: Performance (Core Web Vitals), SEO, Conversion und Wettbewerb. Bericht in 2 bis 3 Werktagen, unverbindlich.',
+    title: 'Kostenloses Website-Audit: SEO, Ladezeit, Conversion',
+    description: 'Kostenloses Website-Audit: Ladezeit und Core Web Vitals, SEO, Conversion und Wettbewerb geprüft. Bericht in 2 bis 3 Werktagen, ohne Verpflichtung.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/website-audit',
     },
     openGraph: {
-        title: 'Kostenloses Website-Audit | Was Ihre Seite bremst',
+        title: 'Kostenloses Website-Audit: SEO, Ladezeit, Conversion',
         description: 'Kostenlose Website-Analyse: Performance (Core Web Vitals), SEO, Conversion und Wettbewerb. Bericht in 2 bis 3 Werktagen mit priorisierten Empfehlungen.',
         url: 'https://webseite.hamburg/leistungen/website-audit',
         type: 'website',
@@ -27,6 +28,8 @@ const faqItems = [
     { q: 'Was passiert nach dem Audit?', a: 'Sie erhalten konkrete Handlungsempfehlungen mit Prioritäten. Einige können Sie selbst umsetzen, für andere kann ich ein Angebot machen. Es gibt keinen Druck, die Entscheidung liegt bei Ihnen.' },
     { q: 'Muss ich danach etwas bei Ihnen buchen?', a: 'Nein. Das Audit ist wirklich kostenlos, nicht als Verkaufstrick, sondern weil gute Beratung Vertrauen schafft. Viele meiner Kunden kommen über diesen Weg, aber es gibt keinerlei Verpflichtung.' },
     { q: 'Für wen ist das Audit geeignet?', a: 'Für jedes Unternehmen mit einer bestehenden Website, das wissen möchte, ob sie optimal arbeitet. Ob Handwerker, Dienstleister, E-Commerce oder Berater: die Analyse deckt Faktoren ab, die für jeden gelten.' },
+    { q: 'Welcher SEO-Score ist gut?', a: 'Ein Score aus einem Online-Tool ist ein Hinweis, kein Ziel. Bei Google Lighthouse gelten 90 bis 100 Punkte als gut, 50 bis 89 als verbesserungswürdig und alles darunter als schlecht. Wichtiger als jede Punktzahl ist, ob Ihre Seiten im Google-Index sind und für die Suchbegriffe erscheinen, mit denen Kunden Sie suchen. Beides prüfe ich im Audit.' },
+    { q: 'Wie kann ich meine Website selbst prüfen?', a: 'Mit drei kostenlosen Schritten: PageSpeed Insights zeigt Ladezeit und Core Web Vitals, die Google Search Console zeigt, welche Seiten im Index sind und für welche Suchanfragen sie erscheinen, und ein Test auf dem eigenen Handy zeigt, ob Telefonnummer und Kontaktformular sofort zu finden sind. Was die Werkzeuge nicht liefern, ist die Reihenfolge der Maßnahmen. Die bekommen Sie im Audit.' },
 ];
 
 export default function WebsiteAuditPage() {
@@ -53,6 +56,7 @@ export default function WebsiteAuditPage() {
 
     return (
         <>
+            <AutoLinks path="/leistungen/website-audit">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -62,7 +66,7 @@ export default function WebsiteAuditPage() {
                     <div className="subpage-hero-split">
                         <div>
                         <p className="section-kicker animate-up">Website-Audit</p>
-                        <h1 className="subpage-title animate-up">Kostenlose Website-Analyse für Ihr Unternehmen.</h1>
+                        <h1 className="subpage-title animate-up">Kostenloses Website-Audit für Ihr Unternehmen.</h1>
                         <p className="subpage-intro animate-up">
                             Wissen Sie, wie viele Kunden Ihre Website jeden Tag verliert? Die meisten Unternehmer nicht. Mein Website-Audit zeigt Ihnen, wo Ihre Website steht, was sie kostet und was möglich wäre. Kostenlos, ehrlich, konkret.
                         </p>
@@ -83,8 +87,8 @@ export default function WebsiteAuditPage() {
                     </div>
 
                     <figure className="subpage-figure is-band animate-up">
-                        <img src="/leistungen/fotos/website-audit.webp" alt="Illustration: Browserfenster auf einem Pruefstand unter einer Lupe, daneben Bewertungsskala und Checkliste" width="1800" height="760" loading="lazy" decoding="async" />
-                        <figcaption>Ladezeit, Technik, Struktur und Conversion-Pfad, jeweils mit Messwert statt Bauchgefuehl.</figcaption>
+                        <img src="/leistungen/fotos/website-audit.webp" alt="Illustration: Browserfenster auf einem Prüfstand unter einer Lupe, daneben Bewertungsskala und Checkliste" width="1800" height="760" loading="lazy" decoding="async" />
+                        <figcaption>Ladezeit, Technik, Struktur und Conversion-Pfad, jeweils mit Messwert statt Bauchgefühl.</figcaption>
                     </figure>
 
                     <h2 className="animate-up">Was das Audit umfasst</h2>
@@ -156,7 +160,8 @@ export default function WebsiteAuditPage() {
 
             <FaqSection title="Fragen zum Website-Audit" items={faqItems} />
             <RelatedServices exclude="website-audit" />
-            <ServiceCta title="Ihre kostenlose Website-Analyse wartet." text="Schicken Sie mir Ihre URL, und ich sage Ihnen innerhalb von 3 Werktagen, wo Ihre Website steht und was möglich ist." />
+            <ServiceCta title="Ihre kostenlose Website-Analyse wartet." text="Schicken Sie mir Ihre URL, und ich sage Ihnen innerhalb von 2 bis 3 Werktagen, wo Ihre Website steht und was möglich ist." />
+            </AutoLinks>
         </>
     );
 }

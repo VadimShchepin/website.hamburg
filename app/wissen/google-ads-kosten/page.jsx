@@ -1,15 +1,16 @@
 import ArticleLayout from '../../../src/components/ArticleLayout';
+import AutoLinks from '../../../src/components/AutoLinks';
 import { BUSINESS } from '../../../src/lib/schema';
 import Link from 'next/link';
 
 export const metadata = {
-    title: 'Google Ads Kosten: echte Zahlen statt Schätzung',
+    title: 'Google Ads Kosten: echte Zahlen aus 90 Tagen',
     description: '90 Tage aus einem betreuten Konto: 2.991 Euro, 1.032 Klicks, 42 Anfragen. Klickpreise, Kosten je Anfrage und warum billige Klicks die teuren sind.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/google-ads-kosten',
     },
     openGraph: {
-        title: 'Google Ads Kosten: echte Zahlen statt Schätzung',
+        title: 'Google Ads Kosten: echte Zahlen aus 90 Tagen',
         description: '90 Tage aus einem betreuten Konto: Klickpreise, Kosten je Anfrage und warum billige Klicks die teuren sind.',
         url: 'https://webseite.hamburg/wissen/google-ads-kosten',
         type: 'article',
@@ -91,6 +92,7 @@ export default function GoogleAdsKostenPage() {
                 heroImage="/wissen/hero-google-ads-kosten.svg"
                 heroAlt="Illustration: Auktionshammer über einem Suchfeld, darunter drei aufsteigende Münzstapel, der höchste rot"
             >
+                <AutoLinks path="/wissen/google-ads-kosten">
                 <p>
                     Die meisten Artikel zu diesem Thema erklären die Auktion und nennen dann eine Spanne von einem
                     bis fünfzig Euro pro Klick. Das ist nicht falsch und hilft niemandem. Ich mache es hier anders
@@ -337,7 +339,7 @@ export default function GoogleAdsKostenPage() {
                     Wirkung von Assets und Anzeigenformaten einfließen.
                 </p>
                 <p>
-                    Praktisch heißt das: Qualität ist ein Preisnachlass. Eine Anzeige, die genau zur Suchanfrage
+                    Qualität wirkt also wie ein Preisnachlass. Eine Anzeige, die genau zur Suchanfrage
                     passt, und eine Zielseite, die genau das Versprochene liefert, kosten für dieselbe Position
                     weniger. Deshalb mache ich Ads-Projekte nie ohne Blick auf die Zielseite. Was
                     dort wirkt, steht in
@@ -430,6 +432,7 @@ export default function GoogleAdsKostenPage() {
                         <li>Google Keyword Planner, Abfrage für Deutschland in deutscher Sprache, August 2026: Suchvolumen und Gebotsspannen für obere Positionen, unter anderem google ads kosten 2,67 bis 58,74 Euro und website erstellen lassen kosten 3,44 bis 11,12 Euro.</li>
                     </ol>
                 </div>
+                </AutoLinks>
             </ArticleLayout>
         </>
     );

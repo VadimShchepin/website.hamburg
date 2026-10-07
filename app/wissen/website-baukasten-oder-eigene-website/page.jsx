@@ -1,16 +1,17 @@
 import ArticleLayout from '../../../src/components/ArticleLayout';
+import AutoLinks from '../../../src/components/AutoLinks';
 import FaqSection from '../../../src/components/FaqSection';
 import { BUSINESS } from '../../../src/lib/schema';
 import Link from 'next/link';
 
 export const metadata = {
-    title: 'Website-Baukasten oder eigene Website? Kostenvergleich',
+    title: 'Website-Baukasten oder eigene Website? Kosten im Vergleich',
     description: 'Website-Baukasten oder eigene Website? Was Wix, Jimdo und Squarespace über fünf Jahre kosten, was beim Umzug verloren geht und wann der Baukasten reicht.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/website-baukasten-oder-eigene-website',
     },
     openGraph: {
-        title: 'Website-Baukasten oder eigene Website? Kostenvergleich',
+        title: 'Website-Baukasten oder eigene Website? Kosten im Vergleich',
         description: 'Was ein Website-Baukasten über fünf Jahre kostet, was beim Umzug verloren geht und wann er trotzdem die richtige Wahl ist.',
         url: 'https://webseite.hamburg/wissen/website-baukasten-oder-eigene-website',
         type: 'article',
@@ -65,6 +66,7 @@ export default function BaukastenOderEigeneWebsitePage() {
                 heroAlt="Designer arbeitet an einem hellen Schreibtisch mit Grafiktablett und Monitor an einem Layout"
                 heroFramed
             >
+                <AutoLinks path="/wissen/website-baukasten-oder-eigene-website">
                 <p>
                     Ein Baukasten ist wie eine möblierte Mietwohnung. Sie können sofort einziehen, alles ist da, und
                     wenn Sie ausziehen, bleibt das Sofa stehen. Das ist kein Skandal, sondern das Geschäftsmodell.
@@ -293,6 +295,7 @@ export default function BaukastenOderEigeneWebsitePage() {
                         <li>Listenpreise der Anbieter, Stand August 2026: <a href="https://de.wix.com/upgrade/website" rel="nofollow noopener" target="_blank">Wix</a>, <a href="https://www.jimdo.com/de/preise/" rel="nofollow noopener" target="_blank">Jimdo</a>, <a href="https://de.squarespace.com/preise" rel="nofollow noopener" target="_blank">Squarespace</a>, <a href="https://www.shopify.com/de/preise" rel="nofollow noopener" target="_blank">Shopify</a>.</li>
                     </ol>
                 </div>
+                </AutoLinks>
             </ArticleLayout>
             <FaqSection title="Häufige Fragen zu Baukasten und eigener Website" items={faqItems} />
         </>

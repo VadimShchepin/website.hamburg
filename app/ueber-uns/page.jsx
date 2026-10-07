@@ -1,16 +1,17 @@
 import Link from 'next/link';
+import AutoLinks from '../../src/components/AutoLinks';
 import Image from 'next/image';
 import Breadcrumbs from '../../src/components/Breadcrumbs';
 import { BUSINESS, SOCIAL_LINKS } from '../../src/lib/schema';
 
 export const metadata = {
-    title: 'Über AISEO | Webentwickler & SEO-Spezialist Hamburg',
-    description: 'Über 10 Jahre Erfahrung in digitaler Produktentwicklung. Webdesign, SEO und Google Ads in Hamburg, direkt mit dem Entwickler.',
+    title: 'Über mich: Vadim Shchepin, Webentwickler in Hamburg',
+    description: 'Vadim Shchepin, Webentwickler und SEO-Spezialist in Hamburg: über 10 Jahre Produktentwicklung, über 50 Projekte. Direkt mit mir, ohne Agentur dazwischen.',
     alternates: {
         canonical: 'https://webseite.hamburg/ueber-uns',
     },
     openGraph: {
-        title: 'Über AISEO | Webentwickler & SEO-Spezialist Hamburg',
+        title: 'Über mich: Vadim Shchepin, Webentwickler in Hamburg',
         description: 'Über 10 Jahre Erfahrung in der digitalen Produktentwicklung. Webdesign, SEO und Google Ads für lokale Unternehmen in Hamburg.',
         url: 'https://webseite.hamburg/ueber-uns',
         type: 'profile',
@@ -21,7 +22,7 @@ export default function UeberUnsPage() {
     const profileJsonLd = {
         '@context': 'https://schema.org',
         '@type': 'ProfilePage',
-        name: 'Über AISEO Hamburg',
+        name: 'Über mich: Vadim Shchepin, Webentwickler in Hamburg',
         description: 'Über 10 Jahre Erfahrung in der digitalen Produktentwicklung. Webdesign, SEO und Google Ads für lokale Unternehmen in Hamburg.',
         url: 'https://webseite.hamburg/ueber-uns',
         mainEntity: {
@@ -51,16 +52,17 @@ export default function UeberUnsPage() {
 
     return (
         <>
+            <AutoLinks path="/ueber-uns">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(profileJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
             <section className="subpage-hero section">
                 <div className="container">
                     <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Über uns' }]} />
-                    <p className="section-kicker animate-up">Über AISEO</p>
-                    <h1 className="subpage-title animate-up">Ergebnisse statt Versprechen.</h1>
+                    <p className="section-kicker animate-up">Über mich</p>
+                    <h1 className="subpage-title animate-up">Vadim Shchepin, Webentwickler in Hamburg: Ergebnisse statt Versprechen.</h1>
                     <p className="subpage-intro animate-up">
-                        Ich bin kein Agentur-Netzwerk mit Account-Managern und Projektleitern zwischen Ihnen und der Arbeit. Wenn Sie mit AISEO arbeiten, arbeiten Sie direkt mit mir, dem Menschen, der Ihre <Link href="/leistungen/webdesign">Website baut</Link>, Ihr <Link href="/leistungen/seo">SEO</Link> macht und Ihre <Link href="/leistungen/google-ads">Ads</Link> schaltet. Braucht ein Projekt zusätzliche Expertise, etwa bei Design, Text oder Fotografie, hole ich geprüfte Spezialisten dazu. Ihr Ansprechpartner und der Verantwortliche für das Ergebnis bleibe ich.
+                        Ich bin kein Agentur-Netzwerk mit Account-Managern und Projektleitern zwischen Ihnen und der Arbeit. Sie arbeiten direkt mit mir, dem Menschen, der Ihre <Link href="/leistungen/webdesign">Website baut</Link>, Ihr <Link href="/leistungen/seo">SEO</Link> macht und Ihre <Link href="/leistungen/google-ads">Ads</Link> schaltet. Braucht ein Projekt zusätzliche Expertise, etwa bei Design, Text oder Fotografie, hole ich geprüfte Spezialisten dazu. Ihr Ansprechpartner und der Verantwortliche für das Ergebnis bleibe ich.
                     </p>
                 </div>
             </section>
@@ -82,7 +84,8 @@ export default function UeberUnsPage() {
                             <h2 className="animate-up">Der Hintergrund</h2>
                             <p className="large-text animate-up">Über 10 Jahre Erfahrung in der digitalen Produktentwicklung. Nicht bei einer Marketing-Agentur, sondern in der Praxis: Softwareentwicklung, Produktdesign und Performance-Optimierung.</p>
                             <p className="animate-up">Ich habe gesehen, wie große Tech-Unternehmen digitale Produkte bauen, mit Daten, mit Struktur und mit Fokus auf Ergebnisse. Und ich habe gesehen, was die meisten Agenturen lokalen Unternehmen liefern: Templates, Bauchgefühl und vage Reports.</p>
-                            <p className="animate-up">AISEO verbindet beides. Die Präzision und den technischen Anspruch aus der Tech-Welt, angewandt auf die konkreten Bedürfnisse lokaler Unternehmen in Hamburg. Wie das in der Praxis aussieht, zeigen die <Link href="/referenzen">Referenzen</Link>.</p>
+                            <p className="animate-up">Daraus ist meine Arbeitsweise entstanden: die Präzision und den technischen Anspruch aus der Tech-Welt, angewandt auf die konkreten Bedürfnisse kleiner und mittlerer Unternehmen in Hamburg. Auf Wunsch begleite ich Betriebe dauerhaft als Partner für ihr Wachstum: Website, Sichtbarkeit bei Google und Anzeigen aus einer Hand, mit Zahlen, die Sie jeden Monat sehen. Wie das in der Praxis aussieht, zeigen die <Link href="/referenzen">Referenzen</Link>.</p>
+                            <p className="animate-up">Kurz zu mir: Vadim Shchepin, selbstständiger Webentwickler mit Sitz in Hamburg. Ich spreche Deutsch, Englisch und Russisch, arbeite seit über 10 Jahren an digitalen Produkten und habe über 50 Projekte umgesetzt, von der Handwerker-Website bis zur SaaS-Plattform. Bei Google stehe ich mit 5,0 Sternen.</p>
 
                             <h2 className="animate-up">Was mich antreibt</h2>
                             <p className="animate-up">Ich glaube, dass jedes Unternehmen eine Website verdient, die wirklich funktioniert. Nicht eine, die hübsch aussieht und dann in einer Schublade verschwindet, sondern eine, die messbar Kunden bringt und bei der Sie jederzeit sehen, was passiert.</p>
@@ -94,7 +97,7 @@ export default function UeberUnsPage() {
                                 <h3>Meine Prinzipien</h3>
                                 <div className="about-value">
                                     <strong>Ergebnis vor Stunden</strong>
-                                    <p>Ich werde nicht für Zeit bezahlt, sondern für Resultate. Wenn das Ergebnis nicht stimmt, arbeite ich weiter.</p>
+                                    <p>Ich werde nicht für Zeit bezahlt, sondern für Resultate. Wenn das Ergebnis nicht stimmt, arbeite ich nach, ohne Aufpreis.</p>
                                 </div>
                                 <div className="about-value">
                                     <strong>Transparenz ist nicht optional</strong>
@@ -176,7 +179,7 @@ export default function UeberUnsPage() {
                 <div className="container">
                     <div className="section-header text-center">
                         <p className="section-kicker animate-up">Vernetzt</p>
-                        <h2 className="section-title animate-up">Folgen Sie AISEO.</h2>
+                        <h2 className="section-title animate-up">Folgen Sie mir.</h2>
                     </div>
                     <div className="social-grid">
                         {SOCIAL_LINKS.map((link) => (
@@ -221,6 +224,7 @@ export default function UeberUnsPage() {
                     </div>
                 </div>
             </section>
+            </AutoLinks>
         </>
     );
 }

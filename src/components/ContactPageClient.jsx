@@ -162,6 +162,7 @@ export default function ContactPageClient() {
                                     <span>hallo@webseite.hamburg</span>
                                 </a>
                             </div>
+                            <p className="contact-info-note">Erreichbar per Telefon, WhatsApp und E-Mail. Treffen in Hamburg nach Absprache, sonst per Video.</p>
                         </div>
 
                         <div className="contact-promise animate-up delay-1">
@@ -186,7 +187,7 @@ export default function ContactPageClient() {
                                 <li><a href="/leistungen/e-commerce-entwicklung">E-Commerce-Entwicklung</a> für Shopify, Shopware &amp; WooCommerce</li>
                                 <li><a href="/leistungen/seo">SEO &amp; lokale Sichtbarkeit</a> in Hamburg</li>
                                 <li><a href="/leistungen/google-ads">Google Ads</a> ohne verbranntes Budget</li>
-                                <li>Frische Tipps im <a href="/wissen">Wissen-Bereich</a></li>
+                                <li><a href="/wissen">Ratgeber</a> zu Kosten, Recht und Technik</li>
                             </ul>
                         </div>
                     </div>

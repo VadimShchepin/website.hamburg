@@ -1,16 +1,17 @@
 import ArticleLayout from '../../../src/components/ArticleLayout';
+import AutoLinks from '../../../src/components/AutoLinks';
 import FaqSection from '../../../src/components/FaqSection';
 import { BUSINESS } from '../../../src/lib/schema';
 import Link from 'next/link';
 
 export const metadata = {
-    title: 'Website nicht bei Google gefunden? 12 Gründe + Lösungen',
+    title: 'Website nicht bei Google gefunden? 12 Ursachen und Lösungen',
     description: '12 Ursachen, warum Seiten nicht im Index landen, in der Reihenfolge zum Prüfen. Mit Google-Originalquellen und dem Fall meiner eigenen Website.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/website-nicht-bei-google-gefunden',
     },
     openGraph: {
-        title: 'Website nicht bei Google gefunden? 12 Gründe + Lösungen',
+        title: 'Website nicht bei Google gefunden? 12 Ursachen und Lösungen',
         description: '12 Ursachen, warum Seiten nicht im Index landen, in der Reihenfolge zum Prüfen. Mit Google-Originalquellen.',
         url: 'https://webseite.hamburg/wissen/website-nicht-bei-google-gefunden',
         type: 'article',
@@ -20,8 +21,8 @@ export const metadata = {
 
 const faqItems = [
     { q: "Warum wird meine Website nicht bei Google gefunden?", a: "Bevor Sie etwas ändern, brauchen Sie eine Diagnose, und die dauert zwanzig Minuten: Markensuche nach dem exakten Firmennamen, eine Stichprobe über site:ihredomain.de, das URL-Prüftool der Search Console für eine konkrete Adresse und der Seitenindexierungsbericht. Wichtig zur Einordnung, und zwar von Google selbst: Google crawlt nicht alle Seiten des Webs und indexiert nicht alle, die gecrawlt werden. Dass nicht jede Seite im Index ist, ist normal. Kritisch wird es, wenn wichtige Seiten fehlen." },
-    { q: "Was bedeutet „Gefunden, zurzeit nicht indexiert“?", a: "Google kennt die Adresse, hat sie aber noch nicht gecrawlt. Google nennt als typischen Grund, dass das Crawlen verschoben wurde, um die Website nicht zu überlasten. In der Praxis steckt dahinter meistens Priorisierung: Die URL ist Google nicht wichtig genug, um sie jetzt abzurufen. Das ist fast immer ein Verlinkungsproblem." },
-    { q: "Was bedeutet „Gecrawlt, zurzeit nicht indexiert“?", a: "Der Googlebot war da, hat den Inhalt gelesen und sich entschieden, ihn nicht aufzunehmen. Das ist in der Regel kein technisches Problem, sondern ein Qualitäts- oder Redundanzsignal. Wenn dieser Status bei vielen Seiten auftritt, deutet das auf ein Muster hin: austauschbare Texte, sehr ähnliche Seiten oder dünne Inhalte, die es online schon hundertfach gibt." },
+    { q: 'Was bedeutet "Gefunden, zurzeit nicht indexiert"?', a: "Google kennt die Adresse, hat sie aber noch nicht gecrawlt. Google nennt als typischen Grund, dass das Crawlen verschoben wurde, um die Website nicht zu überlasten. In der Praxis steckt dahinter meistens Priorisierung: Die URL ist Google nicht wichtig genug, um sie jetzt abzurufen. Das ist fast immer ein Verlinkungsproblem." },
+    { q: 'Was bedeutet "Gecrawlt, zurzeit nicht indexiert"?', a: "Der Googlebot war da, hat den Inhalt gelesen und sich entschieden, ihn nicht aufzunehmen. Das ist in der Regel kein technisches Problem, sondern ein Qualitäts- oder Redundanzsignal. Wenn dieser Status bei vielen Seiten auftritt, deutet das auf ein Muster hin: austauschbare Texte, sehr ähnliche Seiten oder dünne Inhalte, die es online schon hundertfach gibt." },
     { q: "Muss ich mein Crawl-Budget optimieren?", a: "Für kleine und mittelgroße Websites ist das Crawl-Budget laut Google kein Thema. Relevant wird es erst bei Websites mit mehr als einer Million Adressen, deren Inhalte sich moderat ändern, oder bei mehr als 10.000 Adressen mit sehr häufigen Änderungen, etwa Nachrichtenportalen und Marktplätzen. Wenn Ihre Website 40 Seiten hat, hat sie kein Crawl-Budget-Problem, sondern ein Verlinkungs- oder Qualitätsproblem." },
     { q: "Wie bekomme ich meine Seiten schneller in den Index?", a: "Der 48-Stunden-Plan: Search Console einrichten, noindex und robots.txt inklusive HTTP-Header prüfen, Canonical-Tags auf Startseite, einer Leistungsseite und einem Artikel prüfen, Sitemap mit ausschließlich kanonischen 200er-Adressen einreichen, die interne Verlinkung reparieren, sodass jede wichtige Seite mindestens zwei interne Links aus thematisch passenden Seiten hat, die wichtigsten Seiten manuell zur Indexierung anfordern, neue Adressen über die Bing Webmaster Tools und IndexNow melden, dann zwei Wochen warten und den Bericht erneut vergleichen." },
 ];
@@ -65,6 +66,7 @@ export default function NichtBeiGoogleGefundenPage() {
                 heroAlt="Mann sitzt abends vor einem Monitor und sucht nach der Ursache eines Problems"
                 heroFramed
             >
+                <AutoLinks path="/wissen/website-nicht-bei-google-gefunden">
                 <p>
                     Ich fange mit einem Eigentor an. Im Mai 2026 habe ich die Search Console dieser Website
                     gründlich durchgesehen. Ergebnis: 34 Seiten waren vorhanden, etwa 10 davon im Google-Index.
@@ -102,13 +104,13 @@ export default function NichtBeiGoogleGefundenPage() {
 
                 <h2>Die zwei Statusmeldungen, die alle verwirren</h2>
                 <p>
-                    <strong>„Gefunden, zurzeit nicht indexiert"</strong> heißt: Google kennt die Adresse, hat sie aber
+                    <strong>"Gefunden, zurzeit nicht indexiert"</strong> heißt: Google kennt die Adresse, hat sie aber
                     noch nicht gecrawlt. Google nennt als typischen Grund, dass das Crawlen verschoben wurde, um die
                     Website nicht zu überlasten. In der Praxis steckt dahinter meistens Priorisierung: Die URL ist
                     Google nicht wichtig genug, um sie jetzt abzurufen.
                 </p>
                 <p>
-                    <strong>„Gecrawlt, zurzeit nicht indexiert"</strong> heißt: Der Googlebot war da, hat den Inhalt
+                    <strong>"Gecrawlt, zurzeit nicht indexiert"</strong> heißt: Der Googlebot war da, hat den Inhalt
                     gelesen und sich entschieden, ihn nicht aufzunehmen. Das ist in der Regel kein technisches
                     Problem, sondern ein Qualitäts- oder Redundanzsignal. Wenn dieser Status bei vielen Seiten
                     auftritt, ist das ein Hinweis auf ein Muster: austauschbare Texte, sehr ähnliche Seiten,
@@ -174,12 +176,7 @@ export default function NichtBeiGoogleGefundenPage() {
 
                 <h3>8. Dünne oder doppelte Inhalte</h3>
                 <p>
-                    Wenn viele Seiten mit „Gecrawlt, zurzeit nicht indexiert" markiert sind, liegt es meist hier.
-                    Typische Auslöser: fünf fast identische Leistungsseiten für fünf Stadtteile, Texte aus einem
-                    Generator, Produktbeschreibungen des Herstellers, Filterseiten in beliebigen Kombinationen.
-                    Weniger Seiten mit mehr Substanz schlagen viele Seiten mit Textbausteinen. Das ist auch der
-                    Grund, warum ich Branchenseiten mit echten Fakten und Rechtsgrundlagen baue statt mit
-                    ausgetauschten Ortsnamen.
+                    Wenn viele Seiten mit "Gecrawlt, zurzeit nicht indexiert" markiert sind, liegt es meist hier. Typische Auslöser: fünf fast identische Leistungsseiten für fünf Stadtteile, Texte aus einem Generator, Produktbeschreibungen des Herstellers, Filterseiten in beliebigen Kombinationen. Weniger Seiten mit mehr Substanz schlagen viele Seiten mit Textbausteinen. Das ist auch der Grund, warum ich Branchenseiten mit echten Fakten und Rechtsgrundlagen baue statt mit ausgetauschten Ortsnamen.
                 </p>
 
                 <h3>9. Inhalte nur per JavaScript</h3>
@@ -215,10 +212,7 @@ export default function NichtBeiGoogleGefundenPage() {
 
                 <h2>Muss ich mein Crawl-Budget optimieren?</h2>
                 <p>
-                    Fast jeder zweite Ratgeber empfiehlt „Crawl-Budget-Optimierung". Google selbst schreibt dazu:
-                    Für kleine und mittelgroße Websites ist das Crawl-Budget kein Thema. Relevant wird es erst bei
-                    Websites mit mehr als einer Million Adressen, deren Inhalte sich moderat ändern, oder bei mehr als
-                    10.000 Adressen mit sehr häufigen Änderungen, etwa Nachrichtenportalen und Marktplätzen.
+                    Fast jeder zweite Ratgeber empfiehlt "Crawl-Budget-Optimierung". Google selbst schreibt dazu: Für kleine und mittelgroße Websites ist das Crawl-Budget kein Thema. Relevant wird es erst bei Websites mit mehr als einer Million Adressen, deren Inhalte sich moderat ändern, oder bei mehr als 10.000 Adressen mit sehr häufigen Änderungen, etwa Nachrichtenportalen und Marktplätzen.
                 </p>
                 <p>
                     Wenn Ihre Website 40 Seiten hat, hat sie kein Crawl-Budget-Problem. Sie hat ein Verlinkungs-
@@ -244,7 +238,7 @@ export default function NichtBeiGoogleGefundenPage() {
                 </p>
                 <ul>
                     <li><strong>Die Suchen, die Sie treffen, haben kein Volumen.</strong> Ihre Seite rankt, aber niemand sucht so. Andere Begriffe, andere Fragen.</li>
-                    <li><strong>Der Wettbewerb ist stärker.</strong> Bei „Webdesign Hamburg" gegen zwanzig Agenturen mit jahrelanger Historie hilft eine neue Seite allein nicht. Nische statt Kopfbegriff.</li>
+                    <li><strong>Der Wettbewerb ist stärker.</strong> Bei "Webdesign Hamburg" gegen zwanzig Agenturen mit jahrelanger Historie hilft eine neue Seite allein nicht. Nische statt Kopfbegriff.</li>
                     <li><strong>Die Seite passt nicht zur Absicht.</strong> Wer nach Preisen sucht, will Preise sehen. Wer nach Ablauf sucht, will den Ablauf. Ein Text, der beides andeutet, gewinnt keine der beiden Suchen.</li>
                 </ul>
                 <p>
@@ -284,13 +278,14 @@ export default function NichtBeiGoogleGefundenPage() {
                     <h2>Quellen</h2>
                     <ol>
                         <li>Google Search Central, Wie die Google Suche funktioniert: Google crawlt nicht alle Seiten und indexiert nicht alle gecrawlten Seiten. <a href="https://developers.google.com/search/docs/fundamentals/how-search-works?hl=de" rel="nofollow noopener" target="_blank">developers.google.com</a></li>
-                        <li>Google Search Console-Hilfe, Seitenindexierungsbericht mit den Statusmeldungen „Gefunden, zurzeit nicht indexiert" und „Gecrawlt, zurzeit nicht indexiert". <a href="https://support.google.com/webmasters/answer/7440203?hl=de" rel="nofollow noopener" target="_blank">support.google.com</a></li>
+                        <li>Google Search Console-Hilfe, Seitenindexierungsbericht mit den Statusmeldungen Gefunden, zurzeit nicht indexiert und Gecrawlt, zurzeit nicht indexiert. <a href="https://support.google.com/webmasters/answer/7440203?hl=de" rel="nofollow noopener" target="_blank">support.google.com</a></li>
                         <li>Google Search Central, Indexierung mit noindex blockieren, inklusive X-Robots-Tag im HTTP-Header. <a href="https://developers.google.com/search/docs/crawling-indexing/block-indexing?hl=de" rel="nofollow noopener" target="_blank">developers.google.com</a></li>
                         <li>Google Search Central, Crawl-Budget-Verwaltung für große Websites: relevant ab etwa einer Million Adressen oder ab 10.000 sich häufig ändernden Adressen. <a href="https://developers.google.com/search/docs/crawling-indexing/large-site-managing-crawl-budget?hl=de" rel="nofollow noopener" target="_blank">developers.google.com</a></li>
                         <li>Google Search Central, Sitemaps: Hinweis für die Entdeckung, keine Garantie für Indexierung. <a href="https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview?hl=de" rel="nofollow noopener" target="_blank">developers.google.com</a></li>
                         <li>Google Search Central, Hilfreiche und zuverlässige Inhalte erstellen, als Maßstab für die Frage, warum Seiten nach dem Crawlen verworfen werden. <a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content?hl=de" rel="nofollow noopener" target="_blank">developers.google.com</a></li>
                     </ol>
                 </div>
+                </AutoLinks>
             </ArticleLayout>
             <FaqSection title="Häufige Fragen zur Indexierung bei Google" items={faqItems} />
         </>

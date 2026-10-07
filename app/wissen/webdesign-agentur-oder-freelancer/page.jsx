@@ -1,16 +1,17 @@
 import ArticleLayout from '../../../src/components/ArticleLayout';
+import AutoLinks from '../../../src/components/AutoLinks';
 import FaqSection from '../../../src/components/FaqSection';
 import { BUSINESS } from '../../../src/lib/schema';
 import Link from 'next/link';
 
 export const metadata = {
-    title: 'Webdesign: Agentur oder Freelancer? Preise & Risiken 2026',
+    title: 'Webdesign Agentur oder Freelancer? Preise und Risiken 2026',
     description: 'Stundensätze, Projektpreise, Ausfallrisiko und Vertragsfallen im Vergleich. Ein ehrlicher Entscheidungsleitfaden, geschrieben von einem Solo-Entwickler.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/webdesign-agentur-oder-freelancer',
     },
     openGraph: {
-        title: 'Webdesign: Agentur oder Freelancer? Preise & Risiken 2026',
+        title: 'Webdesign Agentur oder Freelancer? Preise und Risiken 2026',
         description: 'Stundensätze, Projektpreise, Ausfallrisiko und Vertragsfallen im Vergleich. Ein ehrlicher Entscheidungsleitfaden.',
         url: 'https://webseite.hamburg/wissen/webdesign-agentur-oder-freelancer',
         type: 'article',
@@ -65,6 +66,7 @@ export default function AgenturOderFreelancerPage() {
                 heroAlt="Entwickler arbeitet an einem Schreibtisch vor einem großen Fenster am Monitor"
                 heroFramed
             >
+                <AutoLinks path="/wissen/webdesign-agentur-oder-freelancer">
                 <p>
                     Zuerst die Offenlegung, damit Sie den Rest richtig einordnen können: Ich bin die Freelancer-Option.
                     Sie arbeiten bei mir direkt mit dem Entwickler, ohne Account-Manager. Ich habe also ein Interesse
@@ -303,6 +305,7 @@ export default function AgenturOderFreelancerPage() {
                         <li>Bundesverband Digitale Wirtschaft, Internetagentur-Ranking als Marktüberblick deutscher Digitalagenturen. <a href="https://www.bvdw.org/" rel="nofollow noopener" target="_blank">bvdw.org</a></li>
                     </ol>
                 </div>
+                </AutoLinks>
             </ArticleLayout>
             <FaqSection title="Häufige Fragen zu Agentur, Freelancer und Baukasten" items={faqItems} />
         </>

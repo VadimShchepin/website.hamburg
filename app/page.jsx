@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import AutoLinks from '../src/components/AutoLinks';
 import Image from 'next/image';
 import { FaqItem } from '../src/components/FaqSection';
 import ShaderBackdrop from '../src/components/shaders/ShaderBackdrop';
@@ -31,6 +32,7 @@ const featured = [
         result: 'steigerte die organischen Google-Klicks nach dem Relaunch von 24 im April auf 374 im September 2026.',
         services: ['Website-Neubau', 'Google Ads', 'Ratgeber-SEO', 'Ø Position 21,1 auf 10,5'],
         image: '/referenzen/Blitz-hero.webp',
+        alt: 'Startseite von blitz-hamburg.de, Entrümpelung und Sanierung in Hamburg',
         domain: 'blitz-hamburg.de',
         href: '/referenzen/blitz-hamburg',
     },
@@ -40,6 +42,7 @@ const featured = [
         result: 'kam von 23 organischen Google-Klicks im Februar auf 792 im September 2026.',
         services: ['Web-App', 'DSGVO-Architektur', 'Ratgeber und Vorlagen', '14 Konten mit neuen Alben im September'],
         image: '/referenzen/KinderAlbum.webp',
+        alt: 'Startseite von dsgvoschulfotos.de, DSGVO-konforme Fotoplattform für Schulen und Kitas',
         domain: 'dsgvoschulfotos.de',
         href: '/referenzen/kinderalbum',
     },
@@ -49,6 +52,7 @@ const featured = [
         result: 'kam von 23.353 Google-Impressionen im Februar auf 56.651 im September 2026.',
         services: ['SEO-Audit', '723 Produkte überarbeitet', 'Content-Strategie', '810 Klicks ohne Markennamen'],
         image: '/referenzen/dybeauty.webp',
+        alt: 'Startseite des K-Beauty-Shops dybeauty.de auf Shopify',
         domain: 'dybeauty.de',
         href: '/referenzen/dybeauty',
     },
@@ -166,7 +170,7 @@ function ServiceVisual({ type }) {
 const faqItems = [
     {
         q: 'Was kostet eine professionelle Website?',
-        a: 'Der Website-Start beginnt ab 1.500 Euro, eine individuell gestaltete Conversion Landingpage ab 2.900 Euro, eine mehrseitige Unternehmenswebsite ab 4.500 Euro. Den finalen Preis erhalten Sie nach dem kostenlosen Erstgespräch, schriftlich und ohne versteckte Kosten.',
+        a: 'Eine Website kostet bei mir ab 1.500 Euro (Website-Start), eine individuell gestaltete Conversion Landingpage ab 2.900 Euro, eine mehrseitige Unternehmenswebsite ab 4.500 Euro. Den finalen Festpreis erhalten Sie nach dem kostenlosen Erstgespräch schriftlich und ohne versteckte Kosten.',
     },
     {
         q: 'Wie lange dauert die Erstellung einer Website?',
@@ -174,7 +178,7 @@ const faqItems = [
     },
     {
         q: 'Was passiert in der kostenlosen Website-Analyse?',
-        a: 'Ich prüfe Ladezeit, SEO, Struktur und Conversion-Potenzial Ihrer aktuellen Website und sende Ihnen innerhalb von 48 Stunden drei konkrete Verbesserungsvorschläge. Unverbindlich und ohne Verkaufsgespräch.',
+        a: 'Ich prüfe Ladezeit, SEO, Struktur und Conversion-Potenzial Ihrer Website und schicke Ihnen innerhalb von 2 bis 3 Werktagen einen Bericht mit priorisierten Empfehlungen. Auf Wunsch besprechen wir ihn in 30 Minuten. Unverbindlich und ohne Verkaufsdruck.',
     },
     {
         q: 'Wie schnell sehe ich SEO-Ergebnisse?',
@@ -182,22 +186,26 @@ const faqItems = [
     },
     {
         q: 'Gibt es lange Vertragslaufzeiten?',
-        a: 'Nein. Websites sind Festpreisprojekte, SEO- und Ads-Betreuung ist monatlich kündbar. Ihre Daten, Zugänge und Ihre Website gehören Ihnen. Immer.',
+        a: 'Nur bei SEO. Websites sind Festpreisprojekte. Die SEO-Betreuung hat eine Mindestlaufzeit von 3 Monaten und ist danach monatlich kündbar, die Google-Ads-Betreuung ist von Anfang an monatlich kündbar. Ihre Daten, Zugänge und Ihre Website gehören Ihnen.',
     },
     {
         q: 'Arbeiten Sie nur mit Unternehmen aus Hamburg?',
-        a: 'Der Schwerpunkt liegt auf Hamburg und Umgebung, dort kenne ich den Markt am besten. Projekte in ganz Deutschland setze ich remote um, mit denselben Standards.',
+        a: 'Der Schwerpunkt liegt auf Hamburg und dem Umland, dort kenne ich den Markt am besten. Projekte in ganz Deutschland setze ich remote um, mit denselben Standards.',
+    },
+    {
+        q: 'Sind Sie Freelancer oder Agentur?',
+        a: 'Ich arbeite als selbstständiger Webentwickler, Sie arbeiten direkt mit mir. Braucht ein Projekt zusätzliche Expertise, etwa bei Design, Text oder Fotografie, hole ich geprüfte Spezialisten dazu. So haben Sie einen festen Ansprechpartner, der das Ergebnis verantwortet, und trotzdem alle Fähigkeiten, die das Projekt braucht.',
     },
 ];
 
 export const metadata = {
-    title: 'Webdesign & SEO Hamburg | Mehr Kunden über Google',
-    description: 'Professionelles Webdesign, SEO und Google Ads für lokale Unternehmen in Hamburg. Datenbasiert, transparent, ergebnisorientiert. Kostenlose Erstanalyse.',
+    title: 'Webdesign Hamburg, SEO & Google Ads | webseite.hamburg',
+    description: 'Webdesign in Hamburg direkt vom Entwickler: schnelle Websites ab 1.500 € Festpreis, dazu SEO und Google Ads aus einer Hand. 5,0 Sterne bei Google.',
     alternates: {
         canonical: 'https://webseite.hamburg',
     },
     openGraph: {
-        title: 'Webdesign & SEO Hamburg | Mehr Kunden über Google',
+        title: 'Webdesign Hamburg, SEO & Google Ads | webseite.hamburg',
         description: 'Professionelles Webdesign, SEO und Google Ads für lokale Unternehmen in Hamburg. Datenbasiert, transparent, ergebnisorientiert.',
         url: 'https://webseite.hamburg',
         type: 'website',
@@ -208,7 +216,7 @@ export default function HomePage() {
     const professionalServiceJsonLd = {
         '@context': 'https://schema.org',
         '@type': 'ProfessionalService',
-        name: 'AISEO',
+        name: 'webseite.hamburg',
         url: 'https://webseite.hamburg',
         telephone: '+4917632194754',
         email: 'hallo@webseite.hamburg',
@@ -254,6 +262,7 @@ export default function HomePage() {
 
     return (
         <div className="vx">
+            <AutoLinks path="/">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
@@ -267,7 +276,8 @@ export default function HomePage() {
                 </a>
                 <div className="vx-hero-grid vx-wrap">
                     <div className="vx-hero-copy">
-                        <h1>Websites, die Anfragen bringen.</h1>
+                        <h1>Webdesign in Hamburg, das Anfragen bringt.</h1>
+                        <p className="vx-hero-lede">Ich baue Ihre Website, bringe sie bei Google nach vorn und schalte die Anzeigen, die Anfragen bringen. Ein Ansprechpartner für Ihre digitale Präsenz, vom ersten Entwurf bis zur laufenden Betreuung.</p>
                         <div className="vx-actions">
                             <Link href="/kontakt" className="vx-btn vx-btn-dark" data-umami-event="cta-click" data-umami-event-location="hero">Projekt anfragen</Link>
                             <a href={`tel:${PHONE}`} className="vx-btn" data-umami-event="phone-call" data-umami-event-location="hero">0176 321 94 754</a>
@@ -320,7 +330,7 @@ export default function HomePage() {
                                 <Link href={p.href} className="vx-link">Case Study lesen <Arrow /></Link>
                             </div>
                             <Link href={p.href} className="vx-project-shot" aria-label={`Case Study ${p.client}`}>
-                                <BrowserShot src={p.image} alt={`Website von ${p.client}`} domain={p.domain} priority={i === 0} />
+                                <BrowserShot src={p.image} alt={p.alt} domain={p.domain} priority={i === 0} />
                             </Link>
                         </div>
                     </article>
@@ -334,7 +344,7 @@ export default function HomePage() {
             <section className="vx-services">
                 <div className="vx-wrap">
                     <div className="vx-services-head">
-                        <h2>Was ich für Sie umsetze</h2>
+                        <h2>Webdesign, SEO und Google Ads aus einer Hand</h2>
                         <Link href="/leistungen" className="vx-link">Alle Leistungen <Arrow /></Link>
                     </div>
                     <div className="vx-service-grid">
@@ -357,8 +367,19 @@ export default function HomePage() {
                 <div className="vx-wrap vx-founder-grid">
                     <Image src="/referenzen/vadim-portraet.webp" alt="Vadim Shchepin" width={640} height={640} sizes="160px" />
                     <div>
-                        <p className="vx-founder-quote">Bei mir sprechen Sie direkt mit dem Entwickler. Analyse, Design, Code und Betreuung liegen in einer Hand.</p>
+                        <p className="vx-founder-quote">Sie arbeiten direkt mit mir, dem Entwickler. Analyse, Code und Betreuung liegen in einer Hand. Braucht ein Projekt zusätzliche Expertise, etwa bei Design, Text oder Fotografie, hole ich geprüfte Spezialisten dazu.</p>
                         <p className="vx-founder-name"><strong>Vadim Shchepin</strong> Webentwickler aus Hamburg, 10+ Jahre Erfahrung</p>
+                    </div>
+                </div>
+            </section>
+
+            {/* Ongoing partnership */}
+            <section className="vx-partner">
+                <div className="vx-wrap vx-faq-grid">
+                    <h2>Mehr als eine Website</h2>
+                    <div>
+                        <p className="vx-partner-text">Eine Website ist der Anfang. Danach geht es darum, gefunden zu werden, Anfragen zu messen und nachzuschärfen. Dabei begleite ich Betriebe auf Wunsch dauerhaft, als fester Partner für ihr Wachstum: Website, Sichtbarkeit bei Google und Anzeigen aus einer Hand, mit monatlichen Zahlen statt Bauchgefühl.</p>
+                        <Link href="/leistungen" className="vx-link">Leistungen und Preise ansehen <Arrow /></Link>
                     </div>
                 </div>
             </section>
@@ -366,7 +387,7 @@ export default function HomePage() {
             {/* FAQ */}
             <section className="vx-faq">
                 <div className="vx-wrap vx-faq-grid">
-                    <h2>Häufige Fragen</h2>
+                    <h2>Häufige Fragen zu Webdesign in Hamburg</h2>
                     <div className="vx-faq-list">
                         {faqItems.map((item) => <FaqItem key={item.q} q={item.q} a={item.a} />)}
                     </div>
@@ -387,6 +408,7 @@ export default function HomePage() {
                     </div>
                 </div>
             </section>
+            </AutoLinks>
         </div>
     );
 }

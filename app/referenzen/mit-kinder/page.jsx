@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import ServiceCta from '../../../src/components/ServiceCta';
 
@@ -6,7 +7,7 @@ const SITE_URL = 'https://webseite.hamburg';
 const PAGE_URL = `${SITE_URL}/referenzen/mit-kinder`;
 
 export const metadata = {
-    title: 'KI findet Aktivitäten für Familien | mit-kinder.de',
+    title: 'mit-kinder.de: KI findet Aktivitäten für Familien',
     description: 'NestJS + React + Gemini AI: Familien-Aktivitätsplattform mit Hexagonaler Architektur, KI-Empfehlungen und interaktiver Karte. Für Eltern in Deutschland.',
     alternates: { canonical: PAGE_URL },
     openGraph: {
@@ -36,7 +37,7 @@ export default function MitKinderCaseStudy() {
         url: PAGE_URL,
         datePublished: '2026-04-03',
         dateModified: '2026-04-03',
-        author: { '@type': 'Person', name: 'Vadim Shchepin', url: `${SITE_URL}/über-uns` },
+        author: { '@type': 'Person', name: 'Vadim Shchepin', url: `${SITE_URL}/ueber-uns` },
         publisher: { '@type': 'Organization', '@id': `${SITE_URL}/#organization` },
         mainEntityOfPage: PAGE_URL,
     };
@@ -53,6 +54,7 @@ export default function MitKinderCaseStudy() {
 
     return (
         <>
+            <AutoLinks path="/referenzen/mit-kinder">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -68,10 +70,10 @@ export default function MitKinderCaseStudy() {
                         <span className="wissen-card-time">KI-Plattform</span>
                     </div>
                     <h1 className="subpage-title animate-up">
-                        mit-kinder.de: Weil &bdquo;Was machen wir heute?&ldquo; die schwierigste Frage der Elternschaft ist.
+                        mit-kinder.de: die Antwort auf die schwierigste Frage der Elternschaft, was machen wir heute?
                     </h1>
                     <p className="subpage-intro animate-up">
-                        Eine Plattform, die Eltern in Deutschland hilft, altersgerechte Aktivitäten für ihre Kinder zu finden: mit KI-Empfehlungen, interaktiver Karte und dem Verständnis, dass ein 3-Jahriger und ein 12-Jahriger fundamental unterschiedliche Bedürfnisse haben. Gebaut mit Hexagonaler Architektur, weil guter Code auch für Kinder ein gutes Vorbild ist.
+                        Eine Plattform, die Eltern in Deutschland hilft, altersgerechte Aktivitäten für ihre Kinder zu finden: mit KI-Empfehlungen, interaktiver Karte und dem Verständnis, dass ein 3-Jähriger und ein 12-Jähriger fundamental unterschiedliche Bedürfnisse haben. Gebaut mit Hexagonaler Architektur, weil guter Code auch für Kinder ein gutes Vorbild ist.
                     </p>
                     <div className="article-byline animate-up">
                         Von <Link href="/ueber-uns">Vadim Shchepin</Link> &middot; 3. April 2026
@@ -103,7 +105,7 @@ export default function MitKinderCaseStudy() {
                             decoding="async"
                             style={{ width: '100%', height: 'auto' }}
                         />
-                        <p className="cs-image-caption">Karte plus Chatbot: Aktivitaeten nach Ort, Zeit und Alter gefiltert.</p>
+                        <p className="cs-image-caption">Karte plus Chatbot: Aktivitäten nach Ort, Zeit und Alter gefiltert.</p>
                     </div>
                 </div>
             </section>
@@ -113,10 +115,10 @@ export default function MitKinderCaseStudy() {
                 <div className="container subpage-body">
                     <h2 className="animate-up">Das Problem</h2>
                     <p className="animate-up">
-                        Samstagnachmittag, 14 Uhr, Hamburg. Es regnet. Zwei Kinder, 4 und 8 Jahre alt, sind gelangweilt. Google sagt &bdquo;Miniatur Wunderland&ldquo;, wie immer. Die Eltern brauchen keine generische Top-10-Liste. Sie brauchen etwas, das zum Alter, zu den Interessen und zur Barrierefreiheit ihrer Kinder passt. Und zwar jetzt.
+                        Samstagnachmittag, 14 Uhr, Hamburg. Es regnet. Zwei Kinder, 4 und 8 Jahre alt, sind gelangweilt. Google sagt &quot;Miniatur Wunderland&quot;, wie immer. Die Eltern brauchen keine generische Top-10-Liste. Sie brauchen etwas, das zum Alter, zu den Interessen und zur Barrierefreiheit ihrer Kinder passt. Und zwar jetzt.
                     </p>
                     <p className="animate-up">
-                        Es gibt keine Plattform in Deutschland, die das gut lost. Also bauen wir eine.
+                        Es gibt keine Plattform in Deutschland, die das gut löst. Also bauen wir eine.
                     </p>
 
                     <h2 className="animate-up">Die Plattform</h2>
@@ -124,11 +126,11 @@ export default function MitKinderCaseStudy() {
                     <div className="subpage-features-grid animate-up">
                         <div className="subpage-feature">
                             <h3>KI-Chatbot mit Kontext</h3>
-                            <p>Nicht einfach &bdquo;frag die KI&ldquo;: der Chatbot kennt Standort, Uhrzeit, Alter der Kinder und ihre Interessen. Die Antworten sind auf Deutsch und konkret: &bdquo;Im Stadtpark gibt es heute um 15 Uhr ein Puppentheater, Eintritt frei.&ldquo;</p>
+                            <p>Nicht einfach &quot;frag die KI&quot;: der Chatbot kennt Standort, Uhrzeit, Alter der Kinder und ihre Interessen. Die Antworten sind auf Deutsch und konkret: &quot;Im Stadtpark gibt es heute um 15 Uhr ein Puppentheater, Eintritt frei.&quot;</p>
                         </div>
                         <div className="subpage-feature">
                             <h3>Kinderprofile</h3>
-                            <p>Bis zu 10 Profile pro Konto. Altersgruppen, Interessen, Barrierefreiheitsbedarfe. Die Plattform versteht, dass &bdquo;Kinder&ldquo; keine homogene Gruppe ist: was für einen Dreijahrigen perfekt ist, langweilt einen Zwolfjahrigen zu Tode.</p>
+                            <p>Bis zu 10 Profile pro Konto. Altersgruppen, Interessen, Barrierefreiheitsbedarfe. Die Plattform versteht, dass &quot;Kinder&quot; keine homogene Gruppe ist: was für einen Dreijährigen perfekt ist, langweilt einen Zwölfjährigen zu Tode.</p>
                         </div>
                         <div className="subpage-feature">
                             <h3>Interaktive Karte</h3>
@@ -142,19 +144,19 @@ export default function MitKinderCaseStudy() {
 
                     <h2 className="animate-up">Die Architektur: Hexagonal, weil es sein muss</h2>
                     <p className="animate-up">
-                        NestJS Backend mit strikter Hexagonaler Architektur. Der Domain-Layer hat null externe Abhangigkeiten: keine Datenbank, kein Framework, kein HTTP. Reine Geschaftslogik. Value Objects (Id, Email, Password), Domain Entities mit eingebauten Businessregeln, und Ports, die durch Adapter implementiert werden.
+                        NestJS Backend mit strikter Hexagonaler Architektur. Der Domain-Layer hat null externe Abhängigkeiten: keine Datenbank, kein Framework, kein HTTP. Reine Geschäftslogik. Value Objects (Id, Email, Password), Domain Entities mit eingebauten Businessregeln, und Ports, die durch Adapter implementiert werden.
                     </p>
                     <p className="animate-up">
                         Warum? Weil eine Familien-Plattform wachsen muss. Events-Modul, Scraping-Modul, Artikel-Modul: alles geplant. Wenn die Architektur nicht sauber ist, wird jedes neue Feature ein Kampf. Mit Hexagonal ist jedes neue Modul ein neuer Ordner. Nicht mehr, nicht weniger.
                     </p>
                     <p className="animate-up">
-                        75+ Unit Tests auf dem Domain-Layer. Die Geschaftslogik ist geprüft, bevor sie je eine Datenbank sieht. Das ist der russische Weg: Erst testen, dann vertrauen. &laquo;Доверяй, но проверяй&raquo;, vertraue, aber überprüfe.
+                        75+ Unit Tests auf dem Domain-Layer. Die Geschäftslogik ist geprüft, bevor sie je eine Datenbank sieht. Das ist der russische Weg: Erst testen, dann vertrauen. &laquo;Доверяй, но проверяй&raquo;, vertraue, aber überprüfe.
                     </p>
 
                     <div className="cs-takeaway animate-up">
                         <h3>Das Wichtigste</h3>
                         <p>
-                            Gute Software für Familien braucht zwei Dinge: ein echtes Verständnis für das Problem (jeder Elternteil kennt die &bdquo;Was machen wir heute?&ldquo;-Panik) und eine Architektur, die mit dem Produkt wachst. mit-kinder.de hat beides: KI-gestützte Empfehlungen, die wirklich helfen, und Clean Architecture, die nicht bei Feature Nr. 5 zusammenbricht.
+                            Gute Software für Familien braucht zwei Dinge: ein echtes Verständnis für das Problem (jeder Elternteil kennt die &quot;Was machen wir heute?&quot;-Panik) und eine Architektur, die mit dem Produkt wächst. mit-kinder.de hat beides: KI-gestützte Empfehlungen, die wirklich helfen, und Clean Architecture, die nicht bei Feature Nr. 5 zusammenbricht.
                         </p>
                     </div>
                 </div>
@@ -180,6 +182,7 @@ export default function MitKinderCaseStudy() {
             </section>
 
             <ServiceCta text="Plattform mit KI-Integration geplant? Ich baue Produkte, die echte Probleme lösen, mit sauberer Architektur und KI, die tatsächlich hilft. Nicht nur ein Chatbot-Widget oben rechts." />
+            </AutoLinks>
         </>
     );
 }

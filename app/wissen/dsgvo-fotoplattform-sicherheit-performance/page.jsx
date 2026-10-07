@@ -1,8 +1,9 @@
 import ArticleLayout from '../../../src/components/ArticleLayout';
+import AutoLinks from '../../../src/components/AutoLinks';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'Was Sicherheit wirklich kostet | DSGVO-Fotoplattform',
+    title: 'DSGVO-Fotoplattform für Schulen: was Sicherheit kostet',
     description: 'Architektur-Case-Study: QR-Code plus PIN statt Accounts, Row Level Security, signierte URLs, und was das an Performance gekostet hat.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/dsgvo-fotoplattform-sicherheit-performance',
@@ -85,6 +86,7 @@ export default function DsgvoFotoplattformArticlePage() {
                 heroAlt="DSGVO-konforme Fotoplattform für Schulen als Sinnbild für Sicherheitsarchitektur"
                 heroFramed
             >
+                <AutoLinks path="/wissen/dsgvo-fotoplattform-sicherheit-performance">
                 <div className="subpage-takeaway">
                     <p>
                         <strong>Worum es geht:</strong> <a href="https://dsgvoschulfotos.de/" target="_blank" rel="noopener noreferrer">dsgvoschulfotos.de</a> ist
@@ -125,7 +127,7 @@ export default function DsgvoFotoplattformArticlePage() {
                 </p>
                 <p>
                     Das erste echte Fotografen-Album (<strong>1.246 Fotos, 944 MB</strong>) machte daraus einen
-                    messbaren Ausfall. Kundenmeldung, wörtliche Kategorie: „Thumbnails nicht geladen&quot;. Die
+                    messbaren Ausfall. Kundenmeldung, wörtliche Kategorie: &quot;Thumbnails nicht geladen&quot;. Die
                     Produktions-Logs zeigten <strong>723 imgproxy-Fehler in 72 Stunden</strong> in zwei Varianten:
                 </p>
                 <ul>
@@ -268,6 +270,7 @@ export default function DsgvoFotoplattformArticlePage() {
                         <li><a href="https://dsgvoschulfotos.de/" target="_blank" rel="noopener noreferrer">dsgvoschulfotos.de: DSGVO-konforme Schulfotos</a></li>
                     </ol>
                 </div>
+                </AutoLinks>
             </ArticleLayout>
         </>
     );

@@ -1,15 +1,16 @@
 import ArticleLayout from '../../../src/components/ArticleLayout';
+import AutoLinks from '../../../src/components/AutoLinks';
 import { BUSINESS } from '../../../src/lib/schema';
 import Link from 'next/link';
 
 export const metadata = {
-    title: 'Onlineshop Kosten 2026: alle Posten offen',
+    title: 'Onlineshop Kosten 2026: was ein Shop wirklich kostet',
     description: 'Shopify ab 27 Euro im Monat, Shopware Community kostenlos, WooCommerce quasi gratis. Was danach kommt: Umsetzung, Transaktionsgebühren, Pflichten, Pflege.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/onlineshop-kosten',
     },
     openGraph: {
-        title: 'Onlineshop Kosten 2026: alle Posten offen',
+        title: 'Onlineshop Kosten 2026: was ein Shop wirklich kostet',
         description: 'Plattformpreise, Umsetzung, Transaktionsgebühren, gesetzliche Pflichten und laufende Pflege, mit Rechenbeispielen.',
         url: 'https://webseite.hamburg/wissen/onlineshop-kosten',
         type: 'article',
@@ -23,7 +24,7 @@ const faqItems = [
     },
     {
         q: 'Was kostet die Einrichtung eines Shops durch einen Dienstleister?',
-        a: 'Bei mir sind E-Commerce-Projekte Sache einer individuellen Kalkulation, weil der Aufwand fast vollständig am Sortiment und an den Schnittstellen hängt. Als Orientierung: Ein Shop mit überschaubarem Sortiment auf einer fertigen Plattform liegt im Bereich einer Unternehmenswebsite, also ab 4.500 Euro. Ein Shop mit Warenwirtschaftsanbindung, B2B-Preisen oder Konfiguratoren liegt deutlich darüber.',
+        a: 'Bei mir sind E-Commerce-Projekte Sache einer individuellen Kalkulation, weil der Aufwand fast vollständig am Sortiment und an den Schnittstellen hängt. Als Orientierung: Ein Shop mit überschaubarem Sortiment auf einer fertigen Plattform beginnt bei mir ab 9.000 Euro. Ein Shop mit Warenwirtschaftsanbindung, B2B-Preisen oder Konfiguratoren liegt deutlich darüber.',
     },
     {
         q: 'Welche Gebühren fallen pro Verkauf an?',
@@ -47,7 +48,7 @@ export default function OnlineshopKostenPage() {
     const articleJsonLd = {
         '@context': 'https://schema.org',
         '@type': 'Article',
-        headline: 'Onlineshop Kosten 2026: was wirklich zusammenkommt',
+        headline: 'Onlineshop-Kosten: Was kostet ein Onlineshop wirklich?',
         author: { '@type': 'Person', name: 'Vadim Shchepin', url: 'https://www.linkedin.com/in/vadim-shchepin/' },
         publisher: BUSINESS,
         datePublished: '2026-08-22',
@@ -85,12 +86,13 @@ export default function OnlineshopKostenPage() {
             <ArticleLayout
                 slug="onlineshop-kosten"
                 category="E-COMMERCE"
-                title="Onlineshop Kosten 2026: was wirklich zusammenkommt"
+                title="Onlineshop-Kosten: Was kostet ein Onlineshop wirklich?"
                 readTime="11 Min."
                 publishDate="2026-08-22"
                 heroImage="/wissen/hero-onlineshop-kosten.svg"
                 heroAlt="Illustration: Einkaufswagen vor einem Browser-Fenster, daran ein rotes Preisschild"
             >
+                <AutoLinks path="/wissen/onlineshop-kosten">
                 <p>
                     Die Frage nach den Kosten eines Onlineshops wird fast immer mit dem Monatspreis einer Plattform
                     beantwortet. Das ist ungefähr so hilfreich wie die Antwort auf die Frage nach den Kosten eines
@@ -181,7 +183,7 @@ export default function OnlineshopKostenPage() {
                 </p>
                 <ul>
                     <li><strong>Fertiges Theme mit Anpassung.</strong> Am günstigsten, funktioniert bei klarem Sortiment und Standardprozessen gut. Die Gefahr: Ihr Shop sieht aus wie zehntausend andere.</li>
-                    <li><strong>Individuelle Gestaltung auf einer Plattform.</strong> Der übliche Weg für Marken, die sich unterscheiden wollen. Bei mir im Bereich einer Unternehmenswebsite, also ab 4.500 Euro, mit Aufschlag je nach Sortiment.</li>
+                    <li><strong>Individuelle Gestaltung auf einer Plattform.</strong> Der übliche Weg für Marken, die sich unterscheiden wollen. Bei mir ab 9.000 Euro, mit Aufschlag je nach Sortiment.</li>
                     <li><strong>Individuelle Entwicklung mit Schnittstellen.</strong> Warenwirtschaft, B2B-Preise, Konfiguratoren, Abonnements. Hier bestimmt die Schnittstelle den Preis, nicht das Design. Kalkulation immer individuell, Details unter <Link href="/leistungen/e-commerce-entwicklung">E-Commerce-Entwicklung</Link>.</li>
                 </ul>
 
@@ -290,7 +292,7 @@ export default function OnlineshopKostenPage() {
                             </tr>
                             <tr>
                                 <th>Umsetzung</th>
-                                <td>Theme mit Anpassung, ab 4.500 Euro</td>
+                                <td>Theme mit Anpassung, ab 9.000 Euro</td>
                                 <td>individuell mit Schnittstelle, deutlich darüber, Kalkulation je Projekt</td>
                             </tr>
                             <tr>
@@ -406,6 +408,7 @@ export default function OnlineshopKostenPage() {
                         <li>Telekommunikation-Digitale-Dienste-Datenschutz-Gesetz (TDDDG), § 25: Einwilligung vor Zugriff auf das Endgerät. <a href="https://www.gesetze-im-internet.de/ttdsg/__25.html" rel="nofollow noopener" target="_blank">gesetze-im-internet.de</a></li>
                     </ol>
                 </div>
+                </AutoLinks>
             </ArticleLayout>
         </>
     );

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
@@ -7,13 +8,13 @@ import ServiceMeta from '../../../src/components/ServiceMeta';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'Webdesign Hamburg | Schnelle Websites ab 1.500 €',
-    description: 'Individuelles Webdesign für Unternehmen in Hamburg: programmiert statt Baukasten, Lighthouse 90 bis 100, conversion-optimiert. Ab 1.500 €.',
+    title: 'Webdesigner in Hamburg: Websites ab 1.500 € Festpreis',
+    description: 'Webdesigner in Hamburg, der selbst programmiert: Websites ohne Baukasten, Lighthouse 90 bis 100, Festpreis ab 1.500 €. Sie arbeiten direkt mit dem Entwickler.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/webdesign',
     },
     openGraph: {
-        title: 'Webdesign Hamburg | Schnelle Websites ab 1.500 €',
+        title: 'Webdesigner in Hamburg: Websites ab 1.500 € Festpreis',
         description: 'Individuelles Webdesign für Unternehmen in Hamburg: programmiert statt Baukasten, Lighthouse 90 bis 100, gute Core Web Vitals, Conversion-Optimierung.',
         url: 'https://webseite.hamburg/leistungen/webdesign',
         type: 'website',
@@ -28,6 +29,7 @@ const faqItems = [
     { q: 'Was sind Core Web Vitals?', a: 'Core Web Vitals sind Googles offizielle Kennzahlen für Nutzererlebnis: LCP (Ladezeit des größten Elements, gut: unter 2,5 s), INP (Reaktionszeit auf Eingaben, gut: unter 200 ms) und CLS (Layout-Stabilität, gut: unter 0,1). Sie fließen in das Google-Ranking ein. Jede Website baue ich so, dass sie alle drei Werte im grünen Bereich erreicht.' },
     { q: 'Ist die Website SEO-optimiert?', a: 'Ja. Jede Website enthält eine SEO-Grundoptimierung: saubere URL-Struktur, Meta-Tags, strukturierte Daten (Schema.org), semantisches HTML, Bildoptimierung und Mobile-First-Entwicklung. Für laufende Betreuung gibt es das separate SEO-Paket.' },
     { q: 'Kann ich die Website später selbst bearbeiten?', a: 'Ja, wenn Sie das wünschen. Ich richte ein CMS ein und schule Sie in der Bedienung. Sie können Texte, Bilder und Seiten eigenständig anpassen, ohne technische Kenntnisse.' },
+    { q: 'Rechnen Sie nach Stunden oder zum Festpreis ab?', a: 'Zum Festpreis. Sie bekommen vor Projektstart ein schriftliches Angebot mit Umfang, Preis und Liefertermin, ab 1.500 € für den Website-Start. Stundenzettel gibt es bei Website-Projekten nicht. Wie Stundensätze von Freelancern und Agenturen in Hamburg aussehen, steht im Vergleich Agentur oder Freelancer.' },
 ];
 
 export default function WebdesignPage() {
@@ -58,6 +60,7 @@ export default function WebdesignPage() {
 
     return (
         <>
+            <AutoLinks path="/leistungen/webdesign">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -71,7 +74,7 @@ export default function WebdesignPage() {
                     <div className="subpage-hero-split">
                         <div>
                         <p className="section-kicker animate-up">Webdesign & Entwicklung</p>
-                        <h1 className="subpage-title animate-up">Professionelle Websites für Unternehmen in Hamburg.</h1>
+                        <h1 className="subpage-title animate-up">Webdesigner in Hamburg: professionelle Websites für Unternehmen.</h1>
                         <p className="subpage-intro animate-up">
                             Ihre Website ist oft der erste Eindruck, den ein potenzieller Kunde von Ihrem Unternehmen bekommt. Wenige Sekunden entscheiden, ob er bleibt oder abspringt. Ich sorge dafür, dass er bleibt und anfragt.
                         </p>
@@ -86,9 +89,9 @@ export default function WebdesignPage() {
 
             <section className="subpage-content section light-bg">
                 <div className="container subpage-body">
-                    <h2 className="animate-up">Was kostet professionelles Webdesign?</h2>
+                    <h2 className="animate-up">Was kostet ein Webdesigner in Hamburg?</h2>
                     <div className="subpage-takeaway animate-up">
-                        <p>Eine professionelle Website kostet bei mir <strong>ab 1.500 €</strong> (Website-Start mit bewährtem Layout), <strong>ab 2.900 €</strong> (Conversion Landingpage) bzw. <strong>ab 4.500 €</strong> (mehrseitige Unternehmenswebsite), jeweils zum Festpreis. Sie wird individuell programmiert, ohne Baukasten und ohne gekauftes WordPress-Theme, und erreicht Lighthouse-Werte von 90 bis 100 sowie gute Core Web Vitals. Eine Landingpage ist in 2 bis 3 Wochen fertig, eine mehrseitige Website in 4 bis 6 Wochen.</p>
+                        <p>Eine professionelle Website kostet bei mir <strong>ab 1.500 €</strong> (Website-Start mit bewährtem Layout), <strong>ab 2.900 €</strong> (Conversion Landingpage) oder <strong>ab 4.500 €</strong> (mehrseitige Unternehmenswebsite), jeweils zum Festpreis statt nach Stunden. Sie wird individuell programmiert, ohne Baukasten und ohne gekauftes WordPress-Theme, und erreicht Lighthouse-Werte von 90 bis 100 sowie gute Core Web Vitals. Eine Landingpage ist in 2 bis 3 Wochen fertig, eine mehrseitige Website in 4 bis 6 Wochen.</p>
                     </div>
 
                     <h2 className="animate-up">Warum viele Firmenwebsites Kunden verlieren</h2>
@@ -118,8 +121,8 @@ export default function WebdesignPage() {
                     </div>
 
                     <figure className="subpage-figure is-band animate-up">
-                        <img src="/leistungen/fotos/webdesign.webp" alt="Naheinstellung: Haende tippen Code auf einer Tastatur vor zwei Monitoren mit Entwicklungsumgebung" width="1800" height="760" loading="lazy" decoding="async" />
-                        <figcaption>Individuell programmiert statt Theme von der Stange: Jede Entscheidung laesst sich begruenden.</figcaption>
+                        <img src="/leistungen/fotos/webdesign.webp" alt="Naheinstellung: Hände tippen Code auf einer Tastatur vor zwei Monitoren mit Entwicklungsumgebung" width="1800" height="760" loading="lazy" decoding="async" />
+                        <figcaption>Individuell programmiert statt Theme von der Stange: Jede Entscheidung lässt sich begründen.</figcaption>
                     </figure>
 
                     <h2 className="animate-up">Was hinter jeder Designentscheidung steckt</h2>
@@ -249,16 +252,17 @@ export default function WebdesignPage() {
                     <div className="subpage-sources animate-up">
                         <h2>Quellen</h2>
                         <ol>
-                            <li>Google, „The Need for Mobile Speed" (2016): 53 % Abbruch bei Ladezeit über 3 s. <a href="https://www.thinkwithgoogle.com/" rel="nofollow noopener" target="_blank">thinkwithgoogle.com</a></li>
+                            <li>Google, The Need for Mobile Speed (2016): 53 % Abbruch bei Ladezeit über 3 s. <a href="https://www.thinkwithgoogle.com/" rel="nofollow noopener" target="_blank">thinkwithgoogle.com</a></li>
                             <li>Google, Core Web Vitals: Schwellenwerte für LCP, INP, CLS. <a href="https://web.dev/articles/vitals" rel="nofollow noopener" target="_blank">web.dev/articles/vitals</a></li>
                         </ol>
                     </div>
                 </div>
             </section>
 
-            <FaqSection title="Fragen zu Webdesign & Entwicklung" items={faqItems} />
+            <FaqSection title="Fragen an Ihren Webdesigner" items={faqItems} />
             <RelatedServices exclude="webdesign" />
             <ServiceCta text="Lassen Sie uns über Ihre neue Website sprechen. Im kostenlosen Erstgespräch analysiere ich Ihre aktuelle Situation und zeige Ihnen konkret, was möglich ist." />
+            </AutoLinks>
         </>
     );
 }

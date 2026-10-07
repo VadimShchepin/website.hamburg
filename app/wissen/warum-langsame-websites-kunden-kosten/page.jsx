@@ -1,9 +1,10 @@
 import ArticleLayout from '../../../src/components/ArticleLayout';
+import AutoLinks from '../../../src/components/AutoLinks';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'Jede Sekunde kostet 7 % Conversion | Ladezeit',
-    description: 'Jede zusätzliche Sekunde Ladezeit senkt die Conversion-Rate um rund 4 Prozent. Wie Sie das messen und verbessern.',
+    title: 'Langsame Website: was jede Sekunde Ladezeit kostet',
+    description: 'Jede zusätzliche Sekunde Ladezeit senkt die Conversion-Rate um rund 4 Prozent (Portent 2022). Wie schnell Ihre Website sein muss und wie Sie das messen.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/warum-langsame-websites-kunden-kosten',
     },
@@ -54,6 +55,7 @@ export default function LangsameWebsitesArticlePage() {
                 heroImage="/wissen/speed-hero.svg"
                 heroAlt="Illustration: Tachometer und Stoppuhr als Sinnbild für die Ladezeit einer Website"
             >
+                <AutoLinks path="/wissen/warum-langsame-websites-kunden-kosten">
                 <p>
                     Ihre Website lädt länger als drei Sekunden? Dann ist ein Teil Ihrer Besucher in diesem Moment schon wieder weg. Nicht vielleicht, sondern messbar.
                 </p>
@@ -95,10 +97,10 @@ export default function LangsameWebsitesArticlePage() {
                     Rechnen wir es durch. Ihre Website hat 1.000 Besucher im Monat. Bei einer Ladezeit über drei Sekunden verlieren Sie rund 53 Prozent davon sofort, es bleiben etwa 470. Wenn davon 2 Prozent zu einer Anfrage werden, sind das neun Anfragen.
                 </p>
                 <p>
-                    Eine schnelle Seite unter zwei Sekunden hält deutlich mehr Besucher. Bleiben grob 850, dann sind es bei gleicher Conversion-Rate rund 17 Anfragen, also fast doppelt so viele. Bei einem durchschnittlichen Auftragswert von 2.000 Euro reden wir über 16.000 Euro Unterschied im Monat.
+                    Eine schnelle Seite unter zwei Sekunden hält deutlich mehr Besucher. Bleiben grob 850, dann sind es bei gleicher Conversion-Rate rund 17 Anfragen, also fast doppelt so viele. Wird jede zweite Anfrage zum Auftrag und liegt der Auftragswert bei 2.000 Euro, sind das rund 8.000 Euro Unterschied im Monat.
                 </p>
                 <p>
-                    Eine Auswertung von <a href="https://www.portent.com/blog/design-dev/site-speed-is-still-impacting-your-conversion-rate.htm" target="_blank" rel="noopener noreferrer">Portent</a> stützt das: Die Conversion-Rate sinkt mit jeder zusätzlichen Sekunde Ladezeit (0 bis 5 Sekunden) im Schnitt um rund 4,4 Prozent, und eine Seite, die in einer Sekunde lädt, konvertiert etwa zweieinhalbmal so gut wie eine mit fünf Sekunden. Wie Sie aus dem so gewonnenen Traffic mehr Anfragen machen, steht in unserem <a href="/wissen/website-conversion-optimierung">Leitfaden zur Conversion-Optimierung</a>.
+                    Eine Auswertung von <a href="https://www.portent.com/blog/design-dev/site-speed-is-still-impacting-your-conversion-rate.htm" target="_blank" rel="noopener noreferrer">Portent</a> stützt das: Die Conversion-Rate sinkt mit jeder zusätzlichen Sekunde Ladezeit (0 bis 5 Sekunden) im Schnitt um rund 4,4 Prozent, und eine Seite, die in einer Sekunde lädt, konvertiert etwa zweieinhalbmal so gut wie eine mit fünf Sekunden. Wie Sie aus dem so gewonnenen Traffic mehr Anfragen machen, steht in meinem <a href="/wissen/website-conversion-optimierung">Leitfaden zur Conversion-Optimierung</a>.
                 </p>
 
                 <h2>Warum schneiden so viele Agentur-Websites schlecht ab?</h2>
@@ -109,7 +111,7 @@ export default function LangsameWebsitesArticlePage() {
                     Der Grund: Viele Agenturen setzen auf schwere Page-Builder wie Elementor oder Divi. Die machen das Bauen einfach, aber den Output schwer. Eine typische Elementor-Seite lädt ein bis zwei Megabyte CSS und JavaScript, bevor auch nur ein Buchstabe sichtbar ist.
                 </p>
                 <p>
-                    Das ist kein Vorwurf, sondern ein Geschäftsmodell-Problem. Page-Builder sparen Entwicklungszeit und kosten Performance. Die Rechnung zahlt der Kunde, mit weniger Sichtbarkeit und weniger Anfragen. Genau deshalb bauen wir <a href="/leistungen/webdesign">Websites</a> ohne diesen Ballast, und Shops unter <a href="/leistungen/e-commerce-entwicklung">E-Commerce-Entwicklung</a> ebenso.
+                    Das ist kein Vorwurf, sondern ein Geschäftsmodell-Problem. Page-Builder sparen Entwicklungszeit und kosten Performance. Die Rechnung zahlt der Kunde, mit weniger Sichtbarkeit und weniger Anfragen. Genau deshalb baue ich <a href="/leistungen/webdesign">Websites</a> ohne diesen Ballast, und Shops unter <a href="/leistungen/e-commerce-entwicklung">E-Commerce-Entwicklung</a> ebenso.
                 </p>
 
                 <h2>Wie prüfe ich die Geschwindigkeit meiner Website?</h2>
@@ -132,7 +134,7 @@ export default function LangsameWebsitesArticlePage() {
                     Die Maßnahmen waren keine Hexerei: Bilder in WebP umgewandelt, ungenutztes CSS entfernt, kritisches CSS inline geladen, JavaScript auf Lazy Loading umgestellt und Server-Caching aktiviert. Zusammen hat das zwei Tage gedauert.
                 </p>
                 <p>
-                    Der Punkt ist: Performance ist kein nettes Extra. Sie ist die einfachste Methode, mehr aus dem vorhandenen Traffic zu holen, ohne einen Cent mehr für Werbung. Wenn ein kompletter Neuaufbau sinnvoller ist, hilft unsere <a href="/wissen/website-relaunch-checkliste">Website-Relaunch-Checkliste</a> bei der Planung.
+                    Der Punkt ist: Performance ist kein nettes Extra. Sie ist die einfachste Methode, mehr aus dem vorhandenen Traffic zu holen, ohne einen Cent mehr für Werbung. Wenn ein kompletter Neuaufbau sinnvoller ist, hilft meine <a href="/wissen/website-relaunch-checkliste">Website-Relaunch-Checkliste</a> bei der Planung.
                 </p>
 
                 <h2>Was Sie jetzt tun sollten</h2>
@@ -156,10 +158,11 @@ export default function LangsameWebsitesArticlePage() {
 
                 <h2>Quellen</h2>
                 <ol>
-                    <li>Think with Google, „Mobile Page Speed New Industry Benchmarks": 53 % der mobilen Nutzer verlassen Seiten mit über 3 s Ladezeit. <a href="https://www.thinkwithgoogle.com/marketing-strategies/app-and-mobile/mobile-page-speed-new-industry-benchmarks/" target="_blank" rel="nofollow noopener noreferrer">thinkwithgoogle.com</a></li>
-                    <li>Portent, „Site Speed Is Still Impacting Your Conversion Rate" (2022): ~4,4 % weniger Conversion pro zusätzlicher Sekunde (0 bis 5 s); 1 s konvertiert ~2,5× besser als 5 s. <a href="https://www.portent.com/blog/design-dev/site-speed-is-still-impacting-your-conversion-rate.htm" target="_blank" rel="nofollow noopener noreferrer">portent.com</a></li>
+                    <li>Think with Google, Mobile Page Speed New Industry Benchmarks: 53 % der mobilen Nutzer verlassen Seiten mit über 3 s Ladezeit. <a href="https://www.thinkwithgoogle.com/marketing-strategies/app-and-mobile/mobile-page-speed-new-industry-benchmarks/" target="_blank" rel="nofollow noopener noreferrer">thinkwithgoogle.com</a></li>
+                    <li>Portent, Site Speed Is Still Impacting Your Conversion Rate (2022): ~4,4 % weniger Conversion pro zusätzlicher Sekunde (0 bis 5 s); 1 s konvertiert ~2,5× besser als 5 s. <a href="https://www.portent.com/blog/design-dev/site-speed-is-still-impacting-your-conversion-rate.htm" target="_blank" rel="nofollow noopener noreferrer">portent.com</a></li>
                     <li>Google, web.dev: Schwellenwerte der Core Web Vitals (LCP, INP, CLS). <a href="https://web.dev/vitals/" target="_blank" rel="nofollow noopener noreferrer">web.dev/vitals</a></li>
                 </ol>
+                </AutoLinks>
             </ArticleLayout>
         </>
     );

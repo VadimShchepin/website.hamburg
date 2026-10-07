@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
@@ -7,13 +8,13 @@ import ServiceMeta from '../../../src/components/ServiceMeta';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'Steuerberater-Website Hamburg: Webdesign für Kanzleien',
+    title: 'Website für Steuerberater in Hamburg: Mandanten & Bewerber',
     description: 'Was kostet eine Steuerberater-Website? Ab 2.900 Euro zum Festpreis: Mandantengewinnung, Karriereseite gegen den Fachkräftemangel, § 57a StBerG beachtet.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/webdesign-steuerberater',
     },
     openGraph: {
-        title: 'Steuerberater-Website Hamburg: Webdesign für Kanzleien',
+        title: 'Website für Steuerberater in Hamburg: Mandanten & Bewerber',
         description: 'Was kostet eine Steuerberater-Website? Ab 2.900 Euro zum Festpreis, mit Karriereseite gegen den Fachkräftemangel.',
         url: 'https://webseite.hamburg/leistungen/webdesign-steuerberater',
         type: 'website',
@@ -24,7 +25,7 @@ export const metadata = {
 const faqItems = [
     { q: 'Was kostet eine Website für eine Steuerberatungskanzlei?', a: 'Einseitig mit klarem Weg zum Erstgespräch ab 2.900 Euro, mehrseitig mit Leistungsseiten, Team und Karrierebereich ab 4.500 Euro. Der Preis steht als Festpreis vor Projektstart. Wenn Sie zusätzlich laufende Sichtbarkeit wollen, kommt SEO ab 1.000 Euro im Monat dazu, Mindestlaufzeit drei Monate.' },
     { q: 'Darf ich als Steuerberater überhaupt für meine Kanzlei werben?', a: 'Ja. § 57a StBerG erlaubt Werbung, soweit sie über die berufliche Tätigkeit in Form und Inhalt sachlich unterrichtet und nicht auf einen Auftrag im Einzelfall gerichtet ist. Moderne Website, Fotos, Fachbeiträge, Google-Unternehmensprofil und sachliche Anzeigen sind also zulässig. Unzulässig sind Steuerersparnis-Garantien, marktschreierische Werbung und Kaltakquise bei Nicht-Mandanten.' },
-    { q: 'Kann ich Mandanten als Referenz nennen?', a: 'Nur mit ausdrücklicher, vorheriger Einwilligung, die Sie von der Verschwiegenheitspflicht entbindet. Ohne diese Einwilligung ist die Nennung berufsrechtlich heikel und nach § 203 StGB sogar strafbar. In der Praxis lösen wir das anders: anonymisierte Fallbeispiele („Handwerksbetrieb mit 12 Mitarbeitern, Umstellung auf digitale Belege") wirken fast genauso stark und sind unproblematisch.' },
+    { q: 'Kann ich Mandanten als Referenz nennen?', a: 'Nur mit ausdrücklicher, vorheriger Einwilligung, die Sie von der Verschwiegenheitspflicht entbindet. Ohne diese Einwilligung ist die Nennung berufsrechtlich heikel und nach § 203 StGB sogar strafbar. In der Praxis lösen wir das anders: anonymisierte Fallbeispiele ("Handwerksbetrieb mit 12 Mitarbeitern, Umstellung auf digitale Belege") wirken fast genauso stark und sind unproblematisch.' },
     { q: 'Bringt eine Karriereseite wirklich Bewerbungen?', a: 'Sie ist der Ort, an dem Bewerber prüfen, ob sie zu Ihnen passen. Nach der Berufsstatistik der Bundessteuerberaterkammer liegt das Durchschnittsalter im Berufsstand bei 53,7 Jahren, der Nachwuchs ist knapp und wählerisch. Eine Karriereseite, die Software, Homeoffice-Regelung, Fortbildungsbudget und ein echtes Teamfoto zeigt, beantwortet genau die Fragen, die sonst zum Abbruch der Bewerbung führen.' },
     { q: 'Brauche ich ein Mandantenportal auf der Website?', a: 'Meistens nicht als Eigenentwicklung. Wenn Sie DATEV Meine Steuern, Unternehmen online oder ein anderes Portal nutzen, reicht ein prominenter, klar erklärter Login-Bereich mit Anleitung. Das spart fünfstellige Entwicklungskosten und die Mandanten finden trotzdem ihren Weg.' },
     { q: 'Wie lange dauert das Projekt?', a: 'Zwei bis drei Wochen einseitig, vier bis sechs Wochen mehrseitig. In der Praxis entscheidet die Jahreszeit: Zwischen Mai und September geht es zügig, im Februar und März sind Kanzleien mit anderen Dingen beschäftigt. Wir planen die Textfreigaben entsprechend.' },
@@ -58,6 +59,7 @@ export default function WebdesignSteuerberaterPage() {
 
     return (
         <>
+            <AutoLinks path="/leistungen/webdesign-steuerberater">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -102,10 +104,10 @@ export default function WebdesignSteuerberaterPage() {
                             Ein Muster, das ich bei Kanzleiseiten immer wieder sehe: Die Website erklärt auf 400 Wörtern, was eine Einnahmen-Überschuss-Rechnung ist. Was sie nicht erklärt, ist, ob die Kanzlei überhaupt neue Mandate annimmt. Genau das ist aber die Frage, mit der Unternehmer auf die Seite kommen, seit Kanzleien reihenweise Aufnahmestopps verhängen.
                         </p>
                         <p>
-                            Der zweite Klassiker steht unter „Karriere": eine PDF-Stellenanzeige von 2019, gescannt, mit Faxnummer. Wer Steuerfachangestellte sucht, konkurriert mit Kanzleien, die Homeoffice-Tage, Software und Fortbildungsbudget auf einer eigenen Seite zeigen. Ein gescanntes PDF verliert diesen Vergleich, bevor er beginnt.
+                            Der zweite Klassiker steht unter "Karriere": eine PDF-Stellenanzeige von 2019, gescannt, mit Faxnummer. Wer Steuerfachangestellte sucht, konkurriert mit Kanzleien, die Homeoffice-Tage, Software und Fortbildungsbudget auf einer eigenen Seite zeigen. Ein gescanntes PDF verliert diesen Vergleich, bevor er beginnt.
                         </p>
                         <p>
-                            Meine Empfehlung ist deshalb unromantisch: zwei klare Einstiege auf der Startseite. Einer für „Ich suche einen Steuerberater", einer für „Ich suche einen Job". Alles andere kommt danach.
+                            Meine Empfehlung ist deshalb unromantisch: zwei klare Einstiege auf der Startseite. Einer für "Ich suche einen Steuerberater", einer für "Ich suche einen Job". Alles andere kommt danach.
                         </p>
                     </div>
 
@@ -164,11 +166,11 @@ export default function WebdesignSteuerberaterPage() {
                         <div className="rule-col rule-no">
                             <h3>Nicht zulässig</h3>
                             <ul>
-                                <li>Ersparnis-Garantien wie „50 Prozent weniger Steuern"</li>
+                                <li>Ersparnis-Garantien wie "50 Prozent weniger Steuern"</li>
                                 <li>Mandantennamen und Logos ohne ausdrückliche Einwilligung</li>
                                 <li>Kaltakquise per Mail oder Telefon bei Nicht-Mandanten</li>
                                 <li>Herabsetzende Vergleiche mit anderen Kanzleien</li>
-                                <li>Lockangebote wie „kostenlose Steuerberatung"</li>
+                                <li>Lockangebote wie "kostenlose Steuerberatung"</li>
                                 <li>Ansprache von Betroffenen in akuten Notlagen</li>
                             </ul>
                         </div>
@@ -193,7 +195,7 @@ export default function WebdesignSteuerberaterPage() {
                         </div>
                         <div className="subpage-feature">
                             <h3>Bewerber: echte Arbeitsbedingungen</h3>
-                            <p>Homeoffice-Regelung, Gleitzeit, Fortbildungsbudget, Übernahme der Prüfungsvorbereitung, Teamgröße. Konkret formuliert statt „familiäres Betriebsklima".</p>
+                            <p>Homeoffice-Regelung, Gleitzeit, Fortbildungsbudget, Übernahme der Prüfungsvorbereitung, Teamgröße. Konkret formuliert statt "familiäres Betriebsklima".</p>
                         </div>
                     </div>
 
@@ -208,11 +210,11 @@ export default function WebdesignSteuerberaterPage() {
                         </div>
                         <div className="subpage-feature">
                             <h3>Lokale Sichtbarkeit</h3>
-                            <p>Suchen wie „Steuerberater Hamburg Winterhude" oder „Steuerberater für Handwerksbetriebe" bedienen Sie mit eigener Seitenstruktur und einem gepflegten Unternehmensprofil. Mehr im <Link href="/wissen/google-business-profile-optimieren">Leitfaden zum Google-Unternehmensprofil</Link>.</p>
+                            <p>Suchen wie "Steuerberater Hamburg Winterhude" oder "Steuerberater für Handwerksbetriebe" bedienen Sie mit eigener Seitenstruktur und einem gepflegten Unternehmensprofil. Mehr im <Link href="/wissen/google-business-profile-optimieren">Leitfaden zum Google-Unternehmensprofil</Link>.</p>
                         </div>
                         <div className="subpage-feature">
                             <h3>Sichtbar in KI-Antworten</h3>
-                            <p>Wer „Steuerberater in Hamburg für GmbH-Gründung" in ChatGPT eingibt, bekommt eine Empfehlungsliste. Ob Ihre Kanzlei darin auftaucht, hängt an Struktur und Zitierbarkeit Ihrer Inhalte. Details bei <Link href="/leistungen/ai-seo">AI SEO</Link>.</p>
+                            <p>Wer "Steuerberater in Hamburg für GmbH-Gründung" in ChatGPT eingibt, bekommt eine Empfehlungsliste. Ob Ihre Kanzlei darin auftaucht, hängt an Struktur und Zitierbarkeit Ihrer Inhalte. Details bei <Link href="/leistungen/ai-seo">AI SEO</Link>.</p>
                         </div>
                     </div>
 
@@ -287,6 +289,7 @@ export default function WebdesignSteuerberaterPage() {
             <FaqSection title="Häufige Fragen zu Kanzlei-Websites für Steuerberater" items={faqItems} />
             <RelatedServices exclude="webdesign" />
             <ServiceCta text="Sagen Sie mir im Erstgespräch, ob Sie Mandate, Personal oder beides brauchen. Danach wissen Sie, welche Seiten Ihre Website tatsächlich braucht und welche Sie sich sparen können." />
+            </AutoLinks>
         </>
     );
 }

@@ -1,16 +1,17 @@
 import Link from 'next/link';
+import AutoLinks from '../../src/components/AutoLinks';
 import Breadcrumbs from '../../src/components/Breadcrumbs';
 import { BUSINESS } from '../../src/lib/schema';
 
 export const metadata = {
-    title: 'Referenzen & Case Studies | AISEO Hamburg',
-    description: 'Echte Ergebnisse für echte Unternehmen. Case Studies aus Hamburg: Webdesign, SEO, Google Ads und AI SEO, alle mit messbaren Ergebnissen.',
+    title: 'Referenzen: Webdesign, SEO & Google Ads aus Hamburg',
+    description: 'Zehn echte Projekte mit Zahlen: Blitz Hamburg von 24 auf 374 Google-Klicks im Monat, KinderAlbum von 23 auf 792, DYBeauty mit 2,4-mal mehr Impressionen.',
     alternates: {
         canonical: 'https://webseite.hamburg/referenzen',
     },
     openGraph: {
-        title: 'Referenzen & Case Studies | AISEO Hamburg',
-        description: 'Echte Ergebnisse für echte Unternehmen. Case Studies aus Hamburg: Webdesign, SEO, Google Ads und AI SEO, alle mit messbaren Ergebnissen.',
+        title: 'Referenzen: Webdesign, SEO & Google Ads aus Hamburg',
+        description: 'Zehn echte Projekte mit Zahlen: Blitz Hamburg von 24 auf 374 Google-Klicks im Monat, KinderAlbum von 23 auf 792, DYBeauty mit 2,4-mal mehr Impressionen.',
         url: 'https://webseite.hamburg/referenzen',
         type: 'website',
     },
@@ -70,17 +71,17 @@ const caseStudies = [
     {
         slug: 'solovei-beauty',
         image: '/referenzen/cards/solovei-beauty.webp',
-        alt: 'Illustration: Browserfenster mit Globus und drei Inhaltsbloecken, die per Cursor angeordnet werden',
+        alt: 'Illustration: Browserfenster mit Globus und drei Inhaltsblöcken, die per Cursor angeordnet werden',
         category: 'WEBDESIGN + CMS',
         title: '3 Sprachen, null Abhängigkeit vom Entwickler',
-        client: 'Solovei Beauty',
+        client: 'Solovei Beauty Coworking',
         excerpt: 'Beauty-Coworking in Hamburg. Dreisprachige Website mit Payload CMS, CI/CD Pipeline und der Freiheit, alles selbst zu pflegen. 5.000 Impressionen in 8 Wochen.',
         metric: '5.000 Impressionen in 8 Wochen',
     },
     {
         slug: 'manetec',
         image: '/referenzen/cards/manetec.webp',
-        alt: 'Illustration: Hotelgebaeude unter der Lupe mit Pruefringen und Haekchen-Siegel',
+        alt: 'Illustration: Hotelgebäude unter der Lupe mit Prüfringen und Häkchen-Siegel',
         category: 'WEBDESIGN + KI',
         title: 'Schädlingsbekämpfung trifft KI-Risikoanalyse',
         client: 'Manetec Hamburg',
@@ -110,7 +111,7 @@ const caseStudies = [
     {
         slug: 'glucksmomente-events',
         image: '/referenzen/cards/glucksmomente-events.webp',
-        alt: 'Illustration: Eventbogen mit Ballontraube und geschwungenen Baendern',
+        alt: 'Illustration: Eventbogen mit Ballontraube und geschwungenen Bändern',
         category: 'WEBDESIGN',
         title: 'Aquarell-Ästhetik für Eventplanerin',
         client: 'Glücksmomente Events',
@@ -123,8 +124,8 @@ export default function ReferenzenPage() {
     const collectionJsonLd = {
         '@context': 'https://schema.org',
         '@type': 'CollectionPage',
-        name: 'Referenzen & Case Studies - AISEO Hamburg',
-        description: 'Echte Ergebnisse für echte Unternehmen. Case Studies aus Hamburg: Webdesign, SEO, Google Ads und AI SEO, alle mit messbaren Ergebnissen.',
+        name: 'Referenzen: Webdesign, SEO & Google Ads aus Hamburg',
+        description: 'Zehn echte Projekte mit Zahlen: Blitz Hamburg von 24 auf 374 Google-Klicks im Monat, KinderAlbum von 23 auf 792, DYBeauty mit 2,4-mal mehr Impressionen.',
         url: 'https://webseite.hamburg/referenzen',
         publisher: BUSINESS,
     };
@@ -140,6 +141,7 @@ export default function ReferenzenPage() {
 
     return (
         <>
+            <AutoLinks path="/referenzen">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -149,7 +151,7 @@ export default function ReferenzenPage() {
                     <div className="subpage-hero-split">
                         <div>
                             <p className="section-kicker animate-up">Referenzen</p>
-                            <h1 className="subpage-title animate-up">Echte Projekte. Echte Ergebnisse.</h1>
+                            <h1 className="subpage-title animate-up">Referenzen: echte Projekte, echte Ergebnisse.</h1>
                             <p className="subpage-intro animate-up">
                                 Keine Stockfotos, keine erfundenen Zahlen. Hier sehen Sie, was ich für Unternehmen in Hamburg konkret erreicht habe, mit messbaren Ergebnissen und echten Daten.
                             </p>
@@ -190,7 +192,7 @@ export default function ReferenzenPage() {
             <section className="sp-cta section">
                 <div className="container">
                     <div className="cta-box bull-boundary animate-up">
-                        <p className="section-kicker">Ahnliche Ergebnisse gewunscht?</p>
+                        <p className="section-kicker">Ähnliche Ergebnisse gewünscht?</p>
                         <h2 className="section-title">Kostenloses Erstgespräch.</h2>
                         <p className="offer-framing">Lassen Sie uns über Ihr Projekt sprechen. Ich analysiere Ihre Situation und zeige Ihnen, was konkret möglich ist. Kostenlos und unverbindlich.</p>
                         <div className="cta-actions mt-4">
@@ -199,6 +201,7 @@ export default function ReferenzenPage() {
                     </div>
                 </div>
             </section>
+            </AutoLinks>
         </>
     );
 }

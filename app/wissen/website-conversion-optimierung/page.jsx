@@ -1,14 +1,15 @@
 import ArticleLayout from '../../../src/components/ArticleLayout';
+import AutoLinks from '../../../src/components/AutoLinks';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'Mehr Anfragen ohne mehr Traffic | Conversion Hamburg',
-    description: 'Warum mehr Besucher selten die Lösung ist: wie Sie mit derselben Besucherzahl mehr Anfragen bekommen.',
+    title: 'Conversion-Optimierung der Website: mehr Anfragen erklärt',
+    description: 'Warum mehr Besucher selten die Lösung ist: wie Sie mit derselben Besucherzahl mehr Anfragen bekommen, mit Beispielen aus Hamburger Betrieben und einer Startliste.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/website-conversion-optimierung',
     },
     openGraph: {
-        title: 'Mehr Anfragen ohne mehr Traffic: Conversion-Optimierung erklärt',
+        title: 'Mehr Anfragen ohne mehr Traffic: Conversion-Optimierung der Website erklärt',
         description: 'Warum mehr Besucher selten die Lösung ist. Wie Sie mit der gleichen Besucherzahl deutlich mehr Anfragen bekommen.',
         url: 'https://webseite.hamburg/wissen/website-conversion-optimierung',
         type: 'article',
@@ -20,7 +21,7 @@ export default function ConversionOptimierungArticlePage() {
     const articleJsonLd = {
         '@context': 'https://schema.org',
         '@type': 'Article',
-        headline: 'Mehr Anfragen ohne mehr Traffic: Conversion-Optimierung erklärt',
+        headline: 'Mehr Anfragen ohne mehr Traffic: Conversion-Optimierung der Website erklärt',
         author: { '@type': 'Person', name: 'Vadim Shchepin', url: 'https://www.linkedin.com/in/vadim-shchepin/' },
         publisher: BUSINESS,
         datePublished: '2026-01-10',
@@ -48,12 +49,13 @@ export default function ConversionOptimierungArticlePage() {
             <ArticleLayout
                 slug="website-conversion-optimierung"
                 category="CONVERSION"
-                title="Mehr Anfragen ohne mehr Traffic: Conversion-Optimierung erklärt"
+                title="Mehr Anfragen ohne mehr Traffic: Conversion-Optimierung der Website erklärt"
                 readTime="10 Min."
                 publishDate="2026-01-10"
                 heroImage="/wissen/conversion-hero.svg"
                 heroAlt="Illustration: Besucherstrom, der über einen Trichter zu Anfragen wird"
             >
+                <AutoLinks path="/wissen/website-conversion-optimierung">
                 <p>
                     Wenn die Anfragen stagnieren, ist der erste Reflex fast immer derselbe: mehr Werbung schalten, mehr Budget in <a href="/wissen/google-ads-fehler-lokale-unternehmen">Google Ads</a> stecken, mehr posten. Das kostet und bringt oft weniger als erwartet. Dabei liegt der Engpass meistens schon auf der eigenen Website. Die Besucher sind da, aber zu viele gehen wieder, ohne etwas zu tun.
                 </p>
@@ -87,7 +89,7 @@ export default function ConversionOptimierungArticlePage() {
 
                 <h3>Verwirrende Navigation</h3>
                 <p>
-                    Wenn ein Besucher nicht in wenigen Sekunden versteht, was Sie anbieten und wie er Sie erreicht, ist er wieder weg. Die <a href="https://www.nngroup.com/articles/how-long-do-users-stay-on-web-pages/" target="_blank" rel="noopener noreferrer">Nielsen Norman Group</a> hat gezeigt, dass viele Nutzer eine Seite schon in den ersten 10 bis 20 Sekunden verlassen. Ihre Navigation muss also sofort verständlich sein. Keine verschachtelten Menüs, keine kreativen Wortspiele als Menüpunkte. „Leistungen", „Über uns", „Kontakt" reicht völlig.
+                    Wenn ein Besucher nicht in wenigen Sekunden versteht, was Sie anbieten und wie er Sie erreicht, ist er wieder weg. Die <a href="https://www.nngroup.com/articles/how-long-do-users-stay-on-web-pages/" target="_blank" rel="noopener noreferrer">Nielsen Norman Group</a> hat gezeigt, dass viele Nutzer eine Seite schon in den ersten 10 bis 20 Sekunden verlassen. Ihre Navigation muss also sofort verständlich sein. Keine verschachtelten Menüs, keine kreativen Wortspiele als Menüpunkte. "Leistungen", "Über uns", "Kontakt" reicht völlig.
                 </p>
 
                 <h3>Versteckte Kontaktdaten</h3>
@@ -102,12 +104,12 @@ export default function ConversionOptimierungArticlePage() {
 
                 <h2>CTA: Platzierung und Klarheit</h2>
                 <p>
-                    CTA steht für „Call to Action", also die Handlungsaufforderung auf Ihrer Seite. „Jetzt Termin vereinbaren", „Kostenlos beraten lassen", „Angebot anfordern". Viele Websites haben entweder gar keinen klaren CTA oder verstecken ihn ganz unten.
+                    CTA steht für "Call to Action", also die Handlungsaufforderung auf Ihrer Seite. "Jetzt Termin vereinbaren", "Kostenlos beraten lassen", "Angebot anfordern". Viele Websites haben entweder gar keinen klaren CTA oder verstecken ihn ganz unten.
                 </p>
                 <ul>
                     <li>Der wichtigste CTA gehört in den sichtbaren Bereich, erreichbar ohne Scrollen.</li>
                     <li>Wiederholen Sie ihn nach jedem inhaltlichen Abschnitt.</li>
-                    <li>Schreiben Sie konkret, was passiert. „Kostenloses Erstgespräch buchen" ist besser als „Mehr erfahren".</li>
+                    <li>Schreiben Sie konkret, was passiert. "Kostenloses Erstgespräch buchen" ist besser als "Mehr erfahren".</li>
                     <li>Ein Hauptziel pro Seite. Drei gleichwertige Aktionen nebeneinander lähmen die Entscheidung.</li>
                 </ul>
 
@@ -128,7 +130,7 @@ export default function ConversionOptimierungArticlePage() {
 
                 <h2>Mobil: kein Luxus, sondern Pflicht</h2>
                 <p>
-                    Der größere Teil der lokalen Suchanfragen kommt heute vom Smartphone. Gleichzeitig konvertieren mobile Besucher laut <a href="https://www.statista.com/statistics/439579/global-conversion-rate-by-device/" target="_blank" rel="noopener noreferrer">Statista</a> im Schnitt schlechter als Desktop-Besucher, oft nur halb so gut. Genau deshalb ist die mobile Erfahrung so wichtig: Hier ist am meisten zu verlieren. Mobile Optimierung heißt nicht, dass die Seite „irgendwie passt". Sie heißt konkret:
+                    Der größere Teil der lokalen Suchanfragen kommt heute vom Smartphone. Gleichzeitig konvertieren mobile Besucher laut <a href="https://www.statista.com/statistics/439579/global-conversion-rate-by-device/" target="_blank" rel="noopener noreferrer">Statista</a> im Schnitt schlechter als Desktop-Besucher, oft nur halb so gut. Genau deshalb ist die mobile Erfahrung so wichtig: Hier ist am meisten zu verlieren. Mobile Optimierung heißt nicht, dass die Seite "irgendwie passt". Sie heißt konkret:
                 </p>
                 <ul>
                     <li>Buttons groß genug zum Antippen, mindestens etwa 48 mal 48 Pixel.</li>
@@ -173,12 +175,13 @@ export default function ConversionOptimierungArticlePage() {
                 <h2>Quellen</h2>
                 <ol>
                     <li>Unbounce, Conversion Benchmark Report: mittlere Landingpage-Conversion ~6,6 %, Dienstleister ~4,6 %. <a href="https://unbounce.com/conversion-benchmark-report/" target="_blank" rel="nofollow noopener noreferrer">unbounce.com</a></li>
-                    <li>Portent, „Site Speed Is Still Impacting Your Conversion Rate" (2022): ~4,4 % weniger Conversion pro zusätzlicher Sekunde (0 bis 5 s); 1 s lädt ~2,5× besser als 5 s. <a href="https://www.portent.com/blog/design-dev/site-speed-is-still-impacting-your-conversion-rate.htm" target="_blank" rel="nofollow noopener noreferrer">portent.com</a></li>
-                    <li>Nielsen Norman Group, „How Long Do Users Stay on Web Pages?": Großteil der Absprünge in den ersten 10 bis 20 Sekunden. <a href="https://www.nngroup.com/articles/how-long-do-users-stay-on-web-pages/" target="_blank" rel="nofollow noopener noreferrer">nngroup.com</a></li>
+                    <li>Portent, Site Speed Is Still Impacting Your Conversion Rate (2022): ~4,4 % weniger Conversion pro zusätzlicher Sekunde (0 bis 5 s); 1 s lädt ~2,5× besser als 5 s. <a href="https://www.portent.com/blog/design-dev/site-speed-is-still-impacting-your-conversion-rate.htm" target="_blank" rel="nofollow noopener noreferrer">portent.com</a></li>
+                    <li>Nielsen Norman Group, How Long Do Users Stay on Web Pages?: Großteil der Absprünge in den ersten 10 bis 20 Sekunden. <a href="https://www.nngroup.com/articles/how-long-do-users-stay-on-web-pages/" target="_blank" rel="nofollow noopener noreferrer">nngroup.com</a></li>
                     <li>Baymard Institute, Checkout- und Form-Usability: zu viele Felder als häufiger Abbruchgrund. <a href="https://baymard.com/blog/checkout-usability" target="_blank" rel="nofollow noopener noreferrer">baymard.com</a></li>
                     <li>BrightLocal, Local Consumer Review Survey: Bewertungen als zentrales Vertrauenssignal, Mehrheit erwartet ≥ 4 Sterne. <a href="https://www.brightlocal.com/research/local-consumer-review-survey/" target="_blank" rel="nofollow noopener noreferrer">brightlocal.com</a></li>
                     <li>Statista, Conversion Rate by Device: Desktop konvertiert im Schnitt deutlich besser als mobil. <a href="https://www.statista.com/statistics/439579/global-conversion-rate-by-device/" target="_blank" rel="nofollow noopener noreferrer">statista.com</a></li>
                 </ol>
+                </AutoLinks>
             </ArticleLayout>
         </>
     );

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
@@ -7,13 +8,13 @@ import ServiceMeta from '../../../src/components/ServiceMeta';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'ChatGPT Ads schalten | Werbung in ChatGPT',
-    description: 'ChatGPT Ads sind in Deutschland freigeschaltet. Ich schalte selbst seit dem Start und baue Ihre Kampagne auf: Setup ab 700 €, Betreuung ab 500 €/Monat.',
+    title: 'ChatGPT Ads schalten: Kosten, Ablauf und Betreuung',
+    description: 'ChatGPT Ads laufen seit August 2026 in Deutschland. Ich schalte selbst seit dem Start und baue Ihre Kampagne auf: Setup ab 1.400 €, Betreuung ab 1.000 €/Monat.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/chatgpt-ads',
     },
     openGraph: {
-        title: 'ChatGPT Ads schalten | Werbung in ChatGPT Deutschland',
+        title: 'ChatGPT Ads schalten: Kosten, Ablauf und Betreuung',
         description: 'Werbung in ChatGPT für deutsche Unternehmen: Kampagnenaufbau im OpenAI Ads Manager, Pixel-Tracking, Landingpage. Ich schalte seit dem Start eigene Kampagnen.',
         url: 'https://webseite.hamburg/leistungen/chatgpt-ads',
         type: 'website',
@@ -21,8 +22,8 @@ export const metadata = {
 };
 
 const faqItems = [
-    { q: 'Kann man in Deutschland schon ChatGPT Ads schalten?', a: 'Ja. Anzeigen laufen in ChatGPT für deutsche Nutzer seit dem 24. August 2026, und der Self-Service-Zugang zum OpenAI Ads Manager ist inzwischen freigeschaltet: In der offiziellen Verfügbarkeitsliste von OpenAI steht Deutschland auf „Available" (Stand 1. September 2026). Ein Vertriebsteam oder eine Partneragentur brauchen Sie dafür nicht mehr, ein Werbekonto genügt.' },
-    { q: 'Was kosten ChatGPT Ads?', a: 'Drei getrennte Posten. Erstens Ihr Werbebudget, das direkt an OpenAI geht: abgerechnet wird pro 1.000 Impressionen (CPM) oder pro gültigem Klick (CPC), OpenAI empfiehlt für CPC-Kampagnen ein Start-Höchstgebot von 3 bis 5 US-Dollar pro Klick. Zweitens das Kampagnen-Setup ab 700 € einmalig. Drittens die laufende Betreuung ab 500 € pro Monat. Als Testbudget empfehle ich mindestens 500 € im Monat über zwei bis drei Monate, sonst reichen die Daten für eine Entscheidung nicht.' },
+    { q: 'Kann man in Deutschland schon ChatGPT Ads schalten?', a: 'Ja. Anzeigen laufen in ChatGPT für deutsche Nutzer seit dem 24. August 2026, und der Self-Service-Zugang zum OpenAI Ads Manager ist inzwischen freigeschaltet: In der offiziellen Verfügbarkeitsliste von OpenAI steht Deutschland auf "Available" (Stand 1. September 2026). Ein Vertriebsteam oder eine Partneragentur brauchen Sie dafür nicht mehr, ein Werbekonto genügt.' },
+    { q: 'Was kosten ChatGPT Ads?', a: 'Drei getrennte Posten. Erstens Ihr Werbebudget, das direkt an OpenAI geht: abgerechnet wird pro 1.000 Impressionen (CPM) oder pro gültigem Klick (CPC), OpenAI empfiehlt für CPC-Kampagnen ein Start-Höchstgebot von 3 bis 5 US-Dollar pro Klick. Zweitens das Kampagnen-Setup ab 1.400 € einmalig. Drittens die laufende Betreuung ab 1.000 € pro Monat. Als Testbudget empfehle ich mindestens 500 € im Monat über zwei bis drei Monate, sonst reichen die Daten für eine Entscheidung nicht.' },
     { q: 'Wer sieht Anzeigen in ChatGPT?', a: 'Nur Nutzerinnen und Nutzer der Tarife Free und Go. Plus, Pro, Business, Enterprise und Edu bleiben werbefrei, und Konten, die laut Altersangabe oder Altersschätzung unter 18 Jahre alt sind, bekommen keine Anzeigen. Die Anzeige erscheint unterhalb der Antwort, klar als gesponsert gekennzeichnet und optisch von der Antwort getrennt.' },
     { q: 'Kann ich wie bei Google Ads Keywords buchen?', a: 'Nein, und das ist der wichtigste Unterschied. Auf Anzeigengruppen-Ebene hinterlegen Sie Kontext-Hinweise: Beschreibungen der Gespräche, Themen und Begriffe, in denen Ihr Angebot nützlich ist. OpenAI nutzt sie als Signal, nicht als Exact-Match-Keyword. Ausgespielt wird nach erwarteter Relevanz für die laufende Unterhaltung, entschieden in einer relevanzgewichteten Zweitpreisauktion.' },
     { q: 'Wie messe ich, ob sich das rechnet?', a: 'Über den OpenAI-Pixel, die Conversions API oder beides parallel mit gemeinsamer Event-ID, dazu UTM-Parameter auf der Landingpage für Ihre eigene Analytics. Der Ads Manager berichtet Impressionen, Klicks, Spend, CTR, durchschnittlichen CPC, durchschnittlichen CPM und Conversions. Genau dieses Setup baue ich mit auf, weil eine Kampagne ohne Conversion-Signal nicht nur blind ist, sondern bei conversion-optimierten Klick-Kampagnen auch schlechter ausgeliefert wird.' },
@@ -46,8 +47,8 @@ export default function ChatGptAdsPage() {
         url: 'https://webseite.hamburg/leistungen/chatgpt-ads',
         description: 'Werbung in ChatGPT für deutsche Unternehmen: Aufbau und Betreuung von Kampagnen im OpenAI Ads Manager, Conversion-Tracking über Pixel und Conversions API, Landingpage und Reporting.',
         offers: [
-            { '@type': 'Offer', name: 'Kampagnen-Setup ChatGPT Ads', price: '700', priceCurrency: 'EUR' },
-            { '@type': 'Offer', name: 'Laufende Betreuung', price: '500', priceCurrency: 'EUR', priceSpecification: { '@type': 'UnitPriceSpecification', unitText: 'Monat' } },
+            { '@type': 'Offer', name: 'Kampagnen-Setup ChatGPT Ads', price: '1400', priceCurrency: 'EUR' },
+            { '@type': 'Offer', name: 'Laufende Betreuung', price: '1000', priceCurrency: 'EUR', priceSpecification: { '@type': 'UnitPriceSpecification', unitText: 'Monat' } },
         ],
     };
 
@@ -63,6 +64,7 @@ export default function ChatGptAdsPage() {
 
     return (
         <>
+            <AutoLinks path="/leistungen/chatgpt-ads">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -98,7 +100,7 @@ export default function ChatGptAdsPage() {
                             <span className="subpage-stat-label">Seitdem laufen Anzeigen in ChatGPT für deutsche Free- und Go-Nutzer</span>
                         </div>
                         <div className="subpage-stat">
-                            <span className="subpage-stat-value">3–5 $</span>
+                            <span className="subpage-stat-value">3 bis 5 $</span>
                             <span className="subpage-stat-label">Start-Höchstgebot pro Klick, das OpenAI selbst für CPC-Kampagnen empfiehlt</span>
                         </div>
                         <div className="subpage-stat">
@@ -158,7 +160,7 @@ export default function ChatGptAdsPage() {
                             <tbody>
                                 <tr><th>Auslöser</th><td>Kontext und Absicht des laufenden Gesprächs</td><td>Das eingetippte Keyword</td></tr>
                                 <tr><th>Phase</th><td>Recherchieren, vergleichen, abwägen</td><td>Entschieden, jetzt kaufen oder anfragen</td></tr>
-                                <tr><th>Wettbewerb in Deutschland</th><td>Seit wenigen Tagen offen, dünn besetzt</td><td>Seit über 20 Jahren, voll besetzt</td></tr>
+                                <tr><th>Wettbewerb in Deutschland</th><td>Seit August 2026 offen, dünn besetzt</td><td>Seit über 20 Jahren, voll besetzt</td></tr>
                                 <tr><th>Benchmarks</th><td>Existieren noch nicht</td><td>Für jede Branche verfügbar</td></tr>
                                 <tr><th>Steuerung</th><td>Kontext-Hinweise, Geo, Custom Audiences</td><td>Keywords, Match Types, Gebotsstrategien</td></tr>
                                 <tr><th>Rolle im Marketing</th><td>Testbudget mit Lernvorsprung</td><td>Grundlast für planbare Anfragen</td></tr>
@@ -229,7 +231,7 @@ export default function ChatGptAdsPage() {
                     <div className="subpage-pricing-compare animate-up">
                         <div className="subpage-price-col">
                             <h3>Kampagnen-Setup</h3>
-                            <div className="sp-price-value">ab 700 &euro;</div>
+                            <div className="sp-price-value">ab 1.400 &euro;</div>
                             <p>Einmalig. Danach steht ein sauber aufgesetztes, messbares Konto, auch wenn Sie es selbst weiterführen wollen.</p>
                             <ul className="sp-price-includes">
                                 <li>Ads-Manager-Konto und Kampagnenstruktur</li>
@@ -241,7 +243,7 @@ export default function ChatGptAdsPage() {
                         </div>
                         <div className="subpage-price-col subpage-price-featured">
                             <h3>Laufende Betreuung</h3>
-                            <div className="sp-price-value">ab 500 &euro;/Monat</div>
+                            <div className="sp-price-value">ab 1.000 &euro;/Monat</div>
                             <p>Monatlich kündbar. Werbebudget kommt separat dazu, die Höhe bestimmen Sie.</p>
                             <ul className="sp-price-includes">
                                 <li>Wöchentliche Optimierung von Geboten, Hinweisen und Anzeigen</li>
@@ -264,11 +266,11 @@ export default function ChatGptAdsPage() {
                     <div className="subpage-sources animate-up">
                         <h2>Quellen</h2>
                         <ol>
-                            <li>OpenAI Help Center, „Ads Manager Availability": Deutschland als Self-Service verfügbar, abgerufen am 1. September 2026. <a href="https://help.openai.com/en/articles/20001245-ads-manager-availability" rel="nofollow noopener" target="_blank">help.openai.com</a></li>
-                            <li>OpenAI, „ChatGPT Ads expands across Europe", 18. August 2026: 31 europäische Märkte inklusive Deutschland, Anzeigen nur in Free und Go, zehntausende Werbetreibende weltweit. <a href="https://openai.com/index/chatgpt-ads-expands-across-europe/" rel="nofollow noopener" target="_blank">openai.com</a></li>
-                            <li>OpenAI Help Center, „Ads in ChatGPT: The Basics": Anzeigenformat, CPM und CPC, empfohlenes Start-Höchstgebot von 3 bis 5 US-Dollar pro Klick, relevanzgewichtete Zweitpreisauktion, Reporting-Kennzahlen. <a href="https://help.openai.com/en/articles/20001207-ads-in-chatgpt-the-basics" rel="nofollow noopener" target="_blank">help.openai.com</a></li>
-                            <li>OpenAI Help Center, „Anzeigen in ChatGPT": Platzierung unterhalb der Antwort, Kennzeichnung, keine Anzeigen in Plus, Pro, Business, Enterprise und Edu sowie für Konten unter 18 Jahren. <a href="https://help.openai.com/de-de/articles/20001047-ads-in-chatgpt" rel="nofollow noopener" target="_blank">help.openai.com</a></li>
-                            <li>OpenAI Help Center, „Daily Budgets": Tagesbudget als Durchschnitt über sieben Tage, maximal doppelter Tagesbetrag an einem Tag. <a href="https://help.openai.com/en/articles/20001413-daily-budgets" rel="nofollow noopener" target="_blank">help.openai.com</a></li>
+                            <li>OpenAI Help Center, Ads Manager Availability: Deutschland als Self-Service verfügbar, abgerufen am 1. September 2026. <a href="https://help.openai.com/en/articles/20001245-ads-manager-availability" rel="nofollow noopener" target="_blank">help.openai.com</a></li>
+                            <li>OpenAI, ChatGPT Ads expands across Europe, 18. August 2026: 31 europäische Märkte inklusive Deutschland, Anzeigen nur in Free und Go, zehntausende Werbetreibende weltweit. <a href="https://openai.com/index/chatgpt-ads-expands-across-europe/" rel="nofollow noopener" target="_blank">openai.com</a></li>
+                            <li>OpenAI Help Center, Ads in ChatGPT: The Basics: Anzeigenformat, CPM und CPC, empfohlenes Start-Höchstgebot von 3 bis 5 US-Dollar pro Klick, relevanzgewichtete Zweitpreisauktion, Reporting-Kennzahlen. <a href="https://help.openai.com/en/articles/20001207-ads-in-chatgpt-the-basics" rel="nofollow noopener" target="_blank">help.openai.com</a></li>
+                            <li>OpenAI Help Center, Anzeigen in ChatGPT: Platzierung unterhalb der Antwort, Kennzeichnung, keine Anzeigen in Plus, Pro, Business, Enterprise und Edu sowie für Konten unter 18 Jahren. <a href="https://help.openai.com/de-de/articles/20001047-ads-in-chatgpt" rel="nofollow noopener" target="_blank">help.openai.com</a></li>
+                            <li>OpenAI Help Center, Daily Budgets: Tagesbudget als Durchschnitt über sieben Tage, maximal doppelter Tagesbetrag an einem Tag. <a href="https://help.openai.com/en/articles/20001413-daily-budgets" rel="nofollow noopener" target="_blank">help.openai.com</a></li>
                             <li>OpenAI Developers, Ads-Dokumentation: Measurement Pixel, Conversions API, Advertiser API, Geo-Targeting, Custom Audiences, conversion-optimierte Kampagnen. <a href="https://developers.openai.com/ads" rel="nofollow noopener" target="_blank">developers.openai.com/ads</a></li>
                         </ol>
                     </div>
@@ -278,6 +280,7 @@ export default function ChatGptAdsPage() {
             <FaqSection title="Fragen zu ChatGPT Ads" items={faqItems} />
             <RelatedServices exclude="chatgpt-ads" />
             <ServiceCta text="20 Minuten, Ihre Zahlen, eine klare Antwort: Trägt sich ChatGPT Ads für Ihr Angebot oder nicht? Kostenlos und ohne Verpflichtung." />
+            </AutoLinks>
         </>
     );
 }

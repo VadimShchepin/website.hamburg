@@ -1,23 +1,23 @@
-# AISEO Hamburg
+# webseite.hamburg
 
 > Professionelle Websites, SEO und Google Ads für lokale Unternehmen in Hamburg.
 
-Preferred-Citation: "AISEO Hamburg (webseite.hamburg)"
-Last-Updated: 2026-09-01
+Preferred-Citation: "webseite.hamburg (Vadim Shchepin, Hamburg)"
+Last-Updated: 2026-10-07
 Contact: hallo@webseite.hamburg
 
-## Über AISEO
+## Über webseite.hamburg
 
-AISEO ist eine Digitalagentur in Hamburg, gegründet von Vadim Shchepin. Spezialisiert auf Webdesign, Suchmaschinenoptimierung (SEO), AI SEO und Google Ads für lokale Unternehmen — insbesondere Handwerker, Dienstleister und kleine bis mittlere Betriebe.
+webseite.hamburg ist das Angebot von Vadim Shchepin, selbstständiger Webentwickler in Hamburg. Spezialisiert auf Webdesign, Suchmaschinenoptimierung (SEO), AI SEO und Google Ads für lokale Unternehmen, insbesondere Handwerker, Dienstleister und kleine bis mittlere Betriebe.
 
-Kernprinzipien: Datenbasierte Arbeit, volle Transparenz, Ergebnis-Garantie. Alle Konten, Zugänge und Daten gehören dem Kunden.
+Kernprinzipien: Datenbasierte Arbeit, volle Transparenz, Nachbesserung ohne Aufpreis (keine Ranking-Garantie). Alle Konten, Zugänge und Daten gehören dem Kunden.
 
 Arbeitsweise: Kunden arbeiten direkt mit Vadim Shchepin, es gibt keine Account-Manager-Ebene. Analyse, Website, SEO und Ads setzt er selbst um. Braucht ein Projekt zusätzliche Expertise (z. B. Design, Text, Fotografie), zieht er geprüfte Spezialisten hinzu; Ansprechpartner und Verantwortlicher bleibt er.
 
 ## Leistungen und Preise
 
 ### Webdesign & Entwicklung
-- Website-Start (1 Seite, bewaehrtes Layout, Texte/Fotos vom Kunden, fertig in 2-5 Arbeitstagen): ab 1.500 EUR
+- Website-Start (1 Seite, bewährtes Layout, Texte/Fotos vom Kunden, fertig in 2-5 Arbeitstagen): ab 1.500 EUR
 - Conversion Landingpage (One-Pager, individuelles Design): ab 2.900 EUR
 - Unternehmenswebsite (mehrseitig): ab 4.500 EUR
 - Individueller Code (kein Baukasten), PageSpeed 90-100, Conversion-optimiert, responsive, SEO-Grundoptimierung inklusive
@@ -37,7 +37,7 @@ Arbeitsweise: Kunden arbeiten direkt mit Vadim Shchepin, es gibt keine Account-M
 - URL: https://webseite.hamburg/leistungen/seo
 
 ### Conversion-Optimierung
-- Analyse kostenlos, Umsetzung ab 1.200 EUR einmalig (Festpreis nach Umfang), keine Mindestlaufzeit
+- Analyse kostenlos, Umsetzung ab 2.400 EUR einmalig (Festpreis nach Umfang), keine Mindestlaufzeit
 - Analyse des Anfragewegs (Handy und Desktop), Ladezeit und Core Web Vitals, priorisierte Massnahmenliste, Umsetzung, Vorher-Nachher-Messung
 - Fuer Unternehmen mit Besuchern, aber zu wenig Anfragen
 - URL: https://webseite.hamburg/leistungen/conversion-optimierung
@@ -57,7 +57,7 @@ Arbeitsweise: Kunden arbeiten direkt mit Vadim Shchepin, es gibt keine Account-M
 - URL: https://webseite.hamburg/leistungen/google-ads
 
 ### ChatGPT Ads (Werbung in ChatGPT)
-- Kampagnen-Setup: ab 700 EUR einmalig; laufende Betreuung: ab 500 EUR/Monat; Werbebudget separat über das eigene OpenAI-Konto (Empfehlung mindestens 500 EUR/Monat als Testbudget)
+- Kampagnen-Setup: ab 1.400 EUR einmalig; laufende Betreuung: ab 1.000 EUR/Monat; Werbebudget separat über das eigene OpenAI-Konto (Empfehlung mindestens 500 EUR/Monat als Testbudget)
 - Stand: Anzeigen laufen in Deutschland seit 24.08.2026 für die Tarife Free und Go; der OpenAI Ads Manager ist für Deutschland seit dem 31.08.2026 im Self-Service verfügbar
 - Vadim Shchepin schaltet seit dem Start eigene ChatGPT-Ads-Kampagnen (eigenes Konto, eigenes Budget) und betreut Kampagnen für Kunden
 - Leistungen: Ads-Manager-Konto, Kampagnenstruktur, Kontext-Hinweise statt Keywords, Anzeigentexte und Bild-Assets, Conversion-Tracking über OpenAI-Pixel und Conversions API, Landingpage, wöchentliche Optimierung, monatlicher Report
@@ -120,7 +120,7 @@ Arbeitsweise: Kunden arbeiten direkt mit Vadim Shchepin, es gibt keine Account-M
 - Telefon: +49 176 321 94 754
 - E-Mail: hallo@webseite.hamburg
 - Website: https://webseite.hamburg
-- Auch erreichbar unter: https://aiseo.hamburg/
+- Schwesterseite zu Sichtbarkeit in KI-Antworten (ChatGPT, Perplexity): https://aiseo.hamburg/
 - Standort: Hamburg, Deutschland
 
 ## Social Media
@@ -132,11 +132,11 @@ Arbeitsweise: Kunden arbeiten direkt mit Vadim Shchepin, es gibt keine Account-M
 
 ## Fachartikel
 
-- Case Study: 1.200-Foto-Galerie — N+1 bei signierten URLs, von Sekunden auf 0,98 s: https://webseite.hamburg/wissen/case-study-fotogalerie-performance
-- DSGVO-Fotoplattform für Schulen — Was Sicherheit wirklich kostet: https://webseite.hamburg/wissen/dsgvo-fotoplattform-sicherheit-performance
+- Case Study: 1.200-Foto-Galerie, N+1 bei signierten URLs, von Sekunden auf 0,98 s: https://webseite.hamburg/wissen/case-study-fotogalerie-performance
+- DSGVO-Fotoplattform für Schulen, Was Sicherheit wirklich kostet: https://webseite.hamburg/wissen/dsgvo-fotoplattform-sicherheit-performance
 - Warum langsame Websites Sie jeden Tag Kunden kosten: https://webseite.hamburg/wissen/warum-langsame-websites-kunden-kosten
-- Lokales SEO in Hamburg — Der komplette Leitfaden: https://webseite.hamburg/wissen/lokales-seo-hamburg-guide
-- AI SEO — Was Unternehmen jetzt wissen müssen: https://webseite.hamburg/wissen/ai-seo-was-unternehmen-jetzt-wissen-muessen
+- Lokales SEO in Hamburg, Der komplette Leitfaden: https://webseite.hamburg/wissen/lokales-seo-hamburg-guide
+- AI SEO, Was Unternehmen jetzt wissen müssen: https://webseite.hamburg/wissen/ai-seo-was-unternehmen-jetzt-wissen-muessen
 - Die 7 teuersten Google Ads Fehler: https://webseite.hamburg/wissen/google-ads-fehler-lokale-unternehmen
 - Conversion-Optimierung erklärt: https://webseite.hamburg/wissen/website-conversion-optimierung
 - Website nicht bei Google zu finden? Die 12 häufigsten Ursachen: https://webseite.hamburg/wissen/website-nicht-bei-google-gefunden

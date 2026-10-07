@@ -1,15 +1,16 @@
 import ArticleLayout from '../../../src/components/ArticleLayout';
+import AutoLinks from '../../../src/components/AutoLinks';
 import { BUSINESS } from '../../../src/lib/schema';
 import Link from 'next/link';
 
 export const metadata = {
-    title: 'Impressum und Datenschutz: was rein muss',
+    title: 'Impressum und Datenschutzerklärung: Pflichtangaben 2026',
     description: 'Die Impressumspflicht steht seit Mai 2024 in § 5 DDG, nicht mehr im TMG. Alle Pflichtangaben, Art. 13 DSGVO und die häufigen Fehler.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/impressum-datenschutzerklaerung-pflicht',
     },
     openGraph: {
-        title: 'Impressum und Datenschutz: was rein muss',
+        title: 'Impressum und Datenschutzerklärung: Pflichtangaben 2026',
         description: 'Die Impressumspflicht steht seit Mai 2024 in § 5 DDG. Alle Pflichtangaben, Art. 13 DSGVO und die häufigen Fehler.',
         url: 'https://webseite.hamburg/wissen/impressum-datenschutzerklaerung-pflicht',
         type: 'article',
@@ -91,6 +92,7 @@ export default function ImpressumDatenschutzPflichtPage() {
                 heroImage="/wissen/hero-impressum-pflicht.svg"
                 heroAlt="Illustration: zwei gestapelte Dokumentseiten mit Paragraphenzeichen und einem roten Stempel darüber"
             >
+                <AutoLinks path="/wissen/impressum-datenschutzerklaerung-pflicht">
                 <p>
                     Es gibt einen Fehler, den ich auf so vielen deutschen Websites finde, dass er inzwischen fast
                     normal wirkt: den Verweis auf § 5 TMG. Das Telemediengesetz ist am 14. Mai 2024 außer Kraft
@@ -354,6 +356,7 @@ export default function ImpressumDatenschutzPflichtPage() {
                         <li>DSGVO Art. 44, allgemeine Grundsätze der Datenübermittlung an Drittländer. <a href="https://dsgvo-gesetz.de/art-44-dsgvo/" rel="nofollow noopener" target="_blank">dsgvo-gesetz.de</a></li>
                     </ol>
                 </div>
+                </AutoLinks>
             </ArticleLayout>
         </>
     );

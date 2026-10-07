@@ -49,12 +49,12 @@ export default function ServicesPageClient() {
                 <div className="container">
                     <div className="subpage-hero-split">
                         <div>
-                            <p className="section-kicker animate-up">Leistungen & Preise</p>
+                            <p className="section-kicker animate-up">Klare Preise. Echte Ergebnisse.</p>
                             <h1 className="section-title animate-up" style={{ fontSize: 'clamp(2.2rem, 5vw, 3.5rem)' }}>
-                                Klare Leistungen. Faire Preise. Echte Ergebnisse.
+                                Leistungen und Preise für Webdesign, SEO und Google Ads
                             </h1>
                             <p className="large-text animate-up" style={{ maxWidth: 680 }}>
-                                Keine versteckten Kosten, keine vagen Versprechen. Sie wissen genau, was Sie bekommen, und können die Ergebnisse jederzeit einsehen. Ich arbeite datenbasiert, kommuniziere transparent und optimiere, bis das Ergebnis stimmt.
+                                Keine versteckten Kosten, keine vagen Versprechen. Sie wissen vorher, was Sie bekommen, und sehen die Ergebnisse jederzeit selbst. Sie können einzelne Leistungen buchen oder mich als festen Partner für Ihr Wachstum einsetzen: Dann greifen Website, Sichtbarkeit bei Google und Anzeigen ineinander, und Sie haben einen Ansprechpartner für alles.
                             </p>
                         </div>
                         <div className="subpage-hero-media animate-up">
@@ -108,7 +108,7 @@ export default function ServicesPageClient() {
                                 <h3>Was Sie bekommen</h3>
                                 <ul className="check-list">
                                     <li>Individuelles Design, kein Template, kein Baukasten</li>
-                                    <li>Blitzschnelle Ladezeiten (PageSpeed 90-100)</li>
+                                    <li>Schnelle Ladezeiten (PageSpeed 90 bis 100)</li>
                                     <li>Klare Nutzerführung mit durchdachtem Conversion-Pfad</li>
                                     <li>Responsive auf allen Geräten</li>
                                     <li>SEO-Grundoptimierung inklusive</li>
@@ -187,7 +187,8 @@ export default function ServicesPageClient() {
                                     <li>Conversion Tracking</li>
                                 </ul>
                             </div>
-                            <p className="sp-price-note animate-up">Finale Preise nach kostenlosem Erstgespräch. Kein Angebot ohne Ihre Anforderungen zu verstehen.</p>
+                            <p className="sp-price-note animate-up">Finale Preise nach dem kostenlosen Erstgespräch. Ein Angebot gibt es erst, wenn ich Ihre Anforderungen verstanden habe.</p>
+                            <p className="sp-price-note animate-up">Lieber monatlich zahlen als einmalig investieren? Eine Website im Monatsabo mit Hosting, Pflege und kleinen Änderungen ist in Planung.</p>
                         </div>
                     </div>
 
@@ -215,9 +216,9 @@ export default function ServicesPageClient() {
                     <div className="sp-service-layout">
                         <div className="sp-service-content">
                             <p className="section-kicker animate-up">SEO & Lokale Sichtbarkeit</p>
-                            <h2 className="section-title animate-up">Gefunden werden, wenn Ihre Kunden suchen.</h2>
+                            <h2 className="section-title animate-up">SEO in Hamburg: gefunden werden, wenn Ihre Kunden suchen.</h2>
                             <p className="large-text animate-up">
-                                93% aller Online-Erfahrungen beginnen mit einer Suchmaschine. Wenn Ihr Unternehmen dort nicht sichtbar ist, existiert es für potenzielle Kunden nicht. Lokale SEO sorgt dafür, dass Sie genau dann erscheinen, wenn jemand in Ihrer Region nach Ihrer Dienstleistung sucht.
+                                Wer einen Dienstleister braucht, sucht zuerst bei Google, oft vom Smartphone und oft mit dem Ortsnamen. Taucht Ihr Unternehmen dort nicht auf, bekommt die Anfrage jemand anderes. Lokale SEO sorgt dafür, dass Sie erscheinen, wenn jemand in Ihrer Region nach Ihrer Leistung sucht: in der Trefferliste und auf der Karte.
                             </p>
 
                             <div className="sp-what-you-get animate-up">
@@ -253,7 +254,7 @@ export default function ServicesPageClient() {
                                     <li>Live-Dashboard-Zugang</li>
                                 </ul>
                             </div>
-                            <p className="sp-price-note animate-up">Erste Ergebnisse typischerweise nach 4-8 Wochen. Volle Wirkung nach 3-6 Monaten. Wenn die Ergebnisse nicht stimmen, arbeite ich weiter, ohne Aufpreis.</p>
+                            <p className="sp-price-note animate-up">Erste Ergebnisse typischerweise nach 4 bis 8 Wochen, volle Wirkung nach 3 bis 6 Monaten. Wenn die Ergebnisse nicht stimmen, arbeite ich weiter, ohne Aufpreis.</p>
                         </div>
                     </div>
                 </div>
@@ -286,7 +287,7 @@ export default function ServicesPageClient() {
 
                             <div className="sp-transparency-box animate-up">
                                 <h3>Warum das jetzt relevant ist</h3>
-                                <p>AI-Suche wachst monatlich. Unternehmen, die heute ihre Inhalte für AI optimieren, sichern sich einen Vorsprung, der später schwer einzuholen ist. Es ist das SEO von morgen, und es beginnt jetzt.</p>
+                                <p>AI-Suche wächst monatlich. Unternehmen, die heute ihre Inhalte für AI optimieren, sichern sich einen Vorsprung, der später schwer einzuholen ist. Es ist das SEO von morgen, und es beginnt jetzt.</p>
                             </div>
                         </div>
 
@@ -338,7 +339,7 @@ export default function ServicesPageClient() {
                     <div className="sp-service-layout">
                         <div className="sp-service-content">
                             <p className="section-kicker animate-up">Google & Local Ads</p>
-                            <h2 className="section-title animate-up">Sofort sichtbar. Sofort Anfragen.</h2>
+                            <h2 className="section-title animate-up">Google Ads: sofort sichtbar, sofort Anfragen.</h2>
                             <p className="large-text animate-up">
                                 SEO braucht Zeit. Ads liefern sofort. Ich schalte Google Ads und Local Services Ads, die genau die Menschen erreichen, die gerade aktiv nach Ihrer Dienstleistung suchen. Jeder Euro wird getrackt. Sie sehen genau, was er bringt.
                             </p>
@@ -384,7 +385,7 @@ export default function ServicesPageClient() {
                                     <li>Monatlicher Performance-Report</li>
                                 </ul>
                             </div>
-                            <p className="sp-price-note animate-up">Dazu kommt Ihr Werbebudget, empfohlen sind mindestens 500 &euro;/Mt. Es läuft über Ihr eigenes Google-Konto, ich verdiene daran nichts. Den passenden Rahmen klaren wir im Erstgespräch.</p>
+                            <p className="sp-price-note animate-up">Dazu kommt Ihr Werbebudget, empfohlen sind mindestens 500 &euro;/Mt. Es läuft über Ihr eigenes Google-Konto, ich verdiene daran nichts. Den passenden Rahmen klären wir im Erstgespräch.</p>
                         </div>
                     </div>
                 </div>
@@ -424,7 +425,7 @@ export default function ServicesPageClient() {
                         <div className="sp-service-sidebar">
                             <div className="sp-price-card bull-boundary animate-up">
                                 <p className="sp-price-label">Kampagnen-Setup</p>
-                                <div className="sp-price-value">ab 700 &euro;</div>
+                                <div className="sp-price-value">ab 1.400 &euro;</div>
                                 <p className="sp-price-desc">Einmalig. Konto, Kampagne und Messung stehen sauber, auch wenn Sie danach selbst weitermachen.</p>
                                 <ul className="sp-price-includes">
                                     <li>Konto- und Kampagnenaufbau</li>
@@ -435,7 +436,7 @@ export default function ServicesPageClient() {
                             </div>
                             <div className="sp-price-card bull-boundary animate-up delay-1">
                                 <p className="sp-price-label">Laufende Betreuung</p>
-                                <div className="sp-price-value">ab 500 &euro;/Mt.</div>
+                                <div className="sp-price-value">ab 1.000 &euro;/Mt.</div>
                                 <p className="sp-price-desc">Monatlich kündbar. Werbebudget kommt separat dazu und läuft über Ihr eigenes OpenAI-Konto.</p>
                                 <ul className="sp-price-includes">
                                     <li>Gebote, Hinweise, Kreative</li>
@@ -457,7 +458,7 @@ export default function ServicesPageClient() {
                     <div className="sp-service-layout">
                         <div className="sp-service-content">
                             <p className="section-kicker animate-up">Website-Audit</p>
-                            <h2 className="section-title animate-up">Wissen, wo Sie stehen, bevor Sie investieren.</h2>
+                            <h2 className="section-title animate-up">Kostenloses Website-Audit: wissen, wo Sie stehen.</h2>
                             <p className="large-text animate-up">
                                 Bevor wir über Lösungen sprechen, analysiere ich Ihre aktuelle Situation. Was funktioniert? Was kostet Sie Kunden? Wo liegt das größte Potenzial? Das Audit ist kostenlos, ehrlich und konkret, mit klaren Handlungsempfehlungen, die Sie auch ohne mich umsetzen können.
                             </p>
@@ -522,12 +523,12 @@ export default function ServicesPageClient() {
                 <div className="container">
                     <div className="section-header text-center" style={{ marginBottom: 'var(--space-xl)' }}>
                         <p className="section-kicker animate-up">Wissen</p>
-                        <h2 className="section-title animate-up">Artikel & Guides</h2>
+                        <h2 className="section-title animate-up">Ratgeber zu Webdesign, SEO und Google Ads</h2>
                     </div>
                     <div className="wissen-grid animate-up">
                         <Link href="/wissen/webdesign-kosten" className="wissen-card">
                             <div className="wissen-card-media">
-                                <img src="/wissen/cards/webdesign-kosten.webp" alt="Illustration: drei Preisschilder in aufsteigender Groesse vor einem Browserfenster" width="760" height="494" loading="lazy" decoding="async" />
+                                <img src="/wissen/cards/webdesign-kosten.webp" alt="Illustration: drei Preisschilder in aufsteigender Größe vor einem Browserfenster" width="760" height="494" loading="lazy" decoding="async" />
                             </div>
                             <div className="wissen-card-meta"><span className="wissen-card-category">WEBDESIGN</span></div>
                             <h3 className="wissen-card-title"><span>Webdesign Kosten 2026: Was eine professionelle Website wirklich kostet</span></h3>
@@ -545,7 +546,7 @@ export default function ServicesPageClient() {
                         </Link>
                         <Link href="/wissen/google-ads-fehler-lokale-unternehmen" className="wissen-card">
                             <div className="wissen-card-media">
-                                <img src="/wissen/cards/google-ads-fehler-lokale-unternehmen.webp" alt="Illustration: Anzeigenpanel ueber einem Trichter, aus dessen Riss Muenzen herausfallen" width="760" height="494" loading="lazy" decoding="async" />
+                                <img src="/wissen/cards/google-ads-fehler-lokale-unternehmen.webp" alt="Illustration: Anzeigenpanel über einem Trichter, aus dessen Riss Münzen herausfallen" width="760" height="494" loading="lazy" decoding="async" />
                             </div>
                             <div className="wissen-card-meta"><span className="wissen-card-category">GOOGLE ADS</span></div>
                             <h3 className="wissen-card-title"><span>Die 7 teuersten Google Ads Fehler lokaler Unternehmen</span></h3>
@@ -554,7 +555,7 @@ export default function ServicesPageClient() {
                         </Link>
                         <Link href="/wissen/ai-seo-was-unternehmen-jetzt-wissen-muessen" className="wissen-card">
                             <div className="wissen-card-media">
-                                <img src="/wissen/cards/ai-seo-was-unternehmen-jetzt-wissen-muessen.webp" alt="Illustration: grosse Antwortkachel mit KI-Funke, verbunden mit drei Quellenkarten" width="760" height="494" loading="lazy" decoding="async" />
+                                <img src="/wissen/cards/ai-seo-was-unternehmen-jetzt-wissen-muessen.webp" alt="Illustration: große Antwortkachel mit KI-Funke, verbunden mit drei Quellenkarten" width="760" height="494" loading="lazy" decoding="async" />
                             </div>
                             <div className="wissen-card-meta"><span className="wissen-card-category">AI SEO</span></div>
                             <h3 className="wissen-card-title"><span>AI SEO: Was Unternehmen jetzt wissen müssen</span></h3>
@@ -573,16 +574,16 @@ export default function ServicesPageClient() {
                 <div className="container">
                     <div className="section-header text-center">
                         <p className="section-kicker animate-up">Häufige Fragen</p>
-                        <h2 className="section-title animate-up">Klarheit vor dem Start.</h2>
+                        <h2 className="section-title animate-up">Fragen zu Preisen und Zusammenarbeit</h2>
                     </div>
                     <div className="sp-faq-list">
                         <FaqItem
                             q="Wie lange dauert die Erstellung einer Website?"
-                            a="Ein One-Pager ist typischerweise in 2-3 Wochen fertig. Eine mehrseitige Website in 4-6 Wochen. Abhängig von Umfang und Ihrem Feedback-Tempo."
+                            a="Der Website-Start ist in 2 bis 5 Arbeitstagen online, eine individuell gestaltete Landingpage in 2 bis 3 Wochen, eine mehrseitige Website in 4 bis 6 Wochen. Das hängt vom Umfang und Ihrem Feedback-Tempo ab."
                         />
                         <FaqItem
                             q="Muss ich mich langfristig binden?"
-                            a="Nein. Bei SEO und Ads empfehle ich mindestens 3 Monate, damit die Maßnahmen wirken können. Danach ist alles monatlich kündbar. Bei Websites zahlen Sie einmalig."
+                            a="Nur bei SEO, und nur für 3 Monate. So lange brauchen die Maßnahmen, um zu wirken, danach ist SEO monatlich kündbar. Google Ads, ChatGPT Ads und die AI-Betreuung sind von Anfang an monatlich kündbar, Websites zahlen Sie einmalig."
                         />
                         <FaqItem
                             q="Was passiert, wenn die Ergebnisse nicht stimmen?"
@@ -602,10 +603,14 @@ export default function ServicesPageClient() {
                         />
                         <FaqItem
                             q="Arbeiten Sie allein oder mit einem Team?"
-                            a="Sie arbeiten direkt mit mir. Analyse, Website, SEO und Ads mache ich selbst, es gibt keinen Account-Manager dazwischen. Wenn ein Projekt zusätzliche Expertise braucht, etwa bei Design, Text oder Fotografie, hole ich Spezialisten dazu, mit denen ich regelmäßig arbeite. Ihr Ansprechpartner und verantwortlich für das Ergebnis bleibe ich."
+                            a="Sie arbeiten direkt mit mir. Analyse, Website, SEO und Ads mache ich selbst, ohne Account-Manager dazwischen. Braucht ein Projekt zusätzliche Expertise, etwa bei Design, Text oder Fotografie, hole ich geprüfte Spezialisten dazu. Ihr Ansprechpartner und verantwortlich für das Ergebnis bleibe ich."
                         />
                         <FaqItem
-                            q="Warum sollte ich nicht einfach eine gunstigere Agentur nehmen?"
+                            q="Kann ich Website, SEO und Anzeigen dauerhaft aus einer Hand buchen?"
+                            a="Ja. Viele Betriebe brauchen nicht eine einzelne Leistung, sondern jemanden, der Website, Google-Sichtbarkeit und Anzeigen zusammen im Blick hat. Dann kombinieren Sie die laufenden Pakete, etwa SEO ab 1.000 Euro und Google-Ads-Betreuung ab 500 Euro im Monat."
+                        />
+                        <FaqItem
+                            q="Warum sollte ich nicht einfach eine günstigere Agentur nehmen?"
                             a="Können Sie. Aber fragen Sie vorher: Bekommen Sie Zugang zu allen Daten? Arbeiten die weiter, wenn Ergebnisse ausbleiben? Ist der Code individuell oder ein Template? Sie zahlen bei mir nicht für Overhead, sondern für Ergebnisse und direkte Kommunikation ohne Umwege."
                         />
                     </div>

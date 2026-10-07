@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import AutoLinks from '../../../src/components/AutoLinks';
 import Image from 'next/image';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import ServiceCta from '../../../src/components/ServiceCta';
@@ -80,6 +81,7 @@ export default function DybeautyCaseStudy() {
 
     return (
         <>
+            <AutoLinks path="/referenzen/dybeauty">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -252,6 +254,7 @@ export default function DybeautyCaseStudy() {
             </section>
 
             <ServiceCta text="Ihr Shop hat gute Produkte, aber Google zeigt ihn selten? Im kostenlosen Erstgespräch schaue ich mir Ihre Produktseiten und Suchdaten an." />
+            </AutoLinks>
         </>
     );
 }

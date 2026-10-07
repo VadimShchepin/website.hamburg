@@ -1,8 +1,9 @@
 import ArticleLayout from '../../../src/components/ArticleLayout';
+import AutoLinks from '../../../src/components/AutoLinks';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'Sichtbar in ChatGPT & Perplexity | AI SEO',
+    title: 'AI SEO erklärt: was Unternehmen jetzt wissen müssen',
     description: 'ChatGPT, Perplexity, Google AI Overviews verändern die Suche. Wie Sie sicherstellen, dass Ihr Unternehmen in KI-Antworten als Quelle erscheint.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/ai-seo-was-unternehmen-jetzt-wissen-muessen',
@@ -52,6 +53,7 @@ export default function AiSeoArticlePage() {
                 heroImage="/wissen/hero-ai-seo.svg"
                 heroAlt="Illustration: Sprechblase mit Antworttext und rotem Quellenverweis auf eine Website"
             >
+                <AutoLinks path="/wissen/ai-seo-was-unternehmen-jetzt-wissen-muessen">
                 <p>
                     Suchmaschinen liefern zunehmend direkte Antworten statt Linklisten. Google AI Overviews, ChatGPT mit Browsing-Funktion,
                     Perplexity: diese Systeme entscheiden in Millisekunden, welche Quelle zitiert wird und welche nicht. Die Mechanik dahinter
@@ -122,19 +124,15 @@ export default function AiSeoArticlePage() {
 
                 <h2>Inhalte, die zitiert werden</h2>
                 <p>
-                    Nicht jeder gut geschriebene Text wird von LLMs aufgegriffen. Es gibt spezifische Muster, die Zitationen begunstigen:
+                    Nicht jeder gut geschriebene Text wird von LLMs aufgegriffen. Es gibt spezifische Muster, die Zitationen begünstigen:
                 </p>
                 <h3>Direkte Antworten auf spezifische Fragen</h3>
                 <p>
-                    LLMs suchen nach Passagen, die eine Nutzerfrage in 2-4 Satzen beantworten. Seiten, die eine Frage als H2 formulieren
-                    und direkt darunter die Antwort liefern, werden uberproportional häufig zitiert. Das ist kein Zufall, sondern entspricht
-                    dem Retrieval-Mechanismus von RAG-Pipelines.
+                    LLMs suchen nach Passagen, die eine Nutzerfrage in 2-4 Sätzen beantworten. Seiten, die eine Frage als H2 formulieren und direkt darunter die Antwort liefern, werden überproportional häufig zitiert. Das ist kein Zufall, sondern entspricht dem Retrieval-Mechanismus von RAG-Pipelines.
                 </p>
-                <h3>Originare Daten und Fallstudien</h3>
+                <h3>Originäre Daten und Fallstudien</h3>
                 <p>
-                    Inhalte, die eigene Daten, Benchmarks oder dokumentierte Ergebnisse enthalten, sind für LLMs wertvoller als
-                    zusammengefasste Sekundarquellen. Das Modell erkennt, ob ein Text Primaerwissen enthält oder lediglich
-                    andere Quellen paraphrasiert.
+                    Inhalte, die eigene Daten, Benchmarks oder dokumentierte Ergebnisse enthalten, sind für LLMs wertvoller als zusammengefasste Sekundärquellen. Das Modell erkennt, ob ein Text Primärwissen enthält oder lediglich andere Quellen paraphrasiert.
                 </p>
                 <h3>Klare Autorenschaft und Expertise-Signale</h3>
                 <p>
@@ -149,24 +147,15 @@ export default function AiSeoArticlePage() {
                     auf Platz 1 erscheinen, und das für hochkompetitive Suchanfragen.
                 </blockquote>
                 <p>
-                    Was habe ich konkret gemacht? Die Produktseite wurde mit vollstandigem FAQ-Schema ausgezeichnet,
-                    jede Frage als eigenständiger Absatz mit H2-Überschrift strukturiert, und die Antworten auf 2-3 Satze
-                    reduziert. Dazu kamen Author-Markup, Organization-Schema und eine dedizierte Expertise-Seite für den
-                    Grundungsteam. Das Ergebnis: Sowohl ChatGPT als auch Perplexity zitieren die Seite als primäre Quelle,
-                    trotz Wettbewerbern mit deutlich hoheren Domain-Autoritaten.
+                    Was habe ich konkret gemacht? Die Produktseite wurde mit vollständigem FAQ-Schema ausgezeichnet, jede Frage als eigenständiger Absatz mit H2-Überschrift strukturiert, und die Antworten auf 2-3 Sätze reduziert. Dazu kamen Author-Markup, Organization-Schema und eine dedizierte Expertise-Seite für den Grundungsteam. Das Ergebnis: Sowohl ChatGPT als auch Perplexity zitieren die Seite als primäre Quelle, trotz Wettbewerbern mit deutlich höheren Domain-Autoritäten.
                 </p>
 
                 <h2>First-Mover-Vorteil: Warum jetzt entscheidend ist</h2>
                 <p>
-                    LLMs bauen interne Gewichtungen auf. Quellen, die früh und konsistent zu einem Thema zitiert werden,
-                    etablieren sich im Modell als Referenz. Dieser Effekt verstarkt sich selbst: Wird eine Seite häufig
-                    in RAG-Antworten verwendet, steigt ihre Gewichtung in zukünftigen Abfragen.
+                    LLMs bauen interne Gewichtungen auf. Quellen, die früh und konsistent zu einem Thema zitiert werden, etablieren sich im Modell als Referenz. Dieser Effekt verstärkt sich selbst: Wird eine Seite häufig in RAG-Antworten verwendet, steigt ihre Gewichtung in zukünftigen Abfragen.
                 </p>
                 <p>
-                    Das bedeutet: Unternehmen, die ihre Inhalte jetzt für LLM-Sichtbarkeit optimieren, bauen einen
-                    Vorsprung auf, der für Nachzugler schwer einzuholen ist. Anders als bei klassischem SEO, wo ein
-                    neuer Wettbewerber mit genug Backlinks aufholen kann, ist die Position in einem trainierten
-                    Sprachmodell strukturell stabiler.
+                    Das bedeutet: Unternehmen, die ihre Inhalte jetzt für LLM-Sichtbarkeit optimieren, bauen einen Vorsprung auf, der für Nachzügler schwer einzuholen ist. Anders als bei klassischem SEO, wo ein neuer Wettbewerber mit genug Backlinks aufholen kann, ist die Position in einem trainierten Sprachmodell strukturell stabiler.
                 </p>
                 <p>
                     Laut einer{' '}
@@ -181,7 +170,7 @@ export default function AiSeoArticlePage() {
                     <li>Implementieren Sie Schema.org-Markup für Article, FAQ, Organization und Person auf allen relevanten Seiten.</li>
                     <li>Strukturieren Sie Inhalte in Frage-Antwort-Formate mit klaren H2/H3-Hierarchien.</li>
                     <li>Erstellen Sie dedizierte Autorenseiten mit nachweisbarer Expertise und verlinkten Profilen.</li>
-                    <li>Reduzieren Sie Fulltext zugunsten von prazisen, faktisch belegbaren Aussagen.</li>
+                    <li>Reduzieren Sie Fülltext zugunsten von präzisen, faktisch belegbaren Aussagen.</li>
                     <li>Optimieren Sie Ihre Inhalte gleichzeitig für <a href="/wissen/website-conversion-optimierung">bessere Conversion-Raten</a>, denn Sichtbarkeit allein bringt keine Kunden.</li>
                 </ul>
                 <p>
@@ -189,6 +178,7 @@ export default function AiSeoArticlePage() {
                     gefunden und konsumiert werden. Die Frage ist nicht, ob Ihr Unternehmen davon betroffen ist,
                     sondern ob Sie auf der Seite der zitierten oder der ignorierten Quellen stehen.
                 </p>
+                </AutoLinks>
             </ArticleLayout>
         </>
     );

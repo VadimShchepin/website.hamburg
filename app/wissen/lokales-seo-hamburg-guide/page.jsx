@@ -1,15 +1,22 @@
 import ArticleLayout from '../../../src/components/ArticleLayout';
+import AutoLinks from '../../../src/components/AutoLinks';
+import FaqSection from '../../../src/components/FaqSection';
 import Link from 'next/link';
 import { BUSINESS } from '../../../src/lib/schema';
 
+
+const faqItems = [
+    { q: 'Was ist Local SEO?', a: 'Local SEO, auf Deutsch lokale Suchmaschinenoptimierung, sorgt dafür, dass ein Betrieb bei Suchen mit Ortsbezug erscheint: in der Trefferliste, in Google Maps und im Kartenblock mit drei Firmen über den Ergebnissen. Die wichtigsten Hebel sind ein vollständiges Google-Unternehmensprofil, einheitliche Firmendaten in Verzeichnissen, Bewertungen und Seiten, die Ihre Leistung und Ihren Ort klar nennen.' },
+];
+
 export const metadata = {
-    title: 'In Hamburg lokal gefunden werden | Lokales SEO',
-    description: 'Von Google Business Profile bis lokale Keywords: alles, was Sie brauchen, um in Hamburg bei Google gefunden zu werden.',
+    title: 'Lokales SEO in Hamburg: Leitfaden für Google und Maps',
+    description: 'Lokales SEO in Hamburg Schritt für Schritt: Google-Unternehmensprofil, lokale Suchbegriffe, Branchenbücher, Bewertungen und was im Maps-Ranking zählt.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/lokales-seo-hamburg-guide',
     },
     openGraph: {
-        title: 'In Hamburg lokal gefunden werden | Lokales SEO',
+        title: 'Lokales SEO in Hamburg: Leitfaden für Google und Maps',
         description: 'Von Google Business Profile bis lokale Keywords: alles, was Sie wissen müssen, um in Hamburg bei Google gefunden zu werden.',
         url: 'https://webseite.hamburg/wissen/lokales-seo-hamburg-guide',
         type: 'article',
@@ -55,13 +62,14 @@ export default function LokalesSeoHamburgArticlePage() {
                 heroImage="/wissen/localseo-hero.svg"
                 heroAlt="Illustration: Stadtplan mit Standort-Pins und ein Smartphone mit lokaler Suche"
             >
+                <AutoLinks path="/wissen/lokales-seo-hamburg-guide">
                 <p>
                     Lokales SEO entscheidet, ob ein Hamburger Betrieb bei Google gefunden wird oder nicht. Das ist keine Randnotiz: Laut <a href="https://www.brightlocal.com/research/35-local-seo-statistics/" target="_blank" rel="noopener noreferrer">BrightLocal</a> haben rund 46 Prozent aller Google-Suchen eine lokale Absicht, und 87 Prozent der Verbraucher nutzen Google, um lokale Unternehmen zu finden. Dieser Leitfaden geht die konkreten Faktoren durch, die lokale Rankings in Hamburg bestimmen, und was Sie dafür tun können.
                 </p>
 
                 <h2>Was ist lokales SEO und warum zählt es in Hamburg besonders?</h2>
                 <p>
-                    Lokales SEO umfasst alle Maßnahmen, die ein Unternehmen bei standortbezogenen Suchanfragen sichtbar machen. In einer Stadt mit 1,9 Millionen Einwohnern und über 100 Stadtteilen ist die lokale Differenzierung entscheidend. Wer „Handwerker Hamburg Altona" sucht, will keinen Betrieb aus Bergedorf sehen.
+                    Lokales SEO umfasst alle Maßnahmen, die ein Unternehmen bei standortbezogenen Suchanfragen sichtbar machen. In einer Stadt mit 1,9 Millionen Einwohnern und über 100 Stadtteilen ist die lokale Differenzierung entscheidend. Wer "Handwerker Hamburg Altona" sucht, will keinen Betrieb aus Bergedorf sehen.
                 </p>
                 <p>
                     Google trennt dabei das <strong>Local Pack</strong> (die drei Ergebnisse mit Karte) von den organischen Treffern darunter. Für lokale Dienstleister ist das Local Pack der wichtigste Platz, denn ein großer Teil der Klicks bei lokalen Suchen landet genau hier. Laut <a href="https://moz.com/local-search-ranking-factors" target="_blank" rel="noopener noreferrer">Moz Local Search Ranking Factors</a> bestimmen drei Kategorien das Ranking: Relevanz, Entfernung und Bekanntheit.
@@ -82,7 +90,7 @@ export default function LokalesSeoHamburgArticlePage() {
                     Was ein vollständiges Profil mindestens braucht:
                 </p>
                 <ul>
-                    <li>Den exakten Unternehmensnamen, ohne Keyword-Stuffing wie „Müller Sanitär Hamburg Klempner Notdienst 24h".</li>
+                    <li>Den exakten Unternehmensnamen, ohne Keyword-Stuffing wie "Müller Sanitär Hamburg Klempner Notdienst 24h".</li>
                     <li>Korrekte Adresse und Telefonnummer, identisch mit allen anderen Einträgen im Netz.</li>
                     <li>Primäre und sekundäre Kategorien, die das Angebot präzise beschreiben.</li>
                     <li>Öffnungszeiten, auch für Feiertage und Sonderzeiten.</li>
@@ -91,29 +99,29 @@ export default function LokalesSeoHamburgArticlePage() {
                     <li>Regelmäßige Google-Posts, mindestens zweimal im Monat.</li>
                 </ul>
                 <p>
-                    Ein häufiger Fehler sind zu breite Kategorien. Ein Friseur in Eimsbüttel, der sich auf Naturhaarfarben spezialisiert hat, sollte nicht nur „Friseur" wählen, sondern „Haarfarbenstudio" als sekundäre Kategorie ergänzen.
+                    Ein häufiger Fehler sind zu breite Kategorien. Ein Friseur in Eimsbüttel, der sich auf Naturhaarfarben spezialisiert hat, sollte nicht nur "Friseur" wählen, sondern "Haarfarbenstudio" als sekundäre Kategorie ergänzen.
                 </p>
 
                 <h2>Lokale Keywords: Wie suchen Hamburger wirklich?</h2>
                 <p>
-                    Eine Keyword-Strategie für Hamburg muss die Stadtteile mitdenken. Hier sucht kaum jemand nur nach „Dienstleistung + Hamburg", die Muster sind feiner:
+                    Eine Keyword-Strategie für Hamburg muss die Stadtteile mitdenken. Hier sucht kaum jemand nur nach "Dienstleistung + Hamburg", die Muster sind feiner:
                 </p>
                 <ul>
-                    <li>„Sanitär Notdienst Eimsbüttel": Dienstleistung plus Stadtteil.</li>
-                    <li>„Handwerker Hamburg Altona": Branche plus Stadt plus Stadtteil.</li>
-                    <li>„Zahnarzt in der Nähe Winterhude": mit „in der Nähe"-Modifikator.</li>
-                    <li>„Bester Steuerberater Hamburg Innenstadt": mit Qualitätsmodifikator.</li>
+                    <li>"Sanitär Notdienst Eimsbüttel": Dienstleistung plus Stadtteil.</li>
+                    <li>"Handwerker Hamburg Altona": Branche plus Stadt plus Stadtteil.</li>
+                    <li>"Zahnarzt in der Nähe Winterhude": mit "in der Nähe"-Modifikator.</li>
+                    <li>"Bester Steuerberater Hamburg Innenstadt": mit Qualitätsmodifikator.</li>
                 </ul>
                 <p>
-                    Für jeden relevanten Stadtteil kann es eine eigene Landingpage geben, aber nur, wenn dort wirklich ein Bezug besteht. Eine Seite „Klempner Hamburg Wandsbek" für einen Betrieb, der ausschließlich in Altona arbeitet, schadet mehr als sie nützt. Google erkennt solche Doorway Pages und stuft sie ab. Wie wir das sauber lösen, zeigt unsere <a href="/leistungen/seo">SEO-Leistung</a>.
+                    Für jeden relevanten Stadtteil kann es eine eigene Landingpage geben, aber nur, wenn dort wirklich ein Bezug besteht. Eine Seite "Klempner Hamburg Wandsbek" für einen Betrieb, der ausschließlich in Altona arbeitet, schadet mehr als sie nützt. Google erkennt solche Doorway Pages und stuft sie ab. Wie ich das sauber löse, zeigt meine <a href="/leistungen/seo">SEO-Leistung</a>.
                 </p>
 
                 <h2>NAP-Konsistenz: der unsichtbare Ranking-Killer</h2>
                 <p>
-                    NAP steht für Name, Address, Phone. Diese drei Angaben müssen überall im Netz identisch sein, Zeichen für Zeichen. Nicht „Straße" auf der eigenen Website und „Str." bei Google. Nicht „040-123456" hier und „+49 40 123456" dort.
+                    NAP steht für Name, Address, Phone. Diese drei Angaben müssen überall im Netz identisch sein, Zeichen für Zeichen. Nicht "Straße" auf der eigenen Website und "Str." bei Google. Nicht "040-123456" hier und "+49 40 123456" dort.
                 </p>
                 <blockquote>
-                    Ein Sanitärbetrieb in Hamburg hatte leicht abweichende Adressvarianten in verschiedenen Verzeichnissen: mal ausgeschriebene Straße, mal „Str.", mal andere Hausnummer. Nach der Bereinigung verbesserte sich das Local-Pack-Ranking innerhalb von zwei Monaten spürbar.
+                    Ein Sanitärbetrieb in Hamburg hatte leicht abweichende Adressvarianten in verschiedenen Verzeichnissen: mal ausgeschriebene Straße, mal "Str.", mal andere Hausnummer. Nach der Bereinigung verbesserte sich das Local-Pack-Ranking innerhalb von zwei Monaten spürbar.
                 </blockquote>
                 <p>
                     Das ist kein Einzelfall. Widersprüchliche NAP-Daten gehören zu den häufigsten Gründen, warum lokale Unternehmen schlechter ranken als erwartet. Google verliert das Vertrauen, wenn es sich widersprechende Informationen findet. Prüfen Sie mindestens diese Plattformen auf einheitliche Einträge:
@@ -175,7 +183,7 @@ export default function LokalesSeoHamburgArticlePage() {
                     Aus Jahren der Arbeit mit lokalen Betrieben sehe ich dieselben Fehler immer wieder:
                 </p>
                 <ul>
-                    <li><strong>Keyword-Stuffing im Firmennamen:</strong> „Müller Sanitär Klempner Notdienst Hamburg 24h" statt einfach „Müller Sanitärtechnik". Google stuft das ab.</li>
+                    <li><strong>Keyword-Stuffing im Firmennamen:</strong> "Müller Sanitär Klempner Notdienst Hamburg 24h" statt einfach "Müller Sanitärtechnik". Google stuft das ab.</li>
                     <li><strong>Keine Stadtteil-Strategie:</strong> eine einzige Seite für ganz Hamburg statt gezielter Inhalte für relevante Stadtteile.</li>
                     <li><strong>Verwaistes Profil:</strong> einmal erstellt, nie wieder angefasst. Keine Posts, keine Fotos, keine Antworten.</li>
                     <li><strong>Fehlende strukturierte Daten:</strong> kein LocalBusiness-Schema auf der Website. Google muss raten, statt zu wissen.</li>
@@ -193,18 +201,20 @@ export default function LokalesSeoHamburgArticlePage() {
                     <li><strong>Conversions:</strong> Anrufe, Kontaktformulare, Terminbuchungen. Am Ende zählt die Anfrage, nicht das Ranking.</li>
                 </ul>
                 <p>
-                    Lokales SEO ist kein einmaliges Projekt, sondern ein laufender Prozess: Bewertungen sammeln, Einträge pflegen, Inhalte aktualisieren. Wer das konsequent macht, dominiert die lokalen Ergebnisse in Hamburg, während sich die anderen wundern, warum das Telefon nicht klingelt. Gleichzeitig verändert sich die Suche gerade grundlegend. Wie KI-Systeme die Sichtbarkeit beeinflussen, lesen Sie im Artikel zu <a href="/wissen/ai-seo-was-unternehmen-jetzt-wissen-muessen">AI SEO</a>. Und wenn Sie das lieber abgeben möchten, übernehmen wir es in der <a href="/leistungen/seo">lokalen SEO-Betreuung</a> oder bei einer <a href="/kontakt">kostenlosen Analyse</a>.
+                    Lokales SEO ist kein einmaliges Projekt, sondern ein laufender Prozess: Bewertungen sammeln, Einträge pflegen, Inhalte aktualisieren. Wer das konsequent macht, dominiert die lokalen Ergebnisse in Hamburg, während sich die anderen wundern, warum das Telefon nicht klingelt. Gleichzeitig verändert sich die Suche gerade grundlegend. Wie KI-Systeme die Sichtbarkeit beeinflussen, lesen Sie im Artikel zu <a href="/wissen/ai-seo-was-unternehmen-jetzt-wissen-muessen">AI SEO</a>. Und wenn Sie das lieber abgeben möchten, übernehme ich es in der <a href="/leistungen/seo">lokalen SEO-Betreuung</a> oder bei einer <a href="/kontakt">kostenlosen Analyse</a>.
                 </p>
 
                 <h2>Quellen</h2>
                 <ol>
-                    <li>BrightLocal, „35 Local SEO Statistics": ~46 % der Google-Suchen mit lokaler Absicht, ~42 % der lokalen Klicks ans Map Pack. <a href="https://www.brightlocal.com/research/35-local-seo-statistics/" target="_blank" rel="nofollow noopener noreferrer">brightlocal.com</a></li>
+                    <li>BrightLocal, 35 Local SEO Statistics: ~46 % der Google-Suchen mit lokaler Absicht, ~42 % der lokalen Klicks ans Map Pack. <a href="https://www.brightlocal.com/research/35-local-seo-statistics/" target="_blank" rel="nofollow noopener noreferrer">brightlocal.com</a></li>
                     <li>BrightLocal, Local Consumer Review Survey: 87 % nutzen Google für lokale Unternehmen, ~98 % lesen Bewertungen. <a href="https://www.brightlocal.com/research/local-consumer-review-survey/" target="_blank" rel="nofollow noopener noreferrer">brightlocal.com</a></li>
                     <li>SOCi, Local SEO Statistics 2024: +1 Stern → ca. +44 % Conversions im Google Business Profile. <a href="https://www.soci.ai/blog/the-top-54-local-seo-statistics-updated-2024/" target="_blank" rel="nofollow noopener noreferrer">soci.ai</a></li>
                     <li>Think with Google: 76 % der lokalen Smartphone-Suchen führen binnen 24 h zu einem Besuch, 28 % zu einem Kauf. <a href="https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/how-consumers-solve-their-needs-in-the-moment/" target="_blank" rel="nofollow noopener noreferrer">thinkwithgoogle.com</a></li>
                     <li>Moz, Local Search Ranking Factors: Relevanz, Entfernung, Bekanntheit. <a href="https://moz.com/local-search-ranking-factors" target="_blank" rel="nofollow noopener noreferrer">moz.com</a></li>
                 </ol>
+                </AutoLinks>
             </ArticleLayout>
+            <FaqSection title="Häufige Fragen zu lokalem SEO" items={faqItems} />
         </>
     );
 }

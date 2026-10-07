@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
@@ -27,7 +28,7 @@ const faqItems = [
     { q: 'Welche Pflichtangaben muss ein Objektinserat enthalten?', a: 'Liegt ein Energieausweis vor, verlangt § 87 GEG fünf Angaben in jeder kommerziellen Anzeige, also auch auf Ihrer eigenen Website: Art des Ausweises, Endenergiewert, wesentlicher Energieträger, Baujahr und bei Wohngebäuden die Energieeffizienzklasse. Fehlende Angaben sind eine Ordnungswidrigkeit mit Bußgeld bis zu 10.000 Euro nach § 108 GEG, dazu kommt Abmahnrisiko. Ich baue die Objektvorlage so, dass diese Felder nicht vergessen werden können.' },
     { q: 'Wie gehe ich mit dem Widerrufsrecht bei Online-Anfragen um?', a: 'Fordert ein Verbraucher über Ihr Formular ein Exposé an und besteht eine Provisionsabrede, entsteht ein Fernabsatzvertrag mit 14-tägigem Widerrufsrecht nach §§ 312g, 355 BGB. Ohne korrekte Belehrung verlängert sich die Frist erheblich, und der Provisionsanspruch kann entfallen. Technisch löse ich das mit Belehrung, Muster-Widerrufsformular und einer dokumentierten Zustimmung vor dem Download. Die juristische Endabnahme macht Ihr Anwalt, ich baue die Mechanik.' },
     { q: 'Können Sie Objekte aus meiner Maklersoftware übernehmen?', a: 'Ja, wenn Ihr System exportieren kann. Der Standard OpenImmo wird von den meisten Programmen unterstützt, damit lassen sich Objekte automatisch übertragen und aktuell halten. Alternativ pflegen Sie Objekte im CMS, was bei kleinen Beständen oft schneller ist als jede Schnittstelle.' },
-    { q: 'Lohnt sich ein Ratgeberbereich?', a: 'Bei der Eigentümer-Akquise ja. Fragen wie „Was ist meine Wohnung in Ottensen wert" oder „Welche Unterlagen brauche ich für den Verkauf" werden gesucht, bevor ein Makler gesucht wird. Wer diese Fragen beantwortet, bekommt den Anruf. Das ist derselbe Mechanismus wie bei diesem Wissensbereich hier, nur für Immobilien.' },
+    { q: 'Lohnt sich ein Ratgeberbereich?', a: 'Bei der Eigentümer-Akquise ja. Fragen wie "Was ist meine Wohnung in Ottensen wert" oder "Welche Unterlagen brauche ich für den Verkauf" werden gesucht, bevor ein Makler gesucht wird. Wer diese Fragen beantwortet, bekommt den Anruf. Das ist derselbe Mechanismus wie bei diesem Wissensbereich hier, nur für Immobilien.' },
 ];
 
 export default function WebdesignImmobilienmaklerPage() {
@@ -58,6 +59,7 @@ export default function WebdesignImmobilienmaklerPage() {
 
     return (
         <>
+            <AutoLinks path="/leistungen/webdesign-immobilienmakler">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -105,7 +107,7 @@ export default function WebdesignImmobilienmaklerPage() {
                             Interessant wird es, wenn man die Seite umdreht. Ein Eigentümer in Winterhude, der über einen Verkauf nachdenkt, hat ganz andere Fragen: Was ist meine Wohnung wert, wer zahlt eigentlich die Provision seit der Gesetzesänderung, welche Unterlagen brauche ich, wie lange dauert das, und was passiert mit meinen Daten. Wer diese fünf Fragen auf seiner Seite beantwortet, wird angerufen. Wer stattdessen 30 Objekte zeigt, von denen 28 verkauft sind, wird nicht angerufen.
                         </p>
                         <p>
-                            Das ist der Grund, warum ich bei Makler-Projekten die Objektliste bewusst nach unten setze. Ihre Objekte sind Beweis, nicht Angebot.
+                            Deshalb setze ich bei Makler-Projekten die Objektliste bewusst nach unten. Ihre Objekte sind Beweis, nicht Angebot.
                         </p>
                     </div>
 
@@ -289,6 +291,7 @@ export default function WebdesignImmobilienmaklerPage() {
             <FaqSection title="Häufige Fragen zu Makler-Websites" items={faqItems} />
             <RelatedServices exclude="webdesign" />
             <ServiceCta text="Sagen Sie mir, wie viele Eigentümer-Anfragen im Monat Sie über die eigene Website bekommen. Wenn die Antwort null lautet, zeige ich Ihnen im Erstgespräch kostenlos, woran es liegt." />
+            </AutoLinks>
         </>
     );
 }

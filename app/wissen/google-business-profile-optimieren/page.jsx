@@ -1,16 +1,17 @@
 import ArticleLayout from '../../../src/components/ArticleLayout';
+import AutoLinks from '../../../src/components/AutoLinks';
 import FaqSection from '../../../src/components/FaqSection';
 import { BUSINESS } from '../../../src/lib/schema';
 import Link from 'next/link';
 
 export const metadata = {
-    title: 'Google-Unternehmensprofil optimieren: Anleitung Hamburg',
+    title: 'Google-Unternehmensprofil optimieren: Leitfaden Hamburg',
     description: 'Google-Unternehmensprofil optimieren: offizielle Ranking-Faktoren, Bewertungsregeln, Sperrfallen und eine Routine, die 20 Minuten pro Woche dauert.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/google-business-profile-optimieren',
     },
     openGraph: {
-        title: 'Google-Unternehmensprofil optimieren: Anleitung Hamburg',
+        title: 'Google-Unternehmensprofil optimieren: Leitfaden Hamburg',
         description: 'Offizielle Ranking-Faktoren, Bewertungsregeln, Sperrfallen und eine wöchentliche Routine für lokale Unternehmen in Hamburg.',
         url: 'https://webseite.hamburg/wissen/google-business-profile-optimieren',
         type: 'article',
@@ -19,11 +20,12 @@ export const metadata = {
 };
 
 const faqItems = [
-    { q: "Wie optimiere ich mein Google-Unternehmensprofil?", a: "Google nennt drei Faktoren für das lokale Ranking: Relevanz, Entfernung und Bekanntheit. Praktisch heißt das: die exakteste Hauptkategorie wählen, jede Leistung einzeln anlegen, Öffnungszeiten inklusive Feiertagen pflegen, echte Fotos ergänzen, einen kurzen Beitrag pro Woche einstellen und auf jede Bewertung antworten. Das kostet 15 bis 20 Minuten pro Woche." },
+    { q: "Wie optimiere ich mein Google-Unternehmensprofil?", a: "Google nennt drei Faktoren für das lokale Ranking: Relevanz, Entfernung und Bekanntheit. Für Sie heißt das: die exakteste Hauptkategorie wählen, jede Leistung einzeln anlegen, Öffnungszeiten inklusive Feiertagen pflegen, echte Fotos ergänzen, einen kurzen Beitrag pro Woche einstellen und auf jede Bewertung antworten. Das kostet 15 bis 20 Minuten pro Woche." },
     { q: "Darf ich Suchbegriffe in den Namen des Profils schreiben?", a: "Nein. Google verlangt, dass der Name im Profil dem echten Geschäftsnamen entspricht, also dem, der am Laden, auf dem Briefkopf und in der Gewerbeanmeldung steht. Zusätzliche Suchbegriffe sind ein Richtlinienverstoß und einer der häufigsten Gründe für eine Profilsperrung. Stadtteile und Leistungen gehören in die Website, in die Leistungsbeschreibung und in die Beiträge." },
     { q: "Wie viele Google-Bewertungen brauche ich?", a: "Zehn bis fünfzehn echte Bewertungen bringen einen lokalen Dienstleister in Hamburg in den meisten Branchen schon in eine gute Position, weil viele Wettbewerber bei drei stehen. Wichtiger als die Menge ist die Aktualität: Laut BrightLocal 2026 achten 74 Prozent der Verbraucher vor allem auf Bewertungen aus den letzten drei Monaten, 31 Prozent verlangen mindestens 4,5 Sterne und 89 Prozent erwarten, dass Inhaber antworten." },
     { q: "Brauche ich eine Adresse, wenn ich zu meinen Kunden fahre?", a: "Nein. Wenn Sie kein Ladenlokal haben, das während der Öffnungszeiten besetzt ist, verlangt Google, dass Sie die Adresse ausblenden und stattdessen ein Einzugsgebiet angeben. Postfächer, virtuelle Büros und unbesetzte Coworking-Adressen sind nicht erlaubt. Als Einzugsgebiet reicht meist Hamburg plus die angrenzenden Gebiete, in denen Sie wirklich arbeiten." },
     { q: "Mein Profil wurde gesperrt, was mache ich jetzt?", a: "In vier Schritten: erst die Ursache finden, in fast allen Fällen ist es der Name mit Suchbegriffen, eine Adresse ohne Kundenverkehr, mehrere Profile für dieselbe Adresse oder ein auffälliger Bewertungszuwachs. Dann den Verstoß beheben, bevor Sie Einspruch einlegen. Danach Nachweise sammeln, also Gewerbeanmeldung, Fotos von Schild und Eingang, Briefkopf und Rechnungen mit Adresse. Zuletzt Einspruch stellen und warten." },
+    { q: "Wie erstelle ich einen Google-Maps-Eintrag für meine Firma?", a: "Über ein Google-Unternehmensprofil: unter business.google.com Firmennamen, Hauptkategorie und Adresse oder Einzugsgebiet eintragen, danach die Inhaberschaft bestätigen. Google fragt die Bestätigung je nach Fall per Video, Telefon oder Post ab. Erst nach der Bestätigung erscheint der Eintrag zuverlässig in Maps und in der lokalen Suche." },
 ];
 
 export default function GoogleBusinessProfilePage() {
@@ -62,9 +64,10 @@ export default function GoogleBusinessProfilePage() {
                 readTime="12 Min."
                 publishDate="2026-08-20"
                 heroImage="/wissen/fotos/gbp-maps.webp"
-                heroAlt="Hand haelt ein Smartphone, auf dem eine Karte mit einem markierten Standort zu sehen ist"
+                heroAlt="Hand hält ein Smartphone, auf dem eine Karte mit einem markierten Standort zu sehen ist"
                 heroFramed
             >
+                <AutoLinks path="/wissen/google-business-profile-optimieren">
                 <p>
                     Für ein lokales Unternehmen in Hamburg ist das Google-Unternehmensprofil der wichtigste kostenlose
                     Kanal, den es gibt. Es steht in der Suche über den blauen Links, es entscheidet in Google Maps
@@ -78,7 +81,7 @@ export default function GoogleBusinessProfilePage() {
                 </p>
 
                 <figure className="article-figure">
-                    <img src="/wissen/fotos/gbp-unterwegs.webp" alt="Mann tippt unterwegs auf einer Strasse etwas in sein Smartphone ein" width="1600" height="900" loading="lazy" decoding="async" />
+                    <img src="/wissen/fotos/gbp-unterwegs.webp" alt="Mann tippt unterwegs auf einer Straße etwas in sein Smartphone ein" width="1600" height="900" loading="lazy" decoding="async" />
                     <figcaption>Das lokale Dreierpack über den Suchergebnissen entscheidet, wer angerufen wird.</figcaption>
                 </figure>
 
@@ -91,7 +94,7 @@ export default function GoogleBusinessProfilePage() {
                     <li>
                         <strong>Relevanz</strong> bedeutet, wie gut Ihr Profil zur Suchanfrage passt. Deshalb ist die
                         Hauptkategorie die wichtigste Einstellung im ganzen Profil. Ein Malerbetrieb, der als
-                        „Bauunternehmen" geführt wird, verliegt bei „Maler Hamburg" gegen jeden korrekt kategorisierten
+                        "Bauunternehmen" geführt wird, verliegt bei "Maler Hamburg" gegen jeden korrekt kategorisierten
                         Wettbewerber.
                     </li>
                     <li>
@@ -108,11 +111,7 @@ export default function GoogleBusinessProfilePage() {
 
                 <h2>Darf ich Suchbegriffe in den Profilnamen schreiben?</h2>
                 <p>
-                    Es gibt einen Klassiker, den man in Hamburg täglich sieht: „Malerbetrieb Hansen Maler Hamburg
-                    Altona Notdienst". Der Gedanke dahinter ist verständlich, die Regel dazu ist eindeutig. Google
-                    verlangt, dass der Name im Profil dem echten Geschäftsnamen entspricht, also dem, der am Laden,
-                    auf dem Briefkopf und in der Gewerbeanmeldung steht. Zusätzliche Suchbegriffe im Namen sind ein
-                    Richtlinienverstoß und einer der häufigsten Gründe für eine Profilsperrung.
+                    Es gibt einen Klassiker, den man in Hamburg täglich sieht: "Malerbetrieb Hansen Maler Hamburg Altona Notdienst". Der Gedanke dahinter ist verständlich, die Regel dazu ist eindeutig. Google verlangt, dass der Name im Profil dem echten Geschäftsnamen entspricht, also dem, der am Laden, auf dem Briefkopf und in der Gewerbeanmeldung steht. Zusätzliche Suchbegriffe im Namen sind ein Richtlinienverstoß und einer der häufigsten Gründe für eine Profilsperrung.
                 </p>
                 <p>
                     Kurzfristig funktioniert es manchmal. Mittelfristig verlieren Sie das Profil, und mit ihm alle
@@ -313,6 +312,7 @@ export default function GoogleBusinessProfilePage() {
                         <li>Think with Google (2016), How Mobile Search Connects Consumers to Stores: 76 Prozent besuchen innerhalb eines Tages ein Geschäft, 28 Prozent dieser Suchen führen zu einem Kauf. <a href="https://www.thinkwithgoogle.com/marketing-strategies/search/how-mobile-search-connects-consumers-to-stores/" rel="nofollow noopener" target="_blank">thinkwithgoogle.com</a></li>
                     </ol>
                 </div>
+                </AutoLinks>
             </ArticleLayout>
             <FaqSection title="Häufige Fragen zum Google-Unternehmensprofil" items={faqItems} />
         </>

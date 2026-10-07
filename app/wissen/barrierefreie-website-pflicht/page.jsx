@@ -1,15 +1,16 @@
 import ArticleLayout from '../../../src/components/ArticleLayout';
+import AutoLinks from '../../../src/components/AutoLinks';
 import { BUSINESS } from '../../../src/lib/schema';
 import Link from 'next/link';
 
 export const metadata = {
-    title: 'Barrierefreie Website: Pflicht oder nicht?',
+    title: 'Barrierefreie Website Pflicht? Was das BFSG verlangt',
     description: 'Das BFSG gilt seit dem 28. Juni 2025. Wer betroffen ist, wer als Kleinstunternehmen ausgenommen bleibt, was im Gesetz steht und was bei Verstößen droht.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/barrierefreie-website-pflicht',
     },
     openGraph: {
-        title: 'Barrierefreie Website: Pflicht oder nicht?',
+        title: 'Barrierefreie Website Pflicht? Was das BFSG verlangt',
         description: 'Das BFSG gilt seit dem 28. Juni 2025. Wer betroffen ist, wer ausgenommen bleibt und was bei Verstößen droht.',
         url: 'https://webseite.hamburg/wissen/barrierefreie-website-pflicht',
         type: 'article',
@@ -91,6 +92,7 @@ export default function BarrierefreieWebsitePflichtPage() {
                 heroImage="/wissen/hero-bfsg-pflicht.svg"
                 heroAlt="Illustration: Browser-Fenster mit dem Barrierefreiheits-Symbol, daneben ein rotes Amtssiegel mit Paragraphenzeichen"
             >
+                <AutoLinks path="/wissen/barrierefreie-website-pflicht">
                 <p>
                     Seit dem Sommer 2025 bekomme ich diese Frage in fast jedem Erstgespräch. Meist in einer von zwei
                     Varianten: Panik, weil ein Newsletter mit 100.000 Euro Bußgeld gedroht hat, oder Gleichmut, weil
@@ -401,6 +403,7 @@ export default function BarrierefreieWebsitePflichtPage() {
                         <li>WebAIM Million, Bericht Februar 2026: 95,9 Prozent der Startseiten mit feststellbaren WCAG-2-Fehlern, 56,1 Fehler im Schnitt. <a href="https://webaim.org/projects/million/" rel="nofollow noopener" target="_blank">webaim.org</a></li>
                     </ol>
                 </div>
+                </AutoLinks>
             </ArticleLayout>
         </>
     );

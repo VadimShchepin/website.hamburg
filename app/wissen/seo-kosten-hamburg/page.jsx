@@ -1,16 +1,17 @@
 import ArticleLayout from '../../../src/components/ArticleLayout';
+import AutoLinks from '../../../src/components/AutoLinks';
 import FaqSection from '../../../src/components/FaqSection';
 import { BUSINESS } from '../../../src/lib/schema';
 import Link from 'next/link';
 
 export const metadata = {
-    title: 'Was kostet SEO in Hamburg? Echte Preise 2026',
+    title: 'Was kostet SEO in Hamburg? Preise 2026 im Vergleich',
     description: 'Monatsbudgets, Stundensätze und was ein Retainer wirklich enthält. Mit Google-Aussagen zur Dauer, Warnsignalen und einer Rechnung, was 1.000 Euro kaufen.',
     alternates: {
         canonical: 'https://webseite.hamburg/wissen/seo-kosten-hamburg',
     },
     openGraph: {
-        title: 'Was kostet SEO in Hamburg? Echte Preise 2026',
+        title: 'Was kostet SEO in Hamburg? Preise 2026 im Vergleich',
         description: 'Monatsbudgets, Stundensätze und was ein Retainer wirklich enthält. Mit Warnsignalen und einer ehrlichen Rechnung.',
         url: 'https://webseite.hamburg/wissen/seo-kosten-hamburg',
         type: 'article',
@@ -65,6 +66,7 @@ export default function SeoKostenHamburgPage() {
                 heroAlt="Blick durch einen Kanal der Hamburger Speicherstadt mit Backsteinspeichern auf beiden Seiten"
                 heroFramed
             >
+                <AutoLinks path="/wissen/seo-kosten-hamburg">
                 <p>
                     Kurze Antwort für lokale Unternehmen in Hamburg: 800 bis 2.500 Euro im Monat bei Freelancern und
                     kleinen Anbietern, 2.000 bis 5.000 Euro bei Agenturen, jeweils netto und mit einer Laufzeit von
@@ -116,10 +118,7 @@ export default function SeoKostenHamburgPage() {
                     </table>
                 </div>
                 <p>
-                    In Hamburg liegen Agentursätze eher am oberen Rand, weil Fixkosten und Wettbewerb um Fachkräfte
-                    hoch sind. Das macht Hamburger Anbieter nicht besser, es macht sie teurer. Umgekehrt hat lokale
-                    Nähe echte Vorteile: Wer den Markt kennt, weiß, dass „Steuerberater Hamburg" und „Steuerberater
-                    Winterhude" zwei verschiedene Suchen mit sehr verschiedenem Wettbewerb sind.
+                    In Hamburg liegen Agentursätze eher am oberen Rand, weil Fixkosten und Wettbewerb um Fachkräfte hoch sind. Das macht Hamburger Anbieter nicht besser, es macht sie teurer. Umgekehrt hat lokale Nähe echte Vorteile: Wer den Markt kennt, weiß, dass "Steuerberater Hamburg" und "Steuerberater Winterhude" zwei verschiedene Suchen mit sehr verschiedenem Wettbewerb sind.
                 </p>
 
                 <h2>Was 1.000 Euro im Monat tatsächlich kaufen</h2>
@@ -137,18 +136,12 @@ export default function SeoKostenHamburgPage() {
                     <li><strong>1 Stunde</strong> Abstimmung mit Ihnen, weil ohne Ihre Fachkenntnis kein guter Text entsteht.</li>
                 </ul>
                 <p>
-                    Wenn ein Anbieter für 299 Euro im Monat „vollumfängliche SEO-Betreuung" verspricht, kaufen Sie
-                    also zweieinhalb Stunden. Rechnen Sie nach, was davon nach dem automatisierten Report übrig
-                    bleibt. Genau das ist der Grund, warum billige SEO-Verträge so selten wirken: Es ist keine
-                    Betrugsabsicht, es ist Arithmetik.
+                    Wenn ein Anbieter für 299 Euro im Monat "vollumfängliche SEO-Betreuung" verspricht, kaufen Sie also zweieinhalb Stunden. Rechnen Sie nach, was davon nach dem automatisierten Report übrig bleibt. Genau deshalb wirken billige SEO-Verträge so selten: Es ist keine Betrugsabsicht, es ist Arithmetik.
                 </p>
 
                 <h2>Wie lange dauert es, bis SEO wirkt?</h2>
                 <p>
-                    In der offiziellen Dokumentation von Google Search Central steht zwei Dinge, die jeder Anbieter
-                    kennen sollte. Erstens: „Niemand kann eine Platzierung auf Platz 1 bei Google garantieren."
-                    Zweitens, aus demselben Leitfaden: In den meisten Fällen brauchen SEO-Dienstleister vier Monate
-                    bis zu einem Jahr, um Verbesserungen umzusetzen und dann Wirkung zu sehen.
+                    In der offiziellen Dokumentation von Google Search Central stehen zwei Dinge, die jeder Anbieter kennen sollte. Erstens: "Niemand kann eine Platzierung auf Platz 1 bei Google garantieren." Zweitens, aus demselben Leitfaden: In den meisten Fällen brauchen SEO-Dienstleister vier Monate bis zu einem Jahr, um Verbesserungen umzusetzen und dann Wirkung zu sehen.
                 </p>
                 <p>
                     Die Datenlage dazu ist unbarmherzig. Eine Ahrefs-Auswertung von Millionen Seiten zeigt, dass nur
@@ -168,12 +161,12 @@ export default function SeoKostenHamburgPage() {
                     Hamburger Angeboten regelmäßig lese:
                 </p>
                 <ul>
-                    <li><strong>Ranking-Garantien.</strong> Platz 1 kann niemand garantieren, auch nicht für „ausgewählte Keywords".</li>
+                    <li><strong>Ranking-Garantien.</strong> Platz 1 kann niemand garantieren, auch nicht für "ausgewählte Keywords".</li>
                     <li><strong>Behauptete Sonderbeziehung zu Google.</strong> Es gibt keine bevorzugte Einreichung und keinen Freundschaftsdienst.</li>
                     <li><strong>Keine Nennung der Arbeitsstunden.</strong> Wer nicht sagt, wie viel Zeit im Paket steckt, verkauft ein Gefühl.</li>
                     <li><strong>Berichte statt Arbeit.</strong> Ein 30-seitiger PDF-Report im Monat ist keine Optimierung.</li>
                     <li><strong>Eigene Konten.</strong> Analytics, Search Console und Ads gehören Ihnen, nicht der Agentur. Sonst ist der Wechsel später teuer.</li>
-                    <li><strong>Linkpakete.</strong> „500 Backlinks für 199 Euro" ist der schnellste Weg zu einem Problem, das man nicht mehr wegoptimiert.</li>
+                    <li><strong>Linkpakete.</strong> "500 Backlinks für 199 Euro" ist der schnellste Weg zu einem Problem, das man nicht mehr wegoptimiert.</li>
                     <li><strong>Keine Aussage zur Laufzeit.</strong> Zwölf Monate Bindung ohne Ausstieg ist bei einem lokalen Betrieb unnötig.</li>
                 </ul>
 
@@ -248,6 +241,7 @@ export default function SeoKostenHamburgPage() {
                         <li>freelancermap, Marktstudie Freelancer-Kompass 2025 und 2026: durchschnittliche Stundensätze im DACH-Raum. <a href="https://www.freelancermap.de/marktstudie" rel="nofollow noopener" target="_blank">freelancermap.de</a></li>
                     </ol>
                 </div>
+                </AutoLinks>
             </ArticleLayout>
             <FaqSection title="Häufige Fragen zu SEO-Kosten in Hamburg" items={faqItems} />
         </>

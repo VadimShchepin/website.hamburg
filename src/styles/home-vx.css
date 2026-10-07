@@ -139,6 +139,14 @@
   max-width: 9ch;
 }
 
+.vx-hero-lede {
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--vx-muted);
+  max-width: 36ch;
+  margin: 0 0 28px;
+}
+
 .vx-hero-mark {
   position: relative;
   display: flex;
@@ -361,6 +369,7 @@
 }
 
 .vx-services h2,
+.vx-partner h2,
 .vx-faq h2 {
   font-size: 48px;
   letter-spacing: -0.035em;
@@ -604,6 +613,20 @@
   margin-right: 8px;
 }
 
+/* Ongoing partnership: same grid and heading as the FAQ */
+.vx-partner {
+  border-top: 1px solid var(--vx-line);
+  padding: 96px 0;
+}
+
+.vx-partner-text {
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--vx-fg);
+  margin: 0 0 24px;
+  max-width: 52ch;
+}
+
 /* FAQ: reuses FaqItem markup, restyled */
 .vx-faq {
   border-top: 1px solid var(--vx-line);
@@ -781,12 +804,14 @@
 
   .vx .vx-project-heading,
   .vx-services h2,
+  .vx-partner h2,
   .vx-faq h2,
   .vx .vx-cta h2 {
     font-size: 32px;
   }
 
   .vx-services,
+  .vx-partner,
   .vx-faq {
     padding: 64px 0;
   }
@@ -845,7 +870,7 @@ body .vx .vx-project-heading {
   line-height: 1.08;
 }
 
-body .vx :is(.vx-services h2, .vx-faq h2, .vx-cta h2) {
+body .vx :is(.vx-services h2, .vx-partner h2, .vx-faq h2, .vx-cta h2) {
   font-size: 44px;
   line-height: 1.05;
 }
@@ -859,7 +884,7 @@ body .vx .vx-service h3 {
     font-size: 42px;
   }
 
-  body .vx :is(.vx-project-heading, .vx-services h2, .vx-faq h2, .vx-cta h2) {
+  body .vx :is(.vx-project-heading, .vx-services h2, .vx-partner h2, .vx-faq h2, .vx-cta h2) {
     font-size: 30px;
   }
 }

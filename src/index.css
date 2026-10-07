@@ -1,5 +1,5 @@
 /* ==========================================================================
-   AISEO - Design System & Variables
+   webseite.hamburg - Design System & Variables
    ========================================================================== */
 :root {
   /* Colors - Light Theme Only */
@@ -1773,6 +1773,13 @@ img {
   flex-shrink: 0;
 }
 
+.contact-info-note {
+  margin: var(--space-sm) 0 0;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
 .contact-promise {
   padding: var(--space-md);
   background: var(--color-bg-lightgray);
@@ -2844,6 +2851,17 @@ img {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: var(--space-md);
   margin-top: var(--space-lg);
+}
+
+.wissen-group + .wissen-group {
+  margin-top: var(--space-xl);
+}
+
+.wissen-group-title {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  color: var(--color-primary);
+  margin: 0 0 var(--space-md);
 }
 
 .wissen-grid a {
@@ -5346,4 +5364,17 @@ a.service-card {
 /* Wait until the cookie banner is answered; both live bottom-right */
 body:has(.cookie-banner) .contact-bubble {
   display: none;
+}
+
+/* Automatic internal links (src/components/AutoLinks.jsx): same look as links in article text */
+a.auto-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  transition: color 0.2s ease;
+}
+
+a.auto-link:hover {
+  color: var(--color-accent);
 }

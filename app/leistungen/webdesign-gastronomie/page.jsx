@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
@@ -22,12 +23,12 @@ export const metadata = {
 };
 
 const faqItems = [
-    { q: 'Was kostet eine Website für ein Restaurant?', a: 'Der Einstieg ist die Website-Start ab 1.500 Euro: eine Seite mit Speisekarte, Öffnungszeiten, Karte und Reservierungsweg, fertig in zwei bis fünf Arbeitstagen, Texte und Fotos kommen von Ihnen. Eine individuell gestaltete Restaurant-Website mit eigener Bildsprache beginnt bei 2.900 Euro, mehrseitig mit Eventbereich und Catering ab 4.500 Euro.' },
+    { q: 'Was kostet eine Website für ein Restaurant?', a: 'Der Einstieg ist der Website-Start ab 1.500 Euro: eine Seite mit Speisekarte, Öffnungszeiten, Karte und Reservierungsweg, fertig in zwei bis fünf Arbeitstagen, Texte und Fotos kommen von Ihnen. Eine individuell gestaltete Restaurant-Website mit eigener Bildsprache beginnt bei 2.900 Euro, mehrseitig mit Eventbereich und Catering ab 4.500 Euro.' },
     { q: 'Brauche ich überhaupt eine Website, wenn ich Google und Instagram habe?', a: 'Google und Instagram bringen Aufmerksamkeit, aber Sie besitzen sie nicht. Ein gesperrtes Konto, ein geänderter Algorithmus oder ein Profil ohne Speisekarte kostet direkt Gäste. Laut Bitkom (2024) erwarten 69 Prozent der Gäste in Deutschland, dass ein Restaurant eine eigene Website mit Fotos hat, und 53 Prozent schauen vor dem Besuch online die Speisekarte an. Die Website ist die Version, die Ihnen gehört.' },
     { q: 'Muss ich Allergene auf der Website angeben?', a: 'Wenn Sie auf der Website konkrete Speisen mit Preisen zeigen, gehören die Angaben zu den 14 Hauptallergenen nach der EU-Lebensmittelinformationsverordnung dazu, üblicherweise als Fußnoten oder Legende. Ich baue die Speisekarte so, dass Sie Allergene und Zusatzstoffe pro Gericht pflegen können, ohne für jede Änderung ein neues PDF zu erzeugen.' },
     { q: 'Welches Reservierungssystem empfehlen Sie?', a: 'Das hängt vom Volumen ab. Für kleine Betriebe reicht oft ein Formular plus Telefon, das kostet keine Provision. Ab etwa 20 Reservierungen am Tag lohnt ein System wie OpenTable, quandoo, resmio oder Formitable, das Tischbelegung und Absagen verwaltet. Ich binde ein, was Sie schon nutzen, und mache den Reservierungsweg auf dem Handy zur größten Schaltfläche der Seite.' },
     { q: 'Können Sie auch Lieferung und Abholung einbinden?', a: 'Ja. Abholbestellungen über ein eigenes Formular oder einen einfachen Shop sind provisionsfrei und lohnen sich schnell, wenn Sie sonst 25 bis 30 Prozent an Lieferplattformen zahlen. Für echten Lieferbetrieb mit Fahrern sprechen wir über die Prozesse dahinter, nicht nur über die Website.' },
-    { q: 'Wie schnell kann die Seite online sein?', a: 'Die Website-Start ist in zwei bis fünf Arbeitstagen live, wenn Speisekarte und Fotos vorliegen. Eine individuell gestaltete Seite dauert zwei bis vier Wochen. Erfahrungsgemäß ist der Engpass nicht die Technik, sondern brauchbare Fotos. Wenn nötig, hole ich einen Fotografen dazu.' },
+    { q: 'Wie schnell kann die Seite online sein?', a: 'Der Website-Start ist in zwei bis fünf Arbeitstagen live, wenn Speisekarte und Fotos vorliegen. Eine individuell gestaltete Seite dauert zwei bis vier Wochen. Erfahrungsgemäß ist der Engpass nicht die Technik, sondern brauchbare Fotos. Wenn nötig, hole ich einen Fotografen dazu.' },
 ];
 
 export default function WebdesignGastronomiePage() {
@@ -58,6 +59,7 @@ export default function WebdesignGastronomiePage() {
 
     return (
         <>
+            <AutoLinks path="/leistungen/webdesign-gastronomie">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -296,6 +298,7 @@ export default function WebdesignGastronomiePage() {
             <FaqSection title="Häufige Fragen zu Restaurant-Websites" items={faqItems} />
             <RelatedServices exclude="webdesign" />
             <ServiceCta text="Schicken Sie mir den Link zu Ihrer Seite und Ihrem Google-Profil. Ich sage Ihnen kostenlos, wo Reservierungen verloren gehen und was sich in einer Stunde reparieren lässt." />
+            </AutoLinks>
         </>
     );
 }

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
@@ -7,13 +8,13 @@ import ServiceMeta from '../../../src/components/ServiceMeta';
 import { BUSINESS } from '../../../src/lib/schema';
 
 export const metadata = {
-    title: 'Kanzlei-Website Hamburg: Webdesign für Anwälte ab 2.900 €',
+    title: 'Kanzlei-Website für Anwälte in Hamburg ab 2.900 €',
     description: 'Was kostet eine Kanzlei-Website in Hamburg? Ab 2.900 Euro zum Festpreis: berufsrechtlich sauber nach § 43b BRAO, lokal sichtbar, mit klarem Weg zum Erstgespräch.',
     alternates: {
         canonical: 'https://webseite.hamburg/leistungen/webdesign-anwaelte',
     },
     openGraph: {
-        title: 'Kanzlei-Website Hamburg: Webdesign für Anwälte ab 2.900 €',
+        title: 'Kanzlei-Website für Anwälte in Hamburg ab 2.900 €',
         description: 'Was kostet eine Kanzlei-Website in Hamburg? Ab 2.900 Euro zum Festpreis, berufsrechtlich sauber und mit klarem Weg zum Erstgespräch.',
         url: 'https://webseite.hamburg/leistungen/webdesign-anwaelte',
         type: 'website',
@@ -24,7 +25,7 @@ export const metadata = {
 const faqItems = [
     { q: 'Was kostet eine Kanzlei-Website?', a: 'Eine einseitige Kanzlei-Website mit klarem Weg zum Erstgespräch beginnt bei 2.900 Euro. Eine mehrseitige Website mit eigenen Seiten je Rechtsgebiet, Anwaltsprofilen und CMS liegt ab 4.500 Euro. Sie erhalten vor Projektstart einen Festpreis, keine Stundenabrechnung im Nachhinein.' },
     { q: 'Ist eine Kanzlei-Website mit Werbecharakter berufsrechtlich erlaubt?', a: 'Ja. § 43b BRAO erlaubt Werbung, soweit sie über die berufliche Tätigkeit sachlich unterrichtet und nicht auf ein Mandat im Einzelfall gerichtet ist. Erlaubt sind also Fachgebiete, Vita, Fachanwaltstitel, Honorarhinweise und Kontaktwege. Nicht erlaubt sind Erfolgsgarantien, Spitzenstellungsbehauptungen ohne Nachweis und die Nennung von Mandanten ohne ausdrückliche Einwilligung. Ich bin kein Anwalt und berate nicht rechtlich, aber ich baue Websites, bei denen Ihre Kammer keine Post schreiben muss.' },
-    { q: 'Kann ich meine Fachanwaltstitel prominent zeigen?', a: 'Ja, verliehene Fachanwaltsbezeichnungen dürfen und sollen sichtbar sein. Nach § 43c BRAO sind maximal drei Titel pro Person möglich, laut BRAK-Statistik zum 1. Januar 2026 führen 1.555 Anwältinnen und Anwälte tatsächlich drei. Selbst erfundene Bezeichnungen wie „Fachanwalt für Scheidungsrecht" gehören nicht auf die Seite, wohl aber Tätigkeits- oder Interessenschwerpunkte, wenn Sie darin nachhaltig arbeiten.' },
+    { q: 'Kann ich meine Fachanwaltstitel prominent zeigen?', a: 'Ja, verliehene Fachanwaltsbezeichnungen dürfen und sollen sichtbar sein. Nach § 43c BRAO sind maximal drei Titel pro Person möglich, laut BRAK-Statistik zum 1. Januar 2026 führen 1.555 Anwältinnen und Anwälte tatsächlich drei. Selbst erfundene Bezeichnungen wie "Fachanwalt für Scheidungsrecht" gehören nicht auf die Seite, wohl aber Tätigkeits- oder Interessenschwerpunkte, wenn Sie darin nachhaltig arbeiten.' },
     { q: 'Wie gehen Sie mit Mandatsgeheimnis und Datenschutz um?', a: 'Kontaktformulare laufen über TLS und landen direkt in Ihrem Postfach, nicht in einem Drittanbieter-Dashboard. Schriften und Skripte hoste ich selbst, es gibt also keine unnötigen Datenabflüsse an Google Fonts oder CDN-Dienste. Auf Wunsch ergänze ich einen Hinweis, dass mandatsbezogene Details bitte nicht ins Formular, sondern ins Erstgespräch gehören.' },
     { q: 'Bringt eine Website Mandate, wenn ich bisher nur Empfehlungen hatte?', a: 'Sie ersetzt Empfehlungen nicht, sie verstärkt sie. Empfohlene Mandanten prüfen Sie vorher online: Foto, Vita, Rechtsgebiet, Erreichbarkeit. Ohne diese Prüfstation bricht ein Teil der Empfehlungen still ab, und Sie erfahren nie davon. Dazu kommt die lokale Suche nach Rechtsgebiet und Stadtteil, die Sie mit einer sauberen Seitenstruktur bedienen können.' },
     { q: 'Wie lange dauert das Projekt?', a: 'Eine einseitige Kanzlei-Website ist in zwei bis drei Wochen fertig, eine mehrseitige in vier bis sechs Wochen. Der Flaschenhals ist fast nie die Technik, sondern die Freigabe der Texte zwischen zwei Terminen bei Gericht. Deshalb liefere ich Textvorschläge, die Sie nur noch prüfen und korrigieren müssen.' },
@@ -58,6 +59,7 @@ export default function WebdesignAnwaeltePage() {
 
     return (
         <>
+            <AutoLinks path="/leistungen/webdesign-anwaelte">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
@@ -99,10 +101,10 @@ export default function WebdesignAnwaeltePage() {
                     <div className="subpage-story animate-up">
                         <span className="subpage-story-label">Aus der Praxis</span>
                         <p>
-                            Der häufigste Fund in meinen kostenlosen Audits von Kanzlei-Websites ist nicht das Design. Es ist das Kontaktformular. Es sieht gut aus, es sagt „Vielen Dank für Ihre Nachricht", und es schickt seine Nachrichten an eine Adresse, die vor drei Kanzleiwechseln eingerichtet wurde. Getestet hat das niemand, weil niemand sich selbst eine Mandatsanfrage schickt.
+                            Der häufigste Fund in meinen kostenlosen Audits von Kanzlei-Websites ist nicht das Design. Es ist das Kontaktformular. Es sieht gut aus, es sagt "Vielen Dank für Ihre Nachricht", und es schickt seine Nachrichten an eine Adresse, die vor drei Kanzleiwechseln eingerichtet wurde. Getestet hat das niemand, weil niemand sich selbst eine Mandatsanfrage schickt.
                         </p>
                         <p>
-                            Danach kommt der Punkt, an dem die Startseite mit „Ihr kompetenter Partner in allen Rechtsfragen" beginnt. Das ist berufsrechtlich unbedenklich und inhaltlich leer. Ein Ratsuchender mit einer Kündigung in der Hand sucht keinen Partner in allen Rechtsfragen, er sucht Arbeitsrecht, Eimsbüttel, Termin diese Woche. Deshalb fange ich jedes Kanzlei-Projekt mit einer sehr unromantischen Frage an: Welche drei Sätze muss diese Seite können, damit das Telefon klingelt?
+                            Danach kommt der Punkt, an dem die Startseite mit "Ihr kompetenter Partner in allen Rechtsfragen" beginnt. Das ist berufsrechtlich unbedenklich und inhaltlich leer. Ein Ratsuchender mit einer Kündigung in der Hand sucht keinen Partner in allen Rechtsfragen, er sucht Arbeitsrecht, Eimsbüttel, Termin diese Woche. Deshalb fange ich jedes Kanzlei-Projekt mit einer sehr unromantischen Frage an: Welche drei Sätze muss diese Seite können, damit das Telefon klingelt?
                         </p>
                     </div>
 
@@ -144,7 +146,7 @@ export default function WebdesignAnwaeltePage() {
 
                     <h2 className="animate-up">Was darf auf eine Kanzlei-Website und was nicht?</h2>
                     <p className="animate-up">
-                        Anwaltswerbung ist erlaubt, sie ist nur an Sachlichkeit gebunden. § 43b BRAO lässt Werbung zu, soweit sie über die berufliche Tätigkeit in Form und Inhalt sachlich unterrichtet und nicht auf ein Mandat im Einzelfall gerichtet ist. Die BORA konkretisiert das, unter anderem bei Referenzen: Werbung mit Mandaten oder Mandanten ist nur mit ausdrücklicher Einwilligung zulässig. Das ist der Grund, warum Kanzlei-Websites keine Logo-Wand wie ein Softwareanbieter haben.
+                        Anwaltswerbung ist erlaubt, sie ist nur an Sachlichkeit gebunden. § 43b BRAO lässt Werbung zu, soweit sie über die berufliche Tätigkeit in Form und Inhalt sachlich unterrichtet und nicht auf ein Mandat im Einzelfall gerichtet ist. Die BORA konkretisiert das, unter anderem bei Referenzen: Werbung mit Mandaten oder Mandanten ist nur mit ausdrücklicher Einwilligung zulässig. Deshalb haben Kanzlei-Websites keine Logo-Wand wie ein Softwareanbieter.
                     </p>
                     <div className="rule-cols animate-up">
                         <div className="rule-col">
@@ -161,7 +163,7 @@ export default function WebdesignAnwaeltePage() {
                         <div className="rule-col rule-no">
                             <h3>Das besser nicht</h3>
                             <ul>
-                                <li>Erfolgsquoten und Garantien wie „100 Prozent gewonnene Verfahren"</li>
+                                <li>Erfolgsquoten und Garantien wie "100 Prozent gewonnene Verfahren"</li>
                                 <li>Spitzenstellungsbehauptungen ohne objektiven Nachweis</li>
                                 <li>Mandantennamen, Logos oder Testimonials ohne Einwilligung</li>
                                 <li>Fantasietitel, die nach Fachanwaltschaft klingen, aber keine sind</li>
@@ -178,7 +180,7 @@ export default function WebdesignAnwaeltePage() {
                     <div className="subpage-features-grid animate-up">
                         <div className="subpage-feature">
                             <h3>Eine Seite je Rechtsgebiet</h3>
-                            <p>Arbeitsrecht, Familienrecht und Verkehrsrecht suchen unterschiedliche Menschen mit unterschiedlichen Fragen. Eine Sammelseite „Leistungen" bedient keine davon. Eigene Seiten je Gebiet ranken besser und beantworten die konkrete Frage sofort.</p>
+                            <p>Arbeitsrecht, Familienrecht und Verkehrsrecht suchen unterschiedliche Menschen mit unterschiedlichen Fragen. Eine Sammelseite "Leistungen" bedient keine davon. Eigene Seiten je Gebiet ranken besser und beantworten die konkrete Frage sofort.</p>
                         </div>
                         <div className="subpage-feature">
                             <h3>Klarer Weg zum Erstgespräch</h3>
@@ -290,6 +292,7 @@ export default function WebdesignAnwaeltePage() {
             <FaqSection title="Häufige Fragen zu Kanzlei-Websites" items={faqItems} />
             <RelatedServices exclude="webdesign" />
             <ServiceCta text="Reden wir 30 Minuten über Ihre Kanzlei. Ich sage Ihnen ehrlich, ob eine neue Website Ihr Problem löst oder ob es an anderer Stelle klemmt, etwa am Google-Unternehmensprofil oder am Weg zum Erstgespräch." />
+            </AutoLinks>
         </>
     );
 }

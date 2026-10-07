@@ -3,7 +3,6 @@ import AutoLinks from '../src/components/AutoLinks';
 import Image from 'next/image';
 import { FaqItem } from '../src/components/FaqSection';
 import ShaderBackdrop from '../src/components/shaders/ShaderBackdrop';
-import '../src/styles/home-vx.css';
 
 const PHONE = '+4917632194754';
 const GOOGLE_REVIEWS = 'https://share.google/Ta1IQevSFQFxhXvvn';

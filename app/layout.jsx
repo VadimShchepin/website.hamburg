@@ -6,6 +6,7 @@ import CookieConsent from '../src/components/CookieConsent';
 import { vxFontVars } from '../src/lib/fonts';
 import '../src/index.css';
 import '../src/styles/site-vx.css';
+import '../src/styles/vx.css';
 
 const SITE_URL = 'https://webseite.hamburg';
 

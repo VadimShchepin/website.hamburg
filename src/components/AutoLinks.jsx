@@ -100,18 +100,26 @@ export default function AutoLinks({ path, children, max = MAX_AUTO_LINKS }) {
         const before = text.slice(0, best.index);
         const match = text.slice(best.index, best.index + best.len);
         const after = text.slice(best.index + best.len);
-        return [
-            before,
-            <Link key={`${keyBase}-l`} href={best.href} className="auto-link"
-                data-umami-event="auto-link" data-umami-event-target={best.href}>{match}</Link>,
-            ...[].concat(linkText(after, `${keyBase}-r`)),
-        ];
+        // A keyed fragment, not a bare array, so React sees no unkeyed list.
+        return (
+            <React.Fragment key={keyBase}>
+                {before}
+                <Link href={best.href} className="auto-link"
+                    data-umami-event="auto-link" data-umami-event-target={best.href}>{match}</Link>
+                {linkText(after, `${keyBase}-r`)}
+            </React.Fragment>
+        );
+    }
+
+    function withKey(el, k) {
+        return React.isValidElement(el) && el.key == null ? React.cloneElement(el, { key: k }) : el;
     }
 
     function walk(node, key) {
         if (count >= max) return node;
         if (typeof node === 'string') return linkText(node, key);
-        if (Array.isArray(node)) return node.map((n, i) => walk(n, `${key}.${i}`));
+        // Sibling JSX passed as an array has no keys; add positional ones.
+        if (Array.isArray(node)) return node.map((n, i) => withKey(walk(n, `${key}.${i}`), `${key}.${i}`));
         if (!React.isValidElement(node)) return node;
         // Only host elements (strings) are walked; components keep their own text.
         if (typeof node.type !== 'string' && node.type !== React.Fragment) return node;

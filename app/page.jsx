@@ -11,6 +11,7 @@ import Cases from '../src/components/Cases';
 import Founder from '../src/components/Founder';
 import FaqSection from '../src/components/FaqSection';
 import Cta from '../src/components/Cta';
+import WordmarkBand from '../src/components/shaders/WordmarkBand';
 
 const faqItems = [
     {
@@ -104,6 +105,7 @@ export default function HomePage() {
             <Founder />
             <Proof />
             <Cases />
+            <WordmarkBand />
             <FaqSection title="Was Unternehmer mich am häufigsten fragen" items={faqItems} />
             <section className="section light-bg">
                 <div className="container">

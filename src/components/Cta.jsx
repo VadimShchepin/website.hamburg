@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import ShaderBackdrop from './shaders/ShaderBackdrop';
 
 function getAvailability() {
     const now = new Date();
@@ -18,7 +19,8 @@ export default function Cta() {
     return (
         <section id="cta" className="final-cta section">
             <div className="container">
-                <div className="cta-box bull-boundary animate-up">
+                <div className="cta-box cta-box-shader bull-boundary animate-up shader-host">
+                    <ShaderBackdrop scene="cta" />
                     <p className="section-kicker">Bereit?</p>
                     <h2 className="section-title">Lassen Sie uns Ihr Wachstum starten.</h2>
                     <p className="offer-framing">Fordern Sie die kostenlose Website-Analyse an. Das bekommen Sie, unverbindlich und ohne Verkaufsgespräch:</p>

@@ -167,8 +167,7 @@ body:has(.vx) .site-footer {
   position: relative;
   width: 200px;
   height: auto;
-  /* the logo file has a white background; multiply drops it */
-  mix-blend-mode: multiply;
+  /* transparent cut-out of logo_blue.webp, sits cleanly on the shader */
 }
 
 .vx-hero-list {

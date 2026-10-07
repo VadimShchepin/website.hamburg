@@ -260,7 +260,8 @@ export default function HomePage() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
             {/* Hero */}
-            <section className="vx-hero">
+            <section className="vx-hero shader-host">
+                <ShaderBackdrop scene="hero" />
                 <a href={GOOGLE_REVIEWS} target="_blank" rel="noopener noreferrer" className="vx-announce" data-umami-event="hero-google-rating">
                     <span>5,0 Sterne bei Google</span>
                     <strong>Bewertungen ansehen <Arrow /></strong>
@@ -275,7 +276,7 @@ export default function HomePage() {
                     </div>
                     <div className="vx-hero-mark" aria-hidden="true">
                         <div className="vx-hero-glow" />
-                        <img src="/logo_blue.webp" alt="" width="200" height="172" />
+                        <img src="/logo_blue_transparent.webp" alt="" width="200" height="172" />
                     </div>
                     <ul className="vx-hero-list">
                         <li>Webdesign für Hamburger Betriebe</li>

@@ -10,7 +10,7 @@ export default function AnimateOnScroll() {
                     entry.target.classList.add('in-view');
                 }
             });
-        }, { root: null, rootMargin: '0px', threshold: 0.1 });
+        }, { root: null, rootMargin: '0px 0px -5% 0px', threshold: 0 });
 
         const observe = () => {
             document.querySelectorAll('.animate-up').forEach(el => observer.observe(el));

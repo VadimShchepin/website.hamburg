@@ -1973,3 +1973,15 @@ a.wissen-card:hover {
     padding: 56px 0 72px;
   }
 }
+
+/* Navy summary box inside articles */
+.article-content .subpage-takeaway p {
+  font-size: 18px;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.article-content .subpage-takeaway strong,
+.article-content .subpage-takeaway a {
+  color: #FFFFFF;
+}

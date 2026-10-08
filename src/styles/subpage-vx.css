@@ -2006,3 +2006,338 @@ a.wissen-card:hover {
     overflow-wrap: break-word;
   }
 }
+
+/* ==========================================================================
+   Section bands (service pages, 2026-10): every top-level h2 opens its own
+   full-width band with alternating background. Head = number + h2 on the
+   left, short intro on the right; content below uses the full width.
+   Sticky JumpNav under the hero. Reference: app/leistungen/seo/page.jsx
+   ========================================================================== */
+.sx-bands {
+  counter-reset: sx-band;
+}
+
+.sx-band {
+  padding: 104px 0;
+  background: #FAFAFA;
+  border-top: 1px solid var(--sx-line);
+  scroll-margin-top: 110px;
+}
+
+.sx-band.is-alt {
+  background: #FFFFFF;
+}
+
+.sx-band-head {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  gap: 56px;
+  align-items: end;
+  margin-bottom: 48px;
+}
+
+.sx-band-head.is-solo {
+  grid-template-columns: 1fr;
+}
+
+.sx-band-head h2 {
+  counter-increment: sx-band;
+  font-family: var(--sx-display);
+  font-weight: 400;
+  font-size: clamp(1.85rem, 3vw, 2.75rem);
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+  color: var(--sx-fg);
+  text-wrap: balance;
+  max-width: 18ch;
+  margin: 0;
+}
+
+.sx-band-head h2::before {
+  content: counter(sx-band, decimal-leading-zero);
+  display: block;
+  font-size: 15px;
+  letter-spacing: 0;
+  color: var(--sx-red);
+  margin-bottom: 16px;
+}
+
+.sx-band-head p,
+.sx-band-text p {
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--sx-text);
+  margin: 0;
+}
+
+.sx-band-text p + p {
+  margin-top: 16px;
+}
+
+.sx-band a:not([class]) {
+  color: var(--sx-fg);
+  text-decoration: underline;
+  text-decoration-color: #C4C4C4;
+  text-underline-offset: 3px;
+}
+
+.sx-band a:not([class]):hover {
+  text-decoration-color: var(--sx-fg);
+}
+
+.sx-band strong {
+  color: var(--sx-fg);
+}
+
+/* Two-column body: text or panel left, supporting block right */
+.sx-split {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.sx-split.is-even {
+  grid-template-columns: 1fr 1fr;
+}
+
+.sx-band .subpage-takeaway {
+  margin: 0;
+}
+
+.sx-band .subpage-takeaway p {
+  font-size: 19px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.86);
+  margin: 0;
+}
+
+.sx-band .subpage-takeaway strong {
+  color: #FFFFFF;
+}
+
+.sx-band .subpage-stats,
+.sx-band .subpage-features-grid,
+.sx-band .subpage-pricing-compare,
+.sx-band .subpage-process,
+.sx-band .subpage-cases,
+.sx-band .subpage-table-wrap {
+  margin: 0;
+}
+
+.sx-band .subpage-stats + *,
+.sx-band .subpage-features-grid + *,
+.sx-band .subpage-table-wrap + *,
+.sx-band .sx-split + * {
+  margin-top: 40px;
+}
+
+.sx-band.is-alt .subpage-stat,
+.sx-band.is-alt .subpage-feature,
+.sx-band.is-alt .subpage-price-col:not(.subpage-price-featured),
+.sx-band.is-alt .subpage-single-price,
+.sx-band.is-alt .subpage-process .sp-step,
+.sx-band.is-alt .subpage-case-card,
+.sx-band.is-alt .sx-card {
+  background: #FAFAFA;
+}
+
+.sx-band:not(.is-alt) .subpage-stat,
+.sx-band:not(.is-alt) .subpage-feature,
+.sx-band:not(.is-alt) .subpage-price-col:not(.subpage-price-featured),
+.sx-band:not(.is-alt) .subpage-single-price,
+.sx-band:not(.is-alt) .subpage-process .sp-step,
+.sx-band:not(.is-alt) .subpage-case-card,
+.sx-band:not(.is-alt) .sx-card,
+.sx-band:not(.is-alt) .subpage-table-wrap {
+  background: #FFFFFF;
+}
+
+.sx-band .subpage-features-grid.is-four {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.sx-band .subpage-feature p,
+.sx-band .subpage-stat-label {
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--sx-text);
+}
+
+.sx-band .subpage-figure {
+  margin: 0;
+}
+
+.sx-band .subpage-figure img {
+  aspect-ratio: auto;
+}
+
+/* Generic numbered card grid for lists (e.g. "what you get each month") */
+.sx-cards {
+  list-style: none;
+  counter-reset: sx-card;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.sx-cards > li,
+.sx-card {
+  counter-increment: sx-card;
+  padding: 28px;
+  border: 1px solid var(--sx-line);
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--sx-text);
+}
+
+.sx-cards > li::before {
+  content: counter(sx-card, decimal-leading-zero);
+  display: block;
+  font-family: var(--sx-display);
+  font-size: 28px;
+  line-height: 1;
+  color: var(--sx-fg);
+  margin-bottom: 18px;
+}
+
+.sx-cards > li strong {
+  display: block;
+  font-size: 17px;
+  margin-bottom: 6px;
+}
+
+/* One wide price: number + terms left, inclusions right */
+.sx-band .subpage-single-price.is-wide {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  gap: 56px;
+  padding: 40px;
+}
+
+.sx-band .subpage-single-price.is-wide .sp-price-value {
+  font-size: clamp(36px, 4vw, 56px);
+  white-space: normal;
+}
+
+.sx-band .subpage-single-price.is-wide .sp-price-includes {
+  border-top: 0;
+  padding-top: 0;
+  columns: 2;
+  column-gap: 32px;
+}
+
+.sx-band .subpage-single-price.is-wide .sp-price-includes li {
+  break-inside: avoid;
+}
+
+.sx-band .subpage-single-price p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--sx-text);
+}
+
+.sx-band .subpage-sources {
+  margin-top: 64px;
+}
+
+@media (max-width: 1100px) {
+  .sx-band .subpage-features-grid.is-four {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .sx-band-head,
+  .sx-split,
+  .sx-split.is-even,
+  .sx-band .subpage-single-price.is-wide {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .sx-band-head {
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sx-band {
+    padding: 64px 0;
+  }
+
+  .sx-band-head h2 {
+    font-size: 30px;
+  }
+
+  .sx-band-head p,
+  .sx-band-text p {
+    font-size: 17px;
+  }
+
+  .sx-band .subpage-features-grid.is-four {
+    grid-template-columns: 1fr;
+  }
+
+  .sx-band .subpage-single-price.is-wide {
+    padding: 24px;
+  }
+
+  .sx-band .subpage-single-price.is-wide .sp-price-includes {
+    columns: 1;
+  }
+}
+
+.sx-band .subpage-price-col .sp-price-includes li,
+.sx-band .subpage-single-price .sp-price-includes li {
+  border-bottom: 0;
+  padding: 5px 0 5px 26px;
+  font-size: 15px;
+  line-height: 1.45;
+  color: var(--sx-fg);
+}
+
+.sx-band .subpage-price-featured .sp-price-includes li {
+  color: #FFFFFF;
+}
+
+.sx-band .subpage-price-col p {
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--sx-text);
+}
+
+.sx-band .subpage-price-featured p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.sx-band .sx-cards + *,
+.sx-band .subpage-process + *,
+.sx-band .subpage-pricing-compare + *,
+.sx-band .subpage-cases + *,
+.sx-band .subpage-takeaway + * {
+  margin-top: 40px;
+}
+
+.sx-band .check-list {
+  padding: 0;
+  margin: 0;
+}
+
+.sx-band .check-list li {
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--sx-fg);
+  padding-left: 28px;
+  margin-bottom: 10px;
+}
+
+.sx-band .sp-price-value small {
+  font-family: var(--font-vx), sans-serif;
+  font-size: 0.4em;
+  font-weight: 600;
+  letter-spacing: 0;
+  margin-left: 4px;
+}

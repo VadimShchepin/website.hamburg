@@ -2,7 +2,7 @@ import Link from 'next/link';
 import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import HeroFacts from '../../../src/components/HeroFacts';
-import SubpageToc from '../../../src/components/SubpageToc';
+import JumpNav from '../../../src/components/JumpNav';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
 import ServiceCta from '../../../src/components/ServiceCta';
@@ -85,17 +85,39 @@ export default function SeoPage() {
                 </div>
             </section>
 
-            <section className="subpage-content section light-bg">
-                <div className="container subpage-body">
-                    <SubpageToc />
-                    <h2 className="animate-up">Was ist lokale SEO?</h2>
-                    <div className="subpage-takeaway animate-up">
-                        <p><strong>Lokale SEO</strong> (lokale Suchmaschinenoptimierung) sorgt dafür, dass ein Unternehmen in der regionalen Google-Suche, in Google Maps und im lokalen 3er-Pack erscheint, wenn Menschen in der Nähe nach einer Leistung suchen. Sie umfasst vier Bausteine: Optimierung des Google-Unternehmensprofils, technisches SEO, lokale Inhalte und den Aufbau von Citations. Bei mir beginnt lokale SEO in Hamburg bei 1.000 € pro Monat.</p>
+            <JumpNav label="Abschnitte" items={[
+                { id: 'was-ist-lokale-seo', num: '01', label: 'Was ist lokale SEO' },
+                { id: 'warum', num: '02', label: 'Warum es zählt' },
+                { id: 'bausteine', num: '03', label: 'Bausteine' },
+                { id: 'seo-oder-ads', num: '04', label: 'SEO oder Ads' },
+                { id: 'paket', num: '05', label: 'Paket und Preis' },
+                { id: 'erfolg', num: '06', label: 'Erfolg messen' },
+            ]} />
+
+            <div className="sx-bands">
+            <section id="was-ist-lokale-seo" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Was ist lokale SEO?</h2>
                     </div>
+                    <div className="sx-split animate-up">
+                        <div className="subpage-takeaway">
+                            <p><strong>Lokale SEO</strong> (lokale Suchmaschinenoptimierung) sorgt dafür, dass ein Unternehmen in der regionalen Google-Suche, in Google Maps und im lokalen 3er-Pack erscheint, wenn Menschen in der Nähe nach einer Leistung suchen. Sie umfasst vier Bausteine: Optimierung des Google-Unternehmensprofils, technisches SEO, lokale Inhalte und den Aufbau von Citations. Bei mir beginnt lokale SEO in Hamburg bei 1.000 € pro Monat.</p>
+                        </div>
+                        <figure className="subpage-figure">
+                            <img src="/leistungen/fotos/seo.webp" alt="Bürotisch mit zwei Monitoren, auf denen Diagramme und Kennzahlen zur Websiteleistung zu sehen sind" width="1800" height="760" loading="lazy" decoding="async" />
+                            <figcaption>Sichtbarkeit wird gemessen, nicht behauptet: Rankings, Klicks und Anrufe im Monatsreport.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Warum lokale Sichtbarkeit über Aufträge entscheidet</h2>
-                    <p className="animate-up">Jeden Tag suchen Menschen in Hamburg nach Leistungen wie Ihrer: "Elektriker Hamburg", "Steuerberater in der Nähe", "Webdesigner Hamburg". Diese Suchanfragen haben hohe Kaufabsicht, der Suchende braucht jetzt eine Lösung. Wer dann nicht sichtbar ist, verliert die Anfrage an den Wettbewerber, der oben steht. Wie lokale Rankings konkret funktionieren, steht im <a href="/wissen/lokales-seo-hamburg-guide">Leitfaden zu lokalem SEO in Hamburg</a>.</p>
-
+            <section id="warum" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head">
+                        <h2 className="animate-up">Warum lokale Sichtbarkeit über Aufträge entscheidet</h2>
+                        <p className="animate-up">Jeden Tag suchen Menschen in Hamburg nach Leistungen wie Ihrer: "Elektriker Hamburg", "Steuerberater in der Nähe", "Webdesigner Hamburg". Diese Suchanfragen haben hohe Kaufabsicht, der Suchende braucht jetzt eine Lösung. Wer dann nicht sichtbar ist, verliert die Anfrage an den Wettbewerber, der oben steht. Wie lokale Rankings konkret funktionieren, steht im <a href="/wissen/lokales-seo-hamburg-guide">Leitfaden zu lokalem SEO in Hamburg</a>.</p>
+                    </div>
                     <div className="subpage-stats animate-up">
                         <div className="subpage-stat">
                             <span className="subpage-stat-value">76%</span>
@@ -110,13 +132,14 @@ export default function SeoPage() {
                             <span className="subpage-stat-label">Klickpreis: organische Rankings kosten pro Besucher nichts, anders als Ads</span>
                         </div>
                     </div>
+                </div>
+            </section>
 
-                    <figure className="subpage-figure is-band animate-up">
-                        <img src="/leistungen/fotos/seo.webp" alt="Bürotisch mit zwei Monitoren, auf denen Diagramme und Kennzahlen zur Websiteleistung zu sehen sind" width="1800" height="760" loading="lazy" decoding="async" />
-                        <figcaption>Sichtbarkeit wird gemessen, nicht behauptet: Rankings, Klicks und Anrufe im Monatsreport.</figcaption>
-                    </figure>
-
-                    <h2 className="animate-up">Was lokales SEO konkret bedeutet</h2>
+            <section id="bausteine" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Was lokales SEO konkret bedeutet</h2>
+                    </div>
                     <div className="subpage-features-grid animate-up">
                         <div className="subpage-feature">
                             <h3>Google-Unternehmensprofil</h3>
@@ -135,9 +158,15 @@ export default function SeoPage() {
                             <p>Konsistente NAP-Daten (Name, Adresse, Telefon) in Branchenverzeichnissen wie dem Branchenbuch auf hamburg.de oder Gelbe Seiten, dazu lokale Backlinks. Google muss verstehen, dass Ihr Unternehmen in Hamburg relevant und vertrauenswürdig ist.</p>
                         </div>
                     </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">SEO oder Google Ads: der direkte Vergleich</h2>
-                    <p className="animate-up">Die beiden Kanäle schließen sich nicht aus. Sie lösen unterschiedliche Probleme:</p>
+            <section id="seo-oder-ads" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head">
+                        <h2 className="animate-up">SEO oder Google Ads: der direkte Vergleich</h2>
+                        <p className="animate-up">Die beiden Kanäle schließen sich nicht aus. Sie lösen unterschiedliche Probleme:</p>
+                    </div>
                     <div className="subpage-table-wrap animate-up">
                         <table className="subpage-table">
                             <thead>
@@ -152,11 +181,20 @@ export default function SeoPage() {
                             </tbody>
                         </table>
                     </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Was im SEO-Paket enthalten ist</h2>
-                    <div className="subpage-single-price animate-up">
-                        <div className="sp-price-value">ab 1.000 &euro;/Monat</div>
-                        <p>Mindestlaufzeit 3 Monate, danach monatlich kündbar. Keine versteckten Kosten. Wie sich dieser Betrag in Arbeitsstunden aufteilt und was der Markt sonst verlangt, steht im Artikel <Link href="/wissen/seo-kosten-hamburg">Was kostet SEO in Hamburg</Link>.</p>
+            <section id="paket" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Was im SEO-Paket enthalten ist</h2>
+                    </div>
+                    <div className="subpage-single-price is-wide animate-up">
+                        <div>
+                            <h3>Lokale SEO-Betreuung</h3>
+                            <div className="sp-price-value">ab 1.000 &euro;<small>/Monat</small></div>
+                            <p>Mindestlaufzeit 3 Monate, danach monatlich kündbar. Keine versteckten Kosten. Wie sich dieser Betrag in Arbeitsstunden aufteilt und was der Markt sonst verlangt, steht im Artikel <Link href="/wissen/seo-kosten-hamburg">Was kostet SEO in Hamburg</Link>.</p>
+                        </div>
                         <ul className="sp-price-includes">
                             <li>Initiales SEO-Audit und Strategie</li>
                             <li>Google Business Profile Optimierung</li>
@@ -169,17 +207,24 @@ export default function SeoPage() {
                             <li>Wettbewerber-Monitoring</li>
                         </ul>
                     </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">So messe ich Erfolg</h2>
-                    <p className="animate-up">Kein Agentur-Sprech, keine vagen Versprechen. Sie erhalten jeden Monat einen klaren Report mit:</p>
-                    <ul className="check-list animate-up">
+            <section id="erfolg" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head">
+                        <h2 className="animate-up">So messe ich Erfolg</h2>
+                        <p className="animate-up">Kein Agentur-Sprech, keine vagen Versprechen. Sie erhalten jeden Monat einen klaren Report mit:</p>
+                    </div>
+                    <ul className="sx-cards animate-up">
                         <li><strong>Rankings:</strong> Wo stehen Sie für Ihre wichtigsten Keywords, und wie hat sich das verändert?</li>
                         <li><strong>Organischer Traffic:</strong> Wie viele Besucher kommen über Google, welche Seiten performen?</li>
                         <li><strong>Anfragen:</strong> Wie viele Leads kommen über die organische Suche?</li>
                         <li><strong>Nächste Schritte:</strong> Was wird im kommenden Monat optimiert und warum?</li>
                     </ul>
-                    <p className="animate-up">Dazu haben Sie jederzeit Zugang zum Live-Dashboard. Sie können mich fragen, wo wir stehen, und ich zeige es Ihnen in Echtzeit.</p>
-
+                    <div className="sx-band-text animate-up">
+                        <p>Dazu haben Sie jederzeit Zugang zum Live-Dashboard. Sie können mich fragen, wo wir stehen, und ich zeige es Ihnen in Echtzeit.</p>
+                    </div>
                     <div className="subpage-sources animate-up">
                         <h2>Quellen</h2>
                         <ol>
@@ -189,6 +234,7 @@ export default function SeoPage() {
                     </div>
                 </div>
             </section>
+            </div>
 
             <FaqSection title="Fragen zu SEO in Hamburg" items={faqItems} />
             <RelatedServices exclude="seo" />

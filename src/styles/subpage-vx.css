@@ -2341,3 +2341,7 @@ a.wissen-card:hover {
   letter-spacing: 0;
   margin-left: 4px;
 }
+
+.sx-jumpnav .container {
+  position: relative;
+}

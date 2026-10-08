@@ -1,6 +1,8 @@
 import Link from 'next/link';
+import '../../src/styles/bands-d.css';
 import AutoLinks from '../../src/components/AutoLinks';
 import Breadcrumbs from '../../src/components/Breadcrumbs';
+import JumpNav from '../../src/components/JumpNav';
 import FaqSection from '../../src/components/FaqSection';
 import ServiceCta from '../../src/components/ServiceCta';
 import WebsiteCheck from '../../src/components/WebsiteCheck';
@@ -81,7 +83,7 @@ export default function WebsiteCheckPage() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(appJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
-            <section className="subpage-hero section">
+            <section className="subpage-hero section sxd-wc-hero">
                 <div className="container">
                     <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Website-Check' }]} />
                     <div className="subpage-hero-split">
@@ -101,26 +103,34 @@ export default function WebsiteCheckPage() {
                 </div>
             </section>
 
-            <section className="section light-bg wc-section">
+            <section className="section wc-section sxd-wc-tool">
                 <div className="container">
                     <WebsiteCheck />
                 </div>
             </section>
 
-            <section className="subpage-content section">
-                <div className="container subpage-body">
-                    <div className="subpage-takeaway">
-                        <p>
-                            <strong>Kurz gesagt:</strong> Der Check lädt Ihre Startseite einmal von einem Server in
-                            Frankfurt und prüft 16 Punkte: Antwortzeit, Weiterleitungen, Komprimierung, HTTPS,
-                            mobile Darstellung, Schriften von Google-Servern und die SEO-Grundlagen im Quelltext. Er
-                            ersetzt keine Messung der Core Web Vitals und kein Audit, zeigt aber in einer Minute, ob die
-                            Basis stimmt.
-                        </p>
-                    </div>
+            <JumpNav label="Abschnitte" items={[
+                { id: 'was-er-misst', num: '01', label: 'Was er misst' },
+                { id: 'grenzen', num: '02', label: 'Was er nicht misst' },
+                { id: 'audit', num: '03', label: 'Nächster Schritt' },
+            ]} />
 
-                    <h2>Was der Check misst</h2>
-                    <div className="subpage-table-wrap">
+            <div className="sx-bands">
+            <section id="was-er-misst" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head sxd-head-takeaway">
+                        <h2 className="animate-up">Was der Check misst</h2>
+                        <div className="subpage-takeaway animate-up">
+                            <p>
+                                <strong>Kurz gesagt:</strong> Der Check lädt Ihre Startseite einmal von einem Server in
+                                Frankfurt und prüft 16 Punkte: Antwortzeit, Weiterleitungen, Komprimierung, HTTPS,
+                                mobile Darstellung, Schriften von Google-Servern und die SEO-Grundlagen im Quelltext. Er
+                                ersetzt keine Messung der Core Web Vitals und kein Audit, zeigt aber in einer Minute, ob die
+                                Basis stimmt.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="subpage-table-wrap animate-up">
                         <table className="subpage-table">
                             <thead>
                                 <tr><th>Prüfpunkt</th><th>Was er bedeutet</th><th>Richtwert</th></tr>
@@ -137,39 +147,54 @@ export default function WebsiteCheckPage() {
                             </tbody>
                         </table>
                     </div>
-                    <p>
-                        Die Schwellen für die Antwortzeit stammen von Google: web.dev nennt für die Time to First Byte
-                        0,8 Sekunden als gut und mehr als 1,8 Sekunden als schlecht. Die Zeichenzahlen für Titel und
-                        Beschreibung sind Erfahrungswerte, keine Regel von Google. Google schreibt selbst, dass es
-                        keine feste Länge gibt und Titel im Suchergebnis je nach Gerätebreite gekürzt werden.
-                    </p>
+                    <div className="sx-band-text animate-up">
+                        <p>
+                            Die Schwellen für die Antwortzeit stammen von Google: web.dev nennt für die Time to First Byte
+                            0,8 Sekunden als gut und mehr als 1,8 Sekunden als schlecht. Die Zeichenzahlen für Titel und
+                            Beschreibung sind Erfahrungswerte, keine Regel von Google. Google schreibt selbst, dass es
+                            keine feste Länge gibt und Titel im Suchergebnis je nach Gerätebreite gekürzt werden.
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-                    <h2>Was der Check nicht misst</h2>
-                    <ul className="x-list">
+            <section id="grenzen" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Was der Check nicht misst</h2>
+                    </div>
+                    <ul className="sx-cards sxd-cards-five animate-up">
                         <li><strong>Core Web Vitals.</strong> LCP, INP und CLS entstehen erst im Browser. Dafür verlinkt das Ergebnis auf PageSpeed Insights.</li>
                         <li><strong>Unterseiten.</strong> Geprüft wird nur die eingegebene Adresse, keine ganze Website.</li>
                         <li><strong>Rankings und Suchbegriffe.</strong> Wofür Sie gefunden werden, steht nur in der Google Search Console.</li>
                         <li><strong>Inhalte und Anfragen.</strong> Ob Ihre Texte überzeugen und der Weg zur Anfrage funktioniert, kann keine Maschine bewerten.</li>
                         <li><strong>Recht.</strong> Impressum, Datenschutzerklärung, Cookie-Einwilligung und Barrierefreiheit nach dem BFSG bleiben außen vor.</li>
                     </ul>
-                    <p>
-                        Seiten, die ihre Inhalte erst per JavaScript nachladen, sieht der Check so, wie ein einfacher
-                        Crawler sie sieht: möglicherweise leer. Das ist kein Fehler des Checks, sondern ein Hinweis,
-                        dass Suchmaschinen und KI-Systeme dort ebenfalls weniger lesen, als Besucher sehen.
-                    </p>
+                    <div className="sx-band-text animate-up">
+                        <p>
+                            Seiten, die ihre Inhalte erst per JavaScript nachladen, sieht der Check so, wie ein einfacher
+                            Crawler sie sieht: möglicherweise leer. Das ist kein Fehler des Checks, sondern ein Hinweis,
+                            dass Suchmaschinen und KI-Systeme dort ebenfalls weniger lesen, als Besucher sehen.
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-                    <h2>Der nächste Schritt: das persönliche Audit</h2>
-                    <p>
-                        Wenn der Check rote Punkte zeigt oder Sie wissen wollen, warum Ihre Seite trotz grüner Haken
-                        keine Anfragen bringt, schauen Sie beim{' '}
-                        <Link href="/leistungen/website-audit">persönlichen Website-Audit</Link> genauer hin. Das mache
-                        ich selbst, mit Lighthouse, Felddaten, der Search Console und einem Blick auf Ihre Wettbewerber.
-                        Sie bekommen einen Bericht mit Prioritäten und ein Gespräch dazu, kostenlos und ohne
-                        Verpflichtung. Wenn Ihre Seite gar nicht erst bei Google auftaucht, hilft vorab der Ratgeber{' '}
-                        <Link href="/wissen/website-nicht-bei-google-gefunden">Website nicht bei Google gefunden</Link>.
-                    </p>
-
-                    <div className="subpage-sources">
+            <section id="audit" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head">
+                        <h2 className="animate-up">Der nächste Schritt: das persönliche Audit</h2>
+                        <p className="animate-up">
+                            Wenn der Check rote Punkte zeigt oder Sie wissen wollen, warum Ihre Seite trotz grüner Haken
+                            keine Anfragen bringt, schauen Sie beim{' '}
+                            <Link href="/leistungen/website-audit">persönlichen Website-Audit</Link> genauer hin. Das mache
+                            ich selbst, mit Lighthouse, Felddaten, der Search Console und einem Blick auf Ihre Wettbewerber.
+                            Sie bekommen einen Bericht mit Prioritäten und ein Gespräch dazu, kostenlos und ohne
+                            Verpflichtung. Wenn Ihre Seite gar nicht erst bei Google auftaucht, hilft vorab der Ratgeber{' '}
+                            <Link href="/wissen/website-nicht-bei-google-gefunden">Website nicht bei Google gefunden</Link>.
+                        </p>
+                    </div>
+                    <div className="subpage-sources animate-up">
                         <h2>Quellen</h2>
                         <ol>
                             <li>web.dev, Time to First Byte (TTFB): gut bis 0,8 Sekunden, schlecht über 1,8 Sekunden. <a href="https://web.dev/articles/ttfb" rel="nofollow noopener" target="_blank">web.dev/articles/ttfb</a></li>
@@ -181,6 +206,7 @@ export default function WebsiteCheckPage() {
                     </div>
                 </div>
             </section>
+            </div>
 
             <FaqSection title="Fragen zum Website-Check" items={faqItems} />
             <ServiceCta title="Mehr als ein Schnelltest?" text="Im persönlichen Website-Audit prüfe ich Ladezeit, Indexierung, Inhalte und den Weg zur Anfrage und sage Ihnen, was zuerst zu tun ist." />

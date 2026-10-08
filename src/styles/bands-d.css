@@ -177,3 +177,165 @@
     font-size: 22px;
   }
 }
+
+/* ==========================================================================
+   Website check (/website-check): tool panel as first-screen anchor
+   ========================================================================== */
+.subpage-hero.sxd-wc-hero {
+  padding-bottom: 40px;
+}
+
+.section.sxd-wc-tool {
+  background: #FAFAFA;
+  padding: 0 0 104px;
+}
+
+.sxd-wc-tool .wc-panel {
+  max-width: none;
+  margin: 0;
+  padding: 40px;
+  background: #FFFFFF;
+  border: 1px solid #EBEBEB;
+  border-radius: 0;
+}
+
+.sxd-wc-tool .wc-form {
+  gap: 12px;
+}
+
+.sxd-wc-tool .wc-form input {
+  height: 64px;
+  padding: 0 22px;
+  font-family: var(--font-vx), sans-serif;
+  font-size: 18px;
+  color: var(--sx-fg);
+  border: 1px solid #D4D4D4;
+  border-radius: 0;
+}
+
+.sxd-wc-tool .wc-form input:focus {
+  outline: 2px solid #171717;
+  outline-offset: -1px;
+  border-color: #171717;
+}
+
+.sxd-wc-tool .wc-form .button {
+  height: 64px;
+  padding: 0 36px;
+  border-radius: 0;
+  white-space: nowrap;
+}
+
+.sxd-wc-tool .wc-note {
+  margin-top: 14px;
+  font-size: 14px;
+  color: var(--sx-text);
+}
+
+.sxd-wc-tool .wc-results,
+.sxd-wc-tool .wc-verdict {
+  border-top-color: #EBEBEB;
+}
+
+.sxd-wc-tool .wc-facts {
+  background: #EBEBEB;
+  border-color: #EBEBEB;
+}
+
+.sxd-wc-tool .wc-fact {
+  padding: 20px;
+}
+
+.sxd-wc-tool .wc-fact strong {
+  font-family: var(--sx-display);
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: -0.02em;
+  color: var(--sx-fg);
+}
+
+.sxd-wc-tool .wc-fact span {
+  font-size: 13px;
+  color: var(--sx-text);
+}
+
+.sxd-wc-tool .wc-subtitle {
+  font-family: var(--font-vx), sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  color: var(--sx-fg);
+  margin-top: 28px;
+}
+
+.sxd-wc-tool .wc-check {
+  background: #FAFAFA;
+  border-color: #EBEBEB;
+  border-radius: 0;
+}
+
+.sxd-wc-tool .wc-check strong {
+  font-size: 15px;
+  color: var(--sx-fg);
+}
+
+.sxd-wc-tool .wc-check em {
+  font-size: 13px;
+  color: var(--sx-text);
+}
+
+.sxd-wc-tool .wc-error {
+  border-radius: 0;
+}
+
+/* Band head with the navy summary as right column */
+.sx-band-head.sxd-head-takeaway {
+  align-items: end;
+}
+
+.sx-band-head.sxd-head-takeaway .subpage-takeaway {
+  margin: 0;
+}
+
+.sx-band-head.sxd-head-takeaway .subpage-takeaway p {
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.sx-band .subpage-table-wrap + .sx-band-text {
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .section.sxd-wc-tool {
+    padding-bottom: 64px;
+  }
+
+  .sxd-wc-tool .wc-panel {
+    padding: 20px;
+  }
+
+  .sxd-wc-tool .wc-form input,
+  .sxd-wc-tool .wc-form .button {
+    height: 56px;
+  }
+
+  .sxd-wc-tool .wc-form input {
+    flex: 0 0 auto;
+  }
+
+  .sxd-wc-tool .wc-form .button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Five short cards in one row on wide screens (no orphan card) */
+@media (min-width: 1101px) {
+  .sx-cards.sxd-cards-five {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .sx-cards.sxd-cards-five > li {
+    padding: 24px;
+  }
+}

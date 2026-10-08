@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import AutoLinks from '../../src/components/AutoLinks';
 import Breadcrumbs from '../../src/components/Breadcrumbs';
+import ServiceCta from '../../src/components/ServiceCta';
 import { BUSINESS } from '../../src/lib/schema';
 
 export const metadata = {
@@ -147,7 +148,7 @@ export default function ReferenzenPage() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
-            <section className="subpage-hero section">
+            <section className="subpage-hero section is-compact">
                 <div className="container">
                     <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Referenzen' }]} />
                     <div className="subpage-hero-split">
@@ -158,14 +159,11 @@ export default function ReferenzenPage() {
                                 Keine Stockfotos, keine erfundenen Zahlen. Hier sehen Sie, was ich für Unternehmen in Hamburg konkret erreicht habe, mit messbaren Ergebnissen und echten Daten.
                             </p>
                         </div>
-                        <div className="subpage-hero-media animate-up">
-                            <img src="/hero-referenzen.svg" alt="Illustration: drei gestaffelte Browserfenster mit roter Steigungskurve und ein Pokal als Zeichen für Projektergebnisse" width="1200" height="900" />
-                        </div>
                     </div>
                 </div>
             </section>
 
-            <section className="wissen-grid-section section light-bg">
+            <section className="wissen-grid-section section light-bg is-cases">
                 <div className="container">
                     <div className="wissen-grid">
                         {caseStudies.map((study, i) => (
@@ -176,7 +174,7 @@ export default function ReferenzenPage() {
                                 <div className="wissen-card-meta">
                                     <span className="wissen-card-category">{study.category}</span>
                                 </div>
-                                <p style={{ fontWeight: 700, color: 'var(--color-accent, #2563eb)', fontSize: '0.8rem', letterSpacing: '0.06em', textTransform: 'uppercase', margin: '0 0 var(--space-xs)' }}>{study.metric}</p>
+                                <p className="wissen-card-metric">{study.metric}</p>
                                 <h2 className="wissen-card-title">
                                     <span>{study.client}</span>
                                 </h2>
@@ -191,18 +189,12 @@ export default function ReferenzenPage() {
                 </div>
             </section>
 
-            <section className="sp-cta section">
-                <div className="container">
-                    <div className="cta-box bull-boundary animate-up">
-                        <p className="section-kicker">Ähnliche Ergebnisse gewünscht?</p>
-                        <h2 className="section-title">Kostenloses Erstgespräch.</h2>
-                        <p className="offer-framing">Lassen Sie uns über Ihr Projekt sprechen. Ich analysiere Ihre Situation und zeige Ihnen, was konkret möglich ist. Kostenlos und unverbindlich.</p>
-                        <div className="cta-actions mt-4">
-                            <Link href="/kontakt" className="button button-primary button-large" data-umami-event="cta-click" data-umami-event-location="referenzen-cta">Jetzt Gespräch vereinbaren</Link>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <ServiceCta
+                title="Kostenloses Erstgespräch."
+                text="Lassen Sie uns über Ihr Projekt sprechen. Ich analysiere Ihre Situation und zeige Ihnen, was konkret möglich ist. Kostenlos und unverbindlich."
+                primaryLabel="Jetzt Gespräch vereinbaren"
+                location="referenzen-cta"
+            />
             </AutoLinks>
         </>
     );

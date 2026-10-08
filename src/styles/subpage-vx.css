@@ -920,6 +920,7 @@
   .subpage-hero .subpage-title {
     font-size: 31px;
     hyphens: auto;
+    hyphenate-limit-chars: 14 6 6;
     overflow-wrap: break-word;
   }
 
@@ -1353,5 +1354,235 @@
 
   .article-cta .cta-box {
     padding: 28px 24px;
+  }
+}
+
+/* --- Overview pages (Referenzen, Wissen) --------------------------------- */
+.subpage-hero.is-compact {
+  padding-bottom: 48px;
+}
+
+.subpage-hero.is-compact .subpage-hero-split {
+  display: block;
+}
+
+.subpage-hero.is-compact .subpage-hero-split > div {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  column-gap: 56px;
+  align-items: end;
+}
+
+.subpage-hero.is-compact .section-kicker {
+  grid-column: 1 / -1;
+}
+
+.subpage-hero.is-compact .subpage-title {
+  margin: 0;
+  max-width: 16ch;
+}
+
+.subpage-hero.is-compact .subpage-intro {
+  font-size: 17px;
+}
+
+.wissen-grid-section.light-bg {
+  background: #FFFFFF;
+  border-top: 1px solid var(--sx-line);
+  padding: 72px 0 104px;
+}
+
+.wissen-grid {
+  gap: 16px;
+  margin-top: 0;
+}
+
+a.wissen-card {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 24px;
+  background: #FAFAFA;
+  border: 1px solid var(--sx-line);
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+a.wissen-card:hover {
+  border-color: var(--sx-fg);
+  transform: translateY(-2px);
+}
+
+.wissen-card > *:not(.wissen-card-media) {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.wissen-card-media {
+  order: -2;
+  margin: 0 0 20px;
+  border-bottom: 0;
+}
+
+.wissen-card-meta {
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.wissen-card-category {
+  font-family: var(--font-vx), sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  color: var(--sx-muted);
+  background: transparent;
+  padding: 0;
+}
+
+.wissen-card-time {
+  font-size: 13px;
+  color: var(--sx-muted);
+}
+
+.wissen-card-metric {
+  font-family: var(--sx-display);
+  font-size: 24px;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--sx-fg);
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.wissen-card-title {
+  font-family: var(--font-vx), sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+  color: var(--sx-fg);
+  margin-bottom: 8px;
+}
+
+.is-cases .wissen-card-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--sx-muted);
+  order: -1;
+  margin-bottom: 6px;
+}
+
+.is-cases .wissen-card-meta {
+  display: none;
+}
+
+.wissen-card-excerpt {
+  flex: 1;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--sx-text);
+  margin-bottom: 16px;
+}
+
+.wissen-card-link {
+  font-family: var(--font-vx), sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--sx-fg);
+}
+
+.wissen-group {
+  scroll-margin-top: 120px;
+}
+
+.wissen-group + .wissen-group {
+  margin-top: 96px;
+}
+
+.wissen-group-title {
+  font-family: var(--sx-display);
+  font-weight: 400;
+  font-size: clamp(1.85rem, 3vw, 2.75rem);
+  letter-spacing: -0.035em;
+  line-height: 1.06;
+  margin: 0 0 32px;
+}
+
+.wissen-group-title span {
+  display: block;
+  font-size: 15px;
+  letter-spacing: 0;
+  color: var(--sx-red);
+  margin-bottom: 14px;
+}
+
+/* Sticky topic nav */
+.sx-jumpnav {
+  position: sticky;
+  top: 57px;
+  z-index: 90;
+  background: rgba(250, 250, 250, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid var(--sx-line);
+}
+
+.sx-jumpnav .container {
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.sx-jumpnav a {
+  flex: 0 0 auto;
+  display: flex;
+  gap: 8px;
+  padding: 14px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--sx-muted);
+  border-bottom: 2px solid transparent;
+}
+
+.sx-jumpnav a span {
+  font-family: var(--sx-display);
+  font-size: 12px;
+  line-height: 1.75;
+  color: #A3A3A3;
+}
+
+.sx-jumpnav a:hover,
+.sx-jumpnav a.is-active {
+  color: var(--sx-fg);
+}
+
+.sx-jumpnav a.is-active {
+  border-bottom-color: var(--sx-fg);
+}
+
+.sx-jumpnav a.is-active span {
+  color: var(--sx-red);
+}
+
+@media (max-width: 900px) {
+  .subpage-hero.is-compact .subpage-hero-split > div {
+    grid-template-columns: 1fr;
+    row-gap: 18px;
+  }
+
+  .wissen-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .wissen-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .wissen-grid-section.light-bg {
+    padding: 48px 0 72px;
+  }
+
+  .wissen-group + .wissen-group {
+    margin-top: 64px;
   }
 }

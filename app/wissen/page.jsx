@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import AutoLinks from '../../src/components/AutoLinks';
 import Breadcrumbs from '../../src/components/Breadcrumbs';
+import ServiceCta from '../../src/components/ServiceCta';
+import JumpNav from '../../src/components/JumpNav';
 import { BUSINESS } from '../../src/lib/schema';
 
 export const metadata = {
@@ -259,10 +261,10 @@ const articles = [
 
 // Overview grouped by topic so the articles are easy to find (and linked by theme)
 const groups = [
-    { title: 'Kosten', slugs: ['webdesign-kosten', 'onlineshop-kosten', 'seo-kosten-hamburg', 'google-ads-kosten', 'webdesign-agentur-oder-freelancer', 'website-baukasten-oder-eigene-website', 'website-mit-ki-erstellen'] },
-    { title: 'Recht und Pflichten', slugs: ['impressum-datenschutzerklaerung-pflicht', 'barrierefreie-website-pflicht', 'website-barrierefrei-machen', 'website-abmahnung-vermeiden'] },
-    { title: 'Technik', slugs: ['wordpress-alternativen', 'wordpress-sicherheit-wartung', 'webflow-oder-wordpress', 'website-umzug-hosting-deutschland', 'website-relaunch-checkliste', 'warum-langsame-websites-kunden-kosten', 'case-study-fotogalerie-performance', 'dsgvo-fotoplattform-sicherheit-performance'] },
-    { title: 'Sichtbarkeit', slugs: ['lokales-seo-hamburg-guide', 'google-business-profile-optimieren', 'google-bewertungen', 'website-nicht-bei-google-gefunden', 'ai-seo-was-unternehmen-jetzt-wissen-muessen', 'google-ads-fehler-lokale-unternehmen', 'website-conversion-optimierung'] },
+    { id: 'kosten', title: 'Kosten', slugs: ['webdesign-kosten', 'onlineshop-kosten', 'seo-kosten-hamburg', 'google-ads-kosten', 'webdesign-agentur-oder-freelancer', 'website-baukasten-oder-eigene-website', 'website-mit-ki-erstellen'] },
+    { id: 'recht', title: 'Recht und Pflichten', slugs: ['impressum-datenschutzerklaerung-pflicht', 'barrierefreie-website-pflicht', 'website-barrierefrei-machen', 'website-abmahnung-vermeiden'] },
+    { id: 'technik', title: 'Technik', slugs: ['wordpress-alternativen', 'wordpress-sicherheit-wartung', 'webflow-oder-wordpress', 'website-umzug-hosting-deutschland', 'website-relaunch-checkliste', 'warum-langsame-websites-kunden-kosten', 'case-study-fotogalerie-performance', 'dsgvo-fotoplattform-sicherheit-performance'] },
+    { id: 'sichtbarkeit', title: 'Sichtbarkeit', slugs: ['lokales-seo-hamburg-guide', 'google-business-profile-optimieren', 'google-bewertungen', 'website-nicht-bei-google-gefunden', 'ai-seo-was-unternehmen-jetzt-wissen-muessen', 'google-ads-fehler-lokale-unternehmen', 'website-conversion-optimierung'] },
 ];
 
 export default function WissenPage() {
@@ -290,7 +292,7 @@ export default function WissenPage() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
-            <section className="subpage-hero section">
+            <section className="subpage-hero section is-compact">
                 <div className="container">
                     <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Wissen' }]} />
                     <div className="subpage-hero-split">
@@ -301,18 +303,17 @@ export default function WissenPage() {
                                 Keine Theorie, keine Floskeln. Hier finden Sie Anleitungen, Kostenrechnungen und Rechtsgrundlagen zu Webdesign, SEO, AI SEO und Google Ads, geschrieben für Unternehmer, die verstehen wollen, was wirklich funktioniert, mit Quellen und echten Zahlen aus meinen Projekten.
                             </p>
                         </div>
-                        <div className="subpage-hero-media animate-up">
-                            <img src="/wissen/hero-wissen.svg" alt="Illustration: aufgeschlagenes Buch, aus dem ein Browserfenster und eine rote Lupe aufsteigen" width="1200" height="900" />
-                        </div>
                     </div>
                 </div>
             </section>
 
+            <JumpNav label="Themen" items={groups.map((group, g) => ({ id: group.id, label: group.title, num: String(g + 1).padStart(2, '0') }))} />
+
             <section className="wissen-grid-section section light-bg">
                 <div className="container">
                     {groups.map((group, g) => (
-                        <div key={group.title} className="wissen-group">
-                            <h2 className="wissen-group-title animate-up">{group.title}</h2>
+                        <div key={group.title} id={group.id} className="wissen-group">
+                            <h2 className="wissen-group-title animate-up"><span>{String(g + 1).padStart(2, '0')}</span>{group.title}</h2>
                             <div className="wissen-grid">
                                 {group.slugs.map((slug) => articles.find((a) => a.slug === slug)).map((article, i) => (
                                     <Link key={article.slug} href={`/wissen/${article.slug}`} className={`wissen-card animate-up delay-${(i % 3) + 1}`}>
@@ -339,18 +340,11 @@ export default function WissenPage() {
                 </div>
             </section>
 
-            <section className="sp-cta section">
-                <div className="container">
-                    <div className="cta-box bull-boundary animate-up">
-                        <p className="section-kicker">Lieber direkt loslegen?</p>
-                        <h2 className="section-title">Kostenlose Website-Analyse.</h2>
-                        <p className="offer-framing">Statt nur zu lesen: lassen Sie mich Ihre Website analysieren. Performance, SEO, Conversion-Potenzial. Kostenlos und ehrlich.</p>
-                        <div className="cta-actions mt-4">
-                            <Link href="/kontakt" className="button button-primary button-large" data-umami-event="cta-click" data-umami-event-location="wissen-cta">Jetzt Analyse anfordern</Link>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <ServiceCta
+                title="Kostenlose Website-Analyse."
+                text="Statt nur zu lesen: lassen Sie mich Ihre Website analysieren. Performance, SEO, Conversion-Potenzial. Kostenlos und ehrlich."
+                location="wissen-cta"
+            />
             </AutoLinks>
         </>
     );

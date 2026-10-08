@@ -99,9 +99,9 @@
 
 /* Key statement in a split column: larger, darkest text = band anchor */
 .sx-band .sxb-statement p {
-  font-family: var(--sx-display);
-  font-size: clamp(20px, 1.8vw, 26px);
-  line-height: 1.35;
-  letter-spacing: -0.015em;
+  font-size: clamp(20px, 1.7vw, 24px);
+  font-weight: 500;
+  line-height: 1.45;
+  letter-spacing: -0.01em;
   color: var(--sx-fg);
 }

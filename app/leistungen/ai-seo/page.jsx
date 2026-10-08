@@ -1,8 +1,9 @@
+import '../../../src/styles/bands-b.css';
 import Link from 'next/link';
 import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import HeroFacts from '../../../src/components/HeroFacts';
-import SubpageToc from '../../../src/components/SubpageToc';
+import JumpNav from '../../../src/components/JumpNav';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
 import ServiceCta from '../../../src/components/ServiceCta';
@@ -87,18 +88,39 @@ export default function AiSeoPage() {
                 </div>
             </section>
 
-            <section className="subpage-content section light-bg">
-                <div className="container subpage-body">
-                    <SubpageToc />
-                    <h2 className="animate-up">Was ist AI SEO (GEO)?</h2>
-                    <div className="subpage-takeaway animate-up">
-                        <p><strong>AI SEO</strong>, auch <strong>GEO</strong> (Generative Engine Optimization) oder <strong>AEO</strong> (Answer Engine Optimization) genannt, optimiert Inhalte so, dass KI-Systeme wie ChatGPT, Perplexity, Google AI Overviews und Microsoft Copilot ein Unternehmen als Quelle zitieren. Anders als klassisches SEO zielt es nicht auf Platz 1, sondern auf die Nennung in der generierten Antwort. Die wichtigsten Hebel sind klare Definitionen, belegte Statistiken, strukturierte Daten (Schema.org) und für KI-Crawler zugängliche Inhalte.</p>
+            <JumpNav label="Abschnitte" items={[
+                { id: 'was-ist-ai-seo', num: '01', label: 'Was ist AI SEO' },
+                { id: 'suche-veraendert', num: '02', label: 'Suche im Wandel' },
+                { id: 'quellenauswahl', num: '03', label: 'Quellenauswahl' },
+                { id: 'so-funktionierts', num: '04', label: 'So funktioniert es' },
+                { id: 'preise', num: '05', label: 'Preise' },
+                { id: 'zeitpunkt', num: '06', label: 'Warum jetzt' },
+            ]} />
+
+            <div className="sx-bands">
+            <section id="was-ist-ai-seo" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Was ist AI SEO (GEO)?</h2>
                     </div>
+                    <div className="sx-split animate-up">
+                        <div className="subpage-takeaway">
+                            <p><strong>AI SEO</strong>, auch <strong>GEO</strong> (Generative Engine Optimization) oder <strong>AEO</strong> (Answer Engine Optimization) genannt, optimiert Inhalte so, dass KI-Systeme wie ChatGPT, Perplexity, Google AI Overviews und Microsoft Copilot ein Unternehmen als Quelle zitieren. Anders als klassisches SEO zielt es nicht auf Platz 1, sondern auf die Nennung in der generierten Antwort. Die wichtigsten Hebel sind klare Definitionen, belegte Statistiken, strukturierte Daten (Schema.org) und für KI-Crawler zugängliche Inhalte.</p>
+                        </div>
+                        <figure className="subpage-figure">
+                            <img src="/leistungen/fotos/ai-seo.webp" alt="Illustration: eine Website in der Mitte, deren Inhalte als Quellenverweise zu mehreren Antwortpanels führen" width="1800" height="760" loading="lazy" decoding="async" />
+                            <figcaption>Wer als Quelle taugt, wird zitiert: klare Aussagen, belegte Zahlen, sauberes Markup.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Die Suche verändert sich gerade grundlegend</h2>
-                    <p className="animate-up">Google ist nicht mehr der einzige Weg zur Antwort. ChatGPT erreichte im Oktober 2025 über 800 Millionen wöchentliche Nutzer. Perplexity zitiert in jeder Antwort seine Quellen. Und Google selbst blendet zunehmend AI Overviews über den klassischen Treffern ein.</p>
-                    <p className="animate-up">Diese Systeme arbeiten anders als eine klassische Suchmaschine. Sie lesen das Web, fassen es zusammen und präsentieren eine direkte Antwort mit Quellenverweisen. Wird Ihre Website dabei nicht als vertrauenswürdige Quelle erkannt, fallen Sie aus diesem Kanal heraus, egal wie gut Ihre Leistung ist.</p>
-
+            <section id="suche-veraendert" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head">
+                        <h2 className="animate-up">Die Suche verändert sich gerade grundlegend</h2>
+                        <p className="animate-up">Google ist nicht mehr der einzige Weg zur Antwort. ChatGPT erreichte im Oktober 2025 über 800 Millionen wöchentliche Nutzer. Perplexity zitiert in jeder Antwort seine Quellen. Und Google selbst blendet zunehmend AI Overviews über den klassischen Treffern ein.</p>
+                    </div>
                     <div className="subpage-stats animate-up">
                         <div className="subpage-stat">
                             <span className="subpage-stat-value">800 Mio.</span>
@@ -113,14 +135,18 @@ export default function AiSeoPage() {
                             <span className="subpage-stat-label">höhere Zitationswahrscheinlichkeit durch Quellenangaben (Princeton GEO, 2024)</span>
                         </div>
                     </div>
+                    <div className="sx-band-text sxb-measure animate-up">
+                        <p className="animate-up">Diese Systeme arbeiten anders als eine klassische Suchmaschine. Sie lesen das Web, fassen es zusammen und präsentieren eine direkte Antwort mit Quellenverweisen. Wird Ihre Website dabei nicht als vertrauenswürdige Quelle erkannt, fallen Sie aus diesem Kanal heraus, egal wie gut Ihre Leistung ist.</p>
+                    </div>
+                </div>
+            </section>
 
-                    <figure className="subpage-figure is-band animate-up">
-                        <img src="/leistungen/fotos/ai-seo.webp" alt="Illustration: eine Website in der Mitte, deren Inhalte als Quellenverweise zu mehreren Antwortpanels führen" width="1800" height="760" loading="lazy" decoding="async" />
-                        <figcaption>Wer als Quelle taugt, wird zitiert: klare Aussagen, belegte Zahlen, sauberes Markup.</figcaption>
-                    </figure>
-
-                    <h2 className="animate-up">Wie KI-Systeme ihre Quellen auswählen</h2>
-                    <p className="animate-up">Jede Engine grounded ihre Antworten anders. Wer zitiert werden will, muss wissen, wo die jeweilige Engine sucht:</p>
+            <section id="quellenauswahl" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head">
+                        <h2 className="animate-up">Wie KI-Systeme ihre Quellen auswählen</h2>
+                        <p className="animate-up">Jede Engine grounded ihre Antworten anders. Wer zitiert werden will, muss wissen, wo die jeweilige Engine sucht:</p>
+                    </div>
                     <div className="subpage-table-wrap animate-up">
                         <table className="subpage-table">
                             <thead>
@@ -134,9 +160,15 @@ export default function AiSeoPage() {
                             </tbody>
                         </table>
                     </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Wie AI SEO funktioniert</h2>
-                    <div className="subpage-features-grid animate-up">
+            <section id="so-funktionierts" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Wie AI SEO funktioniert</h2>
+                    </div>
+                    <div className="subpage-features-grid is-four animate-up">
                         <div className="subpage-feature">
                             <h3>Strukturierte Daten</h3>
                             <p>Schema.org-Markup als JSON-LD hilft KI-Systemen, Inhalte einzuordnen: wer Sie sind, was Sie anbieten, wo Sie tätig sind. Organisation, Service, FAQPage und Breadcrumbs machen Aussagen maschinenlesbar.</p>
@@ -154,9 +186,15 @@ export default function AiSeoPage() {
                             <p>Laufendes Tracking über Bing Webmaster Tools (AI Search Queries), Tools wie Peec AI oder Otterly und manuelle Test-Prompts. Die Modelle ändern sich, also wird die Strategie kontinuierlich nachgeschärft.</p>
                         </div>
                     </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Preise und Umfang</h2>
-                    <p className="animate-up">Der Einstieg ist ein kostenloser Call, kein Vertrag. Danach folgt ein einmaliger Sprint, und erst wenn Sie sehen, was der Kanal bringt, wird eine laufende Betreuung sinnvoll.</p>
+            <section id="preise" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head">
+                        <h2 className="animate-up">Preise und Umfang</h2>
+                        <p className="animate-up">Der Einstieg ist ein kostenloser Call, kein Vertrag. Danach folgt ein einmaliger Sprint, und erst wenn Sie sehen, was der Kanal bringt, wird eine laufende Betreuung sinnvoll.</p>
+                    </div>
                     <div className="subpage-pricing-compare is-three animate-up">
                         <div className="subpage-price-col">
                             <h3>KI-Kurzanalyse</h3>
@@ -194,13 +232,26 @@ export default function AiSeoPage() {
                             </ul>
                         </div>
                     </div>
-                    <p className="animate-up">Kombinierbar mit dem laufenden <Link href="/leistungen/seo">SEO-Paket</Link>, das die technische Grundlage für KI-Zitationen liefert.</p>
-                    <p className="animate-up">Seit August 2026 gibt es in ChatGPT neben der Antwort auch bezahlte Plätze. Erwähnungen in der Antwort verdienen Sie sich über AI SEO, den Platz darunter kaufen Sie: <Link href="/leistungen/chatgpt-ads">ChatGPT Ads</Link>.</p>
+                    <div className="sx-split is-even animate-up">
+                        <div className="sx-card">
+                            <p className="animate-up">Kombinierbar mit dem laufenden <Link href="/leistungen/seo">SEO-Paket</Link>, das die technische Grundlage für KI-Zitationen liefert.</p>
+                        </div>
+                        <div className="sx-card">
+                            <p className="animate-up">Seit August 2026 gibt es in ChatGPT neben der Antwort auch bezahlte Plätze. Erwähnungen in der Antwort verdienen Sie sich über AI SEO, den Platz darunter kaufen Sie: <Link href="/leistungen/chatgpt-ads">ChatGPT Ads</Link>.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Warum jetzt der richtige Zeitpunkt ist</h2>
-                    <p className="animate-up">AI-Suche ist noch ein junger Markt. Die meisten Wettbewerber optimieren noch nicht dafür. Wer jetzt investiert, baut einen Vorsprung auf, den man später schwer einholt. In zwei bis drei Jahren wird AI SEO so selbstverständlich sein wie klassisches SEO heute. Die zitierten Plätze sind dann aber längst vergeben.</p>
-                    <p className="animate-up">Ausführlicher zu KI-Sichtbarkeit, Messung und Fallbeispielen schreibe ich auf meiner Schwesterseite <a href="https://aiseo.hamburg/" target="_blank" rel="noopener">aiseo.hamburg</a>.</p>
-
+            <section id="zeitpunkt" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head">
+                        <h2 className="animate-up">Warum jetzt der richtige Zeitpunkt ist</h2>
+                        <p className="animate-up">AI-Suche ist noch ein junger Markt. Die meisten Wettbewerber optimieren noch nicht dafür. Wer jetzt investiert, baut einen Vorsprung auf, den man später schwer einholt. In zwei bis drei Jahren wird AI SEO so selbstverständlich sein wie klassisches SEO heute. Die zitierten Plätze sind dann aber längst vergeben.</p>
+                    </div>
+                    <div className="sx-band-text sxb-measure animate-up">
+                        <p className="animate-up">Ausführlicher zu KI-Sichtbarkeit, Messung und Fallbeispielen schreibe ich auf meiner Schwesterseite <a href="https://aiseo.hamburg/" target="_blank" rel="noopener">aiseo.hamburg</a>.</p>
+                    </div>
                     <div className="subpage-sources animate-up">
                         <h2>Quellen</h2>
                         <ol>
@@ -211,6 +262,7 @@ export default function AiSeoPage() {
                     </div>
                 </div>
             </section>
+            </div>
 
             <FaqSection title="Fragen zu AI SEO" items={faqItems} />
             <RelatedServices exclude="ai-seo" />

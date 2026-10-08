@@ -1,8 +1,9 @@
+import '../../../src/styles/bands-b.css';
 import Link from 'next/link';
 import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import HeroFacts from '../../../src/components/HeroFacts';
-import SubpageToc from '../../../src/components/SubpageToc';
+import JumpNav from '../../../src/components/JumpNav';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
 import ServiceCta from '../../../src/components/ServiceCta';
@@ -92,14 +93,26 @@ export default function ChatGptAdsPage() {
                 </div>
             </section>
 
-            <section className="subpage-content section light-bg">
-                <div className="container subpage-body">
-                    <SubpageToc />
-                    <h2 className="animate-up">Was sind ChatGPT Ads?</h2>
-                    <div className="subpage-takeaway animate-up">
+            <JumpNav label="Abschnitte" items={[
+                { id: 'was-sind-chatgpt-ads', num: '01', label: 'Was sind ChatGPT Ads' },
+                { id: 'warum-jetzt', num: '02', label: 'Warum jetzt' },
+                { id: 'auf-einen-blick', num: '03', label: 'Auf einen Blick' },
+                { id: 'vergleich', num: '04', label: 'Oder Google Ads' },
+                { id: 'fuer-wen', num: '05', label: 'Für wen' },
+                { id: 'leistungen', num: '06', label: 'Was ich übernehme' },
+                { id: 'preise', num: '07', label: 'Preise' },
+                { id: 'ablauf', num: '08', label: 'Ablauf' },
+            ]} />
+
+            <div className="sx-bands">
+            <section id="was-sind-chatgpt-ads" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Was sind ChatGPT Ads?</h2>
+                    </div>
+                    <div className="subpage-takeaway sxb-lead animate-up">
                         <p><strong>ChatGPT Ads</strong> sind bezahlte Anzeigen, die unterhalb einer ChatGPT-Antwort erscheinen, klar als gesponsert gekennzeichnet und vom Antworttext getrennt. Ausgespielt werden sie nur an Nutzer der Tarife Free und Go, abgerechnet pro 1.000 Impressionen (CPM) oder pro Klick (CPC). In Deutschland laufen sie seit dem 24. August 2026; den Ads Manager können deutsche Unternehmen seit dem 31. August 2026 selbst buchen.</p>
                     </div>
-
                     <div className="subpage-stats animate-up">
                         <div className="subpage-stat">
                             <span className="subpage-stat-value">24.08.2026</span>
@@ -114,29 +127,44 @@ export default function ChatGptAdsPage() {
                             <span className="subpage-stat-label">Branchen-Benchmarks. Wer jetzt startet, baut die eigenen und weiß mehr als der Markt</span>
                         </div>
                     </div>
-
-                    <div className="subpage-story animate-up">
-                        <span className="subpage-story-label">Aus der Praxis</span>
-                        <p>In meinem eigenen Ads-Manager-Konto laufen zwei Kampagnen: eine für meine Agenturleistungen, eine für den AI Visibility Check. Ich teste damit auf eigene Rechnung, welche Kontext-Hinweise überhaupt Auslieferung erzeugen, ab welchem Gebot eine Anzeige in die Auktion kommt und wie sauber der Pixel Conversions zurückmeldet.</p>
-                        <p>Belastbare Branchen-Benchmarks gibt es für diesen Kanal noch nicht, auch OpenAI veröffentlicht keine. Wer Ihnen heute exakte Klickpreise für Ihre Branche verspricht, rät. Ich sage Ihnen stattdessen, was ich in meinen eigenen Konten sehe, und baue Ihre Kampagne so, dass sie nach vier Wochen eine belastbare Antwort liefert.</p>
+                    <div className="sx-split animate-up">
+                        <div className="subpage-story">
+                            <span className="subpage-story-label">Aus der Praxis</span>
+                            <p>In meinem eigenen Ads-Manager-Konto laufen zwei Kampagnen: eine für meine Agenturleistungen, eine für den AI Visibility Check. Ich teste damit auf eigene Rechnung, welche Kontext-Hinweise überhaupt Auslieferung erzeugen, ab welchem Gebot eine Anzeige in die Auktion kommt und wie sauber der Pixel Conversions zurückmeldet.</p>
+                            <p>Belastbare Branchen-Benchmarks gibt es für diesen Kanal noch nicht, auch OpenAI veröffentlicht keine. Wer Ihnen heute exakte Klickpreise für Ihre Branche verspricht, rät. Ich sage Ihnen stattdessen, was ich in meinen eigenen Konten sehe, und baue Ihre Kampagne so, dass sie nach vier Wochen eine belastbare Antwort liefert.</p>
+                        </div>
+                        <figure className="subpage-figure">
+                            <img src="/leistungen/fotos/chatgpt-ads-anzeige-live.webp" alt="Anzeigenvorschau aus dem OpenAI Ads Manager: Bild, Absendername, Anzeigen-Label, Titel und Beschreibung" width="732" height="274" loading="lazy" decoding="async" />
+                            <figcaption>Eine meiner eigenen Anzeigen in der Vorschau: Bild, Absendername, klares Anzeigen-Label, Titel, Beschreibung.</figcaption>
+                        </figure>
                     </div>
+                </div>
+            </section>
 
-                    <figure className="subpage-figure animate-up">
-                        <img src="/leistungen/fotos/chatgpt-ads-anzeige-live.webp" alt="Anzeigenvorschau aus dem OpenAI Ads Manager: Bild, Absendername, Anzeigen-Label, Titel und Beschreibung" width="732" height="274" loading="lazy" decoding="async" />
-                        <figcaption>Eine meiner eigenen Anzeigen in der Vorschau: Bild, Absendername, klares Anzeigen-Label, Titel, Beschreibung.</figcaption>
-                    </figure>
+            <section id="warum-jetzt" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head">
+                        <h2 className="animate-up">Warum genau jetzt der richtige Moment ist</h2>
+                        <p className="animate-up">Jeder Werbekanal hat ein Zeitfenster, in dem die Klicks billig und die Aufmerksamkeit groß sind. Bei Google lag es um 2005, bei Facebook um 2014, bei TikTok um 2020. Wer damals dabei war, hat für Jahre günstiger eingekauft als alle, die später kamen. Genau dieses Fenster ist in Deutschland gerade aufgegangen.</p>
+                    </div>
+                    <div className="sx-split animate-up">
+                        <div className="sx-band-text">
+                            <p className="animate-up">Der Grund ist die Auktionsmechanik: OpenAI wählt Anzeigen in einer relevanzgewichteten Zweitpreisauktion aus. Ihr Gebot muss sich also nur gegen die durchsetzen, die mitbieten. Solange die großen Media-Budgets noch nicht umgeschichtet sind, entscheidet vor allem, wie gut Ihre Anzeige zum Gespräch passt. Das ändert sich, sobald die Konzerne den Kanal in ihre Mediapläne aufnehmen.</p>
+                            <p className="animate-up">Dazu kommt die Position im Kaufprozess. In der Google-Suche tippen Menschen ein fertiges Stichwort. In ChatGPT beschreiben sie ihre Lage: Budget, Zeitrahmen, Anforderungen, Bedenken. Sie sind mitten in der Entscheidung, nicht am Ende. Wer dort mit einem passenden Angebot auftaucht, prägt die Auswahl, statt am Schluss um den letzten Klick zu bieten.</p>
+                        </div>
+                        <figure className="subpage-figure">
+                            <img src="/leistungen/fotos/chatgpt-ads-anzeige.webp" alt="Illustration: eine KI-Antwortkarte, darunter abgetrennt eine rot hervorgehobene gesponserte Anzeige mit Bild und Link, auf die ein Mauszeiger klickt" width="1800" height="760" loading="lazy" decoding="async" />
+                            <figcaption>Die Anzeige steht unter der Antwort, nicht darin. OpenAI trennt beides bewusst, und Werbung beeinflusst die Antwort nicht.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Warum genau jetzt der richtige Moment ist</h2>
-                    <p className="animate-up">Jeder Werbekanal hat ein Zeitfenster, in dem die Klicks billig und die Aufmerksamkeit groß sind. Bei Google lag es um 2005, bei Facebook um 2014, bei TikTok um 2020. Wer damals dabei war, hat für Jahre günstiger eingekauft als alle, die später kamen. Genau dieses Fenster ist in Deutschland gerade aufgegangen.</p>
-                    <p className="animate-up">Der Grund ist die Auktionsmechanik: OpenAI wählt Anzeigen in einer relevanzgewichteten Zweitpreisauktion aus. Ihr Gebot muss sich also nur gegen die durchsetzen, die mitbieten. Solange die großen Media-Budgets noch nicht umgeschichtet sind, entscheidet vor allem, wie gut Ihre Anzeige zum Gespräch passt. Das ändert sich, sobald die Konzerne den Kanal in ihre Mediapläne aufnehmen.</p>
-                    <p className="animate-up">Dazu kommt die Position im Kaufprozess. In der Google-Suche tippen Menschen ein fertiges Stichwort. In ChatGPT beschreiben sie ihre Lage: Budget, Zeitrahmen, Anforderungen, Bedenken. Sie sind mitten in der Entscheidung, nicht am Ende. Wer dort mit einem passenden Angebot auftaucht, prägt die Auswahl, statt am Schluss um den letzten Klick zu bieten.</p>
-
-                    <figure className="subpage-figure is-band animate-up">
-                        <img src="/leistungen/fotos/chatgpt-ads-anzeige.webp" alt="Illustration: eine KI-Antwortkarte, darunter abgetrennt eine rot hervorgehobene gesponserte Anzeige mit Bild und Link, auf die ein Mauszeiger klickt" width="1800" height="760" loading="lazy" decoding="async" />
-                        <figcaption>Die Anzeige steht unter der Antwort, nicht darin. OpenAI trennt beides bewusst, und Werbung beeinflusst die Antwort nicht.</figcaption>
-                    </figure>
-
-                    <h2 className="animate-up">ChatGPT Ads auf einen Blick</h2>
+            <section id="auf-einen-blick" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">ChatGPT Ads auf einen Blick</h2>
+                    </div>
                     <div className="subpage-table-wrap animate-up">
                         <table className="subpage-table">
                             <thead>
@@ -155,9 +183,15 @@ export default function ChatGptAdsPage() {
                             </tbody>
                         </table>
                     </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">ChatGPT Ads oder Google Ads?</h2>
-                    <p className="animate-up">Die Frage stellt sich falsch herum. Die beiden Kanäle greifen an verschiedenen Punkten der Entscheidung an, und wer heute nur einen davon nutzt, verschenkt entweder Volumen oder Vorsprung.</p>
+            <section id="vergleich" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head">
+                        <h2 className="animate-up">ChatGPT Ads oder Google Ads?</h2>
+                        <p className="animate-up">Die Frage stellt sich falsch herum. Die beiden Kanäle greifen an verschiedenen Punkten der Entscheidung an, und wer heute nur einen davon nutzt, verschenkt entweder Volumen oder Vorsprung.</p>
+                    </div>
                     <div className="subpage-table-wrap animate-up">
                         <table className="subpage-table">
                             <thead>
@@ -173,14 +207,23 @@ export default function ChatGptAdsPage() {
                             </tbody>
                         </table>
                     </div>
-                    <p className="animate-up">Meine Empfehlung für die meisten Unternehmen: <Link href="/leistungen/google-ads">Google Ads</Link> laufen weiter als verlässliche Anfragequelle, ChatGPT Ads bekommen ein klar begrenztes Testbudget. Und weil in ChatGPT auch die unbezahlte Antwort zählt, gehört <Link href="/leistungen/ai-seo">AI SEO</Link> daneben: Anzeigen kaufen Sie, Erwähnungen in der Antwort verdienen Sie sich.</p>
+                    <div className="sx-split animate-up">
+                        <div className="sx-band-text">
+                            <p className="animate-up">Meine Empfehlung für die meisten Unternehmen: <Link href="/leistungen/google-ads">Google Ads</Link> laufen weiter als verlässliche Anfragequelle, ChatGPT Ads bekommen ein klar begrenztes Testbudget. Und weil in ChatGPT auch die unbezahlte Antwort zählt, gehört <Link href="/leistungen/ai-seo">AI SEO</Link> daneben: Anzeigen kaufen Sie, Erwähnungen in der Antwort verdienen Sie sich.</p>
+                        </div>
+                        <figure className="subpage-figure">
+                            <img src="/leistungen/fotos/chatgpt-ads-kontext.webp" alt="Illustration: Sprechblasen fließen durch einen Trichter in ein Dashboard mit Balkendiagramm und Gebotsanzeige" width="1800" height="760" loading="lazy" decoding="async" />
+                            <figcaption>Statt Keywords beschreiben Sie Gesprächssituationen. Die Auktion entscheidet dann über Relevanz und Gebot.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
 
-                    <figure className="subpage-figure is-band animate-up">
-                        <img src="/leistungen/fotos/chatgpt-ads-kontext.webp" alt="Illustration: Sprechblasen fließen durch einen Trichter in ein Dashboard mit Balkendiagramm und Gebotsanzeige" width="1800" height="760" loading="lazy" decoding="async" />
-                        <figcaption>Statt Keywords beschreiben Sie Gesprächssituationen. Die Auktion entscheidet dann über Relevanz und Gebot.</figcaption>
-                    </figure>
-
-                    <h2 className="animate-up">Für wen sich der Einstieg jetzt lohnt</h2>
+            <section id="fuer-wen" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Für wen sich der Einstieg jetzt lohnt</h2>
+                    </div>
                     <div className="rule-cols animate-up">
                         <div className="rule-col">
                             <h3>Jetzt testen</h3>
@@ -203,8 +246,14 @@ export default function ChatGptAdsPage() {
                             </ul>
                         </div>
                     </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Was ich für Sie übernehme</h2>
+            <section id="leistungen" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Was ich für Sie übernehme</h2>
+                    </div>
                     <div className="subpage-features-grid animate-up">
                         <div className="subpage-feature">
                             <h3>Konto und Kampagnenaufbau</h3>
@@ -231,9 +280,15 @@ export default function ChatGptAdsPage() {
                             <p>Wöchentliche Anpassung von Geboten, Hinweisen und Kreativen, monatlicher Report mit Spend, CTR, CPC und Kosten pro Anfrage. Dazu eine klare Empfehlung, ob der Kanal für Sie ausgebaut oder gestoppt gehört.</p>
                         </div>
                     </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Preise</h2>
-                    <p className="animate-up">Der Aufbau wird einmalig abgerechnet, die Betreuung monatlich. Ihr Werbebudget läuft separat über Ihr eigenes OpenAI-Konto, nicht über meins.</p>
+            <section id="preise" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head">
+                        <h2 className="animate-up">Preise</h2>
+                        <p className="animate-up">Der Aufbau wird einmalig abgerechnet, die Betreuung monatlich. Ihr Werbebudget läuft separat über Ihr eigenes OpenAI-Konto, nicht über meins.</p>
+                    </div>
                     <div className="subpage-pricing-compare animate-up">
                         <div className="subpage-price-col">
                             <h3>Kampagnen-Setup</h3>
@@ -259,9 +314,17 @@ export default function ChatGptAdsPage() {
                             </ul>
                         </div>
                     </div>
-                    <p className="animate-up">Empfohlenes Testbudget: mindestens 500 € pro Monat über zwei bis drei Monate. Ein Hinweis, der das Rechenexempel gerade angenehmer macht: OpenAI wirbt auf ads.openai.com aktuell mit 500 US-Dollar Startguthaben für neue Werbekonten, wenn Sie 500 US-Dollar ausgeben (Stand 1. September 2026, ohne Gewähr für die Laufzeit des Angebots).</p>
+                    <div className="sx-band-text sxb-measure sxb-note animate-up">
+                        <p className="animate-up">Empfohlenes Testbudget: mindestens 500 € pro Monat über zwei bis drei Monate. Ein Hinweis, der das Rechenexempel gerade angenehmer macht: OpenAI wirbt auf ads.openai.com aktuell mit 500 US-Dollar Startguthaben für neue Werbekonten, wenn Sie 500 US-Dollar ausgeben (Stand 1. September 2026, ohne Gewähr für die Laufzeit des Angebots).</p>
+                    </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">In einer Woche live</h2>
+            <section id="ablauf" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">In einer Woche live</h2>
+                    </div>
                     <div className="subpage-process animate-up">
                         <div className="sp-step"><span className="sp-step-num">1</span><div><strong>Kurzcheck, 20 Minuten</strong><p>Wir rechnen mit Ihren Zahlen: Auftragswert, Marge, realistischer Klickpreis. Wenn sich der Kanal für Sie nicht trägt, sage ich das im Gespräch. Kostenlos.</p></div></div>
                         <div className="sp-step"><span className="sp-step-num">2</span><div><strong>Konto und Tracking</strong><p>Ads-Manager-Konto auf Ihren Namen, Pixel und Conversions API auf Ihrer Website, Test mit echten Events, bevor der erste Euro fließt.</p></div></div>
@@ -282,6 +345,7 @@ export default function ChatGptAdsPage() {
                     </div>
                 </div>
             </section>
+            </div>
 
             <FaqSection title="Fragen zu ChatGPT Ads" items={faqItems} />
             <RelatedServices exclude="chatgpt-ads" />

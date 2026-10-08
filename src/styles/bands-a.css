@@ -26,3 +26,46 @@
 .sx-band .sx-band-text.sxa-measure {
   max-width: 70ch;
 }
+
+/* Six feature cards: 3 + 3 on desktop */
+@media (min-width: 1101px) {
+  .sx-band .subpage-features-grid.sxa-features-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Long step cards whose text already carries its own number ("1. Analyse:") */
+@media (min-width: 901px) {
+  .sx-band .sx-cards.sxa-cards-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.sx-band .sx-cards.sxa-cards-plain > li::before {
+  content: none;
+}
+
+.sx-band .sx-cards.sxa-cards-plain > li {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.sx-band .sx-cards.sxa-cards-plain > li strong {
+  font-family: var(--sx-display);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+}
+
+/* Band that consists of heading + one paragraph only */
+.sx-band .sx-band-head.sxa-head-only {
+  margin-bottom: 0;
+  align-items: start;
+}
+
+/* Base .subpage-single-price carries a vertical margin from index.css */
+.sx-band .subpage-single-price.sxa-price {
+  margin: 0;
+}

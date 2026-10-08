@@ -1,8 +1,9 @@
 import Link from 'next/link';
+import '../../../src/styles/bands-a.css';
 import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import HeroFacts from '../../../src/components/HeroFacts';
-import SubpageToc from '../../../src/components/SubpageToc';
+import JumpNav from '../../../src/components/JumpNav';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
 import ServiceCta from '../../../src/components/ServiceCta';
@@ -84,25 +85,50 @@ export default function ConversionOptimierungPage() {
                 </div>
             </section>
 
-            <section className="subpage-content section light-bg">
-                <div className="container subpage-body">
-                    <SubpageToc />
-                    <h2 className="animate-up">Was ist Conversion-Optimierung?</h2>
-                    <div className="subpage-takeaway animate-up">
-                        <p><strong>Conversion-Optimierung</strong> (auch CRO, Conversion Rate Optimierung) verbessert das Verhältnis von Besuchern zu Anfragen. Statt mehr Menschen auf die Seite zu holen, sorgt sie dafür, dass mehr der vorhandenen Besucher tatsächlich anrufen, schreiben oder ein Formular abschicken. Die Arbeit besteht aus vier Teilen: Analyse der Nutzerwege, Priorisierung nach Wirkung, Umsetzung und Messung.</p>
+            <JumpNav label="Abschnitte" items={[
+                { id: 'was-ist-cro', num: '01', label: 'Was ist CRO' },
+                { id: 'warum-guenstiger', num: '02', label: 'Warum günstiger' },
+                { id: 'ursachen', num: '03', label: 'Ursachen' },
+                { id: 'vorgehen', num: '04', label: 'Vorgehen' },
+                { id: 'cro-oder-traffic', num: '05', label: 'CRO oder Traffic' },
+                { id: 'leistung-preis', num: '06', label: 'Leistung und Preis' },
+                { id: 'belege', num: '07', label: 'Belege' },
+            ]} />
+
+            <div className="sx-bands">
+            <section id="was-ist-cro" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Was ist Conversion-Optimierung?</h2>
                     </div>
+                    <div className="sx-split animate-up">
+                        <div className="subpage-takeaway">
+                            <p><strong>Conversion-Optimierung</strong> (auch CRO, Conversion Rate Optimierung) verbessert das Verhältnis von Besuchern zu Anfragen. Statt mehr Menschen auf die Seite zu holen, sorgt sie dafür, dass mehr der vorhandenen Besucher tatsächlich anrufen, schreiben oder ein Formular abschicken. Die Arbeit besteht aus vier Teilen: Analyse der Nutzerwege, Priorisierung nach Wirkung, Umsetzung und Messung.</p>
+                        </div>
+                        <figure className="subpage-figure">
+                            <img src="/leistungen/fotos/conversion-optimierung.webp" alt="Büro mit Laptop, auf dessen Bildschirm Auswertungen und Kennzahlen zu sehen sind" width="1800" height="760" loading="lazy" decoding="async" />
+                            <figcaption>Erst messen, wo Besucher abspringen. Dann ändern. In dieser Reihenfolge.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Warum das oft günstiger ist als mehr Werbung</h2>
-                    <p className="animate-up">Rechnen Sie es an Ihrem eigenen Fall durch. Wenn von 500 Besuchern im Monat fünf anfragen, liegt Ihre Conversion Rate bei 1 Prozent. Um die Anfragen zu verdoppeln, haben Sie zwei Wege: 500 zusätzliche Besucher kaufen, jeden Monat wieder. Oder dafür sorgen, dass aus denselben 500 Besuchern zehn Anfragen werden. Der erste Weg kostet dauerhaft, der zweite einmalig. Warum Geschwindigkeit dabei eine so große Rolle spielt, steht im Beitrag <a href="/wissen/warum-langsame-websites-kunden-kosten">warum langsame Websites Kunden kosten</a>.</p>
+            <section id="warum-guenstiger" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head sxa-head-only">
+                        <h2 className="animate-up">Warum das oft günstiger ist als mehr Werbung</h2>
+                        <p className="animate-up">Rechnen Sie es an Ihrem eigenen Fall durch. Wenn von 500 Besuchern im Monat fünf anfragen, liegt Ihre Conversion Rate bei 1 Prozent. Um die Anfragen zu verdoppeln, haben Sie zwei Wege: 500 zusätzliche Besucher kaufen, jeden Monat wieder. Oder dafür sorgen, dass aus denselben 500 Besuchern zehn Anfragen werden. Der erste Weg kostet dauerhaft, der zweite einmalig. Warum Geschwindigkeit dabei eine so große Rolle spielt, steht im Beitrag <a href="/wissen/warum-langsame-websites-kunden-kosten">warum langsame Websites Kunden kosten</a>.</p>
+                    </div>
+                </div>
+            </section>
 
-                    <figure className="subpage-figure is-band animate-up">
-                        <img src="/leistungen/fotos/conversion-optimierung.webp" alt="Büro mit Laptop, auf dessen Bildschirm Auswertungen und Kennzahlen zu sehen sind" width="1800" height="760" loading="lazy" decoding="async" />
-                        <figcaption>Erst messen, wo Besucher abspringen. Dann ändern. In dieser Reihenfolge.</figcaption>
-                    </figure>
-
-                    <h2 className="animate-up">Woran es bei lokalen Websites meistens liegt</h2>
-                    <p className="animate-up">Die Ursachen wiederholen sich. In fast jeder Analyse tauchen dieselben sechs Punkte auf:</p>
-                    <div className="subpage-features-grid animate-up">
+            <section id="ursachen" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head">
+                        <h2 className="animate-up">Woran es bei lokalen Websites meistens liegt</h2>
+                        <p className="animate-up">Die Ursachen wiederholen sich. In fast jeder Analyse tauchen dieselben sechs Punkte auf:</p>
+                    </div>
+                    <div className="subpage-features-grid sxa-features-3 animate-up">
                         <div className="subpage-feature">
                             <h3>Die Seite ist zu langsam</h3>
                             <p>Jede zusätzliche Sekunde Ladezeit kostet Abschlüsse, und zwar messbar. Auf dem Handy im Mobilfunknetz ist der Effekt am größten, und genau dort kommen die meisten lokalen Anfragen her.</p>
@@ -128,17 +154,29 @@ export default function ConversionOptimierungPage() {
                             <p>Ein Layout, das am Desktop stimmt, schiebt auf dem Handy oft den Handlungsaufruf unter drei Bildschirmhöhen Fließtext. Was niemand sieht, klickt auch niemand.</p>
                         </div>
                     </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">So gehe ich vor</h2>
-                    <ul className="check-list animate-up">
+            <section id="vorgehen" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">So gehe ich vor</h2>
+                    </div>
+                    <ul className="sx-cards sxa-cards-2 sxa-cards-plain animate-up">
                         <li><strong>1. Analyse:</strong> Ich schaue mir an, über welche Seiten Besucher hereinkommen, wo sie abspringen und wie sich Handy und Desktop unterscheiden. Dazu eine technische Messung von Ladezeit und Core Web Vitals sowie ein Durchgang durch den kompletten Anfrageweg, so wie ein Kunde ihn erlebt.</li>
                         <li><strong>2. Priorisierung:</strong> Sie bekommen eine Liste, sortiert nach Wirkung geteilt durch Aufwand. Oben stehen die Punkte, die viel bringen und wenig kosten. Sie entscheiden, was umgesetzt wird, nicht ich.</li>
                         <li><strong>3. Umsetzung:</strong> Ich setze die Punkte um, die Sie freigeben. Als Entwickler mache ich das selbst, es geht also kein Zwischenschritt über eine Agentur und eine externe Programmierung verloren.</li>
                         <li><strong>4. Messung:</strong> Vorher und nachher, an denselben Kennzahlen. Wenn eine Änderung nichts bringt, steht das genauso im Report wie die, die gewirkt hat.</li>
                     </ul>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Conversion-Optimierung oder mehr Traffic?</h2>
-                    <p className="animate-up">Nicht jedes Problem ist ein Conversion-Problem. Der ehrliche Vergleich:</p>
+            <section id="cro-oder-traffic" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head">
+                        <h2 className="animate-up">Conversion-Optimierung oder mehr Traffic?</h2>
+                        <p className="animate-up">Nicht jedes Problem ist ein Conversion-Problem. Der ehrliche Vergleich:</p>
+                    </div>
                     <div className="subpage-table-wrap animate-up">
                         <table className="subpage-table">
                             <thead>
@@ -152,12 +190,22 @@ export default function ConversionOptimierungPage() {
                             </tbody>
                         </table>
                     </div>
-                    <p className="animate-up">Wenn Sie nicht wissen, in welcher Zeile Sie stehen: genau das klärt die kostenlose Analyse.</p>
+                    <div className="sx-band-text sxa-measure animate-up">
+                        <p>Wenn Sie nicht wissen, in welcher Zeile Sie stehen: genau das klärt die kostenlose Analyse.</p>
+                    </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Was Sie bekommen</h2>
-                    <div className="subpage-single-price animate-up">
-                        <div className="sp-price-value">ab 2.400 &euro; einmalig</div>
-                        <p>Die Analyse vorab ist kostenlos. Den Festpreis kennen Sie, bevor Sie sich entscheiden. Keine Mindestlaufzeit, keine monatliche Bindung.</p>
+            <section id="leistung-preis" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Was Sie bekommen</h2>
+                    </div>
+                    <div className="subpage-single-price is-wide sxa-price animate-up">
+                        <div>
+                            <div className="sp-price-value">ab 2.400 &euro; einmalig</div>
+                            <p>Die Analyse vorab ist kostenlos. Den Festpreis kennen Sie, bevor Sie sich entscheiden. Keine Mindestlaufzeit, keine monatliche Bindung.</p>
+                        </div>
                         <ul className="sp-price-includes">
                             <li>Analyse des kompletten Anfragewegs, Handy und Desktop</li>
                             <li>Messung von Ladezeit und Core Web Vitals</li>
@@ -167,11 +215,18 @@ export default function ConversionOptimierungPage() {
                             <li>Vorher-Nachher-Vergleich an denselben Kennzahlen</li>
                         </ul>
                     </div>
-
-                    <h2 className="animate-up">Belege aus eigenen Projekten</h2>
-                    <p className="animate-up">Statt allgemeiner Versprechen zwei nachrechenbare Fälle aus der eigenen Arbeit: eine Fotogalerie, die von mehreren Sekunden auf unter eine Sekunde kam, nachzulesen in der <a href="/wissen/case-study-fotogalerie-performance">Case Study zur Galerie-Performance</a>, und ein Shop, dessen Google-Impressionen von 23.353 im Februar auf 56.651 im September 2026 stiegen, dokumentiert unter <a href="/referenzen/dybeauty">DYBeauty</a>. Wenn Sie tiefer einsteigen wollen, erklärt der Beitrag <a href="/wissen/website-conversion-optimierung">mehr Anfragen ohne mehr Traffic</a> die Denkweise dahinter.</p>
                 </div>
             </section>
+
+            <section id="belege" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head sxa-head-only">
+                        <h2 className="animate-up">Belege aus eigenen Projekten</h2>
+                        <p className="animate-up">Statt allgemeiner Versprechen zwei nachrechenbare Fälle aus der eigenen Arbeit: eine Fotogalerie, die von mehreren Sekunden auf unter eine Sekunde kam, nachzulesen in der <a href="/wissen/case-study-fotogalerie-performance">Case Study zur Galerie-Performance</a>, und ein Shop, dessen Google-Impressionen von 23.353 im Februar auf 56.651 im September 2026 stiegen, dokumentiert unter <a href="/referenzen/dybeauty">DYBeauty</a>. Wenn Sie tiefer einsteigen wollen, erklärt der Beitrag <a href="/wissen/website-conversion-optimierung">mehr Anfragen ohne mehr Traffic</a> die Denkweise dahinter.</p>
+                    </div>
+                </div>
+            </section>
+            </div>
 
             <FaqSection title="Fragen zur Conversion-Optimierung" items={faqItems} />
             <RelatedServices exclude="conversion-optimierung" />

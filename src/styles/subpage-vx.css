@@ -920,7 +920,7 @@
   .subpage-hero .subpage-title {
     font-size: 31px;
     hyphens: auto;
-    hyphenate-limit-chars: 14 6 6;
+    hyphenate-limit-chars: 16 7 7;
     overflow-wrap: break-word;
   }
 
@@ -1984,4 +1984,25 @@ a.wissen-card:hover {
 .article-content .subpage-takeaway strong,
 .article-content .subpage-takeaway a {
   color: #FFFFFF;
+}
+
+/* Phones and small tablets: hero and FAQ titles in one column */
+@media (max-width: 900px) {
+  .subpage-hero-split {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .subpage-hero-media {
+    justify-self: start;
+  }
+}
+
+@media (max-width: 768px) {
+  .faq-category-title {
+    font-size: 26px;
+    hyphens: auto;
+    hyphenate-limit-chars: 16 7 7;
+    overflow-wrap: break-word;
+  }
 }

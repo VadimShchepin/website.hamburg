@@ -69,3 +69,10 @@
 .sx-band .subpage-single-price.sxa-price {
   margin: 0;
 }
+
+/* Five short deliverables in one row */
+@media (min-width: 1101px) {
+  .sx-band .sx-cards.sxa-cards-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

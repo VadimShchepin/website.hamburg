@@ -1,8 +1,9 @@
 import Link from 'next/link';
+import '../../../src/styles/bands-a.css';
 import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import HeroFacts from '../../../src/components/HeroFacts';
-import SubpageToc from '../../../src/components/SubpageToc';
+import JumpNav from '../../../src/components/JumpNav';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
 import ServiceCta from '../../../src/components/ServiceCta';
@@ -84,23 +85,41 @@ export default function WebsiteAuditPage() {
                 </div>
             </section>
 
-            <section className="subpage-content section light-bg">
-                <div className="container subpage-body">
-                    <SubpageToc />
-                    <h2 className="animate-up">Was ist das Website-Audit?</h2>
-                    <div className="subpage-takeaway animate-up">
-                        <p>Das <strong>Website-Audit</strong> ist eine kostenlose, unverbindliche Analyse Ihrer Website in vier Bereichen: Performance (Core Web Vitals), SEO, Conversion und Wettbewerb. Sie erhalten innerhalb von <strong>2 bis 3 Werktagen</strong> einen Bericht mit Screenshots, Daten und priorisierten Handlungsempfehlungen, dazu ein 30-minütiges Gespräch. Kein Haken, keine Verpflichtung.</p>
+            <JumpNav label="Abschnitte" items={[
+                { id: 'was-ist-das-audit', num: '01', label: 'Was ist das Audit' },
+                { id: 'umfang', num: '02', label: 'Umfang' },
+                { id: 'ergebnis', num: '03', label: 'Was Sie erhalten' },
+                { id: 'warum-kostenlos', num: '04', label: 'Warum kostenlos' },
+                { id: 'ablauf', num: '05', label: 'Ablauf' },
+            ]} />
+
+            <div className="sx-bands">
+            <section id="was-ist-das-audit" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Was ist das Website-Audit?</h2>
                     </div>
+                    <div className="sx-split animate-up">
+                        <div className="subpage-takeaway">
+                            <p>Das <strong>Website-Audit</strong> ist eine kostenlose, unverbindliche Analyse Ihrer Website in vier Bereichen: Performance (Core Web Vitals), SEO, Conversion und Wettbewerb. Sie erhalten innerhalb von <strong>2 bis 3 Werktagen</strong> einen Bericht mit Screenshots, Daten und priorisierten Handlungsempfehlungen, dazu ein 30-minütiges Gespräch. Kein Haken, keine Verpflichtung.</p>
+                        </div>
+                        <figure className="subpage-figure">
+                            <img src="/leistungen/fotos/website-audit.webp" alt="Illustration: Browserfenster auf einem Prüfstand unter einer Lupe, daneben Bewertungsskala und Checkliste" width="1800" height="760" loading="lazy" decoding="async" />
+                            <figcaption>Ladezeit, Technik, Struktur und Conversion-Pfad, jeweils mit Messwert statt Bauchgefühl.</figcaption>
+                        </figure>
+                    </div>
+                    <div className="sx-band-text sxa-measure animate-up">
+                        <p>Wenn Sie vorher selbst einen ersten Blick werfen wollen: Der <Link href="/website-check">kostenlose Website-Check</Link> prüft Server-Antwortzeit, Komprimierung und die SEO-Grundlagen Ihrer Startseite in rund einer Minute, ohne Anmeldung. Das Audit geht weiter, weil es Ihre Daten aus der Search Console, die Unterseiten und den Weg zur Anfrage einbezieht.</p>
+                    </div>
+                </div>
+            </section>
 
-                    <figure className="subpage-figure is-band animate-up">
-                        <img src="/leistungen/fotos/website-audit.webp" alt="Illustration: Browserfenster auf einem Prüfstand unter einer Lupe, daneben Bewertungsskala und Checkliste" width="1800" height="760" loading="lazy" decoding="async" />
-                        <figcaption>Ladezeit, Technik, Struktur und Conversion-Pfad, jeweils mit Messwert statt Bauchgefühl.</figcaption>
-                    </figure>
-
-                    <p className="animate-up">Wenn Sie vorher selbst einen ersten Blick werfen wollen: Der <Link href="/website-check">kostenlose Website-Check</Link> prüft Server-Antwortzeit, Komprimierung und die SEO-Grundlagen Ihrer Startseite in rund einer Minute, ohne Anmeldung. Das Audit geht weiter, weil es Ihre Daten aus der Search Console, die Unterseiten und den Weg zur Anfrage einbezieht.</p>
-
-                    <h2 className="animate-up">Was das Audit umfasst</h2>
-                    <p className="animate-up">Kein oberflächlicher Schnellcheck, sondern eine fundierte Analyse der Faktoren, die über den Erfolg Ihrer Website entscheiden, jeweils mit dem passenden Werkzeug:</p>
+            <section id="umfang" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head">
+                        <h2 className="animate-up">Was das Audit umfasst</h2>
+                        <p className="animate-up">Kein oberflächlicher Schnellcheck, sondern eine fundierte Analyse der Faktoren, die über den Erfolg Ihrer Website entscheiden, jeweils mit dem passenden Werkzeug:</p>
+                    </div>
                     <div className="subpage-table-wrap animate-up">
                         <table className="subpage-table">
                             <thead>
@@ -114,8 +133,7 @@ export default function WebsiteAuditPage() {
                             </tbody>
                         </table>
                     </div>
-
-                    <div className="subpage-features-grid animate-up">
+                    <div className="subpage-features-grid is-four animate-up">
                         <div className="subpage-feature">
                             <h3>Performance & Geschwindigkeit</h3>
                             <p>Ladezeiten, Core Web Vitals (LCP, INP, CLS), Mobile-Performance. Wie schnell ist Ihre Seite wirklich, wo sind die Engpässe, und was kostet die Langsamkeit an Kunden und Rankings?</p>
@@ -133,29 +151,52 @@ export default function WebsiteAuditPage() {
                             <p>Wie stehen Sie gegenüber Ihren direkten Wettbewerbern? Wer rankt für Ihre wichtigsten Keywords? Wo haben Sie Vorsprung, wo Nachholbedarf?</p>
                         </div>
                     </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Was Sie erhalten</h2>
-                    <ul className="check-list animate-up">
+            <section id="ergebnis" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Was Sie erhalten</h2>
+                    </div>
+                    <ul className="sx-cards sxa-cards-5 animate-up">
                         <li>Detaillierte Analyse aller vier Bereiche mit Screenshots und Daten</li>
                         <li>Priorisierte Handlungsempfehlungen: was bringt am meisten, was ist dringend</li>
                         <li>Persönliches Gespräch (rund 30 Min.) zur Besprechung der Ergebnisse</li>
                         <li>Empfehlungen, die Sie auch ohne mich umsetzen können</li>
                         <li>Ehrliche Einschätzung, ob und wo professionelle Hilfe sinnvoll wäre</li>
                     </ul>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Warum kostenlos?</h2>
-                    <p className="animate-up">Weil gute Beratung sich von selbst trägt. Wenn Sie sehen, was möglich ist, und meine Arbeitsweise kennenlernen, entscheiden Sie selbst, ob eine Zusammenarbeit sinnvoll ist. Kein Druck, keine Tricks, nur Fakten.</p>
-                    <p className="animate-up">Viele meiner langfristigen Kundenbeziehungen haben mit genau diesem Audit begonnen, nicht weil ich überredet habe, sondern weil die Daten für sich gesprochen haben.</p>
-                    <p className="animate-up">Was ich dabei am häufigsten finde, können Sie vorab selbst nachlesen: Fremdskripte, die vor der Einwilligung laden, siehe <a href="/wissen/website-abmahnung-vermeiden">Abmahnung wegen der Website vermeiden</a>, veraltete Rechtsgrundlagen in den Pflichttexten, siehe <a href="/wissen/impressum-datenschutzerklaerung-pflicht">Impressum und Datenschutzerklärung</a>, und Bedienprobleme ohne Maus, siehe <a href="/wissen/website-barrierefrei-machen">Website barrierefrei machen</a>.</p>
+            <section id="warum-kostenlos" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head">
+                        <h2 className="animate-up">Warum kostenlos?</h2>
+                        <p className="animate-up">Weil gute Beratung sich von selbst trägt. Wenn Sie sehen, was möglich ist, und meine Arbeitsweise kennenlernen, entscheiden Sie selbst, ob eine Zusammenarbeit sinnvoll ist. Kein Druck, keine Tricks, nur Fakten.</p>
+                    </div>
+                    <div className="sx-split is-even animate-up">
+                        <div className="sx-band-text">
+                            <p>Viele meiner langfristigen Kundenbeziehungen haben mit genau diesem Audit begonnen, nicht weil ich überredet habe, sondern weil die Daten für sich gesprochen haben.</p>
+                        </div>
+                        <div className="sx-band-text">
+                            <p>Was ich dabei am häufigsten finde, können Sie vorab selbst nachlesen: Fremdskripte, die vor der Einwilligung laden, siehe <a href="/wissen/website-abmahnung-vermeiden">Abmahnung wegen der Website vermeiden</a>, veraltete Rechtsgrundlagen in den Pflichttexten, siehe <a href="/wissen/impressum-datenschutzerklaerung-pflicht">Impressum und Datenschutzerklärung</a>, und Bedienprobleme ohne Maus, siehe <a href="/wissen/website-barrierefrei-machen">Website barrierefrei machen</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">So läuft es ab</h2>
+            <section id="ablauf" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">So läuft es ab</h2>
+                    </div>
                     <div className="subpage-process animate-up">
                         <div className="sp-step"><span className="sp-step-num">1</span><div><strong>Anfrage</strong><p>Schicken Sie mir Ihre Website-URL und kurz Infos zu Ihrem Unternehmen. Das geht in 2 Minuten.</p></div></div>
                         <div className="sp-step"><span className="sp-step-num">2</span><div><strong>Analyse</strong><p>Ich analysiere Ihre Website innerhalb von 2 bis 3 Werktagen: Performance, SEO, Struktur, Wettbewerber.</p></div></div>
                         <div className="sp-step"><span className="sp-step-num">3</span><div><strong>Besprechung</strong><p>In einem 30-minütigen Gespräch gehen wir die Ergebnisse durch. Sie stellen Fragen, ich gebe ehrliche Antworten.</p></div></div>
                         <div className="sp-step"><span className="sp-step-num">4</span><div><strong>Ihre Entscheidung</strong><p>Sie erhalten Analyse und Empfehlungen. Was Sie damit machen, ist Ihre Entscheidung. Kein Druck.</p></div></div>
                     </div>
-
                     <div className="subpage-sources animate-up">
                         <h2>Quellen</h2>
                         <ol>
@@ -165,6 +206,7 @@ export default function WebsiteAuditPage() {
                     </div>
                 </div>
             </section>
+            </div>
 
             <FaqSection title="Fragen zum Website-Audit" items={faqItems} />
             <RelatedServices exclude="website-audit" />

@@ -1,8 +1,9 @@
 import Link from 'next/link';
+import '../../../src/styles/bands-d.css';
 import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import HeroFacts from '../../../src/components/HeroFacts';
-import SubpageToc from '../../../src/components/SubpageToc';
+import JumpNav from '../../../src/components/JumpNav';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
 import ServiceCta from '../../../src/components/ServiceCta';
@@ -96,15 +97,27 @@ export default function WebdesignHotelsPage() {
                 </div>
             </section>
 
-            <section className="subpage-content section light-bg">
-                <div className="container subpage-body is-inset">
-                    <SubpageToc />
-                    <h2 className="animate-up">Was kostet eine Hotel-Website in Hamburg?</h2>
-                    <div className="subpage-takeaway animate-up">
-                        <p>Eine Hotel-Website kostet bei mir <strong>ab 2.900 Euro</strong> einseitig und <strong>ab 4.500 Euro</strong> mehrseitig mit Zimmerseiten, Angeboten und angebundener Buchungsmaske. Portalprovisionen liegen je nach Programm bei etwa 15 bis 25 Prozent, die Kosten einer Direktbuchung meist im einstelligen Prozentbereich. Die Website rechnet sich also über die Zahl der Direktbuchungen, nicht über das Design.</p>
-                    </div>
+            <JumpNav label="Abschnitte" items={[
+                { id: 'kosten', num: '01', label: 'Kosten' },
+                { id: 'buchungswege', num: '02', label: 'Buchungswege' },
+                { id: 'vergleich', num: '03', label: 'Direkt vs. Portal' },
+                { id: 'funktionen', num: '04', label: 'Funktionen' },
+                { id: 'preise', num: '05', label: 'Preise' },
+                { id: 'projekte', num: '06', label: 'Projekte' },
+                { id: 'ablauf', num: '07', label: 'Ablauf' },
+            ]} />
 
-                    <div className="subpage-story animate-up">
+            <div className="sx-bands">
+            <section id="kosten" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Was kostet eine Hotel-Website in Hamburg?</h2>
+                    </div>
+                    <div className="sx-split sxd-split-lead animate-up">
+                        <div className="subpage-takeaway">
+                        <p>Eine Hotel-Website kostet bei mir <strong>ab 2.900 Euro</strong> einseitig und <strong>ab 4.500 Euro</strong> mehrseitig mit Zimmerseiten, Angeboten und angebundener Buchungsmaske. Portalprovisionen liegen je nach Programm bei etwa 15 bis 25 Prozent, die Kosten einer Direktbuchung meist im einstelligen Prozentbereich. Die Website rechnet sich also über die Zahl der Direktbuchungen, nicht über das Design.</p>
+                        </div>
+                        <div className="subpage-story">
                         <span className="subpage-story-label">Aus der Praxis</span>
                         <p>
                             Es gibt einen Fehler, den ich bei Hotels immer wieder sehe und der mich jedes Mal fasziniert: Auf der eigenen Startseite ist der auffälligste Knopf der zum Buchungsportal. Er ist größer, bunter und leichter zu finden als die eigene Buchungsmaske. Das Hotel bewirbt also mit eigenem Geld den Kanal, der ihm zweistellige Prozente abzieht. Am Empfang würde niemand einen Zettel aushängen mit der Bitte, doch bitte über einen Vermittler zu buchen.
@@ -115,24 +128,16 @@ export default function WebdesignHotelsPage() {
                         <p>
                             Meine Reihenfolge bei Hotel-Projekten ist deshalb immer gleich: erst der Weg zum Preis, dann die Bilder, dann alles andere. Ein Gast, der in zwei Klicks einen Preis für sein Wochenende sieht, ist bereits ein halber Direktbucher.
                         </p>
-                    </div>
-
-                    <h2 className="animate-up">Wie buchen Gäste in Deutschland tatsächlich?</h2>
-                    <div className="subpage-split animate-up">
-                        <div className="sp-split-media">
-                            <img src="/leistungen/branchen/hotels/buchung.webp" alt="Gast sitzt am Schreibtisch eines Hotelzimmers am Laptop und bucht online" width="1200" height="900" loading="lazy" decoding="async" />
-                            <p className="sp-split-caption">Der Direktkanal ist der größte Buchungsweg und trotzdem oft der am schlechtesten ausgestattete.</p>
-                        </div>
-                        <div className="sp-split-body">
-                            <p>
-                                Die europäische Vertriebsstudie von HOTREC (Erhebungsjahr 2023) zeigt für Deutschland ein Bild, das viele Hoteliers unterschätzen: 58,2 Prozent der Übernachtungen kommen über direkte Kanäle, davon 22,7 Prozent per E-Mail, 19,3 Prozent über die eigene Website samt Buchungsmaschine, 13,8 Prozent per Telefon und 2,4 Prozent als Laufkundschaft. Auf Portale entfallen 31,2 Prozent. Innerhalb des Portalsegments dominiert eine Firmengruppe: Booking Holdings kommt in Deutschland auf rund 72 Prozent.
-                            </p>
-                            <p>
-                                Zwei Schlüsse daraus. Erstens: Der Direktkanal ist kein Nischenthema, er ist der größte Kanal, wird aber oft am schlechtesten ausgestattet. Zweitens: Wer nur auf Booking optimiert, optimiert für einen Anbieter mit sehr großer Verhandlungsmacht. Ein zweites Bein tut nicht weh.
-                            </p>
                         </div>
                     </div>
+                </div>
+            </section>
 
+            <section id="buchungswege" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Wie buchen Gäste in Deutschland tatsächlich?</h2>
+                    </div>
                     <div className="subpage-stats animate-up">
                         <div className="subpage-stat">
                             <span className="subpage-stat-value">58,2%</span>
@@ -148,12 +153,33 @@ export default function WebdesignHotelsPage() {
                         </div>
                     </div>
 
+                    <div className="sx-split animate-up">
+                        <div className="sx-band-text">
+                            <p>
+                                Die europäische Vertriebsstudie von HOTREC (Erhebungsjahr 2023) zeigt für Deutschland ein Bild, das viele Hoteliers unterschätzen: 58,2 Prozent der Übernachtungen kommen über direkte Kanäle, davon 22,7 Prozent per E-Mail, 19,3 Prozent über die eigene Website samt Buchungsmaschine, 13,8 Prozent per Telefon und 2,4 Prozent als Laufkundschaft. Auf Portale entfallen 31,2 Prozent. Innerhalb des Portalsegments dominiert eine Firmengruppe: Booking Holdings kommt in Deutschland auf rund 72 Prozent.
+                            </p>
+                            <p>
+                                Zwei Schlüsse daraus. Erstens: Der Direktkanal ist kein Nischenthema, er ist der größte Kanal, wird aber oft am schlechtesten ausgestattet. Zweitens: Wer nur auf Booking optimiert, optimiert für einen Anbieter mit sehr großer Verhandlungsmacht. Ein zweites Bein tut nicht weh.
+                            </p>
+                        </div>
+                        <figure className="subpage-figure">
+                            <img src="/leistungen/branchen/hotels/buchung.webp" alt="Gast sitzt am Schreibtisch eines Hotelzimmers am Laptop und bucht online" width="1200" height="900" loading="lazy" decoding="async" />
+                            <figcaption>Der Direktkanal ist der größte Buchungsweg und trotzdem oft der am schlechtesten ausgestattete.</figcaption>
+                        </figure>
+                    </div>
+
                     <figure className="subpage-figure is-band animate-up">
                         <img src="/leistungen/branchen/hotels/suite.webp" alt="Langes Hotelzimmer mit Fensterfront, Bett und warmem Abendlicht" width="1800" height="760" loading="lazy" decoding="async" />
                         <figcaption>Gleicher Gast, gleiches Zimmer, unterschiedlicher Deckungsbeitrag.</figcaption>
                     </figure>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Direktbuchung und Portal im Vergleich</h2>
+            <section id="vergleich" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Direktbuchung und Portal im Vergleich</h2>
+                    </div>
                     <div className="subpage-table-wrap animate-up">
                         <table className="subpage-table">
                             <thead>
@@ -192,12 +218,20 @@ export default function WebdesignHotelsPage() {
                             </tbody>
                         </table>
                     </div>
-                    <p className="animate-up">
-                        Portale abschaffen ist selten das Ziel. Sie sind Schaufenster und bringen Gäste, die Sie sonst nie erreichen. Das Ziel ist, dass ein Gast, der Ihr Haus schon kennt und den Namen googelt, nicht wieder im Portal landet. Diese Buchung sollte Ihnen gehören.
-                    </p>
+                    <div className="sx-band-text animate-up">
+                        <p>
+                            Portale abschaffen ist selten das Ziel. Sie sind Schaufenster und bringen Gäste, die Sie sonst nie erreichen. Das Ziel ist, dass ein Gast, der Ihr Haus schon kennt und den Namen googelt, nicht wieder im Portal landet. Diese Buchung sollte Ihnen gehören.
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Was muss eine Hotel-Website leisten?</h2>
-                    <div className="subpage-features-grid animate-up">
+            <section id="funktionen" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Was muss eine Hotel-Website leisten?</h2>
+                    </div>
+                    <div className="subpage-features-grid is-four animate-up">
                         <div className="subpage-feature">
                             <h3>Preis in zwei Klicks</h3>
                             <p>Datumsauswahl direkt oben auf der Startseite, Übergabe an die Buchungsmaschine ohne Design-Bruch und ohne Pflichtanmeldung. Jeder Zwischenschritt kostet Buchungen.</p>
@@ -214,9 +248,7 @@ export default function WebdesignHotelsPage() {
                             <h3>Tagungen und Gruppen</h3>
                             <p>Eigene Seiten für Veranstaltungsräume, Bestuhlung, Technik und Verpflegung, dazu ein Anfrageformular mit den Feldern, die Ihr Verkauf wirklich braucht. Diese Anfragen haben den höchsten Wert.</p>
                         </div>
-                    </div>
 
-                    <div className="subpage-features-grid animate-up">
                         <div className="subpage-feature">
                             <h3>Anbindung Ihrer Systeme</h3>
                             <p>Buchungsmaschine, Channel Manager und Zahlungsanbieter werden eingebunden, statt parallel gepflegt. Preise und Verfügbarkeiten kommen aus einer Quelle.</p>
@@ -234,8 +266,14 @@ export default function WebdesignHotelsPage() {
                             <p>Bildlastige Hotelseiten sind die üblichen Verdächtigen bei schlechten Ladezeiten. Moderne Formate, echte Größenanpassung und wenig Skript-Ballast, damit die Seite auch im Hotel-WLAN steht. Hintergrund im <Link href="/wissen/warum-langsame-websites-kunden-kosten">Artikel zur Ladezeit</Link>.</p>
                         </div>
                     </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Preise</h2>
+            <section id="preise" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Preise</h2>
+                    </div>
                     <div className="subpage-pricing-compare animate-up">
                         <div className="subpage-price-col">
                             <h3>Hotel-Website individuell</h3>
@@ -266,8 +304,14 @@ export default function WebdesignHotelsPage() {
                             </ul>
                         </div>
                     </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Verwandte Projekte</h2>
+            <section id="projekte" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Verwandte Projekte</h2>
+                    </div>
                     <div className="subpage-cases animate-up">
                         <Link href="/referenzen/manetec" className="subpage-case-card">
                             <span className="subpage-case-metric">Hotellerie Hamburg</span>
@@ -282,8 +326,14 @@ export default function WebdesignHotelsPage() {
                             <span className="subpage-case-name">Blitz Hamburg: Website plus Ads plus SEO im Verbund</span>
                         </Link>
                     </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Wie läuft ein Hotel-Website-Projekt ab?</h2>
+            <section id="ablauf" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Wie läuft ein Hotel-Website-Projekt ab?</h2>
+                    </div>
                     <div className="subpage-process animate-up">
                         <div className="sp-step"><span className="sp-step-num">1</span><div><strong>Kanalanalyse, kostenlos</strong><p>Wir schauen auf Ihre aktuelle Verteilung zwischen Portal und Direktbuchung, auf Provisionshöhe und auf den Weg zum Preis auf Ihrer Seite.</p></div></div>
                         <div className="sp-step"><span className="sp-step-num">2</span><div><strong>Buchungsstrecke planen</strong><p>Welche Buchungsmaschine, welcher Direktbucher-Vorteil, welche Pakete. Erst danach reden wir über Design, weil das Design dieser Strecke folgt.</p></div></div>
@@ -304,6 +354,7 @@ export default function WebdesignHotelsPage() {
                     </div>
                 </div>
             </section>
+            </div>
 
             <FaqSection title="Häufige Fragen zu Hotel-Websites" items={faqItems} />
             <RelatedServices exclude="webdesign" />

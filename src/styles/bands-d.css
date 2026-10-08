@@ -1,0 +1,341 @@
+/* ==========================================================================
+   Section bands, extra blocks (industry pages + website check), 2026-10.
+   Base band styles live in subpage-vx.css ("Section bands").
+   ========================================================================== */
+
+/* Lead split: navy price summary left, practice story right */
+.sx-split.sxd-split-lead {
+  grid-template-columns: 5fr 7fr;
+}
+
+@media (min-width: 901px) {
+  .sx-split.sxd-split-lead > .subpage-takeaway {
+    position: sticky;
+    top: 140px;
+  }
+}
+
+.sx-band .subpage-story {
+  margin: 0;
+  background: #FAFAFA;
+}
+
+.sx-band.is-alt .subpage-story {
+  background: #FAFAFA;
+}
+
+.sx-band:not(.is-alt) .subpage-story {
+  background: #FFFFFF;
+}
+
+.sx-band .subpage-story-label {
+  display: block;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+
+.sx-band .subpage-story p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--sx-text);
+  max-width: 68ch;
+  margin: 0;
+}
+
+.sx-band .subpage-story p + p {
+  margin-top: 14px;
+}
+
+/* Text column next to a photo */
+.sx-band-text {
+  max-width: 70ch;
+}
+
+.sx-band .sx-split .subpage-figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.sx-band .subpage-figure.is-band img {
+  aspect-ratio: 1800 / 760;
+  object-fit: cover;
+}
+
+.sx-band .subpage-figure + *,
+.sx-band .rule-cols + *,
+.sx-band .subpage-stats + .sx-split {
+  margin-top: 40px;
+}
+
+.sx-band .sx-split + .subpage-figure {
+  margin-top: 56px;
+}
+
+/* Rule columns (do / don't) inside bands */
+.sx-band .rule-cols {
+  margin: 0;
+  gap: 16px;
+}
+
+.sx-band .rule-col {
+  padding: 32px;
+}
+
+.sx-band.is-alt .rule-col {
+  background: #FAFAFA;
+}
+
+.sx-band:not(.is-alt) .rule-col {
+  background: #FFFFFF;
+}
+
+.sx-band .rule-col h3 {
+  font-family: var(--font-vx), sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 1.3;
+  color: var(--sx-fg);
+  margin-bottom: 16px;
+}
+
+.sx-band .rule-col li {
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--sx-text);
+}
+
+/* Reference cards: larger, so the band has a clear anchor */
+.sx-band .subpage-cases {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.sx-band .subpage-case-card {
+  padding: 32px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sx-band .subpage-case-metric {
+  font-family: var(--sx-display);
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.sx-band .subpage-case-name {
+  margin-top: 24px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* Sources in bands: small caption-like list */
+.sx-band .subpage-sources h2 {
+  font-family: var(--font-vx), sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--sx-fg);
+}
+
+@media (max-width: 900px) {
+  .sx-split.sxd-split-lead {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .sx-band .subpage-cases {
+    grid-template-columns: 1fr;
+  }
+
+  .sx-band .subpage-case-card {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .sx-band .subpage-story {
+    padding: 24px;
+  }
+
+  .sx-band .rule-col {
+    padding: 24px;
+  }
+
+  .sx-band .subpage-case-card {
+    padding: 24px;
+  }
+
+  .sx-band .subpage-case-metric {
+    font-size: 22px;
+  }
+}
+
+/* ==========================================================================
+   Website check (/website-check): tool panel as first-screen anchor
+   ========================================================================== */
+.subpage-hero.sxd-wc-hero {
+  padding-bottom: 40px;
+}
+
+.section.sxd-wc-tool {
+  background: #FAFAFA;
+  padding: 0 0 104px;
+}
+
+.sxd-wc-tool .wc-panel {
+  max-width: none;
+  margin: 0;
+  padding: 40px;
+  background: #FFFFFF;
+  border: 1px solid #EBEBEB;
+  border-radius: 0;
+}
+
+.sxd-wc-tool .wc-form {
+  gap: 12px;
+}
+
+.sxd-wc-tool .wc-form input {
+  height: 64px;
+  padding: 0 22px;
+  font-family: var(--font-vx), sans-serif;
+  font-size: 18px;
+  color: var(--sx-fg);
+  border: 1px solid #D4D4D4;
+  border-radius: 0;
+}
+
+.sxd-wc-tool .wc-form input:focus {
+  outline: 2px solid #171717;
+  outline-offset: -1px;
+  border-color: #171717;
+}
+
+.sxd-wc-tool .wc-form .button {
+  height: 64px;
+  padding: 0 36px;
+  border-radius: 0;
+  white-space: nowrap;
+}
+
+.sxd-wc-tool .wc-note {
+  margin-top: 14px;
+  font-size: 14px;
+  color: var(--sx-text);
+}
+
+.sxd-wc-tool .wc-results,
+.sxd-wc-tool .wc-verdict {
+  border-top-color: #EBEBEB;
+}
+
+.sxd-wc-tool .wc-facts {
+  background: #EBEBEB;
+  border-color: #EBEBEB;
+}
+
+.sxd-wc-tool .wc-fact {
+  padding: 20px;
+}
+
+.sxd-wc-tool .wc-fact strong {
+  font-family: var(--sx-display);
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: -0.02em;
+  color: var(--sx-fg);
+}
+
+.sxd-wc-tool .wc-fact span {
+  font-size: 13px;
+  color: var(--sx-text);
+}
+
+.sxd-wc-tool .wc-subtitle {
+  font-family: var(--font-vx), sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  color: var(--sx-fg);
+  margin-top: 28px;
+}
+
+.sxd-wc-tool .wc-check {
+  background: #FAFAFA;
+  border-color: #EBEBEB;
+  border-radius: 0;
+}
+
+.sxd-wc-tool .wc-check strong {
+  font-size: 15px;
+  color: var(--sx-fg);
+}
+
+.sxd-wc-tool .wc-check em {
+  font-size: 13px;
+  color: var(--sx-text);
+}
+
+.sxd-wc-tool .wc-error {
+  border-radius: 0;
+}
+
+/* Band head with the navy summary as right column */
+.sx-band-head.sxd-head-takeaway {
+  align-items: end;
+}
+
+.sx-band-head.sxd-head-takeaway .subpage-takeaway {
+  margin: 0;
+}
+
+.sx-band-head.sxd-head-takeaway .subpage-takeaway p {
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.sx-band .subpage-table-wrap + .sx-band-text {
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .section.sxd-wc-tool {
+    padding-bottom: 64px;
+  }
+
+  .sxd-wc-tool .wc-panel {
+    padding: 20px;
+  }
+
+  .sxd-wc-tool .wc-form input,
+  .sxd-wc-tool .wc-form .button {
+    height: 56px;
+  }
+
+  .sxd-wc-tool .wc-form input {
+    flex: 0 0 auto;
+  }
+
+  .sxd-wc-tool .wc-form .button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Five short cards in one row on wide screens (no orphan card) */
+@media (min-width: 1101px) {
+  .sx-cards.sxd-cards-five {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .sx-cards.sxd-cards-five > li {
+    padding: 24px;
+  }
+}

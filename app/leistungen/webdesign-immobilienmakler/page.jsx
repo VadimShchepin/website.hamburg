@@ -1,8 +1,9 @@
 import Link from 'next/link';
+import '../../../src/styles/bands-d.css';
 import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import HeroFacts from '../../../src/components/HeroFacts';
-import SubpageToc from '../../../src/components/SubpageToc';
+import JumpNav from '../../../src/components/JumpNav';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
 import ServiceCta from '../../../src/components/ServiceCta';
@@ -96,15 +97,27 @@ export default function WebdesignImmobilienmaklerPage() {
                 </div>
             </section>
 
-            <section className="subpage-content section light-bg">
-                <div className="container subpage-body is-inset">
-                    <SubpageToc />
-                    <h2 className="animate-up">Was kostet eine Makler-Website in Hamburg?</h2>
-                    <div className="subpage-takeaway animate-up">
-                        <p>Eine Makler-Website kostet bei mir <strong>ab 2.900 Euro</strong> mit Bewertungsanfrage und Objektübersicht, <strong>ab 4.500 Euro</strong> mehrseitig mit Stadtteilseiten, Ratgeber und Teamprofilen. Objektanbindung per OpenImmo kalkuliere ich je nach Maklersoftware dazu. Pflichtangaben nach § 87 GEG sind in der Objektvorlage vorgesehen, nicht optional.</p>
-                    </div>
+            <JumpNav label="Abschnitte" items={[
+                { id: 'kosten', num: '01', label: 'Kosten' },
+                { id: 'suche', num: '02', label: 'Wo gesucht wird' },
+                { id: 'pflichtangaben', num: '03', label: 'Pflichtangaben' },
+                { id: 'funktionen', num: '04', label: 'Funktionen' },
+                { id: 'preise', num: '05', label: 'Preise' },
+                { id: 'projekte', num: '06', label: 'Projekte' },
+                { id: 'ablauf', num: '07', label: 'Ablauf' },
+            ]} />
 
-                    <div className="subpage-story animate-up">
+            <div className="sx-bands">
+            <section id="kosten" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Was kostet eine Makler-Website in Hamburg?</h2>
+                    </div>
+                    <div className="sx-split sxd-split-lead animate-up">
+                        <div className="subpage-takeaway">
+                        <p>Eine Makler-Website kostet bei mir <strong>ab 2.900 Euro</strong> mit Bewertungsanfrage und Objektübersicht, <strong>ab 4.500 Euro</strong> mehrseitig mit Stadtteilseiten, Ratgeber und Teamprofilen. Objektanbindung per OpenImmo kalkuliere ich je nach Maklersoftware dazu. Pflichtangaben nach § 87 GEG sind in der Objektvorlage vorgesehen, nicht optional.</p>
+                        </div>
+                        <div className="subpage-story">
                         <span className="subpage-story-label">Aus der Praxis</span>
                         <p>
                             Fast jede Makler-Website, die ich mir ansehe, ist als Schaufenster gebaut: Objekte oben, Suchmaske daneben, dazu ein Bild von einem Schlüssel in einer Hand. Das Problem daran ist nicht der Schlüssel. Das Problem ist, dass diese Seite gegen ImmoScout24 antritt, und dieses Duell verliert sie zuverlässig.
@@ -115,24 +128,16 @@ export default function WebdesignImmobilienmaklerPage() {
                         <p>
                             Deshalb setze ich bei Makler-Projekten die Objektliste bewusst nach unten. Ihre Objekte sind Beweis, nicht Angebot.
                         </p>
-                    </div>
-
-                    <h2 className="animate-up">Wo suchen Eigentümer und Käufer wirklich?</h2>
-                    <div className="subpage-split is-reverse animate-up">
-                        <div className="sp-split-media">
-                            <img src="/leistungen/branchen/makler/objekt.webp" alt="Immobilienmaklerin bespricht mit einem Paar Unterlagen in einer leeren, hellen Wohnung" width="1200" height="900" loading="lazy" decoding="async" />
-                            <p className="sp-split-caption">Portale bringen Nachfrage. Die eigene Website bringt den Auftrag vom Eigentümer.</p>
-                        </div>
-                        <div className="sp-split-body">
-                            <p>
-                                Bitkom hat 2025 erhoben, wie Menschen in Deutschland eine Wohnung suchen. 81 Prozent nutzen die großen Portale, 19 Prozent die Websites einzelner Anbieter, 12 Prozent soziale Netzwerke, 10 Prozent Makler-Newsletter und 2 Prozent KI-Suchsysteme. Diese Zahlen liest man am besten nicht als Niederlage der eigenen Website, sondern als Arbeitsteilung: Portale bringen Nachfrage, die eigene Seite bringt Aufträge.
-                            </p>
-                            <p>
-                                Portale kosten Geld, und zwar laufend. Nach den Finanzberichten der Scout24 SE liegt der durchschnittliche Monatsumsatz pro gewerblichem Maklerkunden im vierstelligen Bereich. Das ist eine feste monatliche Ausgabe für Sichtbarkeit, die Sie mieten. Eine eigene Website mit Ratgeberinhalten baut dagegen Substanz auf, die Ihnen gehört. Beides zusammen ist die vernünftige Antwort, nur eines von beidem ist teuer.
-                            </p>
                         </div>
                     </div>
+                </div>
+            </section>
 
+            <section id="suche" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Wo suchen Eigentümer und Käufer wirklich?</h2>
+                    </div>
                     <div className="subpage-stats animate-up">
                         <div className="subpage-stat">
                             <span className="subpage-stat-value">81%</span>
@@ -148,15 +153,36 @@ export default function WebdesignImmobilienmaklerPage() {
                         </div>
                     </div>
 
+                    <div className="sx-split animate-up">
+                        <div className="sx-band-text">
+                            <p>
+                                Bitkom hat 2025 erhoben, wie Menschen in Deutschland eine Wohnung suchen. 81 Prozent nutzen die großen Portale, 19 Prozent die Websites einzelner Anbieter, 12 Prozent soziale Netzwerke, 10 Prozent Makler-Newsletter und 2 Prozent KI-Suchsysteme. Diese Zahlen liest man am besten nicht als Niederlage der eigenen Website, sondern als Arbeitsteilung: Portale bringen Nachfrage, die eigene Seite bringt Aufträge.
+                            </p>
+                            <p>
+                                Portale kosten Geld, und zwar laufend. Nach den Finanzberichten der Scout24 SE liegt der durchschnittliche Monatsumsatz pro gewerblichem Maklerkunden im vierstelligen Bereich. Das ist eine feste monatliche Ausgabe für Sichtbarkeit, die Sie mieten. Eine eigene Website mit Ratgeberinhalten baut dagegen Substanz auf, die Ihnen gehört. Beides zusammen ist die vernünftige Antwort, nur eines von beidem ist teuer.
+                            </p>
+                        </div>
+                        <figure className="subpage-figure">
+                            <img src="/leistungen/branchen/makler/objekt.webp" alt="Immobilienmaklerin bespricht mit einem Paar Unterlagen in einer leeren, hellen Wohnung" width="1200" height="900" loading="lazy" decoding="async" />
+                            <figcaption>Portale bringen Nachfrage. Die eigene Website bringt den Auftrag vom Eigentümer.</figcaption>
+                        </figure>
+                    </div>
+
                     <figure className="subpage-figure is-band animate-up">
                         <img src="/leistungen/branchen/makler/hamburg.webp" alt="Hamburger Hafenrand mit Backsteinspeichern, Booten und den Neubauten der Hafencity" width="1800" height="760" loading="lazy" decoding="async" />
                         <figcaption>Der Weg zum Auftrag beginnt bei der Wertfrage, nicht beim Objektfoto.</figcaption>
                     </figure>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Pflichtangaben und Rechtstechnik</h2>
-                    <p className="animate-up">
-                        Bei Makler-Websites sind zwei Themen fast immer mangelhaft gelöst. Erstens die Energieausweis-Angaben, weil sie im Redaktionsalltag vergessen werden. Zweitens das Widerrufsrecht bei Exposé-Anfragen, weil die Mechanik dahinter unbekannt ist. Beides ist technisch lösbar, wenn man es beim Bau der Seite berücksichtigt.
-                    </p>
+            <section id="pflichtangaben" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head">
+                        <h2 className="animate-up">Pflichtangaben und Rechtstechnik</h2>
+                        <p className="animate-up">
+                            Bei Makler-Websites sind zwei Themen fast immer mangelhaft gelöst. Erstens die Energieausweis-Angaben, weil sie im Redaktionsalltag vergessen werden. Zweitens das Widerrufsrecht bei Exposé-Anfragen, weil die Mechanik dahinter unbekannt ist. Beides ist technisch lösbar, wenn man es beim Bau der Seite berücksichtigt.
+                        </p>
+                    </div>
                     <div className="rule-cols animate-up">
                         <div className="rule-col">
                             <h3>In jedes Inserat, wenn ein Energieausweis vorliegt</h3>
@@ -181,12 +207,20 @@ export default function WebdesignImmobilienmaklerPage() {
                             </ul>
                         </div>
                     </div>
-                    <p className="animate-up">
-                        Zur Klarstellung: Ich bin Entwickler, nicht Anwalt, und dieser Abschnitt ist keine Rechtsberatung. Er beschreibt, welche Felder und Abläufe ich vorsehe, damit Ihre Rechtsberatung am Ende nichts mehr zu beanstanden hat.
-                    </p>
+                    <div className="sx-band-text animate-up">
+                        <p>
+                            Zur Klarstellung: Ich bin Entwickler, nicht Anwalt, und dieser Abschnitt ist keine Rechtsberatung. Er beschreibt, welche Felder und Abläufe ich vorsehe, damit Ihre Rechtsberatung am Ende nichts mehr zu beanstanden hat.
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Was muss eine Makler-Website leisten?</h2>
-                    <div className="subpage-features-grid animate-up">
+            <section id="funktionen" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Was muss eine Makler-Website leisten?</h2>
+                    </div>
+                    <div className="subpage-features-grid is-four animate-up">
                         <div className="subpage-feature">
                             <h3>Wertanfrage als Hauptziel</h3>
                             <p>Ein klar sichtbares Angebot zur Wertermittlung mit wenigen Feldern und einem realistischen Versprechen zur Rückmeldung. Das ist die Anfrage, aus der Aufträge entstehen.</p>
@@ -203,9 +237,7 @@ export default function WebdesignImmobilienmaklerPage() {
                             <h3>Objektdaten automatisch</h3>
                             <p>Anbindung Ihrer Maklersoftware per OpenImmo, damit neue Objekte nicht zweimal eingetippt und verkaufte automatisch entfernt werden.</p>
                         </div>
-                    </div>
 
-                    <div className="subpage-features-grid animate-up">
                         <div className="subpage-feature">
                             <h3>Ratgeber für Eigentümer</h3>
                             <p>Unterlagenliste, Ablauf, Kosten, Provisionsteilung, Steuern beim Verkauf. Diese Fragen werden Monate vor der Maklersuche gestellt, und wer sie beantwortet, ist beim Anruf schon gesetzt.</p>
@@ -223,8 +255,14 @@ export default function WebdesignImmobilienmaklerPage() {
                             <p>Getrennte Ziele für Wertanfrage, Objektanfrage und Rückruf, damit sichtbar wird, welcher Kanal Aufträge bringt und welcher nur Klicks. Dazu passt die <Link href="/leistungen/conversion-optimierung">Conversion-Optimierung</Link>.</p>
                         </div>
                     </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Preise</h2>
+            <section id="preise" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Preise</h2>
+                    </div>
                     <div className="subpage-pricing-compare animate-up">
                         <div className="subpage-price-col">
                             <h3>Makler-Website individuell</h3>
@@ -255,8 +293,14 @@ export default function WebdesignImmobilienmaklerPage() {
                             </ul>
                         </div>
                     </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Vergleichbare Projekte</h2>
+            <section id="projekte" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Vergleichbare Projekte</h2>
+                    </div>
                     <div className="subpage-cases animate-up">
                         <Link href="/referenzen/gl-sommer" className="subpage-case-card">
                             <span className="subpage-case-metric">11,06 EUR je Kontakt</span>
@@ -271,8 +315,14 @@ export default function WebdesignImmobilienmaklerPage() {
                             <span className="subpage-case-name">mit-kinder.de: Objektsuche mit Karte, Filter und Empfehlungen</span>
                         </Link>
                     </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Wie läuft ein Makler-Website-Projekt ab?</h2>
+            <section id="ablauf" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Wie läuft ein Makler-Website-Projekt ab?</h2>
+                    </div>
                     <div className="subpage-process animate-up">
                         <div className="sp-step"><span className="sp-step-num">1</span><div><strong>Erstgespräch, kostenlos</strong><p>Woher kommen Ihre Aufträge heute, welche Lagen wollen Sie besetzen, wie viel zahlen Sie monatlich an Portale. Danach ist klar, was die Website leisten soll.</p></div></div>
                         <div className="sp-step"><span className="sp-step-num">2</span><div><strong>Struktur für die Akquise</strong><p>Wertanfrage, Stadtteilseiten, Ratgeberthemen und Objektvorlage inklusive Pflichtfelder. Ich liefere Textvorschläge, Sie ergänzen Ihre Marktkenntnis.</p></div></div>
@@ -293,6 +343,7 @@ export default function WebdesignImmobilienmaklerPage() {
                     </div>
                 </div>
             </section>
+            </div>
 
             <FaqSection title="Häufige Fragen zu Makler-Websites" items={faqItems} />
             <RelatedServices exclude="webdesign" />

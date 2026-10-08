@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
+import HeroFacts from '../../../src/components/HeroFacts';
+import SubpageToc from '../../../src/components/SubpageToc';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
 import ServiceCta from '../../../src/components/ServiceCta';
@@ -82,6 +84,7 @@ export default function WebsiteErstellenLassenPage() {
                         <p className="subpage-intro animate-up">
                             Wer noch nie eine Website beauftragt hat, steht vor echten Fragen: Baukasten oder Agentur? Was ist ein realistischer Preis? Woran erkenne ich einen seriösen Anbieter? Diese Seite beantwortet das ehrlich und zeigt, wie ich arbeite.
                         </p>
+                        <HeroFacts items={[['ab 1.500 €', 'Website-Start'], ['ab 2.900 €', 'Conversion Landingpage'], ['ab 4.500 €', 'Unternehmenswebsite']]} />
                         <ServiceMeta />
                         </div>
                         <div className="subpage-hero-media animate-up">
@@ -93,6 +96,7 @@ export default function WebsiteErstellenLassenPage() {
 
             <section className="subpage-content section light-bg">
                 <div className="container subpage-body">
+                    <SubpageToc />
                     <h2 className="animate-up">Was kostet es, eine Website erstellen zu lassen?</h2>
                     <div className="subpage-takeaway animate-up">
                         <p>Eine Website erstellen zu lassen kostet bei mir <strong>ab 1.500 €</strong> (Website-Start mit bewährtem Layout), <strong>ab 2.900 €</strong> (Conversion Landingpage) bzw. <strong>ab 4.500 €</strong> (mehrseitige Unternehmenswebsite), jeweils als verbindlicher Festpreis vor Projektstart. Sie wird individuell programmiert, ohne Baukasten und ohne gekauftes Theme, und erreicht Lighthouse-Werte von 90 bis 100. Ein One-Pager ist in 2 bis 3 Wochen fertig, eine mehrseitige Website in 4 bis 6 Wochen.</p>

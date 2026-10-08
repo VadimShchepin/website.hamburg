@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
+import HeroFacts from '../../../src/components/HeroFacts';
+import SubpageToc from '../../../src/components/SubpageToc';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
 import ServiceCta from '../../../src/components/ServiceCta';
@@ -80,6 +82,7 @@ export default function WebdesignPage() {
                         <p className="subpage-intro animate-up">
                             Ihre Website ist oft der erste Eindruck, den ein potenzieller Kunde von Ihrem Unternehmen bekommt. Wenige Sekunden entscheiden, ob er bleibt oder abspringt. Ich sorge dafür, dass er bleibt und anfragt.
                         </p>
+                        <HeroFacts items={[['ab 1.500 €', 'Website-Start'], ['ab 2.900 €', 'Conversion Landingpage'], ['ab 4.500 €', 'Unternehmenswebsite']]} />
                         <ServiceMeta />
                         </div>
                         <div className="subpage-hero-media animate-up">
@@ -91,6 +94,7 @@ export default function WebdesignPage() {
 
             <section className="subpage-content section light-bg">
                 <div className="container subpage-body">
+                    <SubpageToc />
                     <h2 className="animate-up">Was kostet ein Webdesigner in Hamburg?</h2>
                     <div className="subpage-takeaway animate-up">
                         <p>Eine professionelle Website kostet bei mir <strong>ab 1.500 €</strong> (Website-Start mit bewährtem Layout), <strong>ab 2.900 €</strong> (Conversion Landingpage) oder <strong>ab 4.500 €</strong> (mehrseitige Unternehmenswebsite), jeweils zum Festpreis statt nach Stunden. Sie wird individuell programmiert, ohne Baukasten und ohne gekauftes WordPress-Theme, und erreicht Lighthouse-Werte von 90 bis 100 sowie gute Core Web Vitals. Eine Landingpage ist in 2 bis 3 Wochen fertig, eine mehrseitige Website in 4 bis 6 Wochen.</p>

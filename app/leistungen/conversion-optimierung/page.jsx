@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
+import HeroFacts from '../../../src/components/HeroFacts';
+import SubpageToc from '../../../src/components/SubpageToc';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
 import ServiceCta from '../../../src/components/ServiceCta';
@@ -72,6 +74,7 @@ export default function ConversionOptimierungPage() {
                         <p className="subpage-intro animate-up">
                             Die meisten Websites haben kein Besucherproblem, sondern ein Abschlussproblem. Bevor Sie mehr Geld in Werbung stecken, lohnt sich der Blick darauf, warum die Menschen, die schon da sind, wieder gehen.
                         </p>
+                        <HeroFacts items={[['0 €', 'Analyse'], ['ab 2.400 €', 'Umsetzung zum Festpreis']]} />
                         <ServiceMeta />
                         </div>
                         <div className="subpage-hero-media animate-up">
@@ -83,6 +86,7 @@ export default function ConversionOptimierungPage() {
 
             <section className="subpage-content section light-bg">
                 <div className="container subpage-body">
+                    <SubpageToc />
                     <h2 className="animate-up">Was ist Conversion-Optimierung?</h2>
                     <div className="subpage-takeaway animate-up">
                         <p><strong>Conversion-Optimierung</strong> (auch CRO, Conversion Rate Optimierung) verbessert das Verhältnis von Besuchern zu Anfragen. Statt mehr Menschen auf die Seite zu holen, sorgt sie dafür, dass mehr der vorhandenen Besucher tatsächlich anrufen, schreiben oder ein Formular abschicken. Die Arbeit besteht aus vier Teilen: Analyse der Nutzerwege, Priorisierung nach Wirkung, Umsetzung und Messung.</p>

@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
+import HeroFacts from '../../../src/components/HeroFacts';
+import SubpageToc from '../../../src/components/SubpageToc';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
 import ServiceCta from '../../../src/components/ServiceCta';
@@ -79,6 +81,7 @@ export default function WebdesignSteuerberaterPage() {
                         <p className="subpage-intro animate-up">
                             Eine Steuerberater-Website in Hamburg muss zwei Zielgruppen gleichzeitig bedienen: Unternehmer, die einen neuen Berater suchen, und Fachkräfte, die einen neuen Arbeitgeber prüfen. Denn viele Steuerkanzleien haben kein Mandantenproblem, sondern ein Personalproblem, und beides landet auf derselben Seite.
                         </p>
+                        <HeroFacts items={[['ab 2.900 €', 'Einseitige Kanzlei-Website'], ['ab 4.500 €', 'Mehrseitig mit Karrierebereich'], ['§ 57a', 'StBerG-konforme Texte']]} />
                         <div className="hero-proof animate-up">
                             <span>Festpreis ab 2.900 €</span>
                             <span>§ 57a StBerG beachtet</span>
@@ -95,6 +98,7 @@ export default function WebdesignSteuerberaterPage() {
 
             <section className="subpage-content section light-bg">
                 <div className="container subpage-body is-inset">
+                    <SubpageToc />
                     <h2 className="animate-up">Was kostet eine Steuerberater-Website in Hamburg?</h2>
                     <div className="subpage-takeaway animate-up">
                         <p>Eine Kanzlei-Website kostet bei mir <strong>ab 2.900 Euro</strong> einseitig und <strong>ab 4.500 Euro</strong> mehrseitig mit Leistungsseiten, Teamprofilen und Karrierebereich. Enthalten sind Struktur, Design, Entwicklung, Textvorschläge und lokale SEO-Grundlage. Die Formulierungen bleiben innerhalb des Sachlichkeitsgebots aus § 57a StBerG.</p>

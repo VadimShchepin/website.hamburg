@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
+import HeroFacts from '../../../src/components/HeroFacts';
+import SubpageToc from '../../../src/components/SubpageToc';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
 import ServiceCta from '../../../src/components/ServiceCta';
@@ -79,6 +81,7 @@ export default function WebdesignAnwaeltePage() {
                         <p className="subpage-intro animate-up">
                             Eine Kanzlei-Website in Hamburg hat genau eine Aufgabe: Sie muss einem Ratsuchenden in dreißig Sekunden beantworten, ob Sie zuständig sind, was das Erstgespräch kostet und wie er Sie jetzt erreicht. Im Kammerbezirk Hamburg sind über 11.000 Anwältinnen und Anwälte zugelassen, fast alle haben eine Website. Nur wenige haben eine, die das leistet.
                         </p>
+                        <HeroFacts items={[['ab 2.900 €', 'Einseitige Kanzlei-Website'], ['ab 4.500 €', 'Mehrseitig, je Rechtsgebiet'], ['Festpreis', 'vor Projektstart']]} />
                         <div className="hero-proof animate-up">
                             <span>Festpreis ab 2.900 €</span>
                             <span>§ 43b BRAO beachtet</span>
@@ -95,6 +98,7 @@ export default function WebdesignAnwaeltePage() {
 
             <section className="subpage-content section light-bg">
                 <div className="container subpage-body is-inset">
+                    <SubpageToc />
                     <h2 className="animate-up">Was kostet eine Kanzlei-Website in Hamburg?</h2>
                     <div className="subpage-takeaway animate-up">
                         <p>Eine Kanzlei-Website kostet bei mir <strong>ab 2.900 Euro</strong> einseitig und <strong>ab 4.500 Euro</strong> mehrseitig mit eigener Seite je Rechtsgebiet. Enthalten sind Struktur, Design, Entwicklung, Textvorschläge, lokale SEO-Grundlage und eine berufsrechtlich zurückhaltende Formulierung nach § 43b BRAO. Sie bekommen einen Festpreis vor Projektstart.</p>

@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
+import HeroFacts from '../../../src/components/HeroFacts';
+import SubpageToc from '../../../src/components/SubpageToc';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
 import ServiceCta from '../../../src/components/ServiceCta';
@@ -75,6 +77,7 @@ export default function AiSeoPage() {
                         <p className="subpage-intro animate-up">
                             Immer mehr Menschen suchen mit ChatGPT, Perplexity oder Google AI Overviews statt mit der klassischen Linkliste. Wenn diese Systeme nach Experten in Ihrem Bereich gefragt werden, taucht dann Ihr Unternehmen in der Antwort auf?
                         </p>
+                        <HeroFacts items={[['0 €', 'KI-Kurzanalyse'], ['ab 1.500 €', 'AI Visibility Sprint'], ['ab 600 €/Monat', 'Laufende Betreuung']]} />
                         <ServiceMeta />
                         </div>
                         <div className="subpage-hero-media animate-up">
@@ -86,6 +89,7 @@ export default function AiSeoPage() {
 
             <section className="subpage-content section light-bg">
                 <div className="container subpage-body">
+                    <SubpageToc />
                     <h2 className="animate-up">Was ist AI SEO (GEO)?</h2>
                     <div className="subpage-takeaway animate-up">
                         <p><strong>AI SEO</strong>, auch <strong>GEO</strong> (Generative Engine Optimization) oder <strong>AEO</strong> (Answer Engine Optimization) genannt, optimiert Inhalte so, dass KI-Systeme wie ChatGPT, Perplexity, Google AI Overviews und Microsoft Copilot ein Unternehmen als Quelle zitieren. Anders als klassisches SEO zielt es nicht auf Platz 1, sondern auf die Nennung in der generierten Antwort. Die wichtigsten Hebel sind klare Definitionen, belegte Statistiken, strukturierte Daten (Schema.org) und für KI-Crawler zugängliche Inhalte.</p>

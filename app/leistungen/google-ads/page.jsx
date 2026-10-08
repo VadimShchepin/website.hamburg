@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
+import HeroFacts from '../../../src/components/HeroFacts';
+import SubpageToc from '../../../src/components/SubpageToc';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
 import ServiceCta from '../../../src/components/ServiceCta';
@@ -75,6 +77,7 @@ export default function GoogleAdsPage() {
                         <p className="subpage-intro animate-up">
                             Während SEO langfristig wirkt, liefern Google Ads sofort Ergebnisse. Ihre Anzeige erscheint genau dann, wenn jemand nach Ihrer Leistung sucht, und das schon heute. Jeder Euro wird getrackt, jeder Lead gemessen.
                         </p>
+                        <HeroFacts items={[['ab 700 €', 'Kampagnen-Setup'], ['ab 500 €/Monat', 'Laufende Betreuung'], ['100 %', 'Ihr Konto, Ihre Daten']]} />
                         <ServiceMeta />
                         </div>
                         <div className="subpage-hero-media animate-up">
@@ -86,6 +89,7 @@ export default function GoogleAdsPage() {
 
             <section className="subpage-content section light-bg">
                 <div className="container subpage-body">
+                    <SubpageToc />
                     <h2 className="animate-up">Was sind Google Ads?</h2>
                     <div className="subpage-takeaway animate-up">
                         <p><strong>Google Ads</strong> sind bezahlte Anzeigen, die in den Google-Suchergebnissen erscheinen, sobald jemand nach einer passenden Leistung sucht. Abgerechnet wird meist pro Klick (CPC). <strong>Local Services Ads</strong> stehen ganz oben und werden pro Anfrage statt pro Klick bezahlt. Das Kampagnen-Setup kostet ab 700 € einmalig, die laufende Betreuung ab 500 € pro Monat; das Werbebudget läuft separat über Ihr eigenes Google-Konto, sodass Sie jeden Cent sehen.</p>

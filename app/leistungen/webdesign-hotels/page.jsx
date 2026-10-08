@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
+import HeroFacts from '../../../src/components/HeroFacts';
+import SubpageToc from '../../../src/components/SubpageToc';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
 import ServiceCta from '../../../src/components/ServiceCta';
@@ -79,6 +81,7 @@ export default function WebdesignHotelsPage() {
                         <p className="subpage-intro animate-up">
                             Eine Hotel-Website in Hamburg entscheidet über Ihren Deckungsbeitrag: Jede Buchung über ein Portal kostet Provision, jede Buchung über Ihre eigene Seite einen Bruchteil davon. Der Unterschied entscheidet sich an einer einzigen Stelle, nämlich daran, wie schnell ein Gast von Ihrer Startseite zu einem Preis für sein Datum kommt.
                         </p>
+                        <HeroFacts items={[['ab 2.900 €', 'Einseitige Hotel-Website'], ['ab 4.500 €', 'Mehrseitig mit Buchungsmaske'], ['15 bis 25 %', 'Portalprovision, die Direktbuchungen sparen']]} />
                         <div className="hero-proof animate-up">
                             <span>Festpreis ab 2.900 €</span>
                             <span>Direktbuchung</span>
@@ -95,6 +98,7 @@ export default function WebdesignHotelsPage() {
 
             <section className="subpage-content section light-bg">
                 <div className="container subpage-body is-inset">
+                    <SubpageToc />
                     <h2 className="animate-up">Was kostet eine Hotel-Website in Hamburg?</h2>
                     <div className="subpage-takeaway animate-up">
                         <p>Eine Hotel-Website kostet bei mir <strong>ab 2.900 Euro</strong> einseitig und <strong>ab 4.500 Euro</strong> mehrseitig mit Zimmerseiten, Angeboten und angebundener Buchungsmaske. Portalprovisionen liegen je nach Programm bei etwa 15 bis 25 Prozent, die Kosten einer Direktbuchung meist im einstelligen Prozentbereich. Die Website rechnet sich also über die Zahl der Direktbuchungen, nicht über das Design.</p>

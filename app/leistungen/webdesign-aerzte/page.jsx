@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
+import HeroFacts from '../../../src/components/HeroFacts';
+import SubpageToc from '../../../src/components/SubpageToc';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
 import ServiceCta from '../../../src/components/ServiceCta';
@@ -79,6 +81,7 @@ export default function WebdesignAerztePage() {
                         <p className="subpage-intro animate-up">
                             Patienten suchen "Zahnarzt Hamburg Eimsbüttel" oder "Hausarzt in der Nähe". Wird Ihre Praxis nicht gefunden oder wirkt die Website veraltet, buchen sie woanders. Und DSGVO-Konformität ist für medizinische Einrichtungen keine Option, sondern Pflicht.
                         </p>
+                        <HeroFacts items={[['ab 2.900 €', 'Praxis-Website Kompakt'], ['ab 5.500 €', 'Premium mit Terminbuchung'], ['50 %', 'haben schon online einen Arzttermin gebucht']]} />
                         <ServiceMeta />
                         </div>
                         <div className="subpage-hero-media hero-media-framed animate-up">
@@ -90,6 +93,7 @@ export default function WebdesignAerztePage() {
 
             <section className="subpage-content section light-bg">
                 <div className="container subpage-body">
+                    <SubpageToc />
                     <h2 className="animate-up">Was kostet eine Praxis-Website?</h2>
                     <div className="subpage-takeaway animate-up">
                         <p>Eine professionelle Praxis-Website kostet bei mir <strong>ab 2.900 €</strong> (kompakt) bzw. <strong>ab 5.500 €</strong> (Premium mit Online-Terminbuchung). Sie ist DSGVO-konform, mobiloptimiert und lokal für Google sichtbar. Laut Bitkom hat 2024 bereits jede zweite Person in Deutschland (50 %) schon online einen Arzttermin gebucht. Eine veraltete oder fehlende Website kostet Sie genau diese Patienten.</p>

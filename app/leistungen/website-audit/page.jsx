@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
+import HeroFacts from '../../../src/components/HeroFacts';
+import SubpageToc from '../../../src/components/SubpageToc';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
 import ServiceCta from '../../../src/components/ServiceCta';
@@ -72,6 +74,7 @@ export default function WebsiteAuditPage() {
                         <p className="subpage-intro animate-up">
                             Wissen Sie, wie viele Kunden Ihre Website jeden Tag verliert? Die meisten Unternehmer nicht. Mein Website-Audit zeigt Ihnen, wo Ihre Website steht, was sie kostet und was möglich wäre. Kostenlos, ehrlich, konkret.
                         </p>
+                        <HeroFacts items={[['0 €', 'Kostenlos, unverbindlich'], ['2 bis 3', 'Werktage bis zum Bericht'], ['30 Min.', 'Gespräch zu den Ergebnissen']]} />
                         <ServiceMeta />
                         </div>
                         <div className="subpage-hero-media animate-up">
@@ -83,6 +86,7 @@ export default function WebsiteAuditPage() {
 
             <section className="subpage-content section light-bg">
                 <div className="container subpage-body">
+                    <SubpageToc />
                     <h2 className="animate-up">Was ist das Website-Audit?</h2>
                     <div className="subpage-takeaway animate-up">
                         <p>Das <strong>Website-Audit</strong> ist eine kostenlose, unverbindliche Analyse Ihrer Website in vier Bereichen: Performance (Core Web Vitals), SEO, Conversion und Wettbewerb. Sie erhalten innerhalb von <strong>2 bis 3 Werktagen</strong> einen Bericht mit Screenshots, Daten und priorisierten Handlungsempfehlungen, dazu ein 30-minütiges Gespräch. Kein Haken, keine Verpflichtung.</p>

@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
+import HeroFacts from '../../../src/components/HeroFacts';
+import SubpageToc from '../../../src/components/SubpageToc';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
 import ServiceCta from '../../../src/components/ServiceCta';
@@ -79,6 +81,7 @@ export default function WebdesignImmobilienmaklerPage() {
                         <p className="subpage-intro animate-up">
                             Eine Makler-Website in Hamburg gewinnt keine Käufer, sondern Eigentümer. Käufer finden Objekte auf den Portalen, daran ändert keine Website etwas. Die Frage, wem ein Eigentümer seine Immobilie anvertraut, entscheidet sich woanders: bei der Recherche nach dem Namen, den er auf dem Schild in der Nachbarschaft gelesen hat.
                         </p>
+                        <HeroFacts items={[['ab 2.900 €', 'Mit Bewertungsanfrage'], ['ab 4.500 €', 'Mehrseitig mit Stadtteilseiten'], ['§ 87 GEG', 'Pflichtangaben in der Objektvorlage']]} />
                         <div className="hero-proof animate-up">
                             <span>Festpreis ab 2.900 €</span>
                             <span>§ 87 GEG sauber gelöst</span>
@@ -95,6 +98,7 @@ export default function WebdesignImmobilienmaklerPage() {
 
             <section className="subpage-content section light-bg">
                 <div className="container subpage-body is-inset">
+                    <SubpageToc />
                     <h2 className="animate-up">Was kostet eine Makler-Website in Hamburg?</h2>
                     <div className="subpage-takeaway animate-up">
                         <p>Eine Makler-Website kostet bei mir <strong>ab 2.900 Euro</strong> mit Bewertungsanfrage und Objektübersicht, <strong>ab 4.500 Euro</strong> mehrseitig mit Stadtteilseiten, Ratgeber und Teamprofilen. Objektanbindung per OpenImmo kalkuliere ich je nach Maklersoftware dazu. Pflichtangaben nach § 87 GEG sind in der Objektvorlage vorgesehen, nicht optional.</p>

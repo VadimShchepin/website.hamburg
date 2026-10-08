@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
+import HeroFacts from '../../../src/components/HeroFacts';
+import SubpageToc from '../../../src/components/SubpageToc';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
 import ServiceCta from '../../../src/components/ServiceCta';
@@ -73,6 +75,7 @@ export default function SeoPage() {
                         <p className="subpage-intro animate-up">
                             Wenn jemand in Hamburg nach Ihrer Leistung sucht und Sie nicht auf der ersten Seite stehen, existieren Sie für diese Person nicht. Lokale SEO ändert das: messbar und ohne Klickkosten pro Besucher.
                         </p>
+                        <HeroFacts items={[['ab 1.000 €/Monat', 'Lokale SEO-Betreuung'], ['76 %', 'lokaler Handy-Suchen führen zum Besuch'], ['0 €', 'Klickpreis für organische Besucher']]} />
                         <ServiceMeta />
                         </div>
                         <div className="subpage-hero-media animate-up">
@@ -84,6 +87,7 @@ export default function SeoPage() {
 
             <section className="subpage-content section light-bg">
                 <div className="container subpage-body">
+                    <SubpageToc />
                     <h2 className="animate-up">Was ist lokale SEO?</h2>
                     <div className="subpage-takeaway animate-up">
                         <p><strong>Lokale SEO</strong> (lokale Suchmaschinenoptimierung) sorgt dafür, dass ein Unternehmen in der regionalen Google-Suche, in Google Maps und im lokalen 3er-Pack erscheint, wenn Menschen in der Nähe nach einer Leistung suchen. Sie umfasst vier Bausteine: Optimierung des Google-Unternehmensprofils, technisches SEO, lokale Inhalte und den Aufbau von Citations. Bei mir beginnt lokale SEO in Hamburg bei 1.000 € pro Monat.</p>

@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
+import HeroFacts from '../../../src/components/HeroFacts';
+import SubpageToc from '../../../src/components/SubpageToc';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
 import ServiceCta from '../../../src/components/ServiceCta';
@@ -79,6 +81,7 @@ export default function WebdesignGastronomiePage() {
                         <p className="subpage-intro animate-up">
                             Eine Restaurant-Website in Hamburg hat etwa zwanzig Sekunden. So lange braucht ein Gast, der um 18:40 Uhr in der Schanze steht, Hunger hat und ein Handy in der Hand hält. In diesen zwanzig Sekunden muss Ihre Seite drei Dinge zeigen: was es gibt, was es kostet, ob noch ein Tisch frei ist. Alles andere ist Dekoration.
                         </p>
+                        <HeroFacts items={[['ab 1.500 €', 'Website-Start'], ['ab 2.900 €', 'Individuelle Restaurant-Website'], ['ab 4.500 €', 'Mehrseitig mit Events']]} />
                         <div className="hero-proof animate-up">
                             <span>Festpreis ab 1.500 €</span>
                             <span>Reservierung ohne Provision</span>
@@ -95,6 +98,7 @@ export default function WebdesignGastronomiePage() {
 
             <section className="subpage-content section light-bg">
                 <div className="container subpage-body is-inset">
+                    <SubpageToc />
                     <h2 className="animate-up">Was kostet eine Restaurant-Website in Hamburg?</h2>
                     <div className="subpage-takeaway animate-up">
                         <p>Der Einstieg kostet <strong>ab 1.500 Euro</strong> (eine Seite, bewährtes Layout, Speisekarte und Reservierungsweg, fertig in zwei bis fünf Arbeitstagen). Eine individuell gestaltete Restaurant-Website beginnt bei <strong>2.900 Euro</strong>, mehrseitig mit Events und Catering bei <strong>4.500 Euro</strong>. Laufende Kosten für Hosting und Domain liegen bei etwa 15 Euro im Monat.</p>

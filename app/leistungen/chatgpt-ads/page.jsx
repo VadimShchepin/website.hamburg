@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
+import HeroFacts from '../../../src/components/HeroFacts';
+import SubpageToc from '../../../src/components/SubpageToc';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
 import ServiceCta from '../../../src/components/ServiceCta';
@@ -80,6 +82,7 @@ export default function ChatGptAdsPage() {
                             <p className="subpage-intro animate-up">
                                 Seit dem 24. August 2026 sehen Menschen in Deutschland Anzeigen in ChatGPT. Seit dem 31. August 2026 ist der OpenAI Ads Manager hier auch im Self-Service buchbar. Ich schalte seit dem Start eigene Kampagnen darin, mit eigenem Geld, und baue sie jetzt für Unternehmen auf, die den Vorsprung mitnehmen wollen.
                             </p>
+                            <HeroFacts items={[['ab 1.400 €', 'Kampagnen-Setup'], ['ab 1.000 €/Monat', 'Laufende Betreuung'], ['24.08.2026', 'Start in Deutschland']]} />
                             <ServiceMeta />
                         </div>
                         <div className="subpage-hero-media hero-media-framed animate-up">
@@ -91,6 +94,7 @@ export default function ChatGptAdsPage() {
 
             <section className="subpage-content section light-bg">
                 <div className="container subpage-body">
+                    <SubpageToc />
                     <h2 className="animate-up">Was sind ChatGPT Ads?</h2>
                     <div className="subpage-takeaway animate-up">
                         <p><strong>ChatGPT Ads</strong> sind bezahlte Anzeigen, die unterhalb einer ChatGPT-Antwort erscheinen, klar als gesponsert gekennzeichnet und vom Antworttext getrennt. Ausgespielt werden sie nur an Nutzer der Tarife Free und Go, abgerechnet pro 1.000 Impressionen (CPM) oder pro Klick (CPC). In Deutschland laufen sie seit dem 24. August 2026; den Ads Manager können deutsche Unternehmen seit dem 31. August 2026 selbst buchen.</p>

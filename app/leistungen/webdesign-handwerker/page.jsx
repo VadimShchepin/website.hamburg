@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
+import HeroFacts from '../../../src/components/HeroFacts';
+import SubpageToc from '../../../src/components/SubpageToc';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
 import ServiceCta from '../../../src/components/ServiceCta';
@@ -110,6 +112,7 @@ export default function WebdesignHandwerkerPage() {
                             <p className="subpage-intro animate-up">
                                 Sie sind Handwerker, kein Webdesigner. Ihre Zeit steckt in Baustellen und Kunden, nicht in Websites. Aber Ihre nächsten Kunden suchen gerade "Elektriker Hamburg" oder "Maler in der Nähe". Ich sorge dafür, dass diese Anfragen bei Ihnen landen.
                             </p>
+                            <HeroFacts items={[['ab 1.500 €', 'Website-Start'], ['ab 2.900 €', 'Individuell gestaltet'], ['ab 4.500 €', 'Mehrseitig']]} />
                             <div className="hero-proof animate-up">
                                 <span>Festpreis</span>
                                 <span>Mobile-First</span>
@@ -126,6 +129,7 @@ export default function WebdesignHandwerkerPage() {
 
             <section className="subpage-content section light-bg">
                 <div className="container subpage-body is-inset">
+                    <SubpageToc />
                     <h2 className="animate-up">Was kostet eine Handwerker-Website?</h2>
                     <div className="subpage-takeaway animate-up">
                         <p>Eine Handwerker-Website kostet bei mir <strong>ab 1.500 €</strong> (Website-Start), <strong>ab 2.900 €</strong> (individuell gestaltete Seite) oder <strong>ab 4.500 €</strong> (mehrseitig) zum Festpreis. Sie ist mobile-first, in rund einer Sekunde geladen und für lokale Suchen wie "Elektriker Hamburg" optimiert, mit Telefon- und WhatsApp-Button direkt im Blickfeld. Laut Think with Google besuchen 76 % der Menschen, die lokal mit dem Smartphone suchen, innerhalb eines Tages ein Geschäft.</p>

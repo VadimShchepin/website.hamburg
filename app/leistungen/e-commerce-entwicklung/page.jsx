@@ -1,6 +1,8 @@
+import '../../../src/styles/bands-b.css';
 import Link from 'next/link';
 import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
+import HeroFacts from '../../../src/components/HeroFacts';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
 import ServiceCta from '../../../src/components/ServiceCta';
@@ -120,6 +122,7 @@ export default function EcommerceEntwicklungPage() {
                             <p className="ecx-hero-lead animate-up">
                                 Entwicklung, Design, Text und Marketing aus einer Hand: meiner. Ich baue Ihren Shop, erweitere ihn und kümmere mich danach weiter darum, für Shopify, Shopware, WooCommerce oder eine eigene Lösung.
                             </p>
+                            <HeroFacts items={[['ab 9.000 €', 'Einstieg mit Standardsystem'], ['10+ Jahre', 'Projekterfahrung'], ['Festpreis', 'vor Projektstart']]} />
                             <div className="ecx-hero-actions animate-up">
                                 <Link href="/kontakt" className="button button-primary button-large" data-umami-event="cta-click" data-umami-event-location="ecom-hero">Kostenloses Erstgespräch</Link>
                                 <a href="tel:+4917632194754" className="ecx-hero-phone" data-umami-event="phone-call" data-umami-event-location="ecom-hero">
@@ -146,7 +149,7 @@ export default function EcommerceEntwicklungPage() {
             </section>
 
             {/* LOGO STRIP */}
-            <section className="ecx-logostrip light-bg">
+            <section className="ecx-logostrip light-bg sxb-esec">
                 <div className="container">
                     <p className="ecx-logostrip-label">Ich entwickle auf der Plattform, die zu Ihrem Geschäft passt</p>
                     <div className="ecx-logos animate-up">
@@ -161,11 +164,13 @@ export default function EcommerceEntwicklungPage() {
             </section>
 
             {/* SERVICES (Full-Cycle) — promoted, with detail lightboxes */}
-            <section className="section">
+            <section className="section sxb-esec is-alt">
                 <div className="container">
-                    <div className="section-header text-center">
-                        <p className="section-kicker animate-up">Was ich übernehme</p>
-                        <h2 className="section-title animate-up">Full-Cycle: von der Idee bis zum Umsatz.</h2>
+                    <div className="section-header sxb-ehead">
+                        <div>
+                            <p className="section-kicker animate-up">Was ich übernehme</p>
+                            <h2 className="section-title animate-up">Full-Cycle: von der Idee bis zum Umsatz.</h2>
+                        </div>
                         <p className="section-desc animate-up">Von der Strategie bis zum laufenden Marketing. Ob neuer Shop, Umzug oder Ausbau Ihres bestehenden. Tippen Sie auf einen Bereich für die Details.</p>
                     </div>
                     <EcomServices />
@@ -173,11 +178,13 @@ export default function EcommerceEntwicklungPage() {
             </section>
 
             {/* DARK: TEAM */}
-            <section className="ecx-dark section">
+            <section className="ecx-dark section sxb-esec">
                 <div className="container">
-                    <div className="section-header text-center">
-                        <p className="section-kicker animate-up">Ein Ansprechpartner statt vieler Schnittstellen</p>
-                        <h2 className="section-title animate-up">Vier Disziplinen, eine Verantwortung.</h2>
+                    <div className="section-header sxb-ehead">
+                        <div>
+                            <p className="section-kicker animate-up">Ein Ansprechpartner statt vieler Schnittstellen</p>
+                            <h2 className="section-title animate-up">Vier Disziplinen, eine Verantwortung.</h2>
+                        </div>
                         <p className="section-desc animate-up">Diese vier Bereiche entscheiden über einen Shop, der verkauft. Sie kommen aus einer Hand: meiner. Braucht ein Bereich zusätzliche Kapazität, etwa Fotografie oder Texte über ein sehr großes Sortiment, hole ich geprüfte Spezialisten dazu. Ihr Ansprechpartner bleibe ich.</p>
                     </div>
                     <div className="ecx-team-grid">
@@ -193,10 +200,10 @@ export default function EcommerceEntwicklungPage() {
             </section>
 
             {/* AUTOMATIONS */}
-            <section className="section light-bg">
+            <section className="section sxb-esec">
                 <div className="container">
                     <div className="two-col-layout items-center">
-                        <div className="text-col">
+                        <div className="text-col sxb-ehead-inline">
                             <p className="section-kicker animate-up">Automatisierung</p>
                             <h2 className="section-title animate-up">Ihr Shop arbeitet, auch wenn Sie es nicht tun.</h2>
                             <p className="large-text animate-up">Ich richte die Abläufe ein, die den größten Unterschied machen. Sie nehmen Ihnen täglich Handarbeit ab und holen Umsatz zurück, der sonst liegen bleibt.</p>
@@ -219,11 +226,13 @@ export default function EcommerceEntwicklungPage() {
             </section>
 
             {/* PLATFORMS */}
-            <section className="section">
+            <section className="section sxb-esec is-alt">
                 <div className="container">
-                    <div className="section-header text-center">
-                        <p className="section-kicker animate-up">Plattformen</p>
-                        <h2 className="section-title animate-up">Das richtige System für Ihr Geschäft.</h2>
+                    <div className="section-header sxb-ehead">
+                        <div>
+                            <p className="section-kicker animate-up">Plattformen</p>
+                            <h2 className="section-title animate-up">Das richtige System für Ihr Geschäft.</h2>
+                        </div>
                         <p className="section-desc animate-up">Ich bin an kein System gebunden und verdiene nichts an Lizenzen. Meine Empfehlung richtet sich danach, was zu Ihnen passt.</p>
                     </div>
                     <div className="ecx-platforms">
@@ -243,11 +252,13 @@ export default function EcommerceEntwicklungPage() {
             </section>
 
             {/* PROCESS */}
-            <section className="section light-bg">
+            <section className="section sxb-esec">
                 <div className="container">
-                    <div className="section-header text-center">
-                        <p className="section-kicker animate-up">So läuft es ab</p>
-                        <h2 className="section-title animate-up">Klarer Weg, verbindlicher Festpreis.</h2>
+                    <div className="section-header sxb-ehead is-solo">
+                        <div>
+                            <p className="section-kicker animate-up">So läuft es ab</p>
+                            <h2 className="section-title animate-up">Klarer Weg, verbindlicher Festpreis.</h2>
+                        </div>
                     </div>
                     <div className="ecx-timeline">
                         {process.map((p, i) => (
@@ -262,7 +273,7 @@ export default function EcommerceEntwicklungPage() {
             </section>
 
             {/* STAT BAND */}
-            <section className="ecx-statband section">
+            <section className="ecx-statband section sxb-esec">
                 <div className="container">
                     <div className="ecx-statband-grid">
                         <div className="animate-up">
@@ -282,11 +293,13 @@ export default function EcommerceEntwicklungPage() {
             </section>
 
             {/* PAIN vs GAIN — moved to the bottom as reinforcement */}
-            <section className="section">
+            <section className="section sxb-esec is-alt">
                 <div className="container">
-                    <div className="section-header text-center">
-                        <p className="section-kicker animate-up">Der Unterschied</p>
-                        <h2 className="section-title animate-up">Ein Shop ist nur dann gut, wenn er verkauft.</h2>
+                    <div className="section-header sxb-ehead">
+                        <div>
+                            <p className="section-kicker animate-up">Der Unterschied</p>
+                            <h2 className="section-title animate-up">Ein Shop ist nur dann gut, wenn er verkauft.</h2>
+                        </div>
                         <p className="section-desc animate-up">Die meisten Shop-Probleme kosten täglich Umsatz, ohne dass es jemand merkt. Genau da setze ich an.</p>
                     </div>
                     <div className="ecx-compare">
@@ -315,25 +328,31 @@ export default function EcommerceEntwicklungPage() {
             </section>
 
             {/* GEO answer + sources */}
-            <section className="subpage-content section light-bg">
-                <div className="container subpage-body">
-                    <figure className="subpage-figure is-band animate-up">
-                        <img src="/leistungen/fotos/e-commerce-entwicklung.webp" alt="Illustration: Ladengeschäft, Warenkorb, Kartenterminal und Versandpaket als durchgehender Ablauf" width="1800" height="760" loading="lazy" decoding="async" />
-                        <figcaption>Vom Schaufenster bis zum Paket: Jeder Schritt gehört zum selben System.</figcaption>
-                    </figure>
-
-                    <h2 className="animate-up">Was bedeutet Full-Cycle E-Commerce-Entwicklung?</h2>
-                    <div className="subpage-takeaway animate-up">
-                        <p>Full-Cycle E-Commerce-Entwicklung heißt, dass ein einziger Dienstleister <strong>alle Phasen eines Online-Shops</strong> übernimmt: Strategie und Beratung, Design, Entwicklung, Texte, Marketing, Automatisierung und die laufende Betreuung. Auf webseite.hamburg übernimmt das <strong>Vadim Shchepin, Webentwickler aus Hamburg mit über 10 Jahren Projekterfahrung</strong>. Sie arbeiten direkt mit ihm, bei zusätzlichem Bedarf kommen geprüfte Spezialisten dazu. Gearbeitet wird herstellerneutral mit Shopify, Shopware 6, WooCommerce und Custom- oder Headless-Plattformen, für neue Shops genauso wie für die Erweiterung bestehender.</p>
+            <div className="sx-bands sxb-continue">
+            <section id="full-cycle" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Was bedeutet Full-Cycle E-Commerce-Entwicklung?</h2>
                     </div>
-                    <p className="animate-up">
-                        Zur Budgetplanung: <a href="/wissen/onlineshop-kosten">Onlineshop Kosten 2026</a> listet alle
-                        Posten offen auf, von den Plattformpreisen über Produktdaten und Transaktionsgebühren bis zu
-                        den gesetzlichen Pflichten. Zur Bestellstrecke gilt seit dem 28. Juni 2025 außerdem
-                        {' '}<a href="/wissen/barrierefreie-website-pflicht">das BFSG</a>, das für Shops
-                        ausdrücklich barrierefreie Identifizierung, Authentifizierung und Zahlung verlangt.
-                    </p>
-                    <ServiceMeta />
+                    <div className="sx-split animate-up">
+                        <div className="subpage-takeaway">
+                            <p>Full-Cycle E-Commerce-Entwicklung heißt, dass ein einziger Dienstleister <strong>alle Phasen eines Online-Shops</strong> übernimmt: Strategie und Beratung, Design, Entwicklung, Texte, Marketing, Automatisierung und die laufende Betreuung. Auf webseite.hamburg übernimmt das <strong>Vadim Shchepin, Webentwickler aus Hamburg mit über 10 Jahren Projekterfahrung</strong>. Sie arbeiten direkt mit ihm, bei zusätzlichem Bedarf kommen geprüfte Spezialisten dazu. Gearbeitet wird herstellerneutral mit Shopify, Shopware 6, WooCommerce und Custom- oder Headless-Plattformen, für neue Shops genauso wie für die Erweiterung bestehender.</p>
+                        </div>
+                        <figure className="subpage-figure">
+                            <img src="/leistungen/fotos/e-commerce-entwicklung.webp" alt="Illustration: Ladengeschäft, Warenkorb, Kartenterminal und Versandpaket als durchgehender Ablauf" width="1800" height="760" loading="lazy" decoding="async" />
+                            <figcaption>Vom Schaufenster bis zum Paket: Jeder Schritt gehört zum selben System.</figcaption>
+                        </figure>
+                    </div>
+                    <div className="sx-band-text sxb-measure animate-up">
+                        <p>
+                            Zur Budgetplanung: <a href="/wissen/onlineshop-kosten">Onlineshop Kosten 2026</a> listet alle
+                            Posten offen auf, von den Plattformpreisen über Produktdaten und Transaktionsgebühren bis zu
+                            den gesetzlichen Pflichten. Zur Bestellstrecke gilt seit dem 28. Juni 2025 außerdem
+                            {' '}<a href="/wissen/barrierefreie-website-pflicht">das BFSG</a>, das für Shops
+                            ausdrücklich barrierefreie Identifizierung, Authentifizierung und Zahlung verlangt.
+                        </p>
+                        <ServiceMeta />
+                    </div>
                     <div className="subpage-sources animate-up">
                         <h2>Quellen</h2>
                         <ol>
@@ -345,6 +364,7 @@ export default function EcommerceEntwicklungPage() {
                     </div>
                 </div>
             </section>
+            </div>
 
             <FaqSection title="Fragen zum Onlineshop erstellen lassen" items={faqItems} />
             <RelatedServices exclude="e-commerce-entwicklung" />

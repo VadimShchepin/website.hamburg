@@ -105,3 +105,474 @@
   letter-spacing: -0.01em;
   color: var(--sx-fg);
 }
+
+/* ==========================================================================
+   E-Commerce landing page (/leistungen/e-commerce-entwicklung): keep the
+   .ecx- layout, align it with the band system: navy instead of black,
+   left-aligned numbered heads, dark body text, square corners, cards on
+   #FAFAFA/#FFFFFF with 1px #EBEBEB border, red only for section numbers.
+   ========================================================================== */
+
+/* Section rhythm: alternating light backgrounds like .sx-band */
+.ecx-hero {
+  counter-reset: sx-band;
+}
+
+.sxb-esec {
+  background: #FAFAFA;
+  border-top: 1px solid var(--sx-line);
+  padding: 104px 0;
+}
+
+.sxb-esec.is-alt {
+  background: #FFFFFF;
+}
+
+.sxb-esec.ecx-logostrip {
+  padding: 48px 0;
+  background: #FFFFFF;
+}
+
+.sx-bands.sxb-continue {
+  counter-reset: none;
+}
+
+/* Left-aligned numbered head: number + kicker, display h2; intro right */
+.sxb-ehead {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  gap: 56px;
+  align-items: end;
+  text-align: left;
+  max-width: none;
+  margin: 0 0 48px;
+}
+
+.sxb-ehead.is-solo {
+  grid-template-columns: 1fr;
+}
+
+.sxb-ehead .section-kicker,
+.sxb-ehead-inline .section-kicker {
+  counter-increment: sx-band;
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  justify-content: flex-start;
+  margin: 0 0 16px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--sx-fg);
+}
+
+.sxb-ehead .section-kicker::before,
+.sxb-ehead-inline .section-kicker::before {
+  content: counter(sx-band, decimal-leading-zero);
+  font-family: var(--sx-display);
+  font-size: 15px;
+  letter-spacing: 0;
+  color: var(--sx-red);
+}
+
+.sxb-ehead .section-title,
+.sxb-ehead-inline .section-title {
+  font-family: var(--sx-display);
+  font-weight: 400;
+  font-size: clamp(1.85rem, 3vw, 2.75rem);
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+  color: var(--sx-fg);
+  text-align: left;
+  text-wrap: balance;
+  max-width: 18ch;
+  margin: 0;
+}
+
+.sxb-ehead .section-desc {
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--sx-text);
+  text-align: left;
+  max-width: none;
+  margin: 0;
+}
+
+.sxb-ehead-inline .large-text {
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--sx-text);
+  margin-top: 24px;
+}
+
+/* Hero */
+.ecx-hero .ecx-hero-lead {
+  color: var(--sx-text);
+}
+
+.ecx-hero .hero-facts {
+  margin: 28px 0 0;
+}
+
+.ecx-hero-media {
+  clip-path: none;
+  background: #FAFAFA;
+  border: 1px solid var(--sx-line);
+}
+
+.ecx-hero-phone,
+.ecx-hero-phone svg,
+.ecx-trust-item,
+.ecx-trust-item svg {
+  color: var(--sx-fg);
+}
+
+.ecx-trust {
+  border-top-color: var(--sx-line);
+}
+
+.ecx-logostrip-label {
+  color: var(--sx-text);
+}
+
+.ecx-logo span {
+  color: var(--sx-fg);
+}
+
+/* Service cards (EcomServices) */
+.sxb-esec .service-card {
+  border-radius: 0;
+  background: #FAFAFA;
+  border: 1px solid var(--sx-line);
+  box-shadow: none;
+}
+
+.sxb-esec .service-card p {
+  color: var(--sx-text);
+}
+
+.ecx-service-more {
+  color: var(--sx-fg);
+}
+
+/* Dark sections: navy, not black */
+.ecx-dark.sxb-esec,
+.ecx-statband.sxb-esec {
+  background: var(--sx-navy);
+  border-top: 0;
+}
+
+.ecx-dark .sxb-ehead .section-kicker,
+.ecx-dark .sxb-ehead .section-title {
+  color: #FFFFFF;
+}
+
+.ecx-dark .sxb-ehead .section-desc {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.ecx-team-grid {
+  gap: 16px;
+  margin-top: 0;
+}
+
+.ecx-team-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 0;
+  padding: 32px;
+}
+
+.ecx-team-card:hover {
+  transform: none;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.ecx-team-icon {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  color: #FFFFFF;
+  border-radius: 0;
+}
+
+.ecx-team-card h3 {
+  font-family: var(--sx-display);
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: -0.02em;
+}
+
+.ecx-team-card p {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.ecx-team-card a:not([class]) {
+  color: #FFFFFF;
+}
+
+/* Stat band: the numbers are the anchor */
+.ecx-statband.sxb-esec {
+  padding: 88px 0;
+}
+
+.ecx-statband-grid {
+  text-align: left;
+  gap: 16px;
+}
+
+.ecx-statband-grid > div {
+  padding: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.ecx-stat-value {
+  font-family: var(--sx-display);
+  font-weight: 400;
+  font-size: clamp(44px, 5vw, 72px);
+  letter-spacing: -0.04em;
+  color: #FFFFFF;
+}
+
+.ecx-stat-label {
+  margin-top: 16px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+/* Automations */
+.sxb-esec .ecx-auto-grid {
+  gap: 16px;
+}
+
+.ecx-auto-item {
+  background: #FFFFFF;
+  border: 1px solid var(--sx-line);
+  border-radius: 0;
+}
+
+.ecx-auto-icon {
+  background: #FAFAFA;
+  border: 1px solid var(--sx-line);
+  color: var(--sx-fg);
+  border-radius: 0;
+}
+
+.ecx-auto-item h3 {
+  color: var(--sx-fg);
+}
+
+.ecx-auto-item p {
+  font-size: 15px;
+  color: var(--sx-text);
+}
+
+/* Platforms */
+.ecx-platforms {
+  gap: 16px;
+  margin-top: 0;
+}
+
+.ecx-platform-card {
+  background: #FAFAFA;
+  border: 1px solid var(--sx-line);
+  border-radius: 0;
+  padding: 32px;
+}
+
+.ecx-platform-card:hover {
+  transform: none;
+  box-shadow: none;
+  border-color: var(--sx-fg);
+}
+
+.ecx-platform-logo {
+  background: #FFFFFF;
+  border: 1px solid var(--sx-line);
+  border-radius: 0;
+}
+
+.ecx-platform-card h3 {
+  font-family: var(--sx-display);
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: -0.02em;
+  color: var(--sx-fg);
+}
+
+.ecx-platform-tag {
+  color: var(--sx-fg);
+}
+
+.ecx-platform-card p {
+  font-size: 15px;
+  color: var(--sx-text);
+}
+
+.ecx-platform-note {
+  text-align: left;
+  font-size: 15px;
+  color: var(--sx-text);
+  margin-top: 24px;
+}
+
+/* Process: square numbered steps in cards */
+.ecx-timeline {
+  gap: 16px;
+  margin-top: 0;
+}
+
+.ecx-tl-step {
+  background: #FFFFFF;
+  border: 1px solid var(--sx-line);
+  padding: 24px;
+}
+
+.ecx-tl-step:not(:last-child)::after {
+  display: none;
+}
+
+.ecx-tl-num {
+  width: auto;
+  height: auto;
+  display: block;
+  background: none;
+  border-radius: 0;
+  font-family: var(--sx-display);
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1;
+  color: var(--sx-fg);
+  margin-bottom: 18px;
+}
+
+.ecx-tl-step h3 {
+  font-size: 17px;
+  color: var(--sx-fg);
+}
+
+.ecx-tl-step p {
+  font-size: 15px;
+  color: var(--sx-text);
+}
+
+/* Pain vs gain */
+.ecx-compare {
+  gap: 16px;
+  margin-top: 0;
+}
+
+.ecx-compare-card {
+  border-radius: 0;
+  padding: 32px;
+}
+
+.ecx-compare-pain {
+  background: #FAFAFA;
+  border: 1px solid var(--sx-line);
+}
+
+.ecx-compare-gain {
+  background: var(--sx-navy);
+}
+
+.ecx-compare-card h3 {
+  font-family: var(--sx-display);
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: -0.02em;
+}
+
+.ecx-compare-pain h3,
+.ecx-compare-pain .ecx-compare-list li,
+.ecx-compare-pain .ecx-compare-icon {
+  color: var(--sx-text);
+}
+
+.ecx-compare-pain h3 {
+  color: var(--sx-fg);
+}
+
+.ecx-compare-gain .ecx-compare-icon {
+  color: #FFFFFF;
+}
+
+.ecx-compare-gain .ecx-compare-list li {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.ecx-compare-gain a:not([class]) {
+  color: #FFFFFF;
+}
+
+/* Service detail modal */
+.ecx-modal {
+  clip-path: none;
+}
+
+.ecx-modal-icon,
+.ecx-modal-close {
+  border-radius: 0;
+}
+
+.ecx-modal-icon {
+  background: #FAFAFA;
+  border: 1px solid var(--sx-line);
+  color: var(--sx-fg);
+}
+
+.ecx-modal-close:hover {
+  background: var(--sx-fg);
+}
+
+.ecx-modal-title {
+  font-family: var(--sx-display);
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: -0.02em;
+  color: var(--sx-fg);
+}
+
+.ecx-modal-detail,
+.ecx-modal-list li {
+  color: var(--sx-text);
+}
+
+.ecx-modal-list svg {
+  color: var(--sx-fg);
+}
+
+@media (max-width: 900px) {
+  .sxb-ehead {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sxb-esec {
+    padding: 64px 0;
+  }
+
+  .sxb-ehead .section-title,
+  .sxb-ehead-inline .section-title {
+    font-size: 30px;
+  }
+
+  .sxb-ehead .section-desc {
+    font-size: 17px;
+  }
+
+  .ecx-statband-grid > div,
+  .ecx-team-card,
+  .ecx-platform-card,
+  .ecx-compare-card {
+    padding: 24px;
+  }
+}
+
+.sxb-esec .market-frame {
+  clip-path: none;
+}

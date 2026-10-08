@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
+import SubpageToc from '../../../src/components/SubpageToc';
 import ServiceCta from '../../../src/components/ServiceCta';
 
 const SITE_URL = 'https://webseite.hamburg';
@@ -94,6 +95,7 @@ export default function GlucksmomenteCaseStudy() {
 
             <section className="subpage-content section light-bg">
                 <div className="container subpage-body">
+                    <SubpageToc />
                     <h2 className="animate-up">Die Aufgabe</h2>
                     <p className="animate-up">
                         Josy Eberlein ist Eventplanerin in Hamburg. Hochzeiten, private Feiern, Firmenevents. Sie hat Geschmack, sie hat Erfahrung, und sie hatte keine Website. In einer Branche, in der Vertrauen alles ist, ist das ein Problem. Denn bevor jemand eine Hochzeit für 20.000 Euro plant, schaut er sich die Website an. Und wenn es keine gibt, bucht er jemand anderen.

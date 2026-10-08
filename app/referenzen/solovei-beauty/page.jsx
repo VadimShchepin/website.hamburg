@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
+import SubpageToc from '../../../src/components/SubpageToc';
 import ServiceCta from '../../../src/components/ServiceCta';
 
 const SITE_URL = 'https://webseite.hamburg';
@@ -115,6 +116,7 @@ export default function SoloveiCaseStudy() {
 
             <section className="subpage-content section light-bg">
                 <div className="container subpage-body">
+                    <SubpageToc />
                     <h2 className="animate-up">Die Ausgangssituation</h2>
                     <p className="animate-up">
                         Solovei Beauty ist ein Coworking-Space für Kosmetikerinnen, Friseurinnen und Beauty-Profis in Hamburg. Die Zielgruppe ist international: deutsche Kundinnen, englischsprachige Expats und die russischsprachige Community. Eine Website nur auf Deutsch? Das wäre so, als würde man in einem russischen Restaurant nur die Speisekarte auf Deutsch anbieten. Technisch möglich, aber man verliert die Hälfte der Gäste.

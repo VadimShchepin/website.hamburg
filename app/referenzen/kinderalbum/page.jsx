@@ -2,6 +2,7 @@ import Link from 'next/link';
 import AutoLinks from '../../../src/components/AutoLinks';
 import Image from 'next/image';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
+import SubpageToc from '../../../src/components/SubpageToc';
 import ServiceCta from '../../../src/components/ServiceCta';
 import CaseChart from '../../../src/components/CaseChart';
 import '../../../src/styles/case-study.css';
@@ -132,6 +133,7 @@ export default function KinderAlbumCaseStudy() {
             {/* Content */}
             <section className="subpage-content section light-bg cs-story">
                 <div className="container subpage-body">
+                    <SubpageToc />
                     <h2 className="animate-up">Die Ausgangslage</h2>
                     <p className="animate-up">
                         Schulen und Kitas teilen Fotos über Messenger, USB-Sticks oder offene Cloud-Ordner. Eltern wissen nicht, wer die Bilder ihrer Kinder sieht, und Schulen können Einwilligungen kaum nachweisen. Das Thema ist heikel, die Suchenden sind verunsichert, und Google kannte dsgvoschulfotos.de im Februar 2026 kaum: 23 Klicks und 777 Impressionen im ganzen Monat, bei gerade einmal 14 Suchanfragen, die die Search Console überhaupt auflistete.

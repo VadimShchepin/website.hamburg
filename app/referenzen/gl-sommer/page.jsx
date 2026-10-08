@@ -2,6 +2,7 @@ import Link from 'next/link';
 import AutoLinks from '../../../src/components/AutoLinks';
 import Image from 'next/image';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
+import SubpageToc from '../../../src/components/SubpageToc';
 import ServiceCta from '../../../src/components/ServiceCta';
 import CaseChart from '../../../src/components/CaseChart';
 import '../../../src/styles/case-study.css';
@@ -143,6 +144,7 @@ export default function GlSommerCaseStudy() {
             {/* Content */}
             <section className="subpage-content section light-bg cs-story">
                 <div className="container subpage-body">
+                    <SubpageToc />
                     <h2 className="animate-up">Die Ausgangslage</h2>
                     <p className="animate-up">
                         GL Sommer baut Terrassen, verlegt Pflaster, setzt Zäune und pflegt Gärten in Hamburg. Die WordPress-Website hatte strukturelle SEO-Probleme, das Audit zu Beginn ergab 34 von 100 Punkten. Google Ads liefen schon länger, mindestens seit Januar 2024. Von Januar bis März 2026 lief eine Smart-Kampagne, bei der Google fast alles selbst entscheidet. Sie kostete in diesen drei Monaten 27,15 EUR je Kontaktaktion.

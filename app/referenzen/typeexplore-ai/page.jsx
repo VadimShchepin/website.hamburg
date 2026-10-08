@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
+import SubpageToc from '../../../src/components/SubpageToc';
 import ServiceCta from '../../../src/components/ServiceCta';
 
 const SITE_URL = 'https://webseite.hamburg';
@@ -115,6 +116,7 @@ export default function TypeExploreCaseStudy() {
 
             <section className="subpage-content section light-bg">
                 <div className="container subpage-body">
+                    <SubpageToc />
                     <h2 className="animate-up">Das Problem</h2>
                     <p className="animate-up">
                         Tipptrainer sind seit 1995 nicht weiterentwickelt worden. Man tippt &quot;asdf jklo&quot; hundert Mal und fragt sich, warum man das nicht einfach lassen kann. Die Motivation hält genau so lange, bis der erste Satz &quot;Der schnelle braune Fuchs&quot; erscheint. Dann schließt man das Fenster und macht etwas Sinnvolles.

@@ -2,6 +2,7 @@ import Link from 'next/link';
 import AutoLinks from '../../../src/components/AutoLinks';
 import Image from 'next/image';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
+import SubpageToc from '../../../src/components/SubpageToc';
 import ServiceCta from '../../../src/components/ServiceCta';
 import CaseChart from '../../../src/components/CaseChart';
 import '../../../src/styles/case-study.css';
@@ -144,6 +145,7 @@ export default function BlitzHamburgCaseStudy() {
             {/* Content */}
             <section className="subpage-content section light-bg cs-story">
                 <div className="container subpage-body">
+                    <SubpageToc />
                     <h2 className="animate-up">Die Ausgangslage</h2>
                     <p className="animate-up">
                         Blitz Hamburg bietet Entrümpelung, Haushaltsauflösung, Sanierung und Bodenverlegung in Hamburg an. Die Domain blitz-hamburg.de ist seit Ende 2025 in der Google Search Console. Eine neue Domain hat bei Google keine Geschichte, keine Links und kein Vertrauen. Entsprechend bescheiden war der Start: Im April 2026 kamen 24 Klicks aus der normalen Google-Suche, bei einer durchschnittlichen Position von 21,1. Das ist Seite drei. Dort sucht niemand.

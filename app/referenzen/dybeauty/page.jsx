@@ -2,6 +2,7 @@ import Link from 'next/link';
 import AutoLinks from '../../../src/components/AutoLinks';
 import Image from 'next/image';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
+import SubpageToc from '../../../src/components/SubpageToc';
 import ServiceCta from '../../../src/components/ServiceCta';
 import CaseChart from '../../../src/components/CaseChart';
 import '../../../src/styles/case-study.css';
@@ -143,6 +144,7 @@ export default function DybeautyCaseStudy() {
             {/* Content */}
             <section className="subpage-content section light-bg cs-story">
                 <div className="container subpage-body">
+                    <SubpageToc />
                     <h2 className="animate-up">Die Ausgangslage</h2>
                     <p className="animate-up">
                         DYBeauty verkauft koreanische Kosmetik in Deutschland. Google kannte den Shop schon: Im Februar 2026 kamen 536 Klicks aus der organischen Suche, 90 davon über den Namen. Das Fundament war aber dünn. Die Produkttexte waren generisch und ohne Bezug zu dem, was Menschen suchen, kein SEO-Titel war bearbeitet, Produktdaten wie EAN, Größe und Inhaltsstoffe fehlten oft, und die Rechtstexte für den deutschen Markt waren nicht vollständig. Gute Produkte, wackelige Infrastruktur.

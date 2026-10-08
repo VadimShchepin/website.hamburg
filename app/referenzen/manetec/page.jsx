@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
+import SubpageToc from '../../../src/components/SubpageToc';
 import ServiceCta from '../../../src/components/ServiceCta';
 
 const SITE_URL = 'https://webseite.hamburg';
@@ -115,6 +116,7 @@ export default function ManetecCaseStudy() {
 
             <section className="subpage-content section light-bg">
                 <div className="container subpage-body">
+                    <SubpageToc />
                     <h2 className="animate-up">Die Ausgangssituation</h2>
                     <p className="animate-up">
                         Manetec ist spezialisiert auf Schädlingsbekämpfung für Hotels und Gastronomiebetriebe in Hamburg. Das ist keine Branche, in der man mit bunten Farben und lustigen Icons arbeitet. Hier geht es um HACCP-Normen, Gesundheitsamts-Inspektionen und die Tatsache, dass eine einzige Kakerlake in einer Hotelkuche den Ruf eines 4-Sterne-Hauses ruinieren kann.

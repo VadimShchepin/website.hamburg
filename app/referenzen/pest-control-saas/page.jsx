@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
+import SubpageToc from '../../../src/components/SubpageToc';
 import ServiceCta from '../../../src/components/ServiceCta';
 
 const SITE_URL = 'https://webseite.hamburg';
@@ -129,6 +130,7 @@ export default function PestControlCaseStudy() {
             {/* Content */}
             <section className="subpage-content section light-bg">
                 <div className="container subpage-body">
+                    <SubpageToc />
                     <h2 className="animate-up">Das Problem</h2>
                     <p className="animate-up">
                         Schädlingsbekämpfer in Deutschland arbeiten mit einem Flickwerk aus Tools: Kundendaten in Excel, Einsatzplane per WhatsApp, Fotos auf dem Handy, Berichte in Word-Vorlagen. Jeder Einsatz erzeugt Papierkram, der manuell zusammengeführt werden muss: zeitaufwändig, fehleranfällig und nicht rechtskonform.

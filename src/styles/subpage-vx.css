@@ -918,7 +918,9 @@
   }
 
   .subpage-hero .subpage-title {
-    font-size: 34px;
+    font-size: 31px;
+    hyphens: auto;
+    overflow-wrap: break-word;
   }
 
   .subpage-hero .subpage-intro {
@@ -988,5 +990,175 @@
 
   .related-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* --- Case studies -------------------------------------------------------- */
+.subpage-hero:has(+ .section .cs-metrics-grid) {
+  padding-bottom: 32px;
+}
+
+.subpage-hero + .section:has(.cs-metrics-grid) {
+  padding: 0 0 72px;
+  background: #FAFAFA;
+}
+
+.subpage-hero + .section .cs-metrics-grid {
+  margin: 0;
+}
+
+.cs-metrics-grid,
+.cs-metrics-grid.cs-metrics-4 {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.cs-metric {
+  text-align: left;
+  padding: 24px;
+  background: #FFFFFF;
+  border: 1px solid var(--sx-line);
+}
+
+.cs-metric-value {
+  font-family: var(--sx-display);
+  font-size: clamp(30px, 3vw, 44px);
+  line-height: 1;
+  letter-spacing: -0.035em;
+  color: var(--sx-fg);
+  margin-bottom: 14px;
+}
+
+.cs-metric-label {
+  font-family: var(--font-vx), sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--sx-fg);
+  margin-bottom: 4px;
+}
+
+.cs-metric-detail {
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--sx-text);
+}
+
+.subpage-hero .article-meta + .subpage-title {
+  max-width: 24ch;
+}
+
+.cs-takeaway {
+  background: var(--sx-navy);
+  padding: 36px 40px;
+  margin-top: 48px;
+}
+
+.subpage-content .cs-takeaway h3 {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 14px;
+}
+
+.subpage-content .cs-takeaway p {
+  font-size: 19px;
+  line-height: 1.6;
+  color: #FFFFFF;
+}
+
+.cs-funfacts {
+  border: 1px solid var(--sx-line);
+  background: #FAFAFA;
+  padding: 32px;
+}
+
+.subpage-content .cs-funfacts h2 {
+  font-family: var(--font-vx), sans-serif;
+  font-weight: 700;
+  font-size: 20px !important;
+  letter-spacing: -0.01em;
+}
+
+.cs-limits {
+  background: #FAFAFA;
+  border: 1px solid var(--sx-line);
+  border-left: 3px solid var(--sx-fg);
+  padding: 20px 24px;
+}
+
+.subpage-content .cs-limits p {
+  font-size: 15px;
+}
+
+.cs-before-after {
+  border: 1px solid var(--sx-line);
+}
+
+/* "Leistungen, die zum Einsatz kamen" */
+.section:has(> .container > .section-header + .subpage-features-grid) {
+  background: #FAFAFA;
+  border-top: 1px solid var(--sx-line);
+  padding: 104px 0 72px;
+}
+
+.section-header:has(+ .subpage-features-grid) {
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.section-header:has(+ .subpage-features-grid) .section-kicker {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--sx-fg);
+}
+
+.section-header:has(+ .subpage-features-grid) .section-title {
+  font-size: clamp(1.85rem, 3vw, 2.75rem);
+}
+
+.section-header + .subpage-features-grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+}
+
+.section-header + .subpage-features-grid .subpage-feature {
+  background: #FFFFFF;
+  color: var(--sx-fg);
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.section-header + .subpage-features-grid a.subpage-feature:hover {
+  border-color: var(--sx-fg);
+  transform: translateY(-2px);
+}
+
+.section-header + .subpage-features-grid .subpage-feature p {
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--sx-text);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .cs-takeaway {
+    padding: 28px 24px;
+  }
+
+  .cs-metric {
+    padding: 18px;
+  }
+
+  .cs-metrics-grid,
+  .cs-metrics-grid.cs-metrics-4 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section:has(> .container > .section-header + .subpage-features-grid) {
+    padding: 64px 0 48px;
   }
 }

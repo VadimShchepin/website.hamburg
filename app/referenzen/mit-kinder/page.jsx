@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
+import SubpageToc from '../../../src/components/SubpageToc';
 import ServiceCta from '../../../src/components/ServiceCta';
 
 const SITE_URL = 'https://webseite.hamburg';
@@ -115,6 +116,7 @@ export default function MitKinderCaseStudy() {
 
             <section className="subpage-content section light-bg">
                 <div className="container subpage-body">
+                    <SubpageToc />
                     <h2 className="animate-up">Das Problem</h2>
                     <p className="animate-up">
                         Samstagnachmittag, 14 Uhr, Hamburg. Es regnet. Zwei Kinder, 4 und 8 Jahre alt, sind gelangweilt. Google sagt &quot;Miniatur Wunderland&quot;, wie immer. Die Eltern brauchen keine generische Top-10-Liste. Sie brauchen etwas, das zum Alter, zu den Interessen und zur Barrierefreiheit ihrer Kinder passt. Und zwar jetzt.

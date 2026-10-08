@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Breadcrumbs from './Breadcrumbs';
+import SubpageToc from './SubpageToc';
 import { getRelatedArticles } from '../lib/articles';
 
 export default function ArticleLayout({ slug, category, title, readTime, publishDate, heroImage, heroAlt, heroFramed = false, children }) {
@@ -46,6 +47,7 @@ export default function ArticleLayout({ slug, category, title, readTime, publish
             <article className="article-body section">
                 <div className="container">
                     <div className="article-content animate-up">
+                        <SubpageToc label="Inhalt" />
                         {children}
                     </div>
 

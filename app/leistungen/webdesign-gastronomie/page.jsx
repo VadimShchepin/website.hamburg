@@ -1,8 +1,9 @@
 import Link from 'next/link';
+import '../../../src/styles/bands-d.css';
 import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import HeroFacts from '../../../src/components/HeroFacts';
-import SubpageToc from '../../../src/components/SubpageToc';
+import JumpNav from '../../../src/components/JumpNav';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
 import ServiceCta from '../../../src/components/ServiceCta';
@@ -96,15 +97,28 @@ export default function WebdesignGastronomiePage() {
                 </div>
             </section>
 
-            <section className="subpage-content section light-bg">
-                <div className="container subpage-body is-inset">
-                    <SubpageToc />
-                    <h2 className="animate-up">Was kostet eine Restaurant-Website in Hamburg?</h2>
-                    <div className="subpage-takeaway animate-up">
+            <JumpNav label="Abschnitte" items={[
+                { id: 'kosten', num: '01', label: 'Kosten' },
+                { id: 'gaeste', num: '02', label: 'Wie Gäste wählen' },
+                { id: 'inhalte', num: '03', label: 'Inhalte' },
+                { id: 'pflichtangaben', num: '04', label: 'Pflichtangaben' },
+                { id: 'preise', num: '05', label: 'Preise' },
+                { id: 'referenzen', num: '06', label: 'Referenzen' },
+                { id: 'ablauf', num: '07', label: 'Ablauf' },
+            ]} />
+
+            <div className="sx-bands">
+            <section id="kosten" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Was kostet eine Restaurant-Website in Hamburg?</h2>
+                    </div>
+                    <div className="sx-split sxd-split-lead animate-up">
+                    <div className="subpage-takeaway">
                         <p>Der Einstieg kostet <strong>ab 1.500 Euro</strong> (eine Seite, bewährtes Layout, Speisekarte und Reservierungsweg, fertig in zwei bis fünf Arbeitstagen). Eine individuell gestaltete Restaurant-Website beginnt bei <strong>2.900 Euro</strong>, mehrseitig mit Events und Catering bei <strong>4.500 Euro</strong>. Laufende Kosten für Hosting und Domain liegen bei etwa 15 Euro im Monat.</p>
                     </div>
 
-                    <div className="subpage-story animate-up">
+                    <div className="subpage-story">
                         <span className="subpage-story-label">Aus der Praxis</span>
                         <p>
                             Die häufigste Speisekarte im Hamburger Gastro-Web ist ein PDF. Vier Megabyte, im Querformat gescannt, entstanden 2021 in einem Textprogramm. Auf dem Handy lädt es so lange, dass der Gast in der Zwischenzeit zum Laden nebenan weiterläuft. Und wenn es geladen ist, muss er zoomen, schieben, drehen und dann feststellen, dass die Preise von vor zwei Preisrunden stammen.
@@ -117,23 +131,15 @@ export default function WebdesignGastronomiePage() {
                             Danach gilt eine einfache Regel: Die Speisekarte ist die Startseite. Nicht ein Video von der Küche, nicht das Willkommenswort des Inhabers, sondern das, wofür Leute wirklich kommen.
                         </p>
                     </div>
-
-                    <h2 className="animate-up">Wie wählen Gäste heute ein Restaurant aus?</h2>
-                    <div className="subpage-split is-reverse animate-up">
-                        <div className="sp-split-media">
-                            <img src="/leistungen/branchen/gastronomie/speisekarte.webp" alt="Zwei Gäste sitzen in einer Restaurantnische und sehen sich die Speisekarte an" width="1200" height="900" loading="lazy" decoding="async" />
-                            <p className="sp-split-caption">53 Prozent der Gäste sehen sich die Speisekarte online an, bevor sie sich für ein Lokal entscheiden.</p>
-                        </div>
-                        <div className="sp-split-body">
-                            <p>
-                                Bitkom hat 2024 rund 1.000 Personen ab 16 Jahren dazu befragt. Das Ergebnis ist eindeutig: 69 Prozent erwarten, dass ein Betrieb eine Website mit Fotos von Speisen und Räumen hat. 53 Prozent sehen sich vorab die Speisekarte online an, bei den 16- bis 29-Jährigen sind es 65 Prozent. Für 30 Prozent sind Online-Bewertungen das wichtigste Kriterium bei der Wahl eines neuen Lokals, und 39 Prozent schreiben nach dem Besuch selbst eine.
-                            </p>
-                            <p>
-                                Dazu kommt der wirtschaftliche Druck. Nach Angaben des Statistischen Bundesamtes lag der Umsatz im Gastgewerbe 2025 preisbereinigt 2,1 Prozent unter dem Vorjahr. In einem Markt mit dünnen Margen ist jede provisionsfreie Reservierung und jede Abholbestellung ohne Plattformgebühr direkt Ergebnis. Genau da verdient eine eigene Website ihr Geld.
-                            </p>
-                        </div>
                     </div>
+                </div>
+            </section>
 
+            <section id="gaeste" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Wie wählen Gäste heute ein Restaurant aus?</h2>
+                    </div>
                     <div className="subpage-stats animate-up">
                         <div className="subpage-stat">
                             <span className="subpage-stat-value">69%</span>
@@ -149,13 +155,34 @@ export default function WebdesignGastronomiePage() {
                         </div>
                     </div>
 
+                    <div className="sx-split sxd-split-media animate-up">
+                        <div className="sx-band-text">
+                            <p>
+                                Bitkom hat 2024 rund 1.000 Personen ab 16 Jahren dazu befragt. Das Ergebnis ist eindeutig: 69 Prozent erwarten, dass ein Betrieb eine Website mit Fotos von Speisen und Räumen hat. 53 Prozent sehen sich vorab die Speisekarte online an, bei den 16- bis 29-Jährigen sind es 65 Prozent. Für 30 Prozent sind Online-Bewertungen das wichtigste Kriterium bei der Wahl eines neuen Lokals, und 39 Prozent schreiben nach dem Besuch selbst eine.
+                            </p>
+                            <p>
+                                Dazu kommt der wirtschaftliche Druck. Nach Angaben des Statistischen Bundesamtes lag der Umsatz im Gastgewerbe 2025 preisbereinigt 2,1 Prozent unter dem Vorjahr. In einem Markt mit dünnen Margen ist jede provisionsfreie Reservierung und jede Abholbestellung ohne Plattformgebühr direkt Ergebnis. Genau da verdient eine eigene Website ihr Geld.
+                            </p>
+                        </div>
+                        <figure className="subpage-figure">
+                            <img src="/leistungen/branchen/gastronomie/speisekarte.webp" alt="Zwei Gäste sitzen in einer Restaurantnische und sehen sich die Speisekarte an" width="1200" height="900" loading="lazy" decoding="async" />
+                            <figcaption>53 Prozent der Gäste sehen sich die Speisekarte online an, bevor sie sich für ein Lokal entscheiden.</figcaption>
+                        </figure>
+                    </div>
+
                     <figure className="subpage-figure is-band animate-up">
                         <img src="/leistungen/branchen/gastronomie/abendgeschaeft.webp" alt="Gäste an einem Holztisch an der Bar eines Restaurants am Abend, vor ihnen Getränke und Essen" width="1800" height="760" loading="lazy" decoding="async" />
                         <figcaption>Karte, Speisekarte, Tisch: Der Weg vom Suchergebnis zum belegten Platz ist kurz und bricht an jeder Hürde ab.</figcaption>
                     </figure>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Was gehört auf eine Gastronomie-Website?</h2>
-                    <div className="subpage-features-grid animate-up">
+            <section id="inhalte" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Was gehört auf eine Gastronomie-Website?</h2>
+                    </div>
+                    <div className="subpage-features-grid is-four animate-up">
                         <div className="subpage-feature">
                             <h3>Speisekarte als echte Seite</h3>
                             <p>Kein PDF, sondern Text, den Google lesen und ein Handy sofort anzeigen kann. Mit Preisen, Allergenkennzeichnung und einem Pflegebereich, in dem Sie das Tagesgericht in zwei Minuten ändern.</p>
@@ -172,9 +199,7 @@ export default function WebdesignGastronomiePage() {
                             <h3>Fotos, die das Essen zeigen</h3>
                             <p>Echte Bilder Ihrer Gerichte und Räume statt Stockfotos aus einer anderen Küche. Komprimiert und in modernen Formaten, damit die Seite trotz Bildern in unter einer Sekunde steht.</p>
                         </div>
-                    </div>
 
-                    <div className="subpage-features-grid animate-up">
                         <div className="subpage-feature">
                             <h3>Pflichtangaben ohne Abmahnrisiko</h3>
                             <p>Endpreise inklusive Umsatzsteuer nach Preisangabenverordnung, Allergene nach EU-Verordnung 1169/2011, Impressum nach § 5 DDG. Unspektakulär, aber teuer, wenn es fehlt.</p>
@@ -192,8 +217,14 @@ export default function WebdesignGastronomiePage() {
                             <p>In der Hamburger Innenstadt und an der Reeperbahn ist eine englische Fassung der Karte oft die günstigste Umsatzsteigerung. Wie mehrsprachig sauber geht, zeigt der Fall <Link href="/referenzen/solovei-beauty">Solovei Beauty</Link>.</p>
                         </div>
                     </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Pflichtangaben-Kurzcheck</h2>
+            <section id="pflichtangaben" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Pflichtangaben-Kurzcheck</h2>
+                    </div>
                     <div className="subpage-table-wrap animate-up">
                         <table className="subpage-table">
                             <thead>
@@ -227,11 +258,19 @@ export default function WebdesignGastronomiePage() {
                             </tbody>
                         </table>
                     </div>
-                    <p className="animate-up">
-                        Ich bin kein Anwalt, und dieser Kurzcheck ist keine Rechtsberatung. Er ist die Liste, die ich vor jedem Gastro-Launch durchgehe, damit die üblichen Abmahnthemen keine Rolle spielen.
-                    </p>
+                    <div className="sx-band-text animate-up">
+                        <p>
+                            Ich bin kein Anwalt, und dieser Kurzcheck ist keine Rechtsberatung. Er ist die Liste, die ich vor jedem Gastro-Launch durchgehe, damit die üblichen Abmahnthemen keine Rolle spielen.
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Preise</h2>
+            <section id="preise" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Preise</h2>
+                    </div>
                     <div className="subpage-pricing-compare animate-up">
                         <div className="subpage-price-col">
                             <h3>Website-Start</h3>
@@ -262,8 +301,14 @@ export default function WebdesignGastronomiePage() {
                             </ul>
                         </div>
                     </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Referenzen aus Hamburg</h2>
+            <section id="referenzen" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Referenzen aus Hamburg</h2>
+                    </div>
                     <div className="subpage-cases animate-up">
                         <Link href="/referenzen/manetec" className="subpage-case-card">
                             <span className="subpage-case-metric">Hotellerie und Gastro</span>
@@ -278,8 +323,14 @@ export default function WebdesignGastronomiePage() {
                             <span className="subpage-case-name">Blitz Hamburg: lokaler Dienstleister mit Website, Ads und SEO</span>
                         </Link>
                     </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Wie läuft ein Gastro-Website-Projekt ab?</h2>
+            <section id="ablauf" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Wie läuft ein Gastro-Website-Projekt ab?</h2>
+                    </div>
                     <div className="subpage-process animate-up">
                         <div className="sp-step"><span className="sp-step-num">1</span><div><strong>Kurzcheck, kostenlos</strong><p>Ich sehe mir Google-Profil, aktuelle Seite und Reservierungsweg an und sage Ihnen, was der schnellste Hebel ist. Manchmal ist das nicht die Website.</p></div></div>
                         <div className="sp-step"><span className="sp-step-num">2</span><div><strong>Inhalte sammeln</strong><p>Karte, Preise, Allergene, Fotos, Zeiten. Sie schicken, was da ist, ich sage, was fehlt, und organisiere bei Bedarf einen Fotografen.</p></div></div>
@@ -300,6 +351,7 @@ export default function WebdesignGastronomiePage() {
                     </div>
                 </div>
             </section>
+            </div>
 
             <FaqSection title="Häufige Fragen zu Restaurant-Websites" items={faqItems} />
             <RelatedServices exclude="webdesign" />

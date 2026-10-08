@@ -1,8 +1,9 @@
+import '../../../src/styles/bands-b.css';
 import Link from 'next/link';
 import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import HeroFacts from '../../../src/components/HeroFacts';
-import SubpageToc from '../../../src/components/SubpageToc';
+import JumpNav from '../../../src/components/JumpNav';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
 import ServiceCta from '../../../src/components/ServiceCta';
@@ -87,18 +88,39 @@ export default function GoogleAdsPage() {
                 </div>
             </section>
 
-            <section className="subpage-content section light-bg">
-                <div className="container subpage-body">
-                    <SubpageToc />
-                    <h2 className="animate-up">Was sind Google Ads?</h2>
-                    <div className="subpage-takeaway animate-up">
-                        <p><strong>Google Ads</strong> sind bezahlte Anzeigen, die in den Google-Suchergebnissen erscheinen, sobald jemand nach einer passenden Leistung sucht. Abgerechnet wird meist pro Klick (CPC). <strong>Local Services Ads</strong> stehen ganz oben und werden pro Anfrage statt pro Klick bezahlt. Das Kampagnen-Setup kostet ab 700 € einmalig, die laufende Betreuung ab 500 € pro Monat; das Werbebudget läuft separat über Ihr eigenes Google-Konto, sodass Sie jeden Cent sehen.</p>
+            <JumpNav label="Abschnitte" items={[
+                { id: 'was-sind-google-ads', num: '01', label: 'Was sind Google Ads' },
+                { id: 'warum', num: '02', label: 'Warum es wirkt' },
+                { id: 'anzeigentypen', num: '03', label: 'Anzeigentypen' },
+                { id: 'leistungen', num: '04', label: 'Was ich übernehme' },
+                { id: 'kosten', num: '05', label: 'Kosten' },
+                { id: 'kontrolle', num: '06', label: 'Ihre Kontrolle' },
+            ]} />
+
+            <div className="sx-bands">
+            <section id="was-sind-google-ads" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Was sind Google Ads?</h2>
                     </div>
+                    <div className="sx-split animate-up">
+                        <div className="subpage-takeaway">
+                            <p><strong>Google Ads</strong> sind bezahlte Anzeigen, die in den Google-Suchergebnissen erscheinen, sobald jemand nach einer passenden Leistung sucht. Abgerechnet wird meist pro Klick (CPC). <strong>Local Services Ads</strong> stehen ganz oben und werden pro Anfrage statt pro Klick bezahlt. Das Kampagnen-Setup kostet ab 700 € einmalig, die laufende Betreuung ab 500 € pro Monat; das Werbebudget läuft separat über Ihr eigenes Google-Konto, sodass Sie jeden Cent sehen.</p>
+                        </div>
+                        <figure className="subpage-figure">
+                            <img src="/leistungen/fotos/google-ads.webp" alt="Illustration: Liste von Suchergebnissen mit rot hervorgehobenem Anzeigenplatz, daneben Gebotsanzeige und Münzstapel" width="1800" height="760" loading="lazy" decoding="async" />
+                            <figcaption>Der Platz ganz oben wird versteigert. Was er wert ist, entscheidet Ihre Marge, nicht das Gebot.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Warum Google Ads für lokale Unternehmen funktionieren</h2>
-                    <p className="animate-up">Google Ads sind kein Glücksspiel, sondern präzise Kundenakquise. Wer "Elektriker Hamburg Notdienst" oder "Steuerberater Hamburg Neustadt" sucht, hat unmittelbare Kaufabsicht. Die Anzeige platziert Ihr Unternehmen genau vor diesen Suchenden.</p>
-                    <p className="animate-up">Der Unterschied zwischen professionellem und schlechtem Ads-Management ist groß: Bei schlechter Verwaltung verbrennt Budget für irrelevante Klicks. Gut gesteuert zahlen Sie für Klicks, die zu Anfragen führen. Welche Fehler dabei am teuersten sind, habe ich in den <a href="/wissen/google-ads-fehler-lokale-unternehmen">7 teuersten Google-Ads-Fehlern lokaler Unternehmen</a> gesammelt. Echte Zahlen aus einem von mir betreuten Konto, inklusive Klickpreisen und Kosten je Anfrage, stehen in <a href="/wissen/google-ads-kosten">Google Ads Kosten</a>.</p>
-
+            <section id="warum" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head">
+                        <h2 className="animate-up">Warum Google Ads für lokale Unternehmen funktionieren</h2>
+                        <p className="animate-up">Google Ads sind kein Glücksspiel, sondern präzise Kundenakquise. Wer "Elektriker Hamburg Notdienst" oder "Steuerberater Hamburg Neustadt" sucht, hat unmittelbare Kaufabsicht. Die Anzeige platziert Ihr Unternehmen genau vor diesen Suchenden.</p>
+                    </div>
                     <div className="subpage-stats animate-up">
                         <div className="subpage-stat">
                             <span className="subpage-stat-value">ab 500 €</span>
@@ -113,13 +135,17 @@ export default function GoogleAdsPage() {
                             <span className="subpage-stat-label">Ihr Konto, Ihre Daten: voller Zugang, jederzeit mitnehmbar</span>
                         </div>
                     </div>
+                    <div className="sx-band-text sxb-measure animate-up">
+                        <p>Der Unterschied zwischen professionellem und schlechtem Ads-Management ist groß: Bei schlechter Verwaltung verbrennt Budget für irrelevante Klicks. Gut gesteuert zahlen Sie für Klicks, die zu Anfragen führen. Welche Fehler dabei am teuersten sind, habe ich in den <a href="/wissen/google-ads-fehler-lokale-unternehmen">7 teuersten Google-Ads-Fehlern lokaler Unternehmen</a> gesammelt. Echte Zahlen aus einem von mir betreuten Konto, inklusive Klickpreisen und Kosten je Anfrage, stehen in <a href="/wissen/google-ads-kosten">Google Ads Kosten</a>.</p>
+                    </div>
+                </div>
+            </section>
 
-                    <figure className="subpage-figure is-band animate-up">
-                        <img src="/leistungen/fotos/google-ads.webp" alt="Illustration: Liste von Suchergebnissen mit rot hervorgehobenem Anzeigenplatz, daneben Gebotsanzeige und Münzstapel" width="1800" height="760" loading="lazy" decoding="async" />
-                        <figcaption>Der Platz ganz oben wird versteigert. Was er wert ist, entscheidet Ihre Marge, nicht das Gebot.</figcaption>
-                    </figure>
-
-                    <h2 className="animate-up">Die Anzeigentypen im Überblick</h2>
+            <section id="anzeigentypen" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Die Anzeigentypen im Überblick</h2>
+                    </div>
                     <div className="subpage-table-wrap animate-up">
                         <table className="subpage-table">
                             <thead>
@@ -132,9 +158,15 @@ export default function GoogleAdsPage() {
                             </tbody>
                         </table>
                     </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Was ich für Sie übernehme</h2>
-                    <div className="subpage-features-grid animate-up">
+            <section id="leistungen" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Was ich für Sie übernehme</h2>
+                    </div>
+                    <div className="subpage-features-grid is-four animate-up">
                         <div className="subpage-feature">
                             <h3>Search Ads</h3>
                             <p>Anzeigen, die erscheinen, wenn jemand aktiv nach Ihrer Leistung sucht. Präzises Keyword-Targeting, überzeugende Anzeigentexte und ein hoher Quality Score senken den Klickpreis.</p>
@@ -152,9 +184,15 @@ export default function GoogleAdsPage() {
                             <p>Wöchentliche Analyse von Keywords, Geboten, Anzeigentexten und Budgets. Die Kampagne wird kontinuierlich effizienter: weniger Kosten pro Lead, mehr Anfragen.</p>
                         </div>
                     </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Was kostet die Google-Ads-Betreuung?</h2>
-                    <p className="animate-up">Der Aufbau wird einmalig abgerechnet, die laufende Betreuung monatlich. So zahlen Sie die Einrichtung nicht jeden Monat mit.</p>
+            <section id="kosten" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head">
+                        <h2 className="animate-up">Was kostet die Google-Ads-Betreuung?</h2>
+                        <p className="animate-up">Der Aufbau wird einmalig abgerechnet, die laufende Betreuung monatlich. So zahlen Sie die Einrichtung nicht jeden Monat mit.</p>
+                    </div>
                     <div className="subpage-pricing-compare animate-up">
                         <div className="subpage-price-col">
                             <h3>Kampagnen-Setup</h3>
@@ -180,17 +218,34 @@ export default function GoogleAdsPage() {
                             </ul>
                         </div>
                     </div>
-                    <p className="animate-up">Empfohlenes Mindest-Werbebudget: 500 € pro Monat. Es geht direkt an Google, nicht an mich.</p>
-
-                    <h2 className="animate-up">Ihr Geld, Ihre Kontrolle. Kein Versteckspiel.</h2>
-                    <p className="animate-up">Viele Agenturen lassen das Werbebudget über ihr eigenes Konto laufen. Sie sehen dann nicht, was wirklich ausgegeben wird. Bei mir läuft alles über Ihr eigenes Google Ads Konto: jeder Cent, jede Kampagne, jedes Ergebnis in Echtzeit.</p>
-                    <p className="animate-up">Im monatlichen Report zeige ich klar, was ausgegeben wurde, wie viele Anfragen kamen, was ein Lead kostet und was ich für den nächsten Monat empfehle. Wenn eine Kampagne nicht funktioniert, sage ich es Ihnen und optimiere, bis es stimmt.</p>
-
-                    <p className="animate-up">Für nachhaltige Sichtbarkeit ohne Klickkosten kombinieren viele Kunden Ads mit <Link href="/leistungen/seo">lokaler SEO</Link>: Ads für den Sofort-Effekt, SEO für den langfristigen Aufbau.</p>
-
-                    <p className="animate-up">Neu daneben: <Link href="/leistungen/chatgpt-ads">ChatGPT Ads</Link>. Seit August 2026 laufen Anzeigen in ChatGPT auch in Deutschland, und die Auktion ist dort noch dünn besetzt. Google Ads bleiben die Grundlast für planbare Anfragen, ChatGPT Ads sind das Testbudget mit Lernvorsprung.</p>
+                    <div className="sx-band-text sxb-note animate-up">
+                        <p>Empfohlenes Mindest-Werbebudget: 500 € pro Monat. Es geht direkt an Google, nicht an mich.</p>
+                    </div>
                 </div>
             </section>
+
+            <section id="kontrolle" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head">
+                        <h2 className="animate-up">Ihr Geld, Ihre Kontrolle. Kein Versteckspiel.</h2>
+                        <p className="animate-up">Viele Agenturen lassen das Werbebudget über ihr eigenes Konto laufen. Sie sehen dann nicht, was wirklich ausgegeben wird. Bei mir läuft alles über Ihr eigenes Google Ads Konto: jeder Cent, jede Kampagne, jedes Ergebnis in Echtzeit.</p>
+                    </div>
+                    <div className="sx-split animate-up">
+                        <div className="sx-band-text sxb-statement">
+                            <p>Im monatlichen Report zeige ich klar, was ausgegeben wurde, wie viele Anfragen kamen, was ein Lead kostet und was ich für den nächsten Monat empfehle. Wenn eine Kampagne nicht funktioniert, sage ich es Ihnen und optimiere, bis es stimmt.</p>
+                        </div>
+                        <div className="sxb-stack">
+                            <div className="sx-card">
+                                <p>Für nachhaltige Sichtbarkeit ohne Klickkosten kombinieren viele Kunden Ads mit <Link href="/leistungen/seo">lokaler SEO</Link>: Ads für den Sofort-Effekt, SEO für den langfristigen Aufbau.</p>
+                            </div>
+                            <div className="sx-card">
+                                <p>Neu daneben: <Link href="/leistungen/chatgpt-ads">ChatGPT Ads</Link>. Seit August 2026 laufen Anzeigen in ChatGPT auch in Deutschland, und die Auktion ist dort noch dünn besetzt. Google Ads bleiben die Grundlast für planbare Anfragen, ChatGPT Ads sind das Testbudget mit Lernvorsprung.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            </div>
 
             <FaqSection title="Fragen zu Google Ads in Hamburg" items={faqItems} />
             <RelatedServices exclude="google-ads" />

@@ -1,0 +1,107 @@
+/* ==========================================================================
+   Section bands, extras for google-ads / chatgpt-ads / ai-seo /
+   e-commerce-entwicklung (2026-10). Base: subpage-vx.css "Section bands".
+   ========================================================================== */
+
+/* Text block kept at reading width when it stands alone under a grid */
+.sx-band .sxb-measure {
+  max-width: 72ch;
+}
+
+/* Short note right under a pricing block */
+.sx-band .sxb-note p {
+  font-size: 15px;
+  color: var(--sx-text);
+}
+
+/* Vertical stack of cards in the right column of an sx-split */
+.sxb-stack {
+  display: grid;
+  gap: 16px;
+}
+
+.sx-band .sx-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--sx-text);
+  margin: 0;
+}
+
+.sx-band .sx-card p + p {
+  margin-top: 12px;
+}
+
+/* Navy definition box on its own row: keep it at reading width */
+.sx-band .subpage-takeaway.sxb-lead {
+  max-width: 860px;
+}
+
+/* Story box inside a band: no extra outer margin, dark text */
+.sx-band .subpage-story {
+  margin: 0;
+}
+
+.sx-band .subpage-story p {
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--sx-text);
+}
+
+.sx-band:not(.is-alt) .subpage-story {
+  background: #FFFFFF;
+}
+
+/* Do / don't columns */
+.sx-band .rule-cols {
+  margin: 0;
+  gap: 16px;
+}
+
+.sx-band .rule-col {
+  border-radius: 0;
+  padding: 32px;
+}
+
+.sx-band.is-alt .rule-col {
+  background: #FAFAFA;
+}
+
+.sx-band:not(.is-alt) .rule-col {
+  background: #FFFFFF;
+}
+
+.sx-band .rule-col h3 {
+  font-family: var(--sx-display);
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: -0.02em;
+  color: var(--sx-fg);
+}
+
+.sx-band .rule-col li {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--sx-text);
+}
+
+.sx-band .rule-col.rule-no {
+  border-top-color: #A3A3A3;
+}
+
+.sx-band .rule-col.rule-no li::before {
+  color: var(--sx-fg);
+}
+
+.sx-band .rule-cols + *,
+.sx-band .subpage-story + * {
+  margin-top: 40px;
+}
+
+/* Key statement in a split column: larger, darkest text = band anchor */
+.sx-band .sxb-statement p {
+  font-family: var(--sx-display);
+  font-size: clamp(20px, 1.8vw, 26px);
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+  color: var(--sx-fg);
+}

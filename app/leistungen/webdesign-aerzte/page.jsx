@@ -1,8 +1,9 @@
+import '../../../src/styles/bands-c.css';
 import Link from 'next/link';
 import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import HeroFacts from '../../../src/components/HeroFacts';
-import SubpageToc from '../../../src/components/SubpageToc';
+import JumpNav from '../../../src/components/JumpNav';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
 import ServiceCta from '../../../src/components/ServiceCta';
@@ -91,34 +92,55 @@ export default function WebdesignAerztePage() {
                 </div>
             </section>
 
-            <section className="subpage-content section light-bg">
-                <div className="container subpage-body">
-                    <SubpageToc />
-                    <h2 className="animate-up">Was kostet eine Praxis-Website?</h2>
-                    <div className="subpage-takeaway animate-up">
-                        <p>Eine professionelle Praxis-Website kostet bei mir <strong>ab 2.900 €</strong> (kompakt) bzw. <strong>ab 5.500 €</strong> (Premium mit Online-Terminbuchung). Sie ist DSGVO-konform, mobiloptimiert und lokal für Google sichtbar. Laut Bitkom hat 2024 bereits jede zweite Person in Deutschland (50 %) schon online einen Arzttermin gebucht. Eine veraltete oder fehlende Website kostet Sie genau diese Patienten.</p>
-                    </div>
+            <JumpNav label="Abschnitte" items={[
+                { id: 'kosten', num: '01', label: 'Kosten' },
+                { id: 'warum', num: '02', label: 'Warum modern' },
+                { id: 'anforderungen', num: '03', label: 'Was sie leistet' },
+                { id: 'preise', num: '04', label: 'Preise' },
+                { id: 'prozess', num: '05', label: 'Prozess' },
+            ]} />
 
-                    <h2 className="animate-up">Warum Arztpraxen eine moderne Website brauchen</h2>
-                    <div className="subpage-split animate-up">
-                        <div className="sp-split-media">
-                            <img src="/leistungen/branchen/aerzte/telefon.webp" alt="Medizinische Fachangestellte nimmt am Praxisschreibtisch einen Anruf entgegen, daneben ein Laptop" width="1200" height="900" loading="lazy" decoding="async" />
-                            <p className="sp-split-caption">Jeder Termin, der online gebucht wird, ist ein Anruf weniger an der Anmeldung.</p>
+            <div className="sx-bands sxc-bands">
+            <section id="kosten" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Was kostet eine Praxis-Website?</h2>
+                    </div>
+                    <div className="sx-split animate-up">
+                        <div className="subpage-takeaway">
+                            <p>Eine professionelle Praxis-Website kostet bei mir <strong>ab 2.900 €</strong> (kompakt) bzw. <strong>ab 5.500 €</strong> (Premium mit Online-Terminbuchung). Sie ist DSGVO-konform, mobiloptimiert und lokal für Google sichtbar. Laut Bitkom hat 2024 bereits jede zweite Person in Deutschland (50 %) schon online einen Arzttermin gebucht. Eine veraltete oder fehlende Website kostet Sie genau diese Patienten.</p>
                         </div>
-                        <div className="sp-split-body">
+                        <figure className="subpage-figure">
+                            <img src="/leistungen/branchen/aerzte/arbeitsplatz.webp" alt="Arbeitsplatz im Behandlungszimmer mit Monitor, Tastatur und medizinischen Instrumenten" width="1800" height="760" loading="lazy" decoding="async" />
+                            <figcaption>Die Website ist die Vorstufe zur Praxissoftware: Sie klärt Zuständigkeit, Sprechzeiten und Terminweg, bevor jemand anruft.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <section id="warum" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Warum Arztpraxen eine moderne Website brauchen</h2>
+                    </div>
+                    <div className="sx-split animate-up">
+                        <div className="sx-band-text">
                             <p>Laut Bitkom (2024) hat die Hälfte der Deutschen schon mindestens einmal online einen Arzttermin vereinbart, 2019 waren es erst 26 %. 27 % wählen ihre Praxis gezielt danach aus, ob Online-Terminbuchung angeboten wird. Plattformen wie Doctolib und Jameda dominieren die Suchergebnisse zunehmend.</p>
                             <p>Das entlastet auch das Team: Wer rund um die Uhr selbst buchen kann, ruft nicht zur Sprechstundenzeit an. Die Anmeldung gewinnt Zeit für die Patienten, die tatsächlich vor Ort stehen.</p>
                         </div>
+                        <div className="sxc-media">
+                            <img src="/leistungen/branchen/aerzte/telefon.webp" alt="Medizinische Fachangestellte nimmt am Praxisschreibtisch einen Anruf entgegen, daneben ein Laptop" width="1200" height="900" loading="lazy" decoding="async" />
+                            <p className="sp-split-caption">Jeder Termin, der online gebucht wird, ist ein Anruf weniger an der Anmeldung.</p>
+                        </div>
                     </div>
-                    <p className="animate-up">Die häufigsten Probleme, die ich bei Praxis-Websites in Hamburg sehe:</p>
-                    <ul className="check-list animate-up">
+                    <p className="sxc-lead animate-up">Die häufigsten Probleme, die ich bei Praxis-Websites in Hamburg sehe:</p>
+                    <ul className="sx-cards is-five animate-up">
                         <li>Keine oder schlechte Google-Sichtbarkeit, sodass Patienten die Praxis nicht finden</li>
                         <li>Veraltetes Design, das kein Vertrauen aufbaut</li>
                         <li>Keine Online-Terminbuchung, sodass Patienten zu Praxen mit Doctolib wechseln</li>
                         <li>DSGVO-Verstöße durch unsichere Formulare oder fehlende Cookie-Einwilligung</li>
                         <li>Nicht mobiloptimiert, obwohl die meisten Patienten mit dem Smartphone suchen</li>
                     </ul>
-
                     <div className="subpage-stats animate-up">
                         <div className="subpage-stat">
                             <span className="subpage-stat-value">50%</span>
@@ -133,9 +155,15 @@ export default function WebdesignAerztePage() {
                             <span className="subpage-stat-label">messen Online-Bewertungen große Bedeutung bei der Arztwahl bei (Bitkom)</span>
                         </div>
                     </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Was eine Praxis-Website leisten muss</h2>
-                    <div className="subpage-features-grid animate-up">
+            <section id="anforderungen" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Was eine Praxis-Website leisten muss</h2>
+                    </div>
+                    <div className="subpage-features-grid is-four animate-up">
                         <div className="subpage-feature">
                             <h3>DSGVO-Konformität</h3>
                             <p>Datenschutz ist für Arztpraxen besonders kritisch. Sichere Kontaktformulare, rechtskonformes Cookie-Management und SSL-verschlüsselte Datenübertragung sind Pflicht und bei mir Standard.</p>
@@ -153,8 +181,7 @@ export default function WebdesignAerztePage() {
                             <p>Die meisten Patienten suchen unterwegs mit dem Smartphone. Ihre Praxis-Website funktioniert auf dem Handy genauso wie am Desktop, mit schnellen Ladezeiten und einfacher Navigation.</p>
                         </div>
                     </div>
-
-                    <div className="subpage-features-grid animate-up">
+                    <div className="subpage-features-grid is-four animate-up">
                         <div className="subpage-feature">
                             <h3>Google-Maps-Sichtbarkeit</h3>
                             <p>Lokale SEO und Google-Maps-Integration, damit Ihre Praxis bei Suchen in Ihrer Umgebung oben erscheint. Inklusive Optimierung Ihres Google Business Profile und konsistenter NAP-Daten.</p>
@@ -172,13 +199,14 @@ export default function WebdesignAerztePage() {
                             <p>Positive Bewertungen von Jameda, Google und anderen Plattformen direkt einbinden. 57 % der Patienten messen Bewertungen bei der Arztwahl große Bedeutung bei (Bitkom).</p>
                         </div>
                     </div>
+                </div>
+            </section>
 
-                    <figure className="subpage-figure is-band animate-up">
-                        <img src="/leistungen/branchen/aerzte/arbeitsplatz.webp" alt="Arbeitsplatz im Behandlungszimmer mit Monitor, Tastatur und medizinischen Instrumenten" width="1800" height="760" loading="lazy" decoding="async" />
-                        <figcaption>Die Website ist die Vorstufe zur Praxissoftware: Sie klärt Zuständigkeit, Sprechzeiten und Terminweg, bevor jemand anruft.</figcaption>
-                    </figure>
-
-                    <h2 className="animate-up">Was im Preis enthalten ist</h2>
+            <section id="preise" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Was im Preis enthalten ist</h2>
+                    </div>
                     <div className="subpage-pricing-compare animate-up">
                         <div className="subpage-price-col">
                             <h3>Praxis-Website Kompakt</h3>
@@ -213,24 +241,30 @@ export default function WebdesignAerztePage() {
                             </ul>
                         </div>
                     </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Der Prozess: von der Idee zur fertigen Praxis-Website</h2>
+            <section id="prozess" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Der Prozess: von der Idee zur fertigen Praxis-Website</h2>
+                    </div>
                     <div className="subpage-process animate-up">
                         <div className="sp-step"><span className="sp-step-num">1</span><div><strong>Erstgespräch & Praxis-Analyse</strong><p>Wir besprechen Praxis, Fachrichtung, Zielgruppe und Wettbewerb. Ich analysiere Ihre aktuelle Online-Präsenz und identifiziere Potenziale. Kostenlos und unverbindlich.</p></div></div>
                         <div className="sp-step"><span className="sp-step-num">2</span><div><strong>Konzept & Struktur</strong><p>Auf Basis der Analyse erstelle ich Seitenstruktur, definiere den Patientenpfad und plane Terminbuchung und Bewertungen. Sie sehen den Aufbau, bevor das Design beginnt.</p></div></div>
                         <div className="sp-step"><span className="sp-step-num">3</span><div><strong>Design & Entwicklung</strong><p>Umsetzung mit Fokus auf Vertrauen, DSGVO-Konformität und Patientenfreundlichkeit. Regelmäßige Updates und Feedback-Runden sind selbstverständlich.</p></div></div>
                         <div className="sp-step"><span className="sp-step-num">4</span><div><strong>Testing, Launch & Schulung</strong><p>Tests auf allen Geräten, DSGVO-Check, Tracking-Setup und Go-live. Anschließend schule ich Sie und Ihr Team in der Bedienung des CMS.</p></div></div>
                     </div>
-
-                    <p className="animate-up">
-                        Zwei Punkte, die Praxen mit Online-Terminbuchung besonders betreffen: Eine Terminbuchung
-                        ist ein Vertragsabschluss auf elektronischem Weg, damit greifen die Anforderungen aus
-                        {' '}<Link href="/wissen/barrierefreie-website-pflicht">dem BFSG</Link>, sofern die Praxis
-                        nicht als Kleinstunternehmen ausgenommen ist. Und die Pflichtangaben im Impressum stehen
-                        seit Mai 2024 in § 5 DDG, nicht mehr im TMG, siehe
-                        {' '}<Link href="/wissen/impressum-datenschutzerklaerung-pflicht">Impressum und Datenschutzerklärung</Link>.
-                    </p>
-
+                    <div className="sx-band-text animate-up">
+                        <p>
+                            Zwei Punkte, die Praxen mit Online-Terminbuchung besonders betreffen: Eine Terminbuchung
+                            ist ein Vertragsabschluss auf elektronischem Weg, damit greifen die Anforderungen aus
+                            {' '}<Link href="/wissen/barrierefreie-website-pflicht">dem BFSG</Link>, sofern die Praxis
+                            nicht als Kleinstunternehmen ausgenommen ist. Und die Pflichtangaben im Impressum stehen
+                            seit Mai 2024 in § 5 DDG, nicht mehr im TMG, siehe
+                            {' '}<Link href="/wissen/impressum-datenschutzerklaerung-pflicht">Impressum und Datenschutzerklärung</Link>.
+                        </p>
+                    </div>
                     <div className="subpage-sources animate-up">
                         <h2>Quellen</h2>
                         <ol>
@@ -240,6 +274,7 @@ export default function WebdesignAerztePage() {
                     </div>
                 </div>
             </section>
+            </div>
 
             <FaqSection title="Häufige Fragen zu Praxis-Websites" items={faqItems} />
             <RelatedServices exclude="webdesign" />

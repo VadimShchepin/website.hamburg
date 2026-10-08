@@ -313,7 +313,7 @@ export default function WissenPage() {
                 <div className="container">
                     {groups.map((group, g) => (
                         <div key={group.title} id={group.id} className="wissen-group">
-                            <h2 className="wissen-group-title animate-up"><span>{String(g + 1).padStart(2, '0')}</span>{group.title}</h2>
+                            <h2 className="wissen-group-title animate-up">{group.title}</h2>
                             <div className="wissen-grid">
                                 {group.slugs.map((slug) => articles.find((a) => a.slug === slug)).map((article, i) => (
                                     <Link key={article.slug} href={`/wissen/${article.slug}`} className={`wissen-card animate-up delay-${(i % 3) + 1}`}>

@@ -1505,7 +1505,13 @@ a.wissen-card:hover {
   margin: 0 0 32px;
 }
 
-.wissen-group-title span {
+.wissen-grid-section {
+  counter-reset: sx-group;
+}
+
+.wissen-group-title::before {
+  counter-increment: sx-group;
+  content: counter(sx-group, decimal-leading-zero);
   display: block;
   font-size: 15px;
   letter-spacing: 0;

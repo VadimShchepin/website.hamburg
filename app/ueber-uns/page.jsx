@@ -2,6 +2,8 @@ import Link from 'next/link';
 import AutoLinks from '../../src/components/AutoLinks';
 import Image from 'next/image';
 import Breadcrumbs from '../../src/components/Breadcrumbs';
+import HeroFacts from '../../src/components/HeroFacts';
+import ServiceCta from '../../src/components/ServiceCta';
 import { BUSINESS, SOCIAL_LINKS } from '../../src/lib/schema';
 
 export const metadata = {
@@ -61,11 +63,26 @@ export default function UeberUnsPage() {
             <section className="subpage-hero section">
                 <div className="container">
                     <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Über uns' }]} />
-                    <p className="section-kicker animate-up">Über mich</p>
-                    <h1 className="subpage-title animate-up">Vadim Shchepin, Webentwickler in Hamburg: Ergebnisse statt Versprechen.</h1>
-                    <p className="subpage-intro animate-up">
-                        Ich bin kein Agentur-Netzwerk mit Account-Managern und Projektleitern zwischen Ihnen und der Arbeit. Sie arbeiten direkt mit mir, dem Menschen, der Ihre <Link href="/leistungen/webdesign">Website baut</Link>, Ihr <Link href="/leistungen/seo">SEO</Link> macht und Ihre <Link href="/leistungen/google-ads">Ads</Link> schaltet. Braucht ein Projekt zusätzliche Expertise, etwa bei Design, Text oder Fotografie, hole ich geprüfte Spezialisten dazu. Ihr Ansprechpartner und der Verantwortliche für das Ergebnis bleibe ich.
-                    </p>
+                    <div className="subpage-hero-split about-hero">
+                        <div>
+                        <p className="section-kicker animate-up">Über mich</p>
+                        <h1 className="subpage-title animate-up">Vadim Shchepin, Webentwickler in Hamburg: Ergebnisse statt Versprechen.</h1>
+                        <p className="subpage-intro animate-up">
+                            Ich bin kein Agentur-Netzwerk mit Account-Managern und Projektleitern zwischen Ihnen und der Arbeit. Sie arbeiten direkt mit mir, dem Menschen, der Ihre <Link href="/leistungen/webdesign">Website baut</Link>, Ihr <Link href="/leistungen/seo">SEO</Link> macht und Ihre <Link href="/leistungen/google-ads">Ads</Link> schaltet. Braucht ein Projekt zusätzliche Expertise, etwa bei Design, Text oder Fotografie, hole ich geprüfte Spezialisten dazu. Ihr Ansprechpartner und der Verantwortliche für das Ergebnis bleibe ich.
+                        </p>
+                            <HeroFacts items={[['10+', 'Jahre Erfahrung'], ['50+', 'Projekte umgesetzt'], ['5,0', 'Sterne bei Google']]} />
+                        </div>
+                        <div className="subpage-hero-media about-hero-photo animate-up">
+                            <Image
+                                src="/referenzen/vadim_shchepin_2.webp"
+                                alt="Vadim Shchepin, Webentwickler und SEO-Spezialist in Hamburg"
+                                width={450}
+                                height={600}
+                                quality={85}
+                                priority
+                            />
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -73,16 +90,6 @@ export default function UeberUnsPage() {
                 <div className="container">
                     <div className="about-layout">
                         <div className="about-content">
-                            <div className="about-photo animate-up" style={{ marginBottom: 'var(--space-md)' }}>
-                                <Image
-                                    src="/referenzen/vadim_shchepin_2.webp"
-                                    alt="Vadim Shchepin, Webentwickler und SEO-Spezialist in Hamburg"
-                                    width={450}
-                                    height={600}
-                                    quality={85}
-                                    style={{ borderRadius: '12px', width: '200px', height: 'auto' }}
-                                />
-                            </div>
                             <h2 className="animate-up">Der Hintergrund</h2>
                             <p className="large-text animate-up">Über 10 Jahre Erfahrung in der digitalen Produktentwicklung. Nicht bei einer Marketing-Agentur, sondern in der Praxis: Softwareentwicklung, Produktdesign und Performance-Optimierung.</p>
                             <p className="animate-up">Ich habe gesehen, wie große Tech-Unternehmen digitale Produkte bauen, mit Daten, mit Struktur und mit Fokus auf Ergebnisse. Und ich habe gesehen, was die meisten Agenturen lokalen Unternehmen liefern: Templates, Bauchgefühl und vage Reports.</p>
@@ -210,22 +217,12 @@ export default function UeberUnsPage() {
                 </div>
             </section>
 
-            <section className="sp-cta section">
-                <div className="container">
-                    <div className="cta-box bull-boundary animate-up">
-                        <p className="section-kicker">Überzeugt?</p>
-                        <h2 className="section-title">Lassen Sie uns sprechen.</h2>
-                        <p className="offer-framing">Kostenloses Erstgespräch: Lernen Sie mich und meine Arbeitsweise kennen. Ich sage Ihnen ehrlich, ob und wie ich Ihnen helfen kann.</p>
-                        <div className="cta-actions mt-4">
-                            <Link href="/kontakt" className="button button-primary button-large" data-umami-event="cta-click" data-umami-event-location="about-cta">Jetzt Kontakt aufnehmen</Link>
-                            <a href="tel:+4917632194754" className="cta-phone" data-umami-event="phone-call" data-umami-event-location="about-cta">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                                0176 / 321 94 754
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <ServiceCta
+                title="Lassen Sie uns sprechen."
+                text="Kostenloses Erstgespräch: Lernen Sie mich und meine Arbeitsweise kennen. Ich sage Ihnen ehrlich, ob und wie ich Ihnen helfen kann."
+                primaryLabel="Jetzt Kontakt aufnehmen"
+                location="about-cta"
+            />
             </AutoLinks>
         </>
     );

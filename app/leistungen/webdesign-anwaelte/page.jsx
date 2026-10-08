@@ -1,8 +1,9 @@
+import '../../../src/styles/bands-c.css';
 import Link from 'next/link';
 import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import HeroFacts from '../../../src/components/HeroFacts';
-import SubpageToc from '../../../src/components/SubpageToc';
+import JumpNav from '../../../src/components/JumpNav';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
 import ServiceCta from '../../../src/components/ServiceCta';
@@ -96,31 +97,46 @@ export default function WebdesignAnwaeltePage() {
                 </div>
             </section>
 
-            <section className="subpage-content section light-bg">
-                <div className="container subpage-body is-inset">
-                    <SubpageToc />
-                    <h2 className="animate-up">Was kostet eine Kanzlei-Website in Hamburg?</h2>
-                    <div className="subpage-takeaway animate-up">
-                        <p>Eine Kanzlei-Website kostet bei mir <strong>ab 2.900 Euro</strong> einseitig und <strong>ab 4.500 Euro</strong> mehrseitig mit eigener Seite je Rechtsgebiet. Enthalten sind Struktur, Design, Entwicklung, Textvorschläge, lokale SEO-Grundlage und eine berufsrechtlich zurückhaltende Formulierung nach § 43b BRAO. Sie bekommen einen Festpreis vor Projektstart.</p>
-                    </div>
+            <JumpNav label="Abschnitte" items={[
+                { id: 'kosten', num: '01', label: 'Kosten' },
+                { id: 'sichtbarkeit', num: '02', label: 'Sichtbarkeit' },
+                { id: 'berufsrecht', num: '03', label: 'Berufsrecht' },
+                { id: 'anforderungen', num: '04', label: 'Was sie leistet' },
+                { id: 'preise', num: '05', label: 'Preise' },
+                { id: 'ergebnisse', num: '06', label: 'Ergebnisse' },
+                { id: 'ablauf', num: '07', label: 'Ablauf' },
+            ]} />
 
-                    <div className="subpage-story animate-up">
-                        <span className="subpage-story-label">Aus der Praxis</span>
-                        <p>
-                            Der häufigste Fund in meinen kostenlosen Audits von Kanzlei-Websites ist nicht das Design. Es ist das Kontaktformular. Es sieht gut aus, es sagt "Vielen Dank für Ihre Nachricht", und es schickt seine Nachrichten an eine Adresse, die vor drei Kanzleiwechseln eingerichtet wurde. Getestet hat das niemand, weil niemand sich selbst eine Mandatsanfrage schickt.
-                        </p>
-                        <p>
-                            Danach kommt der Punkt, an dem die Startseite mit "Ihr kompetenter Partner in allen Rechtsfragen" beginnt. Das ist berufsrechtlich unbedenklich und inhaltlich leer. Ein Ratsuchender mit einer Kündigung in der Hand sucht keinen Partner in allen Rechtsfragen, er sucht Arbeitsrecht, Eimsbüttel, Termin diese Woche. Deshalb fange ich jedes Kanzlei-Projekt mit einer sehr unromantischen Frage an: Welche drei Sätze muss diese Seite können, damit das Telefon klingelt?
-                        </p>
+            <div className="sx-bands sxc-bands">
+            <section id="kosten" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Was kostet eine Kanzlei-Website in Hamburg?</h2>
                     </div>
-
-                    <h2 className="animate-up">Warum finden Mandanten meine Kanzlei nicht?</h2>
-                    <div className="subpage-split animate-up">
-                        <div className="sp-split-media">
-                            <img src="/leistungen/branchen/anwaelte/erstgespraech.webp" alt="Anwältin und Anwalt besprechen mit einer Mandantin Unterlagen im Erstgespräch" width="1200" height="900" loading="lazy" decoding="async" />
-                            <p className="sp-split-caption">Das Erstgespräch entscheidet über das Mandat. Die Website entscheidet, ob es zustande kommt.</p>
+                    <div className="sx-split is-even animate-up">
+                        <div className="subpage-takeaway">
+                            <p>Eine Kanzlei-Website kostet bei mir <strong>ab 2.900 Euro</strong> einseitig und <strong>ab 4.500 Euro</strong> mehrseitig mit eigener Seite je Rechtsgebiet. Enthalten sind Struktur, Design, Entwicklung, Textvorschläge, lokale SEO-Grundlage und eine berufsrechtlich zurückhaltende Formulierung nach § 43b BRAO. Sie bekommen einen Festpreis vor Projektstart.</p>
                         </div>
-                        <div className="sp-split-body">
+                        <div className="subpage-story">
+                            <span className="subpage-story-label">Aus der Praxis</span>
+                            <p>
+                                Der häufigste Fund in meinen kostenlosen Audits von Kanzlei-Websites ist nicht das Design. Es ist das Kontaktformular. Es sieht gut aus, es sagt "Vielen Dank für Ihre Nachricht", und es schickt seine Nachrichten an eine Adresse, die vor drei Kanzleiwechseln eingerichtet wurde. Getestet hat das niemand, weil niemand sich selbst eine Mandatsanfrage schickt.
+                            </p>
+                            <p>
+                                Danach kommt der Punkt, an dem die Startseite mit "Ihr kompetenter Partner in allen Rechtsfragen" beginnt. Das ist berufsrechtlich unbedenklich und inhaltlich leer. Ein Ratsuchender mit einer Kündigung in der Hand sucht keinen Partner in allen Rechtsfragen, er sucht Arbeitsrecht, Eimsbüttel, Termin diese Woche. Deshalb fange ich jedes Kanzlei-Projekt mit einer sehr unromantischen Frage an: Welche drei Sätze muss diese Seite können, damit das Telefon klingelt?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sichtbarkeit" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Warum finden Mandanten meine Kanzlei nicht?</h2>
+                    </div>
+                    <div className="sx-split animate-up">
+                        <div className="sx-band-text">
                             <p>
                                 Zum 1. Januar 2026 waren in Deutschland 167.547 Rechtsanwältinnen und Rechtsanwälte zugelassen, ein Plus gegenüber 166.504 im Vorjahr (BRAK-Mitgliederstatistik). Der Wettbewerb wächst also weiter, und er verlagert sich. Bitkom hat Ende 2024 erhoben, dass 15 Prozent der Menschen bei einem Rechtsproblem zuerst zu einem Online-Tool, einer App oder einer KI greifen, in der Altersgruppe von 16 bis 29 Jahren sind es 23 Prozent. Als Gründe nennen die Befragten Verfügbarkeit rund um die Uhr (61 Prozent), Bequemlichkeit (57 Prozent) und Schnelligkeit (47 Prozent).
                             </p>
@@ -128,8 +144,11 @@ export default function WebdesignAnwaeltePage() {
                                 Das ist keine Nachricht über den Untergang der Anwaltschaft. Es ist eine Nachricht über den Einstieg: Die erste Antwort auf ein Rechtsproblem kommt heute oft von einer Suchmaschine oder einem Chatbot. Wenn Ihre Kanzlei dort als Quelle vorkommt, sind Sie die zweite Antwort, und die ist die bezahlte. Genau darum geht es bei <Link href="/leistungen/ai-seo">AI SEO</Link> und bei einer Seitenstruktur, aus der Maschinen einzelne Aussagen sauber zitieren können.
                             </p>
                         </div>
+                        <div className="sxc-media">
+                            <img src="/leistungen/branchen/anwaelte/erstgespraech.webp" alt="Anwältin und Anwalt besprechen mit einer Mandantin Unterlagen im Erstgespräch" width="1200" height="900" loading="lazy" decoding="async" />
+                            <p className="sp-split-caption">Das Erstgespräch entscheidet über das Mandat. Die Website entscheidet, ob es zustande kommt.</p>
+                        </div>
                     </div>
-
                     <div className="subpage-stats animate-up">
                         <div className="subpage-stat">
                             <span className="subpage-stat-value">167.547</span>
@@ -144,16 +163,21 @@ export default function WebdesignAnwaeltePage() {
                             <span className="subpage-stat-label">nennen Erreichbarkeit rund um die Uhr als Grund für den digitalen Weg (Bitkom 2024)</span>
                         </div>
                     </div>
-
                     <figure className="subpage-figure is-band animate-up">
                         <img src="/leistungen/branchen/anwaelte/mandat.webp" alt="Anwalt prüft am Schreibtisch ein mehrseitiges Schriftstück, im Vordergrund seine Hände auf dem Dokument" width="1800" height="760" loading="lazy" decoding="async" />
                         <figcaption>Der Weg vom Rechtsproblem zum Mandat führt heute fast immer über ein Suchergebnis.</figcaption>
                     </figure>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Was darf auf eine Kanzlei-Website und was nicht?</h2>
-                    <p className="animate-up">
-                        Anwaltswerbung ist erlaubt, sie ist nur an Sachlichkeit gebunden. § 43b BRAO lässt Werbung zu, soweit sie über die berufliche Tätigkeit in Form und Inhalt sachlich unterrichtet und nicht auf ein Mandat im Einzelfall gerichtet ist. Die BORA konkretisiert das, unter anderem bei Referenzen: Werbung mit Mandaten oder Mandanten ist nur mit ausdrücklicher Einwilligung zulässig. Deshalb haben Kanzlei-Websites keine Logo-Wand wie ein Softwareanbieter.
-                    </p>
+            <section id="berufsrecht" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head">
+                        <h2 className="animate-up">Was darf auf eine Kanzlei-Website und was nicht?</h2>
+                        <p className="animate-up">
+                            Anwaltswerbung ist erlaubt, sie ist nur an Sachlichkeit gebunden. § 43b BRAO lässt Werbung zu, soweit sie über die berufliche Tätigkeit in Form und Inhalt sachlich unterrichtet und nicht auf ein Mandat im Einzelfall gerichtet ist. Die BORA konkretisiert das, unter anderem bei Referenzen: Werbung mit Mandaten oder Mandanten ist nur mit ausdrücklicher Einwilligung zulässig. Deshalb haben Kanzlei-Websites keine Logo-Wand wie ein Softwareanbieter.
+                        </p>
+                    </div>
                     <div className="rule-cols animate-up">
                         <div className="rule-col">
                             <h3>Das darf auf die Seite</h3>
@@ -178,11 +202,19 @@ export default function WebdesignAnwaeltePage() {
                             </ul>
                         </div>
                     </div>
-                    <p className="animate-up">
-                        Dazu gehört eine Einschränkung: Ich bin Entwickler, kein Anwalt. Die berufsrechtliche Prüfung Ihrer Texte bleibt bei Ihnen, und darin sind Sie besser als ich. Und noch eine Beobachtung: Zurückhaltung ist kein Nachteil. Eine Kanzlei, die nüchtern erklärt, wie ein Kündigungsschutzprozess abläuft, wirkt vertrauenswürdiger als eine, die mit Superlativen arbeitet. Sachlichkeit ist hier zufällig auch gutes Marketing.
-                    </p>
+                    <div className="sx-band-text animate-up">
+                        <p>
+                            Dazu gehört eine Einschränkung: Ich bin Entwickler, kein Anwalt. Die berufsrechtliche Prüfung Ihrer Texte bleibt bei Ihnen, und darin sind Sie besser als ich. Und noch eine Beobachtung: Zurückhaltung ist kein Nachteil. Eine Kanzlei, die nüchtern erklärt, wie ein Kündigungsschutzprozess abläuft, wirkt vertrauenswürdiger als eine, die mit Superlativen arbeitet. Sachlichkeit ist hier zufällig auch gutes Marketing.
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Was muss eine Kanzlei-Website leisten?</h2>
+            <section id="anforderungen" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Was muss eine Kanzlei-Website leisten?</h2>
+                    </div>
                     <div className="subpage-features-grid animate-up">
                         <div className="subpage-feature">
                             <h3>Eine Seite je Rechtsgebiet</h3>
@@ -201,7 +233,6 @@ export default function WebdesignAnwaeltePage() {
                             <p>Ein aktuelles Porträt, Zulassungsjahr, Kammer und ein Absatz darüber, wie Sie arbeiten. Bei Rechtsberatung entscheidet sich Vertrauen an Personen, nicht an Stockfotos von Waagen und Gesetzbüchern.</p>
                         </div>
                     </div>
-
                     <div className="subpage-features-grid animate-up">
                         <div className="subpage-feature">
                             <h3>Datenschutz, der zum Mandat passt</h3>
@@ -220,8 +251,14 @@ export default function WebdesignAnwaeltePage() {
                             <p>Neue Urteilsbesprechung, neue Kollegin, geänderte Sprechzeiten in der Ferienzeit: Solche Änderungen dürfen keine Rechnung auslösen. Sie bekommen ein CMS und eine Einweisung, die eine halbe Stunde dauert.</p>
                         </div>
                     </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Preise für Kanzlei-Websites</h2>
+            <section id="preise" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Preise für Kanzlei-Websites</h2>
+                    </div>
                     <div className="subpage-pricing-compare animate-up">
                         <div className="subpage-price-col">
                             <h3>Kanzlei-Website kompakt</h3>
@@ -253,11 +290,17 @@ export default function WebdesignAnwaeltePage() {
                             </ul>
                         </div>
                     </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Ergebnisse aus vergleichbaren Projekten</h2>
-                    <p className="animate-up">
-                        Kanzlei-Referenzen darf ich hier nicht mit Namen zeigen, das verbietet die Verschwiegenheitspflicht ohne Einwilligung. Zeigen kann ich, was dieselbe Arbeitsweise bei anderen lokalen Dienstleistern in Hamburg gebracht hat, wo Anfragen genauso über Suche und Vertrauen entstehen.
-                    </p>
+            <section id="ergebnisse" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head">
+                        <h2 className="animate-up">Ergebnisse aus vergleichbaren Projekten</h2>
+                        <p className="animate-up">
+                            Kanzlei-Referenzen darf ich hier nicht mit Namen zeigen, das verbietet die Verschwiegenheitspflicht ohne Einwilligung. Zeigen kann ich, was dieselbe Arbeitsweise bei anderen lokalen Dienstleistern in Hamburg gebracht hat, wo Anfragen genauso über Suche und Vertrauen entstehen.
+                        </p>
+                    </div>
                     <div className="subpage-cases animate-up">
                         <Link href="/referenzen/blitz-hamburg" className="subpage-case-card">
                             <span className="subpage-case-metric">24 auf 374 Google-Klicks</span>
@@ -272,15 +315,20 @@ export default function WebdesignAnwaeltePage() {
                             <span className="subpage-case-name">KinderAlbum: Ratgeber zu einem heiklen DSGVO-Thema</span>
                         </Link>
                     </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Wie läuft ein Kanzlei-Website-Projekt ab?</h2>
+            <section id="ablauf" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Wie läuft ein Kanzlei-Website-Projekt ab?</h2>
+                    </div>
                     <div className="subpage-process animate-up">
                         <div className="sp-step"><span className="sp-step-num">1</span><div><strong>Erstgespräch, 30 Minuten</strong><p>Welche Rechtsgebiete tragen die Kanzlei, woher kommen Mandate heute, welche Anfragen wollen Sie mehr und welche weniger. Kostenlos und unverbindlich.</p></div></div>
                         <div className="sp-step"><span className="sp-step-num">2</span><div><strong>Struktur und Texte</strong><p>Ich baue die Seitenstruktur nach Rechtsgebieten und liefere Textvorschläge, die Sie berufsrechtlich prüfen. Sie schreiben nicht von null, Sie korrigieren.</p></div></div>
                         <div className="sp-step"><span className="sp-step-num">3</span><div><strong>Design und Entwicklung</strong><p>Individuelles Design, eigener Code, keine Baukastenvorlage. Zwischenstände sehen Sie auf einer Vorschau-URL, Feedback ist jederzeit möglich.</p></div></div>
                         <div className="sp-step"><span className="sp-step-num">4</span><div><strong>Test, Launch, Übergabe</strong><p>Formular-Test mit echten Adressen, Prüfung auf allen Geräten, Ladezeit, strukturierte Daten, Google Search Console. Danach gehören Domain, Zugänge und Quellcode Ihnen.</p></div></div>
                     </div>
-
                     <div className="subpage-sources animate-up">
                         <h2>Quellen</h2>
                         <ol>
@@ -294,6 +342,8 @@ export default function WebdesignAnwaeltePage() {
                     </div>
                 </div>
             </section>
+
+            </div>
 
             <FaqSection title="Häufige Fragen zu Kanzlei-Websites" items={faqItems} />
             <RelatedServices exclude="webdesign" />

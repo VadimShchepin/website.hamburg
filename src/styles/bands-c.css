@@ -219,7 +219,12 @@
   margin-top: 56px;
 }
 
-/* Case cards: bigger metric */
+/* Case cards: bigger metric, one row of three */
+.sxc-bands .subpage-cases {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
 .sxc-bands .subpage-case-card {
   padding: 28px;
 }
@@ -245,6 +250,10 @@
 }
 
 @media (max-width: 900px) {
+  .sxc-bands .subpage-cases {
+    grid-template-columns: 1fr;
+  }
+
   .sxc-bands .sxc-facts {
     grid-template-columns: 1fr;
   }

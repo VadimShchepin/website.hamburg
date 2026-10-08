@@ -1,8 +1,9 @@
 import Link from 'next/link';
+import '../../../src/styles/bands-a.css';
 import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import HeroFacts from '../../../src/components/HeroFacts';
-import SubpageToc from '../../../src/components/SubpageToc';
+import JumpNav from '../../../src/components/JumpNav';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
 import ServiceCta from '../../../src/components/ServiceCta';
@@ -92,25 +93,39 @@ export default function WebdesignPage() {
                 </div>
             </section>
 
-            <section className="subpage-content section light-bg">
-                <div className="container subpage-body">
-                    <SubpageToc />
-                    <h2 className="animate-up">Was kostet ein Webdesigner in Hamburg?</h2>
-                    <div className="subpage-takeaway animate-up">
-                        <p>Eine professionelle Website kostet bei mir <strong>ab 1.500 €</strong> (Website-Start mit bewährtem Layout), <strong>ab 2.900 €</strong> (Conversion Landingpage) oder <strong>ab 4.500 €</strong> (mehrseitige Unternehmenswebsite), jeweils zum Festpreis statt nach Stunden. Sie wird individuell programmiert, ohne Baukasten und ohne gekauftes WordPress-Theme, und erreicht Lighthouse-Werte von 90 bis 100 sowie gute Core Web Vitals. Eine Landingpage ist in 2 bis 3 Wochen fertig, eine mehrseitige Website in 4 bis 6 Wochen.</p>
+            <JumpNav label="Abschnitte" items={[
+                { id: 'kosten', num: '01', label: 'Kosten' },
+                { id: 'probleme', num: '02', label: 'Typische Probleme' },
+                { id: 'designentscheidungen', num: '03', label: 'Prinzipien' },
+                { id: 'preise', num: '04', label: 'Preise' },
+                { id: 'prozess', num: '05', label: 'Prozess' },
+                { id: 'branchen', num: '06', label: 'Branchen' },
+            ]} />
+
+            <div className="sx-bands">
+            <section id="kosten" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Was kostet ein Webdesigner in Hamburg?</h2>
                     </div>
+                    <div className="sx-split animate-up">
+                        <div className="subpage-takeaway">
+                            <p>Eine professionelle Website kostet bei mir <strong>ab 1.500 €</strong> (Website-Start mit bewährtem Layout), <strong>ab 2.900 €</strong> (Conversion Landingpage) oder <strong>ab 4.500 €</strong> (mehrseitige Unternehmenswebsite), jeweils zum Festpreis statt nach Stunden. Sie wird individuell programmiert, ohne Baukasten und ohne gekauftes WordPress-Theme, und erreicht Lighthouse-Werte von 90 bis 100 sowie gute Core Web Vitals. Eine Landingpage ist in 2 bis 3 Wochen fertig, eine mehrseitige Website in 4 bis 6 Wochen.</p>
+                        </div>
+                        <figure className="subpage-figure">
+                            <img src="/leistungen/fotos/webdesign.webp" alt="Naheinstellung: Hände tippen Code auf einer Tastatur vor zwei Monitoren mit Entwicklungsumgebung" width="1800" height="760" loading="lazy" decoding="async" />
+                            <figcaption>Individuell programmiert statt Theme von der Stange: Jede Entscheidung lässt sich begründen.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Warum viele Firmenwebsites Kunden verlieren</h2>
-                    <p className="animate-up">Eine <a href="/wissen/warum-langsame-websites-kunden-kosten">langsame, unstrukturierte Website kostet täglich Anfragen</a>, ohne dass Sie es merken. Google fand bereits 2016: 53 % der mobilen Nutzer verlassen eine Seite, die länger als 3 Sekunden lädt. Gleichzeitig entscheidet das Design in Millisekunden über Vertrauen oder Absprung.</p>
-                    <p className="animate-up">Die häufigsten Probleme, die ich bei Unternehmen in Hamburg sehe:</p>
-                    <ul className="check-list animate-up">
-                        <li>Ladezeiten von 5 bis 10 Sekunden statt unter 1 Sekunde</li>
-                        <li>Keine klare Handlungsaufforderung, sodass Besucher nicht wissen, was sie tun sollen</li>
-                        <li>Nicht mobiloptimiert, obwohl ein Großteil der Zugriffe über Smartphones kommt</li>
-                        <li>Veraltetes Design, das Vertrauen zerstört statt aufbaut</li>
-                        <li>Kein Tracking, sodass niemand weiß, ob die Website überhaupt funktioniert</li>
-                    </ul>
-
+            <section id="probleme" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head">
+                        <h2 className="animate-up">Warum viele Firmenwebsites Kunden verlieren</h2>
+                        <p className="animate-up">Eine <a href="/wissen/warum-langsame-websites-kunden-kosten">langsame, unstrukturierte Website kostet täglich Anfragen</a>, ohne dass Sie es merken. Google fand bereits 2016: 53 % der mobilen Nutzer verlassen eine Seite, die länger als 3 Sekunden lädt. Gleichzeitig entscheidet das Design in Millisekunden über Vertrauen oder Absprung.</p>
+                    </div>
                     <div className="subpage-stats animate-up">
                         <div className="subpage-stat">
                             <span className="subpage-stat-value">53%</span>
@@ -125,16 +140,28 @@ export default function WebdesignPage() {
                             <span className="subpage-stat-label">LCP-Zielwert für gute Core Web Vitals (Google)</span>
                         </div>
                     </div>
+                    <div className="sx-split is-even animate-up">
+                        <div className="sx-band-text">
+                            <p>Die häufigsten Probleme, die ich bei Unternehmen in Hamburg sehe:</p>
+                        </div>
+                        <ul className="check-list">
+                            <li>Ladezeiten von 5 bis 10 Sekunden statt unter 1 Sekunde</li>
+                            <li>Keine klare Handlungsaufforderung, sodass Besucher nicht wissen, was sie tun sollen</li>
+                            <li>Nicht mobiloptimiert, obwohl ein Großteil der Zugriffe über Smartphones kommt</li>
+                            <li>Veraltetes Design, das Vertrauen zerstört statt aufbaut</li>
+                            <li>Kein Tracking, sodass niemand weiß, ob die Website überhaupt funktioniert</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
 
-                    <figure className="subpage-figure is-band animate-up">
-                        <img src="/leistungen/fotos/webdesign.webp" alt="Naheinstellung: Hände tippen Code auf einer Tastatur vor zwei Monitoren mit Entwicklungsumgebung" width="1800" height="760" loading="lazy" decoding="async" />
-                        <figcaption>Individuell programmiert statt Theme von der Stange: Jede Entscheidung lässt sich begründen.</figcaption>
-                    </figure>
-
-                    <h2 className="animate-up">Was hinter jeder Designentscheidung steckt</h2>
-                    <p className="animate-up">Jede Designentscheidung folgt Daten und bewährten <a href="/wissen/website-conversion-optimierung">Conversion-Prinzipien</a>, nicht dem Geschmack. Wer einen Online-Shop braucht, findet das passende Angebot unter <a href="/leistungen/e-commerce-entwicklung">E-Commerce-Entwicklung</a>, für laufende Sichtbarkeit gibt es die <a href="/leistungen/seo">SEO-Betreuung</a>.</p>
-
-                    <div className="subpage-features-grid animate-up">
+            <section id="designentscheidungen" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head">
+                        <h2 className="animate-up">Was hinter jeder Designentscheidung steckt</h2>
+                        <p className="animate-up">Jede Designentscheidung folgt Daten und bewährten <a href="/wissen/website-conversion-optimierung">Conversion-Prinzipien</a>, nicht dem Geschmack. Wer einen Online-Shop braucht, findet das passende Angebot unter <a href="/leistungen/e-commerce-entwicklung">E-Commerce-Entwicklung</a>, für laufende Sichtbarkeit gibt es die <a href="/leistungen/seo">SEO-Betreuung</a>.</p>
+                    </div>
+                    <div className="subpage-features-grid is-four animate-up">
                         <div className="subpage-feature">
                             <h3>Performance-First</h3>
                             <p>Jede Website wird auf Geschwindigkeit gebaut. Lighthouse-Werte von 90 bis 100 und grüne Core Web Vitals (LCP, INP, CLS) sind Standard, nicht Ausnahme. Das senkt Absprünge und verbessert das Ranking.</p>
@@ -152,8 +179,14 @@ export default function WebdesignPage() {
                             <p>Semantisches HTML, strukturierte Daten (Schema.org), optimierte Meta-Tags, saubere URLs und schnelle Ladezeiten. Ihre Website ist ab Tag 1 für Google und KI-Suche aufbereitet.</p>
                         </div>
                     </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Was im Preis enthalten ist</h2>
+            <section id="preise" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Was im Preis enthalten ist</h2>
+                    </div>
                     <div className="subpage-pricing-compare is-three animate-up">
                         <div className="subpage-price-col">
                             <h3>Website-Start</h3>
@@ -197,21 +230,33 @@ export default function WebdesignPage() {
                             </ul>
                         </div>
                     </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Der Prozess: von der Idee zur fertigen Website</h2>
+            <section id="prozess" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Der Prozess: von der Idee zur fertigen Website</h2>
+                    </div>
                     <div className="subpage-process animate-up">
                         <div className="sp-step"><span className="sp-step-num">1</span><div><strong>Erstgespräch & Analyse</strong><p>Wir besprechen Ziele, Zielgruppe und Wettbewerber. Ich analysiere Ihren Markt und zeige Chancen auf. Kostenlos und unverbindlich.</p></div></div>
                         <div className="sp-step"><span className="sp-step-num">2</span><div><strong>Konzept & Wireframe</strong><p>Auf Basis der Analyse erstelle ich Seitenstruktur und Conversion-Pfad. Sie sehen den Aufbau, bevor das Design beginnt.</p></div></div>
                         <div className="sp-step"><span className="sp-step-num">3</span><div><strong>Design & Entwicklung</strong><p>Saubere Umsetzung mit Fokus auf Performance und Nutzererlebnis. Sie erhalten regelmäßige Updates und geben jederzeit Feedback.</p></div></div>
                         <div className="sp-step"><span className="sp-step-num">4</span><div><strong>Testing & Launch</strong><p>Tests auf allen Geräten und Browsern, Tracking-Setup, Go-live und Übergabe mit Dokumentation.</p></div></div>
                     </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Webdesign für Ihre Branche</h2>
-                    <p className="animate-up">
-                        Jede Branche hat andere Pflichtangaben, andere Anfragewege und andere Erwartungen. Für diese
-                        Bereiche habe ich das im Detail aufgeschrieben, inklusive Preisen und Rechtsgrundlagen:
-                    </p>
-                    <div className="subpage-cases animate-up">
+            <section id="branchen" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head">
+                        <h2 className="animate-up">Webdesign für Ihre Branche</h2>
+                        <p className="animate-up">
+                            Jede Branche hat andere Pflichtangaben, andere Anfragewege und andere Erwartungen. Für diese
+                            Bereiche habe ich das im Detail aufgeschrieben, inklusive Preisen und Rechtsgrundlagen:
+                        </p>
+                    </div>
+                    <div className="subpage-cases sxa-cases-4 animate-up">
                         <Link href="/leistungen/webdesign-handwerker" className="subpage-case-card">
                             <span className="subpage-case-metric">Handwerk</span>
                             <span className="subpage-case-name">Aufträge über Notdienst-Suchen und lokale Sichtbarkeit</span>
@@ -241,20 +286,25 @@ export default function WebdesignPage() {
                             <span className="subpage-case-name">Eigentümer-Anfragen und GEG-Pflichtangaben</span>
                         </Link>
                     </div>
-                    <p className="animate-up">
-                        Unsicher, ob Agentur, Freelancer oder Baukasten zu Ihrem Vorhaben passt? Der Vergleich steht im
-                        Artikel <Link href="/wissen/webdesign-agentur-oder-freelancer">Agentur, Freelancer oder Baukasten</Link>,
-                        die Kostenseite im <Link href="/wissen/webdesign-kosten">Kostenguide</Link>.
-                    </p>
-                    <p className="animate-up">
-                        Zur Systemfrage gibt es zwei ausführliche Vergleiche:
-                        {' '}<Link href="/wissen/wordpress-alternativen">WordPress-Alternativen</Link> und
-                        {' '}<Link href="/wissen/webflow-oder-wordpress">Webflow oder WordPress</Link>. Und wenn Ihre
-                        Seite Verträge abschließt, etwa über einen Shop oder eine Buchung, klärt
-                        {' '}<Link href="/wissen/barrierefreie-website-pflicht">Barrierefreie Website: Pflicht nach dem BFSG</Link>,
-                        was seit dem 28. Juni 2025 dafür gilt.
-                    </p>
-
+                    <div className="sx-split is-even animate-up">
+                        <div className="sx-band-text">
+                            <p>
+                                Unsicher, ob Agentur, Freelancer oder Baukasten zu Ihrem Vorhaben passt? Der Vergleich steht im
+                                Artikel <Link href="/wissen/webdesign-agentur-oder-freelancer">Agentur, Freelancer oder Baukasten</Link>,
+                                die Kostenseite im <Link href="/wissen/webdesign-kosten">Kostenguide</Link>.
+                            </p>
+                        </div>
+                        <div className="sx-band-text">
+                            <p>
+                                Zur Systemfrage gibt es zwei ausführliche Vergleiche:
+                                {' '}<Link href="/wissen/wordpress-alternativen">WordPress-Alternativen</Link> und
+                                {' '}<Link href="/wissen/webflow-oder-wordpress">Webflow oder WordPress</Link>. Und wenn Ihre
+                                Seite Verträge abschließt, etwa über einen Shop oder eine Buchung, klärt
+                                {' '}<Link href="/wissen/barrierefreie-website-pflicht">Barrierefreie Website: Pflicht nach dem BFSG</Link>,
+                                was seit dem 28. Juni 2025 dafür gilt.
+                            </p>
+                        </div>
+                    </div>
                     <div className="subpage-sources animate-up">
                         <h2>Quellen</h2>
                         <ol>
@@ -264,6 +314,7 @@ export default function WebdesignPage() {
                     </div>
                 </div>
             </section>
+            </div>
 
             <FaqSection title="Fragen an Ihren Webdesigner" items={faqItems} />
             <RelatedServices exclude="webdesign" />

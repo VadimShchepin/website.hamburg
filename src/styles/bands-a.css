@@ -1,0 +1,9 @@
+/* Band layout helpers for webdesign / website-erstellen-lassen /
+   conversion-optimierung / website-audit (prefix .sxa-) */
+
+/* 7 industry links: 4 + 3 instead of 5 + 2 */
+@media (min-width: 1101px) {
+  .sx-band .subpage-cases.sxa-cases-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

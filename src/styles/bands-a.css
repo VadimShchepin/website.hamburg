@@ -7,3 +7,22 @@
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+/* Card list with long items: fixed 3 columns on desktop */
+@media (min-width: 901px) {
+  .sx-band .sx-cards.sxa-cards-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 901px) {
+  /* 5 items: the last card fills the second row instead of leaving a hole */
+  .sx-band .sx-cards.sxa-cards-3 > li:last-child:nth-child(3n + 2) {
+    grid-column: span 2;
+  }
+}
+
+/* Full-width follow-up paragraph: keep a readable line length */
+.sx-band .sx-band-text.sxa-measure {
+  max-width: 70ch;
+}

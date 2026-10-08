@@ -1,8 +1,9 @@
 import Link from 'next/link';
+import '../../../src/styles/bands-a.css';
 import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import HeroFacts from '../../../src/components/HeroFacts';
-import SubpageToc from '../../../src/components/SubpageToc';
+import JumpNav from '../../../src/components/JumpNav';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
 import ServiceCta from '../../../src/components/ServiceCta';
@@ -94,15 +95,29 @@ export default function WebsiteErstellenLassenPage() {
                 </div>
             </section>
 
-            <section className="subpage-content section light-bg">
-                <div className="container subpage-body">
-                    <SubpageToc />
-                    <h2 className="animate-up">Was kostet es, eine Website erstellen zu lassen?</h2>
-                    <div className="subpage-takeaway animate-up">
-                        <p>Eine Website erstellen zu lassen kostet bei mir <strong>ab 1.500 €</strong> (Website-Start mit bewährtem Layout), <strong>ab 2.900 €</strong> (Conversion Landingpage) bzw. <strong>ab 4.500 €</strong> (mehrseitige Unternehmenswebsite), jeweils als verbindlicher Festpreis vor Projektstart. Sie wird individuell programmiert, ohne Baukasten und ohne gekauftes Theme, und erreicht Lighthouse-Werte von 90 bis 100. Ein One-Pager ist in 2 bis 3 Wochen fertig, eine mehrseitige Website in 4 bis 6 Wochen.</p>
-                    </div>
+            <JumpNav label="Abschnitte" items={[
+                { id: 'kosten', num: '01', label: 'Kosten' },
+                { id: 'baukasten-wordpress-individuell', num: '02', label: 'Systemvergleich' },
+                { id: 'gute-website', num: '03', label: 'Prinzipien' },
+                { id: 'ablauf', num: '04', label: 'Ablauf' },
+                { id: 'anbieterauswahl', num: '05', label: 'Anbieterauswahl' },
+                { id: 'checkliste', num: '06', label: 'Checkliste' },
+            ]} />
 
-                    <p className="animate-up">Transparente Preise statt vager Schätzungen. Sie wissen vor Projektstart genau, was Sie investieren und was Sie dafür bekommen.</p>
+            <div className="sx-bands">
+            <section id="kosten" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Was kostet es, eine Website erstellen zu lassen?</h2>
+                    </div>
+                    <div className="sx-split animate-up">
+                        <div className="subpage-takeaway">
+                            <p>Eine Website erstellen zu lassen kostet bei mir <strong>ab 1.500 €</strong> (Website-Start mit bewährtem Layout), <strong>ab 2.900 €</strong> (Conversion Landingpage) bzw. <strong>ab 4.500 €</strong> (mehrseitige Unternehmenswebsite), jeweils als verbindlicher Festpreis vor Projektstart. Sie wird individuell programmiert, ohne Baukasten und ohne gekauftes Theme, und erreicht Lighthouse-Werte von 90 bis 100. Ein One-Pager ist in 2 bis 3 Wochen fertig, eine mehrseitige Website in 4 bis 6 Wochen.</p>
+                        </div>
+                        <div className="sx-band-text">
+                            <p>Transparente Preise statt vager Schätzungen. Sie wissen vor Projektstart genau, was Sie investieren und was Sie dafür bekommen.</p>
+                        </div>
+                    </div>
                     <div className="subpage-pricing-compare is-three animate-up">
                         <div className="subpage-price-col">
                             <h3>Website-Start</h3>
@@ -148,9 +163,15 @@ export default function WebsiteErstellenLassenPage() {
                             </ul>
                         </div>
                     </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Baukasten, WordPress oder individuell programmiert?</h2>
-                    <p className="animate-up">Drei Wege führen zu einer Website. Sie unterscheiden sich vor allem in Performance, Freiheit und langfristigen Kosten:</p>
+            <section id="baukasten-wordpress-individuell" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head">
+                        <h2 className="animate-up">Baukasten, WordPress oder individuell programmiert?</h2>
+                        <p className="animate-up">Drei Wege führen zu einer Website. Sie unterscheiden sich vor allem in Performance, Freiheit und langfristigen Kosten:</p>
+                    </div>
                     <div className="subpage-table-wrap animate-up">
                         <table className="subpage-table">
                             <thead>
@@ -163,15 +184,16 @@ export default function WebsiteErstellenLassenPage() {
                             </tbody>
                         </table>
                     </div>
+                </div>
+            </section>
 
-                    <figure className="subpage-figure is-band animate-up">
-                        <img src="/leistungen/fotos/website-erstellen-lassen.webp" alt="Aufsicht auf einen aufgeräumten Schreibtisch mit Rechner, Tastatur, Tablet und Notizblock" width="1800" height="760" loading="lazy" decoding="async" />
-                        <figcaption>Vor dem ersten Entwurf steht die Frage, was die Seite für Ihr Geschäft leisten soll.</figcaption>
-                    </figure>
-
-                    <h2 className="animate-up">Was eine gute Website ausmacht</h2>
-                    <p className="animate-up">Eine Website, die Kunden bringt, braucht mehr als hübsches Design. Vier Prinzipien machen den Unterschied:</p>
-                    <div className="subpage-features-grid animate-up">
+            <section id="gute-website" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head">
+                        <h2 className="animate-up">Was eine gute Website ausmacht</h2>
+                        <p className="animate-up">Eine Website, die Kunden bringt, braucht mehr als hübsches Design. Vier Prinzipien machen den Unterschied:</p>
+                    </div>
+                    <div className="subpage-features-grid is-four animate-up">
                         <div className="subpage-feature">
                             <h3>Performance-First</h3>
                             <p>Lighthouse 90 bis 100 und grüne Core Web Vitals (LCP unter 2,5 s, INP unter 200 ms, CLS unter 0,1) sind kein Versprechen, sondern messbarer Standard. Schnelle Seiten bedeuten weniger Absprünge und bessere Rankings.</p>
@@ -189,38 +211,63 @@ export default function WebsiteErstellenLassenPage() {
                             <p>Semantisches HTML, strukturierte Daten (Schema.org), optimierte Meta-Tags, saubere URLs und schnelle Ladezeiten. Ihre Website ist ab Tag 1 für Google optimiert und bereit, gefunden zu werden.</p>
                         </div>
                     </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Der Ablauf: von der Anfrage zur fertigen Website</h2>
-                    <p className="animate-up">Klarer Prozess, keine Überraschungen. In vier Schritten von der ersten Anfrage zur fertigen, performanten Website:</p>
+            <section id="ablauf" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head">
+                        <h2 className="animate-up">Der Ablauf: von der Anfrage zur fertigen Website</h2>
+                        <p className="animate-up">Klarer Prozess, keine Überraschungen. In vier Schritten von der ersten Anfrage zur fertigen, performanten Website:</p>
+                    </div>
                     <div className="subpage-process animate-up">
                         <div className="sp-step"><span className="sp-step-num">1</span><div><strong>Erstgespräch & Analyse</strong><p>Wir besprechen Ihre Ziele, Zielgruppe und den Wettbewerb. Ich analysiere Ihre aktuelle Situation und zeige konkret, was möglich ist. Kostenlos und unverbindlich.</p></div></div>
                         <div className="sp-step"><span className="sp-step-num">2</span><div><strong>Konzept & Struktur</strong><p>Auf Basis der Analyse erstelle ich Seitenstruktur, Conversion-Pfad und ein Wireframe. Sie sehen den Aufbau, bevor das Design beginnt.</p></div></div>
                         <div className="sp-step"><span className="sp-step-num">3</span><div><strong>Design & Entwicklung</strong><p>Saubere Umsetzung mit Fokus auf Performance und Nutzererlebnis. Regelmäßige Updates und Feedback-Runden, Sie sind jederzeit eingebunden.</p></div></div>
                         <div className="sp-step"><span className="sp-step-num">4</span><div><strong>Testing & Launch</strong><p>Tests auf allen Geräten und Browsern. Tracking-Setup, Performance-Optimierung, Go-live und Übergabe mit Einweisung.</p></div></div>
                     </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Worauf Sie bei der Anbieterauswahl achten sollten</h2>
-                    <p className="animate-up">Der häufigste Fehler: Preis als einziges Kriterium. Eine Agentur, die 1.500 Euro weniger verlangt, aber eine langsame Website ohne SEO liefert, kostet Sie am Ende mehr, nämlich entgangene Anfragen. Achten Sie auf diese Punkte:</p>
-                    <ul className="check-list animate-up">
+            <section id="anbieterauswahl" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head">
+                        <h2 className="animate-up">Worauf Sie bei der Anbieterauswahl achten sollten</h2>
+                        <p className="animate-up">Der häufigste Fehler: Preis als einziges Kriterium. Eine Agentur, die 1.500 Euro weniger verlangt, aber eine langsame Website ohne SEO liefert, kostet Sie am Ende mehr, nämlich entgangene Anfragen. Achten Sie auf diese Punkte:</p>
+                    </div>
+                    <ul className="sx-cards sxa-cards-3 animate-up">
                         <li><strong>Klare Preise vor Projektstart:</strong> seriöse Anbieter nennen Festpreise oder realistische Spannen. Wer im Erstgespräch keine Hausnummer nennt, ist kein gutes Zeichen.</li>
                         <li><strong>Referenzen mit messbaren Ergebnissen:</strong> fragen Sie nach Ladezeiten, Rankings und Anfragen, nicht nur nach Screenshots. Wie das aussieht, zeigt <Link href="/referenzen/blitz-hamburg">die Case Study Blitz Hamburg</Link>.</li>
                         <li><strong>Eigentümerschaft prüfen:</strong> Sie sollten Domain, Hosting-Zugang und den Quellcode erhalten. Manche Anbieter halten Kunden über proprietäre Systeme gefangen.</li>
                         <li><strong>Performance der Agentur-Website testen:</strong> tragen Sie die Agentur-URL in <a href="https://pagespeed.web.dev/" target="_blank" rel="noopener noreferrer">Google PageSpeed Insights</a> ein. Wer die eigene Seite nicht optimiert, optimiert Ihre auch nicht.</li>
                         <li><strong>Konkreter Zeitplan:</strong> ein professionelles Angebot enthält Meilensteine und einen realistischen Liefertermin. Ein Angebot ohne Liefertermin ist kein verlässliches Angebot.</li>
                     </ul>
-                    <p className="animate-up">Eine ausführlichere Übersicht aller Kostenfaktoren, inkl. versteckter Folgekosten für Hosting, Wartung und Updates, finden Sie im Artikel <Link href="/wissen/webdesign-kosten">Webdesign Kosten 2026</Link>.</p>
+                    <div className="sx-band-text sxa-measure animate-up">
+                        <p>Eine ausführlichere Übersicht aller Kostenfaktoren, inkl. versteckter Folgekosten für Hosting, Wartung und Updates, finden Sie im Artikel <Link href="/wissen/webdesign-kosten">Webdesign Kosten 2026</Link>.</p>
+                    </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Checkliste: Was Sie vor dem Erstgespräch vorbereiten sollten</h2>
-                    <p className="animate-up">Je besser Sie vorbereitet sind, desto schneller kommen wir zu einem konkreten Angebot. Diese Punkte helfen:</p>
-                    <ul className="check-list animate-up">
-                        <li>Ziel der Website: Anfragen generieren, online verkaufen, Praxis vorstellen, Produkt launchen?</li>
-                        <li>Zielgruppe: Wer soll die Website finden und was soll er als nächstes tun?</li>
-                        <li>Wettbewerber: Zwei bis drei Websites, die Ihnen gefallen, und zwei, die nicht funktionieren.</li>
-                        <li>Content: Haben Sie Texte, Fotos und Logo bereits? Oder muss das alles noch entstehen?</li>
-                        <li>Budget: Grober Rahmen (ab 1.500 € für den Website-Start, ab 2.900 € für eine Landingpage, ab 4.500 € für eine mehrseitige Website).</li>
-                        <li>Zeitplan: Gibt es einen konkreten Launch-Termin (Messe, Eröffnung, Kampagne)?</li>
-                    </ul>
-
+            <section id="checkliste" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head">
+                        <h2 className="animate-up">Checkliste: Was Sie vor dem Erstgespräch vorbereiten sollten</h2>
+                        <p className="animate-up">Je besser Sie vorbereitet sind, desto schneller kommen wir zu einem konkreten Angebot. Diese Punkte helfen:</p>
+                    </div>
+                    <div className="sx-split animate-up">
+                        <ul className="check-list">
+                            <li>Ziel der Website: Anfragen generieren, online verkaufen, Praxis vorstellen, Produkt launchen?</li>
+                            <li>Zielgruppe: Wer soll die Website finden und was soll er als nächstes tun?</li>
+                            <li>Wettbewerber: Zwei bis drei Websites, die Ihnen gefallen, und zwei, die nicht funktionieren.</li>
+                            <li>Content: Haben Sie Texte, Fotos und Logo bereits? Oder muss das alles noch entstehen?</li>
+                            <li>Budget: Grober Rahmen (ab 1.500 € für den Website-Start, ab 2.900 € für eine Landingpage, ab 4.500 € für eine mehrseitige Website).</li>
+                            <li>Zeitplan: Gibt es einen konkreten Launch-Termin (Messe, Eröffnung, Kampagne)?</li>
+                        </ul>
+                        <figure className="subpage-figure">
+                            <img src="/leistungen/fotos/website-erstellen-lassen.webp" alt="Aufsicht auf einen aufgeräumten Schreibtisch mit Rechner, Tastatur, Tablet und Notizblock" width="1800" height="760" loading="lazy" decoding="async" />
+                            <figcaption>Vor dem ersten Entwurf steht die Frage, was die Seite für Ihr Geschäft leisten soll.</figcaption>
+                        </figure>
+                    </div>
                     <div className="subpage-sources animate-up">
                         <h2>Quellen</h2>
                         <ol>
@@ -230,6 +277,7 @@ export default function WebsiteErstellenLassenPage() {
                     </div>
                 </div>
             </section>
+            </div>
 
             <FaqSection title="Häufige Fragen zum Website erstellen lassen" items={faqItems} />
             <RelatedServices exclude="webdesign" />

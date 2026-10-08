@@ -1850,3 +1850,120 @@ a.wissen-card:hover {
     max-width: 180px;
   }
 }
+
+/* --- FAQ hub ------------------------------------------------------------- */
+.faq-page-body {
+  background: #FFFFFF;
+  border-top: 1px solid var(--sx-line);
+  padding: 88px 0 104px;
+}
+
+.faq-hub {
+  gap: 0;
+  counter-reset: sx-faq;
+}
+
+.faq-category {
+  counter-increment: sx-faq;
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  gap: 56px;
+  align-items: start;
+  padding: 56px 0;
+  border-top: 1px solid var(--sx-line);
+}
+
+.faq-category:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.faq-category-title {
+  position: sticky;
+  top: 96px;
+  font-family: var(--sx-display);
+  font-weight: 400;
+  font-size: clamp(1.6rem, 2.4vw, 2.25rem);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+  color: var(--sx-fg);
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.faq-category-title::before {
+  content: counter(sx-faq, decimal-leading-zero);
+  display: block;
+  font-size: 15px;
+  letter-spacing: 0;
+  color: var(--sx-red);
+  margin-bottom: 14px;
+}
+
+.faq-category .faq-item {
+  border-bottom: 1px solid var(--sx-line);
+}
+
+.faq-category .faq-item:first-child {
+  border-top: 1px solid var(--sx-line);
+}
+
+.faq-category .faq-question {
+  font-family: var(--font-vx), sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  text-transform: none;
+  text-align: left;
+  gap: 24px;
+  color: var(--sx-fg);
+  padding: 20px 0;
+}
+
+.faq-category .faq-question:hover {
+  color: var(--sx-fg);
+}
+
+.faq-category .faq-answer p {
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--sx-text);
+  padding-bottom: 6px;
+}
+
+/* Kontakt: intro text dark like everywhere else */
+.contact-page .large-text,
+.contact-person-role,
+.contact-info-note {
+  color: var(--sx-text);
+}
+
+.contact-page .section-kicker {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--sx-fg);
+}
+
+.contact-promise {
+  background: #FFFFFF;
+  border: 1px solid var(--sx-line);
+}
+
+@media (max-width: 900px) {
+  .faq-category {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 48px 0;
+  }
+
+  .faq-category-title {
+    position: static;
+  }
+
+  .faq-page-body {
+    padding: 56px 0 72px;
+  }
+}

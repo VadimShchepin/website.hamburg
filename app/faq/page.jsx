@@ -1,4 +1,5 @@
 import Breadcrumbs from '../../src/components/Breadcrumbs';
+import ServiceCta from '../../src/components/ServiceCta';
 import AutoLinks from '../../src/components/AutoLinks';
 import FaqPageClient from './FaqPageClient';
 
@@ -98,25 +99,29 @@ export default function FaqPage() {
             <AutoLinks path="/faq">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
-            <section className="subpage-hero section">
+            <section className="subpage-hero section is-compact">
                 <div className="container">
                     <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'FAQ' }]} />
                     <div className="subpage-hero-split">
                         <div>
+                            <p className="section-kicker">FAQ</p>
                             <h1 className="subpage-title">Häufige Fragen zu Webdesign, SEO und Google Ads</h1>
-                            <p className="subpage-desc">Antworten auf die wichtigsten Fragen zu Webdesign, SEO, AI SEO, Google Ads und der Zusammenarbeit.</p>
-                        </div>
-                        <div className="subpage-hero-media animate-up">
-                            <img src="/hero-faq.svg" alt="Illustration: zwei Sprechblasen, die vordere mit rotem Fragezeichen, die hintere mit Antworttext" width="1200" height="900" />
+                            <p className="subpage-intro">Antworten auf die wichtigsten Fragen zu Webdesign, SEO, AI SEO, Google Ads und der Zusammenarbeit.</p>
                         </div>
                     </div>
                 </div>
             </section>
-            <section className="section">
-                <div className="container" style={{ maxWidth: 780 }}>
+            <section className="section faq-page-body">
+                <div className="container">
                     <FaqPageClient categories={faqCategories} />
                 </div>
             </section>
+            <ServiceCta
+                title="Ihre Frage war nicht dabei?"
+                text="Rufen Sie an oder schreiben Sie mir. Ich antworte innerhalb von 24 Stunden, ehrlich und ohne Verkaufsgespräch."
+                primaryLabel="Frage stellen"
+                location="faq-cta"
+            />
             </AutoLinks>
         </>
     );

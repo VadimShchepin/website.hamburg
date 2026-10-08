@@ -1,8 +1,9 @@
+import '../../../src/styles/bands-c.css';
 import Link from 'next/link';
 import AutoLinks from '../../../src/components/AutoLinks';
 import Breadcrumbs from '../../../src/components/Breadcrumbs';
 import HeroFacts from '../../../src/components/HeroFacts';
-import SubpageToc from '../../../src/components/SubpageToc';
+import JumpNav from '../../../src/components/JumpNav';
 import FaqSection from '../../../src/components/FaqSection';
 import RelatedServices from '../../../src/components/RelatedServices';
 import ServiceCta from '../../../src/components/ServiceCta';
@@ -96,34 +97,49 @@ export default function WebdesignSteuerberaterPage() {
                 </div>
             </section>
 
-            <section className="subpage-content section light-bg">
-                <div className="container subpage-body is-inset">
-                    <SubpageToc />
-                    <h2 className="animate-up">Was kostet eine Steuerberater-Website in Hamburg?</h2>
-                    <div className="subpage-takeaway animate-up">
-                        <p>Eine Kanzlei-Website kostet bei mir <strong>ab 2.900 Euro</strong> einseitig und <strong>ab 4.500 Euro</strong> mehrseitig mit Leistungsseiten, Teamprofilen und Karrierebereich. Enthalten sind Struktur, Design, Entwicklung, Textvorschläge und lokale SEO-Grundlage. Die Formulierungen bleiben innerhalb des Sachlichkeitsgebots aus § 57a StBerG.</p>
-                    </div>
+            <JumpNav label="Abschnitte" items={[
+                { id: 'kosten', num: '01', label: 'Kosten' },
+                { id: 'markt', num: '02', label: 'Markt' },
+                { id: 'werberecht', num: '03', label: 'Werberecht' },
+                { id: 'zielgruppen', num: '04', label: 'Zielgruppen' },
+                { id: 'preise', num: '05', label: 'Preise' },
+                { id: 'ergebnisse', num: '06', label: 'Ergebnisse' },
+                { id: 'ablauf', num: '07', label: 'Ablauf' },
+            ]} />
 
-                    <div className="subpage-story animate-up">
-                        <span className="subpage-story-label">Aus der Praxis</span>
-                        <p>
-                            Ein Muster, das ich bei Kanzleiseiten immer wieder sehe: Die Website erklärt auf 400 Wörtern, was eine Einnahmen-Überschuss-Rechnung ist. Was sie nicht erklärt, ist, ob die Kanzlei überhaupt neue Mandate annimmt. Genau das ist aber die Frage, mit der Unternehmer auf die Seite kommen, seit Kanzleien reihenweise Aufnahmestopps verhängen.
-                        </p>
-                        <p>
-                            Der zweite Klassiker steht unter "Karriere": eine PDF-Stellenanzeige von 2019, gescannt, mit Faxnummer. Wer Steuerfachangestellte sucht, konkurriert mit Kanzleien, die Homeoffice-Tage, Software und Fortbildungsbudget auf einer eigenen Seite zeigen. Ein gescanntes PDF verliert diesen Vergleich, bevor er beginnt.
-                        </p>
-                        <p>
-                            Meine Empfehlung ist deshalb unromantisch: zwei klare Einstiege auf der Startseite. Einer für "Ich suche einen Steuerberater", einer für "Ich suche einen Job". Alles andere kommt danach.
-                        </p>
+            <div className="sx-bands sxc-bands">
+            <section id="kosten" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Was kostet eine Steuerberater-Website in Hamburg?</h2>
                     </div>
-
-                    <h2 className="animate-up">Wie steht der Markt für Steuerberater in Hamburg?</h2>
-                    <div className="subpage-split animate-up">
-                        <div className="sp-split-media">
-                            <img src="/leistungen/branchen/steuerberater/mandat.webp" alt="Steuerberater notiert am Schreibtisch Zahlen, daneben Unterlagen, Taschenrechner und Laptop" width="1200" height="900" loading="lazy" decoding="async" />
-                            <p className="sp-split-caption">Qualität der Anfragen schlägt Menge. Wer klar sagt, für wen er arbeitet, bekommt passendere Mandate.</p>
+                    <div className="sx-split is-even animate-up">
+                        <div className="subpage-takeaway">
+                            <p>Eine Kanzlei-Website kostet bei mir <strong>ab 2.900 Euro</strong> einseitig und <strong>ab 4.500 Euro</strong> mehrseitig mit Leistungsseiten, Teamprofilen und Karrierebereich. Enthalten sind Struktur, Design, Entwicklung, Textvorschläge und lokale SEO-Grundlage. Die Formulierungen bleiben innerhalb des Sachlichkeitsgebots aus § 57a StBerG.</p>
                         </div>
-                        <div className="sp-split-body">
+                        <div className="subpage-story">
+                            <span className="subpage-story-label">Aus der Praxis</span>
+                            <p>
+                                Ein Muster, das ich bei Kanzleiseiten immer wieder sehe: Die Website erklärt auf 400 Wörtern, was eine Einnahmen-Überschuss-Rechnung ist. Was sie nicht erklärt, ist, ob die Kanzlei überhaupt neue Mandate annimmt. Genau das ist aber die Frage, mit der Unternehmer auf die Seite kommen, seit Kanzleien reihenweise Aufnahmestopps verhängen.
+                            </p>
+                            <p>
+                                Der zweite Klassiker steht unter "Karriere": eine PDF-Stellenanzeige von 2019, gescannt, mit Faxnummer. Wer Steuerfachangestellte sucht, konkurriert mit Kanzleien, die Homeoffice-Tage, Software und Fortbildungsbudget auf einer eigenen Seite zeigen. Ein gescanntes PDF verliert diesen Vergleich, bevor er beginnt.
+                            </p>
+                            <p>
+                                Meine Empfehlung ist deshalb unromantisch: zwei klare Einstiege auf der Startseite. Einer für "Ich suche einen Steuerberater", einer für "Ich suche einen Job". Alles andere kommt danach.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="markt" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Wie steht der Markt für Steuerberater in Hamburg?</h2>
+                    </div>
+                    <div className="sx-split animate-up">
+                        <div className="sx-band-text">
                             <p>
                                 Die Berufsstatistik der Bundessteuerberaterkammer zählt zum 1. Januar 2026 insgesamt 105.953 Kammermitglieder und 90.336 Steuerberaterinnen, Steuerberater und Steuerbevollmächtigte. Das Durchschnittsalter liegt bei 53,7 Jahren, 65,9 Prozent arbeiten selbstständig, und 67,1 Prozent der Praxen sind Einzelpraxen. Das ist ein Markt mit vielen kleinen Einheiten, in dem sehr viele Inhaber in den nächsten Jahren eine Nachfolge suchen werden.
                             </p>
@@ -131,8 +147,11 @@ export default function WebdesignSteuerberaterPage() {
                                 Für Ihre Website heißt das zwei Dinge. Erstens: Sichtbarkeit entscheidet weniger über die Menge der Anfragen als über deren Qualität. Wer klar sagt, für welche Branchen und Mandatsgrößen er arbeitet, bekommt weniger Anfragen und mehr passende. Zweitens: Eine gepflegte Website ist bei einer Kanzleiübergabe ein Vermögenswert. Sie ist das Einzige, was ein Nachfolger vor der ersten Mandantenübergabe sehen kann.
                             </p>
                         </div>
+                        <div className="sxc-media">
+                            <img src="/leistungen/branchen/steuerberater/mandat.webp" alt="Steuerberater notiert am Schreibtisch Zahlen, daneben Unterlagen, Taschenrechner und Laptop" width="1200" height="900" loading="lazy" decoding="async" />
+                            <p className="sp-split-caption">Qualität der Anfragen schlägt Menge. Wer klar sagt, für wen er arbeitet, bekommt passendere Mandate.</p>
+                        </div>
                     </div>
-
                     <div className="subpage-stats animate-up">
                         <div className="subpage-stat">
                             <span className="subpage-stat-value">90.336</span>
@@ -147,16 +166,21 @@ export default function WebdesignSteuerberaterPage() {
                             <span className="subpage-stat-label">der Steuerberaterpraxen sind Einzelpraxen (BStBK, Berufsstatistik 2025)</span>
                         </div>
                     </div>
-
                     <figure className="subpage-figure is-band animate-up">
                         <img src="/leistungen/branchen/steuerberater/schreibtisch.webp" alt="Blick von oben auf einen Kanzleitisch mit Laptop, Taschenrechner und Unterlagen, zwei Personen besprechen Zahlen" width="1800" height="760" loading="lazy" decoding="async" />
                         <figcaption>Die Website ist die Vorstufe zum Portal: Sie klärt Zuständigkeit, Ablauf und Erreichbarkeit.</figcaption>
                     </figure>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Was darf laut Werberecht auf die Kanzleiseite?</h2>
-                    <p className="animate-up">
-                        Steuerberaterwerbung ist seit Jahren liberalisiert, aber an Sachlichkeit gebunden. Maßgeblich sind § 57a StBerG und die Berufsordnung. Dazu kommt die Verschwiegenheitspflicht aus § 57 StBerG und § 203 StGB, die bei Referenzen zum entscheidenden Punkt wird.
-                    </p>
+            <section id="werberecht" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head">
+                        <h2 className="animate-up">Was darf laut Werberecht auf die Kanzleiseite?</h2>
+                        <p className="animate-up">
+                            Steuerberaterwerbung ist seit Jahren liberalisiert, aber an Sachlichkeit gebunden. Maßgeblich sind § 57a StBerG und die Berufsordnung. Dazu kommt die Verschwiegenheitspflicht aus § 57 StBerG und § 203 StGB, die bei Referenzen zum entscheidenden Punkt wird.
+                        </p>
+                    </div>
                     <div className="rule-cols animate-up">
                         <div className="rule-col">
                             <h3>Zulässig</h3>
@@ -181,11 +205,19 @@ export default function WebdesignSteuerberaterPage() {
                             </ul>
                         </div>
                     </div>
-                    <p className="animate-up">
-                        Und die übliche Klarstellung: Ich bin Entwickler, nicht Steuerberater. Die berufsrechtliche Endabnahme der Texte machen Sie, ich liefere Formulierungen, die von vornherein im sachlichen Rahmen bleiben.
-                    </p>
+                    <div className="sx-band-text animate-up">
+                        <p>
+                            Und die übliche Klarstellung: Ich bin Entwickler, nicht Steuerberater. Die berufsrechtliche Endabnahme der Texte machen Sie, ich liefere Formulierungen, die von vornherein im sachlichen Rahmen bleiben.
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Die zwei Zielgruppen einer Kanzlei-Website</h2>
+            <section id="zielgruppen" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Die zwei Zielgruppen einer Kanzlei-Website</h2>
+                    </div>
                     <div className="subpage-features-grid animate-up">
                         <div className="subpage-feature">
                             <h3>Mandanten: Zuständigkeit zuerst</h3>
@@ -204,7 +236,6 @@ export default function WebdesignSteuerberaterPage() {
                             <p>Homeoffice-Regelung, Gleitzeit, Fortbildungsbudget, Übernahme der Prüfungsvorbereitung, Teamgröße. Konkret formuliert statt "familiäres Betriebsklima".</p>
                         </div>
                     </div>
-
                     <div className="subpage-features-grid animate-up">
                         <div className="subpage-feature">
                             <h3>Portal-Zugang statt Portal-Neubau</h3>
@@ -223,8 +254,14 @@ export default function WebdesignSteuerberaterPage() {
                             <p>Wer "Steuerberater in Hamburg für GmbH-Gründung" in ChatGPT eingibt, bekommt eine Empfehlungsliste. Ob Ihre Kanzlei darin auftaucht, hängt an Struktur und Zitierbarkeit Ihrer Inhalte. Details bei <Link href="/leistungen/ai-seo">AI SEO</Link>.</p>
                         </div>
                     </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Preise</h2>
+            <section id="preise" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Preise</h2>
+                    </div>
                     <div className="subpage-pricing-compare animate-up">
                         <div className="subpage-price-col">
                             <h3>Kanzlei-Website kompakt</h3>
@@ -255,8 +292,14 @@ export default function WebdesignSteuerberaterPage() {
                             </ul>
                         </div>
                     </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Was dieselbe Arbeitsweise anderswo gebracht hat</h2>
+            <section id="ergebnisse" className="sx-band">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Was dieselbe Arbeitsweise anderswo gebracht hat</h2>
+                    </div>
                     <div className="subpage-cases animate-up">
                         <Link href="/referenzen/blitz-hamburg" className="subpage-case-card">
                             <span className="subpage-case-metric">24 auf 374 Google-Klicks</span>
@@ -271,15 +314,20 @@ export default function WebdesignSteuerberaterPage() {
                             <span className="subpage-case-name">Pest Control SaaS: Aufträge, Nachweise und Compliance in einer App</span>
                         </Link>
                     </div>
+                </div>
+            </section>
 
-                    <h2 className="animate-up">Wie läuft ein Kanzlei-Website-Projekt ab?</h2>
+            <section id="ablauf" className="sx-band is-alt">
+                <div className="container">
+                    <div className="sx-band-head is-solo">
+                        <h2 className="animate-up">Wie läuft ein Kanzlei-Website-Projekt ab?</h2>
+                    </div>
                     <div className="subpage-process animate-up">
                         <div className="sp-step"><span className="sp-step-num">1</span><div><strong>Erstgespräch, 30 Minuten</strong><p>Nehmen Sie Mandate an, welche Zielgruppen wollen Sie, suchen Sie Personal, und was soll die Website konkret abnehmen. Kostenlos.</p></div></div>
                         <div className="sp-step"><span className="sp-step-num">2</span><div><strong>Struktur und Texte</strong><p>Zwei Einstiegspfade, Leistungsseiten, Karrierebereich. Ich liefere Textvorschläge, Sie prüfen sie berufsrechtlich und fachlich.</p></div></div>
                         <div className="sp-step"><span className="sp-step-num">3</span><div><strong>Design und Entwicklung</strong><p>Individuelles Design, eigener Code, keine Vorlage aus dem Kanzlei-Baukasten. Zwischenstände auf einer Vorschau-URL.</p></div></div>
                         <div className="sp-step"><span className="sp-step-num">4</span><div><strong>Test, Launch, Übergabe</strong><p>Formular-Test, Geräte-Test, Ladezeit, strukturierte Daten, Search Console. Domain, Zugänge und Quellcode gehören Ihnen.</p></div></div>
                     </div>
-
                     <div className="subpage-sources animate-up">
                         <h2>Quellen</h2>
                         <ol>
@@ -291,6 +339,8 @@ export default function WebdesignSteuerberaterPage() {
                     </div>
                 </div>
             </section>
+
+            </div>
 
             <FaqSection title="Häufige Fragen zu Kanzlei-Websites für Steuerberater" items={faqItems} />
             <RelatedServices exclude="webdesign" />

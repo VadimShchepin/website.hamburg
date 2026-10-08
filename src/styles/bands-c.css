@@ -1,0 +1,292 @@
+/* ==========================================================================
+   Section bands, extras for the industry pages (webdesign-handwerker,
+   -aerzte, -anwaelte, -steuerberater). Scoped to .sxc-bands, which sits on
+   the same element as .sx-bands. Base band styles: subpage-vx.css.
+   ========================================================================== */
+
+/* Square corners for photos inside bands (index.css gives them 12px) */
+.sxc-bands .subpage-figure img,
+.sxc-bands .sxc-media img,
+.sxc-bands .subpage-duo img {
+  border-radius: 0;
+  border: 0;
+}
+
+.sxc-bands .subpage-duo {
+  margin: 40px 0 0;
+  gap: 16px;
+}
+
+.sxc-bands .subpage-duo img {
+  aspect-ratio: 16 / 9;
+}
+
+.sxc-bands .subpage-duo figcaption,
+.sxc-bands .sxc-media figcaption,
+.sxc-bands .sxc-media .sp-split-caption {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--sx-muted);
+  margin-top: 10px;
+}
+
+/* Photo with caption in one column of an sx-split */
+.sxc-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.sxc-media.is-wide img {
+  aspect-ratio: 16 / 9;
+}
+
+/* Wide photo band below stats */
+.sxc-bands .subpage-figure.is-band img {
+  aspect-ratio: 1800 / 640;
+  object-fit: cover;
+}
+
+.sxc-bands .subpage-figure figcaption {
+  font-size: 14px;
+  color: var(--sx-muted);
+}
+
+/* Spacing after blocks that subpage-vx does not cover */
+.sxc-bands .subpage-figure + *,
+.sxc-bands .subpage-story + *,
+.sxc-bands .rule-cols + *,
+.sxc-bands .sxc-facts + *,
+.sxc-bands .sx-band-text + * {
+  margin-top: 40px;
+}
+
+.sxc-bands .subpage-stats + .subpage-figure {
+  margin-top: 40px;
+}
+
+/* Long running text stays readable */
+.sxc-bands .sx-band-text {
+  max-width: 70ch;
+}
+
+.sxc-bands .sx-split .sx-band-text {
+  max-width: none;
+}
+
+/* Story box ("Aus der Praxis") */
+.sxc-bands .subpage-story {
+  margin: 0;
+  background: #FFFFFF;
+}
+
+.sxc-bands .sx-band:not(.is-alt) .subpage-story {
+  background: #FFFFFF;
+}
+
+.sxc-bands .sx-band.is-alt .subpage-story {
+  background: #FAFAFA;
+}
+
+.sxc-bands .subpage-story p {
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--sx-text);
+  margin: 0;
+}
+
+.sxc-bands .subpage-story p + p {
+  margin-top: 14px;
+}
+
+.sxc-bands .subpage-story-label {
+  display: block;
+  margin-bottom: 14px;
+}
+
+/* Allowed / not allowed columns */
+.sxc-bands .rule-cols {
+  margin: 0;
+  gap: 16px;
+}
+
+.sxc-bands .rule-col {
+  padding: 32px;
+}
+
+.sxc-bands .sx-band:not(.is-alt) .rule-col {
+  background: #FFFFFF;
+}
+
+.sxc-bands .rule-col h3 {
+  font-family: var(--sx-display);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--sx-fg);
+  margin: 0 0 20px;
+}
+
+.sxc-bands .rule-col li {
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--sx-fg);
+  margin-bottom: 12px;
+}
+
+.sxc-bands .rule-col.rule-no li::before {
+  color: var(--sx-fg);
+}
+
+/* Reference facts: a short list shown as three result cards */
+.sxc-bands .sxc-facts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sxc-bands .sxc-facts li {
+  padding: 28px;
+  background: #FFFFFF;
+  border: 1px solid var(--sx-line);
+  border-top: 3px solid var(--sx-fg);
+  font-family: var(--sx-display);
+  font-size: 22px;
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  color: var(--sx-fg);
+  margin: 0;
+}
+
+.sxc-bands .sxc-facts li::before {
+  content: none;
+}
+
+.sxc-bands .sx-band.is-alt .sxc-facts li {
+  background: #FAFAFA;
+}
+
+/* Text link to a case study: dark, not red */
+.sxc-bands .cta-link {
+  font-weight: 700;
+  font-size: 17px;
+  color: var(--sx-fg);
+  border-bottom: 1px solid var(--sx-fg);
+}
+
+.sxc-bands .cta-link:hover {
+  border-bottom-color: transparent;
+}
+
+/* Process step text */
+.sxc-bands .subpage-process .sp-step p {
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--sx-text);
+  margin: 0;
+}
+
+/* Problem list (sx-cards without bold lead-ins) */
+.sxc-bands .sx-cards.is-five {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.sxc-bands .sx-cards > li {
+  margin: 0;
+}
+
+.sxc-bands .sx-cards > li::after {
+  content: none;
+}
+
+/* Lead-in line above a list */
+.sxc-bands .sxc-lead {
+  font-family: var(--font-vx), sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+  color: var(--sx-fg);
+  margin: 0 0 20px;
+}
+
+.sxc-bands * + .sxc-lead {
+  margin-top: 56px;
+}
+
+/* Case cards: bigger metric, one row of three */
+.sxc-bands .subpage-cases {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.sxc-bands .subpage-case-card {
+  padding: 28px;
+}
+
+.sxc-bands .subpage-case-metric {
+  font-family: var(--sx-display);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.sxc-bands .subpage-case-name {
+  font-size: 15px;
+  color: var(--sx-text);
+  margin-top: 10px;
+}
+
+@media (max-width: 1100px) {
+  .sxc-bands .sx-cards.is-five {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .sxc-bands .subpage-cases {
+    grid-template-columns: 1fr;
+  }
+
+  .sxc-bands .sxc-facts {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .sxc-bands .sx-cards.is-five {
+    grid-template-columns: 1fr;
+  }
+
+  .sxc-bands .rule-col {
+    padding: 24px;
+  }
+
+  .sxc-bands .subpage-story {
+    padding: 24px;
+  }
+
+  .sxc-bands .subpage-figure.is-band img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .sxc-bands .sxc-facts li {
+    font-size: 19px;
+    padding: 22px;
+  }
+}
+
+/* Second row of a feature grid, or list cards followed by stats */
+.sxc-bands .subpage-features-grid + .subpage-features-grid {
+  margin-top: 16px;
+}
+
+.sxc-bands .sx-cards + .subpage-stats {
+  margin-top: 56px;
+}

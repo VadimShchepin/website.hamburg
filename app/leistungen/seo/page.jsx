@@ -191,7 +191,7 @@ export default function SeoPage() {
                     </div>
                     <div className="subpage-single-price is-wide animate-up">
                         <div>
-                            <h3>Lokale SEO-Betreuung</h3>
+                            <p className="sx-price-label">Lokale SEO-Betreuung</p>
                             <div className="sp-price-value">ab 1.000 &euro;<small>/Monat</small></div>
                             <p>Mindestlaufzeit 3 Monate, danach monatlich kündbar. Keine versteckten Kosten. Wie sich dieser Betrag in Arbeitsstunden aufteilt und was der Markt sonst verlangt, steht im Artikel <Link href="/wissen/seo-kosten-hamburg">Was kostet SEO in Hamburg</Link>.</p>
                         </div>

@@ -2345,3 +2345,12 @@ a.wissen-card:hover {
 .sx-jumpnav .container {
   position: relative;
 }
+
+.sx-band .subpage-single-price .sx-price-label {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--sx-muted);
+  margin: 0 0 10px;
+}

@@ -133,7 +133,7 @@ export default function ContactPageClient() {
                     <div className="contact-info-col">
                         <div className="contact-person animate-up">
                             <img
-                                src="/referenzen/vadim-portraet.webp"
+                                src="/referenzen/vadim-shchepin-quadrat.webp"
                                 alt="Vadim Shchepin, Webentwickler aus Hamburg"
                                 width="640"
                                 height="640"

@@ -366,7 +366,7 @@ export default function HomePage() {
             {/* Founder */}
             <section className="vx-founder">
                 <div className="vx-wrap vx-founder-grid">
-                    <Image src="/referenzen/vadim-portraet.webp" alt="Vadim Shchepin" width={640} height={640} sizes="160px" />
+                    <Image src="/referenzen/vadim-shchepin-quadrat.webp" alt="Vadim Shchepin" width={640} height={640} sizes="160px" />
                     <div>
                         <p className="vx-founder-quote">Sie arbeiten direkt mit mir, dem Entwickler. Analyse, Code und Betreuung liegen in einer Hand. Braucht ein Projekt zusätzliche Expertise, etwa bei Design, Text oder Fotografie, hole ich geprüfte Spezialisten dazu.</p>
                         <p className="vx-founder-name"><strong>Vadim Shchepin</strong> Webentwickler aus Hamburg, 10+ Jahre Erfahrung</p>

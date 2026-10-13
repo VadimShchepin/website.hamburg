@@ -17,7 +17,7 @@ export default function Founder() {
                 <div className="founder-layout">
                     <div className="founder-photo animate-up">
                         <Image
-                            src="/referenzen/vadim_shchepin_2.webp"
+                            src="/referenzen/vadim-shchepin.webp"
                             alt="Vadim Shchepin, Webentwickler und Gründer von webseite.hamburg"
                             width={480}
                             height={640}

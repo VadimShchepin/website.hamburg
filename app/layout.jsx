@@ -74,6 +74,7 @@ const organizationJsonLd = {
         name: 'Vadim Shchepin',
         jobTitle: 'Gründer & Webentwickler',
         url: `${SITE_URL}/ueber-uns`,
+        image: `${SITE_URL}/referenzen/vadim-shchepin.webp`,
         sameAs: ['https://www.linkedin.com/in/vadim-shchepin/'],
     },
     address: {

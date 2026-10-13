@@ -32,7 +32,7 @@ export default function UeberUnsPage() {
         mainEntity: {
             '@type': 'Person',
             name: 'Vadim Shchepin',
-            image: 'https://webseite.hamburg/referenzen/vadim_shchepin_2.webp',
+            image: 'https://webseite.hamburg/referenzen/vadim-shchepin.webp',
             url: 'https://www.linkedin.com/in/vadim-shchepin/',
             jobTitle: 'Webentwickler & SEO-Spezialist',
             worksFor: BUSINESS,
@@ -74,7 +74,7 @@ export default function UeberUnsPage() {
                         </div>
                         <div className="subpage-hero-media about-hero-photo animate-up">
                             <Image
-                                src="/referenzen/vadim_shchepin_2.webp"
+                                src="/referenzen/vadim-shchepin.webp"
                                 alt="Vadim Shchepin, Webentwickler und SEO-Spezialist in Hamburg"
                                 width={450}
                                 height={600}

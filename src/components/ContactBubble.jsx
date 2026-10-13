@@ -52,7 +52,7 @@ export default function ContactBubble() {
             {open && (
                 <div className="contact-bubble-panel" role="dialog" aria-label="Kurzanfrage">
                     <div className="contact-bubble-head">
-                        <img src="/referenzen/vadim_shchepin_2.webp" alt="" width="40" height="40" />
+                        <img src="/referenzen/vadim-shchepin-quadrat.webp" alt="" width="40" height="40" />
                         <div>
                             <strong>Vadim Shchepin</strong>
                             <span>Antwort meist am selben Tag</span>
